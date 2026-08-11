@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `UnitOfMeasureISOCode` | ✓ | |  | `isocode` |  |  |
-| `UnitOfMeasureISOCodeName` |  | |  | `isotxt` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `UnitOfMeasureISOCode` | ✓ | |  | `isocode` | `CHAR(3)` | ISO Code for Unit of Measurement |
+| `UnitOfMeasureISOCodeName` |  | |  | `isotxt` | `CHAR(25)` | ISO Code Text |
 | `_ISOCode` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

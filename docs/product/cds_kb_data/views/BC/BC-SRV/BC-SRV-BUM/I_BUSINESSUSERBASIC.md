@@ -30,45 +30,45 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | | `_BusinessPartner` | `partner` |  |  |
-| `BusinessPartnerUUID` |  | | `_BusinessPartner` | `partner_guid` |  |  |
-| `LastName` |  | | `_BusinessPartner` | `name_last` |  |  |
-| `FirstName` |  | | `_BusinessPartner` | `name_first` |  |  |
-| `PersonFullName` |  | |  | `cast( usr21.techdesc as vdm_userdescription preserving type )` |  |  |
-| `FormOfAddress` |  | | `_BusinessPartner` | `title` |  |  |
-| `AcademicTitle` |  | | `_BusinessPartner` | `title_aca1` |  |  |
-| `AcademicSecondTitle` |  | | `_BusinessPartner` | `title_aca2` |  |  |
-| `CorrespondenceLanguage` |  | | `_BusinessPartner` | `langu_corr` |  |  |
-| `MiddleName` |  | | `_BusinessPartner` | `namemiddle` |  |  |
-| `AdditionalLastName` |  | | `_BusinessPartner` | `name_lst2` |  |  |
-| `BirthName` |  | | `_BusinessPartner` | `name_last2` |  |  |
-| `NickName` |  | | `_BusinessPartner` | `nickname` |  |  |
-| `Initials` |  | | `_BusinessPartner` | `initials` |  |  |
-| `LastNamePrefix` |  | | `_BusinessPartner` | `prefix1` |  |  |
-| `LastNameSecondPrefix` |  | | `_BusinessPartner` | `prefix2` |  |  |
-| `NameSupplement` |  | | `_BusinessPartner` | `title_royl` |  |  |
-| `UserID` |  | |  | `cast( usr21.bname as vdm_userid preserving type )` |  |  |
-| `IsMarkedForArchiving` |  | | `_BusinessPartner` | `xdele` |  |  |
-| `BusinessPartnerIsBlocked` |  | | `_BusinessPartner` | `xblck` |  |  |
-| `CreatedByUser` |  | | `_BusinessPartner` | `crusr` |  |  |
-| `CreationDate` |  | | `_BusinessPartner` | `crdat` |  |  |
-| `CreationTime` |  | | `_BusinessPartner` | `crtim` |  |  |
-| `LastChangedByUser` |  | | `_BusinessPartner` | `chusr` |  |  |
-| `LastChangeDate` |  | | `_BusinessPartner` | `chdat` |  |  |
-| `LastChangeTime` |  | | `_BusinessPartner` | `chtim` |  |  |
-| `IsBusinessPurposeCompleted` |  | | `_BusinessPartner` | `xpcpt` |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `augrp` |  |  |
-| `DataControllerSet` |  | | `_BusinessPartner` | `xdcset` |  |  |
-| `DataController1` |  | | `_BusinessPartner` | `data_ctrlr1` |  |  |
-| `DataController2` |  | | `_BusinessPartner` | `data_ctrlr2` |  |  |
-| `DataController3` |  | | `_BusinessPartner` | `data_ctrlr3` |  |  |
-| `DataController4` |  | | `_BusinessPartner` | `data_ctrlr4` |  |  |
-| `DataController5` |  | | `_BusinessPartner` | `data_ctrlr5` |  |  |
-| `DataController6` |  | | `_BusinessPartner` | `data_ctrlr6` |  |  |
-| `DataController7` |  | | `_BusinessPartner` | `data_ctrlr7` |  |  |
-| `DataController8` |  | | `_BusinessPartner` | `data_ctrlr8` |  |  |
-| `DataController9` |  | | `_BusinessPartner` | `data_ctrlr9` |  |  |
-| `DataController10` |  | | `_BusinessPartner` | `data_ctrlr10` |  |  |
+| `BusinessPartner` | ✓ | | `_BusinessPartner` | `partner` | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerUUID` |  | | `_BusinessPartner` | `partner_guid` | `RAW(16)` | Business Partner GUID |
+| `LastName` |  | | `_BusinessPartner` | `name_last` | `CHAR(40)` | Last Name of Business Partner (Person) |
+| `FirstName` |  | | `_BusinessPartner` | `name_first` | `CHAR(40)` | First Name of Business Partner (Person) |
+| `PersonFullName` |  | |  | `cast( usr21.techdesc as vdm_userdescription preserving type )` | `CHAR(80)` | User Description |
+| `FormOfAddress` |  | | `_BusinessPartner` | `title` | `CHAR(4)` | Form-of-Address Key |
+| `AcademicTitle` |  | | `_BusinessPartner` | `title_aca1` | `CHAR(4)` | Academic Title: Key |
+| `AcademicSecondTitle` |  | | `_BusinessPartner` | `title_aca2` | `CHAR(4)` | Second academic title (key) |
+| `CorrespondenceLanguage` |  | | `_BusinessPartner` | `langu_corr` | `LANG(1)` | Business Partner: Correspondence Language |
+| `MiddleName` |  | | `_BusinessPartner` | `namemiddle` | `CHAR(40)` | Middle Name or Second Forename of a Person |
+| `AdditionalLastName` |  | | `_BusinessPartner` | `name_lst2` | `CHAR(40)` | Other Last Name of a Person |
+| `BirthName` |  | | `_BusinessPartner` | `name_last2` | `CHAR(40)` | Name at birth of business partner |
+| `NickName` |  | | `_BusinessPartner` | `nickname` | `CHAR(40)` | Nickname of Business Partner (Person) |
+| `Initials` |  | | `_BusinessPartner` | `initials` | `CHAR(10)` | "Middle Initial" or personal initials |
+| `LastNamePrefix` |  | | `_BusinessPartner` | `prefix1` | `CHAR(4)` | Name Prefix (Key) |
+| `LastNameSecondPrefix` |  | | `_BusinessPartner` | `prefix2` | `CHAR(4)` | 2nd name prefix (key) |
+| `NameSupplement` |  | | `_BusinessPartner` | `title_royl` | `CHAR(4)` | Name supplement, e.g. noble title (key) |
+| `UserID` |  | |  | `cast( usr21.bname as vdm_userid preserving type )` | `CHAR(12)` | User ID |
+| `IsMarkedForArchiving` |  | | `_BusinessPartner` | `xdele` | `CHAR(1)` | Central Archiving Flag |
+| `BusinessPartnerIsBlocked` |  | | `_BusinessPartner` | `xblck` | `CHAR(1)` | Central Block for Business Partner |
+| `CreatedByUser` |  | | `_BusinessPartner` | `crusr` | `CHAR(12)` | User who created the object |
+| `CreationDate` |  | | `_BusinessPartner` | `crdat` | `DATS(8)` | Date on which the object was created |
+| `CreationTime` |  | | `_BusinessPartner` | `crtim` | `TIMS(6)` | Time at which the object was created |
+| `LastChangedByUser` |  | | `_BusinessPartner` | `chusr` | `CHAR(12)` | Last user to change object |
+| `LastChangeDate` |  | | `_BusinessPartner` | `chdat` | `DATS(8)` | Date when object was last changed |
+| `LastChangeTime` |  | | `_BusinessPartner` | `chtim` | `TIMS(6)` | Time at which object was last changed |
+| `IsBusinessPurposeCompleted` |  | | `_BusinessPartner` | `xpcpt` | `CHAR(1)` | Business Purpose Completed Flag |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `augrp` | `CHAR(4)` | Authorization Group |
+| `DataControllerSet` |  | | `_BusinessPartner` | `xdcset` | `CHAR(1)` | BP: Data Controller Set Flag |
+| `DataController1` |  | | `_BusinessPartner` | `data_ctrlr1` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController2` |  | | `_BusinessPartner` | `data_ctrlr2` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController3` |  | | `_BusinessPartner` | `data_ctrlr3` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController4` |  | | `_BusinessPartner` | `data_ctrlr4` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController5` |  | | `_BusinessPartner` | `data_ctrlr5` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController6` |  | | `_BusinessPartner` | `data_ctrlr6` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController7` |  | | `_BusinessPartner` | `data_ctrlr7` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController8` |  | | `_BusinessPartner` | `data_ctrlr8` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController9` |  | | `_BusinessPartner` | `data_ctrlr9` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController10` |  | | `_BusinessPartner` | `data_ctrlr10` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
 | `_User` | | ✓ | | | | |
 | `_WorkplaceAddress` | | ✓ | | | | |
 | `_BusinessPartnerRole` | | ✓ | | | | |

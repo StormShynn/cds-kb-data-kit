@@ -33,8 +33,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UnitOfMeasure` | ✓ | |  |  |  |  |
-| `UnitOfMeasureDimension` |  | |  |  |  |  |
+| `UnitOfMeasure` | ✓ | |  |  | `UNIT(3)` | Unit of Measure |
+| `UnitOfMeasureDimension` |  | |  |  | `CHAR(6)` | Dimension |
 
 ## Source Code
 

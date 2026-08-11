@@ -31,33 +31,33 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartnerUUID` | ✓ | |  | `partner_guid` |  |  |
-| `AddressID` |  | |  | `addrnumber` |  |  |
-| `BusinessPartner` |  | |  | `partner` |  |  |
-| `DestinationLocationCountry` |  | |  | `_phone[1: r3_user = '1' ].country` |  |  |
-| `PhoneNumber` |  | |  | `_phone[1: r3_user = '1' ].tel_number` |  |  |
-| `PhoneNumberExtension` |  | |  | `_phone[1: r3_user = '1' ].tel_extens` |  |  |
-| `NormalizedPhoneNumber` |  | |  | `_phone[1: r3_user = '1' ].telnr_long` |  |  |
-| `MblPhoneDestinationLocCountry` |  | |  | `_phone[1: r3_user = '3' ].country` |  |  |
-| `MobilePhoneNumber` |  | |  | `_phone[1: r3_user = '3' ].tel_number` |  |  |
-| `MblNormalizedPhoneNumber` |  | |  | `_phone[1: r3_user = '3' ].telnr_long` |  |  |
-| `FaxNumberCountry` |  | | `_CurrentDefaultFaxNumber` | `country` |  |  |
-| `FaxAreaCodeSubscriberNumber` |  | | `_CurrentDefaultFaxNumber` | `fax_number` |  |  |
-| `FaxExtensionNumber` |  | | `_CurrentDefaultFaxNumber` | `fax_extens` |  |  |
-| `InternationalFaxNumber` |  | | `_CurrentDefaultFaxNumber` | `faxnr_long` |  |  |
-| `DefaultEmailAddress` |  | |  | `_mail[1: flgdefault = 'X'].smtp_addr` |  |  |
-| `ValidityStartDate` |  | |  | `tstmp_to_dats(Mom.from_timestamp,'UTC', $session.client, 'NULL')` |  |  |
-| `ValidityEndDate` |  | |  | `tstmp_to_dats(Mom.to_timestamp,'UTC', $session.client, 'NULL')` |  |  |
-| `Building` |  | |  | `building` |  |  |
-| `RoomNumber` |  | |  | `roomnumber` |  |  |
-| `Floor` |  | |  | `floor` |  |  |
-| `FunctionalTitlename` |  | |  | `function` |  |  |
-| `Department` |  | |  | `department` |  |  |
-| `CommunicationMediumType` |  | |  | `deflt_comm` |  |  |
-| `PersonNumber` |  | |  | `persnumber` |  |  |
-| `AddressPersonID` |  | |  | `persnumber` |  |  |
-| `IsBusinessPurposeCompleted` |  | |  | `xpcpt` |  |  |
-| `AuthorizationGroup` |  | |  | `augrp` |  |  |
+| `BusinessPartnerUUID` | ✓ | |  | `partner_guid` | `RAW(16)` | Business Partner GUID |
+| `AddressID` |  | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `BusinessPartner` |  | |  | `partner` | `CHAR(10)` | Business Partner Number |
+| `DestinationLocationCountry` |  | |  | `_phone[1: r3_user = '1' ].country` | `CHAR(3)` | Country/Region for Telephone/Fax Number |
+| `PhoneNumber` |  | |  | `_phone[1: r3_user = '1' ].tel_number` | `CHAR(30)` | Telephone No.: Dialing Code and Number |
+| `PhoneNumberExtension` |  | |  | `_phone[1: r3_user = '1' ].tel_extens` | `CHAR(10)` | Telephone no.: Extension |
+| `NormalizedPhoneNumber` |  | |  | `_phone[1: r3_user = '1' ].telnr_long` | `CHAR(30)` | Complete Number: Dialing Code+Number+Extension |
+| `MblPhoneDestinationLocCountry` |  | |  | `_phone[1: r3_user = '3' ].country` | `CHAR(3)` | Country/Region for Telephone/Fax Number |
+| `MobilePhoneNumber` |  | |  | `_phone[1: r3_user = '3' ].tel_number` | `CHAR(30)` | Telephone No.: Dialing Code and Number |
+| `MblNormalizedPhoneNumber` |  | |  | `_phone[1: r3_user = '3' ].telnr_long` | `CHAR(30)` | Complete Number: Dialing Code+Number+Extension |
+| `FaxNumberCountry` |  | | `_CurrentDefaultFaxNumber` | `country` | `CHAR(3)` | Country/Region for Telephone/Fax Number |
+| `FaxAreaCodeSubscriberNumber` |  | | `_CurrentDefaultFaxNumber` | `fax_number` | `CHAR(30)` | Fax Number: Dialing Code and Number |
+| `FaxExtensionNumber` |  | | `_CurrentDefaultFaxNumber` | `fax_extens` | `CHAR(10)` | Fax no.: Extension |
+| `InternationalFaxNumber` |  | | `_CurrentDefaultFaxNumber` | `faxnr_long` | `CHAR(30)` | Complete Number: Dialing Code+Number+Extension |
+| `DefaultEmailAddress` |  | |  | `_mail[1: flgdefault = 'X'].smtp_addr` | `CHAR(241)` | Email Address |
+| `ValidityStartDate` |  | |  | `tstmp_to_dats(Mom.from_timestamp,'UTC', $session.client, 'NULL')` | `DATS(8)` |  |
+| `ValidityEndDate` |  | |  | `tstmp_to_dats(Mom.to_timestamp,'UTC', $session.client, 'NULL')` | `DATS(8)` |  |
+| `Building` |  | |  | `building` | `CHAR(10)` | Building (number or code) |
+| `RoomNumber` |  | |  | `roomnumber` | `CHAR(10)` | Room or Apartment Number |
+| `Floor` |  | |  | `floor` | `CHAR(10)` | Floor in Building |
+| `FunctionalTitlename` |  | |  | `function` | `CHAR(40)` | Function |
+| `Department` |  | |  | `department` | `CHAR(40)` | Department |
+| `CommunicationMediumType` |  | |  | `deflt_comm` | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
+| `PersonNumber` |  | |  | `persnumber` | `CHAR(10)` | Person Number |
+| `AddressPersonID` |  | |  | `persnumber` | `CHAR(10)` | Person Number |
+| `IsBusinessPurposeCompleted` |  | |  | `xpcpt` | `CHAR(1)` | Business Purpose Completed Flag |
+| `AuthorizationGroup` |  | |  | `augrp` | `CHAR(4)` | Authorization Group |
 | `_DestinationLocationCountry` | | ✓ | | | | |
 | `_MblPhoneDestinationLocCountry` | | ✓ | | | | |
 | `_FaxNumberCountry` | | ✓ | | | | |

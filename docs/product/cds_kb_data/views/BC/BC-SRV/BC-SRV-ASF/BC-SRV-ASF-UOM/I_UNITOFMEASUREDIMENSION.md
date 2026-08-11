@@ -31,17 +31,17 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UnitOfMeasureDimension` | ✓ | |  | `dimid` |  |  |
-| `LengthExponent` |  | |  | `leng` |  |  |
-| `MassExponent` |  | |  | `mass` |  |  |
-| `TimeExponent` |  | |  | `timex` |  |  |
-| `ElectricCurrentExponent` |  | |  | `ecurr` |  |  |
-| `TemperatureExponent` |  | |  | `temp` |  |  |
-| `MoleQuantityExponent` |  | |  | `molqu` |  |  |
-| `LuminosityExponent` |  | |  | `light` |  |  |
-| `UnitOFMeasureSiUnit` |  | |  | `mssie` |  |  |
-| `HasUnitsWithTemperatureSpec` |  | |  | `temp_dep` |  |  |
-| `HasUnitsWithPressureSpec` |  | |  | `press_dep` |  |  |
+| `UnitOfMeasureDimension` | ✓ | |  | `dimid` | `CHAR(6)` | Dimension |
+| `LengthExponent` |  | |  | `leng` | `INT2(5)` | Length Exponent |
+| `MassExponent` |  | |  | `mass` | `INT2(5)` | Mass Exponent |
+| `TimeExponent` |  | |  | `timex` | `INT2(5)` | Current exponent |
+| `ElectricCurrentExponent` |  | |  | `ecurr` | `INT2(5)` | Electric Current Exponent |
+| `TemperatureExponent` |  | |  | `temp` | `INT2(5)` | Temperature Exponent |
+| `MoleQuantityExponent` |  | |  | `molqu` | `INT2(5)` | Mole Quantity Exponent |
+| `LuminosityExponent` |  | |  | `light` | `INT2(5)` | Luminosity Exponent |
+| `UnitOFMeasureSiUnit` |  | |  | `mssie` | `UNIT(3)` | SI Unit |
+| `HasUnitsWithTemperatureSpec` |  | |  | `temp_dep` | `CHAR(1)` | Indicator: Dimension has Unit with Temperature Specification |
+| `HasUnitsWithPressureSpec` |  | |  | `press_dep` | `CHAR(1)` | Indicator: Dimension has Units with Pressure Specification |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

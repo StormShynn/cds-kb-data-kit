@@ -31,11 +31,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Currency` | ✓ | |  | `waers` |  |  |
-| `Decimals` |  | |  | `cast(COALESCE(tcurx.currdec, 2) as currdec_cds)` |  |  |
-| `CurrencyISOCode` |  | |  | `cast(tcurc.isocd as isocd_cds)` |  |  |
-| `AlternativeCurrencyKey` |  | |  | `cast(tcurc.altwr as altwr_cds)` |  |  |
-| `IsPrimaryCurrencyForISOCrcy` |  | |  | `xprimary` |  |  |
+| `Currency` | ✓ | |  | `waers` | `CUKY(5)` | Currency Key |
+| `Decimals` |  | |  | `cast(COALESCE(tcurx.currdec, 2) as currdec_cds)` | `INT1(3)` | Number of decimal places |
+| `CurrencyISOCode` |  | |  | `cast(tcurc.isocd as isocd_cds)` | `CHAR(3)` | ISO Currency Code |
+| `AlternativeCurrencyKey` |  | |  | `cast(tcurc.altwr as altwr_cds)` | `CHAR(3)` | Alternative Key |
+| `IsPrimaryCurrencyForISOCrcy` |  | |  | `xprimary` | `CHAR(1)` | Primary SAP Currency Code for ISO Code |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

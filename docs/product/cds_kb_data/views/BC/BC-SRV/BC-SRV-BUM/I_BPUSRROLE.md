@@ -30,11 +30,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |  |  |
-| `BusinessPartnerRole` | ✓ | |  |  |  |  |
-| `BusinessPartnerRoleCategory` |  | |  |  |  |  |
-| `ValidFrom` |  | |  |  |  |  |
-| `ValidTo` |  | |  |  |  |  |
+| `BusinessPartner` | ✓ | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerRole` | ✓ | |  |  | `CHAR(6)` | BP Role |
+| `BusinessPartnerRoleCategory` |  | |  |  | `CHAR(6)` | BP Role Category |
+| `ValidFrom` |  | |  |  | `DEC(15)` | Validity Start of a BP Role |
+| `ValidTo` |  | |  |  | `DEC(15)` | Validity End of a BP Role |
 | `_BusinessUser` | | ✓ | | | | |
 | `_BusinessUserBasic` | | ✓ | | | | |
 

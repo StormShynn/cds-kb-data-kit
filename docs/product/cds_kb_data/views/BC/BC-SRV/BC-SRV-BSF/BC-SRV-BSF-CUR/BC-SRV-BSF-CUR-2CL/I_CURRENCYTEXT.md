@@ -33,10 +33,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `Currency` | ✓ | |  | `waers` |  |  |
-| `CurrencyName` |  | |  | `cast(ltext as ltext_cds preserving type)` |  |  |
-| `CurrencyShortName` |  | |  | `ktext` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `Currency` | ✓ | |  | `waers` | `CUKY(5)` | Currency Key |
+| `CurrencyName` |  | |  | `cast(ltext as ltext_cds preserving type)` | `CHAR(40)` | Description |
+| `CurrencyShortName` |  | |  | `ktext` | `CHAR(15)` | Short Text |
 | `_Currency` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

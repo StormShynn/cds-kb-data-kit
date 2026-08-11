@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `UnitOfMeasureDimension` | ✓ | |  | `dimid` |  |  |
-| `UnitOfMeasureDimensionName` |  | |  | `txdim` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `UnitOfMeasureDimension` | ✓ | |  | `dimid` | `CHAR(6)` | Dimension |
+| `UnitOfMeasureDimensionName` |  | |  | `txdim` | `CHAR(20)` | Dimension Text |
 | `_UnitOfMeasureDimension` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

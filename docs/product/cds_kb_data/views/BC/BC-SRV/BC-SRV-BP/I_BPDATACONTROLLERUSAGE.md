@@ -30,14 +30,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |  |  |
-| `DataControllerName` | ✓ | |  | `data_ctrlr` |  |  |
-| `BPDataPurposeText` | ✓ | |  | `purpose` |  |  |
-| `DataControlAssignmentStatus` |  | |  | `asgmt_status` |  |  |
-| `BPDataControllerIsDerived` |  | |  | `data_ctrlr_derived` |  |  |
-| `PurposeDerived` |  | |  | `pur_derived` |  |  |
-| `PurposeType` |  | |  | `purpose_type` |  |  |
-| `BusinessPurposeFlag` |  | |  | `eop_flag` |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` | `CHAR(10)` | Business Partner Number |
+| `DataControllerName` | ✓ | |  | `data_ctrlr` | `CHAR(30)` | BP: Data Controller |
+| `BPDataPurposeText` | ✓ | |  | `purpose` | `CHAR(30)` | BP: Purpose |
+| `DataControlAssignmentStatus` |  | |  | `asgmt_status` | `CHAR(1)` | BP: Data Controller Purpose Assignment Status |
+| `BPDataControllerIsDerived` |  | |  | `data_ctrlr_derived` | `CHAR(1)` | BP: Derivation Indicator for Data Controller (DC) |
+| `PurposeDerived` |  | |  | `pur_derived` | `CHAR(1)` | BP: Derivation Indicator for Purpose |
+| `PurposeType` |  | |  | `purpose_type` | `CHAR(1)` | BP: Purpose Type |
+| `BusinessPurposeFlag` |  | |  | `eop_flag` | `CHAR(1)` | Business Purpose Completed Flag |
 
 ## Source Code
 

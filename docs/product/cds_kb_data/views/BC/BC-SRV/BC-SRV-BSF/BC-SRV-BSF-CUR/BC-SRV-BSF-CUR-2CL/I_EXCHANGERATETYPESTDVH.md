@@ -33,7 +33,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ExchangeRateType` | ✓ | |  |  |  |  |
+| `ExchangeRateType` | ✓ | |  |  | `CHAR(4)` | Exchange Rate Type |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

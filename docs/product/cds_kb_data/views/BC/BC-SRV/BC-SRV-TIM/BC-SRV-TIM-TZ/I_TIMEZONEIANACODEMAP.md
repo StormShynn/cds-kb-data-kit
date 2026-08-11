@@ -30,10 +30,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TimeZoneIANACode` | ✓ | |  | `ianatzone` |  |  |
-| `TimeZoneID` |  | |  | `tzone` |  |  |
-| `IANACodeIsCustDefinedDefault` |  | |  | `flagdefault` |  |  |
-| `IANACodeIsSAPDefinedDefault` |  | |  | `flagsapdefault` |  |  |
+| `TimeZoneIANACode` | ✓ | |  | `ianatzone` | `CHAR(64)` | IANA time zone |
+| `TimeZoneID` |  | |  | `tzone` | `CHAR(6)` | Time Zone |
+| `IANACodeIsCustDefinedDefault` |  | |  | `flagdefault` | `CHAR(1)` | Default IANA time zone for SAP time zone |
+| `IANACodeIsSAPDefinedDefault` |  | |  | `flagsapdefault` | `CHAR(1)` | SAP standard default IANA time zone for SAP time zone |
 | `_TimeZone` | | ✓ | | | | |
 
 ## Associations

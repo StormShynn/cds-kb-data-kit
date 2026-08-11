@@ -30,10 +30,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TimeZoneID` | ✓ | |  | `tzone` |  |  |
-| `TimeZoneRule` |  | |  | `zonerule` |  |  |
-| `DaylightSavingRule` |  | |  | `dstrule` |  |  |
-| `TimeZoneIsActive` |  | |  | `flagactive` |  |  |
+| `TimeZoneID` | ✓ | |  | `tzone` | `CHAR(6)` | Time Zone |
+| `TimeZoneRule` |  | |  | `zonerule` | `CHAR(6)` | Time Zone Rule |
+| `DaylightSavingRule` |  | |  | `dstrule` | `CHAR(6)` | Daylight Saving Time Rule |
+| `TimeZoneIsActive` |  | |  | `flagactive` | `CHAR(1)` | Time zones active |
 | `_TimeZoneText` | | ✓ | | | | |
 | `_TimeZoneRule` | | ✓ | | | | |
 | `_DaylightSavingRule` | | ✓ | | | | |

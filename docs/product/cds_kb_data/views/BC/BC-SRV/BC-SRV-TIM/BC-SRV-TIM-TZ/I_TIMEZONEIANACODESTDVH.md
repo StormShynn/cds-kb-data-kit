@@ -32,8 +32,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TimeZoneIANACode` | ✓ | |  |  |  |  |
-| `TimeZoneID` |  | |  |  |  |  |
+| `TimeZoneIANACode` | ✓ | |  |  | `CHAR(64)` | IANA time zone |
+| `TimeZoneID` |  | |  |  | `CHAR(6)` | Time Zone |
 | `_TimeZoneText` | | ✓ | | | | |
 
 ## Associations
