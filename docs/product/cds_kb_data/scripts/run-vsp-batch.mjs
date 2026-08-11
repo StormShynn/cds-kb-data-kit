@@ -123,7 +123,7 @@ async function fetchBatch(names, systemName) {
   await fs.mkdir(tmpDir, { recursive: true });
 
   let fetched = 0;
-  let consecutiveFailures = 0;
+  let consecutiveSessionFailures = 0;
   const skipped = [];
 
   for (const name of names) {
@@ -134,25 +134,39 @@ async function fetchBatch(names, systemName) {
     // DDL — exit-code-and-non-empty-stdout alone can't tell the difference,
     // which is exactly how 799 views got HTML written into them as if it
     // were real DDL on 2026-08-10. Treating a not-DDL-looking response as a
-    // failure here means it counts toward consecutiveFailures like a real
-    // error, so this detection actually trips instead of silently
-    // "succeeding" through the whole candidate list.
+    // failure here means it counts toward consecutiveSessionFailures like a
+    // real session error, so this detection actually trips instead of
+    // silently "succeeding" through the whole candidate list.
+    const looksLikeLoginPage = result.status === 0 && ddl && !looksLikeAbapDdl(ddl);
     if (result.status === 0 && ddl && looksLikeAbapDdl(ddl)) {
       await fs.writeFile(path.join(tmpDir, `${name}.ddl`), ddl, 'utf-8');
       fetched++;
-      consecutiveFailures = 0;
+      consecutiveSessionFailures = 0;
       console.log(`   OK   ${name} (${ddl.length} chars)`);
     } else {
-      consecutiveFailures++;
-      const reason = result.status === 0 && ddl && !looksLikeAbapDdl(ddl)
+      const stderrLine = ((result.stderr || '').split('\n').find(l => l.includes('Error:')) || 'unknown error').trim();
+      // A real ADT "ResourceNotFound"/404 means the Hub catalog listed a view
+      // that simply isn't deployed in this tenant/release — expected and
+      // common, not a sign anything is wrong with the session. Only an
+      // actual login-page response (or an explicit 401/403) means the cookie
+      // died, so only those should count toward the early-stop heuristic;
+      // otherwise a run of ordinary "not found in this tenant" candidates
+      // (as seen 2026-08-11 with I_ASSETDEPRECIATIONPHASE and friends) trips
+      // the same abort meant for a dead session and stops the whole batch
+      // after only 5 legitimately-skipped names.
+      const isAuthFailure = looksLikeLoginPage || /\b(401|403)\b|unauthorized|forbidden/i.test(stderrLine);
+      const reason = looksLikeLoginPage
         ? 'response doesn\'t look like DDL (starts with \'<\' or has no "define" keyword) — likely a login page, session cookie probably expired'
-        : ((result.stderr || '').split('\n').find(l => l.includes('Error:')) || 'unknown error').trim();
+        : stderrLine;
       skipped.push({ name, reason });
       console.log(`   SKIP ${name} — ${reason}`);
-      if (consecutiveFailures >= MAX_CONSECUTIVE_FAILURES) {
-        console.log(`\n${consecutiveFailures} lỗi liên tiếp — session cookie có thể đã hết hạn. Dừng batch sớm.`);
-        console.log('Export cookie mới từ browser (đăng nhập lại SAP tenant) rồi ghi vào tools/vsp/cookies.txt.');
-        break;
+      if (isAuthFailure) {
+        consecutiveSessionFailures++;
+        if (consecutiveSessionFailures >= MAX_CONSECUTIVE_FAILURES) {
+          console.log(`\n${consecutiveSessionFailures} lỗi liên tiếp kiểu session/login — cookie có thể đã hết hạn. Dừng batch sớm.`);
+          console.log('Export cookie mới từ browser (đăng nhập lại SAP tenant) rồi ghi vào tools/vsp/cookies.txt.');
+          break;
+        }
       }
     }
   }
