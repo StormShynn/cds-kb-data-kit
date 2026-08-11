@@ -49,10 +49,28 @@ Node.js, just to see the request shape and caching strategy.
 |---|---|---|
 | `index/version.json` | `{schemaVersion, commit, builtAt, viewCount, enrichedCount}` | Cheap poll (~200 bytes) — compare `commit` to the last one you saw before fetching anything bigger |
 | `index/view-paths.json` | `{ "NAME": "views/<MODULE>/.../NAME.md", ... }` | Look up a view's real file path by name |
-| `index/taxonomy.json` | LoB → Business Object → keyword map | Business-domain categorization; plain JSON, language-agnostic |
+| `index/taxonomy.json` | LoB → Business Object → keyword map, plus `viKeywords` (per lob/bo tag) and `viModuleKeywords` (per module code) Vietnamese synonyms | Business-domain categorization; plain JSON, language-agnostic — the Vietnamese maps are what make "đơn mua hàng" find purchase-order views |
 | `index/search_index.json` | Serialized [MiniSearch](https://github.com/lucaong/minisearch) index | **Only useful from Node.js with the `minisearch` package.** In any other stack, use `index/search.db` instead (see §4) |
 | `index/search.db` | SQLite FTS5 database (built by `scripts/build-sqlite-index.mjs`) | Plain SQL, any language with an SQLite driver — no MiniSearch dependency. See §4 |
 | `views/<MODULE>/.../<NAME>.md` | YAML frontmatter + Markdown body | The actual view: name, description, tags, app_component, release_state, fields, associations, and DDL source when available. Nested one folder per app_component segment — depth varies per view, always resolve via view-paths.json |
+
+> **Vietnamese search needs an accent-stripping `processTerm`.**
+> `search_index.json` is built with normalized (diacritic-stripped) terms, so
+> "đơn mua hàng", "don mua hang" and "đơn mua hang" all match the same
+> documents. `processTerm` is a function, so it is **not** serialized into the
+> index — every MiniSearch consumer must pass its own when loading:
+>
+> ```js
+> const RE = /[\u0300-\u036f]/g;
+> const mini = MiniSearch.loadJSON(data.minisearch, {
+>   ...data.options,
+>   processTerm: (t) => t.normalize('NFD').replace(/đ/gi, 'd').replace(RE, '').toLowerCase()
+> });
+> ```
+>
+> Without it, accented queries return no matches (the index only contains
+> stripped terms); unaccented queries still work. `search.html` embeds this
+> same copy — keep consumers in sync if it ever changes.
 
 ## 4. Not using Node.js / MiniSearch?
 
@@ -81,9 +99,10 @@ CREATE TABLE associations (
 );  -- declared association aliases and their target views
 ```
 
-Note: since schema v2 the file is ~26 MB (it now carries the fields and
-associations tables plus `source_url`, not just the FTS index) — budget
-accordingly if you re-download it on every refresh.
+Note: since schema v2 the file is ~26-27 MB (it carries the fields and
+associations tables plus `source_url`, not just the FTS index; Vietnamese
+module synonyms added per view grow it a little more with each taxonomy
+expansion) — budget accordingly if you re-download it on every refresh.
 
 Query it with plain SQL, from any language with an SQLite driver:
 

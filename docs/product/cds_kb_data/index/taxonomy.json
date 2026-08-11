@@ -12699,5 +12699,598 @@
     "workflow": [
       "Workflow"
     ]
+  },
+  "viKeywords": {
+    "lob:basis components": [
+      "hạ tầng",
+      "nền tảng",
+      "hệ thống",
+      "quản trị hệ thống",
+      "bảo mật",
+      "an toàn",
+      "người dùng",
+      "phân quyền",
+      "giám sát hệ thống"
+    ],
+    "lob:controlling": [
+      "kiểm soát",
+      "kế toán quản trị",
+      "chi phí",
+      "trung tâm chi phí",
+      "trung tâm lợi nhuận",
+      "phân bổ chi phí"
+    ],
+    "lob:cross_application components": [
+      "ứng dụng chéo",
+      "xuyên ứng dụng",
+      "nghiệp vụ chung",
+      "dữ liệu tổng hợp",
+      "phê duyệt",
+      "quy trình chung"
+    ],
+    "lob:finance": [
+      "tài chính",
+      "kế toán",
+      "kế toán tài chính",
+      "báo cáo tài chính",
+      "thuế",
+      "công nợ",
+      "bút toán",
+      "sổ cái"
+    ],
+    "lob:logistics execution": [
+      "hậu cần",
+      "giao nhận",
+      "kho vận",
+      "vận chuyển",
+      "giao hàng",
+      "vận đơn",
+      "cước phí",
+      "bốc dỡ"
+    ],
+    "lob:logistics general": [
+      "logistics",
+      "vật tư",
+      "hàng hóa",
+      "kho",
+      "đơn vị đo"
+    ],
+    "lob:manufacturing": [
+      "sản xuất",
+      "chế tạo",
+      "điều hành sản xuất",
+      "hoạch định sản xuất",
+      "lệnh sản xuất",
+      "năng lực sản xuất"
+    ],
+    "lob:other": [
+      "khác"
+    ],
+    "lob:plant maintenance": [
+      "bảo trì",
+      "bảo dưỡng",
+      "bảo trì nhà máy",
+      "thiết bị",
+      "lệnh bảo trì",
+      "sửa chữa"
+    ],
+    "lob:quality management": [
+      "quản lý chất lượng",
+      "chất lượng",
+      "kiểm tra",
+      "kiểm định",
+      "chứng nhận"
+    ],
+    "lob:sales & distribution": [
+      "bán hàng",
+      "phân phối",
+      "khách hàng",
+      "chào giá",
+      "chiết khấu"
+    ],
+    "lob:sourcing & procurement": [
+      "mua sắm",
+      "mua hàng",
+      "thu mua",
+      "đặt hàng",
+      "nhà cung cấp",
+      "hợp đồng mua"
+    ],
+    "bo:asset": [
+      "tài sản cố định",
+      "tài sản",
+      "khấu hao"
+    ],
+    "bo:bank": [
+      "ngân hàng",
+      "tài khoản ngân hàng"
+    ],
+    "bo:billingdocument": [
+      "hóa đơn",
+      "chứng từ thanh toán"
+    ],
+    "bo:businesspartner": [
+      "đối tác kinh doanh",
+      "đối tác"
+    ],
+    "bo:companycode": [
+      "mã công ty",
+      "công ty"
+    ],
+    "bo:costcenter": [
+      "trung tâm chi phí",
+      "chi phí",
+      "phân bổ"
+    ],
+    "bo:customer": [
+      "khách hàng"
+    ],
+    "bo:deliverydocument": [
+      "chứng từ giao hàng",
+      "giao hàng",
+      "xuất hàng",
+      "lệnh giao hàng"
+    ],
+    "bo:inventory": [
+      "tồn kho",
+      "hàng tồn kho",
+      "kho"
+    ],
+    "bo:journalentry": [
+      "bút toán",
+      "chứng từ kế toán",
+      "sổ cái"
+    ],
+    "bo:maintenanceorder": [
+      "lệnh bảo trì",
+      "lệnh bảo dưỡng",
+      "công việc bảo trì"
+    ],
+    "bo:material": [
+      "vật liệu",
+      "vật tư",
+      "hàng hóa",
+      "nguyên vật liệu",
+      "sản phẩm"
+    ],
+    "bo:plant": [
+      "nhà máy",
+      "phân xưởng",
+      "xí nghiệp"
+    ],
+    "bo:pricingcondition": [
+      "điều kiện giá",
+      "điều kiện định giá"
+    ],
+    "bo:productionorder": [
+      "lệnh sản xuất",
+      "đơn sản xuất"
+    ],
+    "bo:profitcenter": [
+      "trung tâm lợi nhuận",
+      "lợi nhuận"
+    ],
+    "bo:project": [
+      "dự án",
+      "tiến độ dự án",
+      "hạng mục"
+    ],
+    "bo:purchaseorder": [
+      "đơn mua hàng",
+      "đơn đặt hàng",
+      "mua hàng",
+      "đặt mua",
+      "yêu cầu mua hàng"
+    ],
+    "bo:purchasingorganization": [
+      "tổ chức mua hàng",
+      "tổ chức mua sắm"
+    ],
+    "bo:salesorder": [
+      "đơn bán hàng",
+      "đơn hàng bán",
+      "lệnh bán hàng"
+    ],
+    "bo:salesorganization": [
+      "tổ chức bán hàng",
+      "tổ chức phân phối"
+    ],
+    "bo:supplier": [
+      "nhà cung cấp",
+      "nhà thầu"
+    ],
+    "bo:wbs": [
+      "công việc",
+      "cấu trúc phân rã công việc"
+    ]
+  },
+  "viModuleKeywords": {
+    "fi": [
+      "kế toán tài chính",
+      "sổ cái",
+      "bút toán",
+      "chứng từ kế toán",
+      "tài khoản",
+      "phải thu",
+      "phải trả",
+      "công nợ",
+      "thuế",
+      "khấu hao",
+      "tài sản cố định",
+      "ngân hàng",
+      "quyết toán",
+      "đối chiếu tài khoản",
+      "báo cáo tài chính",
+      "số dư tài khoản",
+      "hóa đơn thuế"
+    ],
+    "fin": [
+      "tài chính",
+      "dòng tiền",
+      "thanh khoản",
+      "quản lý tiền",
+      "ngân quỹ",
+      "hợp nhất tài chính",
+      "phân tích tài chính",
+      "công cụ tài chính",
+      "quản lý rủi ro",
+      "cho vay",
+      "tiền gửi",
+      "lãi suất",
+      "giao dịch tài chính",
+      "khoản đầu tư"
+    ],
+    "lo": [
+      "vật tư",
+      "hàng hóa",
+      "logistics",
+      "đơn vị đo",
+      "số sê-ri",
+      "lô hàng",
+      "phân loại",
+      "đặc tính",
+      "quản lý vật liệu",
+      "đối tác kinh doanh",
+      "tồn kho"
+    ],
+    "sd": [
+      "bán hàng",
+      "đơn bán hàng",
+      "khách hàng",
+      "giao hàng",
+      "chào giá",
+      "báo giá",
+      "hợp đồng bán hàng",
+      "tổ chức bán hàng",
+      "kênh phân phối",
+      "phân chia",
+      "vận đơn",
+      "hóa đơn bán hàng",
+      "điều kiện bán hàng",
+      "lịch giao hàng",
+      "dự báo bán hàng",
+      "chiết khấu"
+    ],
+    "ca": [
+      "ứng dụng chéo",
+      "kiểm tra khả năng cung cấp",
+      "khả năng cung cấp",
+      "tính khả dụng",
+      "số lượng khả dụng",
+      "xác nhận đơn hàng",
+      "phân bổ tồn kho",
+      "dữ liệu tổng hợp",
+      "nhiệm vụ",
+      "phê duyệt",
+      "văn bản",
+      "đính kèm"
+    ],
+    "mm": [
+      "quản lý vật tư",
+      "mua hàng",
+      "nhà cung cấp",
+      "vật tư",
+      "tồn kho",
+      "hàng tồn kho",
+      "kiểm kê",
+      "nhập kho",
+      "xuất kho",
+      "chuyển kho",
+      "hóa đơn nhà cung cấp",
+      "yêu cầu mua hàng",
+      "hợp đồng mua hàng",
+      "định giá vật tư",
+      "giá mua",
+      "nhóm vật tư",
+      "tổ chức mua hàng",
+      "kho"
+    ],
+    "pp": [
+      "hoạch định sản xuất",
+      "sản xuất",
+      "lệnh sản xuất",
+      "đơn sản xuất",
+      "nhu cầu vật tư",
+      "hoạch định nhu cầu",
+      "định mức",
+      "năng lực sản xuất",
+      "phân xưởng",
+      "dây chuyền sản xuất",
+      "kiểm soát sản xuất",
+      "tiến độ sản xuất",
+      "lô sản xuất",
+      "quy trình sản xuất",
+      "lịch trình sản xuất"
+    ],
+    "fs": [
+      "dịch vụ tài chính",
+      "đối tác kinh doanh tài chính",
+      "thu hồi nợ",
+      "quản lý thu hồi",
+      "thanh toán",
+      "khoản phải thu",
+      "sản phẩm tài chính",
+      "khách hàng tài chính",
+      "bảng cân đối",
+      "bảo hiểm"
+    ],
+    "crm": [
+      "quản lý quan hệ khách hàng",
+      "khách hàng",
+      "cơ hội bán hàng",
+      "chiến dịch bán hàng",
+      "dịch vụ khách hàng",
+      "hợp đồng dịch vụ",
+      "khiếu nại",
+      "chăm sóc khách hàng",
+      "đối tượng khách hàng",
+      "phân khúc khách hàng"
+    ],
+    "tm": [
+      "quản lý vận tải",
+      "vận tải",
+      "vận chuyển",
+      "lệnh vận tải",
+      "tuyến đường",
+      "phương tiện vận tải",
+      "đơn vị vận tải",
+      "cước phí",
+      "giao nhận",
+      "hàng hóa vận tải",
+      "kế hoạch vận tải",
+      "theo dõi vận tải"
+    ],
+    "pm": [
+      "bảo trì nhà máy",
+      "bảo trì",
+      "bảo dưỡng",
+      "thiết bị",
+      "máy móc",
+      "lệnh bảo trì",
+      "lịch bảo trì",
+      "sửa chữa",
+      "vị trí kỹ thuật",
+      "công việc bảo trì",
+      "kế hoạch bảo trì",
+      "chi phí bảo trì"
+    ],
+    "is": [
+      "giải pháp ngành",
+      "ngành dầu khí",
+      "liên doanh",
+      "hệ thống đo lường",
+      "sản phẩm dầu khí",
+      "hạch toán liên doanh",
+      "phân phối dầu khí"
+    ],
+    "bc": [
+      "thành phần nền tảng",
+      "hệ thống",
+      "người dùng",
+      "phân quyền",
+      "bảo mật",
+      "quản trị hệ thống",
+      "giám sát hệ thống",
+      "nhật ký hệ thống",
+      "cấu hình hệ thống",
+      "dịch vụ nền tảng"
+    ],
+    "qm": [
+      "quản lý chất lượng",
+      "chất lượng",
+      "kiểm tra",
+      "kiểm soát chất lượng",
+      "thông báo chất lượng",
+      "chứng nhận",
+      "kiểm định",
+      "mẫu kiểm tra",
+      "khiếm khuyết",
+      "kiểm tra chất lượng"
+    ],
+    "ehs": [
+      "môi trường",
+      "sức khỏe",
+      "an toàn lao động",
+      "chất nguy hại",
+      "hóa chất",
+      "an toàn",
+      "dữ liệu an toàn"
+    ],
+    "re": [
+      "bất động sản",
+      "cho thuê",
+      "hợp đồng thuê",
+      "tòa nhà",
+      "mặt bằng",
+      "chủ nhà",
+      "tiền thuê",
+      "đối tượng thuê",
+      "hợp đồng bất động sản",
+      "chi phí thuê"
+    ],
+    "co": [
+      "kế toán quản trị",
+      "kiểm soát",
+      "chi phí",
+      "trung tâm chi phí",
+      "trung tâm lợi nhuận",
+      "phân bổ chi phí",
+      "tính giá thành",
+      "yếu tố chi phí",
+      "đơn hàng nội bộ",
+      "ngân sách",
+      "quỹ",
+      "báo cáo nội bộ"
+    ],
+    "psm": [
+      "quản lý khu vực công",
+      "ngân sách nhà nước",
+      "chi tiêu công",
+      "quản lý quỹ",
+      "tài trợ",
+      "ngân sách",
+      "hạch toán ngân sách",
+      "khoản tài trợ",
+      "kiểm soát ngân sách"
+    ],
+    "le": [
+      "thực thi logistics",
+      "giao hàng",
+      "vận chuyển",
+      "vận tải",
+      "kho",
+      "nhận hàng",
+      "xuất hàng",
+      "vận đơn",
+      "cước phí",
+      "bốc dỡ hàng",
+      "giao nhận hàng hóa"
+    ],
+    "ppm": [
+      "quản lý danh mục dự án",
+      "danh mục dự án",
+      "hóa đơn dự án",
+      "lập hóa đơn dự án",
+      "dự án",
+      "chương trình",
+      "nguồn lực dự án",
+      "thanh toán tạm ứng dự án"
+    ],
+    "scm": [
+      "quản lý chuỗi cung ứng",
+      "chuỗi cung ứng",
+      "dự báo nhu cầu",
+      "hoạch định cung ứng",
+      "quản lý kho",
+      "kho nâng cao",
+      "phân phối",
+      "sản xuất tinh gọn",
+      "đơn hàng cung ứng"
+    ],
+    "cm": [
+      "quản lý tuân thủ",
+      "tuân thủ",
+      "bối cảnh pháp lý",
+      "hạng mục pháp lý",
+      "quy định pháp lý",
+      "kiểm soát tuân thủ"
+    ],
+    "slc": [
+      "vòng đời nhà cung cấp",
+      "nhà cung cấp",
+      "đánh giá nhà cung cấp",
+      "hoạt động nhà cung cấp",
+      "trạng thái vòng đời",
+      "quản lý nhà cung cấp",
+      "phân loại nhà cung cấp"
+    ],
+    "ap": [
+      "đối tác kinh doanh",
+      "dữ liệu chính đối tác",
+      "địa chỉ",
+      "thông tin liên hệ",
+      "email",
+      "số điện thoại",
+      "dữ liệu chủ đối tác"
+    ],
+    "plm": [
+      "quản lý vòng đời sản phẩm",
+      "vòng đời sản phẩm",
+      "thay đổi kỹ thuật",
+      "quản lý thay đổi",
+      "hồ sơ sản phẩm",
+      "số hiệu thay đổi",
+      "phê duyệt thay đổi"
+    ],
+    "sus": [
+      "bền vững",
+      "phát thải",
+      "dấu chân carbon",
+      "carbon",
+      "báo cáo bền vững",
+      "sản phẩm bền vững",
+      "dữ liệu bền vững"
+    ],
+    "ac": [
+      "điều chỉnh sổ cái",
+      "bút toán điều chỉnh",
+      "bút toán",
+      "sổ cái",
+      "chứng từ kế toán",
+      "phân tích tài chính"
+    ],
+    "ft": [
+      "ngoại thương",
+      "hải quan",
+      "mã hàng hóa",
+      "mã thuế nhập khẩu",
+      "khai báo hải quan",
+      "kiểm tra hải quan",
+      "hàng xuất nhập khẩu"
+    ],
+    "mob": [
+      "di động",
+      "ứng dụng di động",
+      "thiết bị di động",
+      "thông báo đẩy",
+      "phiên truy cập di động",
+      "trạng thái đối tượng di động"
+    ],
+    "ec": [
+      "kế toán trung tâm lợi nhuận",
+      "trung tâm lợi nhuận",
+      "phân tích lợi nhuận",
+      "phân bổ lợi nhuận",
+      "hạch toán nội bộ"
+    ],
+    "ps": [
+      "hệ thống dự án",
+      "dự án",
+      "hạng mục công việc",
+      "mạng lưới công việc",
+      "nguồn lực",
+      "tiến độ dự án",
+      "kiểm soát dự án"
+    ],
+    "bns": [
+      "quản lý chi phí công tác",
+      "chi phí đi lại",
+      "hóa đơn công tác",
+      "chứng từ chi phí",
+      "quản lý chi phí",
+      "đặt vé",
+      "khách sạn"
+    ],
+    "bw": [
+      "kho dữ liệu",
+      "báo cáo dữ liệu",
+      "trích xuất dữ liệu",
+      "phân tích dữ liệu"
+    ],
+    "lod": [
+      "thông báo ngân hàng",
+      "tin nhắn ngân hàng",
+      "giao dịch ngân hàng"
+    ]
   }
 }

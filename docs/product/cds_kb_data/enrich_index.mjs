@@ -64,8 +64,45 @@ if (!options.storeFields.includes('referencedByCount')) options.storeFields.push
 let taxonomy = null;
 try {
   taxonomy = JSON.parse(await fs.readFile(path.join(dataRoot, 'index', 'taxonomy.json'), 'utf-8'));
-  console.log('Loaded taxonomy with', Object.keys(taxonomy.tagToKeywords || {}).length, 'tag→keyword maps.');
+  console.log('Loaded taxonomy with', Object.keys(taxonomy.tagToKeywords || {}).length, 'tag→keyword maps,', Object.keys(taxonomy.viKeywords || {}).length, 'viKeywords and', Object.keys(taxonomy.viModuleKeywords || {}).length, 'viModuleKeywords maps.');
 } catch { console.log('No taxonomy.json found, skipping taxonomy synonyms.'); }
+// Vietnamese business-term synonyms (taxonomy.json's viKeywords section, keyed
+// by the same lowercase lob:/bo: tags as tagToKeywords) — merged into every
+// view's `synonyms` so a Vietnamese query like "đơn mua hàng" finds the
+// purchase-order views. Accent-insensitive matching (don mua hang ==
+// đơn mua hàng) is handled separately by options.processTerm below.
+const viKw = taxonomy?.viKeywords || {};
+// Module-level Vietnamese terms (taxonomy.json's viModuleKeywords section,
+// keyed by the lowercase module code from app_component, e.g. mm/sd/fi) —
+// merged into every view whose module matches, so a Vietnamese query like
+// "hoạch định sản xuất" finds the PP views even when their bo/lob tags
+// carry no Vietnamese vocabulary. Covers modules whose views are thin on
+// lob/bo Vietnamese coverage (CA, FS, PSM, MOB, ...) and adds module-domain
+// vocabulary on top of the lob/bo terms.
+const viMod = taxonomy?.viModuleKeywords || {};
+
+// Vietnamese is accent-insensitive: "don mua hang", "đơn mua hàng" and
+// "đơn mua hang" must all match the same views. Terms are normalized (NFD
+// decomposition + strip combining marks + đ→d + lowercase) BOTH here at
+// index time and at query time in search.html (generate-search-page.mjs
+// embeds the same function) — the stored index terms are already
+// normalized, so a query processed the same way matches. Also used for the
+// accent-insensitive keys in index/suggestions.json (autocomplete), so it
+// has to live above the view-scanning loop below (const = temporal dead
+// zone until this line runs).
+//
+// NOTE: processTerm is a function and is therefore NOT serialized into
+// search_index.json's `options` — MiniSearch's toJSON keeps the normalized
+// terms, and each consumer must pass its own processTerm when loading.
+// Keep the two copies (here and generate-search-page.mjs) in sync.
+const VIETNAMESE_DIACRITIC_RE = /[\u0300-\u036f]/g;
+function normalizeTerm(term) {
+  return term
+    .normalize('NFD')
+    .replace(/\u0111/gi, 'd') // đ/Đ — a stroked letter, NFD can't decompose it
+    .replace(VIETNAMESE_DIACRITIC_RE, '') // á à ả ã ạ... -> a
+    .toLowerCase();
+}
 
 // usage-stats.json is written by scripts/pull-usage-stats.mjs, which is a
 // no-op until CDS_KB_USAGE_ENDPOINT is configured — so every view's
@@ -88,6 +125,16 @@ const fieldIndex = {}; // FIELD_NAME (uppercase) -> [{ view, isKey, appComponent
 const tableIndex = {}; // TABLE/VIEW NAME (uppercase) -> [{ view, relation: 'source'|'association', alias, appComponent, lob, bo, releaseState, isAbstract, isMasterData, usageCount, referencedByCount }]
 const rawFieldIndex = {}; // RAW DDIC COLUMN NAME (uppercase) -> [{ view, field: <semantic name>, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData, usageCount, referencedByCount }]
 let enriched = 0, withLabel = 0, withBo = 0, synCount = 0;
+// Keyword-phrase frequency map for index/suggestions.json (search.html's
+// autocomplete): keyed by the accent-insensitive normalized form, counting
+// how many views carry each keyword. Collected from the same per-view `kw`
+// Set as `synonyms` (taxonomy tagToKeywords/viKeywords + frontmatter
+// keywords) BEFORE it's flattened into a space-joined string, so multi-word
+// phrases like "đơn mua hàng" survive as phrases here (in `synonyms` they
+// only exist as separate tokens). Keeps the original accented display form;
+// the precomputed normalized key means search.html never needs to re-derive
+// it (the two normalizeTerm copies stay limited to query-time matching).
+const suggestionCounts = new Map();
 
 // A CDS view almost always renames a raw DDIC column to a semantic name
 // ("vwerk as SupplyingPlant") — src/template.mjs's Fields table already
@@ -284,13 +331,33 @@ for (let i = 0; i < viewFiles.length; i++) {
   if (label) withLabel++;
   if (bo) withBo++;
 
-  // synonyms: taxonomy keywords for lob+bo + per-view frontmatter keywords
+  // synonyms: taxonomy keywords (EN) + Vietnamese keywords (viKeywords) for
+  // lob+bo, plus per-view frontmatter keywords (the LLM enrichment pipeline
+  // writes Vietnamese terms there).
   const kw = new Set();
   const t2k = taxonomy?.tagToKeywords || {};
   if (lob && t2k[`lob:${lob.toLowerCase()}`]) for (const k of t2k[`lob:${lob.toLowerCase()}`]) kw.add(k);
   if (bo && t2k[`bo:${bo.toLowerCase()}`]) for (const k of t2k[`bo:${bo.toLowerCase()}`]) kw.add(k);
+  if (lob && viKw[`lob:${lob.toLowerCase()}`]) for (const k of viKw[`lob:${lob.toLowerCase()}`]) kw.add(k);
+  if (bo && viKw[`bo:${bo.toLowerCase()}`]) for (const k of viKw[`bo:${bo.toLowerCase()}`]) kw.add(k);
+  if (module && viMod[module.toLowerCase()]) for (const k of viMod[module.toLowerCase()]) kw.add(k);
   for (const k of listBlock(fm, 'keywords')) kw.add(k);
   if (kw.size) synCount++;
+  for (const k of kw) {
+    if (typeof k !== 'string' || !k.trim()) continue;
+    const phrase = k.trim();
+    const key = normalizeTerm(phrase);
+    if (key.length < 2) continue;
+    const cur = suggestionCounts.get(key);
+    if (cur) {
+      cur.n++;
+      // Prefer an accented display form (đơn mua hàng over don mua hang) —
+      // same normalized key, but the diacritics are what you want shown.
+      if (!/[à-ỹ]/i.test(cur.t) && /[à-ỹ]/i.test(phrase)) cur.t = phrase;
+    } else {
+      suggestionCounts.set(key, { t: phrase, n: 1 });
+    }
+  }
 
   docs.push({
     id: i,
@@ -336,8 +403,10 @@ attachReferencedByCount(rawFieldIndex);
 for (const doc of docs) doc.referencedByCount = referencedByCount[doc.name] || 0;
 
 // ── Build MiniSearch index ─────────────────────────────────────────────────
+// (normalizeTerm + VIETNAMESE_DIACRITIC_RE are defined above, before the
+// view-scanning loop — the loop accumulates suggestionCounts with them.)
 const MiniSearch = (await import('minisearch')).default;
-const mini = new MiniSearch(options);
+const mini = new MiniSearch({ ...options, processTerm: normalizeTerm });
 mini.addAll(docs);
 
 const output = {
@@ -353,6 +422,23 @@ try { await fs.copyFile(indexFile, indexFile + '.bak'); } catch {}
 await fs.writeFile(indexFile, JSON.stringify(output), 'utf-8');
 const sizeKB = (Buffer.byteLength(JSON.stringify(output)) / 1024).toFixed(0);
 console.log(`\nWrote ${indexFile} (${sizeKB} KB) — viewCount=${docs.length}, enrichedCount=${enriched}`);
+
+// ── suggestions.json — keyword phrases for search.html's autocomplete ───────
+// Ranked by how many views share the phrase (frequency), capped so the
+// embedded copy in search.html stays small; search.html re-ranks by match
+// quality (prefix > word-prefix > contains) with frequency as tie-breaker.
+const MAX_SUGGESTIONS = 4000;
+const suggestionItems = [...suggestionCounts.entries()]
+  .map(([k, v]) => ({ t: v.t, n: v.n, k }))
+  .sort((a, b) => b.n - a.n || a.t.localeCompare(b.t))
+  .slice(0, MAX_SUGGESTIONS);
+const suggestionsFile = path.join(dataRoot, 'index', 'suggestions.json');
+await fs.writeFile(
+  suggestionsFile,
+  JSON.stringify({ builtAt: output.builtAt, itemCount: suggestionItems.length, items: suggestionItems }),
+  'utf-8',
+);
+console.log(`Wrote ${suggestionsFile} (${suggestionItems.length} of ${suggestionCounts.size} unique keyword phrases)`);
 
 // ── version manifest ───────────────────────────────────────────────────────
 function resolveCommit() {

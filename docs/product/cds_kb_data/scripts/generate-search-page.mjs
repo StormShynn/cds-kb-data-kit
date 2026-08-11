@@ -46,9 +46,27 @@ async function main() {
     'utf-8',
   );
 
-  const embeddedIndex = JSON.stringify(indexData).replace(/<\/script/gi, '<\\/script');
+  // Autocomplete dictionary — built by enrich_index.mjs into
+  // index/suggestions.json (curated keyword phrases, frequency-ranked,
+  // accent-insensitive keys). Embedded verbatim so the page stays
+  // self-contained offline under file://; missing file just disables the
+  // dropdown (search itself is unaffected).
+  let suggestions = [];
+  try {
+    const suggestionsFile = path.join(DATA_DIR, 'index', 'suggestions.json');
+    const suggestionsData = JSON.parse(await fs.readFile(suggestionsFile, 'utf-8'));
+    suggestions = suggestionsData.items || [];
+    console.log(`Loaded ${suggestions.length} autocomplete suggestions.`);
+  } catch {
+    console.log('No index/suggestions.json found — autocomplete disabled.');
+  }
 
-  const html = renderHtml(embeddedIndex, miniSearchSrc, {
+  const embeddedIndex = JSON.stringify(indexData).replace(/<\/script/gi, '<\\/script');
+  // Same </script> hardening as embeddedIndex — a keyword whose text contains
+  // that sequence would otherwise close the inline <script> block early.
+  const embeddedSuggestions = JSON.stringify(suggestions).replace(/<\/script/gi, '<\\/script');
+
+  const html = renderHtml(embeddedIndex, embeddedSuggestions, miniSearchSrc, {
     viewCount: indexData.viewCount,
     enrichedCount: indexData.enrichedCount,
     builtAt: indexData.builtAt,
@@ -59,7 +77,7 @@ async function main() {
   console.log(`Wrote ${OUTPUT_FILE} (${sizeMb} MB) — ${indexData.viewCount} view(s), ${indexData.enrichedCount} enriched.`);
 }
 
-function renderHtml(embeddedIndexJson, miniSearchSrc, stats) {
+function renderHtml(embeddedIndexJson, embeddedSuggestions, miniSearchSrc, stats) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,6 +114,20 @@ function renderHtml(embeddedIndexJson, miniSearchSrc, stats) {
     font-family: ui-monospace, "SF Mono", Consolas, monospace;
   }
   #q:focus { outline: 2px solid var(--accent); }
+  .search-wrap { position: relative; }
+  #suggestions {
+    position: absolute; top: calc(100% + 4px); left: 0; right: 0; z-index: 20;
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px;
+    overflow: hidden auto; max-height: 320px; box-shadow: 0 12px 32px rgba(0,0,0,0.45);
+  }
+  .sugg-item {
+    display: flex; align-items: baseline; gap: 10px; padding: 9px 14px;
+    cursor: pointer; font-size: 13px; color: var(--text-primary);
+    font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  }
+  .sugg-item b { color: var(--accent); font-weight: 700; }
+  .sugg-item .cnt { color: var(--text-muted); font-size: 11px; margin-left: auto; white-space: nowrap; }
+  .sugg-item:hover, .sugg-item.active { background: rgba(76,158,255,0.14); }
   .filters { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
   .filters select {
     background: var(--surface-1); border: 1px solid var(--border); color: var(--text-primary);
@@ -127,12 +159,15 @@ function renderHtml(embeddedIndexJson, miniSearchSrc, stats) {
   <h1>CDS Knowledge Base <span>· Search</span></h1>
   <p class="subtitle">Search CDS views by business meaning, name, or tag — the browser version of cds-kb-mcp-kit's <code>search_cds</code> MCP tool. For an exact field/table/raw-column name lookup instead, use <a href="field-search.html" style="color:var(--accent)">field-search.html</a>.</p>
 
-  <input id="q" type="text" placeholder="e.g. overdue customer invoices, purchase order, BKPF…" autofocus autocomplete="off" spellcheck="false" />
+  <div class="search-wrap">
+    <input id="q" type="text" role="combobox" aria-expanded="false" aria-controls="suggestions" aria-autocomplete="list" placeholder="e.g. purchase order, đơn mua hàng, don mua hang, overdue invoices, BKPF…" autofocus autocomplete="off" spellcheck="false" />
+    <div id="suggestions" role="listbox" hidden></div>
+  </div>
   <div class="filters">
     <select id="fModule"><option value="">All modules</option></select>
     <select id="fLob"><option value="">All lines of business</option></select>
   </div>
-  <p class="hint">Ranked full-text search (MiniSearch/BM25), same index and weighting as search_cds. Runs entirely in your browser — works offline, no server. View links open on github.com (rendered markdown) — needs internet.</p>
+  <p class="hint">Ranked full-text search (MiniSearch/BM25), same index and weighting as search_cds. Supports Vietnamese (accent-insensitive — “đơn mua hàng”, “don mua hang” and “don mua hàng” all work) via per-view synonyms plus EN/VI semantic descriptions. Type to see keyword suggestions (↑/↓ to navigate, Enter to fill, Esc to dismiss). Runs entirely in your browser — works offline, no server. View links open on github.com (rendered markdown) — needs internet.</p>
 
   <div id="results"></div>
 
@@ -144,10 +179,24 @@ ${miniSearchSrc}
 </script>
 <script>
   const INDEX = ${embeddedIndexJson};
+  const SUGGESTIONS = ${embeddedSuggestions};
   const BOOST = ${JSON.stringify(SEARCH_BOOST)};
   const GITHUB_BLOB_BASE = ${JSON.stringify(GITHUB_BLOB_BASE)};
 
-  const mini = MiniSearch.loadJSON(INDEX.minisearch, INDEX.options);
+  // Vietnamese accent-insensitive normalization — MUST match the copy in
+  // enrich_index.mjs (index build time): the stored index terms are already
+  // normalized, so a query must be processed the same way to match. This
+  // makes "don mua hang", "đơn mua hàng" and "đơn mua hang" all find the
+  // same views. NFD + strip combining marks + đ→d + lowercase.
+  const VIETNAMESE_DIACRITIC_RE = /[\u0300-\u036f]/g;
+  function normalizeTerm(term) {
+    return term
+      .normalize('NFD')
+      .replace(/\u0111/gi, 'd')
+      .replace(VIETNAMESE_DIACRITIC_RE, '')
+      .toLowerCase();
+  }
+  const mini = MiniSearch.loadJSON(INDEX.minisearch, { ...INDEX.options, processTerm: normalizeTerm });
 
   const q = document.getElementById('q');
   const fModule = document.getElementById('fModule');
@@ -221,7 +270,15 @@ ${miniSearchSrc}
       boost *= 1 + Math.log10(1 + (storedFields.referencedByCount || 0)) * 0.1;
       return boost;
     };
-    const hits = mini.search(query, { boost: BOOST, boostDocument, prefix: true, fuzzy: 0.2, filter }).slice(0, 50);
+    // Vietnamese is accent-insensitive (see normalizeTerm above), but short
+    // lowercase Vietnamese words collide with English terms via prefix/fuzzy
+    // ("bán"->"ban" prefix/fuzzy-matches "bank", flooding bank views). So
+    // prefix and fuzzy only apply to terms >=4 chars, or terms containing an
+    // uppercase letter/digit — ABAP view codes like "PO" / "I_PURCHASEORDER"
+    // still prefix-match, while Vietnamese business words match exactly.
+    const prefix = (term) => /[A-Z0-9]/.test(term) || term.length >= 4;
+    const fuzzy = (term) => term.length >= 4 ? 0.2 : false;
+    const hits = mini.search(query, { boost: BOOST, boostDocument, prefix, fuzzy, filter }).slice(0, 50);
     if (hits.length === 0) {
       results.innerHTML = '<div class="empty">No CDS views matched "' + escapeHtml(query) + '". Try broader terms or clear the filters.</div>';
       return;
@@ -229,8 +286,121 @@ ${miniSearchSrc}
     results.innerHTML = '<div class="section">' + hits.map(resultRow).join('') + '</div>';
   }
 
+  // ── Autocomplete ────────────────────────────────────────────────────────────
+  // Keyword suggestions from index/suggestions.json (built by enrich_index.mjs
+  // from taxonomy viKeywords + per-view frontmatter keywords, frequency-ranked
+  // and accent-insensitive: "đơn" finds "đơn mua hàng" exactly like "don").
+  // The normalized keys are precomputed at build time; only the typed query is
+  // normalized here (same normalizeTerm as the search query above).
   let debounce;
-  q.addEventListener('input', () => { clearTimeout(debounce); debounce = setTimeout(render, 80); });
+  const suggBox = document.getElementById('suggestions');
+  const suggIndex = SUGGESTIONS.map(s => ({
+    s,
+    words: s.t.split(/\s+/).map(w => normalizeTerm(w)),
+    orig: s.t.split(/\s+/),
+  }));
+  let activeSugg = -1;
+
+  function getSuggestions(query) {
+    const nq = normalizeTerm(query).trim();
+    if (!nq) return [];
+    const lastToken = nq.split(/\s+/).pop() || '';
+    const out = [];
+    for (let i = 0; i < suggIndex.length; i++) {
+      const { s, words, orig } = suggIndex[i];
+      let score = 0;
+      if (s.k.startsWith(nq)) score = 120;                    // whole-phrase prefix: "đơn mua h" -> "đơn mua hàng"
+      else if (lastToken.length >= 2 && words.some(w => w.startsWith(lastToken))) score = 80; // any-word prefix: "hang" -> "đơn mua hàng"
+      else if (nq.length >= 3 && s.k.includes(nq)) score = 40; // mid-phrase substring
+      // A plain lowercase query that prefix-matches an English term can be
+      // Vietnamese mid-word ("ban" -> "bank" vs "bán hàng") — nudge accented
+      // Vietnamese phrases ahead in that ambiguous case, without touching
+      // uppercase ABAP-code queries ("PO") or genuinely English typing.
+      if (score && !/[A-Z0-9]/.test(nq) && /[à-ỹ]/i.test(s.t)) score += 15;
+      if (score) out.push({ i, s, words, orig, score });
+    }
+    out.sort((a, b) => b.score - a.score || b.s.n - a.s.n || a.s.t.localeCompare(b.s.t));
+    return out.slice(0, 8);
+  }
+
+  function renderSuggestions(query) {
+    const items = getSuggestions(query);
+    activeSugg = -1;
+    q.setAttribute('aria-expanded', items.length ? 'true' : 'false');
+    if (!query.trim() || items.length === 0) {
+      suggBox.hidden = true;
+      suggBox.innerHTML = '';
+      return;
+    }
+    const nq = normalizeTerm(query).trim();
+    const nqWords = nq.split(/\s+/);
+    const lastToken = nqWords[nqWords.length - 1];
+    suggBox.innerHTML = items.map((it, idx) => {
+      const fullPrefix = it.s.k.startsWith(nq);
+      const body = it.orig.map((w, wi) => {
+        // Same length guard as getSuggestions' word-prefix scoring, so a
+        // highlighted word is always one that actually matched.
+        const hit = (fullPrefix && wi < nqWords.length) ||
+          (lastToken.length >= 2 && it.words[wi].startsWith(lastToken));
+        return hit ? '<b>' + escapeHtml(w) + '</b>' : escapeHtml(w);
+      }).join(' ');
+      return '<div class="sugg-item" role="option" id="sugg-' + idx + '" data-idx="' + it.i + '">' +
+        body + '<span class="cnt">' + it.s.n + ' view' + (it.s.n === 1 ? '' : 's') + '</span></div>';
+    }).join('');
+    suggBox.hidden = false;
+  }
+
+  function moveActive(dir) {
+    const items = suggBox.querySelectorAll('.sugg-item');
+    if (!items.length) return;
+    activeSugg = (activeSugg + dir + items.length) % items.length;
+    items.forEach((el, idx) => {
+      el.classList.toggle('active', idx === activeSugg);
+      if (idx === activeSugg) el.scrollIntoView({ block: 'nearest' });
+    });
+    q.setAttribute('aria-activedescendant', 'sugg-' + activeSugg);
+  }
+
+  function selectSuggAt(idx) {
+    const el = suggBox.querySelectorAll('.sugg-item')[idx];
+    if (el) fillSuggestion(el.dataset.idx);
+  }
+
+  function fillSuggestion(suggIdx) {
+    const s = SUGGESTIONS[suggIdx];
+    if (!s) return;
+    q.value = s.t;
+    suggBox.hidden = true;
+    suggBox.innerHTML = '';
+    q.setAttribute('aria-expanded', 'false');
+    render();
+    q.focus();
+  }
+
+  suggBox.addEventListener('mousedown', (e) => {
+    const el = e.target.closest('.sugg-item');
+    if (el) {
+      e.preventDefault(); // keep focus in the input so blur's close timer doesn't race
+      fillSuggestion(el.dataset.idx);
+    }
+  });
+
+  q.addEventListener('input', () => {
+    renderSuggestions(q.value);
+    clearTimeout(debounce);
+    debounce = setTimeout(render, 80);
+  });
+  q.addEventListener('keydown', (e) => {
+    const open = !suggBox.hidden && suggBox.querySelectorAll('.sugg-item').length > 0;
+    if (e.key === 'ArrowDown' && open) { e.preventDefault(); moveActive(1); }
+    else if (e.key === 'ArrowUp' && open) { e.preventDefault(); moveActive(-1); }
+    // Enter fills the highlighted suggestion, or the first one if none is
+    // highlighted yet — standard combobox behavior.
+    else if (e.key === 'Enter' && open) { e.preventDefault(); selectSuggAt(activeSugg >= 0 ? activeSugg : 0); }
+    else if (e.key === 'Escape' && open) { suggBox.hidden = true; suggBox.innerHTML = ''; q.setAttribute('aria-expanded', 'false'); }
+  });
+  q.addEventListener('blur', () => { setTimeout(() => { suggBox.hidden = true; suggBox.innerHTML = ''; }, 150); });
+
   fModule.addEventListener('change', render);
   fLob.addEventListener('change', render);
 </script>

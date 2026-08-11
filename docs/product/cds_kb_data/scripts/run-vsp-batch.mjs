@@ -53,7 +53,7 @@ const GENERATED_FILES = new Set([
   'hub-metadata-manifest.json', 'ddl-field-enrichment-manifest.json',
   'vsp-ddl-applied-manifest.json', 'ddl-field-enrichment-request.json',
   'index/search_index.json', 'index/field-index.json', 'index/version.json',
-  'index/view-fields.js', 'index/view-paths.json',
+  'index/view-fields.js', 'index/view-paths.json', 'index/suggestions.json',
 ]);
 
 function parseArgs() {
