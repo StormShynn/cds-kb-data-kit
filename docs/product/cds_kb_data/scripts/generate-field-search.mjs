@@ -52,6 +52,16 @@ async function main() {
   const rawFieldIndex = await readJson(path.join(DATA_DIR, 'index', 'raw-field-index.json'), null);
   const taxonomy = await readJson(path.join(DATA_DIR, 'index', 'taxonomy.json'), null);
   const viewPaths = await readJson(path.join(DATA_DIR, 'index', 'view-paths.json'), {});
+  // coverage.json (check-coverage.mjs, refreshed 6-hourly against SAP
+  // Business Accelerator Hub's live artifact list) — read directly here
+  // rather than threaded through enrich_index.mjs, so this ranking signal
+  // doesn't depend on the index-rebuild schedule lining up with it. Used
+  // below as a real, verified replacement for what used to be a naming-
+  // prefix guess (I_ ahead of C_/D_/... "because I_ views feel more
+  // canonical") — that guess was wrong: the Hub confirms plenty of C_/D_
+  // views as RELEASED too, prefix alone says nothing about it.
+  const coverage = await readJson(path.join(DATA_DIR, 'coverage.json'), null);
+  const hubConfirmed = new Set((coverage?.rows || []).filter((r) => r.inLocal).map((r) => r.name));
 
   if (!fieldIndex || !tableIndex) {
     console.error('Missing field-index.json or table-index.json — run `npm run rebuild-index` first.');
@@ -63,20 +73,22 @@ async function main() {
   // a server-side reverse lookup but would multiply the embedded page size
   // by the average fan-out (a view exposes dozens of fields).
   // Per view: [appComponent, releaseState, isAbstract, isMasterData,
-  // referencedByCount, usageCount] — same one-per-view dedup as before, just
-  // carrying more fields so the page can rank "released" (confirmed
-  // SAP-delivered) views ahead of "unverified" community-sourced ones,
-  // either kind of real "define view entity" ahead of a "define abstract
-  // entity" action-parameter/data structure (e.g.
+  // referencedByCount, usageCount, hubConfirmed] — same one-per-view dedup
+  // as before, just carrying more fields so the page can rank "released"
+  // (confirmed SAP-delivered) views ahead of "unverified" community-sourced
+  // ones, either kind of real "define view entity" ahead of a "define
+  // abstract entity" action-parameter/data structure (e.g.
   // D_BillOfMaterialCompareBOMP) — which has no runtime entity set to query
   // at all, even when released — a master-data view (@ObjectModel.
   // usageType.dataClass: #MASTER, e.g. I_Product) ahead of a transactional
-  // one that merely references the same field, and (as a fine tie-break) a
+  // one that merely references the same field, a view the Hub's live
+  // catalog currently confirms RELEASED ahead of one it doesn't (regardless
+  // of naming prefix — see hubConfirmed above), and (as a fine tie-break) a
   // view many other views build FROM/associate to, or with real recorded
   // usage, ahead of one nobody else touches — instead of suggesting any of
   // these on equal footing with the view someone actually wants.
   const viewMeta = {};
-  const metaOf = (e) => [e.appComponent || '', e.releaseState || 'released', e.isAbstract ? 1 : 0, e.isMasterData ? 1 : 0, e.referencedByCount || 0, e.usageCount || 0];
+  const metaOf = (e) => [e.appComponent || '', e.releaseState || 'released', e.isAbstract ? 1 : 0, e.isMasterData ? 1 : 0, e.referencedByCount || 0, e.usageCount || 0, hubConfirmed.has(e.view) ? 1 : 0];
   const F = {};
   for (const [field, entries] of Object.entries(fieldIndex.fields)) {
     F[field] = entries.map((e) => {
@@ -195,6 +207,7 @@ function renderHtml(embeddedJson, stats) {
   .badge.key { color: var(--status-good); border-color: var(--status-good); }
   .badge.unverified { color: var(--status-warn); border-color: var(--status-warn); }
   .badge.abstract { color: var(--text-muted); border-color: var(--text-muted); }
+  .badge.unconfirmed { color: var(--text-muted); border-color: var(--text-muted); }
   .badge.master { color: var(--accent); border-color: var(--accent); }
   .empty { color: var(--text-muted); font-size: 13px; padding: 20px 0; }
   .stats { color: var(--text-muted); font-size: 12px; margin-top: 32px; border-top: 1px solid var(--gridline); padding-top: 16px; }
@@ -243,6 +256,15 @@ function renderHtml(embeddedJson, stats) {
       : '';
   }
 
+  function unconfirmedBadge(view) {
+    const meta = DATA.M[view] || [];
+    // Only for the "released" tier — an unverified view already shows its
+    // own badge above, this would just be redundant noise on top of it.
+    return meta[1] === 'released' && !meta[6]
+      ? ' <span class="badge unconfirmed" title="Not on the SAP Business Accelerator Hub&#39;s current live RELEASED list — may be deprecated, renamed, in a different container, or simply not yet re-checked, not necessarily wrong">not on Hub list</span>'
+      : '';
+  }
+
   function abstractBadge(view) {
     return (DATA.M[view] || [])[2]
       ? ' <span class="badge abstract" title="define abstract entity — an action-parameter/data structure, no runtime entity set to query regardless of release state">structure, not a view</span>'
@@ -272,10 +294,15 @@ function renderHtml(embeddedJson, stats) {
   //          #MASTER, e.g. I_Product) — master data is what "which view has
   //          field X" usually means, ahead of a transactional view that
   //          merely references the same field.
-  //   +1     not I_ prefix — plain alphabetical sort otherwise puts other
-  //          prefixes (C_, D_, R_, P_, ...) ahead of I_ views half the time
-  //          purely because their prefix letter sorts earlier (confirmed for
-  //          MATNR: 76 D_ views before the first I_ view).
+  //   +1     NOT on the Hub's current live RELEASED list (see hubConfirmed
+  //          above) — soft, not a demotion to "unverified" tier: the Hub
+  //          only reflects the current moment, so a view genuinely released
+  //          in the past can drop off it (deprecated/renamed/different
+  //          container) without ever having been wrong. This replaced an
+  //          earlier "not I_ prefix" penalty that assumed I_ views are more
+  //          legitimate than C_/D_/... — that assumption was wrong (the Hub
+  //          confirms plenty of C_/D_ views as RELEASED too; prefix alone
+  //          says nothing about it), so it's gone rather than reworded.
   //   fine tie-break, weighted well below the +1 above so it only decides
   //   between two matches that are otherwise identical on every signal so
   //   far:
@@ -293,7 +320,7 @@ function renderHtml(embeddedJson, stats) {
     else if (meta[1] === 'unverified') score += 100;
     if (!isKey) score += 10;
     if (!meta[3]) score += 5;
-    if (!view.startsWith('I_')) score += 1;
+    if (!meta[6]) score += 1;
     score -= (meta[4] || 0) * 0.001;
     score -= (meta[5] || 0) * 0.002;
     return score;
@@ -305,21 +332,21 @@ function renderHtml(embeddedJson, stats) {
 
   function fieldRow([view, isKey]) {
     const ac = (DATA.M[view] || [])[0] || '';
-    return '<div class="row">' + viewLink(view) + (isKey ? ' <span class="badge key">key</span>' : '') + unverifiedBadge(view) + abstractBadge(view) + masterDataBadge(view) +
+    return '<div class="row">' + viewLink(view) + (isKey ? ' <span class="badge key">key</span>' : '') + unverifiedBadge(view) + unconfirmedBadge(view) + abstractBadge(view) + masterDataBadge(view) +
       (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div>';
   }
 
   function tableRow([view, rel, alias]) {
     const ac = (DATA.M[view] || [])[0] || '';
     const relLabel = rel === 's' ? 'built FROM this' : 'associates via <code>' + escapeHtml(alias) + '</code>';
-    return '<div class="row">' + viewLink(view) + ' <span class="tag">— ' + relLabel + '</span>' + unverifiedBadge(view) + abstractBadge(view) + masterDataBadge(view) +
+    return '<div class="row">' + viewLink(view) + ' <span class="tag">— ' + relLabel + '</span>' + unverifiedBadge(view) + unconfirmedBadge(view) + abstractBadge(view) + masterDataBadge(view) +
       (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div>';
   }
 
   function rawFieldRow([view, semanticField, isKey]) {
     const ac = (DATA.M[view] || [])[0] || '';
     return '<div class="row">' + viewLink(view) + ' <span class="tag">— as <code>' + escapeHtml(semanticField) + '</code></span>' +
-      (isKey ? ' <span class="badge key">key</span>' : '') + unverifiedBadge(view) + abstractBadge(view) + masterDataBadge(view) +
+      (isKey ? ' <span class="badge key">key</span>' : '') + unverifiedBadge(view) + unconfirmedBadge(view) + abstractBadge(view) + masterDataBadge(view) +
       (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div>';
   }
 
