@@ -42,7 +42,7 @@ the data index changes).
 | **Taxonomy**        | Lines of Business → Business Objects → keyword map (EN + VI)                                               |
 | **Search ranking**  | Field-boosted MiniSearch (`name×3`, `semanticDescription×2.5`, `synonyms×2`)                               |
 | **Module aliasing** | Filter by `"Finance"` / `"Procurement"` / `"Sales"` instead of `FI` / `MM` / `SD`                          |
-| **Tools**           | 11 MCP tools: search/taxonomy/deps + `suggest_base_views`, `compose_query`, `generate_cds_view`, `validate_cds_ddl`, `kb_info` |
+| **Tools**           | 12 MCP tools: search/taxonomy/deps + `suggest_base_views`, `compose_query`, `generate_cds_view`, `validate_cds_ddl`, `propose_query_library_entry`, `kb_info` |
 | **Bundle**          | Single ~1.9 MB `.cjs` file (unminified), Node ≥ 18                                                          |
 | **Data isolation**  | Server ships **no view data**. Harness sibling `cds_kb_data`, or GitHub remote / local `--data`.           |
 
@@ -337,16 +337,29 @@ Generate annotated DDL (`@AccessControl`, `@EndUserText.label` + compose body) f
 
 Parse DDL with `@abaplint/core` CDSParser. Returns soft diagnostics (`ok` / `parsed` / `name` / counts) — never crashes the MCP process. No SAP connection.
 
+### 12. `propose_query_library_entry`
+
+Build a JSON snippet + markdown PR body for `index/query-library.json`. With `GITHUB_TOKEN` + `CDS_KB_PROPOSE_REPO=owner/name`, opens a **draft** PR on `propose/query-*` (never merges). On API failure, still returns the local snippet.
+
 ---
 
 ## Hosted auth
 
-Hosted HTTP (`/mcp`, `/sse`) is public unless the deploy sets `API_KEY`. When set, clients must send either:
+Hosted HTTP (`/mcp`, `/sse`) is public unless the deploy sets auth env:
 
-- `Authorization: Bearer <API_KEY>`, or
-- `?api_key=<API_KEY>` on the URL (needed by some SSE bridges that cannot set headers)
+| Mode | Env | Client |
+| --- | --- | --- |
+| API key | `API_KEY` | `Authorization: Bearer <API_KEY>` or `?api_key=<API_KEY>` |
+| JWKS / JWT | `CDS_KB_JWKS_URL` (+ optional `CDS_KB_JWT_ISSUER`, `CDS_KB_JWT_AUDIENCE`) | `Authorization: Bearer <JWT>` verified via remote JWKS (`jose`) |
+| Both | JWKS + `API_KEY` | Either a valid JWT or the API key |
 
 On SAP BTP, prefer an API Management / Approuter + XSUAA **gateway in front of the app** rather than embedding an XSUAA SDK in this Node process. Local stdio needs no API key.
+
+### S3 / MinIO data source
+
+When `CDS_KB_S3_BUCKET`, `CDS_KB_S3_ACCESS_KEY_ID`, and `CDS_KB_S3_SECRET_ACCESS_KEY` are set (and `--data` / `CDS_KB_DATA` are not), the server loads the index and views from S3-compatible storage. Optional: `CDS_KB_S3_PREFIX`, `CDS_KB_S3_REGION` (default `us-east-1`), `CDS_KB_S3_ENDPOINT`, `CDS_KB_S3_FORCE_PATH_STYLE=true` (MinIO). Cache lives under `~/.cache/cds-kb/s3-<hash>/`.
+
+Precedence: `--data` / `CDS_KB_DATA` → S3 (when configured) → `--remote` / `CDS_KB_REMOTE` → sibling `cds_kb_data` → default GitHub remote.
 
 ---
 

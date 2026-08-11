@@ -1,4 +1,4 @@
-# Private overlay (W3a)
+# Private overlay (W3a / W5)
 
 Customer / Z* / Y* CDS view markdown files go under [`private/`](private/)
 (same frontmatter + sections shape as `views/**/*.md`). Then rebuild:
@@ -7,6 +7,26 @@ Customer / Z* / Y* CDS view markdown files go under [`private/`](private/)
 node enrich_index.mjs .
 # or: npm run rebuild-index
 ```
+
+## VSP apply into the overlay
+
+To write real DDL from a vsp fetch into the private overlay (not `views/`):
+
+```bash
+node scripts/apply_vsp_ddl.mjs --dir <folder-of-NAME.ddl-files> --overlay
+# or batch JSON:
+node scripts/apply_vsp_ddl.mjs batch.json --overlay
+```
+
+`--overlay` sets the write root to `overlays/private` (or `CDS_KB_OVERLAY` if set).
+Z*/Y* names default to `release_state: unverified` unless the existing file already has one.
+Batch pipeline:
+
+```bash
+node scripts/run-vsp-batch.mjs --overlay --count 10 --no-push
+```
+
+With `--overlay`, `run-vsp-batch` also **keeps Z\*** candidates (normally skipped for the public Hub upgrade path).
 
 Rules:
 

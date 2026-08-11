@@ -27,6 +27,7 @@
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { listViewFiles } from './lib/view-files.mjs';
 import { extractFrontmatter, scalar } from './lib/frontmatter.mjs';
 
@@ -63,6 +64,16 @@ async function main() {
   const viewPaths = await readJson(path.join(DATA_DIR, 'index', 'view-paths.json'), {});
   const queryLibrary = await readJson(path.join(DATA_DIR, 'index', 'query-library.json'), []);
 
+  // Shared compose helpers (scripts/lib/query-compose.mjs) — strip ESM exports
+  // and inject into the page so interactive builders and saved-object paths
+  // share one implementation with cds_kb_mcp.
+  let composeSrc = await fs.readFile(path.join(path.dirname(fileURLToPath(import.meta.url)), 'lib', 'query-compose.mjs'), 'utf-8');
+  composeSrc = composeSrc
+    .replace(/^\/\/.*$/gm, (line) => line) // keep comments
+    .replace(/\bexport\s+function\b/g, 'function')
+    .replace(/\bexport\s+\{[^}]+\};?\s*/g, '')
+    .replace(/\bexport\s+/g, '');
+
   const viewsDir = path.join(DATA_DIR, 'views');
   const viewFiles = await listViewFiles(viewsDir);
 
@@ -80,7 +91,8 @@ async function main() {
 
   const embedded = JSON.stringify({ M: viewMeta, P: viewPaths, L: queryLibrary }).replace(/<\/script/gi, '<\\/script');
 
-  const html = renderHtml(embedded, { viewCount: Object.keys(viewMeta).length, libCount: queryLibrary.length });
+  let html = renderHtml(embedded, { viewCount: Object.keys(viewMeta).length, libCount: queryLibrary.length });
+  html = html.replace('/*__QUERY_COMPOSE__*/', composeSrc);
 
   await fs.writeFile(OUTPUT_FILE, html, 'utf-8');
   const sizeKb = (Buffer.byteLength(html) / 1024).toFixed(0);
@@ -1097,6 +1109,14 @@ function renderHtml(embeddedJson, stats) {
     return v.joinType + ' ' + v.name + ' AS ' + v.alias + ' ON ' + (joinOnText(v) || '<join condition>');
   }
 
+  // Shared compose (injected from scripts/lib/query-compose.mjs at build time).
+  /*__QUERY_COMPOSE__*/
+
+  /** Use shared composeQuery for a saved / share JSON object shape. */
+  function composeFromSavedObject(q) {
+    return composeQuery(q || {});
+  }
+
   function fromClauseLines() {
     const hasManualJoin = joinedViews.some((v) => v !== joinedViews[0] && v.name && v.mode !== 'assoc');
     return joinedViews.map((v, i) => {
@@ -1304,7 +1324,15 @@ function renderHtml(embeddedJson, stats) {
   document.getElementById('generateJsonBtn').addEventListener('click', () => {
     const obj = currentQueryAsObject();
     if (!requireSaveTitle(obj)) return;
-    showSaveOutput(JSON.stringify(obj, null, 2) + ',');
+    const composed = composeFromSavedObject(obj);
+    let out = JSON.stringify(obj, null, 2) + ',';
+    if (composed.warnings && composed.warnings.length) {
+      out += '\\n\\n/* compose warnings:\\n' + composed.warnings.map(w => ' * ' + w).join('\\n') + '\\n */';
+    }
+    if (composed.openSql) {
+      out += '\\n\\n/* OpenSQL preview (composeQuery):\\n' + composed.openSql.split('\\n').map(l => ' * ' + l).join('\\n') + '\\n */';
+    }
+    showSaveOutput(out);
   });
 
   // ── Share link (query carried in the URL fragment) ───────────────────────

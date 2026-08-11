@@ -20,8 +20,8 @@
 // permanently leaves the real DDL alone (see HUB_MANIFEST_FILE below).
 //
 // Usage:
-//   node scripts/apply_vsp_ddl.mjs <batch.json> [--dry-run] [--no-build]
-//   node scripts/apply_vsp_ddl.mjs --dir <folder-of-NAME.ddl-files> [--dry-run] [--no-build]
+//   node scripts/apply_vsp_ddl.mjs <batch.json> [--dry-run] [--no-build] [--overlay]
+//   node scripts/apply_vsp_ddl.mjs --dir <folder-of-NAME.ddl-files> [--dry-run] [--no-build] [--overlay]
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -37,7 +37,7 @@ import { rebuildIndex } from './lib/rebuild-index.mjs';
 import { extractFrontmatter, scalar, listBlock } from './lib/frontmatter.mjs';
 
 const DATA_DIR = '.';
-const VIEWS_DIR = path.join(DATA_DIR, 'views');
+let VIEWS_DIR = path.join(DATA_DIR, 'views');
 const MANIFEST_FILE = path.join(DATA_DIR, 'vsp-ddl-applied-manifest.json');
 // scripts/add_hub_metadata.mjs treats presence in this manifest as "I
 // created/own this file, safe to refresh from the Hub" — its guard is
@@ -57,21 +57,27 @@ const HUB_MANIFEST_FILE = path.join(DATA_DIR, 'hub-metadata-manifest.json');
 function parseArgs() {
   const args = process.argv.slice(2);
   if (args.length === 0 || args[0] === '--help' || args[0] === '-h') {
-    console.log('Usage: node scripts/apply_vsp_ddl.mjs <batch.json> [--dry-run] [--no-build]');
-    console.log('       node scripts/apply_vsp_ddl.mjs --dir <folder-of-NAME.ddl-files> [--dry-run] [--no-build]');
+    console.log('Usage: node scripts/apply_vsp_ddl.mjs <batch.json> [--dry-run] [--no-build] [--overlay]');
+    console.log('       node scripts/apply_vsp_ddl.mjs --dir <folder-of-NAME.ddl-files> [--dry-run] [--no-build] [--overlay]');
+    console.log('');
+    console.log('  --overlay   Write under overlays/private (or CDS_KB_OVERLAY) instead of views/.');
+    console.log('              Use for customer Z*/Y* DDL that must not land in the public tree.');
     process.exit(args.length === 0 ? 1 : 0);
   }
+  const overlay = args.includes('--overlay');
   if (args[0] === '--dir') {
     return {
       dirPath: args[1],
       dryRun: args.includes('--dry-run'),
       noBuild: args.includes('--no-build'),
+      overlay,
     };
   }
   return {
     batchFile: args[0],
     dryRun: args.includes('--dry-run'),
     noBuild: args.includes('--no-build'),
+    overlay,
   };
 }
 
@@ -88,6 +94,12 @@ async function loadBatch(opts) {
 
 async function main() {
   const opts = parseArgs();
+  if (opts.overlay) {
+    VIEWS_DIR = process.env.CDS_KB_OVERLAY
+      ? path.resolve(process.env.CDS_KB_OVERLAY)
+      : path.join(DATA_DIR, 'overlays', 'private');
+    console.log(`🔐 Overlay mode — writing under ${VIEWS_DIR}`);
+  }
   const batch = await loadBatch(opts);
   const manifest = await readJson(MANIFEST_FILE, {});
   const hubManifest = await readJson(HUB_MANIFEST_FILE, {});
@@ -160,6 +172,7 @@ async function main() {
     let existing = {
       appComponent: '', softwareComponent: '', cleanCoreLevel: '', systemType: '',
       description: '', semanticEn: '', semanticVi: '', sourceUrl: '', keywords: [], tags: [],
+      releaseState: '',
     };
     if (existingFile) {
       try {
@@ -175,6 +188,7 @@ async function main() {
           sourceUrl: scalar(fm, 'source_url'),
           keywords: listBlock(fm, 'keywords'),
           tags: listBlock(fm, 'tags'),
+          releaseState: scalar(fm, 'release_state'),
         };
       } catch { /* existingFile came from findExistingView, so this really shouldn't fail */ }
     }
@@ -207,13 +221,22 @@ async function main() {
     const tags = [...new Set([...existing.tags, ...newTags])].filter(t => t !== 'metadata-only');
     const keywords = [...new Set([...existing.keywords, ...synthesis.keywords])];
 
+    // Hub-confirmed public upgrades stay "released". Overlay Z*/Y* may keep
+    // an existing release_state or default to unverified.
+    let releaseState = 'released';
+    if (opts.overlay) {
+      if (existing.releaseState) releaseState = existing.releaseState;
+      else if (/^[ZY]/i.test(name)) releaseState = 'unverified';
+      else releaseState = 'released';
+    }
+
     const viewData = {
       name: parsed.name,
       label: parsed.label,
       description: existing.description || parsed.description || parsed.label || name,
       appComponent,
       softwareComponent: existing.softwareComponent || 'SAPSCORE',
-      releaseState: 'released', // this script is only ever fed Hub-confirmed RELEASED candidates
+      releaseState,
       cleanCoreLevel: existing.cleanCoreLevel || undefined,
       systemType: existing.systemType || 'S/4HANA Cloud Public Edition',
       semantic_en: existing.semanticEn || synthesis.semantic_en,

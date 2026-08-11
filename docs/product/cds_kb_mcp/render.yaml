@@ -5,6 +5,14 @@
 # Env vars to set in the Render dashboard after first deploy:
 #   CDS_KB_DATA_TOKEN  -> GitHub fine-grained PAT, Contents:Read-only on
 #                         StormShynn/cds-kb-data (the data repo is private)
+#   API_KEY            -> optional shared secret (Bearer / ?api_key=)
+#   CDS_KB_JWKS_URL    -> optional remote JWKS for JWT auth (with optional
+#                         CDS_KB_JWT_ISSUER / CDS_KB_JWT_AUDIENCE)
+#   CDS_KB_S3_*        -> optional S3/MinIO datasource (BUCKET + ACCESS_KEY_ID +
+#                         SECRET_ACCESS_KEY required; PREFIX/REGION/ENDPOINT/
+#                         FORCE_PATH_STYLE for MinIO). Wins over CDS_KB_REMOTE
+#                         when --data is unset.
+#   CDS_KB_USAGE_ENDPOINT / CDS_KB_EMBED_API_KEY -> optional usage ping / hybrid search
 services:
   - type: web
     name: cds-kb-mcp

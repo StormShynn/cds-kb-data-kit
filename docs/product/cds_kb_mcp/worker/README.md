@@ -44,6 +44,10 @@ CDS_KB_USAGE_ENDPOINT=https://cds-kb-usage-collector.<you>.workers.dev/ping
 Unset (the default), the server never pings anywhere — this is opt-in, not
 on by default.
 
+`kb_info` reports `usageEndpoint: set|unset` and `usageStatsConfigured: yes|no`
+(so you can confirm the MCP sees the collector / folded usage-stats without
+guessing).
+
 **In the data tree** (`docs/product/cds_kb_data`), add two repository secrets for
 the `pull-usage-stats.yml` workflow:
 

@@ -1,7 +1,8 @@
 // datasource.mjs
 // Pluggable access to the CDS data, kept fully separate from the data itself.
-// Two backends, same interface:
+// Backends, same interface:
 //   - LocalDataSource(rootDir):  reads <root>/index/search_index.json and <root>/views/<NAME>.md
+//   - S3DataSource():            S3/MinIO when CDS_KB_S3_BUCKET + credentials are set
 //   - RemoteDataSource(baseUrl): downloads the index once (cached), lazy-fetches views (cached)
 //
 // View files don't have to sit flat in views/ — index/view-paths.json (built by
@@ -203,6 +204,14 @@ export class LocalDataSource {
       return JSON.parse(await fs.readFile(file, 'utf-8'));
     } catch {
       return null; // older data repo without raw-field-index.json yet
+    }
+  }
+  async getEmbeddings() {
+    const file = path.join(this.root, 'index', 'embeddings.json');
+    try {
+      return JSON.parse(await fs.readFile(file, 'utf-8'));
+    } catch {
+      return null;
     }
   }
 }
@@ -526,11 +535,245 @@ export class RemoteDataSource {
   async getRawFieldIndex() {
     return this.#loadCachedIndexFile('raw-field-index.json');
   }
+
+  async getEmbeddings() {
+    return this.#loadCachedIndexFile('embeddings.json');
+  }
+}
+
+// ── S3 / MinIO backend ──────────────────────────────────────────────────────
+
+/** True when bucket + access key + secret are all set. */
+export function s3Configured() {
+  const bucket = (process.env.CDS_KB_S3_BUCKET || '').trim();
+  const key = (process.env.CDS_KB_S3_ACCESS_KEY_ID || '').trim();
+  const secret = (process.env.CDS_KB_S3_SECRET_ACCESS_KEY || '').trim();
+  return !!(bucket && key && secret);
+}
+
+export class S3DataSource {
+  constructor({ cacheDir } = {}) {
+    this.bucket = (process.env.CDS_KB_S3_BUCKET || '').trim();
+    if (!this.bucket) throw new Error('CDS_KB_S3_BUCKET is required for S3DataSource');
+    this.prefix = (process.env.CDS_KB_S3_PREFIX || '').replace(/^\/+|\/+$/g, '');
+    this.region = (process.env.CDS_KB_S3_REGION || 'us-east-1').trim();
+    this.endpoint = (process.env.CDS_KB_S3_ENDPOINT || '').trim() || undefined;
+    this.forcePathStyle = String(process.env.CDS_KB_S3_FORCE_PATH_STYLE || '').toLowerCase() === 'true';
+    this.accessKeyId = (process.env.CDS_KB_S3_ACCESS_KEY_ID || '').trim();
+    this.secretAccessKey = (process.env.CDS_KB_S3_SECRET_ACCESS_KEY || '').trim();
+
+    const keyMaterial = `${this.bucket}|${this.prefix}|${this.endpoint || ''}|${this.region}`;
+    const hash = crypto.createHash('sha1').update(keyMaterial).digest('hex').slice(0, 12);
+    const cacheRoot = process.env.XDG_CACHE_HOME || path.join(os.homedir(), '.cache');
+    this.cacheDir = cacheDir || path.join(cacheRoot, 'cds-kb', `s3-${hash}`);
+    this._client = null;
+    this._inflightRevalidate = new Map();
+  }
+
+  describe() {
+    const ep = this.endpoint ? ` endpoint=${this.endpoint}` : '';
+    return `s3:${this.bucket}/${this.prefix || ''} (${this.region}${ep}, cache ${this.cacheDir})`;
+  }
+
+  async #client() {
+    if (this._client) return this._client;
+    const { S3Client, GetObjectCommand } = await import('@aws-sdk/client-s3');
+    this._GetObjectCommand = GetObjectCommand;
+    const cfg = {
+      region: this.region,
+      credentials: {
+        accessKeyId: this.accessKeyId,
+        secretAccessKey: this.secretAccessKey,
+      },
+    };
+    if (this.endpoint) {
+      cfg.endpoint = this.endpoint;
+      cfg.forcePathStyle = this.forcePathStyle;
+    } else if (this.forcePathStyle) {
+      cfg.forcePathStyle = true;
+    }
+    this._client = new S3Client(cfg);
+    return this._client;
+  }
+
+  #objectKey(relPath) {
+    const clean = String(relPath).replace(/^\/+/, '');
+    return this.prefix ? `${this.prefix}/${clean}` : clean;
+  }
+
+  async #getObjectText(relPath) {
+    const client = await this.#client();
+    const Key = this.#objectKey(relPath);
+    const out = await client.send(new this._GetObjectCommand({ Bucket: this.bucket, Key }));
+    const body = out.Body;
+    if (!body) throw new Error(`S3 empty body for s3://${this.bucket}/${Key}`);
+    if (typeof body.transformToString === 'function') return body.transformToString('utf-8');
+    // Fallback for older stream shapes
+    const chunks = [];
+    for await (const chunk of body) chunks.push(chunk);
+    return Buffer.concat(chunks).toString('utf-8');
+  }
+
+  async #persistJsonCache(cacheFile, text) {
+    JSON.parse(text);
+    await atomicWriteFile(cacheFile, text);
+  }
+
+  #revalidateInBackground(relPath, cacheFile, { json = false } = {}) {
+    if (this._inflightRevalidate.has(relPath)) return;
+    const task = (async () => {
+      try {
+        const text = await this.#getObjectText(relPath);
+        if (json) await this.#persistJsonCache(cacheFile, text);
+        else await atomicWriteFile(cacheFile, text);
+      } catch (e) {
+        console.error(`[cds-kb-mcp] S3 background revalidate failed for ${relPath}: ${e.message}`);
+      } finally {
+        this._inflightRevalidate.delete(relPath);
+      }
+    })();
+    this._inflightRevalidate.set(relPath, task);
+  }
+
+  async #loadCachedJson(relPath, fileName) {
+    const cacheFile = path.join(this.cacheDir, fileName);
+    const forceRefresh = process.env.CDS_KB_REFRESH === '1';
+
+    if (!forceRefresh && await cacheExists(cacheFile)) {
+      const fresh = await isCacheFresh(cacheFile);
+      try {
+        const parsed = JSON.parse(await fs.readFile(cacheFile, 'utf-8'));
+        if (!fresh) this.#revalidateInBackground(relPath, cacheFile, { json: true });
+        return parsed;
+      } catch { /* corrupt — re-download */ }
+    }
+
+    try {
+      const text = await this.#getObjectText(relPath);
+      await this.#persistJsonCache(cacheFile, text);
+      return JSON.parse(text);
+    } catch {
+      return null;
+    }
+  }
+
+  async getVersion() {
+    try {
+      return await this.#loadCachedJson('index/version.json', 'version.json');
+    } catch {
+      return null;
+    }
+  }
+
+  async loadIndexWrapper() {
+    const cacheFile = path.join(this.cacheDir, 'search_index.json');
+    const relPath = 'index/search_index.json';
+    const forceRefresh = process.env.CDS_KB_REFRESH === '1';
+
+    let upstreamVersion = null;
+    let cachedVersion = null;
+    if (!forceRefresh) {
+      upstreamVersion = await this.getVersion();
+      try {
+        cachedVersion = JSON.parse(await fs.readFile(path.join(this.cacheDir, 'version.json'), 'utf-8'));
+      } catch { cachedVersion = null; }
+    }
+
+    const cacheHasIndex = await cacheExists(cacheFile);
+    const versionsMatch = !!(upstreamVersion && cachedVersion
+      && upstreamVersion.commit === cachedVersion.commit
+      && upstreamVersion.schemaVersion === cachedVersion.schemaVersion);
+
+    if (!forceRefresh && cacheHasIndex) {
+      if (versionsMatch) {
+        try {
+          return JSON.parse(await fs.readFile(cacheFile, 'utf-8'));
+        } catch {
+          console.error('[cds-kb-mcp] S3 index cache corrupt despite version match, re-downloading...');
+        }
+      } else if (!upstreamVersion) {
+        const fresh = await isCacheFresh(cacheFile);
+        try {
+          const parsed = JSON.parse(await fs.readFile(cacheFile, 'utf-8'));
+          if (!fresh) {
+            console.error('[cds-kb-mcp] S3 index cache stale, serving from cache + revalidating in background');
+            this.#revalidateInBackground(relPath, cacheFile, { json: true });
+          }
+          return parsed;
+        } catch {
+          console.error('[cds-kb-mcp] S3 index cache corrupt, re-downloading...');
+        }
+      } else {
+        console.error(`[cds-kb-mcp] S3 upstream commit ${String(upstreamVersion.commit || '').slice(0, 8)} ≠ cached — refreshing index`);
+      }
+    }
+
+    const text = await this.#getObjectText(relPath);
+    await this.#persistJsonCache(cacheFile, text);
+    if (upstreamVersion) {
+      try {
+        await atomicWriteFile(path.join(this.cacheDir, 'version.json'), JSON.stringify(upstreamVersion));
+      } catch { /* ignore */ }
+    }
+    return JSON.parse(text);
+  }
+
+  async #loadPathMap() {
+    const parsed = await this.#loadCachedJson('index/view-paths.json', 'view-paths.json');
+    if (parsed) return parsed;
+    try {
+      await atomicWriteFile(path.join(this.cacheDir, 'view-paths.json'), '{}');
+    } catch { /* ignore */ }
+    return null;
+  }
+
+  async getView(name) {
+    const safe = path.basename(name).replace(/\.md$/i, '').toUpperCase();
+    const pathMap = await this.#loadPathMap();
+    const relPath = (pathMap && pathMap[safe]) || `views/${safe}.md`;
+    const cacheFile = path.join(this.cacheDir, relPath);
+
+    if (await cacheExists(cacheFile)) {
+      const md = await fs.readFile(cacheFile, 'utf-8');
+      if (!(await isCacheFresh(cacheFile))) {
+        this.#revalidateInBackground(relPath, cacheFile);
+      }
+      return md;
+    }
+    const text = await this.#getObjectText(relPath);
+    await atomicWriteFile(cacheFile, text);
+    return text;
+  }
+
+  async getViewSections(name, sections) {
+    const md = await this.getView(name);
+    return filterSections(md, sections);
+  }
+
+  async getTaxonomy() {
+    return this.#loadCachedJson('index/taxonomy.json', 'taxonomy.json');
+  }
+
+  async getFieldIndex() {
+    return this.#loadCachedJson('index/field-index.json', 'field-index.json');
+  }
+
+  async getTableIndex() {
+    return this.#loadCachedJson('index/table-index.json', 'table-index.json');
+  }
+
+  async getRawFieldIndex() {
+    return this.#loadCachedJson('index/raw-field-index.json', 'raw-field-index.json');
+  }
+
+  async getEmbeddings() {
+    return this.#loadCachedJson('index/embeddings.json', 'embeddings.json');
+  }
 }
 
 // ── Resolver ────────────────────────────────────────────────────────────────
-// Precedence: --data > CDS_KB_DATA > --remote > CDS_KB_REMOTE >
-// sibling harness folder docs/product/cds_kb_data > default GitHub remote.
+// Precedence: --data / CDS_KB_DATA → s3Configured() → --remote / CDS_KB_REMOTE →
+// sibling harness folder docs/product/cds_kb_data → default GitHub remote.
 export function resolveDataSource(argv = process.argv.slice(2)) {
   const getFlag = (name) => {
     const i = argv.indexOf(name);
@@ -538,6 +781,8 @@ export function resolveDataSource(argv = process.argv.slice(2)) {
   };
   const dataPath = getFlag('--data') || process.env.CDS_KB_DATA;
   if (dataPath) return new LocalDataSource(dataPath);
+
+  if (s3Configured()) return new S3DataSource();
 
   const remote = getFlag('--remote') || process.env.CDS_KB_REMOTE;
   if (remote) return new RemoteDataSource(remote);

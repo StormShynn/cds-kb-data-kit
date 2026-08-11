@@ -44,6 +44,18 @@ A working reference implementation already exists: `cds_kb_mcp`'s
 pattern, plus ETag caching and retry/backoff. Worth reading even if the new
 consumer isn't Node.js, just to see the request shape and caching strategy.
 
+### S3 / MinIO (tenant remotes)
+
+`cds_kb_mcp` can also read the same layout from an S3-compatible bucket when
+`CDS_KB_S3_BUCKET` + `CDS_KB_S3_ACCESS_KEY_ID` + `CDS_KB_S3_SECRET_ACCESS_KEY`
+are set (optional `CDS_KB_S3_PREFIX`, `CDS_KB_S3_REGION`, `CDS_KB_S3_ENDPOINT`,
+`CDS_KB_S3_FORCE_PATH_STYLE=true` for MinIO). Objects mirror the repo layout
+(`index/search_index.json`, `views/...`). See `S3DataSource` in
+`../cds_kb_mcp/src/datasource.mjs`. Local `--data` / `CDS_KB_DATA` still wins.
+
+Optional `index/embeddings.json` (built by `scripts/build-embeddings.mjs` when
+`CDS_KB_EMBED_API_KEY` is set) enables hybrid search in the MCP.
+
 ## 3. What's actually in here
 
 | Path | Format | Use it for |

@@ -208,6 +208,50 @@ define view entity Z_GoodView
   }
   console.log('✅ validate bad DDL');
 
+  console.log('\n=== TEST 12: search_cds hasDdl:true ===');
+  const r12 = await call('tools/call', {
+    name: 'search_cds',
+    arguments: { query: 'purchase order', hasDdl: true, limit: 5 },
+  });
+  const t12 = r12.result?.content?.[0]?.text || '';
+  console.log(t12.slice(0, 400));
+  if (!t12 || /No CDS views matched/i.test(t12) || !/I_PURCHASEORDER|I_PURCHASING|Top \d+ CDS views/i.test(t12)) {
+    console.error('❌ search_cds hasDdl:true failed — expected results');
+    proc.kill();
+    process.exit(1);
+  }
+  console.log('✅ search_cds hasDdl:true');
+
+  console.log('\n=== TEST 13: propose_query_library_entry ===');
+  const r13 = await call('tools/call', {
+    name: 'propose_query_library_entry',
+    arguments: {
+      title: 'Test PO select',
+      views: [{ name: 'I_PurchaseOrder' }],
+      select: 'PurchaseOrder',
+      viewName: 'Z_TestPropose',
+    },
+  });
+  const t13 = r13.result?.content?.[0]?.text || '';
+  console.log(t13.slice(0, 500));
+  if (!t13 || !/"title":\s*"Test PO select"/i.test(t13) || !/query-library\.json/i.test(t13)) {
+    console.error('❌ propose_query_library_entry failed — expected JSON snippet');
+    proc.kill();
+    process.exit(1);
+  }
+  console.log('✅ propose_query_library_entry');
+
+  console.log('\n=== TEST 14: kb_info embeddings / usageEndpoint / privateOverlay ===');
+  const r14 = await call('tools/call', { name: 'kb_info', arguments: {} });
+  const t14 = r14.result?.content?.[0]?.text || '';
+  console.log(t14);
+  if (!/embeddings:/i.test(t14) || !/usageEndpoint:/i.test(t14) || !/privateOverlay:/i.test(t14)) {
+    console.error('❌ kb_info missing embeddings / usageEndpoint / privateOverlay lines');
+    proc.kill();
+    process.exit(1);
+  }
+  console.log('✅ kb_info visibility fields');
+
   console.log('\n✅ All tests passed!');
   proc.kill();
   process.exit(0);

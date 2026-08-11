@@ -59,19 +59,21 @@ const GENERATED_FILES = new Set([
 
 function parseArgs() {
   const args = process.argv.slice(2);
-  const opts = { count: 25, push: true, commit: true, modules: DEFAULT_MODULES };
+  const opts = { count: 25, push: true, commit: true, modules: DEFAULT_MODULES, overlay: false };
   for (let i = 0; i < args.length; i++) {
     switch (args[i]) {
       case '--count': opts.count = parseInt(args[++i], 10) || 25; break;
       case '--no-push': opts.push = false; break;
       case '--no-commit': opts.commit = false; opts.push = false; break;
+      case '--overlay': opts.overlay = true; break;
       case '--modules': {
         const raw = args[++i];
         opts.modules = raw === '*' ? null : raw.split(',').map(s => s.trim()).filter(Boolean);
         break;
       }
       case '--help': case '-h':
-        console.log('Usage: node scripts/run-vsp-batch.mjs [--count 25] [--no-push] [--no-commit] [--modules FI-,CO-,... | \'*\' for no LOB filter]');
+        console.log('Usage: node scripts/run-vsp-batch.mjs [--count 25] [--no-push] [--no-commit] [--overlay] [--modules FI-,CO-,... | \'*\' for no LOB filter]');
+        console.log('  --overlay  Pass through to apply_vsp_ddl; also allows Z* candidate names (customer overlay).');
         process.exit(0);
     }
   }
@@ -98,7 +100,7 @@ function runCapture(cmd, args, opts = {}) {
   return spawnSync(cmd, args, { encoding: 'utf-8', maxBuffer: 200 * 1024 * 1024, ...opts });
 }
 
-async function selectCandidates(count, modulePrefixes) {
+async function selectCandidates(count, modulePrefixes, { allowZ = false } = {}) {
   const coverage = await readJson(path.join(DATA_DIR, 'coverage.json'), null);
   if (!coverage) throw new Error('coverage.json not found — run `node scripts/check-coverage.mjs` first');
 
@@ -106,7 +108,9 @@ async function selectCandidates(count, modulePrefixes) {
   for (const row of coverage.rows) {
     if (picked.length >= count) break;
     if (row.status !== 'metadata-only') continue;
-    if (row.name.startsWith('_DCO_') || row.name.startsWith('Z')) continue;
+    if (row.name.startsWith('_DCO_')) continue;
+    // Public Hub batch skips Z* (customer namespace). Overlay mode keeps them.
+    if (!allowZ && row.name.startsWith('Z')) continue;
 
     const file = await findExistingView(VIEWS_DIR, row.name.toUpperCase());
     if (!file) continue;
@@ -280,8 +284,8 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`Đang chọn tối đa ${opts.count} candidate (module: ${opts.modules ? opts.modules.join(', ') : 'tất cả LOB, không giới hạn'})...`);
-  const names = await selectCandidates(opts.count, opts.modules);
+  console.log(`Đang chọn tối đa ${opts.count} candidate (module: ${opts.modules ? opts.modules.join(', ') : 'tất cả LOB, không giới hạn'}${opts.overlay ? ', overlay' : ''})...`);
+  const names = await selectCandidates(opts.count, opts.modules, { allowZ: opts.overlay });
   console.log(`Chọn được ${names.length} candidate: ${names.join(', ')}\n`);
   if (names.length === 0) {
     console.log('Không còn candidate nào phù hợp (đã xử lý hết trong các module đang chọn).');
@@ -299,7 +303,9 @@ async function main() {
   }
 
   console.log('\nApply DDL vào knowledge base...');
-  if (!run('node', ['scripts/apply_vsp_ddl.mjs', '--dir', tmpDir])) {
+  const applyArgs = ['scripts/apply_vsp_ddl.mjs', '--dir', tmpDir];
+  if (opts.overlay) applyArgs.push('--overlay');
+  if (!run('node', applyArgs)) {
     console.error('apply_vsp_ddl.mjs lỗi — dừng lại, kiểm tra output ở trên.');
     process.exit(1);
   }
