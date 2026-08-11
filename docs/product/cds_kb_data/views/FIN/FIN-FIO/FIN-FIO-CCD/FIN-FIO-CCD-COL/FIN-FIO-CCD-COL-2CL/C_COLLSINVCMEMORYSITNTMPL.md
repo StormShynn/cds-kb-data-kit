@@ -5,9 +5,20 @@ app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLSINVCMEMORYSITNTMPL')/$value
 semantic_en: "This CDS view provides a comprehensive overview of situations created from invoices in SAP Collections Management. It provides a template for analyzing collections invoice situations, allowing you to monitor and manage overdue invoices, dunning processes, and payment promises effectively. How many invoices are overdue and what is the total overdue amount? What is the status of dunning processes for overdue invoices? How many payment promises are outstanding and what is their total value? What is the risk of late payment for specific invoices?"
+semantic_vi: "C_COLLSINVCMEMORYSITNTMPL — CDS view tiêu dùng dựa trên P_CollectionsInvoiceMemory."
+keywords:
+  - "collsinvcmemorysitntmpl"
+  - "company"
+  - "code"
+  - "accounting"
+  - "document"
+  - "fiscal"
+  - "year"
+  - "item"
+  - "customer"
 tags:
   - FIN
   - bo:billingdocument
@@ -21,7 +32,6 @@ tags:
   - lob:controlling
   - lob:finance
   - payment
-  - metadata-only
 ---
 # C_COLLSINVCMEMORYSITNTMPL
 
@@ -33,16 +43,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLSINVCMEMORYSITNTMPL')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLSINVCMEMORYSITNTMPL')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Document Number of an Accounting Document |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocumentItem` |  | |  |  | `NUMC(3)` | Number of Line Item Within Accounting Document |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Document Number of an Accounting Document |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocumentItem` | ✓ | |  |  | `NUMC(3)` | Number of Line Item Within Accounting Document |
 | `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
 | `BillingDocument` |  | |  |  | `CHAR(10)` | Billing Document |
 | `PostingDate` |  | |  |  | `DATS(8)` | Posting Date in the Document |
@@ -59,9 +69,9 @@ tags:
 | `ArrangedAmount` |  | |  |  | `CURR(13)` | Amount Arranged for Payment |
 | `CashDiscountAmtInTransacCrcy` |  | |  |  | `CURR(13)` | Cash Discount Amount in Document Currency |
 | `BranchAccount` |  | |  |  | `CHAR(10)` | Customer Number |
-| `ObjectKey` |  | |  |  | `CHAR(21)` | Invoice Key |
+| `ObjectKey` |  | |  | `cast( ObjectKey as fdm_invoice_key )` | `CHAR(21)` | Invoice Key |
 | `CollectionsInvoiceUniqueID` |  | |  |  | `CHAR(30)` | Situation Anchor Object Type |
-| `CollectionSegment` |  | |  |  | `CHAR(10)` | Collection Segment |
+| `CollectionSegment` |  | | `_CollectionsAccount` | `CollectionSegment` | `CHAR(10)` | Collection Segment |
 | `OverdueDays` |  | |  |  | `INT4(10)` |  |
 | `ReferenceDocumentLogicalSystem` |  | |  |  | `CHAR(10)` | Logical System of Reference Document |
 | `LastDunningDurationInDays` |  | |  |  | `INT4(10)` |  |
@@ -90,3 +100,176 @@ tags:
 | `ResubmissionDueDate` |  | |  |  | `DATS(8)` | Resubmission Date |
 | `ResubmissionReason` |  | |  |  | `CHAR(4)` | Reason for Resubmission |
 | `LatePaymentRisk` |  | |  |  | `CHAR(1)` | Risk of Late Payment (Deprecated) |
+| `_OperationalAcctgDocItem` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_AccountingDocument` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CollectionsAccount` | `P_CollectionsAccount` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLSINVCMEMORYSITNTMPL')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLSINVCMEMORYSITNTMPL')/$value)*
+
+```abap
+@AbapCatalog: { sqlViewName: 'CCOLLINVSIT',
+                compiler:    { compareFilter: true },
+                preserveKey: true }
+@Metadata: { ignorePropagatedAnnotations: true }
+@VDM: { viewType: #CONSUMPTION,
+        lifecycle: { contract: { type: #PUBLIC_LOCAL_API } } }
+@AccessControl: { personalData:       { blocking: #BLOCKED_DATA_EXCLUDED },
+                  authorizationCheck: #CHECK }
+@ClientHandling: { algorithm: #SESSION_VARIABLE }
+@ObjectModel: { usageType: { serviceQuality: #X,
+                             sizeCategory:   #L,
+                             dataClass:      #MIXED },
+                representativeKey: 'AccountingDocumentItem',
+                semanticKey: [ 'CollectionSegment',
+                               'Customer',
+                               'BranchAccount',
+                               'PostingKey',
+                               'CompanyCode',
+                               'FiscalYear',
+                               'AccountingDocument',
+                               'AccountingDocumentItem',
+                               'DisputeCase',
+                               'PromiseToPay' ],
+                supportedCapabilities: [ #SITUATION_ANCHOR,
+                                         #SITUATION_TRIGGER ],
+                modelingPattern: #SITUATION_ANCHOR }
+@EndUserText: { label: 'Collections Invoice Situation Template' }
+
+define view C_CollsInvcMemorySitnTmpl
+  as select from P_CollectionsInvoiceMemory
+
+  //VDM associations
+  //Collections Account - derivation of Collection Segment
+  association [0..*] to P_CollectionsAccount as _CollectionsAccount on  $projection.BranchAccount = _CollectionsAccount.Customer
+                                                                    and $projection.CompanyCode   = _CollectionsAccount.CompanyCode
+{
+
+      // VDM Fields
+      @ObjectModel: { foreignKey: { association: '_CompanyCode' } }
+  key CompanyCode,
+
+      @ObjectModel: { foreignKey: { association: '_AccountingDocument' } }
+      @UI: { hidden: true }
+  key AccountingDocument,
+
+      @ObjectModel: { foreignKey: { association: '_FiscalYear' } }
+      @UI: { hidden: true }
+  key FiscalYear,
+
+      @ObjectModel: { foreignKey: { association: '_OperationalAcctgDocItem' } }
+      @UI: { hidden: true }
+  key AccountingDocumentItem,
+      Customer,
+
+      @UI: { hidden: true }
+      BillingDocument,
+      PostingDate,
+      NetDueDate,
+      CashDiscount1DueDate,
+      PaymentDate,
+      LastDunningDate,
+      TransactionCurrency,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      AmountInTransactionCurrency,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      PaidAmount,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      OpenAmountInDocumentCurrency,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      CreditedAmount,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      DunnedAmount,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      ArrangedAmount,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      CashDiscountAmtInTransacCrcy,
+
+      @EndUserText: { label: 'Branch Account' }
+      BranchAccount,
+
+      @UI: { hidden: true }
+      cast( ObjectKey as fdm_invoice_key ) as ObjectKey,
+
+      @UI: { hidden: true }
+      CollectionsInvoiceUniqueID,
+
+      _CollectionsAccount.CollectionSegment,
+
+      @EndUserText: { label:     'Days since due date',
+                      quickInfo: 'Days since due date' }
+      OverdueDays,
+
+      @UI: { hidden: true }
+      ReferenceDocumentLogicalSystem,
+
+      @EndUserText: { label:     'Days since last Dunning Date',
+                      quickInfo: 'Days since last Dunning Date' }
+      LastDunningDurationInDays,
+
+      FinancialAccountType,
+      PostingKey,
+      SpecialGLCode,
+      DunningBlockingReason,
+      DunningLevel,
+
+      @UI: { hidden: true }
+      FiscalPeriod,
+
+      DocumentDate,
+      OperationalGLAccount,
+      PaymentMethod,
+      Country,
+      Reference1InDocumentHeader,
+      Reference2InDocumentHeader,
+
+      @UI: { hidden: true }
+      DisputeCase,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      DisputedAmount,
+
+      CaseReason,
+      CaseStatus,
+
+      @UI: { hidden: true }
+      PromiseToPay,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      PromisedAmount,
+
+      PromiseToPayDueDate,
+      PromiseToPayLevel,
+      PromiseToPayStatus,
+
+      @UI: { hidden: true }
+      ResubmissionUUID,
+
+      ResubmissionDueDate,
+      ResubmissionReason,
+      LatePaymentRisk,
+
+      // Exposed Associations
+      _OperationalAcctgDocItem,
+      _FiscalYear,
+      _CompanyCode,
+      _AccountingDocument,
+      _Customer
+}
+```

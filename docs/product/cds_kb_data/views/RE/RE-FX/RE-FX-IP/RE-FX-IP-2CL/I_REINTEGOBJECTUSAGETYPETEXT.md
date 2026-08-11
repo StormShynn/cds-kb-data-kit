@@ -5,9 +5,21 @@ app_component: RE-FX-IP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJECTUSAGETYPETEXT')/$value
 semantic_en: "Real Estate Integ Obj Usage Type - Text"
+semantic_vi: "Real Estate Integ Obj Usage Type - Text — CDS view giao diện dựa trên tivipiousagetypt."
+keywords:
+  - "real"
+  - "estate"
+  - "integ"
+  - "obj"
+  - "usage"
+  - "type"
+  - "text"
+  - "object"
+  - "language"
+  - "name"
 tags:
   - RE
   - component:RE-FX-IP-2CL
@@ -15,7 +27,6 @@ tags:
   - RE-FX
   - RE-FX-IP
   - RE-FX-IP-2CL
-  - metadata-only
 ---
 # I_REINTEGOBJECTUSAGETYPETEXT
 
@@ -27,12 +38,75 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJECTUSAGETYPETEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJECTUSAGETYPETEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `REIntegObjectUsageType` |  | |  |  | `CHAR(4)` | Object Usage Type |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `REIntegObjectUsageTypeName` |  | |  |  | `CHAR(60)` | Description for Object Usage Type |
+| `REIntegObjectUsageType` | ✓ | |  | `iousagetype` | `CHAR(4)` | Object Usage Type |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `REIntegObjectUsageTypeName` |  | |  | `xiousagetype` | `CHAR(60)` | Description for Object Usage Type |
+| `_REIntegObjectUsageType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_REIntegObjectUsageType` | `I_REIntegObjectUsageType` | [0..1] |
+| `_Language` | `I_Language` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJECTUSAGETYPETEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJECTUSAGETYPETEXT')/$value)*
+
+```abap
+@EndUserText.label: 'Real Estate Integ Obj Usage Type - Text'
+@AbapCatalog.sqlViewName: 'IREINTOBJUSATYPT'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.sizeCategory: #M
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.representativeKey: 'REIntegObjectUsageType'
+@ObjectModel.semanticKey: ['REIntegObjectUsageType']
+
+
+@VDM.viewType: #BASIC
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.preserveKey:true
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel.modelingPattern:           #LANGUAGE_DEPENDENT_TEXT
+@ObjectModel.supportedCapabilities:  [  #LANGUAGE_DEPENDENT_TEXT,
+                                        #CDS_MODELING_DATA_SOURCE,
+                                        #CDS_MODELING_ASSOCIATION_TARGET,
+                                        #SQL_DATA_SOURCE,
+                                        #EXTRACTION_DATA_SOURCE,
+                                        #SEARCHABLE_ENTITY                   ]
+
+@Analytics:{
+    dataExtraction: {
+        enabled: true
+    }
+}
+
+define view I_REIntegObjectUsageTypeText
+  as select from tivipiousagetypt
+  association [0..1] to I_REIntegObjectUsageType as _REIntegObjectUsageType on $projection.REIntegObjectUsageType = _REIntegObjectUsageType.REIntegObjectUsageType
+  association [1..1] to I_Language               as _Language               on $projection.Language = _Language.Language
+{
+  key iousagetype      as REIntegObjectUsageType,
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key spras            as Language,
+      @Semantics.text: true
+      xiousagetype as REIntegObjectUsageTypeName,
+
+      _REIntegObjectUsageType,
+      _Language
+}
+```

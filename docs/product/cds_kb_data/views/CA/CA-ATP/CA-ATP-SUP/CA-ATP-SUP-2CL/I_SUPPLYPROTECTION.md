@@ -5,9 +5,19 @@ app_component: CA-ATP-SUP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPPLYPROTECTION')/$value
 semantic_en: "Supply Protection"
+semantic_vi: "Supply Protection — CDS view cơ bản (master data) dựa trên sup_object."
+keywords:
+  - "supply"
+  - "protection"
+  - "material"
+  - "plant"
+  - "name"
+  - "prot"
+  - "lifecycle"
+  - "status"
 tags:
   - CA
   - CA-ATP
@@ -16,7 +26,6 @@ tags:
   - component:CA-ATP-SUP-2CL
   - interface-view
   - lob:cross_application components
-  - metadata-only
 ---
 # I_SUPPLYPROTECTION
 
@@ -28,44 +37,119 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPPLYPROTECTION')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPPLYPROTECTION')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SupplyProtectionUUID` |  | |  |  | `RAW(16)` | UUID |
-| `Material` |  | |  |  | `CHAR(40)` | Material Number |
-| `Plant` |  | |  |  | `CHAR(4)` | Plant |
-| `SupplyProtectionName` |  | |  |  | `CHAR(60)` | Name |
-| `SupProtLifecycleStatus` |  | |  |  | `CHAR(2)` | Status |
-| `SupProtPlanningPeriodType` |  | |  |  | `CHAR(1)` | Planning Period Type |
-| `SupProtPlanningPeriodStartDate` |  | |  |  | `DATS(8)` | Planning Period Start Date |
-| `SupProtPlanningPeriodEndDate` |  | |  |  | `DATS(8)` | Planning Period End Date |
-| `SupProtCoreCharc01CtlgPathUUID` |  | |  |  | `RAW(16)` | Characteristic Catalog Path UUID |
-| `CoreCharc01CtlgPathIntID` |  | |  |  | `RAW(20)` | Characteristic Catalog Path Internal ID |
-| `SupProtCoreCharc01ValueID` |  | |  |  | `SSTR(40)` | Characteristic Value |
-| `SupProtCoreCharc02CtlgPathUUID` |  | |  |  | `RAW(16)` | Characteristic Catalog Path UUID |
-| `CoreCharc02CtlgPathIntID` |  | |  |  | `RAW(20)` | Characteristic Catalog Path Internal ID |
-| `SupProtCoreCharc02ValueID` |  | |  |  | `SSTR(40)` | Characteristic Value |
-| `SupProtIsPlanningContextSlsOrd` |  | |  |  | `CHAR(1)` | Planning Context: Sales Document |
-| `SupProtIsPlanningContextSTO` |  | |  |  | `CHAR(1)` | Planning Context: Stock Transport Order |
-| `SupProtCharcCatalogType` |  | |  |  | `CHAR(2)` | Characteristic Catalog Type |
-| `CreationDateTime` |  | |  |  | `DEC(21)` | Created On / At |
-| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By User |
-| `LastChangeDateTime` |  | |  |  | `DEC(21)` | Changed On / At |
-| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By User |
-| `CharcValAuthznGroup` |  | |  |  | `CHAR(40)` | Supply Protection Characteristic Value Authorization Group |
-| `DraftLastChangedDateTime` |  | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
-| `SupplyProtectionIsBlocked` |  | |  |  | `CHAR(1)` | Supply protection object is blocked |
-| `SupProtAutomActivationIsActive` |  | |  |  | `CHAR(1)` | Automatic Activation of Supply Protection Object |
-| `SupProtAutomActivationDate` |  | |  |  | `DATS(8)` | Date of Automatic Activation |
-| `SupProtActivationDate` |  | |  |  | `DATS(8)` | Activation Date |
-| `SupProtCnsmpnDateTimeType` |  | |  |  | `CHAR(2)` | Reference Date Type for Consumption |
-| `SupProtSelfRestrictionType` |  | |  |  | `CHAR(2)` | Restriction by Own Protection |
-| `UnitOfMeasure` |  | |  |  | `UNIT(3)` |  |
-| `SupProtProtectedQuantity` |  | |  |  | `QUAN(15)` |  |
-| `SupProtConsumedQuantity` |  | |  |  | `QUAN(15)` |  |
-| `SupProtRemainingProtectedQty` |  | |  |  | `QUAN(15)` |  |
-| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
-| `SupProtPlanningLevel` |  | |  |  | `CHAR(2)` | Planning Level for Supply Protection Objects |
+| `SupplyProtectionUUID` | ✓ | |  | `uuid` | `RAW(16)` | UUID |
+| `Material` |  | |  | `material` | `CHAR(40)` | Material Number |
+| `Plant` |  | |  | `plant` | `CHAR(4)` | Plant |
+| `SupplyProtectionName` |  | |  | `name` | `CHAR(60)` | Name |
+| `SupProtLifecycleStatus` |  | |  | `status` | `CHAR(2)` | Status |
+| `SupProtPlanningPeriodType` |  | |  | `planningperiodtype` | `CHAR(1)` | Planning Period Type |
+| `SupProtPlanningPeriodStartDate` |  | |  | `planningperiodstart` | `DATS(8)` | Planning Period Start Date |
+| `SupProtPlanningPeriodEndDate` |  | |  | `planningperiodend` | `DATS(8)` | Planning Period End Date |
+| `SupProtCoreCharc01CtlgPathUUID` |  | |  | `corecharc01catalogpathuuid` | `RAW(16)` | Characteristic Catalog Path UUID |
+| `CoreCharc01CtlgPathIntID` |  | |  | `corecharc01catalogpathid` | `RAW(20)` | Characteristic Catalog Path Internal ID |
+| `SupProtCoreCharc01ValueID` |  | |  | `corecharc01value` | `SSTR(40)` | Characteristic Value |
+| `SupProtCoreCharc02CtlgPathUUID` |  | |  | `corecharc02catalogpathuuid` | `RAW(16)` | Characteristic Catalog Path UUID |
+| `CoreCharc02CtlgPathIntID` |  | |  | `corecharc02catalogpathid` | `RAW(20)` | Characteristic Catalog Path Internal ID |
+| `SupProtCoreCharc02ValueID` |  | |  | `corecharc02value` | `SSTR(40)` | Characteristic Value |
+| `SupProtIsPlanningContextSlsOrd` |  | |  | `planningcontextso` | `CHAR(1)` | Planning Context: Sales Document |
+| `SupProtIsPlanningContextSTO` |  | |  | `planningcontextsto` | `CHAR(1)` | Planning Context: Stock Transport Order |
+| `SupProtCharcCatalogType` |  | |  | `catalogtype` | `CHAR(2)` | Characteristic Catalog Type |
+| `CreationDateTime` |  | |  | `creationdatetime` | `DEC(21)` | Created On / At |
+| `CreatedByUser` |  | |  | `createdbyuser` | `CHAR(12)` | Created By User |
+| `LastChangeDateTime` |  | |  | `lastchangedatetime` | `DEC(21)` | Changed On / At |
+| `LastChangedByUser` |  | |  | `lastchangedbyuser` | `CHAR(12)` | Last Changed By User |
+| `CharcValAuthznGroup` |  | |  | `charcvalauthzngroup` | `CHAR(40)` | Supply Protection Characteristic Value Authorization Group |
+| `DraftLastChangedDateTime` |  | |  | `last_changed_at` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| `SupplyProtectionIsBlocked` |  | |  | `blocked` | `CHAR(1)` | Supply protection object is blocked |
+| `SupProtAutomActivationIsActive` |  | |  | `autoactivation` | `CHAR(1)` | Automatic Activation of Supply Protection Object |
+| `SupProtAutomActivationDate` |  | |  | `autoactivationdate` | `DATS(8)` | Date of Automatic Activation |
+| `SupProtActivationDate` |  | |  | `activationdate` | `DATS(8)` | Activation Date |
+| `SupProtCnsmpnDateTimeType` |  | |  | `case consumptiondatetype when '' then '01' else consumptiondatetype end` | `CHAR(2)` | Reference Date Type for Consumption |
+| `SupProtSelfRestrictionType` |  | |  | `case selfrestriction when '' then '01' else selfrestriction end` | `CHAR(2)` | Restriction by Own Protection |
+| `UnitOfMeasure` |  | |  | `cast('' as abap.unit(3) )` | `UNIT(3)` |  |
+| `SupProtProtectedQuantity` |  | |  | `cast(0 as abap.quan(15,3) )` | `QUAN(15)` |  |
+| `SupProtConsumedQuantity` |  | |  | `cast(0 as abap.quan(15,3) )` | `QUAN(15)` |  |
+| `SupProtRemainingProtectedQty` |  | |  | `cast(0 as abap.quan(15,3) )` | `QUAN(15)` |  |
+| `StorageLocation` |  | |  | `storagelocation` | `CHAR(4)` | Storage Location |
+| `SupProtPlanningLevel` |  | |  | `case planninglevel when '' then '01' else planninglevel end` | `CHAR(2)` | Planning Level for Supply Protection Objects |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPPLYPROTECTION')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPPLYPROTECTION')/$value)*
+
+```abap
+@VDM: { viewType: #BASIC,
+        lifecycle.contract.type: #PUBLIC_LOCAL_API }
+@AccessControl.authorizationCheck: #MANDATORY
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+@ObjectModel: { usageType: { serviceQuality: #B,
+                             sizeCategory:   #L,
+                             dataClass:      #MASTER },
+                compositionRoot: true,
+                supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ] }
+@Metadata.ignorePropagatedAnnotations: true
+@EndUserText.label: 'Supply Protection'
+define root view entity I_SupplyProtection
+  as select from sup_object
+{
+  key uuid                        as SupplyProtectionUUID,
+      material                    as Material,
+      plant                       as Plant,
+      name                        as SupplyProtectionName,
+      status                      as SupProtLifecycleStatus,
+      planningperiodtype          as SupProtPlanningPeriodType,
+      planningperiodstart         as SupProtPlanningPeriodStartDate,
+      planningperiodend           as SupProtPlanningPeriodEndDate,
+      corecharc01catalogpathuuid  as SupProtCoreCharc01CtlgPathUUID,
+      corecharc01catalogpathid    as CoreCharc01CtlgPathIntID,
+      corecharc01value            as SupProtCoreCharc01ValueID,
+      corecharc02catalogpathuuid  as SupProtCoreCharc02CtlgPathUUID,
+      corecharc02catalogpathid    as CoreCharc02CtlgPathIntID,
+      corecharc02value            as SupProtCoreCharc02ValueID,
+      planningcontextso           as SupProtIsPlanningContextSlsOrd,
+      planningcontextsto          as SupProtIsPlanningContextSTO,
+      catalogtype                 as SupProtCharcCatalogType,
+      creationdatetime            as CreationDateTime,
+      createdbyuser               as CreatedByUser,
+      lastchangedatetime          as LastChangeDateTime,
+      lastchangedbyuser           as LastChangedByUser,
+      charcvalauthzngroup         as CharcValAuthznGroup,
+      last_changed_at             as DraftLastChangedDateTime,
+      blocked                     as SupplyProtectionIsBlocked,
+      autoactivation              as SupProtAutomActivationIsActive,
+      autoactivationdate          as SupProtAutomActivationDate,
+      activationdate              as SupProtActivationDate,
+      case consumptiondatetype
+        when '' then '01'
+        else consumptiondatetype
+      end                         as SupProtCnsmpnDateTimeType,
+      case selfrestriction
+        when '' then '01'
+        else selfrestriction
+      end                         as SupProtSelfRestrictionType,
+
+      cast('' as abap.unit(3) )   as UnitOfMeasure,
+
+      @Semantics.quantity.unitOfMeasure: 'UnitOfMeasure'
+      cast(0 as abap.quan(15,3) ) as SupProtProtectedQuantity,
+
+      @Semantics.quantity.unitOfMeasure: 'UnitOfMeasure'
+      cast(0 as abap.quan(15,3) ) as SupProtConsumedQuantity,
+
+      @Semantics.quantity.unitOfMeasure: 'UnitOfMeasure'
+      cast(0 as abap.quan(15,3) ) as SupProtRemainingProtectedQty,
+
+      storagelocation             as StorageLocation,
+      case planninglevel
+        when '' then '01'
+        else planninglevel
+      end                         as SupProtPlanningLevel
+
+}
+```

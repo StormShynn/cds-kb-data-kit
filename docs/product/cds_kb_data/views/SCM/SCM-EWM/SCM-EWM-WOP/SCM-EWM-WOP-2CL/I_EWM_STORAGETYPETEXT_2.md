@@ -5,9 +5,17 @@ app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_STORAGETYPETEXT_2')/$value
 semantic_en: "This CDS view provides information about storage types in your warehouse. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Storage Type - Text — CDS view giao diện dựa trên Storage Type - Text."
+keywords:
+  - "storage"
+  - "type"
+  - "text"
+  - "language"
+  - "warehouse"
+  - "name"
 tags:
   - SCM
   - bo:companycode
@@ -16,7 +24,6 @@ tags:
   - SCM-EWM
   - SCM-EWM-WOP
   - SCM-EWM-WOP-2CL
-  - metadata-only
 ---
 # I_EWM_STORAGETYPETEXT_2
 
@@ -28,13 +35,62 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_STORAGETYPETEXT_2')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_STORAGETYPETEXT_2')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMStorageType` |  | |  |  | `CHAR(4)` | Storage Type |
-| `EWMStorageTypeName` |  | |  |  | `CHAR(40)` | Description |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `EWMWarehouse` | ✓ | |  | `lgnum` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMStorageType` | ✓ | |  | `lgtyp` | `CHAR(4)` | Storage Type |
+| `EWMStorageTypeName` |  | |  | `ltypt` | `CHAR(40)` | Description |
+| `_Warehouse` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Warehouse` | `I_EWM_WarehouseNumber_2` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_STORAGETYPETEXT_2')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_STORAGETYPETEXT_2')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Storage Type - Text'
+
+@VDM.viewType: #BASIC
+
+@ObjectModel.representativeKey: 'EWMStorageType'
+@ObjectModel.dataCategory: #TEXT
+@Analytics.technicalName: 'IEWMSTRGTYPTXT2'
+@ObjectModel.usageType: {serviceQuality: #A,
+                         dataClass: #CUSTOMIZING,
+                         sizeCategory: #M}
+@ObjectModel.supportedCapabilities: [ #LANGUAGE_DEPENDENT_TEXT,
+                                      #SQL_DATA_SOURCE,
+                                      #CDS_MODELING_DATA_SOURCE,
+                                      #CDS_MODELING_ASSOCIATION_TARGET,
+                                      #SEARCHABLE_ENTITY ]
+@ObjectModel.modelingPattern: #LANGUAGE_DEPENDENT_TEXT
+@Search.searchable: true
+@Metadata.ignorePropagatedAnnotations:true
+define view entity I_EWM_StorageTypeText_2
+  as select from /scwm/t301t as StorageTypeName
+  association [0..1] to I_EWM_WarehouseNumber_2 as _Warehouse on $projection.EWMWarehouse = _Warehouse.EWMWarehouse
+{
+      @Semantics.language: true
+  key spras as Language,
+      @ObjectModel.foreignKey.association: '_Warehouse'
+  key lgnum as EWMWarehouse,
+  key lgtyp as EWMStorageType,
+      @Semantics.text: true
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      ltypt as EWMStorageTypeName,
+      _Warehouse
+}
+```

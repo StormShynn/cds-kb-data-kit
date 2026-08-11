@@ -5,9 +5,23 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYNDQRY')/$value
 semantic_en: "PRA Tax Reporting History ND Query"
+semantic_vi: "PRA Tax Reporting History ND Query — CDS view tiêu dùng dựa trên I_PRATaxRptgHistoryND."
+keywords:
+  - "pra"
+  - "tax"
+  - "reporting"
+  - "history"
+  - "query"
+  - "company"
+  - "code"
+  - "sales"
+  - "date"
+  - "product"
+  - "well"
+  - "completion"
 tags:
   - IS
   - bo:purchaseorder
@@ -15,7 +29,6 @@ tags:
   - consumption-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # C_PRATAXRPTGHISTORYNDQRY
 
@@ -27,25 +40,25 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYNDQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYNDQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `SalesDate` |  | |  |  | `DATS(8)` | Sales Date / Month |
-| `Product` |  | |  |  | `CHAR(3)` | Full three char. product code (Major and Detail Products) |
-| `Well` |  | |  |  | `CHAR(15)` | Well ID number |
-| `WellCompletion` |  | |  |  | `CHAR(5)` | Well Completion Number |
-| `MeasurementPoint` |  | |  |  | `CHAR(20)` | Measurement point number |
-| `JointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
-| `DivisionOfInterest` |  | |  |  | `CHAR(5)` | Division of Interest (DOI) |
-| `DeliveryNetwork` |  | |  |  | `CHAR(20)` | Delivery network number |
-| `PRAContract` |  | |  |  | `CHAR(10)` | Contract Number |
-| `VolumeType` |  | |  |  | `CHAR(2)` | Volume type code |
-| `TaxClassification` |  | |  |  | `CHAR(4)` | Tax Class |
-| `TaxRptgRvslOrBkgOrAdjmt` |  | |  |  | `CHAR(1)` | Reversal/Booking/Adjustment |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `SalesDate` | ✓ | |  |  | `DATS(8)` | Sales Date / Month |
+| `Product` | ✓ | |  |  | `CHAR(3)` | Full three char. product code (Major and Detail Products) |
+| `Well` | ✓ | |  |  | `CHAR(15)` | Well ID number |
+| `WellCompletion` | ✓ | |  |  | `CHAR(5)` | Well Completion Number |
+| `MeasurementPoint` | ✓ | |  |  | `CHAR(20)` | Measurement point number |
+| `JointVenture` | ✓ | |  |  | `CHAR(6)` | Joint Venture |
+| `DivisionOfInterest` | ✓ | |  |  | `CHAR(5)` | Division of Interest (DOI) |
+| `DeliveryNetwork` | ✓ | |  |  | `CHAR(20)` | Delivery network number |
+| `PRAContract` | ✓ | |  |  | `CHAR(10)` | Contract Number |
+| `VolumeType` | ✓ | |  |  | `CHAR(2)` | Volume type code |
+| `TaxClassification` | ✓ | |  |  | `CHAR(4)` | Tax Class |
+| `TaxRptgRvslOrBkgOrAdjmt` | ✓ | |  |  | `CHAR(1)` | Reversal/Booking/Adjustment |
 | `ProducerOrPurchaserCode` |  | |  |  | `CHAR(1)` | Producer or Purchaser |
 | `UnitJointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
 | `HasSeveranceTaxPaytOblgn` |  | |  |  | `CHAR(1)` | Tax Severance Tax Calculation Payment Obligations Types |
@@ -91,3 +104,153 @@ tags:
 | `MktgCost09InCoCodeCrcy` |  | |  |  | `CURR(11)` | Marketing Cost |
 | `MktgCost10InCoCodeCrcy` |  | |  |  | `CURR(11)` | Marketing Cost |
 | `MktgReimbmtCostInCoCodeCrcy` |  | |  |  | `CURR(11)` | Marketing Cost Reimbursement |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYNDQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYNDQRY')/$value)*
+
+```abap
+@EndUserText.label: 'PRA Tax Reporting History ND Query'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVTAXRPTGHND'
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+define view C_PRATaxRptgHistoryNDQry
+  as select from I_PRATaxRptgHistoryND
+{
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key CompanyCode,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 1
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  key SalesDate,
+  key Product,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  key Well,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  key WellCompletion,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  key MeasurementPoint,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  key JointVenture,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  key DivisionOfInterest,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  key DeliveryNetwork,
+  key PRAContract,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  key VolumeType,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  key TaxClassification,
+  @AnalyticsDetails.query.display: #TEXT
+  key TaxRptgRvslOrBkgOrAdjmt,
+      @AnalyticsDetails.query.display: #TEXT
+      ProducerOrPurchaserCode,
+      UnitJointVenture,
+      @AnalyticsDetails.query.display: #TEXT
+      HasSeveranceTaxPaytOblgn,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 2
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @AnalyticsDetails.query.display: #TEXT
+      SeveranceTaxRptgType,
+      BaseUnit,
+      CompanyCodeCurrency,
+      @AnalyticsDetails.query.display: #TEXT
+      NorthDakotaTaxExmpWellType,
+      @AnalyticsDetails.query.display: #TEXT
+      NorthDakotaPostalAreaCode,
+      APIWellNumber,
+      APIWellName,
+      @AnalyticsDetails.query.hidden
+      APIGravityRatio,
+      @AnalyticsDetails.query.display: #TEXT
+      ProducerOrPurchaserNmbr,
+      FederalIDByAgency,
+      TaxPayerIDByAgency,
+      @AnalyticsDetails.query.display: #TEXT
+      Reservoir,
+      ValuationDocumentNumber,
+      ValuationDocumentYear,
+      CreatedByUser,
+      CreationDateTime,
+      Country,
+      PrimaryGeogrlLocation,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @AnalyticsDetails.query.hidden
+      OilVolumeInBarrels,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      OilValueInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      TaxExmpValInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      TaxableOilValInCoCodeCrcy,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      ProdnTaxDueAmtInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      ProdnTxPrevPaidAmtInCoCdCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      ProdnTaxOthPaidAmtInCoCdCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      ProdnTaxPaidAmtInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      ExtractnTxDueAmtInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      ExtractnTxPrevAmtInCoCdCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      ExtractnTaxOthAmtInCoCdCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      ExtractnTaxPaidAmtInCoCdCrcy,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      AddlValInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      MktgCost01InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      MktgCost02InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      MktgCost03InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      MktgCost04InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      MktgCost05InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      MktgCost06InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      MktgCost07InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      MktgCost08InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      MktgCost09InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      MktgCost10InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      @AnalyticsDetails.query.axis: #COLUMNS
+      MktgReimbmtCostInCoCodeCrcy
+}
+```

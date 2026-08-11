@@ -5,15 +5,25 @@ app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTSPCLARRGMTLGLSTSTEXT')/$value
 semantic_en: "Agrmt Spcl Arrangement Legal Sts - Text"
+semantic_vi: "Agrmt Spcl Arrangement Legal Sts - Text — CDS view giao diện dựa trên dd07t."
+keywords:
+  - "agrmt"
+  - "spcl"
+  - "arrangement"
+  - "legal"
+  - "sts"
+  - "text"
+  - "language"
+  - "arrgmt"
+  - "status"
 tags:
   - FS
   - component:FS-CMS
   - FS-CMS
   - interface-view
-  - metadata-only
 ---
 # I_AGRMTSPCLARRGMTLGLSTSTEXT
 
@@ -25,12 +35,72 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTSPCLARRGMTLGLSTSTEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTSPCLARRGMTLGLSTSTEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `AgrmtSpclArrgmtLegalStatus` |  | |  |  | `CHAR(2)` | Special Arrangement Legal Status |
-| `AgrmtSpclArrgmtLegalStatusText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `AgrmtSpclArrgmtLegalStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as cms_dte_cag_sa_legal_stat preserving type )` | `CHAR(2)` | Special Arrangement Legal Status |
+| `AgrmtSpclArrgmtLegalStatusText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
+| `_Language` | | ✓ | | | | |
+| `_AgrmtSpclArrgmtLegalStatus` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_AgrmtSpclArrgmtLegalStatus` | `I_AgrmtSpclArrgmtLglSts` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTSPCLARRGMTLGLSTSTEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTSPCLARRGMTLGLSTSTEXT')/$value)*
+
+```abap
+@AbapCatalog:{
+    sqlViewName: 'ICAGSALGLSTSTXT',
+    compiler.compareFilter: true,
+    preserveKey: true
+}
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel:{
+    dataCategory: #TEXT,
+    usageType:{
+        serviceQuality: 'A',
+        sizeCategory: 'S',
+        dataClass: 'CUSTOMIZING'
+    },
+    supportedCapabilities: [ #LANGUAGE_DEPENDENT_TEXT,
+                             #CDS_MODELING_ASSOCIATION_TARGET,
+                             #SQL_DATA_SOURCE,
+                             #CDS_MODELING_DATA_SOURCE,
+                             #EXTRACTION_DATA_SOURCE ],
+    representativeKey: 'AgrmtSpclArrgmtLegalStatus'
+}
+@VDM.viewType: #BASIC
+@Analytics.dataExtraction.enabled: true
+@Metadata.ignorePropagatedAnnotations:true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Agrmt Spcl Arrangement Legal Sts - Text'
+define view I_AgrmtSpclArrgmtLglStsText
+  as select from dd07t
+  association [0..1] to I_Language              as _Language              on $projection.Language = _Language.Language
+  association [0..1] to I_AgrmtSpclArrgmtLglSts as _AgrmtSpclArrgmtLegalStatus on $projection.AgrmtSpclArrgmtLegalStatus = _AgrmtSpclArrgmtLegalStatus.agrmtspclarrgmtlegalstatus
+{
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key ddlanguage                                                                      as Language,
+      @ObjectModel.foreignKey.association: '_AgrmtSpclArrgmtLegalStatus'
+  key cast(substring(domvalue_l, 1, 2) as cms_dte_cag_sa_legal_stat preserving type ) as AgrmtSpclArrgmtLegalStatus,
+      @Semantics.text: true
+      ddtext                                                                          as AgrmtSpclArrgmtLegalStatusText,
+
+      _Language,
+      _AgrmtSpclArrgmtLegalStatus
+}
+where
+      dd07t.domname  = 'CMS_CAG_CA_LEGAL_STAT'
+  and dd07t.as4local = 'A'
+```

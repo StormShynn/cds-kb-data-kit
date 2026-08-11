@@ -5,9 +5,22 @@ app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRSYPOSITIONVALUECUBE')/$value
 semantic_en: "You can use this CDS view as the basis for your own queries for analyzing your Treasury positions by their attributes and position (component) values. Therefore, this CDS view provides the prerequisites for answering business questions for your Treasury positions, such as: What are the aggregated position values on the level of valuation areas, company codes, product types, or other dimensions, such as the account assignment reference? You can, for example, answer the following specific questions: What is the overall nominal amount invested in the different product types? What is the current book value of your debts and investments? What are the specific position values of a single treasury position in position currency or valuation currency?"
+semantic_vi: "Treasury Position Values - Cube — CDS view giao diện dựa trên I_TrsyPosValuesCompatible."
+keywords:
+  - "treasury"
+  - "position"
+  - "values"
+  - "cube"
+  - "valuation"
+  - "area"
+  - "class"
+  - "company"
+  - "code"
+  - "security"
+  - "account"
 tags:
   - FIN
   - account
@@ -19,7 +32,7 @@ tags:
   - interface-view
   - lob:finance
   - product
-  - metadata-only
+  - bo:purchaseorder
 ---
 # I_TRSYPOSITIONVALUECUBE
 
@@ -31,7 +44,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRSYPOSITIONVALUECUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRSYPOSITIONVALUECUBE')/$value) |
 
 ## Fields
 
@@ -75,15 +88,15 @@ tags:
 | `TreasuryUpdateType` |  | |  |  | `CHAR(8)` | Update Type |
 | `TreasuryPosAssetLiabilityCode` |  | |  |  | `CHAR(1)` | Asset/Liability Position |
 | `TreasuryAccountingCode` |  | |  |  | `CHAR(4)` | Accounting Code |
-| `IsFreestanding` |  | |  |  | `CHAR(1)` |  |
-| `DesignatedNominalCurrency` |  | |  |  | `CUKY(5)` |  |
-| `DesignatedQuantityInPieces` |  | |  |  | `DEC(30)` | Designated Quantity in Pieces |
+| `IsFreestanding` |  | |  | `case when I_Ftr_Position_Values._TreasurySubPosition.IsFreestanding is null then 'X' else ' ' end` | `CHAR(1)` |  |
+| `DesignatedNominalCurrency` |  | |  | `case when I_Ftr_Position_Values._TreasurySubPosition.DesignatedNominalCurrency is null then NominalCurrency else I_Ftr_Position_Values._TreasurySubPosition.DesignatedNominalCurrency end` | `CUKY(5)` |  |
+| `DesignatedQuantityInPieces` |  | |  | `cast(I_Ftr_Position_Values.DesignatedQuantityInPieces as ftr_gen_des_quant_in_units_l)` | `DEC(30)` | Designated Quantity in Pieces |
 | `DesignatedAmountInNominalCrcy` |  | |  |  | `CURR(21)` | Designated Nominal Amount |
 | `DesignatedOrigAmtInNominalCrcy` |  | |  |  | `CURR(21)` | Designated Original Nominal Amount |
 | `PositionCurrency` |  | |  |  | `CUKY(5)` | Position Currency |
 | `ValuationCurrency` |  | |  |  | `CUKY(5)` | Valuation Currency |
 | `NominalCurrency` |  | |  |  | `CUKY(5)` | Nominal Currency |
-| `TrsyHedgingRelshpRiskCurrency` |  | |  |  | `CUKY(5)` | Risk Currency of Hedging Relationship |
+| `TrsyHedgingRelshpRiskCurrency` |  | |  | `cast( case when I_Ftr_Position_Values._TreasurySubPosition.DesignatedNominalCurrency is null then I_Ftr_Position_Values.NominalCurrency else I_Ftr_Position_Values._TreasurySubPosition.DesignatedNominalCurrency end as ftr_gen_hrel_risk_currency preserving type)` | `CUKY(5)` | Risk Currency of Hedging Relationship |
 | `BookValueAmountInValnCurrency` |  | |  |  | `CURR(21)` | Book Value in Valuation Currency |
 | `BookValueAmtInPositionCurrency` |  | |  |  | `CURR(21)` | Book Value in Position Currency |
 | `NominalAmountInNominalCurrency` |  | |  |  | `CURR(21)` | Nominal Amount |
@@ -121,7 +134,7 @@ tags:
 | `AcquisitionAmtInPositionCrcy` |  | |  |  | `CURR(21)` | Acquisition Value in Position Currency |
 | `AmortizedAcqnAmountInValnCrcy` |  | |  |  | `CURR(21)` | Amortized Acquisition Value in Valuation Currency |
 | `AmortizedAcqnAmountInPosCrcy` |  | |  |  | `CURR(21)` | Amortized Acquisition Value in Position Currency |
-| `QuantityInPieces` |  | |  |  | `DEC(30)` | Quantity in Pieces |
+| `QuantityInPieces` |  | |  | `cast(I_Ftr_Position_Values.QuantityInPieces as ftr_gen_quantity_in_units_l)` | `DEC(30)` | Quantity in Pieces |
 | `SecurityValuationAmtInValnCrcy` |  | |  |  | `CURR(21)` | Security Valuation in Valuation Currency |
 | `SecurityValuationAmtInPosCrcy` |  | |  |  | `CURR(21)` | Security Valuation in Position Currency |
 | `ClearingAmountInPositionCrcy` |  | |  |  | `CURR(21)` | Clearing Component in Position Currency |
@@ -228,3 +241,644 @@ tags:
 | `PnLNonDesignatedAmtInVC` |  | |  |  | `CURR(21)` | Profit/Loss Effective / Non-Designated Component in VC |
 | `AmtznNonDesignatedAmtInPosCrcy` |  | |  |  | `CURR(21)` | Amortization / Non-Designated Component in Position Currency |
 | `AmtznNonDesignatedAmtInVC` |  | |  |  | `CURR(21)` | Amortization / Non-Designated Comp. in Valuation Currency |
+| `_TreasuryValuationArea` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_CentralClearingAccount` | | ✓ | | | | |
+| `_SecurityAccount` | | ✓ | | | | |
+| `_ProductType` | | ✓ | | | | |
+| `_PositionCurrency` | | ✓ | | | | |
+| `_ValuationCurrency` | | ✓ | | | | |
+| `_SecurityClass` | | ✓ | | | | |
+| `_TreasuryValuationClass` | | ✓ | | | | |
+| `_FinancialTransaction` | | ✓ | | | | |
+| `_TreasuryGLAccountAssignRef` | | ✓ | | | | |
+| `_TreasuryPositionAccount` | | ✓ | | | | |
+| `_TrsyPosManagementProcedure` | | ✓ | | | | |
+| `_CommitmentBusinessPartner` | | ✓ | | | | |
+| `_Portfolio` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_TreasuryValuationArea` | `I_TreasuryValuationArea` | [0..1] |
+| `_CompanyCode` | `I_CompanyCode` | [0..1] |
+| `_CentralClearingAccount` | `I_CentralClearingAccount` | [0..1] |
+| `_SecurityAccount` | `I_SecurityAccount` | [0..1] |
+| `_ProductType` | `I_FinancialinstrProductType` | [0..1] |
+| `_PositionCurrency` | `I_Currency` | [0..1] |
+| `_ValuationCurrency` | `I_Currency` | [0..1] |
+| `_SecurityClass` | `I_SecurityClass` | [0..1] |
+| `_TreasuryValuationClass` | `I_TreasuryValuationClass` | [0..1] |
+| `_FinancialTransaction` | `I_FinancialTransaction` | [0..1] |
+| `_TreasuryGLAccountAssignRef` | `I_TreasuryGLAccountAssignRef` | [0..1] |
+| `_TreasuryPositionAccount` | `I_TreasuryPositionAccount` | [0..1] |
+| `_TrsyPosManagementProcedure` | `I_TrsyPosManagementProcedure` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRSYPOSITIONVALUECUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRSYPOSITIONVALUECUBE')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #CHECK
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+@Analytics.dataCategory: #CUBE
+@Analytics.technicalName: 'ITRSYPOSVALCUBE'
+@Analytics.internalName: #LOCAL
+@EndUserText.label: 'Treasury Position Values - Cube'
+@Metadata.allowExtensions:true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #ANALYTICAL_CUBE
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_PROVIDER, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE]
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #L
+@VDM.viewType: #COMPOSITE
+--@OData.publish: true --> not needed for auth maintainance in case of cube
+
+define view entity I_TrsyPositionValueCube
+
+  as select from I_TrsyPosValuesCompatible as I_Ftr_Position_Values 
+  association [0..1] to I_TreasuryValuationArea      as _TreasuryValuationArea      on  $projection.TreasuryValuationArea = _TreasuryValuationArea.TreasuryValuationArea
+  association [0..1] to I_CompanyCode                as _CompanyCode                on  $projection.CompanyCode = _CompanyCode.CompanyCode
+  // cardinality of CentralClearingAccount should be fine
+  association [0..1] to I_CentralClearingAccount     as _CentralClearingAccount     on  $projection.CompanyCode            = _CentralClearingAccount.CompanyCode
+                                                                                    and $projection.CentralClearingAccount = _CentralClearingAccount.CentralClearingAccount
+
+  association [0..1] to I_SecurityAccount            as _SecurityAccount            on  $projection.SecurityAccount = _SecurityAccount.SecurityAccount
+                                                                                    and $projection.CompanyCode     = _SecurityAccount.CompanyCode
+  association [0..1] to I_FinancialinstrProductType  as _ProductType                on  $projection.FinancialInstrumentProductType = _ProductType.FinancialInstrumentProductType
+  association [0..1] to I_Currency                   as _PositionCurrency           on  $projection.PositionCurrency = _PositionCurrency.Currency
+  association [0..1] to I_Currency                   as _ValuationCurrency          on  $projection.ValuationCurrency = _ValuationCurrency.Currency
+  association [0..1] to I_SecurityClass              as _SecurityClass              on  $projection.SecurityClass = _SecurityClass.SecurityClass
+  association [0..1] to I_TreasuryValuationClass     as _TreasuryValuationClass     on  $projection.TreasuryValuationClass = _TreasuryValuationClass.TreasuryValuationClass
+                                                                                    and $projection.TreasuryValuationArea  = _TreasuryValuationClass.TreasuryValuationArea
+  // do not expose LoanContract (not C1 released)
+  //  association [0..1]  to I_LoanContract                as _LoanContract               on  $projection.LoanContract = _LoanContract.LoanContract
+  //                                                                                  and $projection.CompanyCode  = _LoanContract.CompanyCode
+  association [0..1] to I_FinancialTransaction       as _FinancialTransaction       on  $projection.FinancialTransaction = _FinancialTransaction.FinancialTransaction
+                                                                                    and $projection.CompanyCode          = _FinancialTransaction.CompanyCode
+  // we do not want to join FinancialTransaction for the on-condition to get FinancialInstrTransactionType
+  //  association [0..1]  to I_FinancialInstrTransType     as _TransactionType            on  $projection.FinancialInstrumentProductType = _TransactionType.FinancialInstrumentProductType
+  //                                                                                  and $projection.FinancialInstrTransactionType = _TransactionType.FinancialInstrTransactionType
+  // not C1-released / customized labels in OnPrem-context are currently not considered (feature "dynamic column headers" presented by Joerg Franke might be worth to consider)
+  //  association [0..1]  to I_TrltPosattrib               as _TrltPosattrib              on  $projection.TreasuryPosition = _TrltPosattrib.TreasuryPosition
+  association [0..1] to I_TreasuryGLAccountAssignRef as _TreasuryGLAccountAssignRef on  $projection.TreasuryGLAccountAssignmentRef = _TreasuryGLAccountAssignRef.TreasuryGLAccountAssignmentRef
+  //$projection.treasuryglaccountassignmentref =  _TreasuryGLAccountAssignRef.TreasuryGLAccountAssignmentRef
+  // we do not want to join FinancialTransaction for the on-condition to get BusinessArea
+  //  association [0..1]  to I_BusinessArea                as _BusinessArea               on $projection.businessarea = _BusinessArea.BusinessArea
+  association [0..1] to I_TreasuryPositionAccount    as _TreasuryPositionAccount    on  $projection.TreasuryPositionAccount = _TreasuryPositionAccount.TreasuryPositionAccount
+                                                                                    and $projection.CompanyCode             = _TreasuryPositionAccount.CompanyCode
+
+
+  association [0..1] to I_TrsyPosManagementProcedure as _TrsyPosManagementProcedure on  $projection.TrsyPosManagementProcedure = _TrsyPosManagementProcedure.TrsyPosManagementProcedure
+
+{
+  @ObjectModel.foreignKey.association: '_TreasuryValuationArea'
+  I_Ftr_Position_Values.TreasuryValuationArea,
+  @ObjectModel.foreignKey.association: '_TreasuryValuationClass'
+  I_Ftr_Position_Values.TreasuryValuationClass,
+  @ObjectModel.foreignKey.association: '_CompanyCode'
+  I_Ftr_Position_Values.CompanyCode,
+  @ObjectModel.foreignKey.association: '_SecurityAccount'
+  I_Ftr_Position_Values.SecurityAccount,
+  @ObjectModel.foreignKey.association: '_SecurityClass'
+  I_Ftr_Position_Values.SecurityClass,
+  //@ObjectModel.foreignKey.association: '_LoanContract'
+  I_Ftr_Position_Values.LoanContract,
+  I_Ftr_Position_Values.TreasuryPositionLongShortCode,
+  @ObjectModel.foreignKey.association: '_FinancialTransaction'
+  I_Ftr_Position_Values.FinancialTransaction,
+  @ObjectModel.foreignKey.association: '_ProductType'
+  I_Ftr_Position_Values.FinancialInstrumentProductType,
+  @ObjectModel.foreignKey.association: '_TreasuryPositionAccount'
+  I_Ftr_Position_Values.TreasuryPositionAccount,
+  --  I_Ftr_Position_Values.FinInstrProductGroup,
+
+  // Obsolete: DO NO USE I_Ftr_Position_Values.TreasuryPositionAccount but use association _TrsyLdgrGLAcctAssgmtRef.TreasuryGLAccountAssignmentRef
+  @ObjectModel.foreignKey.association: '_TreasuryGLAccountAssignRef'
+  I_Ftr_Position_Values.TreasuryGLAccountAssignmentRef,
+  I_Ftr_Position_Values.TreasuryPositionLot,
+  //  @ObjectModel.foreignKey.association: '_CentralClearingAccount'  //does not work, null object gets thrown
+  I_Ftr_Position_Values.CentralClearingAccount,
+  I_Ftr_Position_Values.CentralClearingAccountCurrency,
+  @ObjectModel.foreignKey.association: '_TrsyPosManagementProcedure'
+  I_Ftr_Position_Values.TrsyPosManagementProcedure,
+  I_Ftr_Position_Values.TreasuryPosition,
+
+  I_Ftr_Position_Values.FinancialExposureItem,
+  I_Ftr_Position_Values.FinancialExposureSubItem,
+
+
+  // potentially missing semantical key fields from POS_IDENT:
+  I_Ftr_Position_Values.FinancialInstrValuationClass,
+  // see comment at corresponding association
+  //@ObjectModel.foreignKey.association: '_DifferentiationPortfolio'
+  //I_Ftr_Position_Values.DifferentiationPortfolio,
+  //TRADER --> skip for DPP reasons
+  I_Ftr_Position_Values.SecurityAccountGroup,
+  I_Ftr_Position_Values.Fund,
+  I_Ftr_Position_Values.GrantID,
+  I_Ftr_Position_Values.WBSElementInternalID,
+  I_Ftr_Position_Values.ProfitCenter,
+  I_Ftr_Position_Values.CostCenter,
+  I_Ftr_Position_Values.FunctionalArea,
+  I_Ftr_Position_Values.TrsyPosCustomDiffntnTerm1,
+  I_Ftr_Position_Values.TrsyPosCustomDiffntnTerm2,
+  I_Ftr_Position_Values.TrsyPosCustomDiffntnTerm3,
+  I_Ftr_Position_Values.TrsyPosCustomDiffntnTerm4,
+  I_Ftr_Position_Values.TrsyPosCustomDiffntnTerm5,
+
+  @ObjectModel.foreignKey.association: '_Portfolio'
+  I_Ftr_Position_Values.Portfolio,
+  @ObjectModel.foreignKey.association: '_CommitmentBusinessPartner'
+  I_Ftr_Position_Values.CommitmentBusinessPartner,
+
+  //  @ObjectModel.foreignKey.association: '_BusinessArea'
+  //  _FinancialTransaction.BusinessArea,
+
+  I_Ftr_Position_Values.TreasuryPositionLedgerDate,
+  I_Ftr_Position_Values.TreasuryBusinessTransCategory,
+  I_Ftr_Position_Values.TreasuryUpdateType,
+  //  @ObjectModel.foreignKey.association: '_TransactionType'
+  //  _FinancialTransaction.FinancialInstrTransactionType,
+  I_Ftr_Position_Values.TreasuryPosAssetLiabilityCode,
+
+  I_Ftr_Position_Values.TreasuryAccountingCode,
+  case when I_Ftr_Position_Values._TreasurySubPosition.IsFreestanding is null then 'X' else ' ' end                                                                                                                                              as IsFreestanding,
+
+  case when I_Ftr_Position_Values._TreasurySubPosition.DesignatedNominalCurrency is null then NominalCurrency else I_Ftr_Position_Values._TreasurySubPosition.DesignatedNominalCurrency end                                                                            as DesignatedNominalCurrency,
+
+  @DefaultAggregation: #SUM
+  cast(I_Ftr_Position_Values.DesignatedQuantityInPieces as ftr_gen_des_quant_in_units_l)                                                                                                                                   as DesignatedQuantityInPieces,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'DesignatedNominalCurrency'
+  I_Ftr_Position_Values.DesignatedAmountInNominalCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'DesignatedNominalCurrency'
+  I_Ftr_Position_Values.DesignatedOrigAmtInNominalCrcy,
+
+  I_Ftr_Position_Values.PositionCurrency,
+  I_Ftr_Position_Values.ValuationCurrency,
+  I_Ftr_Position_Values.NominalCurrency,
+
+  cast( case when I_Ftr_Position_Values._TreasurySubPosition.DesignatedNominalCurrency is null then I_Ftr_Position_Values.NominalCurrency else I_Ftr_Position_Values._TreasurySubPosition.DesignatedNominalCurrency end as ftr_gen_hrel_risk_currency preserving type) as TrsyHedgingRelshpRiskCurrency,
+
+  //Key Figures
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.BookValueAmountInValnCurrency,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.BookValueAmtInPositionCurrency,
+
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'NominalCurrency'
+  I_Ftr_Position_Values.NominalAmountInNominalCurrency,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'NominalCurrency'
+  I_Ftr_Position_Values.OriglNominalAmtInNominalCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.PurchaseValueInValuationCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.PurchaseValueInPositionCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.OCIScrtyValnAmountInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.OCISecurityValnAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IdxClnOCIScrtyValnAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.ForeignCrcyValnAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.CostExcldBookValAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.CostInPositionCurrency,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.SecurityCostValnAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.SecurityCostValnAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.FrgnExchCostValnAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.AmortizationAmtInValuationCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.AmortizationAmtInPositionCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.ClrdPremDiscDefrlAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.ClrdPremDiscDefrlTxCompnAmount,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.IndexValuationAmountInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IndexValuationAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.FXValnAmtzdAcqnAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.VariationMarginAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.VariationMarginAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.OCIFrgnExchValnAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.OCIIndexValnAmountInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.OCIIndexValnAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.OCIScrtyCostValnAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.OCIScrtyCostValnAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.OCICostFXValnAmountInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.AccruedInterestInValuationCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.AccruedInterestInPositionCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.CostExcldBookValueAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.AcquisitionAmountInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.AcquisitionAmtInPositionCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.AmortizedAcqnAmountInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.AmortizedAcqnAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  cast(I_Ftr_Position_Values.QuantityInPieces as ftr_gen_quantity_in_units_l)                                                                                                                                              as QuantityInPieces,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.SecurityValuationAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.SecurityValuationAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.ClearingAmountInPositionCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.ClearingAmountInValuationCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.CostInValuationCurrency,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.PurValDeferralItmAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.PurValDeferralItmAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.NegttnSpreadAmtznAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.NegttnSpreadAmtznAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.CumltvRepaymentAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.CumltvRepaymentAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.PurCrcySpotValnAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.SaleCrcySpotValnAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.SwapAccrualAmountInPosCurrency,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.SwapAccrualAmountInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.SwapValuationAmountInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.ImpairmentAmountInPositionCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.ImpairmentAmtInValuationCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.HedgeAmortizationAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.HedgeAmortizationAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.FrgnExchValnDiffAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.GainValueAdjmtAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.GainValueAdjmtAmountInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.LossValueAdjmtAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.LossValueAdjmtAmountInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.OriginalValueAdjmtAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.OriginalValAdjmtAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.CapitalizationRsrvInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.CapitalizationRsrvInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.ForeignExchImprmtAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.CnsldtdScrtyGainAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.CnsldtdScrtyGainAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.CnsldtdScrtyLossAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.CnsldtdScrtyLossAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.CnsldtdForExGainAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.CnsldtdForExLossAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.InterestIncomeInPositionCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.InterestIncomeInValuationCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.SecurityWriteUpAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.SecurityWriteDownAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.SecurityWriteUpAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.ScrtyWriteDownAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.FrgnExchWriteUpAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.FrgnExchWriteDownAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.ScrtyCostWriteUpAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.ScrtyCostWriteDownAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.ScrtyCostWriteUpAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.ScrtyCostWrtDownAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.FrgnExchCostWrtUpAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.FXCostWriteDownAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IndexWriteUpAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IndexWriteDownAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.IndexWriteUpAmountInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.IndexWriteDownAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IndexCleanClearingAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IndexCleanPurchaseValInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IdxCleanScrtyValnAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IndexCleanCostInPositionCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.IndexClnScrtyCostValuationAmt,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IndexCleanAmtznAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IdxClnClrdPremDiscDeferralAmt,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IdxClnPurValDefrlAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.IdxClnOCIScrtyCostValuationAmt,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IndexCleanNegttnAmtznInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IndexCleanRpaytAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IndexCleanInterestIncInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IdxCleanHedgeAmtznAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IndexCleanImprmtAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IndexClnBookValueAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IdxClnCostExcldBookValueAmount,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IndexCleanAcqnAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IdxCleanAmtzdAcqnAmtInPosCrcy,
+
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.EffctvAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.EffctvAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IneffctvAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.IneffctvAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.EffctvCostHdggRsrvInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.EffctvCostHdggRsrvInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IneffctvHdggRsrvPnLInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.IneffctvHdggRsrvPnLInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.EffctvHdggRsrvPnLInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.IneffctvCostHdgRsrvPnLPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.IneffctvCostHdgRsrvPnLValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.EffctvCostHdgRsrvPnLInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.EffctvCostHdgRsrvPnLInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.LossAllowanceAmountInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.LossAllowanceAmountInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.FXLossAllowanceAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.OffstLossAllowanceAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.OffsetLossAllwncAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.OCIOffstLossAllwncAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.FXOffstLossAllwncAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.FXOffstOCILossAllwncInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.AmtznAdjmtLossAllwncInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.AmtznAdjmtLossAllwncInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.ContractChangeAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.ContractChangeAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.FrgnExchContrChgAmtInValnCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.AmortizedCostInPositionCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.AmortizedCostInValuationCrcy,
+
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.PnLDesignatedAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.PnLDesignatedAmtInVC,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.PnLNonDesignatedAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.PnLNonDesignatedAmtInVC,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'PositionCurrency'
+  I_Ftr_Position_Values.AmtznNonDesignatedAmtInPosCrcy,
+  @DefaultAggregation: #SUM
+  @Semantics.amount.currencyCode: 'ValuationCurrency'
+  I_Ftr_Position_Values.AmtznNonDesignatedAmtInVC,
+
+  // expose associations:
+
+  _CompanyCode,
+  _SecurityAccount,
+  _TreasuryValuationArea,
+  _ProductType,
+  _PositionCurrency,
+  _ValuationCurrency,
+  _SecurityClass,
+  _TreasuryValuationClass,
+  // _LoanContract,
+  _FinancialTransaction,
+  // _BusinessArea,
+  // TransactionType,
+  _TreasuryPositionAccount,
+  _TreasuryGLAccountAssignRef,
+  _TrsyPosManagementProcedure,
+  _CentralClearingAccount,
+  _CommitmentBusinessPartner,
+  _Portfolio
+}
+```

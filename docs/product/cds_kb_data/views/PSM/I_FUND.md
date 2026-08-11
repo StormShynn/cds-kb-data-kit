@@ -5,18 +5,26 @@ app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUND')/$value
 semantic_en: "This CDS view provides the master data for a fund, which can be used to answer the following business questions: What is the fund type? What is the frequency of fund?"
+semantic_vi: "Fund — CDS view giao diện dựa trên I_FundBasic."
 keywords:
   - "Fund"
+  - "fund"
+  - "financial"
+  - "management"
+  - "area"
+  - "customer"
+  - "application"
+  - "funds"
+  - "created"
 tags:
   - PSM
   - bo:businesspartner
   - component:PSM
   - interface-view
   - master-data
-  - metadata-only
 ---
 # I_FUND
 
@@ -28,14 +36,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUND')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUND')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
-| `Fund` |  | |  |  | `CHAR(10)` | Fund |
+| `FinancialManagementArea` | ✓ | |  |  | `CHAR(4)` | Financial Management Area |
+| `Fund` | ✓ | |  |  | `CHAR(10)` | Fund |
 | `Customer` |  | |  |  | `CHAR(10)` | Customer Account Number for Fund |
 | `ApplicationOfFunds` |  | |  |  | `CHAR(16)` | Application of Funds |
 | `FundCreatedBy` |  | |  |  | `CHAR(12)` | Fund Created by User |
@@ -51,3 +59,131 @@ tags:
 | `FundType` |  | |  |  | `CHAR(6)` | Fund Type |
 | `FundPeriodicity` |  | |  |  | `CHAR(10)` | Fund Frequency |
 | `FundResponsibleUser` |  | |  |  | `CHAR(12)` | Responsible User for Fund |
+| `_FundAuthznGrp` | | ✓ | | | | |
+| `_FundType` | | ✓ | | | | |
+| `_FinMgmtArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_ApplicationOfFund` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_FundPeriodicity` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_FundHierarchyNode` | | ✓ | | | | |
+| `_FundToBudgetPeriod` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Extension` | `E_Fund` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUND')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUND')/$value)*
+
+```abap
+@EndUserText.label: 'Fund'
+@Analytics: { dataCategory: #DIMENSION, dataExtraction.enabled: true, internalName: #LOCAL }
+@VDM.viewType: #COMPOSITE
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@AccessControl.authorizationCheck: #CHECK
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+@AccessControl.privilegedAssociations: ['_CreatedByUser', '_LastChangedByUser']
+@ObjectModel.representativeKey: 'Fund'
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE,#EXTRACTION_DATA_SOURCE]
+@ObjectModel.usageType: {
+  dataClass: #MASTER,
+  serviceQuality: #A,
+  sizeCategory: #L
+}
+@ObjectModel.sapObjectNodeType.name: 'Fund'
+@Metadata.ignorePropagatedAnnotations:true
+@Metadata.allowExtensions:true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.sqlViewName: 'IFUND'
+@AbapCatalog.preserveKey: true
+define view I_Fund
+  as select from I_FundBasic
+  
+     association [1..1] to E_Fund as _Extension  //do not expose this association in the projection list of the view 
+       on  $projection.Fund                       = _Extension.Fund
+       and $projection.FinancialManagementArea    = _Extension.FinancialManagementArea
+
+{
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_FinMgmtAreaStdVH',
+                     element: 'FinancialManagementArea' }
+        }]
+      @ObjectModel.foreignKey.association: '_FinMgmtArea'
+  key FinancialManagementArea,
+
+      @ObjectModel.text.association: '_Text'
+      @ObjectModel.hierarchy.association: '_FundHierarchyNode'
+  key Fund,
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_Customer_VH',
+                     element: 'Customer' }
+        }]
+      @ObjectModel.foreignKey.association: '_Customer'
+      Customer,
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_ApplicationOfFund',
+                     element: 'ApplicationOfFunds' },
+          additionalBinding: [{ localElement: 'FinancialManagementArea',
+                                element: 'FinancialManagementArea' }]
+        }]
+      @ObjectModel.foreignKey.association: '_ApplicationOfFund'
+      ApplicationOfFunds,
+      @Consumption.valueHelpDefinition: { entity: { name: 'I_BusinessUserVH', element: 'UserID' } }
+      FundCreatedBy,
+//      @ObjectModel.readOnly: true --> leads to ATC error    
+      @Semantics.systemDate.createdAt: true
+      FundCreatedAt,
+//      @ObjectModel.readOnly: true --> leads to ATC error
+      @Consumption.valueHelpDefinition: { entity: { name: 'I_BusinessUserVH', element: 'UserID' } }
+      LastChangeUser,
+      @Semantics.systemDate.lastChangedAt: true
+      LastChangeDate,
+      @Consumption.valueHelpDefinition: [
+      { entity:  { name:    'I_FundAuthznGrp',
+              element: 'FundAuthznGrp' }
+      }]
+      @ObjectModel.foreignKey.association: '_FundAuthznGrp'
+      @EndUserText.label: 'Fund Authorization Group'
+      FundAuthznGrp,
+      FundFinMgmtAreaForAuthzn,
+      @Semantics.businessDate.from: true
+      ValidityStartDate,
+      @Semantics.businessDate.to: true
+      ValidityEndDate,
+      FundReversalDate,
+      FundExpirationDate,
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_FundType',
+                     element: 'FundType' },
+          additionalBinding: [{ localElement: 'FinancialManagementArea',
+                                element: 'FinancialManagementArea' }]
+        }]
+      @ObjectModel.foreignKey.association: '_FundType'
+      FundType,
+      @Consumption.valueHelpDefinition: [
+       { entity:  { name:    'I_FundPeriodicity',
+                    element: 'FundPeriodicity' }
+       }]
+      @ObjectModel.foreignKey.association: '_FundPeriodicity'
+      FundPeriodicity,
+      FundResponsibleUser,
+      _FundAuthznGrp,
+      _FundType,
+      _FinMgmtArea,
+      _Text,
+      _ApplicationOfFund,
+      _Customer,
+      _FundPeriodicity,
+      _CreatedByUser,
+      _LastChangedByUser,
+      _FundHierarchyNode,
+      _FundToBudgetPeriod      
+
+}
+```

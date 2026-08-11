@@ -5,9 +5,21 @@ app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMSTROBMGREDOCINFORECD')/$value
 semantic_en: "This CDS view provides the prerequisites for answering the following business questions: Which documents are controlled by a change master? If a document was changed using a change master, who initiated these changes and when?"
+semantic_vi: "Change Number ObMaRe of Doc Info Record — CDS view giao diện dựa trên I_ChangeMstrObjectMgmtRecord."
+keywords:
+  - "change"
+  - "number"
+  - "obmare"
+  - "doc"
+  - "info"
+  - "record"
+  - "document"
+  - "type"
+  - "part"
+  - "version"
 tags:
   - PLM
   - bo:plant
@@ -18,7 +30,6 @@ tags:
   - PLM-WUI-OBJ
   - PLM-WUI-OBJ-ECN
   - PLM-WUI-OBJ-ECN-2CL
-  - metadata-only
 ---
 # I_CHANGEMSTROBMGREDOCINFORECD
 
@@ -30,17 +41,17 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMSTROBMGREDOCINFORECD')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMSTROBMGREDOCINFORECD')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
-| `DocumentType` |  | |  |  | `CHAR(3)` | Document Type |
-| `DocumentInfoRecord` |  | |  |  | `CHAR(25)` | Document Number |
-| `DocumentPart` |  | |  |  | `CHAR(3)` | Document Part |
-| `DocumentVersion` |  | |  |  | `CHAR(2)` | Document Version |
+| `ChangeNumber` | ✓ | |  |  | `CHAR(12)` | Change Number |
+| `DocumentType` | ✓ | |  | `cast(substring(ObjMgmtRecdObject, 1, 3) as dokar)` | `CHAR(3)` | Document Type |
+| `DocumentInfoRecord` | ✓ | |  | `cast(substring(ObjMgmtRecdObject, 4, 25) as doknr)` | `CHAR(25)` | Document Number |
+| `DocumentPart` | ✓ | |  | `cast(substring(ObjMgmtRecdObject, 29, 3) as doktl_d)` | `CHAR(3)` | Document Part |
+| `DocumentVersion` | ✓ | |  | `cast(substring(ObjMgmtRecdObject, 32, 2) as dokvr)` | `CHAR(2)` | Document Version |
 | `ObjMgmtRecdObject` |  | |  |  | `CHAR(90)` | Change object (internal use) |
 | `ObjMgmtRecdObjectInternalID` |  | |  |  | `CHAR(90)` | Identification of object to be changed |
 | `ChgNmbrAlternativeDateCounter` |  | |  |  | `NUMC(3)` | Engineering change management: alternative date counter |
@@ -57,3 +68,75 @@ tags:
 | `ObjMgmtRecdChangeType` |  | |  |  | `NUMC(3)` | Change Type for Object |
 | `ObjMgmtRecdObjIsPlanned` |  | |  |  | `CHAR(1)` | Indicator: planned record |
 | `ObjMgmtRecdObjRevisionLevel` |  | |  |  | `CHAR(2)` | Revision Level without Conversion Exit |
+| `_ChangeMaster` | | ✓ | | | | |
+| `_ChangeMasterAltDate` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_DocumentInfoRecord` | `I_DocumentInfoRecord` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMSTROBMGREDOCINFORECD')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMSTROBMGREDOCINFORECD')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #CHECK
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel.supportedCapabilities: [ #CDS_MODELING_DATA_SOURCE,
+                                      #CDS_MODELING_ASSOCIATION_TARGET,
+                                      #SQL_DATA_SOURCE ]
+
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.dataClass: #MASTER
+
+@VDM.viewType: #COMPOSITE
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+
+@EndUserText.label: 'Change Number ObMaRe of Doc Info Record'
+define view entity I_ChangeMstrObMgReDocInfoRecd
+  as select from I_ChangeMstrObjectMgmtRecord
+  association [0..1] to I_DocumentInfoRecord as _DocumentInfoRecord on  $projection.DocumentType       = _DocumentInfoRecord.DocumentInfoRecordDocType
+                                                                    and $projection.DocumentInfoRecord = _DocumentInfoRecord.DocumentInfoRecordDocNumber
+                                                                    and $projection.DocumentPart       = _DocumentInfoRecord.DocumentInfoRecordDocPart
+                                                                    and $projection.DocumentVersion    = _DocumentInfoRecord.DocumentInfoRecordDocVersion
+{
+  key ChangeNumber,
+  key cast(substring(ObjMgmtRecdObject, 1, 3) as dokar)    as DocumentType,
+  key cast(substring(ObjMgmtRecdObject, 4, 25) as doknr)   as DocumentInfoRecord,
+  key cast(substring(ObjMgmtRecdObject, 29, 3) as doktl_d) as DocumentPart,
+  key cast(substring(ObjMgmtRecdObject, 32, 2) as dokvr)   as DocumentVersion,
+
+      ObjMgmtRecdObject,
+      ObjMgmtRecdObjectInternalID,
+
+      ChgNmbrAlternativeDateCounter,
+      ObjMgmtRecdDescription,
+      ObjMgmtRecdItemUUID,
+
+      ObjMgmtRecdLastChangedAt,
+      ObjMgmtRecdLastChangedBy,
+
+      ObjMgmtRecdCreationDate,
+      ObjMgmtRecdCreatedBy,
+      ObjMgmtRecdObjLastChangedAt,
+      ObjMgmtRecdObjLastChangedBy,
+
+      ObjMgmtRecdObjIsLockedForChg,
+      ObjMgmtRecdObjIsBaselined,
+      ObjMgmtRecdChangeType,
+      ObjMgmtRecdObjIsPlanned,
+      ObjMgmtRecdObjRevisionLevel,
+
+      /* Associations */
+      _ChangeMaster,
+      _ChangeMasterAltDate
+      //      _DocumentInfoRecord
+}
+where
+  ChangeNumberObjectType = '31'
+```

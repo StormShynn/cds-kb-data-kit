@@ -5,9 +5,21 @@ app_component: FIN-FSCM-CMM-RSK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMFINVALUESCUBE')/$value
 semantic_en: "Derivative MTM - Cube"
+semantic_vi: "Derivative MTM - Cube — CDS view giao diện dựa trên I_CmmdtyMTMFinValues."
+keywords:
+  - "derivative"
+  - "mtm"
+  - "cube"
+  - "company"
+  - "code"
+  - "commodity"
+  - "price"
+  - "exposure"
+  - "category"
+  - "version"
 tags:
   - FIN
   - bo:companycode
@@ -18,7 +30,6 @@ tags:
   - interface-view
   - lob:finance
   - lob:sourcing & procurement
-  - metadata-only
 ---
 # I_CMMDTYMTMFINVALUESCUBE
 
@@ -30,7 +41,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMFINVALUESCUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMFINVALUESCUBE')/$value) |
 
 ## Fields
 
@@ -70,12 +81,12 @@ tags:
 | `TermStartDate` |  | |  |  | `DATS(8)` | Term Start |
 | `TermEndDate` |  | |  |  | `DATS(8)` | Term End |
 | `DeliveryDate` |  | |  |  | `DATS(8)` | Delivery Date of a Commodity Derivative (OBSOLETE) |
-| `NumberOfCommodityContracts` |  | |  |  | `CHAR(20)` | Number of Contracts |
+| `NumberOfCommodityContracts` |  | |  | `cast( NumberOfCommodityContracts as cmm_contracts_number)` | `CHAR(20)` | Number of Contracts |
 | `CommodityPriceExposureQuantity` |  | |  |  | `QUAN(13)` | Quantity (OBSOLETE) |
 | `CommodityPriceExposureUnit` |  | |  |  | `UNIT(3)` | Unit of Measure for the Commodity |
 | `TreasuryPositionAccount` |  | |  |  | `CHAR(10)` | Futures Account for Listed Options and Futures |
 | `DerivativeContract` |  | |  |  | `CHAR(13)` | Contract for Listed Options and Futures |
-| `OptionStrikePrice` |  | |  |  | `CHAR(18)` | Option Strike Price |
+| `OptionStrikePrice` |  | |  | `cast( OptionStrikePrice as cmm_option_strike_price)` | `CHAR(18)` | Option Strike Price |
 | `OptionStrikeCurrency` |  | |  |  | `CHAR(5)` | Currency Unit of the Rate |
 | `OptionPutCallCode` |  | |  |  | `NUMC(1)` | Put/Call Indicator |
 | `OptionExerciseType` |  | |  |  | `NUMC(1)` | Exercise Type (American or European) |
@@ -96,3 +107,160 @@ tags:
 | `StatisticsCurrency` |  | |  |  | `CUKY(5)` | Statistics Currency in Evaluation |
 | `HasErrorDescription` |  | |  |  | `CHAR(60)` | Error Description |
 | `SystemMessageNumber` |  | |  |  | `CHAR(3)` |  |
+| `_CmmdtyMtmMessage` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_DerivativeContrSpecification` | | ✓ | | | | |
+| `_FinAssetsMgmtProductType` | | ✓ | | | | |
+| `_MarketIdentifierCode` | | ✓ | | | | |
+| `_PhysicalCommodity` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CmmdtyMtmMessage` | `I_CmmdtyMtmMessage` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMFINVALUESCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMFINVALUESCUBE')/$value)*
+
+```abap
+@Analytics.dataCategory: #CUBE
+@VDM.viewType: #COMPOSITE
+@AccessControl.authorizationCheck: #CHECK
+@AbapCatalog.sqlViewName: 'IDRVTVMTMCUBE'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.dataClass: #TRANSACTIONAL
+@ObjectModel.supportedCapabilities:  [ #ANALYTICAL_PROVIDER, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ]
+
+@EndUserText.label: 'Derivative MTM - Cube'
+define view I_CmmdtyMTMFinValuesCube  with parameters
+    @Consumption.defaultValue: 'P'
+    P_DisplayView     : cds_view_uom,
+    @Environment.systemField: #SYSTEM_DATE
+    P_EvaluationDate  : cds_evaluation_date,
+    @Environment.systemField: #SYSTEM_DATE
+    P_EndOfDaySnapshotToDate : cds_evaluation_date_comp,
+    P_MTMDataSelectionType : cmm_vlogp_consumptiontype
+ as select from I_CmmdtyMTMFinValues (P_DisplayView:$parameters.P_DisplayView,
+                             P_EvaluationDate:$parameters.P_EvaluationDate,
+                             P_EndOfDaySnapshotToDate:$parameters.P_EndOfDaySnapshotToDate,
+                             P_MTMDataSelectionType:$parameters.P_MTMDataSelectionType)
+
+    association [0..*] to I_CmmdtyMtmMessage          as _CmmdtyMtmMessage             
+        on $projection.SystemMessageNumber = _CmmdtyMtmMessage.SystemMessageNumber          
+    {
+    //ZI_DrvtvMTMInterfaceLayer
+    @ObjectModel.foreignKey.association: '_CompanyCode'
+    CompanyCode,
+    CommodityPriceExposure,
+    CommodityExposureCategory,
+    CommodityPriceExposureVersion,
+    CommodityPriceSubExposure,
+    ValidityStartDateTime,
+    ValidityEndDateTime,
+    ValidityStartDate,
+    ValidityStartTime,
+    ValidityEndDate,
+    ValidityEndTime,
+    //ValidityStartCharTimestamp,
+    //ValidityEndCharTimestamp,
+    MaximumVersion,
+    RiskAnalyzerVersionUUID,
+    ExposureDueDate,
+    ReportingDate,
+
+     @ObjectModel.foreignKey.association: '_PhysicalCommodity'
+    Commodity,
+    CashFlowDirection,
+    TreasuryPositionLongShortCode,
+
+    @ObjectModel.foreignKey.association: '_DerivativeContrSpecification'
+    DerivativeContrSpecification,
+
+     @ObjectModel.foreignKey.association: '_MarketIdentifierCode'
+    MarketIdentifierCode,
+    TimeToMaturity,
+    CmmdtyForwardIndexTiming,
+    MaturityKeyDate,
+    DerivativeContractMaturityCode,
+    FinancialInstrProductCategory,
+
+    @ObjectModel.foreignKey.association: '_FinAssetsMgmtProductType'
+    FinancialAssetsMgmtProductType,
+    FinInstrTransactionCategory,
+    FinancialInstrumentProductType,
+    FinancialInstrActivityCategory,
+    FinancialObject,
+    PnLEventType,
+    TermStartDate,
+    TermEndDate,
+    DeliveryDate,
+    cast( NumberOfCommodityContracts as cmm_contracts_number) as NumberOfCommodityContracts,
+
+    @DefaultAggregation:  #SUM
+    @Semantics.quantity.unitOfMeasure: 'CommodityPriceExposureUnit'
+    CommodityPriceExposureQuantity,
+
+    @Semantics.unitOfMeasure:true
+    @ObjectModel.foreignKey.association: '_UnitOfMeasure'
+    CommodityPriceExposureUnit,
+
+    //CommodityPriceFixationStatus,
+    TreasuryPositionAccount,
+    DerivativeContract,
+    //@Semantics.amount.currencyCode: 'OptionStrikeCurrency'
+    cast( OptionStrikePrice as cmm_option_strike_price)       as OptionStrikePrice,
+    OptionStrikeCurrency,
+    OptionPutCallCode,
+    OptionExerciseType,
+    EvaluationDate,
+    MTMDataSelectionType,
+    FinInstrExternalReference,
+    DisplayView,
+    HasError,
+    ExternalKeyFigureValue,
+    @DefaultAggregation:  #SUM
+    OptionDeltaFactorKeyFigure,
+    OptionDeltaFactor,    
+    RiskAnalyzerKeyFigureName,
+
+    @DefaultAggregation:  #SUM
+    @Semantics.amount.currencyCode: 'QuotationCurrency'
+    RiskAnalyzerKeyFigInQtanCrcy,
+    @Semantics.currencyCode: true
+    QuotationCurrency,
+
+    @DefaultAggregation:  #SUM
+    @Semantics.amount.currencyCode: 'PaymentCurrency'
+    RiskAnalyzerKeyFigInPaytCrcy,
+    @Semantics.currencyCode: true
+    PaymentCurrency,
+    @DefaultAggregation:  #SUM
+    @Semantics.amount.currencyCode: 'StatisticsCurrency'
+    RiskAnalyzerKeyFigInStstcCrcy,
+    @Semantics.currencyCode: true
+    StatisticsCurrency,
+
+    HasErrorDescription,
+    @ObjectModel.foreignKey.association:'_CmmdtyMtmMessage'
+    SystemMessageNumber,
+    
+         
+    /* Associations */
+    //ZI_DrvtvMTMInterfaceLayer
+    _CompanyCode,
+    _DerivativeContrSpecification,
+    _FinAssetsMgmtProductType,
+    _MarketIdentifierCode,
+    _PhysicalCommodity,
+    _CmmdtyMtmMessage,
+    _UnitOfMeasure
+
+    }
+```

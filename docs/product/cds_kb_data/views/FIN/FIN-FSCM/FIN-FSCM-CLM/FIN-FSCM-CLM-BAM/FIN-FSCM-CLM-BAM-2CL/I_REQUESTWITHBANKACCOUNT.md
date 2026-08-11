@@ -5,9 +5,19 @@ app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REQUESTWITHBANKACCOUNT')/$value
 semantic_en: "This CDS view provides you with access to the data of bank accounts that are involved in a workflow change request for bank account management. This CDS view provides the prerequisites for answering the following business question: Which bank accounts are involved in this change request?"
+semantic_vi: "Bank Accounts in Change Request — CDS view giao diện dựa trên fclm_bam_reqacnt."
+keywords:
+  - "bank"
+  - "accounts"
+  - "change"
+  - "request"
+  - "account"
+  - "internal"
+  - "revision"
+  - "country"
 tags:
   - FIN
   - account
@@ -19,7 +29,6 @@ tags:
   - FIN-FSCM-CLM-BAM-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_REQUESTWITHBANKACCOUNT
 
@@ -31,24 +40,79 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REQUESTWITHBANKACCOUNT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REQUESTWITHBANKACCOUNT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BankAccountChangeRequest` |  | |  |  | `NUMC(12)` | Change Request ID |
-| `BankAccountInternalID` |  | |  |  | `NUMC(10)` | Bank Account Technical ID |
-| `BankAccountRevision` |  | |  |  | `NUMC(4)` | Revision Number |
-| `BankAccount` |  | |  |  | `CHAR(40)` | Bank Account Number |
-| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
-| `Bank` |  | |  |  | `CHAR(15)` | Bank Key |
-| `AccountType` |  | |  |  | `CHAR(10)` | Bank Account Type ID |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `BankAccountType` |  | |  |  | `CHAR(10)` | Bank Account Type ID |
-| `BankAccountHolderName` |  | |  |  | `CHAR(60)` | Bank Account Holder |
-| `IBAN` |  | |  |  | `CHAR(34)` | IBAN (International Bank Account Number) |
-| `BankAccountCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
-| `CountryName` |  | |  |  | `CHAR(50)` | Country/Region Name |
-| `BankAccountNumber` |  | |  |  | `CHAR(40)` | Bank Account Number |
-| `BankAccountStatus` |  | |  |  | `CHAR(2)` | Bank Account Status |
+| `BankAccountChangeRequest` | ✓ | |  | `request_id` | `NUMC(12)` | Change Request ID |
+| `BankAccountInternalID` | ✓ | |  | `acc_id` | `NUMC(10)` | Bank Account Technical ID |
+| `BankAccountRevision` | ✓ | |  | `revision` | `NUMC(4)` | Revision Number |
+| `BankAccount` |  | |  | `acc_num` | `CHAR(40)` | Bank Account Number |
+| `BankCountry` |  | |  | `banks` | `CHAR(3)` | Bank Country/Region Key |
+| `Bank` |  | |  | `bankl` | `CHAR(15)` | Bank Key |
+| `AccountType` |  | |  | `acc_type_id` | `CHAR(10)` | Bank Account Type ID |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `BankAccountType` |  | |  | `acc_type_id` | `CHAR(10)` | Bank Account Type ID |
+| `BankAccountHolderName` |  | |  | `beneficial` | `CHAR(60)` | Bank Account Holder |
+| `IBAN` |  | |  | `iban` | `CHAR(34)` | IBAN (International Bank Account Number) |
+| `BankAccountCurrency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `CountryName` |  | | `_BankCountryText` | `CountryName` | `CHAR(50)` | Country/Region Name |
+| `BankAccountNumber` |  | |  | `acc_num` | `CHAR(40)` | Bank Account Number |
+| `BankAccountStatus` |  | |  | `status` | `CHAR(2)` | Bank Account Status |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_BankCountryText` | `I_CountryText` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REQUESTWITHBANKACCOUNT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REQUESTWITHBANKACCOUNT')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IREQBANKACCT'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Bank Accounts in Change Request'
+@VDM.viewType: #BASIC
+@ObjectModel.usageType.sizeCategory: #M
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.usageType.serviceQuality: #B
+@ClientHandling.algorithm: #SESSION_VARIABLE
+//@AccessControl.privilegedAssociations:  [ '_BankAccountCurrency' ]
+@Metadata.ignorePropagatedAnnotations:true
+@ObjectModel.supportedCapabilities: ['SQL_DATA_SOURCE','CDS_MODELING_DATA_SOURCE']
+
+define view I_RequestWithBankAccount
+  as select from fclm_bam_reqacnt as header
+    inner join   fclm_bam_amd     as amd on  header.acc_id   = amd.acc_id
+                                         and header.revision = amd.revision
+  //   association [0..1] to I_BankAccountCurrencyRev as _BankAccountCurrency      on  $projection.BankAccountInternalID = _BankAccountCurrency.BankAccountInternalID
+  //                                                                               and $projection.BankAccountRevision   = _BankAccountCurrency.BankAccountRevision
+  association [0..1] to I_CountryText as _BankCountryText on  $projection.BankCountry   = _BankCountryText.Country
+                                                          and _BankCountryText.Language = $session.system_language
+{
+  key header.request_id as BankAccountChangeRequest,
+  key header.acc_id     as BankAccountInternalID,
+  key header.revision   as BankAccountRevision,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: 'BankAccountNumber'
+      amd.acc_num       as BankAccount,
+      amd.banks         as BankCountry,
+      amd.bankl         as Bank,
+      amd.acc_type_id   as AccountType,
+      amd.bukrs         as CompanyCode,
+      amd.acc_type_id   as BankAccountType,
+      //amd.contract_type as BankAccountContractType,
+      amd.beneficial    as BankAccountHolderName,
+      amd.iban          as IBAN,
+      //   _BankAccountCurrency.BankAccountCurrency
+      amd.waers         as BankAccountCurrency,
+      _BankCountryText.CountryName,
+      amd.acc_num       as BankAccountNumber,
+      amd.status        as BankAccountStatus
+}
+```

@@ -5,9 +5,19 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_WELLCOMPLTNDISPOSNVOLQRY')/$value
 semantic_en: "Well Completion Disposition Volume Query"
+semantic_vi: "Well Completion Disposition Volume Query — CDS view tiêu dùng dựa trên I_WellCompltnDisposnVol."
+keywords:
+  - "well"
+  - "completion"
+  - "disposition"
+  - "volume"
+  - "query"
+  - "compltn"
+  - "delivery"
+  - "network"
 tags:
   - IS
   - bo:purchaseorder
@@ -15,7 +25,6 @@ tags:
   - consumption-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # C_WELLCOMPLTNDISPOSNVOLQRY
 
@@ -27,7 +36,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_WELLCOMPLTNDISPOSNVOLQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_WELLCOMPLTNDISPOSNVOLQRY')/$value) |
 
 ## Fields
 
@@ -74,3 +83,110 @@ tags:
 | `StandardVolume` |  | |  |  | `QUAN(13)` | Standard volume |
 | `Energy` |  | |  |  | `QUAN(13)` | Energy quantity |
 | `GasMolarVolume` |  | |  |  | `QUAN(13)` | Gas mol volume |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_WELLCOMPLTNDISPOSNVOLQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_WELLCOMPLTNDISPOSNVOLQRY')/$value)*
+
+```abap
+@EndUserText.label: 'Well Completion Disposition Volume Query'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVWCDVLQ'
+//@OData.publish: true
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+
+define view C_WellCompltnDisposnVolQry
+  //  with parameters
+  //    @Consumption.hidden: true
+  //    @Environment.systemField: #SYSTEM_LANGUAGE
+  //    P_Language : sylangu
+  as select from I_WellCompltnDisposnVol
+{
+
+  WellCompltnVolDocYr,
+  WellCompltnVolDoc,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 2
+  @AnalyticsDetails.query.display: #KEY
+  Well,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 3
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  WellCompletion,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 1
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  DeliveryNetwork,
+  EffectiveValidityStartDate,
+  EffectiveValidityEndDate,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 4
+  ProductionDate,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ReclassifiedMaterial,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 6
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  @AnalyticsDetails.query.axis: #ROWS
+  Material,
+  @AnalyticsDetails.query.display: #TEXT
+  AllocationFrequency,
+  TankBatteryMeasurementPt,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 5
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  @AnalyticsDetails.query.axis: #COLUMNS
+  VolumeType,
+  @AnalyticsDetails.query.display: #TEXT
+  VolumeClass,
+  @AnalyticsDetails.query.display: #TEXT
+  VolumeSource,
+  @AnalyticsDetails.query.display: #TEXT
+  Transporter,
+  TransporterReference,
+  TicketNumber,
+  TicketDateTime,
+  OriginatingMeasurementPt,
+  @AnalyticsDetails.query.display: #TEXT
+  ConversionGroup,
+  @AnalyticsDetails.query.display: #TEXT
+  DensityType,
+  InventoryDate,
+  @AnalyticsDetails.query.display: #KEY
+  CrossRefWell,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CrossRefWellCompletion,
+  CreatedByUser,
+  CreationDateTime,
+  // OriginTransaction,
+  StandardVolUnit,
+  EnergyUnit,
+  ThrtclVolUnit,
+  HeatingValUnit,
+  StandardDensityUnit,
+  @AnalyticsDetails.query.hidden
+  HeatingValue,
+  @AnalyticsDetails.query.hidden
+  StandardDensity,
+  @AnalyticsDetails.query.hidden
+  NmbrOfDaysProduced,
+  @AnalyticsDetails.query.hidden
+  NmbrOfHoursProduced,
+  @AnalyticsDetails.query.hidden
+  NumberOfItems,
+  @AnalyticsDetails.query.hidden
+  TheoreticalVolume,
+  @AnalyticsDetails.query.axis: #COLUMNS
+  StandardVolume,
+  @AnalyticsDetails.query.hidden
+  Energy,
+  @AnalyticsDetails.query.hidden
+  GasMolarVolume
+}
+```

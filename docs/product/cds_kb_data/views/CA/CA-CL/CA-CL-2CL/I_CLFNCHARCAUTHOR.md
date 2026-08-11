@@ -29,8 +29,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcAuthor` | ✓ | |  | `cast( dd07l.domvalue_l as ataut )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CharcAuthor` | ✓ | |  | `cast( dd07l.domvalue_l as ataut )` | `CHAR(1)` | Classification Author |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

@@ -5,16 +5,31 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRASMMRYFEDPYBLQRY')/$value
 semantic_en: "PRA Summary Federal Payable Query"
+semantic_vi: "PRA Summary Federal Payable Query — CDS view tiêu dùng dựa trên I_PRAAcctgDocSmmryFedPybl."
+keywords:
+  - "pra"
+  - "summary"
+  - "federal"
+  - "payable"
+  - "query"
+  - "sales"
+  - "date"
+  - "company"
+  - "code"
+  - "joint"
+  - "venture"
+  - "division"
+  - "interest"
+  - "well"
 tags:
   - IS
   - component:IS-OIL-PRA
   - consumption-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # C_PRASMMRYFEDPYBLQRY
 
@@ -26,7 +41,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRASMMRYFEDPYBLQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRASMMRYFEDPYBLQRY')/$value) |
 
 ## Fields
 
@@ -57,3 +72,82 @@ tags:
 | `OwnerEnergyInEnergyUnit` |  | |  |  | `QUAN(13)` | Owner Energy |
 | `OwnerGrossAmount` |  | |  |  | `CURR(13)` | Owner Gross Value |
 | `OwnerNetAmount` |  | |  |  | `CURR(13)` | Owner Net Value |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRASMMRYFEDPYBLQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRASMMRYFEDPYBLQRY')/$value)*
+
+```abap
+@EndUserText.label: 'PRA Summary Federal Payable Query'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVSUMFEDPBLQ'
+//@OData.publish: true
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+
+define view C_PRASmmryFedPyblQry
+  //  with parameters
+  //    @Consumption.hidden: true
+  //    @Environment.systemField: #SYSTEM_LANGUAGE
+  //    P_Language : sylangu
+  as select from I_PRAAcctgDocSmmryFedPybl
+{
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 1
+  @AnalyticsDetails.query.axis: #ROWS
+  SalesDate,
+  CompanyCode,
+  JointVenture,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  DivisionOfInterest,
+  Well,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  WellCompletion,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PRAContract,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  VolumeType,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Product,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PRAOwner,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  GLAccount,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CostCenter,
+  @AnalyticsDetails.query.display: #TEXT
+  PriorPeriodAdjustmentReason,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  DeliveryNetwork,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 2
+  @AnalyticsDetails.query.display: #TEXT
+  @AnalyticsDetails.query.axis: #ROWS
+  ProcessingException,
+  @AnalyticsDetails.query.axis: #ROWS
+  ExceptionReason,
+
+
+  VolumeUnit,
+  EnergyUnit,
+  @AnalyticsDetails.query.hidden     
+  GrossVolInVolUnit,
+  @AnalyticsDetails.query.hidden     
+  GrossEnergyInEnergyUnit,
+  @AnalyticsDetails.query.hidden     
+  GrossAmount,
+  @AnalyticsDetails.query.hidden     
+  OwnerNetVolInVolUnit,
+  @AnalyticsDetails.query.hidden     
+  OwnerEnergyInEnergyUnit,
+  @AnalyticsDetails.query.hidden     
+  OwnerGrossAmount,
+  @AnalyticsDetails.query.axis: #COLUMNS
+  OwnerNetAmount
+}
+```

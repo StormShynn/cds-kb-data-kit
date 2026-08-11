@@ -5,9 +5,22 @@ app_component: RE-FX-CN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECONTRACTASSIGNSUBJECTQ_2')/$value
 semantic_en: "RE Contract Subject Assignments"
+semantic_vi: "RE Contract Subject Assignments — CDS view tiêu dùng dựa trên I_REContractAssignSubjectC_2."
+keywords:
+  - "contract"
+  - "subject"
+  - "assignments"
+  - "company"
+  - "code"
+  - "real"
+  - "estate"
+  - "internal"
+  - "number"
+  - "object"
+  - "responsible"
 tags:
   - RE
   - component:RE-FX-CN-2CL
@@ -16,7 +29,6 @@ tags:
   - RE-FX
   - RE-FX-CN
   - RE-FX-CN-2CL
-  - metadata-only
 ---
 # C_RECONTRACTASSIGNSUBJECTQ_2
 
@@ -28,7 +40,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECONTRACTASSIGNSUBJECTQ_2')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECONTRACTASSIGNSUBJECTQ_2')/$value) |
 
 ## Fields
 
@@ -62,3 +74,113 @@ tags:
 | `REAccountingObjectType` |  | |  |  | `CHAR(2)` | Object Type |
 | `REAccountingObjectName` |  | |  |  | `CHAR(50)` | Complete Object Identification, for Example BE 1000/123 |
 | `NumberOfREContracts` |  | |  |  | `INT4(10)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECONTRACTASSIGNSUBJECTQ_2')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECONTRACTASSIGNSUBJECTQ_2')/$value)*
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.sqlViewName: 'CRECONTRASSSUBQ2'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.usageType.sizeCategory: #L
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@EndUserText.label: 'RE Contract Subject Assignments'
+@Metadata.ignorePropagatedAnnotations:true 
+
+@Analytics.query: true
+@VDM.viewType: #CONSUMPTION
+@ObjectModel.modelingPattern:           #ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities:  [  #ANALYTICAL_QUERY ]
+
+define view C_REContractAssignSubjectQ_2
+  // Start of insertion Parameters
+  with parameters
+    @Environment.systemField: #SYSTEM_DATE
+    P_ValidFrom :vdm_validitystart, //recncnbeg,
+    @Environment.systemField: #SYSTEM_DATE
+    P_ValidTo   :vdm_validityend //recncnendabs
+  //  // end of insertion Parameters
+  as select from I_REContractAssignSubjectC_2(P_ValidFrom:$parameters.P_ValidFrom, P_ValidTo:$parameters.P_ValidTo )
+{
+
+  /** Dimensions **/
+
+  @AnalyticsDetails.query.display: #KEY
+  @AnalyticsDetails.query.axis: #FREE
+  CompanyCode,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  @AnalyticsDetails.query.axis: #FREE
+  RealEstateContract,
+  @AnalyticsDetails.query.axis: #FREE
+  InternalRealEstateNumber,
+  @AnalyticsDetails.query.axis: #FREE
+  ObjectInternalID,
+
+  @AnalyticsDetails.query.axis: #FREE
+  Responsible,
+  @AnalyticsDetails.query.axis: #FREE
+  ResponsibleUserFullName,
+  @AnalyticsDetails.query.axis: #FREE
+  REContractName,
+
+  @AnalyticsDetails.query.axis: #FREE
+  ContractStartDate,
+  
+  @AnalyticsDetails.query.axis: #FREE
+  ContractEndDate,
+
+  @AnalyticsDetails.query.axis: #FREE
+  REContractFirstEndDate,
+  @AnalyticsDetails.query.axis: #FREE
+  REContractNumberOld,
+
+  @AnalyticsDetails.query.axis: #FREE
+  REAuthorizationGroup,
+  @AnalyticsDetails.query.axis: #FREE
+  ValuationRelevance,
+ //@AnalyticsDetails.query.axis: #FREE
+  //ValuationRelevanceDesc,
+
+  @AnalyticsDetails.query.axis: #FREE
+  CompanyCodeName,
+  @AnalyticsDetails.query.axis: #FREE
+  REContractType,
+  @AnalyticsDetails.query.axis: #FREE
+  REContractTypeName,
+
+  @AnalyticsDetails.query.display: #KEY
+  @AnalyticsDetails.query.axis: #FREE
+  ObjectValidFrom,
+  @AnalyticsDetails.query.axis: #FREE
+  ObjectValidTo,
+  @AnalyticsDetails.query.display: #KEY
+  @AnalyticsDetails.query.axis: #FREE
+  REContractSubjectNumber,
+  @AnalyticsDetails.query.axis: #FREE
+  REContractSubjectDescription,
+  @AnalyticsDetails.query.axis: #FREE
+  REContractSubjectClass,
+  @AnalyticsDetails.query.axis: #FREE
+  REContractSubjectClassName,
+  @AnalyticsDetails.query.axis: #FREE
+  REContractSubjectType,
+  @AnalyticsDetails.query.axis: #FREE
+  REContractSubjectTypeName,
+  @AnalyticsDetails.query.axis: #FREE
+  REAccountingObject,
+  @AnalyticsDetails.query.axis: #FREE
+  REAccountingObjectType,
+  @AnalyticsDetails.query.axis: #FREE
+  REAccountingObjectName,
+  
+
+  /** Measures **/
+  @EndUserText.label: 'Number of Contracts'
+  NumberOfREContracts
+
+}
+```

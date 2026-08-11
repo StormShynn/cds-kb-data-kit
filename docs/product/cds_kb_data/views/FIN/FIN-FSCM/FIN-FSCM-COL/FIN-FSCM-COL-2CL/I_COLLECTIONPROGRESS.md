@@ -5,9 +5,19 @@ app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLECTIONPROGRESS')/$value
 semantic_en: "This CDS view provides information about the progress in collection activities within an organization that uses SAP Collections Management. It aggregates and presents data related to collection segments, specialists, groups, and priorities, along with financial metrics such as promised and collected amounts. The view is structured to support analytical processing and reporting, enabling users to assess the effectiveness and efficiency of collection efforts. This CDS view provides the data to answer the following business questions: What is the current status of collection activities across different segments and priorities? How many worklist items have been completed, and how many customers have been reached? What are the promised and collected amounts in the specified display currency? Who are the collection specialists involved, and what are their respective contributions? How do collection efforts vary across different groups and priorities? What is the impact of exchange rate types on the financial metrics of collection activities? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Collection Progress - Cube — CDS view giao diện dựa trên P_Collprogress4."
+keywords:
+  - "collection"
+  - "progress"
+  - "cube"
+  - "segment"
+  - "specialist"
+  - "group"
+  - "priority"
+  - "name"
 tags:
   - FIN
   - bo:businesspartner
@@ -19,7 +29,6 @@ tags:
   - interface-view
   - lob:controlling
   - lob:finance
-  - metadata-only
 ---
 # I_COLLECTIONPROGRESS
 
@@ -31,21 +40,126 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLECTIONPROGRESS')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLECTIONPROGRESS')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CollectionSegment` |  | |  |  | `CHAR(10)` | Collection Segment |
-| `CollectionSpecialist` |  | |  |  | `CHAR(12)` | Collection Specialist |
-| `CollectionGroup` |  | |  |  | `CHAR(10)` | Collection Group |
-| `CollectionPriority` |  | |  |  | `NUMC(1)` | Priority of Worklist Item |
+| `CollectionSegment` | ✓ | |  |  | `CHAR(10)` | Collection Segment |
+| `CollectionSpecialist` | ✓ | |  |  | `CHAR(12)` | Collection Specialist |
+| `CollectionGroup` | ✓ | |  |  | `CHAR(10)` | Collection Group |
+| `CollectionPriority` | ✓ | |  |  | `NUMC(1)` | Priority of Worklist Item |
 | `CollectionSpecialistName` |  | |  |  | `CHAR(80)` | User Description |
 | `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
 | `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
-| `NumberOfWorklistItems` |  | |  |  | `INT4(10)` | Number of Worklist Items |
-| `NumberOfCompletedItems` |  | |  |  | `INT4(10)` | Number of Completed Items |
-| `NumberOfCustomerReachedItems` |  | |  |  | `INT4(10)` | Number of Customer Reached |
-| `PromisedAmount` |  | |  |  | `CURR(23)` | Promised Amount |
-| `CollectableAmount` |  | |  |  | `CURR(23)` | Collectable Amount |
+| `NumberOfWorklistItems` |  | |  | `cast( NumberOfWorklistItems as farp_numberofworklistitems preserving type )` | `INT4(10)` | Number of Worklist Items |
+| `NumberOfCompletedItems` |  | |  | `cast( NumberOfCompletedItems as farp_number_of_completed_items preserving type )` | `INT4(10)` | Number of Completed Items |
+| `NumberOfCustomerReachedItems` |  | |  | `cast( NumberOfCustomerReachedItems as farp_number_customer_reached preserving type )` | `INT4(10)` | Number of Customer Reached |
+| `PromisedAmount` |  | |  | `cast( PromisedAmount as farp_promisedamt preserving type )` | `CURR(23)` | Promised Amount |
+| `CollectableAmount` |  | |  | `cast( Amt_Collected as farp_collectableamt preserving type )` | `CURR(23)` | Collectable Amount |
+| `_CollectionPriority` | | ✓ | | | | |
+| `_CollectionGroup` | | ✓ | | | | |
+| `_CollectionSegment` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_CollectionSpecialist` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CollectionPriority` | `I_CollectionPriority` | [0..1] |
+| `_CollectionGroup` | `I_CollectionGroup` | [0..1] |
+| `_CollectionSegment` | `I_CollectionSegment` | [0..1] |
+| `_Currency` | `I_Currency` | [0..1] |
+| `_CollectionSpecialist` | `I_DisputeCaseContact` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLECTIONPROGRESS')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLECTIONPROGRESS')/$value)*
+
+```abap
+@EndUserText.label: 'Collection Progress - Cube'
+@AbapCatalog.sqlViewName: 'ICOLLPROGRESS'
+@AbapCatalog.preserveKey:true
+//@AbapCatalog.compiler.compareFilter:true
+@VDM.viewType: #COMPOSITE
+@Analytics.dataCategory : #CUBE
+//@VDM.private:false
+@AccessControl.authorizationCheck: #CHECK
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.allowExtensions:true
+@Metadata.ignorePropagatedAnnotations:true
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_PROVIDER,
+                                     #SQL_DATA_SOURCE,
+                                     #CDS_MODELING_DATA_SOURCE ]
+define view I_CollectionProgress
+  with parameters
+    @Consumption.hidden: true
+    @Environment.systemField: #SYSTEM_DATE
+    P_KeyDate          : sydate,
+
+    @Consumption.defaultValue: 'EUR'
+    P_DisplayCurrency  : vdm_v_display_currency,
+
+    @Consumption.defaultValue: 'M'
+    P_ExchangeRateType : kurst_curr
+  as select from P_Collprogress4
+                 ( P_KeyDate : $parameters.P_KeyDate,
+                 P_DisplayCurrency : $parameters.P_DisplayCurrency,
+                 P_ExchangeRateType : $parameters.P_ExchangeRateType
+                 )
+  association [0..1] to I_CollectionPriority as _CollectionPriority   on $projection.CollectionPriority = _CollectionPriority.CollectionPriority
+  association [0..1] to I_CollectionGroup    as _CollectionGroup      on $projection.CollectionGroup = _CollectionGroup.CollectionGroup
+  association [0..1] to I_CollectionSegment  as _CollectionSegment    on $projection.CollectionSegment = _CollectionSegment.CollectionSegment
+  association [0..1] to I_Currency           as _Currency             on $projection.DisplayCurrency = _Currency.Currency
+  association [0..1] to I_DisputeCaseContact as _CollectionSpecialist on $projection.CollectionSpecialist = _CollectionSpecialist.UserID
+{
+      @ObjectModel.foreignKey.association: '_CollectionSegment'
+  key CollectionSegment,
+
+      @ObjectModel.foreignKey.association: '_CollectionSpecialist'
+  key CollectionSpecialist,
+
+      @ObjectModel.foreignKey.association: '_CollectionGroup'
+  key CollectionGroup,
+
+      @ObjectModel.foreignKey.association: '_CollectionPriority'
+  key CollectionPriority,
+
+      CollectionSpecialistName,
+
+      //    @ObjectModel.foreignKey.association: '_Currency'
+      @Semantics.currencyCode:true
+      DisplayCurrency,
+
+      ExchangeRateType,
+
+      @DefaultAggregation: #SUM
+      cast( NumberOfWorklistItems as farp_numberofworklistitems preserving type )          as NumberOfWorklistItems,
+
+      @DefaultAggregation: #SUM
+      cast( NumberOfCompletedItems as farp_number_of_completed_items preserving type )     as NumberOfCompletedItems,
+
+      @DefaultAggregation: #SUM
+      cast( NumberOfCustomerReachedItems as farp_number_customer_reached preserving type ) as NumberOfCustomerReachedItems,
+
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      cast( PromisedAmount as farp_promisedamt preserving type )                           as PromisedAmount,
+
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      cast( Amt_Collected as farp_collectableamt preserving type )                         as CollectableAmount,
+
+      _CollectionPriority,
+      _CollectionGroup,
+      _CollectionSegment,
+      _Currency,
+      _CollectionSpecialist
+}
+```

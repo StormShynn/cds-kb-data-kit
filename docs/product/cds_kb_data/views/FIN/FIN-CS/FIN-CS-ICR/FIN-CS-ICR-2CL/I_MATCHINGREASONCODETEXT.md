@@ -5,9 +5,17 @@ app_component: FIN-CS-ICR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATCHINGREASONCODETEXT')/$value
 semantic_en: "Matching Reason Code - Text"
+semantic_vi: "Matching Reason Code - Text — CDS view giao diện dựa trên ica_rct."
+keywords:
+  - "matching"
+  - "reason"
+  - "code"
+  - "text"
+  - "language"
+  - "desc"
 tags:
   - FIN
   - bo:salesorder
@@ -17,7 +25,6 @@ tags:
   - FIN-CS-ICR-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_MATCHINGREASONCODETEXT
 
@@ -29,12 +36,67 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATCHINGREASONCODETEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATCHINGREASONCODETEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `MatchingReasonCode` |  | |  |  | `CHAR(6)` | Reason Code |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `MatchingReasonCodeDesc` |  | |  |  | `CHAR(80)` | Medium Length Description |
+| `MatchingReasonCode` | ✓ | |  | `rcode` | `CHAR(6)` | Reason Code |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `MatchingReasonCodeDesc` |  | |  | `descm` | `CHAR(80)` | Medium Length Description |
+| `_Language` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATCHINGREASONCODETEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATCHINGREASONCODETEXT')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IICAREASONCODET'
+
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@ClientHandling.type: #CLIENT_DEPENDENT
+@ClientHandling.algorithm: #SESSION_VARIABLE
+
+@EndUserText.label: 'Matching Reason Code - Text'
+
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.representativeKey: 'MatchingReasonCode'
+
+@ObjectModel.usageType: {
+  dataClass: #MASTER,
+  serviceQuality: #A,
+  sizeCategory: #S
+}
+
+@VDM.viewType: #BASIC
+
+// Required by C1 Contract
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.supportedCapabilities:[ #CDS_MODELING_ASSOCIATION_TARGET,
+                                     #LANGUAGE_DEPENDENT_TEXT ]
+
+define view I_MatchingReasonCodeText as select from ica_rct 
+  association[0..1]    to I_Language             as _Language           on $projection.Language          = _Language.Language
+{
+  key rcode as MatchingReasonCode,
+
+  @ObjectModel.foreignKey.association: '_Language'
+  @Semantics.language
+  key langu as Language,
+
+  @Semantics.text
+  descm     as MatchingReasonCodeDesc,
+  
+  _Language
+}
+```

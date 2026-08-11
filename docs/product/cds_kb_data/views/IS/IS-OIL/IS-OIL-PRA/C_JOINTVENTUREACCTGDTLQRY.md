@@ -5,9 +5,25 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_JOINTVENTUREACCTGDTLQRY')/$value
 semantic_en: "Joint Venture Accounting Detail Query"
+semantic_vi: "Joint Venture Accounting Detail Query — CDS view tiêu dùng dựa trên I_JointVentureAcctgExtDetail."
+keywords:
+  - "joint"
+  - "venture"
+  - "accounting"
+  - "detail"
+  - "query"
+  - "line"
+  - "item"
+  - "ledger"
+  - "record"
+  - "type"
+  - "special"
+  - "version"
+  - "fiscal"
+  - "year"
 tags:
   - IS
   - account
@@ -15,7 +31,6 @@ tags:
   - consumption-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # C_JOINTVENTUREACCTGDTLQRY
 
@@ -27,13 +42,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_JOINTVENTUREACCTGDTLQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_JOINTVENTUREACCTGDTLQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `JointVentureLineItem` |  | |  |  | `CHAR(18)` | Joint Venture Record Number |
+| `JointVentureLineItem` | ✓ | |  |  | `CHAR(18)` | Joint Venture Record Number |
 | `Ledger` |  | |  |  | `CHAR(2)` | Ledger |
 | `RecordType` |  | |  |  | `CHAR(1)` | Record Type |
 | `SpecialLedgerVersion` |  | |  |  | `CHAR(3)` | Version |
@@ -101,3 +116,153 @@ tags:
 | `QuantityInBaseUnit` |  | |  |  | `QUAN(15)` | Quantity in Base Unit |
 | `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(17)` | Value in local currency |
 | `AmountInGlobalCurrency` |  | |  |  | `CURR(17)` | Value in group currency |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_JOINTVENTUREACCTGDTLQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_JOINTVENTUREACCTGDTLQRY')/$value)*
+
+```abap
+@EndUserText.label: 'Joint Venture Accounting Detail Query'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVJVACCTGDTLQRY'
+//@OData.publish: true
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+
+define view C_JointVentureAcctgDtlQry
+  as select from I_JointVentureAcctgExtDetail
+{
+
+  key JointVentureLineItem,
+      Ledger,
+      @AnalyticsDetails.query.display: #TEXT
+      RecordType,
+      @AnalyticsDetails.query.display: #TEXT
+      SpecialLedgerVersion,
+      @AnalyticsDetails.query.axis: #ROWS
+      FiscalYear,
+      @AnalyticsDetails.query.axis: #ROWS
+      LedgerFiscalPeriod,
+      Currency,
+      UnitOfMeasure,
+      @AnalyticsDetails.query.display: #TEXT
+      DebitCreditCode,
+      DocumentType,
+      AccountingDocument,
+      AccountingDocumentItem,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections: false, mandatory: true }
+      @AnalyticsDetails.query.variableSequence: 1
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CompanyCode,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 2
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      JointVenture,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections: false, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 3
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ControllingArea,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 4
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CostCenter,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections: false, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 5
+      @AnalyticsDetails.query.display: #TEXT
+      ChartOfAccounts,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections: true, mandatory: false, defaultValue: 'P' }
+      @AnalyticsDetails.query.variableSequence: 6
+      @AnalyticsDetails.query.display: #TEXT
+      GLAccountType,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 7
+      @AnalyticsDetails.query.display: #TEXT
+      GLAccount,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      JointVentureEquityGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BusinessArea,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OriginOrder,
+      //CostObjectOrder.ControllingObjectDescription,
+      //_WBSElement.WBSElement,
+      //_WBSElement.WBSElementShortID,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ProjectInternalID,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ProfitCenter,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      MasterFixedAsset,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      FixedAsset,
+      @AnalyticsDetails.query.display: #TEXT
+      AssetTransactionType,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      JointVentureRecoveryCode,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Partner,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      InternalOrder,
+      NetworkActivity,
+      AdditionalQuantity1Unit,
+      DocumentItemText,
+      @AnalyticsDetails.query.display: #TEXT
+      IsAutomaticallyPosted,
+      @AnalyticsDetails.query.display: #TEXT
+      AccountingDocumentType,
+      BusinessTransactionType,
+      PostingDate,
+      ValDateForCurrencyTranslation,
+      ValueDate,
+      RefAccountingDocument,
+      ReferenceDocumentFiscalYear,
+      RefJntVentureDocumentLineItem,
+      ReferenceDocumentType,
+      BusinessTransactionDocItem,
+      RefAccountingDocumentItem,
+      @AnalyticsDetails.query.display: #TEXT
+      PayrollType,
+      AccountingDocCreatedByUser,
+      DocumentDate,
+      TimeEntry,
+      TaxCode,
+      BillingMonth,
+      PurchaseOrder,
+      PurchaseOrderItem,
+      TransactionTypeDetermination,
+      @AnalyticsDetails.query.display: #TEXT
+      ActivityType,
+      PRAAllocationFrequencyCode,
+      StartDate,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Material,
+      ReferenceDocument,
+      ReferenceBillingDocument,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Customer,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Supplier,
+      PaymentTerms,
+      ProductionMonth,
+
+      @AnalyticsDetails.query.axis: #COLUMNS
+      AmountInTransactionCurrency,
+      //      @AnalyticsDetails.query.axis: #COLUMNS
+      //      AmountInCompanyCodeCurrency,
+      //      @AnalyticsDetails.query.axis: #COLUMNS
+      //      AmountInGroupCurrency,
+      @AnalyticsDetails.query.hidden
+      QuantityInBaseUnit,
+      @AnalyticsDetails.query.hidden
+      AmountInCompanyCodeCurrency,
+      @AnalyticsDetails.query.hidden
+      AmountInGlobalCurrency
+}
+where
+  Ledger = '4A';
+```

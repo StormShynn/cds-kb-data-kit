@@ -5,9 +5,19 @@ app_component: CA-BK-BNK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKSCRIPTEDADDRESS')/$value
 semantic_en: "Bank Scripted Address"
+semantic_vi: "Bank Scripted Address — CDS view giao diện dựa trên I_Bank_2."
+keywords:
+  - "bank"
+  - "scripted"
+  - "address"
+  - "country"
+  - "internal"
+  - "representation"
+  - "code"
+  - "person"
 tags:
   - CA
   - CA-BK
@@ -15,7 +25,6 @@ tags:
   - component:CA-BK-BNK
   - interface-view
   - lob:cross_application components
-  - metadata-only
 ---
 # I_BANKSCRIPTEDADDRESS
 
@@ -27,23 +36,23 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKSCRIPTEDADDRESS')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKSCRIPTEDADDRESS')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
-| `BankInternalID` |  | |  |  | `CHAR(15)` | Bank Keys |
-| `AddressRepresentationCode` |  | |  |  | `CHAR(1)` | Version ID for International Addresses |
+| `BankCountry` | ✓ | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `BankInternalID` | ✓ | |  |  | `CHAR(15)` | Bank Keys |
+| `AddressRepresentationCode` | ✓ | |  |  | `CHAR(1)` | Version ID for International Addresses |
 | `AddressID` |  | |  |  | `CHAR(10)` | Address Number |
 | `AddressPersonID` |  | |  |  | `CHAR(10)` | Person Number |
 | `AddressObjectType` |  | |  |  | `CHAR(1)` | Address type (1=Organization, 2=Person, 3=Contact person) |
 | `CorrespondenceLanguage` |  | |  |  | `LANG(1)` | Language Key |
 | `PrfrdCommMediumType` |  | |  |  | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
 | `AddresseeFullName` |  | |  |  | `CHAR(80)` | Full Name of Person |
-| `LongBankName` |  | |  |  | `CHAR(80)` | Bank Name |
-| `LongBankBranch` |  | |  |  | `CHAR(80)` | Bank Branch |
+| `LongBankName` |  | |  | `cast( concat(Address.AddresseeName1, Address.AddresseeName2) as bf_bank_name_in_local_script preserving type )` | `CHAR(80)` | Bank Name |
+| `LongBankBranch` |  | |  | `cast( concat(Address.AddresseeName3, Address.AddresseeName4) as bf_bank_branch_in_local_script preserving type )` | `CHAR(80)` | Bank Branch |
 | `CityName` |  | |  |  | `CHAR(40)` | City |
 | `DistrictName` |  | |  |  | `CHAR(40)` | District |
 | `VillageName` |  | |  |  | `CHAR(40)` | City (different from postal city) |
@@ -81,3 +90,96 @@ tags:
 | `AddressTimeZone` |  | |  |  | `CHAR(6)` | Address Time Zone |
 | `SecondaryRegionName` |  | |  |  | `CHAR(40)` | County |
 | `TertiaryRegionName` |  | |  |  | `CHAR(40)` | Township |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKSCRIPTEDADDRESS')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKSCRIPTEDADDRESS')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'Bank Scripted Address'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType:{
+  serviceQuality: #C,
+  sizeCategory: #S,
+  dataClass: #MIXED
+}
+@VDM.viewType: #COMPOSITE 
+define view entity I_BankScriptedAddress
+  as select from I_Bank_2                  as Bank
+    inner join   I_BankOrganizationAddress as Address on  Address.AddressID                 = Bank.AddressID
+                                                      and Address.AddressPersonID           is initial
+                                                      and Address.AddressRepresentationCode is not initial
+{
+  key Bank.BankCountry,
+  key Bank.BankInternalID,
+  key Address.AddressRepresentationCode,
+      @ObjectModel.editableFieldFor: 'AddressRepresentationCode'
+      Address.AddressID,
+      Address.AddressPersonID, 
+      Address.AddressObjectType,
+      @Semantics.language: true
+      @ObjectModel.foreignKey.association: '_CorrespondenceLanguage'
+      Address.CorrespondenceLanguage,
+      Address.PrfrdCommMediumType,
+      Address.AddresseeFullName,
+
+      cast( concat(Address.AddresseeName1, Address.AddresseeName2)
+        as bf_bank_name_in_local_script preserving type )   as LongBankName,   
+      cast( concat(Address.AddresseeName3, Address.AddresseeName4)
+        as bf_bank_branch_in_local_script preserving type ) as LongBankBranch, 
+
+      Address.CityName,
+      Address.DistrictName,
+      Address.VillageName,
+      Address.PostalCode,
+      Address.CompanyPostalCode,
+      Address.StreetName,
+      Address.StreetAddrNonDeliverableReason,
+      Address.StreetPrefixName1,
+      Address.StreetPrefixName2,
+      Address.StreetSuffixName1,
+      Address.StreetSuffixName2,
+      Address.HouseNumber,
+      Address.HouseNumberSupplementText,
+      Address.Building,
+      Address.Floor,
+      Address.RoomNumber,
+      @ObjectModel.foreignKey.association: '_Country'
+      Address.Country,
+      @ObjectModel.foreignKey.association: '_Region'
+      Address.Region,
+      @ObjectModel.foreignKey.association: '_FormOfAddress'
+      Address.FormOfAddress,
+      Address.TaxJurisdiction,
+      Address.TransportZone,
+      Address.AddressSearchTerm1,
+      Address.AddressSearchTerm2,
+
+      Address.POBox,
+      Address.POBoxAddrNonDeliverableReason,
+      Address.POBoxIsWithoutNumber,
+      Address.POBoxPostalCode,
+      Address.POBoxLobbyName,
+      Address.POBoxDeviatingCityName,
+      Address.POBoxDeviatingRegion,
+      Address.POBoxDeviatingCountry,
+      Address.CareOfName,
+      Address.DeliveryServiceTypeCode,
+      Address.DeliveryServiceNumber,
+      Address.AddressTimeZone,
+      Address.SecondaryRegionName,
+      Address.TertiaryRegionName,
+
+      Address._CurrentDfltEmailAddress,
+      Address._CurrentDfltLandlinePhoneNmbr,
+      Address._CurrentDfltMobilePhoneNumber,
+      Address._CurrentDfltFaxNumber,
+      Address._Region,
+      Address._Country,
+      Address._FormOfAddress,
+      Address._AddressRepresentationCode,
+      Address._CorrespondenceLanguage
+}
+```

@@ -5,9 +5,22 @@ app_component: PSM-GM-GTE
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUDGETWORKFLOWEMAIL')/$value
 semantic_en: "Budget Document for WF ApprovalEmail"
+semantic_vi: "Budget Document for WF ApprovalEmail — CDS view tiêu dùng dựa trên I_WorkflowTask."
+keywords:
+  - "budget"
+  - "document"
+  - "for"
+  - "approvalemail"
+  - "workflow"
+  - "task"
+  - "internal"
+  - "planning"
+  - "category"
+  - "type"
+  - "result"
 tags:
   - PSM
   - budget
@@ -16,7 +29,6 @@ tags:
   - document
   - PSM-GM
   - PSM-GM-GTE
-  - metadata-only
 ---
 # C_BUDGETWORKFLOWEMAIL
 
@@ -28,17 +40,78 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUDGETWORKFLOWEMAIL')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUDGETWORKFLOWEMAIL')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowTaskInternalID` |  | |  |  | `NUMC(12)` | Work item ID |
-| `BudgetDocument` |  | |  |  | `CHAR(10)` | Budget Document Number |
-| `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
-| `BudgetDocumentType` |  | |  |  | `CHAR(4)` | Budget Document Type |
-| `WorkflowTaskResult` |  | |  |  | `CHAR(255)` | Workflow: Returncode flexible workflow |
-| `UserDescription` |  | |  |  | `CHAR(80)` | User Description |
-| `WorkflowTaskResultReasonText` |  | |  |  | `CHAR(60)` | Flexible Workflow: Decision Reason Text |
-| `WorkflowTaskCurrentUser` |  | |  |  | `CHAR(12)` | Actual Agent of Work Item |
+| `WorkflowTaskInternalID` | ✓ | |  |  | `NUMC(12)` | Work item ID |
+| `BudgetDocument` |  | | `_BudgetDocument` | `BudgetDocument` | `CHAR(10)` | Budget Document Number |
+| `PlanningCategory` |  | | `_BudgetDocument` | `PlanningCategory` | `CHAR(10)` | Plan Category |
+| `BudgetDocumentType` |  | | `_BudgetDocument` | `BudgetDocumentType` | `CHAR(4)` | Budget Document Type |
+| `WorkflowTaskResult` |  | |  | `case Workflowtask.WorkflowTaskResult when 'requestApproved' then 'Approved' when 'requestRejected' then 'Rejected' else Workflowtask.WorkflowTaskResult end` | `CHAR(255)` | Workflow: Returncode flexible workflow |
+| `UserDescription` |  | |  | `cast(_User.UserDescription as vdm_userdescription preserving type )` | `CHAR(80)` | User Description |
+| `WorkflowTaskCurrentUser` |  | | `_WorkflowtaskDecision` | `WorkflowTaskCurrentUser` | `CHAR(12)` | Actual Agent of Work Item |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUDGETWORKFLOWEMAIL')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUDGETWORKFLOWEMAIL')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IFMBDEMAIL'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #MANDATORY
+@AccessControl.personalData.blocking: #REQUIRED
+@EndUserText.label: 'Budget Document for WF ApprovalEmail'
+@VDM.viewType : #CONSUMPTION
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType : { serviceQuality: #C,
+                           sizeCategory: #L,
+                           dataClass: #TRANSACTIONAL }
+@ObjectModel.supportedCapabilities: [ #OUTPUT_EMAIL_DATA_PROVIDER ]
+@Metadata.ignorePropagatedAnnotations:true
+
+define view C_BudgetWorkflowEmail
+  as select from            I_WorkflowTask           as Workflowtask
+    left outer to many join I_WorkflowTaskApplObject as _WorkflowTaskApplObject     on  _WorkflowTaskApplObject.WorkflowTaskInternalID = Workflowtask.WorkflowTaskInternalID
+                                                                                    and _WorkflowTaskApplObject.WorkflowObjectRole     = '01'
+    left outer to one join  I_BudgetDocument         as _BudgetDocument             on  _BudgetDocument.ControllingArea    = substring( _WorkflowTaskApplObject.TechnicalWrkflwObject, 1, 4 )
+                                                                                    and _BudgetDocument.BudgetDocumentYear = substring( _WorkflowTaskApplObject.TechnicalWrkflwObject, 5, 4 )
+                                                                                    and _BudgetDocument.BudgetDocument     = substring( _WorkflowTaskApplObject.TechnicalWrkflwObject, 9, 10 )
+    left outer to one join  I_WorkflowTaskApplObject as _WorkflowTaskApplObDecision on  _WorkflowTaskApplObDecision.WorkflowTaskInternalID = Workflowtask.WorkflowTaskInternalID
+                                                                                    and _WorkflowTaskApplObDecision.WorkflowObjectRole     = '99'
+    left outer to one join  I_WorkflowTask           as _WorkflowtaskDecision       on  _WorkflowtaskDecision.WorkflowTaskInternalID = _WorkflowTaskApplObDecision.TechnicalWrkflwObject
+                                                                                    and _WorkflowtaskDecision.WorkflowTaskStatus     = 'COMPLETED'
+    left outer to one join  I_WorkflowTaskResult     as _WorkflowTaskResult         on _WorkflowTaskResult.WorkflowInternalID   = Workflowtask.WorkflowTaskInternalID
+                                                                                    and(
+                                                                                      _WorkflowTaskResult.WorkflowTaskResult    = 'APPROVED'
+                                                                                      or _WorkflowTaskResult.WorkflowTaskResult = 'REJECTED'
+                                                                                    )
+    left outer to one join  I_User                   as _User                       on _User.UserID = _WorkflowtaskDecision.WorkflowTaskCurrentUser                                                                                    
+
+{
+  key Workflowtask.WorkflowTaskInternalID,
+
+      _BudgetDocument.BudgetDocument                                      as BudgetDocument,
+      _BudgetDocument.PlanningCategory                                    as PlanningCategory,
+      _BudgetDocument.BudgetDocumentType                                  as BudgetDocumentType,
+
+      //      cast(substring(_WorkflowTaskApplObject.TechnicalWrkflwObject, 8 , 10) as bdgt_docnr preserving type ) as BudgetDocument,
+
+      case Workflowtask.WorkflowTaskResult
+        when 'requestApproved'
+          then 'Approved'
+        when 'requestRejected'
+          then 'Rejected'
+      else Workflowtask.WorkflowTaskResult end                            as WorkflowTaskResult,
+
+      cast(_User.UserDescription as vdm_userdescription preserving type ) as UserDescription,
+
+      Workflowtask._WorkflowTaskResult._WorkflowTaskResultReason._WorkflowTaskResultReasonText[1:Language=$session.system_language].WorkflowTaskResultReasonText,
+
+      _WorkflowtaskDecision.WorkflowTaskCurrentUser                       as WorkflowTaskCurrentUser
+}
+where
+  Workflowtask.WorkflowTaskType = 'F'
+```

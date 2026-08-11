@@ -5,9 +5,19 @@ app_component: EHS-SUS-FND-EHS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EHSTASKINSTANCEFORLOCIDQ')/$value
 semantic_en: "This CDS view retrieves and counts the number of task instances. It allows filtering by task characteristics and by related objects, such as location, compliance scenario, incident, deviation incident and compliance requirement. This CDS view provides the data to answer the following business questions: What data is available for tasks and related objects, such as location, compliance requirement, scenario, and others? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "EHS Task Instance - Query — CDS view tiêu dùng dựa trên EHS Task Instance - Query."
+keywords:
+  - "ehs"
+  - "task"
+  - "instance"
+  - "query"
+  - "location"
+  - "planned"
+  - "follow"
+  - "date"
 tags:
   - EHS
   - bo:companycode
@@ -17,7 +27,6 @@ tags:
   - EHS-SUS-FND
   - EHS-SUS-FND-EHS
   - task
-  - metadata-only
 ---
 # C_EHSTASKINSTANCEFORLOCIDQ
 
@@ -29,7 +38,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EHSTASKINSTANCEFORLOCIDQ')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EHSTASKINSTANCEFORLOCIDQ')/$value) |
 
 ## Fields
 
@@ -65,3 +74,186 @@ tags:
 | `IncidentID` |  | |  |  | `CHAR(20)` | Incident ID |
 | `IsOverdue` |  | |  |  | `CHAR(1)` | Overdue Task |
 | `NumberOfRecords` |  | |  |  | `INT1(3)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EHSTASKINSTANCEFORLOCIDQ')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EHSTASKINSTANCEFORLOCIDQ')/$value)*
+
+```abap
+@EndUserText.label: 'EHS Task Instance - Query'
+@VDM.viewType: #CONSUMPTION
+
+@AccessControl.authorizationCheck: #NOT_ALLOWED
+@AccessControl.personalData.blocking: #REQUIRED
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_QUERY ]
+
+@ObjectModel.usageType: {serviceQuality: #D, sizeCategory: #XL, dataClass: #MIXED}
+
+define transient view entity C_EHSTaskInstanceForLocIDQ
+  provider contract analytical_query
+  with parameters
+
+    @Consumption.hidden: true
+    @Consumption.derivation: {
+        lookupEntity : 'I_EHSLtstLocHierarchyRevision',
+        resultElement : 'EHSLocHierarchyUUID'
+      }
+    P_EHSLocHierarchyUUID : ehfnd_conf_key,
+
+    @EndUserText.label: 'Location'
+
+    @Consumption.valueHelpDefinition: [{ entity.name: 'C_EHSLocationIdentifierVH', entity.element: 'EHSLocationID' }]
+    P_EHSLocID            : ehfnd_loc_id,
+
+    @Consumption.hidden: true
+    @Environment.systemField: #SYSTEM_DATE
+    P_Date                : sydatum,
+    @Consumption.hidden: true
+    @Environment.systemField: #SYSTEM_LANGUAGE
+    P_Language            : sylangu
+
+  as projection on I_EHSTaskInstanceCube
+                   ( P_Date: $parameters.P_Date, P_Language: $parameters.P_Language )
+{
+   //Location
+
+  @AnalyticsDetails.query.hidden: true
+  @AnalyticsDetails.query.displayHierarchy: #FILTER
+  @AnalyticsDetails.query.hierarchyInitialLevel: 1
+  @Consumption.filter.hidden: true
+  @Consumption.filter: {
+    selectionType: #HIERARCHY_NODE,
+    multipleSelections: true,
+    hierarchyBinding : [ { type: #PARAMETER, value: 'P_EHSLocHierarchyUUID'} ]
+  }
+  @Consumption.derivation: {
+   lookupEntity: 'I_EHSLocationWithFilter',
+   resultHierarchyNode:{nodeTypeElement: 'HierarchyNodeType' },
+   binding: [{
+     targetParameter: 'P_EHSLocID',
+     type: #PARAMETER,
+     value: 'P_EHSLocID'
+   }]
+  }
+  EHSLocationUUID,
+  // Task Instance
+
+  @AnalyticsDetails.query.axis: #FREE
+  EHSPlannedTaskUUID,
+
+
+  @AnalyticsDetails.query.axis: #FREE
+  TaskFollowRefObjUUID,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter : { selectionType : #SINGLE, multipleSelections : true}
+  EHSPlannedTaskID,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter : { selectionType : #INTERVAL, multipleSelections : false}
+  EHSTaskDueDate,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter : { selectionType : #INTERVAL, multipleSelections : false}
+  EHSTaskStartDate,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter : { selectionType : #INTERVAL, multipleSelections : false}
+  EHSTaskInstceCompletionDate,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter : { selectionType : #SINGLE, multipleSelections : false}
+  EHSTaskIsRecurrent,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter : { selectionType : #SINGLE, multipleSelections : false}
+  EHSTaskHasDeviation,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter : { selectionType : #SINGLE, multipleSelections : true}
+  EHSTaskStatus,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter : { selectionType : #SINGLE, multipleSelections : true}
+  EHSTaskOwnerBP,
+
+  @Semantics.text: true
+  EHSTaskOwnerUserName,
+
+  // Task Definition
+
+  @AnalyticsDetails.query.axis: #FREE
+  EHSTaskDefinitionUUID,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Semantics.text: true
+  EHSTaskTitle,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter : { selectionType : #SINGLE, multipleSelections : true}
+  EHSTaskPriority,
+
+  @Semantics.text: true
+  EHSTaskPriorityName,
+
+  @AnalyticsDetails.query.axis: #FREE
+
+  @Consumption.filter : { selectionType : #SINGLE, multipleSelections : true}
+  EHSTaskDefinitionStatus,
+
+  @AnalyticsDetails.query.axis: #FREE
+
+  @Consumption.filter : { selectionType : #SINGLE, multipleSelections : true}
+  EHSTaskAssignedUser,
+
+  @Semantics.text: true
+  EHSTaskAssignedUserName,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter : { selectionType : #SINGLE, multipleSelections : true}
+  EHSTaskApprovingUser,
+
+  @Semantics.text: true
+  EHSTaskApprovingUserName,
+
+  @Consumption.filter : { selectionType : #SINGLE, multipleSelections : true}
+  EHSSemanticObjectName,
+
+  @AnalyticsDetails.query.axis: #FREE
+
+  @Consumption.filter : { selectionType : #SINGLE, multipleSelections : true}
+  EHSTaskDefinitionType,
+
+  @Semantics.text: true
+  EHSTaskDefinitionTypeName,
+
+  // Triggering Tasks
+
+  @Semantics.text: true
+  EHSTriggerCategoryDesc,
+
+  // Incident
+
+  @AnalyticsDetails.query.axis: #FREE
+  DeviationUUID,
+
+  @AnalyticsDetails.query.axis: #FREE
+  IncidentRefUUID,
+
+  @AnalyticsDetails.query.axis: #FREE
+
+  @Consumption.filter : { selectionType : #SINGLE, multipleSelections : true}
+  IncidentID,
+
+  @Semantics.text: true
+  @Consumption.filter : { selectionType : #INTERVAL, multipleSelections : true}
+  IsOverdue,
+
+  @EndUserText.label: 'Number of Records'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  NumberOfRecords
+
+}
+```

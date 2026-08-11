@@ -31,9 +31,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProdAllocConsistencyStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocconsistencystatus preserving type )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `ProdAllocConstcyStatusDesc` |  | |  | `cast( ddtext as prodallocconsistencystatusdesc preserving type )` |  |  |
+| `ProdAllocConsistencyStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocconsistencystatus preserving type )` | `CHAR(2)` | Product Allocation Consistency Status |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `ProdAllocConstcyStatusDesc` |  | |  | `cast( ddtext as prodallocconsistencystatusdesc preserving type )` | `CHAR(60)` | Product Allocation Consistency Status Description |
 | `_Language` | | ✓ | | | | |
 | `_ProdAllocConsistencyStatus` | | ✓ | | | | |
 

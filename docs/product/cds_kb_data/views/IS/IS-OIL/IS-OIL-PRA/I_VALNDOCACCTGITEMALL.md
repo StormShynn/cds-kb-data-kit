@@ -5,9 +5,26 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_VALNDOCACCTGITEMALL')/$value
 semantic_en: "Valuation Doc Accounting Item All"
+semantic_vi: "Valuation Doc Accounting Item All — CDS view giao diện dựa trên I_ValnDocAcctgItem."
+keywords:
+  - "valuation"
+  - "doc"
+  - "accounting"
+  - "item"
+  - "all"
+  - "document"
+  - "year"
+  - "number"
+  - "booking"
+  - "reversal"
+  - "type"
+  - "valn"
+  - "acctg"
+  - "major"
+  - "product"
 tags:
   - IS
   - account
@@ -15,7 +32,6 @@ tags:
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # I_VALNDOCACCTGITEMALL
 
@@ -27,16 +43,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_VALNDOCACCTGITEMALL')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_VALNDOCACCTGITEMALL')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ValuationDocumentYear` |  | |  |  | `NUMC(4)` | Document year |
-| `ValuationDocumentNumber` |  | |  |  | `CHAR(20)` | Val. document number |
-| `BookingReversalType` |  | |  |  | `CHAR(1)` | Booking/Reversal Indicator |
-| `ValnDocAcctgItem` |  | |  |  | `NUMC(8)` | VL Document Accounting Line Number |
+| `ValuationDocumentYear` | ✓ | |  |  | `NUMC(4)` | Document year |
+| `ValuationDocumentNumber` | ✓ | |  |  | `CHAR(20)` | Val. document number |
+| `BookingReversalType` | ✓ | |  |  | `CHAR(1)` | Booking/Reversal Indicator |
+| `ValnDocAcctgItem` | ✓ | |  |  | `NUMC(8)` | VL Document Accounting Line Number |
 | `MajorProduct` |  | |  |  | `CHAR(1)` | Major product code |
 | `MinorProduct` |  | |  |  | `CHAR(2)` | Minor Product Code |
 | `ItemIsRejected` |  | |  |  | `CHAR(1)` | Accounting Document rejection flag |
@@ -129,16 +145,478 @@ tags:
 | `RefValnDocItem` |  | |  |  | `NUMC(5)` | Reference VL Document Accounting Line Item |
 | `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
 | `CreationDateTime` |  | |  |  | `DEC(15)` | Created On Timestamp |
-| `NetTaxAmount` |  | |  |  | `CURR(15)` | Net Tax Amount |
-| `NetTaxReimbmtAmt` |  | |  |  | `CURR(15)` | Net Tax Reimbursement Amount |
-| `GrossTaxAmount` |  | |  |  | `CURR(15)` | Gross Tax Amount |
-| `GrossTaxReimbmtAmt` |  | |  |  | `CURR(15)` | Gross Tax Reimbursement Amount |
-| `OtherDeductionAmount` |  | |  |  | `CURR(15)` | Other deducts amount |
-| `NetInternalMarketingAmt` |  | |  |  | `CURR(15)` | Net Marketing Cost - Internal |
-| `NetExternalMarketingAmt` |  | |  |  | `CURR(15)` | Net Marketing Cost - External |
-| `NetReimbmtMarketingAmt` |  | |  |  | `CURR(15)` | Net Marketing Cost Reimbursement |
-| `GrossInternalMarketingAmt` |  | |  |  | `CURR(15)` | Gross Marketing Cost - Internal |
-| `GrossExternalMarketingAmt` |  | |  |  | `CURR(15)` | Gross Marketing Cost - External |
-| `GrossReimbmtMarketingAmt` |  | |  |  | `CURR(15)` | Gross Marketing Cost Reimbursement |
-| `ValuationDocumentStatus` |  | |  |  | `CHAR(2)` | Valuation Document Status |
-| `NumberOfItems` |  | |  |  | `INT4(10)` | Number of Items |
+| `NetTaxAmount` |  | | `_ValnDocAcctgItemTaxSmmry` | `NetTaxAmount` | `CURR(15)` | Net Tax Amount |
+| `NetTaxReimbmtAmt` |  | | `_ValnDocAcctgItemTaxSmmry` | `NetTaxReimbmtAmt` | `CURR(15)` | Net Tax Reimbursement Amount |
+| `GrossTaxAmount` |  | | `_ValnDocAcctgItemTaxSmmry` | `GrossTaxAmount` | `CURR(15)` | Gross Tax Amount |
+| `GrossTaxReimbmtAmt` |  | | `_ValnDocAcctgItemTaxSmmry` | `GrossTaxReimbmtAmt` | `CURR(15)` | Gross Tax Reimbursement Amount |
+| `OtherDeductionAmount` |  | | `_ValnDocAcctgItemDeductSmmry` | `OtherDeductionAmount` | `CURR(15)` | Other deducts amount |
+| `NetInternalMarketingAmt` |  | | `_ValnDocAcctgItemMktgSmmry` | `NetInternalMarketingAmt` | `CURR(15)` | Net Marketing Cost - Internal |
+| `NetExternalMarketingAmt` |  | | `_ValnDocAcctgItemMktgSmmry` | `NetExternalMarketingAmt` | `CURR(15)` | Net Marketing Cost - External |
+| `NetReimbmtMarketingAmt` |  | | `_ValnDocAcctgItemMktgSmmry` | `NetReimbmtMarketingAmt` | `CURR(15)` | Net Marketing Cost Reimbursement |
+| `GrossInternalMarketingAmt` |  | | `_ValnDocAcctgItemMktgSmmry` | `GrossInternalMarketingAmt` | `CURR(15)` | Gross Marketing Cost - Internal |
+| `GrossExternalMarketingAmt` |  | | `_ValnDocAcctgItemMktgSmmry` | `GrossExternalMarketingAmt` | `CURR(15)` | Gross Marketing Cost - External |
+| `GrossReimbmtMarketingAmt` |  | | `_ValnDocAcctgItemMktgSmmry` | `GrossReimbmtMarketingAmt` | `CURR(15)` | Gross Marketing Cost Reimbursement |
+| `ValuationDocumentStatus` |  | | `_ValuationDocumentHdr` | `ValuationDocumentStatus` | `CHAR(2)` | Valuation Document Status |
+| `NumberOfItems` |  | |  | `cast( 1 as oiu_vdm_no_of_items )` | `INT4(10)` | Number of Items |
+| `_ValnDocAcctgItemTaxSmmry` | | ✓ | | | | |
+| `_ValnDocAcctgItemMktgSmmry` | | ✓ | | | | |
+| `_ValnDocAcctgItemDeductSmmry` | | ✓ | | | | |
+| `_MajorProduct` | | ✓ | | | | |
+| `_MinorProduct` | | ✓ | | | | |
+| `_AccountsRblJointVenture` | | ✓ | | | | |
+| `_AcctDeterminationCategory` | | ✓ | | | | |
+| `_AcctsRblDivisionOfInterest` | | ✓ | | | | |
+| `_AcctsRblMeasurementPt` | | ✓ | | | | |
+| `_AffiliatedCompanyCode` | | ✓ | | | | |
+| `_BookingReversalType` | | ✓ | | | | |
+| `_CalculationBasis` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_County` | | ✓ | | | | |
+| `_DeliveryNetwork` | | ✓ | | | | |
+| `_DivisionOfInterest` | | ✓ | | | | |
+| `_EnergyUnit` | | ✓ | | | | |
+| `_ExpenseDivisionOfInterest` | | ✓ | | | | |
+| `_ExpenseJointVenture` | | ✓ | | | | |
+| `_GasPlantDivisionOfInterest` | | ✓ | | | | |
+| `_GasPlantJointVenture` | | ✓ | | | | |
+| `_GLAccountType` | | ✓ | | | | |
+| `_ItemIsNetZero` | | ✓ | | | | |
+| `_ItemIsReallocated` | | ✓ | | | | |
+| `_ItemIsRejected` | | ✓ | | | | |
+| `_ItemIsSummarizedByProduct` | | ✓ | | | | |
+| `_ItemIsWriteOff` | | ✓ | | | | |
+| `_ItemIsCleared` | | ✓ | | | | |
+| `_JntIntrstBilgPartner` | | ✓ | | | | |
+| `_MarketingType` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_MeasurementPoint` | | ✓ | | | | |
+| `_OriginatingMeasurementPt` | | ✓ | | | | |
+| `_OwnerInterestType` | | ✓ | | | | |
+| `_OwnerIsJntIntrstBilgEnabled` | | ✓ | | | | |
+| `_OwnerPaymentStatus` | | ✓ | | | | |
+| `_PartnerCompany` | | ✓ | | | | |
+| `_PRAContract` | | ✓ | | | | |
+| `_PRAContractType` | | ✓ | | | | |
+| `_PRAGLAccount` | | ✓ | | | | |
+| `_PRAJointVenture` | | ✓ | | | | |
+| `_PRALegalForm` | | ✓ | | | | |
+| `_PRAOwner` | | ✓ | | | | |
+| `_PrimaryGeogrlLocation` | | ✓ | | | | |
+| `_PriorPeriodAdjustmentReason` | | ✓ | | | | |
+| `_ProcessingCompanyCode` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductBalancingAgreement` | | ✓ | | | | |
+| `_Purchaser` | | ✓ | | | | |
+| `_RefValnDocHdr` | | ✓ | | | | |
+| `_RefValnDocYear` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_RelatedPRAContract` | | ✓ | | | | |
+| `_Remitter` | | ✓ | | | | |
+| `_SeveranceTaxType` | | ✓ | | | | |
+| `_SuspenseReason` | | ✓ | | | | |
+| `_TaxBasis` | | ✓ | | | | |
+| `_TaxClassification` | | ✓ | | | | |
+| `_Transporter` | | ✓ | | | | |
+| `_UnitJointVenture` | | ✓ | | | | |
+| `_ValnDocAcctgItemDeduct` | | ✓ | | | | |
+| `_ValnDocAcctgItemMktg` | | ✓ | | | | |
+| `_ValnDocAcctgItemTax` | | ✓ | | | | |
+| `_ValuationDocumentHdr` | | ✓ | | | | |
+| `_ValuationDocumentYear` | | ✓ | | | | |
+| `_VolumeType` | | ✓ | | | | |
+| `_VolumeUnit` | | ✓ | | | | |
+| `_Well` | | ✓ | | | | |
+| `_WellCompletion` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ValnDocAcctgItemTaxSmmry` | `I_ValnDocAcctgItemTaxSmmry` | [0..1] |
+| `_ValnDocAcctgItemMktgSmmry` | `I_ValnDocAcctgItemMktgSmmry` | [0..1] |
+| `_ValnDocAcctgItemDeductSmmry` | `I_ValnDocAcctgItemDeductSmmry` | [0..1] |
+| `_MajorProduct` | `I_MajorProduct` | [0..1] |
+| `_MinorProduct` | `I_MinorProduct` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_VALNDOCACCTGITEMALL')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_VALNDOCACCTGITEMALL')/$value)*
+
+```abap
+@EndUserText.label: 'Valuation Doc Accounting Item All'
+@Analytics.dataCategory: #CUBE
+@Metadata.allowExtensions:true
+@Metadata.ignorePropagatedAnnotations:true
+@Analytics.dataExtraction.enabled: true
+@VDM.viewType: #COMPOSITE
+@AbapCatalog.sqlViewName: 'IPVVLDOCACCTALL'
+@AccessControl.authorizationCheck: #CHECK
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_PROVIDER, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ]
+@ObjectModel.modelingPattern: #ANALYTICAL_CUBE
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.sapObjectNodeType.name: 'PRAValDocAcctgItemAll'
+
+// include explicit summarization of tax/mktg/ded to emulate posted acctg doc
+
+define view I_ValnDocAcctgItemAll
+  as select from I_ValnDocAcctgItem
+  association [0..1] to I_ValnDocAcctgItemTaxSmmry    as _ValnDocAcctgItemTaxSmmry    on  $projection.ValuationDocumentYear   = _ValnDocAcctgItemTaxSmmry.ValuationDocumentYear
+                                                                                      and $projection.ValuationDocumentNumber = _ValnDocAcctgItemTaxSmmry.ValuationDocumentNumber
+                                                                                      and $projection.BookingReversalType     = _ValnDocAcctgItemTaxSmmry.BookingReversalType
+                                                                                      and $projection.ValnDocAcctgItem        = _ValnDocAcctgItemTaxSmmry.ValnDocAcctgItem
+  association [0..1] to I_ValnDocAcctgItemMktgSmmry   as _ValnDocAcctgItemMktgSmmry   on  $projection.ValuationDocumentYear   = _ValnDocAcctgItemMktgSmmry.ValuationDocumentYear
+                                                                                      and $projection.ValuationDocumentNumber = _ValnDocAcctgItemMktgSmmry.ValuationDocumentNumber
+                                                                                      and $projection.BookingReversalType     = _ValnDocAcctgItemMktgSmmry.BookingReversalType
+                                                                                      and $projection.ValnDocAcctgItem        = _ValnDocAcctgItemMktgSmmry.ValnDocAcctgItem
+  association [0..1] to I_ValnDocAcctgItemDeductSmmry as _ValnDocAcctgItemDeductSmmry on  $projection.ValuationDocumentYear   = _ValnDocAcctgItemDeductSmmry.ValuationDocumentYear
+                                                                                      and $projection.ValuationDocumentNumber = _ValnDocAcctgItemDeductSmmry.ValuationDocumentNumber
+                                                                                      and $projection.BookingReversalType     = _ValnDocAcctgItemDeductSmmry.BookingReversalType
+                                                                                      and $projection.ValnDocAcctgItem        = _ValnDocAcctgItemDeductSmmry.ValnDocAcctgItem
+  association [0..1] to I_MajorProduct                as _MajorProduct                on  $projection.MajorProduct = _MajorProduct.MajorProduct
+  association [0..1] to I_MinorProduct                as _MinorProduct                on  $projection.MajorProduct = _MinorProduct.MajorProduct
+                                                                                      and $projection.MinorProduct = _MinorProduct.MinorProduct
+{
+      @ObjectModel.foreignKey.association: '_ValuationDocumentYear'
+  key ValuationDocumentYear,
+  key ValuationDocumentNumber,
+      @ObjectModel.foreignKey.association: '_BookingReversalType'
+  key BookingReversalType,
+  key ValnDocAcctgItem,
+
+      @ObjectModel.foreignKey.association: '_MajorProduct'
+      MajorProduct, // needed for association to marketing type
+      @ObjectModel.foreignKey.association: '_MinorProduct'
+      MinorProduct,
+
+      @ObjectModel.foreignKey.association: '_ItemIsRejected'
+      ItemIsRejected,
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+      CompanyCode,
+      //      @ObjectModel.foreignKey.association: '_FiscalPeriod'
+      FiscalPeriod,
+      @ObjectModel.foreignKey.association: '_ItemIsNetZero'
+      ItemIsNetZero,
+
+      @ObjectModel.foreignKey.association: '_PRAGLAccount'
+      GLAccount,
+      @ObjectModel.foreignKey.association: '_GLAccountType'
+      GLAccountType,
+      @ObjectModel.foreignKey.association: '_AcctDeterminationCategory'
+      AcctDeterminationCategory,
+      @ObjectModel.foreignKey.association: '_PRAJointVenture'
+      JointVenture,
+      @ObjectModel.foreignKey.association: '_DivisionOfInterest'
+      DivisionOfInterest,
+      @ObjectModel.foreignKey.association: '_UnitJointVenture'
+      UnitJointVenture,
+      @ObjectModel.foreignKey.association: '_Product'
+      Product,
+      @ObjectModel.foreignKey.association: '_Material'
+      Material,
+      @Semantics.text: true
+      DocumentItemText,
+      @ObjectModel.foreignKey.association: '_Well'
+      Well,
+      @ObjectModel.foreignKey.association: '_WellCompletion'
+      WellCompletion,
+      @ObjectModel.foreignKey.association: '_MeasurementPoint'
+      MeasurementPoint,
+      @ObjectModel.foreignKey.association: '_PRAContract'
+      PRAContract,
+      @ObjectModel.foreignKey.association: '_VolumeType'
+      VolumeType,
+      @Semantics.businessDate.at: true
+      SalesDate,
+      @ObjectModel.foreignKey.association: '_DeliveryNetwork'
+      DeliveryNetwork,
+      @ObjectModel.foreignKey.association: '_CostCenter'
+      CostCenter,
+      @ObjectModel.foreignKey.association: '_Country'
+      Country,
+      @ObjectModel.foreignKey.association: '_PrimaryGeogrlLocation'
+      PrimaryGeogrlLocation,
+      @ObjectModel.foreignKey.association: '_ProcessingCompanyCode'
+      ProcessingCompanyCode,
+      @ObjectModel.foreignKey.association: '_Purchaser'
+      Purchaser,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'VolumeUnit'
+      PressureBaseQty,
+      @ObjectModel.foreignKey.association: '_ItemIsSummarizedByProduct'
+      ItemIsSummarizedByProduct,
+      @ObjectModel.foreignKey.association: '_ItemIsWriteOff'
+      ItemIsWriteOff,
+      @ObjectModel.foreignKey.association: '_ItemIsCleared'
+      ItemIsCleared,
+      @ObjectModel.foreignKey.association: '_OriginatingMeasurementPt'
+      OriginatingMeasurementPt,
+      @ObjectModel.foreignKey.association: '_AffiliatedCompanyCode'
+      AffiliatedCompanyCode,
+      @ObjectModel.foreignKey.association: '_TaxClassification'
+      TaxClassification,
+      @ObjectModel.foreignKey.association: '_PriorPeriodAdjustmentReason'
+      PriorPeriodAdjustmentReason,
+      @ObjectModel.foreignKey.association: '_County'
+      County,
+      @ObjectModel.foreignKey.association: '_Region'
+      Region,
+      @ObjectModel.foreignKey.association: '_RelatedPRAContract'
+      RelatedPRAContract,
+      @ObjectModel.foreignKey.association: '_ProductBalancingAgreement'
+      ProductBalancingAgreement,
+      @ObjectModel.foreignKey.association: '_GasPlantJointVenture'
+      GasPlantJointVenture,
+      @ObjectModel.foreignKey.association: '_GasPlantDivisionOfInterest'
+      GasPlantDivisionOfInterest,
+      @ObjectModel.foreignKey.association: '_PRAContractType'
+      PRAContractType,
+      @ObjectModel.foreignKey.association: '_Transporter'
+      Transporter,
+      @ObjectModel.foreignKey.association: '_PartnerCompany'
+      PartnerCompany,
+      @ObjectModel.foreignKey.association: '_Remitter'
+      Remitter,
+      @ObjectModel.foreignKey.association: '_AcctsRblMeasurementPt'
+      AcctsRblMeasurementPt,
+      @ObjectModel.foreignKey.association: '_AccountsRblJointVenture'
+      AccountsReceivableJointVenture,
+      @ObjectModel.foreignKey.association: '_AcctsRblDivisionOfInterest'
+      AcctsRblDivisionOfInterest,
+      // no association, third party identifier
+      AlternateProperty,
+      // no association, third party identifier
+      AlternateProduct,
+      PaymentReference,
+      PaymentDate,
+      CashReceiptDate,
+      @ObjectModel.foreignKey.association: '_SeveranceTaxType'
+      SeveranceTaxType,
+      @ObjectModel.foreignKey.association: '_MarketingType'
+      MarketingType,
+      @ObjectModel.foreignKey.association: '_ExpenseJointVenture'
+      ExpenseJointVenture,
+      @ObjectModel.foreignKey.association: '_ExpenseDivisionOfInterest'
+      ExpenseDivisionOfInterest,
+
+      // units and currencies
+      @Semantics.unitOfMeasure: true
+      VolumeUnit,
+      @Semantics.unitOfMeasure: true
+      EnergyUnit,
+      @Semantics.unitOfMeasure: true
+      HeatingValUnit,
+      @Semantics.currencyCode: true
+      CompanyCodeCurrency,
+
+      // individual characteristics where no default aggregation should occur
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'HeatingValUnit'
+      HeatingValue,
+      @DefaultAggregation: #SUM
+      // no uom (ratio)
+      APIGravityRatio,
+      @DefaultAggregation: #SUM
+      // no uom (ratio)
+      DisbursementDecimalRatio,
+      @DefaultAggregation: #SUM
+      // no uom (ratio)
+      NetRevenueInterestRatio,
+
+      // measurement amounts
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'VolumeUnit'
+      GrossVolInVolUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'VolumeUnit'
+      OwnerNetVolInVolUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'EnergyUnit'
+      GrossEnergyInEnergyUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'EnergyUnit'
+      OwnerEnergyInEnergyUnit,
+      @DefaultAggregation: #SUM
+      // vol unit is undefined (typically MCF, where VolumeUnit will be Std Gallons)
+      @Semantics.quantity.unitOfMeasure: 'VolumeUnit'
+      GrossVolReducnInVolUnit,
+      @DefaultAggregation: #SUM
+      // vol unit is undefined (typically MCF, where VolumeUnit will be Std Gallons)
+      @Semantics.quantity.unitOfMeasure: 'VolumeUnit'
+      OwnrVolReducnInVolUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'EnergyUnit'
+      GrossEngyReductionInEngyUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'EnergyUnit'
+      OwnerEnergyReducnInEnergyUnit,
+
+      //    currency amounts
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      GrossAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      OwnerGrossAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      OwnerNetAmount,
+
+      @ObjectModel.foreignKey.association: '_PRAOwner'
+      PRAOwner,
+      @ObjectModel.foreignKey.association: '_OwnerInterestType'
+      OwnerInterestType,
+      OwnerInterestSequence,
+      @ObjectModel.foreignKey.association: '_SuspenseReason'
+      SuspenseReason,
+      @ObjectModel.foreignKey.association: '_CalculationBasis'
+      CalculationBasis,
+      @ObjectModel.foreignKey.association: '_OwnerPaymentStatus'
+      OwnerPaymentStatus,
+      @ObjectModel.foreignKey.association: '_OwnerIsJntIntrstBilgEnabled'
+      OwnerIsJntIntrstBilgEnabled,
+      @ObjectModel.foreignKey.association: '_JntIntrstBilgPartner'
+      JntIntrstBilgPartner,
+      @ObjectModel.foreignKey.association: '_PRALegalForm'
+      PRALegalForm,
+      @ObjectModel.foreignKey.association: '_TaxBasis'
+      TaxBasis,
+      @ObjectModel.foreignKey.association: '_ItemIsReallocated'
+      ItemIsReallocated,
+      @ObjectModel.foreignKey.association: '_RefValnDocYear'
+      RefValnDocYear,
+      //      @ObjectModel.foreignKey.association: '_RefValnDocHdr'
+      RefValnDoc,
+      RefValnDocItem,
+
+      //adminstrative
+      @Semantics.user.createdBy: true
+      CreatedByUser,
+      CreationDateTime,
+
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      _ValnDocAcctgItemTaxSmmry.NetTaxAmount                 as NetTaxAmount,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      _ValnDocAcctgItemTaxSmmry.NetTaxReimbmtAmt             as NetTaxReimbmtAmt,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      _ValnDocAcctgItemTaxSmmry.GrossTaxAmount               as GrossTaxAmount,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      _ValnDocAcctgItemTaxSmmry.GrossTaxReimbmtAmt           as GrossTaxReimbmtAmt,
+
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      _ValnDocAcctgItemDeductSmmry.OtherDeductionAmount      as OtherDeductionAmount,
+
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      _ValnDocAcctgItemMktgSmmry.NetInternalMarketingAmt     as NetInternalMarketingAmt,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      _ValnDocAcctgItemMktgSmmry.NetExternalMarketingAmt     as NetExternalMarketingAmt,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      _ValnDocAcctgItemMktgSmmry.NetReimbmtMarketingAmt      as NetReimbmtMarketingAmt,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      _ValnDocAcctgItemMktgSmmry.GrossInternalMarketingAmt   as GrossInternalMarketingAmt,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      _ValnDocAcctgItemMktgSmmry.GrossExternalMarketingAmt   as GrossExternalMarketingAmt,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      _ValnDocAcctgItemMktgSmmry.GrossReimbmtMarketingAmt    as GrossReimbmtMarketingAmt,
+
+      _ValuationDocumentHdr.ValuationDocumentStatus          as ValuationDocumentStatus, //required for analytical view where clause
+
+      @DefaultAggregation: #SUM
+      cast( 1 as oiu_vdm_no_of_items )                       as NumberOfItems,
+
+      /* Associations */
+      _AccountsRblJointVenture,
+      _AcctDeterminationCategory,
+      _AcctsRblDivisionOfInterest,
+      _AcctsRblMeasurementPt,
+      _AffiliatedCompanyCode,
+      _BookingReversalType,
+      _CalculationBasis,
+      _CompanyCode,
+      _CompanyCodeCurrency,
+      _CostCenter,
+      _Country,
+      _County,
+      _DeliveryNetwork,
+      _DivisionOfInterest,
+      _EnergyUnit,
+      _ExpenseDivisionOfInterest,
+      _ExpenseJointVenture,
+      _GasPlantDivisionOfInterest,
+      _GasPlantJointVenture,
+      _GLAccountType,
+      _ItemIsNetZero,
+      _ItemIsReallocated,
+      _ItemIsRejected,
+      _ItemIsSummarizedByProduct,
+      _ItemIsWriteOff,
+      _ItemIsCleared,
+      _JntIntrstBilgPartner,
+      _MarketingType,
+      _Material,
+      _MeasurementPoint,
+      _OriginatingMeasurementPt,
+      _OwnerInterestType,
+      _OwnerIsJntIntrstBilgEnabled,
+      _OwnerPaymentStatus,
+      _PartnerCompany,
+      _PRAContract,
+      _PRAContractType,
+      _PRAGLAccount,
+      _PRAJointVenture,
+      _PRALegalForm,
+      _PRAOwner,
+      _PrimaryGeogrlLocation,
+      _PriorPeriodAdjustmentReason,
+      _ProcessingCompanyCode,
+      _Product,
+      _MajorProduct,
+      _MinorProduct,
+      _ProductBalancingAgreement,
+      _Purchaser,
+      _RefValnDocHdr,
+      _RefValnDocYear,
+      _Region,
+      _RelatedPRAContract,
+      _Remitter,
+      _SeveranceTaxType,
+      _SuspenseReason,
+      _TaxBasis,
+      _TaxClassification,
+      _Transporter,
+      _UnitJointVenture,
+      _ValnDocAcctgItemDeduct,
+      _ValnDocAcctgItemMktg,
+      _ValnDocAcctgItemTax,
+      _ValuationDocumentHdr,
+      _ValuationDocumentYear,
+      _VolumeType,
+      _VolumeUnit,
+      _Well,
+      _WellCompletion,
+      _ValnDocAcctgItemTaxSmmry,
+      _ValnDocAcctgItemMktgSmmry,
+      _ValnDocAcctgItemDeductSmmry
+}
+```

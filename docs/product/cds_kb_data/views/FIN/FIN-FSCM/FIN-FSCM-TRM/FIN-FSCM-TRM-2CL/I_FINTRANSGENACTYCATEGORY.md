@@ -5,9 +5,16 @@ app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSGENACTYCATEGORY')/$value
 semantic_en: "This CDS view provides a three-digit code for additional activity categories for financial transactions. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "General fin trans activity category — CDS view giao diện dựa trên dd07l."
+keywords:
+  - "general"
+  - "fin"
+  - "trans"
+  - "activity"
+  - "category"
 tags:
   - FIN
   - bo:companycode
@@ -18,7 +25,6 @@ tags:
   - interface-view
   - lob:finance
   - transaction
-  - metadata-only
 ---
 # I_FINTRANSGENACTYCATEGORY
 
@@ -30,10 +36,58 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSGENACTYCATEGORY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSGENACTYCATEGORY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FinTransGenActivityCategory` |  | |  |  | `NUMC(3)` | Activity Category (General) |
+| `FinTransGenActivityCategory` | ✓ | |  | `cast(DomainValue.domvalue_l as tb_vgtyp)` | `NUMC(3)` | Activity Category (General) |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_FinTransGenActyCategoryT` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSGENACTYCATEGORY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSGENACTYCATEGORY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IFINGENACTYCAT'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'General fin trans activity category'
+@VDM.viewType: #BASIC
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel:{
+    usageType : {
+        sizeCategory: #S,
+        serviceQuality: #X,
+        dataClass: #CUSTOMIZING
+    },
+    dataCategory: #VALUE_HELP,
+    resultSet.sizeCategory: #XS,
+    representativeKey:'FinTransGenActivityCategory' 
+}
+@Analytics : {dataCategory: #DIMENSION}
+@Analytics.internalName:#LOCAL
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE]
+@Metadata.ignorePropagatedAnnotations: true
+define view I_FinTransGenActyCategory 
+  as select from dd07l as DomainValue
+  association [0..*] to I_FinTransGenActyCategoryT  as _Text  on $projection.FinTransGenActivityCategory = _Text.FinTransGenActivityCategory
+{
+      @ObjectModel.text.association: '_Text'
+  key cast(DomainValue.domvalue_l as tb_vgtyp) as FinTransGenActivityCategory,
+      
+      _Text
+}
+where
+        DomainValue.domname   = 'T_VGTYP'
+    and DomainValue.as4local  = 'A'
+```

@@ -5,9 +5,18 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MEASUREMENTPOINTVOLQRY')/$value
 semantic_en: "Measurement Point Volume Query"
+semantic_vi: "Measurement Point Volume Query — CDS view tiêu dùng dựa trên I_MeasurementPointVolume."
+keywords:
+  - "measurement"
+  - "point"
+  - "volume"
+  - "query"
+  - "year"
+  - "type"
+  - "class"
 tags:
   - IS
   - bo:purchaseorder
@@ -15,7 +24,6 @@ tags:
   - consumption-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # C_MEASUREMENTPOINTVOLQRY
 
@@ -27,7 +35,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MEASUREMENTPOINTVOLQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MEASUREMENTPOINTVOLQRY')/$value) |
 
 ## Fields
 
@@ -74,3 +82,106 @@ tags:
 | `StandardVolume` |  | |  |  | `QUAN(13)` | Standard volume |
 | `Energy` |  | |  |  | `QUAN(13)` | Energy quantity |
 | `GasMolarVolume` |  | |  |  | `QUAN(13)` | Gas mol volume |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MEASUREMENTPOINTVOLQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MEASUREMENTPOINTVOLQRY')/$value)*
+
+```abap
+@EndUserText.label: 'Measurement Point Volume Query'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVMPVLQ'
+//@OData.publish: true
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+
+define view C_MeasurementPointVolQry
+  //  with parameters
+  //    @Consumption.hidden: true
+  //    @Environment.systemField: #SYSTEM_LANGUAGE
+  //    P_Language : sylangu
+  as select from I_MeasurementPointVolume
+{
+  MeasurementPtVolDocYear,
+  MeasurementPtVolumeDoc,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 2
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  MeasurementPoint,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 5
+  @AnalyticsDetails.query.display: #TEXT
+  @AnalyticsDetails.query.axis: #ROWS
+  VolumeType,
+  @AnalyticsDetails.query.display: #TEXT
+  VolumeClass,
+  @AnalyticsDetails.query.display: #TEXT
+  Transporter,
+  TransporterReference,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 4
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  @AnalyticsDetails.query.axis: #ROWS
+  Material,
+  @AnalyticsDetails.query.display: #TEXT
+  AllocationFrequency,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 1
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  DeliveryNetwork,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PRAContract,
+  TicketNumber,
+  TicketDateTime,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 3
+  ProductionDate,
+  VolumeEntryDateTime,
+  EffectiveValidityStartDate,
+  EffectiveValidityEndDate,
+  MeterStartDateTime,
+  MeterStopDateTime,
+  @AnalyticsDetails.query.display: #TEXT
+  ConversionGroup,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  TankBatteryMeasurementPt,
+  @AnalyticsDetails.query.display: #TEXT
+  VolumeSource,
+  @AnalyticsDetails.query.display: #TEXT
+  VolumeCategory,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  LoadOilDeliveryNetwork,
+  @AnalyticsDetails.query.display: #KEY
+  LoadOilWell,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  LoadOilWellCompletion,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  LoadOilMeasurementPoint,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  OriginatingMeasurementPt,
+  @AnalyticsDetails.query.display: #TEXT
+  DensityType,
+  InventoryDate,
+  CreatedByUser,
+  CreationDateTime,
+  StandardVolUnit,
+  EnergyUnit,
+  HeatingValUnit,
+  StandardDensityUnit,
+  @AnalyticsDetails.query.hidden
+  HeatingValue,
+  @AnalyticsDetails.query.hidden
+  StandardDensity,
+  @AnalyticsDetails.query.axis: #COLUMNS
+  StandardVolume,
+  @AnalyticsDetails.query.axis: #COLUMNS
+  Energy,
+  @AnalyticsDetails.query.hidden
+  GasMolarVolume
+}
+```

@@ -29,12 +29,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `CharcDescription` |  | |  |  |  |  |
-| `ChangeNumber` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  | `NUMC(10)` | Characteristic Internal ID |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `CharcDescription` |  | |  |  | `CHAR(30)` | Characteristic Description |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-to date |
 | `_Characteristic` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

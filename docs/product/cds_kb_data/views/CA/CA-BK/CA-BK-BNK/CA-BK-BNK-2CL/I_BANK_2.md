@@ -32,28 +32,28 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BankCountry` | ✓ | |  | `banks` |  |  |
-| `BankInternalID` | ✓ | |  | `bankl` |  |  |
-| `CreationDate` |  | |  | `erdat` |  |  |
-| `CreatedByUser` |  | |  | `ernam` |  |  |
-| `BankName` |  | |  | `banka` |  |  |
-| `Region` |  | |  | `provz` |  |  |
-| `StreetName` |  | |  | `stras` |  |  |
-| `ShortStreetName` |  | |  | `stras` |  |  |
-| `CityName` |  | |  | `ort01` |  |  |
-| `ShortCityName` |  | |  | `ort01` |  |  |
-| `SWIFTCode` |  | |  | `swift` |  |  |
-| `BankNetworkGrouping` |  | |  | `bgrup` |  |  |
-| `IsPostBankAccount` |  | |  | `xpgro` |  |  |
-| `IsMarkedForDeletion` |  | |  | `loevm` |  |  |
-| `Bank` |  | |  | `bnklz` |  |  |
-| `PostOfficeBankAccount` |  | |  | `pskto` |  |  |
-| `Branch` |  | |  | `brnch` |  |  |
-| `BankBranch` |  | |  | `brnch` |  |  |
-| `CheckDigitCalculationMethod` |  | |  | `chkme` |  |  |
-| `BankDataFileFormat` |  | |  | `vers` |  |  |
-| `AddressID` |  | |  | `adrnr` |  |  |
-| `BankCategory` |  | |  | `bintk` |  |  |
+| `BankCountry` | ✓ | |  | `banks` | `CHAR(3)` | Bank Country/Region Key |
+| `BankInternalID` | ✓ | |  | `bankl` | `CHAR(15)` | Bank Keys |
+| `CreationDate` |  | |  | `erdat` | `DATS(8)` | Record Created On |
+| `CreatedByUser` |  | |  | `ernam` | `CHAR(12)` | Name of Accounting Clerk Responsible for Adding the Object |
+| `BankName` |  | |  | `banka` | `CHAR(60)` | Name of Financial Institution |
+| `Region` |  | |  | `provz` | `CHAR(3)` | Region (State, Province, County) |
+| `StreetName` |  | |  | `stras` | `CHAR(35)` | Street and House Number |
+| `ShortStreetName` |  | |  | `stras` | `CHAR(35)` | Street and House Number |
+| `CityName` |  | |  | `ort01` | `CHAR(35)` | City |
+| `ShortCityName` |  | |  | `ort01` | `CHAR(35)` | City |
+| `SWIFTCode` |  | |  | `swift` | `CHAR(11)` | SWIFT/BIC for International Payments |
+| `BankNetworkGrouping` |  | |  | `bgrup` | `CHAR(2)` | Bank group (bank network) |
+| `IsPostBankAccount` |  | |  | `xpgro` | `CHAR(1)` | Post Office Bank Current Account |
+| `IsMarkedForDeletion` |  | |  | `loevm` | `CHAR(1)` | Deletion Indicator |
+| `Bank` |  | |  | `bnklz` | `CHAR(15)` | Bank Number |
+| `PostOfficeBankAccount` |  | |  | `pskto` | `CHAR(16)` | Post office bank current account number |
+| `Branch` |  | |  | `brnch` | `CHAR(40)` | Bank Branch |
+| `BankBranch` |  | |  | `brnch` | `CHAR(40)` | Bank Branch |
+| `CheckDigitCalculationMethod` |  | |  | `chkme` | `CHAR(4)` | Check digit calculation method |
+| `BankDataFileFormat` |  | |  | `vers` | `CHAR(3)` | Format of File with Bank Data |
+| `AddressID` |  | |  | `adrnr` | `CHAR(10)` | Address Number |
+| `BankCategory` |  | |  | `bintk` | `CHAR(1)` | Internal Bank Category |
 | `_Address` | | ✓ | | | | |
 | `_BankAddress` | | ✓ | | | | |
 | `_Region` | | ✓ | | | | |

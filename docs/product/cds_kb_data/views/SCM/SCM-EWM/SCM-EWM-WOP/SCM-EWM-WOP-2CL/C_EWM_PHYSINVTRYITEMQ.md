@@ -5,9 +5,20 @@ app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_PHYSINVTRYITEMQ')/$value
 semantic_en: "This CDS view provides information about physical inventory items in your warehouse. This CDS view provides the data to answer the following business questions: How many active physical inventory items are in the warehouse? How many physical inventory items have been counted in the past month? How many storage bins have been covered during the physical inventory this year? How many physical inventory items have count difference? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Whse Physical Inventory Item - Query — CDS view tiêu dùng dựa trên Whse Physical Inventory Item - Query."
+keywords:
+  - "whse"
+  - "physical"
+  - "inventory"
+  - "item"
+  - "query"
+  - "warehouse"
+  - "number"
+  - "year"
+  - "docs"
 tags:
   - SCM
   - bo:companycode
@@ -17,7 +28,6 @@ tags:
   - SCM-EWM
   - SCM-EWM-WOP
   - SCM-EWM-WOP-2CL
-  - metadata-only
 ---
 # C_EWM_PHYSINVTRYITEMQ
 
@@ -29,7 +39,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_PHYSINVTRYITEMQ')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_PHYSINVTRYITEMQ')/$value) |
 
 ## Fields
 
@@ -45,7 +55,7 @@ tags:
 | `EWMPhysicalInventoryStatus` |  | |  |  | `CHAR(4)` | Physical Inventory Status |
 | `EWMPhysicalInventoryStatusText` |  | |  |  | `CHAR(60)` | Status of Physical Inventory Item |
 | `PhysicalInventoryDocumentType` |  | |  |  | `CHAR(2)` | Physical Inventory Procedure (Document Type of Phys. Inv.) |
-| `PInvDocumentTypeText` |  | |  |  | `CHAR(50)` | Short Text |
+| `localized` |  | |  | `_DocType._Text.PInvDocumentTypeText : localized` |  |  |
 | `PInvCountedUTCDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
 | `EWMPhysInvtryCountedDate` |  | |  |  | `DATS(8)` |  |
 | `PhysicalInventoryCountUserName` |  | |  |  | `CHAR(12)` | User Name |
@@ -54,11 +64,8 @@ tags:
 | `EWMPhysInvtryPostingDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
 | `EWMPhysInvtryPostingDate` |  | |  |  | `DATS(8)` |  |
 | `ActivityArea` |  | |  |  | `CHAR(4)` | Activity Area |
-| `ActivityAreaName` |  | |  |  | `CHAR(40)` | Description |
 | `EWMPhysicalInventoryPriority` |  | |  |  | `NUMC(1)` | Priority of Physical Inventory |
-| `PInvPriorityText` |  | |  |  | `CHAR(12)` | Priority Description |
 | `EWMPhysInvtryReason` |  | |  |  | `CHAR(4)` | Reason for Physical Inventory/Inventory Difference |
-| `PInvReasonText` |  | |  |  | `CHAR(40)` | Description |
 | `PInvDocumentItemIsPrinted` |  | |  |  | `CHAR(1)` | Status: Physical Inventory Document Item Already Printed Out |
 | `EWMStorageType` |  | |  |  | `CHAR(4)` | Storage Type |
 | `EWMStorageBin` |  | |  |  | `CHAR(18)` | Storage Bin |
@@ -100,3 +107,454 @@ tags:
 | `EWMRefPhysicalInventoryDoc` |  | |  |  | `NUMC(20)` | Physical Inventory Document Number |
 | `PhysicalInventoryRefDocItem` |  | |  |  | `NUMC(6)` | Item |
 | `PInvFreeDefinedRefText` |  | |  |  | `CHAR(70)` | Document ID of Reference Document |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_PHYSINVTRYITEMQ')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_PHYSINVTRYITEMQ')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #NOT_ALLOWED
+@OData.publish: true
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+@Analytics.settings.maxProcessingEffort: #HIGH
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel: { usageType.sizeCategory: #XL,
+                usageType.serviceQuality: #D,
+                usageType.dataClass: #MIXED,
+                supportedCapabilities: [#ANALYTICAL_QUERY],
+                modelingPattern:#ANALYTICAL_QUERY }
+@VDM.viewType: #CONSUMPTION
+@EndUserText.label: 'Whse Physical Inventory Item - Query'
+define transient view entity C_EWM_PhysInvtryItemQ
+  provider contract analytical_query
+  as projection on I_EWM_PhysInvtryItemC
+
+{
+  @Consumption.filter: {
+      selectionType: #RANGE,
+      multipleSelections: false,
+      mandatory: false
+  }
+  @EndUserText.label: 'Warehouse'
+  EWMWarehouse,
+
+  @EndUserText.label: 'Physical Inventory Document Number'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  PhysicalInventoryDocNumber,
+
+  @EndUserText.label: 'Physical Inventory Item Number'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  PhysicalInventoryItemNumber,
+
+  @EndUserText.label: 'Physical Inventory Document Year'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  PhysicalInventoryDocYear,
+
+  @EndUserText.label: 'Number of Physical Inventory Documents'
+  EWMNrOfPhysicalInventoryDocs,
+
+  @EndUserText.label: 'Number of Physical Inventory Items'
+  EWMNrOfPhysicalInventoryItems,
+
+  @EndUserText.label: 'Number of Storage Bins'
+  @Aggregation.default: #FORMULA
+  @AnalyticsDetails: {
+  exceptionAggregationSteps: [{
+     exceptionAggregationBehavior: #COUNT,
+     exceptionAggregationElements: ['EWMWarehouse','EWMStorageBin']} ]}
+  EWMNumberOfStorageBins,
+
+  @EndUserText.label: 'Physical Inventory Status'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMPhysicalInventoryStatus,
+  @EndUserText.label: 'Description of Physical Inventory Status'
+  EWMPhysicalInventoryStatusText,
+  
+
+  @EndUserText.label: 'Physical Inventory Document Type'
+  @Consumption.filter: {
+    selectionType: #RANGE,
+    multipleSelections: true,
+    mandatory: false
+  }
+  PhysicalInventoryDocumentType,
+  @EndUserText.label: 'Desc of Physical Inventory Document Type'
+  _DocType._Text.PInvDocumentTypeText : localized,
+  
+  @EndUserText.label: 'Physical Inventory Counted UTC Date Time'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  PInvCountedUTCDateTime,
+ 
+  @EndUserText.label: 'Physical Inventory Count Date in UTC'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMPhysInvtryCountedDate,
+  
+  @EndUserText.label: 'Physical Inventory Count User Name'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  PhysicalInventoryCountUserName,
+  @EndUserText.label: 'Phys Inventory Creation Date Time in UTC'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  PhysInventoryCrtnUTCDateTime,
+  
+  @EndUserText.label: 'Physical Inventory Creation Date in UTC'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMPhysInvtryCreationDate,
+  
+  @EndUserText.label: 'Phys Inventory Posting Date Time in UTC'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMPhysInvtryPostingDateTime,
+  
+  @EndUserText.label: 'Physical Inventory Posting Date in UTC'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMPhysInvtryPostingDate,
+  
+  @EndUserText.label: 'Activity Area'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  ActivityArea,
+  @EndUserText.label: 'Description of Activity Area'  
+  _ActivityArea._Text.ActivityAreaName : localized,
+  
+  @Consumption.filter: {
+    selectionType: #RANGE,
+    multipleSelections: true,
+    mandatory: false
+  }
+  @EndUserText.label: 'Physical Inventory Priority'
+  EWMPhysicalInventoryPriority,
+  @EndUserText.label: 'Desc of Physical Inventory Priority'
+  _Priority._Text.PInvPriorityText : localized,
+
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  @EndUserText.label: 'Physical Inventory Reason'
+  EWMPhysInvtryReason,
+  @EndUserText.label: 'Description of Physical Inventory Reason'  
+  _Reason._Text.PInvReasonText : localized,
+  
+
+  @EndUserText.label: 'Physical Inventory Doc Item Is Printed'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  @Semantics.booleanIndicator
+  PInvDocumentItemIsPrinted,
+
+  @EndUserText.label: 'Storage Type'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+
+  EWMStorageType,
+  @EndUserText.label: 'Storage Bin'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMStorageBin,
+  @EndUserText.label: 'Storage Section'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMStorageSection,
+  @EndUserText.label: 'Storage Bin Type'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMStorageBinType,
+  @EndUserText.label: 'Source Storage Bin Access Type'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMStorageBinAccessType,
+  @EndUserText.label: 'Storage Bin Is Subdivided'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMStorageBinSubdivision,
+  @EndUserText.label: 'Product'
+
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  Product,
+  @EndUserText.label: 'Batch'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  Batch,
+  @EndUserText.label: 'Stock Type'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMStockType,
+  @EndUserText.label: 'Stock Usage'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMStockUsage,
+
+  @EndUserText.label: 'Stock Owner'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+
+  EWMStockOwner,
+  @EndUserText.label: 'Stock Owner Name'
+
+  StockOwnerName,
+  @EndUserText.label: 'Party Entitled to Dispose'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EntitledToDisposeParty,
+
+  @EndUserText.label: 'Physical Invtry Cycle Counting'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMPhysInventoryCountingCycle,
+  @EndUserText.label: 'Physical Invtry Cycle Counting Interval'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }  
+  EWMPInvCycCountingIntvlValue,
+  @EndUserText.label: 'Physical Invtry Cycle Counting Buffer'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }  
+  EWMPInvCycCountingBufferValue,  
+
+  @EndUserText.label: 'Name of Party Entitled to Dispose'
+  NameOfEntitledToDisposeParty,
+
+  @EndUserText.label: 'Stock Document Category'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  StockDocumentCategory,
+
+  @EndUserText.label: 'Internal ID of WBS Element'
+  WBSElementInternalID,
+  @EndUserText.label: 'External ID of WBS Element'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  WBSElementExternalID,
+  @EndUserText.label: 'Special Stock Identifying Sales Order'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  SpecialStockIdfgSalesOrder,
+  @EndUserText.label: 'Special Stk Identifying Sales Order Item'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  SpecialStockIdfgSalesOrderItem,
+  @EndUserText.label: 'Type of Warehouse Quality Inspection'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+
+  WhseQualityInspectionType,
+  /*Hidden due to performance issue
+  @EndUserText.label: 'Document Number of Quality Inspection'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+
+  QualityInspectionDocument,*/
+  @EndUserText.label: 'Category of Stock Reference Document'
+  EWMStockReferenceDocCategory,
+
+  @EndUserText.label: 'Stock Reference Document'
+  EWMStockReferenceDocument,
+  @EndUserText.label: 'Stock Reference Document Item'
+  EWMStockReferenceDocumentItem,
+  @EndUserText.label: 'Identification Number of Stock'
+  StockIdentificationNumber,
+  @EndUserText.label: 'Goods Receipt Date Time'
+  EWMGoodsReceiptDateTime,
+  @EndUserText.label: 'Goods Receipt Date'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMGoodsReceiptDate,
+  @EndUserText.label: 'Shelf Life Expiration Date'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  ShelfLifeExpirationDate,
+  @EndUserText.label: 'Country or Region of Origin'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  CountryOfOrigin,
+  @EndUserText.label: 'Batch in Restricted-Use Stock'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  MatlBatchIsInRstrcdUseStock,
+
+  @EndUserText.label: 'Storage Bin Is Empty'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  @Semantics.booleanIndicator
+  EWMStorageBinIsEmpty,
+  @EndUserText.label: 'Physical Invtry Has Changed Count Item'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  @Semantics.booleanIndicator
+  EWMPhysInvtryHasChangeCounting,
+  @EndUserText.label: 'Physical Invtry Has Difference Item'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  @Semantics.booleanIndicator
+  EWMPhysInvtryHasDifference,
+
+  @EndUserText.label: 'Warehouse Order'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+
+  WarehouseOrder,
+
+  @EndUserText.label: 'Ref Doc Year of Physical Inventory Item'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  PhysicalInventoryRefDocYear,
+  @EndUserText.label: 'Ref Document of Physical Inventory Item'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  EWMRefPhysicalInventoryDoc,
+  @EndUserText.label: 'Ref Doc Item of Physical Inventory Item'
+  @Consumption.filter: {
+  selectionType: #RANGE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  PhysicalInventoryRefDocItem,
+
+  @EndUserText.label: 'Ref Text During Phys Inventory Creation'
+  PInvFreeDefinedRefText
+}
+```

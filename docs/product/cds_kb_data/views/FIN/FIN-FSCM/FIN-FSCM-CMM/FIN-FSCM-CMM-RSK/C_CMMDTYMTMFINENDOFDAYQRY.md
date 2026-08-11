@@ -5,9 +5,23 @@ app_component: FIN-FSCM-CMM-RSK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMFINENDOFDAYQRY')/$value
 semantic_en: "Derivative MTM End-Of-Day Query"
+semantic_vi: "Derivative MTM End-Of-Day Query — CDS view tiêu dùng dựa trên I_CmmdtyMTMFinValuesCube."
+keywords:
+  - "derivative"
+  - "mtm"
+  - "end"
+  - "day"
+  - "query"
+  - "company"
+  - "code"
+  - "commodity"
+  - "price"
+  - "exposure"
+  - "category"
+  - "version"
 tags:
   - FIN
   - bo:companycode
@@ -18,7 +32,6 @@ tags:
   - FIN-FSCM-CMM-RSK
   - lob:finance
   - lob:sourcing & procurement
-  - metadata-only
 ---
 # C_CMMDTYMTMFINENDOFDAYQRY
 
@@ -30,7 +43,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMFINENDOFDAYQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMFINENDOFDAYQRY')/$value) |
 
 ## Fields
 
@@ -84,10 +97,131 @@ tags:
 | `FinInstrExternalReference` |  | |  |  | `CHAR(16)` | External Reference |
 | `DisplayView` |  | |  |  | `CHAR(1)` | View Variant |
 | `RiskAnalyzerKeyFigureName` |  | |  |  | `CHAR(40)` | Risk Analyzer Keyfigure Name |
-| `SystemMessageText` |  | |  |  | `CHAR(73)` | Message Text |
 | `RiskAnalyzerKeyFigInQtanCrcy` |  | |  |  | `CURR(23)` | Value in Quotation Currency |
 | `QuotationCurrency` |  | |  |  | `CUKY(5)` | Evaluation in Quotation Currency |
 | `RiskAnalyzerKeyFigInPaytCrcy` |  | |  |  | `CURR(23)` | Value in Payment Currency |
 | `PaymentCurrency` |  | |  |  | `CUKY(5)` | Evaluation in Payment Currency |
 | `RiskAnalyzerKeyFigInStstcCrcy` |  | |  |  | `CURR(23)` | Value in Statistics Currency |
 | `StatisticsCurrency` |  | |  |  | `CUKY(5)` | Statistics Currency in Evaluation |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMFINENDOFDAYQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMFINENDOFDAYQRY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CDRVTVMTMEODQRY'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.compiler.compareFilter: true
+@Analytics.query: true
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.dataClass: #TRANSACTIONAL
+@VDM.viewType: #CONSUMPTION
+@EndUserText.label: 'Derivative MTM End-Of-Day Query'
+define view C_CmmdtyMTMFinEndOfDayQry  with parameters
+    @Consumption.defaultValue: 'P'
+    P_DisplayView          : cds_view_uom,
+//    @Consumption.hidden: true
+    @Environment.systemField: #SYSTEM_DATE
+    P_EvaluationDate       : cds_evaluation_date,
+    @Consumption.hidden: true
+    @Environment.systemField: #SYSTEM_LANGUAGE
+    P_Language              :spras  
+    as select from I_CmmdtyMTMFinValuesCube (P_DisplayView: $parameters.P_DisplayView,
+                         P_EvaluationDate: $parameters.P_EvaluationDate,
+                         P_EndOfDaySnapshotToDate: $parameters.P_EvaluationDate,
+                         P_MTMDataSelectionType: '01')
+    {
+
+    //ZI_DrvtvMTMCube
+    @AnalyticsDetails.query.axis: #ROWS
+    @Consumption.filter.multipleSelections: true
+    @AnalyticsDetails.query.variableSequence:  1
+    @AnalyticsDetails.query.display: #KEY_TEXT
+    CompanyCode,
+
+    @AnalyticsDetails.query.axis: #ROWS
+    @Consumption.filter.multipleSelections: true
+    @AnalyticsDetails.query.variableSequence:  3
+    CommodityPriceExposure,
+    CommodityExposureCategory,
+    CommodityPriceExposureVersion,
+    CommodityPriceSubExposure,
+    ValidityStartDateTime,
+    ValidityEndDateTime,
+    ValidityStartDate,
+    ValidityStartTime,
+    ValidityEndDate,
+    ValidityEndTime,
+    MaximumVersion,
+    RiskAnalyzerVersionUUID,
+    ExposureDueDate,
+    ReportingDate,
+
+    @AnalyticsDetails.query.axis: #ROWS
+    @Consumption.filter.multipleSelections: true
+    @AnalyticsDetails.query.variableSequence:  2
+    @AnalyticsDetails.query.display: #TEXT
+    Commodity,
+    CashFlowDirection,
+    TreasuryPositionLongShortCode,
+    DerivativeContrSpecification,
+    MarketIdentifierCode,
+    TimeToMaturity,
+    CmmdtyForwardIndexTiming,
+    MaturityKeyDate,
+    DerivativeContractMaturityCode,
+    FinancialInstrProductCategory,
+    FinancialAssetsMgmtProductType,
+    FinInstrTransactionCategory,
+    FinancialInstrumentProductType,
+    FinancialInstrActivityCategory,
+    FinancialObject,
+    PnLEventType,
+    TermStartDate,
+    TermEndDate,
+    DeliveryDate,
+    CommodityPriceExposureQuantity,
+    CommodityPriceExposureUnit,
+    TreasuryPositionAccount,
+    DerivativeContract,
+    OptionStrikeCurrency,
+    OptionPutCallCode,
+    OptionExerciseType,
+    ExternalKeyFigureValue,
+    OptionDeltaFactor,
+    EvaluationDate,
+    MTMDataSelectionType,
+    FinInstrExternalReference,
+    DisplayView,
+  
+
+
+
+    @AnalyticsDetails.query.axis: #ROWS
+    @AnalyticsDetails.query.variableSequence:  4
+    //@AnalyticsDetails.query.display: 'PriceType'
+    RiskAnalyzerKeyFigureName,
+
+    @AnalyticsDetails.query.axis: #ROWS
+    @AnalyticsDetails.query.variableSequence: 5   
+    _CmmdtyMtmMessage[1:Language = :P_Language].SystemMessageText,
+    
+    @AnalyticsDetails.query.axis: #COLUMNS
+    @AnalyticsDetails.query.variableSequence: 1
+    RiskAnalyzerKeyFigInQtanCrcy,
+    QuotationCurrency,
+
+    @AnalyticsDetails.query.axis: #COLUMNS
+    @AnalyticsDetails.query.variableSequence: 2
+    RiskAnalyzerKeyFigInPaytCrcy,
+    PaymentCurrency,
+
+    @AnalyticsDetails.query.axis: #COLUMNS
+    @AnalyticsDetails.query.variableSequence: 3
+    RiskAnalyzerKeyFigInStstcCrcy,
+    StatisticsCurrency
+
+    }
+```

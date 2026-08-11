@@ -5,9 +5,19 @@ app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HOUSEBANKACCOUNTANALYSISCUBE')/$value
 semantic_en: "This CDS view retrieves the number of company codes. This CDS view provides the prerequisites for answering the following business question: What is the total number of company codes?"
+semantic_vi: "House Bank Account Analysis - Cube — CDS view giao diện dựa trên I_HouseBankAccountLinkage."
+keywords:
+  - "house"
+  - "bank"
+  - "account"
+  - "analysis"
+  - "cube"
+  - "company"
+  - "code"
+  - "country"
 tags:
   - FIN
   - bo:plant
@@ -18,7 +28,8 @@ tags:
   - FIN-FSCM-CLM-BAM-2CL
   - interface-view
   - lob:finance
-  - metadata-only
+  - account
+  - bo:bank
 ---
 # I_HOUSEBANKACCOUNTANALYSISCUBE
 
@@ -30,19 +41,103 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HOUSEBANKACCOUNTANALYSISCUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HOUSEBANKACCOUNTANALYSISCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `HouseBank` |  | |  |  | `CHAR(5)` | House Bank ID |
-| `HouseBankAccount` |  | |  |  | `CHAR(5)` | House Bank Account |
-| `Bank` |  | |  |  | `CHAR(15)` | Bank Keys |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `HouseBank` | ✓ | |  |  | `CHAR(5)` | House Bank ID |
+| `HouseBankAccount` | ✓ | |  |  | `CHAR(5)` | House Bank Account |
+| `Bank` |  | |  | `BankInternalID` | `CHAR(15)` | Bank Keys |
 | `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
 | `BankAccountInternalID` |  | |  |  | `NUMC(10)` | Bank Account Technical ID |
-| `CreditRating` |  | |  |  | `CHAR(3)` | Rating |
-| `BankInBankGroup` |  | |  |  | `CHAR(10)` | Bank In Bank Group |
-| `BankGroup` |  | |  |  | `CHAR(10)` | Bank Group ID |
-| `NumberOfCompanyCodes` |  | |  |  | `INT4(10)` | Number of Company Codes |
+| `CreditRating` |  | | `_BankRating` | `CreditRating` | `CHAR(3)` | Rating |
+| `BankInBankGroup` |  | |  | `cast(_BankRating.BusinessPartnerNumber as fclm_bank_in_bnkgrp preserving type )` | `CHAR(10)` | Bank In Bank Group |
+| `BankGroup` |  | |  | `cast( _BankHierarchy.BankGroup as fclm_bank_group preserving type )` | `CHAR(10)` | Bank Group ID |
+| `NumberOfCompanyCodes` |  | |  | `cast( 1 as fclm_bam_bukrs_count )` | `INT4(10)` | Number of Company Codes |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Bank` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_HouseBank` | | ✓ | | | | |
+| `_BankHierarchy` | | ✓ | | | | |
+| `_BankGroup` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CompanyCode` | `I_CompanyCode` | [0..1] |
+| `_Bank` | `I_Bank` | [0..1] |
+| `_Country` | `I_Country` | [0..1] |
+| `_HouseBank` | `I_HouseBankBasic` | [0..1] |
+| `_BankRating` | `I_BankRating` | [0..1] |
+| `_BankHierarchy` | `I_BankHierBankGroupMapping` | [0..1] |
+| `_BankGroup` | `I_BusinessPartner` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HOUSEBANKACCOUNTANALYSISCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HOUSEBANKACCOUNTANALYSISCUBE')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IHSBKACCTANLYSC'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #CHECK
+@VDM.viewType: #COMPOSITE
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.dataClass: #MASTER
+@Metadata.ignorePropagatedAnnotations:true
+@Metadata.allowExtensions:true
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+@Analytics.dataCategory: #CUBE
+@Analytics.internalName:#LOCAL
+@EndUserText.label: 'House Bank Account Analysis - Cube'
+@ObjectModel.supportedCapabilities: #ANALYTICAL_PROVIDER
+define view I_HouseBankAccountAnalysisCube
+  as select from I_HouseBankAccountLinkage
+  association [0..1] to I_CompanyCode              as _CompanyCode   on  $projection.CompanyCode = _CompanyCode.CompanyCode
+  association [0..1] to I_Bank                     as _Bank          on  $projection.Bank        = _Bank.BankInternalID
+                                                                     and $projection.BankCountry = _Bank.BankCountry
+  association [0..1] to I_Country                  as _Country       on  $projection.BankCountry = _Country.Country
+  association [0..1] to I_HouseBankBasic           as _HouseBank     on  $projection.CompanyCode = _HouseBank.CompanyCode
+                                                                     and $projection.HouseBank   = _HouseBank.HouseBank
+  association [0..1] to I_BankRating               as _BankRating    on  $projection.Bank        = _BankRating.Bank
+                                                                     and $projection.BankCountry = _BankRating.BankCountry
+  association [0..1] to I_BankHierBankGroupMapping as _BankHierarchy on  $projection.BankAccountInternalID = _BankHierarchy.BankAccountInternalID
+  association [0..1] to I_BusinessPartner          as _BankGroup     on  $projection.BankGroup = _BankGroup.BusinessPartner
+{
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+  key CompanyCode,
+      @ObjectModel.foreignKey.association: '_HouseBank'
+  key HouseBank,
+  key HouseBankAccount,
+      @ObjectModel.foreignKey.association: '_Bank'
+      BankInternalID                                                                  as Bank,
+      @ObjectModel.foreignKey.association: '_Country'
+      BankCountry,
+      BankAccountInternalID,
+      @ObjectModel.foreignKey.association: '_BPCreditWorthinessRating'
+      _BankRating.CreditRating,
+      cast(_BankRating.BusinessPartnerNumber as fclm_bank_in_bnkgrp preserving type ) as BankInBankGroup,
+      @ObjectModel.foreignKey.association: '_BankGroup'
+      cast( _BankHierarchy.BankGroup as fclm_bank_group preserving type )             as BankGroup,
+      @Aggregation.referenceElement: ['CompanyCode']
+      @Aggregation.default: #COUNT_DISTINCT
+      cast( 1 as fclm_bam_bukrs_count )                                               as NumberOfCompanyCodes,
+      _CompanyCode,
+      _Bank,
+      _Country,
+      _HouseBank,
+      _BankRating._BPCreditWorthinessRating,
+      _BankHierarchy,
+      _BankGroup
+}
+where
+     _BankAccount.BankAccountStatus = '02'
+  or _BankAccount.BankAccountStatus = '10'
+  or _BankAccount.BankAccountStatus = '09';
+```

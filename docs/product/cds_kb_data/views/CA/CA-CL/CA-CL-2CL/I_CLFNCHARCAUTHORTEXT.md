@@ -31,10 +31,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
-| `CharcAuthor` | ✓ | |  | `cast( dd07t.domvalue_l as ataut )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
-| `CharcAuthorName` |  | |  | `cast( dd07t.ddtext as charcauthorname preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CharcAuthor` | ✓ | |  | `cast( dd07t.domvalue_l as ataut )` | `CHAR(1)` | Classification Author |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CharcAuthorName` |  | |  | `cast( dd07t.ddtext as charcauthorname preserving type )` | `CHAR(60)` | Characteristic Author Name |
 | `_Language` | | ✓ | | | | |
 | `_CharcAuthor` | | ✓ | | | | |
 

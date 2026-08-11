@@ -5,9 +5,21 @@ app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKASSGMTDETSDEX')/$value
 semantic_en: "You can use this CDS view to retrieve the data related to the work assignment details of a workforce person. This CDS view is enabled for data extraction. This CDS view provides the data to answer the following business questions: How can I retrieve the data related to the work assignment details of the workforce person? What is the validity of the work assignments? What are the planned working hours of the work assignment? How can I retrieve the job details of the work assignment? How can I retrieve the supervisor details? How can I retrieve the organization details of the work assignment? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Workforce Person Assignment Details — CDS view giao diện dựa trên wfd_d_assgmtdets."
+keywords:
+  - "workforce"
+  - "person"
+  - "assignment"
+  - "details"
+  - "work"
+  - "start"
+  - "date"
+  - "external"
+  - "business"
+  - "partner"
 tags:
   - CA
   - bo:companycode
@@ -17,7 +29,7 @@ tags:
   - interface-view
   - lob:cross_application components
   - plan
-  - metadata-only
+  - bo:salesorder
 ---
 # I_WORKASSGMTDETSDEX
 
@@ -29,27 +41,121 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKASSGMTDETSDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKASSGMTDETSDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkAssignment` |  | |  |  | `NUMC(8)` | Workforce Assignment ID |
-| `WorkAssignmentStartDate` |  | |  |  | `DATS(8)` | Start Date |
-| `WorkAssignmentEndDate` |  | |  |  | `DATS(8)` | End Date |
-| `WorkforcePersonExternalID` |  | |  |  | `CHAR(100)` | External Person ID |
-| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
-| `WorkAssignmentIsPrimary` |  | |  |  | `CHAR(1)` | Primary Employment Indicator |
-| `WorkAssignmentExternalID` |  | |  |  | `CHAR(100)` | External User ID |
-| `SupervisorWorkAssignmentID` |  | |  |  | `NUMC(8)` | Manager Workforce Assignment ID |
-| `SupervisorWorkAssignmentExtID` |  | |  |  | `CHAR(100)` | Manager Workforce Assignment External ID |
-| `WorkforcePersonJobTitle` |  | |  |  | `CHAR(256)` | Job Title |
-| `WorkforcePersonJobCode` |  | |  |  | `CHAR(128)` | Job Code |
-| `WorkingHoursPerWeek` |  | |  |  | `DEC(5)` | Working Hours in a Week |
-| `EmploymentPercent` |  | |  |  | `DEC(5)` | Employment Percentage |
-| `WorkingDaysPerWeek` |  | |  |  | `DEC(4)` | Working Days in a Week |
-| `WorkAssignmentStatus` |  | |  |  | `CHAR(1)` | Employment Status |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
-| `CountryOrRegion` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `WorkAssignment` | ✓ | |  | `workforce_assgmt_id` | `NUMC(8)` | Workforce Assignment ID |
+| `WorkAssignmentStartDate` | ✓ | |  | `start_date` | `DATS(8)` | Start Date |
+| `WorkAssignmentEndDate` |  | |  | `end_date` | `DATS(8)` | End Date |
+| `WorkforcePersonExternalID` | ✓ | |  | `person_id_external` | `CHAR(100)` | External Person ID |
+| `BusinessPartner` | ✓ | |  | `business_partner_id` | `CHAR(10)` | Business Partner Number |
+| `WorkAssignmentIsPrimary` |  | |  | `main_employment_indicator` | `CHAR(1)` | Primary Employment Indicator |
+| `WorkAssignmentExternalID` | ✓ | |  | `user_id` | `CHAR(100)` | External User ID |
+| `SupervisorWorkAssignmentID` |  | |  | `manager_work_assgmt` | `NUMC(8)` | Manager Workforce Assignment ID |
+| `SupervisorWorkAssignmentExtID` |  | |  | `manager_work_assignment_ext_id` | `CHAR(100)` | Manager Workforce Assignment External ID |
+| `WorkforcePersonJobTitle` |  | |  | `job_title` | `CHAR(256)` | Job Title |
+| `WorkforcePersonJobCode` |  | |  | `job_code` | `CHAR(128)` | Job Code |
+| `WorkingHoursPerWeek` |  | |  | `weekly_working_hours` | `DEC(5)` | Working Hours in a Week |
+| `EmploymentPercent` |  | |  | `employment_percent` | `DEC(5)` | Employment Percentage |
+| `WorkingDaysPerWeek` |  | |  | `weekly_working_days` | `DEC(4)` | Working Days in a Week |
+| `WorkAssignmentStatus` |  | |  | `employment_status` | `CHAR(1)` | Employment Status |
+| `CompanyCode` |  | |  | `company_code` | `CHAR(4)` | Company Code |
+| `CostCenter` |  | |  | `cost_center` | `CHAR(10)` | Cost Center |
+| `CountryOrRegion` |  | |  | `cast( assgmtdets.country as land1 )` | `CHAR(3)` | Country/Region Key |
+| `_WorkforcePerson` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_WorkforcePerson` | `I_WorkforcePersonDEX` | [1] |
+| `_CompanyCode` | `I_CompanyCode` | [1] |
+| `_CostCenter` | `I_CostCenter` | [1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKASSGMTDETSDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKASSGMTDETSDEX')/$value)*
+
+```abap
+@AccessControl.authorizationCheck:#MANDATORY
+@AccessControl.personalData.blocking: #BLOCKED_DATA_EXCLUDED
+@VDM.viewType: #BASIC
+
+@Analytics.dataExtraction: {
+            enabled: true,
+            delta.changeDataCapture:
+    {
+
+            mapping:[
+               {
+                    table: 'wfd_d_assgmtdets', role: #MAIN,
+                    viewElement: ['WorkAssignment','WorkAssignmentStartDate'],
+                    tableElement: ['workforce_assgmt_id','start_date']
+                },
+                  {
+                    table: 'wfd_d_keymap', role: #LEFT_OUTER_TO_ONE_JOIN,
+                    viewElement: ['WorkAssignment'],
+                    tableElement: ['workforce_assgmt_id']
+                }
+            ]
+        }
+    }
+
+@ObjectModel.supportedCapabilities:[ #EXTRACTION_DATA_SOURCE ]
+@ObjectModel.modelingPattern: #NONE
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.dataClass: #TRANSACTIONAL
+@ObjectModel.sapObjectNodeType.name:'WorkAssignmentDetails'
+
+@Metadata.ignorePropagatedAnnotations: true
+@EndUserText.label: 'Workforce Person Assignment Details'
+
+define view entity I_WorkAssgmtDetsDEX
+  as select from wfd_d_assgmtdets as assgmtdets
+    inner join   wfd_d_keymap     as keymap on keymap.workforce_assgmt_id = assgmtdets.workforce_assgmt_id
+ 
+  association [1] to I_WorkforcePersonDEX as _WorkforcePerson on $projection.BusinessPartner = _WorkforcePerson.BusinessPartner
+  association [1] to I_CompanyCode        as _CompanyCode     on $projection.CompanyCode = _CompanyCode.CompanyCode
+  association [1] to I_CostCenter         as _CostCenter      on $projection.CostCenter = _CostCenter.CostCenter
+
+{
+  key assgmtdets.workforce_assgmt_id            as WorkAssignment,
+  key assgmtdets.start_date                     as WorkAssignmentStartDate,
+
+      assgmtdets.end_date                       as WorkAssignmentEndDate,
+      keymap.person_id_external                 as WorkforcePersonExternalID,
+      keymap.business_partner_id                as BusinessPartner,
+      
+      @Semantics.booleanIndicator: true
+      assgmtdets.main_employment_indicator      as WorkAssignmentIsPrimary,
+
+      keymap.user_id                            as WorkAssignmentExternalID,
+
+      assgmtdets.manager_work_assgmt            as SupervisorWorkAssignmentID,
+      assgmtdets.manager_work_assignment_ext_id as SupervisorWorkAssignmentExtID,
+      assgmtdets.job_title                      as WorkforcePersonJobTitle,
+      assgmtdets.job_code                       as WorkforcePersonJobCode,
+      assgmtdets.weekly_working_hours           as WorkingHoursPerWeek,
+     
+      assgmtdets.employment_percent             as EmploymentPercent, 
+      assgmtdets.weekly_working_days            as WorkingDaysPerWeek,
+      @Semantics.booleanIndicator: true
+      assgmtdets.employment_status              as WorkAssignmentStatus,
+      assgmtdets.company_code                   as CompanyCode,
+      assgmtdets.cost_center                    as CostCenter,
+      cast( assgmtdets.country as land1  )      as CountryOrRegion,
+      _WorkforcePerson,
+      _CompanyCode,
+      _CostCenter
+
+}
+where keymap.block_ind        =  ''
+  and assgmtdets.block_ind    =  ''
+  and assgmtdets.company_code <> '' and assgmtdets.technical_inactive_ind is initial  //To filter the technically inactive records
+```

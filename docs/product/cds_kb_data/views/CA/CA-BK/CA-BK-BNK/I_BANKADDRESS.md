@@ -5,9 +5,19 @@ app_component: CA-BK-BNK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKADDRESS')/$value
 semantic_en: "Bank Address"
+semantic_vi: "Bank Address — CDS view giao diện dựa trên I_Bank_2."
+keywords:
+  - "bank"
+  - "address"
+  - "country"
+  - "internal"
+  - "long"
+  - "name"
+  - "branch"
+  - "street"
 tags:
   - CA
   - CA-BK
@@ -15,7 +25,6 @@ tags:
   - component:CA-BK-BNK
   - interface-view
   - lob:cross_application components
-  - metadata-only
 ---
 # I_BANKADDRESS
 
@@ -27,23 +36,23 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKADDRESS')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKADDRESS')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
-| `BankInternalID` |  | |  |  | `CHAR(15)` | Bank Keys |
-| `LongBankName` |  | |  |  | `CHAR(80)` | Bank Name |
-| `LongBankBranch` |  | |  |  | `CHAR(80)` | Bank Branch |
-| `StreetName` |  | |  |  | `CHAR(60)` | Street |
+| `BankCountry` | ✓ | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `BankInternalID` | ✓ | |  |  | `CHAR(15)` | Bank Keys |
+| `LongBankName` |  | |  | `cast( concat(Address.AddresseeName1, Address.AddresseeName2) as bf_bank_name_in_local_script preserving type )` | `CHAR(80)` | Bank Name |
+| `LongBankBranch` |  | |  | `cast( concat(Address.AddresseeName3, Address.AddresseeName4) as bf_bank_branch_in_local_script preserving type )` | `CHAR(80)` | Bank Branch |
+| `StreetName` |  | |  | `case when ( Address.StreetName is null or Address.StreetName is initial ) then Bank.ShortStreetName else Address.StreetName end` | `CHAR(60)` | Street |
 | `HouseNumber` |  | |  |  | `CHAR(10)` | House Number |
 | `HouseNumberSupplementText` |  | |  |  | `CHAR(10)` | House number supplement |
-| `CityName` |  | |  |  | `CHAR(40)` | City |
+| `CityName` |  | |  | `case when ( Address.CityName is null or Address.CityName is initial ) then Bank.ShortCityName else Address.CityName end` | `CHAR(40)` | City |
 | `PostalCode` |  | |  |  | `CHAR(10)` | City Postal Code |
 | `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
-| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `Region` |  | |  | `case when ( Address.Region is null or Address.Region is initial ) then Bank.Region else Address.Region end` | `CHAR(3)` | Region (State, Province, County) |
 | `AddressObjectType` |  | |  |  | `CHAR(1)` | Address type (1=Organization, 2=Person, 3=Contact person) |
 | `CorrespondenceLanguage` |  | |  |  | `LANG(1)` | Language Key |
 | `PrfrdCommMediumType` |  | |  |  | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
@@ -81,3 +90,148 @@ tags:
 | `AddressRepresentationCode` |  | |  |  | `CHAR(1)` | Version ID for International Addresses |
 | `AddressID` |  | |  |  | `CHAR(10)` | Address Number |
 | `AddressPersonID` |  | |  |  | `CHAR(10)` | Person Number |
+| `_Region` | | ✓ | | | | |
+| `_BankScriptVariant` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Region` | `I_Region` | [0..1] |
+| `_BankScriptVariant` | `I_BankScriptedAddress` | [1..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKADDRESS')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKADDRESS')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'Bank Address'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType:{
+  serviceQuality: #C,
+  sizeCategory: #L,
+  dataClass: #MIXED
+}
+@VDM.viewType: #COMPOSITE
+define view entity I_BankAddress
+  as select from           I_Bank_2                  as Bank
+    left outer to one join I_BankOrganizationAddress as Address on  Bank.AddressID                    = Address.AddressID
+                                                                and Address.AddressPersonID           is initial
+                                                                and Address.AddressRepresentationCode is initial
+
+  association [0..1] to I_Region              as _Region            on  $projection.Region  = _Region.Region
+                                                                    and $projection.Country = _Region.Country
+
+  association [1..*] to I_BankScriptedAddress as _BankScriptVariant on  $projection.BankCountry    = _BankScriptVariant.BankCountry
+                                                                    and $projection.BankInternalID = _BankScriptVariant.BankInternalID
+{
+  key Bank.BankCountry,
+  key Bank.BankInternalID,
+
+
+      cast( concat(Address.AddresseeName1, Address.AddresseeName2)
+          as bf_bank_name_in_local_script preserving type ) as LongBankName, //char80
+      cast( concat(Address.AddresseeName3, Address.AddresseeName4)
+        as bf_bank_branch_in_local_script preserving type ) as LongBankBranch, //char80
+
+      //      cast(bnk_long_name_concat(
+      //           name1  => Address.AddresseeName1,
+      //           name2  => Address.AddresseeName2 ) as bf_bank_name_in_local_script preserving type )   as LongBankName,
+      //      cast(bnk_long_name_concat(
+      //           name1  => Address.AddresseeName3,
+      //           name2  => Address.AddresseeName4 ) as bf_bank_branch_in_local_script preserving type ) as LongBankBranch,
+
+      case
+        when ( Address.StreetName is null or Address.StreetName is initial ) then Bank.ShortStreetName
+        else Address.StreetName
+      end                                                   as StreetName,
+
+      Address.HouseNumber,
+      Address.HouseNumberSupplementText,
+
+      case
+        when ( Address.CityName is null or Address.CityName is initial ) then Bank.ShortCityName
+        else Address.CityName
+      end                                                   as CityName,
+
+      Address.PostalCode,
+      @ObjectModel.foreignKey.association: '_Country'
+      Address.Country,
+
+      @ObjectModel.foreignKey.association: '_Region'
+      case
+        when ( Address.Region is null or Address.Region is initial ) then Bank.Region
+        else Address.Region
+      end                                                   as Region,
+
+      Address.AddressObjectType,
+      @Semantics.language: true
+      @ObjectModel.foreignKey.association: '_CorrespondenceLanguage'
+      Address.CorrespondenceLanguage,
+      Address.PrfrdCommMediumType,
+      Address.AddresseeFullName,
+      Address.DistrictName,
+      Address.VillageName,
+      Address.CompanyPostalCode,
+      Address.StreetAddrNonDeliverableReason,
+      Address.StreetPrefixName1,
+      Address.StreetPrefixName2,
+      Address.StreetSuffixName1,
+      Address.StreetSuffixName2,
+      Address.Building,
+      Address.Floor,
+      Address.RoomNumber,
+      @ObjectModel.foreignKey.association: '_FormOfAddress'
+      Address.FormOfAddress,
+      Address.TaxJurisdiction,
+      Address.TransportZone,
+      Address.AddressSearchTerm1,
+      Address.AddressSearchTerm2,
+      Address.POBox,
+      Address.POBoxAddrNonDeliverableReason,
+      Address.POBoxIsWithoutNumber,
+      Address.POBoxPostalCode,
+      Address.POBoxLobbyName,
+      Address.POBoxDeviatingCityName,
+      Address.POBoxDeviatingRegion,
+      Address.POBoxDeviatingCountry,
+      Address.CareOfName,
+      Address.DeliveryServiceTypeCode,
+      Address.DeliveryServiceNumber,
+      Address.AddressTimeZone,
+      Address.SecondaryRegionName,
+      Address.TertiaryRegionName,
+      Address.AddressRepresentationCode,
+      Address.AddressID,
+      Address.AddressPersonID,
+
+      Address._Country,
+      Address._FormOfAddress,
+      Address._AddressRepresentationCode,
+      Address._CorrespondenceLanguage,
+      Address._AddressObjectType,
+      Address._AddressPersonName,
+      Address._CurrentDfltEmailAddress,
+      Address._CurrentDfltFaxNumber,
+      Address._CurrentDfltLandlinePhoneNmbr,
+      Address._CurrentDfltMobilePhoneNumber,
+      Address._DeliveryServiceTypeCode,
+      Address._EmailAddress,
+      Address._FaxNumber,
+      Address._MainWebsiteURL,
+      Address._PhoneNumber,
+      Address._POBoxAddrNonDeliverableReason,
+      Address._POBoxDeviatingCountry,
+      Address._POBoxDeviatingRegion,
+      Address._PrfrdCommMediumType,
+      Address._StreetAddrNonDeliverableRsn,
+      Address._TimeZone,
+      Address._TransportationZone,
+      Address._UniformResourceIdentifier,
+
+      _BankScriptVariant,
+      _Region
+}
+```

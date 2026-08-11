@@ -5,9 +5,23 @@ app_component: RE-FX-CN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECONTRACTVALIDQ')/$value
 semantic_en: "Valid Contract Report"
+semantic_vi: "Valid Contract Report — CDS view tiêu dùng dựa trên I_REContractValid."
+keywords:
+  - "valid"
+  - "contract"
+  - "report"
+  - "company"
+  - "code"
+  - "real"
+  - "estate"
+  - "internal"
+  - "number"
+  - "object"
+  - "start"
+  - "date"
 tags:
   - RE
   - bo:purchaseorder
@@ -17,7 +31,6 @@ tags:
   - RE-FX
   - RE-FX-CN
   - RE-FX-CN-2CL
-  - metadata-only
 ---
 # C_RECONTRACTVALIDQ
 
@@ -29,7 +42,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECONTRACTVALIDQ')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECONTRACTVALIDQ')/$value) |
 
 ## Fields
 
@@ -71,3 +84,122 @@ tags:
 | `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
 | `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
 | `NumberOfREContracts` |  | |  |  | `INT4(10)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECONTRACTVALIDQ')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECONTRACTVALIDQ')/$value)*
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.sqlViewName: 'CRECONTRACTVALQ'
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.usageType.sizeCategory: #L
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@EndUserText.label: 'Valid Contract Report'
+@Metadata.ignorePropagatedAnnotations: true
+
+@Analytics.query: true
+@VDM.viewType: #CONSUMPTION
+@ObjectModel.modelingPattern:           #ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities:  [  #ANALYTICAL_QUERY ]
+@OData.publish: true
+
+define view C_REContractValidQ
+// Start of insertion Parameters
+  with parameters
+    @Environment.systemField: #SYSTEM_DATE
+    P_ValidFrom :vdm_validitystart,  //recncnbeg,
+    @Environment.systemField: #SYSTEM_DATE
+    P_ValidTo   :vdm_validityend  //recncnendabs
+//  // end of insertion Parameters
+    as 
+    select from I_REContractValid(P_ValidFrom:$parameters.P_ValidFrom, P_ValidTo:$parameters.P_ValidTo ) as _ContractValid
+{
+
+    /** Dimensions **/
+    
+        @AnalyticsDetails.query.display: #KEY_TEXT
+        @AnalyticsDetails.query.axis: #ROWS
+        CompanyCode,
+        @AnalyticsDetails.query.display: #KEY_TEXT
+        @AnalyticsDetails.query.axis: #FREE
+        RealEstateContract,
+        @AnalyticsDetails.query.display: #KEY_TEXT
+        @AnalyticsDetails.query.axis: #FREE
+        InternalRealEstateNumber,
+        @AnalyticsDetails.query.display: #KEY
+        @AnalyticsDetails.query.axis: #FREE
+        ObjectInternalID,
+        @AnalyticsDetails.query.axis: #FREE
+        ContractStartDate,
+        @AnalyticsDetails.query.axis: #FREE
+        ContractEndDate,
+//      Admin,
+        @AnalyticsDetails.query.axis: #FREE
+      CreatedByUser,
+      @AnalyticsDetails.query.axis: #FREE
+      CreatedByUserDescription,
+      @AnalyticsDetails.query.axis: #FREE
+      CreationDate,
+      @AnalyticsDetails.query.axis: #FREE
+      CreationTime,
+      @AnalyticsDetails.query.axis: #FREE
+      LastChangeDate,
+      LastChangeTime,
+      @AnalyticsDetails.query.axis: #FREE
+      LastChangedByUser,
+      @AnalyticsDetails.query.axis: #FREE
+      LastChangedByUserDescription,
+      @AnalyticsDetails.query.axis: #FREE
+      Responsible,
+      @AnalyticsDetails.query.axis: #FREE
+      ResponsibleUserFullName,
+      @AnalyticsDetails.query.axis: #FREE
+      REContractName,
+      @AnalyticsDetails.query.axis: #FREE
+      REContractFirstEndDate,
+      @AnalyticsDetails.query.axis: #FREE
+      REContractNumberOld,
+      @AnalyticsDetails.query.axis: #FREE
+      REMainContractCompanyCode,
+      @AnalyticsDetails.query.axis: #FREE
+      REMainContract,
+      @AnalyticsDetails.query.axis: #FREE
+      REAuthorizationGroup,
+      @AnalyticsDetails.query.axis: #FREE
+      ValuationRelevance,
+      @AnalyticsDetails.query.axis: #FREE
+      ValuationRelevanceDesc,
+      REIdentificationType,
+      @AnalyticsDetails.query.axis: #FREE
+      REIdentificationKey,
+      @AnalyticsDetails.query.axis: #FREE
+      CompanyCodeName,
+      @AnalyticsDetails.query.axis: #FREE
+      REContractType,
+      @AnalyticsDetails.query.axis: #FREE
+      REContractTypeName,
+      @AnalyticsDetails.query.axis: #FREE
+      REContractSystStatus,
+      @AnalyticsDetails.query.axis: #FREE
+      REContractUserStatus,
+      REContractStatus,
+        @AnalyticsDetails.query.display: #KEY_TEXT
+        @AnalyticsDetails.query.axis: #FREE
+        IsActive,
+        @AnalyticsDetails.query.display: #KEY_TEXT
+        @AnalyticsDetails.query.axis: #FREE
+        IsDeleted,
+        @AnalyticsDetails.query.display: #KEY_TEXT
+        @AnalyticsDetails.query.axis: #FREE
+        Country,
+
+      
+      /** Measures **/
+      NumberOfREContracts
+
+}
+```

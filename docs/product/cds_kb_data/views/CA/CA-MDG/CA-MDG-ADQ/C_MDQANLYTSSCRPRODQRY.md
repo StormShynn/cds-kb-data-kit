@@ -5,11 +5,27 @@ app_component: CA-MDG-ADQ
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQANLYTSSCRPRODQRY')/$value
 semantic_en: "MDQ Score for Product - Query"
+semantic_vi: "MDQ Score for Product - Query — CDS view tiêu dùng dựa trên MDQ Score for Product - Query."
 keywords:
   - "MDQ Score for Product"
+  - "mdq"
+  - "score"
+  - "for"
+  - "product"
+  - "query"
+  - "master"
+  - "data"
+  - "change"
+  - "process"
+  - "finish"
+  - "date"
+  - "latest"
+  - "qlty"
+  - "business"
+  - "rule"
 tags:
   - CA
   - bo:material
@@ -19,7 +35,6 @@ tags:
   - consumption-view
   - lob:cross_application components
   - product
-  - metadata-only
 ---
 # C_MDQANLYTSSCRPRODQRY
 
@@ -31,7 +46,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQANLYTSSCRPRODQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQANLYTSSCRPRODQRY')/$value) |
 
 ## Fields
 
@@ -87,5 +102,110 @@ tags:
 | `MDQltyNmbrOfBusRuleEvalResults` |  | |  |  | `INT4(10)` | Master Data Quality Counter Total Records |
 | `MDQltyNmbrOfFailedEvalRslts` |  | |  |  | `INT4(10)` | Master Data Quality Counter Total Records |
 | `MDQltyNmbrOfSuccssflEvalRslts` |  | |  |  | `INT4(10)` | Master Data Quality Counter Total Records |
-| `Score` |  | |  |  | `DECF(34)` |  |
+| `Score` |  | |  | `case when MDQltyNmbrOfBusRuleEvalResults = abap.int1'0' then abap.int1'0' else ( MDQltyNmbrOfSuccssflEvalRslts / MDQltyNmbrOfBusRuleEvalResults ) * 100 end` | `DECF(34)` |  |
 | `MDQltyProdAlPgNavgnPath` |  | |  |  | `SSTR(1333)` | Fiori Host Path concatenated with Navigation Target |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQANLYTSSCRPRODQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQANLYTSSCRPRODQRY')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #NOT_ALLOWED
+@Analytics.internalName: #LOCAL
+@EndUserText.label: 'MDQ Score for Product - Query'
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_QUERY]
+@ObjectModel.usageType: {
+  dataClass: #MIXED,
+  serviceQuality: #D,
+  sizeCategory: #XXL
+}
+@VDM.viewType: #CONSUMPTION
+define transient view entity C_MDQAnlytsScrProdQry
+  provider contract analytical_query
+  as projection on I_MDQltyAnlytsScrProdCube as _MDQltyAnlytsScrProdCube
+{
+  //process data
+  MasterDataChangeProcess,
+  MDChgProcessFinishDate,
+  @Semantics.booleanIndicator: true
+  @EndUserText.label: 'Is Latest Evaluation'
+  MDChgProcessIsLatest,
+
+  //rule data
+  MDQltyBusinessRuleBaseTable,
+  @EndUserText.label: 'Base Table Description'
+  MDQltyBusinessRuleBaseTabName,
+  MDQltyBusinessRuleOwner,
+  @EndUserText.label: 'Checked Field'
+  MDQltyBusRuleCheckedField,
+  @EndUserText.label: 'Checked Field Table'
+  MDQltyBusRuleCheckedFieldTable,
+  @EndUserText.label: 'Checked Table and Field'
+  MDQltyBusRuleChkdFieldAndTable,
+  MDQltyBusRuleEvalResultCode,
+  MDQualityBusinessRule,
+  MDQualityBusinessRuleName,
+
+  //product data
+  AuthorizationGroup,
+  BaseUnit,
+  CreatedByUser,
+  CreationDate,
+  @EndUserText.label: 'Cross Plant Product Status'
+  CrossPlantStatus,
+  Division,
+  ExternalProductGroup,
+  HasEmptiesBOM,
+  //instead of long text SAC/RSRT uses medium text
+  HasTextilePartsWthAnimalOrigin,
+  HasVariableTareWeight,
+  IndustrySector,
+  IndustryStandardName,
+  InternationalArticleNumberCat,
+  IsBatchManagementRequired,
+  IsPilferable,
+  IsRelevantForHzdsSubstances,
+  ItemCategoryGroup,
+  LaboratoryOrDesignOffice,
+  LastChangeDate,
+  LastChangedByUser,
+  LastChangeTime,
+  ProdNoInGenProdInPrepackProd,
+  @EndUserText.label: 'Product'
+  Product,
+  ProductGroup,
+  ProductHierarchy,
+  //instead of long text SAC/RSRT uses medium text
+  ProductIsConfigurable,
+  ProductOldID,
+  ProductSeasonUsageCategory,
+  ProductStandardID,
+  ProductType,
+  QualityInspectionGroup,
+  SerialNoExplicitnessLevel,
+  ValuationClass,
+  @EndUserText.label: 'Warehouse Product Group'
+  WarehouseProductGroup,
+  WarehouseStorageCondition,
+
+  @EndUserText.label: 'Total'
+  MDQltyNmbrOfBusRuleEvalResults,
+  @EndUserText.label: 'Not OK'
+  MDQltyNmbrOfFailedEvalRslts,
+  @EndUserText.label: 'OK'
+  MDQltyNmbrOfSuccssflEvalRslts,
+  @EndUserText.label: 'Quality Score'
+  @Aggregation.default: #FORMULA
+  @AnalyticsDetails.query.decimals: 2
+  case
+    when MDQltyNmbrOfBusRuleEvalResults = abap.int1'0' then abap.int1'0'
+    else ( MDQltyNmbrOfSuccssflEvalRslts / MDQltyNmbrOfBusRuleEvalResults ) * 100
+  end as Score,
+
+  @EndUserText.label: 'ALP Navigation Path'
+  MDQltyProdAlPgNavgnPath
+}
+```

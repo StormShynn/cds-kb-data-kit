@@ -5,9 +5,22 @@ app_component: CRM-S4-ANA-CDS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSINESSSOLUTIONORDERQRY')/$value
 semantic_en: "This CDS view provides the data to answer the following business questions: What is my solution order volume for a given time period? How many solution orders do I have in a specific lifecycle status, for example, how many are in released status? What is the net value and volume of my solution orders by sales organization? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Business Solution Order - Query — CDS view tiêu dùng dựa trên I_BusinessSolutionOrderCube."
+keywords:
+  - "business"
+  - "solution"
+  - "order"
+  - "query"
+  - "service"
+  - "object"
+  - "type"
+  - "soln"
+  - "description"
+  - "distribution"
+  - "channel"
 tags:
   - CRM
   - bo:companycode
@@ -18,7 +31,7 @@ tags:
   - CRM-S4-ANA-CDS
   - CRM-S4-ANA-CDS-2CL
   - order
-  - metadata-only
+  - bo:salesorder
 ---
 # C_BUSINESSSOLUTIONORDERQRY
 
@@ -30,14 +43,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSINESSSOLUTIONORDERQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSINESSSOLUTIONORDERQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceObjectType` |  | |  |  | `CHAR(10)` | Business Trans. Cat. |
-| `BusinessSolutionOrder` |  | |  |  | `CHAR(10)` | Transaction ID |
+| `ServiceObjectType` | ✓ | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `BusinessSolutionOrder` | ✓ | |  |  | `CHAR(10)` | Transaction ID |
 | `BusSolnOrdType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
 | `BusSolnOrdDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
 | `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
@@ -60,4 +73,108 @@ tags:
 | `BusSolnOrdCreationMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
 | `BusSolnOrdCreationYear` |  | |  |  | `NUMC(4)` | Calendar Year |
 | `PostingDate` |  | |  |  | `DATS(8)` | Posting Date for a Business Transaction |
-| `ServiceDocNetAmount` |  | |  |  | `CURR(15)` |  |
+| `ServiceDocNetAmount` |  | |  | `currency_conversion( amount => ServiceDocNetAmount, source_currency => TransactionCurrency, target_currency => $parameters.P_DisplayCurrency, exchange_rate_type => 'M', exchange_rate_date => PostingDate )` | `CURR(15)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSINESSSOLUTIONORDERQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSINESSSOLUTIONORDERQRY')/$value)*
+
+```abap
+@EndUserText.label: 'Business Solution Order - Query'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@VDM: {
+  viewType: #CONSUMPTION,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@AccessControl: {
+  authorizationCheck: #PRIVILEGED_ONLY,
+  personalData.blocking: #('TRANSACTIONAL_DATA')
+}
+@AbapCatalog: {
+  sqlViewName: 'CBUSSOLNORDQRY',
+  compiler.compareFilter: true,
+  preserveKey: true
+}
+@ObjectModel: {
+   usageType: {
+     dataClass:      #MIXED,
+     serviceQuality: #D,
+     sizeCategory:   #XXL
+   },
+   supportedCapabilities: [#ANALYTICAL_QUERY],
+   modelingPattern: #ANALYTICAL_QUERY
+}
+@Metadata.ignorePropagatedAnnotations: true
+@Analytics.query: true
+@OData.publish: true
+define view C_BusinessSolutionOrderQry
+  with parameters
+    @Consumption.defaultValue:'EUR'
+    P_DisplayCurrency : vdm_v_display_currency
+  as select from I_BusinessSolutionOrderCube(P_DisplayCurrency: $parameters.P_DisplayCurrency)
+{
+
+      @AnalyticsDetails.query.hidden: true
+  key ServiceObjectType,
+      @EndUserText.quickInfo: 'Business Solution Order'
+      @ObjectModel.text.element: 'BusSolnOrdDescription'
+  key BusinessSolutionOrder,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BusSolnOrdType,
+
+      BusSolnOrdDescription,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DistributionChannel,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Division,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOrganization,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOffice,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SoldToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SoldToPartyCountry,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SoldToPartyRegion,
+      //      @Semantics.currencyCode:true
+      TransactionCurrency,
+      @Semantics.currencyCode:true
+      DisplayCurrency,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BusSolnOrdStatus,
+      
+      @EndUserText.label: 'No. of Solution Orders in status Open/ In Process'
+      @DefaultAggregation: #SUM
+      NrOfOpenBusSolnOrders,
+      @EndUserText.label: 'No. of Released Solution Orders'
+      @DefaultAggregation: #SUM
+      NrOfReldBusSolnOrders,
+      @EndUserText.label: 'No. of Completed Solution Orders'
+      @DefaultAggregation: #SUM
+      NrOfCmpltdBusSolnOrders,
+      
+      @DefaultAggregation: #SUM
+      NrOfCrtedBusSolnOrders,
+      @EndUserText.label: 'Order Created On'
+      ServiceDocumentCreationDate,
+      @Semantics.calendar.quarter
+      BusSolnOrdCreationQuarter,
+      @Semantics.calendar.month
+      BusSolnOrdCreationMonth,
+      @Semantics.calendar.year
+      BusSolnOrdCreationYear,
+      PostingDate,
+      @DefaultAggregation: #FORMULA
+      @Semantics: { amount : {currencyCode: 'DisplayCurrency'} }
+      currency_conversion(  amount =>  ServiceDocNetAmount,
+                         source_currency =>  TransactionCurrency,
+                         target_currency => $parameters.P_DisplayCurrency,
+                         exchange_rate_type => 'M',
+                         exchange_rate_date =>  PostingDate
+                        ) as ServiceDocNetAmount
+
+}
+```

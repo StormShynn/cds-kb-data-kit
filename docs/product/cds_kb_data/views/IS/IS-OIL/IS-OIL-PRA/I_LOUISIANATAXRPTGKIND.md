@@ -5,9 +5,16 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOUISIANATAXRPTGKIND')/$value
 semantic_en: "Louisiana Tax Reporting Kind"
+semantic_vi: "Louisiana Tax Reporting Kind — CDS view giao diện dựa trên dd07l."
+keywords:
+  - "louisiana"
+  - "tax"
+  - "reporting"
+  - "kind"
+  - "rptg"
 tags:
   - IS
   - bo:purchaseorder
@@ -15,7 +22,6 @@ tags:
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # I_LOUISIANATAXRPTGKIND
 
@@ -27,10 +33,52 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOUISIANATAXRPTGKIND')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOUISIANATAXRPTGKIND')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LouisianaTaxRptgKind` |  | |  |  | `NUMC(1)` | Tax 2.0 LA - Kind Code |
+| `LouisianaTaxRptgKind` | ✓ | |  | `cast (domvalue_l as /pra/t9_kind_cd )` | `NUMC(1)` | Tax 2.0 LA - Kind Code |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_LouisianaTaxRptgKindText` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOUISIANATAXRPTGKIND')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOUISIANATAXRPTGKIND')/$value)*
+
+```abap
+@EndUserText.label: 'Louisiana Tax Reporting Kind'
+@Analytics.dataCategory: #DIMENSION
+@Analytics.dataExtraction.enabled: true
+@VDM.viewType: #BASIC
+@AbapCatalog.sqlViewName: 'IPVLOUITAXREPK'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Metadata.ignorePropagatedAnnotations:true 
+@ObjectModel.representativeKey: 'LouisianaTaxRptgKind'
+
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION , #SQL_DATA_SOURCE , #CDS_MODELING_DATA_SOURCE , #CDS_MODELING_ASSOCIATION_TARGET ]
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.dataClass: #META
+@ObjectModel.sapObjectNodeType.name: 'PRALouisianaTaxReportKindCode'
+define view I_LouisianaTaxRptgKind
+  as select from dd07l
+  association [0..*] to I_LouisianaTaxRptgKindText as _Text on $projection.LouisianaTaxRptgKind = _Text.LouisianaTaxRptgKind
+{
+  @ObjectModel.text.association: '_Text'
+  key cast (domvalue_l as /pra/t9_kind_cd )                         as LouisianaTaxRptgKind,
+  _Text
+}
+where
+      domname  = '/PRA/T9_KIND_CD'
+  and as4local = 'A';
+```

@@ -5,9 +5,24 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTWYGRSSPRODQRY')/$value
 semantic_en: "PRA Tax Reporting History WY Gross Product Query"
+semantic_vi: "PRA Tax Reporting History WY Gross Product Query — CDS view tiêu dùng dựa trên I_PRATaxRptgHistWYGrssProd."
+keywords:
+  - "pra"
+  - "tax"
+  - "reporting"
+  - "history"
+  - "gross"
+  - "product"
+  - "query"
+  - "company"
+  - "code"
+  - "sales"
+  - "date"
+  - "well"
+  - "completion"
 tags:
   - IS
   - bo:material
@@ -16,7 +31,6 @@ tags:
   - IS-OIL
   - IS-OIL-PRA
   - product
-  - metadata-only
 ---
 # C_PRATAXRPTGHISTWYGRSSPRODQRY
 
@@ -28,7 +42,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTWYGRSSPRODQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTWYGRSSPRODQRY')/$value) |
 
 ## Fields
 
@@ -101,3 +115,149 @@ tags:
 | `TaxProcgAllwncAmtInCoCdCrcy` |  | |  |  | `CURR(11)` | Tax 2.0 - Wyoming Plant Processing Allowance |
 | `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
 | `PrimaryGeogrlLocation` |  | |  |  | `CHAR(2)` | Primary Geographical Location |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTWYGRSSPRODQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTWYGRSSPRODQRY')/$value)*
+
+```abap
+@EndUserText.label: 'PRA Tax Reporting History WY Gross Product Query'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVTAXRPTGHWYGP'
+//@OData.publish: true
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+define view C_PRATaxRptgHistWYGrssProdQry
+  as select from I_PRATaxRptgHistWYGrssProd
+{
+  CompanyCode,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.variableSequence: 1
+  SalesDate,
+  @AnalyticsDetails.query.display: #KEY
+  Product,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Well,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  WellCompletion,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  MeasurementPoint,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  JointVenture,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  DivisionOfInterest,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  DeliveryNetwork,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PRAContract,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  VolumeType,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  TaxClassification,
+  @AnalyticsDetails.query.display: #TEXT
+  TaxTransacFormType,
+  UnitJointVenture,
+  @AnalyticsDetails.query.display: #TEXT
+  HasSeveranceTaxPaytOblgn,
+  @AnalyticsDetails.query.display: #TEXT
+  SeveranceTaxRptgType,
+  BaseUnit,
+  CompanyCodeCurrency,
+  @AnalyticsDetails.query.hidden
+  ReturnedProductRatio, //Ratio Field
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  County, 
+  APIWellNumber,
+  WyomingTaxRptgSideTrackNmbr,
+  Reservoir, 
+  TaxRptgGroupNumber,
+  GeologicField,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.variableSequence: 2
+  AgencyLeaseOrUnitName,
+  @AnalyticsDetails.query.display: #TEXT
+  EntityIsCompanyOperated,
+  District, // to be checked with Kevin
+  @AnalyticsDetails.query.display: #TEXT
+  MasterDataRecordingLvl,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 3
+  OperatorIDByAgency,
+  @AnalyticsDetails.query.display: #TEXT
+  TaxCode,  
+  @AnalyticsDetails.query.display: #TEXT
+  ProductType, 
+  ValuationDocumentNumber,
+  ValuationDocumentYear,
+  CreatedByUser,
+  CreationDateTime,
+  @AnalyticsDetails.query.display: #TEXT
+  Plant,
+  @AnalyticsDetails.query.hidden
+  GrossVolInBaseUnit,
+  @AnalyticsDetails.query.hidden
+  GrossValInCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  TaxableValInCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  TaxExmptVal1InCoCdCrcy,
+  @AnalyticsDetails.query.hidden
+  TaxExmptVal2InCoCdCrcy,
+  @AnalyticsDetails.query.hidden
+  TaxExmptVal3InCoCdCrcy,
+  @AnalyticsDetails.query.hidden
+  TaxExmptVal4InCoCdCrcy,
+  @AnalyticsDetails.query.hidden
+  TaxExmptVal5InCoCdCrcy,
+  @AnalyticsDetails.query.hidden
+  MktgCost01InCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  MktgCost02InCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  MktgCost03InCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  MktgCost04InCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  MktgCost05InCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  MktgCost06InCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  MktgCost07InCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  MktgCost08InCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  MktgCost09InCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  MktgCost10InCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  MktgReimbmtCostInCoCodeCrcy,
+  @AnalyticsDetails.query.axis: #COLUMNS
+  SeveranceTaxAmtInCoCodeCrcy,
+  @AnalyticsDetails.query.axis: #COLUMNS
+  ArapahoTribeTaxAmtInCoCdCrcy,
+  @AnalyticsDetails.query.axis: #COLUMNS
+  AdValoremTaxAmtInCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  TaxPrevPaidAmtInCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  TaxReimbmtAmtInCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  WetGasLessResidueGasVolInMCF,
+  @AnalyticsDetails.query.hidden
+  GrossSalesVolInBaseUnit,
+  @AnalyticsDetails.query.hidden
+  GrossSalesValInCoCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  TaxProcgAllwncAmtInCoCdCrcy,
+  Country,
+  PrimaryGeogrlLocation
+  
+}
+```

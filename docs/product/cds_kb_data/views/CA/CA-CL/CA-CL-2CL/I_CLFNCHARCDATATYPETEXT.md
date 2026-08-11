@@ -31,10 +31,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
-| `CharcDataType` | ✓ | |  | `cast( dd07t.domvalue_l as atfor)` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
-| `CharcDataTypeName` |  | |  | `cast( dd07t.ddtext as charcdatatypename preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CharcDataType` | ✓ | |  | `cast( dd07t.domvalue_l as atfor)` | `CHAR(4)` | Data type of characteristic |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CharcDataTypeName` |  | |  | `cast( dd07t.ddtext as charcdatatypename preserving type )` | `CHAR(60)` | Characteristic Data Type Name |
 | `_Language` | | ✓ | | | | |
 | `_CharcDataType` | | ✓ | | | | |
 

@@ -5,9 +5,22 @@ app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_HOUSEBANKACCTANLYSQRY')/$value
 semantic_en: "This CDS view retrieves the number of company codes. This CDS view provides the prerequisites for answering the following business question: What is the total number of company codes?"
+semantic_vi: "House Bank Account Analysis - Query — CDS view tiêu dùng dựa trên I_HouseBankAccountAnalysisCube."
+keywords:
+  - "house"
+  - "bank"
+  - "account"
+  - "analysis"
+  - "query"
+  - "group"
+  - "country"
+  - "credit"
+  - "rating"
+  - "company"
+  - "code"
 tags:
   - FIN
   - bo:plant
@@ -18,7 +31,8 @@ tags:
   - FIN-FSCM-CLM-BAM
   - FIN-FSCM-CLM-BAM-2CL
   - lob:finance
-  - metadata-only
+  - account
+  - bo:bank
 ---
 # C_HOUSEBANKACCTANLYSQRY
 
@@ -30,7 +44,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_HOUSEBANKACCTANLYSQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_HOUSEBANKACCTANLYSQRY')/$value) |
 
 ## Fields
 
@@ -46,3 +60,66 @@ tags:
 | `HouseBank` |  | |  |  | `CHAR(5)` | House Bank ID |
 | `HouseBankAccount` |  | |  |  | `CHAR(5)` | House Bank Account |
 | `NumberOfCompanyCodes` |  | |  |  | `INT4(10)` | Number of Company Codes |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_HOUSEBANKACCTANLYSQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_HOUSEBANKACCTANLYSQRY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CHSBKACCTANLYSQ'
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.dataClass: #MASTER
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@VDM.viewType: #CONSUMPTION
+@OData.publish: true
+@Analytics.query: true
+@Metadata.ignorePropagatedAnnotations: true
+@AbapCatalog.preserveKey:true
+@Analytics.internalName: #LOCAL
+@EndUserText.label: 'House Bank Account Analysis - Query'
+@ObjectModel.supportedCapabilities: #ANALYTICAL_QUERY
+define view C_HouseBankAcctAnlysQry
+  as select from I_HouseBankAccountAnalysisCube
+{
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  BankGroup,
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  BankCountry,
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  Bank,
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  CreditRating,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY
+  CompanyCode,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY
+  BankInBankGroup,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY
+  BankAccountInternalID,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY
+  HouseBank,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY
+  HouseBankAccount,
+  NumberOfCompanyCodes
+}
+```

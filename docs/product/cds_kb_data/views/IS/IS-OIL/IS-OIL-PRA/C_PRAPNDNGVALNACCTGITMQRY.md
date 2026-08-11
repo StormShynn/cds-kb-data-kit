@@ -5,16 +5,32 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAPNDNGVALNACCTGITMQRY')/$value
 semantic_en: "PRA Pending Valuation Acctg Item Query"
+semantic_vi: "PRA Pending Valuation Acctg Item Query — CDS view tiêu dùng dựa trên I_ValnDocAcctgItemAll."
+keywords:
+  - "pra"
+  - "pending"
+  - "valuation"
+  - "acctg"
+  - "item"
+  - "query"
+  - "document"
+  - "year"
+  - "number"
+  - "booking"
+  - "reversal"
+  - "type"
+  - "valn"
+  - "major"
+  - "product"
 tags:
   - IS
   - component:IS-OIL-PRA
   - consumption-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # C_PRAPNDNGVALNACCTGITMQRY
 
@@ -26,16 +42,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAPNDNGVALNACCTGITMQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAPNDNGVALNACCTGITMQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ValuationDocumentYear` |  | |  |  | `NUMC(4)` | Document year |
-| `ValuationDocumentNumber` |  | |  |  | `CHAR(20)` | Val. document number |
-| `BookingReversalType` |  | |  |  | `CHAR(1)` | Booking/Reversal Indicator |
-| `ValnDocAcctgItem` |  | |  |  | `NUMC(8)` | VL Document Accounting Line Number |
+| `ValuationDocumentYear` | ✓ | |  |  | `NUMC(4)` | Document year |
+| `ValuationDocumentNumber` | ✓ | |  |  | `CHAR(20)` | Val. document number |
+| `BookingReversalType` | ✓ | |  |  | `CHAR(1)` | Booking/Reversal Indicator |
+| `ValnDocAcctgItem` | ✓ | |  |  | `NUMC(8)` | VL Document Accounting Line Number |
 | `MajorProduct` |  | |  |  | `CHAR(1)` | Major product code |
 | `MinorProduct` |  | |  |  | `CHAR(2)` | Minor Product Code |
 | `ItemIsRejected` |  | |  |  | `CHAR(1)` | Accounting Document rejection flag |
@@ -141,3 +157,224 @@ tags:
 | `GrossReimbmtMarketingAmt` |  | |  |  | `CURR(15)` | Gross Marketing Cost Reimbursement |
 | `NumberOfItems` |  | |  |  | `INT4(10)` | Number of Items |
 | `ValuationDocumentStatus` |  | |  |  | `CHAR(2)` | Valuation Document Status |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAPNDNGVALNACCTGITMQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAPNDNGVALNACCTGITMQRY')/$value)*
+
+```abap
+@EndUserText.label: 'PRA Pending Valuation Acctg Item Query'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVPENDVLAIQ'
+//@OData.publish: true
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+
+define view C_PRAPndngValnAcctgItmQry
+  //  with parameters
+  //    @Consumption.hidden: true
+  //    @Environment.systemField: #SYSTEM_LANGUAGE
+  //    P_Language : sylangu
+  as select from I_ValnDocAcctgItemAll
+{
+  key ValuationDocumentYear,
+  key ValuationDocumentNumber,
+      @AnalyticsDetails.query.display: #TEXT
+  key BookingReversalType,
+  key ValnDocAcctgItem,
+      MajorProduct,
+      MinorProduct,
+      @AnalyticsDetails.query.display: #TEXT
+      ItemIsRejected,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 1
+      @AnalyticsDetails.query.axis: #ROWS
+      CompanyCode,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 2
+      @AnalyticsDetails.query.axis: #COLUMNS
+      FiscalPeriod,
+      @AnalyticsDetails.query.display: #TEXT
+      ItemIsNetZero,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 3
+      @AnalyticsDetails.query.axis: #ROWS
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      GLAccount,
+      @AnalyticsDetails.query.display: #TEXT
+      GLAccountType,
+      @AnalyticsDetails.query.display: #TEXT
+      AcctDeterminationCategory,
+      JointVenture,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DivisionOfInterest,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      UnitJointVenture,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Product,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Material,
+      DocumentItemText,
+      Well,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      WellCompletion,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      MeasurementPoint,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      PRAContract,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      VolumeType,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 4
+      SalesDate,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryNetwork,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CostCenter,
+      @AnalyticsDetails.query.display: #TEXT
+      Country,
+      @AnalyticsDetails.query.display: #TEXT
+      PrimaryGeogrlLocation,
+      ProcessingCompanyCode,
+      @AnalyticsDetails.query.display: #TEXT
+      Purchaser,
+      @AnalyticsDetails.query.hidden     
+      PressureBaseQty,
+      @AnalyticsDetails.query.display: #TEXT
+      ItemIsSummarizedByProduct,
+      @AnalyticsDetails.query.display: #TEXT
+      ItemIsWriteOff,
+      @AnalyticsDetails.query.display: #TEXT
+      ItemIsCleared,
+      OriginatingMeasurementPt,
+      AffiliatedCompanyCode,
+      @AnalyticsDetails.query.display: #TEXT
+      TaxClassification,
+      @AnalyticsDetails.query.display: #TEXT
+      PriorPeriodAdjustmentReason,
+      @AnalyticsDetails.query.display: #TEXT
+      County,
+      @AnalyticsDetails.query.display: #TEXT
+      Region,
+      RelatedPRAContract,
+      ProductBalancingAgreement,
+      GasPlantJointVenture,
+      GasPlantDivisionOfInterest,
+      @AnalyticsDetails.query.display: #TEXT
+      PRAContractType,
+      @AnalyticsDetails.query.display: #TEXT
+      Transporter,
+      @AnalyticsDetails.query.display: #TEXT
+      PartnerCompany,
+      @AnalyticsDetails.query.display: #TEXT
+      Remitter,
+      AcctsRblMeasurementPt,
+      AccountsReceivableJointVenture,
+      AcctsRblDivisionOfInterest,
+      AlternateProperty,
+      AlternateProduct,
+      PaymentReference,
+      PaymentDate,
+      CashReceiptDate,
+      @AnalyticsDetails.query.display: #TEXT
+      SeveranceTaxType,
+      @AnalyticsDetails.query.display: #TEXT
+      MarketingType,
+      ExpenseJointVenture,
+      ExpenseDivisionOfInterest,
+      VolumeUnit,
+      EnergyUnit,
+      HeatingValUnit,
+      CompanyCodeCurrency,
+      @AnalyticsDetails.query.hidden     
+      HeatingValue,
+      @AnalyticsDetails.query.hidden     
+      APIGravityRatio,
+      @AnalyticsDetails.query.hidden     
+      DisbursementDecimalRatio,
+      @AnalyticsDetails.query.hidden     
+      NetRevenueInterestRatio,
+      @AnalyticsDetails.query.hidden     
+      GrossVolInVolUnit,
+      @AnalyticsDetails.query.hidden     
+      OwnerNetVolInVolUnit,
+      @AnalyticsDetails.query.hidden     
+      GrossEnergyInEnergyUnit,
+      @AnalyticsDetails.query.hidden     
+      OwnerEnergyInEnergyUnit,
+      @AnalyticsDetails.query.hidden     
+      GrossVolReducnInVolUnit,
+      @AnalyticsDetails.query.hidden     
+      OwnrVolReducnInVolUnit,
+      @AnalyticsDetails.query.hidden     
+      GrossEngyReductionInEngyUnit,
+      @AnalyticsDetails.query.hidden     
+      OwnerEnergyReducnInEnergyUnit,
+      @AnalyticsDetails.query.hidden     
+      GrossAmount,
+      @AnalyticsDetails.query.hidden     
+      OwnerGrossAmount,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      OwnerNetAmount,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      PRAOwner,
+      @AnalyticsDetails.query.display: #TEXT
+      OwnerInterestType,
+      OwnerInterestSequence,
+      @AnalyticsDetails.query.display: #TEXT
+      SuspenseReason,
+      @AnalyticsDetails.query.display: #TEXT
+      CalculationBasis,
+      @AnalyticsDetails.query.display: #TEXT
+      OwnerPaymentStatus,
+      @AnalyticsDetails.query.display: #TEXT
+      OwnerIsJntIntrstBilgEnabled,
+      JntIntrstBilgPartner,
+      @AnalyticsDetails.query.display: #TEXT
+      PRALegalForm,
+      @AnalyticsDetails.query.display: #TEXT
+      TaxBasis,
+      @AnalyticsDetails.query.display: #TEXT
+      ItemIsReallocated,
+      RefValnDocYear,
+      RefValnDoc,
+      RefValnDocItem,
+      CreatedByUser,
+      CreationDateTime,
+      @AnalyticsDetails.query.hidden     
+      NetTaxAmount,
+      @AnalyticsDetails.query.hidden     
+      NetTaxReimbmtAmt,
+      @AnalyticsDetails.query.hidden     
+      GrossTaxAmount,
+      @AnalyticsDetails.query.hidden     
+      GrossTaxReimbmtAmt,
+      @AnalyticsDetails.query.hidden     
+      OtherDeductionAmount,
+      @AnalyticsDetails.query.hidden     
+      NetInternalMarketingAmt,
+      @AnalyticsDetails.query.hidden     
+      NetExternalMarketingAmt,
+      @AnalyticsDetails.query.hidden     
+      NetReimbmtMarketingAmt,
+      @AnalyticsDetails.query.hidden     
+      GrossInternalMarketingAmt,
+      @AnalyticsDetails.query.hidden     
+      GrossExternalMarketingAmt,
+      @AnalyticsDetails.query.hidden     
+      GrossReimbmtMarketingAmt,
+      @AnalyticsDetails.query.hidden     
+      NumberOfItems,
+      
+      @AnalyticsDetails.query.display: #TEXT
+      ValuationDocumentStatus
+
+}
+where
+  ValuationDocumentStatus < '50';
+```

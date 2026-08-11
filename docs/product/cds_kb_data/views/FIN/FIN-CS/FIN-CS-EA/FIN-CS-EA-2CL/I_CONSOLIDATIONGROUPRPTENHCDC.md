@@ -5,9 +5,25 @@ app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CONSOLIDATIONGROUPRPTENHCDC')/$value
 semantic_en: "This CDS view provides access to all details of the data in group reporting that has the consolidation logic applied. It additionally supports the rule-based reports where your defined reporting items are displayed as reporting dimensions. You can create rule-based group reports for consolidation groups, such as cash flow statements and consolidated P&amp;L statements, with the data provided by this CDS view. This CDS view provides the prerequisites for answering the following business questions: What is the consolidation dimension, consolidation chart of accounts, and consolidation ledger in which the reporting logic is applied? What is the fiscal year, period, and organizational unit information of the consolidated data? What is the document number, posting level, and document type for a certain journal entry? What are the amounts of relevant financial statement items or reporting items in the transaction currency, local currency, and group currency?"
+semantic_vi: "Enhanced Group Reporting Data - Cube — CDS view giao diện dựa trên P_CnsldtnFndnWithRptRules."
+keywords:
+  - "enhanced"
+  - "group"
+  - "reporting"
+  - "data"
+  - "cube"
+  - "consolidation"
+  - "ledger"
+  - "dimension"
+  - "fiscal"
+  - "year"
+  - "document"
+  - "number"
+  - "posting"
+  - "item"
 tags:
   - FIN
   - account
@@ -20,7 +36,7 @@ tags:
   - interface-view
   - lob:finance
   - transaction
-  - metadata-only
+  - bo:purchaseorder
 ---
 # I_CONSOLIDATIONGROUPRPTENHCDC
 
@@ -32,17 +48,17 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CONSOLIDATIONGROUPRPTENHCDC')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CONSOLIDATIONGROUPRPTENHCDC')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ConsolidationLedger` |  | |  |  | `CHAR(2)` | Ledger |
-| `ConsolidationDimension` |  | |  |  | `CHAR(2)` | Dimension |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `ConsolidationDocumentNumber` |  | |  |  | `CHAR(10)` | Group Journal Entry |
-| `ConsolidationPostingItem` |  | |  |  | `CHAR(6)` | Group Journal Entry Item |
+| `ConsolidationLedger` | ✓ | |  |  | `CHAR(2)` | Ledger |
+| `ConsolidationDimension` | ✓ | |  |  | `CHAR(2)` | Dimension |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `ConsolidationDocumentNumber` | ✓ | |  |  | `CHAR(10)` | Group Journal Entry |
+| `ConsolidationPostingItem` | ✓ | |  |  | `CHAR(6)` | Group Journal Entry Item |
 | `ConsolidationVersion` |  | |  |  | `CHAR(3)` | Consolidation Version |
 | `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
 | `LocalCurrency` |  | |  |  | `CUKY(5)` | Currency key of the local currency |
@@ -51,10 +67,10 @@ tags:
 | `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
 | `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/Credit Indicator |
 | `Company` |  | |  |  | `CHAR(6)` | Company |
-| `ConsolidationUnit` |  | |  |  | `CHAR(18)` | Consolidation Unit |
+| `ConsolidationUnit` |  | |  | `cast ( ConsolidationUnit as fincs_consolidationunit preserving type )` | `CHAR(18)` | Consolidation Unit |
 | `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` | Consolidation Chart of Accounts |
 | `FinancialStatementItem` |  | |  |  | `CHAR(10)` | Financial Statement Item |
-| `PartnerConsolidationUnit` |  | |  |  | `CHAR(18)` | Partner Unit |
+| `PartnerConsolidationUnit` |  | |  | `cast ( PartnerConsolidationUnit as fincs_partnerconsolidationunit preserving type )` | `CHAR(18)` | Partner Unit |
 | `ConsolidationGroup` |  | |  |  | `CHAR(18)` | Consolidation Group |
 | `CompanyCode` |  | |  |  | `CHAR(4)` | Original company code |
 | `SubItemCategory` |  | |  |  | `CHAR(3)` | Subitem Category |
@@ -65,11 +81,11 @@ tags:
 | `ConsolidationDocumentType` |  | |  |  | `CHAR(2)` | Document Type |
 | `ConsolidationAcquisitionYear` |  | |  |  | `NUMC(4)` | Year of Acquisition |
 | `ConsolidationAcquisitionPeriod` |  | |  |  | `NUMC(3)` | Period of Acquisition |
-| `InvesteeConsolidationUnit` |  | |  |  | `CHAR(18)` | Investee Unit |
-| `YTDAmtInCnsldtnTransactionCrcy` |  | |  |  | `CURR(23)` | Cumulative Value in Transaction Currency |
-| `YTDAmtInCnsldtnLocalCrcy` |  | |  |  | `CURR(23)` | Cumulative Value in Local Currency |
-| `YTDAmtInCnsldtnGroupCrcy` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDQtyInCnsldtnBaseUnit` |  | |  |  | `QUAN(23)` | Quantity |
+| `InvesteeConsolidationUnit` |  | |  | `cast ( InvesteeConsolidationUnit as fincs_investeeconsunit preserving type )` | `CHAR(18)` | Investee Unit |
+| `YTDAmtInCnsldtnTransactionCrcy` |  | |  | `cast( case when ConsolidationReverseSign = 'X' then -1 * AmountInTransactionCurrency else AmountInTransactionCurrency end as fincs_tsl_ytd )` | `CURR(23)` | Cumulative Value in Transaction Currency |
+| `YTDAmtInCnsldtnLocalCrcy` |  | |  | `cast( case when ConsolidationReverseSign = 'X' then -1 * AmountInLocalCurrency else AmountInLocalCurrency end as fincs_hsl_ytd )` | `CURR(23)` | Cumulative Value in Local Currency |
+| `YTDAmtInCnsldtnGroupCrcy` |  | |  | `cast( case when ConsolidationReverseSign = 'X' then -1 * AmountInGroupCurrency else AmountInGroupCurrency end as fincs_ksl_ytd )` | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDQtyInCnsldtnBaseUnit` |  | |  | `cast ( QuantityInBaseUnit as quan1_12 )` | `QUAN(23)` | Quantity |
 | `DocumentItemText` |  | |  |  | `CHAR(50)` | Item Text |
 | `ConsolidationPostgItemAutoFlag` |  | |  |  | `CHAR(1)` | Indicator: Automatic posting lines |
 | `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction |
@@ -115,7 +131,7 @@ tags:
 | `WBSElement` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) |
 | `Project` |  | |  |  | `CHAR(24)` | Project Definition |
 | `ConsolidationRecordNumber` |  | |  |  | `CHAR(18)` | Record number of the line item record |
-| `ConsolidationReportingItem` |  | |  |  | `CHAR(10)` | Reporting Item |
+| `ConsolidationReportingItem` |  | |  | `cast ( ConsolidationReportingItem as fincs_ritem )` | `CHAR(10)` | Reporting Item |
 | `BillingDocumentType` |  | |  |  | `CHAR(4)` | Billing Type |
 | `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
 | `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
@@ -130,3 +146,335 @@ tags:
 | `BillToParty` |  | |  |  | `CHAR(10)` | Bill-to Party |
 | `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-to Party |
 | `CustomerSupplierCorporateGroup` |  | |  |  | `CHAR(10)` | Group Key |
+| `_RptgItm` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_Dimension` | | ✓ | | | | |
+| `_Version` | | ✓ | | | | |
+| `_CnsldtnUnit` | | ✓ | | | | |
+| `_CnsldtnGroup` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_FinStmntItm` | | ✓ | | | | |
+| `_PartnerUnit` | | ✓ | | | | |
+| `_SubItemCategory` | | ✓ | | | | |
+| `_SubItem` | | ✓ | | | | |
+| `_DocumentType` | | ✓ | | | | |
+| `_PostingLevel` | | ✓ | | | | |
+| `_InvesteeUnit` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_LocalCurrency` | | ✓ | | | | |
+| `_GroupCurrency` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_RptgItm` | `I_CnsldtnRptgItem` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CONSOLIDATIONGROUPRPTENHCDC')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CONSOLIDATIONGROUPRPTENHCDC')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'ICCGRPRPTENHANC'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #CHECK
+@AccessControl.privilegedAssociations: [ '_RptgItm' ]
+@Analytics: { dataCategory: #CUBE }
+@VDM.viewType: #COMPOSITE
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.buffering.status: #NOT_ALLOWED
+@Metadata.allowExtensions:true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_PROVIDER, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ]
+@ObjectModel.modelingPattern: #ANALYTICAL_CUBE
+@EndUserText.label: 'Enhanced Group Reporting Data - Cube'
+
+define view I_ConsolidationGroupRptEnhcdC
+  with parameters
+    P_ConsolidationRptgItemHier : fincs_rihry,
+    P_ConsolidationRptgRuleID   : fincs_rptid
+  as select from P_CnsldtnFndnWithRptRules
+                 (P_ConsolidationRptgItemHier: $parameters.P_ConsolidationRptgItemHier, P_ConsolidationReportingRuleID: $parameters.P_ConsolidationRptgRuleID)
+  association [0..1] to I_CnsldtnRptgItem as _RptgItm on  $projection.ConsolidationChartOfAccounts = _RptgItm.ConsolidationChartOfAccounts
+                                                      and $projection.ConsolidationReportingItem   = _RptgItm.ConsolidationReportingItem
+{
+
+      @ObjectModel.foreignKey.association: '_Ledger'
+  key ConsolidationLedger,
+
+      @ObjectModel.foreignKey.association: '_Dimension'
+  key ConsolidationDimension,
+
+      @Semantics.fiscal.year: true
+  key FiscalYear,
+
+  key ConsolidationDocumentNumber,
+
+  key ConsolidationPostingItem,
+
+      @ObjectModel.foreignKey.association: '_Version'
+      ConsolidationVersion,
+
+      @Semantics.currencyCode:true
+      TransactionCurrency,
+
+      @Semantics.currencyCode:true
+      LocalCurrency,
+
+      @Semantics.currencyCode:true
+      GroupCurrency,
+
+      @Semantics.unitOfMeasure: true
+      BaseUnit,
+
+      @Semantics.fiscal.period: true
+      FiscalPeriod,
+
+      DebitCreditCode,
+
+      Company,
+
+      @ObjectModel.foreignKey.association: '_CnsldtnUnit'
+      cast ( ConsolidationUnit as fincs_consolidationunit  preserving type )              as ConsolidationUnit,
+
+      @ObjectModel.foreignKey.association: '_ChartOfAccounts'
+      ConsolidationChartOfAccounts,
+
+      //Test 1811
+      @ObjectModel.foreignKey.association: '_FinStmntItm'
+      FinancialStatementItem,
+      //  @ObjectModel.foreignKey.association: '_FSItem'
+      //  FSItemNew,
+
+      @ObjectModel.foreignKey.association: '_PartnerUnit'
+      cast ( PartnerConsolidationUnit as fincs_partnerconsolidationunit preserving type ) as PartnerConsolidationUnit,
+
+      @ObjectModel.foreignKey.association: '_CnsldtnGroup'
+      ConsolidationGroup,
+
+      CompanyCode,
+
+      @ObjectModel.foreignKey.association: '_SubItemCategory'
+      SubItemCategory,
+
+      @ObjectModel.foreignKey.association: '_SubItem'
+      SubItem,
+
+      @ObjectModel.foreignKey.association: '_PostingLevel'
+      PostingLevel,
+
+      ConsolidationApportionment,
+
+      CurrencyConversionsDiffType,
+
+      @ObjectModel.foreignKey.association: '_DocumentType'
+      ConsolidationDocumentType,
+
+      @Semantics.fiscal.year: true
+      ConsolidationAcquisitionYear,
+
+      @Semantics.fiscal.period: true
+      ConsolidationAcquisitionPeriod,
+
+      @ObjectModel.foreignKey.association: '_InvesteeUnit'
+      cast ( InvesteeConsolidationUnit as fincs_investeeconsunit preserving type )        as InvesteeConsolidationUnit,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+      cast( case
+            when ConsolidationReverseSign = 'X' then -1 * AmountInTransactionCurrency
+            else AmountInTransactionCurrency
+            end as fincs_tsl_ytd )                                                        as YTDAmtInCnsldtnTransactionCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'LocalCurrency'} }
+      cast( case
+            when ConsolidationReverseSign = 'X' then -1 * AmountInLocalCurrency
+            else AmountInLocalCurrency
+            end as fincs_hsl_ytd )                                                        as YTDAmtInCnsldtnLocalCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'GroupCurrency'
+      cast( case
+            when ConsolidationReverseSign = 'X' then -1 * AmountInGroupCurrency
+            else AmountInGroupCurrency
+            end as fincs_ksl_ytd )                                                        as YTDAmtInCnsldtnGroupCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      cast ( QuantityInBaseUnit as quan1_12 )                                             as YTDQtyInCnsldtnBaseUnit,
+
+      DocumentItemText,
+
+      ConsolidationPostgItemAutoFlag,
+
+      BusinessTransactionType,
+
+      PostingDate,
+
+      CurrencyTranslationDate,
+
+      RefConsolidationDocumentNumber,
+
+      @Semantics.fiscal.year: true
+      ReferenceFiscalYear,
+
+      RefConsolidationPostingItem,
+
+      RefConsolidationDocumentType,
+
+      RefBusinessTransactionType,
+
+      CreationDate,
+
+      CreationTime,
+
+      UserID,
+
+      ReverseDocument,
+
+      ReversedDocument,
+
+      InvestmentActivityType,
+
+      InvestmentActivity,
+
+      ConsolidationDocReversalYear,
+
+      ReferenceDocumentType,
+
+      ReferenceDocumentContext,
+
+      LogicalSystem,
+
+      ChartOfAccounts,
+
+      GLAccount,
+
+      //  ReferenceDocumentNumber,
+
+      AssignmentReference,
+
+      CostCenter,
+
+      ProfitCenter,
+
+      FunctionalArea,
+
+      BusinessArea,
+
+      ControllingArea,
+
+      Segment,
+
+      PartnerCostCenter,
+
+      PartnerProfitCenter,
+
+      PartnerFunctionalArea,
+
+      PartnerBusinessArea,
+
+      PartnerCompany,
+
+      PartnerSegment,
+
+      OrderID,
+
+      Customer,
+
+      Supplier,
+
+      Material,
+
+      Plant,
+
+      FinancialTransactionType,
+
+      //  WBSElementInternalID,
+
+      WBSElement,
+
+      Project,
+
+      ConsolidationRecordNumber,
+
+      @ObjectModel.foreignKey.association: '_RptgItm'
+      cast ( ConsolidationReportingItem as fincs_ritem )                                  as ConsolidationReportingItem,
+
+      BillingDocumentType,
+
+      SalesOrganization,
+
+      DistributionChannel,
+
+      OrganizationDivision,
+
+      MaterialGroup,
+
+      SoldProduct,
+
+      SoldProductGroup,
+
+      CustomerGroup,
+
+      CustomerSupplierCountry,
+
+      CustomerSupplierIndustry,
+
+      SalesDistrict,
+
+      BillToParty,
+
+      ShipToParty,
+
+      CustomerSupplierCorporateGroup,
+
+      _Ledger,
+
+      _Dimension,
+
+      _Version,
+
+      //  _Company,
+
+      _CnsldtnUnit,
+
+      _CnsldtnGroup,
+
+      _ChartOfAccounts,
+
+      //Test 1811
+      _FinStmntItm,
+      //  _FSItem,
+
+      _PartnerUnit,
+
+      _SubItemCategory,
+
+      _SubItem,
+
+      _DocumentType,
+
+      _PostingLevel,
+
+      _InvesteeUnit,
+
+      _TransactionCurrency,
+
+      _LocalCurrency,
+
+      _GroupCurrency,
+
+      _BaseUnit,
+
+      _RptgItm
+
+}
+where
+  GLRecordType = 'R'
+```

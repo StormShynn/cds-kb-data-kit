@@ -5,16 +5,20 @@ app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SHIPOBJECTCLASS')/$value
 semantic_en: "Ship Class"
+semantic_vi: "Ship Class — CDS view giao diện dựa trên dd07l."
+keywords:
+  - "ship"
+  - "class"
+  - "object"
 tags:
   - FS
   - bo:purchaseorder
   - component:FS-CMS
   - FS-CMS
   - interface-view
-  - metadata-only
 ---
 # I_SHIPOBJECTCLASS
 
@@ -26,10 +30,64 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SHIPOBJECTCLASS')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SHIPOBJECTCLASS')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ShipObjectClass` |  | |  |  | `CHAR(2)` | Specifies whether the Ship is Sea Ship or Inland Ship |
+| `ShipObjectClass` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as cms_dte_shp_class preserving type )` | `CHAR(2)` | Specifies whether the Ship is Sea Ship or Inland Ship |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_ShipObjectClassText` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SHIPOBJECTCLASS')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SHIPOBJECTCLASS')/$value)*
+
+```abap
+@AbapCatalog: {
+    sqlViewName: 'ISHIPOBJCLASS',
+    compiler.compareFilter: true,
+    preserveKey: true
+}
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel:{
+    usageType:{
+        serviceQuality: 'A',
+        sizeCategory: 'S',
+        dataClass: 'CUSTOMIZING'
+    },
+    supportedCapabilities: [ #ANALYTICAL_DIMENSION,
+                             #CDS_MODELING_ASSOCIATION_TARGET,
+                             #SQL_DATA_SOURCE,
+                             #CDS_MODELING_DATA_SOURCE,
+                             #EXTRACTION_DATA_SOURCE ],
+    representativeKey: 'ShipObjectClass'
+}
+@VDM.viewType: #BASIC
+@Analytics:{
+    dataCategory: #DIMENSION,
+    internalName: #LOCAL,
+    dataExtraction.enabled: true
+}
+@Metadata.ignorePropagatedAnnotations: true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Ship Class'
+define view I_ShipObjectClass
+  as select from dd07l
+  association [0..*] to I_ShipObjectClassText as _Text on $projection.ShipObjectClass = _Text.ShipObjectClass
+{
+      @ObjectModel.text.association: '_Text'
+  key cast(substring(domvalue_l, 1, 2) as cms_dte_shp_class preserving type ) as ShipObjectClass,
+
+      _Text
+}
+where
+      dd07l.domname  = 'CMS_SHP_CLASS'
+  and dd07l.as4local = 'A'
+```

@@ -5,9 +5,20 @@ app_component: CM-GF-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LEGALTRANSLINKEDOBJQUERY')/$value
 semantic_en: "This CDS view provides the data to answer the following business questions: What is the percentage of legal transactions with linked object? What is the number of legal transactions with linked object? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Linked Object - Query — CDS view tiêu dùng dựa trên C_LegalTransLinkedObjCube."
+keywords:
+  - "linked"
+  - "object"
+  - "query"
+  - "legal"
+  - "transaction"
+  - "linkd"
+  - "cntnt"
+  - "type"
+  - "name"
 tags:
   - CM
   - bo:companycode
@@ -16,7 +27,6 @@ tags:
   - component:CM-GF-2CL
   - consumption-view
   - transaction
-  - metadata-only
 ---
 # C_LEGALTRANSLINKEDOBJQUERY
 
@@ -28,14 +38,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LEGALTRANSLINKEDOBJQUERY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LEGALTRANSLINKEDOBJQUERY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
-| `LegalTransactionLinkdObjUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionLinkdObjUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
 | `LglCntntMLinkdObjType` |  | |  |  | `CHAR(4)` | Linked Object Type |
 | `LglCntntMLinkdObjTypeName` |  | |  |  | `CHAR(40)` | Long Text |
 | `LglCntntMLinkdObj` |  | |  |  | `CHAR(255)` | Linked Object ID |
@@ -48,4 +58,77 @@ tags:
 | `LglCntntMMainOrgTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
 | `TotalNumberOfLegalTransactions` |  | |  |  | `INT4(10)` | Total Numbers of Legal Transaction |
 | `TotNrOfLegalTransWithLinkedObj` |  | |  |  | `INT4(10)` |  |
-| `LegalTransWithTrggrObjPercent` |  | |  |  | `DEC(5)` | % of Renewed Contracts |
+| `LegalTransWithTrggrObjPercent` |  | |  | `cast( 100 as lcm_tot_lt_renewed_per )` | `DEC(5)` | % of Renewed Contracts |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LEGALTRANSLINKEDOBJQUERY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LEGALTRANSLINKEDOBJQUERY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CLGLTRLINKOBJQRY'
+@AbapCatalog.compiler.compareFilter: true
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #L
+@VDM.viewType: #CONSUMPTION
+@Analytics.query: true
+@OData.publish: true
+@Metadata.ignorePropagatedAnnotations:true
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@EndUserText.label: 'Linked Object - Query'
+@AbapCatalog.preserveKey:true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_QUERY]
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+
+define view C_LegalTransLinkedObjQuery
+  as select from C_LegalTransLinkedObjCube
+{
+  key LegalTransactionUUID,
+  key LegalTransactionLinkdObjUUID,
+      @EndUserText.label: 'Linked Object Type ID'
+      LglCntntMLinkdObjType,
+
+      @EndUserText.label: 'Linked Object Type'
+      LglCntntMLinkdObjTypeName,
+
+      @Semantics.text: true
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      LglCntntMLinkdObj,
+
+      @EndUserText.label: 'Origin'
+      LglTransTriggerObjNameText,
+
+      @EndUserText.label: 'Status of Legal Transaction'
+      LegalTransactionHealthName,
+
+      @EndUserText.label: 'Main Entity'
+      LglCntntMEntity,
+
+      @EndUserText.label: 'Main Entity Type'
+      LglCntntMEntityTypeName,
+
+      @EndUserText.label: 'Governing Law'
+      LglCntntMGovLawText,
+
+      @EndUserText.label: 'Main Orgn. Name'
+      LglCntntMMainOrgName,
+
+      @EndUserText.label: 'Main Orgn. Type Name'
+      LglCntntMMainOrgTypeName,
+
+      @EndUserText.label: 'Total No. of Legal Transactions'
+      @DefaultAggregation:#SUM
+      TotalNumberOfLegalTransactions,
+
+      @EndUserText.label: 'No. of Legal Transactions with Linked Object'
+      @DefaultAggregation:#SUM
+      TotNrOfLegalTransWithLinkedObj,
+
+      @EndUserText.label: '% Legal Transactions with Linked Object'
+      @DefaultAggregation: #FORMULA
+      @AnalyticsDetails.query.decimals: 2
+      @AnalyticsDetails.query.formula: 'NDIV0(  TotNrOfLegalTransWithLinkedObj / TotalNumberOfLegalTransactions ) * 100'
+      cast( 100 as lcm_tot_lt_renewed_per ) as LegalTransWithTrggrObjPercent
+}
+```

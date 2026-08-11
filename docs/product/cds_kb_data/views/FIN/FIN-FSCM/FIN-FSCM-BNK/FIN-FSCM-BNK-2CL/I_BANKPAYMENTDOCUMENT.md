@@ -5,9 +5,20 @@ app_component: FIN-FSCM-BNK-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKPAYMENTDOCUMENT')/$value
 semantic_en: "Payment Documents C1 contract"
+semantic_vi: "Payment Documents C1 contract — CDS view giao diện dựa trên I_BankPaymentRunDocument."
+keywords:
+  - "payment"
+  - "documents"
+  - "contract"
+  - "date"
+  - "paying"
+  - "company"
+  - "code"
+  - "supplier"
+  - "customer"
 tags:
   - FIN
   - component:FIN-FSCM-BNK-2CL
@@ -19,7 +30,6 @@ tags:
   - interface-view
   - lob:finance
   - payment
-  - metadata-only
 ---
 # I_BANKPAYMENTDOCUMENT
 
@@ -31,19 +41,19 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKPAYMENTDOCUMENT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKPAYMENTDOCUMENT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentRunDate` |  | |  |  | `DATS(8)` | Payment Run Date |
-| `PaymentRunID` |  | |  |  | `CHAR(6)` | Payment Run ID |
-| `PayingCompanyCode` |  | |  |  | `CHAR(4)` | Paying Company Code |
-| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
-| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
-| `PaymentRecipient` |  | |  |  | `CHAR(16)` | Payment Recipient |
-| `PaymentDocument` |  | |  |  | `CHAR(10)` | Payment Document Number |
+| `PaymentRunDate` | ✓ | |  |  | `DATS(8)` | Payment Run Date |
+| `PaymentRunID` | ✓ | |  |  | `CHAR(6)` | Payment Run ID |
+| `PayingCompanyCode` | ✓ | |  |  | `CHAR(4)` | Paying Company Code |
+| `Supplier` | ✓ | |  |  | `CHAR(10)` | Supplier |
+| `Customer` | ✓ | |  |  | `CHAR(10)` | Customer Number |
+| `PaymentRecipient` | ✓ | |  |  | `CHAR(16)` | Payment Recipient |
+| `PaymentDocument` | ✓ | |  |  | `CHAR(10)` | Payment Document Number |
 | `PaymentRunMergeIdentifier` |  | |  |  | `CHAR(6)` | Merge ID |
 | `PaymentRunMergeDate` |  | |  |  | `DATS(8)` | Merge Date |
 | `HouseBank` |  | |  |  | `CHAR(5)` | House Bank Key |
@@ -194,3 +204,194 @@ tags:
 | `BankChainBank2CountryName` |  | |  |  | `CHAR(50)` | Country/Region Name |
 | `BankChainBank3CountryName` |  | |  |  | `CHAR(50)` | Country/Region Name |
 | `OriginName` |  | |  |  | `CHAR(40)` | Name of an Origin Indicator |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKPAYMENTDOCUMENT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKPAYMENTDOCUMENT')/$value)*
+
+```abap
+@EndUserText.label: 'Payment Documents C1 contract'
+
+@AccessControl.authorizationCheck: #MANDATORY
+@Metadata.ignorePropagatedAnnotations: true
+@VDM.viewType: #COMPOSITE
+@ObjectModel.supportedCapabilities:[#CDS_MODELING_DATA_SOURCE]
+@ObjectModel.modelingPattern:#NONE
+@ObjectModel:{
+  usageType.serviceQuality: #D,
+  usageType.sizeCategory: #XL,
+  usageType.dataClass: #MIXED
+}
+
+define view entity I_BankPaymentDocument
+  as select from I_BankPaymentRunDocument
+{
+  key PaymentRunDate,
+  key PaymentRunID,
+  key PayingCompanyCode,
+  key Supplier,
+  key Customer,
+  key PaymentRecipient,
+  key PaymentDocument,
+      PaymentRunMergeIdentifier,
+      PaymentRunMergeDate,
+      HouseBank,
+      HouseBankAccount,
+      PaymentMethod,
+      PaymentMethodSupplement,
+      PaymentCurrency,
+      PaymentDocumentPostingDate,
+      ValueDate,
+      PayeeBankValueDate,
+      PaidItemDueDate,
+      PaymentBatch,
+      PaymentRunIsProposal,
+      SupplierClerkIDBySupplier,
+      BankAccountHolderName,
+      AccountingClerk,
+      @Semantics.amount.currencyCode: 'PaymentBatchRuleCurrency'
+      PaidAmountInPaytCurrency,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      AmountInCompanyCodeCurrency,
+      PayeeBankControlKey,
+      BankControlKey,
+      BankCountry,
+      PaymentRunDocumentPayeeBankKey,
+      PayeeBank,
+      BusinessArea,
+      @Semantics.amount.currencyCode: 'PaymentCurrency'
+      CashDiscountAmtInTransacCrcy,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      CashDiscountAmtInCoCodeCrcy,
+      SupplierCityName,
+      PayeeCityName,
+      SupplierCountry,
+      PayeeBankCountry,
+      District,
+      EDIPaymentOrderStatus,
+      EDIPaymentAdviceStatus,
+      PaymentRequestPaymentGroup,
+      BankInternalID,
+      Bank,
+      HouseBankIBAN,
+      PayeeIBAN,
+      DataExchangeInstructionKey,
+      DataExchangeInstruction1,
+      DataExchangeInstruction2,
+      DataExchangeInstruction3,
+      DataExchangeInstruction4,
+      PaymentReason,
+      DirectDebitType,
+      @Semantics.amount.currencyCode: 'PaymentCurrency'
+      LostCashDiscountInTransacCrcy,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      LostCashDiscountInCoCodeCrcy,
+      FunctionalCurrency,
+      @Semantics.amount.currencyCode: 'FunctionalCurrency'
+      PaymentAmountInFunctionalCrcy,
+      @Semantics.amount.currencyCode: 'FunctionalCurrency'
+      CashDiscountAmountInFuncnlCrcy,
+      SupplierName,
+      SupplierAdditionalName,
+      CustomerName,
+      CustomerAdditionalName,
+      PayeeName,
+      PayeeAdditionalName,
+      PayeeTitle,
+      AddressID,
+      NumberOfTextLines,
+      NumberOfPaidItems,
+      BankAccount,
+      BankAccountLongID,
+      POBoxDeviatingCityName,
+      POBoxPostalCode,
+      PayeePOBoxPostalCode,
+      PayeePostalCode,
+      PayeeBankAccount,
+      PayeeBankAccountLongID,
+      PayeeCountry,
+      PayeeLanguage,
+      PayeePOBox,
+      PayeeStreet,
+      PaymentReference,
+      PersonnelNumber,
+      POBox,
+      PostalCode,
+      PostingDate,
+      BankAccountReferenceText,
+      Region,
+      PaymentOrder,
+      SendingCompanyCode,
+      SEPASequenceType,
+      StreetAddressName,
+      SWIFTCode,
+      SEPAMandateUUID,
+      SupplierRegion,
+      ExchangeRate,
+      PaymentOrigin,
+      BillOfExchangeIssueDate,
+      BillOfExchangeDueDate,
+      PaymentsGroupingCriterion,
+      SWIFTTransactionReferenceUUID,
+      BusinessPlace,
+      BankChainBank1Type,
+      BankChainBank1Country,
+      BankChainBank1,
+      BankChainBank1BankAccount,
+      BankChainBank1ControlKey,
+      BankChainBank1DetailReference,
+      BankChainBank1IBAN,
+      BankChainBank2Type,
+      BankChainBank2Country,
+      BankChainBank2,
+      BankChainBank2BankAccount,
+      BankChainBank2ControlKey,
+      BankChainBank2DetailReference,
+      BankChainBank2IBAN,
+      BankChainBank3Type,
+      BankChainBank3Country,
+      BankChainBank3,
+      BankChainBank3BankAccount,
+      BankChainBank3ControlKey,
+      BankChainBank3DetailReference,
+      BankChainBank3IBAN,
+      PayeePaymentSystem,
+      PayeeAliasType,
+      PayeeAliasName,
+      CompanyCodeCurrency,
+      Country,
+      FiscalYearVariant,
+      FiscalYear,
+      SWIFTGPIReason,
+      //      PaymentStatusReason,
+      PaymentBatchItemCurrentStatus,
+      PaymentBatchCurrentStatus,
+      PaymentBatchRuleCurrency,
+      IsUrgentPayment,
+      PaymentMethodName,
+      PaymentRunFileIdentifier,
+      PaymentRunFileDate,
+      MergeBatchNumber,
+      PaymentReasonText,
+      AliasTypeText,
+      PaymentBatchItem,
+      BatchUUID,
+      FinancialAccountType,
+      AccountingDocument,
+      //      _BkPaytRunDocBatchItemExist.BatchItemExists,
+      PaymentMediumReference,
+      PaymentStatusReasonByBankName,
+      PaymentStatusReasonByBank,
+      PaytRunDocHdrConcatenation,
+      PaytBatHdrCurStsName,
+      PaytBatItmCurStsName,
+      PaymentStatusReasonName,
+      PayeeCountryName,
+      PayeeBankCountryName,
+      BankCountryName,
+      BankChainBank1CountryName,
+      BankChainBank2CountryName,
+      BankChainBank3CountryName,
+      OriginName
+}
+```

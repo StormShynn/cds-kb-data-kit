@@ -5,9 +5,22 @@ app_component: RE-FX-IP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJSPACEGROUPTYPETEXT')/$value
 semantic_en: "Real Estate Int Obj Spacegrp Type - Text"
+semantic_vi: "Real Estate Int Obj Spacegrp Type - Text — CDS view giao diện dựa trên tivipiosgtypet."
+keywords:
+  - "real"
+  - "estate"
+  - "int"
+  - "obj"
+  - "spacegrp"
+  - "type"
+  - "text"
+  - "integ"
+  - "space"
+  - "group"
+  - "language"
 tags:
   - RE
   - component:RE-FX-IP-2CL
@@ -15,7 +28,6 @@ tags:
   - RE-FX
   - RE-FX-IP
   - RE-FX-IP-2CL
-  - metadata-only
 ---
 # I_REINTEGOBJSPACEGROUPTYPETEXT
 
@@ -27,12 +39,75 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJSPACEGROUPTYPETEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJSPACEGROUPTYPETEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `REIntegObjSpaceGroupType` |  | |  |  | `CHAR(4)` | Group Type |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `REIntegObjSpaceGroupTypeText` |  | |  |  | `CHAR(60)` | Description for Group Type |
+| `REIntegObjSpaceGroupType` | ✓ | |  | `iosgtype` | `CHAR(4)` | Group Type |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `REIntegObjSpaceGroupTypeText` |  | |  | `xiosgtype` | `CHAR(60)` | Description for Group Type |
+| `_REIntegObjSpaceGroupType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_REIntegObjSpaceGroupType` | `I_REIntegObjSpaceGroupType` | [0..1] |
+| `_Language` | `I_Language` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJSPACEGROUPTYPETEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJSPACEGROUPTYPETEXT')/$value)*
+
+```abap
+@EndUserText.label: 'Real Estate Int Obj Spacegrp Type - Text'
+@AbapCatalog.sqlViewName: 'IREINTOBJSGTYPET'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.sizeCategory: #M
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.representativeKey: 'REIntegObjSpaceGroupType'
+@ObjectModel.semanticKey: ['REIntegObjSpaceGroupType']
+
+
+@VDM.viewType: #BASIC
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.preserveKey:true
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel.modelingPattern:           #LANGUAGE_DEPENDENT_TEXT
+@ObjectModel.supportedCapabilities:  [  #LANGUAGE_DEPENDENT_TEXT,
+                                        #CDS_MODELING_DATA_SOURCE,
+                                        #CDS_MODELING_ASSOCIATION_TARGET,
+                                        #SQL_DATA_SOURCE,
+                                        #EXTRACTION_DATA_SOURCE,
+                                        #SEARCHABLE_ENTITY                   ]
+
+@Analytics:{
+    dataExtraction: {
+        enabled: true
+    }
+}
+ 
+define view I_REIntegObjSpaceGroupTypeText as 
+select from tivipiosgtypet
+  association [0..1] to I_REIntegObjSpaceGroupType as _REIntegObjSpaceGroupType on $projection.REIntegObjSpaceGroupType = _REIntegObjSpaceGroupType.REIntegObjSpaceGroupType
+  association [1..1] to I_Language               as _Language               on $projection.Language = _Language.Language{
+    
+  key iosgtype      as REIntegObjSpaceGroupType,
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key spras            as Language,
+      @Semantics.text: true
+      xiosgtype as REIntegObjSpaceGroupTypeText,
+      _REIntegObjSpaceGroupType,
+      _Language
+    
+}
+```

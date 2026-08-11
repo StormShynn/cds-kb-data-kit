@@ -5,9 +5,23 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONTRALLOCVOLPRIMPRODQRY')/$value
 semantic_en: "CA Volume for Primary Products Query"
+semantic_vi: "CA Volume for Primary Products Query — CDS view tiêu dùng dựa trên I_ContrAllocVolPrimProd."
+keywords:
+  - "volume"
+  - "for"
+  - "primary"
+  - "products"
+  - "query"
+  - "delivery"
+  - "network"
+  - "measurement"
+  - "point"
+  - "well"
+  - "completion"
+  - "material"
 tags:
   - IS
   - bo:material
@@ -16,7 +30,6 @@ tags:
   - IS-OIL
   - IS-OIL-PRA
   - product
-  - metadata-only
 ---
 # C_CONTRALLOCVOLPRIMPRODQRY
 
@@ -28,7 +41,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONTRALLOCVOLPRIMPRODQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONTRALLOCVOLPRIMPRODQRY')/$value) |
 
 ## Fields
 
@@ -59,3 +72,86 @@ tags:
 | `AdjustedEntitledEngy` |  | |  |  | `QUAN(13)` | Adjusted Entitled Contract Energy |
 | `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
 | `CreationDateTime` |  | |  |  | `DEC(15)` | Created On Timestamp |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONTRALLOCVOLPRIMPRODQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONTRALLOCVOLPRIMPRODQRY')/$value)*
+
+```abap
+@EndUserText.label: 'CA Volume for Primary Products Query'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVCAVOLPRIM'
+//@OData.publish: true
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+
+define view C_ContrAllocVolPrimProdQry
+  //  with parameters
+  //    @Consumption.hidden: true
+  //    @Environment.systemField: #SYSTEM_LANGUAGE
+  //    P_Language : sylangu
+  as select from I_ContrAllocVolPrimProd
+{
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 1
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  DeliveryNetwork,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  MeasurementPoint,
+  @AnalyticsDetails.query.display: #KEY
+  Well,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  WellCompletion,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 3
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Material,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 4
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PRAContract,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 2
+  @AnalyticsDetails.query.axis: #COLUMNS
+  SalesDate,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PRAOwner,
+  @AnalyticsDetails.query.display: #TEXT
+  OwnerInterestType,
+  OwnerInterestSequence,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  OriginatingMeasurementPt,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Transporter,
+  VolumeUnit,
+  HeatingValUnit,
+  EnergyUnit,
+  @AnalyticsDetails.query.hidden
+  WetGasOverridePct,
+  @AnalyticsDetails.query.axis: #COLUMNS
+  ActualVolume,
+  @AnalyticsDetails.query.hidden
+  HeatingValue,
+  @AnalyticsDetails.query.hidden
+  ActualEnergy,
+  @AnalyticsDetails.query.hidden
+  EntitledVolume,
+  @AnalyticsDetails.query.hidden
+  EntitledEnergy,
+  @AnalyticsDetails.query.hidden
+  AdjustedEntitledVol,
+  @AnalyticsDetails.query.hidden
+  AdjustedEntitledEngy,
+  // OriginTransaction,
+  CreatedByUser,
+  CreationDateTime
+
+};
+```

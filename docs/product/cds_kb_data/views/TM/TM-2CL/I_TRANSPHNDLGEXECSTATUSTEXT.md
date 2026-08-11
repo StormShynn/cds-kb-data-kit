@@ -5,15 +5,24 @@ app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPHNDLGEXECSTATUSTEXT')/$value
 semantic_en: "Transp Handling Execution Status - Text"
+semantic_vi: "I_TRANSPHNDLGEXECSTATUSTEXT — CDS view cơ bản dựa trên dd07t."
+keywords:
+  - "transphndlgexecstatustext"
+  - "transp"
+  - "stop"
+  - "hndlg"
+  - "exec"
+  - "status"
+  - "language"
+  - "desc"
 tags:
   - TM
   - component:TM-2CL
   - interface-view
   - TM-2CL
-  - metadata-only
 ---
 # I_TRANSPHNDLGEXECSTATUSTEXT
 
@@ -25,12 +34,68 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPHNDLGEXECSTATUSTEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPHNDLGEXECSTATUSTEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TranspOrdStopHndlgExecStatus` |  | |  |  | `CHAR(2)` | Handling Execution Status at Stop Level |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `TranspOrdStopHndlgExecStsDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `TranspOrdStopHndlgExecStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_s_hdl_exec_status preserving type)` | `CHAR(2)` | Handling Execution Status at Stop Level |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `TranspOrdStopHndlgExecStsDesc` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
+| `_TranspHndlgExecStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_TranspHndlgExecStatus` | `I_TranspHndlgExecStatus` | [0..1] |
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPHNDLGEXECSTATUSTEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPHNDLGEXECSTATUSTEXT')/$value)*
+
+```abap
+@EndUserText:   {label:              'Transp Handling Execution Status - Text'}
+@Analytics:     {dataExtraction:     {enabled: true},
+                 internalName:       #LOCAL}
+@ObjectModel:   {representativeKey:  'TranspOrdStopHndlgExecStatus',
+                 dataCategory:       #TEXT,
+                 usageType:          {serviceQuality: #A,
+                                      sizeCategory:   #S,
+                                      dataClass:      #CUSTOMIZING},
+                 modelingPattern:        #LANGUAGE_DEPENDENT_TEXT,
+                 supportedCapabilities:[ #LANGUAGE_DEPENDENT_TEXT,
+                                         #CDS_MODELING_DATA_SOURCE,
+                                         #CDS_MODELING_ASSOCIATION_TARGET,
+                                         #SQL_DATA_SOURCE,
+                                         #EXTRACTION_DATA_SOURCE,
+                                         #SEARCHABLE_ENTITY]}
+@Analytics.technicalName: 'ITRHDLEXECSTTEXT'
+@VDM:           {viewType:           #BASIC}
+@AccessControl: {authorizationCheck: #NOT_REQUIRED}
+@Metadata:      {ignorePropagatedAnnotations: true}
+
+define view entity I_TranspHndlgExecStatusText
+  as select from dd07t
+  association [0..1] to I_TranspHndlgExecStatus as _TranspHndlgExecStatus on $projection.TranspOrdStopHndlgExecStatus = _TranspHndlgExecStatus.TranspOrdStopHndlgExecStatus
+  association [0..1] to I_Language              as _Language              on $projection.Language = _Language.Language
+{
+      @ObjectModel.foreignKey.association: '_TranspHndlgExecStatus'
+  key cast(substring(domvalue_l, 1, 2) as /scmtms/tor_s_hdl_exec_status preserving type) as TranspOrdStopHndlgExecStatus,
+      @Semantics.language
+      @ObjectModel.foreignKey.association: '_Language'
+  key ddlanguage                                                                         as Language,
+      @Semantics.text
+      ddtext                                                                             as TranspOrdStopHndlgExecStsDesc,
+
+      /* Associations */
+      _TranspHndlgExecStatus,
+      _Language
+}
+where
+      domname  = '/SCMTMS/TOR_S_HDL_EXEC_STATUS'
+  and as4local = 'A';
+```

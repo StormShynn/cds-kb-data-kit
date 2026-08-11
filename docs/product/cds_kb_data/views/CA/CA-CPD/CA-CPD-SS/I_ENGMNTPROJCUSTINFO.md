@@ -5,9 +5,23 @@ app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJCUSTINFO')/$value
 semantic_en: "This CDS view provides about customers, that is relevant for managing projects."
+semantic_vi: "Billg Info for Engmnt Project Customer — CDS view cơ bản dựa trên I_Customer."
+keywords:
+  - "billg"
+  - "info"
+  - "for"
+  - "engmnt"
+  - "project"
+  - "customer"
+  - "name"
+  - "full"
+  - "created"
+  - "user"
+  - "creation"
+  - "date"
 tags:
   - CA
   - bo:businesspartner
@@ -18,7 +32,6 @@ tags:
   - interface-view
   - lob:cross_application components
   - project
-  - metadata-only
 ---
 # I_ENGMNTPROJCUSTINFO
 
@@ -30,13 +43,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJCUSTINFO')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJCUSTINFO')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `Customer` | ✓ | |  |  | `CHAR(10)` | Customer Number |
 | `CustomerName` |  | |  |  | `CHAR(80)` | Name of Customer |
 | `CustomerFullName` |  | |  |  | `CHAR(220)` | Customer Full Name |
 | `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person who Created the Object |
@@ -85,3 +98,117 @@ tags:
 | `Language` |  | |  |  | `LANG(1)` | Language Key |
 | `BPCustomerName` |  | |  |  | `CHAR(81)` | Customer Name |
 | `BPCustomerFullName` |  | |  |  | `CHAR(220)` | Customer Full Name |
+| `_CorrespondingSupplier` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_CustomerAccountGroupText` | | ✓ | | | | |
+| `_CustomerClassification` | | ✓ | | | | |
+| `_CustomerCompany` | | ✓ | | | | |
+| `_CustomerSalesArea` | | ✓ | | | | |
+| `_CustomerToBusinessPartner` | | ✓ | | | | |
+| `_StandardAddress` | | ✓ | | | | |
+| `_AddressRepresentation` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJCUSTINFO')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJCUSTINFO')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IENGPROJCUSTINFO'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.representativeKey: 'Customer'
+@AbapCatalog.compiler.compareFilter: true
+@Analytics: { dataCategory: #DIMENSION, dataExtraction.enabled: true }
+@VDM: {
+    viewType: #BASIC,
+    lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@AccessControl.authorizationCheck: #CHECK
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+@AccessControl.privilegedAssociations: [ '_StandardAddress', '_AddressRepresentation' ]
+@ObjectModel.usageType.serviceQuality: #B
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.dataClass: #MASTER
+@ObjectModel.sapObjectNodeType.name: 'CommercialProject'
+@EndUserText.label: 'Billg Info for Engmnt Project Customer'
+@Metadata.allowExtensions:true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel: {modelingPattern: #ANALYTICAL_DIMENSION, 
+               supportedCapabilities: [#ANALYTICAL_DIMENSION,
+                                       #CDS_MODELING_ASSOCIATION_TARGET,
+                                       #CDS_MODELING_DATA_SOURCE,
+                                       #SQL_DATA_SOURCE,
+                                       #EXTRACTION_DATA_SOURCE]
+}
+define view I_EngmntProjCustInfo
+  as select from I_Customer
+{
+
+      //I_Customer
+  key Customer,
+      CustomerName,
+      CustomerFullName,
+      CreatedByUser,
+      CreationDate,
+      AddressID,
+      CustomerClassification,
+      VATRegistration,
+      CustomerAccountGroup,
+      AuthorizationGroup,
+      DeliveryIsBlocked,
+      PostingIsBlocked,
+      BillingIsBlockedForCustomer,
+      OrderIsBlockedForCustomer,
+      InternationalLocationNumber1,
+      IsOneTimeAccount,
+      TaxJurisdiction,
+      Industry,
+      TaxNumberType,
+      TaxNumber1,
+      TaxNumber2,
+      TaxNumber3,
+      TaxNumber4,
+      TaxNumber5,
+      CustomerCorporateGroup,
+      Supplier,
+      NielsenRegion,
+      IndustryCode1,
+      IndustryCode2,
+      IndustryCode3,
+      IndustryCode4,
+      IndustryCode5,
+      Country,
+      OrganizationBPName1,
+      OrganizationBPName2,
+      CityName,
+      PostalCode,
+      StreetName,
+      AlternativePayerAccount,
+      DataMediumExchangeIndicator,
+      VATLiability,
+      @Semantics.booleanIndicator:true
+      IsBusinessPurposeCompleted,
+      ResponsibleType,
+      FiscalAddress,
+      @Semantics.booleanIndicator:true
+      NFPartnerIsNaturalPerson,
+      DeletionIndicator,
+      Language,
+      BPCustomerName,
+      BPCustomerFullName,
+      /* Associations */
+      //I_Customer
+      _CorrespondingSupplier,
+      _CreatedByUser,
+      _CustomerAccountGroupText,
+      _CustomerClassification,
+      _CustomerCompany,
+      _CustomerSalesArea,
+      _CustomerToBusinessPartner,
+      _StandardAddress,
+      _AddressRepresentation
+    
+}
+
+where
+  IsBusinessPurposeCompleted <> 'X'
+```

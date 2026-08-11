@@ -33,24 +33,24 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BankCountry` | ✓ | |  |  |  |  |
-| `BankInternalID` | ✓ | |  |  |  |  |
-| `ChangeDocument` | ✓ | |  |  |  |  |
-| `ChangeDocTableKey` | ✓ | |  |  |  |  |
-| `ChangeDocDatabaseTableField` | ✓ | |  |  |  |  |
-| `DatabaseTableFieldName` | ✓ | |  |  |  |  |
-| `ChangeDocItemChangeTypeText` | ✓ | |  |  |  |  |
-| `DatabaseTable` | ✓ | |  |  |  |  |
-| `ChangeDocTransactionCode` | ✓ | |  |  |  |  |
-| `ChangeDocItemChangeType` |  | |  |  |  |  |
-| `ChangeDocObjectClass` |  | |  |  |  |  |
-| `ChangeDocNewFieldValue` |  | |  |  |  |  |
-| `ChangeDocPreviousFieldValue` |  | |  |  |  |  |
-| `DatabaseFieldTechnicalName` |  | |  | `cast(ChangeDocDatabaseTableField as bf_bank_change_doc_tech_field preserving type )` |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreationTime` |  | |  |  |  |  |
-| `CreationDateTime` |  | |  | `cast(dats_tims_to_tstmp(CreationDate, CreationTime, abap_system_timezone($session.client, 'NULL'), $session.client, 'NULL') as timestamp preserving type )` |  |  |
+| `BankCountry` | ✓ | |  |  | `CHAR(3)` | Country/Region Key |
+| `BankInternalID` | ✓ | |  |  | `CHAR(15)` | Bank Keys |
+| `ChangeDocument` | ✓ | |  |  | `CHAR(10)` | Change Number of Document |
+| `ChangeDocTableKey` | ✓ | |  |  | `CHAR(70)` | Key of Modified Table Row |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  | `CHAR(30)` | Field Name |
+| `DatabaseTableFieldName` | ✓ | |  |  | `CHAR(40)` | Long Field Label |
+| `ChangeDocItemChangeTypeText` | ✓ | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `DatabaseTable` | ✓ | |  |  | `CHAR(30)` | Table Name |
+| `ChangeDocTransactionCode` | ✓ | |  |  | `CHAR(20)` | Transaction in which a change was made |
+| `ChangeDocItemChangeType` |  | |  |  | `CHAR(1)` | Change Document Type of Change |
+| `ChangeDocObjectClass` |  | |  |  | `CHAR(15)` | Bank Change Document Object Class |
+| `ChangeDocNewFieldValue` |  | |  |  | `CHAR(254)` | New contents of changed field |
+| `ChangeDocPreviousFieldValue` |  | |  |  | `CHAR(254)` | Old contents of changed field |
+| `DatabaseFieldTechnicalName` |  | |  | `cast(ChangeDocDatabaseTableField as bf_bank_change_doc_tech_field preserving type )` | `CHAR(30)` | Change Document technical field |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Changed By |
+| `CreationDate` |  | |  |  | `DATS(8)` | Changed On |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Changed At |
+| `CreationDateTime` |  | |  | `cast(dats_tims_to_tstmp(CreationDate, CreationTime, abap_system_timezone($session.client, 'NULL'), $session.client, 'NULL') as timestamp preserving type )` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
 
 ## Source Code
 

@@ -5,9 +5,21 @@ app_component: FIN-FSCM-CMM-RSK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYPNLFINVALUEQUERY')/$value
 semantic_en: "Derivative PnL Query"
+semantic_vi: "Derivative PnL Query — CDS view tiêu dùng dựa trên I_CmmdtyPnLFinValuesCube."
+keywords:
+  - "derivative"
+  - "pnl"
+  - "query"
+  - "company"
+  - "code"
+  - "commodity"
+  - "price"
+  - "exposure"
+  - "category"
+  - "version"
 tags:
   - FIN
   - bo:companycode
@@ -18,7 +30,6 @@ tags:
   - FIN-FSCM-CMM-RSK
   - lob:finance
   - lob:sourcing & procurement
-  - metadata-only
 ---
 # C_CMMDTYPNLFINVALUEQUERY
 
@@ -30,17 +41,17 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYPNLFINVALUEQUERY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYPNLFINVALUEQUERY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `CommodityPriceExposure` |  | |  |  | `CHAR(13)` | Commodity Price Exposure ID |
-| `CommodityExposureCategory` |  | |  |  | `CHAR(2)` | Exposure Category |
-| `CommodityPriceSubExposure` |  | |  |  | `CHAR(40)` | Hash key |
-| `CommodityPriceExposureVersion` |  | |  |  | `NUMC(10)` | Version of a Commodity Price Exposure |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `CommodityPriceExposure` | ✓ | |  |  | `CHAR(13)` | Commodity Price Exposure ID |
+| `CommodityExposureCategory` | ✓ | |  |  | `CHAR(2)` | Exposure Category |
+| `CommodityPriceSubExposure` | ✓ | |  |  | `CHAR(40)` | Hash key |
+| `CommodityPriceExposureVersion` | ✓ | |  |  | `NUMC(10)` | Version of a Commodity Price Exposure |
 | `ValidityStartDateTime` |  | |  |  | `DEC(15)` | Valid-From Timestamp of Commodity Derivative |
 | `ValidityEndDateTime` |  | |  |  | `DEC(15)` | Valid-To Timestamp of Commodity Derivative |
 | `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date of Exposure |
@@ -94,3 +105,156 @@ tags:
 | `PnLRelevantTermQuantity` |  | |  |  | `QUAN(17)` | PnLRelevantTermQty |
 | `Currency` |  | |  |  | `CUKY(5)` | Statistics Currency in Evaluation |
 | `CommodityPriceExposureUnit` |  | |  |  | `UNIT(3)` | Unit of Measure for the Commodity |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYPNLFINVALUEQUERY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYPNLFINVALUEQUERY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CDRVTVPNLQRY'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.dataClass: #TRANSACTIONAL
+@VDM.viewType: #CONSUMPTION
+@Analytics.query: true
+@AbapCatalog.preserveKey: true
+
+@EndUserText.label: 'Derivative PnL Query'
+
+define view C_CmmdtyPnLFinValueQuery
+  with parameters
+    @Environment.systemField: #SYSTEM_DATE
+    P_EvaluationDate         : cds_evaluation_date,
+    @Environment.systemField: #SYSTEM_DATE
+    P_EndOfDaySnapshotToDate : cds_evaluation_date_comp,
+    @Consumption.defaultValue: 'P'
+    P_DisplayView            : cds_view_uom,
+    @Consumption.defaultValue: 'S'
+    P_DisplayCurrency        : cds_view_currency
+
+  as select from I_CmmdtyPnLFinValuesCube(
+                             P_EvaluationDate         : $parameters.P_EvaluationDate,
+                             P_EndOfDaySnapshotToDate : $parameters.P_EndOfDaySnapshotToDate,
+                             P_DisplayView            : $parameters.P_DisplayView,
+                             P_DisplayCurrency        : $parameters.P_DisplayCurrency)
+{
+      @AnalyticsDetails.query.axis: #ROWS
+      @Consumption.filter.multipleSelections: true
+      @AnalyticsDetails.query.variableSequence:  1
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key CompanyCode,
+
+      @AnalyticsDetails.query.axis: #ROWS
+      @Consumption.filter.multipleSelections: true
+      @AnalyticsDetails.query.variableSequence:  3
+  key CommodityPriceExposure,
+  key CommodityExposureCategory,
+  key CommodityPriceSubExposure,
+  key CommodityPriceExposureVersion,
+
+      ValidityStartDateTime,
+      ValidityEndDateTime,
+      @AnalyticsDetails.query.axis: #ROWS
+      @AnalyticsDetails.query.sortDirection: #ASC
+      @AnalyticsDetails.query.variableSequence:  4
+      ValidityStartDate,
+      @AnalyticsDetails.query.axis: #ROWS
+      @AnalyticsDetails.query.sortDirection: #ASC
+      @AnalyticsDetails.query.variableSequence:  5
+      ValidityStartTime,
+      ValidityEndDate,
+      ValidityEndTime,
+      MaximumVersion,
+      RiskAnalyzerVersionUUID,
+      ExposureDueDate,
+      ReportingDate,
+
+      @AnalyticsDetails.query.axis: #ROWS
+      @Consumption.filter.multipleSelections: true
+      @AnalyticsDetails.query.variableSequence:  2
+      @AnalyticsDetails.query.display: #TEXT
+      Commodity,
+      CashFlowDirection,
+      TreasuryPositionLongShortCode,
+      DerivativeContrSpecification,
+      MarketIdentifierCode,
+      TimeToMaturity,
+      CmmdtyForwardIndexTiming,
+      MaturityKeyDate,
+      DerivativeContractMaturityCode,
+      FinancialInstrProductCategory,
+      FinancialAssetsMgmtProductType,
+      FinInstrTransactionCategory,
+      FinancialInstrumentProductType,
+      FinancialInstrActivityCategory,
+      FinancialObject,
+      @AnalyticsDetails.query.axis: #ROWS
+      @AnalyticsDetails.query.variableSequence:  6
+      @AnalyticsDetails.query.display: #TEXT
+      PnLEventCategory,
+      @AnalyticsDetails.query.axis: #ROWS
+      @AnalyticsDetails.query.variableSequence:  7
+      @AnalyticsDetails.query.display: #TEXT
+      PnLEventType,
+      TermStartDate,
+      TermEndDate,
+      DeliveryDate,
+      NumberOfCommodityContracts,
+      TreasuryPositionAccount,
+      DerivativeContract,
+      OptionStrikePrice,
+      OptionStrikeCurrency,
+      OptionPutCallCode,
+      OptionExerciseType,
+      EvaluationDate,
+      FinInstrExternalReference,
+      DisplayView,
+      DisplayCurrency,
+      ExternalKeyFigureValue,
+      HasError,
+      @AnalyticsDetails.query.axis: #ROWS
+      @AnalyticsDetails.query.variableSequence: 8
+      HasErrorDescription,
+
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @DefaultAggregation:  #SUM
+      @Semantics.amount.currencyCode: 'Currency'
+      PnLValue,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @DefaultAggregation:  #SUM
+      @Semantics.amount.currencyCode: 'Currency'
+      PnLCalculationRelevantValue,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @DefaultAggregation:  #SUM
+      @Semantics.quantity.unitOfMeasure: 'CommodityPriceExposureUnit'
+      PnLCalculationRelevantQuantity,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @DefaultAggregation:  #SUM
+      @Semantics.amount.currencyCode: 'Currency'
+      PnLRelevantComparativeTermVal,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @DefaultAggregation:  #SUM
+      @Semantics.quantity.unitOfMeasure: 'CommodityPriceExposureUnit'
+      PnLRelevantComparativeTermQty,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @DefaultAggregation:  #SUM
+      @Semantics.amount.currencyCode: 'Currency'
+      PnLRelevantTermValue,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @DefaultAggregation:  #SUM
+      @Semantics.quantity.unitOfMeasure: 'CommodityPriceExposureUnit'
+      PnLRelevantTermQuantity,
+
+      @Semantics.currencyCode: true
+      Currency,
+
+      @Semantics.unitOfMeasure: true
+      CommodityPriceExposureUnit
+      
+      
+
+}
+```

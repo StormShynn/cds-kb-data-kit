@@ -30,10 +30,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `ProdAllocChkPeriodCnsmpnType` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodallocchkperiodcnsmpntype preserving type )` |  |  |
-| `ProdAllocChkPerdCnsmpnTypeDesc` |  | |  | `cast( ddtext as prodallocchkperdcnsmpntypedesc preserving type )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `ProdAllocChkPeriodCnsmpnType` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodallocchkperiodcnsmpntype preserving type )` | `CHAR(2)` | Product Allocation Check Period Consumption Type |
+| `ProdAllocChkPerdCnsmpnTypeDesc` |  | |  | `cast( ddtext as prodallocchkperdcnsmpntypedesc preserving type )` | `CHAR(60)` | Product Allocation Check Period Consumption Type Description |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Language` | | ✓ | | | | |
 | `_ProdAllocChkPerdCnsmpnType` | | ✓ | | | | |
 

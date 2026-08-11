@@ -5,9 +5,19 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXCOREJECTIONREASONT')/$value
 semantic_en: "PRA Tax Colorado Rejection Reason - Text"
+semantic_vi: "PRA Tax Colorado Rejection Reason - Text — CDS view giao diện dựa trên PRA Tax Colorado Rejection Reason - Text."
+keywords:
+  - "pra"
+  - "tax"
+  - "colorado"
+  - "rejection"
+  - "reason"
+  - "text"
+  - "language"
+  - "name"
 tags:
   - IS
   - bo:salesorder
@@ -15,7 +25,6 @@ tags:
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # I_PRATAXCOREJECTIONREASONT
 
@@ -27,12 +36,44 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXCOREJECTIONREASONT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXCOREJECTIONREASONT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RejectionReason` |  | |  |  | `CHAR(2)` | Tax 2.0 CO - Reject Code |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `RejectionReasonName` |  | |  |  | `CHAR(50)` | ONRR Rejection Reason Name |
+| `RejectionReason` | ✓ | |  | `rej_cd` | `CHAR(2)` | Tax 2.0 CO - Reject Code |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `RejectionReasonName` |  | |  | `cast (rej_cd_desc as oiu_vdm_rej_reason_name)` | `CHAR(50)` | ONRR Rejection Reason Name |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXCOREJECTIONREASONT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXCOREJECTIONREASONT')/$value)*
+
+```abap
+@EndUserText.label: 'PRA Tax Colorado Rejection Reason - Text'
+@ObjectModel.dataCategory: #TEXT
+@Analytics.dataExtraction.enabled: true
+@VDM.viewType: #BASIC
+@AbapCatalog.sqlViewName: 'IPVTAXCOREJRSNT'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Metadata.ignorePropagatedAnnotations:true
+@ObjectModel.representativeKey: 'RejectionReason'
+@ObjectModel.supportedCapabilities: [#LANGUAGE_DEPENDENT_TEXT, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ]
+@ObjectModel.modelingPattern: #LANGUAGE_DEPENDENT_TEXT
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #M
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+
+define view I_PRATaxCORejectionReasonT
+  as select from /pra/c_ta_irejt
+{
+  key rej_cd                                                                                   as RejectionReason,
+      @Semantics.language
+  key spras                                                                                    as Language,
+      @Semantics.text
+      cast (rej_cd_desc as oiu_vdm_rej_reason_name)                                            as RejectionReasonName
+}
+```

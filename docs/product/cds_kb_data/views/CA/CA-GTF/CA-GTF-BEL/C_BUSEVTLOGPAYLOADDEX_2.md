@@ -5,9 +5,22 @@ app_component: CA-GTF-BEL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSEVTLOGPAYLOADDEX_2')/$value
 semantic_en: "This CDS view provides a subset of event payload details. This CDS view provides the answer to these business questions: What are the event qualifiers? What are the field changes? The CDS view supports #EXTRACTION_DATA_SOURCE."
+semantic_vi: "Business Event Property Changes (v2) — CDS view tiêu dùng (transactional data) dựa trên I_BusEvtLogPayload."
+keywords:
+  - "business"
+  - "event"
+  - "property"
+  - "changes"
+  - "(v2)"
+  - "object"
+  - "type"
+  - "field"
+  - "name"
+  - "value"
+  - "unit"
 tags:
   - CA
   - bo:companycode
@@ -16,7 +29,6 @@ tags:
   - component:CA-GTF-BEL
   - consumption-view
   - lob:cross_application components
-  - metadata-only
 ---
 # C_BUSEVTLOGPAYLOADDEX_2
 
@@ -28,15 +40,15 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSEVTLOGPAYLOADDEX_2')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSEVTLOGPAYLOADDEX_2')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessEventUUID` |  | |  |  | `CHAR(32)` | Event GUID |
-| `SAPObjectType` |  | |  |  | `CHAR(30)` | RAP SOT: SAP Object Type |
-| `BusEvtLogFieldName` |  | |  |  | `CHAR(30)` | Field Identifier for SAP Object |
+| `BusinessEventUUID` | ✓ | |  |  | `CHAR(32)` | Event GUID |
+| `SAPObjectType` | ✓ | |  |  | `CHAR(30)` | RAP SOT: SAP Object Type |
+| `BusEvtLogFieldName` | ✓ | |  |  | `CHAR(30)` | Field Identifier for SAP Object |
 | `BusEvtLogOldFieldValue` |  | |  |  | `CHAR(256)` | Previous Value of an Attribute |
 | `BusEvtLogOldFieldUnit` |  | |  |  | `UNIT(3)` | Previous Unit of Measure |
 | `BusEvtLogNewFieldValue` |  | |  |  | `CHAR(256)` | Updated Value of an Attribute |
@@ -50,4 +62,62 @@ tags:
 | `BuEvLgGlobalFieldNameUpperCase` |  | |  |  | `CHAR(30)` | Property Name of the Object |
 | `ChangeDocumentDatabaseTable` |  | |  |  | `CHAR(30)` | Table Name |
 | `ChangeDocDatabaseTableField` |  | |  |  | `CHAR(30)` | Field Name |
+| `BusEvtLogPayloadFieldPath` |  | |  |  |  |  |
 | `BusEvtLogBusinessActivity` |  | |  |  | `CHAR(32)` | Activity ID |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSEVTLOGPAYLOADDEX_2')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSEVTLOGPAYLOADDEX_2')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CBELPAYLD2'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@VDM.viewType: #CONSUMPTION
+@Metadata.ignorePropagatedAnnotations:true
+@Analytics.dataCategory: #FACT
+@Analytics:{
+    dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture: {
+        automatic: true
+        }
+    }
+}
+@ObjectModel:{
+   sapObjectNodeType:{name: 'BusEvtLogEventPayload'},
+   usageType: {
+     dataClass:      #TRANSACTIONAL,
+     serviceQuality: #A,
+     sizeCategory:   #XXL
+   },
+
+   supportedCapabilities: [#EXTRACTION_DATA_SOURCE]
+}
+@ObjectModel.modelingPattern: #NONE
+@EndUserText.label: 'Business Event Property Changes (v2)'
+
+define view C_BusEvtLogPayloadDEX_2 as select from I_BusEvtLogPayload {
+  key BusinessEventUUID,
+  key SAPObjectType,
+  key BusEvtLogFieldName,
+      BusEvtLogOldFieldValue,
+      BusEvtLogOldFieldUnit,
+      BusEvtLogNewFieldValue,
+      BusEvtLogNewFieldUnit,
+      BusEvtLogOldFieldCurrency,
+      BusEvtLogNewFieldCurrency,
+      BusEvtLogFieldHasOldValue,
+      BusEvtLogFieldIsQualifier,
+      BusEvtLogLastChangedDateTime,
+      BusEvtLogGlobalFieldName,
+      BuEvLgGlobalFieldNameUpperCase,
+      ChangeDocumentDatabaseTable,
+      ChangeDocDatabaseTableField,
+      BusEvtLogPayloadFieldPath,
+      BusEvtLogBusinessActivity
+ 
+}
+```

@@ -5,9 +5,20 @@ app_component: CA-GTF-RM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RESPYMGMTTEAMMEMBERAPI')/$value
 semantic_en: "This CDS view is used to get information about team members. A team member is a business user (business partner associated with an SAP user). This CDS view provides the data to answer the following business questions: Who are the members of a team? Which teams does a member belong to? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Team Members Details — CDS view giao diện dựa trên R_RespyMgmtTeamMemberAPI."
+keywords:
+  - "team"
+  - "members"
+  - "details"
+  - "respy"
+  - "mgmt"
+  - "global"
+  - "responsibility"
+  - "member"
+  - "type"
 tags:
   - CA
   - bo:companycode
@@ -16,7 +27,6 @@ tags:
   - component:CA-GTF-RM
   - interface-view
   - lob:cross_application components
-  - metadata-only
 ---
 # I_RESPYMGMTTEAMMEMBERAPI
 
@@ -28,12 +38,61 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RESPYMGMTTEAMMEMBERAPI')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RESPYMGMTTEAMMEMBERAPI')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RespyMgmtGlobalTeamID` |  | |  |  | `CHAR(40)` | Global Team ID in Responsibility Mgmt. |
-| `ResponsibilityTeamMember` |  | |  |  | `CHAR(10)` | Business Partner Number |
-| `RespyMgmtTeamMemberType` |  | |  |  | `CHAR(2)` | Team Member Type |
+| `RespyMgmtGlobalTeamID` | ✓ | |  |  | `CHAR(40)` | Global Team ID in Responsibility Mgmt. |
+| `ResponsibilityTeamMember` | ✓ | |  | `cast(RespyMgmtTeamMemberID as bu_partner)` | `CHAR(10)` | Business Partner Number |
+| `RespyMgmtTeamMemberType` | ✓ | |  |  | `CHAR(2)` | Team Member Type |
+| `_TeamHeader` | | ✓ | | | | |
+| `_TeamMemberFunction` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_TeamHeader` | `I_RespyMgmtTeamHeaderAPI` | [0..1] |
+| `_TeamMemberFunction` | `I_RespyMgmtTeamMemberFuncAPI` | [1..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RESPYMGMTTEAMMEMBERAPI')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RESPYMGMTTEAMMEMBERAPI')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IRSMTEAMMBRAPI'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+
+@AccessControl.authorizationCheck: #MANDATORY
+@AccessControl.personalData.blocking: #REQUIRED
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@VDM.viewType: #COMPOSITE
+@ClientHandling.algorithm: #SESSION_VARIABLE
+
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.supportedCapabilities:[ #CDS_MODELING_DATA_SOURCE , 
+                                     #CDS_MODELING_ASSOCIATION_TARGET,
+                                     #SQL_DATA_SOURCE ]
+@ObjectModel.modelingPattern:#NONE  
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.dataClass: #MASTER
+@EndUserText.label: 'Team Members Details'
+define view I_RespyMgmtTeamMemberAPI
+  as select from R_RespyMgmtTeamMemberAPI  
+  association to I_RespyMgmtTeamHeaderAPI     as _TeamHeader         on  $projection.RespyMgmtGlobalTeamID    = _TeamHeader.RespyMgmtGlobalTeamID
+  association [1..*] to I_RespyMgmtTeamMemberFuncAPI as _TeamMemberFunction on  $projection.RespyMgmtGlobalTeamID    = _TeamMemberFunction.RespyMgmtGlobalTeamID
+                                                                       and $projection.ResponsibilityTeamMember = _TeamMemberFunction.ResponsibilityTeamMember
+                                                                       and $projection.RespyMgmtTeamMemberType = _TeamMemberFunction.RespyMgmtTeamMemberType
+                                                                       
+{
+  key RespyMgmtGlobalTeamID, 
+  key cast(RespyMgmtTeamMemberID as bu_partner) as ResponsibilityTeamMember,
+  key RespyMgmtTeamMemberType,
+      _TeamHeader,
+      _TeamMemberFunction
+}
+```

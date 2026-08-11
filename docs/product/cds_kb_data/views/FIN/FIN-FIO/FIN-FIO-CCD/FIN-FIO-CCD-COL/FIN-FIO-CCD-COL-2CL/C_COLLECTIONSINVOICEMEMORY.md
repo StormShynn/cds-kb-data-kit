@@ -5,9 +5,20 @@ app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLECTIONSINVOICEMEMORY')/$value
 semantic_en: "This CDS view provides invoice data in SAP Collections Management, focusing on transactional and financial details related to accounting documents. It serves as a consumption view for end-users, enabling them to access and analyze collections-related information efficiently. This CDS view provides the data to answer the following business questions: What are the details of accounting documents and their associated items for a specific company code and fiscal year? How much is the open amount, paid amount, and credited amount in transaction currency for each invoice? What are the key dates related to billing, posting, payment, and dunning for each invoice? How many days is an invoice overdue, and what is the last dunning duration in days? What are the financial account types, posting keys, and special G/L codes associated with each invoice? What are the reasons for dunning blocks and what is the current dunning level for each invoice? What are the details of any dispute cases related to invoices, including disputed amounts and case status? What are the details and status of any promises to pay, including promised amounts and due dates? What are the resubmission details for invoices, including UUID, due dates, and reasons for resubmission? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "C_COLLECTIONSINVOICEMEMORY — CDS view tiêu dùng dựa trên P_CollectionsInvoiceMemory."
+keywords:
+  - "collectionsinvoicememory"
+  - "company"
+  - "code"
+  - "accounting"
+  - "document"
+  - "fiscal"
+  - "year"
+  - "item"
+  - "customer"
 tags:
   - FIN
   - account
@@ -25,7 +36,6 @@ tags:
   - lob:finance
   - payment
   - transaction
-  - metadata-only
 ---
 # C_COLLECTIONSINVOICEMEMORY
 
@@ -37,16 +47,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLECTIONSINVOICEMEMORY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLECTIONSINVOICEMEMORY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Document Number of an Accounting Document |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocumentItem` |  | |  |  | `NUMC(3)` | Number of Line Item Within Accounting Document |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Document Number of an Accounting Document |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocumentItem` | ✓ | |  |  | `NUMC(3)` | Number of Line Item Within Accounting Document |
 | `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
 | `BillingDocument` |  | |  |  | `CHAR(10)` | Billing Document |
 | `PostingDate` |  | |  |  | `DATS(8)` | Posting Date in the Document |
@@ -63,7 +73,7 @@ tags:
 | `ArrangedAmount` |  | |  |  | `CURR(13)` | Amount Arranged for Payment |
 | `CashDiscountAmtInTransacCrcy` |  | |  |  | `CURR(13)` | Cash Discount Amount in Document Currency |
 | `BranchAccount` |  | |  |  | `CHAR(10)` | Customer Number |
-| `ObjectKey` |  | |  |  | `CHAR(21)` | Invoice Key |
+| `ObjectKey` |  | |  | `cast( ObjectKey as fdm_invoice_key )` | `CHAR(21)` | Invoice Key |
 | `OverdueDays` |  | |  |  | `INT4(10)` |  |
 | `ReferenceDocumentLogicalSystem` |  | |  |  | `CHAR(10)` | Logical System of Reference Document |
 | `LastDunningDurationInDays` |  | |  |  | `INT4(10)` |  |
@@ -92,3 +102,124 @@ tags:
 | `ResubmissionUUID` |  | |  |  | `CHAR(32)` | UUID in Character Format |
 | `ResubmissionDueDate` |  | |  |  | `DATS(8)` | Resubmission Date |
 | `ResubmissionReason` |  | |  |  | `CHAR(4)` | Reason for Resubmission |
+| `_OperationalAcctgDocItem` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_AccountingDocument` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLECTIONSINVOICEMEMORY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLECTIONSINVOICEMEMORY')/$value)*
+
+```abap
+@Metadata: { allowExtensions: true,
+             ignorePropagatedAnnotations: true }
+@VDM: { viewType: #CONSUMPTION }
+@AccessControl: { personalData:           { blocking: #BLOCKED_DATA_EXCLUDED },
+                  authorizationCheck:     #CHECK }
+@ObjectModel: { usageType: { serviceQuality: #X,
+                             sizeCategory:   #L,
+                             dataClass:      #MIXED },
+                representativeKey: 'AccountingDocumentItem',
+                semanticKey: [ 'Customer',
+                               'BranchAccount',
+                               'CompanyCode',
+                               'FiscalYear', 
+                               'AccountingDocument',
+                               'AccountingDocumentItem' ],
+                supportedCapabilities: [ #CDS_MODELING_DATA_SOURCE,
+                                         #CDS_MODELING_ASSOCIATION_TARGET ],
+                modelingPattern: #TRANSACTIONAL_ENTITY }
+@EndUserText: { label: 'Collections Invoice Memory' }
+
+define root view entity C_CollectionsInvoiceMemory
+  as select from P_CollectionsInvoiceMemory
+{
+
+      // VDM Fields
+      @ObjectModel: { foreignKey: { association: '_CompanyCode' } }
+  key CompanyCode,
+
+      @ObjectModel: { foreignKey: { association: '_AccountingDocument' } }
+  key AccountingDocument,
+
+      @ObjectModel: { foreignKey: { association: '_FiscalYear' } }
+  key FiscalYear,
+
+      @ObjectModel: { foreignKey: { association: '_OperationalAcctgDocItem' } }
+  key AccountingDocumentItem,
+      Customer,
+      BillingDocument,
+      PostingDate,
+      NetDueDate,
+      CashDiscount1DueDate,
+      PaymentDate,
+      LastDunningDate,
+      TransactionCurrency,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      AmountInTransactionCurrency,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      PaidAmount,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      OpenAmountInDocumentCurrency,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      CreditedAmount,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      DunnedAmount,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      ArrangedAmount,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      CashDiscountAmtInTransacCrcy,
+
+      BranchAccount,
+      cast( ObjectKey as fdm_invoice_key ) as ObjectKey,
+      OverdueDays,
+      ReferenceDocumentLogicalSystem,
+      LastDunningDurationInDays,
+      FinancialAccountType,
+      PostingKey,
+      SpecialGLCode,
+      DunningBlockingReason,
+      DocumentItemText,
+      DunningLevel,
+      FiscalPeriod,
+      DocumentDate,
+      OperationalGLAccount,
+      PaymentMethod,
+      Country,
+      Reference1InDocumentHeader,
+      Reference2InDocumentHeader, 
+      DisputeCase,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      DisputedAmount,
+
+      CaseReason,
+      CaseStatus,
+      PromiseToPay,
+
+      @Semantics: { amount: { currencyCode: 'TransactionCurrency' } }
+      PromisedAmount,
+
+      PromiseToPayDueDate,
+      PromiseToPayLevel,
+      PromiseToPayStatus,
+      ResubmissionUUID,
+      ResubmissionDueDate,
+      ResubmissionReason,
+
+      // Exposed Associations
+      _OperationalAcctgDocItem,
+      _FiscalYear,
+      _CompanyCode,
+      _AccountingDocument
+
+}
+```

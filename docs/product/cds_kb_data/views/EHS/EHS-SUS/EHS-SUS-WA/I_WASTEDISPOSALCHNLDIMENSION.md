@@ -5,9 +5,23 @@ app_component: EHS-SUS-WA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WASTEDISPOSALCHNLDIMENSION')/$value
 semantic_en: "Waste Analytics Disposal Channel Dimn"
+semantic_vi: "Waste Analytics Disposal Channel Dimn — CDS view giao diện dựa trên Waste Analytics Disposal Channel Dimn."
+keywords:
+  - "waste"
+  - "analytics"
+  - "disposal"
+  - "channel"
+  - "dimn"
+  - "number"
+  - "envrmt"
+  - "gnrtr"
+  - "country"
+  - "location"
+  - "type"
+  - "status"
 tags:
   - EHS
   - bo:purchaseorder
@@ -15,7 +29,6 @@ tags:
   - EHS-SUS
   - EHS-SUS-WA
   - interface-view
-  - metadata-only
 ---
 # I_WASTEDISPOSALCHNLDIMENSION
 
@@ -27,19 +40,64 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WASTEDISPOSALCHNLDIMENSION')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WASTEDISPOSALCHNLDIMENSION')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WasteDisposalChannelNumber` |  | |  |  | `CHAR(20)` | Disposal Channel Number |
+| `WasteDisposalChannelNumber` | ✓ | |  |  | `CHAR(20)` | Disposal Channel Number |
 | `EnvrmtWasteGnrtrUUID` |  | |  |  | `RAW(16)` | Waste Generator UUID |
-| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
-| `EHSLocationType` |  | |  |  | `CHAR(21)` | Location Type |
-| `EHSLocationStatus` |  | |  |  | `CHAR(2)` | Location Status |
-| `EHSLocationAuthorizationGroup` |  | |  |  | `CHAR(21)` | Location Authorization Group |
-| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
-| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `Country` |  | | `_WasteLocation` | `Country` | `CHAR(3)` | Country/Region |
+| `EHSLocationType` |  | | `_WasteLocation` | `EHSLocationType` | `CHAR(21)` | Location Type |
+| `EHSLocationStatus` |  | | `_WasteLocation` | `EHSLocationStatus` | `CHAR(2)` | Location Status |
+| `EHSLocationAuthorizationGroup` |  | | `_WasteLocation` | `EHSLocationAuthorizationGroup` | `CHAR(21)` | Location Authorization Group |
+| `Plant` |  | | `_WasteLocation` | `Plant` | `CHAR(4)` | Plant ID |
+| `CostCenter` |  | | `_WasteLocation` | `CostCenter` | `CHAR(10)` | Cost Center |
+| `CompanyCode` |  | | `_WasteLocation` | `CompanyCode` | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | | `_WasteLocation` | `BusinessArea` | `CHAR(4)` | Business Area |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WASTEDISPOSALCHNLDIMENSION')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WASTEDISPOSALCHNLDIMENSION')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IWANALYTDCHD'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #MANDATORY
+@Analytics.dataCategory: #DIMENSION
+@Analytics.internalName:#LOCAL
+@AbapCatalog.preserveKey: true
+
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.sizeCategory: #L
+@Metadata.allowExtensions:true
+@ObjectModel.representativeKey: 'WasteDisposalChannelNumber'
+
+@VDM.viewType: #COMPOSITE
+@ClientHandling.algorithm: #SESSION_VARIABLE
+
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.supportedCapabilities:[#ANALYTICAL_DIMENSION,#CDS_MODELING_ASSOCIATION_TARGET]
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+
+@EndUserText.label: 'Waste Analytics Disposal Channel Dimn'
+define view I_WasteDisposalChnlDimension
+  as select distinct from I_WasteDisposalChnlGrouped
+{
+  key WasteDisposalChannelNumber,
+
+      EnvrmtWasteGnrtrUUID,
+
+      _WasteLocation.Country,
+      _WasteLocation.EHSLocationType,
+      _WasteLocation.EHSLocationStatus,
+      _WasteLocation.EHSLocationAuthorizationGroup,
+      _WasteLocation.Plant,      
+      _WasteLocation.CostCenter,      
+      _WasteLocation.CompanyCode,      
+      _WasteLocation.BusinessArea 
+
+}
+```

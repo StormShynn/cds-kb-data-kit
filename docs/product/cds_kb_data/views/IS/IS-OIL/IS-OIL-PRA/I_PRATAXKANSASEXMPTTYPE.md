@@ -5,9 +5,18 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXKANSASEXMPTTYPE')/$value
 semantic_en: "Tax Reporting Kansas Exemption Type"
+semantic_vi: "Tax Reporting Kansas Exemption Type — CDS view giao diện dựa trên dd07l."
+keywords:
+  - "tax"
+  - "reporting"
+  - "kansas"
+  - "exemption"
+  - "type"
+  - "exempt"
+  - "code"
 tags:
   - IS
   - bo:purchaseorder
@@ -15,7 +24,6 @@ tags:
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # I_PRATAXKANSASEXMPTTYPE
 
@@ -27,10 +35,52 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXKANSASEXMPTTYPE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXKANSASEXMPTTYPE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TaxExemptCode` |  | |  |  | `CHAR(1)` | Tax Reporting - Kansas Exemption |
+| `TaxExemptCode` | ✓ | |  | `cast (domvalue_l as /pra/ks_exm_flag )` | `CHAR(1)` | Tax Reporting - Kansas Exemption |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_PRATaxKSExmptTypeText` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXKANSASEXMPTTYPE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXKANSASEXMPTTYPE')/$value)*
+
+```abap
+@EndUserText.label: 'Tax Reporting Kansas Exemption Type'
+@Analytics.dataCategory: #DIMENSION
+@Analytics.dataExtraction.enabled: true
+@VDM.viewType: #BASIC
+@AbapCatalog.sqlViewName: 'IPVKSEXMPTTYPE'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Metadata.ignorePropagatedAnnotations:true 
+@ObjectModel.representativeKey: 'TaxExemptCode'
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET]
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.dataClass: #META
+@ObjectModel.sapObjectNodeType.name: 'PRAKansasTaxExemptionType'
+
+define view I_PRATaxKansasExmptType
+  as select from dd07l
+  association [0..*] to I_PRATaxKSExmptTypeText as _Text on $projection.TaxExemptCode = _Text.TaxExemptCode
+{
+      @ObjectModel.text.association: '_Text'
+  key cast (domvalue_l as /pra/ks_exm_flag ) as TaxExemptCode,
+      _Text
+}
+where
+      domname  = '/PRA/KS_EXM_FLAG'
+  and as4local = 'A';
+```

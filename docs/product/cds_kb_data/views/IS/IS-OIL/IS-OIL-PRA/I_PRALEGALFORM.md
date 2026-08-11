@@ -5,16 +5,20 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRALEGALFORM')/$value
 semantic_en: "PRA Legal Form"
+semantic_vi: "PRA Legal Form — CDS view giao diện dựa trên dd07l."
+keywords:
+  - "pra"
+  - "legal"
+  - "form"
 tags:
   - IS
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # I_PRALEGALFORM
 
@@ -26,10 +30,52 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRALEGALFORM')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRALEGALFORM')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PRALegalForm` |  | |  |  | `CHAR(2)` | Entity Code |
+| `PRALegalForm` | ✓ | |  | `cast (domvalue_l as oiu_enty_cd )` | `CHAR(2)` | Entity Code |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_PRALegalFormText` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRALEGALFORM')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRALEGALFORM')/$value)*
+
+```abap
+@EndUserText.label: 'PRA Legal Form'
+@Analytics.dataCategory: #DIMENSION
+@Analytics.dataExtraction.enabled: true
+@VDM.viewType: #BASIC
+@AbapCatalog.sqlViewName: 'IPVLEGALFORM'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Metadata.ignorePropagatedAnnotations:true 
+@ObjectModel.representativeKey: 'PRALegalForm'
+
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION , #SQL_DATA_SOURCE , #CDS_MODELING_DATA_SOURCE , #CDS_MODELING_ASSOCIATION_TARGET ]
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.dataClass: #META
+@ObjectModel.sapObjectNodeType.name: 'PRALegalForm'
+define view I_PRALegalForm
+  as select from dd07l
+  association [0..*] to I_PRALegalFormText as _Text on $projection.PRALegalForm = _Text.PRALegalForm
+{
+      @ObjectModel.text.association: '_Text'
+  key cast (domvalue_l as oiu_enty_cd ) as PRALegalForm,
+      _Text
+}
+where
+      domname  = 'OIU_ENTITY_CD'
+  and as4local = 'A';
+```

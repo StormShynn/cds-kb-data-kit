@@ -5,9 +5,21 @@ app_component: PSM-FM-BU-AC
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECCTRLOBJWBSELEMENT')/$value
 semantic_en: "Public Sector Control Object for a WBS Element"
+semantic_vi: "Public Sector Control Object for a WBS Element — CDS view giao diện dựa trên Public Sector Control Object for a WBS Element."
+keywords:
+  - "public"
+  - "sector"
+  - "control"
+  - "object"
+  - "for"
+  - "wbs"
+  - "element"
+  - "hierarchy"
+  - "ctrl"
+  - "name"
 tags:
   - PSM
   - bo:project
@@ -16,7 +28,6 @@ tags:
   - PSM-FM
   - PSM-FM-BU
   - PSM-FM-BU-AC
-  - metadata-only
 ---
 # I_PUBSECCTRLOBJWBSELEMENT
 
@@ -28,12 +39,63 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECCTRLOBJWBSELEMENT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECCTRLOBJWBSELEMENT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `HierarchyIDForWBSElement` |  | |  |  | `CHAR(42)` | Hierarchy ID for WBS Element |
-| `CtrlObjForWBSElement` |  | |  |  | `CHAR(50)` | Control Object for a WBS Element |
-| `CtrlObjNameForWBSElement` |  | |  |  | `CHAR(50)` | Name of a Control Object for a WBS Element |
+| `HierarchyIDForWBSElement` | ✓ | |  |  | `CHAR(42)` | Hierarchy ID for WBS Element |
+| `CtrlObjForWBSElement` | ✓ | |  |  | `CHAR(50)` | Control Object for a WBS Element |
+| `CtrlObjNameForWBSElement` |  | |  | `cast( case when Map.ParentWBSElementExternalID is not initial then _WBSElement.WBSDescription else _WBSElementHierarchyNodeText[1:Language = $session.system_language].HierarchyNodeText end as psm_s4c_fm_avc_ctrl_obj_wb_na )` | `CHAR(50)` | Name of a Control Object for a WBS Element |
+| `_HierarchyDirectory` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_HierarchyDirectory` | `I_PubSecHierarchy` | [0..1] |
+| `_WBSElement` | `I_WBSElementByExternalID` | [0..1] |
+| `_WBSElementHierarchyNodeText` | `I_WBSElementHierarchyNodeText` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECCTRLOBJWBSELEMENT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECCTRLOBJWBSELEMENT')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IPUBSECCTRLWB'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Public Sector Control Object for a WBS Element'
+@ClientHandling.type: #CLIENT_DEPENDENT
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.representativeKey: 'CtrlObjForWBSElement'
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.dataClass: #MASTER
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_DIMENSION ]
+@VDM.viewType: #COMPOSITE
+@Metadata.ignorePropagatedAnnotations: true
+
+define view I_PubSecCtrlObjWBSElement
+  as select distinct from I_PubSecCtrlObjWBSElementMap as Map
+  association [0..1] to I_PubSecHierarchy             as _HierarchyDirectory          on  $projection.HierarchyIDForWBSElement = _HierarchyDirectory.HierarchyID
+  association [0..1] to I_WBSElementByExternalID      as _WBSElement                  on  Map.ParentWBSElementExternalID = _WBSElement.WBSElementExternalID
+  association [0..*] to I_WBSElementHierarchyNodeText as _WBSElementHierarchyNodeText on  $projection.HierarchyIDForWBSElement = _WBSElementHierarchyNodeText.WBSElementHierarchy
+                                                                                      and $projection.CtrlObjForWBSElement     = _WBSElementHierarchyNodeText.HierarchyNode
+{
+      @ObjectModel.foreignKey.association: '_HierarchyDirectory'
+  key Map.HierarchyIDForWBSElement,
+      @ObjectModel.text.element: 'CtrlObjNameForWBSElement'
+  key Map.CtrlObjForWBSElement,
+      @Semantics.text: true
+      cast(
+        case when Map.ParentWBSElementExternalID is not initial then
+          _WBSElement.WBSDescription
+        else
+          _WBSElementHierarchyNodeText[1:Language = $session.system_language].HierarchyNodeText
+        end as psm_s4c_fm_avc_ctrl_obj_wb_na ) as CtrlObjNameForWBSElement,
+      _HierarchyDirectory
+}
+```

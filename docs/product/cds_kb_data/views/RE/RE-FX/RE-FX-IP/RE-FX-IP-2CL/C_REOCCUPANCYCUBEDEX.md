@@ -5,9 +5,26 @@ app_component: RE-FX-IP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_REOCCUPANCYCUBEDEX')/$value
 semantic_en: "Real Estate Occupancy for Data Extraction"
+semantic_vi: "Real Estate Occupancy for Data Extraction — CDS view tiêu dùng dựa trên I_REOccupancyCube."
+keywords:
+  - "real"
+  - "estate"
+  - "occupancy"
+  - "for"
+  - "data"
+  - "extraction"
+  - "integ"
+  - "object"
+  - "internal"
+  - "number"
+  - "enable"
+  - "measurement"
+  - "type"
+  - "validity"
+  - "date"
 tags:
   - RE
   - component:RE-FX-IP-2CL
@@ -15,7 +32,6 @@ tags:
   - RE-FX
   - RE-FX-IP
   - RE-FX-IP-2CL
-  - metadata-only
 ---
 # C_REOCCUPANCYCUBEDEX
 
@@ -27,17 +43,17 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_REOCCUPANCYCUBEDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_REOCCUPANCYCUBEDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `REIntegObjectInternalNumber` |  | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
-| `REInternalNumberForOccupancy` |  | |  |  | `CHAR(13)` |  |
-| `REInternalNumberForUseEnable` |  | |  |  | `CHAR(13)` |  |
-| `REMeasurementType` |  | |  |  | `CHAR(4)` | Measurement Type |
-| `ValidityEndDate` |  | |  |  | `DATS(8)` |  |
+| `REIntegObjectInternalNumber` | ✓ | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
+| `REInternalNumberForOccupancy` | ✓ | |  | `coalesce(REInternalNumberForOccupancy,'')` | `CHAR(13)` |  |
+| `REInternalNumberForUseEnable` | ✓ | |  | `coalesce(REInternalNumberForUseEnable,'')` | `CHAR(13)` |  |
+| `REMeasurementType` | ✓ | |  |  | `CHAR(4)` | Measurement Type |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` |  |
 | `ValidityStartDate` |  | |  |  | `DATS(8)` |  |
 | `ValidityStartEndDateValue` |  | |  |  | `CHAR(16)` | Date from to (RAP Key) |
 | `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
@@ -73,3 +89,77 @@ tags:
 | `REContractIsActive` |  | |  |  | `CHAR(1)` | Truth Value: True/False |
 | `REMeasurementUnit` |  | |  |  | `UNIT(3)` | Unit of Measure |
 | `REMeasurementQuantity` |  | |  |  | `QUAN(17)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_REOCCUPANCYCUBEDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_REOCCUPANCYCUBEDEX')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Real Estate Occupancy for Data Extraction'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType:{
+  serviceQuality: #X,
+  sizeCategory: #XXL,
+  dataClass: #MIXED
+}
+@Analytics.dataCategory: #CUBE
+@Analytics.internalName:#LOCAL
+@Analytics:{
+    dataExtraction: {
+        enabled: true
+    }
+}
+@ObjectModel.supportedCapabilities:  [ #EXTRACTION_DATA_SOURCE,#CDS_MODELING_DATA_SOURCE,#SQL_DATA_SOURCE]
+@VDM.viewType: #CONSUMPTION
+@Metadata.allowExtensions:true
+define view entity C_REOccupancyCubeDEX
+  as select from I_REOccupancyCube
+{
+  key REIntegObjectInternalNumber,
+  key coalesce(REInternalNumberForOccupancy,'') as REInternalNumberForOccupancy,
+  key coalesce(REInternalNumberForUseEnable,'') as REInternalNumberForUseEnable,
+  key REMeasurementType,
+  key ValidityEndDate,
+      ValidityStartDate,
+      ValidityStartEndDateValue,
+      CompanyCode,
+      REIntegrationObjectNumber,
+      RealEstateExternalID,
+      REIntegrationObjectName,
+      REIntegObjectLongName,
+      REIntegrationObjectOccpcyName,
+      REInternalNumberForSite,
+      REInternalNumberForBuilding,
+      REInternalNumberForLand,
+      REInternalNumberForFloor,
+      RealEstateExternalIDSite,
+      RealEstateExternalIDBldng,
+      RealEstateExternalIDLand,
+      RealEstateExternalIDFloor,
+      REIntegrationObjectNumberSite,
+      REIntegrationObjectNumberBldng,
+      REIntegrationObjectNumberLand,
+      REIntegrationObjectNumberFloor,
+      Country,
+      Region,
+      REAuthorizationGroup,
+      REIntegrationObjectType,
+      REIntegObjectUsageClfn,
+      REIntegObjectUsageType,
+      RESpaceGrpEnableUseType,
+      REIntegObjSpaceGroupType,
+      RESpaceGroupUsageType,
+      REIntegrationObjectIsGrouped,
+      RealEstateContract,
+      REIntegrationObjectIsOccupied,
+      REContractIsActive,
+      REMeasurementUnit,
+      @Semantics.quantity.unitOfMeasure: 'REMeasurementUnit'
+      REMeasurementQuantity
+}
+where
+  REIntegrationObjectIsActive = 'X'
+and REInternalNumberForUseEnable <> ''
+```

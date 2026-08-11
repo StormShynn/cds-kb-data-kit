@@ -5,14 +5,18 @@ app_component: PS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRIORITYCODE')/$value
 semantic_en: "Priority Code Details"
+semantic_vi: "Priority Code Details — CDS view giao diện dựa trên tcn07."
+keywords:
+  - "priority"
+  - "code"
+  - "details"
 tags:
   - PS
   - component:PS
   - interface-view
-  - metadata-only
 ---
 # I_PRIORITYCODE
 
@@ -24,10 +28,50 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRIORITYCODE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRIORITYCODE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PriorityCode` |  | |  |  | `CHAR(1)` | Priority |
+| `PriorityCode` | ✓ | |  | `nprio` | `CHAR(1)` | Priority |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_Prioritycodetext` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRIORITYCODE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRIORITYCODE')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IPRIORITYCODE'
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+//@Analytics: { dataCategory: #DIMENSION, dataExtraction.enabled: true }
+@ObjectModel.representativeKey: 'PriorityCode'
+@EndUserText.label: 'Priority Code Details'
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.dataClass: #MASTER
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.sapObjectNodeType.name: 'ProjectObjectPriorityCode'
+@Metadata.ignorePropagatedAnnotations:true
+@ObjectModel.supportedCapabilities:  [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ]
+//@VDM.lifecycle.contract.type:  #SAP_INTERNAL_API
+
+define view I_Prioritycode
+  as select from tcn07
+  association [0..*] to I_Prioritycodetext as _Text on $projection.PriorityCode = _Text.PriorityCode
+{
+  @ObjectModel.text.association: '_Text'
+  key tcn07.nprio as PriorityCode,
+      
+  _Text
+
+
+}
+```

@@ -5,15 +5,20 @@ app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OBJECTASSETVALUATIONFRQCY')/$value
 semantic_en: "Object Asset Valuation Frequency"
+semantic_vi: "Object Asset Valuation Frequency — CDS view giao diện dựa trên dd07l."
+keywords:
+  - "object"
+  - "asset"
+  - "valuation"
+  - "frequency"
 tags:
   - FS
   - component:FS-CMS
   - FS-CMS
   - interface-view
-  - metadata-only
 ---
 # I_OBJECTASSETVALUATIONFRQCY
 
@@ -25,10 +30,64 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OBJECTASSETVALUATIONFRQCY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OBJECTASSETVALUATIONFRQCY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ObjectAssetValuationFrequency` |  | |  |  | `CHAR(2)` | Indicator: Units of time for revaluation of an asset |
+| `ObjectAssetValuationFrequency` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as cms_dte_ind_ast_valn_freq_unit preserving type )` | `CHAR(2)` | Indicator: Units of time for revaluation of an asset |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_ObjectAssetValuationFrqcyTxt` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OBJECTASSETVALUATIONFRQCY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OBJECTASSETVALUATIONFRQCY')/$value)*
+
+```abap
+@AbapCatalog: {
+    sqlViewName: 'IOBJASTVALFRQ',
+    compiler.compareFilter: true,
+    preserveKey: true
+}
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel:{
+    usageType:{
+        serviceQuality: 'A',
+        sizeCategory: 'S',
+        dataClass: 'CUSTOMIZING'
+    },
+    supportedCapabilities: [ #ANALYTICAL_DIMENSION,
+                             #CDS_MODELING_ASSOCIATION_TARGET,
+                             #SQL_DATA_SOURCE,
+                             #CDS_MODELING_DATA_SOURCE,
+                             #EXTRACTION_DATA_SOURCE ],
+    representativeKey: 'ObjectAssetValuationFrequency'
+}
+@VDM.viewType: #BASIC
+@Analytics:{
+    dataCategory: #DIMENSION,
+    internalName: #LOCAL,
+    dataExtraction.enabled: true
+}
+@Metadata.ignorePropagatedAnnotations: true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Object Asset Valuation Frequency'
+define view I_ObjectAssetValuationFrqcy
+  as select from dd07l
+  association [0..*] to I_ObjectAssetValuationFrqcyTxt as _Text on $projection.ObjectAssetValuationFrequency = _Text.ObjectAssetValuationFrequency
+{
+      @ObjectModel.text.association: '_Text'
+  key cast(substring(domvalue_l, 1, 2) as cms_dte_ind_ast_valn_freq_unit preserving type ) as ObjectAssetValuationFrequency,
+
+      _Text
+}
+where
+      dd07l.domname  = 'CMS_IND_AST_VALN_FREQ_UNIT'
+  and dd07l.as4local = 'A'
+```

@@ -5,9 +5,20 @@ app_component: FIN-FSCM-CLM-FQM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CASHFLOWQUERY')/$value
 semantic_en: "This CDS view provides a definition of the query on the records in One Exposure. It retrieves the effective date records of cash flows coming from all the pre-defined source applications. This CDS view provides the data to answer the following business questions: What is the definition of the query on the records in One Exposure? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Cash Flow Query — CDS view tiêu dùng dựa trên I_CashFlowCube."
+keywords:
+  - "cash"
+  - "flow"
+  - "query"
+  - "origin"
+  - "system"
+  - "application"
+  - "document"
+  - "transaction"
+  - "qualifier"
 tags:
   - FIN
   - bo:companycode
@@ -19,7 +30,6 @@ tags:
   - FIN-FSCM-CLM-FQM-2CL
   - lob:finance
   - lob:quality management
-  - metadata-only
 ---
 # C_CASHFLOWQUERY
 
@@ -31,20 +41,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CASHFLOWQUERY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CASHFLOWQUERY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `OriginSystem` |  | |  |  | `CHAR(10)` | Logical System |
-| `OriginApplication` |  | |  |  | `CHAR(5)` | Source Application |
-| `OriginDocument` |  | |  |  | `CHAR(32)` | Source Document ID |
-| `OriginTransaction` |  | |  |  | `CHAR(32)` | Source Transaction ID |
-| `OriginTransactionQualifier` |  | |  |  | `CHAR(3)` | Source Transaction Qualifier |
-| `CashFlow` |  | |  |  | `CHAR(32)` | Line Item in Source Document |
-| `ValidFrom` |  | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
-| `ValidTo` |  | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| `OriginSystem` | ✓ | |  |  | `CHAR(10)` | Logical System |
+| `OriginApplication` | ✓ | |  |  | `CHAR(5)` | Source Application |
+| `OriginDocument` | ✓ | |  |  | `CHAR(32)` | Source Document ID |
+| `OriginTransaction` | ✓ | |  |  | `CHAR(32)` | Source Transaction ID |
+| `OriginTransactionQualifier` | ✓ | |  |  | `CHAR(3)` | Source Transaction Qualifier |
+| `CashFlow` | ✓ | |  |  | `CHAR(32)` | Line Item in Source Document |
+| `ValidFrom` | ✓ | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| `ValidTo` | ✓ | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
 | `CashFlowID` |  | |  |  | `NUMC(16)` | Flow ID |
 | `IsValid` |  | |  |  | `CHAR(1)` | FQM Flag Actual |
 | `CashTransactionOwner` |  | |  |  | `CHAR(3)` | Owner of a Business Transaction |
@@ -92,3 +102,191 @@ tags:
 | `SecurityAccount` |  | |  |  | `CHAR(10)` | Securities Account |
 | `AssetContract` |  | |  |  | `CHAR(13)` | Contract Number |
 | `Portfolio` |  | |  |  | `CHAR(10)` | Portfolio |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CASHFLOWQUERY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CASHFLOWQUERY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CCSHFLWQRY'
+@AbapCatalog.compiler.compareFilter: true
+@Analytics: { query: true,settings.maxProcessingEffort: #HIGH }
+@Metadata: { ignorePropagatedAnnotations: true,allowExtensions: true }
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.supportedCapabilities: [ 
+  #ANALYTICAL_QUERY 
+]
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@EndUserText.label: 'Cash Flow Query'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+define view C_CashFlowQuery 
+as 
+select from I_CashFlowCube
+{
+@AnalyticsDetails.query.axis: #FREE
+  key OriginSystem,
+
+@AnalyticsDetails.query.axis: #FREE
+  key OriginApplication,
+
+@AnalyticsDetails.query.hidden: true
+  key OriginDocument,
+
+@AnalyticsDetails.query.hidden: true
+  key OriginTransaction,
+
+@AnalyticsDetails.query.hidden: true
+  key OriginTransactionQualifier,
+
+@AnalyticsDetails.query.hidden: true
+  key CashFlow,
+  
+  @AnalyticsDetails.query.hidden: true
+  @Semantics.systemDateTime.createdAt: true
+  key ValidFrom,
+
+  @AnalyticsDetails.query.hidden: true
+  @Semantics.systemDateTime.lastChangedAt: true
+  key ValidTo,
+
+      // general fields
+      @AnalyticsDetails.query.hidden: true
+      CashFlowID,
+      @AnalyticsDetails.query.axis: #FREE
+      IsValid,
+      @AnalyticsDetails.query.axis: #FREE
+      CashTransactionOwner,
+
+      @AnalyticsDetails.query.axis: #ROWS
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections : true, hidden : false }
+      CompanyCode,
+
+      @AnalyticsDetails.query.axis: #FREE
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections : true, hidden : false }
+      TransactionDate,
+
+      @AnalyticsDetails.query.axis: #FREE
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections : true, hidden : false }
+      CertaintyLevel,
+
+      @AnalyticsDetails.query.axis: #FREE
+      @Semantics.currencyCode: true
+      TransactionCurrency,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      @Aggregation.default: #SUM
+      AmountInTransactionCurrency,
+      
+      @AnalyticsDetails.query.axis: #FREE
+      @Semantics.currencyCode: true
+      CompanyCodeCurrency,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @Aggregation.default: #SUM
+      AmountInCompanyCodeCurrency,
+      
+      @AnalyticsDetails.query.axis: #FREE
+      CashReleaseStatus,
+
+      // accouting fields
+      @AnalyticsDetails.query.axis: #FREE
+      AccountingDocument,
+      @AnalyticsDetails.query.axis: #FREE
+      AccountingDocumentItem,
+      @AnalyticsDetails.query.axis: #FREE
+      FiscalYear,
+      @AnalyticsDetails.query.axis: #FREE
+      PostingFiscalPeriod,
+      @AnalyticsDetails.query.axis: #FREE
+      AccountingDocumentType,
+      @AnalyticsDetails.query.axis: #FREE
+      PaymentMethod,
+      @AnalyticsDetails.query.axis: #FREE
+      GLAccount,
+      @AnalyticsDetails.query.axis: #FREE
+      FinancialAccountType,
+      @AnalyticsDetails.query.axis: #FREE
+      DocumentItemText,
+      @AnalyticsDetails.query.axis: #FREE
+      PostingDate,
+      @AnalyticsDetails.query.axis: #FREE
+      ValueDate,
+      @AnalyticsDetails.query.axis: #FREE
+      NetDueDate,
+      @AnalyticsDetails.query.axis: #FREE
+      CashPlanningGroup,
+      @AnalyticsDetails.query.axis: #FREE
+      PlanningLevel,
+
+      // bank fields
+      @AnalyticsDetails.query.axis: #FREE
+      HouseBank,
+      @AnalyticsDetails.query.axis: #FREE
+      HouseBankAccount,
+      @AnalyticsDetails.query.axis: #FREE
+      BankAccountInternalID,
+
+      // account assignment
+      @AnalyticsDetails.query.axis: #FREE
+      Customer,
+      @AnalyticsDetails.query.axis: #FREE
+      Supplier,
+      @AnalyticsDetails.query.axis: #FREE
+      BusinessPartner,
+      @AnalyticsDetails.query.axis: #FREE
+      Material,
+      @AnalyticsDetails.query.axis: #FREE
+      BusinessArea,
+      @AnalyticsDetails.query.axis: #FREE
+      ProfitCenter,
+//      @AnalyticsDetails.query.axis: #FREE
+//      @ObjectModel.foreignKey.association: '_WBSElement'
+//      WBSElementInternalID,
+//      @AnalyticsDetails.query.axis: #FREE
+//      WBSElement,
+      @AnalyticsDetails.query.axis: #FREE
+      PartnerCompany,
+      @AnalyticsDetails.query.axis: #FREE
+      CostCenter,
+      @AnalyticsDetails.query.axis: #FREE
+      Segment,
+      @AnalyticsDetails.query.axis: #FREE
+      LiquidityItem,
+      @AnalyticsDetails.query.axis: #FREE
+      SourceCompanyCode,
+      @AnalyticsDetails.query.axis: #FREE
+      Fund,
+      @AnalyticsDetails.query.axis: #FREE
+      GrantID,
+
+      // trm fields
+      @AnalyticsDetails.query.axis: #FREE
+      FinancialInstrumentProductType,
+      @AnalyticsDetails.query.axis: #FREE
+      FinancialTransactionType,
+      @AnalyticsDetails.query.axis: #FREE
+      SecurityClass,
+      @AnalyticsDetails.query.axis: #FREE
+      SecurityAccount,
+      @AnalyticsDetails.query.axis: #FREE
+      AssetContract,
+      @AnalyticsDetails.query.axis: #FREE
+      Portfolio
+      
+      // Commented out for 'Issue with non-existing element label (ELBX)'
+      //,      
+
+      // memo record fields
+      //@AnalyticsDetails.query.axis: #FREE
+      //ExpirationDate, 
+      //@AnalyticsDetails.query.axis: #FREE
+      //BankStatementShortID,
+      //@AnalyticsDetails.query.axis: #FREE
+      //BankStatementItem
+  
+}
+```

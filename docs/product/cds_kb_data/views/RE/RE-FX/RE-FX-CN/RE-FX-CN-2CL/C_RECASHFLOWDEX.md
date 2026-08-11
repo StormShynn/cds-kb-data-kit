@@ -5,9 +5,25 @@ app_component: RE-FX-CN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECASHFLOWDEX')/$value
 semantic_en: "Extractor for Real Estate"
+semantic_vi: "Extractor for Real Estate — CDS view tiêu dùng dựa trên I_RECashFlow."
+keywords:
+  - "extractor"
+  - "for"
+  - "real"
+  - "estate"
+  - "cash"
+  - "flow"
+  - "record"
+  - "internal"
+  - "number"
+  - "status"
+  - "object"
+  - "type"
+  - "company"
+  - "code"
 tags:
   - RE
   - component:RE-FX-CN-2CL
@@ -15,7 +31,6 @@ tags:
   - RE-FX
   - RE-FX-CN
   - RE-FX-CN-2CL
-  - metadata-only
 ---
 # C_RECASHFLOWDEX
 
@@ -27,13 +42,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECASHFLOWDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECASHFLOWDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RECashFlowRecordUUID` |  | |  |  | `RAW(16)` | Real Estate Cashflow Object Number |
+| `RECashFlowRecordUUID` | ✓ | |  |  | `RAW(16)` | Real Estate Cashflow Object Number |
 | `InternalRealEstateNumber` |  | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
 | `REStatusObject` |  | |  |  | `CHAR(22)` | Object Number |
 | `RealEstateObjectType` |  | |  |  | `CHAR(2)` | Object Type |
@@ -78,3 +93,115 @@ tags:
 | `RECashFlowConditionTaxAmount` |  | |  |  | `CURR(20)` |  |
 | `RECashFlowConditionCurrency` |  | |  |  | `CUKY(5)` | Condition Currency of Cash Flow Item |
 | `FinTransFlowNomAmt` |  | |  |  | `CURR(28)` |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_REBookedFlowType` | | ✓ | | | | |
+| `_RECashFlowPostingStatus` | | ✓ | | | | |
+| `_REConditionType` | | ✓ | | | | |
+| `_REContract` | | ✓ | | | | |
+| `_REContractCompanyCode` | | ✓ | | | | |
+| `_REFlowType` | | ✓ | | | | |
+| `_RERelshpBookedToFlowType` | | ✓ | | | | |
+| `_RETaxType` | | ✓ | | | | |
+| `_TaxCountry` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECASHFLOWDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECASHFLOWDEX')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CRECASHFLDEX'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+
+@VDM.viewType: #CONSUMPTION
+@Analytics:{ 
+  dataCategory: #DIMENSION,
+  dataExtraction.enabled: true,
+  internalName:#LOCAL 
+}
+
+@Metadata.allowExtensions:true
+@Metadata.ignorePropagatedAnnotations:true 
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.supportedCapabilities: #EXTRACTION_DATA_SOURCE
+@ObjectModel.usageType.dataClass: #MASTER
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.sizeCategory: #L
+
+@EndUserText.label: 'Extractor for Real Estate'
+define view C_RECashFlowDEX as select from I_RECashFlow {
+  key RECashFlowRecordUUID,
+//  REConditionUUID,
+  InternalRealEstateNumber,
+  REStatusObject,
+  RealEstateObjectType,
+  CompanyCode,
+  RealEstateContract,
+  RETaxType,
+//  TaxGroup,
+  TaxCountry,
+  TaxJurisdiction,
+//  BusinessPartner,
+  REPartnerStatusObject,
+  ControllingArea,
+  CostCenter,
+  InternalOrder,
+  REConditionType,
+  REBookedFlowType,
+  REFlowType,
+  DebitCreditCode,
+  RERelshpBookedToFlowType,
+  CashFlowPostingStatus,
+  RECashFlowOrigin,
+  REContractIsActive,
+  REContractCompanyCode,
+  REDocumentReferenceUUID,
+  FiscalYearVariant,
+  CalculationPeriodStartDate,
+  CalculationPeriodEndDate,
+  CalculationDate,
+  PaymentDueDate,
+  REBeginOfPeriodDate,
+  REEndOfPeriodDate,
+  ValidityStartDate,
+  PostingDate,
+  DocumentDate,
+  REContractCashFlowDate,
+  ContractEndDate,
+  ContractStartDate,
+  @Semantics.amount.currencyCode: 'RECashFlowLoclCurrency' 
+  RECashFlowLoclNetAmount,
+  @Semantics.amount.currencyCode: 'RECashFlowLoclCurrency'
+  RECashFlowLoclGrossAmount,
+  @Semantics.amount.currencyCode: 'RECashFlowLoclCurrency' 
+  RECashFlowLoclTaxAmount,
+  RECashFlowLoclCurrency,
+  @Semantics.amount.currencyCode: 'RECashFlowConditionCurrency' 
+  RECashFlowConditionNetAmount,
+  @Semantics.amount.currencyCode: 'RECashFlowConditionCurrency'
+  RECashFlowConditionGrossAmount,
+  @Semantics.amount.currencyCode: 'RECashFlowConditionCurrency'
+  RECashFlowConditionTaxAmount,
+  RECashFlowConditionCurrency,
+  @Semantics.amount.currencyCode: 'RECashFlowConditionCurrency'
+  FinTransFlowNomAmt,
+  /* Associations */
+//  _BusinessPartner,
+  _CompanyCode,
+  _DebitCreditCode,
+  _REBookedFlowType,
+  _RECashFlowPostingStatus,
+//  _RECondition,
+  _REConditionType,
+  _REContract,
+  _REContractCompanyCode,
+  _REFlowType,
+  _RERelshpBookedToFlowType,
+//  _RETaxGroup,
+  _RETaxType,
+  _TaxCountry
+}
+```

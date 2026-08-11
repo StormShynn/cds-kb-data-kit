@@ -5,15 +5,26 @@ app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUNCAREA1SUBDIVISIONT')/$value
 semantic_en: "First Subdivision Functional Area - Text"
+semantic_vi: "First Subdivision Functional Area - Text — CDS view giao diện (master data) dựa trên fmmdfnsub1t."
+keywords:
+  - "first"
+  - "subdivision"
+  - "functional"
+  - "area"
+  - "text"
+  - "language"
+  - "area1"
+  - "func"
+  - "desc"
+  - "desc2"
 tags:
   - PSM
   - bo:companycode
   - component:PSM
   - interface-view
-  - metadata-only
 ---
 # I_FUNCAREA1SUBDIVISIONT
 
@@ -25,14 +36,95 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUNCAREA1SUBDIVISIONT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUNCAREA1SUBDIVISIONT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `FunctionalAreaSubdivisionID` |  | |  |  | `CHAR(10)` | Master Data Subdivision ID |
-| `FunctionalArea1Subdivision` |  | |  |  | `CHAR(10)` | Substring 1 of Functional Area |
-| `FuncArea1SubdivisionDesc` |  | |  |  | `CHAR(50)` | Substring Description 1 |
-| `FuncArea1SubdivisionDesc2` |  | |  |  | `CHAR(50)` | Substring Description 2 |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `FunctionalAreaSubdivisionID` | ✓ | |  | `str_id` | `CHAR(10)` | Master Data Subdivision ID |
+| `FunctionalArea1Subdivision` | ✓ | |  | `fnsub1` | `CHAR(10)` | Substring 1 of Functional Area |
+| `FuncArea1SubdivisionDesc` |  | |  | `fdshtxt` | `CHAR(50)` | Substring Description 1 |
+| `FuncArea1SubdivisionDesc2` |  | |  | `fdlotxt` | `CHAR(50)` | Substring Description 2 |
+| `_Language` | | ✓ | | | | |
+| `_FuncArea1Subdivision` | | ✓ | | | | |
+| `_FuncAreaSubdivisionID` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_FuncArea1Subdivision` | `I_FuncArea1Subdivision` | [0..1] |
+| `_FuncAreaSubdivisionID` | `I_FuncAreaSubdivisionBasic` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUNCAREA1SUBDIVISIONT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUNCAREA1SUBDIVISIONT')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IFAREA1SUBT'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@ClientHandling: {
+  algorithm: #SESSION_VARIABLE,
+  type: #CLIENT_DEPENDENT
+ }
+@Analytics.dataExtraction.enabled: true
+@AccessControl.authorizationCheck: #CHECK
+@ObjectModel: {
+  usageType: {
+    dataClass: #MASTER,
+    serviceQuality: #A,
+    sizeCategory: #M
+  },
+  representativeKey: 'FunctionalArea1Subdivision',
+  dataCategory: #TEXT,
+  modelingPattern: #LANGUAGE_DEPENDENT_TEXT,
+  supportedCapabilities: [ 
+    #CDS_MODELING_ASSOCIATION_TARGET, 
+    #CDS_MODELING_DATA_SOURCE,
+    #LANGUAGE_DEPENDENT_TEXT,
+    #SQL_DATA_SOURCE,
+    #EXTRACTION_DATA_SOURCE
+  ]
+}  
+@VDM.viewType: #BASIC
+@Search.searchable: true
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@Metadata.ignorePropagatedAnnotations: true
+@EndUserText.label: 'First Subdivision Functional Area - Text'
+define view I_FuncArea1SubdivisionT
+  as select from fmmdfnsub1t
+  association [0..1] to I_Language                 as _Language              on  $projection.Language = _Language.Language
+  association [0..1] to I_FuncArea1Subdivision     as _FuncArea1Subdivision  on  $projection.FunctionalAreaSubdivisionID = _FuncArea1Subdivision.FunctionalAreaSubdivisionID
+                                                                             and $projection.FunctionalArea1Subdivision  = _FuncArea1Subdivision.FunctionalArea1Subdivision
+  association [0..1] to I_FuncAreaSubdivisionBasic as _FuncAreaSubdivisionID on  $projection.FunctionalAreaSubdivisionID = _FuncAreaSubdivisionID.FunctionalAreaSubdivisionID
+
+{
+      @Semantics.language: true
+      @ObjectModel.foreignKey.association: '_Language'
+  key spras   as Language,
+      @ObjectModel.foreignKey.association: '_FuncAreaSubdivisionID'
+      @Consumption.valueHelpDefinition: [
+             { entity:  { name:    'I_FuncAreaSubdivisionIDStdVH',
+                          element: 'FunctionalAreaSubdivisionID' }
+             }]
+  key str_id  as FunctionalAreaSubdivisionID,
+      @ObjectModel.foreignKey.association: '_FuncArea1Subdivision'
+      @ObjectModel.text.element: ['FuncArea1SubdivisionDesc']      
+  key fnsub1  as FunctionalArea1Subdivision,
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #HIGH
+      @Semantics.text: true
+      fdshtxt as FuncArea1SubdivisionDesc,
+      @Semantics.text: true
+      fdlotxt as FuncArea1SubdivisionDesc2,
+
+      _Language,
+      _FuncArea1Subdivision,
+      _FuncAreaSubdivisionID
+}
+```

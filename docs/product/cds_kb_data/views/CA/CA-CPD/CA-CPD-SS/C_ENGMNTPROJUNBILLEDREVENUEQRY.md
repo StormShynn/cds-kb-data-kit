@@ -5,9 +5,22 @@ app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMNTPROJUNBILLEDREVENUEQRY')/$value
 semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the unbilled amount in projects that I manage? What is the unbilled amount per billing item type (fixed price, time and expense, and so on)?"
+semantic_vi: "Engagement Project Unbilled Revenue Query — CDS view tiêu dùng dựa trên I_EngmntProjUnbilldRevnCube."
+keywords:
+  - "engagement"
+  - "project"
+  - "unbilled"
+  - "revenue"
+  - "query"
+  - "ledger"
+  - "manager"
+  - "name"
+  - "visibility"
+  - "sales"
+  - "order"
 tags:
   - CA
   - billing
@@ -18,7 +31,7 @@ tags:
   - consumption-view
   - lob:cross_application components
   - project
-  - metadata-only
+  - bo:project
 ---
 # C_ENGMNTPROJUNBILLEDREVENUEQRY
 
@@ -30,7 +43,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMNTPROJUNBILLEDREVENUEQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMNTPROJUNBILLEDREVENUEQRY')/$value) |
 
 ## Fields
 
@@ -55,4 +68,143 @@ tags:
 | `Material` |  | |  |  | `CHAR(40)` |  |
 | `IsMyProject` |  | |  |  | `CHAR(1)` |  |
 | `FiscalYearPeriod` |  | |  |  | `CHAR(7)` |  |
-| `UnbilldRevnAmountInProjCrcy` |  | |  |  | `INT1(3)` |  |
+| `UnbilldRevnAmountInProjCrcy` |  | |  | `1` | `INT1(3)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMNTPROJUNBILLEDREVENUEQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMNTPROJUNBILLEDREVENUEQRY')/$value)*
+
+```abap
+@AbapCatalog:{
+  sqlViewName: 'CENGPRJUNBREVQY',
+  compiler.compareFilter: true,
+  preserveKey: true
+}
+@Analytics:{
+  query: true,
+  internalName: #LOCAL
+}
+@VDM:{
+  viewType: #CONSUMPTION
+  //lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@AccessControl:{
+  authorizationCheck: #PRIVILEGED_ONLY,
+  personalData.blocking: #REQUIRED
+}
+@ObjectModel:{
+  usageType.sizeCategory: #XL,
+  usageType.dataClass: #MIXED,
+  usageType.serviceQuality:#D,
+  modelingPattern: #ANALYTICAL_QUERY, 
+  supportedCapabilities: [#ANALYTICAL_QUERY]
+}
+@Metadata.ignorePropagatedAnnotations: true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Engagement Project Unbilled Revenue Query'
+define view C_EngmntProjUnbilledRevenueQry
+  as select from I_EngmntProjUnbilldRevnCube
+{
+  @Consumption: {
+  filter.hidden: true,
+  derivation: {
+  lookupEntity: 'I_Ledger',
+  resultElement: 'Ledger',
+  binding: [ {
+  targetElement: 'IsLeadingLedger',
+  type: #CONSTANT,
+  value: 'X'
+     } ]
+    }
+   }
+  @Consumption.hidden: true
+  Ledger,
+
+  @AnalyticsDetails.query.axis: #FREE
+  ProjectManagerName,
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  EngagementProject,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  ProjectVisibility,
+
+  @Consumption.filter:  { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  SalesOrder,
+
+  @Consumption.filter:  { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  SalesOrderItem,
+
+  @Consumption.filter:  { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  EngagementProjectServiceOrg,
+
+  @Consumption.filter:  { selectionType: #INTERVAL, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  ProjectStartDate,
+
+  @Consumption.filter:  { selectionType: #INTERVAL, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  ProjectEndDate,
+
+  @Consumption.filter:  { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  ControllingArea,
+
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  CompanyCode,
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  @AnalyticsDetails.query.axis: #FREE
+  ProfitCenter,
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  @AnalyticsDetails.query.axis: #FREE
+  CostCenter,
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  Customer,
+
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  EngagementProjectStage,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  SalesOrderItemCategory,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  Material,
+
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  IsMyProject,
+
+  @AnalyticsDetails.query.axis: #FREE
+  FiscalYearPeriod,
+
+  @EndUserText.label: 'Unbilled Revenue'
+  @DefaultAggregation: #FORMULA
+  @AnalyticsDetails: {
+      query.formula: 'UnbilldRevnAmountInProjCrcy',
+      exceptionAggregationSteps: [ {
+          exceptionAggregationBehavior: #LAST,
+          exceptionAggregationElements: [ 'FiscalYearPeriod' ]
+      } ]
+  }
+  1 as UnbilldRevnAmountInProjCrcy
+}
+```

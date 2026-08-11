@@ -5,11 +5,25 @@ app_component: CRM-S4-INT-FSM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SERVICECHECKLISTTEMPLATE')/$value
 semantic_en: "Checklist Template"
+semantic_vi: "Checklist Template — CDS view cơ bản dựa trên crmd_fsm_tm_hdr."
 keywords:
   - "Checklist Template"
+  - "checklist"
+  - "template"
+  - "service"
+  - "srvc"
+  - "chklst"
+  - "tmpl"
+  - "status"
+  - "category"
+  - "creation"
+  - "date"
+  - "time"
+  - "created"
+  - "user"
 tags:
   - CRM
   - component:CRM-S4-INT-FSM-2CL
@@ -18,7 +32,6 @@ tags:
   - CRM-S4-INT-FSM
   - CRM-S4-INT-FSM-2CL
   - interface-view
-  - metadata-only
 ---
 # I_SERVICECHECKLISTTEMPLATE
 
@@ -30,24 +43,94 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SERVICECHECKLISTTEMPLATE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SERVICECHECKLISTTEMPLATE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceChecklistTemplate` |  | |  |  | `CHAR(10)` | Template ID |
-| `SrvcChklstTmplStatus` |  | |  |  | `CHAR(1)` | Template Status |
-| `SrvcChklstTmplCategory` |  | |  |  | `CHAR(10)` | Checklist Template Category ID |
-| `SrvcChklstCreationDateTime` |  | |  |  | `DEC(21)` | Created At |
-| `SrvcChklstCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
-| `SrvcChklstChangedDateTime` |  | |  |  | `DEC(21)` | Last Changed At |
-| `SrvcChklstChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
-| `FSMChecklistTemplateUUID` |  | |  |  | `RAW(16)` | FSM Template ID |
-| `FSMChecklistCategoryUUID` |  | |  |  | `RAW(16)` | FSM Category ID |
-| `FSMAccount` |  | |  |  | `CHAR(10)` | FSM Account ID |
-| `FSMCompany` |  | |  |  | `CHAR(10)` | FSM Company ID |
-| `FSMChecklistTemplateGroupUUID` |  | |  |  | `RAW(16)` | FSM Checklist Template Group UUID |
-| `FSMChecklistRequest` |  | |  |  | `CHAR(40)` | Request ID |
-| `SrvcChklstTmplVersion` |  | |  |  | `INT1(3)` | Version |
-| `SrvcChklstLanguage` |  | |  |  | `LANG(1)` | Language |
+| `ServiceChecklistTemplate` | ✓ | |  | `template_id` | `CHAR(10)` | Template ID |
+| `SrvcChklstTmplStatus` |  | |  | `status` | `CHAR(1)` | Template Status |
+| `SrvcChklstTmplCategory` |  | |  | `category_id` | `CHAR(10)` | Checklist Template Category ID |
+| `SrvcChklstCreationDateTime` |  | |  | `created_at` | `DEC(21)` | Created At |
+| `SrvcChklstCreatedByUser` |  | |  | `created_by` | `CHAR(12)` | Created By |
+| `SrvcChklstChangedDateTime` |  | |  | `last_changed_at` | `DEC(21)` | Last Changed At |
+| `SrvcChklstChangedByUser` |  | |  | `last_changed_by` | `CHAR(12)` | Last Changed By |
+| `FSMChecklistTemplateUUID` |  | |  | `fsm_templateuuid` | `RAW(16)` | FSM Template ID |
+| `FSMChecklistCategoryUUID` |  | |  | `fsm_categoryuuid` | `RAW(16)` | FSM Category ID |
+| `FSMAccount` |  | |  | `fsm_account` | `CHAR(10)` | FSM Account ID |
+| `FSMCompany` |  | |  | `fsm_company` | `CHAR(10)` | FSM Company ID |
+| `FSMChecklistTemplateGroupUUID` |  | |  | `fsm_template_grp_uuid` | `RAW(16)` | FSM Checklist Template Group UUID |
+| `FSMChecklistRequest` |  | |  | `requestuuid` | `CHAR(40)` | Request ID |
+| `SrvcChklstTmplVersion` |  | |  | `version` | `INT1(3)` | Version |
+| `SrvcChklstLanguage` |  | |  | `source_language` | `LANG(1)` | Language |
+| `_SrvcChklstTmplText` | | ✓ | | | | |
+| `_SrvcChklstTmplStatus` | | ✓ | | | | |
+| `_SrvcChklstTmplCategory` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_SrvcChklstTmplText` | `I_SrvcChklstTmplText` | [0..*] |
+| `_SrvcChklstTmplStatus` | `I_SrvcChklstTmplStatus` | [0..1] |
+| `_SrvcChklstTmplExtn` | `E_ServiceChecklistTemplate` | [0..1] |
+| `_SrvcChklstTmplCategory` | `I_SrvcChklstTmplCategory` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SERVICECHECKLISTTEMPLATE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SERVICECHECKLISTTEMPLATE')/$value)*
+
+```abap
+@EndUserText.label: 'Checklist Template'
+
+@AccessControl.authorizationCheck: #CHECK
+
+@VDM: {
+  viewType: #BASIC,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+
+@ObjectModel:{
+    modelingPattern: #NONE,
+    supportedCapabilities : [ #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE],
+    usageType: {
+        serviceQuality: #B,
+        sizeCategory: #L,
+        dataClass: #MASTER
+    }
+}
+
+@Metadata.ignorePropagatedAnnotations: true
+
+define view entity I_ServiceChecklistTemplate
+  as select from crmd_fsm_tm_hdr
+  association [0..*] to I_SrvcChklstTmplText       as _SrvcChklstTmplText     on $projection.ServiceChecklistTemplate = _SrvcChklstTmplText.ServiceChecklistTemplate
+  association [0..1] to I_SrvcChklstTmplStatus     as _SrvcChklstTmplStatus   on $projection.SrvcChklstTmplStatus = _SrvcChklstTmplStatus.SrvcChklstTmplStatus
+  association [0..1] to E_ServiceChecklistTemplate as _SrvcChklstTmplExtn     on $projection.ServiceChecklistTemplate = _SrvcChklstTmplExtn.ServiceChecklistTemplate
+  association [0..1] to I_SrvcChklstTmplCategory   as _SrvcChklstTmplCategory on $projection.SrvcChklstTmplCategory = _SrvcChklstTmplCategory.SrvcChklstTmplCategory
+{
+  key template_id           as ServiceChecklistTemplate,
+      @ObjectModel.foreignKey.association: '_SrvcChklstTmplStatus'
+      status                as SrvcChklstTmplStatus,
+      @ObjectModel.foreignKey.association: '_SrvcChklstTmplCategory'
+      category_id           as SrvcChklstTmplCategory,
+      created_at            as SrvcChklstCreationDateTime,
+      created_by            as SrvcChklstCreatedByUser,
+      last_changed_at       as SrvcChklstChangedDateTime,
+      last_changed_by       as SrvcChklstChangedByUser,
+      fsm_templateuuid      as FSMChecklistTemplateUUID,
+      fsm_categoryuuid      as FSMChecklistCategoryUUID,
+      fsm_account           as FSMAccount,
+      fsm_company           as FSMCompany,
+      fsm_template_grp_uuid as FSMChecklistTemplateGroupUUID,
+      requestuuid           as FSMChecklistRequest,
+      version               as SrvcChklstTmplVersion,
+      source_language       as SrvcChklstLanguage,
+
+      //Associations
+      _SrvcChklstTmplText,
+      _SrvcChklstTmplStatus,
+      _SrvcChklstTmplCategory
+}
+```

@@ -5,14 +5,28 @@ app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECCMTMTACTLQRY')/$value
 semantic_en: "Commitment and Actual Items Query"
+semantic_vi: "Commitment and Actual Items Query — CDS view tiêu dùng dựa trên Commitment and Actual Items Query."
+keywords:
+  - "commitment"
+  - "and"
+  - "actual"
+  - "items"
+  - "query"
+  - "ledger"
+  - "source"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
 tags:
   - PSM
   - component:PSM
   - consumption-view
-  - metadata-only
 ---
 # C_PUBSECCMTMTACTLQRY
 
@@ -24,7 +38,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECCMTMTACTLQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECCMTMTACTLQRY')/$value) |
 
 ## Fields
 
@@ -40,7 +54,7 @@ tags:
 | `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
 | `IsCommitment` |  | |  |  | `CHAR(1)` | Indicator: Is Commitment |
 | `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
-| `CostCenterHierarchy` |  | |  |  | `CHAR(42)` | Cost Center Hierarchy |
+| `CostCenterHierarchy` |  | |  | `{ selectionType : #HIERARCHY_NODE, multipleSelections : true,mandatory: false, hierarchyBinding : [{ type : #CONSTANT,value: 'A000' }, { type : #USER_INPUT, value:'P_CostCenterHierarchyName', variableSequence: 35 } ] } @AnalyticsDetails.query.displayHierarchy: #FILTER CostCenterHierarchy` | `CHAR(42)` | Cost Center Hierarchy |
 | `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
 | `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
 | `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
@@ -48,23 +62,23 @@ tags:
 | `PartnerCostCenter` |  | |  |  | `CHAR(10)` | Partner Cost Center |
 | `PartnerFunctionalArea` |  | |  |  | `CHAR(16)` | Partner Functional Area |
 | `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
-| `AmountInTransactionCurrency` |  | |  |  | `DECF(34)` |  |
+| `AmountInTransactionCurrency` |  | |  | `curr_to_decfloat_amount(AmountInTransactionCurrency)` | `DECF(34)` |  |
 | `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
-| `AmountInCompanyCodeCurrency` |  | |  |  | `DECF(34)` |  |
+| `AmountInCompanyCodeCurrency` |  | |  | `curr_to_decfloat_amount(AmountInCompanyCodeCurrency)` | `DECF(34)` |  |
 | `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
-| `AmountInGlobalCurrency` |  | |  |  | `DECF(34)` |  |
+| `AmountInGlobalCurrency` |  | |  | `curr_to_decfloat_amount(AmountInGlobalCurrency)` | `DECF(34)` |  |
 | `FundHierarchy` |  | |  |  | `CHAR(42)` | Fund Hierarchy |
 | `GrantHierarchy` |  | |  |  | `CHAR(42)` | Grant Hierarchy |
 | `FunctionalAreaHierarchy` |  | |  |  | `CHAR(42)` | Functional Area Hierarchy |
 | `BudgetAccountHierarchy` |  | |  |  | `CHAR(42)` | Budget Account Hierarchy |
-| `PubSecExpnCmtmtAmtInCoCodeCrcy` |  | |  |  | `DECF(34)` |  |
-| `PubSecExpnActlAmtInCoCodeCrcy` |  | |  |  | `DECF(34)` |  |
-| `PubSecRevnCmtmtAmtInCoCodeCrcy` |  | |  |  | `DECF(34)` |  |
-| `PubSecRevnActlAmtInCoCodeCrcy` |  | |  |  | `DECF(34)` |  |
-| `PubSecExpnCmtmtAmtInGlobalCrcy` |  | |  |  | `DECF(34)` |  |
-| `PubSecExpnActlAmtInGlobalCrcy` |  | |  |  | `DECF(34)` |  |
-| `PubSecRevnCmtmtAmtInGlobalCrcy` |  | |  |  | `DECF(34)` |  |
-| `PubSecRevnActlAmtInGlobalCrcy` |  | |  |  | `DECF(34)` |  |
+| `PubSecExpnCmtmtAmtInCoCodeCrcy` |  | |  | `curr_to_decfloat_amount( PubSecExpnCmtmtAmtInCoCodeCrcy )` | `DECF(34)` |  |
+| `PubSecExpnActlAmtInCoCodeCrcy` |  | |  | `curr_to_decfloat_amount( PubSecExpnActlAmtInCoCodeCrcy )` | `DECF(34)` |  |
+| `PubSecRevnCmtmtAmtInCoCodeCrcy` |  | |  | `curr_to_decfloat_amount( PubSecRevnCmtmtAmtInCoCodeCrcy )` | `DECF(34)` |  |
+| `PubSecRevnActlAmtInCoCodeCrcy` |  | |  | `curr_to_decfloat_amount( PubSecRevnActlAmtInCoCodeCrcy )` | `DECF(34)` |  |
+| `PubSecExpnCmtmtAmtInGlobalCrcy` |  | |  | `curr_to_decfloat_amount( PubSecExpnCmtmtAmtInGlobalCrcy )` | `DECF(34)` |  |
+| `PubSecExpnActlAmtInGlobalCrcy` |  | |  | `curr_to_decfloat_amount( PubSecExpnActlAmtInGlobalCrcy )` | `DECF(34)` |  |
+| `PubSecRevnCmtmtAmtInGlobalCrcy` |  | |  | `curr_to_decfloat_amount( PubSecRevnCmtmtAmtInGlobalCrcy )` | `DECF(34)` |  |
+| `PubSecRevnActlAmtInGlobalCrcy` |  | |  | `curr_to_decfloat_amount( PubSecRevnActlAmtInGlobalCrcy )` | `DECF(34)` |  |
 | `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/Credit Code |
 | `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
 | `DocumentDate` |  | |  |  | `DATS(8)` | Journal Entry Date |
@@ -103,3 +117,316 @@ tags:
 | `GteeMBudgetValidityNumber` |  | |  |  | `CHAR(3)` | Budget Validity Number |
 | `PurchaseRequisition` |  | |  |  | `CHAR(10)` | Purchase Requisition Number |
 | `EarmarkedFundsDocument` |  | |  |  | `CHAR(10)` | Document Number for Earmarked Funds |
+| `_DocumentStore` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECCMTMTACTLQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECCMTMTACTLQRY')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #NOT_ALLOWED
+@EndUserText.label: 'Commitment and Actual Items Query'
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_QUERY]
+@VDM.viewType: #CONSUMPTION
+@Metadata.ignorePropagatedAnnotations: true
+@Analytics: {
+     internalName: #LOCAL,
+     settings: {
+         maxProcessingEffort: #HIGH
+     }
+}
+@ObjectModel: {
+     usageType: {
+         dataClass: #MIXED,
+         serviceQuality: #D,
+         sizeCategory: #XXL
+     }
+}
+@Analytics.document.defaultAssociationToStorage: '_DocumentStore'
+
+define transient view entity C_PubSecCmtmtActlQry
+  provider contract analytical_query
+  with parameters
+    @Consumption.hidden: true
+    @Semantics.businessDate.at: true
+    @Environment.systemField: #SYSTEM_DATE
+    P_KeyDate      : vdm_v_key_date,
+    @Consumption.hidden: true
+    @Environment.systemField: #USER
+    P_BusinessUser : syuname
+  as projection on I_PubSecCmtmtActlItemCube
+{
+  @AnalyticsDetails.query.axis: #FREE
+  Ledger,
+  SourceLedger,
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true, mandatory: true}
+  @Consumption.derivation: {
+      lookupEntity: 'I_UserSettingsForCompanyCode',
+        resultElement: 'CompanyCode',
+        binding:  [ {
+          targetElement : 'BusinessUser' ,
+          type : #PARAMETER,
+          value : 'P_BusinessUser'
+        } ]
+  }
+  @AnalyticsDetails.query.variableSequence : 20
+  @AnalyticsDetails.query.axis: #FREE
+  @UI.textArrangement: #TEXT_LAST
+  CompanyCode,
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: true, mandatory: true }
+  @Consumption.derivation: { lookupEntity: 'I_CalendarDate',
+        resultElement: 'CalendarYear', binding: [
+        { targetElement : 'CalendarDate' , type : #PARAMETER, value : 'P_KeyDate' } ]
+       }
+  @AnalyticsDetails.query.variableSequence: 30
+  @AnalyticsDetails.query.axis: #FREE
+  FiscalYear,
+  @AnalyticsDetails.query.axis: #FREE
+  AccountingDocument,
+  @AnalyticsDetails.query.axis: #FREE
+  LedgerGLLineItem,
+  @Consumption.hidden: true
+  LedgerFiscalYear,
+  @AnalyticsDetails.query.axis: #FREE
+  BusinessTransactionType,
+
+  // PSM: Additional detail
+  @AnalyticsDetails.query.axis: #FREE
+  IsCommitment,
+  @AnalyticsDetails.query.axis: #FREE
+  @UI.textArrangement: #TEXT_LAST
+  GLAccount,
+
+  @Consumption.filter :
+  { selectionType : #HIERARCHY_NODE, multipleSelections : true,mandatory: false,
+    hierarchyBinding :
+    [{ type : #CONSTANT,value: 'A000' },
+    { type : #USER_INPUT, value:'P_CostCenterHierarchyName', variableSequence: 35 }
+
+
+    ] }
+  @AnalyticsDetails.query.displayHierarchy: #FILTER
+  CostCenterHierarchy,
+
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 140
+  @AnalyticsDetails.query.axis: #FREE
+  @UI.textArrangement: #TEXT_LAST
+  CostCenter,
+  @AnalyticsDetails.query.axis: #FREE
+  @UI.textArrangement: #TEXT_LAST
+  ProfitCenter,
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 130
+  @AnalyticsDetails.query.axis: #FREE
+  @UI.textArrangement: #TEXT_LAST
+  FunctionalArea,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @UI.textArrangement: #TEXT_LAST
+  Segment,
+  @AnalyticsDetails.query.axis: #FREE
+  PartnerCostCenter,
+  @AnalyticsDetails.query.axis: #FREE
+  PartnerFunctionalArea,
+
+
+
+  ///////////////////////////////////////////////////////////////////////
+  // Measures - Amounts
+  ///////////////////////////////////////////////////////////////////////
+  //@Semantics.currencyCode: true
+  @AnalyticsDetails.query.axis: #FREE
+  TransactionCurrency,
+  @Semantics.amount.currencyCode: 'TransactionCurrency'
+  @AnalyticsDetails.query.hidden : true
+  @Aggregation.default: #SUM
+  curr_to_decfloat_amount(AmountInTransactionCurrency) as AmountInTransactionCurrency,
+  //@Semantics.currencyCode: true
+  @AnalyticsDetails.query.axis: #FREE
+  CompanyCodeCurrency,
+  @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+  @AnalyticsDetails.query.hidden : true
+  @Aggregation.default: #SUM
+
+  curr_to_decfloat_amount(AmountInCompanyCodeCurrency) as AmountInCompanyCodeCurrency,
+  //@Semantics.currencyCode: true
+  @AnalyticsDetails.query.axis: #FREE
+  GlobalCurrency,
+  @Semantics.amount.currencyCode: 'GlobalCurrency'
+  @AnalyticsDetails.query.hidden : true
+  @Aggregation.default: #SUM
+  curr_to_decfloat_amount(AmountInGlobalCurrency)      as AmountInGlobalCurrency,
+
+
+  @Consumption.filter: {  selectionType: #HIERARCHY_NODE, multipleSelections: true, mandatory: false,
+                      hierarchyBinding : [{type : #USER_INPUT, value : 'P_FundHierarchyName', variableSequence: 101} ] }
+  // @EndUserText.label: 'Fund Hierarchy Node'
+  @AnalyticsDetails.query.displayHierarchy: #FILTER
+  //@AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  FundHierarchy,
+  @Consumption.filter: {  selectionType: #HIERARCHY_NODE, multipleSelections: true, mandatory: false,
+                        hierarchyBinding : [{type : #USER_INPUT, value : 'P_GrantHierarchyName', variableSequence: 161} ] }
+  // @EndUserText.label: 'Grant Hierarchy Node'
+  @AnalyticsDetails.query.displayHierarchy: #FILTER
+  //@AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  GrantHierarchy,
+  @Consumption.filter: {  selectionType: #HIERARCHY_NODE, multipleSelections: true, mandatory: false,
+                        hierarchyBinding : [{type : #USER_INPUT, value : 'P_FuncAreaHierarchyName', variableSequence: 101} ] }
+  @EndUserText.label: 'Functional Area Hierarchy'
+  @AnalyticsDetails.query.displayHierarchy: #FILTER
+  //@AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  FunctionalAreaHierarchy,
+  @Consumption.filter: {  selectionType: #HIERARCHY_NODE, multipleSelections: true, mandatory: false,
+                        hierarchyBinding : [{type : #USER_INPUT, value : 'P_BudActHierarchyName', variableSequence: 121} ] }
+
+  @AnalyticsDetails.query.displayHierarchy: #FILTER
+  // @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  BudgetAccountHierarchy,
+
+
+  @EndUserText.label: 'Cmtmt Expense Amt in Company Code Crcy'
+  @Aggregation.default: #SUM
+  @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+  curr_to_decfloat_amount( PubSecExpnCmtmtAmtInCoCodeCrcy ) as PubSecExpnCmtmtAmtInCoCodeCrcy,
+  @EndUserText.label: 'Actual Expense Amt in Company Code Crcy'
+  @Aggregation.default: #SUM
+  @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+  curr_to_decfloat_amount( PubSecExpnActlAmtInCoCodeCrcy ) as PubSecExpnActlAmtInCoCodeCrcy,
+  @Aggregation.default: #SUM
+  @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+  curr_to_decfloat_amount( PubSecRevnCmtmtAmtInCoCodeCrcy ) as PubSecRevnCmtmtAmtInCoCodeCrcy,
+  @Aggregation.default: #SUM
+  @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+  curr_to_decfloat_amount( PubSecRevnActlAmtInCoCodeCrcy ) as PubSecRevnActlAmtInCoCodeCrcy,
+
+
+  @Semantics.amount.currencyCode: 'GlobalCurrency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @Aggregation.default: #SUM
+  curr_to_decfloat_amount( PubSecExpnCmtmtAmtInGlobalCrcy ) as PubSecExpnCmtmtAmtInGlobalCrcy,
+  @Semantics.amount.currencyCode: 'GlobalCurrency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @Aggregation.default: #SUM
+  curr_to_decfloat_amount( PubSecExpnActlAmtInGlobalCrcy ) as PubSecExpnActlAmtInGlobalCrcy,
+  @Semantics.amount.currencyCode: 'GlobalCurrency'
+  @AnalyticsDetails.query.hidden : true
+  @Aggregation.default: #SUM
+  curr_to_decfloat_amount( PubSecRevnCmtmtAmtInGlobalCrcy ) as PubSecRevnCmtmtAmtInGlobalCrcy,
+  @Semantics.amount.currencyCode: 'GlobalCurrency'
+  @AnalyticsDetails.query.hidden : true
+  @Aggregation.default: #SUM
+  curr_to_decfloat_amount( PubSecRevnActlAmtInGlobalCrcy ) as PubSecRevnActlAmtInGlobalCrcy,
+
+  @AnalyticsDetails.query.axis: #FREE
+  DebitCreditCode,
+  @AnalyticsDetails.query.axis: #FREE
+  PostingDate,
+  @AnalyticsDetails.query.axis: #FREE
+  DocumentDate,
+  @AnalyticsDetails.query.axis: #FREE
+  AccountingDocumentType,
+  @AnalyticsDetails.query.axis: #FREE
+  AccountingDocumentItem,
+  @AnalyticsDetails.query.axis: #FREE
+  PostingKey,
+  @AnalyticsDetails.query.axis: #FREE
+  CreationDate,
+  @AnalyticsDetails.query.axis: #FREE
+  PurchaseOrder,
+  @AnalyticsDetails.query.axis: #FREE
+  DocumentItemText,
+  @AnalyticsDetails.query.axis: #FREE
+  MasterFixedAsset,
+  @AnalyticsDetails.query.axis: #FREE
+  FixedAsset,
+  @AnalyticsDetails.query.axis: #FREE
+  OriginCostCenter,
+  @AnalyticsDetails.query.axis: #FREE
+  OrderID,
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 150
+  @AnalyticsDetails.query.axis: #FREE
+  @UI.textArrangement: #TEXT_LAST
+  WBSElementExternalID,
+  @AnalyticsDetails.query.axis: #FREE
+  PartnerWBSElementExternalID,
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 100
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  @UI.textArrangement: #TEXT_LAST
+  Fund,
+
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 160
+  @AnalyticsDetails.query.axis: #FREE
+  GrantID,
+  @AnalyticsDetails.query.axis: #FREE
+  GranteeMgmtSponsor,
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 110
+  @AnalyticsDetails.query.axis: #FREE
+  BudgetPeriod,
+  @AnalyticsDetails.query.axis: #FREE
+  PartnerFund,
+  @AnalyticsDetails.query.axis: #FREE
+  PartnerGrant,
+  @AnalyticsDetails.query.axis: #FREE
+  PartnerBudgetPeriod,
+
+  @AnalyticsDetails.query.axis: #FREE
+  CashLedgerAccount,
+
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 120
+  @AnalyticsDetails.query.axis: #FREE
+  @UI.textArrangement: #TEXT_LAST
+  PubSecBudgetAccount,
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 60
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  PubSecBudgetCnsmpnDate,
+  @AnalyticsDetails.query.axis: #FREE
+  PubSecBudgetCnsmpnFsclPeriod,
+  @AnalyticsDetails.query.axis: #FREE
+  PubSecBudgetCnsmpnFsclYear,
+  @AnalyticsDetails.query.axis: #FREE
+  PubSecBudgetCnsmpnType,
+  @AnalyticsDetails.query.axis: #FREE
+  PubSecBudgetCnsmpnAmtType,
+  @AnalyticsDetails.query.axis: #FREE
+  PubSecBudgetCnsmpnTypeGroup,
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true, mandatory: false, defaultValue: 'X' }
+  @AnalyticsDetails.query.axis: #FREE
+  PubSecBudgetIsRelevant,
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 201
+  @AnalyticsDetails.query.axis: #FREE
+  PubSecBdgtAcctRevnExpnCode,
+  @AnalyticsDetails.query.axis: #FREE
+  FundType,
+
+  @AnalyticsDetails.query.axis: #FREE
+  SponsoredClass,
+  @AnalyticsDetails.query.axis: #FREE
+  SponsoredProgram,
+  @AnalyticsDetails.query.axis: #FREE
+  GteeMBudgetValidityNumber,
+
+  @AnalyticsDetails.query.axis: #FREE
+  PurchaseRequisition,
+  @AnalyticsDetails.query.axis: #FREE
+  EarmarkedFundsDocument,
+  
+  _DocumentStore
+
+}
+```

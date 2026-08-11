@@ -30,9 +30,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `VerticalConsumptionDirection` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as verticalconsumptiondirection preserving type )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `VerticalCnsmpnDirectionDesc` |  | |  | `cast( ddtext as verticalcnsmpndirectiondesc preserving type )` |  |  |
+| `VerticalConsumptionDirection` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as verticalconsumptiondirection preserving type )` | `CHAR(2)` | Vertical Consumption Direction |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `VerticalCnsmpnDirectionDesc` |  | |  | `cast( ddtext as verticalcnsmpndirectiondesc preserving type )` | `CHAR(60)` | Vertical Consumption Direction Description |
 | `_Language` | | ✓ | | | | |
 | `_VerticalConsumptionDirection` | | ✓ | | | | |
 

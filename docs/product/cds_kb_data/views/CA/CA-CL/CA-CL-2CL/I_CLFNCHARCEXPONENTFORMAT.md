@@ -29,8 +29,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcExponentFormat` | ✓ | |  | `cast( dd07l.domvalue_l as atdex )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CharcExponentFormat` | ✓ | |  | `cast( dd07l.domvalue_l as atdex )` | `NUMC(1)` | Exponent Display Format |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

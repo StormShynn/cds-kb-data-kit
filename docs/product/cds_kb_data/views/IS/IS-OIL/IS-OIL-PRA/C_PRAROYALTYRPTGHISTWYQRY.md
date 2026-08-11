@@ -5,9 +5,24 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAROYALTYRPTGHISTWYQRY')/$value
 semantic_en: "PRA Royalty Reporting History Wyoming Query"
+semantic_vi: "PRA Royalty Reporting History Wyoming Query — CDS view tiêu dùng dựa trên I_PRARoyaltyRptgHistWY."
+keywords:
+  - "pra"
+  - "royalty"
+  - "reporting"
+  - "history"
+  - "wyoming"
+  - "query"
+  - "company"
+  - "code"
+  - "sales"
+  - "date"
+  - "product"
+  - "well"
+  - "completion"
 tags:
   - IS
   - bo:purchaseorder
@@ -15,7 +30,6 @@ tags:
   - consumption-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # C_PRAROYALTYRPTGHISTWYQRY
 
@@ -27,25 +41,25 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAROYALTYRPTGHISTWYQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAROYALTYRPTGHISTWYQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `SalesDate` |  | |  |  | `DATS(8)` | Sales Date / Month |
-| `Product` |  | |  |  | `CHAR(3)` | Full three char. product code (Major and Detail Products) |
-| `Well` |  | |  |  | `CHAR(15)` | Well ID number |
-| `WellCompletion` |  | |  |  | `CHAR(5)` | Well Completion Number |
-| `MeasurementPoint` |  | |  |  | `CHAR(20)` | Measurement point number |
-| `JointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
-| `DivisionOfInterest` |  | |  |  | `CHAR(5)` | Division of Interest (DOI) |
-| `DeliveryNetwork` |  | |  |  | `CHAR(20)` | Delivery network number |
-| `PRAContract` |  | |  |  | `CHAR(10)` | Contract Number |
-| `VolumeType` |  | |  |  | `CHAR(2)` | Volume type code |
-| `UniqueOwnerReference` |  | |  |  | `CHAR(24)` | Royalty 2.0 - Owner Identifier |
-| `TaxRptgRvslOrBkgOrAdjmt` |  | |  |  | `CHAR(1)` | Royalty 2.0 - WY - Reversal/Booking/Reversal Adjustment/Adjs |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `SalesDate` | ✓ | |  |  | `DATS(8)` | Sales Date / Month |
+| `Product` | ✓ | |  |  | `CHAR(3)` | Full three char. product code (Major and Detail Products) |
+| `Well` | ✓ | |  |  | `CHAR(15)` | Well ID number |
+| `WellCompletion` | ✓ | |  |  | `CHAR(5)` | Well Completion Number |
+| `MeasurementPoint` | ✓ | |  |  | `CHAR(20)` | Measurement point number |
+| `JointVenture` | ✓ | |  |  | `CHAR(6)` | Joint Venture |
+| `DivisionOfInterest` | ✓ | |  |  | `CHAR(5)` | Division of Interest (DOI) |
+| `DeliveryNetwork` | ✓ | |  |  | `CHAR(20)` | Delivery network number |
+| `PRAContract` | ✓ | |  |  | `CHAR(10)` | Contract Number |
+| `VolumeType` | ✓ | |  |  | `CHAR(2)` | Volume type code |
+| `UniqueOwnerReference` | ✓ | |  |  | `CHAR(24)` | Royalty 2.0 - Owner Identifier |
+| `TaxRptgRvslOrBkgOrAdjmt` | ✓ | |  |  | `CHAR(1)` | Royalty 2.0 - WY - Reversal/Booking/Reversal Adjustment/Adjs |
 | `UnitJointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
 | `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account Number |
 | `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
@@ -94,3 +108,134 @@ tags:
 | `APIGravityRatio` |  | |  |  | `DEC(6)` | Oil/gas density at standard/base conditions |
 | `DisbursementDecimalRatio` |  | |  |  | `DEC(9)` | Owner Disbursement (Balance) Decimal |
 | `OwnerEnergyInMMBTU` |  | |  |  | `DEC(12)` | Owner MMBTU |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAROYALTYRPTGHISTWYQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAROYALTYRPTGHISTWYQRY')/$value)*
+
+```abap
+@EndUserText.label: 'PRA Royalty Reporting History Wyoming Query'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVROYRPTGHWY'
+//@OData.publish: true
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #M
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+
+define view C_PRARoyaltyRptgHistWYQry 
+  as select from I_PRARoyaltyRptgHistWY
+{
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key CompanyCode,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query.axis: #ROWS
+      @AnalyticsDetails.query.variableSequence: 1
+  key SalesDate,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key Product,
+      @AnalyticsDetails.query.display: #KEY
+  key Well,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key WellCompletion,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key MeasurementPoint,
+  key JointVenture,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key DivisionOfInterest,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key DeliveryNetwork,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key PRAContract,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key VolumeType,
+  key UniqueOwnerReference,
+      @AnalyticsDetails.query.display: #TEXT
+  key TaxRptgRvslOrBkgOrAdjmt,
+      UnitJointVenture,
+      GLAccount,
+      CompanyCodeCurrency,
+      OwnerPaymentStatus,
+      @AnalyticsDetails.query.display: #TEXT
+      EntityIsCompanyOperated,
+      OperatorName,
+      ReportingAgencyLease,
+      ProductionSharingAgreement,
+      @AnalyticsDetails.query.display: #TEXT
+      EntityIsOnlyReported,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverrideOwnerOperatedType,
+      ReferenceFieldText,
+      AlternateProdnSharingAgrmt,
+      MasterDataRecordingLvl,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AgencyProduct,
+      Company,
+      AgencyReportType,
+      ValuationDocumentNumber,
+      ValuationDocumentYear,
+
+      CreatedByUser,
+      CreationDateTime,
+
+      @AnalyticsDetails.query.hidden
+      TractAllocToLeaseRatio,
+      @AnalyticsDetails.query.hidden
+      RoyaltyRate,
+      @AnalyticsDetails.query.hidden
+      AllocationPercent,
+      @AnalyticsDetails.query.hidden
+      CalcTractAllocToLeaseRatio,
+      @AnalyticsDetails.query.hidden
+      GrossVolInBaseUnit,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      GrossValInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      DdctnOrReimbmtAmtInCoCdCrcy,
+      @AnalyticsDetails.query.hidden
+      TaxReimbmtAmtInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      TranspMktgCostInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      OtherMktgCostInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      MktgCost01InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      MktgCost02InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      MktgCost03InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      MktgCost04InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      MktgCost05InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      MktgCost06InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      MktgCost07InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      MktgCost08InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      MktgCost09InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      MktgCost10InCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      OwnerGrossValInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden
+      NetRevenueInterestRatio,
+      @AnalyticsDetails.query.hidden
+      JournalEntryTransacAmtVal,
+      @AnalyticsDetails.query.hidden
+      HeatingValue,
+      @AnalyticsDetails.query.hidden
+      PressureBaseQty,
+      @AnalyticsDetails.query.hidden
+      APIGravityRatio,
+      @AnalyticsDetails.query.hidden
+      DisbursementDecimalRatio,
+      @AnalyticsDetails.query.hidden
+      OwnerEnergyInMMBTU
+      }
+```

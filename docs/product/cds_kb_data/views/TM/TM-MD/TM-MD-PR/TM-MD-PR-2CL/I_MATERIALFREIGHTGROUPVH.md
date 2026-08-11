@@ -5,9 +5,15 @@ app_component: TM-MD-PR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATERIALFREIGHTGROUPVH')/$value
 semantic_en: "This CDS view provides value help for Material Freight Group. This view should be used for value help purposes only. If you intend to select the entire business data, use the CDS view I_MaterialFreightGroup instead."
+semantic_vi: "Material Freight Group — CDS view cơ bản dựa trên I_MaterialFreightGroup."
+keywords:
+  - "material"
+  - "freight"
+  - "group"
+  - "name"
 tags:
   - TM
   - bo:purchaseorder
@@ -17,7 +23,6 @@ tags:
   - TM-MD
   - TM-MD-PR
   - TM-MD-PR-2CL
-  - metadata-only
 ---
 # I_MATERIALFREIGHTGROUPVH
 
@@ -29,11 +34,48 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATERIALFREIGHTGROUPVH')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATERIALFREIGHTGROUPVH')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `MaterialFreightGroup` |  | |  |  | `CHAR(8)` | Material Freight Group |
-| `MaterialFreightGroupName` |  | |  |  | `CHAR(20)` | Description |
+| `MaterialFreightGroup` | ✓ | |  |  | `CHAR(8)` | Material Freight Group |
+| `MaterialFreightGroupName` |  | |  | `_Text[1:Language = $session.system_language].MaterialFreightGroupName` | `CHAR(20)` | Description |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATERIALFREIGHTGROUPVH')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATERIALFREIGHTGROUPVH')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+//@Analytics.technicalName:
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Material Freight Group'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel: { usageType:{ serviceQuality: #A,
+                            sizeCategory: #S,
+                            dataClass: #CUSTOMIZING },
+                representativeKey: 'MaterialFreightGroup',
+                resultSet.sizeCategory: #XS,
+                semanticKey: ['MaterialFreightGroup'],
+                dataCategory: #VALUE_HELP,
+                supportedCapabilities: [ #VALUE_HELP_PROVIDER ] }
+@VDM: { viewType: #BASIC, 
+        lifecycle.status: #DEPRECATED,
+        lifecycle.successor: 'I_MaterialFreightGroupStdVH'
+      }
+@Search.searchable: true
+define view entity I_MaterialFreightGroupVH 
+as select from I_MaterialFreightGroup
+{
+  @ObjectModel.text.element: ['MaterialFreightGroupName']
+  key MaterialFreightGroup,
+  //Associations
+  @Search.defaultSearchElement: true
+  @Search.ranking: #HIGH
+  @Semantics.text:true
+  _Text[1:Language = $session.system_language].MaterialFreightGroupName as MaterialFreightGroupName
+  
+}
+```

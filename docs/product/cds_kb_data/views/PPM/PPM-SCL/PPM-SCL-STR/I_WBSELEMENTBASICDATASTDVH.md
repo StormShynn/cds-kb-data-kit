@@ -5,9 +5,23 @@ app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WBSELEMENTBASICDATASTDVH')/$value
 semantic_en: "Basic data for WBS Element"
+semantic_vi: "Basic data for WBS Element — CDS view giao diện dựa trên I_WBSElementBasicData."
+keywords:
+  - "basic"
+  - "data"
+  - "for"
+  - "wbs"
+  - "element"
+  - "internal"
+  - "external"
+  - "description"
+  - "controlling"
+  - "area"
+  - "profit"
+  - "center"
 tags:
   - PPM
   - bo:project
@@ -15,7 +29,6 @@ tags:
   - interface-view
   - PPM-SCL
   - PPM-SCL-STR
-  - metadata-only
 ---
 # I_WBSELEMENTBASICDATASTDVH
 
@@ -27,13 +40,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WBSELEMENTBASICDATASTDVH')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WBSELEMENTBASICDATASTDVH')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element |
+| `WBSElementInternalID` | ✓ | |  |  | `NUMC(8)` | WBS Element |
 | `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
 | `WBSDescription` |  | |  |  | `CHAR(40)` | Work Breakdown Structure Element Name |
 | `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
@@ -43,4 +56,72 @@ tags:
 | `Plant` |  | |  |  | `CHAR(4)` | Plant |
 | `ProjectType` |  | |  |  | `CHAR(2)` | Project Type |
 | `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
-| `ProjectInternalID` |  | |  |  | `NUMC(8)` | Project (internal) |
+| `ProjectInternalID` |  | |  | `cast( ProjectInternalID as ps_s4_proj_pspnr preserving type )` | `NUMC(8)` | Project (internal) |
+| `_Project` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WBSELEMENTBASICDATASTDVH')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WBSELEMENTBASICDATASTDVH')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IWBSELEBSCDTVH'
+@AbapCatalog.compiler.compareFilter: true
+
+@EndUserText.label: 'Basic data for WBS Element'
+
+@VDM.viewType: #BASIC
+
+@ObjectModel.dataCategory: #VALUE_HELP
+@ObjectModel.representativeKey: 'WBSElementInternalID'
+
+@ObjectModel.usageType.serviceQuality: #B
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.supportedCapabilities: [#VALUE_HELP_PROVIDER]
+@AccessControl.authorizationCheck: #CHECK
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@Search.searchable: true
+@Consumption.ranked: true
+//@VDM.lifecycle.contract.type:  #SAP_INTERNAL_API
+define view I_WBSElementBasicDataStdVH as select from I_WBSElementBasicData {
+  @UI.hidden: true
+  key WBSElementInternalID,
+  @ObjectModel.text.element: 'WBSDescription'
+   @Search: {
+          defaultSearchElement: true,
+          fuzzinessThreshold: 0.8,
+          ranking: #HIGH
+         }
+  WBSElementExternalID,
+   @Search: {
+          defaultSearchElement: true,
+          fuzzinessThreshold: 0.8,
+          ranking: #LOW
+         }
+  @Semantics.text: true
+  WBSDescription,
+  @Consumption.hidden: true
+  ControllingArea,
+  @Consumption.hidden: true
+  ProfitCenter,
+  @Consumption.hidden: true
+  CompanyCode, 
+  @Consumption.hidden: true
+  ResponsibleCostCenter, 
+  @Consumption.hidden: true
+  Plant, 
+  @Consumption.hidden: true
+  ProjectType, 
+  @Consumption.hidden: true
+  FunctionalArea,
+  @UI.hidden: true      
+  cast( ProjectInternalID as ps_s4_proj_pspnr preserving type ) as ProjectInternalID,
+  @Consumption.hidden: true
+  _Project 
+  
+}
+```

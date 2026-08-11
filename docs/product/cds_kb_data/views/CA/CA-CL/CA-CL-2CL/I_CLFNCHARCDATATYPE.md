@@ -29,8 +29,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcDataType` | ✓ | |  | `cast( dd07l.domvalue_l as atfor )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CharcDataType` | ✓ | |  | `cast( dd07l.domvalue_l as atfor )` | `CHAR(4)` | Data type of characteristic |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

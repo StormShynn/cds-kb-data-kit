@@ -5,9 +5,20 @@ app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_WHSEDOCUMENTITEM')/$value
 semantic_en: "This CDS view provides a comprehensive and harmonized representation of warehouse document item data in Warehouse Management. You can use this view to extract and analyze detailed warehouse item information, track movements, and support operational warehouse processes. This CDS view provides the data to answer the following business questions: Which products, batches, or handling units are included in a specific warehouse document item? What are the source and destination warehouse bins, types, and sections for each warehouse document item? Who created or confirmed the warehouse document item and when did these actions occur? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Warehouse Document Item — CDS view giao diện dựa trên P_EWM_WhseDocumentItem."
+keywords:
+  - "warehouse"
+  - "document"
+  - "item"
+  - "time"
+  - "zone"
+  - "logical"
+  - "record"
+  - "transaction"
+  - "code"
 tags:
   - SCM
   - bo:companycode
@@ -18,7 +29,6 @@ tags:
   - SCM-EWM
   - SCM-EWM-WOP
   - SCM-EWM-WOP-2CL
-  - metadata-only
 ---
 # I_EWM_WHSEDOCUMENTITEM
 
@@ -30,15 +40,15 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_WHSEDOCUMENTITEM')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_WHSEDOCUMENTITEM')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMWarehouseDocument` |  | |  |  | `NUMC(12)` | Warehouse Document |
-| `EWMWarehouseDocumentItem` |  | |  |  | `NUMC(4)` | Warehouse Document Item |
+| `EWMWarehouse` | ✓ | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMWarehouseDocument` | ✓ | |  |  | `NUMC(12)` | Warehouse Document |
+| `EWMWarehouseDocumentItem` | ✓ | |  |  | `NUMC(4)` | Warehouse Document Item |
 | `WarehouseTimeZone` |  | |  |  | `CHAR(6)` | Time Zone |
 | `LogicalRecordTransactionCode` |  | |  |  | `CHAR(20)` | Table Log Record: Transaction Code |
 | `EWMWhseDocItemIsCancelable` |  | |  |  | `CHAR(1)` | Warehouse Document Item is Cancelable |
@@ -114,3 +124,180 @@ tags:
 | `HandlingUnitNumber` |  | |  |  | `CHAR(20)` | Handling Unit |
 | `PurchaseOrder` |  | |  |  | `CHAR(10)` | Purchase Order Number |
 | `PurchaseOrderItem` |  | |  |  | `NUMC(5)` | Item Number of Purchase Order |
+| `_SerialNumber` | | ✓ | | | | |
+| `_CountryText` | | ✓ | | | | |
+| `_DstStorageSectionText` | | ✓ | | | | |
+| `_DstStorageTypeText` | | ✓ | | | | |
+| `_EWMEntitledToDisposePartyText` | | ✓ | | | | |
+| `_EWMStockOwnerText` | | ✓ | | | | |
+| `_EWMStockTypeText` | | ✓ | | | | |
+| `_StockDocCategoryText` | | ✓ | | | | |
+| `_EWMStockUsageText` | | ✓ | | | | |
+| `_EWMStorageSectionText` | | ✓ | | | | |
+| `_ValuationQuantityStatusText` | | ✓ | | | | |
+| `_EWMDiffValuationQntyStatusT` | | ✓ | | | | |
+| `_AccountAssgmtCatText` | | ✓ | | | | |
+| `_EWMStorageTypeText` | | ✓ | | | | |
+| `_SrcStorageSectionText` | | ✓ | | | | |
+| `_SrcStorageTypeText` | | ✓ | | | | |
+| `_WarehouseText` | | ✓ | | | | |
+| `_WhseProcCategoryText` | | ✓ | | | | |
+| `_WhseProcTypeText` | | ✓ | | | | |
+| `_WhseDocumentItemStatusText` | | ✓ | | | | |
+| `_WarehouseMovementReasonText` | | ✓ | | | | |
+| `_UnitOfMeasureBaseUnit` | | ✓ | | | | |
+| `_UnitOfMeasureAlternativeUnit` | | ✓ | | | | |
+| `_UnitOfMeasureNetVolumeUoM` | | ✓ | | | | |
+| `_UnitOfMeasureNetWeightUoM` | | ✓ | | | | |
+| `_UnitOfMeasureValnQtyUnit` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_SerialNumber` | `I_EWM_ConfWhseTaskSerialNumber` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_WHSEDOCUMENTITEM')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_WHSEDOCUMENTITEM')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #MANDATORY
+@VDM.viewType: #COMPOSITE
+@EndUserText.label: 'Warehouse Document Item'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType:{
+  serviceQuality: #C,
+  sizeCategory: #L,
+  dataClass: #MIXED
+}
+@ObjectModel.supportedCapabilities:  [  #CDS_MODELING_DATA_SOURCE,
+                                        #CDS_MODELING_ASSOCIATION_TARGET, 
+                                        #SQL_DATA_SOURCE                  ]
+define view entity I_EWM_WhseDocumentItem
+  as select from P_EWM_WhseDocumentItem
+  association [0..*] to I_EWM_ConfWhseTaskSerialNumber  as _SerialNumber on  $projection.EWMWarehouse         = _SerialNumber.EWMWarehouse
+                                                               and $projection.EWMWarehouseDocument = _SerialNumber.WarehouseTask
+                                                               and $projection.EWMWarehouseDocumentItem = _SerialNumber.WarehouseTaskItem
+{
+  key EWMWarehouse,
+  key EWMWarehouseDocument,
+  key EWMWarehouseDocumentItem,
+  WarehouseTimeZone,
+  LogicalRecordTransactionCode,
+  @Semantics.booleanIndicator:true
+  EWMWhseDocItemIsCancelable,
+  EWMWhseDocGoodsReceiptDate,
+      Product,
+      ProductDescription,
+      Batch,
+      EWMStockType,
+      StockDocumentCategory,
+      @UI.hidden: true
+      StockDocumentNumber,
+      StockItemNumber,
+      ExternalStockDocumentNumber,
+      EWMStockUsage,
+      EWMStockOwner,
+      EWMStockOwnerName,
+      EntitledToDisposeParty,
+      EntitledToDisposePartyName,
+      ShelfLifeExpirationDate,
+      CountryOfOrigin,
+      WhseTaskCapacityConsumption,
+      WhseTaskCrtnWhseTmznDateTime,
+      WhseTaskCrtnUTCDateTime,
+      CreatedByUser,
+      CreatedByUserName,
+      WhseTaskConfWhseTmznDateTime,
+      ConfirmationUTCDateTime,
+      ConfirmedByUser,
+      ConfirmedByUserName,
+      IsHandlingUnitWarehouseTask,
+      WarehouseProcessType,
+      WarehouseProcessCategory,
+      EWMWarehouseDocumentItemStatus,
+      @Feature:'SW:/SCWM/SFWS_104_ON_PREMISE'
+      EWMWhseDocumentItemStatusIcon,
+      WarehouseMovementsReason,     
+      WarehouseMovementsText,
+      EWMGoodsMovementProcess,
+      @Semantics.quantity.unitOfMeasure: 'BASEUNIT'
+      ActualQuantityInBaseUnit,
+      BaseUnit,
+      @Semantics.quantity.unitOfMeasure: 'ALTERNATIVEUNIT'
+      ActualQuantityInAltvUnit,
+      AlternativeUnit,
+      @Semantics.quantity.unitOfMeasure: 'EWMValuationQuantityUnit'
+      EWMValuationQuantity,
+      EWMValuationQuantityUnit,
+      EWMValuationQuantityStatus,
+      @Semantics.quantity.unitOfMeasure: 'EWMValuationQuantityUnit'
+      EWMDifferenceValuationQuantity,
+      EWMDiffValuationQuantityStatus,
+      EWMAccountAssignmentCategory,
+      EWMAccountAssignmentObject,
+      EWMAccountAssignmentSubObject,
+      @Semantics.quantity.unitOfMeasure: 'WHSETASKNETWEIGHTUNITOFMEASURE'
+      WhseTaskNetWeight,
+      WhseTaskNetWeightUnitOfMeasure,
+      @Semantics.quantity.unitOfMeasure: 'WHSETASKNETVOLUMEUNITOFMEASURE'
+      WhseTaskNetVolume,
+      WhseTaskNetVolumeUnitOfMeasure,
+      EWMCanceledWarehouseDocument,
+      ProductionOrder,
+      Kanban,
+      @Feature:'SW:/SCWM/SFWS_104_ON_PREMISE'
+      EWMWarehouseTaskIsJITRelevant,
+      MaterialDocument,
+      MaterialDocumentYear,
+      MaterialDocumentItem,
+      PostingDate,
+      EWMWarehouseDocumentItemUUID,
+      SourceStorageType,
+      SourceStorageSection,
+      SourceStorageBin,
+      SourceHandlingUnit,
+      DestinationStorageType,
+      DestinationStorageSection,
+      DestinationStorageBin,
+      DestinationHandlingUnit,
+      EWMStorageType,
+      EWMStorageSection,
+      EWMStorageBin,
+      HandlingUnitNumber,
+      // purchase order & purchase order item
+      PurchaseOrder,
+      PurchaseOrderItem,
+
+      /* Associations */
+      _CountryText,
+      _DstStorageSectionText,
+      _DstStorageTypeText,
+      _EWMEntitledToDisposePartyText,
+      _EWMStockOwnerText,
+      _EWMStockTypeText,
+      _StockDocCategoryText,
+      _EWMStockUsageText,
+      _EWMStorageSectionText,
+      _ValuationQuantityStatusText,
+      _EWMDiffValuationQntyStatusT,
+      _AccountAssgmtCatText,
+      _EWMStorageTypeText,
+      _SrcStorageSectionText,
+      _SrcStorageTypeText,
+      _WarehouseText,
+      _WhseProcCategoryText,
+      _WhseProcTypeText,
+      _WhseDocumentItemStatusText,
+      _WarehouseMovementReasonText,
+      _UnitOfMeasureBaseUnit,
+      _UnitOfMeasureAlternativeUnit,
+      _UnitOfMeasureNetVolumeUoM,
+      _UnitOfMeasureNetWeightUoM,
+      _UnitOfMeasureValnQtyUnit,
+      _SerialNumber
+
+}
+```

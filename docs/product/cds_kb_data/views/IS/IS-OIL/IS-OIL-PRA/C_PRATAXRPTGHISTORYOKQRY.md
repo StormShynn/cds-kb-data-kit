@@ -5,9 +5,24 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYOKQRY')/$value
 semantic_en: "PRA Tax Reporting History Oklahoma Query"
+semantic_vi: "PRA Tax Reporting History Oklahoma Query — CDS view tiêu dùng dựa trên I_PRATaxRptgHistoryOK."
+keywords:
+  - "pra"
+  - "tax"
+  - "reporting"
+  - "history"
+  - "oklahoma"
+  - "query"
+  - "company"
+  - "code"
+  - "sales"
+  - "date"
+  - "product"
+  - "well"
+  - "completion"
 tags:
   - IS
   - bo:purchaseorder
@@ -15,7 +30,6 @@ tags:
   - consumption-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # C_PRATAXRPTGHISTORYOKQRY
 
@@ -27,26 +41,26 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYOKQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYOKQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `SalesDate` |  | |  |  | `DATS(8)` | Sales Date / Month |
-| `Product` |  | |  |  | `CHAR(3)` | Full three char. product code (Major and Detail Products) |
-| `Well` |  | |  |  | `CHAR(15)` | Well ID number |
-| `WellCompletion` |  | |  |  | `CHAR(5)` | Well Completion Number |
-| `MeasurementPoint` |  | |  |  | `CHAR(20)` | Measurement point number |
-| `JointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
-| `DivisionOfInterest` |  | |  |  | `CHAR(5)` | Division of Interest (DOI) |
-| `DeliveryNetwork` |  | |  |  | `CHAR(20)` | Delivery network number |
-| `PRAContract` |  | |  |  | `CHAR(10)` | Contract Number |
-| `VolumeType` |  | |  |  | `CHAR(2)` | Volume type code |
-| `TaxClassification` |  | |  |  | `CHAR(4)` | Tax Class |
-| `ProductionUnitNumber` |  | |  |  | `NUMC(14)` | Tax 2.0 - OKGP15 - Production Unit Number |
-| `TaxRptgRvslOrBkgOrAdjmt` |  | |  |  | `CHAR(1)` | Tax 2.0 - Reversal/Booking/Reversal Adjustment/Adjustment |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `SalesDate` | ✓ | |  |  | `DATS(8)` | Sales Date / Month |
+| `Product` | ✓ | |  |  | `CHAR(3)` | Full three char. product code (Major and Detail Products) |
+| `Well` | ✓ | |  |  | `CHAR(15)` | Well ID number |
+| `WellCompletion` | ✓ | |  |  | `CHAR(5)` | Well Completion Number |
+| `MeasurementPoint` | ✓ | |  |  | `CHAR(20)` | Measurement point number |
+| `JointVenture` | ✓ | |  |  | `CHAR(6)` | Joint Venture |
+| `DivisionOfInterest` | ✓ | |  |  | `CHAR(5)` | Division of Interest (DOI) |
+| `DeliveryNetwork` | ✓ | |  |  | `CHAR(20)` | Delivery network number |
+| `PRAContract` | ✓ | |  |  | `CHAR(10)` | Contract Number |
+| `VolumeType` | ✓ | |  |  | `CHAR(2)` | Volume type code |
+| `TaxClassification` | ✓ | |  |  | `CHAR(4)` | Tax Class |
+| `ProductionUnitNumber` | ✓ | |  |  | `NUMC(14)` | Tax 2.0 - OKGP15 - Production Unit Number |
+| `TaxRptgRvslOrBkgOrAdjmt` | ✓ | |  |  | `CHAR(1)` | Tax 2.0 - Reversal/Booking/Reversal Adjustment/Adjustment |
 | `AllocationRatio` |  | |  |  | `CHAR(18)` | Tax 2.0 - Allocation Percentage |
 | `ProducerOrPurchaserCode` |  | |  |  | `CHAR(1)` | Producer or Purchaser |
 | `UnitJointVenture` |  | |  |  | `CHAR(6)` | Unit Venture |
@@ -96,3 +110,140 @@ tags:
 | `ArapahoTribeTaxAmtInCoCdCrcy` |  | |  |  | `CURR(11)` | Shoshone Arapaho Tax |
 | `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
 | `PrimaryGeogrlLocation` |  | |  |  | `CHAR(2)` | Primary Geographical Location |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYOKQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYOKQRY')/$value)*
+
+```abap
+@EndUserText.label: 'PRA Tax Reporting History Oklahoma Query'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVTAXRPTGHISTOK'
+//@OData.publish: true
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+
+define view C_PRATaxRptgHistoryOKQRY
+  as select from I_PRATaxRptgHistoryOK
+{
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key CompanyCode,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query.axis: #ROWS
+      @AnalyticsDetails.query.variableSequence: 1
+  key SalesDate,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key Product,
+  key Well,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key WellCompletion,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key MeasurementPoint,
+  key JointVenture,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key DivisionOfInterest,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key DeliveryNetwork,
+  key PRAContract,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key VolumeType,
+      @AnalyticsDetails.query.display: #TEXT
+  key TaxClassification,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 3
+      @AnalyticsDetails.query.display: #KEY
+  key ProductionUnitNumber,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key TaxRptgRvslOrBkgOrAdjmt,
+      AllocationRatio,
+      @AnalyticsDetails.query.display: #TEXT
+      ProducerOrPurchaserCode,
+      UnitJointVenture,
+      @AnalyticsDetails.query.display: #TEXT
+      HasSeveranceTaxPaytOblgn,
+      @AnalyticsDetails.query.display: #TEXT
+      SeveranceTaxRptgType,
+      CompanyCodeCurrency,
+      TaxRate,
+      ProducerOrPurchaserNmbr,
+      ValuationDocumentNumber,
+      ValuationDocumentYear,
+      @AnalyticsDetails.query.display: #TEXT
+      TaxExemptCode1,
+      @AnalyticsDetails.query.display: #TEXT
+      TaxExemptCode2,
+      @AnalyticsDetails.query.display: #TEXT
+      TaxExemptCode3,
+      @AnalyticsDetails.query.display: #TEXT
+      TaxExemptCode4,
+      @AnalyticsDetails.query.display: #TEXT
+      TaxExemptCode5,
+      @AnalyticsDetails.query.display: #TEXT
+      MasterDataRecordingLvl,
+      ExtProducerOrPurchaserNmbr,
+      @AnalyticsDetails.query.display: #TEXT
+      ProductType,
+      TaxPayerIDByAgency,
+      ReportingCompany,
+      ProductionDate,
+
+      CreatedByUser,
+      CreationDateTime,
+
+      @AnalyticsDetails.query.hidden     
+      GrossVolInBaseUnit,
+      @AnalyticsDetails.query.hidden     
+      GrossValInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden     
+      TaxableVolInBaseUnit,
+      @AnalyticsDetails.query.hidden     
+      TaxableValInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden     
+      TaxExmptVol1InBaseUnit,
+      @AnalyticsDetails.query.hidden     
+      TaxExmptVal1InCoCdCrcy,
+      @AnalyticsDetails.query.hidden     
+      TaxExmptVol2InBaseUnit,
+      @AnalyticsDetails.query.hidden     
+      TaxExmptVal2InCoCdCrcy,
+      @AnalyticsDetails.query.hidden     
+      TaxExmptVol3InBaseUnit,
+      @AnalyticsDetails.query.hidden     
+      TaxExmptVal3InCoCdCrcy,
+      @AnalyticsDetails.query.hidden     
+      TaxExmptVol4InBaseUnit,
+      @AnalyticsDetails.query.hidden     
+      TaxExmptVal4InCoCdCrcy,
+      @AnalyticsDetails.query.hidden     
+      TaxExmptVol5InBaseUnit,
+      @AnalyticsDetails.query.hidden     
+      TaxExmptVal5InCoCdCrcy,
+      @AnalyticsDetails.query.hidden     
+      EnhncdOilRcvryVolInBaseUnit,
+      @AnalyticsDetails.query.hidden     
+      EnhncdOilRcvryValInCoCdCrcy,
+      @AnalyticsDetails.query.hidden     
+      MktgCostInCoCodeCrcy,
+      @AnalyticsDetails.query.hidden     
+      MktgReimbmtCostInCoCodeCrcy,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      GrossProdnTaxAmtInCoCodeCrcy,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      PetroleumExcsTxAmtInCoCdCrcy,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      RevolvingFundTxAmtInCoCdCrcy,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      MarginProdgTxAmtInCoCdCrcy,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      KoiwaTribeTaxAmtInCoCodeCrcy,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      ArapahoTribeTaxAmtInCoCdCrcy,
+      Country,
+      PrimaryGeogrlLocation
+}
+```

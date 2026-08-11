@@ -5,11 +5,24 @@ app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNSLDTNRULEBSDGRPJRNLITEMQ')/$value
 semantic_en: "This CDS view can be used as analytical provider (primary data source) for an analytical query. You can use it to select different reporting item hierarchies and generate rule-based consolidation reports, for example, cash flow statements or changes in equity. Since this is a C1-released query, you can use it in the Custom Analytical Queries app and in SAP Analysis for Microsoft Office. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Rule-Based Group Data Analysis - Query — CDS view tiêu dùng dựa trên I_CnsldtnRuleBsdGrpJrnlItemC."
 keywords:
   - "Rule-Based Group Data Analysis"
+  - "rule"
+  - "based"
+  - "group"
+  - "data"
+  - "analysis"
+  - "query"
+  - "consolidation"
+  - "version"
+  - "element"
+  - "fiscal"
+  - "year"
+  - "period"
 tags:
   - FIN
   - bo:companycode
@@ -19,7 +32,7 @@ tags:
   - FIN-CS-EA
   - FIN-CS-EA-2CL
   - lob:finance
-  - metadata-only
+  - bo:salesorganization
 ---
 # C_CNSLDTNRULEBSDGRPJRNLITEMQ
 
@@ -31,7 +44,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNSLDTNRULEBSDGRPJRNLITEMQ')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNSLDTNRULEBSDGRPJRNLITEMQ')/$value) |
 
 ## Fields
 
@@ -154,9 +167,460 @@ tags:
 | `GrantID` |  | |  |  | `CHAR(20)` | Grant |
 | `CnsldtnCashLedgerChartOfAccts` |  | |  |  | `CHAR(4)` | Cash Origin Chart of Accounts |
 | `CashLedgerAccount` |  | |  |  | `CHAR(10)` | Cash Origin Account |
-| `ConsolidationUnitHierarchy` |  | |  |  | `CHAR(40)` | Consolidation Unit Hierarchy |
-| `ConsolidationSegmentHierarchy` |  | |  |  | `CHAR(40)` | Segment Hierarchy |
-| `ConsolidationPrftCtrHierarchy` |  | |  |  | `CHAR(40)` | Profit Center Hierarchy |
-| `KeyDate` |  | |  |  | `DATS(8)` | Key Date |
-| `ConsolidationReportingRuleID` |  | |  |  | `CHAR(3)` | Reporting Rule Variant |
-| `ConsolidationReportingItemHier` |  | |  |  | `CHAR(10)` | Reporting Item Hierarchy |
+| `ConsolidationUnitHierarchy` |  | |  | `cast(:P_ConsolidationUnitHierarchy as fincs_hryid_consunit preserving type )` | `CHAR(40)` | Consolidation Unit Hierarchy |
+| `ConsolidationSegmentHierarchy` |  | |  | `cast(:P_ConsolidationSegmentHier as fincs_hryid_segment preserving type )` | `CHAR(40)` | Segment Hierarchy |
+| `ConsolidationPrftCtrHierarchy` |  | |  | `cast(:P_ConsolidationPrftCtrHier as fincs_hryid_profitcenter preserving type )` | `CHAR(40)` | Profit Center Hierarchy |
+| `KeyDate` |  | |  | `cast(:P_KeyDate as vdm_v_key_date preserving type )` | `DATS(8)` | Key Date |
+| `ConsolidationReportingRuleID` |  | |  | `cast(:P_ConsolidationRptgRuleID as fincs_rptid preserving type )` | `CHAR(3)` | Reporting Rule Variant |
+| `ConsolidationReportingItemHier` |  | |  | `cast(:P_ConsolidationRptgItemHier as fincs_rihry preserving type )` | `CHAR(10)` | Reporting Item Hierarchy |
+| `_RptgItmHierDir` | | ✓ | | | | |
+| `_RptgRuleVarAssgmt` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_LocalCurrency` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_SubItemCategory` | | ✓ | | | | |
+| `_SubItem` | | ✓ | | | | |
+| `_GroupCurrency` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_RptgItmHierDir` | `I_CnsldtnRptgItmHierDir` | [0..1] |
+| `_RptgRuleVarAssgmt` | `I_CnsldtnRptgRuleVarAssgmt` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNSLDTNRULEBSDGRPJRNLITEMQ')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNSLDTNRULEBSDGRPJRNLITEMQ')/$value)*
+
+```abap
+@AbapCatalog:{
+    sqlViewName: 'CSRBGRPJRNLITMQ',
+    compiler.compareFilter: true,
+    buffering.status:  #NOT_ALLOWED
+}
+@AccessControl: {
+    authorizationCheck: #PRIVILEGED_ONLY
+}
+@ClientHandling: {
+    algorithm: #SESSION_VARIABLE
+}
+@Metadata: {
+    ignorePropagatedAnnotations: true
+}
+@ObjectModel: {
+    usageType: {
+        sizeCategory: #XL,
+        serviceQuality: #D,
+        dataClass: #MIXED
+    },
+    supportedCapabilities: [ #ANALYTICAL_QUERY ],
+    modelingPattern: #ANALYTICAL_QUERY
+}
+@Analytics: {
+    query: true
+}
+@VDM: {
+    viewType: #CONSUMPTION
+}
+@EndUserText.label: 'Rule-Based Group Data Analysis - Query' // The  @EndUserText: {label: ......'} format leads to issue when using the Key User Tools
+
+define view C_CnsldtnRuleBsdGrpJrnlItemQ
+  with parameters
+    @AnalyticsDetails.query.variableSequence : 150
+    @Consumption.defaultValue: '$'
+    @Consumption.valueHelpDefinition:[{
+      entity: { name:    'I_CnsldtnUnitHierDirVH',
+                element: 'ConsolidationUnitHierarchy' }
+    }]
+    P_ConsolidationUnitHierarchy   : fincs_hryid_consunit,
+
+    @AnalyticsDetails.query.variableSequence : 170
+    @Consumption.defaultValue: '$'
+    @EndUserText.label: 'Profit Center Hierarchy'
+    @Consumption.valueHelpDefinition:[{
+      entity: { name: 'I_CnsldtnProfitCenterHierDirVH',
+                element: 'AdditionalMasterDataHierarchy' }
+    }]
+    P_ConsolidationPrftCtrHier     : fincs_hryid_profitcenter,
+
+    @AnalyticsDetails.query.variableSequence : 190
+    @Consumption.defaultValue: '$'
+    @EndUserText.label: 'Segment Hierarchy'
+    @Consumption.valueHelpDefinition:[{
+      entity: { name:    'I_CnsldtnSegmentHierDirVH',
+                element: 'ConsolidationSegmentHierarchy' }
+    }]
+    P_ConsolidationSegmentHier     : fincs_hryid_segment,
+
+    @AnalyticsDetails.query.variableSequence : 81
+    @Consumption.valueHelpDefinition:[{
+    entity: {
+        name:    'I_CnsldtnRptgRuleVarVH',
+        element: 'ConsolidationReportingRuleID'
+            }
+    }]
+    P_ConsolidationRptgRuleID      : fincs_rptid,
+
+    @AnalyticsDetails.query.variableSequence : 61
+    @Consumption.valueHelpDefinition:[{
+    entity: {
+        name:    'I_CnsldtnRptgItmHierDirVH',
+        element: 'ConsolidationReportingItemHier'
+            }
+    }]
+    P_ConsolidationRptgItemHier    : fincs_rihry,
+
+    @Semantics.businessDate.at: true
+    @AnalyticsDetails.query.variableSequence : 210
+    @Environment.systemField: #SYSTEM_DATE
+    P_KeyDate                      : vdm_v_key_date,
+
+    @AnalyticsDetails.query.variableSequence : 52
+    @EndUserText.label: 'Consolidation Chart of Accounts'
+    P_ConsolidationChartOfAccounts : fincs_itclg
+
+  as select from I_CnsldtnRuleBsdGrpJrnlItemC
+                 ( P_ConsolidationUnitHierarchy:   $parameters.P_ConsolidationUnitHierarchy,
+                   P_ConsolidationPrftCtrHier:     $parameters.P_ConsolidationPrftCtrHier,
+                   P_ConsolidationSegmentHier:     $parameters.P_ConsolidationSegmentHier,
+                   P_KeyDate:                      $parameters.P_KeyDate,
+                   P_ConsolidationRptgItemHier:    $parameters.P_ConsolidationRptgItemHier,
+                   P_ConsolidationRptgRuleID:      $parameters.P_ConsolidationRptgRuleID
+                 ) as CnsldtnRuleBsdGrpJrnlItemC
+
+  association [0..1] to I_CnsldtnRptgItmHierDir    as _RptgItmHierDir    on  $projection.ConsolidationChartOfAccounts       = _RptgItmHierDir.ConsolidationChartOfAccounts
+                                                                         and _RptgItmHierDir.ConsolidationReportingItemHier = $parameters.P_ConsolidationRptgItemHier
+  association [0..1] to I_CnsldtnRptgRuleVarAssgmt as _RptgRuleVarAssgmt on  $projection.ConsolidationChartOfAccounts          = _RptgRuleVarAssgmt.ConsolidationChartOfAccounts
+                                                                         and _RptgRuleVarAssgmt.ConsolidationReportingItemHier = $parameters.P_ConsolidationRptgItemHier
+                                                                         and _RptgRuleVarAssgmt.ConsolidationReportingRuleID   = $parameters.P_ConsolidationRptgRuleID
+{
+
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true, mandatory: true}
+  @AnalyticsDetails.query.variableSequence : 20
+  @EndUserText.label: 'Version'
+  ConsolidationVersion,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY
+  @EndUserText.label: 'Consolidation Version Element'
+  ConsolidationVersionElement,
+
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true, mandatory: true}
+  @AnalyticsDetails.query.variableSequence : 30
+  @EndUserText.label: 'Fiscal Year'
+  FiscalYear,
+
+  @AnalyticsDetails.query.variableSequence : 40
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true, mandatory: true}
+  @EndUserText.label: 'Period'
+  FiscalPeriod,
+
+  @AnalyticsDetails.query.variableSequence : 50
+  FiscalYearPeriod,
+
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true, mandatory: false}
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @AnalyticsDetails.query.variableSequence : 51
+  PeriodMode,
+
+  @AnalyticsDetails.query.variableSequence : 60
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true, mandatory: true}
+  ConsolidationChartOfAccounts,
+
+  @Consumption.filter: {
+  hierarchyBinding : [
+                      { type : #PARAMETER, value : 'P_ConsolidationChartOfAccounts'},
+                      { type : #PARAMETER, value : 'P_ConsolidationRptgItemHier'}],
+  selectionType: #HIERARCHY_NODE,
+  multipleSelections: true,
+  mandatory:          false
+   }
+  @AnalyticsDetails.query: {
+      variableSequence :  70,
+      axis:               #ROWS,
+      display:            #KEY_TEXT,
+      displayHierarchy:   #FILTER,
+      hierarchyInitialLevel: 02
+      }
+  @EndUserText.label: 'Reporting Item'
+  ConsolidationReportingItem,
+
+  @Consumption.filter: {
+  selectionType: #SINGLE,
+  multipleSelections: true,
+  mandatory: false
+  }
+  @AnalyticsDetails.query: {
+  variableSequence : 120,
+  axis: #FREE,
+  display: #KEY_TEXT
+  }
+  @Consumption.semanticObject: 'ConsolidationFinanceSItem'
+  FinancialStatementItem,
+
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true, mandatory: true}
+  @AnalyticsDetails.query.variableSequence : 10
+  @EndUserText.label: 'Consolidation Group'
+  ConsolidationGroup,
+
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true, mandatory: false}
+  @AnalyticsDetails.query: {
+  variableSequence : 160,
+  axis: #FREE,
+  display: #KEY
+  }
+  @EndUserText.label:'Consolidation Unit'
+  @Consumption.semanticObject: 'ConsolidationOrgUnit'
+  ConsolidationUnit,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @AnalyticsDetails.query.display: #KEY
+  @EndUserText.label: 'Consolidation Unit Eliminated'
+  ConsolidationUnitForElim,
+
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true, mandatory: false}
+  @AnalyticsDetails.query: {
+  variableSequence : 200,
+  axis: #FREE,
+  display: #KEY
+  }
+  @EndUserText.label:'Profit Center'
+  ProfitCenter,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Profit Center Eliminated'
+  ConsolidationPrftCtrForElim,
+
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true, mandatory: false}
+  @AnalyticsDetails.query: {
+  variableSequence : 180,
+  axis: #FREE,
+  display: #KEY
+  }
+  @EndUserText.label:'Segment'
+  Segment,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Segment Eliminated'
+  ConsolidationSegmentForElim,
+
+  @ObjectModel.foreignKey.association: '_SubItemCategory'
+  SubItemCategory,
+
+  @ObjectModel.foreignKey.association: '_SubItem'
+  SubItem,
+
+  ConsolidationDocumentType,
+  PostingLevel,
+  PartnerConsolidationUnit,
+  PartnerProfitCenter,
+  PartnerSegment,
+
+  @ObjectModel.foreignKey.association: '_ControllingArea'
+  ControllingArea,
+
+  CostCenter,
+  FinancialTransactionType,
+  FunctionalArea,
+  CurrencyConversionsDiffType,
+
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true, mandatory: false}
+  @AnalyticsDetails.query.variableSequence : 100
+  @EndUserText.label: 'Group Currency'
+  @Consumption.hidden: false
+  @Semantics.currencyCode:true
+  @ObjectModel.foreignKey.association: '_GroupCurrency'
+  GroupCurrency,
+
+  @Semantics.currencyCode:true
+  @ObjectModel.foreignKey.association: '_TransactionCurrency'
+  TransactionCurrency,
+
+  @Semantics.currencyCode:true
+  @ObjectModel.foreignKey.association: '_LocalCurrency'
+  LocalCurrency,
+
+  @Semantics.unitOfMeasure: true
+  @ObjectModel.foreignKey.association: '_BaseUnit'
+  BaseUnit,
+
+  @DefaultAggregation: #SUM
+  @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+  AmountInTransactionCurrency,
+
+  @DefaultAggregation: #SUM
+  @Semantics: { amount : {currencyCode: 'LocalCurrency'} }
+  AmountInLocalCurrency,
+
+  @DefaultAggregation: #SUM
+  @Semantics: { amount : {currencyCode: 'GroupCurrency'} }
+  @Consumption.semanticObject: 'ConsolidationJournalEntryList'
+  AmountInGroupCurrency,
+
+  @DefaultAggregation: #SUM
+  @Semantics: { quantity : {unitOfMeasure : 'BaseUnit'} }
+  CnsldtnQuantityInBaseUnit,
+
+  CnsldtnGroupJrnlEntry,
+  CnsldtnGroupJrnlEntryItem,
+  GLRecordType,
+  FiscalYearVariant,
+  DebitCreditCode,
+  Company,
+  CompanyCode,
+  ConsolidationApportionment,
+  ConsolidationAcquisitionYear,
+  ConsolidationAcquisitionPeriod,
+  InvesteeConsolidationUnit,
+  DocumentItemText,
+  ConsolidationPostgItemAutoFlag,
+  BusinessTransactionType,
+  PostingDate,
+  CurrencyTranslationDate,
+  RefConsolidationDocumentNumber,
+  ReferenceFiscalYear,
+  RefConsolidationPostingItem,
+  RefConsolidationDocumentType,
+  RefBusinessTransactionType,
+  CreationDate,
+  CreationTime,
+  UserID,
+  ReverseDocument,
+  ReversedDocument,
+  InvestmentActivityType,
+  InvestmentActivity,
+  ConsolidationDocReversalYear,
+  ReferenceDocumentType,
+  ReferenceDocumentContext,
+  LogicalSystem,
+  ChartOfAccounts,
+  GLAccount,
+  AssignmentReference,
+  BusinessArea,
+  PartnerCostCenter,
+  PartnerFunctionalArea,
+  PartnerBusinessArea,
+  PartnerCompany,
+  OrderID,
+  Customer,
+  Supplier,
+  Plant,
+  BillingDocumentType,
+  SalesOrganization,
+  DistributionChannel,
+  OrganizationDivision,
+  MaterialGroup,
+  SoldProduct,
+  SoldProductGroup,
+  CustomerGroup,
+  CustomerSupplierCountry,
+  CustomerSupplierIndustry,
+  SalesDistrict,
+  BillToParty,
+  ShipToParty,
+  CustomerSupplierCorporateGroup,
+
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: false, mandatory: false}
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  CnsldtnAdhocItem,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  CnsldtnAdhocSet,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  CnsldtnAdhocSetItem,
+
+  //Additional Fields - ICMR
+  MatchingReasonCode,
+  OriginType,
+  OriginReference,
+  //Industry-specific fields  Financial services: Banking Fields  
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  FinancialServicesProductGroup,
+  
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  FinancialServicesBranch,
+  
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  FinancialDataSource,
+  
+  // industry-specific fields  Financial services: Green House Fields
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  GHGCategory,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  GHGScope,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  GHGScope2CalculationMethod,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  GHGScope2ContractualInstrument, 
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  GHGDataQualityCharacteristic,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  GHGEnergyClassification,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  GHGEnergyMix,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  GHGEnergySourcingType, 
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  SustainabilityModeOfTransport,
+  
+  // industry-specific fields  Financial services: Public Sector Fields  
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  FinancialManagementArea,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  Fund,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  GrantID,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  CnsldtnCashLedgerChartOfAccts,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  CashLedgerAccount,
+  
+  
+
+  //----------------------------------------------------------------------------------------------------------------
+  // the following parameters can be deleted in successor versions
+  cast(:P_ConsolidationUnitHierarchy as fincs_hryid_consunit preserving type )     as ConsolidationUnitHierarchy,
+  cast(:P_ConsolidationSegmentHier   as fincs_hryid_segment preserving type )      as ConsolidationSegmentHierarchy,
+  cast(:P_ConsolidationPrftCtrHier   as fincs_hryid_profitcenter preserving type ) as ConsolidationPrftCtrHierarchy,
+  cast(:P_KeyDate                    as vdm_v_key_date preserving type )           as KeyDate,
+  //----------------------------------------------------------------------------------------------------------------
+  cast(:P_ConsolidationRptgRuleID    as fincs_rptid preserving type )              as ConsolidationReportingRuleID,
+  cast(:P_ConsolidationRptgItemHier  as fincs_rihry preserving type )              as ConsolidationReportingItemHier,
+
+  _ControllingArea,
+  _TransactionCurrency,
+  _LocalCurrency,
+  _BaseUnit,
+  _SubItemCategory,
+  _SubItem,
+  _RptgItmHierDir,
+  _RptgRuleVarAssgmt,
+  _GroupCurrency
+}
+where
+      ConsolidationChartOfAccounts = $parameters.P_ConsolidationChartOfAccounts
+  and GLRecordType                 <> 'R'
+```

@@ -5,9 +5,16 @@ app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACTORYCALENDARTEXT')/$value
 semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the names of factory calendars in different languages?"
+semantic_vi: "Factory Calendar - Text — CDS view giao diện dựa trên tfact."
+keywords:
+  - "factory"
+  - "calendar"
+  - "text"
+  - "language"
+  - "name"
 tags:
   - CA
   - bo:plant
@@ -16,7 +23,6 @@ tags:
   - component:CA-GTF-VDM
   - interface-view
   - lob:cross_application components
-  - metadata-only
 ---
 # I_FACTORYCALENDARTEXT
 
@@ -28,12 +34,62 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACTORYCALENDARTEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACTORYCALENDARTEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FactoryCalendar` |  | |  |  | `CHAR(2)` | Factory Calendar ID |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `FactoryCalendarName` |  | |  |  | `CHAR(60)` | Factory Calendar Text |
+| `FactoryCalendar` | ✓ | |  | `cast(txt.ident as cr_wfcid preserving type)` | `CHAR(2)` | Factory Calendar ID |
+| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` | `LANG(1)` | Language Key |
+| `FactoryCalendarName` |  | |  | `cast(txt.ltext as pph_fktext preserving type)` | `CHAR(60)` | Factory Calendar Text |
+| `_Language` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACTORYCALENDARTEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACTORYCALENDARTEXT')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IPPFACTORYCALTXT'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations: true 
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.representativeKey: 'FactoryCalendar'
+@ObjectModel.usageType: {serviceQuality: #A, sizeCategory: #M, dataClass: #ORGANIZATIONAL}
+@Search.searchable: true
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@VDM.viewType: #BASIC
+@EndUserText.label: 'Factory Calendar - Text'
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+@ClientHandling.type: #INHERITED
+@AbapCatalog.buffering.type: #FULL
+@Analytics:{ dataExtraction: { enabled : true  }}
+@ObjectModel.supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ]
+
+
+define view I_FactoryCalendarText
+  as select from tfact as txt
+  association [0..1] to I_Language as _Language on $projection.Language = _Language.Language
+{
+      @ObjectModel.text.element: 'FactoryCalendarName'
+  key cast(txt.ident as cr_wfcid preserving type)   as FactoryCalendar,
+      @Semantics.language: true
+      @ObjectModel.foreignKey.association: '_Language'
+  key cast(txt.spras as spras preserving type)      as Language,
+      @Search: {defaultSearchElement: true, ranking: #HIGH, fuzzinessThreshold: 0.8}
+      @Semantics.text: true
+      cast(txt.ltext as pph_fktext preserving type) as FactoryCalendarName,
+
+      // Associations
+      _Language
+};
+```

@@ -30,14 +30,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `ValidityEndDate` | ✓ | |  |  |  |  |
-| `TimeIntervalNumber` |  | |  |  |  |  |
-| `ChangeNumber` |  | |  |  |  |  |
-| `CharcDescription` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `IsDeleted` |  | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  | `NUMC(10)` | Characteristic Internal ID |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Valid-to date |
+| `TimeIntervalNumber` |  | |  |  | `NUMC(4)` | Internal Counter for Archiving Objects by ECM |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `CharcDescription` |  | |  |  | `CHAR(30)` | Characteristic Description |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
 | `_Language` | | ✓ | | | | |
 | `_Characteristic` | | ✓ | | | | |
 

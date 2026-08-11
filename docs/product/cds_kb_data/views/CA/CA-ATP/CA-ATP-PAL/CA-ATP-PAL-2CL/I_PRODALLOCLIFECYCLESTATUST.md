@@ -31,9 +31,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProdAllocationLifecycleStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocationlifecyclestatus preserving type )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `ProdAllocLifecycleStatusDesc` |  | |  | `cast( ddtext as prodalloclifecyclestatusdesc preserving type )` |  |  |
+| `ProdAllocationLifecycleStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocationlifecyclestatus preserving type )` | `CHAR(2)` | Product Allocation Lifecycle Status |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `ProdAllocLifecycleStatusDesc` |  | |  | `cast( ddtext as prodalloclifecyclestatusdesc preserving type )` | `CHAR(60)` | Product Allocation Lifecycle Status Description |
 | `_Language` | | ✓ | | | | |
 | `_ProdAllocLifecycleStatus` | | ✓ | | | | |
 

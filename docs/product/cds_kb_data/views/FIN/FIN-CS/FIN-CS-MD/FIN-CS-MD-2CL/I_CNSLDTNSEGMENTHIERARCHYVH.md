@@ -5,9 +5,19 @@ app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNSEGMENTHIERARCHYVH')/$value
 semantic_en: "Consolidation Segment Hierarchy"
+semantic_vi: "Consolidation Segment Hierarchy — CDS view tổng hợp (master data) dựa trên P_CnsldtnSegmentHierarchyVH."
+keywords:
+  - "consolidation"
+  - "segment"
+  - "hierarchy"
+  - "validity"
+  - "date"
+  - "start"
+  - "hier"
+  - "text"
 tags:
   - FIN
   - bo:salesorder
@@ -17,7 +27,6 @@ tags:
   - FIN-CS-MD-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_CNSLDTNSEGMENTHIERARCHYVH
 
@@ -29,13 +38,62 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNSEGMENTHIERARCHYVH')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNSEGMENTHIERARCHYVH')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ConsolidationSegmentHierarchy` |  | |  |  | `CHAR(40)` | Consolidation Segment Hierarchy |
-| `ValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
-| `ValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |
-| `ConsolidationSegmentHierText` |  | |  |  | `CHAR(50)` | Consolidation Hierarchy Description |
+| `ConsolidationSegmentHierarchy` | ✓ | | `_Source` | `ConsolidationSegmentHierarchy` | `CHAR(40)` | Consolidation Segment Hierarchy |
+| `ValidityEndDate` | ✓ | | `_Source` | `ValidityEndDate` | `DATS(8)` | Validity End Date |
+| `ValidityStartDate` |  | | `_Source` | `ValidityStartDate` | `DATS(8)` | Validity Start Date |
+| `ConsolidationSegmentHierText` |  | | `_Source` | `ConsolidationSegmentHierText` | `CHAR(50)` | Consolidation Hierarchy Description |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNSEGMENTHIERARCHYVH')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNSEGMENTHIERARCHYVH')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@Metadata:{
+  allowExtensions:true,
+  ignorePropagatedAnnotations:true
+}
+@ObjectModel:{
+  usageType: {
+    dataClass: #MASTER,
+    serviceQuality: #C,
+    sizeCategory: #M
+  },
+  representativeKey: 'ConsolidationSegmentHierarchy',
+  dataCategory:#VALUE_HELP,
+  modelingPattern: #VALUE_HELP_PROVIDER,
+  supportedCapabilities: [#CDS_MODELING_DATA_SOURCE,
+                          #CDS_MODELING_ASSOCIATION_TARGET,
+                          #SQL_DATA_SOURCE,
+                          #VALUE_HELP_PROVIDER ]
+}
+@VDM:{
+  viewType: #COMPOSITE
+}
+@EndUserText.label: 'Consolidation Segment Hierarchy'
+
+define view entity I_CnsldtnSegmentHierarchyVH
+  as select from P_CnsldtnSegmentHierarchyVH as _Source
+
+{
+
+      @ObjectModel.text.element: ['ConsolidationSegmentHierText']
+  key _Source.ConsolidationSegmentHierarchy,
+
+      @Semantics.businessDate.to: true
+  key _Source.ValidityEndDate,
+
+      @Semantics.businessDate.from: true
+      _Source.ValidityStartDate,
+
+      @Semantics.text
+      _Source.ConsolidationSegmentHierText
+
+}
+```

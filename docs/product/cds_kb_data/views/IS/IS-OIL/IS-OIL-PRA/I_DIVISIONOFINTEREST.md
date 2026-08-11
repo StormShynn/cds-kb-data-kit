@@ -5,9 +5,19 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DIVISIONOFINTEREST')/$value
 semantic_en: "Division Of Interest"
+semantic_vi: "Division Of Interest — CDS view giao diện dựa trên oiu_do_di."
+keywords:
+  - "division"
+  - "interest"
+  - "company"
+  - "code"
+  - "joint"
+  - "venture"
+  - "name"
+  - "country"
 tags:
   - IS
   - bo:companycode
@@ -15,7 +25,6 @@ tags:
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # I_DIVISIONOFINTEREST
 
@@ -27,16 +36,92 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DIVISIONOFINTEREST')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DIVISIONOFINTEREST')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `JointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
-| `DivisionOfInterest` |  | |  |  | `CHAR(5)` | Division of Interest (DOI) |
-| `DivisionOfInterestName` |  | |  |  | `CHAR(30)` | Division of Interest Name |
-| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
-| `PrimaryGeogrlLocation` |  | |  |  | `CHAR(2)` | Primary Geographical Location |
-| `SecondaryGeogrlLocation` |  | |  |  | `CHAR(3)` | Secondary geographic location |
+| `CompanyCode` | ✓ | |  | `cast( bukrs as fis_bukrs )` | `CHAR(4)` | Company Code |
+| `JointVenture` | ✓ | |  | `vname` | `CHAR(6)` | Joint Venture |
+| `DivisionOfInterest` | ✓ | |  | `doi_no` | `CHAR(5)` | Division of Interest (DOI) |
+| `DivisionOfInterestName` |  | |  | `doi_nm` | `CHAR(30)` | Division of Interest Name |
+| `Country` |  | |  | `cast( land1 as land1_gp preserving type )` | `CHAR(3)` | Country/Region Key |
+| `PrimaryGeogrlLocation` |  | |  | `pri_geo_loc` | `CHAR(2)` | Primary Geographical Location |
+| `SecondaryGeogrlLocation` |  | |  | `sec_geo_loc` | `CHAR(3)` | Secondary geographic location |
+| `_CompanyCode` | | ✓ | | | | |
+| `_PRAJointVenture` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_PrimaryGeogrlLocation` | | ✓ | | | | |
+| `_SecondaryGeogrlLocation` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CompanyCode` | `I_CompanyCode` | [0..1] |
+| `_PRAJointVenture` | `I_PRAJointVenture` | [0..1] |
+| `_Country` | `I_Country` | [0..1] |
+| `_PrimaryGeogrlLocation` | `I_PrimaryGeogrlLocation` | [0..1] |
+| `_SecondaryGeogrlLocation` | `I_SecondaryGeogrlLocation` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DIVISIONOFINTEREST')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DIVISIONOFINTEREST')/$value)*
+
+```abap
+@EndUserText.label: 'Division Of Interest'
+@Analytics.dataCategory: #DIMENSION
+@Metadata.allowExtensions:true
+@Analytics.dataExtraction.enabled: true
+@VDM.viewType: #BASIC
+@AbapCatalog.sqlViewName: 'IPVDOI'
+@AccessControl.authorizationCheck: #CHECK
+@Metadata.ignorePropagatedAnnotations:true 
+@ObjectModel.representativeKey: 'DivisionOfInterest'
+
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION , #SQL_DATA_SOURCE , #CDS_MODELING_DATA_SOURCE , #CDS_MODELING_ASSOCIATION_TARGET ]
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #M
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.dataClass: #MASTER
+
+@Search.searchable: true
+@ObjectModel.sapObjectNodeType.name: 'PRADivisionOfInterest'
+define view I_DivisionOfInterest
+  as select from oiu_do_di
+  association [0..1] to I_CompanyCode             as _CompanyCode             on  $projection.CompanyCode = _CompanyCode.CompanyCode
+  association [0..1] to I_PRAJointVenture         as _PRAJointVenture         on  $projection.CompanyCode  = _PRAJointVenture.CompanyCode
+                                                                              and $projection.JointVenture = _PRAJointVenture.PRAJointVenture
+  association [0..1] to I_Country                 as _Country                 on  $projection.Country = _Country.Country
+  association [0..1] to I_PrimaryGeogrlLocation   as _PrimaryGeogrlLocation   on  $projection.Country               = _PrimaryGeogrlLocation.Country
+                                                                              and $projection.PrimaryGeogrlLocation = _PrimaryGeogrlLocation.PrimaryGeogrlLocation
+  association [0..1] to I_SecondaryGeogrlLocation as _SecondaryGeogrlLocation on  $projection.Country                 = _SecondaryGeogrlLocation.Country
+                                                                              and $projection.PrimaryGeogrlLocation   = _SecondaryGeogrlLocation.PrimaryGeogrlLocation
+                                                                              and $projection.SecondaryGeogrlLocation = _SecondaryGeogrlLocation.SecondaryGeogrlLocation
+{
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+  key cast( bukrs as fis_bukrs )                as CompanyCode,
+      @ObjectModel.foreignKey.association: '_PRAJointVenture'
+  key vname                                     as JointVenture,
+      @ObjectModel.text.element:  [ 'DivisionOfInterestName' ]
+      @Search                         : {ranking: #HIGH, defaultSearchElement: true, fuzzinessThreshold: 0.8}      
+  key doi_no                                    as DivisionOfInterest,
+      @Semantics.text: true
+      @Search                         : {ranking: #HIGH, defaultSearchElement: true, fuzzinessThreshold: 0.8}      
+      doi_nm                                    as DivisionOfInterestName,
+      @ObjectModel.foreignKey.association: '_Country'
+      cast( land1 as land1_gp preserving type ) as Country,
+      @ObjectModel.foreignKey.association: '_PrimaryGeogrlLocation'
+      pri_geo_loc                               as PrimaryGeogrlLocation,
+      @ObjectModel.foreignKey.association: '_SecondaryGeogrlLocation'
+      sec_geo_loc                               as SecondaryGeogrlLocation,
+      _CompanyCode,
+      _Country,
+      _PrimaryGeogrlLocation,
+      _SecondaryGeogrlLocation,
+      _PRAJointVenture
+}
+```

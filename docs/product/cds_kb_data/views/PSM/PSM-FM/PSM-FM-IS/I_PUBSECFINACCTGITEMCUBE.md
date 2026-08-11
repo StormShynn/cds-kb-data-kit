@@ -5,9 +5,22 @@ app_component: PSM-FM-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECFINACCTGITEMCUBE')/$value
 semantic_en: "Budgetary Accounting Items - Cube"
+semantic_vi: "Budgetary Accounting Items - Cube — CDS view giao diện dựa trên I_GLAccountLineItem."
+keywords:
+  - "budgetary"
+  - "accounting"
+  - "items"
+  - "cube"
+  - "ledger"
+  - "source"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "document"
 tags:
   - PSM
   - account
@@ -17,7 +30,6 @@ tags:
   - interface-view
   - PSM-FM
   - PSM-FM-IS
-  - metadata-only
 ---
 # I_PUBSECFINACCTGITEMCUBE
 
@@ -29,18 +41,18 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECFINACCTGITEMCUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECFINACCTGITEMCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `SourceLedger` | ✓ | |  |  | `CHAR(2)` | Source Ledger |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` | ✓ | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
 | `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
 | `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
 | `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
@@ -130,9 +142,9 @@ tags:
 | `OriginCostCtrActivityType` |  | |  |  | `CHAR(6)` | Origin Cost Center Activity Type |
 | `OrderID` |  | |  |  | `CHAR(12)` | Order ID |
 | `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element Internal ID |
-| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | WBS Element External ID |
+| `WBSElementExternalID` |  | |  | `cast( AcItem._WBSElementBasicData.WBSElementExternalID as fis_wbsext_no_conv preserving type )` | `CHAR(24)` | WBS Element External ID |
 | `PartnerWBSElementInternalID` |  | |  |  | `NUMC(8)` | Partner WBS Element Internal ID |
-| `PartnerWBSElementExternalID` |  | |  |  | `CHAR(24)` | Partner WBS Element External ID |
+| `PartnerWBSElementExternalID` |  | |  | `cast( AcItem._PartnerWBSElementBasicData.WBSElementExternalID as fis_partner_wbsext_no_conv preserving type )` | `CHAR(24)` | Partner WBS Element External ID |
 | `BusinessProcess` |  | |  |  | `CHAR(12)` | Business Process |
 | `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Service Document Type |
 | `ServiceDocument` |  | |  |  | `CHAR(10)` | Service Document ID |
@@ -164,10 +176,553 @@ tags:
 | `SponsoredClass` |  | |  |  | `CHAR(20)` | Sponsored Class |
 | `SponsoredProgram` |  | |  |  | `CHAR(20)` | Sponsored Program |
 | `GteeMBudgetValidityNumber` |  | |  |  | `CHAR(3)` | Budget Validity Number |
-| `PurchaseOrder` |  | |  |  | `CHAR(10)` | Purchase Order Number |
-| `PurchaseRequisition` |  | |  |  | `CHAR(10)` | Purchase Requisition Number |
-| `EarmarkedFundsDocument` |  | |  |  | `CHAR(10)` | Document Number for Earmarked Funds |
+| `PurchaseOrder` |  | |  | `cast( case when AcItem.SourceReferenceDocumentType = 'PORD' and AcItem.SourceLedger = '0E' then AcItem.SourceReferenceDocument when AcItem.SourceLedger = '0L' and AcItem.PurchasingDocument is not initial then AcItem.PurchasingDocument else '' end as vdm_purchaseorder preserving type )` | `CHAR(10)` | Purchase Order Number |
+| `PurchaseRequisition` |  | |  | `cast( case when AcItem.SourceReferenceDocumentType = 'PREQ' then AcItem.SourceReferenceDocument else '' end as vdm_purchaserequisition preserving type )` | `CHAR(10)` | Purchase Requisition Number |
+| `EarmarkedFundsDocument` |  | |  | `cast( case when AcItem.SourceReferenceDocumentType = 'FMRES' then AcItem.SourceReferenceDocument else '' end as fmis_earmarkedfundsdoc preserving type )` | `CHAR(10)` | Document Number for Earmarked Funds |
 | `IsStatisticalOrder` |  | |  |  | `CHAR(1)` | Indicator: Internal Order is Statistical Account Assignment |
 | `IsStatisticalCostCenter` |  | |  |  | `CHAR(1)` | Indicator: Cost Center is Statistical Account Assignment |
 | `IsStatisticalSalesDocument` |  | |  |  | `CHAR(1)` | Sales Document is statistical |
 | `WBSIsStatisticalWBSElement` |  | |  |  | `CHAR(1)` | Indicator: WBS Element is Statistical Account Assignment |
+| `_WBSElementExternalID` | | ✓ | | | | |
+| `_WBSElementExternalIDText` | | ✓ | | | | |
+| `_PartnerWBSElementExternalID` | | ✓ | | | | |
+| `_PubSecBdgtAcctRevnExpnCode` | | ✓ | | | | |
+| `_FundType` | | ✓ | | | | |
+| `_BudgetAccountInChtAccts` | | ✓ | | | | |
+| `_SourceReferenceDocumentType` | | ✓ | | | | |
+| `_Grant` | | ✓ | | | | |
+| `_PartnerGrant` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_WBSElementExternalID` | `I_WBSElementByExternalID` | [0..1] |
+| `_WBSElementExternalIDText` | `I_WBSElementByExternalID` | [0..1] |
+| `_PartnerWBSElementExternalID` | `I_WBSElementByExternalID` | [0..1] |
+| `_PubSecBdgtAcctRevnExpnCode` | `I_PubSecBdgtAcctRevnExpnCode` | [0..1] |
+| `_FundType` | `I_FundType` | [0..1] |
+| `_BudgetAccountInChtAccts` | `I_BudgetAccountInChtAccts` | [0..1] |
+| `_SourceReferenceDocumentType` | `I_ReferenceDocumentType` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECFINACCTGITEMCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECFINACCTGITEMCUBE')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IPSMS4CFIACANC'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #CHECK
+@AccessControl.personalData.blocking: #BLOCKED_DATA_EXCLUDED
+@AbapCatalog.buffering.status: #NOT_ALLOWED
+@EndUserText.label: 'Budgetary Accounting Items - Cube'
+
+@VDM.viewType: #COMPOSITE
+@Analytics: { 
+     dataCategory: #CUBE, 
+     dataExtraction.enabled: false,
+     internalName: #LOCAL 
+}
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel: {
+     usageType: {
+         dataClass: #MIXED,
+         serviceQuality: #D,
+         sizeCategory: #XXL
+     },
+     supportedCapabilities: [ #ANALYTICAL_PROVIDER ]
+         
+}
+
+define view I_PubSecFinAcctgItemCube
+  as select from I_GLAccountLineItem as AcItem
+  association [0..1] to I_WBSElementByExternalID     as _WBSElementExternalID        on  $projection.WBSElementExternalID = _WBSElementExternalID.WBSElementExternalID
+  association [0..1] to I_WBSElementByExternalID     as _WBSElementExternalIDText    on  $projection.WBSElementExternalID = _WBSElementExternalIDText.WBSElementExternalID
+  association [0..1] to I_WBSElementByExternalID     as _PartnerWBSElementExternalID on  $projection.PartnerWBSElementExternalID = _PartnerWBSElementExternalID.WBSElementExternalID
+  association [0..1] to I_PubSecBdgtAcctRevnExpnCode as _PubSecBdgtAcctRevnExpnCode  on  $projection.PubSecBdgtAcctRevnExpnCode = _PubSecBdgtAcctRevnExpnCode.PubSecBdgtAcctRevnExpnCode
+  association [0..1] to I_FundType                   as _FundType                    on  $projection.FinancialManagementArea = _FundType.FinancialManagementArea
+                                                                                     and $projection.FundType                = _FundType.FundType
+  association [0..1] to I_BudgetAccountInChtAccts    as _BudgetAccountInChtAccts     on  $projection.ChartOfAccounts     = _BudgetAccountInChtAccts.ChartOfAccounts
+                                                                                     and $projection.PubSecBudgetAccount = _BudgetAccountInChtAccts.PubSecBudgetAccount
+  association [0..1] to I_ReferenceDocumentType      as _SourceReferenceDocumentType on  $projection.SourceReferenceDocumentType = _SourceReferenceDocumentType.ReferenceDocumentType
+{
+
+      @ObjectModel.foreignKey.association: '_Ledger'
+  key AcItem.Ledger,
+      @ObjectModel.foreignKey.association: '_SourceLedger'
+  key AcItem.SourceLedger,
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+  key AcItem.CompanyCode,
+      @ObjectModel.foreignKey.association: '_FiscalYear'
+  key AcItem.FiscalYear,
+      @ObjectModel.foreignKey.association: '_JournalEntry'
+  key AcItem.AccountingDocument,
+  key AcItem.LedgerGLLineItem,
+      @ObjectModel.foreignKey.association: '_LedgerFiscalYearForVariant'
+      @Semantics.fiscal.year: true
+      AcItem.LedgerFiscalYear,
+      @ObjectModel.foreignKey.association: '_ChartOfAccounts'
+      AcItem.ChartOfAccounts,
+      @ObjectModel.foreignKey.association: '_ControllingArea'
+      AcItem.ControllingArea,
+
+      // Transaction, Currencies, Units
+      @ObjectModel.foreignKey.association: '_FinancialTransactionType'
+      AcItem.FinancialTransactionType,
+      @ObjectModel.foreignKey.association: '_BusinessTransactionType'
+      AcItem.BusinessTransactionType,
+      @ObjectModel.foreignKey.association: '_ReferenceDocumentType'
+      AcItem.ReferenceDocumentType,
+      AcItem.LogicalSystem,
+      AcItem.ReferenceDocumentContext,
+      AcItem.ReferenceDocument,
+      AcItem.ReferenceDocumentItem,
+      AcItem.ReferenceDocumentItemGroup,
+      AcItem.IsReversal,
+      AcItem.IsReversed,
+      AcItem.ReversalReferenceDocumentCntxt,
+      AcItem.ReversalReferenceDocument,
+      AcItem.IsSettlement,
+      AcItem.IsSettled,
+      @ObjectModel.foreignKey.association: '_SourceReferenceDocumentType'
+      AcItem.SourceReferenceDocumentType,
+      AcItem.SourceLogicalSystem,
+      AcItem.SourceReferenceDocumentCntxt,
+      AcItem.SourceReferenceDocument,
+      AcItem.SourceReferenceDocumentItem,
+      AcItem.SourceReferenceDocSubitem,
+      AcItem.IsCommitment,
+
+      // Master Data - account assignments
+      @ObjectModel.foreignKey.association: '_GLAccountInChartOfAccounts'
+      AcItem.GLAccount,
+      @ObjectModel.foreignKey.association: '_CostCenter'
+      AcItem.CostCenter,
+      @ObjectModel.foreignKey.association: '_ProfitCenter'
+      AcItem.ProfitCenter,
+      @ObjectModel.foreignKey.association: '_FunctionalArea'
+      AcItem.FunctionalArea,
+      @ObjectModel.foreignKey.association: '_BusinessArea'
+      AcItem.BusinessArea,
+      @ObjectModel.foreignKey.association: '_Segment'
+
+      AcItem.Segment,
+      @ObjectModel.foreignKey.association: '_PartnerCostCenter'
+      AcItem.PartnerCostCenter,
+      @ObjectModel.foreignKey.association: '_PartnerProfitCenter'
+      AcItem.PartnerProfitCenter,
+      @ObjectModel.foreignKey.association: '_PartnerFunctionalArea'
+      AcItem.PartnerFunctionalArea,
+      @ObjectModel.foreignKey.association: '_PartnerBusinessArea'
+      AcItem.PartnerBusinessArea,
+      @ObjectModel.foreignKey.association: '_PartnerCompany'
+      AcItem.PartnerCompany,
+      @ObjectModel.foreignKey.association: '_PartnerSegment'
+      AcItem.PartnerSegment,
+
+      // Amounts/Units
+      @ObjectModel.foreignKey.association: '_TransactionCurrency'
+      @Semantics.currencyCode:true
+      AcItem.TransactionCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+      AcItem.AmountInTransactionCurrency,
+      @ObjectModel.foreignKey.association: '_CompanyCodeCurrency'
+      @Semantics.currencyCode:true
+      AcItem.CompanyCodeCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      AcItem.AmountInCompanyCodeCurrency,
+      @ObjectModel.foreignKey.association: '_GlobalCurrency'
+      @Semantics.currencyCode:true
+      AcItem.GlobalCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      AcItem.AmountInGlobalCurrency,
+      @ObjectModel.foreignKey.association: '_CostSourceUnit'
+      @Semantics.unitOfMeasure:true
+      AcItem.CostSourceUnit,
+
+      // Mandatory field for G/L in AC
+      @ObjectModel.foreignKey.association: '_DebitCreditCode'
+      AcItem.DebitCreditCode,
+      @ObjectModel.foreignKey.association: '_FiscalYearVariant'
+      @Semantics.fiscal.yearVariant: true
+      AcItem.FiscalYearVariant,
+      AcItem.PostingDate,
+      AcItem.DocumentDate,
+      @ObjectModel.foreignKey.association: '_AccountingDocumentType'
+      AcItem.AccountingDocumentType,
+      AcItem.AccountingDocumentItem,
+      @ObjectModel.foreignKey.association: '_AccountingDocumentCategory'
+      AcItem.AccountingDocumentCategory,
+      @ObjectModel.foreignKey.association: '_PostingKey'
+      AcItem.PostingKey,
+      AcItem.LastChangeDateTime,
+      AcItem.CreationDateTime,
+      AcItem.CreationDate,      
+      @ObjectModel.foreignKey.association: '_GLAccountType'
+      AcItem.GLAccountType,
+      AcItem.InvoiceReference,
+      AcItem.InvoiceReferenceFiscalYear,
+
+      // Fields of subledgers for universal journal
+      AcItem.InvoiceItemReference,
+      AcItem.ReferencePurchaseOrderCategory,
+      AcItem.PurchasingDocument,
+      AcItem.PurchasingDocumentItem,
+      AcItem.AccountAssignmentNumber,
+      @Semantics.text: true
+      AcItem.DocumentItemText,
+      @ObjectModel.foreignKey.association: '_SalesDocument'
+      AcItem.SalesDocument,      
+      @ObjectModel.foreignKey.association: '_Plant'
+      AcItem.Plant,
+      @ObjectModel.foreignKey.association: '_Supplier'
+      AcItem.Supplier,
+      @ObjectModel.foreignKey.association: '_Customer'
+      AcItem.Customer,
+
+      // Fields of FI subledger in universal journal
+      @ObjectModel.foreignKey.association: '_FinancialAccountType'
+      AcItem.FinancialAccountType,
+      @ObjectModel.foreignKey.association: '_SpecialGLCode'
+      AcItem.SpecialGLCode,
+      AcItem.TaxCode,
+      AcItem.ClearingDate,
+      @ObjectModel.foreignKey.association: '_ClearingAccountingDocument'
+      AcItem.ClearingAccountingDocument,
+      AcItem.ClearingDocFiscalYear,
+
+      // Fields for Asset Accounting in universal journal
+      AcItem.AssetDepreciationArea,
+      @ObjectModel.foreignKey.association: '_MasterFixedAsset'
+      AcItem.MasterFixedAsset,
+      @ObjectModel.foreignKey.association: '_FixedAsset'
+      AcItem.FixedAsset,
+      AcItem.AssetValueDate,
+      AcItem.AssetTransactionType,
+      AcItem.DepreciationFiscalPeriod,
+      @ObjectModel.foreignKey.association: '_GroupMasterFixedAsset'
+      AcItem.GroupMasterFixedAsset,
+      @ObjectModel.foreignKey.association: '_GroupFixedAsset'
+      AcItem.GroupFixedAsset,
+      AcItem.AssetClass,
+      
+      // Fields for  Ledger in universal journal
+      AcItem.ValuationArea,      
+
+      // Fields for CO
+      @ObjectModel.foreignKey.association: '_PartnerCompanyCode'
+      AcItem.PartnerCompanyCode,
+      @ObjectModel.foreignKey.association: '_OriginCostCenter'
+      AcItem.OriginCostCenter,
+      @ObjectModel.foreignKey.association: '_OriginProfitCenter'
+      AcItem.OriginProfitCenter,
+      @ObjectModel.foreignKey.association: '_OriginCostCtrActivityType'
+      AcItem.OriginCostCtrActivityType,
+      @ObjectModel.foreignKey.association: '_Order'
+      AcItem.OrderID,
+      @ObjectModel.foreignKey.association: '_WBSElementBasicData'
+      AcItem.WBSElementInternalID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_WBSElementExternalID'
+      cast( AcItem._WBSElementBasicData.WBSElementExternalID
+            as fis_wbsext_no_conv preserving type )          as WBSElementExternalID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PartnerWBSElementBasicData'
+      AcItem.PartnerWBSElementInternalID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PartnerWBSElementExternalID'
+      cast( AcItem._PartnerWBSElementBasicData.WBSElementExternalID
+            as fis_partner_wbsext_no_conv preserving type )  as PartnerWBSElementExternalID,
+
+      @ObjectModel.foreignKey.association: '_BusinessProcess'
+      AcItem.BusinessProcess,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceDocumentType'
+      AcItem.ServiceDocumentType,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceDocument'
+      AcItem.ServiceDocument,            
+      @ObjectModel.foreignKey.association: '_PartnerOrder'
+      AcItem.PartnerOrder,
+      @ObjectModel.foreignKey.association: '_PartnerOrderCategory'
+      AcItem.PartnerOrderCategory,
+      @ObjectModel.foreignKey.association: '_PartnerBusinessProcess'
+      AcItem.PartnerBusinessProcess,
+
+      // Fields for CO-PA
+      @ObjectModel.foreignKey.association: '_SalesOrganization'
+      AcItem.SalesOrganization,
+      @ObjectModel.foreignKey.association: '_DistributionChannel'
+      AcItem.DistributionChannel,
+      AcItem.OrganizationDivision,
+
+      // Fields for Public Sector
+      @ObjectModel.foreignKey.association: '_FinancialManagementArea'
+      AcItem.FinancialManagementArea,
+      @ObjectModel.foreignKey.association: '_Fund'
+      AcItem.Fund,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_Grant'
+      AcItem.GrantID,
+      @ObjectModel.foreignKey.association: '_BudgetPeriod'
+      AcItem.BudgetPeriod,
+      @ObjectModel.foreignKey.association: '_PartnerFund'
+      AcItem.PartnerFund,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PartnerGrant'
+      AcItem.PartnerGrant,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PartnerBudgetPeriod'
+      AcItem.PartnerBudgetPeriod,
+
+      // Add Cash Ledger Account fields
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_CashLedgerAccount'
+      AcItem.CashLedgerAccount,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_CashLedgerCompanyCode'
+      AcItem.CashLedgerCompanyCode,
+      // Add PSM_S4C technical fields
+      @Analytics.internalName: #LOCAL
+      //MS: Switch to _BudgetAccountInChtAccts to provide the hierarchy
+      @ObjectModel.foreignKey.association: '_BudgetAccountInChtAccts'
+      //MS: association worked only partially but did not lead to Runtime error: @ObjectModel.foreignKey.association: '_PubSecBudgetAccount'
+      AcItem.PubSecBudgetAccount,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PubSecBudgetAccountCoCode'
+      AcItem.PubSecBudgetAccountCoCode,
+      @Analytics.internalName: #LOCAL
+      AcItem.PubSecBudgetCnsmpnDate,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PubSecBudgetCnsmpnFsclPeriod'
+      //MS: Marked as error  @Semantics.fiscal.period: true
+      AcItem.PubSecBudgetCnsmpnFsclPeriod,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PubSecBudgetCnsmpnFsclYear'
+      //MS: Marked as error  @Semantics.fiscal.year: true
+      AcItem.PubSecBudgetCnsmpnFsclYear,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PubSecBudgetCnsmpnType'
+      AcItem.PubSecBudgetCnsmpnType,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PubSecBudgetCnsmpnAmtType'
+      AcItem.PubSecBudgetCnsmpnAmtType,
+      @Analytics.internalName: #LOCAL
+      AcItem.PubSecBudgetIsRelevant,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PubSecBdgtAcctRevnExpnCode'
+      AcItem._PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode as PubSecBdgtAcctRevnExpnCode,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_FundType'
+      AcItem._Fund.FundType                                  as FundType,
+
+      // Specific grantee management fields
+      @Analytics.internalName: #LOCAL
+      AcItem.SponsoredClass,
+      @Analytics.internalName: #LOCAL
+      AcItem.SponsoredProgram,
+      @Analytics.internalName: #LOCAL
+      AcItem.GteeMBudgetValidityNumber,
+      // End PSM_S4C technical fields
+
+      // Original documents for semantic navigation
+      @Analytics.internalName: #LOCAL
+      cast(
+        case
+          when AcItem.SourceReferenceDocumentType = 'PORD' and
+               AcItem.SourceLedger = '0E'
+            then AcItem.SourceReferenceDocument
+          when AcItem.SourceLedger = '0L' and
+               AcItem.PurchasingDocument is not initial
+            then AcItem.PurchasingDocument
+          else ''
+        end as vdm_purchaseorder preserving type )           as PurchaseOrder,
+
+      @Analytics.internalName: #LOCAL
+      cast(
+        case
+          when AcItem.SourceReferenceDocumentType = 'PREQ'
+            then AcItem.SourceReferenceDocument
+          else ''
+        end as vdm_purchaserequisition preserving type )     as PurchaseRequisition,
+
+      @Analytics.internalName: #LOCAL
+      cast(
+        case
+          when AcItem.SourceReferenceDocumentType = 'FMRES'
+            then AcItem.SourceReferenceDocument
+          else ''
+        end as fmis_earmarkedfundsdoc preserving type )      as EarmarkedFundsDocument,
+
+
+      // Additional Fields
+      AcItem.IsStatisticalOrder,
+      AcItem.IsStatisticalCostCenter,
+      AcItem.IsStatisticalSalesDocument,
+      AcItem.WBSIsStatisticalWBSElement,
+
+      // Associations
+      AcItem._CashLedgerAccount,
+      AcItem._CashLedgerCompanyCode,
+      _BudgetAccountInChtAccts, //MS: Add association including hierarchy
+      AcItem._PubSecBudgetAccount,
+      _PubSecBdgtAcctRevnExpnCode,
+      AcItem._PubSecBudgetAccountCoCode,
+      AcItem._PubSecBudgetCnsmpnFsclYear,
+      AcItem._PubSecBudgetCnsmpnFsclPeriod,
+      AcItem._PubSecBudgetCnsmpnType,
+      AcItem._PubSecBudgetCnsmpnAmtType,
+      AcItem._PubSecBudgetCnsmpnDate,
+      AcItem._AccountingDocumentCategory,
+      AcItem._AccountingDocumentType,
+      @UI.hidden: true
+      AcItem._AccountingDocumentTypeText,
+      AcItem._AssetTransactionType,
+      AcItem._BudgetPeriod,
+      @UI.hidden: true
+      AcItem._BudgetPeriodText,
+      AcItem._BusinessArea,
+      @UI.hidden: true
+      AcItem._BusinessAreaText,
+      AcItem._BusinessProcess,
+      @UI.hidden: true
+      AcItem._BusinessProcessText,
+      AcItem._BusinessTransactionType,
+      @UI.hidden: true
+      AcItem._BusinessTransactionTypeText,
+      AcItem._ChartOfAccounts,
+      @UI.hidden: true
+      AcItem._ChartOfAccountsText,
+      AcItem._ClearingAccountingDocument,
+      AcItem._CompanyCode,
+      AcItem._CompanyCodeCurrency,
+      @UI.hidden: true
+      AcItem._CompanyCodeText,
+      AcItem._ControllingArea,
+      @UI.hidden: true
+      AcItem._ControllingAreaText,
+      AcItem._CostCenter,
+      @UI.hidden: true
+      AcItem._CostCenterText,
+      AcItem._CostSourceUnit,
+      AcItem._CurrentCostCenter,
+      AcItem._CurrentProfitCenter,
+      AcItem._Customer,
+      @UI.hidden: true
+      AcItem._CustomerText,
+      AcItem._DebitCreditCode,
+      @UI.hidden: true
+      AcItem._DebitCreditCodeText,
+      AcItem._DistributionChannel,
+      AcItem._FinancialAccountType,
+      @UI.hidden: true
+      AcItem._FinancialAccountTypeText,
+      AcItem._FinancialManagementArea,
+      @UI.hidden: true
+      AcItem._FinancialManagementAreaText,
+      AcItem._FinancialTransactionType,
+      AcItem._FiscalYear,
+      AcItem._FiscalYearVariant,
+      AcItem._FixedAsset,
+      @UI.hidden: true
+      AcItem._FixedAssetText,
+      AcItem._FunctionalArea,
+      @UI.hidden: true
+      AcItem._FunctionalAreaText,
+      AcItem._Fund,
+      _FundType,
+      @UI.hidden: true
+      AcItem._FundText,
+      _Grant,
+      _PartnerGrant,
+      AcItem._GLAccountInChartOfAccounts,
+      AcItem._GLAccountInCompanyCode,
+      AcItem._GLAccountTxt,
+      AcItem._GLAccountType,
+      @UI.hidden: true
+      AcItem._GLAcctInChartOfAccountsText,
+      AcItem._GlobalCurrency,
+      AcItem._GroupFixedAsset,
+      @UI.hidden: true
+      AcItem._GroupFixedAssetText,
+      AcItem._GroupMasterFixedAsset,
+      @UI.hidden: true
+      AcItem._GroupMasterFixedAssetText,
+      AcItem._JournalEntry,
+      AcItem._Ledger,
+      AcItem._LedgerFiscalYearForVariant,
+      @UI.hidden: true
+      AcItem._LedgerText,
+      AcItem._MasterFixedAsset,
+      @UI.hidden: true
+      AcItem._MasterFixedAssetText,
+      AcItem._Order,
+      AcItem._OriginCostCenter,
+      AcItem._OriginCostCtrActivityType,
+      AcItem._OriginProfitCenter,
+      AcItem._PartnerBudgetPeriod,
+      AcItem._PartnerBusinessArea,
+      @UI.hidden: true
+      AcItem._PartnerBusinessAreaText,
+      AcItem._PartnerBusinessProcess,
+      @UI.hidden: true
+      AcItem._PartnerBusinessProcessText,
+      AcItem._PartnerCompany,
+      AcItem._PartnerCompanyCode,
+      @UI.hidden: true
+      AcItem._PartnerCompanyCodeText,
+      AcItem._PartnerCostCenter,
+      AcItem._PartnerFunctionalArea,
+      AcItem._PartnerFund,
+      @UI.hidden: true
+      AcItem._PartnerFundText,
+      AcItem._PartnerOrder,
+      AcItem._PartnerOrderCategory,
+      @UI.hidden: true
+      AcItem._PartnerOrderText,
+      AcItem._PartnerProfitCenter,
+      _PartnerWBSElementExternalID,
+      AcItem._PartnerSegment,
+      @UI.hidden: true
+      AcItem._PartnerSegmentText,
+      AcItem._Plant,
+      AcItem._PostingKey,
+      AcItem._ProfitCenter,
+      @UI.hidden: true
+      AcItem._ProfitCenterText,
+      AcItem._PurchasingDocument,
+      AcItem._PurchasingDocumentItem,
+      AcItem._ReferenceDocumentType,
+      AcItem._SalesDocument,
+      AcItem._SalesOrganization,
+      AcItem._Segment,
+      @UI.hidden: true
+      AcItem._SegmentText,
+      AcItem._ServiceDocument,    
+      AcItem._ServiceDocumentType,  
+      AcItem._SourceLedger,
+      @UI.hidden: true
+      AcItem._SourceLedgerText,
+      _SourceReferenceDocumentType,
+      AcItem._SpecialGLCode,
+      AcItem._Supplier,
+      @UI.hidden: true
+      AcItem._SupplierText,
+      AcItem._TaxCode,
+      AcItem._TransactionCurrency,
+      AcItem._WBSElementBasicData,
+      @UI.hidden: true
+      AcItem._WBSElementBasicDataText,
+      _WBSElementExternalID,
+      @UI.hidden: true
+      _WBSElementExternalIDText,
+      AcItem._PartnerWBSElementBasicData
+}
+```

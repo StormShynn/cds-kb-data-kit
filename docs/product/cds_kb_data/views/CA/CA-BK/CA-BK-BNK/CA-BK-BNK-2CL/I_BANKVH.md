@@ -33,32 +33,32 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BankCountry` | ✓ | |  |  |  |  |
-| `BankInternalID` | ✓ | |  |  |  |  |
-| `LongBankName` |  | |  |  |  |  |
-| `LongBankBranch` |  | |  |  |  |  |
-| `SWIFTCode` |  | |  |  |  |  |
-| `BankCode` |  | |  | `cast(BankNumber as bf_bank_bankcode preserving type )` |  |  |
-| `BankCategoryDescription` |  | | `_BankCategoryText` | `BankCategoryDescription` |  |  |
-| `BankCategory` |  | |  |  |  |  |
-| `BankNetworkGrouping` |  | |  |  |  |  |
-| `StreetName` |  | |  |  |  |  |
-| `CityName` |  | |  |  |  |  |
-| `AddressRegion` |  | |  |  |  |  |
-| `ShortStreetName` |  | |  |  |  |  |
-| `ShortCityName` |  | |  |  |  |  |
-| `Region` |  | |  |  |  |  |
-| `BankName` |  | |  |  |  |  |
-| `BankBranch` |  | |  |  |  |  |
-| `NotSglEuroPaytsAreaBkCat` |  | |  | `cast( case when BankCategory <> '4' or BankCategory is null then 'X' else ' ' end as bf_is_not_sepa_bank_category preserving type )` |  |  |
-| `IsPostBankAccount` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `IsMarkedForDeletion` |  | |  |  |  |  |
-| `PostOfficeBankAccount` |  | |  |  |  |  |
-| `CheckDigitCalculationMethod` |  | |  |  |  |  |
-| `BankDataFileFormat` |  | |  |  |  |  |
-| `AddressID` |  | |  |  |  |  |
+| `BankCountry` | ✓ | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `BankInternalID` | ✓ | |  |  | `CHAR(15)` | Bank Keys |
+| `LongBankName` |  | |  |  | `CHAR(80)` | Bank Name |
+| `LongBankBranch` |  | |  |  | `CHAR(80)` | Bank Branch |
+| `SWIFTCode` |  | |  |  | `CHAR(11)` | SWIFT/BIC for International Payments |
+| `BankCode` |  | |  | `cast(BankNumber as bf_bank_bankcode preserving type )` | `CHAR(15)` | Bank Code/Bank Number |
+| `BankCategoryDescription` |  | | `_BankCategoryText` | `BankCategoryDescription` | `CHAR(60)` | Bank Category Description |
+| `BankCategory` |  | |  |  | `CHAR(1)` | Internal Bank Category |
+| `BankNetworkGrouping` |  | |  |  | `CHAR(2)` | Bank Group (Bank Network) |
+| `StreetName` |  | |  |  | `CHAR(60)` | Street |
+| `CityName` |  | |  |  | `CHAR(40)` | City |
+| `AddressRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `ShortStreetName` |  | |  |  | `CHAR(35)` | Street and House Number |
+| `ShortCityName` |  | |  |  | `CHAR(35)` | City |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `BankName` |  | |  |  | `CHAR(60)` | Name of Financial Institution |
+| `BankBranch` |  | |  |  | `CHAR(40)` | Bank Branch |
+| `NotSglEuroPaytsAreaBkCat` |  | |  | `cast( case when BankCategory <> '4' or BankCategory is null then 'X' else ' ' end as bf_is_not_sepa_bank_category preserving type )` | `CHAR(1)` | Bank internal category is not SEPA |
+| `IsPostBankAccount` |  | |  |  | `CHAR(1)` | Post Office Bank Current Account |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Created On |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Accounting Clerk Responsible for Adding the Object |
+| `IsMarkedForDeletion` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `PostOfficeBankAccount` |  | |  |  | `CHAR(16)` | Post office bank current account number |
+| `CheckDigitCalculationMethod` |  | |  |  | `CHAR(4)` | Check digit calculation method |
+| `BankDataFileFormat` |  | |  |  | `CHAR(3)` | Format of File with Bank Data |
+| `AddressID` |  | |  |  | `CHAR(10)` | Address Number |
 | `_BankCategoryText` | | ✓ | | | | |
 | `_BankAddress` | | ✓ | | | | |
 | `_Country` | | ✓ | | | | |

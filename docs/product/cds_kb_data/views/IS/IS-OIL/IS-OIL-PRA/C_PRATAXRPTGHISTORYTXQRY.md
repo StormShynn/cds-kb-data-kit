@@ -5,9 +5,24 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYTXQRY')/$value
 semantic_en: "PRA Tax Reporting History Texas Query"
+semantic_vi: "PRA Tax Reporting History Texas Query — CDS view tiêu dùng dựa trên I_PRATaxRptgHistoryTexas."
+keywords:
+  - "pra"
+  - "tax"
+  - "reporting"
+  - "history"
+  - "texas"
+  - "query"
+  - "company"
+  - "code"
+  - "sales"
+  - "date"
+  - "product"
+  - "well"
+  - "completion"
 tags:
   - IS
   - bo:purchaseorder
@@ -15,7 +30,6 @@ tags:
   - consumption-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # C_PRATAXRPTGHISTORYTXQRY
 
@@ -27,7 +41,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYTXQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYTXQRY')/$value) |
 
 ## Fields
 
@@ -81,3 +95,129 @@ tags:
 | `MktgReimbmtCostInCoCodeCrcy` |  | |  |  | `CURR(11)` | Marketing Cost Reimbursement |
 | `GrossTaxAmtInCoCodeCrcy` |  | |  |  | `CURR(11)` | Tax Amount |
 | `TaxReimbmtAmtInCoCodeCrcy` |  | |  |  | `CURR(11)` | Tax Reimbursement |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYTXQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYTXQRY')/$value)*
+
+```abap
+@EndUserText.label: 'PRA Tax Reporting History Texas Query'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVTAXTXHISTQ'
+//@OData.publish: true
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+
+define view C_PRATaxRptgHistoryTXQry 
+  //  with parameters
+  //    @Consumption.hidden: true
+  //    @Environment.systemField: #SYSTEM_LANGUAGE
+  //    P_Language : sylangu
+  as select from I_PRATaxRptgHistoryTexas
+{
+CompanyCode, 
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.variableSequence: 1
+SalesDate, 
+  @AnalyticsDetails.query.display: #KEY_TEXT
+Product, 
+Well, 
+  @AnalyticsDetails.query.display: #KEY_TEXT
+WellCompletion, 
+  @AnalyticsDetails.query.display: #KEY_TEXT
+MeasurementPoint, 
+JointVenture, 
+  @AnalyticsDetails.query.display: #KEY_TEXT
+DivisionOfInterest, 
+  @AnalyticsDetails.query.display: #KEY_TEXT
+DeliveryNetwork, 
+  @AnalyticsDetails.query.display: #KEY_TEXT
+PRAContract, 
+  @AnalyticsDetails.query.display: #KEY_TEXT
+VolumeType, 
+  @AnalyticsDetails.query.display: #TEXT
+TaxClassification, 
+  @Consumption.filter: { 
+      hidden: true,
+      defaultValue: 'US'
+      }
+  @AnalyticsDetails.query.display: #TEXT
+Country,
+  @Consumption.filter: { 
+      hidden: true,
+      defaultValue: '42'
+      }
+  @AnalyticsDetails.query.display: #TEXT
+PrimaryGeogrlLocation,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 2
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @AnalyticsDetails.query.display: #TEXT
+SeveranceTaxType, 
+  @AnalyticsDetails.query.display: #TEXT
+TierTaxType, 
+  @AnalyticsDetails.query.display: #TEXT
+TaxRptgRvslOrBkgOrAdjmt, 
+  @AnalyticsDetails.query.display: #TEXT
+ProducerOrPurchaserCode, 
+UnitJointVenture, 
+  @AnalyticsDetails.query.display: #TEXT
+HasSeveranceTaxPaytOblgn, 
+  @AnalyticsDetails.query.display: #TEXT
+SeveranceTaxRptgType, 
+APIWellNumber, 
+  @AnalyticsDetails.query.display: #TEXT
+TexasCounty, 
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 3
+  @AnalyticsDetails.query.display: #KEY_TEXT
+ReportingAgencyLease, 
+  @AnalyticsDetails.query.display: #TEXT
+OnOrOffLeaseSale, 
+  @AnalyticsDetails.query.display: #TEXT
+MasterDataRecordingLvl, 
+OtherPartyTaxPayerIDByAgency, 
+ProducerOrPurchaserNmbr, 
+  @AnalyticsDetails.query.display: #TEXT
+CommodityType, 
+TaxExmpType, 
+TaxPayerIDByAgency, 
+TaxPayerName, 
+CreatedByUser, 
+CreationDateTime, 
+
+@AnalyticsDetails.query.hidden     
+NumberOfItems,
+BaseUnit, 
+@AnalyticsDetails.query.hidden     
+APIGravityRatio, 
+@AnalyticsDetails.query.hidden     
+TransacVolInBaseUnit, 
+@AnalyticsDetails.query.hidden     
+GrossVolInBaseUnit, 
+@AnalyticsDetails.query.hidden     
+GrossValInCoCodeCrcy, 
+@AnalyticsDetails.query.hidden     
+TaxableVolInBaseUnit, 
+@AnalyticsDetails.query.hidden     
+TaxableValInCoCodeCrcy, 
+@AnalyticsDetails.query.hidden     
+TaxExmptVolInBaseUnit, 
+@AnalyticsDetails.query.hidden     
+TaxExmptValInCoCodeCrcy, 
+@AnalyticsDetails.query.hidden     
+MktgCostInCoCodeCrcy, 
+@AnalyticsDetails.query.hidden     
+MktgReimbmtCostInCoCodeCrcy, 
+@AnalyticsDetails.query.axis: #COLUMNS    
+GrossTaxAmtInCoCodeCrcy, 
+@AnalyticsDetails.query.hidden     
+TaxReimbmtAmtInCoCodeCrcy
+}
+```

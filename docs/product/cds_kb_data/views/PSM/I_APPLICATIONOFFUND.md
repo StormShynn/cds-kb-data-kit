@@ -5,16 +5,27 @@ app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_APPLICATIONOFFUND')/$value
 semantic_en: "Application of Fund"
+semantic_vi: "Application of Fund — CDS view giao diện dựa trên I_ApplicationOfFundBasic."
 keywords:
   - "Application of Fund"
+  - "application"
+  - "fund"
+  - "financial"
+  - "management"
+  - "area"
+  - "funds"
+  - "validity"
+  - "start"
+  - "date"
+  - "created"
+  - "user"
 tags:
   - PSM
   - component:PSM
   - interface-view
-  - metadata-only
 ---
 # I_APPLICATIONOFFUND
 
@@ -26,14 +37,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_APPLICATIONOFFUND')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_APPLICATIONOFFUND')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
-| `ApplicationOfFunds` |  | |  |  | `CHAR(16)` | Application of Funds |
+| `FinancialManagementArea` | ✓ | |  |  | `CHAR(4)` | Financial Management Area |
+| `ApplicationOfFunds` | ✓ | |  |  | `CHAR(16)` | Application of Funds |
 | `ValidityStartDate` |  | |  |  | `DATS(8)` | Application of Funds Validity Start Date |
 | `ValidityEndDate` |  | |  |  | `DATS(8)` | Application of Funds Validity End Date |
 | `CreatedByUser` |  | |  |  | `CHAR(12)` | Application of Funds Created by User |
@@ -48,3 +59,76 @@ tags:
 | `US_IsFedGvmntFACTS2Relevant` |  | |  |  | `CHAR(1)` | FACTS II Relevant |
 | `US_FedGvmntPreparer` |  | |  |  | `CHAR(8)` | Preparer ID |
 | `US_FedGvmntCertifier` |  | |  |  | `CHAR(8)` | Certifier ID |
+| `_US_IsFedGvmntFACTS2Relevant` | | ✓ | | | | |
+| `_FinMgmtArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Extension` | `E_ApplicationOfFund` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_APPLICATIONOFFUND')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_APPLICATIONOFFUND')/$value)*
+
+```abap
+@EndUserText.label: 'Application of Fund'
+@Analytics: { dataCategory: #DIMENSION, dataExtraction.enabled: true, internalName: #LOCAL }
+@VDM.viewType: #COMPOSITE
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@AccessControl.authorizationCheck: #CHECK
+@ObjectModel.representativeKey: 'ApplicationOfFunds'
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #EXTRACTION_DATA_SOURCE]
+@ObjectModel.usageType: {
+  dataClass: #MASTER,
+  serviceQuality: #A,
+  sizeCategory: #S
+}
+@ObjectModel.sapObjectNodeType.name: 'ApplicationOfFund'
+@Metadata.ignorePropagatedAnnotations:true
+@Metadata.allowExtensions:true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.sqlViewName: 'IAPPLOFFUND'
+//Commented by VDM CDS Suite Plugin:@ObjectModel.representativeKey: 'ApplicationOfFunds'
+define view I_ApplicationOfFund
+  as select from I_ApplicationOfFundBasic
+  
+    association [1..1] to E_ApplicationOfFund as _Extension  //do not expose this association in the projection list of the view 
+       on  $projection.FinancialManagementArea  = _Extension.FinancialManagementArea
+       and $projection.ApplicationOfFunds       = _Extension.ApplicationOfFunds  
+{
+      @Consumption.valueHelpDefinition: [ 
+        { entity:  { name:    'I_FinMgmtAreaStdVH',
+                     element: 'FinancialManagementArea' }
+        }]
+      @ObjectModel.foreignKey.association: '_FinMgmtArea'
+  key FinancialManagementArea,
+      @ObjectModel.text.association: '_Text'
+  key ApplicationOfFunds,
+      @Semantics.businessDate.from: true
+      ValidityStartDate,
+      @Semantics.businessDate.to: true
+      ValidityEndDate,
+      CreatedByUser,
+      CreationDate,
+      LastChangeUser,
+      @Semantics.systemDate.lastChangedAt: true
+      LastChangeDate,
+      US_FedGvmntDepartmentRegular,
+      US_FedGvmntDepartmentTransfer,
+      US_FedGvmntMainAccount,
+      US_FedGvmntSubAccount,
+      US_FedGvmntSplitSequenceNumber,
+      @ObjectModel.foreignKey.association: '_US_IsFedGvmntFACTS2Relevant'
+      US_IsFedGvmntFACTS2Relevant,
+      US_FedGvmntPreparer,
+      US_FedGvmntCertifier,
+
+      _US_IsFedGvmntFACTS2Relevant,
+      _FinMgmtArea,
+      _Text
+}
+```

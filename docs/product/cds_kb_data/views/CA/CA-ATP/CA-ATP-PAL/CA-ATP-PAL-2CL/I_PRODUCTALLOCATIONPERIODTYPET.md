@@ -31,9 +31,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProductAllocationPeriodType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as productallocationperiodtype preserving type )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `ProdAllocationPeriodTypeDesc` |  | |  | `cast( ddtext as prodallocationperiodtypedesc preserving type )` |  |  |
+| `ProductAllocationPeriodType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as productallocationperiodtype preserving type )` | `CHAR(2)` | Product Allocation Period Type |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `ProdAllocationPeriodTypeDesc` |  | |  | `cast( ddtext as prodallocationperiodtypedesc preserving type )` | `CHAR(60)` | Product Allocation Period Type Description |
 | `_Language` | | ✓ | | | | |
 | `_ProductAllocationPeriodType` | | ✓ | | | | |
 

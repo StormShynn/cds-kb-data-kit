@@ -5,15 +5,31 @@ app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECGTEEMBDGTACTLQRY1')/$value
 semantic_en: "Grant Budget Cmtmt and Actuals - Query"
+semantic_vi: "Grant Budget Cmtmt and Actuals - Query — CDS view tiêu dùng dựa trên I_PubSecGteeMBdgtActlCube."
+keywords:
+  - "grant"
+  - "budget"
+  - "cmtmt"
+  - "and"
+  - "actuals"
+  - "query"
+  - "source"
+  - "ledger"
+  - "company"
+  - "code"
+  - "grantee"
+  - "mgmt"
+  - "sponsor"
+  - "actual"
+  - "plan"
 tags:
   - PSM
   - budget
   - component:PSM
   - consumption-view
-  - metadata-only
 ---
 # C_PUBSECGTEEMBDGTACTLQRY1
 
@@ -25,13 +41,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECGTEEMBDGTACTLQRY1')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECGTEEMBDGTACTLQRY1')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
+| `SourceLedger` | ✓ | |  |  | `CHAR(2)` | Source Ledger |
 | `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
 | `GrantID` |  | |  |  | `CHAR(20)` | Grant |
 | `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |
@@ -69,3 +85,188 @@ tags:
 | `BudgetProcess` |  | |  |  | `CHAR(4)` | Budget Process Type |
 | `BudgetingType` |  | |  |  | `CHAR(8)` | Budget Type (Subcategory) |
 | `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECGTEEMBDGTACTLQRY1')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECGTEEMBDGTACTLQRY1')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CPSMS4CGBDACTAQ1'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@EndUserText.label: 'Grant Budget Cmtmt and Actuals - Query'
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@VDM.viewType: #CONSUMPTION
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@Metadata.ignorePropagatedAnnotations: true
+@Analytics: {
+     query: true,
+     internalName: #LOCAL,
+     settings: {
+         maxProcessingEffort: #HIGH
+     }
+}
+@ObjectModel: {
+     usageType: {
+         dataClass: #MIXED,
+         serviceQuality: #D,
+         sizeCategory: #XXL
+     },
+     supportedCapabilities: [ #ANALYTICAL_QUERY ]
+}
+@ObjectModel.modelingPattern:#ANALYTICAL_QUERY
+@OData.publish: true
+
+
+define view C_PubSecGteeMBdgtActlQry1
+  with parameters
+    @Consumption.hidden: true
+    @Environment.systemField: #SYSTEM_LANGUAGE
+    P_Language     : sylangu,
+    @Consumption.hidden: true
+    @Semantics.businessDate.at: true
+    @Environment.systemField: #SYSTEM_DATE
+    P_KeyDate      : vdm_v_key_date,
+    @Consumption.hidden: true
+    @Environment.systemField: #USER
+    P_BusinessUser : syuname
+  as select from I_PubSecGteeMBdgtActlCube as Cube
+{
+      @AnalyticsDetails.query.hidden : true
+      @AnalyticsDetails.query.axis: #FREE
+  key SourceLedger,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CompanyCode,
+      @AnalyticsDetails.query.variableSequence: 160
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      GrantID,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      GranteeMgmtSponsor,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #TEXT
+      ActualPlanCode,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #TEXT_KEY
+      GrantLifecycleStatus,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      GrantStatus,  
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #TEXT
+      ControllingArea,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      GrantType,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BusPartEmplrIndstryCode,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #TEXT_KEY
+      SponsoredClass,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #TEXT_KEY
+      SponsoredProgram,
+
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      CompanyCodeCurrency,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #TEXT_KEY
+      CostCenter,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #TEXT_KEY
+      WBSElementExternalID,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+//      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      @AnalyticsDetails.query.axis: #FREE 
+      AmountInCompanyCodeCurrency,
+      
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      GlobalCurrency,
+      
+      @Semantics.amount.currencyCode: 'GlobalCurrency'
+      @DefaultAggregation: #SUM
+      
+      AmountInGlobalCurrency,
+
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #TEXT
+      Region,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #TEXT
+      Country,
+      @AnalyticsDetails.query.display: #TEXT
+      CityName,
+//      @AnalyticsDetails.query.axis: #FREE
+//      @AnalyticsDetails.query.totals: #SHOW
+//      @AnalyticsDetails.query.display: #KEY
+//      CountryRegion, 
+
+      @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: false, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 60
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.totals: #SHOW
+      PostingDate,
+
+      @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: false, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 60
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.totals: #SHOW
+      Cube.PubSecBudgetCnsmpnDate,
+
+
+      @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: false, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 60
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.totals: #SHOW
+      ValidityEndDate,
+
+      @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: false, mandatory: false }
+      @AnalyticsDetails.query.variableSequence: 60
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.totals: #SHOW
+      ValidityStartDate,
+
+      // Changes for Fund Overview
+      @AnalyticsDetails.query.axis: #FREE
+      FiscalYear,
+      @AnalyticsDetails.query.axis: #FREE
+      FiscalPeriod,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Fund,
+      @AnalyticsDetails.query.axis: #FREE
+      GranteeMgmtFundType,
+      @AnalyticsDetails.query.axis: #FREE
+      FundType,
+      @AnalyticsDetails.query.axis: #FREE
+      PubSecBudgetIsRelevant,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Segment,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ProfitCenter,
+      @AnalyticsDetails.query.axis: #FREE
+      PubSecBdgtAcctRevnExpnCode,
+      @AnalyticsDetails.query.axis: #FREE
+      PubSecBudgetCnsmpnTypeGroup,
+      @AnalyticsDetails.query.axis: #FREE
+      BudgetProcess,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BudgetingType,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      FinancialManagementArea
+}
+```

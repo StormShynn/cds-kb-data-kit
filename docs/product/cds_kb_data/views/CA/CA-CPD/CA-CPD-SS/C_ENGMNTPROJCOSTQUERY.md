@@ -5,9 +5,21 @@ app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMNTPROJCOSTQUERY')/$value
 semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the financial status of projects that I'm responsible for? What is the financial status of projects in a given cost center or company code? What is the profitability in projects that I manage? What is the proportion of billable and non-billable project costs in a given company code? Are my project costs on track, compared to the baseline plan?"
+semantic_vi: "Engagement Project Cost and Revenue Query — CDS view tiêu dùng dựa trên I_EngmntProjActlPlanCube."
+keywords:
+  - "engagement"
+  - "project"
+  - "cost"
+  - "and"
+  - "revenue"
+  - "query"
+  - "ledger"
+  - "sales"
+  - "order"
+  - "visibility"
 tags:
   - CA
   - bo:companycode
@@ -18,7 +30,7 @@ tags:
   - lob:cross_application components
   - plan
   - project
-  - metadata-only
+  - bo:project
 ---
 # C_ENGMNTPROJCOSTQUERY
 
@@ -30,7 +42,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMNTPROJCOSTQUERY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMNTPROJCOSTQUERY')/$value) |
 
 ## Fields
 
@@ -80,3 +92,326 @@ tags:
 | `ActlEffortUpToPrevPerdQty` |  | |  |  | `QUAN(15)` |  |
 | `ActlEffortQtyUpToCurPerd` |  | |  |  | `QUAN(15)` |  |
 | `DiffBtwnPlnAndActlEffortQty` |  | |  |  | `QUAN(16)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMNTPROJCOSTQUERY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMNTPROJCOSTQUERY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CENGPROJCSTQRY'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+
+@Analytics: {
+  query: true,
+  internalName: #LOCAL
+}
+@Analytics.settings.zeroValues: {handling: #HIDE, hideOnAxis: #ROWS}
+
+@AccessControl: {
+  authorizationCheck: #PRIVILEGED_ONLY,
+  personalData.blocking: #BLOCKED_DATA_EXCLUDED
+}
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Engagement Project Cost and Revenue Query'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel: {
+  usageType.serviceQuality: #D,
+  usageType.sizeCategory: #XL,
+  usageType.dataClass: #MIXED,
+  modelingPattern: #ANALYTICAL_QUERY,
+  supportedCapabilities: [#ANALYTICAL_QUERY]
+}
+@VDM: {
+  viewType: #CONSUMPTION
+  //lifecycle.contract.type: #NONE
+}
+define view C_EngmntProjCostQuery
+  with parameters
+
+    @Consumption.hidden: false
+    @EndUserText.label: 'User Input Year Period'
+    @Consumption.derivation: { lookupEntity: 'I_FiscalCalendarDate',
+                               resultElement: 'FiscalYearPeriod',
+                               binding:      [ { targetElement : 'CalendarDate'      , type : #SYSTEM_FIELD,  value : '#SYSTEM_DATE' } ,
+                                               { targetElement : 'FiscalYearVariant' , type : #CONSTANT  ,  value : 'K4'     } ]
+                              }
+
+    P_FiscalYearPeriod : /cpd/pfp_review_year_period
+
+
+  as select from I_EngmntProjActlPlanCube(P_FiscalYearPeriod: :P_FiscalYearPeriod)
+{
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  @EndUserText.label: 'Engagement Project ID'
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  EngagementProject,
+
+  @Consumption: {
+        filter.hidden: true,
+        derivation: {
+            lookupEntity: 'I_Ledger',
+            resultElement: 'Ledger',
+        binding: [ {
+            targetElement: 'IsLeadingLedger',
+            type: #CONSTANT,
+            value: 'X'
+                 } ]
+                    }
+                  }
+  Ledger,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Sales Order'
+  SalesOrder,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #HIDE
+  ProjectVisibility,
+
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'My Projects'
+  IsMyProject,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Engagement Project Service Org'
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  EngagementProjectServiceOrg,
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Engagement Project Start Date'
+  ProjectStartDate,
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Engagement Project End Date'
+  ProjectEndDate,
+
+
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Company Code'
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  CompanyCode,
+
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Controlling Area'
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  ControllingArea,
+
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Profit Center'
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  ProfitCenter,
+
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Cost Center'
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  CostCenter,
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Customer ID'
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  Customer,
+
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Engagement Project Stage'
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  EngagementProjectStage,
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Billing Category'
+  @AnalyticsDetails.query.display: #TEXT
+  BillingControlCategory,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Engagement Project Resource Type'
+  EngagementProjectResourceType,
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @EndUserText.label: 'Billing Item Type'
+  @AnalyticsDetails.query.display: #TEXT_KEY
+  SalesOrderItemCategory,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'Actl Cost Upto Input Perd in Proj. Crcy'
+  ActlCostUpToInptPerdAmtInPC,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'Actl Cost Upto Curr. Perd in Proj. Crcy'
+  ActlCostUpToCurPerdAmtInPC,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'Total Actual Cost'
+  ActlCostInProjCrcy,
+
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor: 'BilledRevnUpToInptPerdAmtInPC'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'Actl Rev. Upto Input Perd in Proj. Crcy'
+  ActlRevnUpToInptPerdAmtInPC,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'Billed Rev. Upto Input Perd in Proj. Crcy'
+  BilledRevnUpToInptPerdAmtInPC,
+
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor: 'BilledRevnUpToInptPerdAmtInPC'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'Actl Rev. Upto Curr. Perd in Proj. Crcy'
+  ActlRevnUpToCurPerdAmtInPC,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'Billed Rev. Upto Curr. Perd in Proj. Crcy'
+  BilledRevnUpToCurPerdAmtInPC,
+
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor: 'BilledRevenueAmtInProjCrcy'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @EndUserText.label: 'Total Actual Revenue'
+  @AnalyticsDetails.query.decimals: 2
+  ActlRevnInProjCrcy,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @EndUserText.label: 'Total Billed Revenue'
+  @AnalyticsDetails.query.decimals: 2
+  BilledRevenueAmtInProjCrcy,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'Plan Cost Upto Curr. Perd in Proj. Crcy'
+  PlnCostUpToCurPerdAmtInPC,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'Plan Cost Upto Prev. Perd in Proj. Crcy'
+  PlnCostUpToPrevPerdAmtInPC,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @EndUserText.label: 'Total Plan Cost in Proj. Crcy'
+  @AnalyticsDetails.query.decimals: 2
+  PlndCostAmtInProjCrcy,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'Baseline Cost Upto Curr. Perd Proj. Crcy'
+  BslnCostUpToCurPerdAmtInPC,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'Baseline Cost Upto Prev. Perd Proj. Crcy'
+  BslnCostUpToPrevPerdAmtInPC,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'Total Baseline Cost in Proj. Crcy'
+  BaselinePlndCostAmt,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'As-Sold Revenue in Proj. Crcy'
+  RevenueAsSoldAmount,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 1
+  @EndUserText.label: 'Plan Effort Upto Prev. Perd'
+  PlnEffortUpToPrevPerdQty,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 1
+  @EndUserText.label: 'Plan Effort Upto Curr. Perd'
+  PlndEffortUpToCurPerd,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 1
+  @EndUserText.label: 'Total Plan Effort'
+  PlndEffortQty,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 1
+  @EndUserText.label: 'Baseline Effort Upto Prev. Perd'
+  BslnEffortUpToPrevPerdQty,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 1
+  @EndUserText.label: 'Baseline Effort Upto Curr. Perd'
+  BslnEffortUpToCurPerdQty,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 1
+  @EndUserText.label: 'Total Baseline Effort'
+  BaselinePlndEffortQty,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 1
+  @EndUserText.label: 'Total Actual Effort'
+  ActlEffortQty,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 1
+  @EndUserText.label: 'Actual Effort Upto Input Perd'
+  ActlEffortUpToInptPerdQty,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 1
+  @EndUserText.label: 'Actual Effort Upto Prev. Perd'
+  ActlEffortUpToPrevPerdQty,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 1
+  @EndUserText.label: 'Actual Effort Upto Curr. Perd'
+  ActlEffortQtyUpToCurPerd,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  @AnalyticsDetails.query.decimals: 1
+  @EndUserText.label: 'Remaining Effort'
+  DiffBtwnPlnAndActlEffortQty
+
+}
+```

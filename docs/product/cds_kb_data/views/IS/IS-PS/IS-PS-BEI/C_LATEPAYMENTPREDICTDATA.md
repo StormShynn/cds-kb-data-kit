@@ -5,9 +5,24 @@ app_component: IS-PS-BEI
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LATEPAYMENTPREDICTDATA')/$value
 semantic_en: "Risk of Late Payment Prediction dataset"
+semantic_vi: "Risk of Late Payment Prediction dataset — CDS view tiêu dùng dựa trên P_TF_LATE_PAYMENT."
+keywords:
+  - "risk"
+  - "late"
+  - "payment"
+  - "prediction"
+  - "dataset"
+  - "business"
+  - "partner"
+  - "bhvrl"
+  - "insgts"
+  - "account"
+  - "number"
+  - "date"
+  - "type"
 tags:
   - IS
   - component:IS-PS-BEI
@@ -15,7 +30,6 @@ tags:
   - IS-PS
   - IS-PS-BEI
   - payment
-  - metadata-only
 ---
 # C_LATEPAYMENTPREDICTDATA
 
@@ -27,16 +41,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LATEPAYMENTPREDICTDATA')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LATEPAYMENTPREDICTDATA')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
-| `BhvrlInsgtsAccountNumber` |  | |  |  | `CHAR(12)` | Contract Account Number |
-| `BhvrlInsgtsSubAccountNumber` |  | |  |  | `CHAR(20)` | Reference Specifications from Contract |
-| `BhvrlInsgtsCalDate` |  | |  |  | `DATN(8)` | Date |
+| `BusinessPartner` | ✓ | |  |  | `CHAR(10)` | Business Partner Number |
+| `BhvrlInsgtsAccountNumber` | ✓ | |  |  | `CHAR(12)` | Contract Account Number |
+| `BhvrlInsgtsSubAccountNumber` | ✓ | |  |  | `CHAR(20)` | Reference Specifications from Contract |
+| `BhvrlInsgtsCalDate` | ✓ | |  |  | `DATN(8)` | Date |
 | `BusinessPartnerType` |  | |  |  | `CHAR(4)` | Business Partner Type |
 | `BPGroupingCharacter` |  | |  |  | `CHAR(10)` | Grouping Characteristic |
 | `NrOfLatePaymentPenalty3Month` |  | |  |  | `INT1(3)` |  |
@@ -80,3 +94,119 @@ tags:
 | `NrOfPaytsWthn15DaysFrmDueDay` |  | |  |  | `INT4(10)` |  |
 | `BusinessPartnerIndustrySector` |  | |  |  | `CHAR(10)` |  |
 | `BhvrlInsgtsTgtVal` |  | |  |  | `CHAR(5)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LATEPAYMENTPREDICTDATA')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LATEPAYMENTPREDICTDATA')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CLATEPAYTPREDICT'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@VDM.viewType: #CONSUMPTION
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.serviceQuality: #D
+@AccessControl.authorizationCheck: #CHECK
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations:true
+@ObjectModel.supportedCapabilities: [ #SQL_DATA_SOURCE]
+@EndUserText.label: 'Risk of Late Payment Prediction dataset'
+define view C_LatePaymentPredictData as select from P_TF_LATE_PAYMENT(P_SAPClient : $session.client , P_DatasetType : 'P', P_BalanceFlag : 'X') {
+   
+      @EndUserText.label: 'Business Partner'
+  key BusinessPartner,
+      @EndUserText.label: 'Account Number'
+  key BhvrlInsgtsAccountNumber,
+      @EndUserText.label: 'Subaccount Number'
+  key BhvrlInsgtsSubAccountNumber,
+      @EndUserText.label: 'Calendar Date'
+  key BhvrlInsgtsCalDate,
+      @EndUserText.label: 'Business Partner Type'
+      BusinessPartnerType,
+      @EndUserText.label: 'Business Partner Group'
+      BPGroupingCharacter,
+      @EndUserText.label: 'Late Payment Penalties (past 3 mos)'
+      NrOfLatePaymentPenalty3Month,
+      @EndUserText.label: 'Late Submission Penalties (past 3 mos)'
+      NrOfLateSubmsnPenalty3Month,
+      @EndUserText.label: 'Audits Created (past 3 mos)'
+      NrOfCreatedAudit3Month,
+      @EndUserText.label: 'Audits Assessed (past 3 mos)'
+      NrOfAuditAssessment3Month,
+      @EndUserText.label: 'Objections (past 3 mos)'
+      NrOfObjection3Month,
+      @EndUserText.label: 'Late Submissions (past 3 mos)'
+      NrOfLateSubmission3Month,
+      @EndUserText.label: 'No Submissions (past 3 mos)'
+      NrOfNoSubmission3Month,
+      @EndUserText.label: 'Late Submissions (past 6 mos)'
+      NumberOfLateSubmission6Month,
+      @EndUserText.label: 'No Submissions (past 6 mos)'
+      NrOfNoSubmission6Month,
+      @EndUserText.label: 'Late Submissions (past 12 mos)'
+      NumberOfLateSubmission12Month,
+      @EndUserText.label: 'No Submissions (past 12 mos)'
+      NumberOfNoSubmission12Month,
+      @EndUserText.label: 'Level 1 Non-Filer Dunning'
+      NumberOfLevel01DunningNonFiler,
+      @EndUserText.label: 'Level 2 Non-Filer Dunning'
+      NumberOfLevel02DunningNonFiler,
+      @EndUserText.label: 'Level 3 Non-Filer Dunning'
+      NumberOfLevel03DunningNonFiler,
+      @EndUserText.label: 'Level 4 Non-Filer Dunning'
+      NumberOfLevel04DunningNonFiler,
+      @EndUserText.label: 'Level 1 Non-Payer Dunning'
+      NumberOfLevel01DunningNonPayer,
+      @EndUserText.label: 'Level 2 Non-Payer Dunning'
+      NumberOfLevel02DunningNonPayer,
+      @EndUserText.label: 'Level 3 Non-Payer Dunning'
+      NumberOfLevel03DunningNonPayer,
+      @EndUserText.label: 'Level 4 Non-Payer Dunning'
+      NumberOfLevel04DunningNonPayer,
+      @EndUserText.label: 'Debt Amount'
+      DueAmountInLocalCurrency,
+      @EndUserText.label: 'Months with Authority'
+      NrOfMonthWithAuthority,
+      @EndUserText.label: 'Number of Bankruptcies'
+      NumberOfBankruptcies,
+      @EndUserText.label: 'Change in Filing Amt. (1 month)'
+      FilgAmtChgCurAndPrevMonthValue,
+      @EndUserText.label: 'Change in Filing Amt. (1 year)'
+      FilgAmtChgCurAndPrevYearValue,
+      @EndUserText.label: 'Months Debt Amount is overdue'
+      NumberOfMonthDebtAmountOverdue,
+      @EndUserText.label: 'Scaled Debt Amount'
+      ScaledDebtAmountValue,
+      @EndUserText.label: 'Months since on-time payer'
+      NrOfMonthSincePayer,
+      @EndUserText.label: 'Business Partner Status'
+      BusinessPartnerStatusName,
+      @EndUserText.label: 'Deviation in Filing Amount'
+      DeviationInFilingAmount,
+      @EndUserText.label: 'Average days filing overdue'
+      AvgNrOfOverdueDay,
+      @EndUserText.label: 'External Event Occured'
+      ExternalEventHasAffected,
+      @EndUserText.label: 'Promises to Pay created '
+      NrOfPromiseToPayCreated12Month,
+      @EndUserText.label: 'Promises to Pay unfulfilled'
+      NrOfPrms2PUnfulfilled,
+      @EndUserText.label: 'Promises to Pay fulfilled'      
+      NrOfPrms2PFulfilled,
+      @EndUserText.label: 'Installment Plans Created'
+      NrOfInstlmntPlnCrted12Mnth,
+      @EndUserText.label: 'Installment Plans unfulfilled'      
+      NrOfInstlmntPlnUnfulfilled,
+      @EndUserText.label: 'Installment Plans fulfilled'            
+      NrOfInstlmntPlnFulfilled,
+      @EndUserText.label: 'Number of payments after 60 days'            
+      NrOfPaytsAft60DaysFrmDueDay,
+      @EndUserText.label: 'Number of payments within 15 days'                  
+      NrOfPaytsWthn15DaysFrmDueDay,
+      @EndUserText.label: 'Industry Sector Details'                        
+      BusinessPartnerIndustrySector,
+      @EndUserText.label: 'Target Variable'
+      BhvrlInsgtsTgtVal
+}
+```

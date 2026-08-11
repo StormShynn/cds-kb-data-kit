@@ -5,9 +5,21 @@ app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEIDINDEX')/$value
 semantic_en: "This CDS view provides parameter values for Fiscal Year, Fiscal Period, and Consolidation Version. For these parameter values, all valid consolidation reporting rule IDs are returned. The view also provides the consolidation reporting rule version that maps the consolidation version and the validity start and end date for the given consolidation reporting rule ID."
+semantic_vi: "Consolidation Reporting Rule Variant Index — CDS view giao diện dựa trên P_CNSLDTNRPTGRULEIDINDEX1."
+keywords:
+  - "consolidation"
+  - "reporting"
+  - "rule"
+  - "variant"
+  - "index"
+  - "vers"
+  - "current"
+  - "date"
+  - "validity"
+  - "start"
 tags:
   - FIN
   - bo:companycode
@@ -17,7 +29,7 @@ tags:
   - FIN-CS-EA-2CL
   - interface-view
   - lob:finance
-  - metadata-only
+  - bo:purchaseorder
 ---
 # I_CNSLDTNRPTGRULEIDINDEX
 
@@ -29,14 +41,59 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEIDINDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEIDINDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ConsolidationReportingRuleVers` |  | |  |  | `CHAR(3)` | Reporting Rule Version |
-| `CurrentDate` |  | |  |  | `CHAR(7)` |  |
+| `ConsolidationReportingRuleVers` | ✓ | |  |  | `CHAR(3)` | Reporting Rule Version |
+| `CurrentDate` | ✓ | |  |  | `CHAR(7)` |  |
 | `ConsolidationReportingRuleID` |  | |  |  | `CHAR(3)` | Reporting Rule Variant |
 | `ValidityStartDate` |  | |  |  | `NUMC(7)` | Valid-From Fiscal Period and Year |
 | `ValidityEndDate` |  | |  |  | `NUMC(7)` | Valid-To Fiscal Period and Year |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEIDINDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEIDINDEX')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'ICCRRIDINDEX'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@VDM.viewType: #COMPOSITE
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.buffering.status: #NOT_ALLOWED
+@ObjectModel: {
+    usageType: {
+      dataClass: #CUSTOMIZING,
+      serviceQuality: #D,
+      sizeCategory: #S
+    },
+    supportedCapabilities: [ #SQL_DATA_SOURCE ] 
+}
+@Metadata.ignorePropagatedAnnotations: true
+@EndUserText.label: 'Consolidation Reporting Rule Variant Index'
+define view I_CnsldtnRptgRuleIdIndex 
+with parameters
+P_FiscalYear: gjahr,
+P_FiscalPeriod: poper,
+P_ConsolidationVersion: fincs_rvers
+as select from P_CNSLDTNRPTGRULEIDINDEX1(
+        p_fiscalyear: $parameters.P_FiscalYear, 
+        p_fiscalperiod: $parameters.P_FiscalPeriod,
+        P_ConsolidationVersion: $parameters.P_ConsolidationVersion )
+
+{ 
+ key ConsolidationReportingRuleVers,
+//  cast(lpad( ValidityStartDate ,4,'0') as ryear)  as ValidityStartYear,
+//  cast(lpad( ValidityEndDate ,4,'0') as ryear)  as ValidityEndYear,
+ key CurrentDate,
+  
+  ConsolidationReportingRuleID,
+  ValidityStartDate,
+  ValidityEndDate
+}
+where CurrentDate >= ValidityStartDate
+and CurrentDate <= ValidityEndDate
+```

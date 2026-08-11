@@ -5,9 +5,24 @@ app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACTORYCALSPECIALRULETEXT')/$value
 semantic_en: "Special Rule For Factory Calendar - Text"
+semantic_vi: "Special Rule For Factory Calendar - Text — CDS view giao diện dựa trên tfait."
+keywords:
+  - "special"
+  - "rule"
+  - "for"
+  - "factory"
+  - "calendar"
+  - "text"
+  - "language"
+  - "year"
+  - "validity"
+  - "start"
+  - "date"
+  - "spcl"
+  - "description"
 tags:
   - CA
   - bo:plant
@@ -16,7 +31,6 @@ tags:
   - component:CA-GTF-VDM
   - interface-view
   - lob:cross_application components
-  - metadata-only
 ---
 # I_FACTORYCALSPECIALRULETEXT
 
@@ -28,14 +42,71 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACTORYCALSPECIALRULETEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACTORYCALSPECIALRULETEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `FactoryCalendar` |  | |  |  | `CHAR(2)` | Factory Calendar |
-| `CalendarYear` |  | |  |  | `NUMC(4)` | Year stored |
-| `ValidityStartDate` |  | |  |  | `DATS(8)` | Date from which special rule is valid |
-| `FactoryCalSpclRuleDescription` |  | |  |  | `CHAR(60)` | Object Text |
+| `Language` | ✓ | |  | `spra` | `LANG(1)` | Language Key |
+| `FactoryCalendar` | ✓ | |  | `ident` | `CHAR(2)` | Factory Calendar |
+| `CalendarYear` | ✓ | |  | `jahr` | `NUMC(4)` | Year stored |
+| `ValidityStartDate` | ✓ | |  | `von` | `DATS(8)` | Date from which special rule is valid |
+| `FactoryCalSpclRuleDescription` |  | |  | `ltext` | `CHAR(60)` | Object Text |
+| `_CalendarYear` | | ✓ | | | | |
+| `_ValidityStartDate` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CalendarYear` | `I_CalendarYear` | [0..1] |
+| `_ValidityStartDate` | `I_CalendarDate` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACTORYCALSPECIALRULETEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACTORYCALSPECIALRULETEXT')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IFCTRYCALSPCLR'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@EndUserText.label: 'Special Rule For Factory Calendar - Text'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+@VDM.viewType: #BASIC
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@Metadata.ignorePropagatedAnnotations: true
+@ClientHandling.type: #INHERITED
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #M
+@ObjectModel.usageType.dataClass:#CUSTOMIZING
+@AbapCatalog.buffering.status: #ACTIVE
+@AbapCatalog.buffering.type: #FULL
+@ObjectModel.representativeKey: 'FactoryCalendar'
+@Analytics:{ dataExtraction: { enabled : true  }}
+@ObjectModel.supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ]
+
+define view I_FactoryCalSpecialRuleText
+  as select from tfait
+  association [0..1] to I_CalendarYear as _CalendarYear      on $projection.CalendarYear = _CalendarYear.CalendarYear
+  association [0..1] to I_CalendarDate as _ValidityStartDate on $projection.ValidityStartDate = _ValidityStartDate.CalendarDate
+{
+      //TFAIT
+      @Semantics.language:true
+  key spra  as Language,
+  key ident as FactoryCalendar,
+      @ObjectModel.foreignKey.association: '_CalendarYear'
+  key jahr  as CalendarYear,
+      @ObjectModel.foreignKey.association: '_ValidityStartDate'
+  key von   as ValidityStartDate,
+
+      ltext as FactoryCalSpclRuleDescription,
+
+      // Associations
+      _CalendarYear,
+      _ValidityStartDate
+
+}
+```

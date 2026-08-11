@@ -5,9 +5,23 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTLAQRY')/$value
 semantic_en: "Louisiana Tax Reporting History Query"
+semantic_vi: "Louisiana Tax Reporting History Query — CDS view tiêu dùng dựa trên I_PRATaxRptgHistLouisiana."
+keywords:
+  - "louisiana"
+  - "tax"
+  - "reporting"
+  - "history"
+  - "query"
+  - "company"
+  - "code"
+  - "sales"
+  - "date"
+  - "product"
+  - "well"
+  - "completion"
 tags:
   - IS
   - bo:purchaseorder
@@ -15,7 +29,6 @@ tags:
   - consumption-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # C_PRATAXRPTGHISTLAQRY
 
@@ -27,7 +40,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTLAQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTLAQRY')/$value) |
 
 ## Fields
 
@@ -89,3 +102,120 @@ tags:
 | `DelinquentTxAmtDueInCoCdCrcy` |  | |  |  | `CURR(11)` | Tax 2.0 LA - Interest |
 | `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
 | `PrimaryGeogrlLocation` |  | |  |  | `CHAR(2)` | Primary Geographical Location |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTLAQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTLAQRY')/$value)*
+
+```abap
+@EndUserText.label: 'Louisiana Tax Reporting History Query'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVTAXRPTGHISTLA' 
+//@OData.publish: true
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+define view C_PRATaxRptgHistLAQry
+  as select from I_PRATaxRptgHistLouisiana
+{
+  CompanyCode,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 1
+  @AnalyticsDetails.query.axis: #ROWS
+  SalesDate,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Product,
+  Well,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  WellCompletion,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  MeasurementPoint,
+  JointVenture,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  DivisionOfInterest,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  DeliveryNetwork,
+  PRAContract,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  VolumeType,
+  @AnalyticsDetails.query.display: #TEXT
+  TaxClassification,
+  @AnalyticsDetails.query.display: #TEXT
+  TaxRptgRvslOrBkgOrAdjmt,
+  UnitJointVenture,
+  @AnalyticsDetails.query.display: #TEXT
+  ProducerOrPurchaserCode,
+  ProducerOrPurchaserNmbr,
+  @AnalyticsDetails.query.display: #TEXT
+  HasSeveranceTaxPaytOblgn,
+  @AnalyticsDetails.query.display: #TEXT
+  SeveranceTaxRptgType,
+  BaseUnit,
+  CompanyCodeCurrency,
+  ValuationDocumentNumber,
+  ValuationDocumentYear,
+  ReportingCompany,
+  TaxPayerIDByAgency,
+  @AnalyticsDetails.query.display: #TEXT
+  MasterDataRecordingLvl,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 2
+  ReportingAgencyLease,
+  @AnalyticsDetails.query.display: #TEXT
+  LouisianaCounty,
+  @AnalyticsDetails.query.display: #TEXT
+  Plant,
+  ReportingName,
+  @AnalyticsDetails.query.display: #TEXT
+  GeologicField,
+  LouisianaTaxRptgProducerCode,
+  @AnalyticsDetails.query.display: #TEXT
+  EntityIsCompanyOperated,
+  LouisianaTaxRptgPurchaserCode,
+  @AnalyticsDetails.query.display: #TEXT
+  LouisianaTaxRptgKind,
+  TaxRate,
+  @AnalyticsDetails.query.display: #TEXT
+  IsWellDeepOrHorizontal,
+  @AnalyticsDetails.query.display: #TEXT
+  RejectedOrSuspendedType,
+  @AnalyticsDetails.query.display: #TEXT
+  RejectionReason,
+  PayerCodeByAgency,
+  LastChangedByUser,
+  ChangedDateTime,
+  @AnalyticsDetails.query.hidden     
+  GrossVolInBaseUnit,
+  @AnalyticsDetails.query.hidden     
+  WetGasLessResidueGasVolInMCF,
+  @AnalyticsDetails.query.hidden     
+  TaxExmptVolInBaseUnit,
+  @AnalyticsDetails.query.hidden     
+  TaxableVolInBaseUnit,
+  @AnalyticsDetails.query.hidden     
+  GrossValInCoCodeCrcy,
+  @AnalyticsDetails.query.hidden     
+  TaxExmpValInCoCodeCrcy,
+  @AnalyticsDetails.query.hidden     
+  MktgCostInCoCodeCrcy,
+  @AnalyticsDetails.query.hidden     
+  FixedMktgCostInCoCodeCrcy,
+  @AnalyticsDetails.query.hidden     
+  MktgReimbmtCostInCoCodeCrcy,
+  @AnalyticsDetails.query.hidden     
+  TaxableValInCoCodeCrcy,
+  @AnalyticsDetails.query.axis: #COLUMNS
+  SeveranceTaxAmtInCoCodeCrcy,
+  @AnalyticsDetails.query.axis: #COLUMNS
+  OilFldRestoreTxAmtInCoCdCrcy,
+  @AnalyticsDetails.query.hidden     
+  DelinquentTxAmtDueInCoCdCrcy,
+  Country,
+  PrimaryGeogrlLocation
+
+}  ;
+```

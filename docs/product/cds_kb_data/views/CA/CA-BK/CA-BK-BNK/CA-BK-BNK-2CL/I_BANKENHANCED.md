@@ -32,30 +32,30 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BankCountry` | ✓ | |  |  |  |  |
-| `BankInternalID` | ✓ | |  |  |  |  |
-| `LongBankName` |  | |  | `case when ( _BankAddress.LongBankName is null or _BankAddress.LongBankName is initial ) then BankName else _BankAddress.LongBankName end` |  |  |
-| `LongBankBranch` |  | |  | `case when ( _BankAddress.LongBankBranch is null or _BankAddress.LongBankBranch is initial ) then BankBranch else _BankAddress.LongBankBranch end` |  |  |
-| `StreetName` |  | |  | `case when ( _BankAddress.StreetName is null or _BankAddress.StreetName is initial ) then ShortStreetName else _BankAddress.StreetName end` |  |  |
-| `CityName` |  | |  | `case when ( _BankAddress.CityName is null or _BankAddress.CityName is initial ) then ShortCityName else _BankAddress.CityName end` |  |  |
-| `AddressRegion` |  | |  | `case when ( _BankAddress.Region is null or _BankAddress.Region is initial ) then Region else _BankAddress.Region end` |  |  |
-| `BankCategory` |  | |  | `cast(BankCategory as bf_bank_category preserving type)` |  |  |
-| `BankNumber` |  | |  | `Bank` |  |  |
-| `SWIFTCode` |  | |  |  |  |  |
-| `BankNetworkGrouping` |  | |  | `cast(BankNetworkGrouping as bf_bank_banknetworkgrouping preserving type)` |  |  |
-| `IsPostBankAccount` |  | |  |  |  |  |
-| `IsMarkedForDeletion` |  | |  |  |  |  |
-| `PostOfficeBankAccount` |  | |  |  |  |  |
-| `BankBranch` |  | |  |  |  |  |
-| `CheckDigitCalculationMethod` |  | |  |  |  |  |
-| `BankDataFileFormat` |  | |  |  |  |  |
-| `AddressID` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `BankName` |  | |  |  |  |  |
-| `ShortStreetName` |  | |  |  |  |  |
-| `ShortCityName` |  | |  |  |  |  |
-| `Region` |  | |  |  |  |  |
+| `BankCountry` | ✓ | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `BankInternalID` | ✓ | |  |  | `CHAR(15)` | Bank Keys |
+| `LongBankName` |  | |  | `case when ( _BankAddress.LongBankName is null or _BankAddress.LongBankName is initial ) then BankName else _BankAddress.LongBankName end` | `CHAR(80)` | Bank Name |
+| `LongBankBranch` |  | |  | `case when ( _BankAddress.LongBankBranch is null or _BankAddress.LongBankBranch is initial ) then BankBranch else _BankAddress.LongBankBranch end` | `CHAR(80)` | Bank Branch |
+| `StreetName` |  | |  | `case when ( _BankAddress.StreetName is null or _BankAddress.StreetName is initial ) then ShortStreetName else _BankAddress.StreetName end` | `CHAR(60)` | Street |
+| `CityName` |  | |  | `case when ( _BankAddress.CityName is null or _BankAddress.CityName is initial ) then ShortCityName else _BankAddress.CityName end` | `CHAR(40)` | City |
+| `AddressRegion` |  | |  | `case when ( _BankAddress.Region is null or _BankAddress.Region is initial ) then Region else _BankAddress.Region end` | `CHAR(3)` | Region (State, Province, County) |
+| `BankCategory` |  | |  | `cast(BankCategory as bf_bank_category preserving type)` | `CHAR(1)` | Internal Bank Category |
+| `BankNumber` |  | |  | `Bank` | `CHAR(15)` | Bank Number |
+| `SWIFTCode` |  | |  |  | `CHAR(11)` | SWIFT/BIC for International Payments |
+| `BankNetworkGrouping` |  | |  | `cast(BankNetworkGrouping as bf_bank_banknetworkgrouping preserving type)` | `CHAR(2)` | Bank Group (Bank Network) |
+| `IsPostBankAccount` |  | |  |  | `CHAR(1)` | Post Office Bank Current Account |
+| `IsMarkedForDeletion` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `PostOfficeBankAccount` |  | |  |  | `CHAR(16)` | Post office bank current account number |
+| `BankBranch` |  | |  |  | `CHAR(40)` | Bank Branch |
+| `CheckDigitCalculationMethod` |  | |  |  | `CHAR(4)` | Check digit calculation method |
+| `BankDataFileFormat` |  | |  |  | `CHAR(3)` | Format of File with Bank Data |
+| `AddressID` |  | |  |  | `CHAR(10)` | Address Number |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Created On |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Accounting Clerk Responsible for Adding the Object |
+| `BankName` |  | |  |  | `CHAR(60)` | Name of Financial Institution |
+| `ShortStreetName` |  | |  |  | `CHAR(35)` | Street and House Number |
+| `ShortCityName` |  | |  |  | `CHAR(35)` | City |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
 | `_BankAddress` | | ✓ | | | | |
 | `_Country` | | ✓ | | | | |
 | `_Region` | | ✓ | | | | |

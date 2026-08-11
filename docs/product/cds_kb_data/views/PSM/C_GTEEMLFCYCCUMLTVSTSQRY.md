@@ -5,14 +5,30 @@ app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GTEEMLFCYCCUMLTVSTSQRY')/$value
 semantic_en: "Grant Life Cyc Cumltv Sts Changes - Qry"
+semantic_vi: "Grant Life Cyc Cumltv Sts Changes - Qry — CDS view tiêu dùng dựa trên I_GteeMLfcycCumltvStsCube."
+keywords:
+  - "grant"
+  - "life"
+  - "cyc"
+  - "cumltv"
+  - "sts"
+  - "changes"
+  - "qry"
+  - "change"
+  - "object"
+  - "class"
+  - "creation"
+  - "date"
+  - "time"
+  - "fiscal"
+  - "year"
 tags:
   - PSM
   - component:PSM
   - consumption-view
-  - metadata-only
 ---
 # C_GTEEMLFCYCCUMLTVSTSQRY
 
@@ -24,18 +40,18 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GTEEMLFCYCCUMLTVSTSQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GTEEMLFCYCCUMLTVSTSQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
-| `ChangeDocObjectClass` |  | |  |  | `CHAR(15)` | Object Class |
-| `CreationDate` |  | |  |  | `DATS(8)` | Creation Date of Change Document |
-| `CreationTime` |  | |  |  | `TIMS(6)` | Time of Change |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `GrantID` | ✓ | |  |  | `CHAR(20)` | Grant |
+| `ChangeDocObjectClass` | ✓ | |  |  | `CHAR(15)` | Object Class |
+| `CreationDate` | ✓ | |  |  | `DATS(8)` | Creation Date of Change Document |
+| `CreationTime` | ✓ | |  |  | `TIMS(6)` | Time of Change |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalYearPeriod` | ✓ | |  |  | `NUMC(7)` | Fiscal Year + Fiscal Period |
 | `FiscalPeriodStartDate` |  | |  |  | `DATS(8)` | Start Date of Fiscal Period |
 | `FiscalPeriodEndDate` |  | |  |  | `DATS(8)` | End Date of Fiscal Period |
 | `GrantLifecycleStatus` |  | |  |  | `CHAR(5)` | Lifecycle Status |
@@ -47,3 +63,66 @@ tags:
 | `NumberOfGteeMMasterDataRecords` |  | |  |  | `INT1(3)` |  |
 | `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
 | `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |
+| `_GrantChangeDocPreviousStatus` | | ✓ | | | | |
+| `_GrantChangeDocStatus` | | ✓ | | | | |
+| `_GrantStatus` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GTEEMLFCYCCUMLTVSTSQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GTEEMLFCYCCUMLTVSTSQRY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CGMLFECYLCUMSTSQ'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@VDM.viewType: #CONSUMPTION
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@Metadata.ignorePropagatedAnnotations: true
+@Analytics: {
+     query: true,
+     internalName: #LOCAL,
+     settings: {
+         maxProcessingEffort: #HIGH
+     }
+}
+@ObjectModel: {
+     usageType: {
+         dataClass: #MIXED,
+         serviceQuality: #D,
+         sizeCategory: #XXL
+     },
+     modelingPattern: #ANALYTICAL_QUERY,
+     supportedCapabilities: [ #ANALYTICAL_QUERY ]
+}
+@OData.publish: true
+@EndUserText.label: 'Grant Life Cyc Cumltv Sts Changes - Qry'
+define view C_GteeMLfcycCumltvStsQry
+  as select from I_GteeMLfcycCumltvStsCube
+{
+  key GrantID,
+  key ChangeDocObjectClass,
+  key CreationDate,
+  key CreationTime,
+  key FiscalYear,
+  key FiscalYearPeriod,
+      FiscalPeriodStartDate,
+      FiscalPeriodEndDate,
+      GrantLifecycleStatus,
+      GrantAuthznGrp,
+      GrantIsNotRelevantGrant,
+      ChangeDocNewFieldValue,
+      ChangeDocPreviousFieldValue,
+      @EndUserText.label: 'Change Document Record Available'
+      IsChangeDocument,
+      @EndUserText.label: 'Number of Grants'
+      NumberOfGteeMMasterDataRecords,
+      FiscalYearVariant,
+      GranteeMgmtSponsor,
+      /* Associations */
+      _GrantChangeDocPreviousStatus,
+      _GrantChangeDocStatus,
+      _GrantStatus
+}
+```

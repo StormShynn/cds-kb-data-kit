@@ -5,9 +5,25 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ONRRRPTGHISTREPORTDETQ')/$value
 semantic_en: "ONRR Reporting History Report Detail Qry"
+semantic_vi: "ONRR Reporting History Report Detail Qry — CDS view tiêu dùng dựa trên I_ONRRRptgHistoryReportDetails."
+keywords:
+  - "onrr"
+  - "reporting"
+  - "history"
+  - "report"
+  - "detail"
+  - "qry"
+  - "payer"
+  - "code"
+  - "lessor"
+  - "type"
+  - "lease"
+  - "well"
+  - "number"
+  - "agreement"
 tags:
   - IS
   - bo:purchaseorder
@@ -15,7 +31,6 @@ tags:
   - consumption-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # C_ONRRRPTGHISTREPORTDETQ
 
@@ -27,7 +42,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ONRRRPTGHISTREPORTDETQ')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ONRRRPTGHISTREPORTDETQ')/$value) |
 
 ## Fields
 
@@ -86,3 +101,127 @@ tags:
 | `TranspAllwncDeductAdjmtAmt` |  | |  |  | `CURR(13)` | ONRR-2014 - Transportation Allowance Deduction Adjustment |
 | `ProcgAllwncDeductAdjmtAmt` |  | |  |  | `CURR(13)` | ONRR-2014 - Processing Allowance Deduction Adjustment |
 | `RoyaltyDueAdjustmentAmount` |  | |  |  | `CURR(13)` | ONRR-2014 - Royalty Due Adjustment |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ONRRRPTGHISTREPORTDETQ')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ONRRRPTGHISTREPORTDETQ')/$value)*
+
+```abap
+@EndUserText.label: 'ONRR Reporting History Report Detail Qry'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVONRRRHISTRDQ'
+//@OData.publish: true
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+define view C_ONRRRptgHistReportDetQ
+  as select from I_ONRRRptgHistoryReportDetails
+{
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 1
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ONRRPayerCode,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ONRRLessorType,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 2
+  @AnalyticsDetails.query.axis: #ROWS
+  ONRRLease,
+  APIWellNumber,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 3
+  @AnalyticsDetails.query.axis: #ROWS
+  ONRRAgreement,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ONRRReportedProduct,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ONRRSalesType,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 4
+  @AnalyticsDetails.query.axis: #COLUMNS
+  SalesDate,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ONRRReportedTransType,
+  RoyaltyRate,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ONRRPaymentMethod,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ONRRReportedRefTransType,
+  ONRRBusinessTransactionType,
+  ProcessRun,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PayerAssignedDocument,
+  PayerAssignedDocumentItem,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ONRRAdjmtReason,
+  SalesYearMonth, //'ACCP'
+  @AnalyticsDetails.query.display: #TEXT
+  RoyaltyPaytDistributeeType,
+  @AnalyticsDetails.query.display: #TEXT
+  TribalOrAllotteeLeaseType,
+  @AnalyticsDetails.query.display: #TEXT
+  IndianIndexZone,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  RefPayerAssignedDocument,
+  RefPayerAssignedDocumentItem,
+  VolumeUnit,
+  EnergyUnit,
+  Currency,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CompanyCode,
+  @AnalyticsDetails.query.display: #TEXT
+  AgencyReportType,
+  ONRRLeaseName,
+  HeatingValUnit,
+  @AnalyticsDetails.query.display: #TEXT
+  ONRRReportStatus,
+  @AnalyticsDetails.query.display: #TEXT
+  AgencyReportIsManual,
+  @AnalyticsDetails.query.display: #TEXT
+  IsRejectOverridden,
+  OverrideDocument,
+  @AnalyticsDetails.query.display: #TEXT
+  ONRROverrideAdjmtReason,
+  @AnalyticsDetails.query.display: #TEXT
+  SalesFigureIsToBeRecalculated,
+  @AnalyticsDetails.query.display: #TEXT
+  FutureRptHasRoyaltyDueAdjmt,
+  @AnalyticsDetails.query.display: #TEXT
+  IsManualReversal,
+  CreatedByUser,
+  CreationDateTime,
+  @AnalyticsDetails.query.hidden
+  LeaseSalesVolumeInVolUnit,
+  @AnalyticsDetails.query.hidden
+  LeaseGasEnergyInEnergyUnit,
+  @AnalyticsDetails.query.hidden
+  ReportedSalesValue,
+  @AnalyticsDetails.query.hidden
+  GrossRoyaltyAmount,
+  @AnalyticsDetails.query.hidden
+  TranspAllwncDeductAmt,
+  @AnalyticsDetails.query.hidden
+  ProcgAllwncDeductAmt,
+  @AnalyticsDetails.query.axis: #COLUMNS
+  NetRoyaltyAmount,
+  @AnalyticsDetails.query.hidden
+  HeatingValue,
+  @AnalyticsDetails.query.hidden
+  AgencyReportedPrice,
+  @AnalyticsDetails.query.hidden
+  IndianIndexPrice,
+  @AnalyticsDetails.query.hidden
+  TranspAllwncDeductAdjmtAmt,
+  @AnalyticsDetails.query.hidden
+  ProcgAllwncDeductAdjmtAmt,
+  @AnalyticsDetails.query.hidden
+  RoyaltyDueAdjustmentAmount
+
+
+}
+```

@@ -5,9 +5,13 @@ app_component: BC-SRV-CM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEPRIORITY')/$value
 semantic_en: "Case Priority"
+semantic_vi: "Case Priority — CDS view giao diện dựa trên scmgattr_prio."
+keywords:
+  - "case"
+  - "priority"
 tags:
   - BC
   - BC-SRV
@@ -15,7 +19,6 @@ tags:
   - component:BC-SRV-CM
   - interface-view
   - lob:basis components
-  - metadata-only
 ---
 # I_CASEPRIORITY
 
@@ -27,10 +30,43 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEPRIORITY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEPRIORITY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CasePriority` |  | |  |  | `NUMC(1)` | Priority |
+| `CasePriority` | ✓ | |  | `priority` | `NUMC(1)` | Priority |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_CasePriorityText` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEPRIORITY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEPRIORITY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'ICASEPRIORITY'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Case Priority'
+//@Analytics.dataCategory: #DIMENSION
+@VDM.viewType: #BASIC
+@ObjectModel.representativeKey: 'CasePriority'
+define view I_CasePriority
+  as select from scmgattr_prio
+
+  association [0..*] to I_CasePriorityText as _Text on $projection.CasePriority = _Text.CasePriority
+
+{
+      @ObjectModel.text.association: '_Text'
+  key scmgattr_prio.priority as CasePriority,
+
+      _Text
+
+}
+```

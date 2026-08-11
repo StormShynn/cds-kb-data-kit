@@ -30,7 +30,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `VerticalConsumptionDirection` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as verticalconsumptiondirection preserving type )` |  |  |
+| `VerticalConsumptionDirection` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as verticalconsumptiondirection preserving type )` | `CHAR(2)` | Vertical Consumption Direction |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

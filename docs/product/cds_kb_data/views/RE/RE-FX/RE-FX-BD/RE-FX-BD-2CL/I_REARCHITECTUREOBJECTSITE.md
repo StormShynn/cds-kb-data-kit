@@ -5,9 +5,20 @@ app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REARCHITECTUREOBJECTSITE')/$value
 semantic_en: "RE Architecture Object Site"
+semantic_vi: "RE Architecture Object Site — CDS view giao diện dựa trên I_REArchitectureObject."
+keywords:
+  - "architecture"
+  - "object"
+  - "site"
+  - "type"
+  - "internal"
+  - "real"
+  - "estate"
+  - "number"
+  - "status"
 tags:
   - RE
   - bo:plant
@@ -16,7 +27,6 @@ tags:
   - RE-FX
   - RE-FX-BD
   - RE-FX-BD-2CL
-  - metadata-only
 ---
 # I_REARCHITECTUREOBJECTSITE
 
@@ -28,13 +38,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REARCHITECTUREOBJECTSITE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REARCHITECTUREOBJECTSITE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `REArchitectureObjectUUID` |  | |  |  | `RAW(16)` | UUID for Real Estate Architecture Object |
+| `REArchitectureObjectUUID` | ✓ | |  |  | `RAW(16)` | UUID for Real Estate Architecture Object |
 | `REArchitectureObjectType` |  | |  |  | `CHAR(4)` | Real Estate Architecture Object Type |
 | `InternalRealEstateNumber` |  | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
 | `REStatusObject` |  | |  |  | `CHAR(22)` | Object Number |
@@ -49,3 +59,83 @@ tags:
 | `CreationDateTime` |  | |  |  | `DEC(21)` | Creation Date Time |
 | `LastChangeDateTime` |  | |  |  | `DEC(21)` | Last Change Date Time |
 | `LocalLastChangeDateTime` |  | |  |  | `DEC(21)` | Local Instance Last Change Date Time |
+| `_REKeyAssgmt` | | ✓ | | | | |
+| `_REAuthorizationGroup` | | ✓ | | | | |
+| `_REArchitectureObjectType` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_StatusObject` | | ✓ | | | | |
+| `_REArchtrObjectAncestor` | | ✓ | | | | |
+| `_REArchtrObjectDescendant` | | ✓ | | | | |
+| `_REArchitectureObjRoot` | | ✓ | | | | |
+| `_REArchitectureObjSite` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REARCHITECTUREOBJECTSITE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REARCHITECTUREOBJECTSITE')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'RE Architecture Object Site'
+
+@ObjectModel.semanticKey: ['REArchitectureObjectOID', 'REArchitectureObjectNumber']
+@ObjectModel.representativeKey: 'REArchitectureObjectUUID'
+@ObjectModel.usageType.dataClass: #MASTER
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_DIMENSION, #CDS_MODELING_ASSOCIATION_TARGET ]
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@Metadata.allowExtensions: true
+@Search.searchable: true
+@VDM.viewType:  #COMPOSITE
+
+@Analytics.internalName:#LOCAL
+@Analytics:{
+    dataCategory: #DIMENSION
+}
+define view entity I_REArchitectureObjectSite
+  as select from I_REArchitectureObject
+{
+      @ObjectModel.text.element: [ 'REArchitectureObjectName' ]
+  key REArchitectureObjectUUID,
+      @ObjectModel.foreignKey.association: '_REArchitectureObjectType'
+      REArchitectureObjectType,
+      InternalRealEstateNumber,
+      @ObjectModel.foreignKey.association: '_StatusObject'
+      REStatusObject,
+      REArchitectureObjectOID,
+      @ObjectModel.text.element: [ 'REArchitectureObjectName' ]
+      REArchitectureObjectNumber,
+      REArchtrObjectAlternativeID,
+      @Semantics.text: true
+      @Search.defaultSearchElement: true
+      @Search.ranking: #LOW
+      REArchitectureObjectName,
+      REIdentificationKey,
+      ValidityStartDate,
+      ValidityEndDate,
+      REAuthorizationGroup,
+      @Semantics.systemDateTime.createdAt: true
+      CreationDateTime,
+      @Semantics.systemDateTime.lastChangedAt: true
+      LastChangeDateTime,
+      @Semantics.systemDateTime.localInstanceLastChangedAt: true
+      LocalLastChangeDateTime,
+
+      /* Associations */
+      _REKeyAssgmt,
+      _REAuthorizationGroup,
+      _REArchitectureObjectType,
+      _Text,
+      _StatusObject,
+      _REArchtrObjectAncestor,
+      _REArchtrObjectDescendant,
+      _REArchitectureObjRoot,
+      _REArchitectureObjSite
+
+}
+where
+     _REArchitectureObjectType.REArchitectureObjectCategory = '1' //Site
+```

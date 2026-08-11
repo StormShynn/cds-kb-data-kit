@@ -5,9 +5,25 @@ app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CREDITACCTWITHTODOQUERY')/$value
 semantic_en: "This CDS view retrieves information related to business partners in SAP Credit Management, such as the criticality of the business partner, if a resubmission date is set, or if a credit limit request exists. This CDS view provides the data to answer the following business questions: What is the criticality of a business partner? Does a resubmission date exist for the business partner? Does a credit limit request exist for the business partner? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Credit Account With ToDo Query — CDS view tiêu dùng dựa trên I_CreditAcctWithToDoCube."
+keywords:
+  - "credit"
+  - "account"
+  - "with"
+  - "todo"
+  - "query"
+  - "business"
+  - "partner"
+  - "segment"
+  - "risk"
+  - "class"
+  - "crdt"
+  - "mgmt"
+  - "group"
+  - "analyst"
 tags:
   - FIN
   - bo:companycode
@@ -17,7 +33,7 @@ tags:
   - FIN-FSCM-CR
   - FIN-FSCM-CR-2CL
   - lob:finance
-  - metadata-only
+  - account
 ---
 # C_CREDITACCTWITHTODOQUERY
 
@@ -29,14 +45,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CREDITACCTWITHTODOQUERY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CREDITACCTWITHTODOQUERY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
-| `CreditSegment` |  | |  |  | `CHAR(10)` | Credit Segment |
+| `BusinessPartner` | ✓ | |  |  | `CHAR(10)` | Business Partner Number |
+| `CreditSegment` | ✓ | |  |  | `CHAR(10)` | Credit Segment |
 | `CreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class |
 | `CrdtMgmtBusinessPartnerGroup` |  | |  |  | `NUMC(4)` | Customer Credit Group |
 | `CreditAnalyst` |  | |  |  | `CHAR(10)` | Credit Analyst |
@@ -55,4 +71,92 @@ tags:
 | `BPHasCreditDecisionDocument` |  | |  |  | `CHAR(1)` | Documented Credit Decision exists |
 | `BPHasCreditLimitRequest` |  | |  |  | `CHAR(1)` | Credit Limit Request exists |
 | `BPHasResubmission` |  | |  |  | `CHAR(1)` | Resubmission exists |
-| `CreditLimitUtilizationPct` |  | |  |  | `INT1(3)` |  |
+| `CreditLimitUtilizationPct` |  | |  | `'CASE WHEN CustomerCreditExposureAmount = 0 THEN 0 ELSE CASE WHEN CustomerCreditLimitAmount < 0 OR CustomerCreditLimitAmount > 0 THEN NDIV0(CustomerCreditExposureAmount / CustomerCreditLimitAmount) *100 ELSE 9999999 END END' 1` | `INT1(3)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CREDITACCTWITHTODOQUERY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CREDITACCTWITHTODOQUERY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CCRDTACCTTODOQ'
+@AbapCatalog.preserveKey:true
+@AbapCatalog.compiler.compareFilter:true
+@VDM.viewType: #CONSUMPTION
+@Analytics.query: true
+@OData.publish: true
+@EndUserText.label: 'Credit Account With ToDo Query'
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations:true
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_QUERY ]
+define view C_CreditAcctWithToDoQuery
+  with parameters
+    @Consumption.defaultValue: 'M'
+    P_ExchangeRateType : kurst_curr,
+    @Consumption.defaultValue: 'USD'
+    P_DisplayCurrency  : vdm_v_display_currency,
+    @Consumption.defaultValue: 'Y' // Read also line items from BSEG
+    P_ReadLineItem     : read_fiar_lineitems,
+    @Consumption.hidden: true
+    @Environment.systemField: #SYSTEM_DATE
+    P_KeyDate          : sydate
+  as select from I_CreditAcctWithToDoCube
+                 (P_ExchangeRateType : $parameters.P_ExchangeRateType,
+                 P_DisplayCurrency : $parameters.P_DisplayCurrency,
+                 P_ReadLineItem : $parameters.P_ReadLineItem,
+                  P_KeyDate : $parameters.P_KeyDate
+                 )
+{
+  key BusinessPartner,
+  key CreditSegment,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CreditRiskClass,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CrdtMgmtBusinessPartnerGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CreditAnalyst,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Country,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Region,
+
+      //      @Semantics.currencyCode: true
+      DisplayCurrency,
+
+      //      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      CustomerCreditExposureAmount,
+
+      //      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      CustomerCreditLimitAmount,
+
+      CreditAccountResubmissionDate,
+      BusinessPartnerIsCritical,
+      CreditLimitIsZero,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CreditAccountBlockReason,
+
+      NumberOfCreditDecisionDocs,
+      NumberOfCreditLimitRequests,
+      NumberOfResubmissions,
+
+      BPHasCreditDecisionDocument,
+      BPHasCreditLimitRequest,
+      BPHasResubmission,
+
+      //  CreditLimitUtilizationPct,
+      @DefaultAggregation: #FORMULA
+      @EndUserText.label: 'Credit Limit Used %'
+      @AnalyticsDetails.query.decimals: 2
+      @AnalyticsDetails.query.formula:
+        'CASE WHEN CustomerCreditExposureAmount = 0 THEN 0 ELSE
+          CASE WHEN CustomerCreditLimitAmount < 0 OR CustomerCreditLimitAmount > 0
+           THEN NDIV0(CustomerCreditExposureAmount / CustomerCreditLimitAmount) *100
+           ELSE 9999999
+          END
+         END'
+      1 as CreditLimitUtilizationPct
+}
+```

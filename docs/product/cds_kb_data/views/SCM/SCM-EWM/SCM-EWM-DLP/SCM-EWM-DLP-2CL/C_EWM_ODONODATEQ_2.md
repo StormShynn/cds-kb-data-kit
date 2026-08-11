@@ -5,9 +5,25 @@ app_component: SCM-EWM-DLP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_ODONODATEQ_2')/$value
 semantic_en: "This CDS view provides the prerequisites for answering the following business questions: How many open outbound delivery order items are there for picking? How many open outbound delivery order items are there for different activity areas? How many outbound delivery order items have been shipped on each transportation route? What is the weight or volume of the outbound delivery order items to be loaded? How long has the good issue of the outbound delivery order items been delayed? Which top three customers are most affected by the delayed goods issue? How many open outbound delivery order items are there where the goods issue is overdue? How many outbound delivery order items are blocked in picking for different document types? How are the open outbound delivery order items spread according to the planned goods issue time? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "ODO Query with Offset Days — CDS view tiêu dùng dựa trên I_EWM_OutbDelivOrdC_2."
+keywords:
+  - "odo"
+  - "query"
+  - "with"
+  - "offset"
+  - "days"
+  - "warehouse"
+  - "outbound"
+  - "delivery"
+  - "order"
+  - "item"
+  - "description"
+  - "entitled"
+  - "dispose"
+  - "party"
 tags:
   - SCM
   - bo:businesspartner
@@ -22,7 +38,6 @@ tags:
   - SCM-EWM
   - SCM-EWM-DLP
   - SCM-EWM-DLP-2CL
-  - metadata-only
 ---
 # C_EWM_ODONODATEQ_2
 
@@ -34,16 +49,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_ODONODATEQ_2')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_ODONODATEQ_2')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMOutboundDeliveryOrder` |  | |  |  | `CHAR(35)` | Document Number |
-| `EWMOutboundDeliveryOrderItem` |  | |  |  | `NUMC(10)` | Item Number |
-| `EWMWarehouseDescription` |  | |  |  | `CHAR(40)` | Warehouse Number Description |
+| `EWMWarehouse` | ✓ | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMOutboundDeliveryOrder` | ✓ | |  |  | `CHAR(35)` | Document Number |
+| `EWMOutboundDeliveryOrderItem` | ✓ | |  |  | `NUMC(10)` | Item Number |
+| `EWMWarehouseDescription` |  | |  | `_Warehouse._Text[1:Language = $parameters.P_Language].EWMWarehouseDescription` | `CHAR(40)` | Warehouse Number Description |
 | `EntitledToDisposeParty` |  | |  |  | `CHAR(10)` | Party Entitled to Dispose |
 | `TimeZoneID` |  | |  |  | `CHAR(6)` | Time Zone |
 | `ShipToParty` |  | |  |  | `CHAR(10)` | Business Partner Number |
@@ -51,15 +66,11 @@ tags:
 | `Carrier` |  | |  |  | `CHAR(10)` | Business Partner Number |
 | `CarrierName` |  | |  |  | `CHAR(40)` |  |
 | `EWMOutboundDeliveryOrderType` |  | |  |  | `CHAR(4)` | Document Type |
-| `DeliveryTypeName` |  | |  |  | `CHAR(40)` | Description |
 | `EWMOutbDelivOrderItemCategory` |  | |  |  | `CHAR(3)` | Item Category |
-| `DeliveryItemCategoryName` |  | |  |  | `CHAR(40)` | Description |
 | `EWMOutbDeliveryOrderItemType` |  | |  |  | `CHAR(4)` | Item Type |
-| `DeliveryItemTypeName` |  | |  |  | `CHAR(40)` | Description |
 | `EWMOutboundDelivery` |  | |  |  | `CHAR(35)` | Document Number |
 | `EWMOutboundDeliveryItem` |  | |  |  | `NUMC(10)` | Item Number |
 | `Product` |  | |  |  | `CHAR(40)` | Product |
-| `ProductName` |  | |  |  | `CHAR(40)` | Product Description |
 | `Batch` |  | |  |  | `CHAR(10)` | Batch Number |
 | `RequirementSegment` |  | |  |  | `CHAR(40)` | Requirement Segment |
 | `StockSegment` |  | |  |  | `CHAR(40)` | Stock Segment |
@@ -67,20 +78,16 @@ tags:
 | `StagingArea` |  | |  |  | `CHAR(4)` | Staging Area |
 | `StagingAreaGroup` |  | |  |  | `CHAR(4)` | Staging Area Group |
 | `WarehouseProcessType` |  | |  |  | `CHAR(4)` | Warehouse Process Type |
-| `WarehouseProcessTypeName` |  | |  |  | `CHAR(40)` | Description |
 | `ShippingCondition` |  | |  |  | `CHAR(2)` | Shipping Condition |
-| `ShippingConditionName` |  | |  |  | `CHAR(20)` | Shipping Conditions Description |
 | `EWMStorageType` |  | |  |  | `CHAR(4)` | Storage Type |
-| `EWMStorageTypeName` |  | |  |  | `CHAR(40)` | Description |
+| `EWMStorageTypeName` |  | |  | `_StorageType._Text[1:Language = $parameters.P_Language].EWMStorageTypeName` | `CHAR(40)` | Description |
 | `EWMStorageSection` |  | |  |  | `CHAR(4)` | Storage Section |
-| `StorageSectionName` |  | |  |  | `CHAR(40)` | Description |
 | `ActivityArea` |  | |  |  | `CHAR(4)` | Activity Area |
-| `ActivityAreaName` |  | |  |  | `CHAR(40)` | Description |
 | `Wave` |  | |  |  | `NUMC(10)` | Wave |
 | `EWMWave` |  | |  |  | `NUMC(10)` | Wave |
 | `ItemWaveAssignmentIsIncomplete` |  | |  |  | `CHAR(1)` |  |
 | `EWMMeansOfTransportType` |  | |  |  | `CHAR(10)` | Means of Transport |
-| `EWMMeansOfTransportTypeName` |  | |  |  | `CHAR(40)` | Means of Transport Description |
+| `EWMMeansOfTransportTypeName` |  | |  | `_MeansOfTransportType._Text[1:Language = $parameters.P_Language].EWMMeansOfTransportTypeName` | `CHAR(40)` | Means of Transport Description |
 | `EWMMeansOfTransport` |  | |  |  | `CHAR(20)` | Means-of-Transport ID |
 | `EWMRoute` |  | |  |  | `CHAR(10)` | Route Name (Identification) |
 | `RouteSchedule` |  | |  |  | `CHAR(10)` | Departure Calendar/Route Schedule |
@@ -126,13 +133,13 @@ tags:
 | `EWMOverallDeliveryProgress` |  | |  |  | `CHAR(3)` |  |
 | `ProductQuantity` |  | |  |  | `QUAN(31)` | Quantity |
 | `QuantityUnit` |  | |  |  | `UNIT(3)` | Unit of Measure |
-| `NumberOfOutboundDeliveryOrders` |  | |  |  | `INT1(3)` |  |
-| `NumberOfOutbDelivOrdItems` |  | |  |  | `INT1(3)` |  |
+| `NumberOfOutboundDeliveryOrders` |  | |  | `1` | `INT1(3)` |  |
+| `NumberOfOutbDelivOrdItems` |  | |  | `1` | `INT1(3)` |  |
 | `ItemGrossWeight` |  | |  |  | `QUAN(31)` |  |
 | `ItemNetWeight` |  | |  |  | `QUAN(31)` |  |
-| `WeightUnit` |  | |  |  | `UNIT(3)` | Unit |
+| `WeightUnit` |  | |  | `$parameters.P_DisplayWeightUnit` | `UNIT(3)` | Unit |
 | `ItemVolume` |  | |  |  | `QUAN(31)` |  |
-| `VolumeUnit` |  | |  |  | `UNIT(3)` | Unit |
+| `VolumeUnit` |  | |  | `$parameters.P_DisplayVolumeUnit` | `UNIT(3)` | Unit |
 | `WrhsTmznCreationDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
 | `WrhsTmZnCreationDate` |  | |  |  | `DATS(8)` | Date |
 | `WrhsTmznCreationTime` |  | |  |  | `TIMS(6)` | Time |
@@ -152,5 +159,354 @@ tags:
 | `WrhsTmznActlGIStrtYear` |  | |  |  | `NUMC(4)` |  |
 | `WrhsTmznActlGIStrtMonth` |  | |  |  | `NUMC(6)` |  |
 | `WrhsTmznActlGIStrtHour` |  | |  |  | `NUMC(2)` |  |
-| `AverageGoodsIssueDelayMinutes` |  | |  |  | `INT1(3)` |  |
+| `AverageGoodsIssueDelayMinutes` |  | |  | `0` | `INT1(3)` |  |
 | `IsOverdue` |  | |  |  | `NUMC(1)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_ODONODATEQ_2')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_ODONODATEQ_2')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@EndUserText.label: 'ODO Query with Offset Days'
+
+
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.modelingPattern:           #ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities:     [     #ANALYTICAL_QUERY]
+@Metadata.ignorePropagatedAnnotations:true 
+
+@VDM.viewType:#CONSUMPTION
+
+@OData.publish:            true
+@Analytics.query:              true
+@Analytics.technicalName: 'CEWMODONODATEQ2'
+
+define view entity C_EWM_ODONoDateQ_2
+  with parameters
+    @EndUserText.label: 'Warehouse'
+    @Consumption.valueHelpDefinition: [{ entity:{ name: 'I_EWM_WarehouseNumber_2', element:'EWMWarehouse' } }]
+    P_WarehouseNumber          : /scwm/lgnum,
+    @EndUserText.label: 'Offset Day for Start Date'
+    @Consumption.defaultValue: '0'
+    P_StartOffsetDay           : int4,
+    @EndUserText.label: 'Start Time'
+    @Consumption.defaultValue: '080000'
+    P_PlannedGIStartTime       : /scdl/de_plantime,
+    @EndUserText.label: 'Offset Day for End Date'
+    @Consumption.defaultValue: '0'
+    P_EndOffsetDay             : int4,
+    @EndUserText.label: 'End Time'
+    @Consumption.defaultValue: '120000'
+    P_PlannedGIEndTime         : /scdl/de_plantime,
+    @EndUserText.label: 'Picking Lead Time in Minutes'
+    @Consumption.defaultValue: '60'
+    P_PickLeadingTimeInMinutes : int2,
+    @EndUserText.label: 'Loading Lead Time in Minutes'
+    @Consumption.defaultValue: '60'
+    P_LoadLeadingTimeInMinutes : int2,
+    @EndUserText.label: 'GI Lead Time in Minutes'
+    @Consumption.defaultValue: '60'
+    P_GILeadingTimeInMinutes   : int2,
+    @EndUserText.label: 'Weight Unit'
+    @Consumption.defaultValue: 'KG'
+    P_DisplayWeightUnit        : /scwm/unit,
+    @EndUserText.label: 'Volume Unit'
+    @Consumption.defaultValue: 'M3'
+    P_DisplayVolumeUnit        : /scwm/unit,
+    @Environment.systemField: #SYSTEM_LANGUAGE
+    @Consumption.hidden
+    P_Language                 : /scwm/lang,
+    @Consumption.hidden: true
+    @Consumption.derivation: { lookupEntity: 'I_EWM_PlanGIOffsetDate', resultElement: 'PlannedGIStartDate', binding: [
+      { targetParameter : 'P_StartOffsetDay', type : #PARAMETER, value : 'P_StartOffsetDay' },
+      { targetParameter : 'P_PlannedGIStartTime', type : #PARAMETER, value : 'P_PlannedGIStartTime' },
+      { targetParameter : 'P_EndOffsetDay', type : #PARAMETER, value : 'P_EndOffsetDay' },
+      { targetParameter : 'P_PlannedGIEndTime', type : #PARAMETER, value : 'P_PlannedGIEndTime' },
+      { targetParameter : 'P_WarehouseNumber', type : #PARAMETER, value : 'P_WarehouseNumber' }
+       ] }
+    P_PlannedGIStartDate       : /scdl/de_plandate,
+    @Consumption.hidden: true
+    @Consumption.derivation: { lookupEntity: 'I_EWM_PlanGIOffsetDate', resultElement: 'PlannedGIEndDate', binding: [
+      { targetParameter : 'P_StartOffsetDay', type : #PARAMETER, value : 'P_StartOffsetDay' },
+      { targetParameter : 'P_PlannedGIStartTime', type : #PARAMETER, value : 'P_PlannedGIStartTime' },
+      { targetParameter : 'P_EndOffsetDay', type : #PARAMETER, value : 'P_EndOffsetDay' },
+      { targetParameter : 'P_PlannedGIEndTime', type : #PARAMETER, value : 'P_PlannedGIEndTime' },
+      { targetParameter : 'P_WarehouseNumber', type : #PARAMETER, value : 'P_WarehouseNumber' }
+       ] }
+    P_PlannedGIEndDate         : /scdl/de_plandate
+  as select from I_EWM_OutbDelivOrdC_2 ( P_PlannedGIStartDate: $parameters.P_PlannedGIStartDate,
+                                      P_PlannedGIStartTime: $parameters.P_PlannedGIStartTime,
+                                      P_PlannedGIEndDate: $parameters.P_PlannedGIEndDate,
+                                      P_PlannedGIEndTime: $parameters.P_PlannedGIEndTime,
+                                      P_PickLeadingTimeInMinutes: $parameters.P_PickLeadingTimeInMinutes,
+                                      P_LoadLeadingTimeInMinutes: $parameters.P_LoadLeadingTimeInMinutes,
+                                      P_GILeadingTimeInMinutes: $parameters.P_GILeadingTimeInMinutes,
+                                      P_DisplayWeightUnit : $parameters.P_DisplayWeightUnit,
+                                      P_DisplayVolumeUnit : $parameters.P_DisplayVolumeUnit,
+                                      P_WarehouseNumber: $parameters.P_WarehouseNumber,
+                                      P_Language: $parameters.P_Language ) as ODO
+{
+      @EndUserText.label: 'Warehouse'
+  key EWMWarehouse,
+      @EndUserText.label: 'Outbound Delivery Order'
+  key EWMOutboundDeliveryOrder,
+      @EndUserText.label: 'ODO Item'
+  key EWMOutboundDeliveryOrderItem,
+
+      _Warehouse._Text[1:Language = $parameters.P_Language].EWMWarehouseDescription                as EWMWarehouseDescription,
+      @EndUserText.label: 'Entitled-To-Dispose Party'
+      EntitledToDisposeParty,
+      @EndUserText.label: 'Warehouse Time Zone'
+      TimeZoneID,
+
+      @EndUserText.label: 'Ship-To Party'
+      ShipToParty,
+      @EndUserText.label: 'Ship-To Party Name'
+      ShipToPartyName,
+      @EndUserText.label: 'Carrier'
+      Carrier,
+      @EndUserText.label: 'Carrier Name'
+      CarrierName,
+
+      @EndUserText.label: 'ODO Type'
+      EWMOutboundDeliveryOrderType,
+      _DeliveryType._Text[1:Language = $parameters.P_Language].DeliveryTypeName,
+
+      @EndUserText.label: 'ODO Item Category'
+      EWMOutbDelivOrderItemCategory,
+      _ItemCat._Text[1:Language = $parameters.P_Language].DeliveryItemCategoryName,
+
+      @EndUserText.label: 'ODO Item Type'
+      EWMOutbDeliveryOrderItemType,
+      _DeliveryItemType._Text[1:Language = $parameters.P_Language].DeliveryItemTypeName,
+
+      @EndUserText.label: 'Outbound Delivery'
+      EWMOutboundDelivery,
+      @EndUserText.label: 'Outbound Delivery Item'
+      EWMOutboundDeliveryItem,
+
+      Product,
+      @EndUserText.label: 'Product Name'
+      _Product._Text[1:Language = $parameters.P_Language].ProductName,
+      @EndUserText.label: 'ProductBatch'
+      Batch,
+      @EndUserText.label: 'Requirement Segment'
+      RequirementSegment,
+      @EndUserText.label: 'Stock Segment'
+      StockSegment,
+      
+      WarehouseDoor,
+      StagingArea,
+      StagingAreaGroup,
+
+      @EndUserText.label: 'Warehouse Process Type'
+      WarehouseProcessType,
+      _WarehouseProcessType._Text[1:Language = $parameters.P_Language].WarehouseProcessTypeName,
+      ShippingCondition,
+      _ShippingCondition._Text[1:Language = $parameters.P_Language].ShippingConditionName,
+      EWMStorageType,
+      _StorageType._Text[1:Language = $parameters.P_Language].EWMStorageTypeName                   as EWMStorageTypeName,
+      EWMStorageSection,
+      _StorageSection._Text[1:Language = $parameters.P_Language].StorageSectionName,
+      ActivityArea,
+      _ActivityArea._Text[1:Language = $parameters.P_Language].ActivityAreaName,
+
+      @EndUserText.label: 'Wave'
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: 'EWMWave'
+      Wave,
+      EWMWave,
+      @EndUserText.label: 'Item Wave Assignment Incomplete'
+      ItemWaveAssignmentIsIncomplete,
+
+      @EndUserText.label: 'Means of Transport'
+      EWMMeansOfTransportType,
+      _MeansOfTransportType._Text[1:Language = $parameters.P_Language].EWMMeansOfTransportTypeName as EWMMeansOfTransportTypeName,
+      @EndUserText.label: 'Vehicle'
+      EWMMeansOfTransport,
+      EWMRoute,
+      @EndUserText.label: 'Route Schedule'
+      RouteSchedule,
+
+      @EndUserText.label: 'Shipping Office'
+      ShippingOffice,
+      @EndUserText.label: 'Warehouse Location'
+      WarehouseLocation,
+      @EndUserText.label: 'Warehouse Location Role'
+      WarehouseLocationRole,
+
+      @EndUserText.label: 'Planned Picking Status'
+      PlannedPickingStatus,
+      @EndUserText.label: 'Planned Picking Status Name'
+      PlannedPickingStatusName,
+      @EndUserText.label: 'Goods Issue Status'
+      GoodsIssueStatus,
+      @EndUserText.label: 'Goods Issue Status Name'
+      GoodsIssueStatusName,
+      @EndUserText.label: 'Completion Status'
+      CompletionStatus,
+      @EndUserText.label: 'Completion Status Name'
+      CompletionStatusName,
+      @EndUserText.label: 'Picking Status'
+      PickingStatus,
+      @EndUserText.label: 'Picking Status Name'
+      PickingStatusName,
+      @EndUserText.label: 'Overall Block Status'
+      OverallBlockStatus,
+      @EndUserText.label: 'Overall Block Status Name'
+      OverallBlockStatusName,
+      @EndUserText.label: 'Transport Plan Block Status'
+      TranspPlanBlockStatus,
+      @EndUserText.label: 'Transport Plan Block Status Name'
+      TranspPlanBlockStatusName,
+      @EndUserText.label: 'Item Inconsistency Block Status'
+      ItemInconsistencyBlkStatus,
+      @EndUserText.label: 'Item Inconsistency Block Status Name'
+      ItemInconsistencyBlkStatusName,
+      @EndUserText.label: 'Goods Movement Block Status'
+      GoodsMovementBlockStatus,
+      @EndUserText.label: 'Goods Movement Block Status Name'
+      GoodsMovementBlockStatusName,
+      @EndUserText.label: 'Unchecked Item Block Status'
+      UncheckedItemBlockStatus,
+      @EndUserText.label: 'Unchecked Item Block Status Name'
+      UncheckedItemBlockStatusName,
+      @EndUserText.label: 'Outbound Delivery Creation Status'
+      DeliveryCreationStatus,
+      @EndUserText.label: 'Outbound Delivery Creation Status Name'
+      DeliveryCreationStatusName,
+      @EndUserText.label: 'Transit Procedure Status'
+      TransitProcedureStatus,
+      @EndUserText.label: 'Transit Procedure Status Name'
+      TransitProcedureStatusName,
+      @EndUserText.label: 'Loading Status'
+      LoadingStatus,
+      @EndUserText.label: 'Loading Status Name'
+      LoadingStatusName,
+      @EndUserText.label: 'Picking and Distribution Status'
+      PickingAndDistributionStatus,
+      @EndUserText.label: 'Picking and Distribution Status Name'
+      PickingAndDistrStatusName,
+      @EndUserText.label: 'Warehouse Activity Status'
+      WarehouseActivityStatus,
+      @EndUserText.label: 'Warehouse Activity Status Name'
+      WarehouseActivityStatusName,
+      @EndUserText.label: 'Global Trade Services Check Status'
+      GlobalTradeServicesCheckStatus,
+      @EndUserText.label: 'Global Trade Services Check Status Name'
+      GlobalTrdServicesCheckStsName,
+      @EndUserText.label: 'Transportation Unit Assignment Status'
+      TransportationUnitAssgmtStatus,
+      @EndUserText.label: 'TU Assignment Status Name'
+      TranspUnitAssgmtStatusName,
+      @EndUserText.label: 'Valuation Quantity Assignment Status'
+      ValuationQtyAssignmentStatus,
+      @EndUserText.label: 'Valuation Qty Assignment Status Name'
+      ValuationQtyAssgmtStatusName,
+      @EndUserText.label: 'Value-Added Service Order Status'
+      ValueAddedServiceOrderStatus,
+      @EndUserText.label: 'Value-Added Service Order Status Name'
+      ValueAddedServiceOrdStatusName,
+
+      @EndUserText.label: 'Overall Status'
+      EWMOverallDeliveryProgress,
+
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'QuantityUnit'
+      ProductQuantity,
+      QuantityUnit,
+
+      @EndUserText.label: 'Number of ODOs'
+      @DefaultAggregation: #FORMULA
+      @AnalyticsDetails: {
+        exceptionAggregationSteps: [{ exceptionAggregationBehavior : #COUNT, exceptionAggregationElements: [ 'EWMOutboundDeliveryOrder ']} ]}
+      1                                                                                            as NumberOfOutboundDeliveryOrders,
+
+      @EndUserText.label: 'Number of ODO Items'
+      @DefaultAggregation: #FORMULA
+      @AnalyticsDetails: {
+        exceptionAggregationSteps: [{ exceptionAggregationBehavior : #COUNT, exceptionAggregationElements: ['EWMOutboundDeliveryOrder ', 'EWMOutboundDeliveryOrderItem ']} ]}
+      1                                                                                            as NumberOfOutbDelivOrdItems,
+
+      --- Weight
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'WeightUnit'
+      @EndUserText.label: 'Total Gross Weight of ODO Items'
+      @AnalyticsDetails.query.decimals: 5
+      ItemGrossWeight,
+
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'WeightUnit'
+      @EndUserText.label: 'Total Net Weight of ODO Items'
+      @AnalyticsDetails.query.decimals: 5
+      ItemNetWeight,
+      $parameters.P_DisplayWeightUnit                                                              as WeightUnit,
+
+      --Gross Volumn
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'VolumeUnit'
+      @EndUserText.label: 'Total Volume of ODO Items'
+      @AnalyticsDetails.query.decimals: 5
+      ItemVolume,
+      $parameters.P_DisplayVolumeUnit                                                              as VolumeUnit,
+
+      @EndUserText.label: 'ODO Item Crtn Time Stamp in Whse TmZn'
+      WrhsTmznCreationDateTime,
+      @EndUserText.label: 'ODO Item Creation Date in Whse TmZn'
+      WrhsTmZnCreationDate,
+      @EndUserText.label: 'ODO Item Creation Time in Whse TmZn'
+      WrhsTmznCreationTime,
+      @EndUserText.label: 'ODO Item Creation Year in Whse TmZn'
+      WrhsTmznCreationYear,
+      @EndUserText.label: 'ODO Item Creation Month in Whse TmZn'
+      WrhsTmznCreationMonth,
+      @EndUserText.label: 'ODO Item Creation Date in Whse TmZn'
+      //  WrhsTmznCreationDay,
+      //@EndUserText.label: 'ODO Item Creation Hour in Whse TmZn'
+      WrhsTmznCreationHour,
+
+      @EndUserText.label: 'Planned GI Start Time Stamp in Whse TmZn'
+      WrhsTmznPlndGIStrtDateTime,
+      @EndUserText.label: 'Planned GI Start Date in Whse TmZn'
+      WrhsTimeZonePlannedGIDate,
+      @EndUserText.label: 'Planned GI Start Time in Whse TmZn'
+      WrhsTimeZonePlannedGITime,
+      @EndUserText.label: 'Planned GI Start Year in Whse TmZn'
+      WrhsTimeZnPlndGIStrtYear,
+      @EndUserText.label: 'Planned GI Start Month in Whse TmZn'
+      WrhsTimeZnPlndGIStrtMonth,
+      //  @EndUserText.label: 'Planned GI Start Date in Whse TmZn'
+      //  WrhsTimeZnPlndGIStrtDay,
+      @EndUserText.label: 'Planned GI Start Hour in Whse TmZn'
+      WrhsTimeZnPlndGIStrtHour,
+
+      @EndUserText.label: 'Actual GI Start Time Stamp in Whse TmZn'
+      WrhsTmznActlGIStrtDateTime,
+      @EndUserText.label: 'Actual GI End Time Stamp in Whse TmZn'
+      EWMWhseTmznActlGIEndDateTime,
+      @EndUserText.label: 'Actual GI End Date in Whse TmZn'
+      WrhsTimeZoneActualGIDate,
+      @EndUserText.label: 'Actual GI End Time in Whse TmZn'
+      WrhsTimeZoneActualGITime,
+      @EndUserText.label: 'Actual GI End Year in Whse TmZn'
+      WrhsTmznActlGIStrtYear,
+      @EndUserText.label: 'Actual GI End Month in Whse TmZn'
+      WrhsTmznActlGIStrtMonth,
+      @EndUserText.label: 'Actual GI End Hour in Whse TmZn'
+      WrhsTmznActlGIStrtHour,
+
+
+      @EndUserText.label: 'Average Delay Time in Minutes'
+      //  @Semantics.quantity.unitOfMeasure: 'TimeUnit'
+      @DefaultAggregation: #FORMULA
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @AnalyticsDetails.query.formula: 'case when GoodsIssueDelayInSeconds > 0 then GoodsIssueDelayInSeconds / 60 else 0 end'
+      @AnalyticsDetails.exceptionAggregationSteps: [ {exceptionAggregationBehavior: #AVG , exceptionAggregationElements: [ 'EWMOutboundDeliveryOrder ', 'EWMOutboundDeliveryOrderItem '] }]
+      0                                                                                            as AverageGoodsIssueDelayMinutes,
+      @EndUserText.label: 'Overdue Flag'
+      IsOverdue
+}
+```

@@ -29,52 +29,52 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  |  |  |  |
-| `TimeIntervalNumber` | ✓ | |  |  |  |  |
-| `Characteristic` |  | |  |  |  |  |
-| `CharcStatus` |  | |  |  |  |  |
-| `CharcDataType` |  | |  |  |  |  |
-| `CharcLength` |  | |  |  |  |  |
-| `CharcDecimals` |  | |  |  |  |  |
-| `CharcTemplate` |  | |  |  |  |  |
-| `ValueIsCaseSensitive` |  | |  |  |  |  |
-| `CharcConversionRoutine` |  | |  |  |  |  |
-| `CharcGroup` |  | |  |  |  |  |
-| `EntryIsRequired` |  | |  | `cast ( Characteristic.EntryRequiredCode as entryisrequired preserving type )` |  |  |
-| `MultipleValuesAreAllowed` |  | |  | `cast ( Characteristic.MultipleValuesAllowedCode as multiplevaluesareallowed preserving type )` |  |  |
-| `CharcValueUnit` |  | |  |  |  |  |
-| `Currency` |  | |  |  |  |  |
-| `CharcExponentFormat` |  | |  |  |  |  |
-| `CharcExponentValue` |  | |  |  |  |  |
-| `ValueIntervalIsAllowed` |  | |  | `cast ( Characteristic.ValueIntervalAllowedCode as valueintervalisallowed preserving type )` |  |  |
-| `AdditionalValueIsAllowed` |  | |  | `cast ( Characteristic.AdditionalValueAllowedCode as additionalvalueisallowed preserving type )` |  |  |
-| `NegativeValueIsAllowed` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
-| `ChangeNumber` |  | |  |  |  |  |
-| `IsDeleted` |  | |  |  |  |  |
-| `DocumentInfoRecordDocType` |  | |  |  |  |  |
-| `DocumentInfoRecordDocNumber` |  | |  |  |  |  |
-| `DocumentInfoRecordDocVersion` |  | |  |  |  |  |
-| `DocumentInfoRecordDocPart` |  | |  |  |  |  |
-| `CharcMaintAuthGrp` |  | |  |  |  |  |
-| `CharcIsReadOnly` |  | |  | `cast ( Characteristic.CharcReadOnlyCode as charcisreadonly preserving type )` |  |  |
-| `CharcIsHidden` |  | |  | `cast ( Characteristic.CharcHiddenCode as charcishidden preserving type )` |  |  |
-| `CharcIsRestrictable` |  | |  | `cast ( Characteristic.CharcRestrictableCode as charcisrestrictable preserving type )` |  |  |
-| `CharcReferenceTable` |  | |  |  |  |  |
-| `CharcReferenceTableField` |  | |  |  |  |  |
-| `CharcCheckTable` |  | |  |  |  |  |
-| `CharcCheckFunctionModule` |  | |  |  |  |  |
-| `CharcEntryIsNotFormatCtrld` |  | |  | `cast ( Characteristic.CharcEntryNotFormatCtrldCode as charcentryisnotformatctrld preserving type )` |  |  |
-| `CharcTemplateIsDisplayed` |  | |  | `cast ( Characteristic.CharcTemplateDisplayedCode as charctemplateisdisplayed preserving type )` |  |  |
-| `CharcSelectedSet` |  | |  |  |  |  |
-| `Plant` |  | |  |  |  |  |
-| `CharcCatalogType` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `LastChangeDate` |  | |  |  |  |  |
-| `CharcLastChangedDateTime` |  | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  | `NUMC(10)` | Characteristic Internal ID |
+| `TimeIntervalNumber` | ✓ | |  |  | `NUMC(4)` | Internal Counter for Archiving Objects by ECM |
+| `Characteristic` |  | |  |  | `CHAR(30)` | Characteristic Name |
+| `CharcStatus` |  | |  |  | `CHAR(1)` | Characteristic status |
+| `CharcDataType` |  | |  |  | `CHAR(4)` | Data type of characteristic |
+| `CharcLength` |  | |  |  | `INT2(5)` | Number of Characters |
+| `CharcDecimals` |  | |  |  | `INT2(5)` | Number of Decimal Places |
+| `CharcTemplate` |  | |  |  | `CHAR(70)` | Value with template |
+| `ValueIsCaseSensitive` |  | |  |  | `CHAR(1)` | Case Sensitive |
+| `CharcConversionRoutine` |  | |  |  | `CHAR(5)` | Name of Conversion Routine |
+| `CharcGroup` |  | |  |  | `CHAR(10)` | Characteristic Group |
+| `EntryIsRequired` |  | |  | `cast ( Characteristic.EntryRequiredCode as entryisrequired preserving type )` | `CHAR(1)` | Entry Required |
+| `MultipleValuesAreAllowed` |  | |  | `cast ( Characteristic.MultipleValuesAllowedCode as multiplevaluesareallowed preserving type )` | `CHAR(1)` | Multiple Values Are Allowed |
+| `CharcValueUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `CharcExponentFormat` |  | |  |  | `NUMC(1)` | Exponent Display Format |
+| `CharcExponentValue` |  | |  |  | `INT2(5)` | Exponent display |
+| `ValueIntervalIsAllowed` |  | |  | `cast ( Characteristic.ValueIntervalAllowedCode as valueintervalisallowed preserving type )` | `CHAR(1)` | Interval Values Allowed |
+| `AdditionalValueIsAllowed` |  | |  | `cast ( Characteristic.AdditionalValueAllowedCode as additionalvalueisallowed preserving type )` | `CHAR(1)` | Indicator: Additional Values |
+| `NegativeValueIsAllowed` |  | |  |  | `CHAR(1)` | Value with Plus or Minus Sign |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-to date |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `DocumentInfoRecordDocType` |  | |  |  | `CHAR(3)` | Document Type |
+| `DocumentInfoRecordDocNumber` |  | |  |  | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocVersion` |  | |  |  | `CHAR(2)` | Document Version |
+| `DocumentInfoRecordDocPart` |  | |  |  | `CHAR(3)` | Document Part |
+| `CharcMaintAuthGrp` |  | |  |  | `CHAR(3)` | Authorization Group for Characteristics Maintenance |
+| `CharcIsReadOnly` |  | |  | `cast ( Characteristic.CharcReadOnlyCode as charcisreadonly preserving type )` | `CHAR(1)` | No Entry Allowed for Characteristic |
+| `CharcIsHidden` |  | |  | `cast ( Characteristic.CharcHiddenCode as charcishidden preserving type )` | `CHAR(1)` | Characteristic Not To Be Displayed |
+| `CharcIsRestrictable` |  | |  | `cast ( Characteristic.CharcRestrictableCode as charcisrestrictable preserving type )` | `CHAR(1)` | Restriction of Characteristic Allowed Values |
+| `CharcReferenceTable` |  | |  |  | `CHAR(30)` | Table Name |
+| `CharcReferenceTableField` |  | |  |  | `CHAR(30)` | Field Name |
+| `CharcCheckTable` |  | |  |  | `CHAR(30)` | Check table |
+| `CharcCheckFunctionModule` |  | |  |  | `CHAR(30)` | Function Module for Checking Values |
+| `CharcEntryIsNotFormatCtrld` |  | |  | `cast ( Characteristic.CharcEntryNotFormatCtrldCode as charcentryisnotformatctrld preserving type )` | `CHAR(1)` | Unformatted Entry Control |
+| `CharcTemplateIsDisplayed` |  | |  | `cast ( Characteristic.CharcTemplateDisplayedCode as charctemplateisdisplayed preserving type )` | `CHAR(1)` | Indicator: Display Template When Assigning Values |
+| `CharcSelectedSet` |  | |  |  | `CHAR(8)` | Selected Set |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `CharcCatalogType` |  | |  |  | `CHAR(1)` | Catalog |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `CharcLastChangedDateTime` |  | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
 | `_CharacteristicGroup` | | ✓ | | | | |
 | `_CharacteristicStatus` | | ✓ | | | | |
 | `_UnitOfMeasure` | | ✓ | | | | |

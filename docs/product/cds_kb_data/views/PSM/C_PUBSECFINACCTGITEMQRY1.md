@@ -5,9 +5,22 @@ app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECFINACCTGITEMQRY1')/$value
 semantic_en: "Budgetary Accounting Items Query"
+semantic_vi: "Budgetary Accounting Items Query — CDS view tiêu dùng dựa trên I_PubSecFinAcctgItemCube."
+keywords:
+  - "budgetary"
+  - "accounting"
+  - "items"
+  - "query"
+  - "ledger"
+  - "company"
+  - "code"
+  - "account"
+  - "fund"
+  - "fiscal"
+  - "year"
 tags:
   - PSM
   - account
@@ -15,7 +28,6 @@ tags:
   - budget
   - component:PSM
   - consumption-view
-  - metadata-only
 ---
 # C_PUBSECFINACCTGITEMQRY1
 
@@ -27,7 +39,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECFINACCTGITEMQRY1')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECFINACCTGITEMQRY1')/$value) |
 
 ## Fields
 
@@ -96,3 +108,268 @@ tags:
 | `PartnerFund` |  | |  |  | `CHAR(10)` | Partner Fund |
 | `PartnerGrant` |  | |  |  | `CHAR(20)` | Partner Grant |
 | `PartnerWBSElementExternalID` |  | |  |  | `CHAR(24)` | Partner WBS Element External ID |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECFINACCTGITEMQRY1')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECFINACCTGITEMQRY1')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CPSMS4CFIACAQ1'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AbapCatalog.buffering.status: #NOT_ALLOWED
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@EndUserText.label: 'Budgetary Accounting Items Query'
+
+@VDM.viewType: #CONSUMPTION
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@Metadata.ignorePropagatedAnnotations: true
+@Analytics: {
+     query: true,
+     dataExtraction.enabled: false,
+     internalName: #LOCAL,     
+     settings: {
+         maxProcessingEffort: #HIGH
+     }
+}
+@ObjectModel: {
+     usageType: {
+         dataClass: #MIXED,
+         serviceQuality: #D,
+         sizeCategory: #XXL
+     },
+     supportedCapabilities: [ #ANALYTICAL_QUERY ]     
+}
+@OData.publish: true 
+
+define view C_PubSecFinAcctgItemQry1 
+  with parameters
+    @Consumption.hidden: true
+    @Environment.systemField: #SYSTEM_LANGUAGE
+    P_Language : sylangu,
+    @Consumption.hidden: true
+    @Semantics.businessDate.at: true
+    @Environment.systemField: #SYSTEM_DATE
+    @AnalyticsDetails.query.variableSequence : 30
+    P_KeyDate: vdm_v_key_date
+   
+  as select from I_PubSecFinAcctgItemCube as Cube
+{
+
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: false, mandatory: true}
+  @Consumption.derivation: { lookupEntity: 'I_Ledger',
+        resultElement: 'Ledger', binding: [
+        { targetElement : 'IsLeadingLedger' , type : #CONSTANT, value : 'X' } ]
+       }
+  @AnalyticsDetails.query.variableSequence : 20
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Cube.Ledger,
+
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true, mandatory: true}
+  @AnalyticsDetails.query.variableSequence : 10
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Cube.CompanyCode,
+
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 50
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Cube.GLAccount,
+  
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 100
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Cube.Fund,
+
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @Consumption.derivation: { lookupEntity: 'I_CalendarDate',
+        resultElement: 'CalendarYear', binding: [
+        { targetElement : 'CalendarDate' , type : #PARAMETER, value : 'P_KeyDate' } ]
+       }
+  @AnalyticsDetails.query.variableSequence: 60
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY
+  Cube.LedgerFiscalYear,
+
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.FiscalYear,
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 70
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  Cube.PostingDate,
+
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.Segment,
+
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.ProfitCenter,
+
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.AccountingDocument,
+
+  // PSM: Additional detail
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.IsCommitment,
+
+  ///////////////////////////////////////////////////////////////////////
+  // Measures - Amounts
+  ///////////////////////////////////////////////////////////////////////
+  @Semantics.currencyCode: true
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.CompanyCodeCurrency,
+  @Semantics.currencyCode: true
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.TransactionCurrency,
+  @Semantics.currencyCode: true
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.GlobalCurrency,
+  
+  @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+  @AnalyticsDetails.query.hidden : true
+  @DefaultAggregation: #SUM
+  Cube.AmountInCompanyCodeCurrency,
+  @Semantics.amount.currencyCode: 'TransactionCurrency'
+  @AnalyticsDetails.query.hidden : true
+  @DefaultAggregation: #SUM
+  Cube.AmountInTransactionCurrency,
+  @Semantics.amount.currencyCode: 'GlobalCurrency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @DefaultAggregation: #SUM
+  Cube.AmountInGlobalCurrency,
+  
+  ///////////////////////////////////////////////////////////////////////
+  // Dimensions
+  ///////////////////////////////////////////////////////////////////////
+
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.ChartOfAccounts,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.ControllingArea,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.FinancialManagementArea,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.FiscalYearVariant,  
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.DebitCreditCode,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.AccountingDocumentType,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PostingKey,
+
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 140
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Cube.CostCenter,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.AccountingDocumentItem,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.DocumentDate,
+
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.LedgerGLLineItem,
+//  @AnalyticsDetails.query.axis: #FREE
+//  Cube.CreationDate,
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor:   'PurchaseOrder'
+  @VDM.lifecycle.status:    #DEPRECATED
+  @VDM.lifecycle.successor: 'PurchaseOrder'
+  Cube.PurchasingDocument,
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor:   'PurchaseOrder'
+  @VDM.lifecycle.status:    #DEPRECATED
+  @VDM.lifecycle.successor: 'PurchaseOrder'
+  Cube.PurchasingDocumentItem,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.DocumentItemText,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.MasterFixedAsset,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.FixedAsset,
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 150
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Cube.WBSElementExternalID,  
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 130
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Cube.FunctionalArea,
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 110
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.BudgetPeriod,
+  
+  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 160
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.GrantID,
+  
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.BusinessProcess,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.BusinessTransactionType,
+  
+  // New Cash Ledger Fields
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.CashLedgerCompanyCode,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.CashLedgerAccount,
+  // New Public Sector fields
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Cube.PubSecBudgetAccountCoCode,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Cube.PubSecBudgetAccount,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PubSecBudgetCnsmpnDate,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PubSecBudgetCnsmpnFsclPeriod,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PubSecBudgetCnsmpnFsclYear,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PubSecBudgetCnsmpnType,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PubSecBudgetCnsmpnAmtType,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PubSecBudgetIsRelevant,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PubSecBdgtAcctRevnExpnCode,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.FundType,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.SponsoredClass,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.SponsoredProgram,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PurchaseOrder,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PurchaseRequisition,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.EarmarkedFundsDocument,
+
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.OriginCostCenter,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PartnerBudgetPeriod,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PartnerCostCenter,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PartnerFunctionalArea,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PartnerFund,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PartnerGrant,
+  @AnalyticsDetails.query.axis: #FREE
+  Cube.PartnerWBSElementExternalID
+  
+}
+```

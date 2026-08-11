@@ -5,9 +5,20 @@ app_component: CA-GTF-BEL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSEVTLOGACTIVITYDEX')/$value
 semantic_en: "This CDS view provides full business event data (payload) in JSON format. This CDS view provides the answer to these business questions: What is the full business data contained in the event? The CDS view supports #EXTRACTION_DATA_SOURCE."
+semantic_vi: "Business Event Activity — CDS view tiêu dùng dựa trên P_BusinessEventLogActivity."
+keywords:
+  - "business"
+  - "event"
+  - "activity"
+  - "object"
+  - "type"
+  - "creation"
+  - "date"
+  - "reference"
+  - "node"
 tags:
   - CA
   - bo:purchaseorder
@@ -16,7 +27,6 @@ tags:
   - component:CA-GTF-BEL
   - consumption-view
   - lob:cross_application components
-  - metadata-only
 ---
 # C_BUSEVTLOGACTIVITYDEX
 
@@ -28,15 +38,15 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSEVTLOGACTIVITYDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSEVTLOGACTIVITYDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusEvtLogBusinessActivity` |  | |  |  | `CHAR(32)` | Activity ID |
-| `SAPObjectType` |  | |  |  | `CHAR(30)` | RAP SOT: SAP Object Type |
-| `BusEvtLogCreationDate` |  | |  |  | `DATS(8)` | Action Executed Date |
+| `BusEvtLogBusinessActivity` | ✓ | |  |  | `CHAR(32)` | Activity ID |
+| `SAPObjectType` | ✓ | |  |  | `CHAR(30)` | RAP SOT: SAP Object Type |
+| `BusEvtLogCreationDate` | ✓ | |  |  | `DATS(8)` | Action Executed Date |
 | `BusEvtLogReferenceEventUUID` |  | |  |  | `CHAR(32)` | Event GUID |
 | `SAPObjectNodeType` |  | |  |  | `CHAR(30)` | RAP SOT: SAP Object Node Type |
 | `EventOperation` |  | |  |  | `CHAR(30)` | Business Event Operation |
@@ -65,3 +75,93 @@ tags:
 | `SAPBusinessObjectNodeKey7Name` |  | |  |  | `CHAR(30)` | Key7 Name |
 | `SAPBusinessObjectNodeKey8Name` |  | |  |  | `CHAR(30)` | Key8 Name |
 | `BusinessEventLogSource` |  | |  |  | `CHAR(1)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSEVTLOGACTIVITYDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSEVTLOGACTIVITYDEX')/$value)*
+
+```abap
+@Analytics.technicalName:'CBELEVTACTDX'
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@VDM.viewType: #CONSUMPTION
+@Metadata.ignorePropagatedAnnotations:true
+@ObjectModel.supportedCapabilities: [ #EXTRACTION_DATA_SOURCE ]
+@Analytics.dataCategory: #FACT
+@Analytics:{
+    dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture: {
+        mapping: [
+        {
+        table: 'BEL_D_ACTIVITY',
+        role: #MAIN,
+        viewElement: ['BusEvtLogBusinessActivity','SAPObjectType','BusEvtLogCreationDate' ],
+        tableElement: ['activity_id','bo_type','exec_date' ]
+
+         },
+
+        {
+        table: 'BEL_D_EVENT',
+        role: #LEFT_OUTER_TO_ONE_JOIN,
+        viewElement: ['BusEvtLogReferenceEventUUID','SAPObjectType','BusEvtLogCreationDate'],
+        tableElement: ['event_guid','bo_type','exec_date']
+
+         },
+
+        {
+        table: 'usr21',
+        role: #LEFT_OUTER_TO_ONE_JOIN,
+        viewElement: ['CreatedByUser'],
+        tableElement: ['bname']
+        }
+         ]
+        }
+    }
+}
+@ObjectModel: {
+  sapObjectNodeType:{ name: 'BusinessEventLogActivity'},
+   usageType: {
+     dataClass:      #TRANSACTIONAL,
+     serviceQuality: #C,
+     sizeCategory:   #XXL
+   }
+}
+@ObjectModel.modelingPattern: #NONE
+@EndUserText.label: 'Business Event Activity'
+define view entity C_BUSEVTLOGACTIVITYDEX
+  as select from P_BusinessEventLogActivity
+{
+  key BusEvtLogBusinessActivity,
+  key SAPObjectType,
+  key BusEvtLogCreationDate,
+      BusEvtLogReferenceEventUUID,
+      SAPObjectNodeType,
+      EventOperation,
+      SAPBusinessObjectNodeKey1,
+      SAPBusinessObjectNodeKey2,
+      SAPBusinessObjectNodeKey3,
+      SAPBusinessObjectNodeKey4,
+      SAPBusinessObjectNodeKey5,
+      SAPBusinessObjectNodeKey6,
+      SAPBusinessObjectNodeKey7,
+      SAPBusinessObjectNodeKey8,
+      CreatedByUser,
+      BusEvtLogCreationDateTime,
+      BusinessEventLogLogicalSystem,
+      BusEvtLogTransactionID,
+      BusEvtLogLastChangedDateTime,
+      IsTechnicalUser,
+      BusEvtLogUserInteractionType,
+      BusEvtLgUsrIntactnTypeValue,
+      SAPBusinessObjectNodeKey1Name,
+      SAPBusinessObjectNodeKey2Name,
+      SAPBusinessObjectNodeKey3Name,
+      SAPBusinessObjectNodeKey4Name,
+      SAPBusinessObjectNodeKey5Name,
+      SAPBusinessObjectNodeKey6Name,
+      SAPBusinessObjectNodeKey7Name,
+      SAPBusinessObjectNodeKey8Name,
+      BusinessEventLogSource 
+
+}
+```

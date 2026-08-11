@@ -5,9 +5,20 @@ app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLECTIONSMCHNLRNGINFERENCE')/$value
 semantic_en: "This CDS view provide insights into SAP Collections Management and SAP Credit Management by leveraging machine learning inference data. It integrates various financial and operational metrics related to accounting documents, customer behavior, and payment patterns, allowing businesses to analyze and predict credit risk and collection efficiency. This CDS view provides the data to answer the following business questions: What is the credit risk classification of customers based on historical payment behavior and current financial metrics? How do payment terms and net due dates affect the collection process and overdue amounts? What is the average delay in clearing payments, and how does it compare to previous periods (12 and 24 months ago)? How many accounting document items are overdue, and what is the total overdue amount in the target currency? What are the trends in dunning levels and clearing delays over time? How does the number of payments and clearing amounts in the target currency vary over different periods? What is the impact of country and customer account group on payment behavior and credit risk? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "C_COLLECTIONSMCHNLRNGINFERENCE — CDS view tiêu dùng dựa trên P_CollectionsMchnLrngInference."
+keywords:
+  - "collectionsmchnlrnginference"
+  - "company"
+  - "code"
+  - "accounting"
+  - "document"
+  - "fiscal"
+  - "year"
+  - "item"
+  - "source"
 tags:
   - FIN
   - account
@@ -22,7 +33,6 @@ tags:
   - lob:controlling
   - lob:finance
   - payment
-  - metadata-only
 ---
 # C_COLLECTIONSMCHNLRNGINFERENCE
 
@@ -34,17 +44,17 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLECTIONSMCHNLRNGINFERENCE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLECTIONSMCHNLRNGINFERENCE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocumentItem` |  | |  |  | `NUMC(3)` | Journal Entry Posting View Item |
-| `SourceCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Journal Entry |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocumentItem` | ✓ | |  |  | `NUMC(3)` | Journal Entry Posting View Item |
+| `SourceCompanyCode` |  | |  | `CompanyCode` | `CHAR(4)` | Company Code |
 | `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
 | `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
 | `CreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class |
@@ -84,3 +94,99 @@ tags:
 | `NumberOfPayments24MonthsAgo` |  | |  |  | `INT4(10)` | Number of Cleared Invoices for Customer (Last 24 Months) |
 | `ClrgDelay24MonthsAgoPercent` |  | |  |  | `DEC(8)` | Percentage of Clearing Delay Over 30 Days (Last 24 Months) |
 | `AvgClrgAmtInTgtCrcy24MonthsAgo` |  | |  |  | `CURR(23)` | Average Clearing Amount (Last 24 Months) |
+| `_OperationalAcctgDocItem` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLECTIONSMCHNLRNGINFERENCE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLECTIONSMCHNLRNGINFERENCE')/$value)*
+
+```abap
+@ClientHandling: { algorithm: #SESSION_VARIABLE }
+@AbapCatalog: { sqlViewName: 'CCOLLMLINFERENCE',
+                compiler: { compareFilter: true },
+                preserveKey: true }
+@AccessControl: { personalData: { blocking: #BLOCKED_DATA_EXCLUDED },
+                  authorizationCheck:    #MANDATORY }
+@EndUserText: { label: 'Collections Machine Learning Inference' }
+@VDM: { viewType: #CONSUMPTION }
+@Metadata: { ignorePropagatedAnnotations: true }
+@ObjectModel: { supportedCapabilities: [ #SQL_DATA_SOURCE ],
+                usageType: { sizeCategory:   #XL,
+                             dataClass:      #MIXED,
+                             serviceQuality: #X } }
+@Consumption: { dbHints: [ 'USE_HEX_PLAN' ] }
+
+define view C_CollectionsMchnLrngInference
+  as select from P_CollectionsMchnLrngInference
+                 ( P_ExchangeRateType         : 'M',
+                 P_TargetCurrency             : 'USD',
+                 P_CollsMchnLrngInferenceDate : $session.system_date )
+{
+
+      // VDM Fields
+  key CompanyCode,
+  key AccountingDocument,
+  key FiscalYear,
+  key AccountingDocumentItem,
+
+      CompanyCode as SourceCompanyCode,
+      Customer,
+      BusinessPartner,
+      CreditRiskClass,
+      PaymentTerms,
+      NetDueDteToSplitDteDurnInDays,
+      Country,
+      CustomerAccountGroup,
+      ClrgDelayInDaysIsOverThreshold,
+      DunningLevel,
+      NetDueDateWeekDay,
+      NetDueDateCalendarYear,
+      NetDueDateCalendarMonth,
+      NetDueDateDayOfMonth,
+      NetDueDateCalendarWeek,
+      DueCalcBaseDateWeekDay,
+      DueCalcBaseDateCalendarYear,
+      DueCalcBaseDateCalendarMonth,
+      DueCalcBaseDateDayOfMonth,
+      DueCalcBaseDateCalendarWeek,
+
+      @Semantics: { currencyCode: true }
+      TransactionCurrency,
+
+      @Semantics: { currencyCode: true }
+      TargetCurrency,
+
+      @Semantics: { amount: { currencyCode: 'TargetCurrency' } }
+      AmountInTargetCurrency,
+
+      DueCalcBaseToNetDueDurnInDays,
+      NetDueDatePositionInMonthValue,
+      ClearingDatePosInMonthValue,
+      NrOfOvrdAcctgDocItems,
+      NumberOfDunnedAcctgDocItems,
+      AverageOverdueDays,
+
+      @Semantics: { amount: { currencyCode: 'TargetCurrency' } }
+      OverdueAmountInTargetCurrency,
+
+      NrOfDundAcctgDocItms12MnthsAgo,
+      AvgClrgDelay12MonthsAgoInDays,
+      NumberOfPayments12MonthsAgo,
+      ClrgDelay12MonthsAgoPercent,
+
+      @Semantics: { amount: { currencyCode: 'TargetCurrency' } }
+      AvgClrgAmtInTgtCrcy12MonthsAgo,
+
+      NrOfDundAcctgDocItms24MnthsAgo,
+      AvgClrgDelay24MonthsAgoInDays,
+      NumberOfPayments24MonthsAgo,
+
+      ClrgDelay24MonthsAgoPercent,
+      @Semantics: { amount: { currencyCode: 'TargetCurrency' } }
+      AvgClrgAmtInTgtCrcy24MonthsAgo,
+
+      // Exposed associations
+      _OperationalAcctgDocItem
+
+}
+```

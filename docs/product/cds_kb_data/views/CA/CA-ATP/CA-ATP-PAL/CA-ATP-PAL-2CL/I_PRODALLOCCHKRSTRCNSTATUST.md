@@ -31,10 +31,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `ProdAllocChkRstrcnStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodallocchkrstrcnstatus preserving type )` |  |  |
-| `ProdAllocChkRstrcnStatusDesc` |  | |  | `cast( ddtext as prodallocchkrstrcnstatusdesc preserving type )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `ProdAllocChkRstrcnStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodallocchkrstrcnstatus preserving type )` | `CHAR(2)` | Product Allocation Check Restriction Status |
+| `ProdAllocChkRstrcnStatusDesc` |  | |  | `cast( ddtext as prodallocchkrstrcnstatusdesc preserving type )` | `CHAR(60)` | Product Allocation Check Restriction Status Description |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Language` | | ✓ | | | | |
 | `_ProdAllocChkRstrcnStatus` | | ✓ | | | | |
 

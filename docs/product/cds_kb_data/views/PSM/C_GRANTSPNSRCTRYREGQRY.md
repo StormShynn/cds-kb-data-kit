@@ -5,15 +5,30 @@ app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GRANTSPNSRCTRYREGQRY')/$value
 semantic_en: "Grant Sponsor Country Region - Query"
+semantic_vi: "Grant Sponsor Country Region - Query — CDS view tiêu dùng dựa trên I_GrantSpnsrCtryRegCube."
+keywords:
+  - "grant"
+  - "sponsor"
+  - "country"
+  - "region"
+  - "query"
+  - "actual"
+  - "plan"
+  - "code"
+  - "grantee"
+  - "mgmt"
+  - "lifecycle"
+  - "status"
+  - "company"
+  - "currency"
 tags:
   - PSM
   - bo:purchaseorder
   - component:PSM
   - consumption-view
-  - metadata-only
 ---
 # C_GRANTSPNSRCTRYREGQRY
 
@@ -25,16 +40,88 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GRANTSPNSRCTRYREGQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GRANTSPNSRCTRYREGQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `GrantID` | ✓ | |  |  | `CHAR(20)` | Grant |
 | `ActualPlanCode` |  | |  |  | `CHAR(1)` | Actual Plan Code |
 | `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |
 | `GrantLifecycleStatus` |  | |  |  | `CHAR(5)` | Lifecycle Status |
 | `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
 | `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` |  |
 | `CountryRegion` |  | |  |  | `CHAR(6)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GRANTSPNSRCTRYREGQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GRANTSPNSRCTRYREGQRY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CPSMS4CGRCTREQ'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@EndUserText.label: 'Grant Sponsor Country Region - Query'
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@VDM.viewType: #CONSUMPTION
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@Metadata.ignorePropagatedAnnotations: true
+@Analytics: {
+     query: true,
+     internalName: #LOCAL,
+     settings: {
+         maxProcessingEffort: #HIGH
+     }
+}
+@ObjectModel: {
+     usageType: {
+         dataClass: #MIXED,
+         serviceQuality: #D,
+         sizeCategory: #XXL
+     },
+     modelingPattern: #ANALYTICAL_QUERY,
+     supportedCapabilities: [ #ANALYTICAL_QUERY ]
+}
+@OData.publish: true
+define view C_GrantSpnsrCtryRegQry
+with parameters
+    @Consumption.hidden: true
+    @Environment.systemField: #SYSTEM_LANGUAGE
+    P_Language     : sylangu,
+    @Consumption.hidden: true
+    @Semantics.businessDate.at: true
+    @Environment.systemField: #SYSTEM_DATE
+    P_KeyDate      : vdm_v_key_date,
+    @Consumption.hidden: true
+    @Environment.systemField: #USER
+    P_BusinessUser : syuname
+as select from I_GrantSpnsrCtryRegCube {
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  key GrantID,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ActualPlanCode,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  GranteeMgmtSponsor,
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  GrantLifecycleStatus,
+  @Semantics.currencyCode: true
+  @AnalyticsDetails.query.axis: #FREE
+  CompanyCodeCurrency,
+  @EndUserText.label: 'Amount in company code currency'
+  @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+  @AnalyticsDetails.query.axis: #FREE
+  AmountInCompanyCodeCurrency,
+  @EndUserText.label: 'Country & Region'
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CountryRegion
+}
+```

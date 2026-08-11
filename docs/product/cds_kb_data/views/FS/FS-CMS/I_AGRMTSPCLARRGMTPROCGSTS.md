@@ -5,15 +5,23 @@ app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTSPCLARRGMTPROCGSTS')/$value
 semantic_en: "Agrmt Special Arrangement Procg Status"
+semantic_vi: "Agrmt Special Arrangement Procg Status — CDS view giao diện dựa trên dd07l."
+keywords:
+  - "agrmt"
+  - "special"
+  - "arrangement"
+  - "procg"
+  - "status"
+  - "spcl"
+  - "arrgmt"
 tags:
   - FS
   - component:FS-CMS
   - FS-CMS
   - interface-view
-  - metadata-only
 ---
 # I_AGRMTSPCLARRGMTPROCGSTS
 
@@ -25,10 +33,64 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTSPCLARRGMTPROCGSTS')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTSPCLARRGMTPROCGSTS')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AgrmtSpclArrgmtProcgStatus` |  | |  |  | `CHAR(2)` | Processing Status of Special Arrangement |
+| `AgrmtSpclArrgmtProcgStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as cms_dte_cag_sa_proc_stat preserving type )` | `CHAR(2)` | Processing Status of Special Arrangement |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_AgrmtSpclArrgmtProcgStsText` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTSPCLARRGMTPROCGSTS')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTSPCLARRGMTPROCGSTS')/$value)*
+
+```abap
+@AbapCatalog: {
+    sqlViewName: 'ICAGSAPROCSTS',
+    compiler.compareFilter: true,
+    preserveKey: true
+}
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel:{
+    usageType:{
+        serviceQuality: 'A',
+        sizeCategory: 'S',
+        dataClass: 'CUSTOMIZING'
+    },
+    supportedCapabilities: [ #ANALYTICAL_DIMENSION,
+                             #CDS_MODELING_ASSOCIATION_TARGET,
+                             #SQL_DATA_SOURCE,
+                             #CDS_MODELING_DATA_SOURCE,
+                             #EXTRACTION_DATA_SOURCE ],
+    representativeKey: 'AgrmtSpclArrgmtProcgStatus'
+}
+@VDM.viewType: #BASIC
+@Analytics:{
+    dataCategory: #DIMENSION,
+    internalName: #LOCAL,
+    dataExtraction.enabled: true
+}
+@Metadata.ignorePropagatedAnnotations: true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Agrmt Special Arrangement Procg Status'
+define view I_AgrmtSpclArrgmtProcgSts
+  as select from dd07l
+  association [0..*] to I_AgrmtSpclArrgmtProcgStsText as _Text on $projection.AgrmtSpclArrgmtProcgStatus = _Text.AgrmtSpclArrgmtProcgStatus
+{
+      @ObjectModel.text.association: '_Text'
+  key cast(substring(domvalue_l, 1, 2) as cms_dte_cag_sa_proc_stat preserving type ) as AgrmtSpclArrgmtProcgStatus,
+
+      _Text
+}
+where
+      dd07l.domname  = 'CMS_CAG_SA_PROC_STAT'
+  and dd07l.as4local = 'A'
+```

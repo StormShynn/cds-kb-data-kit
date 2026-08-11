@@ -5,9 +5,17 @@ app_component: BC-SRV-CM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEFUNCTIONPROFILETEXT')/$value
 semantic_en: "Case Function Profile Text"
+semantic_vi: "Case Function Profile Text — CDS view giao diện dựa trên scmgfuncproft."
+keywords:
+  - "case"
+  - "function"
+  - "profile"
+  - "text"
+  - "language"
+  - "name"
 tags:
   - BC
   - BC-SRV
@@ -16,7 +24,6 @@ tags:
   - component:BC-SRV-CM
   - interface-view
   - lob:basis components
-  - metadata-only
 ---
 # I_CASEFUNCTIONPROFILETEXT
 
@@ -28,12 +35,56 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEFUNCTIONPROFILETEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEFUNCTIONPROFILETEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `CaseFunctionProfile` |  | |  |  | `CHAR(8)` | Case: Function Profile ID |
-| `CaseFunctionProfileName` |  | |  |  | `CHAR(40)` | Case: Profile Description |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CaseFunctionProfile` | ✓ | |  | `profile_id` | `CHAR(8)` | Case: Function Profile ID |
+| `CaseFunctionProfileName` |  | |  | `text` | `CHAR(40)` | Case: Profile Description |
+| `_Language` | | ✓ | | | | |
+| `_CaseFunction` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_CaseFunction` | `I_CaseFunctionProfile` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEFUNCTIONPROFILETEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEFUNCTIONPROFILETEXT')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'ICASEFPTEXT'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Case Function Profile Text'
+@ObjectModel.dataCategory: #TEXT
+//@Analytics.dataCategory: #DIMENSION
+@VDM.viewType: #BASIC
+@ObjectModel.representativeKey: 'CaseFunctionProfile'
+define view I_CaseFunctionProfileText
+  as select from scmgfuncproft
+
+
+  association [0..1] to I_Language   as _Language     on $projection.Language = _Language.Language
+  association [0..1] to I_CaseFunctionProfile as _CaseFunction 
+  on $projection.CaseFunctionProfile = _CaseFunction.CaseFunctionProfile
+{
+
+          @ObjectModel.foreignKey.association: '_Language'
+          @Semantics.language: true
+  key     scmgfuncproft.langu           as  Language,
+          @ObjectModel.foreignKey.association: '_CaseFunction'
+  key     scmgfuncproft.profile_id      as  CaseFunctionProfile,
+          @Semantics.text: true
+          scmgfuncproft.text            as  CaseFunctionProfileName,
+
+          _Language,
+          _CaseFunction
+}
+```

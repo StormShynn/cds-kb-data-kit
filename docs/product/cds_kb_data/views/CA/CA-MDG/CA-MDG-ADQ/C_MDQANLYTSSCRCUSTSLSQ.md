@@ -5,13 +5,26 @@ app_component: CA-MDG-ADQ
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQANLYTSSCRCUSTSLSQ')/$value
 semantic_en: "This CDS view helps to retrieve the results of quality evaluations and master data scores for customer sales data. You can analyze the data using master data attributes, for example, country, or sales organization, to identify any issues and improve the data. This CDS view provides the data to answer the following business questions: What is the quality score of my customer sales data? Which data is compliant with or violating specific validation rules? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "MDQ Score for Customer Sales - Query — CDS view tiêu dùng dựa trên MDQ Score for Customer Sales - Query."
 keywords:
   - "MDQ Score for Customer Sales"
-  - "MDQ Score for Customer Sales"
-  - "MDQ Score for Customer Sales"
+  - "mdq"
+  - "score"
+  - "for"
+  - "customer"
+  - "sales"
+  - "query"
+  - "alternative"
+  - "payee"
+  - "allowed"
+  - "city"
+  - "name"
+  - "country"
+  - "account"
+  - "group"
 tags:
   - CA
   - bo:businesspartner
@@ -22,7 +35,6 @@ tags:
   - customer
   - lob:cross_application components
   - master-data
-  - metadata-only
 ---
 # C_MDQANLYTSSCRCUSTSLSQ
 
@@ -34,7 +46,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQANLYTSSCRCUSTSLSQ')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQANLYTSSCRCUSTSLSQ')/$value) |
 
 ## Fields
 
@@ -105,5 +117,141 @@ tags:
 | `MDQltyNmbrOfBusRuleEvalResults` |  | |  |  | `INT4(10)` | Master Data Quality Counter Total Records |
 | `MDQltyNmbrOfFailedEvalRslts` |  | |  |  | `INT4(10)` | Master Data Quality Counter Records Failed |
 | `MDQltyNmbrOfSuccssflEvalRslts` |  | |  |  | `INT4(10)` | Master Data Quality Counter Records OK |
-| `Score` |  | |  |  | `DECF(34)` |  |
+| `Score` |  | |  | `case when MDQltyNmbrOfBusRuleEvalResults = abap.int1'0' then abap.int1'0' else ( MDQltyNmbrOfSuccssflEvalRslts / MDQltyNmbrOfBusRuleEvalResults ) * 100 end` | `DECF(34)` |  |
 | `MDQltyAlPgNavigationPath` |  | |  |  | `SSTR(1333)` | Fiori Host Path concatenated with Navigation Target |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQANLYTSSCRCUSTSLSQ')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQANLYTSSCRCUSTSLSQ')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #NOT_ALLOWED
+@AccessControl.personalData.blocking: #REQUIRED
+@Analytics.internalName: #LOCAL
+@EndUserText.label: 'MDQ Score for Customer Sales - Query'
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_QUERY]
+@ObjectModel.usageType: {
+  dataClass: #MIXED,
+  serviceQuality: #D,
+  sizeCategory: #XXL
+}
+@VDM.viewType: #CONSUMPTION
+define transient view entity C_MDQAnlytsScrCustSlsQ
+  provider contract analytical_query
+  as projection on I_MDQAnlytsScrCustSlsC as _MDQAnlytsScrCustSlsC
+{
+  //customer data
+  @EndUserText.label: 'Alternative Payer Allowed'
+  AlternativePayeeIsAllowed,
+  CityName,
+  Country,
+  Customer,
+  @EndUserText.label: 'Account Group'
+  CustomerAccountGroup,
+  @EndUserText.label: 'Group Key'
+  CustomerCorporateGroup,
+  CustomerClassification,
+  @EndUserText.label: 'Central Delivery Block'
+  DeliveryIsBlocked,
+  Industry,
+  @Semantics.booleanIndicator: true
+  IsSalesProspect,
+  @EndUserText.label: 'Nielsen Indicator'
+  NielsenRegion,
+  @EndUserText.label: 'Payment Block'
+  PaymentIsBlockedForCustomer,
+  PostalCode,
+  PostingIsBlocked,
+  Region,
+
+  //customer sales data
+  AuthorizationGroup,
+  @EndUserText.label: 'Billing Block'
+  BillingIsBlockedForCustomer,
+  Currency,
+  CustomerGroup,
+  DistributionChannel,
+  Division,
+  @EndUserText.label: 'Order Block'
+  OrderIsBlockedForCustomer,
+  PaymentTerms,
+  SalesDistrict,
+  SalesGroup,
+  SalesOffice,
+  SalesOrganization,
+
+  //process data
+  MasterDataChangeProcess,
+  MDChgProcessFinishDate,
+  @Semantics.booleanIndicator: true
+  @EndUserText.label: 'Is Latest Evaluation'
+  MDChgProcessIsLatest,
+
+  //rule data
+  MDQltyBusinessRuleBaseTable,
+  @EndUserText.label: 'Base Table Description'
+  MDQltyBusinessRuleBaseTabName,
+  MDQltyBusinessRuleOwner,
+  @EndUserText.label: 'Checked Field'
+  MDQltyBusRuleCheckedField,
+  @EndUserText.label: 'Checked Field Table'
+  MDQltyBusRuleCheckedFieldTable,
+  @EndUserText.label: 'Checked Table and Field'
+  MDQltyBusRuleChkdFieldAndTable,
+  MDQltyBusRuleEvalResultCode,
+  MDQualityBusinessRule,
+  MDQualityBusinessRuleName,
+
+  //business partner data
+  AcademicTitle,
+  BPFirstNameSearchHelp,
+  BPLastNameSearchHelp,
+  BusinessPartner,
+  BusinessPartnerCategory,
+  BusinessPartnerGrouping,
+  BusinessPartnerIsBlocked,
+  @EndUserText.label: 'Created By'
+  CreatedByUser,
+  @EndUserText.label: 'Created On'
+  CreationDate,
+  FirstName,
+  GenderCodeName,
+  IsMarkedForArchiving,
+  @Semantics.booleanIndicator
+  IsNaturalPerson,
+  @EndUserText.label: 'Changed On'
+  LastChangeDate,
+  @EndUserText.label: 'Changed By'
+  LastChangedByUser,
+  LastName,
+  @EndUserText.label: 'Legal Form'
+  LegalForm,
+  OrganizationBPName1,
+  OrganizationBPName2,
+  @EndUserText.label: 'Date Founded'
+  OrganizationFoundationDate,
+  SearchTerm1,
+  SearchTerm2,
+  StreetName,
+
+  @EndUserText.label: 'Total'
+  MDQltyNmbrOfBusRuleEvalResults,
+  @EndUserText.label: 'Not OK'
+  MDQltyNmbrOfFailedEvalRslts,
+  @EndUserText.label: 'OK'
+  MDQltyNmbrOfSuccssflEvalRslts,
+  @EndUserText.label: 'Quality Score'
+  @Aggregation.default: #FORMULA
+  @AnalyticsDetails.query.decimals: 2
+  case
+    when MDQltyNmbrOfBusRuleEvalResults = abap.int1'0' then abap.int1'0'
+    else ( MDQltyNmbrOfSuccssflEvalRslts / MDQltyNmbrOfBusRuleEvalResults ) * 100
+  end as Score,
+
+  @EndUserText.label: 'ALP Navigation Path'
+  MDQltyAlPgNavigationPath
+}
+```

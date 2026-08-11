@@ -31,8 +31,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProdAllocChkRstrcnStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocchkrstrcnstatus preserving type )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ProdAllocChkRstrcnStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocchkrstrcnstatus preserving type )` | `CHAR(2)` | Product Allocation Check Restriction Status |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

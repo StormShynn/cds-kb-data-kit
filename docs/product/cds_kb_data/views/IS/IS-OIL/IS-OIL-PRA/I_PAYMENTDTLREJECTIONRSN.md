@@ -5,9 +5,15 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PAYMENTDTLREJECTIONRSN')/$value
 semantic_en: "Payment Detail Rejection Reason"
+semantic_vi: "Payment Detail Rejection Reason — CDS view giao diện dựa trên Payment Detail Rejection Reason."
+keywords:
+  - "payment"
+  - "detail"
+  - "rejection"
+  - "reason"
 tags:
   - IS
   - bo:salesorder
@@ -16,7 +22,6 @@ tags:
   - IS-OIL
   - IS-OIL-PRA
   - payment
-  - metadata-only
 ---
 # I_PAYMENTDTLREJECTIONRSN
 
@@ -28,10 +33,49 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PAYMENTDTLREJECTIONRSN')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PAYMENTDTLREJECTIONRSN')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentDetailRejectionRsn` |  | |  |  | `CHAR(3)` | Payment Processing - Detail Level Reject Code |
+| `PaymentDetailRejectionRsn` | ✓ | |  | `dtl_rej_cd` | `CHAR(3)` | Payment Processing - Detail Level Reject Code |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_PaymentDtlRejectionRsnText` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PAYMENTDTLREJECTIONRSN')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PAYMENTDTLREJECTIONRSN')/$value)*
+
+```abap
+@EndUserText.label: 'Payment Detail Rejection Reason'
+@Analytics.dataCategory: #DIMENSION
+@Analytics.dataExtraction.enabled: true
+@VDM.viewType: #BASIC
+@AbapCatalog.sqlViewName: 'IPVPAYDTLREJRSN'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Metadata.ignorePropagatedAnnotations:true 
+@ObjectModel.representativeKey: 'PaymentDetailRejectionRsn'
+
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION , #SQL_DATA_SOURCE , #CDS_MODELING_DATA_SOURCE , #CDS_MODELING_ASSOCIATION_TARGET ]
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.dataClass: #MASTER
+@ObjectModel.sapObjectNodeType.name: 'PRAPaymentDetailRejectionRsn'
+define view I_PaymentDtlRejectionRsn
+  as select from /pra/c_pp_drej
+  association [0..*] to I_PaymentDtlRejectionRsnText as _Text on $projection.PaymentDetailRejectionRsn = _Text.PaymentDetailRejectionRsn
+{
+      @ObjectModel.text.association: '_Text'
+  key dtl_rej_cd   as PaymentDetailRejectionRsn,
+      _Text
+}
+```

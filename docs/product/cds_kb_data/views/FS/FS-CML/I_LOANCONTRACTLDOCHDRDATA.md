@@ -5,9 +5,25 @@ app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANCONTRACTLDOCHDRDATA')/$value
 semantic_en: "Actual Document Header for Loan Contract"
+semantic_vi: "Actual Document Header for Loan Contract — CDS view giao diện dựa trên vdbeki."
+keywords:
+  - "actual"
+  - "document"
+  - "header"
+  - "for"
+  - "loan"
+  - "contract"
+  - "company"
+  - "code"
+  - "posted"
+  - "classfctn"
+  - "nmbr"
+  - "life"
+  - "cycle"
+  - "status"
 tags:
   - FS
   - component:FS-CML
@@ -15,7 +31,6 @@ tags:
   - document
   - FS-CML
   - interface-view
-  - metadata-only
 ---
 # I_LOANCONTRACTLDOCHDRDATA
 
@@ -27,28 +42,127 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANCONTRACTLDOCHDRDATA')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANCONTRACTLDOCHDRDATA')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `PostedDocumentID` |  | |  |  | `CHAR(10)` | Document Number of Document Header (Loan) |
-| `LoanContractID` |  | |  |  | `CHAR(13)` | Contract Number |
-| `LoanClassfctnNmbr` |  | |  |  | `CHAR(13)` | Classification Number for Finance Projects |
-| `LoanLifeCycleStatus` |  | |  |  | `NUMC(2)` | Status of data record |
-| `LoanAcctAssgmtRef` |  | |  |  | `CHAR(8)` | Account Assignment Reference in Financial Assets Management |
-| `CshFlwItmGLAccount` |  | |  |  | `CHAR(10)` | General Ledger Account |
-| `LoanBusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
-| `CashFlowItemPostingDate` |  | |  |  | `DATS(8)` | Posting Date in the Document |
-| `CashFlowItemReversalStatus` |  | |  |  | `CHAR(1)` | Reversal indicator |
-| `ReverseDocument` |  | |  |  | `CHAR(10)` | Reverse Document Number |
-| `WvrWriteoffDocument` |  | |  |  | `CHAR(10)` | Doc.no. of debit pos. doc.header (only for inc.pmnt records) |
-| `CshFlwItmTransfToFinAcctgDte` |  | |  |  | `DATS(8)` | Date of transferal to FiAc |
-| `CashFlowItemEnteredBy` |  | |  |  | `CHAR(12)` | Entered By |
-| `CashFlowItemEnteredDate` |  | |  |  | `DATS(8)` | First Entered On |
-| `CashFlowItemEnteredTime` |  | |  |  | `TIMS(6)` | Time of Creation |
-| `CashFlowItemEnteredSource` |  | |  |  | `CHAR(10)` | Source of Initial Entry |
-| `CshFlwItmBusTransNmbr` |  | |  |  | `CHAR(10)` | Daybook no. |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Document Number of an Accounting Document |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `PostedDocumentID` | ✓ | |  | `rbelkpfd` | `CHAR(10)` | Document Number of Document Header (Loan) |
+| `LoanContractID` |  | |  | `ranl` | `CHAR(13)` | Contract Number |
+| `LoanClassfctnNmbr` |  | |  | `rklammer` | `CHAR(13)` | Classification Number for Finance Projects |
+| `LoanLifeCycleStatus` |  | |  | `sstati` | `NUMC(2)` | Status of data record |
+| `LoanAcctAssgmtRef` |  | |  | `rrefkont` | `CHAR(8)` | Account Assignment Reference in Financial Assets Management |
+| `CshFlwItmGLAccount` |  | |  | `hkont` | `CHAR(10)` | General Ledger Account |
+| `LoanBusinessArea` |  | |  | `gsber` | `CHAR(4)` | Business Area |
+| `CashFlowItemPostingDate` |  | |  | `dbudat` | `DATS(8)` | Posting Date in the Document |
+| `CashFlowItemReversalStatus` |  | |  | `sstorno` | `CHAR(1)` | Reversal indicator |
+| `ReverseDocument` |  | |  | `rstblg` | `CHAR(10)` | Reverse Document Number |
+| `WvrWriteoffDocument` |  | |  | `rzebel` | `CHAR(10)` | Doc.no. of debit pos. doc.header (only for inc.pmnt records) |
+| `CshFlwItmTransfToFinAcctgDte` |  | |  | `danfibu` | `DATS(8)` | Date of transferal to FiAc |
+| `CashFlowItemEnteredBy` |  | |  | `rerf` | `CHAR(12)` | Entered By |
+| `CashFlowItemEnteredDate` |  | |  | `derf` | `DATS(8)` | First Entered On |
+| `CashFlowItemEnteredTime` |  | |  | `terf` | `TIMS(6)` | Time of Creation |
+| `CashFlowItemEnteredSource` |  | |  | `reher` | `CHAR(10)` | Source of Initial Entry |
+| `CshFlwItmBusTransNmbr` |  | |  | `rpnnr` | `CHAR(10)` | Daybook no. |
+| `AccountingDocument` |  | |  | `ruzbel` | `CHAR(10)` | Document Number of an Accounting Document |
+| `_LoanContrData` | | ✓ | | | | |
+| `_LoanContrActlDocItmData` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_LoanContrData` | `I_LoanContrData` | [0..1] |
+| `_LoanContrActlDocItmData` | `I_LoanContrActlDocItmData` | [0..*] |
+| `_CompanyCode` | `I_CompanyCode` | [0..1] |
+| `_BusinessArea` | `I_BusinessArea` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANCONTRACTLDOCHDRDATA')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANCONTRACTLDOCHDRDATA')/$value)*
+
+```abap
+@AbapCatalog:{
+    sqlViewName: 'ILCACTDOCHDRD',
+    compiler.compareFilter: true,
+    preserveKey: true
+}
+@AccessControl:{
+    authorizationCheck: #CHECK,
+    personalData:{
+        blocking: #BLOCKED_DATA_EXCLUDED
+    }
+}
+@ObjectModel.usageType:{
+    serviceQuality: 'A',
+    sizeCategory: 'XL',
+    dataClass:'TRANSACTIONAL'
+}
+@ObjectModel:{
+    supportedCapabilities: [ #SQL_DATA_SOURCE,
+                             #CDS_MODELING_ASSOCIATION_TARGET,
+                             #CDS_MODELING_DATA_SOURCE,
+                             #EXTRACTION_DATA_SOURCE ]
+}
+@Metadata:{
+    ignorePropagatedAnnotations: true,
+    allowExtensions: true
+}
+@Analytics:{
+    internalName: #LOCAL,
+    dataCategory: #CUBE,
+    dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture: {
+            automatic: true
+    }
+  }
+}
+@VDM.viewType: #BASIC
+@ClientHandling.algorithm : #SESSION_VARIABLE
+@EndUserText.label: 'Actual Document Header for Loan Contract'
+
+define view I_LoanContrActlDocHdrData
+  as select from vdbeki
+  association [0..1] to I_LoanContrData           as _LoanContrData           on  $projection.CompanyCode              = _LoanContrData.CompanyCode
+                                                                              and _LoanContrData.LoanArchivingCategory = ' '
+                                                                              and $projection.LoanContractID           = _LoanContrData.LoanContractID
+  association [0..*] to I_LoanContrActlDocItmData as _LoanContrActlDocItmData on  $projection.CompanyCode      = _LoanContrActlDocItmData.CompanyCode
+                                                                              and $projection.PostedDocumentID = _LoanContrActlDocItmData.PostedDocumentID
+  association [0..1] to I_CompanyCode             as _CompanyCode             on  $projection.CompanyCode = _CompanyCode.CompanyCode
+  association [0..1] to I_BusinessArea            as _BusinessArea            on  $projection.LoanBusinessArea = _BusinessArea.BusinessArea
+
+{
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+  key vdbeki.bukrs    as CompanyCode,
+  key vdbeki.rbelkpfd as PostedDocumentID,
+
+      vdbeki.ranl     as LoanContractID,
+      vdbeki.rklammer as LoanClassfctnNmbr,
+      vdbeki.sstati   as LoanLifeCycleStatus,
+      vdbeki.rrefkont as LoanAcctAssgmtRef,
+      vdbeki.hkont    as CshFlwItmGLAccount,
+      @ObjectModel.foreignKey.association: '_BusinessArea'
+      vdbeki.gsber    as LoanBusinessArea,
+      vdbeki.dbudat   as CashFlowItemPostingDate,
+      vdbeki.sstorno  as CashFlowItemReversalStatus,
+      vdbeki.rstblg   as ReverseDocument,
+      vdbeki.rzebel   as WvrWriteoffDocument,
+      vdbeki.danfibu  as CshFlwItmTransfToFinAcctgDte,
+      vdbeki.rerf     as CashFlowItemEnteredBy,
+      vdbeki.derf     as CashFlowItemEnteredDate,
+      vdbeki.terf     as CashFlowItemEnteredTime,
+      vdbeki.reher    as CashFlowItemEnteredSource,
+      vdbeki.rpnnr    as CshFlwItmBusTransNmbr,
+      vdbeki.ruzbel   as AccountingDocument,
+
+      _LoanContrData,
+      _LoanContrActlDocItmData,
+      _CompanyCode,
+      _BusinessArea
+}
+```

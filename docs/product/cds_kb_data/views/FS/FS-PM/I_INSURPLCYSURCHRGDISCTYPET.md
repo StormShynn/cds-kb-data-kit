@@ -5,15 +5,28 @@ app_component: FS-PM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSURPLCYSURCHRGDISCTYPET')/$value
 semantic_en: "Type Id for Surchrg Disc in Plcy - Txt"
+semantic_vi: "Type Id for Surchrg Disc in Plcy - Txt — CDS view cơ bản dựa trên dd07t."
+keywords:
+  - "type"
+  - "for"
+  - "surchrg"
+  - "disc"
+  - "plcy"
+  - "txt"
+  - "language"
+  - "insur"
+  - "surcharge"
+  - "domain"
+  - "value"
+  - "name"
 tags:
   - FS
   - component:FS-PM
   - FS-PM
   - interface-view
-  - metadata-only
 ---
 # I_INSURPLCYSURCHRGDISCTYPET
 
@@ -25,13 +38,79 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSURPLCYSURCHRGDISCTYPET')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSURPLCYSURCHRGDISCTYPET')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `InsurPlcySurchargeDiscTypeID` |  | |  |  | `NUMC(3)` | Surcharge / Discount Type |
-| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `InsurPlcySurchargeDiscTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `InsurPlcySurchargeDiscTypeID` | ✓ | |  | `cast( dd07t.domvalue_l as /pm0/abu_spdctp_id )` | `NUMC(3)` | Surcharge / Discount Type |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `InsurPlcySurchargeDiscTypeName` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
+| `_Language` | | ✓ | | | | |
+| `_InsurPlcySurchrgDiscType` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSURPLCYSURCHRGDISCTYPET')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSURPLCYSURCHRGDISCTYPET')/$value)*
+
+```abap
+@EndUserText.label: 'Type Id for Surchrg Disc in Plcy - Txt'
+@VDM: {
+  viewType:#BASIC,
+  lifecycle.contract.type:#PUBLIC_LOCAL_API
+}
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Analytics.dataExtraction.enabled: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel: {
+  dataCategory: #TEXT,
+  modelingPattern: #LANGUAGE_DEPENDENT_TEXT,
+  representativeKey: 'InsurPlcySurchargeDiscTypeID',
+  usageType.serviceQuality: #A,
+  usageType.dataClass: #CUSTOMIZING,
+  usageType.sizeCategory: #S,
+  supportedCapabilities: [#CDS_MODELING_ASSOCIATION_TARGET,
+                          #CDS_MODELING_DATA_SOURCE,
+                          #EXTRACTION_DATA_SOURCE,
+                          #LANGUAGE_DEPENDENT_TEXT,
+                          #SEARCHABLE_ENTITY,
+                          #SQL_DATA_SOURCE]
+}
+@Search.searchable: true
+
+
+define view entity I_InsurPlcySurchrgDiscTypeT
+  as select from dd07t
+  association        to parent I_InsurPlcySurchrgDiscType as _InsurPlcySurchrgDiscType on $projection.InsurPlcySurchargeDiscTypeID = _InsurPlcySurchrgDiscType.InsurPlcySurchargeDiscTypeID
+  association [0..1] to I_Language                        as _Language                 on $projection.Language = _Language.Language
+{
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key cast( dd07t.ddlanguage as spras preserving type ) as Language,
+      @ObjectModel.foreignKey.association: '_InsurPlcySurchrgDiscType'
+      @ObjectModel.text.element: ['InsurPlcySurchargeDiscTypeName']
+  key cast( dd07t.domvalue_l as /pm0/abu_spdctp_id )    as InsurPlcySurchargeDiscTypeID,
+      @Analytics.hidden: true
+      @Consumption.hidden: true
+      dd07t.domvalue_l                                  as DomainValue,
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      @Semantics.text: true
+      dd07t.ddtext                                      as InsurPlcySurchargeDiscTypeName,
+      _InsurPlcySurchrgDiscType,
+      _Language
+}
+where
+      dd07t.domname  = '/PM0/ABU_SPDCTP_ID'
+  and dd07t.as4local = 'A'
+  and dd07t.as4vers  = '0000'
+```

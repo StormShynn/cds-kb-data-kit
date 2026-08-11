@@ -5,9 +5,22 @@ app_component: RE-FX-IP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJECTOCCUPANCY')/$value
 semantic_en: "Real Estate Integ Object Occupancy"
+semantic_vi: "Real Estate Integ Object Occupancy — CDS view giao diện dựa trên P_REIntegObjectOccpcyCalc2."
+keywords:
+  - "real"
+  - "estate"
+  - "integ"
+  - "object"
+  - "occupancy"
+  - "status"
+  - "contract"
+  - "internal"
+  - "number"
+  - "company"
+  - "code"
 tags:
   - RE
   - component:RE-FX-IP-2CL
@@ -15,7 +28,6 @@ tags:
   - RE-FX
   - RE-FX-IP
   - RE-FX-IP-2CL
-  - metadata-only
 ---
 # I_REINTEGOBJECTOCCUPANCY
 
@@ -27,7 +39,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJECTOCCUPANCY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJECTOCCUPANCY')/$value) |
 
 ## Fields
 
@@ -51,3 +63,79 @@ tags:
 | `REObjectPossessionEndDate` |  | |  |  | `DATS(8)` | Date Up to Which the Object Is Used |
 | `IsVacant` |  | |  |  | `CHAR(1)` | Truth Value: True/False |
 | `REContractIsActive` |  | |  |  | `CHAR(1)` | Truth Value: True/False |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJECTOCCUPANCY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJECTOCCUPANCY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IREINTOBJOCC'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Real Estate Integ Object Occupancy'
+@ObjectModel.usageType.dataClass: #MASTER
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.sizeCategory: #L
+
+@VDM.viewType: #COMPOSITE
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.preserveKey:true
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel.supportedCapabilities:  [  #CDS_MODELING_ASSOCIATION_TARGET,
+                                        #SQL_DATA_SOURCE,
+                                        #EXTRACTION_DATA_SOURCE,
+                                        #CDS_MODELING_DATA_SOURCE]
+
+@Analytics:{
+    dataExtraction: {
+        enabled: true
+    }
+}
+
+define view I_REIntegObjectOccupancy
+  as select from P_REIntegObjectOccpcyCalc2
+{
+  REIntegObjectStatusObject,
+  REContractStatusObject,
+  REIntegObjectInternalNumber,
+  REContractInternalNumber,
+  CompanyCode,
+  RealEstateContract,
+  REOccupancyFromDate,
+  REOccupancyToDate,
+  REIntegObjectValidityStartDate,
+  REIntegObjectValidityEndDate,
+  ContractStartDate,
+  ContractEndDate,
+  REObjAssgmtValidityStartDate,
+  REObjAssgmtValidityEndDate,
+  REObjectPossessionStartDate,
+  REObjectPossessionEndDate,
+  IsVacant,
+  REContractIsActive
+  
+}
+union select from P_REIntegObjectOccpcyCalc8
+{
+  REIntegObjectStatusObject,
+  ' ' as REContractStatusObject,
+  REIntegObjectInternalNumber,
+  ' ' as REContractInternalNumber,
+  ' ' as CompanyCode,
+  ' ' as RealEstateContract,
+  REOccupancyFromDate,
+  REOccupancyToDate,
+  REIntegObjectValidityStartDate,
+  REIntegObjectValidityEndDate,
+  ' ' as ContractStartDate,
+  ' ' as ContractEndDate,
+  ' ' as REObjAssgmtValidityStartDate,
+  ' ' as REObjAssgmtValidityEndDate,
+  ' ' as REObjectPossessionStartDate,
+  ' ' as REObjectPossessionEndDate,
+  IsVacant,
+  ' ' as REContractIsActive
+}
+```

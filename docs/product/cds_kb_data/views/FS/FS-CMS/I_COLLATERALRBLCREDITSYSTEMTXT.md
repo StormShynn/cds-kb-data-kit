@@ -5,15 +5,22 @@ app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALRBLCREDITSYSTEMTXT')/$value
 semantic_en: "Receivable Credit System - Text"
+semantic_vi: "Receivable Credit System - Text — CDS view giao diện dựa trên tcms_rbl_crdsy_t."
+keywords:
+  - "receivable"
+  - "credit"
+  - "system"
+  - "text"
+  - "collateral"
+  - "language"
 tags:
   - FS
   - component:FS-CMS
   - FS-CMS
   - interface-view
-  - metadata-only
 ---
 # I_COLLATERALRBLCREDITSYSTEMTXT
 
@@ -25,12 +32,69 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALRBLCREDITSYSTEMTXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALRBLCREDITSYSTEMTXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CollateralRblCreditSystem` |  | |  |  | `CHAR(3)` | Credit System |
-| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
-| `CollateralRblCreditSystemTxt` |  | |  |  | `CHAR(20)` | Credit System Text |
+| `CollateralRblCreditSystem` | ✓ | |  | `crdsys` | `CHAR(3)` | Credit System |
+| `Language` | ✓ | |  | `language` | `LANG(1)` | Language in which Description is Required |
+| `CollateralRblCreditSystemTxt` |  | |  | `text` | `CHAR(20)` | Credit System Text |
+| `_Language` | | ✓ | | | | |
+| `_CollateralRblCreditSystem` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_CollateralRblCreditSystem` | `I_CollateralRblCreditSystem` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALRBLCREDITSYSTEMTXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALRBLCREDITSYSTEMTXT')/$value)*
+
+```abap
+@AbapCatalog:{
+    sqlViewName: 'ICOLRBLCRDSYSTXT',
+    compiler.compareFilter: true,
+    preserveKey: true
+}
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel:{
+    dataCategory: #TEXT,
+    usageType:{
+        serviceQuality: 'A',
+        sizeCategory: 'S',
+        dataClass: 'CUSTOMIZING'
+    },
+    supportedCapabilities: [ #LANGUAGE_DEPENDENT_TEXT,
+                             #CDS_MODELING_ASSOCIATION_TARGET,
+                             #SQL_DATA_SOURCE,
+                             #CDS_MODELING_DATA_SOURCE,
+                             #EXTRACTION_DATA_SOURCE ],
+    representativeKey: 'CollateralRblCreditSystem'
+}
+@VDM.viewType: #BASIC
+@Analytics.dataExtraction.enabled: true
+@Metadata.ignorePropagatedAnnotations:true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Receivable Credit System - Text'
+define view I_CollateralRblCreditSystemTxt
+  as select from tcms_rbl_crdsy_t
+  association [0..1] to I_Language                  as _Language                  on $projection.Language = _Language.Language
+  association [0..1] to I_CollateralRblCreditSystem as _CollateralRblCreditSystem on $projection.CollateralRblCreditSystem = _CollateralRblCreditSystem.CollateralRblCreditSystem
+{
+      @ObjectModel.foreignKey.association: '_CollateralRblCreditSystem'
+  key crdsys   as CollateralRblCreditSystem,
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key language as Language,
+      @Semantics.text: true
+      text     as CollateralRblCreditSystemTxt,
+
+      _Language,
+      _CollateralRblCreditSystem
+}
+```

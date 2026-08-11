@@ -5,9 +5,15 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAONRRLESSORTYPE')/$value
 semantic_en: "PRA ONRR Lessor Type"
+semantic_vi: "PRA ONRR Lessor Type — CDS view giao diện dựa trên dd07l."
+keywords:
+  - "pra"
+  - "onrr"
+  - "lessor"
+  - "type"
 tags:
   - IS
   - bo:salesorder
@@ -15,7 +21,6 @@ tags:
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - metadata-only
 ---
 # I_PRAONRRLESSORTYPE
 
@@ -27,10 +32,54 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAONRRLESSORTYPE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAONRRLESSORTYPE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ONRRLessorType` |  | |  |  | `CHAR(1)` | ONRR-2014 - Lessor Code |
+| `ONRRLessorType` | ✓ | |  | `cast (domvalue_l as /pra/fp_lessor_code )` | `CHAR(1)` | ONRR-2014 - Lessor Code |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_PRAONRRLessorTypeText` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAONRRLESSORTYPE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAONRRLESSORTYPE')/$value)*
+
+```abap
+@EndUserText.label: 'PRA ONRR Lessor Type'
+@Analytics.dataCategory: #DIMENSION
+@Analytics.dataExtraction.enabled: true
+@VDM.viewType: #BASIC
+@AbapCatalog.sqlViewName: 'IPVONRRLSRTYPE'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Metadata.ignorePropagatedAnnotations:true 
+@ObjectModel.representativeKey: 'ONRRLessorType'
+
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION , #SQL_DATA_SOURCE , #CDS_MODELING_DATA_SOURCE , #CDS_MODELING_ASSOCIATION_TARGET ,
+                                     #EXTRACTION_DATA_SOURCE ]
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.dataClass: #META
+@ObjectModel.sapObjectNodeType.name: 'ONRRLessorTypeCode'
+
+define view I_PRAONRRLessorType
+  as select from dd07l
+  association [0..*] to I_PRAONRRLessorTypeText as _Text on $projection.ONRRLessorType = _Text.ONRRLessorType
+{
+  @ObjectModel.text.association: '_Text'
+  key cast (domvalue_l as /pra/fp_lessor_code )                         as ONRRLessorType,
+  _Text
+}
+where
+      domname  = '/PRA/FP_LESSOR_CODE'
+  and as4local = 'A';
+```

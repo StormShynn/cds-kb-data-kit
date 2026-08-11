@@ -5,9 +5,19 @@ app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJECTBYINTERNALKEY')/$value
 semantic_en: "Project Definition Details By Internal ID"
+semantic_vi: "Project Definition Details By Internal ID — CDS view giao diện dựa trên I_Project."
+keywords:
+  - "project"
+  - "definition"
+  - "details"
+  - "internal"
+  - "coding"
+  - "mask"
+  - "description"
+  - "object"
 tags:
   - PPM
   - bo:companycode
@@ -16,7 +26,6 @@ tags:
   - PPM-SCL
   - PPM-SCL-STR
   - project
-  - metadata-only
 ---
 # I_PROJECTBYINTERNALKEY
 
@@ -28,13 +37,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJECTBYINTERNALKEY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJECTBYINTERNALKEY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProjectInternalID` |  | |  |  | `NUMC(8)` | Project (internal) |
+| `ProjectInternalID` | ✓ | |  |  | `NUMC(8)` | Project (internal) |
 | `Project` |  | |  |  | `CHAR(24)` | Project Definition |
 | `ProjectWithCodingMask` |  | |  |  | `CHAR(24)` | Project Number (External) Edited |
 | `ProjectDescription` |  | |  |  | `CHAR(40)` | Project Definition Name |
@@ -94,4 +103,198 @@ tags:
 | `JointVentureSubClass` |  | |  |  | `CHAR(5)` | JIB/JIBE Subclass A |
 | `ForecastedStartDate` |  | |  |  | `DATS(8)` | Forecast Start Date |
 | `ForecastedEndDate` |  | |  |  | `DATS(8)` | Forecast Finish Date |
-| `ProjectLangBsdDescription` |  | |  |  | `CHAR(40)` | Language-Dependent Short Text |
+| `ProjectLangBsdDescription` |  | |  | `shorttext` | `CHAR(40)` | Language-Dependent Short Text |
+| `_ControllingArea` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_ProjectProfileCode` | | ✓ | | | | |
+| `_ControllingObjectClass` | | ✓ | | | | |
+| `_Status` | | ✓ | | | | |
+| `_ResponsiblePerson` | | ✓ | | | | |
+| `_ProjectApplicant` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ControllingArea` | `I_ControllingArea` | [1..1] |
+| `_CompanyCode` | `I_CompanyCode` | [1..1] |
+| `_CostCenter` | `I_CostCenter` | [1..*] |
+| `_BusinessArea` | `I_BusinessArea` | [1..1] |
+| `_Plant` | `I_Plant` | [1..1] |
+| `_ProjectProfileCode` | `I_ProjectProfileCode` | [1..1] |
+| `_ControllingObjectClass` | `I_ControllingObjectClass` | [1..1] |
+| `_Status` | `I_StatusObjectStatus` | [1..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJECTBYINTERNALKEY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJECTBYINTERNALKEY')/$value)*
+
+```abap
+@EndUserText.label: 'Project Definition Details By Internal ID'
+@VDM.viewType: #BASIC
+///@Analytics: { dataCategory: #DIMENSION, dataExtraction.enabled: true }
+@AbapCatalog.sqlViewName: 'IPROJBYINTKEY'
+@AbapCatalog.preserveKey:true
+@ObjectModel.representativeKey: 'ProjectInternalID'
+@AccessControl.authorizationCheck: #CHECK
+@ObjectModel.usageType.serviceQuality: #B
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.dataClass: #MIXED
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AccessControl.personalData.blocking: #BLOCKED_DATA_EXCLUDED
+@Metadata.ignorePropagatedAnnotations:true 
+
+@ObjectModel: {
+
+    supportedCapabilities: [ #SQL_DATA_SOURCE ]
+}
+
+//@VDM.lifecycle.contract.type:  #SAP_INTERNAL_API
+
+//NOTE: TO BE USED ONLY FOR OP. FOR CLOUD USE I_PROJECTBASICDATA.
+
+define view I_ProjectByInternalKey
+  as select from    I_Project
+    left outer join cnldst_shorttx on  I_Project.ProjectObject = cnldst_shorttx.objnr
+                                   and cnldst_shorttx.language = $session.system_language
+  association [1..1] to I_ControllingArea        as _ControllingArea        on  $projection.ControllingArea = _ControllingArea.ControllingArea
+  association [1..1] to I_CompanyCode            as _CompanyCode            on  $projection.CompanyCode = _CompanyCode.CompanyCode
+  association [1..*] to I_CostCenter             as _CostCenter             on  $projection.CostCenter      = _CostCenter.CostCenter
+                                                                            and $projection.ControllingArea = _CostCenter.ControllingArea
+  association [1..1] to I_BusinessArea           as _BusinessArea           on  $projection.BusinessArea = _BusinessArea.BusinessArea
+  association [1..1] to I_Plant                  as _Plant                  on  $projection.Plant = _Plant.Plant
+  association [1..1] to I_ProjectProfileCode     as _ProjectProfileCode     on  $projection.ProjectProfileCode = _ProjectProfileCode.ProjectProfileCode
+  association [1..1] to I_ControllingObjectClass as _ControllingObjectClass on  $projection.ControllingObjectClass = _ControllingObjectClass.ControllingObjectClass
+  association [1..*] to I_StatusObjectStatus     as _Status                 on  $projection.ProjectObject = _Status.StatusObject
+ // association [0..*] to I_Projecttext                as _ProjLangBsdDescription    on  $projection.ProjectObject = _ProjLangBsdDescription.ProjectObject
+{
+
+  key ProjectInternalID,
+      @ObjectModel.text.element: 'ProjectDescription'
+      Project,
+      ProjectWithCodingMask,
+      @Semantics.text: true
+      ProjectDescription,
+      ProjectObject,
+      CreatedByUser,
+      CreationDate,
+      LastChangedByUser,
+      LastChangeDate,
+      @ObjectModel.text.element: 'ResponsiblePersonName'
+      ResponsiblePerson,
+      @Semantics.text: true
+      ResponsiblePersonName,
+      @ObjectModel.text.element: 'ApplicantCode'
+      ApplicantCode,
+      @Semantics.text: true
+      ApplicantName,
+      //--[ GENERATED:012:GFBfhyK17jY4hf0VYlNxpm
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_CompanyCodeStdVH',
+                     element: 'CompanyCode' }
+        }]
+      // ]--GENERATED
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+      CompanyCode,
+      //--[ GENERATED:012:GFBfhyK17jY4hf0VYlNxpm
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_BusinessAreaStdVH',
+                     element: 'BusinessArea' }
+        }]
+      // ]--GENERATED
+      @ObjectModel.foreignKey.association: '_BusinessArea'
+      BusinessArea,
+      //--[ GENERATED:012:GFBfhyK17jY4hf0VYlNxpm
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_ControllingArea',
+                     element: 'ControllingArea' }
+        }]
+      // ]--GENERATED
+      @ObjectModel.foreignKey.association: '_ControllingArea'
+      ControllingArea,
+      ProfitCenter,
+
+      Currency,
+      NetworkAssignmentType,
+      WBSElmntDatesIsDetailed,
+      @Semantics.calendar.dayOfMonth: true
+      PlannedStartDate,
+      @Semantics.calendar.dayOfMonth: true
+      PlannedEndDate,
+      @ObjectModel.foreignKey.association: '_Plant'
+      Plant,
+      FactoryCalendar,
+      NetworkHdrIsVisibleToUser,
+      NetworkProfile,
+      ProjectProfileCode,
+      BudgetProfile,
+      @Semantics.language
+      I_Project.Language               as Language,
+      //--[ GENERATED:012:GFBfhyK17jY4hf0VYlNxpm
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_CostCenterStdVH',
+                     element: 'CostCenter' },
+          additionalBinding: [{ localElement: 'ControllingArea',
+                                element: 'ControllingArea' }]
+        }]
+      // ]--GENERATED
+      @ObjectModel.foreignKey.association: '_CostCenter'
+      CostCenter,
+      CostObject,
+      @Semantics.calendar.dayOfMonth: true
+      BasicDatesLastScheduledDate,
+      @Semantics.calendar.dayOfMonth: true
+      FcstdDatesLastScheduledDate,
+      ProjectHasOwnStock,
+      ControllingObjectClass,
+      WBSIsStatisticalWBSElement,
+      TaxJurisdiction,
+      ProjInterestCalcProfile,
+      InvestmentProfile,
+      PaymentPlanProfile,
+      ResultAnalysisInternalID,
+      PlanningProfile,
+      WBSIsMarkedForIntegratedPlng,
+      IsMarkedForDeletion,
+      InventorySpecialStockValnType,
+      WBSIsMarkedForAutomReqmtGrpg,
+      WorkCenterLocation,
+      FunctionalArea,
+      SalesOrganization,
+      DistributionChannel,
+      Division,
+      DynItemProcessorPrfl,
+      JointVenture,
+      JointVentureCostRecoveryCode,
+      JointVentureEquityType,
+      JointVentureObjectType,
+      JointVentureClass,
+      JointVentureSubClass,
+      @Semantics.calendar.dayOfMonth: true
+      ForecastedStartDate,
+      @Semantics.calendar.dayOfMonth: true
+      ForecastedEndDate,
+      cnldst_shorttx.shorttext         as ProjectLangBsdDescription,
+     // _ProjLangBsdDescription[1:Language = $session.system_language].ProjectLangBsdDescription,
+      _ControllingArea,
+      _CompanyCode,
+      _BusinessArea,
+      _CostCenter,
+      _Plant,
+      _ProjectProfileCode,
+      _ControllingObjectClass,
+      _Status,
+
+      @UI.hidden: true
+      @Consumption.hidden: true
+      _ResponsiblePerson,
+      @UI.hidden: true
+      @Consumption.hidden: true
+      _ProjectApplicant,
+      I_Project._ProjectShortText
+
+}
+```

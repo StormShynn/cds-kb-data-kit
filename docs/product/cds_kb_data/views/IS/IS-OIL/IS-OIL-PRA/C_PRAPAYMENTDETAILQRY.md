@@ -5,9 +5,22 @@ app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAPAYMENTDETAILQRY')/$value
 semantic_en: "PRA Payment Detail Query"
+semantic_vi: "PRA Payment Detail Query — CDS view tiêu dùng dựa trên I_PRAPaymentDetail."
+keywords:
+  - "pra"
+  - "payment"
+  - "detail"
+  - "query"
+  - "process"
+  - "reference"
+  - "owner"
+  - "joint"
+  - "venture"
+  - "division"
+  - "interest"
 tags:
   - IS
   - component:IS-OIL-PRA
@@ -15,7 +28,6 @@ tags:
   - IS-OIL
   - IS-OIL-PRA
   - payment
-  - metadata-only
 ---
 # C_PRAPAYMENTDETAILQRY
 
@@ -27,7 +39,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAPAYMENTDETAILQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAPAYMENTDETAILQRY')/$value) |
 
 ## Fields
 
@@ -84,3 +96,124 @@ tags:
 | `TotalDeductionAmt` |  | |  |  | `CURR(15)` | Total Owner Other Deducts |
 | `GrossLessDeductionAmt` |  | |  |  | `CURR(13)` | Gross value less deductions |
 | `WeightedNetPrice` |  | |  |  | `CURR(15)` | Price |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAPAYMENTDETAILQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAPAYMENTDETAILQRY')/$value)*
+
+```abap
+@EndUserText.label: 'PRA Payment Detail Query'
+@Analytics.query:true
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
+@AbapCatalog.sqlViewName: 'CPVPAYMENTDTLQ'
+//@OData.publish: true
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+
+define view C_PRAPaymentDetailQry
+  //  with parameters
+  //    @Consumption.hidden: true
+  //    @Environment.systemField: #SYSTEM_LANGUAGE
+  //    P_Language : sylangu
+  as select from I_PRAPaymentDetail
+{
+  @AnalyticsDetails.query.display: #TEXT
+  ProcessRun,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 2
+  PaymentReference,
+  @Consumption.filter: { selectionType : #RANGE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 1
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PRAOwner,
+  JointVenture,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  DivisionOfInterest,
+  Well,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  WellCompletion,
+  @AnalyticsDetails.query.display: #TEXT
+  OwnerInterestType,
+  OwnerInterestSequence,
+  SalesDate,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Product,
+  DisbursementDecimalRatio,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  GLAccount,
+  @AnalyticsDetails.query.display: #TEXT
+  RecordType,
+  CompanyCode,
+  FiscalPeriod,
+  DeliveryNetwork,
+  @AnalyticsDetails.query.display: #TEXT
+  Country,
+  @AnalyticsDetails.query.display: #TEXT
+  Region,
+  @AnalyticsDetails.query.display: #TEXT
+  County,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  UnitJointVenture,
+  @AnalyticsDetails.query.display: #TEXT
+  SuspenseReason,
+  @AnalyticsDetails.query.display: #TEXT
+  PriorPeriodAdjustmentReason,
+  @AnalyticsDetails.query.display: #TEXT
+  CalculationBasis,
+  @AnalyticsDetails.query.display: #TEXT
+  PaymentDetailRejectionRsn,
+  PaymentDate,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  JntIntrstBilgVenture,
+  @AnalyticsDetails.query.display: #TEXT
+  JointVentureEquityType,
+  @AnalyticsDetails.query.display: #TEXT
+  JointVentureEquityGroup,
+
+  CreatedByUser,
+  CreationDateTime,
+  CompanyCodeCurrency,
+
+  @AnalyticsDetails.query.hidden
+  NetRevenueInterestRatio,
+  @AnalyticsDetails.query.hidden
+  HeatingValue,
+  VolumeUnit,
+  EnergyUnit,
+  HeatingValUnit,
+  @AnalyticsDetails.query.hidden
+  GrossVolInVolUnit,
+  @AnalyticsDetails.query.hidden
+  GrossAmount,
+  @AnalyticsDetails.query.hidden
+  OwnerGrossAmount,
+  @AnalyticsDetails.query.axis: #COLUMNS
+  OwnerNetAmount,
+  @AnalyticsDetails.query.axis: #COLUMNS
+  OwnerNetVolInVolUnit,
+  @AnalyticsDetails.query.hidden
+  GrossEnergyInEnergyUnit,
+  @AnalyticsDetails.query.hidden
+  OwnerEnergyInEnergyUnit,
+  @AnalyticsDetails.query.hidden
+  GrossMarketingCost,
+  @AnalyticsDetails.query.hidden
+  GrossTaxAmount,
+  @AnalyticsDetails.query.hidden
+  TotalMarketingAmt,
+  @AnalyticsDetails.query.hidden
+  OwnerTaxAmount,
+  @AnalyticsDetails.query.hidden
+  TotalDeductionAmt,
+  @AnalyticsDetails.query.hidden
+  GrossLessDeductionAmt,
+  @AnalyticsDetails.query.hidden
+  WeightedNetPrice
+
+}
+```
