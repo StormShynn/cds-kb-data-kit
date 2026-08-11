@@ -96,7 +96,7 @@ function renderHtml(embeddedJson, stats) {
     color: var(--text-primary);
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   }
-  .container { max-width: 980px; margin: 0 auto; padding: 32px 20px 64px; }
+  .container { max-width: 1360px; margin: 0 auto; padding: 32px 20px 64px; }
   h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
   h1 span { color: var(--text-secondary); font-weight: 400; }
   .subtitle { color: var(--text-muted); font-size: 13px; margin: 0 0 4px; }
@@ -142,9 +142,18 @@ function renderHtml(embeddedJson, stats) {
 
   .builder { display: none; margin-top: 24px; }
   .builder.open { display: block; }
+  .builder-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(340px, 1fr); gap: 28px; align-items: start; }
+  .builder-right { position: sticky; top: 20px; }
+  @media (max-width: 920px) {
+    .builder-grid { grid-template-columns: 1fr; }
+    .builder-right { position: static; }
+  }
   .section { margin-top: 22px; }
+  .builder-left .section:first-child { margin-top: 0; }
   .section h2 { font-size: 13px; color: var(--text-secondary); margin: 0 0 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
   .section .subhint { color: var(--text-muted); font-size: 12px; margin: -6px 0 10px; }
+
+  .field-filter { width: 100%; margin-bottom: 6px; }
 
   .field-grid {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 6px;
@@ -212,46 +221,72 @@ function renderHtml(embeddedJson, stats) {
   </div>
 
   <div id="builder" class="builder">
-    <div class="section">
-      <h2>Select</h2>
-      <p class="subhint">Tick fields to include. Pick an aggregate to wrap a field (e.g. SUM), or leave "—" for a plain column. Nothing ticked = <code>SELECT *</code>.</p>
-      <div class="field-grid" id="selectFields"></div>
-    </div>
+    <div class="builder-grid">
+      <div class="builder-left">
+        <div class="section">
+          <h2>Select</h2>
+          <p class="subhint">Tick fields to include. Pick an aggregate to wrap a field (e.g. SUM), or leave "—" for a plain column. Nothing ticked = <code>SELECT *</code>.</p>
+          <div class="raw-toggle"><input type="checkbox" id="selectRawToggle" /><label for="selectRawToggle">Type raw SELECT text instead of using the builder below</label></div>
+          <textarea id="selectRaw" class="raw" style="display:none" placeholder="e.g. Product, COUNT(*) AS ProductCount"></textarea>
+          <div id="selectBuilderWrap">
+            <input type="text" id="selectFieldFilter" class="field-filter" placeholder="Filter fields…" autocomplete="off" spellcheck="false" />
+            <div class="field-grid" id="selectFields"></div>
+          </div>
+        </div>
 
-    <div class="section">
-      <h2>Where</h2>
-      <div class="raw-toggle"><input type="checkbox" id="whereRawToggle" /><label for="whereRawToggle">Type raw WHERE text instead of using the builder below</label></div>
-      <textarea id="whereRaw" class="raw" style="display:none" placeholder="e.g. ProductType = 'FERT' AND IsMarkedForDeletion = ''"></textarea>
-      <div id="whereRows"></div>
-      <button id="whereAdd" class="link">+ add condition</button>
-    </div>
+        <div class="section">
+          <h2>Where</h2>
+          <div class="raw-toggle"><input type="checkbox" id="whereRawToggle" /><label for="whereRawToggle">Type raw WHERE text instead of using the builder below</label></div>
+          <textarea id="whereRaw" class="raw" style="display:none" placeholder="e.g. ProductType = 'FERT' AND IsMarkedForDeletion = ''"></textarea>
+          <div id="whereBuilderWrap">
+            <div id="whereRows"></div>
+            <button id="whereAdd" class="link">+ add condition</button>
+          </div>
+        </div>
 
-    <div class="section">
-      <h2>Group By</h2>
-      <p class="subhint">Fields not ticked here that ARE ticked above with an aggregate are fine; a plain (non-aggregated) SELECT field should usually also be ticked here.</p>
-      <div class="field-grid" id="groupByFields"></div>
-    </div>
+        <div class="section">
+          <h2>Group By</h2>
+          <p class="subhint">Fields not ticked here that ARE ticked above with an aggregate are fine; a plain (non-aggregated) SELECT field should usually also be ticked here.</p>
+          <div class="raw-toggle"><input type="checkbox" id="groupByRawToggle" /><label for="groupByRawToggle">Type raw GROUP BY text instead of using the builder below</label></div>
+          <textarea id="groupByRaw" class="raw" style="display:none" placeholder="e.g. ProductType, ProductGroup"></textarea>
+          <div id="groupByBuilderWrap">
+            <input type="text" id="groupByFieldFilter" class="field-filter" placeholder="Filter fields…" autocomplete="off" spellcheck="false" />
+            <div class="field-grid" id="groupByFields"></div>
+          </div>
+        </div>
 
-    <div class="section">
-      <h2>Having</h2>
-      <p class="subhint">Filters applied after GROUP BY — typically on an aggregate, e.g. <code>COUNT(*) &gt; 1</code>.</p>
-      <div id="havingRows"></div>
-      <button id="havingAdd" class="link">+ add condition</button>
-    </div>
+        <div class="section">
+          <h2>Having</h2>
+          <p class="subhint">Filters applied after GROUP BY — typically on an aggregate, e.g. <code>COUNT(*) &gt; 1</code>.</p>
+          <div class="raw-toggle"><input type="checkbox" id="havingRawToggle" /><label for="havingRawToggle">Type raw HAVING text instead of using the builder below</label></div>
+          <textarea id="havingRaw" class="raw" style="display:none" placeholder="e.g. COUNT(*) > 1"></textarea>
+          <div id="havingBuilderWrap">
+            <div id="havingRows"></div>
+            <button id="havingAdd" class="link">+ add condition</button>
+          </div>
+        </div>
 
-    <div class="section">
-      <h2>Order By</h2>
-      <div id="orderRows"></div>
-      <button id="orderAdd" class="link">+ add sort field</button>
-    </div>
-
-    <div class="section">
-      <h2>Generated query</h2>
-      <div class="output-bar">
-        <button id="copyBtn">📋 Copy</button>
-        <span class="copied" id="copiedMsg">Copied!</span>
+        <div class="section">
+          <h2>Order By</h2>
+          <div class="raw-toggle"><input type="checkbox" id="orderRawToggle" /><label for="orderRawToggle">Type raw ORDER BY text instead of using the builder below</label></div>
+          <textarea id="orderRaw" class="raw" style="display:none" placeholder="e.g. ProductType ASC, Product DESC"></textarea>
+          <div id="orderBuilderWrap">
+            <div id="orderRows"></div>
+            <button id="orderAdd" class="link">+ add sort field</button>
+          </div>
+        </div>
       </div>
-      <pre id="output"></pre>
+
+      <div class="builder-right">
+        <div class="section">
+          <h2>Generated query</h2>
+          <div class="output-bar">
+            <button id="copyBtn">📋 Copy</button>
+            <span class="copied" id="copiedMsg">Copied!</span>
+          </div>
+          <pre id="output"></pre>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -378,6 +413,8 @@ function renderHtml(embeddedJson, stats) {
   let havingConds = [];
   let orderConds = []; // { field, dir }
 
+  const RAW_SECTIONS = ['select', 'where', 'groupBy', 'having', 'order'];
+
   function resetBuilderState() {
     selectState = {};
     groupByState = {};
@@ -385,17 +422,54 @@ function renderHtml(embeddedJson, stats) {
     whereConds = [{ field: currentFields[0]?.name || '', op: '=', value: '', value2: '', joiner: 'AND' }];
     havingConds = [];
     orderConds = [];
-    document.getElementById('whereRawToggle').checked = false;
-    document.getElementById('whereRaw').style.display = 'none';
-    document.getElementById('whereRaw').value = '';
+    for (const prefix of RAW_SECTIONS) {
+      document.getElementById(prefix + 'RawToggle').checked = false;
+      document.getElementById(prefix + 'Raw').style.display = 'none';
+      document.getElementById(prefix + 'Raw').value = '';
+      document.getElementById(prefix + 'BuilderWrap').style.display = '';
+    }
+    document.getElementById('selectFieldFilter').value = '';
+    document.getElementById('groupByFieldFilter').value = '';
   }
+
+  // Each section (Select/Where/Group By/Having/Order By) can be typed as raw
+  // text instead of using its structured builder — the builder UI covers the
+  // common cases, but CASE expressions, function calls, or anything else the
+  // structured rows can't represent still need an escape hatch.
+  function wireRawToggle(prefix) {
+    const toggle = document.getElementById(prefix + 'RawToggle');
+    const raw = document.getElementById(prefix + 'Raw');
+    const wrap = document.getElementById(prefix + 'BuilderWrap');
+    toggle.addEventListener('change', (e) => {
+      raw.style.display = e.target.checked ? '' : 'none';
+      wrap.style.display = e.target.checked ? 'none' : '';
+      buildQuery();
+    });
+    raw.addEventListener('input', buildQuery);
+  }
+  RAW_SECTIONS.forEach(wireRawToggle);
+
+  // Quick filter above a field-grid: hides non-matching .field-item rows
+  // instead of re-rendering, so ticked/aggregate state on visible rows is
+  // never disturbed by typing into the filter.
+  function wireFieldFilter(inputId, gridId) {
+    document.getElementById(inputId).addEventListener('input', (e) => {
+      const term = e.target.value.trim().toUpperCase();
+      document.querySelectorAll('#' + gridId + ' .field-item').forEach((item) => {
+        const name = item.dataset.name || '';
+        item.style.display = !term || name.includes(term) ? '' : 'none';
+      });
+    });
+  }
+  wireFieldFilter('selectFieldFilter', 'selectFields');
+  wireFieldFilter('groupByFieldFilter', 'groupByFields');
 
   function renderSelectFields() {
     const el = document.getElementById('selectFields');
     el.innerHTML = currentFields.map(f => {
       const id = 'sel_' + f.name;
       const aggOpts = AGGS.map(a => '<option value="' + a + '">' + a + '</option>').join('');
-      return '<div class="field-item"><input type="checkbox" id="' + id + '" data-field="' + escapeHtml(f.name) + '" class="selChk" />' +
+      return '<div class="field-item" data-name="' + escapeHtml(f.name.toUpperCase()) + '"><input type="checkbox" id="' + id + '" data-field="' + escapeHtml(f.name) + '" class="selChk" />' +
         '<label for="' + id + '" title="' + escapeHtml(f.source || f.name) + '">' + escapeHtml(f.name) + '</label>' +
         (f.isKey ? '<span class="key">key</span>' : '') +
         '<select id="agg_' + id + '" name="agg_' + id + '" data-field="' + escapeHtml(f.name) + '" class="selAgg">' + aggOpts + '</select></div>';
@@ -412,7 +486,7 @@ function renderHtml(embeddedJson, stats) {
     const el = document.getElementById('groupByFields');
     el.innerHTML = currentFields.map(f => {
       const id = 'grp_' + f.name;
-      return '<div class="field-item"><input type="checkbox" id="' + id + '" data-field="' + escapeHtml(f.name) + '" class="grpChk" />' +
+      return '<div class="field-item" data-name="' + escapeHtml(f.name.toUpperCase()) + '"><input type="checkbox" id="' + id + '" data-field="' + escapeHtml(f.name) + '" class="grpChk" />' +
         '<label for="' + id + '">' + escapeHtml(f.name) + '</label></div>';
     }).join('') || '<span style="color:var(--text-muted)">No parsed field list for this view yet.</span>';
     el.querySelectorAll('.grpChk').forEach(chk => chk.addEventListener('change', (e) => {
@@ -466,13 +540,6 @@ function renderHtml(embeddedJson, stats) {
     havingConds.push({ field: currentFields[0]?.name || '', op: '=', value: '', value2: '', joiner: 'AND' });
     renderHavingRows(); buildQuery();
   });
-  document.getElementById('whereRawToggle').addEventListener('change', (e) => {
-    document.getElementById('whereRaw').style.display = e.target.checked ? '' : 'none';
-    document.getElementById('whereRows').style.display = e.target.checked ? 'none' : '';
-    document.getElementById('whereAdd').style.display = e.target.checked ? 'none' : '';
-    buildQuery();
-  });
-  document.getElementById('whereRaw').addEventListener('input', buildQuery);
 
   function renderOrderRows() {
     const el = document.getElementById('orderRows');
@@ -522,33 +589,41 @@ function renderHtml(embeddedJson, stats) {
     return conds.map((c, i) => (i === 0 ? '' : '  ' + c.joiner + ' ') + conditionText(c)).join('\\n');
   }
 
+  function isRaw(prefix) { return document.getElementById(prefix + 'RawToggle').checked; }
+  function rawText(prefix) { return document.getElementById(prefix + 'Raw').value.trim(); }
+
   function buildQuery() {
     const out = document.getElementById('output');
     if (!currentView) { out.textContent = ''; return; }
 
-    const selected = currentFields.filter(f => selectState[f.name]?.checked);
-    const selectParts = selected.map(f => {
-      const agg = selectState[f.name].agg;
-      return agg === AGGS[0] ? f.name : agg + '(' + f.name + ')';
-    });
-    const selectText = selectParts.length ? selectParts.join(',\\n  ') : '*';
-
-    const groupFields = currentFields.filter(f => groupByState[f.name]).map(f => f.name);
-
-    let whereText = '';
-    if (document.getElementById('whereRawToggle').checked) {
-      whereText = document.getElementById('whereRaw').value.trim();
+    let selectText;
+    if (isRaw('select')) {
+      selectText = rawText('select') || '*';
     } else {
-      whereText = conditionsText(whereConds.filter(c => c.field));
+      const selected = currentFields.filter(f => selectState[f.name]?.checked);
+      const selectParts = selected.map(f => {
+        const agg = selectState[f.name].agg;
+        return agg === AGGS[0] ? f.name : agg + '(' + f.name + ')';
+      });
+      selectText = selectParts.length ? selectParts.join(',\\n  ') : '*';
     }
 
-    const havingText = conditionsText(havingConds.filter(c => c.field));
+    let groupText;
+    if (isRaw('groupBy')) {
+      groupText = rawText('groupBy');
+    } else {
+      groupText = currentFields.filter(f => groupByState[f.name]).map(f => f.name).join(', ');
+    }
+
+    const whereText = isRaw('where') ? rawText('where') : conditionsText(whereConds.filter(c => c.field));
+    const havingText = isRaw('having') ? rawText('having') : conditionsText(havingConds.filter(c => c.field));
+    const orderText = isRaw('order') ? rawText('order') : orderConds.map(c => c.field + ' ' + c.dir).join(', ');
 
     let lines = ['SELECT', '  ' + selectText, 'FROM ' + currentView];
     if (whereText) lines.push('WHERE\\n  ' + whereText);
-    if (groupFields.length) lines.push('GROUP BY ' + groupFields.join(', '));
+    if (groupText) lines.push('GROUP BY ' + groupText);
     if (havingText) lines.push('HAVING\\n  ' + havingText);
-    if (orderConds.length) lines.push('ORDER BY ' + orderConds.map(c => c.field + ' ' + c.dir).join(', '));
+    if (orderText) lines.push('ORDER BY ' + orderText);
 
     out.textContent = lines.join('\\n');
   }
