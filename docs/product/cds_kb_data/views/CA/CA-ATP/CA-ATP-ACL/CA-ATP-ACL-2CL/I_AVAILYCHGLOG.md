@@ -30,11 +30,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AvailabilityChangeLogUUID` | ✓ | |  | `netchguuid` |  |  |
-| `Material` |  | |  | `matnr` |  |  |
-| `Plant` |  | |  | `werks` |  |  |
-| `MRPArea` |  | |  | `berid` |  |  |
-| `AvailabilityChangeLogCategory` |  | |  | `netchgcategory` |  |  |
+| `AvailabilityChangeLogUUID` | ✓ | |  | `netchguuid` | `RAW(16)` | Availability Change Log UUID |
+| `Material` |  | |  | `matnr` | `CHAR(40)` | Material Number |
+| `Plant` |  | |  | `werks` | `CHAR(4)` | Plant |
+| `MRPArea` |  | |  | `berid` | `CHAR(10)` | MRP Area |
+| `AvailabilityChangeLogCategory` |  | |  | `netchgcategory` | `NUMC(2)` | Availability Change Log Category |
 | `_AvailyChgLogTmeStmp` | | ✓ | | | | |
 | `_AvailyChgLogCat` | | ✓ | | | | |
 | `_Product` | | ✓ | | | | |

@@ -7463,5 +7463,55 @@
     "attemptedAt": "2026-08-09T08:42:46.012Z",
     "found": true,
     "matched": 2
+  },
+  "I_ATPCHECKINGGROUPTEXT": {
+    "attemptedAt": "2026-08-11T07:26:47.344Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SDSCHEDULELINEWTHOPENRQMTQTY": {
+    "attemptedAt": "2026-08-11T07:26:47.947Z",
+    "found": true,
+    "matched": 23
+  },
+  "I_AVAILYCHGLOG": {
+    "attemptedAt": "2026-08-11T07:26:48.510Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_AVAILYCHGLOGCAT": {
+    "attemptedAt": "2026-08-11T07:26:49.097Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_AVAILYCHGLOGCATTEXT": {
+    "attemptedAt": "2026-08-11T07:26:49.703Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_AVAILYCHGLOGTMESTMP": {
+    "attemptedAt": "2026-08-11T07:26:50.292Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_OBJVALDETNACTIVATIONSTATUS": {
+    "attemptedAt": "2026-08-11T07:26:50.878Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_OBJVALDETNACTIVATIONSTSTEXT": {
+    "attemptedAt": "2026-08-11T07:26:51.490Z",
+    "found": true,
+    "matched": 4
+  },
+  "D_CHARCVALCOMBNDELACTVENTITYP": {
+    "attemptedAt": "2026-08-11T07:26:51.696Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CHARCVALCOMBNDELACTVENTITYP\" (404)"
+  },
+  "D_TMESERSDELETEACTIVEENTITYP": {
+    "attemptedAt": "2026-08-11T07:26:52.151Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_TMESERSDELETEACTIVEENTITYP\" (404)"
   }
 }

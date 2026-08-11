@@ -30,29 +30,29 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SalesDocument` | ✓ | |  |  |  |  |
-| `SalesDocumentItem` | ✓ | |  |  |  |  |
-| `ScheduleLine` | ✓ | |  |  |  |  |
-| `SDDocumentCategory` |  | |  |  |  |  |
-| `ATPRelevantDocumentCategory` |  | |  |  |  |  |
-| `SalesDocumentType` |  | |  |  |  |  |
-| `RequirementType` |  | |  |  |  |  |
-| `Product` |  | |  |  |  |  |
-| `Plant` |  | |  |  |  |  |
-| `MRPArea` |  | |  |  |  |  |
-| `StorageLocation` |  | |  |  |  |  |
-| `Batch` |  | |  |  |  |  |
-| `InventorySpecialStockType` |  | |  |  |  |  |
-| `WBSElementInternalID` |  | |  |  |  |  |
-| `SoldToParty` |  | |  |  |  |  |
-| `AccountAssignmentCategory` |  | |  |  |  |  |
-| `IndependentRqmtMRPRelevancy` |  | |  |  |  |  |
-| `PlndIndepRqmtUsage` |  | |  |  |  |  |
-| `InventorySpecialStockValnType` |  | |  |  |  |  |
-| `ProductAvailabilityDate` |  | |  |  |  |  |
-| `RequestedQuantityInBaseUnit` |  | |  |  |  |  |
-| `ConfirmedQuantityInBaseUnit` |  | |  |  |  |  |
-| `BaseUnit` |  | |  |  |  |  |
+| `SalesDocument` | ✓ | |  |  | `CHAR(10)` | Sales Document |
+| `SalesDocumentItem` | ✓ | |  |  | `NUMC(6)` | Sales Document Item |
+| `ScheduleLine` | ✓ | |  |  | `NUMC(4)` | Schedule Line Number |
+| `SDDocumentCategory` |  | |  |  | `CHAR(4)` | SD Document Category |
+| `ATPRelevantDocumentCategory` |  | |  |  | `CHAR(2)` | Category of a Document Included in ATP Checks |
+| `SalesDocumentType` |  | |  |  | `CHAR(4)` | Sales Document Type |
+| `RequirementType` |  | |  |  | `CHAR(2)` | Requirement type |
+| `Product` |  | |  |  | `CHAR(40)` | Material Number |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `MRPArea` |  | |  |  | `CHAR(10)` | MRP Area |
+| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
+| `Batch` |  | |  |  | `CHAR(10)` | Batch Number |
+| `InventorySpecialStockType` |  | |  |  | `CHAR(1)` | Special Stock Indicator |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-to Party |
+| `AccountAssignmentCategory` |  | |  |  | `CHAR(1)` | Account Assignment Category |
+| `IndependentRqmtMRPRelevancy` |  | |  |  | `CHAR(1)` | Requirements record not relevant to MRP |
+| `PlndIndepRqmtUsage` |  | |  |  | `CHAR(1)` | Planning Indicator |
+| `InventorySpecialStockValnType` |  | |  |  | `CHAR(1)` | Valuation of Special Stock |
+| `ProductAvailabilityDate` |  | |  |  | `DATS(8)` | Material Staging/Availability Date |
+| `RequestedQuantityInBaseUnit` |  | |  |  | `QUAN(15)` | Open Qty in Stockkeeping Units for Transfer of Reqmts to MRP |
+| `ConfirmedQuantityInBaseUnit` |  | |  |  | `QUAN(15)` | Confirmed quantity for availability check in SKU |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
 | `_SalesDocument` | | ✓ | | | | |
 | `_SalesDocumentItem` | | ✓ | | | | |
 | `_SalesDocumentScheduleLine` | | ✓ | | | | |

@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AvailabilityChangeLogUUID` | ✓ | |  | `netchguuid` |  |  |
-| `AvailabilityChangeLogDateTime` | ✓ | |  | `netchgtstamp` |  |  |
+| `AvailabilityChangeLogUUID` | ✓ | |  | `netchguuid` | `RAW(16)` | Availability Change Log UUID |
+| `AvailabilityChangeLogDateTime` | ✓ | |  | `netchgtstamp` | `DEC(21)` | Availability Change Log timestamp |
 | `_AvailyChgLog` | | ✓ | | | | |
 
 ## Associations
