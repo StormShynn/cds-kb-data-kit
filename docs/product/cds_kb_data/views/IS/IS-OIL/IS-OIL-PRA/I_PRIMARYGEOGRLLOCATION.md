@@ -1,13 +1,13 @@
 ---
 name: I_PRIMARYGEOGRLLOCATION
-description: "Master Data Primary Geographical Location"
+description: "Master Data Primary Geogrl Location"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRIMARYGEOGRLLOCATION')/$value
-semantic_en: "Master Data Primary Geographical Location"
+semantic_en: "Master Data Primary Geogrl Location"
 tags:
   - IS
   - bo:businesspartner
@@ -20,7 +20,7 @@ tags:
 ---
 # I_PRIMARYGEOGRLLOCATION
 
-**Master Data Primary Geographical Location**
+**Master Data Primary Geogrl Location**
 
 | Property | Value |
 |---|---|

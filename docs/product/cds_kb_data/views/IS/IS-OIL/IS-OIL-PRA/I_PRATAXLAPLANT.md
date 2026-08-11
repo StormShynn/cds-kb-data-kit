@@ -1,28 +1,25 @@
 ---
 name: I_PRATAXLAPLANT
-description: "Production Revenue Accounting Tax Louisiana Plant"
+description: "PRA Tax Louisiana Plant"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXLAPLANT')/$value
-semantic_en: "Production Revenue Accounting Tax Louisiana Plant"
+semantic_en: "PRA Tax Louisiana Plant"
 tags:
   - IS
-  - account
-  - bo:material
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
   - plan
-  - product
   - metadata-only
 ---
 # I_PRATAXLAPLANT
 
-**Production Revenue Accounting Tax Louisiana Plant**
+**PRA Tax Louisiana Plant**
 
 | Property | Value |
 |---|---|

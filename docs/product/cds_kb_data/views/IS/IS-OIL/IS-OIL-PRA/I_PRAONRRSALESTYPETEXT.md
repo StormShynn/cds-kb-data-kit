@@ -1,27 +1,24 @@
 ---
 name: I_PRAONRRSALESTYPETEXT
-description: "Production Revenue Accounting Office of Natural Resources Revenue Sales Type - Text"
+description: "PRA ONRR Sales Type - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAONRRSALESTYPETEXT')/$value
-semantic_en: "Production Revenue Accounting Office of Natural Resources Revenue Sales Type - Text"
+semantic_en: "PRA ONRR Sales Type - Text"
 tags:
   - IS
-  - account
-  - bo:companycode
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRAONRRSALESTYPETEXT
 
-**Production Revenue Accounting Office of Natural Resources Revenue Sales Type - Text**
+**PRA ONRR Sales Type - Text**
 
 | Property | Value |
 |---|---|

@@ -1,16 +1,16 @@
 ---
 name: I_WORKFORCEPERSONDEX_1
-description: "Workforce Person"
+description: "This CDS view is designed to provide a comprehensive overview of workforce personnel by integrating business partner data with identification details. It serves as a composite view that extracts and consolidates essential information about individuals within an organization, focusing on their identification and personal attributes. This CDS view provides the data to answer the following business questions: Who are the workforce personnel within the organization, and what are their identification numbers? What are the full names and birth names of the workforce personnel? What are the preferred languages for correspondence for each workforce person? Is the business purpose for each workforce person completed? How can workforce personnel be associated with their respective work assignments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKFORCEPERSONDEX_1')/$value
-semantic_en: "Workforce Person"
+semantic_en: "This CDS view is designed to provide a comprehensive overview of workforce personnel by integrating business partner data with identification details. It serves as a composite view that extracts and consolidates essential information about individuals within an organization, focusing on their identification and personal attributes. This CDS view provides the data to answer the following business questions: Who are the workforce personnel within the organization, and what are their identification numbers? What are the full names and birth names of the workforce personnel? What are the preferred languages for correspondence for each workforce person? Is the business purpose for each workforce person completed? How can workforce personnel be associated with their respective work assignments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - CA
-  - bo:salesorder
+  - bo:companycode
   - CA-WFD
   - CA-WFD-BL
   - component:CA-WFD-BL
@@ -20,7 +20,7 @@ tags:
 ---
 # I_WORKFORCEPERSONDEX_1
 
-**Workforce Person**
+**This CDS view is designed to provide a comprehensive overview of workforce personnel by integrating business partner data with identification details. It serves as a composite view that extracts and consolidates essential information about individuals within an organization, focusing on their identification and personal attributes. This CDS view provides the data to answer the following business questions: Who are the workforce personnel within the organization, and what are their identification numbers? What are the full names and birth names of the workforce personnel? What are the preferred languages for correspondence for each workforce person? Is the business purpose for each workforce person completed? How can workforce personnel be associated with their respective work assignments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

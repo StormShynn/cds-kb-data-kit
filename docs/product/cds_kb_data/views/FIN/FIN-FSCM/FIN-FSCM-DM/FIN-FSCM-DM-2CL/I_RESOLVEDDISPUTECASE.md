@@ -1,17 +1,19 @@
 ---
 name: I_RESOLVEDDISPUTECASE
-description: "Resolved Dispute Case - Cube"
+description: "This CDS view is designed to provide a comprehensive overview of resolved dispute cases within an organization. It aggregates and presents data related to dispute cases, including their resolution status, processing details, and financial implications over various time periods. The view is structured to support analytical processing and reporting, enabling users to gain insights into the efficiency and effectiveness of dispute resolution processes in SAP Dispute Management. This CDS view provides the data to answer the following business questions: How many dispute cases have been resolved in the current year, month, and quarter? What are the resolving days for dispute cases over different time periods such as the last 12 months, current month, last month, and current year? What is the total amount of money involved in resolved dispute cases in the display currency for the last 12 months, current month, last month, current year, and last quarter? What are the details of the dispute cases, including customer information, company code, case type, reason, status, priority, and root cause? Who are the processors and coordinators involved in resolving these dispute cases? How does the resolution of dispute cases vary across different customer account groups and authorization groups? What is the trend in dispute case resolution over different periods, and how does it impact the organization's financials? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RESOLVEDDISPUTECASE')/$value
-semantic_en: "Resolved Dispute Case - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive overview of resolved dispute cases within an organization. It aggregates and presents data related to dispute cases, including their resolution status, processing details, and financial implications over various time periods. The view is structured to support analytical processing and reporting, enabling users to gain insights into the efficiency and effectiveness of dispute resolution processes in SAP Dispute Management. This CDS view provides the data to answer the following business questions: How many dispute cases have been resolved in the current year, month, and quarter? What are the resolving days for dispute cases over different time periods such as the last 12 months, current month, last month, and current year? What is the total amount of money involved in resolved dispute cases in the display currency for the last 12 months, current month, last month, current year, and last quarter? What are the details of the dispute cases, including customer information, company code, case type, reason, status, priority, and root cause? Who are the processors and coordinators involved in resolving these dispute cases? How does the resolution of dispute cases vary across different customer account groups and authorization groups? What is the trend in dispute case resolution over different periods, and how does it impact the organization's financials? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FIN
-  - bo:salesorder
+  - account
+  - bo:businesspartner
   - component:FIN-FSCM-DM-2CL
+  - customer
   - FIN-FSCM
   - FIN-FSCM-DM
   - FIN-FSCM-DM-2CL
@@ -21,7 +23,7 @@ tags:
 ---
 # I_RESOLVEDDISPUTECASE
 
-**Resolved Dispute Case - Cube**
+**This CDS view is designed to provide a comprehensive overview of resolved dispute cases within an organization. It aggregates and presents data related to dispute cases, including their resolution status, processing details, and financial implications over various time periods. The view is structured to support analytical processing and reporting, enabling users to gain insights into the efficiency and effectiveness of dispute resolution processes in SAP Dispute Management. This CDS view provides the data to answer the following business questions: How many dispute cases have been resolved in the current year, month, and quarter? What are the resolving days for dispute cases over different time periods such as the last 12 months, current month, last month, and current year? What is the total amount of money involved in resolved dispute cases in the display currency for the last 12 months, current month, last month, current year, and last quarter? What are the details of the dispute cases, including customer information, company code, case type, reason, status, priority, and root cause? Who are the processors and coordinators involved in resolving these dispute cases? How does the resolution of dispute cases vary across different customer account groups and authorization groups? What is the trend in dispute case resolution over different periods, and how does it impact the organization's financials? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

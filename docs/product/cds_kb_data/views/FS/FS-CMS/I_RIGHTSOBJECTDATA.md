@@ -53,7 +53,7 @@ tags:
 | `ClaimsObjectSavingsSumPercent` |  | |  |  | `DEC(10)` | Savings sum in Percentage (In building savings contracts) |
 | `ClaimsObjectDoubtfulDebtAmount` |  | |  |  | `CURR(17)` | Provision doubtful debt amount |
 | `ClaimsObjectDoubtfulDebtCrcy` |  | |  |  | `CUKY(5)` | Currency of Provision of doubfull debt |
-| `ClaimsObjectAddressID` |  | |  |  | `CHAR(10)` | Address of the object (for build.sav.contr./rental claim) |
+| `ClaimsObjectAddressID` |  | |  |  | `CHAR(10)` |  Address of the object (for build.sav.contr./rental claim) |
 | `ClaimsObjectAccountNumber` |  | |  |  | `CHAR(35)` | Account number |
 | `ClaimsObjectBankCountryKey` |  | |  |  | `CHAR(3)` | Key of Bank Country/Region |
 | `ClaimsObjectBankKey` |  | |  |  | `CHAR(15)` | Bank Key |

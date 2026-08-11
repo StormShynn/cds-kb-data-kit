@@ -1,16 +1,15 @@
 ---
 name: I_TAXRPTGRVSLORBKGORADJMTCODE
-description: "Tax Report Reversal Or Booking Or Adjm Code"
+description: "Tax Rpt Rvsl Or Booking Or Adjm Code"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TAXRPTGRVSLORBKGORADJMTCODE')/$value
-semantic_en: "Tax Report Reversal Or Booking Or Adjm Code"
+semantic_en: "Tax Rpt Rvsl Or Booking Or Adjm Code"
 tags:
   - IS
-  - bo:purchaseorder
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
@@ -19,7 +18,7 @@ tags:
 ---
 # I_TAXRPTGRVSLORBKGORADJMTCODE
 
-**Tax Report Reversal Or Booking Or Adjm Code**
+**Tax Rpt Rvsl Or Booking Or Adjm Code**
 
 | Property | Value |
 |---|---|

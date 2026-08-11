@@ -1,13 +1,13 @@
 ---
 name: I_RESOURCEREQUESTPLANITEM
-description: "This CDS view provides the prerequisites for answering the following business questions: What kind of resource requests are planned in a customer or internal project? What are the different roles requested to execute a customer or internal project? How many hours have been requested for a role, and in which months? What is the planned cost of a request? What is the expected revenue for a resource request?"
+description: "This CDS view provides the prerequisites for answering the following business questions: What kind of resource requests are planned in a customer or internal project? What are the different roles requested to execute a customer or internal project? What are the skills required for each resource request? How many hours have been requested for a role, and in which months? What is the planned cost of a request? What is the planned cost of a request? What is the expected revenue for a resource request?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RESOURCEREQUESTPLANITEM')/$value
-semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What kind of resource requests are planned in a customer or internal project? What are the different roles requested to execute a customer or internal project? How many hours have been requested for a role, and in which months? What is the planned cost of a request? What is the expected revenue for a resource request?"
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What kind of resource requests are planned in a customer or internal project? What are the different roles requested to execute a customer or internal project? What are the skills required for each resource request? How many hours have been requested for a role, and in which months? What is the planned cost of a request? What is the planned cost of a request? What is the expected revenue for a resource request?"
 tags:
   - CA
   - bo:businesspartner
@@ -23,7 +23,7 @@ tags:
 ---
 # I_RESOURCEREQUESTPLANITEM
 
-**This CDS view provides the prerequisites for answering the following business questions: What kind of resource requests are planned in a customer or internal project? What are the different roles requested to execute a customer or internal project? How many hours have been requested for a role, and in which months? What is the planned cost of a request? What is the expected revenue for a resource request?**
+**This CDS view provides the prerequisites for answering the following business questions: What kind of resource requests are planned in a customer or internal project? What are the different roles requested to execute a customer or internal project? What are the skills required for each resource request? How many hours have been requested for a role, and in which months? What is the planned cost of a request? What is the planned cost of a request? What is the expected revenue for a resource request?**
 
 | Property | Value |
 |---|---|

@@ -1,27 +1,24 @@
 ---
 name: I_PRALEGALFORMTEXT
-description: "Production Revenue Accounting Legal Form - Text"
+description: "PRA Legal Form - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRALEGALFORMTEXT')/$value
-semantic_en: "Production Revenue Accounting Legal Form - Text"
+semantic_en: "PRA Legal Form - Text"
 tags:
   - IS
-  - account
-  - bo:material
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRALEGALFORMTEXT
 
-**Production Revenue Accounting Legal Form - Text**
+**PRA Legal Form - Text**
 
 | Property | Value |
 |---|---|

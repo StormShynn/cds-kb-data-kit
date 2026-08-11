@@ -1,28 +1,25 @@
 ---
 name: I_PRAACCTGDOCSMMRYSUSPENSE
-description: "Production Revenue Accounting Accounting Document Summary Suspense"
+description: "PRA Acctg Document Summary Suspense"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAACCTGDOCSMMRYSUSPENSE')/$value
-semantic_en: "Production Revenue Accounting Accounting Document Summary Suspense"
+semantic_en: "PRA Acctg Document Summary Suspense"
 tags:
   - IS
-  - account
-  - bo:journalentry
   - component:IS-OIL-PRA
   - document
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRAACCTGDOCSMMRYSUSPENSE
 
-**Production Revenue Accounting Accounting Document Summary Suspense**
+**PRA Acctg Document Summary Suspense**
 
 | Property | Value |
 |---|---|

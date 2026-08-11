@@ -1,16 +1,15 @@
 ---
 name: I_REINTEGOBJECTUSAGECLFNTEXT
-description: "Real Estate Integration Object Usage Classification - Text"
+description: "Real Estate Integ Obj Usage Clfn - Text"
 app_component: RE-FX-IP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJECTUSAGECLFNTEXT')/$value
-semantic_en: "Real Estate Integration Object Usage Classification - Text"
+semantic_en: "Real Estate Integ Obj Usage Clfn - Text"
 tags:
   - RE
-  - bo:companycode
   - component:RE-FX-IP-2CL
   - interface-view
   - RE-FX
@@ -20,7 +19,7 @@ tags:
 ---
 # I_REINTEGOBJECTUSAGECLFNTEXT
 
-**Real Estate Integration Object Usage Classification - Text**
+**Real Estate Integ Obj Usage Clfn - Text**
 
 | Property | Value |
 |---|---|

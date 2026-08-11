@@ -1,27 +1,24 @@
 ---
 name: I_PRACOSTCENTER
-description: "Production Revenue Accounting Cost Center"
+description: "PRA Cost Center"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRACOSTCENTER')/$value
-semantic_en: "Production Revenue Accounting Cost Center"
+semantic_en: "PRA Cost Center"
 tags:
   - IS
-  - account
-  - bo:material
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRACOSTCENTER
 
-**Production Revenue Accounting Cost Center**
+**PRA Cost Center**
 
 | Property | Value |
 |---|---|

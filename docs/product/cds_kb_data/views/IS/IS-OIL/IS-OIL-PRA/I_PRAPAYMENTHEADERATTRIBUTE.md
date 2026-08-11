@@ -1,28 +1,25 @@
 ---
 name: I_PRAPAYMENTHEADERATTRIBUTE
-description: "Production Revenue Accounting Payment Header Attribute"
+description: "PRA Payment Header Attribute"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAPAYMENTHEADERATTRIBUTE')/$value
-semantic_en: "Production Revenue Accounting Payment Header Attribute"
+semantic_en: "PRA Payment Header Attribute"
 tags:
   - IS
-  - account
-  - bo:material
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
   - payment
-  - product
   - metadata-only
 ---
 # I_PRAPAYMENTHEADERATTRIBUTE
 
-**Production Revenue Accounting Payment Header Attribute**
+**PRA Payment Header Attribute**
 
 | Property | Value |
 |---|---|

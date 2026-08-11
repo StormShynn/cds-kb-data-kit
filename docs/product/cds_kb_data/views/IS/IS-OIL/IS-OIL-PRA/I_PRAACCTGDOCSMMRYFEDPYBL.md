@@ -1,28 +1,25 @@
 ---
 name: I_PRAACCTGDOCSMMRYFEDPYBL
-description: "Production Revenue Accounting Accounting Document Summary Federal Payable"
+description: "PRA Acctg Document Summary Federal Pybl"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAACCTGDOCSMMRYFEDPYBL')/$value
-semantic_en: "Production Revenue Accounting Accounting Document Summary Federal Payable"
+semantic_en: "PRA Acctg Document Summary Federal Pybl"
 tags:
   - IS
-  - account
-  - bo:journalentry
   - component:IS-OIL-PRA
   - document
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRAACCTGDOCSMMRYFEDPYBL
 
-**Production Revenue Accounting Accounting Document Summary Federal Payable**
+**PRA Acctg Document Summary Federal Pybl**
 
 | Property | Value |
 |---|---|

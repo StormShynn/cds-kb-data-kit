@@ -1,27 +1,32 @@
 ---
 name: I_PROMISETOPAYOVERVIEW
-description: "Promise To Pay Overview - Cube"
+description: "This CDS view provides an overview of promises to pay, allowing you to analyze payment commitments made by customers in SAP Collections Management. It helps in tracking the status and details of these promises, facilitating better financial planning and collection strategies. It aggregates and presents data related to customer payment promises, including amounts promised, paid, and outstanding, along with associated metadata such as customer details, company codes, and currency information. How many promises to pay are currently open and what is their total value? What is the distribution of promised payments across different time intervals? Which customers have the highest promised amounts? What is the total amount promised by customers in a specific currency and exchange rate type? How much of the promised amount has been paid by customers? What is the outstanding amount that is yet to be paid by customers? What are the due intervals for promised payments, and how do they impact the open amounts? Which customers have outstanding promises to pay, and what are their associated company codes and account groups? What is the status of dispute cases related to promise-to-pay agreements? How are promised payments distributed across different collection segments and regions? What is the role of collection specialists in managing promise-to-pay agreements? How do different due intervals affect the open amounts in the display currency?"
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROMISETOPAYOVERVIEW')/$value
-semantic_en: "Promise To Pay Overview - Cube"
+semantic_en: "This CDS view provides an overview of promises to pay, allowing you to analyze payment commitments made by customers in SAP Collections Management. It helps in tracking the status and details of these promises, facilitating better financial planning and collection strategies. It aggregates and presents data related to customer payment promises, including amounts promised, paid, and outstanding, along with associated metadata such as customer details, company codes, and currency information. How many promises to pay are currently open and what is their total value? What is the distribution of promised payments across different time intervals? Which customers have the highest promised amounts? What is the total amount promised by customers in a specific currency and exchange rate type? How much of the promised amount has been paid by customers? What is the outstanding amount that is yet to be paid by customers? What are the due intervals for promised payments, and how do they impact the open amounts? Which customers have outstanding promises to pay, and what are their associated company codes and account groups? What is the status of dispute cases related to promise-to-pay agreements? How are promised payments distributed across different collection segments and regions? What is the role of collection specialists in managing promise-to-pay agreements? How do different due intervals affect the open amounts in the display currency?"
 tags:
   - FIN
+  - account
+  - bo:businesspartner
   - component:FIN-FSCM-COL-2CL
+  - customer
   - FIN-FSCM
   - FIN-FSCM-COL
   - FIN-FSCM-COL-2CL
   - interface-view
   - lob:controlling
   - lob:finance
+  - payment
+  - plan
   - metadata-only
 ---
 # I_PROMISETOPAYOVERVIEW
 
-**Promise To Pay Overview - Cube**
+**This CDS view provides an overview of promises to pay, allowing you to analyze payment commitments made by customers in SAP Collections Management. It helps in tracking the status and details of these promises, facilitating better financial planning and collection strategies. It aggregates and presents data related to customer payment promises, including amounts promised, paid, and outstanding, along with associated metadata such as customer details, company codes, and currency information. How many promises to pay are currently open and what is their total value? What is the distribution of promised payments across different time intervals? Which customers have the highest promised amounts? What is the total amount promised by customers in a specific currency and exchange rate type? How much of the promised amount has been paid by customers? What is the outstanding amount that is yet to be paid by customers? What are the due intervals for promised payments, and how do they impact the open amounts? Which customers have outstanding promises to pay, and what are their associated company codes and account groups? What is the status of dispute cases related to promise-to-pay agreements? How are promised payments distributed across different collection segments and regions? What is the role of collection specialists in managing promise-to-pay agreements? How do different due intervals affect the open amounts in the display currency?**
 
 | Property | Value |
 |---|---|

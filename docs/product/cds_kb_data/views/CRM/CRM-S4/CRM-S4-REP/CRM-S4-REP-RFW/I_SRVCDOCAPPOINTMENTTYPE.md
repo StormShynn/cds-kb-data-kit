@@ -35,4 +35,4 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SrvcDocAppointmentType` |  | |  |  | `CHAR(12)` | Technical Date Type Name |
+| `SrvcDocAppointmentType` |  | |  |  | `CHAR(12)` | Date Type |

@@ -35,6 +35,6 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SrvcDocAppointmentType` |  | |  |  | `CHAR(12)` | Technical Date Type Name |
+| `SrvcDocAppointmentType` |  | |  |  | `CHAR(12)` | Date Type |
 | `LanguageCode` |  | |  |  | `LANG(1)` | Language Key |
 | `SrvcDocAppointmentTypeText` |  | |  |  | `CHAR(40)` | Description |

@@ -1,27 +1,25 @@
 ---
 name: I_PRAARSTATUS
-description: "Production Revenue Accounting Accounts Receivable Status"
+description: "PRA Accounts Receivable Status"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAARSTATUS')/$value
-semantic_en: "Production Revenue Accounting Accounts Receivable Status"
+semantic_en: "PRA Accounts Receivable Status"
 tags:
   - IS
   - account
-  - bo:material
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRAARSTATUS
 
-**Production Revenue Accounting Accounts Receivable Status**
+**PRA Accounts Receivable Status**
 
 | Property | Value |
 |---|---|

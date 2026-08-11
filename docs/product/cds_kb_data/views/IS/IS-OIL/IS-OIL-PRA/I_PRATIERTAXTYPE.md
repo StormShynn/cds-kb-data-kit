@@ -1,27 +1,24 @@
 ---
 name: I_PRATIERTAXTYPE
-description: "Production Revenue Accounting Tier Tax Type"
+description: "PRA Tier Tax Type"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATIERTAXTYPE')/$value
-semantic_en: "Production Revenue Accounting Tier Tax Type"
+semantic_en: "PRA Tier Tax Type"
 tags:
   - IS
-  - account
-  - bo:material
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRATIERTAXTYPE
 
-**Production Revenue Accounting Tier Tax Type**
+**PRA Tier Tax Type**
 
 | Property | Value |
 |---|---|

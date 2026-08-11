@@ -1,13 +1,13 @@
 ---
 name: I_REINTEGOBJCTRLGOBJTYPE
-description: "Real Estate Integration CO Object Type"
+description: "Real Estate Integ CO Object Type"
 app_component: RE-FX-IP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJCTRLGOBJTYPE')/$value
-semantic_en: "Real Estate Integration CO Object Type"
+semantic_en: "Real Estate Integ CO Object Type"
 tags:
   - RE
   - component:RE-FX-IP-2CL
@@ -19,7 +19,7 @@ tags:
 ---
 # I_REINTEGOBJCTRLGOBJTYPE
 
-**Real Estate Integration CO Object Type**
+**Real Estate Integ CO Object Type**
 
 | Property | Value |
 |---|---|

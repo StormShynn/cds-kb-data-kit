@@ -1,13 +1,13 @@
 ---
 name: I_SUPLRFRTINVCREQCONFSTATUST
-description: "Supplier Freight Invoice Request Confirmation Status - Text"
+description: "Supplier Freight Invoice Req Conf Status - Text"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRFRTINVCREQCONFSTATUST')/$value
-semantic_en: "Supplier Freight Invoice Request Confirmation Status - Text"
+semantic_en: "Supplier Freight Invoice Req Conf Status - Text"
 tags:
   - TM
   - bo:billingdocument
@@ -20,7 +20,7 @@ tags:
 ---
 # I_SUPLRFRTINVCREQCONFSTATUST
 
-**Supplier Freight Invoice Request Confirmation Status - Text**
+**Supplier Freight Invoice Req Conf Status - Text**
 
 | Property | Value |
 |---|---|

@@ -1,15 +1,16 @@
 ---
 name: I_SRVCPARTSSEMANTICS
-description: "Time Series Data Management Mapping Semantic"
+description: "TSDM Mapping Semantic"
 app_component: SCM-S4H-MD-PR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SRVCPARTSSEMANTICS')/$value
-semantic_en: "Time Series Data Management Mapping Semantic"
+semantic_en: "TSDM Mapping Semantic"
 tags:
   - SCM
+  - bo:salesorganization
   - component:SCM-S4H-MD-PR-2CL
   - interface-view
   - SCM-S4H
@@ -20,7 +21,7 @@ tags:
 ---
 # I_SRVCPARTSSEMANTICS
 
-**Time Series Data Management Mapping Semantic**
+**TSDM Mapping Semantic**
 
 | Property | Value |
 |---|---|

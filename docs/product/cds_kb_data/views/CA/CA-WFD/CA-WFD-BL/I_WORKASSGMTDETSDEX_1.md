@@ -1,16 +1,16 @@
 ---
 name: I_WORKASSGMTDETSDEX_1
-description: "Workforce Person Assignment Details"
+description: "This CDS view is designed to provide key changes made to work assignments and includes information about changes made to job information such as cost center details, assignments, working hours, manager details, status, and job title. This CDS view provides the data to answer the following business questions: What are the start and end dates for each workforce person's work assignment? What is the external ID and country code associated with each work assignment? Is the workforce assignment considered primary for the person? Which company code and cost center are associated with each work assignment? Who is the supervisor for each work assignment, identified by their external ID? What is the job title and job code for each workforce person in their assignment? How many weekly working hours and days are assigned to each workforce person? What percentage of employment is each workforce person assigned to? What is the current status of each work assignment? Are there any work assignments that are blocked from access? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKASSGMTDETSDEX_1')/$value
-semantic_en: "Workforce Person Assignment Details"
+semantic_en: "This CDS view is designed to provide key changes made to work assignments and includes information about changes made to job information such as cost center details, assignments, working hours, manager details, status, and job title. This CDS view provides the data to answer the following business questions: What are the start and end dates for each workforce person's work assignment? What is the external ID and country code associated with each work assignment? Is the workforce assignment considered primary for the person? Which company code and cost center are associated with each work assignment? Who is the supervisor for each work assignment, identified by their external ID? What is the job title and job code for each workforce person in their assignment? How many weekly working hours and days are assigned to each workforce person? What percentage of employment is each workforce person assigned to? What is the current status of each work assignment? Are there any work assignments that are blocked from access? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - CA
-  - bo:salesorder
+  - bo:companycode
   - CA-WFD
   - CA-WFD-BL
   - component:CA-WFD-BL
@@ -20,7 +20,7 @@ tags:
 ---
 # I_WORKASSGMTDETSDEX_1
 
-**Workforce Person Assignment Details**
+**This CDS view is designed to provide key changes made to work assignments and includes information about changes made to job information such as cost center details, assignments, working hours, manager details, status, and job title. This CDS view provides the data to answer the following business questions: What are the start and end dates for each workforce person's work assignment? What is the external ID and country code associated with each work assignment? Is the workforce assignment considered primary for the person? Which company code and cost center are associated with each work assignment? Who is the supervisor for each work assignment, identified by their external ID? What is the job title and job code for each workforce person in their assignment? How many weekly working hours and days are assigned to each workforce person? What percentage of employment is each workforce person assigned to? What is the current status of each work assignment? Are there any work assignments that are blocked from access? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

@@ -1,27 +1,24 @@
 ---
 name: I_PRATAXWYRATECODE
-description: "Production Revenue Accounting Tax WY Rate Code"
+description: "PRA Tax WY Rate Code"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXWYRATECODE')/$value
-semantic_en: "Production Revenue Accounting Tax WY Rate Code"
+semantic_en: "PRA Tax WY Rate Code"
 tags:
   - IS
-  - account
-  - bo:material
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRATAXWYRATECODE
 
-**Production Revenue Accounting Tax WY Rate Code**
+**PRA Tax WY Rate Code**
 
 | Property | Value |
 |---|---|

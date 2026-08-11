@@ -1,16 +1,16 @@
 ---
 name: I_STANDARDWBSELEMENT_2
-description: "Standard Work Breakdown Structure Element Details"
+description: "Standard WBS Element Details"
 app_component: PS-ST
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STANDARDWBSELEMENT_2')/$value
-semantic_en: "Standard Work Breakdown Structure Element Details"
+semantic_en: "Standard WBS Element Details"
 tags:
   - PS
-  - bo:wbs
+  - bo:project
   - component:PS-ST
   - interface-view
   - PS-ST
@@ -18,7 +18,7 @@ tags:
 ---
 # I_STANDARDWBSELEMENT_2
 
-**Standard Work Breakdown Structure Element Details**
+**Standard WBS Element Details**
 
 | Property | Value |
 |---|---|

@@ -1,13 +1,13 @@
 ---
 name: I_WASTESTREAMRGTYCODECONFIGN
-description: "Waste Stream Regulatory Code Configuration"
+description: "Waste Stream Regulatory Code Confign"
 app_component: EHS-SUS-WA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WASTESTREAMRGTYCODECONFIGN')/$value
-semantic_en: "Waste Stream Regulatory Code Configuration"
+semantic_en: "Waste Stream Regulatory Code Confign"
 tags:
   - EHS
   - bo:companycode
@@ -19,7 +19,7 @@ tags:
 ---
 # I_WASTESTREAMRGTYCODECONFIGN
 
-**Waste Stream Regulatory Code Configuration**
+**Waste Stream Regulatory Code Confign**
 
 | Property | Value |
 |---|---|

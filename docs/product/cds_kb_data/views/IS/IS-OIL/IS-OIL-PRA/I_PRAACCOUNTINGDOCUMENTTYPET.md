@@ -1,13 +1,13 @@
 ---
 name: I_PRAACCOUNTINGDOCUMENTTYPET
-description: "Production Revenue Accounting Accounting Document Type - Text"
+description: "PRA Accounting Document Type - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAACCOUNTINGDOCUMENTTYPET')/$value
-semantic_en: "Production Revenue Accounting Accounting Document Type - Text"
+semantic_en: "PRA Accounting Document Type - Text"
 tags:
   - IS
   - account
@@ -17,12 +17,11 @@ tags:
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRAACCOUNTINGDOCUMENTTYPET
 
-**Production Revenue Accounting Accounting Document Type - Text**
+**PRA Accounting Document Type - Text**
 
 | Property | Value |
 |---|---|

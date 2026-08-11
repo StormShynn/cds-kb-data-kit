@@ -32,7 +32,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SecuritiesAccountPartnerUUID` |  | |  |  | `RAW(16)` | Account Business partner guid |
+| `SecuritiesAccountPartnerUUID` |  | |  |  | `RAW(16)` |  Account Business partner guid |
 | `SecuritiesAccountObjectUUID` |  | |  |  | `RAW(16)` | GUID for securities account |
 | `SecuritiesAccountPartnerID` |  | |  |  | `CHAR(32)` | Business Partner ID |
 | `SecuritiesAccountPartnerFunc` |  | |  |  | `CHAR(6)` | Business Partner Function |
