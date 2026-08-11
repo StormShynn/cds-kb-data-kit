@@ -5,9 +5,19 @@ app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LDGRCOCODESELECTEDCRCYBRANCH')/$value
 semantic_en: "This CDS view provides the prerequisites for answering the following business question: Which of the selected currency branches can be used for a ledger and a company code?"
+semantic_vi: "Selected Currency Branch for Ledger — CDS view giao diện dựa trên P_LedgerCompanyCurrencyBranch."
+keywords:
+  - "selected"
+  - "currency"
+  - "branch"
+  - "for"
+  - "ledger"
+  - "company"
+  - "code"
+  - "role"
 tags:
   - FI
   - bo:plant
@@ -18,7 +28,6 @@ tags:
   - FI-GL-GL-A-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_LDGRCOCODESELECTEDCRCYBRANCH
 
@@ -30,13 +39,72 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LDGRCOCODESELECTEDCRCYBRANCH')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LDGRCOCODESELECTEDCRCYBRANCH')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `SelectedCurrencyBranch` |  | |  |  | `CHAR(2)` | Currency Type |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `SelectedCurrencyBranch` | ✓ | |  |  | `CHAR(2)` | Currency Type |
 | `CurrencyRole` |  | |  |  | `CHAR(2)` | Company Code Currency Role |
+| `_Ledger` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_SelectedCurrencyBranch` | | ✓ | | | | |
+| `_CurrencyRole` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Ledger` | `I_Ledger` | [1] |
+| `_CompanyCode` | `I_CompanyCode` | [1] |
+| `_SelectedCurrencyBranch` | `I_SelectedCurrencyBranch` | [0..1] |
+| `_CurrencyRole` | `I_CurrencyRole` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LDGRCOCODESELECTEDCRCYBRANCH')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LDGRCOCODESELECTEDCRCYBRANCH')/$value)*
+
+```abap
+@AbapCatalog: {sqlViewName: 'IFALDCCSELCRCY', preserveKey: true, compiler.compareFilter: true}
+@EndUserText.label: 'Selected Currency Branch for Ledger'
+@VDM.viewType: #COMPOSITE
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel: { representativeKey: 'SelectedCurrencyBranch',
+                usageType.serviceQuality: #C,
+                usageType.sizeCategory: #S,
+                usageType.dataClass: #MASTER,
+                modelingPattern: #DERIVATION_FUNCTION,
+                supportedCapabilities: [#DERIVATION_FUNCTION]
+              }
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.buffering.status: #NOT_ALLOWED
+@Metadata: {ignorePropagatedAnnotations: true, allowExtensions:true}
+
+define view I_LdgrCoCodeSelectedCrcyBranch
+  as select from P_LedgerCompanyCurrencyBranch
+
+  association [1]    to I_Ledger                 as _Ledger                 on _Ledger.Ledger = $projection.Ledger
+  association [1]    to I_CompanyCode            as _CompanyCode            on _CompanyCode.CompanyCode = $projection.CompanyCode
+  association [0..1] to I_SelectedCurrencyBranch as _SelectedCurrencyBranch on _SelectedCurrencyBranch.SelectedCurrencyBranch = $projection.SelectedCurrencyBranch
+  association [0..1] to I_CurrencyRole           as _CurrencyRole           on _CurrencyRole.CurrencyRole = $projection.CurrencyRole
+{
+       @ObjectModel.foreignKey.association: '_Ledger'
+  key  Ledger,
+       @ObjectModel.foreignKey.association: '_CompanyCode'
+  key  CompanyCode,
+       @ObjectModel.foreignKey.association: '_SelectedCurrencyBranch'
+  key  SelectedCurrencyBranch,
+
+       @ObjectModel.foreignKey.association: '_CurrencyRole'
+       CurrencyRole,
+
+       /* Associations */
+       _Ledger,
+       _CompanyCode,
+       _SelectedCurrencyBranch,
+       _CurrencyRole
+}
+```

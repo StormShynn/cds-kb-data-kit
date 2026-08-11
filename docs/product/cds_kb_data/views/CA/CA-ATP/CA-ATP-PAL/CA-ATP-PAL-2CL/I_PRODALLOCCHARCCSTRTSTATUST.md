@@ -31,9 +31,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProdAllocCharcConstraintStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccharcconstraintstatus preserving type )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `ProdAllocCharcCstrtStatusDesc` |  | |  | `cast( ddtext as prodalloccharccstrtstatusdesc preserving type )` |  |  |
+| `ProdAllocCharcConstraintStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccharcconstraintstatus preserving type )` | `CHAR(2)` | Product Allocation Characteristic Constraint Status |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `ProdAllocCharcCstrtStatusDesc` |  | |  | `cast( ddtext as prodalloccharccstrtstatusdesc preserving type )` | `CHAR(60)` | Product Allocation Characteristic Constraint Status Desc |
 | `_Language` | | ✓ | | | | |
 | `_ProdAllocCharcCstrtStatus` | | ✓ | | | | |
 

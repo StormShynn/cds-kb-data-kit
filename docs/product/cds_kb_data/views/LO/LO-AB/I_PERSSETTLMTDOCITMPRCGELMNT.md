@@ -5,9 +5,26 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PERSSETTLMTDOCITMPRCGELMNT')/$value
 semantic_en: "This CDS view provides information about pricing elements on the item level of personnel settlement documents. This CDS view provides the prerequisites to answer the following business questions: Which condition types are relevant for a personnel settlement document item? What is the base value of the relevant pricing conditions for a personnel settlement document item? Which calculation type was used for the relevant pricing conditions for a personnel settlement document item? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Personnel Settlmt Doc Itm Pricing Elmnt — CDS view cơ bản dựa trên R_PersSettlmtDocItmPrcgElmnt."
+keywords:
+  - "personnel"
+  - "settlmt"
+  - "doc"
+  - "itm"
+  - "pricing"
+  - "elmnt"
+  - "settlement"
+  - "document"
+  - "pers"
+  - "item"
+  - "procedure"
+  - "step"
+  - "counter"
+  - "condition"
+  - "application"
 tags:
   - LO
   - bo:companycode
@@ -17,7 +34,7 @@ tags:
   - LO-AB
   - lob:logistics general
   - pricing
-  - metadata-only
+  - bo:pricingcondition
 ---
 # I_PERSSETTLMTDOCITMPRCGELMNT
 
@@ -29,16 +46,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PERSSETTLMTDOCITMPRCGELMNT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PERSSETTLMTDOCITMPRCGELMNT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PersonnelSettlementDocument` |  | |  |  | `CHAR(10)` | Personnel Settlement Document Number |
-| `PersSettlmtDocItem` |  | |  |  | `NUMC(6)` | Document Item |
-| `PricingProcedureStep` |  | |  |  | `NUMC(3)` | Step Number |
-| `PricingProcedureCounter` |  | |  |  | `NUMC(3)` | Pricing Procedure Counter |
+| `PersonnelSettlementDocument` | ✓ | |  |  | `CHAR(10)` | Personnel Settlement Document Number |
+| `PersSettlmtDocItem` | ✓ | |  |  | `NUMC(6)` | Document Item |
+| `PricingProcedureStep` | ✓ | |  |  | `NUMC(3)` | Step Number |
+| `PricingProcedureCounter` | ✓ | |  |  | `NUMC(3)` | Pricing Procedure Counter |
 | `ConditionApplication` |  | |  |  | `CHAR(2)` | Application |
 | `ConditionType` |  | |  |  | `CHAR(4)` | Condition Type |
 | `PriceConditionDeterminationDte` |  | |  |  | `DATS(8)` | Condition Pricing Date |
@@ -83,3 +100,179 @@ tags:
 | `VariantCondition` |  | |  |  | `CHAR(26)` | Variant Condition Key |
 | `AccountKeyForGLAccount` |  | |  |  | `CHAR(3)` | Account Key |
 | `AcctKeyForAccrualsGLAccount` |  | |  |  | `CHAR(3)` | Account Key - Accruals / Provisions |
+| `_PersSettlmtDoc` | | ✓ | | | | |
+| `_PersSettlmtDocItem` | | ✓ | | | | |
+| `_ConditionApplication` | | ✓ | | | | |
+| `_PricingConditionType` | | ✓ | | | | |
+| `_ConditionCalculationType` | | ✓ | | | | |
+| `_ConditionCurrency` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_ConditionQuantityUnit` | | ✓ | | | | |
+| `_ConditionCategory` | | ✓ | | | | |
+| `_ConditionOrigin` | | ✓ | | | | |
+| `_ConditionControl` | | ✓ | | | | |
+| `_ConditionInactiveReason` | | ✓ | | | | |
+| `_ConditionClass` | | ✓ | | | | |
+| `_StructureCondition` | | ✓ | | | | |
+| `_PricingScaleBasis` | | ✓ | | | | |
+| `_ScaleUnitOfMeasure` | | ✓ | | | | |
+| `_ScaleCurrency` | | ✓ | | | | |
+| `_VariantCondition` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_PersSettlmtDoc` | `I_PersSettlmtDoc` | [1..1] |
+| `_PersSettlmtDocItem` | `I_PersSettlmtDocItem` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PERSSETTLMTDOCITMPRCGELMNT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PERSSETTLMTDOCITMPRCGELMNT')/$value)*
+
+```abap
+@EndUserText.label: 'Personnel Settlmt Doc Itm Pricing Elmnt'
+@AccessControl: { 
+    authorizationCheck: #MANDATORY,
+    personalData.blocking: #('TRANSACTIONAL_DATA')
+    }
+@ObjectModel: {
+    modelingPattern: #NONE,
+    supportedCapabilities : [ #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ],
+    usageType: {
+      dataClass:      #TRANSACTIONAL,
+      serviceQuality: #A,
+      sizeCategory:   #XXL
+      }
+    }
+@VDM: {
+    viewType: #BASIC,
+    lifecycle.contract.type: #PUBLIC_LOCAL_API
+    }
+@Metadata: {
+    allowExtensions: false,
+    ignorePropagatedAnnotations: true
+    }
+
+/*+[hideWarning] { "IDS" : [ "CALCULATED_FIELD_CHECK" ]  } */
+define view entity I_PersSettlmtDocItmPrcgElmnt
+  as select from R_PersSettlmtDocItmPrcgElmnt
+
+  association [1..1] to I_PersSettlmtDoc     as _PersSettlmtDoc     on  $projection.PersonnelSettlementDocument = _PersSettlmtDoc.PersonnelSettlementDocument
+  association [1..1] to I_PersSettlmtDocItem as _PersSettlmtDocItem on  $projection.PersonnelSettlementDocument = _PersSettlmtDocItem.PersonnelSettlementDocument
+                                                                    and $projection.PersSettlmtDocItem          = _PersSettlmtDocItem.PersSettlmtDocItem
+{
+  key PersonnelSettlementDocument,
+  key PersSettlmtDocItem,
+  key PricingProcedureStep,
+  key PricingProcedureCounter,
+
+      ConditionApplication,
+      ConditionType,
+      PriceConditionDeterminationDte,
+
+      ConditionCalculationType,
+
+      /* KAWRT split based on KRECH */
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      @OData.v2.amount.noDecimalShift: true
+      ConditionBaseAmount,
+      @Semantics.quantity.unitOfMeasure: 'ConditionQuantityUnit'
+      ConditionBaseQuantity,
+
+      /* KBETR split based on KRECH */
+      @Semantics.amount.currencyCode: 'ConditionCurrency'
+      @OData.v2.amount.noDecimalShift: true
+      ConditionRateAmount,
+      @Semantics.quantity.unitOfMeasure: 'ConditionRateRatioUnit'
+      ConditionRateRatio,
+      ConditionRateRatioUnit,
+
+      @ObjectModel.foreignKey.association: '_ConditionCurrency'
+      ConditionCurrency,
+      @DefaultAggregation:#SUM
+      @Semantics.quantity.unitOfMeasure: 'ConditionQuantityUnit'
+      ConditionQuantity,
+      @ObjectModel.foreignKey.association: '_ConditionQuantityUnit'
+      ConditionQuantityUnit,
+
+      ConditionCategory,
+      ConditionIsForStatistics,
+
+      IsRelevantForAccrual,
+      @Semantics.booleanIndicator: true
+      CndnIsRelevantForInvoiceList,
+      ConditionOrigin,
+      @Semantics.booleanIndicator: true
+      IsGroupCondition,
+
+      /* Condition Record */
+      ConditionRecord,
+      ConditionSequentialNumber,
+
+      /* Tax */
+      TaxCode,
+      WithholdingTaxCode,
+
+      @DefaultAggregation:#SUM
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      CndnRoundingOffDiffAmount,
+      @DefaultAggregation:#SUM
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      ConditionAmount,
+      @ObjectModel.foreignKey.association: '_Currency'
+      TransactionCurrency,
+      ConditionControl,
+      ConditionInactiveReason,
+      ConditionClass,
+      PrcgProcedureCounterForHeader,
+      FactorForConditionBasisValue,
+      StructureCondition,
+      PeriodFactorForCndnBasisValue,
+
+      /* Scales */
+      PricingScaleType,
+      PricingScaleBasis,
+
+      /* KSTBS split based on KZBZG */
+      @Semantics.amount.currencyCode: 'ConditionScaleBasisCurrency'
+      @OData.v2.amount.noDecimalShift: true
+      ConditionScaleBaseAmount,
+      @Semantics.quantity.unitOfMeasure: 'ConditionScaleBasisUnit'
+      ConditionScaleBaseQuantity,
+      @ObjectModel.foreignKey.association: '_ScaleUnitOfMeasure'
+      ConditionScaleBasisUnit,
+      @ObjectModel.foreignKey.association: '_ScaleCurrency'
+      ConditionScaleBasisCurrency,
+
+      CndnIsRelevantForIntcoBilling,
+      ConditionIsManuallyChanged,
+      ConditionIsForConfiguration,
+      VariantCondition,
+
+      /* Accounts */
+      AccountKeyForGLAccount,
+      AcctKeyForAccrualsGLAccount,
+
+      /* Associations */
+      _PersSettlmtDoc,
+      _PersSettlmtDocItem,
+      _ConditionApplication,
+      _PricingConditionType,
+      _ConditionCalculationType,
+      _ConditionCurrency,
+      _Currency,
+      _ConditionQuantityUnit,
+      _ConditionCategory,
+      _ConditionOrigin,
+      _ConditionControl,
+      _ConditionInactiveReason,
+      _ConditionClass,
+      _StructureCondition,
+      _PricingScaleBasis,
+      _ScaleUnitOfMeasure,
+      _ScaleCurrency,
+      _VariantCondition
+
+}
+```

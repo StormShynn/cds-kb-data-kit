@@ -5,9 +5,16 @@ app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GROUP5ASSETEVALUATIONKEY')/$value
 semantic_en: "Group 5 Asset Evaluation Key"
+semantic_vi: "Group 5 Asset Evaluation Key — CDS view giao diện dựa trên t087g."
+keywords:
+  - "group"
+  - "asset"
+  - "evaluation"
+  - "key"
+  - "group5"
 tags:
   - FI
   - component:FI-FIO-AA-ANA-2CL
@@ -17,7 +24,6 @@ tags:
   - FI-FIO-AA-ANA-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_GROUP5ASSETEVALUATIONKEY
 
@@ -29,10 +35,48 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GROUP5ASSETEVALUATIONKEY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GROUP5ASSETEVALUATIONKEY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Group5AssetEvaluationKey` |  | |  |  | `CHAR(8)` | Evaluation Group 5 |
+| `Group5AssetEvaluationKey` | ✓ | |  | `gdlgrp` | `CHAR(8)` | Evaluation Group 5 |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_Group5AssetEvaluationKeyText` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GROUP5ASSETEVALUATIONKEY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GROUP5ASSETEVALUATIONKEY')/$value)*
+
+```abap
+@AbapCatalog: {sqlViewName: 'IFIGR5ASTEVALKY', preserveKey: true}
+@Analytics: {dataCategory: #DIMENSION }
+@EndUserText.label: 'Group 5 Asset Evaluation Key'
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel: { representativeKey: 'Group5AssetEvaluationKey',
+                usageType.serviceQuality: #A,
+                usageType.sizeCategory: #S,
+                usageType.dataClass: #CUSTOMIZING,
+                modelingPattern: #ANALYTICAL_DIMENSION,
+                supportedCapabilities: [#ANALYTICAL_DIMENSION]
+              }
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations: true
+
+define view I_Group5AssetEvaluationKey
+  as select from t087g
+  association [0..*] to I_Group5AssetEvaluationKeyText as _Text on $projection.Group5AssetEvaluationKey = _Text.Group5AssetEvaluationKey
+{
+      @ObjectModel.text.association: '_Text'
+  key t087g.gdlgrp as Group5AssetEvaluationKey,
+      _Text
+
+}
+```

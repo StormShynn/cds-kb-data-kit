@@ -5,9 +5,22 @@ app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYPOSITIONREPQTYCUBE')/$value
 semantic_en: "Commodity Position Report - Cube"
+semantic_vi: "Commodity Position Report - Cube — CDS view giao diện dựa trên I_CmmdtyPositionReportQty."
+keywords:
+  - "commodity"
+  - "position"
+  - "report"
+  - "cube"
+  - "transaction"
+  - "type"
+  - "pricing"
+  - "version"
+  - "document"
+  - "item"
+  - "condition"
 tags:
   - LO
   - bo:purchaseorder
@@ -17,7 +30,6 @@ tags:
   - LO-CMM-BF
   - lob:logistics general
   - lob:sourcing & procurement
-  - metadata-only
 ---
 # I_CMMDTYPOSITIONREPQTYCUBE
 
@@ -29,25 +41,25 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYPOSITIONREPQTYCUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYPOSITIONREPQTYCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CommodityTransactionType` |  | |  |  | `CHAR(1)` | Paper/Physical Indicator for Exposure Group |
-| `PricingKey` |  | |  |  | `CHAR(40)` | A key required to access versioned pricing data |
-| `Version` |  | |  |  | `NUMC(10)` | Version of an MtM Valuation Record |
-| `PricingDocumentItem` |  | |  |  | `NUMC(6)` | Condition item number |
-| `ConditionType` |  | |  |  | `CHAR(4)` | Condition Type |
-| `SubConditionType` |  | |  |  | `NUMC(6)` | The key of a sub-condition type |
-| `VersStockRecordUUID` |  | |  |  | `RAW(16)` | GUID assigned to the VlogP stock delta record |
-| `EvaluationDate` |  | |  |  | `DATS(8)` | Latest Evaluation Date |
-| `PriceQuotationDate` |  | |  |  | `DATS(8)` | Date of Price Quotation |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `CommodityPriceExposure` |  | |  |  | `CHAR(13)` | Commodity Price Exposure ID |
-| `CommodityExposureCategory` |  | |  |  | `CHAR(2)` | Exposure Category |
-| `CommodityPriceSubExposure` |  | |  |  | `CHAR(40)` | Hash key |
+| `CommodityTransactionType` | ✓ | |  |  | `CHAR(1)` | Paper/Physical Indicator for Exposure Group |
+| `PricingKey` | ✓ | |  |  | `CHAR(40)` | A key required to access versioned pricing data |
+| `Version` | ✓ | |  |  | `NUMC(10)` | Version of an MtM Valuation Record |
+| `PricingDocumentItem` | ✓ | |  |  | `NUMC(6)` | Condition item number |
+| `ConditionType` | ✓ | |  |  | `CHAR(4)` | Condition Type |
+| `SubConditionType` | ✓ | |  |  | `NUMC(6)` | The key of a sub-condition type |
+| `VersStockRecordUUID` | ✓ | |  |  | `RAW(16)` | GUID assigned to the VlogP stock delta record |
+| `EvaluationDate` | ✓ | |  |  | `DATS(8)` | Latest Evaluation Date |
+| `PriceQuotationDate` | ✓ | |  |  | `DATS(8)` | Date of Price Quotation |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `CommodityPriceExposure` | ✓ | |  |  | `CHAR(13)` | Commodity Price Exposure ID |
+| `CommodityExposureCategory` | ✓ | |  |  | `CHAR(2)` | Exposure Category |
+| `CommodityPriceSubExposure` | ✓ | |  |  | `CHAR(40)` | Hash key |
 | `EndOfDaySnapshotFromDate` |  | |  |  | `DATS(8)` | Snapshot Start Date |
 | `EndOfDaySnapshotToDate` |  | |  |  | `DATS(8)` | Snapshot End Date |
 | `MTMDataSourceType` |  | |  |  | `CHAR(2)` | Type of Data Record |
@@ -143,7 +155,7 @@ tags:
 | `TreasuryPositionLongShortCode` |  | |  |  | `CHAR(1)` | Code: Long or Short Position |
 | `TimeToMaturity` |  | |  |  | `CHAR(10)` | Time to Maturity |
 | `CmmdtyForwardIndexTiming` |  | |  |  | `NUMC(2)` | Timing/Periodicity of Commodity Forward Indexes |
-| `CmmdtyForwardIndexTimingText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `CmmdtyForwardIndexTimingText` |  | | `_CmmdtyForwardIndexTimingText` | `DomainText` | `CHAR(60)` | Short Text for Fixed Values |
 | `DerivativeContractMaturityCode` |  | |  |  | `CHAR(13)` | Contract Maturity Code |
 | `FinancialInstrProductCategory` |  | |  |  | `NUMC(3)` | Product Category |
 | `FinancialAssetsMgmtProductType` |  | |  |  | `CHAR(3)` | Product Type |
@@ -153,10 +165,10 @@ tags:
 | `FinancialObject` |  | |  |  | `CHAR(22)` | Financial Object Number |
 | `TermStartDate` |  | |  |  | `DATS(8)` | Term Start |
 | `TermEndDate` |  | |  |  | `DATS(8)` | Term End |
-| `NumberOfCommodityContracts` |  | |  |  | `CHAR(20)` | Number of Contracts |
+| `NumberOfCommodityContracts` |  | |  | `cast( NumberOfCommodityContracts as cmm_contracts_number )` | `CHAR(20)` | Number of Contracts |
 | `TreasuryPositionAccount` |  | |  |  | `CHAR(10)` | Futures Account for Listed Options and Futures |
 | `DerivativeContract` |  | |  |  | `CHAR(13)` | Contract for Listed Options and Futures |
-| `OptionStrikePrice` |  | |  |  | `CHAR(18)` | Option Strike Price |
+| `OptionStrikePrice` |  | |  | `cast(OptionStrikePrice as cmm_option_strike_price)` | `CHAR(18)` | Option Strike Price |
 | `OptionStrikeCurrency` |  | |  |  | `CHAR(5)` | Currency Unit of the Rate |
 | `OptionPutCallCode` |  | |  |  | `NUMC(1)` | Put/Call Indicator |
 | `ExternalKeyFigureValue` |  | |  |  | `CHAR(50)` | External Key figures |
@@ -231,3 +243,543 @@ tags:
 | `PricingConditionTerm` |  | |  |  | `NUMC(5)` | CPE Term - Number in Formula |
 | `CmmdtyDocumentExternalNumber` |  | |  |  | `CHAR(75)` | External Number of Document |
 | `CmmdtyRootDocExternalNumber` |  | |  |  | `CHAR(75)` | External Number of Root Document |
+| `_SourceDocumentBusObjType` | | ✓ | | | | |
+| `_CommodityUnit` | | ✓ | | | | |
+| `_MaterialStockUnit` | | ✓ | | | | |
+| `_PricingStatus` | | ✓ | | | | |
+| `_DerivativeContrSpecification` | | ✓ | | | | |
+| `_MarketIdentifierCode` | | ✓ | | | | |
+| `_PhysicalCommodity` | | ✓ | | | | |
+| `_FinAssetsMgmtProductType` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_MTMDataSourceType` | | ✓ | | | | |
+| `_MTMConditionGroup` | | ✓ | | | | |
+| `_MTMConditionGroupCategory` | | ✓ | | | | |
+| `_MTMAdjustmentType` | | ✓ | | | | |
+| `_MTMCalculationGroup` | | ✓ | | | | |
+| `_BasisID` | | ✓ | | | | |
+| `_ReferenceDocBusObjType` | | ✓ | | | | |
+| `_OriginReferenceDocBusObjType` | | ✓ | | | | |
+| `_Creditor` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_ProductGroupText_2` | | ✓ | | | | |
+| `_CmmdtyMtmMessage` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_SalesOrganizationText` | | ✓ | | | | |
+| `_ProductCategory` | | ✓ | | | | |
+| `_ProductType` | | ✓ | | | | |
+| `_ConditionApplicationText` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_SourceDocumentBusObjType` | `I_BusinessObjType` | [0..1] |
+| `_CommodityUnit` | `I_UnitOfMeasure` | [0..1] |
+| `_MaterialStockUnit` | `I_UnitOfMeasure` | [0..1] |
+| `_PricingStatus` | `I_PricingStatus` | [0..1] |
+| `_DerivativeContrSpecification` | `I_DerivativeContrSpec` | [0..1] |
+| `_MarketIdentifierCode` | `I_MarketIdentCode` | [0..1] |
+| `_PhysicalCommodity` | `I_Cmmdty` | [0..1] |
+| `_FinAssetsMgmtProductType` | `I_FinAssetsMgntProductType` | [0..1] |
+| `_CompanyCode` | `I_CompanyCode` | [0..1] |
+| `_MTMDataSourceType` | `I_MtmDataSourceType` | [0..1] |
+| `_MTMConditionGroup` | `I_MtmConditionGroup` | [0..1] |
+| `_MTMConditionGroupCategory` | `I_Mtmconditiongroupcategory` | [0..1] |
+| `_MTMAdjustmentType` | `I_MtmAdjustmentType` | [0..1] |
+| `_MTMCalculationGroup` | `I_MtmCalculationGroup` | [0..1] |
+| `_BasisID` | `I_BasisID` | [0..1] |
+| `_ReferenceDocBusObjType` | `I_BusinessObjType` | [0..1] |
+| `_OriginReferenceDocBusObjType` | `I_BusinessObjType` | [0..1] |
+| `_Creditor` | `I_Supplier` | [0..1] |
+| `_SoldToParty` | `I_Customer` | [0..1] |
+| `_Plant` | `I_Plant` | [0..1] |
+| `_StorageLocation` | `I_StorageLocation` | [0..1] |
+| `_Material` | `I_Product` | [0..1] |
+| `_ProductGroupText_2` | `I_ProductGroupText` | [0..*] |
+| `_CmmdtyMtmMessage` | `I_CmmdtyMtmMessage` | [0..*] |
+| `_IncotermsClassification` | `I_IncotermsClassification` | [0..1] |
+| `_CmmdtyForwardIndexTimingText` | `I_DomainFixedValueText` | [0..1] |
+| `_SalesOrganizationText` | `I_SalesOrganizationText` | [0..*] |
+| `_ProductCategory` | `I_FinancialInstrProdCatText` | [0..*] |
+| `_ProductType` | `I_Producttype` | [0..1] |
+| `_ConditionApplicationText` | `I_ConditionApplicationText` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYPOSITIONREPQTYCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYPOSITIONREPQTYCUBE')/$value)*
+
+```abap
+@EndUserText.label: 'Commodity Position Report - Cube'
+@Metadata.ignorePropagatedAnnotations: true 
+//@OData.publish: true //optional
+@Analytics.dataCategory: #CUBE
+@VDM.viewType: #COMPOSITE
+@AccessControl.authorizationCheck: #CHECK
+@AbapCatalog.sqlViewName: 'ICMMUNIONPFCUBE'
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.dataClass: #TRANSACTIONAL
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.allowExtensions:true
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE]
+
+define view I_CmmdtyPositionRepQtyCube
+  with parameters   
+    @Consumption.defaultValue: 'P'
+    P_DisplayUnitOfMeasure     : cds_view_uom,             -- Display UoM
+    @Environment.systemField: #SYSTEM_DATE
+    P_EndOfDaySnapshotFromDate : cmm_snapshot_start,      -- Snapshot Start Date
+    @Environment.systemField: #SYSTEM_DATE
+    P_EndOfDaySnapshotToDate   : cmm_snapshot_end,        -- Snapshot End Date
+    @Consumption.defaultValue: '1'    
+    P_MTMDataSelectionType     : cmm_vlogp_consumptiontype, -- Analytic consumption type
+    @Consumption.defaultValue: '1'
+    P_OptionDeltaMethod: cds_option_delta_method,    
+    P_OptionDeltaThreshold: cds_option_delta_threshold
+  as select from I_CmmdtyPositionReportQty(
+                            P_DisplayUnitOfMeasure     : :P_DisplayUnitOfMeasure,
+                            P_EndOfDaySnapshotFromDate : :P_EndOfDaySnapshotFromDate,
+                            P_EndOfDaySnapshotToDate   : :P_EndOfDaySnapshotToDate,
+                            P_MTMDataSelectionType     : :P_MTMDataSelectionType, 
+                            P_OptionDeltaMethod        : :P_OptionDeltaMethod,
+                            P_OptionDeltaThreshold     : :P_OptionDeltaThreshold ) as _Icmmdty
+  association [0..1] to I_BusinessObjType           as _SourceDocumentBusObjType     on  $projection.SourceDocumentBusObjType = _SourceDocumentBusObjType.BusinessObjectType
+  association [0..1] to I_UnitOfMeasure             as _CommodityUnit                on  $projection.CommodityUnit = _CommodityUnit.UnitOfMeasure
+  association [0..1] to I_UnitOfMeasure             as _MaterialStockUnit            on  $projection.MaterialStockPriceExposureUnit = _MaterialStockUnit.UnitOfMeasure
+  association [0..1] to I_PricingStatus             as _PricingStatus                on  $projection.PricingStatus = _PricingStatus.PricingStatus
+  association [0..1] to I_DerivativeContrSpec       as _DerivativeContrSpecification on  $projection.DerivativeContrSpecification = _DerivativeContrSpecification.DerivativeContrSpecification
+  association [0..1] to I_MarketIdentCode           as _MarketIdentifierCode         on  $projection.MarketIdentifierCode = _MarketIdentifierCode.MarketIdentifierCode
+  association [0..1] to I_Cmmdty                    as _PhysicalCommodity            on  $projection.PhysicalCommodity = _PhysicalCommodity.Commodity
+  association [0..1] to I_FinAssetsMgntProductType  as _FinAssetsMgmtProductType     on  $projection.FinancialAssetsMgmtProductType = _FinAssetsMgmtProductType.FinancialAssetsMgmtProductType
+  association [0..1] to I_CompanyCode               as _CompanyCode                  on  $projection.CompanyCode = _CompanyCode.CompanyCode
+  association [0..1] to I_MtmDataSourceType         as _MTMDataSourceType            on  $projection.MTMDataSourceType = _MTMDataSourceType.MTMDataSourceType
+  association [0..1] to I_MtmConditionGroup         as _MTMConditionGroup            on  $projection.MTMConditionGroup = _MTMConditionGroup.MTMConditionGroup
+  association [0..1] to I_Mtmconditiongroupcategory as _MTMConditionGroupCategory    on  $projection.MTMConditionGroupCategory = _MTMConditionGroupCategory.MTMConditionGroupCategory
+  association [0..1] to I_MtmAdjustmentType         as _MTMAdjustmentType            on  $projection.MTMAdjustmentType = _MTMAdjustmentType.MTMAdjustmentType
+  association [0..1] to I_MtmCalculationGroup       as _MTMCalculationGroup          on  $projection.MTMCalculationGroup = _MTMCalculationGroup.MTMCalculationGroup
+  association [0..1] to I_BasisID                   as _BasisID                      on  $projection.BasisID = _BasisID.BasisID
+  association [0..1] to I_BusinessObjType           as _ReferenceDocBusObjType       on  $projection.ReferenceDocBusObjType = _ReferenceDocBusObjType.BusinessObjectType
+  association [0..1] to I_BusinessObjType           as _OriginReferenceDocBusObjType on  $projection.OriginReferenceDocBusObjType = _OriginReferenceDocBusObjType.BusinessObjectType
+  association [0..1] to I_Supplier                  as _Creditor                     on  $projection.Creditor = _Creditor.Supplier
+  association [0..1] to I_Customer                  as _SoldToParty                  on  $projection.SoldToParty = _SoldToParty.Customer
+  association [0..1] to I_Plant                     as _Plant                        on  $projection.Plant = _Plant.Plant
+  association [0..1] to I_StorageLocation           as _StorageLocation              on  $projection.Plant           = _StorageLocation.Plant
+                                                                                     and $projection.StorageLocation = _StorageLocation.StorageLocation
+
+// I_Material is not supported. Instead I_product must be used  
+//  association [0..1] to I_Material                  as _Material                     on  $projection.Material = _Material.Material
+  
+  
+  association [0..1] to I_Product                   as _Material                     on  $projection.Material = _Material.Product
+  association [0..*] to I_ProductGroupText          as _ProductGroupText_2            on  $projection.MaterialGroup = _ProductGroupText_2.MaterialGroup
+  association [0..*] to I_CmmdtyMtmMessage          as _CmmdtyMtmMessage             on $projection.SystemMessageNumber = _CmmdtyMtmMessage.SystemMessageNumber
+  association [0..1] to I_IncotermsClassification   as _IncotermsClassification      on  $projection.IncotermsClassification = _IncotermsClassification.IncotermsClassification
+  association [0..1] to I_DomainFixedValueText as _CmmdtyForwardIndexTimingText on $projection.CmmdtyForwardIndexTiming = _CmmdtyForwardIndexTimingText.DomainValue 
+                                                                                        and _CmmdtyForwardIndexTimingText.Language = 'E'
+                                                                                        and _CmmdtyForwardIndexTimingText.SAPDataDictionaryDomain = 'TBA_TIMING'                                                                                   
+  association [0..*] to I_SalesOrganizationText       as _SalesOrganizationText        on $projection.SalesOrganization = _SalesOrganizationText.SalesOrganization
+  association [0..*] to I_FinancialInstrProdCatText   as _ProductCategory              on $projection.FinancialInstrProductCategory = _ProductCategory.FinancialInstrProductCategory
+  association [0..1] to I_Producttype                 as _ProductType                  on $projection.FinancialAssetsMgmtProductType = _ProductType.ProductType
+  
+  association [0..*] to I_ConditionApplicationText    as _ConditionApplicationText     on $projection.ConditionApplication = _ConditionApplicationText.ConditionApplication
+                                                                                          
+{
+      /* Key Fields */
+  key CommodityTransactionType,
+  key PricingKey,
+  key Version,
+  key PricingDocumentItem,
+  key ConditionType,
+  key SubConditionType,
+  key VersStockRecordUUID,
+  key EvaluationDate,
+  key PriceQuotationDate,
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+  key CompanyCode,
+  key CommodityPriceExposure,
+  key CommodityExposureCategory,
+  key CommodityPriceSubExposure,
+
+      /* Physical Fields */
+      EndOfDaySnapshotFromDate,
+      EndOfDaySnapshotToDate,
+      @ObjectModel.foreignKey.association: '_MTMDataSourceType'
+      MTMDataSourceType,
+      EndOfDaySnapshotDateTimeFrom,
+      EndOfDaySnapshotDateTimeTo,
+      MaximumVersion,
+      PreviousVersion,
+      @ObjectModel.text.association: '_SalesOrganizationText'
+      SalesOrganization,
+      DistributionChannel,
+      Division,
+      @ObjectModel.foreignKey.association: '_Creditor'
+      Creditor,
+      @ObjectModel.foreignKey.association: '_SoldToParty'
+      SoldToParty,
+      @ObjectModel.foreignKey.association: '_Material'
+      Material,
+      @ObjectModel.foreignKey.association: '_Plant'
+      Plant,
+      @ObjectModel.foreignKey.association: '_StorageLocation'
+      StorageLocation,
+      Batch,
+      @ObjectModel.foreignKey.association: '_IncotermsClassification'
+      IncotermsClassification,
+      IncotermsTransferLocation,
+      @ObjectModel.text.association: '_ConditionApplicationText'
+      ConditionApplication,
+      SourceDocument,
+      SourceDocumentItem,
+      @ObjectModel.foreignKey.association: '_SourceDocumentBusObjType'
+      SourceDocumentBusObjType,
+      OriginReferenceDocument,
+      OriginReferenceDocumentItem,
+      @ObjectModel.foreignKey.association: '_OriginReferenceDocBusObjType'
+      OriginReferenceDocBusObjType,
+      ReferenceDocument,
+      ReferenceDocumentItem,
+      @ObjectModel.foreignKey.association: '_ReferenceDocBusObjType'
+      ReferenceDocBusObjType,
+      ExpectedPaymentDate,
+      StatisticsCurrency,
+      DocumentCurrency,
+      ProfitCenter,
+      BusinessArea,
+      PurchasingOrganization,
+      @ObjectModel.text.association: '_ProductGroupText_2'
+      MaterialGroup,
+      IsIntercompanyTransfer,
+      @DefaultAggregation: #SUM
+      ConditionTermRate,
+      CommodityPriceFixationStatus,
+      ConditionTermRateCurrency,
+      @Semantics.quantity.unitOfMeasure: 'ConditionTermRateQuantityUnit'
+      ConditionTermRateQuantity,
+      ConditionTermRateQuantityUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'ConditionTermValueCurrency'
+      ConditionTermValue,
+      ConditionTermValueCurrency,
+      ConditionTermRateMktCurrency,
+      ConditionTermName,
+      ConditionTermStatus,
+      RoundingDecimalPlaces,
+      ConditionTermRateIsRounded,
+      @DefaultAggregation: #SUM
+      ConditionTermRateNmrtr,
+      @DefaultAggregation: #SUM
+      ConditionTermRateDnmntr,
+      ConditionTermExtensionUsage,
+      MaturitySelectionType,
+      QuotationPeriodReferenceDate,
+      QuotationKeyType,
+      QuotationDateList,
+      QuotationPeriodStartDate,
+      QuotationPeriodEndDate,
+      BasisType,
+      @ObjectModel.foreignKey.association: '_BasisID'
+      BasisID,
+      QuotationGroup,
+      QuotationGroupCalculationRule,
+      @ObjectModel.foreignKey.association: '_PricingStatus'
+      PricingStatus,
+      ConditionTermRateFixation,
+      CndnTermRateFixationDate,
+      CndnTermRateFixationTime,
+      CndnTermExchRateFixationDate,
+      CndnTermExchRateFixationTime,
+      FixedExchRateDate,
+      ExchRateMaturityDate,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      CommodityQuantityInTermUnit,
+      @DefaultAggregation: #SUM
+      QuantitySign,
+      @ObjectModel.foreignKey.association: '_MTMConditionGroupCategory'
+      MTMConditionGroupCategory,
+      @ObjectModel.foreignKey.association: '_MTMConditionGroup'
+      MTMConditionGroup,
+      @ObjectModel.foreignKey.association: '_MTMCalculationGroup'
+      MTMCalculationGroup,
+      MTMAdjustmentType,
+      MTMCalcGrpMarketPriceCondition,
+      PriceIsRealized,
+      ContrPriceExposureIsExecuted,
+      ImplicitFixationIsRelevant,
+      
+      @DefaultAggregation: #SUM  
+      MinimumConditionTermLimitRate,
+      @DefaultAggregation: #SUM
+      MaximumConditionTermLimitRate,
+      ConditionTermLimitRateCurrency,
+      @Semantics.quantity.unitOfMeasure: 'CndnTermLimitRateQuantityUnit'
+      ConditionTermLimitRateQuantity,
+      CndnTermLimitRateQuantityUnit,
+      ConditionTermLimitRateStatus,
+      AdjustedReportingDate,
+      AdjustedReportingYear,
+      AdjustedReportingMonth,
+      GoodsMovement,
+      @ObjectModel.foreignKey.association: '_MaterialStockUnit'
+      @Semantics.unitOfMeasure: true
+      MaterialStockPriceExposureUnit,
+
+      /* Financial Fields */
+      ExposureDueDate, 
+      CashFlowDirection,
+      TreasuryPositionLongShortCode,
+      TimeToMaturity,
+      CmmdtyForwardIndexTiming,
+      _CmmdtyForwardIndexTimingText.DomainText as CmmdtyForwardIndexTimingText,
+      DerivativeContractMaturityCode,
+      @ObjectModel.text.association: '_ProductCategory'
+      FinancialInstrProductCategory,
+      @ObjectModel.foreignKey.association: '_FinAssetsMgmtProductType'
+      @ObjectModel.text.association: '_ProductType'
+      FinancialAssetsMgmtProductType,
+      FinInstrTransactionCategory,
+      FinancialInstrumentProductType,
+      FinancialInstrActivityCategory,
+      FinancialObject,
+      TermStartDate,
+      TermEndDate,
+      cast( NumberOfCommodityContracts as cmm_contracts_number )            as  NumberOfCommodityContracts,
+      TreasuryPositionAccount,
+      DerivativeContract,
+
+      cast(OptionStrikePrice as cmm_option_strike_price) as OptionStrikePrice,
+
+      OptionStrikeCurrency,
+      OptionPutCallCode,
+      ExternalKeyFigureValue,
+      OptionDeltaFactor,
+      @DefaultAggregation:  #SUM
+      OptionDeltaFactorKeyFigure,
+      EndOfDaySnapshotDateTime,
+
+      /* Common Fields */
+      MTMDataSelectionType,
+      EndOfDaySnapshotDate,
+      ValidityStartDate,
+      ValidityStartTime,
+      ValidityEndDate,
+      ValidityEndTime,
+      ValidityStartDateTime,
+      ValidityEndDateTime,
+      @ObjectModel.foreignKey.association: '_PhysicalCommodity'
+      PhysicalCommodity,
+      DeliveryDate,
+      @ObjectModel.foreignKey.association: '_DerivativeContrSpecification'
+      DerivativeContrSpecification,
+      @ObjectModel.foreignKey.association: '_MarketIdentifierCode'
+      MarketIdentifierCode,
+      MaturityKeyDate,
+      FinInstrExternalReference,
+      DisplayView,
+      ConditionTermRateIsFixed,
+      ReportingDate,
+      ReportingYear,
+      ReportingMonth,
+      HasError,
+      
+      @ObjectModel.foreignKey.association:'_CmmdtyMtmMessage'
+      SystemMessageNumber,      
+
+      @Semantics.unitOfMeasure:true
+      @ObjectModel.foreignKey.association: '_CommodityUnit'
+      CommodityUnit,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      CommodityPriceExposureQuantity,
+
+      /* Key figures */
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      PricedUndeliveredContrExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      UnpricedUndeliveredCtrExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      UndeliveredMarketPrExposureQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      UnpricedDeliveredCtrExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      PricedDeliveredContrExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      DeliveredMarketPrExposureQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      UnpricedContrPriceExposureQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      UnrlzdMarketPriceExposureQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      OutrightPriceExposureQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      PricedContractsExposureQty,
+
+      @Semantics.quantity.unitOfMeasure: 'MaterialStockPriceExposureUnit'
+      @DefaultAggregation:#SUM
+      MaterialStockExposureQty,
+
+      @Semantics.quantity.unitOfMeasure: 'MaterialStockPriceExposureUnit'
+      @DefaultAggregation:#SUM
+      UnrealizedGoodsRcptPrcExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'MaterialStockPriceExposureUnit'
+      @DefaultAggregation:#SUM
+      UnrealizedGoodsIssPrcExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      RealizedMaterialStkPrcExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      TodayPricedUndeliveredExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      UnrealizedPriceExposureQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      UnpricedUnrealizedPrcExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      TodayUnpricedUnrlzdCtrExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      ReducnNoPrcEstablishedExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      NoFutureEstabPurchaseContrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      NoFutureEstabSalesContrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      FlatPricedContractsQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      NoFutrEstablishedContrExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      NoBsEstablishedContrExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      NoPrcEstablishedContrExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      FixPricedDelivsPriceExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      UndeliveredFixPrCtrPrExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      UnpricedUnrlzdGdsIssExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      UnpricedUnrlzdGdsRcptExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      FixPricedContrPriceExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      TodayPricedContractsExpsrQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      InventoryAndContractsQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      TotalPhysicalPositionQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      ImpliedFuturesPositionQty,
+
+      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
+      @DefaultAggregation:#SUM
+      BasisPositionQty,
+      
+
+      /*Associations*/
+      _SourceDocumentBusObjType,
+      _CommodityUnit,
+      _MaterialStockUnit,
+      _PricingStatus,
+      _CompanyCode,
+      _DerivativeContrSpecification,
+      _FinAssetsMgmtProductType,
+      _MarketIdentifierCode,
+      _PhysicalCommodity,
+      _MTMDataSourceType,
+      _MTMConditionGroup,
+      _MTMConditionGroupCategory,
+      _MTMAdjustmentType,
+      _MTMCalculationGroup,
+      _BasisID,
+      _ReferenceDocBusObjType,
+      _OriginReferenceDocBusObjType,
+      _Creditor,
+      _SoldToParty,
+      _Plant,
+      _StorageLocation,
+      _Material,
+      _CmmdtyMtmMessage,
+      _IncotermsClassification,
+      _ProductGroupText_2,
+      _SalesOrganizationText,
+      _ProductType,
+      _ConditionApplicationText,
+      _ProductCategory,
+      NmbrOfPrcdQuotationPeriodDays,
+      NmbrOfUnpricedQtanPeriodDays,
+      NmbrOfValnDtePrcdQtanPerdDays,
+      PriceSettingMethod, 
+      PriceSettingMethodStatus,
+      ValidToDateTime,
+      PricingProcedure,
+      PricingConditionTerm,
+      CmmdtyDocumentExternalNumber,
+      CmmdtyRootDocExternalNumber
+
+}
+```

@@ -31,9 +31,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProdAllocationActivationStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocationactivationstatus preserving type )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `ProdAllocActivationStatusDesc` |  | |  | `cast( ddtext as prodallocactivationstatusdesc preserving type )` |  |  |
+| `ProdAllocationActivationStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocationactivationstatus preserving type )` | `CHAR(2)` | Product Allocation Activation Status |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `ProdAllocActivationStatusDesc` |  | |  | `cast( ddtext as prodallocactivationstatusdesc preserving type )` | `CHAR(60)` | Product Allocation Activation Status Description |
 | `_Language` | | ✓ | | | | |
 | `_ProdAllocActivationStatus` | | ✓ | | | | |
 

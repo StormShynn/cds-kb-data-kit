@@ -5,9 +5,13 @@ app_component: SD-CRF-ORG-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SALESORGANIZATIONSTDVH')/$value
 semantic_en: "Sales Organization"
+semantic_vi: "Sales Organization — CDS view giao diện (organizational data) dựa trên I_SalesOrganization."
+keywords:
+  - "sales"
+  - "organization"
 tags:
   - SD
   - bo:salesorder
@@ -17,7 +21,6 @@ tags:
   - SD-CRF
   - SD-CRF-ORG
   - SD-CRF-ORG-2CL
-  - metadata-only
 ---
 # I_SALESORGANIZATIONSTDVH
 
@@ -29,10 +32,46 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SALESORGANIZATIONSTDVH')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SALESORGANIZATIONSTDVH')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `SalesOrganization` | ✓ | |  |  | `CHAR(4)` | Sales Organization |
+| `_Text` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SALESORGANIZATIONSTDVH')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SALESORGANIZATIONSTDVH')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@VDM.viewType: #BASIC
+@EndUserText.label: 'Sales Organization'
+
+@ObjectModel: { representativeKey: 'SalesOrganization',
+                usageType: { dataClass: #ORGANIZATIONAL,
+                             serviceQuality: #A,
+                             sizeCategory: #S },
+                dataCategory: #VALUE_HELP,
+                supportedCapabilities: [ #CDS_MODELING_ASSOCIATION_TARGET,
+                                         #SEARCHABLE_ENTITY,
+                                         #VALUE_HELP_PROVIDER ] }
+
+@Metadata.ignorePropagatedAnnotations: true
+@Search.searchable: true
+@Consumption.ranked: true
+define view entity I_SalesOrganizationStdVH 
+    as select from I_SalesOrganization as SalesOrganization
+{
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #HIGH
+      @ObjectModel.text.association: '_Text'
+  key SalesOrganization.SalesOrganization,
+
+    _Text
+
+}
+```

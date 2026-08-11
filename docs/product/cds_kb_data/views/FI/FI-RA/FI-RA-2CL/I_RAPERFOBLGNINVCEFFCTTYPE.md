@@ -5,9 +5,20 @@ app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RAPERFOBLGNINVCEFFCTTYPE')/$value
 semantic_en: "Revenue Accounting Invoice Effect Type"
+semantic_vi: "Revenue Accounting Invoice Effect Type — CDS view giao diện dựa trên dd07l."
+keywords:
+  - "revenue"
+  - "accounting"
+  - "invoice"
+  - "effect"
+  - "type"
+  - "perf"
+  - "oblgn"
+  - "domain"
+  - "value"
 tags:
   - FI
   - account
@@ -18,7 +29,6 @@ tags:
   - interface-view
   - invoice
   - lob:finance
-  - metadata-only
 ---
 # I_RAPERFOBLGNINVCEFFCTTYPE
 
@@ -30,11 +40,70 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RAPERFOBLGNINVCEFFCTTYPE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RAPERFOBLGNINVCEFFCTTYPE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RAPerfOblgnInvoiceEffectType` |  | |  |  | `CHAR(1)` | Defines How Invoices Affect POB Price and Quantity |
-| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `RAPerfOblgnInvoiceEffectType` | ✓ | |  | `cast(dd07l.domvalue_l as farr_invoice_effect_type)` | `CHAR(1)` | Defines How Invoices Affect POB Price and Quantity |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `_Text` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RAPERFOBLGNINVCEFFCTTYPE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RAPERFOBLGNINVCEFFCTTYPE')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@Analytics.dataCategory: #DIMENSION
+@Analytics.dataExtraction.enabled: true
+@Analytics.internalName: #LOCAL
+@Analytics.technicalName: 'IRAPOBINVEFFTY'
+
+@Consumption.ranked: true
+
+@EndUserText.label: 'Revenue Accounting Invoice Effect Type'
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel.dataCategory: #VALUE_HELP
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+@ObjectModel.representativeKey: 'RAPerfOblgnInvoiceEffectType'
+@ObjectModel.resultSet.sizeCategory: #XS
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_DIMENSION,
+                                      #CDS_MODELING_ASSOCIATION_TARGET,
+                                      #CDS_MODELING_DATA_SOURCE,
+                                      #SEARCHABLE_ENTITY,
+                                      #SQL_DATA_SOURCE,
+                                      #VALUE_HELP_PROVIDER ]
+@ObjectModel.usageType: { serviceQuality: #A, sizeCategory: #S, dataClass: #META }
+
+@Search.searchable: true
+
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@VDM.viewType: #BASIC
+
+/*+[hideWarning] { "IDS" : [ "KEY_CHECK", "CALCULATED_FIELD_CHECK" ]  } */
+define root view entity I_RAPerfOblgnInvcEffctType
+  as select from dd07l
+
+  composition [0..*] of I_RAPerfOblgnInvcEffctTypeText as _Text
+
+{
+      @ObjectModel.text.association: '_Text'
+  key cast(dd07l.domvalue_l as farr_invoice_effect_type) as RAPerfOblgnInvoiceEffectType,
+
+      @Analytics.hidden: true
+      @Consumption.hidden: true
+      @Search: { defaultSearchElement: true, ranking: #HIGH }
+      dd07l.domvalue_l                                   as DomainValue,
+
+      _Text
+
+}
+where dd07l.domname  = 'FARR_INVOICE_EFFECT_TYPE'
+  and dd07l.as4local = 'A'
+  and dd07l.as4vers  = '0000'
+```

@@ -5,9 +5,18 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTRPTGDISPLAYVARIANT')/$value
 semantic_en: "Reporting Display Variant"
+semantic_vi: "Reporting Display Variant — CDS view cơ bản dựa trên dd07l."
+keywords:
+  - "reporting"
+  - "display"
+  - "variant"
+  - "settlmt"
+  - "rptg"
+  - "domain"
+  - "value"
 tags:
   - LO
   - bo:purchaseorder
@@ -15,7 +24,6 @@ tags:
   - interface-view
   - LO-AB
   - lob:logistics general
-  - metadata-only
 ---
 # I_SETTLMTRPTGDISPLAYVARIANT
 
@@ -27,11 +35,79 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTRPTGDISPLAYVARIANT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTRPTGDISPLAYVARIANT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SettlmtRptgDisplayVariant` |  | |  |  | `CHAR(1)` | Invert Sign for Amount/Quantity Fields in Reporting |
-| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtRptgDisplayVariant` | ✓ | |  | `cast( dd07l.domvalue_l as wlf_reporting_display_variant )` | `CHAR(1)` | Invert Sign for Amount/Quantity Fields in Reporting |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `_Text` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTRPTGDISPLAYVARIANT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTRPTGDISPLAYVARIANT')/$value)*
+
+```abap
+@EndUserText.label: 'Reporting Display Variant'
+@AccessControl: {
+  authorizationCheck: #NOT_REQUIRED
+}
+@ObjectModel: {
+  sapObjectNodeType.name: 'SettlmtRptgDisplayVariantCat',
+  dataCategory: #VALUE_HELP,
+  representativeKey: 'SettlmtRptgDisplayVariant',
+  modelingPattern : #ANALYTICAL_DIMENSION,
+  supportedCapabilities : [#ANALYTICAL_DIMENSION,
+                           #SQL_DATA_SOURCE,
+                           #CDS_MODELING_DATA_SOURCE,
+                           #CDS_MODELING_ASSOCIATION_TARGET,
+                           #EXTRACTION_DATA_SOURCE,
+                           #SEARCHABLE_ENTITY,
+                           #VALUE_HELP_PROVIDER],
+  usageType: {
+    dataClass:      #META,
+    serviceQuality: #A,
+    sizeCategory:   #S
+  },
+  resultSet.sizeCategory: #XS
+}
+@VDM: {
+  viewType: #BASIC,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API 
+}
+@Search.searchable: true
+@Analytics: {
+  dataCategory: #DIMENSION,
+  dataExtraction.enabled: true,
+  internalName: #LOCAL,
+  technicalName: 'ISETRPTGDSPVAR'
+}
+@Metadata: {
+  ignorePropagatedAnnotations: true
+}
+
+/*+[hideWarning] { "IDS" : [ "KEY_CHECK", "CALCULATED_FIELD_CHECK" ]  } */
+define root view entity I_SettlmtRptgDisplayVariant
+  as select from dd07l
+
+  composition [0..*] of I_SettlmtRptgDspVariantName as _Text
+
+{
+      @ObjectModel.text.association: '_Text'
+  key cast( dd07l.domvalue_l as wlf_reporting_display_variant )                                  as SettlmtRptgDisplayVariant,
+      @Consumption.hidden: true
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #HIGH
+      dd07l.domvalue_l                                                                           as DomainValue,
+
+      /* Associations */
+      _Text
+}
+where
+      dd07l.domname  = 'WLF_REPORTING_DISPLAY_VARIANT'
+  and dd07l.as4local = 'A'
+  and dd07l.as4vers  = '0000'
+```

@@ -5,9 +5,22 @@ app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OPLACCTGDOCUMENTITEMBROWSER')/$value
 semantic_en: "Operational Item for Browser"
+semantic_vi: "Operational Item for Browser — CDS view giao diện dựa trên P_OperationalAcctgDocBrowser."
+keywords:
+  - "operational"
+  - "item"
+  - "for"
+  - "browser"
+  - "accounting"
+  - "document"
+  - "group"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
 tags:
   - FI
   - component:FI-GL-IS-2CL
@@ -16,7 +29,6 @@ tags:
   - FI-GL-IS-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_OPLACCTGDOCUMENTITEMBROWSER
 
@@ -28,17 +40,17 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OPLACCTGDOCUMENTITEMBROWSER')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OPLACCTGDOCUMENTITEMBROWSER')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AccountingDocumentCatGroup` |  | |  |  | `CHAR(1)` | Journal Entry Category Group |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `AccountingDocumentItem` |  | |  |  | `NUMC(3)` | Journal Entry Posting View Item |
+| `AccountingDocumentCatGroup` | ✓ | |  |  | `CHAR(1)` | Journal Entry Category Group |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Journal Entry |
+| `AccountingDocumentItem` | ✓ | |  |  | `NUMC(3)` | Journal Entry Posting View Item |
 | `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
 | `ClearingDate` |  | |  |  | `DATS(8)` | Clearing Date |
 | `ClearingCreationDate` |  | |  |  | `DATS(8)` | Clearing Creation Date |
@@ -115,7 +127,7 @@ tags:
 | `InvoiceList` |  | |  |  | `NUMC(8)` | Invoice List |
 | `BillOfExchangeUsage` |  | |  |  | `CHAR(1)` | Bill of Exchange Usage Type |
 | `DunningKey` |  | |  |  | `CHAR(1)` | Dunning Key |
-| `DunningBlockingReason` |  | |  |  | `CHAR(1)` | Dunning Blocking Reason |
+| `DunningBlockingReason` |  | |  |  | `CHAR(1)` | Dunning Block Reason |
 | `LastDunningDate` |  | |  |  | `DATS(8)` | Date of Last Dunning Notice |
 | `DunningLevel` |  | |  |  | `NUMC(1)` | Dunning Level |
 | `DunningArea` |  | |  |  | `CHAR(2)` | Dunning Area |
@@ -150,7 +162,7 @@ tags:
 | `OrderInternalBillOfOperations` |  | |  |  | `NUMC(10)` | Order Internal Bill of Operations ID |
 | `OrderIntBillOfOperationsItem` |  | |  |  | `NUMC(8)` | Order Internal Bill of Operations Item |
 | `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element Internal ID |
-| `ProfitabilitySegment` |  | |  |  | `NUMC(10)` | Deprecated: Profitability Segment |
+| `ProfitabilitySegment` |  | |  | `cast( case when P_OperationalAcctgDocBrowser.ProfitabilitySegment_2 > '9999999999' then '9999999999' else lpad( P_OperationalAcctgDocBrowser.ProfitabilitySegment_2, 10, '0' ) end as rkeobjnr_numc )` | `NUMC(10)` | Deprecated: Profitability Segment |
 | `ProfitabilitySegment_2` |  | |  |  | `CHAR(10)` | Profitability Segment |
 | `JointVentureEquityType` |  | |  |  | `CHAR(3)` | Joint Venture Equity Type |
 | `IsEUTriangularDeal` |  | |  |  | `CHAR(1)` | Is EU Triangular Deal |
@@ -269,3 +281,580 @@ tags:
 | `LedgerGroup` |  | |  |  | `CHAR(4)` | Ledger Group |
 | `NumberOfItems` |  | |  |  | `DEC(12)` | Number of Items |
 | `ClearingStatusSelection` |  | |  |  | `CHAR(1)` | Clearing Status Selection |
+| `_AccountingDocumentCatGroup` | | ✓ | | | | |
+| `_PartnerCompany` | | ✓ | | | | |
+| `_PartnerCompany_2` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_FunctionalCurrency` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_AccountingDocumentCatGroup` | `I_AccountingDocumentCatGroup` | [0..1] |
+| `_PartnerCompany` | `I_CompanyCode` | [0..1] |
+| `_PartnerCompany_2` | `I_Partnercompany` | [0..1] |
+| `_CompanyCodeCurrency` | `I_Currency` | [1..1] |
+| `_FunctionalCurrency` | `I_Currency` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OPLACCTGDOCUMENTITEMBROWSER')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OPLACCTGDOCUMENTITEMBROWSER')/$value)*
+
+```abap
+@AbapCatalog.entityBuffer.definitionAllowed: false
+ @EndUserText.label: 'Operational Item for Browser'
+
+@AccessControl: {authorizationCheck: #CHECK,
+                 personalData.blocking: #REQUIRED }
+@VDM.viewType: #COMPOSITE
+@ObjectModel: { representativeKey: 'AccountingDocumentItem',
+                usageType.sizeCategory: #XXL,
+                usageType.dataClass:  #MIXED,
+                usageType.serviceQuality: #D, 
+                supportedCapabilities: [#SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE],
+                modelingPattern: #NONE }
+@Analytics.technicalName: 'IFIOPACCTGDCBRWS'                
+@Analytics: { internalName: #LOCAL }
+@Metadata: { ignorePropagatedAnnotations: true,  
+             allowExtensions:true }
+@AccessControl.auditFilter: #ENABLED
+
+define view entity I_OplAcctgDocumentItemBrowser 
+            with parameters P_ClearingStatusSelection   : fis_clearingstatusselection  
+                                                                                                        
+as select from P_OperationalAcctgDocBrowser ( P_ClearingStatusSelection: $parameters.P_ClearingStatusSelection ) 
+
+  association [0..1] to I_AccountingDocumentCatGroup   as _AccountingDocumentCatGroup      on  $projection.AccountingDocumentCatGroup = _AccountingDocumentCatGroup.AccountingDocumentCatGroup
+  association [0..1] to I_CompanyCode                  as _PartnerCompany                  on  $projection.PartnerCompany = _PartnerCompany.CompanyCode
+  association [0..1] to I_Partnercompany               as _PartnerCompany_2                on  $projection.PartnerCompany = _PartnerCompany_2.PartnerCompany  
+  association [1..1] to I_Currency                     as _CompanyCodeCurrency             on  $projection.CompanyCodeCurrency = _CompanyCodeCurrency.Currency
+  association [0..1] to I_Currency                     as _FunctionalCurrency              on  $projection.FunctionalCurrency = _FunctionalCurrency.Currency  
+{  
+@Consumption.hidden: true
+@ObjectModel.foreignKey.association: '_AccountingDocumentCatGroup'
+key P_OperationalAcctgDocBrowser.AccountingDocumentCatGroup,
+@ObjectModel.foreignKey.association: '_CompanyCode'
+key P_OperationalAcctgDocBrowser.CompanyCode,
+@ObjectModel.foreignKey.association: '_FiscalYear'
+key P_OperationalAcctgDocBrowser.FiscalYear,
+@ObjectModel.foreignKey.association: '_JournalEntry'
+key P_OperationalAcctgDocBrowser.AccountingDocument,
+key P_OperationalAcctgDocBrowser.AccountingDocumentItem,
+
+
+@ObjectModel.foreignKey.association: '_ChartOfAccounts'
+P_OperationalAcctgDocBrowser.ChartOfAccounts,
+P_OperationalAcctgDocBrowser.ClearingDate,
+P_OperationalAcctgDocBrowser.ClearingCreationDate,
+P_OperationalAcctgDocBrowser.ClearingJournalEntry,
+@API.element.releaseState: #DEPRECATED
+@API.element.successor:    'ClearingJournalEntry'
+@VDM.lifecycle.status:    #DEPRECATED
+@VDM.lifecycle.successor: 'ClearingJournalEntry'
+P_OperationalAcctgDocBrowser.ClearingAccountingDocument,
+
+P_OperationalAcctgDocBrowser.PostingKey,
+@ObjectModel.foreignKey.association: '_FinancialAccountType'
+P_OperationalAcctgDocBrowser.FinancialAccountType,
+P_OperationalAcctgDocBrowser.SpecialGLCode,
+P_OperationalAcctgDocBrowser.SpecialGLTransactionType,
+P_OperationalAcctgDocBrowser.DebitCreditCode,
+@ObjectModel.foreignKey.association: '_BusinessArea'
+P_OperationalAcctgDocBrowser.BusinessArea,
+P_OperationalAcctgDocBrowser.PartnerBusinessArea,
+P_OperationalAcctgDocBrowser.TaxCode,
+P_OperationalAcctgDocBrowser.WithholdingTaxCode,
+P_OperationalAcctgDocBrowser.TaxType,
+P_OperationalAcctgDocBrowser.TransactionTypeDetermination,
+P_OperationalAcctgDocBrowser.ValueDate,
+P_OperationalAcctgDocBrowser.AssignmentReference,
+P_OperationalAcctgDocBrowser.DocumentItemText,
+P_OperationalAcctgDocBrowser.PartnerCompany,
+P_OperationalAcctgDocBrowser.FinancialTransactionType,
+P_OperationalAcctgDocBrowser.CorporateGroupAccount,
+P_OperationalAcctgDocBrowser.PlanningLevel,
+@ObjectModel.foreignKey.association: '_ControllingArea'
+P_OperationalAcctgDocBrowser.ControllingArea,
+@ObjectModel.foreignKey.association: '_CostCenter'
+P_OperationalAcctgDocBrowser.CostCenter,
+//ProjectInternalID,   -- to be retrieved later from WBS Element
+@ObjectModel.foreignKey.association: '_Order' 
+P_OperationalAcctgDocBrowser.OrderID,    
+P_OperationalAcctgDocBrowser.BillingDocument,
+P_OperationalAcctgDocBrowser.SalesDocument,
+P_OperationalAcctgDocBrowser.SalesDocumentItem,
+P_OperationalAcctgDocBrowser.ScheduleLine,
+P_OperationalAcctgDocBrowser.ServiceDocumentType,
+P_OperationalAcctgDocBrowser.ServiceDocument,
+P_OperationalAcctgDocBrowser.ServiceDocumentItem,
+@ObjectModel.foreignKey.association: '_MasterFixedAsset'
+P_OperationalAcctgDocBrowser.MasterFixedAsset,
+@ObjectModel.foreignKey.association: '_FixedAsset'
+P_OperationalAcctgDocBrowser.FixedAsset,
+@ObjectModel.foreignKey.association: '_AssetTransactionType'
+P_OperationalAcctgDocBrowser.AssetTransactionType,
+P_OperationalAcctgDocBrowser.AssetValueDate,
+P_OperationalAcctgDocBrowser.PersonnelNumber,
+//@Semantics.booleanIndicator
+P_OperationalAcctgDocBrowser.IsSalesRelated,
+//xhres,
+//@Semantics.booleanIndicator
+P_OperationalAcctgDocBrowser.LineItemDisplayIsEnabled,
+//@Semantics.booleanIndicator
+P_OperationalAcctgDocBrowser.IsOpenItemManaged,
+//@Semantics.booleanIndicator
+P_OperationalAcctgDocBrowser.IsNotCashDiscountLiable,
+//@Semantics.booleanIndicator
+P_OperationalAcctgDocBrowser.IsAutomaticallyCreated,
+//@Semantics.booleanIndicator
+P_OperationalAcctgDocBrowser.IsUsedInPaymentTransaction,
+P_OperationalAcctgDocBrowser.OperationalGLAccount,
+@ObjectModel.foreignKey.association: '_GLAccountInChartOfAccounts'
+P_OperationalAcctgDocBrowser.GLAccount,
+P_OperationalAcctgDocBrowser.Customer,
+P_OperationalAcctgDocBrowser.Supplier,
+P_OperationalAcctgDocBrowser.BranchAccount,
+//@Semantics.booleanIndicator
+P_OperationalAcctgDocBrowser.IsBalanceSheetAccount,
+P_OperationalAcctgDocBrowser.ProfitLossAccountType,
+P_OperationalAcctgDocBrowser.SpecialGLAccountAssignment,
+P_OperationalAcctgDocBrowser.DueCalculationBaseDate,
+P_OperationalAcctgDocBrowser.PaymentTerms,
+P_OperationalAcctgDocBrowser.CashDiscount1Days,
+P_OperationalAcctgDocBrowser.CashDiscount2Days,
+P_OperationalAcctgDocBrowser.NetPaymentDays,
+P_OperationalAcctgDocBrowser.CashDiscount1Percent,   //  ?????????
+P_OperationalAcctgDocBrowser.CashDiscount2Percent,  //  ??????
+P_OperationalAcctgDocBrowser.PaymentMethod,
+P_OperationalAcctgDocBrowser.PaymentBlockingReason,
+P_OperationalAcctgDocBrowser.FixedCashDiscount,
+P_OperationalAcctgDocBrowser.HouseBank,
+P_OperationalAcctgDocBrowser.BPBankAccountInternalID,
+P_OperationalAcctgDocBrowser.TaxDistributionCode1,
+P_OperationalAcctgDocBrowser.TaxDistributionCode2,
+P_OperationalAcctgDocBrowser.TaxDistributionCode3, 
+P_OperationalAcctgDocBrowser.InvoiceReference,
+P_OperationalAcctgDocBrowser.InvoiceReferenceFiscalYear,
+P_OperationalAcctgDocBrowser.InvoiceItemReference,
+P_OperationalAcctgDocBrowser.FollowOnDocumentType,
+P_OperationalAcctgDocBrowser.StateCentralBankPaymentReason,
+P_OperationalAcctgDocBrowser.SupplyingCountry,
+P_OperationalAcctgDocBrowser.InvoiceList,
+P_OperationalAcctgDocBrowser.BillOfExchangeUsage,
+P_OperationalAcctgDocBrowser.DunningKey,
+P_OperationalAcctgDocBrowser.DunningBlockingReason,
+P_OperationalAcctgDocBrowser.LastDunningDate,
+P_OperationalAcctgDocBrowser.DunningLevel,
+P_OperationalAcctgDocBrowser.DunningArea,
+P_OperationalAcctgDocBrowser.WithholdingTaxCertificate,
+@ObjectModel.foreignKey.association: '_Product'
+P_OperationalAcctgDocBrowser.Product,
+@ObjectModel.foreignKey.association: '_Plant'
+P_OperationalAcctgDocBrowser.Plant,
+@ObjectModel.foreignKey.association: '_PurchasingDocument'
+P_OperationalAcctgDocBrowser.PurchasingDocument,
+@ObjectModel.foreignKey.association: '_PurchasingDocumentItem'
+P_OperationalAcctgDocBrowser.PurchasingDocumentItem,
+P_OperationalAcctgDocBrowser.AccountAssignmentNumber,
+//@Semantics.booleanIndicator
+P_OperationalAcctgDocBrowser.IsCompletelyDelivered,
+P_OperationalAcctgDocBrowser.MaterialPriceControl,
+@ObjectModel.foreignKey.association: '_ValuationArea'
+P_OperationalAcctgDocBrowser.ValuationArea,
+P_OperationalAcctgDocBrowser.InventoryValuationType,
+P_OperationalAcctgDocBrowser.VATRegistration,
+P_OperationalAcctgDocBrowser.DelivOfGoodsDestCountry,
+P_OperationalAcctgDocBrowser.PaymentDifferenceReason,
+@ObjectModel.foreignKey.association: '_ProfitCenter'
+P_OperationalAcctgDocBrowser.ProfitCenter,
+P_OperationalAcctgDocBrowser.JointVenture,
+P_OperationalAcctgDocBrowser.JointVentureCostRecoveryCode,
+P_OperationalAcctgDocBrowser.JointVentureEquityGroup,
+P_OperationalAcctgDocBrowser.TreasuryContractType,
+P_OperationalAcctgDocBrowser.AssetContract,
+P_OperationalAcctgDocBrowser.CashFlowType,
+//depot,
+P_OperationalAcctgDocBrowser.TaxJurisdiction,
+
+//@ObjectModel.foreignKey.association: '_REObjectByIntFinNumber'
+P_OperationalAcctgDocBrowser.REInternalFinNumber,
+@API.element.releaseState: #DEPRECATED
+@API.element.successor:    'REInternalFinNumber'
+@VDM.lifecycle.status:    #DEPRECATED
+@VDM.lifecycle.successor: 'REInternalFinNumber'
+P_OperationalAcctgDocBrowser.RealEstateObject,
+
+P_OperationalAcctgDocBrowser.SettlementReferenceDate,
+@API.element.releaseState: #DEPRECATED
+@API.element.successor:    'CommitmentItemShortID'
+@VDM.lifecycle.status:    #DEPRECATED
+@VDM.lifecycle.successor: 'CommitmentItemShortID'
+P_OperationalAcctgDocBrowser.CommitmentItem,
+P_OperationalAcctgDocBrowser.CommitmentItemShortID,
+P_OperationalAcctgDocBrowser.CostObject,
+@ObjectModel.foreignKey.association: '_ProjectNetwork'
+P_OperationalAcctgDocBrowser.ProjectNetwork,
+P_OperationalAcctgDocBrowser.OrderInternalBillOfOperations,
+P_OperationalAcctgDocBrowser.OrderIntBillOfOperationsItem,
+P_OperationalAcctgDocBrowser.WBSElementInternalID,
+
+@API.element.releaseState: #DECOMMISSIONED
+@API.element.successor:    'ProfitabilitySegment_2'
+@VDM.lifecycle.status:    #DEPRECATED
+@VDM.lifecycle.successor: 'ProfitabilitySegment_2'
+cast( case when P_OperationalAcctgDocBrowser.ProfitabilitySegment_2 > '9999999999' then '9999999999' else lpad( P_OperationalAcctgDocBrowser.ProfitabilitySegment_2, 10, '0' ) end as rkeobjnr_numc )  as ProfitabilitySegment,
+P_OperationalAcctgDocBrowser.ProfitabilitySegment_2, 
+
+P_OperationalAcctgDocBrowser.JointVentureEquityType,
+//@Semantics.booleanIndicator
+P_OperationalAcctgDocBrowser.IsEUTriangularDeal,
+P_OperationalAcctgDocBrowser.CostOriginGroup,
+P_OperationalAcctgDocBrowser.CompanyCodeCurrencyDetnMethod,
+//@Semantics.booleanIndicator
+P_OperationalAcctgDocBrowser.ClearingIsReversed,
+P_OperationalAcctgDocBrowser.PaymentMethodSupplement,
+P_OperationalAcctgDocBrowser.AlternativeGLAccount,
+P_OperationalAcctgDocBrowser.PartnerProfitCenter,
+P_OperationalAcctgDocBrowser.Reference1IDByBusinessPartner,
+P_OperationalAcctgDocBrowser.Reference2IDByBusinessPartner,
+//@Semantics.booleanIndicator
+P_OperationalAcctgDocBrowser.IsNegativePosting,
+P_OperationalAcctgDocBrowser.PaymentCardItem,
+P_OperationalAcctgDocBrowser.PaymentCardPaymentSettlement,
+P_OperationalAcctgDocBrowser.CreditControlArea,
+P_OperationalAcctgDocBrowser.Reference3IDByBusinessPartner,
+P_OperationalAcctgDocBrowser.DataExchangeInstruction1,
+P_OperationalAcctgDocBrowser.DataExchangeInstruction2,
+P_OperationalAcctgDocBrowser.DataExchangeInstruction3,
+P_OperationalAcctgDocBrowser.DataExchangeInstruction4,
+P_OperationalAcctgDocBrowser.Region,
+P_OperationalAcctgDocBrowser.HasPaymentOrder,
+P_OperationalAcctgDocBrowser.PaymentReference,
+P_OperationalAcctgDocBrowser.TaxDeterminationDate,
+P_OperationalAcctgDocBrowser.ClearingItem,
+P_OperationalAcctgDocBrowser.BusinessPlace,
+P_OperationalAcctgDocBrowser.TaxSection,
+@ObjectModel.foreignKey.association: '_CostCtrActivityType'
+P_OperationalAcctgDocBrowser.CostCtrActivityType,
+@API.element.releaseState: #DEPRECATED
+@API.element.successor:    'AcctsReceivablePledgingCode'
+@VDM.lifecycle.status:    #DEPRECATED
+@VDM.lifecycle.successor: 'AcctsReceivablePledgingCode'
+P_OperationalAcctgDocBrowser.AccountsReceivableIsPledged,
+P_OperationalAcctgDocBrowser.AcctsReceivablePledgingCode,
+@ObjectModel.foreignKey.association: '_BusinessProcess'
+P_OperationalAcctgDocBrowser.BusinessProcess,
+@ObjectModel.foreignKey.association: '_FunctionalArea'
+P_OperationalAcctgDocBrowser.FunctionalArea,
+//@Semantics.booleanIndicator
+P_OperationalAcctgDocBrowser.CustomerIsInExecution,
+P_OperationalAcctgDocBrowser.ClearingJournalEntryFiscalYear,
+@API.element.releaseState: #DEPRECATED
+@API.element.successor:    'ClearingJournalEntryFiscalYear'
+@VDM.lifecycle.status:    #DEPRECATED
+@VDM.lifecycle.successor: 'ClearingJournalEntryFiscalYear'
+P_OperationalAcctgDocBrowser.ClearingDocFiscalYear,
+P_OperationalAcctgDocBrowser.LedgerGLLineItem,
+@ObjectModel.foreignKey.association: '_Segment'
+P_OperationalAcctgDocBrowser.Segment,
+P_OperationalAcctgDocBrowser.PartnerSegment,
+P_OperationalAcctgDocBrowser.PartnerFunctionalArea,
+P_OperationalAcctgDocBrowser.HouseBankAccount,
+P_OperationalAcctgDocBrowser.CostElement,
+P_OperationalAcctgDocBrowser.PaymentServiceProvider,
+P_OperationalAcctgDocBrowser.PaymentRefByPaytSrvcProvider,
+P_OperationalAcctgDocBrowser.SEPAMandate,
+P_OperationalAcctgDocBrowser.ReferenceDocumentType,
+P_OperationalAcctgDocBrowser.OriginalReferenceDocument,
+P_OperationalAcctgDocBrowser.ReferenceDocumentLogicalSystem,
+P_OperationalAcctgDocBrowser.AccountingDocumentItemRef,
+P_OperationalAcctgDocBrowser.FiscalPeriod,
+P_OperationalAcctgDocBrowser.AccountingDocumentCategory,
+P_OperationalAcctgDocBrowser.PostingDate,
+P_OperationalAcctgDocBrowser.DocumentDate,
+@ObjectModel.foreignKey.association: '_AccountingDocumentType'
+P_OperationalAcctgDocBrowser.AccountingDocumentType,
+P_OperationalAcctgDocBrowser.NetDueDate,
+P_OperationalAcctgDocBrowser.CashDiscount1DueDate,
+P_OperationalAcctgDocBrowser.CashDiscount2DueDate,
+P_OperationalAcctgDocBrowser.OffsettingAccount,
+P_OperationalAcctgDocBrowser.OffsettingAccountType,
+P_OperationalAcctgDocBrowser.OffsettingChartOfAccounts,
+
+@ObjectModel.foreignKey.association: '_CashLedgerCompanyCode'
+P_OperationalAcctgDocBrowser.CashLedgerCompanyCode,
+
+@ObjectModel.foreignKey.association: '_CashLedgerAccount'
+P_OperationalAcctgDocBrowser.CashLedgerAccount,
+
+      @Consumption.valueHelpDefinition: [ 
+        { entity:  { name:    'I_FinMgmtAreaStdVH',
+                     element: 'FinancialManagementArea' }
+        }]
+//      @ObjectModel.text.association: '_FinancialManagementAreaText'
+@ObjectModel.foreignKey.association: '_FinancialManagementArea'
+P_OperationalAcctgDocBrowser.FinancialManagementArea,
+
+      @Consumption.valueHelpDefinition: [ 
+        { entity:  { name:    'I_FundsCenterStdVH',
+                     element: 'FundsCenter' },
+          additionalBinding: [{ localElement: 'FinancialManagementArea',
+                                element: 'FinancialManagementArea' }]
+        }]
+@ObjectModel.foreignKey.association: '_FundsCenter'
+P_OperationalAcctgDocBrowser.FundsCenter,
+
+@ObjectModel.foreignKey.association: '_FundedProgram'
+P_OperationalAcctgDocBrowser.FundedProgram,
+
+      @Consumption.valueHelpDefinition: [ 
+        { entity:  { name:    'I_FundStdVH',
+                     element: 'Fund' },
+          additionalBinding: [{ localElement: 'FinancialManagementArea',
+                                element: 'FinancialManagementArea' }]
+        }]
+//      @ObjectModel.text.association: '_FundText'
+@ObjectModel.foreignKey.association: '_Fund'
+P_OperationalAcctgDocBrowser.Fund,
+
+@Analytics.internalName: #LOCAL      
+@ObjectModel.foreignKey.association: '_Grant'
+P_OperationalAcctgDocBrowser.GrantID,
+
+      @Consumption.valueHelpDefinition: [ 
+        { entity:  { name:    'I_BudgetPeriodStdVH',
+                     element: 'BudgetPeriod' }
+        }]
+//      @ObjectModel.text.association: '_BudgetPeriodText'
+@ObjectModel.foreignKey.association: '_BudgetPeriod'
+P_OperationalAcctgDocBrowser.BudgetPeriod,
+
+      @Consumption.valueHelpDefinition: [ 
+        { entity:  { name:    'I_FundStdVH',
+                     element: 'Fund' },
+          additionalBinding: [{ localElement: 'FinancialManagementArea',
+                                element: 'FinancialManagementArea' }]
+        }]
+//      @ObjectModel.text.association: '_PartnerFundText'
+@ObjectModel.foreignKey.association: '_PartnerFund'
+P_OperationalAcctgDocBrowser.PartnerFund,
+
+@Analytics.internalName: #LOCAL      
+@ObjectModel.foreignKey.association: '_PartnerGrant'
+P_OperationalAcctgDocBrowser.PartnerGrant,
+
+@ObjectModel.foreignKey.association: '_PartnerBudgetPeriod'
+P_OperationalAcctgDocBrowser.PartnerBudgetPeriod,
+
+@ObjectModel.foreignKey.association: '_PubSecBudgetAccount'
+P_OperationalAcctgDocBrowser.PubSecBudgetAccount,
+
+@ObjectModel.foreignKey.association: '_PubSecBudgetAccountCoCode'
+P_OperationalAcctgDocBrowser.PubSecBudgetAccountCoCode,
+
+P_OperationalAcctgDocBrowser.CompanyCodeCurrency,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} } P_OperationalAcctgDocBrowser.AmountInCompanyCodeCurrency,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} } P_OperationalAcctgDocBrowser.TaxAmountInCoCodeCrcy,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} } P_OperationalAcctgDocBrowser.TaxBaseAmountInCoCodeCrcy,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} } P_OperationalAcctgDocBrowser.ValuationDiffAmtInCoCodeCrcy,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} } P_OperationalAcctgDocBrowser.CashDiscountAmtInCoCodeCrcy,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} } P_OperationalAcctgDocBrowser.InvoiceAmtInCoCodeCrcy,
+
+P_OperationalAcctgDocBrowser.FunctionalCurrency,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'FunctionalCurrency'} }
+P_OperationalAcctgDocBrowser.AmountInFunctionalCurrency,  
+
+@ObjectModel.foreignKey.association: '_TransactionCurrency'
+P_OperationalAcctgDocBrowser.TransactionCurrency,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'TransactionCurrency'} } P_OperationalAcctgDocBrowser.AmountInTransactionCurrency, 
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'TransactionCurrency'} } P_OperationalAcctgDocBrowser.OriginalTaxBaseAmount,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'TransactionCurrency'} } P_OperationalAcctgDocBrowser.TaxAmount,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'TransactionCurrency'} } P_OperationalAcctgDocBrowser.TaxBaseAmountInTransCrcy,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'TransactionCurrency'} } P_OperationalAcctgDocBrowser.WithholdingTaxBaseAmount,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'TransactionCurrency'} } P_OperationalAcctgDocBrowser.PlannedAmtInTransactionCrcy,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'TransactionCurrency'} } P_OperationalAcctgDocBrowser.CashDiscountBaseAmount,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'TransactionCurrency'} } P_OperationalAcctgDocBrowser.CashDiscountAmount,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'TransactionCurrency'} } P_OperationalAcctgDocBrowser.NetPaymentAmount,
+ 
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'TransactionCurrency'} } P_OperationalAcctgDocBrowser.WithholdingTaxAmount,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'TransactionCurrency'} } P_OperationalAcctgDocBrowser.WithholdingTaxExemptionAmt,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'TransactionCurrency'} } P_OperationalAcctgDocBrowser.InvoiceAmountInFrgnCurrency,
+
+P_OperationalAcctgDocBrowser.BalanceTransactionCurrency,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'BalanceTransactionCurrency'} } P_OperationalAcctgDocBrowser.AmountInBalanceTransacCrcy,
+
+P_OperationalAcctgDocBrowser.AdditionalCurrency1,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'AdditionalCurrency1'} } P_OperationalAcctgDocBrowser.ValuationDiffAmtInAddlCrcy1,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'AdditionalCurrency1'} } P_OperationalAcctgDocBrowser.AmountInAdditionalCurrency1,
+
+P_OperationalAcctgDocBrowser.AdditionalCurrency2,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'AdditionalCurrency2'} } P_OperationalAcctgDocBrowser.AmountInAdditionalCurrency2,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'AdditionalCurrency2'} } P_OperationalAcctgDocBrowser.ValuationDiffAmtInAddlCrcy2,
+
+P_OperationalAcctgDocBrowser.PaymentCurrency,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'PaymentCurrency'} } P_OperationalAcctgDocBrowser.AmountInPaymentCurrency,
+
+P_OperationalAcctgDocBrowser.CreditControlAreaCurrency,
+
+@Aggregation.default: #SUM
+@Semantics: { amount : {currencyCode: 'CreditControlAreaCurrency'} } P_OperationalAcctgDocBrowser.HedgedAmount,                                                                                                     
+   
+@ObjectModel.foreignKey.association: '_BaseUnit'
+P_OperationalAcctgDocBrowser.BaseUnit,
+
+@Aggregation.default: #SUM
+@Semantics: { quantity : {unitOfMeasure: 'BaseUnit'} }
+P_OperationalAcctgDocBrowser.Quantity,
+
+@Aggregation.default: #SUM
+@Semantics: { quantity : {unitOfMeasure: 'BaseUnit'} } P_OperationalAcctgDocBrowser.AbsoluteQuantity, 
+
+P_OperationalAcctgDocBrowser.GoodsMovementEntryUnit,
+@Aggregation.default: #SUM
+@Semantics: { quantity : {unitOfMeasure: 'GoodsMovementEntryUnit'} } P_OperationalAcctgDocBrowser.QuantityInEntryUnit,
+
+P_OperationalAcctgDocBrowser.PurchasingDocumentPriceUnit,
+@Aggregation.default: #SUM
+@Semantics: { quantity : {unitOfMeasure: 'PurchasingDocumentPriceUnit'} } P_OperationalAcctgDocBrowser.PurchaseOrderQty,
+
+//      @DefaultAggregation: #NONE   // Is default for Type DEC unsigned and 0 decimals in SADL, in AE it will be treated as characteristic 
+@Semantics: { quantity : {unitOfMeasure: 'BaseUnit'} }
+P_OperationalAcctgDocBrowser.MaterialPriceUnitQty,
+
+P_OperationalAcctgDocBrowser.Ledger,
+P_OperationalAcctgDocBrowser.LedgerGroup,
+
+P_OperationalAcctgDocBrowser.NumberOfItems,
+
+P_OperationalAcctgDocBrowser.ClearingStatusSelection,
+
+    _AccountingDocumentCatGroup,
+    P_OperationalAcctgDocBrowser._CompanyCode,
+    _CompanyCodeCurrency,
+    _FunctionalCurrency,
+    P_OperationalAcctgDocBrowser._FiscalYear,
+    P_OperationalAcctgDocBrowser._JournalEntry,
+    P_OperationalAcctgDocBrowser._GLAccountInChartOfAccounts,
+    P_OperationalAcctgDocBrowser._ChartOfAccounts,
+    P_OperationalAcctgDocBrowser._PostingKey,
+    P_OperationalAcctgDocBrowser._FinancialAccountType,
+    P_OperationalAcctgDocBrowser._DebitCreditCode,
+    P_OperationalAcctgDocBrowser._BusinessArea,
+    P_OperationalAcctgDocBrowser._PartnerBusinessArea,
+    P_OperationalAcctgDocBrowser._TaxType,
+@API.element.releaseState: #DEPRECATED
+@API.element.successor:    '_PartnerCompany_2'
+@VDM.lifecycle.status:    #DEPRECATED
+@VDM.lifecycle.successor: '_PartnerCompany_2'   
+    _PartnerCompany,
+    _PartnerCompany_2,
+    P_OperationalAcctgDocBrowser._ControllingArea,
+    P_OperationalAcctgDocBrowser._ProfitCenter,
+    P_OperationalAcctgDocBrowser._CostCenter,
+    P_OperationalAcctgDocBrowser._SupplyingCountry,
+    P_OperationalAcctgDocBrowser._Product,
+    P_OperationalAcctgDocBrowser._Plant,
+    P_OperationalAcctgDocBrowser._BaseUnit,
+    P_OperationalAcctgDocBrowser._InventoryValuationType,
+    P_OperationalAcctgDocBrowser._PaymentDifferenceReason,
+    P_OperationalAcctgDocBrowser._Segment,
+    P_OperationalAcctgDocBrowser._PartnerSegment,
+    P_OperationalAcctgDocBrowser._WBSElementBasicData,
+    P_OperationalAcctgDocBrowser._AccountingDocumentType,
+    P_OperationalAcctgDocBrowser._TransactionCurrency,
+    P_OperationalAcctgDocBrowser._InternalOrder,
+    P_OperationalAcctgDocBrowser._Order,
+    P_OperationalAcctgDocBrowser._MasterFixedAsset,
+    P_OperationalAcctgDocBrowser._FixedAsset,
+    P_OperationalAcctgDocBrowser._AssetTransactionType,
+    P_OperationalAcctgDocBrowser._PurchasingDocument,
+    P_OperationalAcctgDocBrowser._PurchasingDocumentItem,
+//@API.element.releaseState: #DEPRECATED
+//@API.element.successor:    ''
+//@VDM.lifecycle.status:    #DEPRECATED
+//@VDM.lifecycle.successor: ''
+    P_OperationalAcctgDocBrowser._ValuationArea,
+    P_OperationalAcctgDocBrowser._ProjectNetwork,
+    P_OperationalAcctgDocBrowser._CostCtrActivityType,
+    P_OperationalAcctgDocBrowser._BusinessProcess,
+    P_OperationalAcctgDocBrowser._FunctionalArea,
+
+    P_OperationalAcctgDocBrowser._AdditionalCurrencyRoles,    
+    
+    P_OperationalAcctgDocBrowser._CurrentCostCenter,
+    P_OperationalAcctgDocBrowser._CurrentProfitCenter,
+    P_OperationalAcctgDocBrowser._Customer,
+    P_OperationalAcctgDocBrowser._CustomerCompany,
+    P_OperationalAcctgDocBrowser._GLAccountInCompanyCode,
+    P_OperationalAcctgDocBrowser._SalesDocument,
+    P_OperationalAcctgDocBrowser._ServiceDocument,
+    P_OperationalAcctgDocBrowser._Supplier,       
+    P_OperationalAcctgDocBrowser._SupplierCompany,       
+    
+    P_OperationalAcctgDocBrowser._FinancialManagementArea,
+    P_OperationalAcctgDocBrowser._FundsCenter,
+    P_OperationalAcctgDocBrowser._Fund,
+    P_OperationalAcctgDocBrowser._PartnerFund,
+    P_OperationalAcctgDocBrowser._FundedProgram,
+    P_OperationalAcctgDocBrowser._CashLedgerCompanyCode,
+    P_OperationalAcctgDocBrowser._CashLedgerAccount,
+    P_OperationalAcctgDocBrowser._BudgetPeriod,
+    P_OperationalAcctgDocBrowser._PartnerBudgetPeriod,
+    P_OperationalAcctgDocBrowser._Grant,
+    P_OperationalAcctgDocBrowser._PartnerGrant,
+    P_OperationalAcctgDocBrowser._PubSecBudgetAccountCoCode,
+    P_OperationalAcctgDocBrowser._PubSecBudgetAccount
+    
+//    _REObjectByIntFinNumber
+}
+```

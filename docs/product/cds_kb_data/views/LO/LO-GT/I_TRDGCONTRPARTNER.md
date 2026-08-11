@@ -5,9 +5,20 @@ app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRPARTNER')/$value
 semantic_en: "Partner of Trading Contract"
+semantic_vi: "Partner of Trading Contract — CDS view tổng hợp dựa trên R_TrdgContrPartner."
+keywords:
+  - "partner"
+  - "trading"
+  - "contract"
+  - "function"
+  - "counter"
+  - "created"
+  - "user"
+  - "creation"
+  - "date"
 tags:
   - LO
   - component:LO-GT
@@ -15,7 +26,6 @@ tags:
   - interface-view
   - LO-GT
   - lob:logistics general
-  - metadata-only
 ---
 # I_TRDGCONTRPARTNER
 
@@ -27,15 +37,15 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRPARTNER')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRPARTNER')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TradingContract` |  | |  |  | `CHAR(10)` | Trading Contract |
-| `PartnerFunction` |  | |  |  | `CHAR(2)` | Partner Function |
-| `PartnerCounter` |  | |  |  | `NUMC(3)` | Partner counter |
+| `TradingContract` | ✓ | |  |  | `CHAR(10)` | Trading Contract |
+| `PartnerFunction` | ✓ | |  |  | `CHAR(2)` | Partner Function |
+| `PartnerCounter` | ✓ | |  |  | `NUMC(3)` | Partner counter |
 | `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
 | `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
 | `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
@@ -60,3 +70,84 @@ tags:
 | `TrdgContrCustIsRbteRlvt` |  | |  |  | `CHAR(1)` | Indicator: Customer Is Rebate-Relevant |
 | `TrdgContrPurgIsSubjToSettlmt` |  | |  |  | `CHAR(1)` | Indicator: supplier subject to subseq. settlement accounting |
 | `TrdgContrPartAddrIsDocSpcfc` |  | |  |  | `CHAR(1)` | Document-Specific Address Indicator |
+| `_TrdgContr` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_TrdgContr` | `I_TrdgContr` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRPARTNER')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRPARTNER')/$value)*
+
+```abap
+@AccessControl: {
+    authorizationCheck: #MANDATORY,
+    personalData.blocking: #('TRANSACTIONAL_DATA')
+    }
+@EndUserText.label: 'Partner of Trading Contract'
+@ObjectModel: {
+  semanticKey: ['PartnerFunction', 'PartnerCounter'],
+  modelingPattern: #NONE,
+  supportedCapabilities: [#CDS_MODELING_DATA_SOURCE],
+  usageType: {
+    serviceQuality: #B,
+    dataClass:      #TRANSACTIONAL,
+    sizeCategory:   #XXL
+  }
+}
+@VDM: {
+    viewType: #COMPOSITE,
+    lifecycle.contract.type: #PUBLIC_LOCAL_API
+    }
+@Metadata: {
+  ignorePropagatedAnnotations: true,
+  allowExtensions: false
+}
+
+define view entity I_TrdgContrPartner
+  as select from R_TrdgContrPartner as TrdgContrPartner
+
+  association [1..1] to I_TrdgContr as _TrdgContr on $projection.TradingContract = _TrdgContr.TradingContract
+
+{
+  key TradingContract,
+  key PartnerFunction,
+  key PartnerCounter,
+      @Semantics.user.createdBy: true
+      CreatedByUser,
+      @Semantics.systemDate.createdAt: true
+      CreationDate,
+      Supplier,
+      SoldToParty,
+      DefaultPartner,
+      ContactPerson,
+      Personnel,
+      AddressID,
+
+      TrdgContrPartAddrRefType,
+      ReferenceBusinessPartner,
+      BPAddrDeterminationTransaction,
+      AddressObjectType,
+      AddressPersonID,
+      BPRefAddressIDForDocSpcfcAddr,
+      TrdgContrPrtnHierLvlVal,
+      @Semantics.booleanIndicator: true
+      NFPartnerIsNaturalPerson,
+      TaxNumberType,
+      @Semantics.text: true
+
+      TrdgContrDelivSchedUnldgPt,
+      TrdgContrCustHierCat,
+      TrdgContrSuplrHierCat,
+      TrdgContrIsHierPrDetnRlvt,
+      TrdgContrCustIsRbteRlvt,
+      TrdgContrPurgIsSubjToSettlmt,
+      TrdgContrPartAddrIsDocSpcfc,
+
+      /* Associations */
+      _TrdgContr
+}
+```

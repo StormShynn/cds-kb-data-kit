@@ -5,12 +5,20 @@ app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTR')/$value
 semantic_en: "Trading Contract"
+semantic_vi: "Trading Contract — CDS view giao diện dựa trên R_TrdgContr."
 keywords:
   - "Trading Contract"
-  - "Trading Contract"
+  - "trading"
+  - "contract"
+  - "type"
+  - "category"
+  - "trdg"
+  - "contr"
+  - "process"
+  - "purpose"
 tags:
   - LO
   - component:LO-GT
@@ -18,7 +26,6 @@ tags:
   - interface-view
   - LO-GT
   - lob:logistics general
-  - metadata-only
 ---
 # I_TRDGCONTR
 
@@ -30,13 +37,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTR')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTR')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TradingContract` |  | |  |  | `CHAR(10)` | Trading Contract |
+| `TradingContract` | ✓ | |  |  | `CHAR(10)` | Trading Contract |
 | `TradingContractType` |  | |  |  | `CHAR(4)` | Trading Contract Type |
 | `TradingContractCategory` |  | |  |  | `CHAR(1)` | Trading Contract Category |
 | `TrdgContrBusProcessCategory` |  | |  |  | `CHAR(2)` | Business Process Category |
@@ -202,3 +209,363 @@ tags:
 | `SupplierConfirmationControlKey` |  | |  |  | `CHAR(4)` | Supplier Confirmation Control Key |
 | `TrdgContrMnlPOSplit` |  | |  |  | `CHAR(10)` | Manual Purchase Order Split |
 | `UnderlyingPurchaseOrderItem` |  | |  |  | `CHAR(6)` | Item Number of the Underlying Purchase Order |
+| `_TrdgContrPartner` | | ✓ | | | | |
+| `_TrdgContrSlsPrcgElmnt` | | ✓ | | | | |
+| `_TrdgContrPurgPrcgElmnt` | | ✓ | | | | |
+| `_TrdgContrItem` | | ✓ | | | | |
+| `_TrdgContrReleaseStatus` | | ✓ | | | | |
+| `_TrdgContrApplStatus` | | ✓ | | | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_ControllingAreaCurrency` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_CreditControlArea` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_CustomerCreditAccount` | | ✓ | | | | |
+| `_CustomerPurchaseOrderType` | | ✓ | | | | |
+| `_CustomerSalesArea` | | ✓ | | | | |
+| `_DeliveryBlockReason` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_HeaderBillingBlockReason` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_MatlUsageIndicator` | | ✓ | | | | |
+| `_OrganizationDivision` | | ✓ | | | | |
+| `_PaymentGuaranteeProcedure` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurgIncotermsClassification` | | ✓ | | | | |
+| `_SalesArea` | | ✓ | | | | |
+| `_SalesDocumentType` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesOrderReason` | | ✓ | | | | |
+| `_SalesOrderType` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SDDocumentCategory` | | ✓ | | | | |
+| `_ShippingCondition` | | ✓ | | | | |
+| `_ShippingType` | | ✓ | | | | |
+| `_SlsIncotermsClassification` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplyingPlant` | | ✓ | | | | |
+| `_TaxDepartureCountry` | | ✓ | | | | |
+| `_TradingContractCurrency` | | ✓ | | | | |
+| `_TrdgContrExchangeRateType` | | ✓ | | | | |
+| `_TrdgContrPurgExchangeRateType` | | ✓ | | | | |
+| `_TrdgContrPurgIncotermsVersion` | | ✓ | | | | |
+| `_TrdgContrPurgPaymentTerms` | | ✓ | | | | |
+| `_TrdgContrSalesCurrency` | | ✓ | | | | |
+| `_TrdgContrSalesPaymentTerms` | | ✓ | | | | |
+| `_TrdgContrSlsExchangeRateType` | | ✓ | | | | |
+| `_TrdgContrSlsIncotermsVersion` | | ✓ | | | | |
+| `_TrdgContrSlsPricingProcedure` | | ✓ | | | | |
+| `_TrdgContrAddlExpnsBlkRsn` | | ✓ | | | | |
+| `_TrdgContrSuplrBillgBlkRsn` | | ✓ | | | | |
+| `_VATRegistrationCountry` | | ✓ | | | | |
+| `_WBSElementInternalID` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_TrdgContrPartner` | `I_TrdgContrPartner` | [0..*] |
+| `_TrdgContrSlsPrcgElmnt` | `I_TrdgContrSlsPrcgElmnt` | [0..*] |
+| `_TrdgContrPurgPrcgElmnt` | `I_TrdgContrPurgPrcgElmnt` | [0..*] |
+| `_TrdgContrItem` | `I_TrdgContrItem` | [0..*] |
+| `_TrdgContrReleaseStatus` | `I_TrdgDocReleaseStatus` | [0..1] |
+| `_TrdgContrApplStatus` | `I_TrdgDocApplicationStatus` | [0..1] |
+| `_TrdgDocExtension` | `E_TradingDocument` | [0..1] |
+| `_TrdgDocBusinessDataExtension` | `E_TradingDocumentBusinessData` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTR')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTR')/$value)*
+
+```abap
+@EndUserText.label: 'Trading Contract'
+@ObjectModel: {
+  compositionRoot: true,
+  representativeKey: 'TradingContract',
+  usageType.serviceQuality: #B,
+  usageType.sizeCategory: #L,
+  usageType.dataClass: #TRANSACTIONAL,
+  semanticKey: ['TradingContract'],
+  modelingPattern: #NONE,
+  supportedCapabilities: [#CDS_MODELING_DATA_SOURCE]
+}
+@VDM.viewType: #COMPOSITE
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@AccessControl: {
+  authorizationCheck: #MANDATORY,
+  personalData.blocking: #('TRANSACTIONAL_DATA'),
+  privilegedAssociations: [ '_CreatedByUser', '_LastChangedByUser' ]
+}
+@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
+
+define view entity I_TrdgContr
+  as select from R_TrdgContr as TrdgContr
+
+  association [0..*] to I_TrdgContrPartner            as _TrdgContrPartner             on  $projection.TradingContract = _TrdgContrPartner.TradingContract
+  association [0..*] to I_TrdgContrSlsPrcgElmnt       as _TrdgContrSlsPrcgElmnt        on  $projection.TradingContract = _TrdgContrSlsPrcgElmnt.TradingContract
+  association [0..*] to I_TrdgContrPurgPrcgElmnt      as _TrdgContrPurgPrcgElmnt       on  $projection.TradingContract = _TrdgContrPurgPrcgElmnt.TradingContract
+  association [0..*] to I_TrdgContrItem               as _TrdgContrItem                on  $projection.TradingContract = _TrdgContrItem.TradingContract
+  association [0..1] to I_TrdgDocReleaseStatus        as _TrdgContrReleaseStatus       on  $projection.TradingContractReleaseStatus = _TrdgContrReleaseStatus.TrdgDocReleaseStatus
+  association [0..1] to I_TrdgDocApplicationStatus    as _TrdgContrApplStatus          on  $projection.TrdgContrApplicationStatus = _TrdgContrApplStatus.TrdgDocApplicationStatus
+  association [0..1] to E_TradingDocument             as _TrdgDocExtension             on  $projection.TradingContract = _TrdgDocExtension.TradingDocument
+  /*+[hideWarning] { "IDS" : [ "CARDINALITY_CHECK" ] }*/
+  association [1..1] to E_TradingDocumentBusinessData as _TrdgDocBusinessDataExtension on  $projection.TradingContract                       = _TrdgDocBusinessDataExtension.TradingDocument
+                                                                                       and _TrdgDocBusinessDataExtension.TradingDocumentItem = '000000'
+{
+
+  key TradingContract,
+      TradingContractType,
+      TradingContractCategory,
+      TrdgContrBusProcessCategory,
+      TradingContractPurpose,
+      TrdgContrApplicationStatus,
+      SalesDocumentType,
+      SalesDocumentCondition,
+      CreatedByUser,
+      LastChangedByUser,
+      TrdgContrPersonResponsible,
+      CreationDate,
+      CreationTime,
+      LastChangeDate,
+      LastChangeTime,
+      TrdgContrDate,
+      SalesOrganization,
+      DistributionChannel,
+      OrganizationDivision,
+      SalesGroup,
+      SalesOffice,
+      SoldToParty,
+      AdditionalCustomerGroup1,
+      AdditionalCustomerGroup2,
+      AdditionalCustomerGroup3,
+      AdditionalCustomerGroup4,
+      AdditionalCustomerGroup5,
+      CreditControlArea,
+      SDDocumentCategory,
+      SalesDocumentDate,
+      SalesOrderReason,
+      SDDocumentCollectiveNumber,
+      CustomerPurchaseOrderType,
+      CustomerPurchaseOrderSuplmnt,
+      BindingPeriodValidityStartDate,
+      BindingPeriodValidityEndDate,
+      TrdgContrSlsValidityStartDate,
+      TrdgContrSlsValidityEndDate,
+      TrdgContrProdUsgeCat,
+      ForeignTrade,
+      TrdgContrSlsPersonName,
+      PhoneNumber1,
+      TrdgContrSlsNrOfFollowUps,
+      DocumentReferenceID,
+      TradingContractCurrency,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrTotalNetAmount,
+      TradingContractExchangeRate,
+      TrdgContrExchangeRateType,
+      TrdgContrExchangeRateDate,
+      TradingContractSalesCurrency,
+      TrdgContrSalesExchangeRate,
+      TrdgContrSalesExchangeRateType,
+      TrdgContrSalesPricingDate,
+      TrdgContrSalesPricingProcedure,
+      CustomerTaxClassification1,
+      CustomerTaxClassification2,
+      CustomerTaxClassification3,
+      CustomerTaxClassification4,
+      CustomerTaxClassification5,
+      CustomerTaxClassification6,
+      CustomerTaxClassification7,
+      CustomerTaxClassification8,
+      CustomerTaxClassification9,
+      TaxDepartureCountry,
+      VATRegistrationCountry,
+      ShippingCondition,
+      CompleteDeliveryIsDefined,
+      DeliveryBlockReason,
+      CompanyCode,
+      HeaderBillingBlockReason,
+      ControllingArea,
+      CustomerCreditAccount,
+      CustomerCreditGroup,
+      CreditRepresentativeGroup,
+      CustomerRiskCategory,
+      ControllingAreaCurrency,
+      CreditBlockReleaseDate,
+      NextCreditCheckDate,
+      NextShippingDate,
+      @Semantics.amount.currencyCode: 'ControllingAreaCurrency'
+      ReleasedCreditAmount,
+      TrdgContrAddlExpnsBlkRsn,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: 'TrdgContrAddlExpnsBlkRsn'
+      TrdgContrSuplrBillgBlkRsn,
+      AccountingExchangeRate,
+      TrdgContrSlsExternalReference,
+      TradingContractIsComplete,
+      LastCustomerContactDate,
+      TrdgContrQuantityIsComplete,
+      TradingContractReleaseStatus,
+      TradingContractExtID,
+      TrdgContrSrceDocType,
+      TradingContractGoodsReceiver,
+      IsEUTriangularDeal,
+      @Semantics.booleanIndicator: true
+      TrdgContrHdrIsExtended,
+      TrdgContrSuccessorArchived,
+      @Semantics.booleanIndicator: true
+      TrdgContrHasCnsldtdItem,
+      TrdgContrVarContrSettlmt,
+      TrdgContrBatDetnProcedure,
+      TrdgContrProcessingStatus,
+      TrdgContrProcessingLastAction,
+      TrdgContrProcgLastSequence,
+      TradingProcessVariantType,
+      WBSElementInternalID,
+      TrdgContrPricingType,
+      TrdgContrLastChangedCategory,
+      Supplier,
+      PurchasingOrganization,
+      PurchasingGroup,
+      PurchasingDocumentOrderDate,
+      TrdgContrPurgReqdDeliveryDate,
+      TrdgContrPurgDeliveryDateType,
+      TrdgContrSlsReqdDeliveryDate,
+      TrdgContrSlsDeliveryDateType,
+      TrdgContrPurgCurrency,
+      TrdgContrPurgExchangeRate,
+      TrdgContrPurgExchangeRateType,
+      TrdgContrPurgPaymentTerms,
+      TrdgContrSalesPaymentTerms,
+      TrdgContrSalesFixedValueDate,
+      TrdgContrPurgFixedValueDate,
+      TrdgContrPurgPricingDate,
+      SupplyingPlant,
+      TrdgContrPurgIncotermsVersion,
+      TrdgContrPurgIncotermsLoc1Text,
+      TrdgContrPurgIncotermsLoc2Text,
+      TrdgContrSalesIncotermsVersion,
+      TrdgContrSlsIncotermsLoc1Text,
+      TrdgContrSlsIncotermsLoc2Text,
+      QuotationSubmissionDate,
+      TrdgContrSalesPaymentMethod,
+      TrdgContrPurgValidityStartDate,
+      TrdgContrPurgValidityEndDate,
+      SupplierQuotationExternalID,
+      SupplierRespSalesPersonName,
+      SupplierPhoneNumber,
+      CorrespncInternalReference,
+      TrdgContrPurgDocExtReference,
+      InternalFinancialDocument,
+      DepreciationPercentage,
+      FixedExchangeRateIsUsed,
+
+      PurchasingDocumentType,
+      ShippingType,
+      PurchaseOrderByCustomer,
+      CustomerPurchaseOrderDate,
+      TrdgContrPurgPricingProcedure,
+      DownPaymentType,
+      DownPaymentPercentageOfTotAmt,
+      @Semantics.amount.currencyCode: 'TrdgContrPurgCurrency'
+      DownPaymentAmount,
+      DownPaymentDueDate,
+      TrdgContrPurgDocCndn,
+      SlsIncotermsClassification,
+      PurgIncotermsClassification,
+      TrdgContrPurgDelivAddrCat,
+      PaymentGuaranteeProcedure,
+      TrdgContrPOByCustomer,
+      PaymentTermsName,
+      PurgIncotermsTransferLocation,
+      SlsIncotermsTransferLocation,
+      PurchaseOrderByShipToParty,
+      CreationDateTime,
+      LastChangeDateTime,
+      TrdgContrRelStsCritlty,
+      CustomerName,
+      TrdgContrPurgShipgInstrn,
+      SupplierConfirmationControlKey,
+      TrdgContrMnlPOSplit,
+      UnderlyingPurchaseOrderItem,
+
+
+      /* Associations */
+      _AdditionalCustomerGroup1,
+      _AdditionalCustomerGroup2,
+      _AdditionalCustomerGroup3,
+      _AdditionalCustomerGroup4,
+      _AdditionalCustomerGroup5,
+      _CompanyCode,
+      _ControllingArea,
+      _ControllingAreaCurrency,
+      _CreatedByUser,
+      _CreditControlArea,
+      _Currency,
+      _CustomerCreditAccount,
+      _CustomerPurchaseOrderType,
+      _CustomerSalesArea,
+      _DeliveryBlockReason,
+      _DistributionChannel,
+      _HeaderBillingBlockReason,
+      _LastChangedByUser,
+      _MatlUsageIndicator,
+      _OrganizationDivision,
+      _PaymentGuaranteeProcedure,
+      _PurchasingGroup,
+      _PurchasingOrganization,
+      _PurgIncotermsClassification,
+      _SalesArea,
+      _SalesDocumentType,
+      _SalesGroup,
+      _SalesOffice,
+      _SalesOrderReason,
+      _SalesOrderType,
+      _SalesOrganization,
+
+      _SDDocumentCategory,
+      _ShippingCondition,
+      _ShippingType,
+      _SlsIncotermsClassification,
+      _SoldToParty,
+      _Supplier,
+      _SupplyingPlant,
+      _TaxDepartureCountry,
+
+
+
+      _TradingContractCurrency,
+      _TrdgContrExchangeRateType,
+      _TrdgContrItem,
+
+      _TrdgContrPurgExchangeRateType,
+      _TrdgContrPurgIncotermsVersion,
+      _TrdgContrPurgPaymentTerms,
+      _TrdgContrPurgPrcgElmnt,
+      _TrdgContrReleaseStatus,
+      _TrdgContrSalesCurrency,
+      _TrdgContrSalesPaymentTerms,
+      _TrdgContrSlsExchangeRateType,
+      _TrdgContrSlsIncotermsVersion,
+      _TrdgContrSlsPricingProcedure,
+      _TrdgContrAddlExpnsBlkRsn,
+//      @API.element.releaseState: #DEPRECATED
+//      @API.element.successor: '_TrdgContrAddlExpnsBlkRsn'
+      _TrdgContrSuplrBillgBlkRsn,
+      _TrdgContrApplStatus,
+      _TrdgContrSlsPrcgElmnt,
+      _TrdgContrPartner,
+      _VATRegistrationCountry,
+      _WBSElementInternalID
+
+}
+```

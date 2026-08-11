@@ -5,9 +5,22 @@ app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRSLSPRCGELMNT')/$value
 semantic_en: "Sales PrgElm of Trading Contract"
+semantic_vi: "Sales PrgElm of Trading Contract — CDS view tổng hợp dựa trên R_TrdgContrSlsPrcgElmnt."
+keywords:
+  - "sales"
+  - "prgelm"
+  - "trading"
+  - "contract"
+  - "pricing"
+  - "procedure"
+  - "step"
+  - "counter"
+  - "condition"
+  - "application"
+  - "type"
 tags:
   - LO
   - component:LO-GT
@@ -15,7 +28,6 @@ tags:
   - interface-view
   - LO-GT
   - lob:logistics general
-  - metadata-only
 ---
 # I_TRDGCONTRSLSPRCGELMNT
 
@@ -27,15 +39,15 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRSLSPRCGELMNT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRSLSPRCGELMNT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TradingContract` |  | |  |  | `CHAR(10)` | Trading Contract |
-| `PricingProcedureStep` |  | |  |  | `NUMC(3)` | Step Number |
-| `PricingProcedureCounter` |  | |  |  | `NUMC(3)` | Pricing Condition Counter |
+| `TradingContract` | ✓ | |  |  | `CHAR(10)` | Trading Contract |
+| `PricingProcedureStep` | ✓ | |  |  | `NUMC(3)` | Step Number |
+| `PricingProcedureCounter` | ✓ | |  |  | `NUMC(3)` | Pricing Condition Counter |
 | `ConditionApplication` |  | |  |  | `CHAR(2)` | Application |
 | `ConditionType` |  | |  |  | `CHAR(4)` | Condition Type |
 | `PriceConditionDeterminationDte` |  | |  |  | `DATS(8)` | Pricing Condition Date |
@@ -87,3 +99,131 @@ tags:
 | `ConditionAmountInLocalCrcy` |  | |  |  | `CURR(15)` | Condition Amount Local Currency |
 | `ExpenseSupplier` |  | |  |  | `CHAR(10)` | Expense Supplier |
 | `PriceDetnExchangeRate` |  | |  |  | `DEC(9)` | Pricing Condition Exchange Rate |
+| `_TrdgContr` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_TrdgContr` | `I_TrdgContr` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRSLSPRCGELMNT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRSLSPRCGELMNT')/$value)*
+
+```abap
+@AccessControl: {
+  authorizationCheck: #MANDATORY,
+  personalData.blocking: #('TRANSACTIONAL_DATA')
+}
+@EndUserText.label: 'Sales PrgElm of Trading Contract'
+@ObjectModel: {
+  semanticKey: ['TradingContract', 'PricingProcedureStep', 'PricingProcedureCounter'],
+  modelingPattern: #NONE,
+  supportedCapabilities: [#CDS_MODELING_DATA_SOURCE],
+  usageType: {
+    serviceQuality: #C,
+    dataClass:      #TRANSACTIONAL,
+    sizeCategory:   #XXL
+  }
+}
+@VDM: {
+  viewType: #COMPOSITE,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@Metadata: {
+  ignorePropagatedAnnotations: true,
+  allowExtensions: false
+}
+
+define view entity I_TrdgContrSlsPrcgElmnt
+  as select from R_TrdgContrSlsPrcgElmnt as TrdgContrSlsPrcgElmnt
+
+  association [1..1] to I_TrdgContr as _TrdgContr on $projection.TradingContract = _TrdgContr.TradingContract
+{
+  key TradingContract,
+  key PricingProcedureStep,
+  key PricingProcedureCounter,
+      ConditionApplication,
+      ConditionType,
+      PriceConditionDeterminationDte,
+      ConditionCalculationType,
+      CndnIsAcctDetnRelevant,
+
+      /* KAWRT split based on KRECH */
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      @OData.v2.amount.noDecimalShift: true
+      ConditionBaseAmount,
+      @Semantics.quantity.unitOfMeasure: 'ConditionQuantityUnit'
+      ConditionBaseQuantity,
+
+      /* KBETR split based on KRECH */
+      @Semantics.amount.currencyCode: 'ConditionCurrency'
+      @OData.v2.amount.noDecimalShift: true
+      ConditionRateAmount,
+      @Semantics.quantity.unitOfMeasure: 'ConditionRateRatioUnit'
+      ConditionRateRatio,
+      ConditionRateRatioUnit,
+      ConditionCurrency,
+      @Semantics.quantity.unitOfMeasure: 'ConditionQuantityUnit'
+      ConditionQuantity,
+      ConditionQuantityUnit,
+      ConditionCategory,
+      ConditionIsForStatistics,
+      IsRelevantForAccrual,
+      @Semantics.booleanIndicator: true
+      CndnIsRelevantForInvoiceList,
+      ConditionOrigin,
+      @Semantics.booleanIndicator: true
+      IsGroupCondition,
+
+      /* Tax */
+      TaxCode,
+      WithholdingTaxCode,
+
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      CndnRoundingOffDiffAmount,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      ConditionAmount,
+      TransactionCurrency,
+      ConditionControl,
+      ConditionInactiveReason,
+      ConditionClass,
+      PrcgProcedureCounterForHeader,
+      FactorForConditionBasisValue,
+      StructureCondition,
+      PeriodFactorForCndnBasisValue,
+
+      /* Scales */
+      PricingScaleType,
+      PricingScaleBasis,
+
+      /* KSTBS split based on KZBZG */
+      @Semantics.amount.currencyCode: 'ConditionScaleBasisCurrency'
+      @OData.v2.amount.noDecimalShift: true
+      ConditionScaleBaseAmount,
+      @Semantics.quantity.unitOfMeasure: 'ConditionScaleBasisUnit'
+      ConditionScaleBaseQuantity,
+      ConditionScaleBasisUnit,
+      ConditionScaleBasisCurrency,
+      CndnIsRelevantForIntcoBilling,
+      ConditionIsManuallyChanged,
+      ConditionIsForConfiguration,
+      VariantCondition,
+      ConditionBasisLimitExceeded,
+      ConditionAmountLimitExceeded,
+      CndnIsRelevantForLimitValue,
+      TaxCountry,
+      ConditionToBaseQtyNmrtr,
+      ConditionToBaseQtyDnmntr,
+      ConditionAlternativeCurrency,
+      @Semantics.amount.currencyCode: 'ConditionAlternativeCurrency'
+      ConditionAmountInLocalCrcy,
+      ExpenseSupplier,
+      PriceDetnExchangeRate,
+
+      /* Exposing Associations */
+      _TrdgContr
+
+}
+```

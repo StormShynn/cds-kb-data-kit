@@ -5,9 +5,23 @@ app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTIONROUTINGDEX')/$value
 semantic_en: "Production Routing Main Header"
+semantic_vi: "Production Routing Main Header — CDS view giao diện dựa trên P_ProductionRoutingDEX."
+keywords:
+  - "production"
+  - "routing"
+  - "main"
+  - "header"
+  - "bill"
+  - "operations"
+  - "type"
+  - "group"
+  - "version"
+  - "last"
+  - "usage"
+  - "date"
 tags:
   - PP
   - bo:material
@@ -18,7 +32,6 @@ tags:
   - PP-VDM-MD
   - PP-VDM-MD-2CL
   - product
-  - metadata-only
 ---
 # I_PRODUCTIONROUTINGDEX
 
@@ -30,15 +43,15 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTIONROUTINGDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTIONROUTINGDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BillOfOperationsType` |  | |  |  | `CHAR(1)` | Task List Type |
-| `ProductionRoutingGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
-| `ProductionRouting` |  | |  |  | `CHAR(2)` | Group Counter |
+| `BillOfOperationsType` | ✓ | |  |  | `CHAR(1)` | Task List Type |
+| `ProductionRoutingGroup` | ✓ | |  |  | `CHAR(8)` | Key for Task List Group |
+| `ProductionRouting` | ✓ | |  |  | `CHAR(2)` | Group Counter |
 | `BillOfOperationsVersionType` |  | |  |  | `CHAR(1)` | Version Profile |
 | `LastUsageDate` |  | |  |  | `DATS(8)` | Date of the Last Call |
 | `NumberOfUsages` |  | |  |  | `DEC(4)` | Number of Calls |
@@ -53,3 +66,74 @@ tags:
 | `ProdnProcgIsFlexible` |  | |  |  | `CHAR(1)` | Flexible Processing |
 | `BillOfOperationIsExecutedInMES` |  | |  |  | `CHAR(1)` | Order Execution for this Routing to be Performed in SAP ME |
 | `BillOfOperationsIsTrnsfdToERP` |  | |  |  | `CHAR(1)` | Planning for this Routing to be Performed in SAP ERP |
+| `_ProdnRtgHeader` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ProdnRtgHeader` | `I_ProductionRoutingHeaderDEX` | [1..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTIONROUTINGDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTIONROUTINGDEX')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@VDM.viewType: #BASIC
+@ObjectModel.representativeKey: 'ProductionRouting'
+@EndUserText.label: 'Production Routing Main Header'
+@ObjectModel.usageType: { serviceQuality: #A, sizeCategory: #M, dataClass: #MASTER }
+@Analytics: {
+dataCategory: #DIMENSION,
+    dataExtraction: {
+       enabled: true,
+       delta.changeDataCapture: {
+       automatic: true
+       }
+     },
+internalName: #LOCAL
+}
+@ObjectModel.sapObjectNodeType.name: 'ProductionRouting'
+@Metadata.allowExtensions: true
+@ObjectModel.supportedCapabilities:[#CDS_MODELING_ASSOCIATION_TARGET,#ANALYTICAL_DIMENSION,#EXTRACTION_DATA_SOURCE]
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+
+define view entity I_ProductionRoutingDEX
+as select from P_ProductionRoutingDEX
+association [1..*] to I_ProductionRoutingHeaderDEX            as _ProdnRtgHeader     on  $projection.BillOfOperationsType     = _ProdnRtgHeader.BillOfOperationsType
+                                                                                     and $projection.ProductionRoutingGroup   = _ProdnRtgHeader.ProductionRoutingGroup
+                                                                                     and $projection.ProductionRouting        = _ProdnRtgHeader.ProductionRouting
+{
+ @ObjectModel.foreignKey.association: '_BillOfOperationsType'
+key BillOfOperationsType,
+@ObjectModel.foreignKey.association: '_BillOfOperationsGroup'
+key ProductionRoutingGroup,
+key ProductionRouting,
+BillOfOperationsVersionType,
+LastUsageDate,
+NumberOfUsages,
+HasChangeNumber,
+HasParameterEffectivity,
+@Semantics.systemDate.lastChangedAt: true
+LastChangeDate,
+LastChangeTime,
+@Semantics.user.lastChangedBy: true
+LastChangedByUser,
+IsMarkedForDeletion,
+BillOfOperationsVariantDesc,
+RoutingIsReworkRouting,
+ProdnProcgIsFlexible,
+@Semantics.booleanIndicator:true
+BillOfOperationIsExecutedInMES,
+@Semantics.booleanIndicator:true
+BillOfOperationsIsTrnsfdToERP,
+/* Associations */
+_BillOfOperationsGroup,
+_BillOfOperationsType,
+_ProdnRtgHeader
+}
+```

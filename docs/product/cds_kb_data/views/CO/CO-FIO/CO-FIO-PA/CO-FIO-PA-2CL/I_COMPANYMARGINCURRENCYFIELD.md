@@ -5,9 +5,15 @@ app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPANYMARGINCURRENCYFIELD')/$value
 semantic_en: "Company Margin Currency Field"
+semantic_vi: "Company Margin Currency Field — CDS view giao diện dựa trên I_CurrencyField."
+keywords:
+  - "company"
+  - "margin"
+  - "currency"
+  - "field"
 tags:
   - CO
   - bo:companycode
@@ -18,7 +24,6 @@ tags:
   - interface-view
   - lob:controlling
   - lob:finance
-  - metadata-only
 ---
 # I_COMPANYMARGINCURRENCYFIELD
 
@@ -30,10 +35,41 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPANYMARGINCURRENCYFIELD')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPANYMARGINCURRENCYFIELD')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role Field |
+| `_Text` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPANYMARGINCURRENCYFIELD')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPANYMARGINCURRENCYFIELD')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Analytics: { dataCategory: #DIMENSION }
+@EndUserText.label: 'Company Margin Currency Field'
+@ObjectModel: { representativeKey: 'CurrencyField',
+                usageType: { sizeCategory: #S,
+                             dataClass:  #CUSTOMIZING,
+                             serviceQuality: #A },
+                supportedCapabilities: [#ANALYTICAL_DIMENSION, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE],
+                modelingPattern: #ANALYTICAL_DIMENSION }                                
+@Metadata.ignorePropagatedAnnotations: true 
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@VDM.viewType: #BASIC
+@Analytics.settings.valueHelp.supressInitialValue: true
+@Analytics.internalName:#LOCAL 
+
+define view entity I_CompanyMarginCurrencyField as select from I_CurrencyField {
+@ObjectModel.text.association: '_Text'
+  key CurrencyField,
+  _Text
+}
+where CurrencyField = 'CCC'
+   or CurrencyField = 'GC'
+   or CurrencyField = 'FC'
+```

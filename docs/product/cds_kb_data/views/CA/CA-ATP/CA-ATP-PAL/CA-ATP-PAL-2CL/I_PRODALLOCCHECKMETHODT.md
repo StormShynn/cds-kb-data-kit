@@ -30,10 +30,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `ProdAllocCheckMethod` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodalloccheckmethod preserving type )` |  |  |
-| `ProdAllocCheckMethodDesc` |  | |  | `cast( ddtext as prodalloccheckmethoddesc preserving type )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `ProdAllocCheckMethod` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodalloccheckmethod preserving type )` | `CHAR(2)` | Product Allocation Check Method |
+| `ProdAllocCheckMethodDesc` |  | |  | `cast( ddtext as prodalloccheckmethoddesc preserving type )` | `CHAR(60)` | Product Allocation Check Method Description |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Language` | | ✓ | | | | |
 | `_ProdAllocCheckMethod` | | ✓ | | | | |
 

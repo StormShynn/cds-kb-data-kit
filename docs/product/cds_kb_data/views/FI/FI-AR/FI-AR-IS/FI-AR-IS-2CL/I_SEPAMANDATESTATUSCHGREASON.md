@@ -5,9 +5,17 @@ app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEPAMANDATESTATUSCHGREASON')/$value
 semantic_en: "This CDS view provides the data to answer the following business questions: A SEPA Mandate Status Change Reason is related to which SEPA Mandate Status and SEPA Mandate Application? What are the SEPA Mandate Status Change Reasons? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "SEPA Mandate Status Change Reason — CDS view giao diện dựa trên sepa_rc_cust."
+keywords:
+  - "sepa"
+  - "mandate"
+  - "status"
+  - "change"
+  - "reason"
+  - "application"
 tags:
   - FI
   - bo:companycode
@@ -17,7 +25,7 @@ tags:
   - FI-AR-IS-2CL
   - interface-view
   - lob:finance
-  - metadata-only
+  - bo:salesorder
 ---
 # I_SEPAMANDATESTATUSCHGREASON
 
@@ -29,12 +37,81 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEPAMANDATESTATUSCHGREASON')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEPAMANDATESTATUSCHGREASON')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SEPAMandateApplication` |  | |  |  | `CHAR(1)` | SEPA Mandate Management: SEPA Application |
-| `SEPAMandateStatus` |  | |  |  | `CHAR(1)` | Mandate Status |
-| `SEPAMandateStatusChangeReason` |  | |  |  | `CHAR(3)` | Reason Code for Status Change |
+| `SEPAMandateApplication` | ✓ | |  | `application` | `CHAR(1)` | SEPA Mandate Management: SEPA Application |
+| `SEPAMandateStatus` | ✓ | |  | `status` | `CHAR(1)` | Mandate Status |
+| `SEPAMandateStatusChangeReason` | ✓ | |  | `reason_code` | `CHAR(3)` | Reason Code for Status Change |
+| `_Text` | | ✓ | | | | |
+| `_Application` | | ✓ | | | | |
+| `_SEPAMandateStatus` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_SEPAMandateStsChgRsnText` | [0..*] |
+| `_Application` | `I_SEPAApplication` | [1..1] |
+| `_SEPAMandateStatus` | `I_SEPAMandateStatus` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEPAMANDATESTATUSCHGREASON')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEPAMANDATESTATUSCHGREASON')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'ISEPASTCHGRES'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel.usageType: {serviceQuality: #D, sizeCategory: #S, dataClass: #META}
+@ObjectModel.representativeKey: 'SEPAMandateStatusChangeReason'
+@VDM.viewType: #BASIC
+
+@EndUserText.label: 'SEPA Mandate Status Change Reason'
+@Analytics:{
+    dataCategory: #DIMENSION,
+    dataExtraction: {
+      enabled: true
+   }
+}
+@Analytics.internalName:#LOCAL
+@ObjectModel.sapObjectNodeType.name: 'SEPAMandateStatusChgReason'
+@ObjectModel.supportedCapabilities:[#EXTRACTION_DATA_SOURCE,#CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE,#ANALYTICAL_DIMENSION,#CDS_MODELING_ASSOCIATION_TARGET]
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+define view I_SEPAMandateStatusChgReason 
+    as select from sepa_rc_cust
+
+    association [0..*] to I_SEPAMandateStsChgRsnText as _Text 
+    on  $projection.SEPAMandateApplication           = _Text.SEPAMandateApplication
+    and $projection.SEPAMandateStatus                = _Text.SEPAMandateStatus
+    and $projection.SEPAMandateStatusChangeReason    = _Text.SEPAMandateStatusChangeReason
+    
+    association [1..1] to I_SEPAApplication          as _Application           
+    on $projection.SEPAMandateApplication            = _Application.SEPAMandateApplication
+    
+    association [1..1] to I_SEPAMandateStatus        as _SEPAMandateStatus
+    on $projection.SEPAMandateStatus                 = _SEPAMandateStatus.SEPAMandateStatus 
+    
+{
+    @ObjectModel.foreignKey.association: '_Application'
+    key application       as SEPAMandateApplication,
+    
+    @ObjectModel.foreignKey.association: '_SEPAMandateStatus'
+    key status            as SEPAMandateStatus,
+    
+    @ObjectModel.text.association: '_Text'
+    key reason_code       as SEPAMandateStatusChangeReason,
+    
+    _Text,
+    _Application, 
+    _SEPAMandateStatus
+}
+```

@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProdAllocChkPeriodCnsmpnType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocchkperiodcnsmpntype preserving type )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ProdAllocChkPeriodCnsmpnType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocchkperiodcnsmpntype preserving type )` | `CHAR(2)` | Product Allocation Check Period Consumption Type |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

@@ -5,9 +5,20 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCSIGNADJMTTEXT')/$value
 semantic_en: "This CDS view exposes fixed values of the field Settlement Document Sign Adjustment. The following fixed values have been maintained: 1 No 2 For Credit Memos 3 For Invoices 4 According to Customizing Settings in Settlement Doc Type"
+semantic_vi: "Settlmt Doc Sign Adjustment - Text — CDS view cơ bản dựa trên dd07t."
+keywords:
+  - "settlmt"
+  - "doc"
+  - "sign"
+  - "adjustment"
+  - "text"
+  - "language"
+  - "name"
+  - "domain"
+  - "value"
 tags:
   - LO
   - bo:billingdocument
@@ -17,7 +28,6 @@ tags:
   - invoice
   - LO-AB
   - lob:logistics general
-  - metadata-only
 ---
 # I_SETTLMTDOCSIGNADJMTTEXT
 
@@ -29,13 +39,93 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCSIGNADJMTTEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCSIGNADJMTTEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SettlmtDocSignAdjustment` |  | |  |  | `CHAR(1)` | Adjust Plus/Minus Sign |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `SettlmtDocSignAdjustmentName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
-| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtDocSignAdjustment` | ✓ | |  | `cast(dd07t.domvalue_l as wlf_adjust_sign_hdr )` | `CHAR(1)` | Adjust Plus/Minus Sign |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `SettlmtDocSignAdjustmentName` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `_Language` | | ✓ | | | | |
+| `_SettlmtDocSignAdjustment` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCSIGNADJMTTEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCSIGNADJMTTEXT')/$value)*
+
+```abap
+@EndUserText.label: 'Settlmt Doc Sign Adjustment - Text'
+@AccessControl: {
+  authorizationCheck: #NOT_REQUIRED
+}
+@ObjectModel: {
+  dataCategory: #TEXT,
+  representativeKey: 'SettlmtDocSignAdjustment',
+  modelingPattern: #LANGUAGE_DEPENDENT_TEXT,
+  supportedCapabilities: [#LANGUAGE_DEPENDENT_TEXT,
+                          #SQL_DATA_SOURCE,
+                          #CDS_MODELING_DATA_SOURCE,
+                          #CDS_MODELING_ASSOCIATION_TARGET,
+                          #SEARCHABLE_ENTITY],
+  usageType: {
+    dataClass:      #META,
+    serviceQuality: #A,
+    sizeCategory:   #S
+  }
+}
+@VDM: {
+  viewType: #BASIC,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@Search.searchable: true
+@Analytics: {
+  internalName: #LOCAL,
+  technicalName: 'IWLFSDCADJSIGNT'
+}
+@Metadata: {
+  ignorePropagatedAnnotations: true
+}
+
+/*+[hideWarning] { "IDS" : [ "KEY_CHECK", "CALCULATED_FIELD_CHECK" ]  } */
+define view entity I_SettlmtDocSignAdjmtText
+  as select from dd07t
+
+  association        to parent I_SettlmtDocSignAdjmt as _SettlmtDocSignAdjustment on $projection.SettlmtDocSignAdjustment = _SettlmtDocSignAdjustment.SettlmtDocSignAdjustment
+  association [0..1] to I_Language                   as _Language                 on $projection.Language = _Language.Language
+
+{
+      @ObjectModel.foreignKey.association: '_SettlmtDocSignAdjustment'
+      @ObjectModel.text.element: ['SettlmtDocSignAdjustmentName']
+  key cast(dd07t.domvalue_l as wlf_adjust_sign_hdr )                 as SettlmtDocSignAdjustment,
+
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key dd07t.ddlanguage                                               as Language,
+
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      @Semantics.text: true
+      dd07t.ddtext                                                                    as SettlmtDocSignAdjustmentName,
+      @Consumption.hidden: true
+      dd07t.domvalue_l                                                                as DomainValue,
+
+      /* Associations */
+      _SettlmtDocSignAdjustment,
+      _Language
+}
+
+where
+      dd07t.domname  = 'WLF_ADJUST_SIGN_HDR'
+  and dd07t.as4local = 'A'
+  and dd07t.as4vers  = '0000'
+```

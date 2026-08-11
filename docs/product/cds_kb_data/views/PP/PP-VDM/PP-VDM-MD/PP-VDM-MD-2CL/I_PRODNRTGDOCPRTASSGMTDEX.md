@@ -5,9 +5,25 @@ app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNRTGDOCPRTASSGMTDEX')/$value
 semantic_en: "Prodn Routing Document PRT Assignment"
+semantic_vi: "Prodn Routing Document PRT Assignment — CDS view giao diện dựa trên P_ProdnRoutingDocPRTAssgmtDEX."
+keywords:
+  - "prodn"
+  - "routing"
+  - "document"
+  - "prt"
+  - "assignment"
+  - "bill"
+  - "operations"
+  - "type"
+  - "production"
+  - "group"
+  - "operation"
+  - "internal"
+  - "vers"
+  - "counter"
 tags:
   - PP
   - component:PP-VDM-MD-2CL
@@ -17,7 +33,6 @@ tags:
   - PP-VDM
   - PP-VDM-MD
   - PP-VDM-MD-2CL
-  - metadata-only
 ---
 # I_PRODNRTGDOCPRTASSGMTDEX
 
@@ -29,16 +44,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNRTGDOCPRTASSGMTDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNRTGDOCPRTASSGMTDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BillOfOperationsType` |  | |  |  | `CHAR(1)` | Task List Type |
-| `ProductionRoutingGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
-| `BOOOperationPRTInternalID` |  | |  |  | `NUMC(8)` | Item Counter for Production Resources/Tools |
-| `BOOOperationPRTIntVersCounter` |  | |  |  | `NUMC(8)` | Internal counter |
+| `BillOfOperationsType` | ✓ | |  |  | `CHAR(1)` | Task List Type |
+| `ProductionRoutingGroup` | ✓ | |  |  | `CHAR(8)` | Key for Task List Group |
+| `BOOOperationPRTInternalID` | ✓ | |  |  | `NUMC(8)` | Item Counter for Production Resources/Tools |
+| `BOOOperationPRTIntVersCounter` | ✓ | |  |  | `NUMC(8)` | Internal counter |
 | `ProductionRouting` |  | |  |  | `CHAR(2)` | Group Counter |
 | `ProductionRoutingSequence` |  | |  |  | `CHAR(6)` | Sequence |
 | `ProductionRoutingOpIntID` |  | |  |  | `NUMC(8)` | Number of the Task List Node |
@@ -74,3 +89,140 @@ tags:
 | `EndDateOffsetReferenceCode` |  | |  |  | `CHAR(2)` | Reference date for end of production resource/tool usage |
 | `EndDateOffsetDurationUnit` |  | |  |  | `UNIT(3)` | Offset Unit for End of Production Resource/Tool Usage |
 | `EndDateOffsetDuration` |  | |  |  | `QUAN(5)` | Offset to finish of production resource/tool usage |
+| `_ProductionRouting` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ProductionRouting` | `I_ProductionRoutingDEX` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNRTGDOCPRTASSGMTDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNRTGDOCPRTASSGMTDEX')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@VDM.viewType: #BASIC
+@ObjectModel.representativeKey: 'BOOOperationPRTIntVersCounter'
+@EndUserText.label: 'Prodn Routing Document PRT Assignment'
+@ObjectModel.usageType: { serviceQuality: #A, sizeCategory: #M, dataClass: #MASTER }
+@Analytics: {
+dataCategory: #DIMENSION,
+    dataExtraction: {
+       enabled: true,
+       delta.changeDataCapture: {
+        mapping: [
+        {  
+          role: #MAIN,
+          table: 'PLFH',
+          viewElement: [ 'BillOfOperationsType','ProductionRoutingGroup' ,'BOOOperationPRTInternalID','BOOOperationPRTIntVersCounter'],
+          tableElement: [ 'PLNTY','PLNNR','PZLFH','ZAEHL' ]        
+        
+        },
+        {
+        role:#LEFT_OUTER_TO_ONE_JOIN,
+        table:'CRFH',
+        viewElement: [ 'ProductionResourceType','ProductionResourceInternalID' ],
+        tableElement: [ 'OBJTY','OBJID' ]
+        },
+        {
+        role:#LEFT_OUTER_TO_ONE_JOIN,
+        table:'CRVD_A',
+        viewElement: [ 'ProductionResourceType','ProductionResourceInternalID' ],
+        tableElement: [ 'OBJTY','OBJID' ]
+        
+        }
+        ]
+       }
+     },
+internalName: #LOCAL
+}
+@ObjectModel.sapObjectNodeType.name: 'ProductionRoutingDocPRTAssgmt'
+@Metadata.allowExtensions: true
+@ObjectModel.supportedCapabilities:[#CDS_MODELING_ASSOCIATION_TARGET,#ANALYTICAL_DIMENSION,#EXTRACTION_DATA_SOURCE]
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+
+define view entity I_ProdnRtgDocPRTAssgmtDEX
+as select from P_ProdnRoutingDocPRTAssgmtDEX
+inner join crfh on P_ProdnRoutingDocPRTAssgmtDEX.ProductionResourceType = crfh.objty
+                and P_ProdnRoutingDocPRTAssgmtDEX.ProductionResourceInternalID = crfh.objid
+                and P_ProdnRoutingDocPRTAssgmtDEX.ProdnRsceToolCategory = crfh.fhmar
+
+  association [1..1] to I_ProductionRoutingDEX       as _ProductionRouting      on  $projection.BillOfOperationsType   = _ProductionRouting.BillOfOperationsType
+                                                                                and $projection.ProductionRoutingGroup = _ProductionRouting.ProductionRoutingGroup
+                                                                                and $projection.ProductionRouting      = _ProductionRouting.ProductionRouting
+
+//  association [1..*] to I_ProductionRoutingHeaderDEX as _ProdnRtgHeader         on  $projection.BillOfOperationsType   =  _ProdnRtgHeader.BillOfOperationsType
+//                                                                                and $projection.ProductionRoutingGroup =  _ProdnRtgHeader.ProductionRoutingGroup
+//                                                                                and $projection.ProductionRouting      =  _ProdnRtgHeader.ProductionRouting
+//                                                                                and $projection.ValidityEndDate        >= _ProdnRtgHeader.ValidityStartDate
+//                                                                                and $projection.ValidityStartDate      <= _ProdnRtgHeader.ValidityEndDate
+//
+//  association [0..*] to I_ProdnRoutingOpSubordOpDEX  as _ProdnRoutingOpSubordOp on  $projection.BillOfOperationsType     =  _ProdnRoutingOpSubordOp.BillOfOperationsType
+//                                                                                and $projection.ProductionRoutingGroup   =  _ProdnRoutingOpSubordOp.ProductionRoutingGroup
+//                                                                                and $projection.ProductionRoutingOpIntID =  _ProdnRoutingOpSubordOp.ProductionRoutingOpIntID
+//                                                                                and $projection.ValidityEndDate          >= _ProdnRoutingOpSubordOp.ValidityStartDate
+//                                                                                and $projection.ValidityStartDate        <= _ProdnRoutingOpSubordOp.ValidityEndDate
+{
+@ObjectModel.foreignKey.association: '_BillOfOperationsType'
+key P_ProdnRoutingDocPRTAssgmtDEX.BillOfOperationsType,
+@ObjectModel.foreignKey.association: '_BillOfOperationsGroup'
+key P_ProdnRoutingDocPRTAssgmtDEX.ProductionRoutingGroup,
+@ObjectModel.foreignKey.association: '_BOOOperationPRTInternalID'
+key P_ProdnRoutingDocPRTAssgmtDEX.BOOOperationPRTInternalID,
+key P_ProdnRoutingDocPRTAssgmtDEX.BOOOperationPRTIntVersCounter,
+P_ProdnRoutingDocPRTAssgmtDEX.ProductionRouting,
+P_ProdnRoutingDocPRTAssgmtDEX.ProductionRoutingSequence,
+P_ProdnRoutingDocPRTAssgmtDEX.ProductionRoutingOpIntID,
+P_ProdnRoutingDocPRTAssgmtDEX.BillOfOperationsVersion,
+P_ProdnRoutingDocPRTAssgmtDEX.ProdnRsceToolItemNumber,
+P_ProdnRoutingDocPRTAssgmtDEX.ProductionResourceType,
+P_ProdnRoutingDocPRTAssgmtDEX.ProductionResourceInternalID,
+P_ProdnRoutingDocPRTAssgmtDEX.DocumentType,      
+P_ProdnRoutingDocPRTAssgmtDEX.DocumentInfoRecord,      
+P_ProdnRoutingDocPRTAssgmtDEX.DocumentVersion,      
+P_ProdnRoutingDocPRTAssgmtDEX.DocumentPart,//is this needed?
+P_ProdnRoutingDocPRTAssgmtDEX.ProdnRsceToolControlProfile,
+P_ProdnRoutingDocPRTAssgmtDEX.ProdnRsceToolStandardTextCode,
+@Semantics.text: true
+P_ProdnRoutingDocPRTAssgmtDEX.ProdnRsceToolText,
+@Semantics.systemDate.createdAt: true
+P_ProdnRoutingDocPRTAssgmtDEX.CreationDate,
+@Semantics.user.createdBy: true
+P_ProdnRoutingDocPRTAssgmtDEX.CreatedByUser,
+@Semantics.systemDate.lastChangedAt: true
+P_ProdnRoutingDocPRTAssgmtDEX.LastChangeDate,
+@Semantics.user.lastChangedBy: true
+P_ProdnRoutingDocPRTAssgmtDEX.LastChangedByUser,
+P_ProdnRoutingDocPRTAssgmtDEX.ChangeNumber,
+P_ProdnRoutingDocPRTAssgmtDEX.ValidityStartDate,
+P_ProdnRoutingDocPRTAssgmtDEX.ValidityEndDate,
+P_ProdnRoutingDocPRTAssgmtDEX.IsDeleted,
+P_ProdnRoutingDocPRTAssgmtDEX.IsImplicitlyDeleted,
+P_ProdnRoutingDocPRTAssgmtDEX.ProdnRsceToolStdWorkQtyUnit,
+@Semantics.quantity.unitOfMeasure: 'ProdnRsceToolStdWorkQtyUnit'
+P_ProdnRoutingDocPRTAssgmtDEX.ProdnRsceToolStandardWorkQty,
+P_ProdnRoutingDocPRTAssgmtDEX.ProdnRsceToolTotQtyCalcFormula,
+P_ProdnRoutingDocPRTAssgmtDEX.ProdnRsceToolUsageQuantityUnit,
+@Semantics.quantity.unitOfMeasure: 'ProdnRsceToolStdWorkQtyUnit'
+P_ProdnRoutingDocPRTAssgmtDEX.ProdnRsceToolUsageQuantity,
+P_ProdnRoutingDocPRTAssgmtDEX.ProdnRsceToolUsageQtyCalcFmla,
+P_ProdnRoutingDocPRTAssgmtDEX.StartDateOffsetReferenceCode,
+P_ProdnRoutingDocPRTAssgmtDEX.StartDateOffsetDurationUnit,
+@Semantics.quantity.unitOfMeasure: 'StartDateOffsetDurationUnit'
+P_ProdnRoutingDocPRTAssgmtDEX.StartDateOffsetDuration,
+P_ProdnRoutingDocPRTAssgmtDEX.EndDateOffsetReferenceCode,
+P_ProdnRoutingDocPRTAssgmtDEX.EndDateOffsetDurationUnit,
+@Semantics.quantity.unitOfMeasure: 'EndDateOffsetDurationUnit'
+P_ProdnRoutingDocPRTAssgmtDEX.EndDateOffsetDuration,
+/* Associations */
+P_ProdnRoutingDocPRTAssgmtDEX._BillOfOperationsGroup,
+P_ProdnRoutingDocPRTAssgmtDEX._BillOfOperationsType,
+P_ProdnRoutingDocPRTAssgmtDEX._BOOOperationPRTInternalID,
+_ProductionRouting
+//_ProdnRtgHeader,
+//_ProdnRoutingOpSubordOp
+}
+```

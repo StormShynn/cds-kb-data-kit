@@ -5,9 +5,20 @@ app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPACITYBASIC')/$value
 semantic_en: "Enterprise Resource Capacity"
+semantic_vi: "Enterprise Resource Capacity — CDS view giao diện dựa trên I_Capacity."
+keywords:
+  - "enterprise"
+  - "resource"
+  - "capacity"
+  - "internal"
+  - "plant"
+  - "category"
+  - "code"
+  - "active"
+  - "version"
 tags:
   - PP
   - bo:salesorder
@@ -17,7 +28,6 @@ tags:
   - PP-VDM
   - PP-VDM-MD
   - PP-VDM-MD-2CL
-  - metadata-only
 ---
 # I_CAPACITYBASIC
 
@@ -29,13 +39,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPACITYBASIC')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPACITYBASIC')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CapacityInternalID` |  | |  |  | `NUMC(8)` | Capacity ID |
+| `CapacityInternalID` | ✓ | |  |  | `NUMC(8)` | Capacity ID |
 | `Plant` |  | |  |  | `CHAR(4)` | Plant |
 | `Capacity` |  | |  |  | `CHAR(8)` | Capacity name |
 | `CapacityCategoryCode` |  | |  |  | `CHAR(3)` | Capacity Category |
@@ -86,3 +96,149 @@ tags:
 | `CapacityPlanningPeriodLotSize` |  | |  |  | `CHAR(1)` | Period Lot Size |
 | `RsceStorHasMltplProds` |  | |  |  | `CHAR(1)` | Allow Multiple Products |
 | `RsceStorZeroFillPurityThldQty` |  | |  |  | `QUAN(15)` | Threshold for Setting Remaining Fill Level to Zero |
+| `_Text` | | ✓ | | | | |
+| `_CapacityCategory` | | ✓ | | | | |
+| `_FactoryCalendar` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_ReferencedCapacityText` | | ✓ | | | | |
+| `_CapacityResponsiblePlanner` | | ✓ | | | | |
+| `_ShiftGrouping` | | ✓ | | | | |
+| `_CapacityQuantityUnit` | | ✓ | | | | |
+| `_CapacityBaseQtyUnit` | | ✓ | | | | |
+| `_CapacityBySemanticKey` | | ✓ | | | | |
+| `_Capacity` | | ✓ | | | | |
+| `_ResourceTimeBufferUnit` | | ✓ | | | | |
+| `_RsceMaxOverlapDurationUnit` | | ✓ | | | | |
+| `_RsceStorageQuantityUnit` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_CapacityTextBasic` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPACITYBASIC')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPACITYBASIC')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@Analytics.dataCategory: #DIMENSION
+@Analytics.dataExtraction.enabled: true
+@Analytics.internalName:#LOCAL
+@EndUserText.label: 'Enterprise Resource Capacity'
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #EXTRACTION_DATA_SOURCE]
+@ObjectModel.representativeKey: 'CapacityInternalID'
+@ObjectModel.semanticKey: ['Capacity']
+@ObjectModel.usageType: {serviceQuality: #A, sizeCategory: #S, dataClass: #MASTER}
+@VDM.viewType: #COMPOSITE
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@ObjectModel.sapObjectNodeType.name: 'EnterpriseResourceCapacity'
+define view entity I_CapacityBasic
+  as select from I_Capacity
+  association [0..*] to I_CapacityTextBasic as _Text            on $projection.CapacityInternalID = _Text.CapacityInternalID
+
+{
+      @ObjectModel.text.association: '_Text'
+  key CapacityInternalID,
+      // Semantic Key
+      @ObjectModel.foreignKey.association: '_Plant'
+      Plant,
+      @ObjectModel.foreignKey.association: '_CapacityBySemanticKey'
+      Capacity,
+      // Attributes
+      @ObjectModel.foreignKey.association: '_CapacityCategory'
+      CapacityCategoryCode,
+      CapacityActiveVersion,
+      CapacityIsFinite,
+      CapacityIsPooled,
+      CapacityHasIndivCapacities,
+      CapacityIsExcldFrmLongTermPlng,
+      CapacityNumberOfCapacities,
+      @ObjectModel.foreignKey.association: '_CapacityResponsiblePlanner'
+      CapacityResponsiblePlanner,
+      CapacityPlanUtilizationPercent,
+      CapacityBreakDuration,
+      CapIsUsedInMultiOperations,
+      @ObjectModel.text.association: '_ReferencedCapacityText'
+      @ObjectModel.foreignKey.association: '_Capacity'
+      ReferencedCapacityInternalID,
+      CapOverloadThresholdInPercent,
+      
+      // Assignments
+      @ObjectModel.foreignKey.association: '_FactoryCalendar'
+      FactoryCalendar,
+      AuthorizationGroup,
+      @ObjectModel.foreignKey.association: '_ShiftGrouping'
+      ShiftGroup,
+      // Times
+      @Semantics.durationInHours:true
+      CapacityStartTimeID,
+      @Semantics.durationInHours:true
+      CapacityEndTimeID,
+      // Unit of Measures
+      @ObjectModel.foreignKey.association: '_CapacityQuantityUnit'
+      CapacityQuantityUnit,
+      @ObjectModel.foreignKey.association: '_CapacityBaseQtyUnit'
+      CapacityBaseQtyUnit,
+      @Semantics.systemDateTime.lastChangedAt: true
+      CapacityLastChangeDateTime,
+      // APO Fields
+      ResourceType,
+      ResourceCategory,
+      RsceValidityStartOffsetInDays,
+      RsceValidityEndOffsetInDays,
+      ResourceSortText,
+      ResourceFinitenessLevel,
+      ResourceIsBottleNeck,
+      RsceOverlappingActiesSync,
+      @Semantics.quantity.unitOfMeasure : 'ResourceTimeBufferUnit'
+      ResourceTimeBufferQuantity,
+      @ObjectModel.foreignKey.association: '_ResourceTimeBufferUnit'
+      ResourceTimeBufferUnit,
+      @Semantics.quantity.unitOfMeasure : 'ResourceMaxOverlapDurationUnit'
+      ResourceMaxOverlapDuration,
+      @ObjectModel.foreignKey.association: '_RsceMaxOverlapDurationUnit'
+      ResourceMaxOverlapDurationUnit,
+      ResourceIsCampaignRelevant,
+      RsceShiftsAndBreaksAreDerived,
+      PPDSPeriodSourceType,
+      PPDSPeriodDurationSchema,
+      PPDSPeriodTimeRatioInPercent,
+      PPDSCapacitySupplyTimeCategory,
+      RsceHasStorCharcs,
+      RsceStorageQuantityDimension,
+      @ObjectModel.foreignKey.association: '_RsceStorageQuantityUnit'
+      RsceStorageQuantityUnit,
+      @Semantics.quantity.unitOfMeasure : 'RsceStorageQuantityUnit'
+      RsceStorageMinProductionQty,
+      @Semantics.quantity.unitOfMeasure : 'RsceStorageQuantityUnit'
+      RsceStorageMaxQuantity,
+      RsceStorIsZeroOnNoFillPurity,
+      CapacityPlanningPeriodLotSize,
+      RsceStorHasMltplProds,
+      @Semantics.quantity.unitOfMeasure : 'RsceStorageQuantityUnit'
+      RsceStorZeroFillPurityThldQty,
+      
+      //Associations
+      _CapacityCategory,
+      _FactoryCalendar,
+      _Plant,
+      _Text,
+      _ReferencedCapacityText,
+      _CapacityResponsiblePlanner,
+      _ShiftGrouping,
+      _CapacityQuantityUnit,
+      _CapacityBaseQtyUnit,
+      _CapacityBySemanticKey,
+      _Capacity,
+      _ResourceTimeBufferUnit,
+      _RsceMaxOverlapDurationUnit,
+      _RsceStorageQuantityUnit    
+}
+where
+  Capacity is not initial
+```

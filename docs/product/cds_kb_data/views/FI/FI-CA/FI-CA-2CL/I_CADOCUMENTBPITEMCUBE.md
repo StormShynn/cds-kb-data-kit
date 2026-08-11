@@ -5,9 +5,20 @@ app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADOCUMENTBPITEMCUBE')/$value
 semantic_en: "This CDS view represents the business partner item data of a subledger document in Contract Accounting. This CDS view provides the data to answer the following business questions: What is the volume of open receivables? How many open receivables are overdue? What is the volume of open credits? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Document Business Partner Item - Cube — CDS view giao diện (transactional data) dựa trên I_CADocumentBPItem."
+keywords:
+  - "document"
+  - "business"
+  - "partner"
+  - "item"
+  - "cube"
+  - "number"
+  - "repetition"
+  - "company"
+  - "code"
 tags:
   - FI
   - account
@@ -20,7 +31,6 @@ tags:
   - interface-view
   - lob:cross_application components
   - lob:finance
-  - metadata-only
 ---
 # I_CADOCUMENTBPITEMCUBE
 
@@ -32,16 +42,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADOCUMENTBPITEMCUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADOCUMENTBPITEMCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentNumber` |  | |  |  | `CHAR(12)` | Number of a FI-CA Document |
-| `CARepetitionItemNumber` |  | |  |  | `NUMC(3)` | Repetition Item in FI-CA Document |
-| `CABPItemNumber` |  | |  |  | `NUMC(4)` | Item Number in FI-CA Document |
-| `CASubItemNumber` |  | |  |  | `NUMC(3)` | Subitem for a Partial Clearing in Document |
+| `CADocumentNumber` | ✓ | |  |  | `CHAR(12)` | Number of a FI-CA Document |
+| `CARepetitionItemNumber` | ✓ | |  |  | `NUMC(3)` | Repetition Item in FI-CA Document |
+| `CABPItemNumber` | ✓ | |  |  | `NUMC(4)` | Item Number in FI-CA Document |
+| `CASubItemNumber` | ✓ | |  |  | `NUMC(3)` | Subitem for a Partial Clearing in Document |
 | `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
 | `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
 | `BusinessPlace` |  | |  |  | `CHAR(4)` | Business Place |
@@ -178,3 +188,357 @@ tags:
 | `CACurrentFactoringStatusOfRbl` |  | |  |  | `CHAR(1)` | Factoring: Current Status of Receivable |
 | `CAFactoringCheckStsForClrgInfo` |  | |  |  | `CHAR(1)` | Factoring: Check Status for Clearing Information |
 | `CAFactoringItem` |  | |  |  | `NUMC(3)` | Subitems in Factoring |
+| `_AcctAssgmtCat` |  | |  | `_CAAccountAssignmentCategory` |  |  |
+| `_AltvBPForPayment` |  | |  | `_PaytAltvBusinessPartner` |  |  |
+| `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
+| `_CAHeaderCollvBills` |  | |  | `_CollvBillsAltvContractAccount` |  |  |
+| `_CAHeaderFinalRec` |  | |  | `_RevnDistrFnlRcpntContrAccount` |  |  |
+| `_ProviderContract` |  | |  | `_CAProviderContract` |  |  |
+| `_CAHeader` |  | |  | `_ContractAccount` |  |  |
+| `_CAPartner` |  | |  | `_ContractAccountPartner` |  |  |
+| `_ClearingReason` |  | |  | `_CAClearingReason` |  |  |
+| `_ClrgRstrcnCode` |  | |  | `_CAClearingRestrictionCode` |  |  |
+| `_CompCode` |  | |  | `_CompanyCode` |  |  |
+| `_CompCodeCashFlow` |  | |  | `_CashFlowCompanyCode` |  |  |
+| `_CompCodePayt` |  | |  | `_PaymentCompanyCode` |  |  |
+| `_Currency` |  | |  | `_TransactionCurrency` |  |  |
+| `_DocType` |  | |  | `_CADocumentType` |  |  |
+| `_DunningProcedure` |  | |  | `_CADunningProcedure` |  |  |
+| `_InterestCode` |  | |  | `_CAInterestCode` |  |  |
+| `_MainTransaction` |  | |  | `_CAMainTransaction` |  |  |
+| `_PeriodCode` |  | |  | `_CAPeriodCode` |  |  |
+| `_SubTransaction` |  | |  | `_CASubTransaction` |  |  |
+| `_WorkflowCheckProcess` |  | |  | `_CAWorkflowCheckProcess` |  |  |
+| `_WorkflowCheckReason` |  | |  | `_CAWorkflowCheckReason` |  |  |
+| `_DocHeader` | | ✓ | | | | |
+| `_SubstitDocHeader` | | ✓ | | | | |
+| `_ClearingDocHeader` | | ✓ | | | | |
+| `_OriginDocHeader` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CASubApplication` | | ✓ | | | | |
+| `_ClearingCurrency` | | ✓ | | | | |
+| `_CAClearingDocument` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_CADocument` | | ✓ | | | | |
+| `_GLPostingCurrency` | | ✓ | | | | |
+| `_CAOriginDocument` | | ✓ | | | | |
+| `_PartnerCompany` | | ✓ | | | | |
+| `_ReceivingCountry` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_CASubstituteDocument` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_DocHeader` | `I_CADocumentHeader` | [1..1] |
+| `_SubstitDocHeader` | `I_CADocumentHeader` | [0..1] |
+| `_ClearingDocHeader` | `I_CADocumentHeader` | [0..1] |
+| `_OriginDocHeader` | `I_CADocumentHeader` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADOCUMENTBPITEMCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADOCUMENTBPITEMCUBE')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+
+@AccessControl.authorizationCheck: #MANDATORY
+
+@Analytics: { dataCategory: #CUBE,
+              internalName: #LOCAL,
+              dataExtraction: { enabled: true,
+              delta.changeDataCapture: { mapping:[ { table        : 'dfkkop',role: #MAIN,
+                                                     viewElement  : ['CADocumentNumber','CARepetitionItemNumber', 'CABPItemNumber' , 'CASubItemNumber'],
+                                                     tableElement : ['opbel','opupw','opupk' ,'opupz' ] } ] } } }
+
+@EndUserText.label: 'Document Business Partner Item - Cube'
+
+@Metadata: { allowExtensions:true,
+             ignorePropagatedAnnotations: true }
+
+@ObjectModel: { modelingPattern:#ANALYTICAL_CUBE,
+                sapObjectNodeType.name: 'ContrAcctgDocumentBusPartItem',
+                supportedCapabilities: [ #ANALYTICAL_PROVIDER,
+                                         #CDS_MODELING_ASSOCIATION_TARGET,
+                                         #CDS_MODELING_DATA_SOURCE,
+                                         #EXTRACTION_DATA_SOURCE,
+                                         #SQL_DATA_SOURCE ],
+                usageType:{ serviceQuality: #C,
+                            sizeCategory: #XXL,
+                            dataClass: #TRANSACTIONAL } }
+
+@VDM.viewType: #COMPOSITE
+
+define view entity I_CADocumentBPItemCube
+  as select from I_CADocumentBPItem
+
+  /* deprecated associations */
+  association [1..1] to I_CADocumentHeader as _DocHeader         on $projection.CADocumentNumber = _DocHeader.CADocumentNumber
+  association [0..1] to I_CADocumentHeader as _SubstitDocHeader  on $projection.CASubstituteDocumentNumber = _SubstitDocHeader.CADocumentNumber
+  association [0..1] to I_CADocumentHeader as _ClearingDocHeader on $projection.CAClearingDocumentNumber = _ClearingDocHeader.CADocumentNumber
+  association [0..1] to I_CADocumentHeader as _OriginDocHeader   on $projection.CADocumentNumberOfOriginItem = _OriginDocHeader.CADocumentNumber
+  /* end deprecated associations */
+
+{
+  key CADocumentNumber,
+  key CARepetitionItemNumber,
+  key CABPItemNumber,
+  key CASubItemNumber,
+      @ObjectModel.foreignKey.association: '_CompCode'
+      CompanyCode,
+      @ObjectModel.foreignKey.association: '_BusinessArea'
+      BusinessArea,
+      BusinessPlace,
+      @ObjectModel.foreignKey.association: '_Segment'
+      Segment,
+      ProfitCenter,
+      @ObjectModel.foreignKey.association: '_Division'
+      Division,
+      PersonnelNumber,
+      @ObjectModel.foreignKey.association: '_PartnerCompany'
+      PartnerCompany,
+      @ObjectModel.foreignKey.association: '_BusinessPartner'
+      BusinessPartner,
+      CAContract,
+      CAProviderContractItemNumber,
+      CAAdditionalContract,
+      @ObjectModel.foreignKey.association: '_CAHeader'
+      ContractAccount,
+      @ObjectModel.foreignKey.association: '_CASubApplication'
+      CASubApplication,
+      @ObjectModel.foreignKey.association: '_CAHeaderCollvBills'
+      AltvContractAcctForCollvBills,
+      CAReconciliationAccount,
+      @ObjectModel.foreignKey.association: '_ApplArea'
+      CAApplicationArea,
+      @ObjectModel.foreignKey.association: '_MainTransaction'
+      CAMainTransaction,
+      @ObjectModel.foreignKey.association: '_SubTransaction'
+      CASubTransaction,
+      CAAccountDeterminationCode,
+      CADoubtfulOrValueAdjmtCode,
+      @ObjectModel.foreignKey.association: '_AcctAssgmtCat'
+      CAAccountAssignmentCategory,
+      CAAccountAssignment,
+      @ObjectModel.foreignKey.association: '_DocType'
+      CADocumentType,
+      CAIsDownPaymentRequest,
+      @Semantics.booleanIndicator
+      CAItemIsOnlyForSettlement,
+      CAStatisticalItemCode,
+      CABPItemText,
+      CANumberOfRepetitionItems,
+      CARepetitionGroup,
+      CAStartDateOfBillingPeriod,
+      CAEndDateOfBillingPeriod,
+      CAGroupingCodeForBPItems,
+      @ObjectModel.foreignKey.association: '_PeriodCode'
+      CAPeriodCode,
+      CAChangeIsForbidden,
+      @ObjectModel.foreignKey.association: '_InterestCode'
+      CAInterestCode,
+      CARoundingItemCode,
+      @ObjectModel.foreignKey.association: '_ReceivingCountry'
+      CAReceivingCountry,
+      CAInternalPostingReasonCode,
+      @ObjectModel.foreignKey.association: '_WorkflowCheckReason'
+      CAWorkflowCheckReason,
+      @ObjectModel.foreignKey.association: '_WorkflowCheckProcess'
+      CAWorkflowCheckProcess,
+      CANegativePostingControlCode,
+      CAPartnerSettlementStatus,
+      @Semantics.booleanIndicator
+      CAIsPartOfJointLiability,
+      CADocumentOriginCode,
+      @ObjectModel.foreignKey.association: '_SubstitDocHeader'
+      CASubstituteDocumentNumber,
+      CASubstituteDocumentCategory,
+      CAStatisticalCodeOfOriginItem,
+      @ObjectModel.foreignKey.association: '_OriginDocHeader'
+      CADocumentNumberOfOriginItem,
+      CAReferenceDocument,
+      DocumentDate,
+      CAPostingDate,
+      CANetDueDate,
+      CADeferralDate,
+      @ObjectModel.foreignKey.association: '_Currency'
+      TransactionCurrency,
+      @ObjectModel.foreignKey.association: '_CompanyCodeCurrency'
+      CompanyCodeCurrency,
+      CAExchangeRate,
+      ExchRateIsIndirectQuotation,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      CAAmountInLocalCurrency,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      CAAmountInTransactionCurrency,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      CAAmountInSecondCurrency,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      CAAmountInThirdCurrency,
+      CACashDiscountDueDate,
+      CACashDiscountRate,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+
+      CAEligibleAmountForCshDiscount,
+      TaxCode,
+      CASupplementaryTaxCode,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      CATaxAmountInLocalCurrency,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      CATaxAmountInTransCurrency,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      CATaxAmountInSecondCurrency,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      CATaxAmountInThirdCurrency,
+      CADownPaymentTaxAccount,
+      CADownPaymentOffsetTaxAccount,
+      TaxJurisdiction,
+      CATaxDate,
+      WithholdingTaxCode,
+      CAWithholdingTaxSupplement,
+      CAWithholdingTaxCategory,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      CABaseAmountForWithholdingTax,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      CAWithholdingTaxAmount,
+      CAWithholdingTaxPercentage,
+      WithholdingTaxCertificate,
+      CAOtherTaxCode,
+      CAGroupingCodeForTaxItems,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      CATaxPortionInLocalCurrency,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      CATaxPortionInTransCurrency,
+      CATaxIsCalculatedExternally,
+      CATaxAmountIsSetFromExternal,
+      CAPaymentMethod,
+      @ObjectModel.foreignKey.association: '_CompCodePayt'
+      CAPaymentCompanyCode,
+      CAGroupingForPayment,
+      CAPaymentSpecificationCategory,
+      CAClearingStatus,
+      CAClearingDate,
+      @ObjectModel.foreignKey.association: '_ClearingDocHeader'
+      CAClearingDocumentNumber,
+      CAPostingDateOfClearingDoc,
+      @ObjectModel.foreignKey.association: '_ClearingReason'
+      CAClearingReason,
+      @ObjectModel.foreignKey.association: '_ClearingCurrency'
+      CAClearingCurrency,
+      @Semantics.amount.currencyCode: 'CAClearingCurrency'
+      CAClearingAmountInClearingCrcy,
+      @Semantics.amount.currencyCode: 'CAClearingCurrency'
+      CATaxAmountInClearingCrcy,
+      @Semantics.amount.currencyCode: 'CAClearingCurrency'
+      CACashDiscAmountInClearingCrcy,
+      CAValueDateForClearing,
+      @ObjectModel.foreignKey.association: '_ClrgRstrcnCode'
+      CAClearingRestrictionCode,
+      CAClearingPostingIsReset,
+      CAItemIsWithdrawn,
+      CAItemIsExcludedFromDunning,
+      @ObjectModel.foreignKey.association: '_DunningProcedure'
+      CADunningProcedure,
+      CAGrpgCodeForTransfToCollAgcy,
+      CAIsIncludedInCollectionCase,
+      CashPlanningGroup,
+      PlanningLevel,
+      CAAdditionalDaysForCashMgmt,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      PlannedAmtInTransactionCrcy,
+      @ObjectModel.foreignKey.association: '_AltvBPForPayment'
+      CAAltvBPForPayment,
+      CABankOfAltvBPForPayment,
+      CAAddressOfAltvBPForPayment,
+      CACardOfAltvBPForPayment,
+      SEPAMandateCAInternalID,
+      CAGLPostingCurrency,
+      @Semantics.amount.currencyCode: 'CAGLPostingCurrency'
+      CAGLPostingAmount,
+      @Semantics.amount.currencyCode: 'CAGLPostingCurrency'
+      CAGLPostingTaxAmount,
+      CAIsSeparateLineItemInGL,
+      CAIsCashFlowItem,
+      CACashFlowAccount,
+      @ObjectModel.foreignKey.association: '_CompCodeCashFlow'
+      CACashFlowCompanyCode,
+      CAPaymentPreNotificationCode,
+      CASEPAPreNotificationNumber,
+      CASEPAPreNotifOriginCode,
+      CASEPAPreNotifExecutionDate,
+      CASEPAPreNotificationRqmtCode,
+      @ObjectModel.foreignKey.association: '_CAHeaderFinalRec'
+      CARevenueDistrFinalRecipient,
+      CARevenueDistrCurrentStatus,
+      CARevenueDistrLastStatus,
+      CACurrentFactoringStatusOfRbl,
+      CAFactoringCheckStsForClrgInfo,
+      CAFactoringItem,
+
+      /* Associations */
+      _CAAccountAssignmentCategory   as _AcctAssgmtCat,
+      _PaytAltvBusinessPartner       as _AltvBPForPayment,
+      _CAApplicationArea             as _ApplArea,
+      _BusinessArea,
+      _BusinessPartner,
+      _CollvBillsAltvContractAccount as _CAHeaderCollvBills,
+      _RevnDistrFnlRcpntContrAccount as _CAHeaderFinalRec,
+      _CAProviderContract            as _ProviderContract,
+      _ContractAccount               as _CAHeader,
+      _ContractAccountPartner        as _CAPartner,
+      _CASubApplication,
+      _ClearingCurrency,
+      _CAClearingDocument,
+      _CAClearingReason              as _ClearingReason,
+      _CAClearingRestrictionCode     as _ClrgRstrcnCode,
+      _CompanyCodeCurrency,
+      _CompanyCode                   as _CompCode,
+      _CashFlowCompanyCode           as _CompCodeCashFlow,
+      _PaymentCompanyCode            as _CompCodePayt,
+      _TransactionCurrency           as _Currency,
+      _Division,
+      _CADocument,
+      _CADocumentType                as _DocType,
+      _CADunningProcedure            as _DunningProcedure,
+      _GLPostingCurrency,
+      _CAInterestCode                as _InterestCode,
+      _CAMainTransaction             as _MainTransaction,
+      _CAOriginDocument,
+      _PartnerCompany,
+      _CAPeriodCode                  as _PeriodCode,
+      _ReceivingCountry,
+      _Segment,
+      _CASubstituteDocument,
+      _CASubTransaction              as _SubTransaction,
+      _CAWorkflowCheckProcess        as _WorkflowCheckProcess,
+      _CAWorkflowCheckReason         as _WorkflowCheckReason,
+
+      /* deprecated fields */
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: '_CADocument'
+      @VDM.lifecycle.status: #DEPRECATED
+      @VDM.lifecycle.successor: '_CADocument'
+      _DocHeader,
+
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: '_CASubstituteDocument'
+      @VDM.lifecycle.status: #DEPRECATED
+      @VDM.lifecycle.successor: '_CASubstituteDocument'
+      _SubstitDocHeader,
+
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: '_CAClearingDocument'
+      @VDM.lifecycle.status: #DEPRECATED
+      @VDM.lifecycle.successor: '_CAClearingDocument'
+      _ClearingDocHeader,
+
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: '_CAOriginDocument'
+      @VDM.lifecycle.status: #DEPRECATED
+      @VDM.lifecycle.successor: '_CAOriginDocument'
+      _OriginDocHeader
+}
+```

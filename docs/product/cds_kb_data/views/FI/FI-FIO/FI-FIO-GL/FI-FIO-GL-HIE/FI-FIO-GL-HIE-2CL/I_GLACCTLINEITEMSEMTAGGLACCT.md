@@ -5,9 +5,25 @@ app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCTLINEITEMSEMTAGGLACCT')/$value
 semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the key figure amounts for a specific company code in a certain fiscal year? What is the ratio of margin to revenue? What is my net cash amount in company code currency?"
+semantic_vi: "G/L Line Item with Semantic Tag — CDS view giao diện dựa trên P_GLAcctLineItemSemTagGLAcct."
+keywords:
+  - "g/l"
+  - "line"
+  - "item"
+  - "with"
+  - "semantic"
+  - "tag"
+  - "ledger"
+  - "source"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
 tags:
   - FI
   - bo:companycode
@@ -18,7 +34,6 @@ tags:
   - FI-FIO-GL-HIE-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_GLACCTLINEITEMSEMTAGGLACCT
 
@@ -30,22 +45,22 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCTLINEITEMSEMTAGGLACCT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCTLINEITEMSEMTAGGLACCT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `SemanticTag` |  | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
-| `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | Financial Statement Version |
-| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
-| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `SourceLedger` | ✓ | |  |  | `CHAR(2)` | Source Ledger |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` | ✓ | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `SemanticTag` | ✓ | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
+| `GLAccountHierarchy` | ✓ | |  |  | `CHAR(42)` | Financial Statement Version |
+| `ValidityStartDate` | ✓ | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Valid To Date |
 | `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
 | `GLRecordType` |  | |  |  | `CHAR(1)` | Record Type |
 | `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
@@ -359,3 +374,1385 @@ tags:
 | `PnLResultAmtInCCCrcy` |  | |  |  | `CURR(23)` | Profit for the Period |
 | `GLAcctNetIncomeAmtInCCCrcy` |  | |  |  | `CURR(23)` | Net Income Amount In Company Code Currency |
 | `AssetClass` |  | |  |  | `CHAR(8)` | Asset Class |
+| `_JournalEntry` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_FiscalPeriod` | | ✓ | | | | |
+| `_FiscalPeriodForVariant` | | ✓ | | | | |
+| `_LedgerFiscalYear` | | ✓ | | | | |
+| `_LedgerFiscalYearForVariant` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_FiscalYearPeriod` | | ✓ | | | | |
+| `_FiscalYearPeriodForVariant` | | ✓ | | | | |
+| `_CalendarDate` | | ✓ | | | | |
+| `_FiscalCalendarDate` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_BalanceTransactionCurrency` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_GlobalCurrency` | | ✓ | | | | |
+| `_FunctionalCurrency` | | ✓ | | | | |
+| `_FreeDefinedCurrency1` | | ✓ | | | | |
+| `_FreeDefinedCurrency2` | | ✓ | | | | |
+| `_FreeDefinedCurrency3` | | ✓ | | | | |
+| `_FreeDefinedCurrency4` | | ✓ | | | | |
+| `_FreeDefinedCurrency5` | | ✓ | | | | |
+| `_FreeDefinedCurrency6` | | ✓ | | | | |
+| `_FreeDefinedCurrency7` | | ✓ | | | | |
+| `_FreeDefinedCurrency8` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_CostSourceUnit` | | ✓ | | | | |
+| `_AdditionalQuantity1Unit` | | ✓ | | | | |
+| `_AdditionalQuantity2Unit` | | ✓ | | | | |
+| `_AdditionalQuantity3Unit` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_CurrentProfitCenter` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CurrentCostCenter` | | ✓ | | | | |
+| `_CostAnalysisResource` | | ✓ | | | | |
+| `_WBSElementExternalID` | | ✓ | | | | |
+| `_ProjectExternalID` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_FinancialAccountType` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_SourceLedger` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
+| `_InternalOrder` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_FinancialTransactionType` | | ✓ | | | | |
+| `_BusinessTransactionCategory` | | ✓ | | | | |
+| `_BusinessTransactionType` | | ✓ | | | | |
+| `_ReferenceDocumentType` | | ✓ | | | | |
+| `_PredecessorReferenceDocType` | | ✓ | | | | |
+| `_PartnerCostCenter` | | ✓ | | | | |
+| `_PartnerProfitCenter` | | ✓ | | | | |
+| `_PartnerBusinessArea` | | ✓ | | | | |
+| `_PartnerFunctionalArea` | | ✓ | | | | |
+| `_PartnerCompanyCode` | | ✓ | | | | |
+| `_PartnerSegment` | | ✓ | | | | |
+| `_AccountingDocumentCategory` | | ✓ | | | | |
+| `_PostingKey` | | ✓ | | | | |
+| `_SubLedgerAccLineItemType` | | ✓ | | | | |
+| `_User` | | ✓ | | | | |
+| `_EliminationProfitCenter` | | ✓ | | | | |
+| `_GLAccountType` | | ✓ | | | | |
+| `_OffsettingAccountType` | | ✓ | | | | |
+| `_OffsettingChartOfAccounts` | | ✓ | | | | |
+| `_OffsettingAccount` | | ✓ | | | | |
+| `_OffsettingAccountWithBP` | | ✓ | | | | |
+| `_AlternativeGLAccount` | | ✓ | | | | |
+| `_CountryChartOfAccounts` | | ✓ | | | | |
+| `_SpecialGLCode` | | ✓ | | | | |
+| `_TaxCode` | | ✓ | | | | |
+| `_ClearingAccountingDocument` | | ✓ | | | | |
+| `_FixedAsset` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_GroupMasterFixedAsset` | | ✓ | | | | |
+| `_GroupFixedAsset` | | ✓ | | | | |
+| `_InventorySpecialStockValnType` | | ✓ | | | | |
+| `_InventorySpclStockValnType` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_InventorySpclStkSalesDocument` | | ✓ | | | | |
+| `_InventorySpclStkSalesDocItm` | | ✓ | | | | |
+| `_InventorySpecialStockSupplier` | | ✓ | | | | |
+| `_InventoryValuationType` | | ✓ | | | | |
+| `_ControllingDebitCreditCode` | | ✓ | | | | |
+| `_OriginSenderObject` | | ✓ | | | | |
+| `_ControllingObjectClass` | | ✓ | | | | |
+| `_PartnerControllingObjectClass` | | ✓ | | | | |
+| `_OriginCostCenter` | | ✓ | | | | |
+| `_OriginProfitCenter` | | ✓ | | | | |
+| `_CostCtrActivityType` | | ✓ | | | | |
+| `_OriginCostCtrActivityType` | | ✓ | | | | |
+| `_OrderCategory` | | ✓ | | | | |
+| `_BusinessProcess` | | ✓ | | | | |
+| `_PartnerCostCtrActivityType` | | ✓ | | | | |
+| `_PartnerOrder` | | ✓ | | | | |
+| `_PartnerOrder_2` | | ✓ | | | | |
+| `_PartnerOrderCategory` | | ✓ | | | | |
+| `_PartnerSalesDocument` | | ✓ | | | | |
+| `_PartnerSalesDocumentItem` | | ✓ | | | | |
+| `_PartnerBusinessProcess` | | ✓ | | | | |
+| `_BillingDocumentType` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_SoldProduct` | | ✓ | | | | |
+| `_Fund` | | ✓ | | | | |
+| `_PartnerFund` | | ✓ | | | | |
+| `_FundsCenter` | | ✓ | | | | |
+| `_BudgetPeriod` | | ✓ | | | | |
+| `_CostOriginGroup` | | ✓ | | | | |
+| `_CustomerSupplierCountry` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_FinancialManagementArea` | | ✓ | | | | |
+| `_OperatingConcern` | | ✓ | | | | |
+| `_PartnerCompany` | | ✓ | | | | |
+| `_SemanticTag` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_MaintenanceActivityType` | | ✓ | | | | |
+| `_MaintenanceOrderSubOperation` | | ✓ | | | | |
+| `_Assembly` | | ✓ | | | | |
+| `_ConditionContract` | | ✓ | | | | |
+| `_SoldProductGroup` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_ServiceDocument` | | ✓ | | | | |
+| `_ServiceDocumentItem` | | ✓ | | | | |
+| `_ServiceContract` | | ✓ | | | | |
+| `_ServiceContractItem` | | ✓ | | | | |
+| `_ServiceContractType` | | ✓ | | | | |
+| `_ProviderContract` | | ✓ | | | | |
+| `_ProviderContractItem` | | ✓ | | | | |
+| `_TimeSheetOvertimeCat` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
+| `_WBSElementBasicDataText` | | ✓ | | | | |
+| `_ProjectBasicData` | | ✓ | | | | |
+| `_ProjectBasicDataText` | | ✓ | | | | |
+| `_PartnerProjectExternalID` | | ✓ | | | | |
+| `_PartnerProjectExternalIDText` | | ✓ | | | | |
+| `_PartnerWBSElementExternalID` | | ✓ | | | | |
+| `_PartnerWBSElementExtIDText` | | ✓ | | | | |
+| `_PartnerProjectBasicData` | | ✓ | | | | |
+| `_PartnerProjectBasicDataText` | | ✓ | | | | |
+| `_PartnerWBSElementBasicData` | | ✓ | | | | |
+| `_PartnerWBSElementBscDataText` | | ✓ | | | | |
+| `_InvtrySpclStkWBSElmntBscData` | | ✓ | | | | |
+| `_InvtrySpclStockWBSElmntExtID` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Extension` | `E_JournalEntryItem` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCTLINEITEMSEMTAGGLACCT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCTLINEITEMSEMTAGGLACCT')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IFIGLLITSTGLACC'
+@EndUserText.label: 'G/L Line Item with Semantic Tag'
+@VDM.viewType: #COMPOSITE
+@AccessControl.authorizationCheck: #CHECK
+@Analytics.dataCategory: #CUBE
+//@ObjectModel.representativeKey: 'LedgerGLLineItem'
+@AbapCatalog.preserveKey: true
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.modelingPattern: #ANALYTICAL_CUBE
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_PROVIDER,
+                                      #SQL_DATA_SOURCE,
+                                      #CDS_MODELING_DATA_SOURCE ]
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AccessControl.personalData.blocking: #REQUIRED
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations: true
+@AbapCatalog.dbHints: [{dbSystem: #HDB, hint: 'USE_OLAP_PLAN'}]
+@Analytics.internalName:#LOCAL
+@AbapCatalog.compiler.compareFilter:true
+@Consumption.dbHints: ['USE_HEX_PLAN','NO_JOIN_THRU_AGGR']
+define view I_GLAcctLineItemSemTagGLAcct
+  as select from P_GLAcctLineItemSemTagGLAcct as P_GLAcctLineItemSemTagGLAcct
+  association [1..1] to E_JournalEntryItem as _Extension on  $projection.SourceLedger       = _Extension.SourceLedger
+                                                         and $projection.CompanyCode        = _Extension.CompanyCode
+                                                         and $projection.FiscalYear         = _Extension.FiscalYear
+                                                         and $projection.AccountingDocument = _Extension.AccountingDocument
+                                                         and $projection.LedgerGLLineItem   = _Extension.LedgerGLLineItem
+
+{
+      @ObjectModel.foreignKey.association: '_Ledger'
+      @Environment.sql.passValue: true
+  key Ledger,
+      @ObjectModel.foreignKey.association: '_SourceLedger'
+  key SourceLedger,
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+      @Environment.sql.passValue: true
+  key CompanyCode,
+      @ObjectModel.foreignKey.association: '_FiscalYear'
+      @Environment.sql.passValue: true
+  key FiscalYear,
+      @ObjectModel.foreignKey.association: '_JournalEntry'
+  key AccountingDocument,
+  key LedgerGLLineItem,
+
+      ///////////////////////////////////////////////////////////////////////
+      // I_SemTagGLAccount
+      ///////////////////////////////////////////////////////////////////////
+      @ObjectModel.foreignKey.association: '_SemanticTag'
+  key SemanticTag,
+      //      @ObjectModel.foreignKey.association: '_Hierarchy'
+  key GLAccountHierarchy,
+
+      @Semantics.businessDate.from: true
+  key ValidityStartDate,
+      @Semantics.businessDate.to: true
+  key ValidityEndDate,
+
+      @ObjectModel.foreignKey.association: '_LedgerFiscalYearForVariant'
+      LedgerFiscalYear,
+      GLRecordType,
+
+      // Test workaround
+      @ObjectModel.foreignKey.association: '_ChartOfAccounts'
+      ChartOfAccounts,
+      @ObjectModel.foreignKey.association: '_ControllingArea'
+      ControllingArea,
+
+      ///////////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_00  Unified Journal Entry: Transaction, Currencies, Units
+      ///////////////////////////////////////////////////////////////////////////////
+      @ObjectModel.foreignKey.association: '_FinancialTransactionType'
+      FinancialTransactionType,
+      @ObjectModel.foreignKey.association: '_BusinessTransactionCategory'
+      BusinessTransactionCategory,
+      @ObjectModel.foreignKey.association: '_BusinessTransactionType'
+      BusinessTransactionType,
+      @ObjectModel.foreignKey.association: '_ReferenceDocumentType'
+      ReferenceDocumentType,
+      //      @ObjectModel.foreignKey.association: '_LogicalSystem'
+      LogicalSystem,
+      ReferenceDocumentContext,
+      ReferenceDocument,
+      ReferenceDocumentItem,
+      ReferenceDocumentItemGroup,
+      //SUBTA,
+      IsReversal,
+      IsReversed,
+      //XTRUEREV,
+      //AWTYP_REV,
+      ReversalReferenceDocumentCntxt,
+      ReversalReferenceDocument,
+      //SUBTA_REV,
+      IsSettlement,
+      IsSettled,
+      @ObjectModel.foreignKey.association: '_PredecessorReferenceDocType'
+      PredecessorReferenceDocType,
+      PredecessorReferenceDocCntxt,
+      PredecessorReferenceDocument,
+      PredecessorReferenceDocItem,
+      //PREC_SUBTA,
+
+      SourceReferenceDocumentType,
+      SourceLogicalSystem,
+      SourceReferenceDocumentCntxt,
+      SourceReferenceDocument,
+      SourceReferenceDocumentItem,
+      SourceReferenceDocSubitem,
+      IsCommitment,
+      JrnlEntryItemObsoleteReason,
+
+      @ObjectModel.foreignKey.association: '_GLAccountInChartOfAccounts'
+      GLAccount,
+
+
+      ////////////////////////////////////////////////////////////////////////////////////
+      // .INCLUDE  ACDOC_SI_GL_ACCAS Unified Journal Entry: G/L additional account assignments
+      ////////////////////////////////////////////////////////////////////////////////////
+      @ObjectModel.foreignKey.association: '_CostCenter'
+      CostCenter,
+      @ObjectModel.foreignKey.association: '_ProfitCenter'
+      ProfitCenter,
+      @ObjectModel.foreignKey.association: '_FunctionalArea'
+      FunctionalArea,
+      @ObjectModel.foreignKey.association: '_BusinessArea'
+      BusinessArea,
+      @ObjectModel.foreignKey.association: '_Segment'
+      Segment,
+      @ObjectModel.foreignKey.association: '_PartnerCostCenter'
+      PartnerCostCenter,
+      @ObjectModel.foreignKey.association: '_PartnerProfitCenter'
+      PartnerProfitCenter,
+      @ObjectModel.foreignKey.association: '_PartnerFunctionalArea'
+      PartnerFunctionalArea,
+      @ObjectModel.foreignKey.association: '_PartnerBusinessArea'
+      PartnerBusinessArea,
+      @ObjectModel.foreignKey.association: '_PartnerCompany'
+      PartnerCompany,
+      PartnerSegment,
+
+
+      /////////////////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_VALUE_DATA Unified Journal Entry: Value Fields
+      /////////////////////////////////////////////////////////////////////////////////////
+
+      @ObjectModel.foreignKey.association: '_BalanceTransactionCurrency'
+      @Semantics.currencyCode:true
+      BalanceTransactionCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'BalanceTransactionCurrency'} }
+      AmountInBalanceTransacCrcy,
+
+      @ObjectModel.foreignKey.association: '_TransactionCurrency'
+      @Semantics.currencyCode:true
+      TransactionCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+      AmountInTransactionCurrency,
+
+      @ObjectModel.foreignKey.association: '_CompanyCodeCurrency'
+      @Semantics.currencyCode:true
+      CompanyCodeCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      AmountInCompanyCodeCurrency,
+
+      ////////////////////////////////////
+      // NEW
+      @ObjectModel.foreignKey.association: '_GlobalCurrency'
+      @Semantics.currencyCode:true
+      GlobalCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      AmountInGlobalCurrency,
+      
+      // Functional Currency
+      @ObjectModel.foreignKey.association: '_FunctionalCurrency'
+      @Semantics.currencyCode:true
+      FunctionalCurrency,
+      @Aggregation.default: #SUM
+      @Semantics: { amount : {currencyCode: 'FunctionalCurrency'} }
+      AmountInFunctionalCurrency,
+      
+      @ObjectModel.foreignKey.association: '_FreeDefinedCurrency1'
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency1,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency1'} }
+      AmountInFreeDefinedCurrency1,
+
+      @ObjectModel.foreignKey.association: '_FreeDefinedCurrency2'
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency2,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency2'} }
+      AmountInFreeDefinedCurrency2,
+
+      @ObjectModel.foreignKey.association: '_FreeDefinedCurrency3'
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency3,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency3'} }
+      AmountInFreeDefinedCurrency3,
+
+      @ObjectModel.foreignKey.association: '_FreeDefinedCurrency4'
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency4,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency4'} }
+      AmountInFreeDefinedCurrency4,
+
+      @ObjectModel.foreignKey.association: '_FreeDefinedCurrency5'
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency5,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency5'} }
+      AmountInFreeDefinedCurrency5,
+
+      @ObjectModel.foreignKey.association: '_FreeDefinedCurrency6'
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency6,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency6'} }
+      AmountInFreeDefinedCurrency6,
+
+      @ObjectModel.foreignKey.association: '_FreeDefinedCurrency7'
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency7,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency7'} }
+      AmountInFreeDefinedCurrency7,
+
+      @ObjectModel.foreignKey.association: '_FreeDefinedCurrency8'
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency8,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency8'} }
+      AmountInFreeDefinedCurrency8,
+      ////////////////////////////////////
+
+      ////////////////////////////////////
+      // NEW
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      FixedAmountInGlobalCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      GrpValnFixedAmtInGlobCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      PrftCtrValnFxdAmtInGlobCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      TotalPriceVarcInGlobalCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      GrpValnTotPrcVarcInGlobCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      PrftCtrValnTotPrcVarcInGlbCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      FixedPriceVarcInGlobalCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      GrpValnFixedPrcVarcInGlobCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      PrftCtrValnFxdPrcVarcInGlbCrcy,
+      
+      @Aggregation.default: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      FixedAmountInCoCodeCrcy,
+      ////////////////////////////////////
+
+
+      @Semantics.currencyCode:true
+      ControllingObjectCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'ControllingObjectCurrency'} }
+      AmountInObjectCurrency,
+
+
+      @ObjectModel.foreignKey.association: '_BaseUnit'
+      @Semantics.unitOfMeasure:true
+      BaseUnit,
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'BaseUnit'} }
+      Quantity,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'BaseUnit'} }
+      FixedQuantity,
+
+      @ObjectModel.foreignKey.association: '_CostSourceUnit'
+      @Semantics.unitOfMeasure:true
+      CostSourceUnit,
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'CostSourceUnit'} }
+      ValuationQuantity,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'CostSourceUnit'} }
+      ValuationFixedQuantity,
+
+      @ObjectModel.foreignKey.association: '_AdditionalQuantity1Unit'
+      @Semantics.unitOfMeasure:true
+      AdditionalQuantity1Unit,
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'AdditionalQuantity1Unit'} }
+      AdditionalQuantity1,
+
+      @ObjectModel.foreignKey.association: '_AdditionalQuantity2Unit'
+      @Semantics.unitOfMeasure:true
+      AdditionalQuantity2Unit,
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'AdditionalQuantity2Unit'} }
+      AdditionalQuantity2,
+
+      @ObjectModel.foreignKey.association: '_AdditionalQuantity3Unit'
+      @Semantics.unitOfMeasure:true
+      AdditionalQuantity3Unit,
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'AdditionalQuantity3Unit'} }
+      AdditionalQuantity3,
+
+
+      /////////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_FIX  Unified Journal Entry: Mandatory fields for G/L
+      ////////////////////////////////////////////////////////////////////////////
+      @ObjectModel.foreignKey.association: '_DebitCreditCode'
+      DebitCreditCode,
+      //      @ObjectModel.foreignKey.association: '_FiscalPeriod'
+      FiscalPeriod,
+      @ObjectModel.foreignKey.association: '_FiscalYearVariant'
+      P_GLAcctLineItemSemTagGLAcct.FiscalYearVariant,
+      FiscalYearPeriod,
+      PostingDate,
+      DocumentDate,
+      @ObjectModel.foreignKey.association: '_AccountingDocumentType'
+      AccountingDocumentType,
+      AccountingDocumentItem,
+      AssignmentReference,
+      @ObjectModel.foreignKey.association: '_AccountingDocumentCategory'
+      AccountingDocumentCategory,
+      @ObjectModel.foreignKey.association: '_PostingKey'
+      PostingKey,
+      TransactionTypeDetermination,
+      @ObjectModel.foreignKey.association: '_SubLedgerAccLineItemType'
+      SubLedgerAcctLineItemType,
+      //      @ObjectModel.foreignKey.association: '_User'
+      AccountingDocCreatedByUser,
+      LastChangeDateTime,
+      CreationDateTime,
+      CreationDate,
+      @ObjectModel.foreignKey.association: '_EliminationProfitCenter'
+      EliminationProfitCenter,
+      OriginObjectType,
+      @ObjectModel.foreignKey.association: '_GLAccountType'
+      GLAccountType,
+      @ObjectModel.foreignKey.association: '_AlternativeGLAccount'
+      AlternativeGLAccount,
+      @ObjectModel.foreignKey.association: '_CountryChartOfAccounts'
+      CountryChartOfAccounts,
+
+
+      ///////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_GEN  Unified Journal Entry: Fields for several subledgers
+      //////////////////////////////////////////////////////////////////////////
+      InvoiceReference,
+      InvoiceReferenceFiscalYear,
+      FollowOnDocumentType,
+      InvoiceItemReference,
+      ReferencePurchaseOrderCategory,
+      //      @ObjectModel.foreignKey.association: '_PurchasingDocument'
+      PurchasingDocument,
+      //      @ObjectModel.foreignKey.association: '_PurchasingDocumentItem'
+      PurchasingDocumentItem,
+      AccountAssignmentNumber,
+      DocumentItemText,
+      @ObjectModel.foreignKey.association: '_SalesOrder'
+      SalesOrder,
+      @ObjectModel.foreignKey.association: '_SalesOrderItem'
+      SalesOrderItem,
+      @ObjectModel.foreignKey.association: '_SalesDocument'
+      SalesDocument,
+      //      @ObjectModel.foreignKey.association: '_Material'
+      //      Material,
+      @ObjectModel.foreignKey.association: '_Product'
+      Product,
+      @ObjectModel.foreignKey.association: '_Plant'
+      Plant,
+      @ObjectModel.foreignKey.association: '_Supplier'
+      Supplier,
+      @ObjectModel.foreignKey.association: '_Customer'
+      Customer,
+
+      ServicesRenderedDate,
+      @ObjectModel.foreignKey.association: '_ConditionContract'
+      ConditionContract,
+      
+      ComponentBreakdown,
+      CompBreakdownScaleNumerator,
+
+      /////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_FI  Unified Journal Entry: Fields for FI subledgers
+      /////////////////////////////////////////////////////////////////////////
+      @ObjectModel.foreignKey.association: '_FinancialAccountType'
+      FinancialAccountType,
+      @ObjectModel.foreignKey.association: '_SpecialGLCode'
+      SpecialGLCode,
+      @Consumption.valueHelpDefinition: [
+            { entity:  { name:    'I_TaxCodeStdVH',
+                         element: 'TaxCode' }
+            }]
+      //      @ObjectModel.foreignKey.association: '_TaxCode'
+      TaxCode,
+      //      @ObjectModel.foreignKey.association: '_HouseBank'
+      HouseBank,
+      //      @ObjectModel.foreignKey.association: '_HouseBankAccount'
+      HouseBankAccount,
+      IsOpenItemManaged,
+      ClearingDate,
+      @ObjectModel.foreignKey.association: '_ClearingAccountingDocument'
+      ClearingAccountingDocument,
+      ClearingDocFiscalYear,
+
+
+      /////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_FAA  Unified Journal Entry: Fields for Asset Accounting
+      /////////////////////////////////////////////////////////////////////////
+      AssetDepreciationArea,
+      @ObjectModel.foreignKey.association: '_MasterFixedAsset'
+      MasterFixedAsset,
+      @ObjectModel.foreignKey.association: '_FixedAsset'
+      FixedAsset,
+      AssetValueDate,
+      //      @ObjectModel.foreignKey.association: '_AssetTransactionType'
+      AssetTransactionType,
+      //      @ObjectModel.foreignKey.association: '_MovementCategory'
+      AssetAcctTransClassfctn,
+      DepreciationFiscalPeriod,
+      @ObjectModel.foreignKey.association: '_GroupMasterFixedAsset'
+      GroupMasterFixedAsset,
+      @ObjectModel.foreignKey.association: '_GroupFixedAsset'
+      GroupFixedAsset,
+
+
+      //////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_ML Unified Journal Entry: Fields for Material Ledger
+      //////////////////////////////////////////////////////////////////////////
+      CostEstimate,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:   'InvtrySpecialStockValnType_2'
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: 'InvtrySpecialStockValnType_2'
+      @ObjectModel.foreignKey.association: '_InventorySpecialStockValnType'
+      InventorySpecialStockValnType,
+      @Analytics.internalName: #LOCAL         
+      @ObjectModel.foreignKey.association: '_InventorySpclStockValnType'
+      InvtrySpecialStockValnType_2,
+      //xobew,
+      @ObjectModel.foreignKey.association: '_InventorySpecialStockType'
+      InventorySpecialStockType,
+      @ObjectModel.foreignKey.association: '_InventorySpclStkSalesDocument'
+      InventorySpclStkSalesDocument, //  as InventorySpecialStockSalesDocument,
+      @ObjectModel.foreignKey.association: '_InventorySpclStkSalesDocItm'
+      InventorySpclStkSalesDocItm, //  as InventorySpecialStockSalesDocumentItem,
+      //      @ObjectModel.foreignKey.association: '_InvtrySpclStockWBSElmntIntID'
+      InvtrySpclStockWBSElmntIntID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_InvtrySpclStockWBSElmntExtID'
+      InvtrySpclStockWBSElmntExtID,
+      //      @ObjectModel.foreignKey.association: '_InventorySpclStockWBSElement'
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:   'InvtrySpclStockWBSElmntIntID'
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: 'InvtrySpclStockWBSElmntIntID'   
+      InventorySpclStockWBSElement, //  as InventorySpecialStockWBSElement,
+      @ObjectModel.foreignKey.association: '_InventorySpecialStockSupplier'
+      InventorySpecialStockSupplier,
+      @ObjectModel.foreignKey.association: '_InventoryValuationType'
+      InventoryValuationType,
+      //      @ObjectModel.foreignKey.association: '_Purreqvaluationarea'
+      ValuationArea,
+
+
+      ////////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_CFIN   Unified Journal Entry: Fields for Central Finance
+      //////////////////////////////////////////////////////////////////////////////
+      //@ObjectModel.foreignKey.association: '_SenderGLAccount'
+      SenderGLAccount,
+      SenderAccountAssignment,
+      SenderAccountAssignmentType,
+
+
+      ////////////////////////////////////////////////////////////////////////////
+      //  .INCLUDE  ACDOC_SI_CO  Unified Journal Entry: CO fields
+      ///////////////////////////////////////////////////////////////////////////
+      //      @ObjectModel.foreignKey.association: '_CostOriginGroup'
+      CostOriginGroup,
+      @ObjectModel.foreignKey.association: '_OriginSenderObject'
+      OriginSenderObject,
+      @ObjectModel.foreignKey.association: '_ControllingDebitCreditCode'
+      ControllingDebitCreditCode,
+      ControllingObjectDebitType,
+      QuantityIsIncomplete,
+      @ObjectModel.foreignKey.association: '_OffsettingAccountWithBP'
+      OffsettingAccount,
+      @ObjectModel.foreignKey.association: '_OffsettingAccountType'
+      OffsettingAccountType,
+      @ObjectModel.foreignKey.association: '_OffsettingChartOfAccounts'
+      OffsettingChartOfAccounts,
+      LineItemIsCompleted,
+      PersonnelNumber,
+      @ObjectModel.foreignKey.association: '_ControllingObjectClass'
+      ControllingObjectClass,
+      @ObjectModel.foreignKey.association: '_PartnerCompanyCode'
+      PartnerCompanyCode,
+      @ObjectModel.foreignKey.association: '_PartnerControllingObjectClass'
+      PartnerControllingObjectClass,
+      @ObjectModel.foreignKey.association: '_OriginCostCenter'
+      OriginCostCenter,
+      @ObjectModel.foreignKey.association: '_OriginProfitCenter'
+      OriginProfitCenter,
+      @ObjectModel.foreignKey.association: '_OriginCostCtrActivityType'
+      OriginCostCtrActivityType,
+      AccountAssignment,
+      AccountAssignmentType,
+      @ObjectModel.foreignKey.association: '_CostCtrActivityType'
+      CostCtrActivityType,
+      @ObjectModel.foreignKey.association: '_Order'
+      OrderID,
+      @ObjectModel.foreignKey.association: '_OrderCategory'
+      OrderCategory,
+      //      @ObjectModel.foreignKey.association: '_WBSElementInternalID'
+      WBSElementInternalID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_WBSElementExternalID'
+      WBSElementExternalID,
+      //      @ObjectModel.foreignKey.association: '_WBSElementBasicData'
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:   'WBSElementInternalID'
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: 'WBSElementInternalID' 
+      WBSElement,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PartnerWBSElementBasicData'
+      PartnerWBSElementInternalID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PartnerWBSElementExternalID'
+      PartnerWBSElementExternalID,
+      //      @ObjectModel.foreignKey.association: '_ProjectInternalID'
+      ProjectInternalID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ProjectExternalID'
+      ProjectExternalID,
+      //      @ObjectModel.foreignKey.association: '_Project'
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:   'ProjectInternalID'
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: 'ProjectInternalID' 
+      Project,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PartnerProjectBasicData'
+      PartnerProjectInternalID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PartnerProjectExternalID'
+      PartnerProjectExternalID,
+      @ObjectModel.foreignKey.association: '_OperatingConcern'
+      OperatingConcern,
+      //      @ObjectModel.foreignKey.association: '_ProjectNetwork'
+      ProjectNetwork,
+      //      @ObjectModel.foreignKey.association: '_RelatedNetworkActivity'
+      RelatedNetworkActivity,
+      @ObjectModel.foreignKey.association: '_BusinessProcess'
+      BusinessProcess,
+      CostObject,
+      BillableControl,
+      //bemot,
+      @ObjectModel.foreignKey.association: '_CostAnalysisResource'
+      CostAnalysisResource,
+      CustomerServiceNotification,
+      @Consumption.valueHelpDefinition: [
+            { entity:  { name:    'I_AcctgServiceDocumentTypeVH',
+                         element: 'ServiceDocumentType' }
+            }]
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceDocumentType'
+      ServiceDocumentType,
+      @Consumption.valueHelpDefinition: [
+            { entity:  { name:    'I_AcctgServiceDocumentVH',
+                         element: 'ServiceDocument' }
+            }]
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceDocument'
+      ServiceDocument,
+      @Consumption.valueHelpDefinition: [
+            { entity:  { name:    'I_AcctgServiceDocumentItemVH',
+                         element: 'ServiceDocumentItem' }
+            }]
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceDocumentItem'
+      ServiceDocumentItem,
+      @Consumption.valueHelpDefinition: [
+            { entity:  { name:    'I_ServiceContractTypeStdVH',
+                         element: 'ServiceContractType' }
+            }]
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceContractType'
+      ServiceContractType,
+      @Consumption.valueHelpDefinition: [
+            { entity:  { name:    'I_AcctgServiceContractVH',
+                         element: 'ServiceContract' }
+            }]
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceContract'
+      ServiceContract,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceContractItem'
+      ServiceContractItem,
+
+      BusinessSolutionOrder,
+      BusinessSolutionOrderItem,
+
+      @ObjectModel.foreignKey.association: '_ProviderContract'
+      ProviderContract,
+      @ObjectModel.foreignKey.association: '_ProviderContractItem'
+      ProviderContractItem,
+      
+      @ObjectModel.foreignKey.association: '_TimeSheetOvertimeCat'
+      TimeSheetOvertimeCategory,
+      
+      PartnerAccountAssignment,
+      PartnerAccountAssignmentType,
+      @ObjectModel.foreignKey.association: '_PartnerCostCtrActivityType'
+      PartnerCostCtrActivityType,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:    'PartnerOrder_2'
+      @VDM.lifecycle.status:     #DEPRECATED
+      @VDM.lifecycle.successor:  'PartnerOrder_2'
+      @ObjectModel.foreignKey.association: '_PartnerOrder'
+      PartnerOrder,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PartnerOrder_2'
+      PartnerOrder_2,
+      @ObjectModel.foreignKey.association: '_PartnerOrderCategory'
+      PartnerOrderCategory,
+      //      @ObjectModel.foreignKey.association: '_PartnerWBSElementBasicData'
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:    'PartnerWBSElementInternalID'
+      @VDM.lifecycle.status:     #DEPRECATED
+      @VDM.lifecycle.successor:  'PartnerWBSElementInternalID' 
+      PartnerWBSElement,
+      //      @ObjectModel.foreignKey.association: '_PartnerProject'
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:    'PartnerProjectInternalID'
+      @VDM.lifecycle.status:     #DEPRECATED
+      @VDM.lifecycle.successor:  'PartnerProjectInternalID' 
+      PartnerProject,
+      @ObjectModel.foreignKey.association: '_PartnerSalesDocument'
+      PartnerSalesDocument,
+      @ObjectModel.foreignKey.association: '_PartnerSalesDocumentItem'
+      PartnerSalesDocumentItem,
+      PartnerProjectNetwork,
+      //      @ObjectModel.foreignKey.association: '_PartnerProjectNetworkActivity'
+      PartnerProjectNetworkActivity,
+      @ObjectModel.foreignKey.association: '_PartnerBusinessProcess'
+      PartnerBusinessProcess,
+      PartnerCostObject,
+
+      //////////////////////////////////////////////////////////////////////
+      //  .INCLUDE  ACDOC_SI_COPA  Unified Journal Entry: CO-PA fields
+      //////////////////////////////////////////////////////////////////////
+      @ObjectModel.foreignKey.association: '_BillingDocumentType'
+      BillingDocumentType,
+      @ObjectModel.foreignKey.association: '_SalesOrganization'
+      SalesOrganization,
+      @ObjectModel.foreignKey.association: '_DistributionChannel'
+      DistributionChannel,
+      OrganizationDivision,
+      //      @ObjectModel.foreignKey.association: '_SoldMaterial'
+      //      SoldMaterial,
+      @ObjectModel.foreignKey.association: '_SoldProduct'
+      SoldProduct,
+      //      @ObjectModel.foreignKey.association: '_MaterialGroup'
+      //      MaterialGroup,
+      @ObjectModel.foreignKey.association: '_SoldProductGroup'
+      SoldProductGroup,
+      @ObjectModel.foreignKey.association: '_ProductGroup'
+      ProductGroup,
+      @ObjectModel.foreignKey.association: '_CustomerGroup'
+      CustomerGroup,
+      @ObjectModel.foreignKey.association: '_CustomerSupplierCountry'
+      CustomerSupplierCountry,
+      CustomerSupplierIndustry,
+      @ObjectModel.foreignKey.association: '_SalesDistrict'
+      SalesDistrict,
+      @ObjectModel.foreignKey.association: '_BillToParty'
+      BillToParty,
+      @ObjectModel.foreignKey.association: '_ShipToParty'
+      ShipToParty,
+      CustomerSupplierCorporateGroup,
+
+
+      //////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_PS  Unified Journal Entry: Fields for Public Sector
+      /////////////////////////////////////////////////////////////////////
+      @ObjectModel.foreignKey.association: '_FinancialManagementArea'
+      FinancialManagementArea,
+      @ObjectModel.foreignKey.association: '_Fund'
+      Fund,
+      GrantID,
+      @ObjectModel.foreignKey.association: '_BudgetPeriod'
+      BudgetPeriod,
+      @ObjectModel.foreignKey.association: '_PartnerFund'
+      PartnerFund,
+      PartnerGrant,
+      PartnerBudgetPeriod,
+      //      @ObjectModel.foreignKey.association: '_FundsCenter'
+      FundsCenter,
+      FundedProgram,
+
+      ///////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_JVA  Unified Journal Entry: Fields for Joint Venture Accounting
+      ///////////////////////////////////////////////////////////////////////
+      JointVenture,
+      JointVentureEquityGroup,
+      JointVentureCostRecoveryCode,
+      //vptnr,
+      //btype,
+      JointVentureEquityType,
+      //prodper,
+
+      ///////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_RE STRU  0 0 Unified Journal Entry: Fields for Real Estate
+      ///////////////////////////////////////////////////////////////////////
+      //swenr,
+      //sgenr,
+      //sgrnr,
+      //smenr,
+      //recnnr,
+      //snksl,
+      //sempsl,
+      SettlementReferenceDate,
+      //pswenr,
+      //psgenr,
+      //psgrnr,
+      //psmenr,
+      //precnnr,
+      //psnksl,
+      //psempsl,
+      //pdabrz
+      WorkCenterInternalID,
+      OrderOperation,
+      OrderItem,
+
+      //////////////////////////////////////////////////
+      // .INCLUDE  ACDOC_SI_LOG_ACT:  New Fields  PM  //
+      //////////////////////////////////////////////////
+      //@ObjectModel.foreignKey.association: '_MaintenanceOrderSubOperation'
+      OrderSuboperation,
+      @ObjectModel.foreignKey.association: '_Equipment'
+      Equipment,
+      @ObjectModel.foreignKey.association: '_FunctionalLocation'
+      FunctionalLocation,
+      @ObjectModel.foreignKey.association: '_Assembly'
+      Assembly,
+      @ObjectModel.foreignKey.association: '_MaintenanceActivityType'
+      MaintenanceActivityType,
+      //      @ObjectModel.foreignKey.association: '_MaintOrdPlngDegreeCode'
+      MaintenanceOrderPlanningCode,
+      //      @ObjectModel.foreignKey.association: '_PMNotificationPriorityType'
+      MaintPriorityType,
+      //      @ObjectModel.foreignKey.association: '_PMNotificationPriority'
+      MaintPriority,
+      //      @ObjectModel.foreignKey.association: '_SuperiorOrder'
+      SuperiorOrder,
+      MaintenanceOrderIsPlanned,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      DebitAmountInCoCodeCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      CreditAmountInCoCodeCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+      DebitAmountInTransCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+      CreditAmountInTransCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'BalanceTransactionCurrency'} }
+      DebitAmountInBalanceTransCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'BalanceTransactionCurrency'} }
+      CreditAmountInBalanceTransCrcy,
+
+      ////////////////////////////////////
+      // NEW
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      DebitAmountInGlobalCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      CreditAmountInGlobalCrcy,
+      
+      @Aggregation.default: #SUM
+      @Semantics: { amount : {currencyCode: 'FunctionalCurrency'} }
+      DebitAmountInFunctionalCrcy,
+      
+      @Aggregation.default: #SUM
+      @Semantics: { amount : {currencyCode: 'FunctionalCurrency'} }
+      CreditAmountInFunctionalCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency1'} }
+      DebitAmountInFreeDfndCrcy1,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency1'} }
+      CreditAmountInFreeDfndCrcy1,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency2'} }
+      DebitAmountInFreeDfndCrcy2,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency2'} }
+      CreditAmountInFreeDfndCrcy2,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency3'} }
+      DebitAmountInFreeDfndCrcy3,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency3'} }
+      CreditAmountInFreeDfndCrcy3,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency4'} }
+      DebitAmountInFreeDfndCrcy4,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency4'} }
+      CreditAmountInFreeDfndCrcy4,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency5'} }
+      DebitAmountInFreeDfndCrcy5,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency5'} }
+      CreditAmountInFreeDfndCrcy5,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency6'} }
+      DebitAmountInFreeDfndCrcy6,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency6'} }
+      CreditAmountInFreeDfndCrcy6,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency7'} }
+      DebitAmountInFreeDfndCrcy7,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency7'} }
+      CreditAmountInFreeDfndCrcy7,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency8'} }
+      DebitAmountInFreeDfndCrcy8,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency8'} }
+      CreditAmountInFreeDfndCrcy8,
+      //////////////////////////////////
+
+
+      IsStatisticalOrder,
+      IsStatisticalCostCenter,
+      IsStatisticalSalesDocument,
+      WBSIsStatisticalWBSElement,
+
+      ///////////////////////////////////////////////////////////////////////
+      // Additional requested fields
+      ///////////////////////////////////////////////////////////////////////
+      //      @ObjectModel.foreignKey.association: '_FiscalQuarter'
+      FiscalQuarter,
+      FiscalYearQuarter,
+      //      Employee,
+      //      EmployeeFullName,
+      //      @ObjectModel.foreignKey.association: '_AssetKeyFigure'
+      AssetAccountingKeyFigure,
+
+      /////////////////////////////////////////////////////////////////////////////
+      //New added SemanticTag
+      /////////////////////////////////////////////////////////////////////////////
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      AssetAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      LiabilityEquityAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      NotAssignedAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      NetResultAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      PnLResultAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      GLAcctNetIncomeAmtInCCCrcy,
+
+      ///////////////////////////////////////////////////////////////////////
+      // Associations
+      ///////////////////////////////////////////////////////////////////////
+
+      _JournalEntry,
+      _CompanyCode,
+      _FiscalYear,
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: '_FiscalPeriodForVariant'
+      _FiscalPeriod,
+      _FiscalPeriodForVariant,
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: '_LedgerFiscalYearForVariant'
+      _LedgerFiscalYear,
+      _LedgerFiscalYearForVariant,
+      _FiscalYearVariant,
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: '_FiscalYearPeriodForVariant'
+      _FiscalYearPeriod,
+      _FiscalYearPeriodForVariant,
+      _CalendarDate,
+      _FiscalCalendarDate,
+      _ControllingArea,
+      _BalanceTransactionCurrency,
+      _TransactionCurrency,
+      _CompanyCodeCurrency,
+      _GlobalCurrency,
+      _FunctionalCurrency,
+      _FreeDefinedCurrency1,
+      _FreeDefinedCurrency2,
+      _FreeDefinedCurrency3,
+      _FreeDefinedCurrency4,
+      _FreeDefinedCurrency5,
+      _FreeDefinedCurrency6,
+      _FreeDefinedCurrency7,
+      _FreeDefinedCurrency8,
+      _BaseUnit,
+      _CostSourceUnit,
+      _AdditionalQuantity1Unit,
+      _AdditionalQuantity2Unit,
+      _AdditionalQuantity3Unit,
+      _Segment,
+      _ProfitCenter,
+      _CurrentProfitCenter,
+      _CostCenter,
+      _CurrentCostCenter,
+      _CostAnalysisResource,
+      //      _WBSElement,
+      //      _WBSElementInternalID,
+      _WBSElementExternalID,
+      //      _Project,
+      _ProjectExternalID,
+      _BusinessArea,
+      _FunctionalArea,
+      _GLAccountInChartOfAccounts,
+      _GLAccountInCompanyCode,
+      _ChartOfAccounts,
+      _AccountingDocumentType,
+      _FinancialAccountType,
+      _DebitCreditCode,
+      //      _Material,
+      _Product,
+      _Plant,
+      _Ledger,
+      _SourceLedger,
+
+      _Customer,
+      _CustomerGroup,
+
+      _Supplier,
+
+      //      _MaterialGroup,
+      _ProductGroup,
+
+      _SalesOrder,
+      _SalesOrderItem,
+      _SalesDocument,
+      _InternalOrder,
+      _Order,
+
+      //      _Employment,
+      _FinancialTransactionType,
+      _BusinessTransactionCategory,
+      _BusinessTransactionType,
+      _ReferenceDocumentType,
+      _PredecessorReferenceDocType,
+
+      _PartnerCostCenter,
+      _PartnerProfitCenter,
+      _PartnerBusinessArea,
+      _PartnerFunctionalArea,
+      _PartnerCompanyCode,
+      _PartnerSegment,
+
+      _AccountingDocumentCategory,
+
+      _PostingKey,
+      _SubLedgerAccLineItemType,
+      _User,
+
+      _EliminationProfitCenter,
+
+      //_ControllingObject,
+
+      _GLAccountType,
+      _OffsettingAccountType,
+      _OffsettingChartOfAccounts,
+      _OffsettingAccount,
+      _OffsettingAccountWithBP,
+      _AlternativeGLAccount,
+      //_SenderGLAccount,
+      _CountryChartOfAccounts,
+      //      _PurchasingDocument,
+      //      _PurchasingDocumentItem,
+      _SpecialGLCode,
+      _TaxCode,
+      //      _HouseBank,
+      _ClearingAccountingDocument,
+      _FixedAsset,
+      _MasterFixedAsset,
+      _GroupMasterFixedAsset,
+      _GroupFixedAsset,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:    '_InventorySpclStockValnType'
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: '_InventorySpclStockValnType'
+      @ObjectModel.association.boundFields.dataMatchesSourceAndTargetTypes: true
+      _InventorySpecialStockValnType,
+      _InventorySpclStockValnType,
+      _InventorySpecialStockType,
+      _InventorySpclStkSalesDocument,
+      _InventorySpclStkSalesDocItm,
+      //      _InvtrySpclStockWBSElmntIntID,
+      //      _InventorySpclStockWBSElement,
+      _InventorySpecialStockSupplier,
+      _InventoryValuationType,
+      _ControllingDebitCreditCode,
+      _OriginSenderObject,
+      _ControllingObjectClass,
+      _PartnerControllingObjectClass,
+      _OriginCostCenter,
+      _OriginProfitCenter,
+      _CostCtrActivityType,
+      _OriginCostCtrActivityType,
+      _OrderCategory,
+      //_RelatedNetworkActivity,
+      //_PartnerProjectNetworkActivity,
+
+      _BusinessProcess,
+      _PartnerCostCtrActivityType,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:    '_PartnerOrder_2'
+      @VDM.lifecycle.status:     #DEPRECATED
+      @VDM.lifecycle.successor:  '_PartnerOrder_2'
+      _PartnerOrder,
+      _PartnerOrder_2,
+      _PartnerOrderCategory,
+      //      _PartnerWBSElement,
+      //      _PartnerProject,
+      _PartnerSalesDocument,
+      _PartnerSalesDocumentItem,
+      _PartnerBusinessProcess,
+
+      _BillingDocumentType,
+
+      _SalesOrganization,
+      _DistributionChannel,
+
+      //      _SoldMaterial,
+      _SoldProduct,
+
+      _Fund,
+      _PartnerFund,
+      _FundsCenter,
+
+      //      _MovementCategory,
+      //      _AssetTransactionType,
+
+      _BudgetPeriod,
+
+      _CostOriginGroup,
+
+      _CustomerSupplierCountry,
+      _SalesDistrict,
+      _BillToParty,
+      _ShipToParty,
+
+      _FinancialManagementArea,
+      //_FundedProgram
+
+      //      _HouseBankAccount,
+
+      //      _LogicalSystem,
+
+      _OperatingConcern,
+
+      _PartnerCompany,
+
+      //      _ProjectNetwork,
+
+      //      _PurReqValuationArea,
+
+      //_Extension  Extensions must be local
+
+      _SemanticTag,
+      //      _Hierarchy,
+
+
+      _Equipment,
+      _FunctionalLocation,
+      _MaintenanceActivityType,
+      //      _MaintOrdPlngDegreeCode,
+      //      _PMNotificationPriorityType,
+      //      _PMNotificationPriority,
+      _MaintenanceOrderSubOperation,
+      _Assembly,
+      //      _SuperiorOrder,
+      //      _ProjectInternalID,
+      _ConditionContract,
+      _SoldProductGroup,
+
+      _ServiceDocumentType,
+      _ServiceDocument,
+      _ServiceDocumentItem,
+      _ServiceContract,
+      _ServiceContractItem,
+      _ServiceContractType,
+      
+      _ProviderContract,
+      _ProviderContractItem, 
+      
+      _TimeSheetOvertimeCat,
+
+      _WBSElementBasicData,
+      _WBSElementBasicDataText,
+      _ProjectBasicData,
+      _ProjectBasicDataText,
+      _PartnerProjectExternalID,
+      _PartnerProjectExternalIDText,
+      _PartnerWBSElementExternalID,
+      _PartnerWBSElementExtIDText,
+      _PartnerProjectBasicData,
+      _PartnerProjectBasicDataText,
+      _PartnerWBSElementBasicData,
+      _PartnerWBSElementBscDataText,
+
+      _InvtrySpclStkWBSElmntBscData,
+      _InvtrySpclStockWBSElmntExtID,
+      // Just for Authorization Check!!! DO NOT USE!!! WILL BE DEPRECATED!!!
+      //      GLAccountAuthorizationGroup,
+      //      SupplierBasicAuthorizationGrp,
+      //      CustomerBasicAuthorizationGrp,
+      //      AcctgDocTypeAuthorizationGroup,
+      //      OrderType,
+      //      SalesOrderType,
+      AssetClass
+
+      ///////////////////////////////////////////////////////////////////////
+      // Additional requested associations
+      ///////////////////////////////////////////////////////////////////////
+      //      _AssetKeyFigure
+
+}
+where
+  (
+        ValidityStartDate <= $session.system_date
+    and ValidityEndDate   >= $session.system_date
+  )
+```

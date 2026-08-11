@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProdAllocCheckMethod` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccheckmethod preserving type )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ProdAllocCheckMethod` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccheckmethod preserving type )` | `CHAR(2)` | Product Allocation Check Method |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

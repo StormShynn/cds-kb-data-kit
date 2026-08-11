@@ -5,9 +5,22 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CUSTSETTLMTSTDVH')/$value
 semantic_en: "Customer Settlement"
+semantic_vi: "Customer Settlement — CDS view giao diện dựa trên I_CustSettlmt."
+keywords:
+  - "customer"
+  - "settlement"
+  - "cust"
+  - "settlmt"
+  - "bill"
+  - "party"
+  - "company"
+  - "code"
+  - "payer"
+  - "distribution"
+  - "channel"
 tags:
   - LO
   - bo:businesspartner
@@ -16,7 +29,6 @@ tags:
   - interface-view
   - LO-AB
   - lob:logistics general
-  - metadata-only
 ---
 # I_CUSTSETTLMTSTDVH
 
@@ -28,13 +40,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CUSTSETTLMTSTDVH')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CUSTSETTLMTSTDVH')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CustSettlmt` |  | |  |  | `CHAR(10)` | Customer Settlement |
+| `CustSettlmt` | ✓ | |  |  | `CHAR(10)` | Customer Settlement |
 | `BillToParty` |  | |  |  | `CHAR(10)` | Customer in Settlement Management |
 | `CustSettlmtCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
 | `PayerParty` |  | |  |  | `CHAR(10)` | Payer |
@@ -42,3 +54,63 @@ tags:
 | `Division` |  | |  |  | `CHAR(2)` | Division |
 | `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
 | `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |
+| `_BillToParty` | | ✓ | | | | |
+| `_BillToPartyCompany` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_PayerPartyCompany` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CUSTSETTLMTSTDVH')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CUSTSETTLMTSTDVH')/$value)*
+
+```abap
+@VDM.viewType: #COMPOSITE
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@ObjectModel.dataCategory: #VALUE_HELP
+@Analytics.technicalName: 'IWLFCUSTSMT_SVH'
+@ObjectModel.representativeKey: 'CustSettlmt'
+@ObjectModel.modelingPattern: #VALUE_HELP_PROVIDER
+@ObjectModel.supportedCapabilities: [ #VALUE_HELP_PROVIDER ]
+@ObjectModel.usageType.serviceQuality: #B
+@ObjectModel.usageType.dataClass: #TRANSACTIONAL
+@ObjectModel.usageType.sizeCategory: #XXL
+@AccessControl.authorizationCheck: #MANDATORY
+@AccessControl.personalData.blocking: #('TRANSACTIONAL_DATA')
+@Analytics.internalName: #LOCAL
+@Metadata.ignorePropagatedAnnotations: true
+@Search.searchable: true
+@EndUserText.label: 'Customer Settlement'
+
+define view entity I_CustSettlmtStdVH
+  as select from I_CustSettlmt
+{
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 1
+      @Search.ranking: #HIGH
+  key CustSettlmt,
+
+      @Consumption.hidden: true
+      BillToParty,
+      @Consumption.hidden: true
+      CustSettlmtCompanyCode,
+      @Consumption.hidden: true
+      PayerParty,
+      @Consumption.hidden: true
+      DistributionChannel,
+      @Consumption.hidden: true
+      Division,
+      @Consumption.hidden: true
+      SalesOrganization,
+      @Consumption.hidden: true
+      SettlmtDocType,
+
+      @Consumption.hidden: true
+      _BillToParty,
+      @Consumption.hidden: true
+      _BillToPartyCompany,
+      @Consumption.hidden: true
+      _PayerParty,
+      @Consumption.hidden: true
+      _PayerPartyCompany
+}
+```

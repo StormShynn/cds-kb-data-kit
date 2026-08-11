@@ -5,9 +5,23 @@ app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSPSPECVERSIONLONGTEXT')/$value
 semantic_en: "This CDS view provides access to the data of a master inspection characteristic version. This CDS view provides the data to answer the following business questions: Which master inspection characteristics exist in a plant? Which limits and tolerances are defined for a quantitative characteristic? Which inspection methods and catalogs are assigned to a master inspection characteristic? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Master Insp Characteristic Long Text — CDS view cơ bản (master data) dựa trên qpmkltext."
+keywords:
+  - "master"
+  - "insp"
+  - "characteristic"
+  - "long"
+  - "text"
+  - "inspection"
+  - "specification"
+  - "plant"
+  - "version"
+  - "internal"
+  - "number"
+  - "language"
 tags:
   - QM
   - bo:companycode
@@ -17,7 +31,7 @@ tags:
   - plan
   - QM-PT
   - QM-PT-2CL
-  - metadata-only
+  - bo:project
 ---
 # I_INSPSPECVERSIONLONGTEXT
 
@@ -29,19 +43,92 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSPSPECVERSIONLONGTEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSPSPECVERSIONLONGTEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `InspectionSpecificationPlant` |  | |  |  | `CHAR(4)` | Plant for Master Inspection Characteristic |
-| `InspectionSpecification` |  | |  |  | `CHAR(8)` | Master Inspection Characteristic |
-| `InspectionSpecificationVersion` |  | |  |  | `CHAR(6)` | Version Number of Master Inspection Characteristic |
-| `LongTextInternalNumber` |  | |  |  | `INT2(5)` | Long Text Counter |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `LongTextID` |  | |  |  | `CHAR(4)` | Text ID |
-| `LongTextCreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
-| `LongTextCreatedAt` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `LongTextLastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
-| `LongTextLastChangedAt` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `InspectionSpecificationPlant` | ✓ | |  | `zaehler` | `CHAR(4)` | Plant for Master Inspection Characteristic |
+| `InspectionSpecification` | ✓ | |  | `mkmnr` | `CHAR(8)` | Master Inspection Characteristic |
+| `InspectionSpecificationVersion` | ✓ | |  | `version` | `CHAR(6)` | Version Number of Master Inspection Characteristic |
+| `LongTextInternalNumber` | ✓ | |  | `counter` | `INT2(5)` | Long Text Counter |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `LongTextID` |  | |  | `textid` | `CHAR(4)` | Text ID |
+| `InspSpecVersionLongText` |  | |  | `content` |  |  |
+| `LongTextCreatedByUser` |  | |  | `created_by` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `LongTextCreatedAt` |  | |  | `created_at` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `LongTextLastChangedByUser` |  | |  | `changed_by` | `CHAR(12)` | Name of Person Who Changed Object |
+| `LongTextLastChangedAt` |  | |  | `changed_at` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `_InspSpecificationVersion` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_InspSpecificationVersion` | `I_InspSpecificationVersion` | [1] |
+| `_Language` | `I_Language` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSPSPECVERSIONLONGTEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSPSPECVERSIONLONGTEXT')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'Master Insp Characteristic Long Text'
+@Metadata.ignorePropagatedAnnotations: true
+@VDM: {
+    viewType: #BASIC,
+    lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@ObjectModel: {
+    dataCategory: #TEXT,
+    modelingPattern: #LANGUAGE_DEPENDENT_TEXT,
+    usageType: {
+        dataClass: #MASTER,
+        sizeCategory: #S,
+        serviceQuality: #A
+    },
+    supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #SEARCHABLE_ENTITY, #LANGUAGE_DEPENDENT_TEXT ]
+}
+@Search.searchable: true
+
+define view entity I_InspSpecVersionLongText
+  as select from qpmkltext
+
+  association [1]    to I_InspSpecificationVersion as _InspSpecificationVersion on  $projection.InspectionSpecificationPlant   = _InspSpecificationVersion.InspectionSpecificationPlant
+                                                                                and $projection.InspectionSpecification        = _InspSpecificationVersion.InspectionSpecification
+                                                                                and $projection.InspectionSpecificationVersion = _InspSpecificationVersion.InspectionSpecificationVersion
+  association [1..1] to I_Language                 as _Language                 on  $projection.Language = _Language.Language
+
+{
+  key zaehler    as InspectionSpecificationPlant,
+  key mkmnr      as InspectionSpecification,
+  key version    as InspectionSpecificationVersion,
+  key counter    as LongTextInternalNumber,
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key langu      as Language,
+      textid     as LongTextID,
+      
+      @EndUserText:{ label: 'Detailed Description' }
+      @Semantics.text: true
+      @Search: { defaultSearchElement: true, fuzzinessThreshold: 0.6 }
+      content    as InspSpecVersionLongText,
+      @Semantics.user.createdBy: true
+      created_by as LongTextCreatedByUser,
+      @Semantics.systemDate.createdAt: true
+      created_at as LongTextCreatedAt,
+      @Semantics.user.lastChangedBy: true
+      changed_by as LongTextLastChangedByUser,
+      @Semantics.systemDate.lastChangedAt: true
+      changed_at as LongTextLastChangedAt,
+
+
+      /* Association */
+      _InspSpecificationVersion,
+      _Language
+}
+```

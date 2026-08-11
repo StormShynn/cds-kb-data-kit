@@ -30,9 +30,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProdAllocCheckDateTimeType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccheckdatetimetype preserving type )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `ProdAllocChkDateTimeTypeDesc` |  | |  | `cast( ddtext as prodalloccheckdatetimetypedesc preserving type )` |  |  |
+| `ProdAllocCheckDateTimeType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccheckdatetimetype preserving type )` | `CHAR(2)` | Product Allocation Check Date Time Type |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `ProdAllocChkDateTimeTypeDesc` |  | |  | `cast( ddtext as prodalloccheckdatetimetypedesc preserving type )` | `CHAR(60)` | Product Allocation Check Date Time Type Description |
 | `_Language` | | ✓ | | | | |
 | `_ProdAllocCheckDateTimeType` | | ✓ | | | | |
 

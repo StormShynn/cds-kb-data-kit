@@ -5,9 +5,21 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTMGMTUIMAINTSCPCATT')/$value
 semantic_en: "This CDS view provides the data to answer the following business question: Which are the relevant UI maintenance scope categories in Settlement Management? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Settlmt Mgmt UI Maint Scope Cat - Txt — CDS view cơ bản dựa trên dd07t."
+keywords:
+  - "settlmt"
+  - "mgmt"
+  - "maint"
+  - "scope"
+  - "cat"
+  - "txt"
+  - "language"
+  - "domain"
+  - "value"
+  - "name"
 tags:
   - LO
   - bo:companycode
@@ -15,7 +27,6 @@ tags:
   - interface-view
   - LO-AB
   - lob:logistics general
-  - metadata-only
 ---
 # I_SETTLMTMGMTUIMAINTSCPCATT
 
@@ -27,13 +38,90 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTMGMTUIMAINTSCPCATT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTMGMTUIMAINTSCPCATT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SettlmtMgmtUIMaintScpCat` |  | |  |  | `CHAR(1)` | Maintenance Scope for Online Transactions |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtMgmtUIMaintScpCatName` |  | |  |  | `CHAR(60)` | Text of UI Maintenance Scope in Settlement Management |
+| `SettlmtMgmtUIMaintScpCat` | ✓ | |  | `cast( dd07t.domvalue_l as wlf_ui_maintenance_scope )` | `CHAR(1)` | Maintenance Scope for Online Transactions |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtMgmtUIMaintScpCatName` |  | |  | `cast( dd07t.ddtext as wlf_ui_maintenance_scope_text preserving type )` | `CHAR(60)` | Text of UI Maintenance Scope in Settlement Management |
+| `_Language` | | ✓ | | | | |
+| `_SettlmtMgmtUIMaintScpCat` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTMGMTUIMAINTSCPCATT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTMGMTUIMAINTSCPCATT')/$value)*
+
+```abap
+@EndUserText.label: 'Settlmt Mgmt UI Maint Scope Cat - Txt'
+@AccessControl: {
+    authorizationCheck: #NOT_REQUIRED
+    }
+@ObjectModel: {
+    dataCategory: #TEXT,
+    representativeKey: 'SettlmtMgmtUIMaintScpCat',
+    modelingPattern:          #LANGUAGE_DEPENDENT_TEXT,
+    supportedCapabilities:  [ #CDS_MODELING_ASSOCIATION_TARGET, 
+                              #CDS_MODELING_DATA_SOURCE,
+                              #EXTRACTION_DATA_SOURCE,
+                              #LANGUAGE_DEPENDENT_TEXT,
+                              #SEARCHABLE_ENTITY,
+                              #SQL_DATA_SOURCE ],
+    usageType: {
+      serviceQuality: #A,
+      dataClass:      #META,
+      sizeCategory:   #S
+      }
+    }
+@VDM: {
+    viewType: #BASIC,
+    lifecycle.contract.type: #PUBLIC_LOCAL_API
+    }
+@Search.searchable: true
+@Analytics.dataExtraction.enabled: true
+@Metadata: {
+    ignorePropagatedAnnotations: true
+    }
+
+/*+[hideWarning] { "IDS" : [ "KEY_CHECK", "CALCULATED_FIELD_CHECK" ]  } */
+define view entity I_SettlmtMgmtUIMaintScpCatT
+  as select from dd07t
+
+  association        to parent I_SettlmtMgmtUIMaintScpCat as _SettlmtMgmtUIMaintScpCat on $projection.SettlmtMgmtUIMaintScpCat = _SettlmtMgmtUIMaintScpCat.SettlmtMgmtUIMaintScpCat
+
+  association [0..1] to I_Language                        as _Language                 on $projection.Language = _Language.Language
+
+{
+      @ObjectModel.foreignKey.association: '_SettlmtMgmtUIMaintScpCat'
+      @ObjectModel.text.element: ['SettlmtMgmtUIMaintScpCatName']
+  key cast( dd07t.domvalue_l as wlf_ui_maintenance_scope )                  as SettlmtMgmtUIMaintScpCat,
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key cast( dd07t.ddlanguage as spras preserving type )                     as Language,
+      @Analytics.hidden: true
+      @Consumption.hidden: true
+      dd07t.domvalue_l                                                      as DomainValue,
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      @Semantics.text: true
+      cast( dd07t.ddtext as wlf_ui_maintenance_scope_text preserving type ) as SettlmtMgmtUIMaintScpCatName,
+
+      /* Associations */
+      _SettlmtMgmtUIMaintScpCat,
+      _Language
+}
+where
+      dd07t.domname  = 'WLF_UI_MAINTENANCE_SCOPE'
+  and dd07t.as4local = 'A'
+  and dd07t.as4vers  = '0000'
+```

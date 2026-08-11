@@ -5,9 +5,21 @@ app_component: FI-PRA-PRA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLINCGSALESORDPRDTVCUBE')/$value
 semantic_en: "IncomingSalesOrderforPredictions - Cube"
+semantic_vi: "IncomingSalesOrderforPredictions - Cube — CDS view giao diện dựa trên I_GLIncgOrdPrdtvAnalysis."
+keywords:
+  - "incomingsalesorderforpredictions"
+  - "cube"
+  - "ledger"
+  - "source"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
 tags:
   - FI
   - bo:salesorder
@@ -18,7 +30,6 @@ tags:
   - interface-view
   - lob:finance
   - order
-  - metadata-only
 ---
 # I_GLINCGSALESORDPRDTVCUBE
 
@@ -30,22 +41,22 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLINCGSALESORDPRDTVCUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLINCGSALESORDPRDTVCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | Financial Statement Version |
-| `SemanticTag` |  | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
-| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
-| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `SourceLedger` | ✓ | |  |  | `CHAR(2)` | Source Ledger |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` | ✓ | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `GLAccountHierarchy` | ✓ | |  |  | `CHAR(42)` | Financial Statement Version |
+| `SemanticTag` | ✓ | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Valid To Date |
+| `ValidityStartDate` | ✓ | |  |  | `DATS(8)` | Valid-From Date |
 | `AccountingDocCreatedByUser` |  | |  |  | `CHAR(12)` | User that created the journal entry |
 | `AccountingDocumentCategory` |  | |  |  | `CHAR(1)` | Journal Entry Category |
 | `AccountingDocumentItem` |  | |  |  | `NUMC(3)` | Journal Entry Posting View Item |
@@ -150,3 +161,372 @@ tags:
 | `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
 | `TransactionTypeDetermination` |  | |  |  | `CHAR(3)` | Transaction Key |
 | `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `_Hierarchy` | | ✓ | | | | |
+| `_GLAccountHierarchy` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_GLAccountLineItemSemTag` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_SoldMaterial` | | ✓ | | | | |
+| `_SemanticTag` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_CurrentProfitCenter` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_SourceLedger` | | ✓ | | | | |
+| `_JournalEntry` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Hierarchy` | `I_FinancialStatementHierarchy` | [0..*] |
+| `_GLAccountHierarchy` | `I_GLAccountHierarchy` | [0..*] |
+| `_ProfitCenter` | `I_ProfitCenter` | [0..*] |
+| `_GLAccountLineItemSemTag` | `I_GLAccountLineItemSemTag` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLINCGSALESORDPRDTVCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLINCGSALESORDPRDTVCUBE')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IFGLISOPRCUBE'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'IncomingSalesOrderforPredictions - Cube'
+@VDM.viewType: #COMPOSITE
+@Analytics.dataCategory: #CUBE
+@ObjectModel.representativeKey: 'LedgerGLLineItem'
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_PROVIDER, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE]
+@ObjectModel.modelingPattern: #ANALYTICAL_CUBE
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AccessControl.personalData.blocking: #REQUIRED
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations: true
+
+
+
+define view I_GLIncgSalesOrdPrdtvCube
+  as select from I_GLIncgOrdPrdtvAnalysis as _GLPR
+  //  association [0..1] to I_ControllingArea             as _ControllingArea   on  $projection.ControllingArea = _ControllingArea.ControllingArea
+  association [0..*] to I_FinancialStatementHierarchy     as _Hierarchy     on  $projection.GLAccountHierarchy = _Hierarchy.GLAccountHierarchy
+  association [0..*] to I_GLAccountHierarchy              as _GLAccountHierarchy  on  $projection.GLAccountHierarchy = _GLAccountHierarchy.GLAccountHierarchy
+  //  association [1..1] to I_CompanyCode                 as _CompanyCode       on  $projection.CompanyCode = _CompanyCode.CompanyCode
+  association [0..*] to I_ProfitCenter                    as _ProfitCenter  on  $projection.ControllingArea = _ProfitCenter.ControllingArea
+                                                                        and $projection.ProfitCenter    = _ProfitCenter.ProfitCenter
+  //  association [0..1] to I_SalesOrganization           as _SalesOrganization on  $projection.SalesOrganization = _SalesOrganization.SalesOrganization
+  //  association [0..1] to I_Customer                    as _Customer          on  $projection.Customer = _Customer.Customer
+  //  association [0..1] to I_CustomerGroup               as _CustomerGroup     on  $projection.CustomerGroup = _CustomerGroup.CustomerGroup
+  //  association [0..1] to I_Material                    as _SoldMaterial      on  $projection.SoldMaterial = _SoldMaterial.Material
+
+// remove MaterialGroup, associated entity I_MATERIALGROUP has status NOT_TO_BE_RELEASED_STABLE
+//  association [0..1] to I_MaterialGroup               as _MaterialGroup on  $projection.MaterialGroup = _MaterialGroup.MaterialGroup
+  //  association [0..1] to I_SemanticTag                 as _SemanticTag       on  $projection.SemanticTag = _SemanticTag.SemanticTag
+  //  association [1..1] to I_Ledger                      as _Ledger            on  $projection.Ledger = _Ledger.Ledger
+//  association [1..1] to I_GLIncgOrdPrdtvAnalysis as   _GLIncgOrdPrdtvAnalysis on  $projection.Ledger = _GLIncgOrdPrdtvAnalysis.Ledger
+//                                                                               and $projection.SourceLedger = _GLIncgOrdPrdtvAnalysis.SourceLedger
+//                                                                               and $projection.CompanyCode = _GLIncgOrdPrdtvAnalysis.CompanyCode
+//                                                                               and $projection.FiscalYear = _GLIncgOrdPrdtvAnalysis.FiscalYear
+//                                                                               and $projection.AccountingDocument = _GLIncgOrdPrdtvAnalysis.AccountingDocument
+//                                                                               and $projection.LedgerGLLineItem = _GLIncgOrdPrdtvAnalysis.LedgerGLLineItem
+//                                                                               and $projection.GLAccountHierarchy = _GLIncgOrdPrdtvAnalysis.GLAccountHierarchy
+//                                                                               and $projection.SemanticTag = _GLIncgOrdPrdtvAnalysis.SemanticTag
+//                                                                               and $projection.ValidityEndDate = _GLIncgOrdPrdtvAnalysis.ValidityEndDate
+//                                                                               and $projection.ValidityStartDate = _GLIncgOrdPrdtvAnalysis.ValidityStartDate
+//  
+  association [1..1] to I_GLAccountLineItemSemTag as   _GLAccountLineItemSemTag on  $projection.Ledger = _GLAccountLineItemSemTag.Ledger
+                                                                               and $projection.SourceLedger = _GLAccountLineItemSemTag.SourceLedger
+                                                                               and $projection.CompanyCode = _GLAccountLineItemSemTag.CompanyCode
+                                                                               and $projection.FiscalYear = _GLAccountLineItemSemTag.FiscalYear
+                                                                               and $projection.AccountingDocument = _GLAccountLineItemSemTag.AccountingDocument
+                                                                               and $projection.LedgerGLLineItem = _GLAccountLineItemSemTag.LedgerGLLineItem
+                                                                               and $projection.GLAccountHierarchy = _GLAccountLineItemSemTag.GLAccountHierarchy
+                                                                               and $projection.SemanticTag = _GLAccountLineItemSemTag.SemanticTag
+                                                                               and $projection.ValidityEndDate = _GLAccountLineItemSemTag.ValidityEndDate
+                                                                               and $projection.ValidityStartDate = _GLAccountLineItemSemTag.ValidityStartDate  
+
+{
+
+      @ObjectModel.foreignKey.association: '_Ledger'
+  key Ledger,
+      @ObjectModel.foreignKey.association: '_SourceLedger'
+  key SourceLedger,
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+  key CompanyCode,
+      @ObjectModel.foreignKey.association: '_FiscalYear'
+  key FiscalYear,
+      @ObjectModel.foreignKey.association: '_JournalEntry'
+  key AccountingDocument,
+  key LedgerGLLineItem,
+
+      @ObjectModel.foreignKey.association: '_Hierarchy'
+  key GLAccountHierarchy,
+
+      @ObjectModel.foreignKey.association: '_SemanticTag'
+  key SemanticTag,
+      @Semantics.businessDate.to: true
+  key ValidityEndDate,
+      @Semantics.businessDate.from: true
+  key ValidityStartDate,
+  
+
+      AccountingDocCreatedByUser,
+      AccountingDocumentCategory,
+      AccountingDocumentItem,
+      AccountingDocumentType,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      AmountInCompanyCodeCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency1'} }
+      AmountInFreeDefinedCurrency1,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency2'} }
+      AmountInFreeDefinedCurrency2,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency3'} }
+      AmountInFreeDefinedCurrency3,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency4'} }
+      AmountInFreeDefinedCurrency4,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency5'} }
+      AmountInFreeDefinedCurrency5,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency6'} }
+      AmountInFreeDefinedCurrency6,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency7'} }
+      AmountInFreeDefinedCurrency7,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency8'} }
+      AmountInFreeDefinedCurrency8,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      AmountInGlobalCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+      AmountInTransactionCurrency,
+
+      AssignmentReference,
+      BaseUnit,
+      BillingDocumentType,
+      BillToParty,
+      BusinessArea,
+      BusinessTransactionType,
+      ChartOfAccounts,
+      ClearingAccountingDocument,
+      ClearingDate,
+
+      @Semantics.currencyCode:true
+      CompanyCodeCurrency,
+
+      @ObjectModel.foreignKey.association: '_ControllingArea'
+      ControllingArea,
+      ControllingDebitCreditCode,
+      CostCenter,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      CostOfGoodsSoldAmtInGlobCrcy,
+      CreationDate,
+
+      @ObjectModel.foreignKey.association: '_Customer'
+      Customer,
+      @ObjectModel.foreignKey.association: '_CustomerGroup'
+      CustomerGroup,
+
+      CustomerSupplierCountry,
+      CustomerSupplierIndustry,
+      DebitCreditCode,
+      DistributionChannel,
+      Division,
+      DocumentDate,
+      FinancialAccountType,
+      FinancialTransactionType,
+      FiscalPeriod,
+      FiscalPeriodStartDate,
+      FiscalQuarter,
+      FiscalYearPeriod,
+      FiscalYearVariant,
+      @Semantics: { quantity : {unitOfMeasure: 'BaseUnit'} }
+      FixedQuantity,
+
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency1,
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency2,
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency3,
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency4,
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency5,
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency6,
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency7,
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency8,
+
+      GLAccount,
+
+      GLAccountType,
+
+      @Semantics.currencyCode:true
+      GlobalCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      InvertedAmountInGlobalCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      InvertedAmtInCoCodeCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency1'} }
+      InvertedAmtInFreeDefinedCrcy1,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency2'} }
+      InvertedAmtInFreeDefinedCrcy2,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency3'} }
+      InvertedAmtInFreeDefinedCrcy3,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency4'} }
+      InvertedAmtInFreeDefinedCrcy4,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency5'} }
+      InvertedAmtInFreeDefinedCrcy5,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency6'} }
+      InvertedAmtInFreeDefinedCrcy6,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency7'} }
+      InvertedAmtInFreeDefinedCrcy7,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency8'} }
+      InvertedAmtInFreeDefinedCrcy8,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+      InvertedAmtInTransCrcy,
+
+
+      JrnlEntrDerivdFiscalYearPeriod,
+      JrnlEntrDerivedFiscalPeriod,
+      JrnlEntrDerivedFiscalQuarter,
+      JrnlEntrDerivedFiscalYear,
+      JrnlEntryItemObsoleteReason,
+
+      LedgerFiscalYear,
+
+//      @ObjectModel.foreignKey.association: '_MaterialGroup'
+      MaterialGroup,
+
+      OperatingConcern,
+      OrderType,
+      OrganizationDivision,
+      Plant,
+      PostingDate,
+      PostingKey,
+
+      @ObjectModel.foreignKey.association: '_ProfitCenter'
+      ProfitCenter,
+
+      @Semantics: { quantity : {unitOfMeasure: 'BaseUnit'} }
+      Quantity,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      RecognizedCOGSAmtInCCCrcy,
+      //  RecognizedMarginAmount,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      RecognizedMarginAmtInCCCrcy,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      RecognizedRevnAmtInCCCrcy,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      RecognizedRevnAmtInGlobCrcy,
+
+      ReferenceDocumentType,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      RevenueAmountInCompanyCodeCrcy,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      RevenueInGlobalCurrency,
+
+      SalesDistrict,
+      SalesOrder,
+      SalesOrderItem,
+
+      @ObjectModel.foreignKey.association: '_SalesOrganization'
+      SalesOrganization,
+
+      Segment,
+
+      ShipToParty,
+
+      @ObjectModel.foreignKey.association: '_SoldMaterial'
+      SoldMaterial,
+
+      SourceReferenceDocument,
+      SourceReferenceDocumentItem,
+      SourceReferenceDocumentType,
+      SpecialGLCode,
+
+      @Semantics.currencyCode:true
+      TransactionCurrency,
+
+      TransactionTypeDetermination,
+
+//// Added fields for DCL
+//
+//      ValuationArea,
+//      Supplier,
+//      SalesDocument,
+////      @ObjectModel.foreignKey.association: '_FixedAsset'
+//      FixedAsset,
+//      MasterFixedAsset,
+//      OrderID,
+//      _Supplier,
+//      _CurrentCostCenter,
+//      _SalesDocument,
+//      _FixedAsset,
+//      _Order,
+////       
+//      
+       FunctionalArea,
+      _FiscalYear,
+      _ControllingArea,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: '_GLAccountHierarchy'
+      _Hierarchy,
+      _GLAccountHierarchy,
+      _SalesOrganization,
+      _CompanyCode,
+      _ProfitCenter,
+      _Customer,
+      _CustomerGroup,
+      _SoldMaterial,
+//      _MaterialGroup,
+      _SemanticTag,
+      _Ledger,
+      _AccountingDocumentType,
+      _CurrentProfitCenter,
+      _GLAccountInCompanyCode,
+      _SourceLedger,
+      _JournalEntry,
+//      _GLIncgOrdPrdtvAnalysis,
+      @Consumption.hidden: true
+      _GLAccountLineItemSemTag
+}
+```

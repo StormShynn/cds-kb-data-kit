@@ -5,9 +5,21 @@ app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_POSTINGKEYT')/$value
 semantic_en: "Posting Key - Text"
+semantic_vi: "Posting Key - Text — CDS view cơ bản dựa trên tbslt."
+keywords:
+  - "posting"
+  - "key"
+  - "text"
+  - "language"
+  - "special"
+  - "code"
+  - "financial"
+  - "account"
+  - "type"
+  - "name"
 tags:
   - FI
   - bo:purchaseorder
@@ -18,7 +30,6 @@ tags:
   - FI-GL-GL-A-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_POSTINGKEYT
 
@@ -30,14 +41,77 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_POSTINGKEYT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_POSTINGKEYT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `PostingKey` |  | |  |  | `CHAR(2)` | Posting Key |
-| `SpecialGLCode` |  | |  |  | `CHAR(1)` | Special G/L Indicator |
-| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Account Type |
-| `PostingKeyName` |  | |  |  | `CHAR(20)` | Posting Key Name |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `PostingKey` | ✓ | |  | `cast(tbsl.bschl as fis_bschl preserving type)` | `CHAR(2)` | Posting Key |
+| `SpecialGLCode` | ✓ | |  | `cast(tbslt.umskz as fac_umskz preserving type )` | `CHAR(1)` | Special G/L Indicator |
+| `FinancialAccountType` |  | |  | `cast (tbsl.koart as farp_koart preserving type )` | `CHAR(1)` | Account Type |
+| `PostingKeyName` |  | |  | `cast (tbslt.ltext as fis_bschl_name preserving type )` | `CHAR(20)` | Posting Key Name |
+| `_Language` | | ✓ | | | | |
+| `_SpecialGLCode` | | ✓ | | | | |
+| `_FinancialAccountType` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_SpecialGLCode` | `I_SpecialGLCode` | [0..1] |
+| `_FinancialAccountType` | `I_FinancialAccountType` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_POSTINGKEYT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_POSTINGKEYT')/$value)*
+
+```abap
+@AbapCatalog.entityBuffer.definitionAllowed: true
+ @AccessControl.authorizationCheck: #NOT_REQUIRED
+@Analytics: { dataExtraction.enabled: true }
+@EndUserText.label: 'Posting Key - Text'
+@ObjectModel: { dataCategory: #TEXT,
+                representativeKey: 'PostingKey'
+,                usageType: { sizeCategory: #S,
+                 dataClass:  #CUSTOMIZING,
+                 serviceQuality: #A },
+                supportedCapabilities: [#LANGUAGE_DEPENDENT_TEXT, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #EXTRACTION_DATA_SOURCE, #SEARCHABLE_ENTITY ],
+                modelingPattern: #LANGUAGE_DEPENDENT_TEXT }                  
+@Metadata.ignorePropagatedAnnotations: true 
+@Search.searchable: true 
+@VDM: { viewType: #BASIC,
+        lifecycle: { contract.type: #PUBLIC_LOCAL_API,
+                     status: #DEPRECATED,
+                     successor: 'I_PostingKeyWthSpclGLCodeTxt' } }
+
+define view entity I_PostingKeyT as select from tbslt inner join tbsl 
+                                      on tbslt.bschl = tbsl.bschl
+
+association [0..1] to I_Language as _Language on $projection.Language = _Language.Language
+association [0..1] to I_SpecialGLCode as _SpecialGLCode on $projection.SpecialGLCode = _SpecialGLCode.SpecialGLCode
+                                                       and $projection.FinancialAccountType = _SpecialGLCode.FinancialAccountType
+association [0..1] to I_FinancialAccountType as _FinancialAccountType on $projection.FinancialAccountType = _FinancialAccountType.FinancialAccountType
+
+{
+
+@Semantics.language   
+key tbslt.spras as Language,
+key cast(tbsl.bschl as fis_bschl preserving type) as PostingKey,
+@ObjectModel.foreignKey.association: '_SpecialGLCode'
+key cast(tbslt.umskz as fac_umskz preserving type ) as SpecialGLCode,
+@ObjectModel.foreignKey.association: '_FinancialAccountType'
+cast (tbsl.koart as farp_koart preserving type ) as FinancialAccountType, 
+@Semantics.text
+@Search.defaultSearchElement: true
+@Search.fuzzinessThreshold: 0.8 
+cast (tbslt.ltext as fis_bschl_name preserving type ) as PostingKeyName,
+
+_Language,
+_SpecialGLCode,
+_FinancialAccountType
+
+};
+```

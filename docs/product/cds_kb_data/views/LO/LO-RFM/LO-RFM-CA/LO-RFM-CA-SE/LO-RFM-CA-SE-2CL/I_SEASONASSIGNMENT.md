@@ -5,9 +5,19 @@ app_component: LO-RFM-CA-SE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEASONASSIGNMENT')/$value
 semantic_en: "Season Assignment"
+semantic_vi: "Season Assignment — CDS view tổng hợp dựa trên I_Season."
+keywords:
+  - "season"
+  - "assignment"
+  - "internal"
+  - "identifier"
+  - "product"
+  - "year"
+  - "collection"
+  - "theme"
 tags:
   - LO
   - bo:salesorder
@@ -19,7 +29,6 @@ tags:
   - LO-RFM-CA-SE-2CL
   - lob:cross_application components
   - lob:logistics general
-  - metadata-only
 ---
 # I_SEASONASSIGNMENT
 
@@ -31,13 +40,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEASONASSIGNMENT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEASONASSIGNMENT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SeasonInternalIdentifier` |  | |  |  | `RAW(16)` | Season Internal Unique Identifier |
+| `SeasonInternalIdentifier` | ✓ | |  |  | `RAW(16)` | Season Internal Unique Identifier |
 | `ProductSeasonYear` |  | |  |  | `CHAR(4)` | Season Year |
 | `ProductSeason` |  | |  |  | `CHAR(10)` | Season |
 | `ProductCollection` |  | |  |  | `CHAR(10)` | Fashion Collection |
@@ -50,3 +59,106 @@ tags:
 | `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last User to Change the Object |
 | `LastChangeDate` |  | |  |  | `DATS(8)` | Date on Which the Object Was Last Changed |
 | `LastChangeTime` |  | |  |  | `TIMS(6)` | Time at Which the Object Was Last Changed |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_ChangedByUser` | | ✓ | | | | |
+| `_SeasonText` | | ✓ | | | | |
+| `_SeasonSalesPeriod` | | ✓ | | | | |
+| `_SeasonPurchasePeriod` | | ✓ | | | | |
+| `_SeasonProduct` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CreatedByUser` | `I_User` | [0..1] |
+| `_ChangedByUser` | `I_User` | [0..1] |
+| `_SeasonText` | `I_SeasonText` | [1..*] |
+| `_SeasonSalesPeriod` | `I_SeasonSalesPeriod_2` | [0..*] |
+| `_SeasonPurchasePeriod` | `I_SeasonPurchasePeriod_2` | [0..*] |
+| `_SeasonProduct` | `I_SeasonProduct_2` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEASONASSIGNMENT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEASONASSIGNMENT')/$value)*
+
+```abap
+@VDM: {
+  viewType                          : #COMPOSITE,
+  lifecycle.contract.type           : #PUBLIC_LOCAL_API
+}
+
+@Analytics:{
+  dataCategory                      : #DIMENSION,
+  internalName                      : #LOCAL,
+  dataExtraction                    : {
+  enabled                           : true
+} }
+
+@AccessControl.authorizationCheck   : #MANDATORY
+
+@ObjectModel: {
+   representativeKey: 'SeasonInternalIdentifier',
+   supportedCapabilities            : [ #SQL_DATA_SOURCE,
+                                        #CDS_MODELING_DATA_SOURCE,
+                                        #CDS_MODELING_ASSOCIATION_TARGET,
+                                        #EXTRACTION_DATA_SOURCE,
+                                        #ANALYTICAL_DIMENSION
+                                        ],
+   modelingPattern                  :  #ANALYTICAL_DIMENSION ,
+   usageType: {
+     dataClass:      #MASTER,
+     serviceQuality: #C,
+     sizeCategory:   #M
+   }
+}
+
+@ObjectModel.sapObjectNodeType.name: 'Season'
+
+@Metadata :{
+   ignorePropagatedAnnotations      : true,
+   allowExtensions                  : true
+}
+@AccessControl.personalData.blocking: #REQUIRED
+@EndUserText.label: 'Season Assignment'
+
+define view entity I_SeasonAssignment
+  as select from I_Season
+  association [0..1] to I_User                   as _CreatedByUser        on  $projection.CreatedByUser = _CreatedByUser.UserID
+  association [0..1] to I_User                   as _ChangedByUser        on  $projection.LastChangedByUser = _ChangedByUser.UserID
+  association [1..*] to I_SeasonText             as _SeasonText           on  $projection.SeasonInternalIdentifier = _SeasonText.SeasonInternalIdentifier
+  association [0..*] to I_SeasonSalesPeriod_2    as _SeasonSalesPeriod    on  $projection.ProductSeasonYear = _SeasonSalesPeriod.ProductSeasonYear
+                                                                          and $projection.ProductSeason     = _SeasonSalesPeriod.ProductSeason
+                                                                          and $projection.ProductCollection = _SeasonSalesPeriod.ProductCollection
+                                                                          and $projection.ProductTheme      = _SeasonSalesPeriod.ProductTheme
+  association [0..*] to I_SeasonPurchasePeriod_2 as _SeasonPurchasePeriod on  $projection.ProductSeasonYear = _SeasonPurchasePeriod.ProductSeasonYear
+                                                                          and $projection.ProductSeason     = _SeasonPurchasePeriod.ProductSeason
+                                                                          and $projection.ProductCollection = _SeasonPurchasePeriod.ProductCollection
+                                                                          and $projection.ProductTheme      = _SeasonPurchasePeriod.ProductTheme
+  association [0..*] to I_SeasonProduct_2        as _SeasonProduct        on  $projection.ProductSeasonYear = _SeasonProduct.ProductSeasonYear
+                                                                          and $projection.ProductSeason     = _SeasonProduct.ProductSeason
+                                                                          and $projection.ProductCollection = _SeasonProduct.ProductCollection
+                                                                          and $projection.ProductTheme      = _SeasonProduct.ProductTheme
+{
+  key SeasonInternalIdentifier,
+      ProductSeasonYear,
+      ProductSeason,
+      ProductCollection,
+      ProductTheme,
+      ProductSeasonValidFrom,
+      ProductSeasonValidTo,
+      CreatedByUser,
+      CreationDate,
+      CreationTime,
+      LastChangedByUser,
+      LastChangeDate,
+      LastChangeTime,
+      /* Associations */
+
+      _CreatedByUser,
+      _ChangedByUser,
+      _SeasonText,
+      _SeasonSalesPeriod,
+      _SeasonPurchasePeriod,
+      _SeasonProduct
+}
+```

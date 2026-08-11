@@ -5,9 +5,20 @@ app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMMESSAGE')/$value
 semantic_en: "Messages relevant for Mark To Market"
+semantic_vi: "Messages relevant for MTM — CDS view giao diện dựa trên t100."
+keywords:
+  - "messages"
+  - "relevant"
+  - "for"
+  - "mtm"
+  - "system"
+  - "message"
+  - "number"
+  - "language"
+  - "text"
 tags:
   - LO
   - component:LO-CMM-BF
@@ -16,7 +27,6 @@ tags:
   - LO-CMM-BF
   - lob:logistics general
   - lob:sourcing & procurement
-  - metadata-only
 ---
 # I_CMMDTYMTMMESSAGE
 
@@ -28,12 +38,46 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMMESSAGE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMMESSAGE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SystemMessageNumber` |  | |  |  | `CHAR(3)` | Message number |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `SystemMessageText` |  | |  |  | `CHAR(73)` | Message Text |
+| `SystemMessageNumber` | ✓ | |  | `msgnr` | `CHAR(3)` | Message number |
+| `Language` | ✓ | |  | `sprsl` | `LANG(1)` | Language Key |
+| `SystemMessageText` |  | |  | `text` | `CHAR(73)` | Message Text |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMMESSAGE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMMESSAGE')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IMTMMESSAGE'
+@Analytics: { dataCategory: #DIMENSION, dataExtraction.enabled: true }
+@ClientHandling.algorithm: #SESSION_VARIABLE 
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.representativeKey: 'SystemMessageNumber'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@VDM.viewType: #BASIC
+@EndUserText.label: 'Messages relevant for MTM'
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.dataClass: #META
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE]
+@Metadata.ignorePropagatedAnnotations:true
+
+
+define view I_CmmdtyMtmMessage as select from t100 
+{
+
+   key msgnr as SystemMessageNumber,
+    @Semantics.language: true
+   key sprsl as Language,
+    @Semantics.text: true
+   text as SystemMessageText
+        
+}
+where arbgb = 'CMM_MTMCDS'  
+and sprsl = $session.system_language
+```

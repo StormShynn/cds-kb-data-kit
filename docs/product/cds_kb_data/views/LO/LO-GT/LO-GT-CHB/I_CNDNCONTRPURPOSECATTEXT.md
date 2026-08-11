@@ -5,9 +5,22 @@ app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPURPOSECATTEXT')/$value
 semantic_en: "This CDS view exposes fixed values of the field Condition Contract Purpose. The following fixed values have been maintained: '' Nothing P PMR-Integration C CRM-Integration"
+semantic_vi: "Condition Contract Purpose Cat - Text — CDS view cơ bản dựa trên dd07t."
+keywords:
+  - "condition"
+  - "contract"
+  - "purpose"
+  - "cat"
+  - "text"
+  - "cndn"
+  - "contr"
+  - "language"
+  - "name"
+  - "domain"
+  - "value"
 tags:
   - LO
   - bo:companycode
@@ -17,7 +30,7 @@ tags:
   - LO-GT
   - LO-GT-CHB
   - lob:logistics general
-  - metadata-only
+  - bo:purchaseorder
 ---
 # I_CNDNCONTRPURPOSECATTEXT
 
@@ -29,13 +42,95 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPURPOSECATTEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPURPOSECATTEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CndnContrPurposeCat` |  | |  |  | `CHAR(2)` | Condition Contract Purpose Category |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `CndnContrPurposeCatName` |  | |  |  | `CHAR(60)` | Condition Contract Purpose Category Description |
-| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CndnContrPurposeCat` | ✓ | |  | `cast(dd07t.domvalue_l as wcb_cc_purpose )` | `CHAR(2)` | Condition Contract Purpose Category |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `CndnContrPurposeCatName` |  | |  | `cast( dd07t.ddtext as wcb_cc_purpose_name preserving type )` | `CHAR(60)` | Condition Contract Purpose Category Description |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `_Language` | | ✓ | | | | |
+| `_CndnContrPurposeCat` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPURPOSECATTEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPURPOSECATTEXT')/$value)*
+
+```abap
+@EndUserText.label: 'Condition Contract Purpose Cat - Text'
+@AccessControl: {
+  authorizationCheck: #NOT_REQUIRED
+}
+@ObjectModel: {
+  dataCategory: #TEXT,
+  representativeKey: 'CndnContrPurposeCat',
+  modelingPattern : #LANGUAGE_DEPENDENT_TEXT,
+  supportedCapabilities: [#LANGUAGE_DEPENDENT_TEXT,
+                          #CDS_MODELING_ASSOCIATION_TARGET,
+                          #SQL_DATA_SOURCE,
+                          #SEARCHABLE_ENTITY,
+                          #CDS_MODELING_DATA_SOURCE,
+                          #EXTRACTION_DATA_SOURCE],
+  usageType: {
+    dataClass:      #META,
+    serviceQuality: #A,
+    sizeCategory:   #S
+  }
+}
+@VDM: {
+  viewType: #BASIC,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@Search.searchable: true
+@Analytics: {
+  dataExtraction.enabled: true,
+  internalName: #LOCAL,
+  technicalName: 'IWCBCCPURPCATT'
+}
+@Metadata: {
+  ignorePropagatedAnnotations: true
+}
+
+/*+[hideWarning] { "IDS" : [ "KEY_CHECK", "CALCULATED_FIELD_CHECK" ]  } */
+define view entity I_CndnContrPurposeCatText
+  as select from dd07t
+
+  association        to parent I_CndnContrPurposeCat as _CndnContrPurposeCat on $projection.CndnContrPurposeCat = _CndnContrPurposeCat.CndnContrPurposeCat
+  association [0..1] to I_Language                   as _Language            on $projection.Language = _Language.Language
+
+{
+      @ObjectModel.foreignKey.association: '_CndnContrPurposeCat'
+      @ObjectModel.text.element: ['CndnContrPurposeCatName']
+  key cast(dd07t.domvalue_l as wcb_cc_purpose )                   as CndnContrPurposeCat,
+
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key dd07t.ddlanguage                                            as Language,
+
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      @Semantics.text: true
+      cast( dd07t.ddtext as wcb_cc_purpose_name preserving type ) as CndnContrPurposeCatName,
+      @Consumption.hidden: true
+      dd07t.domvalue_l                                            as DomainValue,
+
+      /* Associations */
+      _CndnContrPurposeCat,
+      _Language
+}
+
+where
+      dd07t.domname  = 'WCB_CC_PURPOSE'
+  and dd07t.as4local = 'A'
+  and dd07t.as4vers  = '0000'
+```

@@ -5,9 +5,19 @@ app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PNLEVENTCATEGORYTEXT')/$value
 semantic_en: "Profit and Loss Event Category - Text"
+semantic_vi: "Profit and Loss Event Category - Text — CDS view giao diện dựa trên cmm_tpl_ev_cat_t."
+keywords:
+  - "profit"
+  - "and"
+  - "loss"
+  - "event"
+  - "category"
+  - "text"
+  - "language"
+  - "name"
 tags:
   - LO
   - bo:companycode
@@ -17,7 +27,6 @@ tags:
   - LO-CMM-BF
   - lob:logistics general
   - lob:sourcing & procurement
-  - metadata-only
 ---
 # I_PNLEVENTCATEGORYTEXT
 
@@ -29,12 +38,56 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PNLEVENTCATEGORYTEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PNLEVENTCATEGORYTEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PnLEventCategory` |  | |  |  | `CHAR(10)` | Profit and Loss Event Category |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `PnLEventCategoryName` |  | |  |  | `CHAR(40)` | Profit and Loss Event Category Text |
+| `PnLEventCategory` | ✓ | |  | `event_cat` | `CHAR(10)` | Profit and Loss Event Category |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `PnLEventCategoryName` |  | |  | `description` | `CHAR(40)` | Profit and Loss Event Category Text |
+| `_Language` | | ✓ | | | | |
+| `_PnLEventCategory` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_PnLEventCategory` | `I_PnLEventCategory` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PNLEVENTCATEGORYTEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PNLEVENTCATEGORYTEXT')/$value)*
+
+```abap
+@EndUserText.label: 'Profit and Loss Event Category - Text'
+@ObjectModel.dataCategory: #TEXT
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@AbapCatalog.sqlViewName: 'ITPLEVTCATT'
+@ObjectModel.representativeKey: 'PnLEventCategory'
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE]
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations:true
+
+define view I_PnLEventCategoryText
+  as select from cmm_tpl_ev_cat_t
+   association [0..1] to I_Language as _Language  on $projection.Language = _Language.Language
+   association [1..1] to I_PnLEventCategory  as _PnLEventCategory
+       on $projection.PnLEventCategory = _PnLEventCategory.PnLEventCategory
+{
+   key event_cat as PnLEventCategory,
+   @Semantics.language: true
+   key langu as Language,
+   @Semantics.text: true
+   description as PnLEventCategoryName,
+   _PnLEventCategory,
+   _Language
+  
+}
+```

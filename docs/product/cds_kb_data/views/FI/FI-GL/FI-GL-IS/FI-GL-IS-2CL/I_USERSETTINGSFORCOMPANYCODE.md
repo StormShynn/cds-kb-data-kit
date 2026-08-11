@@ -5,9 +5,17 @@ app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_USERSETTINGSFORCOMPANYCODE')/$value
 semantic_en: "This CDS view provides the prerequisites for answering the following business question: What is the company code user default value for my business user? It can be used as a derivation entity."
+semantic_vi: "Company Code User Default Value — CDS view giao diện dựa trên P_UserSettingsForCompanyCode."
+keywords:
+  - "company"
+  - "code"
+  - "user"
+  - "default"
+  - "value"
+  - "business"
 tags:
   - FI
   - bo:plant
@@ -17,7 +25,6 @@ tags:
   - FI-GL-IS-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_USERSETTINGSFORCOMPANYCODE
 
@@ -29,11 +36,45 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_USERSETTINGSFORCOMPANYCODE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_USERSETTINGSFORCOMPANYCODE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessUser` |  | |  |  | `CHAR(12)` | User ID |
+| `BusinessUser` | ✓ | |  |  | `CHAR(12)` | User ID |
 | `CompanyCode` |  | |  |  | `CHAR(40)` | Parameter value |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_USERSETTINGSFORCOMPANYCODE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_USERSETTINGSFORCOMPANYCODE')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IFIUSRSTTNGCC'
+@Analytics: { dataCategory: #DIMENSION }
+@EndUserText.label: 'Company Code User Default Value'
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel: { representativeKey: 'BusinessUser',
+                usageType.serviceQuality: #A,
+                usageType.sizeCategory: #S,
+                usageType.dataClass: #MASTER,
+                modelingPattern: #DERIVATION_FUNCTION,
+                supportedCapabilities: [#DERIVATION_FUNCTION]
+              }
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata: {ignorePropagatedAnnotations: true, allowExtensions:true}
+
+define view I_UserSettingsForCompanyCode
+  as select from P_UserSettingsForCompanyCode
+{
+
+  key BusinessUser,
+
+      P_UserSettingsForCompanyCode.CompanyCode as CompanyCode
+
+}
+
+where
+  BusinessUser = $session.user
+```

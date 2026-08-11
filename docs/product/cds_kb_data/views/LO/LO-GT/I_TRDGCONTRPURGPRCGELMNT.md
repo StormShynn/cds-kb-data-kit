@@ -5,9 +5,25 @@ app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRPURGPRCGELMNT')/$value
 semantic_en: "Purg Pricing Elmnt of Trading Contract"
+semantic_vi: "Purg Pricing Elmnt of Trading Contract — CDS view tổng hợp dựa trên R_TrdgContrPurgPrcgElmnt."
+keywords:
+  - "purg"
+  - "pricing"
+  - "elmnt"
+  - "trading"
+  - "contract"
+  - "prcg"
+  - "item"
+  - "group"
+  - "value"
+  - "procedure"
+  - "step"
+  - "counter"
+  - "condition"
+  - "application"
 tags:
   - LO
   - bo:pricingcondition
@@ -17,7 +33,6 @@ tags:
   - LO-GT
   - lob:logistics general
   - pricing
-  - metadata-only
 ---
 # I_TRDGCONTRPURGPRCGELMNT
 
@@ -29,16 +44,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRPURGPRCGELMNT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRPURGPRCGELMNT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TradingContract` |  | |  |  | `CHAR(10)` | Trading Contract |
-| `PurgPrcgElmntItemGroupValue` |  | |  |  | `INT1(3)` | Item Group |
-| `PricingProcedureStep` |  | |  |  | `NUMC(3)` | Step Number |
-| `PricingProcedureCounter` |  | |  |  | `NUMC(3)` | Pricing Condition Counter |
+| `TradingContract` | ✓ | |  |  | `CHAR(10)` | Trading Contract |
+| `PurgPrcgElmntItemGroupValue` | ✓ | |  |  | `INT1(3)` | Item Group |
+| `PricingProcedureStep` | ✓ | |  |  | `NUMC(3)` | Step Number |
+| `PricingProcedureCounter` | ✓ | |  |  | `NUMC(3)` | Pricing Condition Counter |
 | `ConditionApplication` |  | |  |  | `CHAR(2)` | Application |
 | `ConditionType` |  | |  |  | `CHAR(4)` | Condition Type |
 | `PriceConditionDeterminationDte` |  | |  |  | `DATS(8)` | Pricing Condition Date |
@@ -90,4 +105,112 @@ tags:
 | `ConditionAmountInLocalCrcy` |  | |  |  | `CURR(15)` | Pricing Condition Amount in Local Currency |
 | `ExpenseSupplier` |  | |  |  | `CHAR(10)` | Expense Supplier |
 | `PriceDetnExchangeRate` |  | |  |  | `DEC(9)` | Pricing Condition Exchange Rate |
-| `TradingContractCategory` |  | |  |  | `CHAR(1)` | Trading Contract Category |
+| `TradingContractCategory` |  | | `_TrdgContr` | `TradingContractCategory` | `CHAR(1)` | Trading Contract Category |
+| `_TrdgContr` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_TrdgContr` | `I_TrdgContr` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRPURGPRCGELMNT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRPURGPRCGELMNT')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'Purg Pricing Elmnt of Trading Contract'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel: {
+  semanticKey: ['TradingContract', 'PricingProcedureStep', 'PricingProcedureCounter', 'ConditionApplication', 'ConditionType' ],
+  modelingPattern: #NONE,
+  supportedCapabilities: [#CDS_MODELING_DATA_SOURCE],
+  usageType: {
+    serviceQuality: #C,
+    dataClass: #TRANSACTIONAL,
+    sizeCategory: #XXL
+  }
+}
+@VDM: {
+  viewType: #COMPOSITE,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+
+define view entity I_TrdgContrPurgPrcgElmnt
+  as select from R_TrdgContrPurgPrcgElmnt as _TrdgContrPurgPrcgElmnt
+
+  association [1..1] to I_TrdgContr as _TrdgContr on $projection.TradingContract = _TrdgContr.TradingContract
+{
+            @ObjectModel.foreignKey.association: '_TrdgContr'
+  key       TradingContract                    as TradingContract,
+  key       PurgPrcgElmntItemGroupValue,
+  key       PricingProcedureStep,
+  key       PricingProcedureCounter,
+            ConditionApplication,
+            ConditionType,
+            PriceConditionDeterminationDte,
+            ConditionCalculationType,
+            ConditionBaseAmount,
+            @Semantics.quantity.unitOfMeasure: 'ConditionQuantityUnit'
+            ConditionBaseQuantity,
+            ConditionRateAmount,
+            ConditionRateRatio,
+            ConditionRateRatioUnit,
+            ConditionCurrency,
+            @Semantics.quantity.unitOfMeasure: 'ConditionQuantityUnit'
+            ConditionQuantity,
+            ConditionQuantityUnit,
+            ConditionCategory,
+            ConditionIsForStatistics,
+            IsRelevantForAccrual,
+            @Semantics.booleanIndicator: true
+            CndnIsRelevantForInvoiceList,
+            ConditionOrigin,
+            @Semantics.booleanIndicator: true
+            IsGroupCondition,
+            TaxCode,
+            WithholdingTaxCode,
+            @Semantics.amount.currencyCode: 'TransactionCurrency'
+            CndnRoundingOffDiffAmount,
+            @OData.v2.amount.noDecimalShift: true
+            @Semantics.amount.currencyCode: 'TransactionCurrency'
+            ConditionAmount,
+            TransactionCurrency,
+            ConditionControl,
+            ConditionInactiveReason,
+            ConditionClass,
+            PrcgProcedureCounterForHeader,
+            FactorForConditionBasisValue,
+            StructureCondition,
+            PeriodFactorForCndnBasisValue,
+            PricingScaleType,
+            PricingScaleBasis,
+            ConditionScaleBaseAmount,
+            @Semantics.quantity.unitOfMeasure: 'ConditionScaleBasisUnit'
+            ConditionScaleBaseQuantity,
+            ConditionScaleBasisUnit,
+            ConditionScaleBasisCurrency,
+            CndnIsRelevantForIntcoBilling,
+            ConditionIsManuallyChanged,
+            ConditionIsForConfiguration,
+            VariantCondition,
+            ConditionBasisLimitExceeded,
+            ConditionAmountLimitExceeded,
+            CndnIsRelevantForLimitValue,
+            TaxCountry,
+            ConditionToBaseQtyNmrtr,
+            ConditionToBaseQtyDnmntr,
+            CndnIsAcctDetnRelevant,
+            ConditionAlternativeCurrency,
+            @Semantics.amount.currencyCode: 'ConditionAlternativeCurrency'
+            ConditionAmountInLocalCrcy,
+            ExpenseSupplier,
+            PriceDetnExchangeRate,
+            _TrdgContr.TradingContractCategory as TradingContractCategory,
+
+            /* Associations */
+            _TrdgContr
+
+}
+```

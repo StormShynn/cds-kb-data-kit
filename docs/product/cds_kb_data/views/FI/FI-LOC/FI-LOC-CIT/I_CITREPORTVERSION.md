@@ -5,9 +5,15 @@ app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CITREPORTVERSION')/$value
 semantic_en: "CIT Report Version"
+semantic_vi: "CIT Report Version — CDS view giao diện dựa trên ficitc_rptvers."
+keywords:
+  - "cit"
+  - "report"
+  - "version"
+  - "country"
 tags:
   - FI
   - bo:purchaseorder
@@ -17,7 +23,7 @@ tags:
   - interface-view
   - lob:finance
   - lob:logistics general
-  - metadata-only
+  - bo:companycode
 ---
 # I_CITREPORTVERSION
 
@@ -29,11 +35,33 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CITREPORTVERSION')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CITREPORTVERSION')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CITReportVersion` |  | |  |  | `CHAR(30)` | CIT Report Version |
-| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `CITReportVersion` | ✓ | |  | `reportversionid` | `CHAR(30)` | CIT Report Version |
+| `Country` |  | |  | `country` | `CHAR(3)` | Country/Region Key |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CITREPORTVERSION')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CITREPORTVERSION')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'ICITRPTVERS'
+@VDM.viewType: #BASIC
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'CIT Report Version'
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.usageType.serviceQuality: #D
+@ClientHandling.algorithm: #SESSION_VARIABLE
+
+define view I_CITReportVersion as select from ficitc_rptvers {
+  key reportversionid as CITReportVersion,
+  country as Country
+}
+```

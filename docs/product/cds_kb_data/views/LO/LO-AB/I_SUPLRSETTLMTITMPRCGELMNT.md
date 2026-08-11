@@ -5,9 +5,23 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRSETTLMTITMPRCGELMNT')/$value
 semantic_en: "Supplier Settlement Item Pricing Element"
+semantic_vi: "Supplier Settlement Item Pricing Element — CDS view cơ bản dựa trên R_SuplrSettlmtItmPrcgElmnt."
+keywords:
+  - "supplier"
+  - "settlement"
+  - "item"
+  - "pricing"
+  - "element"
+  - "suplr"
+  - "settlmt"
+  - "procedure"
+  - "step"
+  - "counter"
+  - "condition"
+  - "application"
 tags:
   - LO
   - bo:pricingcondition
@@ -17,7 +31,6 @@ tags:
   - lob:logistics general
   - pricing
   - supplier
-  - metadata-only
 ---
 # I_SUPLRSETTLMTITMPRCGELMNT
 
@@ -29,23 +42,23 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRSETTLMTITMPRCGELMNT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRSETTLMTITMPRCGELMNT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SuplrSettlmt` |  | |  |  | `CHAR(10)` | Supplier Settlement |
-| `SuplrSettlmtItem` |  | |  |  | `NUMC(6)` | Document Item |
-| `PricingProcedureStep` |  | |  |  | `NUMC(3)` | Step Number |
-| `PricingProcedureCounter` |  | |  |  | `NUMC(3)` | Pricing Procedure Counter |
+| `SuplrSettlmt` | ✓ | |  |  | `CHAR(10)` | Supplier Settlement |
+| `SuplrSettlmtItem` | ✓ | |  |  | `NUMC(6)` | Document Item |
+| `PricingProcedureStep` | ✓ | |  |  | `NUMC(3)` | Step Number |
+| `PricingProcedureCounter` | ✓ | |  |  | `NUMC(3)` | Pricing Procedure Counter |
 | `ConditionApplication` |  | |  |  | `CHAR(2)` | Application |
 | `ConditionType` |  | |  |  | `CHAR(4)` | Condition Type |
-| `PricingDateTime` |  | |  |  | `CHAR(14)` | Timestamp for Pricing |
+| `PricingDateTime` |  | |  | `cast( ' ' as vfprc_timestamp preserving type )` | `CHAR(14)` | Timestamp for Pricing |
 | `PriceConditionDeterminationDte` |  | |  |  | `DATS(8)` | Condition Pricing Date |
 | `ConditionCalculationType` |  | |  |  | `CHAR(3)` | Calculation Type for Condition |
-| `ConditionBaseValue` |  | |  |  | `DEC(24)` | Condition Basis |
-| `ConditionRateValue` |  | |  |  | `DEC(24)` | Condition Amount or Percentage |
+| `ConditionBaseValue` |  | |  | `cast( ConditionBaseAmount as vfprc_element_base_value preserving type )` | `DEC(24)` | Condition Basis |
+| `ConditionRateValue` |  | |  | `cast( ConditionRateAmount as vfprc_element_amount preserving type )` | `DEC(24)` | Condition Amount or Percentage |
 | `ConditionBaseAmount` |  | |  |  | `DEC(24)` | Amount of the Condition Basis |
 | `ConditionBaseQuantity` |  | |  |  | `DEC(24)` | Quantity of the Condition Basis |
 | `ConditionRateAmount` |  | |  |  | `DEC(24)` | Condition Amount |
@@ -76,7 +89,7 @@ tags:
 | `PeriodFactorForCndnBasisValue` |  | |  |  | `FLTP(16)` | Period Factor for Condition Basis Value |
 | `PricingScaleType` |  | |  |  | `CHAR(1)` | Scale Type |
 | `PricingScaleBasis` |  | |  |  | `CHAR(3)` | Scale Basis Indicator |
-| `ConditionScaleBasisValue` |  | |  |  | `DEC(24)` | Scale Base Value |
+| `ConditionScaleBasisValue` |  | |  | `cast (ConditionScaleBaseAmount as vfrpc_scale_base_value preserving type )` | `DEC(24)` | Scale Base Value |
 | `ConditionScaleBaseAmount` |  | |  |  | `DEC(24)` | Scale Base Amount |
 | `ConditionScaleBaseQuantity` |  | |  |  | `DEC(24)` | Scale Base Quantity |
 | `ConditionScaleBasisUnit` |  | |  |  | `UNIT(3)` | Condition Scale Unit of Measure |
@@ -87,3 +100,203 @@ tags:
 | `VariantCondition` |  | |  |  | `CHAR(26)` | Variant Condition Key |
 | `AccountKeyForGLAccount` |  | |  |  | `CHAR(3)` | Account Key |
 | `AcctKeyForAccrualsGLAccount` |  | |  |  | `CHAR(3)` | Account Key - Accruals / Provisions |
+| `_SuplrSettlmt` | | ✓ | | | | |
+| `_SuplrSettlmtItem` | | ✓ | | | | |
+| `_ConditionApplication` | | ✓ | | | | |
+| `_PricingConditionType` | | ✓ | | | | |
+| `_ConditionCalculationType` | | ✓ | | | | |
+| `_ConditionCurrency` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_ConditionQuantityUnit` | | ✓ | | | | |
+| `_ConditionCategory` | | ✓ | | | | |
+| `_ConditionOrigin` | | ✓ | | | | |
+| `_ConditionControl` | | ✓ | | | | |
+| `_ConditionInactiveReason` | | ✓ | | | | |
+| `_ConditionClass` | | ✓ | | | | |
+| `_PricingScaleBasis` | | ✓ | | | | |
+| `_ScaleUnitOfMeasure` | | ✓ | | | | |
+| `_ScaleCurrency` | | ✓ | | | | |
+| `_VariantCondition` | | ✓ | | | | |
+| `_StructureCondition` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_SuplrSettlmt` | `I_SuplrSettlmt` | [1..1] |
+| `_SuplrSettlmtItem` | `I_SuplrSettlmtItem` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRSETTLMTITMPRCGELMNT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRSETTLMTITMPRCGELMNT')/$value)*
+
+```abap
+@EndUserText.label: 'Supplier Settlement Item Pricing Element'
+@AccessControl: {
+    authorizationCheck: #MANDATORY,
+    personalData.blocking: #('TRANSACTIONAL_DATA')
+    }
+@ObjectModel: {
+    modelingPattern: #NONE,
+    supportedCapabilities: [#SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET],
+    usageType: {
+      dataClass:      #TRANSACTIONAL,
+      serviceQuality: #A,
+      sizeCategory:   #XXL
+      }
+    }
+@VDM: {
+    viewType: #BASIC,
+    lifecycle.contract.type: #PUBLIC_LOCAL_API
+    }
+@Analytics: {
+    internalName: #LOCAL
+    }
+@Metadata: {
+    ignorePropagatedAnnotations: true
+    }
+
+define view entity I_SuplrSettlmtItmPrcgElmnt
+  as select from R_SuplrSettlmtItmPrcgElmnt
+
+  association [1..1] to I_SuplrSettlmt     as _SuplrSettlmt     on  $projection.SuplrSettlmt = _SuplrSettlmt.SuplrSettlmt
+  association [1..1] to I_SuplrSettlmtItem as _SuplrSettlmtItem on  $projection.SuplrSettlmt     = _SuplrSettlmtItem.SuplrSettlmt
+                                                                and $projection.SuplrSettlmtItem = _SuplrSettlmtItem.SuplrSettlmtItem
+
+{
+      @ObjectModel.foreignKey.association: '_SuplrSettlmt'
+      @Consumption: {
+        valueHelpDefinition: [{ entity: { name: 'I_SuplrSettlmtStdVH', element: 'SuplrSettlmt' } }]
+      }
+  key SuplrSettlmt,
+      @ObjectModel.foreignKey.association: '_SuplrSettlmtItem'
+      @Consumption: {
+        valueHelpDefinition: [{ entity: { name: 'I_SuplrSettlmtItemStdVH', element: 'SuplrSettlmtItem' } }]
+      }
+  key SuplrSettlmtItem,
+  key PricingProcedureStep,
+  key PricingProcedureCounter,
+
+      @ObjectModel.foreignKey.association: '_ConditionApplication'
+      ConditionApplication,
+      @ObjectModel.foreignKey.association: '_PricingConditionType'
+      ConditionType,
+      @API.element:{releaseState: #DEPRECATED, successor: 'PriceConditionDeterminationDte'}
+      cast( '              ' as vfprc_timestamp preserving type )                as PricingDateTime,
+      PriceConditionDeterminationDte,
+
+      @ObjectModel.foreignKey.association: '_ConditionCalculationType'
+      ConditionCalculationType,
+
+      @API.element:{releaseState: #DEPRECATED, successor: 'ConditionBaseAmount'}
+      cast( ConditionBaseAmount as vfprc_element_base_value preserving type )    as ConditionBaseValue,
+      @API.element:{releaseState: #DEPRECATED, successor: 'ConditionRateAmount'}
+      cast( ConditionRateAmount as vfprc_element_amount   preserving type )      as ConditionRateValue,
+
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      @OData.v2.amount.noDecimalShift: true
+      ConditionBaseAmount,
+      @Semantics.quantity.unitOfMeasure: 'ConditionQuantityUnit'
+      ConditionBaseQuantity,
+
+      @Semantics.amount.currencyCode: 'ConditionCurrency'
+      @OData.v2.amount.noDecimalShift: true
+      ConditionRateAmount,
+      @Semantics.quantity.unitOfMeasure: 'ConditionRateRatioUnit'
+      ConditionRateRatio,
+      ConditionRateRatioUnit,
+
+      @ObjectModel.foreignKey.association: '_ConditionCurrency'
+      ConditionCurrency,
+      @DefaultAggregation:#SUM
+      @Semantics.quantity.unitOfMeasure: 'ConditionQuantityUnit'
+      ConditionQuantity,
+      @ObjectModel.foreignKey.association: '_ConditionQuantityUnit'
+      ConditionQuantityUnit,
+
+      @ObjectModel.foreignKey.association: '_ConditionCategory'
+      ConditionCategory,
+      ConditionIsForStatistics,
+
+      IsRelevantForAccrual,
+      CndnIsRelevantForInvoiceList,
+      @ObjectModel.foreignKey.association: '_ConditionOrigin'
+      ConditionOrigin,
+      IsGroupCondition,
+
+      ConditionRecord,
+      ConditionSequentialNumber,
+
+      TaxCode,
+      WithholdingTaxCode,
+
+      @DefaultAggregation:#SUM
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      CndnRoundingOffDiffAmount,
+      @DefaultAggregation:#SUM
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      ConditionAmount,
+      @ObjectModel.foreignKey.association: '_Currency'
+      TransactionCurrency,
+      @ObjectModel.foreignKey.association: '_ConditionControl'
+      ConditionControl,
+      @ObjectModel.foreignKey.association: '_ConditionInactiveReason'
+      ConditionInactiveReason,
+      @ObjectModel.foreignKey.association: '_ConditionClass'
+      ConditionClass,
+      PrcgProcedureCounterForHeader,
+      FactorForConditionBasisValue,
+      @ObjectModel.foreignKey.association: '_StructureCondition'
+      StructureCondition,
+      PeriodFactorForCndnBasisValue,
+
+      PricingScaleType,
+      @ObjectModel.foreignKey.association: '_PricingScaleBasis'
+      PricingScaleBasis,
+
+      @API.element:{releaseState: #DEPRECATED, successor: 'ConditionScaleBaseAmount'}
+      cast (ConditionScaleBaseAmount as vfrpc_scale_base_value preserving type ) as ConditionScaleBasisValue,
+
+      @Semantics.amount.currencyCode: 'ConditionScaleBasisCurrency'
+      @OData.v2.amount.noDecimalShift: true
+      ConditionScaleBaseAmount,
+      @Semantics.quantity.unitOfMeasure: 'ConditionScaleBasisUnit'
+      ConditionScaleBaseQuantity,
+      @ObjectModel.foreignKey.association: '_ScaleUnitOfMeasure'
+      ConditionScaleBasisUnit,
+      @ObjectModel.foreignKey.association: '_ScaleCurrency'
+      ConditionScaleBasisCurrency,
+
+      CndnIsRelevantForIntcoBilling,
+      ConditionIsManuallyChanged,
+      ConditionIsForConfiguration,
+      VariantCondition,
+
+      /* Accounts */
+      AccountKeyForGLAccount,
+      AcctKeyForAccrualsGLAccount,
+
+      /* Associations */
+      @ObjectModel.association.type: [#TO_COMPOSITION_ROOT]
+      _SuplrSettlmt,
+      @ObjectModel.association.type: [#TO_COMPOSITION_PARENT]
+      _SuplrSettlmtItem,
+      _ConditionApplication,
+      _PricingConditionType,
+      _ConditionCalculationType,
+      _ConditionCurrency,
+      _Currency,
+      _ConditionQuantityUnit,
+      _ConditionCategory,
+      _ConditionOrigin,
+      _ConditionControl,
+      _ConditionInactiveReason,
+      _ConditionClass,
+      _PricingScaleBasis,
+      _ScaleUnitOfMeasure,
+      _ScaleCurrency,
+      _VariantCondition,
+      _StructureCondition
+
+}
+```

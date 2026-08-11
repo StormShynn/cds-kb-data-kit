@@ -5,9 +5,20 @@ app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMDATASOURCETYPT')/$value
 semantic_en: "Names of Mark To Market Data Source Types - Text"
+semantic_vi: "Names of MtM Data Source Types - Text — CDS view giao diện dựa trên dd07t."
+keywords:
+  - "names"
+  - "mtm"
+  - "data"
+  - "source"
+  - "types"
+  - "text"
+  - "type"
+  - "language"
+  - "name"
 tags:
   - LO
   - bo:salesorder
@@ -17,7 +28,6 @@ tags:
   - LO-CMM-BF
   - lob:logistics general
   - lob:sourcing & procurement
-  - metadata-only
 ---
 # I_MTMDATASOURCETYPT
 
@@ -29,12 +39,57 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMDATASOURCETYPT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMDATASOURCETYPT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `MTMDataSourceType` |  | |  |  | `CHAR(2)` | Type of Data Record |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `MTMDataSourceTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `MTMDataSourceType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as cmm_vlogp_rec_type)` | `CHAR(2)` | Type of Data Record |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `MTMDataSourceTypeName` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
+| `_Language` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMDATASOURCETYPT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMDATASOURCETYPT')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IMTMDATASRCTYPT'
+@Metadata.ignorePropagatedAnnotations:true
+@AbapCatalog.preserveKey:true
+@AbapCatalog.compiler.compareFilter:true
+@Analytics: { dataExtraction.enabled: true }
+@ClientHandling.algorithm: #SESSION_VARIABLE 
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.representativeKey: 'MTMDataSourceType'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@VDM.viewType: #BASIC
+@EndUserText.label: 'Names of MtM Data Source Types - Text'
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE]
+
+define view I_MtmDataSourceTypT
+  as select from dd07t
+  association [0..1] to I_Language as _Language on $projection.Language = _Language.Language
+{
+  key cast ( substring( domvalue_l, 1, 2 ) as cmm_vlogp_rec_type) as MTMDataSourceType,
+      @Semantics.language: true
+      @ObjectModel.foreignKey.association: '_Language'
+  key ddlanguage                                                  as Language,
+      _Language,
+      @Semantics.text: true
+      dd07t.ddtext                                                as MTMDataSourceTypeName
+}
+where
+      dd07t.domname  = 'CMM_VLOGP_REC_TYPE'
+  and dd07t.as4local = 'A'
+```

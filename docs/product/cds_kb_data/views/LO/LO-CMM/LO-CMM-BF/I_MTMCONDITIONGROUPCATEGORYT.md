@@ -5,9 +5,18 @@ app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMCONDITIONGROUPCATEGORYT')/$value
 semantic_en: "Mark To Market Condition Group Category Name - Text"
+semantic_vi: "MtM Condition Group Category Name - Text — CDS view giao diện dựa trên dd07t."
+keywords:
+  - "mtm"
+  - "condition"
+  - "group"
+  - "category"
+  - "name"
+  - "text"
+  - "language"
 tags:
   - LO
   - component:LO-CMM-BF
@@ -16,7 +25,6 @@ tags:
   - LO-CMM-BF
   - lob:logistics general
   - lob:sourcing & procurement
-  - metadata-only
 ---
 # I_MTMCONDITIONGROUPCATEGORYT
 
@@ -28,12 +36,57 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMCONDITIONGROUPCATEGORYT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMCONDITIONGROUPCATEGORYT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `MTMConditionGroupCategory` |  | |  |  | `CHAR(1)` | Categorization of Condition Group |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `MTMConditionGroupCategoryName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `MTMConditionGroupCategory` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as cmm_mtm_cgroup_cat)` | `CHAR(1)` | Categorization of Condition Group |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `MTMConditionGroupCategoryName` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
+| `_Language` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMCONDITIONGROUPCATEGORYT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMCONDITIONGROUPCATEGORYT')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IMTMCGCATT'
+@Metadata.ignorePropagatedAnnotations:true
+@AbapCatalog.preserveKey:true
+@AbapCatalog.compiler.compareFilter:true
+@Analytics: { dataExtraction.enabled: true }
+@ClientHandling.algorithm: #SESSION_VARIABLE 
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.representativeKey: 'MTMConditionGroupCategory'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@VDM.viewType: #BASIC
+@EndUserText.label: 'MtM Condition Group Category Name - Text'
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE]
+
+define view I_MtmConditionGroupCategoryT
+  as select from dd07t
+  association [0..1] to I_Language as _Language on $projection.Language = _Language.Language
+{
+  key cast ( substring( domvalue_l, 1, 1 ) as cmm_mtm_cgroup_cat) as MTMConditionGroupCategory,
+      @Semantics.language: true
+      @ObjectModel.foreignKey.association: '_Language'
+  key ddlanguage                                                  as Language,
+      _Language,
+      @Semantics.text: true
+      dd07t.ddtext                                                as MTMConditionGroupCategoryName
+}
+where
+      dd07t.domname  = 'CMM_MTM_CGROUP_CAT'
+  and dd07t.as4local = 'A'
+```

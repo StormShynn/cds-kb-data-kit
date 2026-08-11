@@ -5,9 +5,23 @@ app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTLINEITEMSTDVH')/$value
 semantic_en: "General Ledger Account Line Item"
+semantic_vi: "G/L Account Line Item — CDS view giao diện dựa trên I_GLAccountLineItem."
+keywords:
+  - "g/l"
+  - "account"
+  - "line"
+  - "item"
+  - "source"
+  - "ledger"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
 tags:
   - FI
   - account
@@ -17,7 +31,6 @@ tags:
   - FI-GL-IS-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_GLACCOUNTLINEITEMSTDVH
 
@@ -29,18 +42,18 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTLINEITEMSTDVH')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTLINEITEMSTDVH')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `SourceLedger` | ✓ | |  |  | `CHAR(2)` | Source Ledger |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` | ✓ | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
 | `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
 | `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
 | `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
@@ -68,3 +81,136 @@ tags:
 | `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
 | `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
 | `OrderCategory` |  | |  |  | `NUMC(2)` | Order Category |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTLINEITEMSTDVH')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTLINEITEMSTDVH')/$value)*
+
+```abap
+@AccessControl: { authorizationCheck: #CHECK,
+                  personalData.blocking: #BLOCKED_DATA_EXCLUDED }
+@Analytics.dataCategory: #DIMENSION
+@Analytics.technicalName: 'IFIGLALI__VH'
+@EndUserText.label: 'G/L Account Line Item'
+@ObjectModel: { dataCategory: #VALUE_HELP,
+                representativeKey: 'LedgerGLLineItem',
+                usageType: { sizeCategory: #XXL,
+                             dataClass: #MIXED,
+                             serviceQuality: #C },
+                supportedCapabilities: [#VALUE_HELP_PROVIDER],
+                modelingPattern: #VALUE_HELP_PROVIDER }                             
+@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions:true
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@VDM.viewType: #COMPOSITE
+
+define view entity I_GLAccountLineItemStdVH as select from I_GLAccountLineItem as I_GLAccountLineItem {
+  @ObjectModel.foreignKey.association: '_SourceLedger'
+  key I_GLAccountLineItem.SourceLedger,
+  @ObjectModel.foreignKey.association: '_CompanyCode'
+  key I_GLAccountLineItem.CompanyCode,
+  @ObjectModel.foreignKey.association: '_FiscalYear'
+  key I_GLAccountLineItem.FiscalYear,
+  @ObjectModel.foreignKey.association: '_JournalEntry'
+  key I_GLAccountLineItem.AccountingDocument,
+  key I_GLAccountLineItem.LedgerGLLineItem,
+  @ObjectModel.foreignKey.association: '_Ledger'
+  key I_GLAccountLineItem.Ledger,
+
+  @Consumption.hidden: true
+  I_GLAccountLineItem.AccountingDocumentType,
+  @Consumption.hidden: true
+  @ObjectModel.foreignKey.association: '_ControllingArea'
+  I_GLAccountLineItem.ControllingArea,
+  @Consumption.hidden: true
+  @ObjectModel.foreignKey.association: '_CostCenter'
+  I_GLAccountLineItem.CostCenter,
+  @Consumption.hidden: true
+  @ObjectModel.foreignKey.association: '_ProfitCenter'
+  I_GLAccountLineItem.ProfitCenter,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.Customer,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.MasterFixedAsset,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.FixedAsset,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.GLAccount,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.Supplier,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.BusinessArea,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.DistributionChannel,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.FinancialAccountType,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.OrderType,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.OrganizationDivision,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.Plant,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.SalesOrderType,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.SalesOrganization,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.Segment,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.ValuationArea,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.SalesDocument,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.OrderID,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.ServiceDocumentType,  
+  @Consumption.hidden: true
+  I_GLAccountLineItem.ServiceDocument,  
+  @Consumption.hidden: true
+  I_GLAccountLineItem.AssetClass,    
+  @Consumption.hidden: true
+  I_GLAccountLineItem.PostingDate,  
+  @Consumption.hidden: true
+  I_GLAccountLineItem.FunctionalArea,
+  @Consumption.hidden: true
+  I_GLAccountLineItem.OrderCategory,  
+  
+  @Consumption.hidden: true
+  I_GLAccountLineItem._CostCenter,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._ProfitCenter,
+  
+  @Consumption.hidden: true
+  I_GLAccountLineItem._SourceLedger,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._CompanyCode,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._FiscalYear,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._JournalEntry,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._Ledger,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._AccountingDocumentType,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._ControllingArea,  
+  @Consumption.hidden: true
+  I_GLAccountLineItem._CurrentCostCenter,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._CurrentProfitCenter,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._Customer,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._FixedAsset,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._GLAccountInCompanyCode,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._Supplier,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._SalesDocument,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._ServiceDocument,
+  @Consumption.hidden: true
+  I_GLAccountLineItem._Order
+}
+```

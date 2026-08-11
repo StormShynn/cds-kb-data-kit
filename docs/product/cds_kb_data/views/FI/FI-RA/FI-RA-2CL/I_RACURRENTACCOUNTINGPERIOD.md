@@ -5,9 +5,19 @@ app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RACURRENTACCOUNTINGPERIOD')/$value
 semantic_en: "Current Accounting Period"
+semantic_vi: "Current Accounting Period — CDS view giao diện dựa trên Current Accounting Period."
+keywords:
+  - "current"
+  - "accounting"
+  - "period"
+  - "company"
+  - "code"
+  - "principle"
+  - "fiscal"
+  - "year"
 tags:
   - FI
   - account
@@ -16,7 +26,6 @@ tags:
   - FI-RA-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_RACURRENTACCOUNTINGPERIOD
 
@@ -28,14 +37,85 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RACURRENTACCOUNTINGPERIOD')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RACURRENTACCOUNTINGPERIOD')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `AccountingPrinciple` |  | |  |  | `CHAR(4)` | Accounting Principle |
-| `FiscalYearCurrentPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year + Fiscal Period |
-| `CurrentFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `CurrentFiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `CompanyCode` | ✓ | | `_RACompanyCodeSetting` | `CompanyCode` | `CHAR(4)` | Company Code |
+| `AccountingPrinciple` | ✓ | | `_RACompanyCodeSetting` | `AccountingPrinciple` | `CHAR(4)` | Accounting Principle |
+| `FiscalYearCurrentPeriod` |  | | `_CalendarLedger` | `FiscalYearPeriod` | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `CurrentFiscalYear` |  | | `_CalendarLedger` | `FiscalYear` | `NUMC(4)` | Fiscal Year |
+| `CurrentFiscalPeriod` |  | | `_CalendarLedger` | `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
+| `_CompanyCode` | | ✓ | | | | |
+| `_AccountingPrinciple` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CompanyCode` | `I_CompanyCode` | [1..1] |
+| `_AccountingPrinciple` | `I_AccountingPrinciple` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RACURRENTACCOUNTINGPERIOD')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RACURRENTACCOUNTINGPERIOD')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@EndUserText.label: 'Current Accounting Period'
+
+@Metadata.ignorePropagatedAnnotations: true // Views which are released to contract C1 or C2 shall be annotated with this
+
+@ObjectModel.supportedCapabilities: [ #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ]
+@ObjectModel.usageType: { serviceQuality: #C, sizeCategory: #L, dataClass: #CUSTOMIZING }
+
+@VDM.viewType: #COMPOSITE
+
+define view entity I_RACurrentAccountingPeriod
+  as select distinct from  I_RACompanyCodeSetting      as _RACompanyCodeSetting
+
+    // LedgerGroup Info for AccountingPrinciple
+    left outer to one join I_AccountingPrincipleAssgmt as _AccountingPrincipleAssgmt
+      on _RACompanyCodeSetting.AccountingPrinciple = _AccountingPrincipleAssgmt.AccountingPrinciple
+
+    // Representative Ledger Info for LedgerGroup
+    left outer to one join I_LedgerGroupAssignment     as _RepresentativeLedger
+      on  _AccountingPrincipleAssgmt.LedgerGroup       = _RepresentativeLedger.LedgerGroup
+      and _RepresentativeLedger.IsRepresentativeLedger = 'X'
+
+    // 1st Priority: Rep Ledger -> Fiscal Year/Period
+    left outer to one join I_FiscalYearPeriodForLedger as _CalendarLedger
+      on  _CalendarLedger.Ledger                 = _RepresentativeLedger.Ledger
+      and _CalendarLedger.CompanyCode            = _RACompanyCodeSetting.CompanyCode
+      and _CalendarLedger.FiscalPeriodStartDate <= $session.system_date
+      and _CalendarLedger.FiscalPeriodEndDate   >= $session.system_date
+      and _CalendarLedger.IsSpecialPeriod       <> 'X'
+
+  association [1..1] to I_CompanyCode         as _CompanyCode
+    on $projection.CompanyCode = _CompanyCode.CompanyCode
+
+  association [1..1] to I_AccountingPrinciple as _AccountingPrinciple
+    on $projection.AccountingPrinciple = _AccountingPrinciple.AccountingPrinciple
+
+{
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+  key _RACompanyCodeSetting.CompanyCode,
+
+      @ObjectModel.foreignKey.association: '_AccountingPrinciple'
+  key _RACompanyCodeSetting.AccountingPrinciple,
+
+      _CalendarLedger.FiscalYearPeriod as FiscalYearCurrentPeriod,
+
+      _CalendarLedger.FiscalYear       as CurrentFiscalYear,
+
+      _CalendarLedger.FiscalPeriod     as CurrentFiscalPeriod,
+
+      _CompanyCode,
+
+      _AccountingPrinciple
+
+}
+```

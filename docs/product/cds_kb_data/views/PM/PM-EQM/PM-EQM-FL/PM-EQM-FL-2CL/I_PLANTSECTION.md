@@ -5,9 +5,17 @@ app_component: PM-EQM-FL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PLANTSECTION')/$value
 semantic_en: "Plant Section"
+semantic_vi: "Plant Section — CDS view giao diện dựa trên t357."
+keywords:
+  - "plant"
+  - "section"
+  - "person"
+  - "resp"
+  - "name"
+  - "phone"
 tags:
   - PM
   - component:PM-EQM-FL-2CL
@@ -18,7 +26,6 @@ tags:
   - PM-EQM
   - PM-EQM-FL
   - PM-EQM-FL-2CL
-  - metadata-only
 ---
 # I_PLANTSECTION
 
@@ -30,13 +37,66 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PLANTSECTION')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PLANTSECTION')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PlantSection` |  | |  |  | `CHAR(3)` | Plant Section |
-| `Plant` |  | |  |  | `CHAR(4)` | Plant |
-| `PlantSectionPersonRespName` |  | |  |  | `CHAR(14)` | Group of Employees Responsible for Company Area |
-| `PlantSectionPersonRespPhone` |  | |  |  | `CHAR(12)` | Phone Number of Employee Group Responsible for Company Area |
+| `PlantSection` | ✓ | |  | `beber` | `CHAR(3)` | Plant Section |
+| `Plant` | ✓ | |  | `werks` | `CHAR(4)` | Plant |
+| `PlantSectionPersonRespName` |  | |  | `fing` | `CHAR(14)` | Group of Employees Responsible for Company Area |
+| `PlantSectionPersonRespPhone` |  | |  | `tele` | `CHAR(12)` | Phone Number of Employee Group Responsible for Company Area |
+| `_Plant` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Plant` | `I_Plant` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PLANTSECTION')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PLANTSECTION')/$value)*
+
+```abap
+@EndUserText.label: 'Plant Section'
+@Analytics: { dataCategory: #DIMENSION, 
+  dataExtraction : { enabled: true , 
+  delta.changeDataCapture.automatic: true } 
+}
+@VDM.viewType: #BASIC
+@AbapCatalog.sqlViewName: 'IPLANTSECTION'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #CHECK
+@ObjectModel.representativeKey: 'PlantSection'
+@Search.searchable: true
+@Consumption.ranked: true
+@ClientHandling.algorithm: #SESSION_VARIABLE 
+@ObjectModel.usageType.dataClass: #CUSTOMIZING 
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #S
+@Metadata.allowExtensions: true
+
+@ObjectModel.sapObjectNodeType.name: 'PlantSection'
+
+@Metadata.ignorePropagatedAnnotations
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #EXTRACTION_DATA_SOURCE]
+
+define view I_PlantSection as select from t357 
+association[0..1] to I_Plant as _Plant on $projection.Plant = _Plant.Plant
+{
+  @Search: {defaultSearchElement: true, ranking: #HIGH }
+  key t357.beber as PlantSection,
+  
+  @ObjectModel.foreignKey.association: '_Plant'
+  @Search: {defaultSearchElement: true, ranking: #HIGH }
+  key t357.werks as Plant, 
+   
+  t357.fing as PlantSectionPersonRespName, 
+  t357.tele as PlantSectionPersonRespPhone,
+  
+  
+  _Plant
+}
+```

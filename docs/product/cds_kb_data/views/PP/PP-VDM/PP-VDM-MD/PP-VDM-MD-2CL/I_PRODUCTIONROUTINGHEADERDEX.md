@@ -5,9 +5,21 @@ app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTIONROUTINGHEADERDEX')/$value
 semantic_en: "Production Routing Header"
+semantic_vi: "Production Routing Header — CDS view giao diện dựa trên P_ProductionRoutingHeaderDEX."
+keywords:
+  - "production"
+  - "routing"
+  - "header"
+  - "bill"
+  - "operations"
+  - "type"
+  - "group"
+  - "internal"
+  - "vers"
+  - "version"
 tags:
   - PP
   - bo:material
@@ -18,7 +30,6 @@ tags:
   - PP-VDM-MD
   - PP-VDM-MD-2CL
   - product
-  - metadata-only
 ---
 # I_PRODUCTIONROUTINGHEADERDEX
 
@@ -30,16 +41,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTIONROUTINGHEADERDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTIONROUTINGHEADERDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BillOfOperationsType` |  | |  |  | `CHAR(1)` | Task List Type |
-| `ProductionRoutingGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
-| `ProductionRouting` |  | |  |  | `CHAR(2)` | Group Counter |
-| `ProductionRoutingInternalVers` |  | |  |  | `NUMC(8)` | Internal counter |
+| `BillOfOperationsType` | ✓ | |  |  | `CHAR(1)` | Task List Type |
+| `ProductionRoutingGroup` | ✓ | |  |  | `CHAR(8)` | Key for Task List Group |
+| `ProductionRouting` | ✓ | |  |  | `CHAR(2)` | Group Counter |
+| `ProductionRoutingInternalVers` | ✓ | |  |  | `NUMC(8)` | Internal counter |
 | `BillOfOperationsVersion` |  | |  |  | `CHAR(4)` | Routing Version |
 | `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
 | `IsImplicitlyDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
@@ -90,3 +101,131 @@ tags:
 | `OperationUnit` |  | |  |  | `UNIT(3)` | Unit of measure for activity |
 | `OpQtyToBaseQtyNmrtr` |  | |  |  | `DEC(5)` | Numerator for Converting Routing and Operation UoM |
 | `OpQtyToBaseQtyDnmntr` |  | |  |  | `DEC(5)` | Denominator for Converting Routing and Operation UoM |
+| `_ProductionRouting` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ProductionRouting` | `I_ProductionRoutingDEX` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTIONROUTINGHEADERDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTIONROUTINGHEADERDEX')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@VDM.viewType: #BASIC
+@ObjectModel.representativeKey: 'ProductionRoutingInternalVers'
+@EndUserText.label: 'Production Routing Header'
+@ObjectModel.usageType: { serviceQuality: #A, sizeCategory: #M, dataClass: #MASTER }
+@Analytics: {
+dataCategory: #DIMENSION,
+    dataExtraction: {
+       enabled: true,
+       delta.changeDataCapture: {
+       automatic: true
+       }
+     },
+internalName: #LOCAL
+}
+@ObjectModel.sapObjectNodeType.name: 'ProductionRoutingHeader'
+@Metadata.allowExtensions: true
+@ObjectModel.supportedCapabilities:[#CDS_MODELING_ASSOCIATION_TARGET,#ANALYTICAL_DIMENSION,#EXTRACTION_DATA_SOURCE]
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+
+define view entity I_ProductionRoutingHeaderDEX
+  as select from P_ProductionRoutingHeaderDEX
+
+  association [1..1] to I_ProductionRoutingDEX      as _ProductionRouting  on  $projection.BillOfOperationsType   = _ProductionRouting.BillOfOperationsType
+                                                                           and $projection.ProductionRoutingGroup = _ProductionRouting.ProductionRoutingGroup
+                                                                           and $projection.ProductionRouting      = _ProductionRouting.ProductionRouting
+
+//  association [0..*] to I_ProdnRoutingMatlAssgmtDEX as _MaterialAssignment on  $projection.BillOfOperationsType   =  _MaterialAssignment.BillOfOperationsType
+//                                                                           and $projection.ProductionRoutingGroup =  _MaterialAssignment.ProductionRoutingGroup
+//                                                                           and $projection.ProductionRouting      =  _MaterialAssignment.ProductionRouting
+//                                                                           and $projection.ValidityEndDate        >= _MaterialAssignment.ValidityStartDate
+//                                                                           and $projection.ValidityStartDate      <= _MaterialAssignment.ValidityEndDate
+
+//  association [1..*] to I_ProdnRoutingSequenceDEX   as _Sequence           on  $projection.BillOfOperationsType   =  _Sequence.BillOfOperationsType
+//                                                                           and $projection.ProductionRoutingGroup =  _Sequence.ProductionRoutingGroup
+//                                                                           and $projection.ProductionRouting      =  _Sequence.ProductionRouting
+//                                                                           and $projection.ValidityEndDate        >= _Sequence.ValidityStartDate
+//                                                                           and $projection.ValidityStartDate      <= _Sequence.ValidityEndDate
+{
+      @ObjectModel.foreignKey.association: '_BillOfOperationsType'
+  key BillOfOperationsType,
+      @ObjectModel.foreignKey.association: '_BillOfOperationsGroup'
+  key ProductionRoutingGroup,
+      @ObjectModel.foreignKey.association: '_ProductionRouting'
+  key ProductionRouting,
+  key ProductionRoutingInternalVers,
+      BillOfOperationsVersion,
+      IsDeleted,
+      IsImplicitlyDeleted,
+      WorkCenterTypeCode,
+      WorkCenterInternalID,
+      @Semantics.text: true
+      BillOfOperationsDesc,
+      LongTextLanguageCode,
+      Plant,
+      BillOfOperationsUsage,
+      BillOfOperationsStatus,
+      BillOfOperationsProfile,
+      ResponsiblePlannerGroup,
+      @Semantics.quantity.unitOfMeasure: 'BillOfOperationsUnit'
+      MinimumLotSizeQuantity,
+      @Semantics.quantity.unitOfMeasure: 'BillOfOperationsUnit'
+      MaximumLotSizeQuantity,
+      BillOfOperationsUnit,
+      ReplacedBillOfOperations,
+      IsMarkedForDeletion,
+      LineHierarchyInternalID,
+      InspSubsetFieldCombination,
+      SmplDrawingProcedure,
+      SmplDrawingProcedureVersion,
+      InspectionLotDynamicLevel,
+      InspLotDynamicRule,
+      InspLotDynamicCriteria,
+      MaintenanceStrategy,
+      InspExternalNumberingOfValues,
+      MaintenancePlanningPlant,
+      Assembly,
+      OperationSystemCondition,
+      ReferenceElement,
+      ControllingArea,
+      WBSElementInternalID,
+      BillOfOperationIsConfigurable,
+      @Semantics.systemDate.createdAt: true
+      CreationDate,
+      @Semantics.user.createdBy: true
+      CreatedByUser,
+      @Semantics.systemDate.lastChangedAt: true
+      LastChangeDate,
+      @Semantics.user.lastChangedBy: true
+      LastChangedByUser,
+      ChangedDateTime,
+      ChangeNumber,
+      ValidityStartDate,
+      ValidityEndDate,
+      LastReorganizationDate,
+      LastUsageDate,
+      NumberOfUsages,
+      EffectivityType,
+      TaskListIsHierarchical,
+      @Semantics.quantity.unitOfMeasure: 'OperationUnit'
+      OperationReferenceQuantity,
+      OperationUnit,
+      OpQtyToBaseQtyNmrtr,
+      OpQtyToBaseQtyDnmntr,
+      /* Associations */
+      _ProductionRouting,
+      _BillOfOperationsGroup,
+      _BillOfOperationsType
+//      _Sequence,
+//      _MaterialAssignment
+}
+```

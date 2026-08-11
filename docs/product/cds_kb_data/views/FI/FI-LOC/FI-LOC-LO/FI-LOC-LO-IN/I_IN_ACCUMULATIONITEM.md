@@ -5,9 +5,25 @@ app_component: FI-LOC-LO-IN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_IN_ACCUMULATIONITEM')/$value
 semantic_en: "This CDS view provides the prerequisites for answering the following business questions against a Seller ID, Buyer ID and Accounting Document Tax Item combination: What is the previous and current sales accumulation amount? What is the previous and current tax collected at source amount? What is the tax base amount? What is the tax adjustment amount? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "India Tax Collection Accumulation Detail — CDS view giao diện dựa trên I_IN_AccumulationItemData."
+keywords:
+  - "india"
+  - "tax"
+  - "collection"
+  - "accumulation"
+  - "detail"
+  - "threshold"
+  - "amount"
+  - "category"
+  - "seller"
+  - "buyer"
+  - "identification"
+  - "type"
+  - "number"
+  - "customer"
 tags:
   - FI
   - account
@@ -20,7 +36,6 @@ tags:
   - interface-view
   - lob:finance
   - lob:logistics general
-  - metadata-only
 ---
 # I_IN_ACCUMULATIONITEM
 
@@ -32,19 +47,19 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_IN_ACCUMULATIONITEM')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_IN_ACCUMULATIONITEM')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `IN_ThresholdAmountCategory` |  | |  |  | `CHAR(4)` | Category for Threshold amount |
-| `IN_SellerPan` |  | |  |  | `CHAR(10)` | Permanent account number - Company code |
-| `IN_BuyerIdentificationType` |  | |  |  | `CHAR(2)` | Type of ID Number |
-| `IN_BuyerIdentificationNumber` |  | |  |  | `CHAR(40)` | Identification Number |
-| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
-| `IN_ThresholdValidFromDate` |  | |  |  | `DATS(8)` | Valid From Date |
-| `IN_AccumulationSequenceNumber` |  | |  |  | `NUMC(8)` | Sequence number for accumulation |
+| `IN_ThresholdAmountCategory` | ✓ | |  |  | `CHAR(4)` | Category for Threshold amount |
+| `IN_SellerPan` | ✓ | |  |  | `CHAR(10)` | Permanent account number - Company code |
+| `IN_BuyerIdentificationType` | ✓ | |  |  | `CHAR(2)` | Type of ID Number |
+| `IN_BuyerIdentificationNumber` | ✓ | |  |  | `CHAR(40)` | Identification Number |
+| `Customer` | ✓ | |  |  | `CHAR(10)` | Customer Number |
+| `IN_ThresholdValidFromDate` | ✓ | |  |  | `DATS(8)` | Valid From Date |
+| `IN_AccumulationSequenceNumber` | ✓ | |  |  | `NUMC(8)` | Sequence number for accumulation |
 | `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
 | `AccountingDocument` |  | |  |  | `CHAR(10)` | Document Number of an Accounting Document |
 | `PostingFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
@@ -67,3 +82,82 @@ tags:
 | `IN_CertificateCategory` |  | |  |  | `CHAR(10)` | Certificate Category |
 | `IN_CertificateNumber` |  | |  |  | `CHAR(30)` | Certificate Number |
 | `TransactionCurrency` |  | |  |  | `CUKY(5)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_IN_ACCUMULATIONITEM')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_IN_ACCUMULATIONITEM')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IACCUMITEM'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #MANDATORY
+@AccessControl.personalData.blocking: #('TRANSACTIONAL_DATA')
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@VDM.viewType: #COMPOSITE
+@ObjectModel.usageType: {
+    sizeCategory: #L,
+    serviceQuality: #C,
+    dataClass: #MIXED }
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ]
+@ObjectModel.modelingPattern: #NONE
+@EndUserText.label: 'India Tax Collection Accumulation Detail'
+
+define view I_IN_AccumulationItem
+  with parameters
+    P_IN_ThresholdAmountCategory : j_1ig_thld_cat,
+    P_CompanyCode                : bukrs,
+    P_PostingFiscalYear          : gjahr
+
+  as select from I_IN_AccumulationItemData
+
+{
+  key IN_ThresholdAmountCategory,
+  key IN_SellerPan,
+  key IN_BuyerIdentificationType,
+  key IN_BuyerIdentificationNumber,
+  key Customer,
+  key IN_ThresholdValidFromDate,
+  key IN_AccumulationSequenceNumber,
+      CompanyCode,
+      AccountingDocument,
+      PostingFiscalYear,
+      AccountingDocumentItem,
+      AccountingDocumentType,
+      PostingDate,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      IN_PreviousAccumulationAmount,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      IN_PrevTxColltdAtSrceAmt,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      IN_ItemAmount,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      IN_TaxCollectedAtSourceBaseAmt,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      IN_TxColltdAtSrceCndnRateAmt,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      IN_TaxCollectedAtSourceAmount,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      IN_CurrentAccumulationAmount,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      IN_CurTxColltdSrceAmt,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      IN_AdjustmentAmount,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      IN_NetAdvanceAmount,
+      IN_TaxAdjustmentDocumentNumber,
+      IN_JournalVoucherStatus,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      IN_ThresholdAmount,
+      IN_CertificateCategory,
+      IN_CertificateNumber,
+      @EndUserText.label: 'TransactionCurrency'
+      TransactionCurrency
+
+}
+
+where
+      IN_ThresholdAmountCategory = :P_IN_ThresholdAmountCategory
+  and CompanyCode                = :P_CompanyCode
+  and PostingFiscalYear          = :P_PostingFiscalYear
+```

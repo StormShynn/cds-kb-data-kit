@@ -5,9 +5,24 @@ app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ETOPROJECTITEMCUBE')/$value
 semantic_en: "Engineer To Order Project Item - Cube"
+semantic_vi: "Engineer To Order Project Item - Cube — CDS view giao diện dựa trên P_ETOProjectActItem."
+keywords:
+  - "engineer"
+  - "order"
+  - "project"
+  - "item"
+  - "cube"
+  - "ledger"
+  - "source"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
 tags:
   - CO
   - bo:project
@@ -20,7 +35,6 @@ tags:
   - lob:finance
   - order
   - project
-  - metadata-only
 ---
 # I_ETOPROJECTITEMCUBE
 
@@ -32,19 +46,19 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ETOPROJECTITEMCUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ETOPROJECTITEMCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `SourceLedger` | ✓ | |  |  | `CHAR(2)` | Source Ledger |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` | ✓ | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role Field |
 | `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
 | `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
 | `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
@@ -114,3 +128,358 @@ tags:
 | `CostSourceUnit` |  | |  |  | `UNIT(3)` | Cost Source Unit |
 | `ValuationQuantity` |  | |  |  | `QUAN(23)` | Valuation Quantity |
 | `ControllingDebitCreditCode` |  | |  |  | `CHAR(1)` | CO Debit/Credit Indicator |
+| `_CurrencyField` | | ✓ | | | | |
+| `_OrdCategory` | | ✓ | | | | |
+| `_AssignedOrder` | | ✓ | | | | |
+| `_ControllingDebitCreditCode` | | ✓ | | | | |
+| `_ProjectManagerBP` | | ✓ | | | | |
+| `_CurrentCostCenter` | | ✓ | | | | |
+| `_ServiceDocument` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_CurrentProfitCenter` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_CostSourceUnit` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_Project` | | ✓ | | | | |
+| `_ProjectExternalID` | | ✓ | | | | |
+| `_WBSElementExternalID` | | ✓ | | | | |
+| `_ProjectBasicData` | | ✓ | | | | |
+| `_SourceLedger` | | ✓ | | | | |
+| `_JournalEntry` | | ✓ | | | | |
+| `_CustomerSupplierCountry` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_ObjectType` | | ✓ | | | | |
+| `_SolutionOrder` | | ✓ | | | | |
+| `_ServiceDocumentTypeNew` | | ✓ | | | | |
+| `_ServiceDocumentNew` | | ✓ | | | | |
+| `_ServiceDocumentItemNew` | | ✓ | | | | |
+| `_ServiceContractNew` | | ✓ | | | | |
+| `_ServiceContractItemNew` | | ✓ | | | | |
+| `_ServiceContractTypeNew` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_SoldProduct` | | ✓ | | | | |
+| `_SoldProductGroup` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_OriginProfitCenter` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_OldGLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_LedgerFiscalYearForVariant` | | ✓ | | | | |
+| `_LedgerFiscalYearForLedger` | | ✓ | | | | |
+| `_BillingWBSElementExternalID` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CurrencyField` | `I_PrjMargAnlysRptCrcyFld` | [0..1] |
+| `_Extension_acdoca` | `E_JournalEntryItem` | [1..1] |
+| `_OrdCategory` | `I_AssignedOrderCategory` | [0..1] |
+| `_AssignedOrder` | `I_AssignedOrderAndCategory` | [0..1] |
+| `_ControllingDebitCreditCode` | `I_ControllingDebitCreditCode` | [0..1] |
+| `_ProjectManagerBP` | `I_BusinessPartner` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ETOPROJECTITEMCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ETOPROJECTITEMCUBE')/$value)*
+
+```abap
+@Analytics.internalName:#LOCAL
+@VDM.viewType: #COMPOSITE
+@AccessControl.authorizationCheck:  #MANDATORY
+@Analytics.dataCategory: #CUBE
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.modelingPattern: #ANALYTICAL_CUBE
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_PROVIDER,
+                                      #SQL_DATA_SOURCE,
+                                      #CDS_MODELING_DATA_SOURCE ]
+@AccessControl.personalData.blocking: #REQUIRED
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations: true
+@Consumption.dbHints: ['USE_HEX_PLAN']
+@EndUserText.label: 'Engineer To Order Project Item - Cube' 
+define view entity I_ETOProjectItemCube 
+  as select from P_ETOProjectActItem as P_ETOProjectActItem
+//  association [0..1] to I_PersonWorkAgreement_1     as _PrjManagerNum    on  $projection.projectmanagerworkagreement = _PrjManagerNum.PersonWorkAgreement
+//  association [0..1] to I_PersonWorkAgreement_1     as _PrjManager       on  $projection.personworkagreement = _PrjManager.PersonWorkAgreement
+  association [0..1] to I_PrjMargAnlysRptCrcyFld    as _CurrencyField    on  $projection.CurrencyField = _CurrencyField.CurrencyField
+  association [1..1] to E_JournalEntryItem          as _Extension_acdoca on  $projection.SourceLedger       = _Extension_acdoca.SourceLedger
+                                                                         and $projection.CompanyCode        = _Extension_acdoca.CompanyCode
+                                                                         and $projection.FiscalYear         = _Extension_acdoca.FiscalYear
+                                                                         and $projection.AccountingDocument = _Extension_acdoca.AccountingDocument
+                                                                         and $projection.LedgerGLLineItem   = _Extension_acdoca.LedgerGLLineItem
+  association [0..1] to I_AssignedOrderCategory    as _OrdCategory    on  $projection.ETOOrdCategory = _OrdCategory.ETOOrdCategory                                                                         
+  association [0..1] to I_AssignedOrderAndCategory    as _AssignedOrder  on  $projection.AssignedOrderNumber = _AssignedOrder.AssignedOrderNumber
+                                                                                    and  $projection.ETOOrdCategory = _AssignedOrder.ETOOrdCategory
+  association [0..1] to I_ControllingDebitCreditCode as _ControllingDebitCreditCode  on  $projection.ControllingDebitCreditCode = _ControllingDebitCreditCode.ControllingDebitCreditCode  
+association [0..1] to I_BusinessPartner              as _ProjectManagerBP            on  $projection.ProjectManager = _ProjectManagerBP.BusinessPartner
+  //  association [1..1] to E_FinancialPlanningEntryItem as _Extension_acdocp on  $projection.FinancialPlanningReqTransSqnc = _Extension_acdocp.FinancialPlanningReqTransSqnc
+  //                                                                          and $projection.FinancialPlanningDataPacket   = _Extension_acdocp.FinancialPlanningDataPacket
+  //                                                                          and $projection.FinancialPlanningEntryItem    = _Extension_acdocp.FinancialPlanningEntryItem
+
+
+{
+      @ObjectModel.foreignKey.association: '_Ledger'
+      @Environment.sql.passValue: true
+  key Ledger,
+      @ObjectModel.foreignKey.association: '_SourceLedger'
+  key SourceLedger,
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+      @Environment.sql.passValue: true
+  key CompanyCode,
+      @ObjectModel.foreignKey.association: '_FiscalYear'
+      @Environment.sql.passValue: true
+  key FiscalYear,
+      @ObjectModel.foreignKey.association: '_JournalEntry'
+  key AccountingDocument,
+  key LedgerGLLineItem,
+
+      @ObjectModel.foreignKey.association: '_CurrencyField'
+      @Environment.sql.passValue: true
+  key CurrencyField,
+
+      @ObjectModel.foreignKey.association: '_LedgerFiscalYearForLedger'
+      //@Semantics.fiscal.year: true
+      LedgerFiscalYear,
+
+      @Semantics.fiscal.yearVariant: true
+      @ObjectModel.foreignKey.association: '_FiscalYearVariant'
+      FiscalYearVariant,
+      @Semantics.fiscal.period: true
+      FiscalPeriod,
+      @Semantics.fiscal.yearPeriod: true
+      FiscalYearPeriod,
+////////////    
+      @ObjectModel.foreignKey.association: '_AssignedOrder' 
+      @Environment.sql.passValue: true         
+      AssignedOrderNumber,
+//      cast(cast (P_ETOProjectActItem.AssignedOrderNumber as abap.char(12)) as daufn preserving type) as AssignedOrderNumber,      
+      @ObjectModel.foreignKey.association: '_OrdCategory'  
+      @Environment.sql.passValue: true          
+      ETOOrdCategory,
+
+///////////      
+      
+      @ObjectModel.foreignKey.association: '_ServiceContractTypeNew'
+      ServiceContractType,
+      @ObjectModel.foreignKey.association: '_ServiceContractNew'
+      ServiceContract,
+      @ObjectModel.foreignKey.association: '_ServiceContractItemNew'
+      ServiceContractItem,
+      @ObjectModel.foreignKey.association: '_SolutionOrder'
+      BusinessSolutionOrder,
+      BusinessSolutionOrderItem,
+      ProviderContract,
+      ProviderContractItem,
+      @ObjectModel.foreignKey.association: '_SoldProduct'
+      SoldProduct,
+      @ObjectModel.foreignKey.association: '_ObjectType'
+      AccountAssignmentType,
+
+      @ObjectModel.foreignKey.association: '_Project'
+      Project,
+
+      ProjectInternalID,
+
+      @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query: {axis: #FREE}
+      @EndUserText.label: 'Project Definition'
+      @ObjectModel.foreignKey.association: '_ProjectExternalID'
+      ProjectExternalID,
+
+      ProjectProfileCode,
+
+      @ObjectModel.foreignKey.association: '_ProfitCenter'
+      ProfitCenter,
+
+      @ObjectModel.foreignKey.association: '_OriginProfitCenter'
+      OriginProfitCenter,
+
+      @ObjectModel.foreignKey.association: '_ServiceDocumentTypeNew'
+      ServiceDocumentType,
+      @ObjectModel.foreignKey.association: '_ServiceDocumentNew'
+      ServiceDocument,
+      @ObjectModel.foreignKey.association: '_ServiceDocumentItemNew'
+      ServiceDocumentItem,
+      @ObjectModel.foreignKey.association: '_BillToParty'
+      BillToParty,
+
+      @ObjectModel.foreignKey.association: '_Customer'
+      Customer,
+      @ObjectModel.foreignKey.association: '_CustomerGroup'
+      CustomerGroup,
+      @ObjectModel.foreignKey.association: '_GLAccountInChartOfAccounts'
+      GLAccount,
+      @ObjectModel.foreignKey.association: '_OldGLAccountInChartOfAccounts'
+      OldGLAccount,
+
+//      @ObjectModel.foreignKey.association: '_PurchasingDocument'
+      PurchasingDocument,
+      
+      CustomerSupplierIndustry,
+      @ObjectModel.foreignKey.association: '_SoldProductGroup'
+      SoldProductGroup,
+      @ObjectModel.foreignKey.association: '_SalesDocument'
+      SalesDocument,
+      @ObjectModel.foreignKey.association: '_SalesOrganization'
+      SalesOrganization,
+      @ObjectModel.foreignKey.association: '_ShipToParty'
+      ShipToParty,
+      @ObjectModel.foreignKey.association: '_ChartOfAccounts'
+      ChartOfAccounts,
+      @ObjectModel.foreignKey.association: '_ControllingArea'
+      ControllingArea,
+
+      @ObjectModel.foreignKey.association: '_DistributionChannel'
+      DistributionChannel,
+      OrganizationDivision,
+
+      @ObjectModel.foreignKey.association: '_FunctionalArea'
+      FunctionalArea,
+      @ObjectModel.foreignKey.association: '_Plant'
+      Plant,
+      @ObjectModel.foreignKey.association: '_Product'      
+      Product,      
+      @ObjectModel.foreignKey.association: '_CustomerSupplierCountry'
+      CustomerSupplierCountry,
+
+      WBSElement,
+      WBSElementInternalID,
+      @ObjectModel.foreignKey.association: '_WBSElementExternalID'
+      WBSElementExternalID,
+      @ObjectModel.foreignKey.association: '_SalesDistrict'
+      SalesDistrict,
+      
+      Segment,
+
+      OrderCategory,
+//      @ObjectModel.foreignKey.association: '_Order'
+      OrderID,
+      
+      OrderType,
+
+      @ObjectModel.foreignKey.association: '_BillingWBSElementExternalID'
+      BillingWBSElementExternalID,
+
+      // Field for access controls  //
+      CostCenter,
+      _CurrentCostCenter,
+      _ServiceDocument,
+      AssetClass,
+      Supplier,
+      _Supplier,
+      AccountingDocumentType,
+      _AccountingDocumentType,
+      _CurrentProfitCenter,
+      FinancialAccountType,
+      ValuationArea,
+      
+//      @ObjectModel.foreignKey.association: '_PrjManager'
+//      ProjectManagerWorkAgreement as PersonWorkAgreement,
+//      @ObjectModel.foreignKey.association: '_PrjManager'
+//      _PrjManagerNum.PersonWorkAgreement,
+//      _PrjManager,
+      @ObjectModel.foreignKey.association: '_ProjectManagerBP'
+      ProjectManager,
+      @EndUserText.label: 'Posting Date'
+      PostingDate,
+
+      @ObjectModel.foreignKey.association: '_DebitCreditCode'
+      DebitCreditCode,
+      _DebitCreditCode,
+
+      IsCommitment,
+
+      Currency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'Currency'} }
+      AmountInDisplayCurrency,
+
+      @ObjectModel.foreignKey.association: '_BaseUnit'
+      BaseUnit,
+      @Aggregation.default: #SUM
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      Quantity,
+
+      @ObjectModel.foreignKey.association: '_CostSourceUnit'
+      CostSourceUnit,
+
+      @Aggregation.default: #SUM
+      @Semantics.quantity.unitOfMeasure: 'CostSourceUnit'
+      ValuationQuantity,
+
+      @ObjectModel.foreignKey.association: '_ControllingDebitCreditCode'
+      ControllingDebitCreditCode,
+      ///////////////////////////////////////////////////////////////////////
+      // Associations
+      ///////////////////////////////////////////////////////////////////////
+      _CurrencyField,
+      _BaseUnit,
+      _CostSourceUnit,
+      _Order,
+      _Project,
+      _ProjectExternalID,
+      _WBSElementExternalID,
+      _ProjectBasicData,
+      _SourceLedger,
+      _JournalEntry,
+      _CustomerSupplierCountry,
+      _CompanyCode,
+      _FiscalYear,
+      _Ledger,
+      _ObjectType,
+      _SolutionOrder,
+      _ServiceDocumentTypeNew,
+      _ServiceDocumentNew,
+      _ServiceDocumentItemNew,
+      _ServiceContractNew,
+      _ServiceContractItemNew,
+      _ServiceContractTypeNew,
+      _SalesDocument,
+      _Customer,
+      _CustomerGroup,
+      _ShipToParty,
+      _SoldProduct,
+      _SoldProductGroup,
+      _ProfitCenter,
+      _OriginProfitCenter,
+      _SalesOrganization,
+      _BillToParty,
+      _ChartOfAccounts,
+      _ControllingArea,
+      _DistributionChannel,
+      _FunctionalArea,
+      _OldGLAccountInChartOfAccounts,
+      _GLAccountInChartOfAccounts,
+      _Plant,
+      _Product,
+      _SalesDistrict,
+      _FiscalYearVariant,
+      _LedgerFiscalYearForVariant, //Don't use this association
+      _LedgerFiscalYearForLedger,
+//      _PurchasingDocument,
+      _BillingWBSElementExternalID,
+      _OrdCategory,
+      _AssignedOrder,
+      _ControllingDebitCreditCode,
+      _ProjectManagerBP
+}
+```

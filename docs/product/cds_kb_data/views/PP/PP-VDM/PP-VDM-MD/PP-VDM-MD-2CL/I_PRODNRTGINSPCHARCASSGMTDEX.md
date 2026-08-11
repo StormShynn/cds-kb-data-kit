@@ -5,9 +5,23 @@ app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNRTGINSPCHARCASSGMTDEX')/$value
 semantic_en: "Prodn Rtg Insp Charcs Assignment"
+semantic_vi: "Prodn Rtg Insp Charcs Assignment — CDS view giao diện dựa trên P_ProdnRtgInspCharcsAssgmtDEX."
+keywords:
+  - "prodn"
+  - "rtg"
+  - "insp"
+  - "charcs"
+  - "assignment"
+  - "bill"
+  - "operations"
+  - "type"
+  - "production"
+  - "routing"
+  - "group"
+  - "characteristic"
 tags:
   - PP
   - component:PP-VDM-MD-2CL
@@ -16,7 +30,6 @@ tags:
   - PP-VDM
   - PP-VDM-MD
   - PP-VDM-MD-2CL
-  - metadata-only
 ---
 # I_PRODNRTGINSPCHARCASSGMTDEX
 
@@ -28,18 +41,18 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNRTGINSPCHARCASSGMTDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNRTGINSPCHARCASSGMTDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BillOfOperationsType` |  | |  |  | `CHAR(1)` | Task List Type |
-| `ProductionRoutingGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
-| `BOOCharacteristicType` |  | |  |  | `CHAR(1)` | Characteristic Type |
-| `ProductionRoutingOpIntID` |  | |  |  | `NUMC(8)` | Number of the Task List Node |
-| `BOOCharacteristic` |  | |  |  | `NUMC(4)` | Inspection Characteristic Number |
-| `BOOCharacteristicVersion` |  | |  |  | `NUMC(8)` | Internal counter |
+| `BillOfOperationsType` | ✓ | |  |  | `CHAR(1)` | Task List Type |
+| `ProductionRoutingGroup` | ✓ | |  |  | `CHAR(8)` | Key for Task List Group |
+| `BOOCharacteristicType` | ✓ | |  |  | `CHAR(1)` | Characteristic Type |
+| `ProductionRoutingOpIntID` | ✓ | |  |  | `NUMC(8)` | Number of the Task List Node |
+| `BOOCharacteristic` | ✓ | |  |  | `NUMC(4)` | Inspection Characteristic Number |
+| `BOOCharacteristicVersion` | ✓ | |  |  | `NUMC(8)` | Internal counter |
 | `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
 | `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-to date |
 | `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
@@ -134,3 +147,278 @@ tags:
 | `BOOCharcSourceCharc` |  | |  |  | `NUMC(4)` | Source Characteristic of Characteristic Group Division |
 | `BOOCharcGroupDivision` |  | |  |  | `NUMC(4)` | Internal Division ID |
 | `BillOfOperationsVersion` |  | |  |  | `CHAR(4)` | Routing Version |
+| `_ProductionRouting` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BOOCharacteristic` | | ✓ | | | | |
+| `_BOOOperationInternalID` | | ✓ | | | | |
+| `_ProdnRtgCharacteristicType` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ProductionRouting` | `I_ProductionRoutingDEX` | [1..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNRTGINSPCHARCASSGMTDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNRTGINSPCHARCASSGMTDEX')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@AccessControl.personalData.blocking: #('TRANSACTIONAL_DATA')
+@VDM.viewType: #BASIC
+@ObjectModel.representativeKey: 'BOOCharacteristicVersion'
+@ObjectModel.usageType: { serviceQuality: #A, sizeCategory: #L, dataClass: #MASTER }
+@Analytics: {
+dataCategory: #DIMENSION,
+    dataExtraction: {
+       enabled: true,
+       delta.changeDataCapture: {
+          mapping: [
+          {
+          table: 'PLMK',
+          role: #MAIN,
+          viewElement: [ 'BillOfOperationsType','ProductionRoutingGroup','BOOCharacteristicType','ProductionRoutingOpIntID','BOOCharacteristic','BOOCharacteristicVersion' ],
+          tableElement: [ 'PLNTY','PLNNR','KZEINSTELL','PLNKN','MERKNR','ZAEHL' ],
+          filter: [{ operator: #EQ,tableElement: 'kzeinstell',value: ' '  }]
+          }
+          ]
+       }
+     },
+internalName: #LOCAL
+}
+@ObjectModel.sapObjectNodeType.name: 'ProductionRtgInspCharcsAssgmt'
+@Metadata.allowExtensions: true
+@ObjectModel.supportedCapabilities:[#CDS_MODELING_ASSOCIATION_TARGET,#ANALYTICAL_DIMENSION,#EXTRACTION_DATA_SOURCE]
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+@EndUserText.label: 'Prodn Rtg Insp Charcs Assignment'
+
+define view entity I_ProdnRtgInspCharcAssgmtDEX
+  as select from P_ProdnRtgInspCharcsAssgmtDEX
+
+  association [1..*] to I_ProductionRoutingDEX       as _ProductionRouting      on  $projection.BillOfOperationsType   = _ProductionRouting.BillOfOperationsType
+                                                                                and $projection.ProductionRoutingGroup = _ProductionRouting.ProductionRoutingGroup
+
+//  association [1..*] to I_ProductionRoutingHeaderDEX as _ProdnRtgHeader         on  $projection.BillOfOperationsType   =  _ProdnRtgHeader.BillOfOperationsType
+//                                                                                and $projection.ProductionRoutingGroup =  _ProdnRtgHeader.ProductionRoutingGroup
+//                                                                                and $projection.ValidityEndDate        >= _ProdnRtgHeader.ValidityStartDate
+//
+//  association [1..*] to I_ProdnRoutingOpSubordOpDEX  as _ProdnRoutingOpSubordOp on  $projection.BillOfOperationsType     =  _ProdnRoutingOpSubordOp.BillOfOperationsType
+//                                                                                and $projection.ProductionRoutingGroup   =  _ProdnRoutingOpSubordOp.ProductionRoutingGroup
+//                                                                                and $projection.ProductionRoutingOpIntID =  _ProdnRoutingOpSubordOp.ProductionRoutingOpIntID
+//                                                                                and $projection.ValidityEndDate          >= _ProdnRoutingOpSubordOp.ValidityStartDate
+//                                                                                and $projection.ValidityStartDate        <= _ProdnRoutingOpSubordOp.ValidityEndDate
+//                                                                                and $projection.ValidityStartDate        <= _ProdnRoutingOpSubordOp.ValidityEndDate
+{
+      @ObjectModel.foreignKey.association: '_BillOfOperationsType'
+  key BillOfOperationsType,
+      @ObjectModel.foreignKey.association: '_BillOfOperationsGroup'
+  key ProductionRoutingGroup,
+      @ObjectModel.foreignKey.association: '_ProdnRtgCharacteristicType'
+  key BOOCharacteristicType,
+      @ObjectModel.foreignKey.association: '_BOOOperationInternalID'
+  key ProductionRoutingOpIntID,
+      @ObjectModel.foreignKey.association: '_BOOCharacteristic'
+  key BOOCharacteristic,
+  key BOOCharacteristicVersion,
+      ValidityStartDate,
+      ValidityEndDate,
+      // --------------------------------------------------------------------------------------------------------
+      // General Data
+      // --------------------------------------------------------------------------------------------------------
+      ChangeNumber,
+      IsDeleted,
+
+      // Reference to inspection method (table QMTB)
+      InspectionMethodPlant,
+      InspectionMethod,
+      InspectionMethodVersion,
+      InspSpecImportanceCode,
+      InspectorQualification,
+      // Assigned Test Equipment (Item counter for production resources/tools)
+      BOOOperationPRTInternalID,
+
+      // --------------------------------------------------------------------------------------------------------
+      //    Reference to Inspection Specification Version (Inspection Characteristic Master, table QPMK)
+      // --------------------------------------------------------------------------------------------------------
+      InspectionSpecificationPlant,
+      InspectionSpecification,
+      InspectionSpecificationVersion,
+      @Semantics.booleanIndicator: true
+      BOOCharcHasInspSpecReference,
+
+      // --------------------------------------------------------------------------------------------------------
+      // Control indicators
+      // --------------------------------------------------------------------------------------------------------
+      // STEUERKZ is a string consisting of several flags (characters of length 1) each having an own
+      // semantic (Control indicator, see DDIC structure QMKST) which have to are mapped to one single field each
+      InspSpecControlIndicators, // Publish structure as a whole
+
+
+      // --------------------------------------------------------------------------------------------------------
+      // Quantitative Data/ Tolerances
+      // --------------------------------------------------------------------------------------------------------
+      InspToleranceSpecification,
+      InspSpecDecimalPlaces,
+      InspectionSpecificationUnit,
+      @Semantics.quantity.unitOfMeasure: 'InspectionSpecificationUnit'
+      InspSpecTargetValue,
+      @Semantics.booleanIndicator: true
+      InspSpecHasTargetValue,
+
+      // Tolerance
+      @Semantics.quantity.unitOfMeasure: 'InspectionSpecificationUnit'
+      InspSpecUpperLimit,
+      @Semantics.quantity.unitOfMeasure: 'InspectionSpecificationUnit'
+      InspSpecLowerLimit,
+      @Semantics.booleanIndicator: true
+      InspSpecHasUpperLimit,
+      @Semantics.booleanIndicator: true
+      InspSpecHasLowerLimit,
+
+      // Plausibility
+      @Semantics.quantity.unitOfMeasure: 'InspectionSpecificationUnit'
+      InspSpecUpperPlausibilityLimit,
+      @Semantics.booleanIndicator: true
+      InspSpecHasUprPlausibilityLmt,
+      @Semantics.quantity.unitOfMeasure: 'InspectionSpecificationUnit'
+      InspSpecLowerPlausibilityLimit,
+      @Semantics.booleanIndicator: true
+      InspSpecHasLowrPlausibilityLmt,
+
+      // Additional Pairs of Limits
+      @Semantics.quantity.unitOfMeasure: 'InspectionSpecificationUnit'
+      InspSpecFirstUpperSpecLimit,
+      @Semantics.booleanIndicator: true
+      InspSpecHasFirstUpperSpecLimit,
+      @Semantics.quantity.unitOfMeasure: 'InspectionSpecificationUnit'
+      InspSpecFirstLowerSpecLimit,
+      @Semantics.booleanIndicator: true
+      InspSpecHasFirstLowerSpecLimit,
+      @Semantics.quantity.unitOfMeasure: 'InspectionSpecificationUnit'
+      InspSpecSecondUpperSpecLimit,
+      @Semantics.booleanIndicator: true
+      InspSpecHasSecondUprSpecLimit,
+      @Semantics.quantity.unitOfMeasure: 'InspectionSpecificationUnit'
+      InspSpecSecondLowerSpecLimit,
+      @Semantics.booleanIndicator: true
+      InspSpecHasSecondLowrSpecLimit,
+
+      // Tolerance Change
+      // Validity
+      InspSpecToleranceChgValidFrom,
+      InspSpecToleranceChgValidTo,
+
+      // Spec. Limits
+      @Semantics.quantity.unitOfMeasure: 'InspectionSpecificationUnit'
+      InspSpecUpperSpecLimitChange,
+      @Semantics.booleanIndicator: true
+      InspSpecHasUprSpecLimitChange,
+      @Semantics.quantity.unitOfMeasure: 'InspectionSpecificationUnit'
+      InspSpecLowerSpecLimitChange,
+      @Semantics.booleanIndicator: true
+      InspSpecHasLowrSpecLimitChange,
+
+      // Classed Recording
+      InspSpecNumberOfClasses,
+      @Semantics.quantity.unitOfMeasure: 'InspectionSpecificationUnit'
+      InspSpecClassWidthQty,
+      @Semantics.booleanIndicator: true
+      InspSpecHasClassWidth,
+      @Semantics.quantity.unitOfMeasure: 'InspectionSpecificationUnit'
+      InspSpecClassMidpointQty,
+      @Semantics.booleanIndicator: true
+      InspSpecHasClassMidpoint,
+      @Semantics.booleanIndicator: true
+      InspSpecHasFormula,
+      InspSpecFormula1, // formula (if control indicator calculated characteristic is set)
+      InspSpecFormula2, // formula (if control indicator calculated characteristic is set)
+
+      // --------------------------------------------------------------------------------------------------------
+      //  Cataloges
+      // --------------------------------------------------------------------------------------------------------
+      InspSpecDefectCodeGrpRejection,
+      InspSpecDefectCodeRejection,
+      InspSpecDefectCodeGrpRjcnUpper,
+      InspSpecDefectCodeRjcnUpper,
+      InspSpecDefectCodeGrpRjcnLower,
+      InspSpecDefectCodeRjcnLower,
+      SelectedCodeSet,
+      SelectedCodeSetPlant,
+      InspSpecAdditionalCatalog2,
+      @Semantics.booleanIndicator: true
+      CatalogEntryIsSelectedSet2,
+      InspSpecAddlCodeGrpSeldSet2,
+      InspSpecAddlSeldCodeSetPlant2,
+
+      InspSpecAdditionalCatalog3,
+      @Semantics.booleanIndicator: true
+      CatalogEntryIsSelectedSet3,
+      InspSpecAddlCodeGrpSeldSet3,
+      InspSpecAddlSeldCodeSetPlant3,
+
+      InspSpecAdditionalCatalog4,
+      @Semantics.booleanIndicator: true
+      CatalogEntryIsSelectedSet4,
+      InspSpecAddlCodeGrpSeldSet4,
+      InspSpecAddlSeldCodeSetPlant4,
+
+      InspSpecAdditionalCatalog5,
+      @Semantics.booleanIndicator: true
+      CatalogEntryIsSelectedSet5,
+      InspSpecAddlCodeGrpSeldSet5,
+      InspSpecAddlSeldCodeSetPlant5,
+
+      // --------------------------------------------------------------------------------------------------------
+      // Sample Data
+      // --------------------------------------------------------------------------------------------------------
+      SamplingProcedure,
+      InspCharacteristicSampleUnit,
+      @Semantics.quantity.unitOfMeasure: 'InspCharacteristicSampleUnit'
+      BOOCharcSampleQuantity,
+
+      // --------------------------------------------------------------------------------------------------------
+      // Additional Data
+      // --------------------------------------------------------------------------------------------------------
+      InspSpecInformationField1,
+      InspSpecInformationField2,
+      InspSpecInformationField3,
+
+      // --------------------------------------------------------------------------------------------------------
+      // Texts
+      // --------------------------------------------------------------------------------------------------------
+      InspectionSpecificationText,
+
+      // --------------------------------------------------------------------------------------------------------
+      // Administrative Data
+      // --------------------------------------------------------------------------------------------------------
+      @Semantics.user.createdBy: true
+      CreatedByUser,
+      @Semantics.systemDate.createdAt: true
+      CreationDate,
+      @Semantics.user.lastChangedBy: true
+      LastChangedByUser,
+      @Semantics.systemDate.lastChangedAt: true
+      LastChangeDate,
+      InspLotDynamicCriteria,
+      InspLotDynamicRule,
+      InspCharcDynModifRef,
+      QltyCtrlChartAggrgnCriterion,
+      InspSpecInputProcedure,
+      BOOCharcGroup,
+      BOOCharcSourceCharc,
+      BOOCharcGroupDivision,
+      BillOfOperationsVersion,
+      /* Associations */
+      _BillOfOperationsGroup,
+      _BillOfOperationsType,
+      _BOOCharacteristic,
+      _BOOOperationInternalID,
+      _ProdnRtgCharacteristicType,
+      _ProductionRouting
+//      _ProdnRtgHeader,
+//      _ProdnRoutingOpSubordOp
+}
+```

@@ -5,12 +5,23 @@ app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRITEM')/$value
 semantic_en: "Trading Contract Item"
+semantic_vi: "Trading Contract Item — CDS view tổng hợp dựa trên R_TrdgContrItem."
 keywords:
   - "Trading Contract Item"
-  - "Trading Contract Item"
+  - "trading"
+  - "contract"
+  - "item"
+  - "payment"
+  - "guarantee"
+  - "procedure"
+  - "depreciation"
+  - "percentage"
+  - "supplier"
+  - "quotation"
+  - "external"
 tags:
   - LO
   - component:LO-GT
@@ -18,7 +29,6 @@ tags:
   - interface-view
   - LO-GT
   - lob:logistics general
-  - metadata-only
 ---
 # I_TRDGCONTRITEM
 
@@ -30,14 +40,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRITEM')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRITEM')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TradingContract` |  | |  |  | `CHAR(10)` | Trading Contract |
-| `TradingContractItem` |  | |  |  | `NUMC(6)` | Item Number of Trading Contract |
+| `TradingContract` | ✓ | |  |  | `CHAR(10)` | Trading Contract |
+| `TradingContractItem` | ✓ | |  |  | `NUMC(6)` | Item Number of Trading Contract |
 | `PaymentGuaranteeProcedure` |  | |  |  | `CHAR(6)` | Payment Guarantee Procedure |
 | `DepreciationPercentage` |  | |  |  | `DEC(5)` | Depreciation percentage for financial document processing |
 | `SupplierQuotationExternalID` |  | |  |  | `CHAR(10)` | Supplier Quotation |
@@ -262,3 +272,364 @@ tags:
 | `TrdgContrPurchaseOrderItem` |  | |  |  | `CHAR(6)` | Item Number of the Underlying Purchase Order in a Trdg Doc. |
 | `TrdgContrPrcDetnExchRate` |  | |  |  | `DEC(9)` | Sales Exchange Rate for Price Determination in a Trdg Doc. |
 | `TrdgContrIsRlvtPoDProcg` |  | |  |  | `CHAR(1)` | Trading Document Relevant for Point of Delivery Processing |
+| `_TrdgContr` | | ✓ | | | | |
+| `_TrdgContrItemPartner` | | ✓ | | | | |
+| `_TrdgContrItmSlsPrcgElmnt` | | ✓ | | | | |
+| `_TrdgContrItmPurgPrcgElmnt` | | ✓ | | | | |
+| `_TrdgContrScheduleLine` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_TrdgContr` | `I_TrdgContr` | [1..1] |
+| `_TrdgContrItemPartner` | `I_TrdgContrItemPartner` | [0..*] |
+| `_TrdgContrItmSlsPrcgElmnt` | `I_TrdgContrItmSlsPrcgElmnt` | [0..*] |
+| `_TrdgContrItmPurgPrcgElmnt` | `I_TrdgContrItmPurgPrcgElmnt` | [0..*] |
+| `_TrdgContrScheduleLine` | `I_TrdgContrScheduleLine` | [0..*] |
+| `_TrdgDocItemExtension` | `E_TradingDocumentItem` | [0..1] |
+| `_TrdgDocBusDataItemExtension` | `E_TradingDocumentBusinessData` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRITEM')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRITEM')/$value)*
+
+```abap
+@AccessControl: {
+  authorizationCheck: #MANDATORY,
+  personalData.blocking: #('TRANSACTIONAL_DATA')
+}
+@EndUserText.label: 'Trading Contract Item'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel: {
+  semanticKey: ['TradingContractItem', 'TradingContract'],
+  representativeKey: 'TradingContractItem',
+  modelingPattern: #NONE,
+  supportedCapabilities: [#CDS_MODELING_DATA_SOURCE],
+  usageType: {
+    serviceQuality: #C,
+    sizeCategory: #XL,
+    dataClass: #TRANSACTIONAL
+  }
+}
+@VDM: {
+  viewType: #COMPOSITE,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@Metadata.allowExtensions:true
+
+define view entity I_TrdgContrItem
+  as select from R_TrdgContrItem as TrdgContrItem
+
+
+  association [1..1] to I_TrdgContr                   as _TrdgContr                   on  $projection.TradingContract = _TrdgContr.TradingContract
+  association [0..*] to I_TrdgContrItemPartner        as _TrdgContrItemPartner        on  $projection.TradingContract     = _TrdgContrItemPartner.TradingContract
+                                                                                      and $projection.TradingContractItem = _TrdgContrItemPartner.TradingContractItem
+  association [0..*] to I_TrdgContrItmSlsPrcgElmnt    as _TrdgContrItmSlsPrcgElmnt    on  $projection.TradingContract     = _TrdgContrItmSlsPrcgElmnt.TradingContract
+                                                                                      and $projection.TradingContractItem = _TrdgContrItmSlsPrcgElmnt.TradingContractItem
+  association [0..*] to I_TrdgContrItmPurgPrcgElmnt   as _TrdgContrItmPurgPrcgElmnt   on  $projection.TradingContract     = _TrdgContrItmPurgPrcgElmnt.TradingContract
+                                                                                      and $projection.TradingContractItem = _TrdgContrItmPurgPrcgElmnt.TradingContractItem
+  association [0..*] to I_TrdgContrScheduleLine       as _TrdgContrScheduleLine       on  $projection.TradingContract     = _TrdgContrScheduleLine.TradingContract
+                                                                                      and $projection.TradingContractItem = _TrdgContrScheduleLine.TradingContractItem
+  association [0..1] to E_TradingDocumentItem         as _TrdgDocItemExtension        on  $projection.TradingContract     = _TrdgDocItemExtension.TradingDocument
+                                                                                      and $projection.TradingContractItem = _TrdgDocItemExtension.TradingDocumentItem
+  association [0..1] to E_TradingDocumentBusinessData as _TrdgDocBusDataItemExtension on  $projection.TradingContract       = _TrdgDocBusDataItemExtension.TradingDocument
+                                                                                      and $projection.TrdgContrBusinessItem = _TrdgDocBusDataItemExtension.TradingDocumentItem
+
+{
+      @ObjectModel.foreignKey.association: '_TrdgContr'
+
+  key TradingContract,
+  key TradingContractItem,
+
+      PaymentGuaranteeProcedure,
+      DepreciationPercentage,
+      SupplierQuotationExternalID,
+      PurchasingDocumentType,
+      SupplierConfirmationControlKey,
+      CustomerPurchaseOrderDate,
+      CustPurOrdDateByShipToParty,
+      PurchaseOrderByCustomer,
+      PurchaseOrderByShipToParty,
+      TrdgContrPurgDocCat,
+      DownPaymentDueDate,
+      DownPaymentPercentageOfTotAmt,
+      DownPaymentType,
+      PurchasingDocumentOrderDate,
+      TrdgContrSlsReqdDeliveryDate,
+      TrdgContrPurgReqdDeliveryDate,
+      PurchasingGroup,
+      PurchasingOrganization,
+      Supplier,
+      TrdgContrPurgShipgInstrn,
+      TrdgContrPurgDelivAddrCat,
+      QuotationSubmissionDate,
+      TrdgContrPurgDocExtReference,
+      PurgIncotermsClassification,
+      SlsIncotermsClassification,
+      TrdgContrPurgIncotermsLoc1Text,
+      TrdgContrSlsIncotermsLoc1Text,
+      PurgIncotermsTransferLocation,
+      SlsIncotermsTransferLocation,
+      TrdgContrPurgIncotermsLoc2Text,
+      TrdgContrSlsIncotermsLoc2Text,
+      TrdgContrPurgIncotermsVersion,
+      TrdgContrSalesIncotermsVersion,
+      TrdgContrPurgPricingProcedure,
+      TrdgContrPurgValidityStartDate,
+      TrdgContrPurgValidityEndDate,
+      FixedExchangeRateIsUsed,
+      TrdgContrPurgExchangeRateType,
+      IsOrderAcknRqd,
+      OrderCombinationIsAllowed,
+      PurgDocOrderAcknNumber,
+      InternalFinancialDocument,
+      TrdgContrPurgDeliveryDateType,
+      SEPAMandate,
+      UnderlyingPurchaseOrderItem,
+      TrdgContrMnlPOSplit,
+      TrdgContrSlsDeliveryDateType,
+      TrdgContrPurgPricingDate,
+      TrdgContrSalesPricingDate,
+      SupplyingPlant,
+      RetentionPercentage,
+      SupplierPhoneNumber,
+      PaymentTermsName,
+      TrdgContrPurgExchangeRate,
+      CorrespncInternalReference,
+      TrdgContrPurgFixedValueDate,
+      TrdgContrSalesFixedValueDate,
+      SupplierRespSalesPersonName,
+      ShippingType,
+      IssuingPlant,
+      TrdgContrSalesPaymentMethod,
+      TrdgContrPurgPaymentTerms,
+      TrdgContrSalesPaymentTerms,
+      TrdgContrPurgDocCndn,
+      TradingContractItemCategory,
+      Product,
+      TrdgContrItemText,
+      ProductGroup,
+      TrdgContrReltdDocItmValnType,
+      @Consumption.valueHelpDefinition: [{ entity: { name: 'I_Plant', element: 'Plant' }, additionalBinding: [{ element: 'DefaultPurchasingOrganization',
+                                     localElement: 'PurchasingOrganization',
+                                     usage: #FILTER_AND_RESULT }],
+               useForValidation: true }]
+      @ObjectModel.text.element: ['Plant']
+      @Semantics.text: true
+      Plant,
+      @Consumption.valueHelpDefinition: [{ entity: { name: 'I_StorageLocation', element: 'StorageLocation' }, additionalBinding: [{ element: 'Plant',
+                            localElement: 'Plant',
+                            usage: #FILTER_AND_RESULT }],
+      useForValidation: true }]
+      @ObjectModel.text.element: ['StorageLocation']
+      @Semantics.text: true
+      StorageLocation,
+      Batch,
+      OrganizationDivision,
+      BusinessArea,
+      CreatedByUser,
+      CreationDate,
+      CreationTime,
+      @Semantics.quantity.unitOfMeasure: 'TrdgContrPurgQuantityUnit'
+      TrdgContrPurgQuantity,
+      @Semantics.quantity.unitOfMeasure: 'TrdgContrSlsQuantityUnit'
+      TrdgContrSalesQuantity,
+      TrdgContrPurgQuantityUnit,
+      TrdgContrSlsQuantityUnit,
+      TrdgContrSlsToBaseQtyNmrtr,
+      TrdgContrSlsToBaseQtyDnmntr,
+      BaseUnit,
+      TrdgContrPurgToBaseQtyNmrtr,
+      TrdgContrPurgToBaseQtyDnmntr,
+      TrdgContrPurgToOrdQtyNmrtr,
+      TrdgContrPurgToOrdQtyDnmntr,
+      TrdgContrSlsToOrdQtyNmrtr,
+      TrdgContrSlsToOrdQtyDnmntr,
+      TrdgContrPurgCurrency,
+      TradingContractSalesCurrency,
+      TrdgContrSlsWeightUnit,
+      @Semantics.quantity.unitOfMeasure: 'TrdgContrSlsWeightUnit'
+      TrdgContrSlsGrossWeight,
+      @Semantics.quantity.unitOfMeasure: 'TrdgContrSlsWeightUnit'
+      TrdgContrSlsNetWeight,
+      TrdgContrSlsVolumeUnit,
+      @Semantics.quantity.unitOfMeasure: 'TrdgContrSlsVolumeUnit'
+      TrdgContrSlsVolume,
+      @Semantics.quantity.unitOfMeasure: 'TrdgContrSlsWeightUnit'
+      TrdgContrPurgGrossWeight,
+      @Semantics.quantity.unitOfMeasure: 'TrdgContrSlsWeightUnit'
+      TrdgContrPurgNetWeight,
+      @Semantics.quantity.unitOfMeasure: 'TrdgContrSlsVolumeUnit'
+      TrdgContrPurgVolume,
+      TrdgContrSlsPriceUnit,
+      TrdgContrPurgPriceUnit,
+      @Semantics.quantity.unitOfMeasure: 'TrdgContrPurgPriceUnit'
+      TrdgContrPurgNetPriceQuantity,
+      @Semantics.quantity.unitOfMeasure: 'TrdgContrSlsPriceUnit'
+      TrdgContrSlsNetPriceQuantity,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrSalesNetPriceAmount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrPurgNetPriceAmount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrSlsItemNetAmount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrPurgItemNetAmount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrSlsItmNetAmtInSlsCrcy,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrPurgItmNetAmtInPOCrcy,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrPurgSubtotal1Amount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrPurgSubtotal2Amount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrPurgSubtotal3Amount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrPurgSubtotal4Amount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrPurgSubtotal5Amount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrPurgSubtotal6Amount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrSlsSubtotal1Amount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrSlsSubtotal2Amount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrSlsSubtotal3Amount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrSlsSubtotal4Amount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrSlsSubtotal5Amount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrSlsSubtotal6Amount,
+      @Semantics.booleanIndicator:true
+      SlsUnlmtdOvrdelivIsAllwd,
+      SlsOvrdelivTolLmtRatioInPct,
+      SlsUndrdelivTolLmtRatioInPct,
+      PurgUnlmtdOvrdelivIsAllwd,
+      PurgOvrdelivTolLmtRatioInPct,
+      PurgUndrdelivTolLmtRatioInPct,
+      SalesDocumentRjcnReason,
+      ProductHierarchyNode,
+      ProductUsedByCustomer,
+      ProductTaxClassification1,
+      ProductTaxClassification2,
+      ProductTaxClassification3,
+      ProductTaxClassification4,
+      ProductTaxClassification5,
+      ProductTaxClassification6,
+      ProductTaxClassification7,
+      ProductTaxClassification8,
+      ProductTaxClassification9,
+      InternationalArticleNumber,
+      ProfitCenter,
+      CostCenter,
+      SalesSpcfcProductGroup1,
+      SalesSpcfcProductGroup2,
+      SalesSpcfcProductGroup3,
+      SalesSpcfcProductGroup4,
+      SalesSpcfcProductGroup5,
+      ItemBillingBlockReason,
+      MaxNmbrOfPartialDelivery,
+      PartialDeliveryIsAllowed,
+      TrdgContrSlsShippingPoint,
+      TradingDocumentPurchasingRoute,
+      TradingDocumentSalesRoute,
+      TrdgContrPurgShippingCondition,
+      TrdgContrPurgShippingPoint,
+      TrdgContrPurgTaxCode,
+      ValuationCategory,
+      PurchasingDocumentItemCategory,
+      AccountAssignmentCategory,
+      GoodsReceiptLatestCreationDate,
+      BatchClassification,
+      TrdgContrBusinessItem,
+      @Semantics.booleanIndicator: true
+      TrdgContrItemIsExtended,
+      @Semantics.booleanIndicator: true
+      TrdgContrItemIsDeleted,
+      TrdgPortfolioInternalID,
+      TrdgContrItmPrtfloDetnDate,
+      TrdgContrRefDocument,
+      TrdgContrRefDocItem,
+      TrdgContrReferenceDocumentType,
+      TrdgContrAddlRefDocument,
+      TrdgContrAddlRefDocItem,
+      TrdgContrAddlRefDocumentType,
+      TrdgContrBusinessScenario,
+      TrdgContrAssociationGroup,
+      SupplierProductID,
+      TrdgContrOriglReqdProd,
+      TrdgContrHigherLevelItem,
+      @Semantics.booleanIndicator : true
+      TrdgContrPrcDetnIsIncomplete,
+      @Semantics.quantity.unitOfMeasure: 'TrdgContrPurgQuantityUnit'
+      TrdgContrPurgBOMItmQty,
+      @Semantics.quantity.unitOfMeasure: 'TrdgContrSlsQuantityUnit'
+      TrdgContrSlsBOMItmQty,
+
+      TrdgContrBOMKeyDate,
+      @Semantics.booleanIndicator: true
+      QuantityIsFixed,
+      BillOfMaterialCategory,
+      BillOfMaterialVariantUsage,
+      TrdgContrPrcgRefProduct,
+      TrdgContrProdUsgeCat,
+      @Semantics.amount.currencyCode: 'TrdgContrPurgCurrency'
+      TrdgContrSlsItmEffctvAmount,
+      @Semantics.amount.currencyCode: 'TrdgContrPurgCurrency'
+      TrdgContrPurgItmEffctvAmount,
+      TrdgContrSlsIsCshDiscGrntd,
+      TrdgContrPurgIsCshDiscGrntd,
+      TrdgContrPredecessorDocument,
+      TrdgContrPredecessorItem,
+      TrdgContrPrdcssrDocumentType,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrPurgTaxAmount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      TrdgContrSlsTaxAmount,
+      TrdgContrHdggRlvt,
+      TrdgContrCndnCnsldtnCat,
+      @Semantics.booleanIndicator : true
+      TrdgContrCndnIsCnsldtd,
+      TrdgContrSTOPostingLogic,
+      TrdgContrSettlementMode,
+      IssuingStorageLocation,
+      TrdgContrPurgTaxJurisdiction,
+      PaymentGuaranteeForm,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      DownPaymentAmount,
+      @Semantics.amount.currencyCode: 'TradingContractCurrency'
+      SupplierTotalGrossAmount,
+      TrdgContrBOMProfile,
+      AlternativeBillOfMaterial,
+      TrdgContrPurgRiskRelevancy,
+      TrdgContrSlsRiskRelevancy,
+      TrdgContrSlsClfnObjInternalID,
+      TrdgContrPurgClfnObjInternalID,
+      TrdgContrProdSizeOrDimnDesc,
+      @Semantics.booleanIndicator: true
+      TrdgContrItemIsComplete,
+      TradingContractInternalOrder,
+      TrdgContrItemBlockCode,
+      TrdgContrPurgTaxCountry,
+      TrdgContrPurgTaxDate,
+      TradingContractCurrency,
+      ControllingArea,
+      TrdgContrBillOfMaterial,
+      TrdgContrPurchaseOrderItem,
+      TrdgContrPrcDetnExchRate,
+      TrdgContrIsRlvtPoDProcg,
+
+      _TrdgContr,
+      _TrdgContrItemPartner,
+      _TrdgContrItmPurgPrcgElmnt,
+      _TrdgContrItmSlsPrcgElmnt,
+      _TrdgContrScheduleLine
+
+
+
+}
+```
