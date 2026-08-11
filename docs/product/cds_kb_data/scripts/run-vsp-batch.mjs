@@ -65,9 +65,13 @@ function parseArgs() {
       case '--count': opts.count = parseInt(args[++i], 10) || 25; break;
       case '--no-push': opts.push = false; break;
       case '--no-commit': opts.commit = false; opts.push = false; break;
-      case '--modules': opts.modules = args[++i].split(',').map(s => s.trim()).filter(Boolean); break;
+      case '--modules': {
+        const raw = args[++i];
+        opts.modules = raw === '*' ? null : raw.split(',').map(s => s.trim()).filter(Boolean);
+        break;
+      }
       case '--help': case '-h':
-        console.log('Usage: node scripts/run-vsp-batch.mjs [--count 25] [--no-push] [--no-commit] [--modules FI-,CO-,...]');
+        console.log('Usage: node scripts/run-vsp-batch.mjs [--count 25] [--no-push] [--no-commit] [--modules FI-,CO-,... | \'*\' for no LOB filter]');
         process.exit(0);
     }
   }
@@ -111,7 +115,9 @@ async function selectCandidates(count, modulePrefixes) {
     if (scalar(fm, 'source_available') === 'true') continue; // already upgraded since coverage.json was generated
 
     const appComponent = scalar(fm, 'app_component');
-    if (!modulePrefixes.some(p => appComponent.startsWith(p))) continue;
+    // modulePrefixes === null means --modules '*' — no LOB restriction, take
+    // every metadata-only candidate regardless of app_component.
+    if (modulePrefixes && !modulePrefixes.some(p => appComponent.startsWith(p))) continue;
 
     picked.push(row.name.toUpperCase());
   }
@@ -274,7 +280,7 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`Đang chọn tối đa ${opts.count} candidate (module: ${opts.modules.join(', ')})...`);
+  console.log(`Đang chọn tối đa ${opts.count} candidate (module: ${opts.modules ? opts.modules.join(', ') : 'tất cả LOB, không giới hạn'})...`);
   const names = await selectCandidates(opts.count, opts.modules);
   console.log(`Chọn được ${names.length} candidate: ${names.join(', ')}\n`);
   if (names.length === 0) {
