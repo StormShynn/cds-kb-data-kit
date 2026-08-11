@@ -472,11 +472,11 @@ function renderHtml(report) {
     <table>
       <thead>
         <tr>
+          <th style="width:90px">Status</th>
           <th style="width:200px">Name</th>
           <th>Description</th>
           <th style="width:120px">App Component</th>
           <th style="width:130px">Local Release State</th>
-          <th style="width:90px">Full DDL</th>
         </tr>
       </thead>
       <tbody id="extraTbody"></tbody>
@@ -619,16 +619,19 @@ function renderHtml(report) {
       // view exists even though the Hub's catalog doesn't currently confirm
       // it (deprecated/renamed/different container/simply not the
       // one product this report checks against).
+      // Same STATUS_BADGE styling as the Hub-matched table above, so a
+      // "✓ Full DDL" row reads identically in both tables — Status leads
+      // the row in each case, in the same left-to-right order.
       const ddlCell = sourceAvailable === true
-        ? '<span class="status-good">✓ Full DDL</span>'
+        ? STATUS_BADGE.full
         : sourceAvailable === false
-          ? '<span class="status-warning">metadata-only</span>'
+          ? STATUS_BADGE['metadata-only']
           : '—';
-      const row = '<tr class="view-row" data-name="' + escapeHtml(name) + '"><td class="name-cell"><span class="toggle-icon">' + (expanded ? '▾' : '▸') + '</span>' + name + '</td>' +
+      const row = '<tr class="view-row" data-name="' + escapeHtml(name) + '"><td class="status-cell">' + ddlCell + '</td>' +
+        '<td class="name-cell"><span class="toggle-icon">' + (expanded ? '▾' : '▸') + '</span>' + name + '</td>' +
         '<td class="desc-cell">' + (description || '').replace(/</g, '&lt;') + '</td>' +
         '<td class="date-cell">' + (appComponent || '—') + '</td>' +
-        '<td class="date-cell">' + (releaseState || '—') + '</td>' +
-        '<td class="status-cell">' + ddlCell + '</td></tr>';
+        '<td class="date-cell">' + (releaseState || '—') + '</td></tr>';
       return expanded ? row + renderDetailRow(name, 5) : row;
     }, 5);
   }
