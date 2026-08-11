@@ -1,0 +1,21 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Deploys cds-kb-mcp as a free-tier web service (Streamable HTTP at /mcp,
+# legacy SSE at /sse + /messages).
+#
+# Env vars to set in the Render dashboard after first deploy:
+#   CDS_KB_DATA_TOKEN  -> GitHub fine-grained PAT, Contents:Read-only on
+#                         StormShynn/cds-kb-data (the data repo is private)
+services:
+  - type: web
+    name: cds-kb-mcp
+    runtime: node
+    plan: free
+    buildCommand: npm ci --ignore-scripts
+    startCommand: node src/server.mjs
+    envVars:
+      - key: CDS_KB_REMOTE
+        value: https://raw.githubusercontent.com/StormShynn/cds-kb-data/main
+      - key: CDS_KB_INDEX_REFRESH_MINUTES
+        value: '15'
+      - key: CDS_KB_DATA_TOKEN
+        sync: false

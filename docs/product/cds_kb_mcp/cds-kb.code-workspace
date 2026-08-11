@@ -1,0 +1,7 @@
+{
+  "folders": [
+    { "name": "cds-kb-mcp-kit (server code)", "path": "." },
+    { "name": "cds-kb-data (data + automation)", "path": "../cds-kb-data" }
+  ],
+  "settings": {}
+}

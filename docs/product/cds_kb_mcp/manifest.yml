@@ -1,0 +1,10 @@
+---
+applications:
+  - name: cds-kb-mcp
+    memory: 512M
+    buildpacks:
+      - nodejs_buildpack
+    command: npm start
+    env:
+      USE_SSE: "true"
+      # API_KEY: "your-secret-key-here" # Uncomment to enable API Key authentication

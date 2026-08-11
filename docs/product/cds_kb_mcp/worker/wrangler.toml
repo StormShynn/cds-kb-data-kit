@@ -1,0 +1,9 @@
+name = "cds-kb-usage-collector"
+main = "src/index.mjs"
+compatibility_date = "2026-01-01"
+
+# Created via: wrangler kv:namespace create USAGE_KV
+# Paste the returned id below before running `wrangler deploy`.
+kv_namespaces = [
+  { binding = "USAGE_KV", id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID" }
+]

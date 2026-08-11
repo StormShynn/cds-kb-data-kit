@@ -186,6 +186,19 @@
   .output-bar { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
   .output-bar .copied { color: var(--status-good); font-size: 12px; display: none; }
 
+  .output-tabs { display: flex; gap: 6px; margin-bottom: 10px; }
+  .output-tab {
+    background: none; border: 1px solid var(--border); color: var(--text-secondary);
+    border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer;
+  }
+  .output-tab.active { color: var(--text-primary); border-color: var(--accent); background: var(--surface-2); }
+  #outputCds {
+    width: 100%; min-height: 160px; background: #050505; border: 1px solid var(--border);
+    color: #d6f5c3; border-radius: 8px; padding: 16px; font-size: 13px;
+    font-family: ui-monospace, "SF Mono", Consolas, monospace; white-space: pre-wrap;
+    word-break: break-word;
+  }
+
   .save-panel { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--gridline); }
   .save-panel input[type=text] { width: 100%; margin-bottom: 8px; }
   .save-panel textarea { width: 100%; margin-top: 8px; }
@@ -290,11 +303,16 @@
       <div class="builder-right">
         <div class="section">
           <h2>Generated query</h2>
+          <div class="output-tabs">
+            <button id="outputTabSql" class="output-tab active" data-role="outputTab" data-tab="sql">SQL / OpenSQL</button>
+            <button id="outputTabCds" class="output-tab" data-role="outputTab" data-tab="cds">CDS view (define view entity)</button>
+          </div>
           <div class="output-bar">
             <button id="copyBtn">📋 Copy</button>
             <span class="copied" id="copiedMsg">Copied!</span>
           </div>
           <pre id="output"></pre>
+          <pre id="outputCds" style="display:none"></pre>
 
           <div class="save-panel">
             <h2 style="font-size:13px;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.04em;margin:0 0 8px;">💾 Save this query</h2>
@@ -993,7 +1011,7 @@
   // like this, so it isn't pulled in — bundling it would also break this
   // page's one-file, works-over-file:// design; this instead borrows its
   // general keyword/string/number color convention.
-  const ABAP_KEYWORDS = new Set(['SELECT', 'FROM', 'WHERE', 'GROUP', 'BY', 'HAVING', 'ORDER', 'JOIN', 'INNER', 'LEFT', 'RIGHT', 'FULL', 'ON', 'AND', 'OR', 'AS', 'IN', 'LIKE', 'NOT', 'IS', 'NULL', 'BETWEEN', 'ASC', 'DESC']);
+  const ABAP_KEYWORDS = new Set(['SELECT', 'FROM', 'WHERE', 'GROUP', 'BY', 'HAVING', 'ORDER', 'JOIN', 'INNER', 'LEFT', 'RIGHT', 'FULL', 'ON', 'AND', 'OR', 'AS', 'IN', 'LIKE', 'NOT', 'IS', 'NULL', 'BETWEEN', 'ASC', 'DESC', 'DEFINE', 'VIEW', 'ENTITY', 'KEY']);
   const ABAP_FUNCS = new Set(['COUNT', 'SUM', 'AVG', 'MIN', 'MAX']);
   const ABAP_OPS = new Set(['=', '<>', '>', '<', '>=', '<=']);
   function highlightAbap(text) {
@@ -1055,10 +1073,68 @@
     // .textContent, which returns the plain concatenated text regardless of
     // how it was set, so highlighting never leaks into what gets copied.
     out.innerHTML = highlightAbap(lines.join('\n'));
+    buildCdsView();
   }
 
+  // "Generated query" tab 2: same picks as buildQuery(), formatted as a
+  // define-view-entity CDS DDL skeleton instead of a plain OpenSQL SELECT.
+  // Association rows still need no FROM/JOIN entry in CDS either — same
+  // path-expression rule as the SQL tab — so this reuses
+  // fromClauseLines()/allFields()/selectState and only changes wording
+  // (element list, "key" prefix, "as" aliasing) around them. Called from
+  // the tail of buildQuery() so every existing call site keeps both tabs
+  // in sync without having to be touched individually.
+  function buildCdsView() {
+    const out = document.getElementById('outputCds');
+    if (!joinedViews.length || !joinedViews[0].name) { out.textContent = ''; return; }
+
+    let elementsText;
+    if (isRaw('select')) {
+      elementsText = rawText('select') || '*';
+    } else {
+      const selected = allFields().filter(f => selectState[f.qualifiedName]?.checked);
+      const elementLines = selected.map(f => {
+        const agg = selectState[f.qualifiedName].agg;
+        const expr = agg === AGGS[0] ? f.qualifiedName : agg + '(' + f.qualifiedName + ')';
+        const needsAlias = agg !== AGGS[0] || f.qualifiedName !== f.name;
+        const keyPrefix = (f.isKey && agg === AGGS[0]) ? 'key ' : '';
+        return keyPrefix + expr + (needsAlias ? ' as ' + f.name : '');
+      });
+      elementsText = elementLines.length ? elementLines.join(',\n  ') : '*';
+    }
+
+    const groupText = isRaw('groupBy') ? rawText('groupBy')
+      : allFields().filter(f => groupByState[f.qualifiedName]).map(f => f.qualifiedName).join(', ');
+    const whereText = isRaw('where') ? rawText('where') : conditionsText(whereConds.filter(c => c.field));
+    const havingText = isRaw('having') ? rawText('having') : conditionsText(havingConds.filter(c => c.field));
+    const orderText = isRaw('order') ? rawText('order') : orderConds.map(c => c.field + ' ' + c.dir).join(', ');
+
+    const sqlFrom = fromClauseLines();
+    const cdsFrom = ['as select from ' + sqlFrom[0].replace(/^FROM /, '')].concat(sqlFrom.slice(1));
+
+    const lines = ['define view entity Z_MyView', '  ' + cdsFrom.join('\n  '), '{', '  ' + elementsText, '}'];
+    if (whereText) lines.push('where ' + whereText);
+    if (groupText) lines.push('group by ' + groupText);
+    if (havingText) lines.push('having ' + havingText);
+    if (orderText) {
+      lines.push('-- "order by ' + orderText + '" omitted: not valid inside a CDS view definition');
+      lines.push('-- (views don\'t guarantee row order) — apply it in the consuming SELECT instead.');
+    }
+
+    out.innerHTML = highlightAbap(lines.join('\n'));
+  }
+
+  document.querySelectorAll('[data-role="outputTab"]').forEach(btn => btn.addEventListener('click', (e) => {
+    document.querySelectorAll('[data-role="outputTab"]').forEach(b => b.classList.remove('active'));
+    e.target.classList.add('active');
+    const tab = e.target.dataset.tab;
+    document.getElementById('output').style.display = tab === 'sql' ? '' : 'none';
+    document.getElementById('outputCds').style.display = tab === 'cds' ? '' : 'none';
+  }));
+
   document.getElementById('copyBtn').addEventListener('click', () => {
-    const text = document.getElementById('output').textContent;
+    const activeTab = document.querySelector('[data-role="outputTab"].active')?.dataset.tab || 'sql';
+    const text = document.getElementById(activeTab === 'cds' ? 'outputCds' : 'output').textContent;
     if (!text) return;
     navigator.clipboard?.writeText(text).then(() => {
       const msg = document.getElementById('copiedMsg');
