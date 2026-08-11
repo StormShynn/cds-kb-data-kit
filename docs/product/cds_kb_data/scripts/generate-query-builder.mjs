@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // scripts/generate-query-builder.mjs
 // Generates query-builder.html: a self-contained, offline-first page that
-// helps compose a SELECT / FROM / WHERE / GROUP BY / HAVING / ORDER BY
-// statement against ONE chosen CDS view, using that view's real field names
+// helps compose a SELECT / FROM / JOIN / WHERE / GROUP BY / HAVING / ORDER BY
+// statement against one or more CDS views, using their real field names
 // (from index/view-fields.js — the same data coverage-report.html already
 // loads via <script src>, so this page doesn't need to re-embed the ~13MB of
 // field data itself).
@@ -12,6 +12,12 @@
 // repo (field names, key/association info). Output is reference syntax for
 // you to copy into wherever you'll actually run it (SE16N, ADT data preview,
 // an Open SQL statement, ...), not a validated or executable query.
+//
+// index/query-library.json is a human-curated, git-tracked list of saved
+// queries (contributed the same way as everything else in this repo — edit
+// the JSON, open a PR). This script only reads and embeds it; there is no
+// backend for the page itself to write to, so its "Save" button exports a
+// JSON snippet to copy into that file rather than claiming to save anything.
 //
 // Usage:
 //   node scripts/generate-query-builder.mjs [dataDir] [outputFile]
@@ -41,9 +47,18 @@ function isAbstractEntity(content) {
   });
 }
 
+async function readJson(file, fallback) {
+  try {
+    return JSON.parse(await fs.readFile(file, 'utf-8'));
+  } catch {
+    return fallback;
+  }
+}
+
 async function main() {
-  console.log('📋 Reading view-paths.json and scanning view frontmatter...');
-  const viewPaths = JSON.parse(await fs.readFile(path.join(DATA_DIR, 'index', 'view-paths.json'), 'utf-8').catch(() => '{}'));
+  console.log('📋 Reading view-paths.json, query-library.json, and scanning view frontmatter...');
+  const viewPaths = await readJson(path.join(DATA_DIR, 'index', 'view-paths.json'), {});
+  const queryLibrary = await readJson(path.join(DATA_DIR, 'index', 'query-library.json'), []);
 
   const viewsDir = path.join(DATA_DIR, 'views');
   const viewFiles = await listViewFiles(viewsDir);
@@ -60,13 +75,13 @@ async function main() {
     viewMeta[name] = [scalar(fm, 'app_component') || '', isAbstractEntity(content) ? 1 : 0];
   }
 
-  const embedded = JSON.stringify({ M: viewMeta, P: viewPaths }).replace(/<\/script/gi, '<\\/script');
+  const embedded = JSON.stringify({ M: viewMeta, P: viewPaths, L: queryLibrary }).replace(/<\/script/gi, '<\\/script');
 
-  const html = renderHtml(embedded, { viewCount: Object.keys(viewMeta).length });
+  const html = renderHtml(embedded, { viewCount: Object.keys(viewMeta).length, libCount: queryLibrary.length });
 
   await fs.writeFile(OUTPUT_FILE, html, 'utf-8');
   const sizeKb = (Buffer.byteLength(html) / 1024).toFixed(0);
-  console.log(`✅ Wrote ${OUTPUT_FILE} (${sizeKb} KB) — ${Object.keys(viewMeta).length} view(s). Needs index/view-fields.js alongside it at runtime.`);
+  console.log(`✅ Wrote ${OUTPUT_FILE} (${sizeKb} KB) — ${Object.keys(viewMeta).length} view(s), ${queryLibrary.length} saved quer${queryLibrary.length === 1 ? 'y' : 'ies'}. Needs index/view-fields.js alongside it at runtime.`);
 }
 
 function renderHtml(embeddedJson, stats) {
@@ -101,9 +116,23 @@ function renderHtml(embeddedJson, stats) {
   h1 span { color: var(--text-secondary); font-weight: 400; }
   .subtitle { color: var(--text-muted); font-size: 13px; margin: 0 0 4px; }
   .disclaimer {
-    color: var(--status-warn); font-size: 12px; margin: 0 0 24px; padding: 8px 12px;
+    color: var(--status-warn); font-size: 12px; margin: 0 0 20px; padding: 8px 12px;
     background: rgba(217,167,44,0.08); border: 1px solid var(--status-warn); border-radius: 6px;
   }
+
+  .lib-section { margin: 0 0 24px; padding: 14px 16px; background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px; }
+  .lib-section h2 { font-size: 13px; color: var(--text-secondary); margin: 0 0 8px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+  .lib-section .subhint { color: var(--text-muted); font-size: 12px; margin: 0 0 10px; }
+  .lib-list { max-height: 220px; overflow-y: auto; }
+  .lib-item {
+    display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 6px;
+    border-bottom: 1px solid var(--gridline); font-size: 13px; flex-wrap: wrap;
+  }
+  .lib-item:last-child { border-bottom: none; }
+  .lib-item .title { font-weight: 600; }
+  .lib-item .desc { color: var(--text-secondary); font-size: 12px; flex-basis: 100%; }
+  .lib-item .tag { color: var(--text-muted); font-size: 11px; }
+  .lib-empty { color: var(--text-muted); font-size: 12px; padding: 6px 0; }
 
   #viewq {
     width: 100%; background: var(--surface-1); border: 1px solid var(--border);
@@ -139,6 +168,19 @@ function renderHtml(embeddedJson, stats) {
     border-radius: 4px; padding: 1px 6px;
   }
   .picked button { margin-left: auto; }
+
+  .joins { margin-top: 10px; }
+  .join-row {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 10px;
+    margin-bottom: 8px; background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px;
+  }
+  .join-row .alias-badge {
+    font-family: ui-monospace, monospace; font-size: 11px; color: var(--accent);
+    border: 1px solid var(--accent); border-radius: 4px; padding: 1px 6px; flex-shrink: 0;
+  }
+  .join-row .viewpick { position: relative; flex: 1; min-width: 220px; }
+  .join-row .join-warn { color: var(--status-warn); font-size: 11px; flex-basis: 100%; }
+  .join-row .on-line { display: flex; align-items: center; gap: 6px; flex-basis: 100%; flex-wrap: wrap; }
 
   .builder { display: none; margin-top: 24px; }
   .builder.open { display: block; }
@@ -199,14 +241,26 @@ function renderHtml(embeddedJson, stats) {
   .output-bar { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
   .output-bar .copied { color: var(--status-good); font-size: 12px; display: none; }
 
+  .save-panel { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--gridline); }
+  .save-panel input[type=text] { width: 100%; margin-bottom: 8px; }
+  .save-panel textarea { width: 100%; margin-top: 8px; }
+  .save-panel .subhint { margin-top: 8px; }
+
   .stats { color: var(--text-muted); font-size: 12px; margin-top: 32px; border-top: 1px solid var(--gridline); padding-top: 16px; }
 </style>
 </head>
 <body class="viz-root">
 <div class="container">
   <h1>CDS Knowledge Base <span>· Query Builder</span></h1>
-  <p class="subtitle">Pick one CDS view, then compose SELECT / WHERE / GROUP BY / HAVING / ORDER BY against its real field names — no need to retype or guess field spelling.</p>
+  <p class="subtitle">Pick CDS view(s) — join more than one if you need to — then compose SELECT / WHERE / GROUP BY / HAVING / ORDER BY against their real field names.</p>
   <p class="disclaimer">⚠️ This only generates reference syntax from field names in this data repo. It does not connect to, validate against, or run anything on a real SAP system — check the output before using it.</p>
+
+  <div class="lib-section">
+    <h2>📚 Saved queries</h2>
+    <p class="subhint">Contributed queries anyone can load and keep editing. Contributing is a PR to <code>index/query-library.json</code> — same as everything else in this repo. Use "💾 Save this query" below the builder to generate the JSON snippet to add.</p>
+    <input type="text" id="libFilter" class="field-filter" placeholder="Filter saved queries by title, description, or view…" autocomplete="off" spellcheck="false" />
+    <div class="lib-list" id="libList"></div>
+  </div>
 
   <input id="viewq" type="text" placeholder="Type a view name, e.g. I_Product, I_SalesOrderItem…" autocomplete="off" spellcheck="false" />
   <p class="hint">${stats.viewCount} view(s) available. Requires <code>index/view-fields.js</code> in the same folder (already the case if you got this page from the repo/site).</p>
@@ -220,12 +274,17 @@ function renderHtml(embeddedJson, stats) {
     <button id="pickedClear">change view</button>
   </div>
 
+  <div id="joinsWrap" class="joins" style="display:none">
+    <div id="joinRows"></div>
+    <button id="joinAdd" class="link">+ join another view</button>
+  </div>
+
   <div id="builder" class="builder">
     <div class="builder-grid">
       <div class="builder-left">
         <div class="section">
           <h2>Select</h2>
-          <p class="subhint">Tick fields to include. Pick an aggregate to wrap a field (e.g. SUM), or leave "—" for a plain column. Nothing ticked = <code>SELECT *</code>.</p>
+          <p class="subhint">Tick fields to include. Pick an aggregate to wrap a field (e.g. SUM), or leave "—" for a plain column. Nothing ticked = <code>SELECT *</code>. Fields show as <code>alias.Field</code> once more than one view is joined.</p>
           <div class="raw-toggle"><input type="checkbox" id="selectRawToggle" /><label for="selectRawToggle">Type raw SELECT text instead of using the builder below</label></div>
           <textarea id="selectRaw" class="raw" style="display:none" placeholder="e.g. Product, COUNT(*) AS ProductCount"></textarea>
           <div id="selectBuilderWrap">
@@ -285,6 +344,16 @@ function renderHtml(embeddedJson, stats) {
             <span class="copied" id="copiedMsg">Copied!</span>
           </div>
           <pre id="output"></pre>
+
+          <div class="save-panel">
+            <h2 style="font-size:13px;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.04em;margin:0 0 8px;">💾 Save this query</h2>
+            <p class="subhint" style="margin-top:0">This page can't write to the repo itself — fill in a title, generate the JSON snippet, then add it to <code>index/query-library.json</code> via a PR to share it.</p>
+            <input type="text" id="saveTitle" placeholder="Title, e.g. Products missing a description" autocomplete="off" />
+            <input type="text" id="saveDesc" placeholder="One-line description (optional)" autocomplete="off" />
+            <input type="text" id="saveContributor" placeholder="Your name/handle (optional)" autocomplete="off" />
+            <button id="saveGenBtn">Generate JSON snippet</button>
+            <textarea id="saveOutput" class="raw" style="display:none" readonly></textarea>
+          </div>
         </div>
       </div>
     </div>
@@ -299,6 +368,7 @@ function renderHtml(embeddedJson, stats) {
   const GITHUB_BLOB_BASE = ${JSON.stringify(GITHUB_BLOB_BASE)};
   const AGGS = ['—', 'COUNT', 'SUM', 'AVG', 'MIN', 'MAX'];
   const OPS = ['=', '<>', '>', '<', '>=', '<=', 'LIKE', 'NOT LIKE', 'IN', 'BETWEEN', 'IS NULL', 'IS NOT NULL'];
+  const JOIN_TYPES = ['INNER JOIN', 'LEFT JOIN', 'RIGHT JOIN', 'FULL JOIN'];
 
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -307,57 +377,6 @@ function renderHtml(embeddedJson, stats) {
   function viewsIndex() {
     return (typeof window.__VIEW_FIELDS__ === 'object' && window.__VIEW_FIELDS__) || {};
   }
-
-  // ── View picker ──────────────────────────────────────────────────────────
-  const viewq = document.getElementById('viewq');
-  const viewResults = document.getElementById('viewResults');
-  const picked = document.getElementById('picked');
-  const builder = document.getElementById('builder');
-  let currentView = null;
-  let currentFields = []; // [{name, isKey, source, type, description}]
-
-  function searchViews(term) {
-    const names = Object.keys(viewsIndex());
-    const upper = term.toUpperCase();
-    const starts = [], contains = [];
-    for (const n of names) {
-      if (!upper) continue;
-      if (n.startsWith(upper)) starts.push(n);
-      else if (n.includes(upper)) contains.push(n);
-    }
-    return [...starts.sort(), ...contains.sort()].slice(0, 40);
-  }
-
-  function renderViewResults() {
-    const term = viewq.value.trim();
-    if (!term) { viewResults.classList.remove('open'); viewResults.innerHTML = ''; return; }
-    const matches = searchViews(term);
-    if (matches.length === 0) {
-      viewResults.innerHTML = '<div class="vrow" style="cursor:default;color:var(--text-muted)">No view name matches "' + escapeHtml(term) + '".</div>';
-      viewResults.classList.add('open');
-      return;
-    }
-    viewResults.innerHTML = matches.map(n => {
-      const meta = DATA.M[n] || ['', 0];
-      const warn = meta[1] ? ' <span class="warn">⚠ not queryable</span>' : '';
-      return '<div class="vrow" data-view="' + escapeHtml(n) + '"><span class="name">' + escapeHtml(n) + '</span>' + warn +
-        '<span class="tag">' + escapeHtml(meta[0] || '') + '</span></div>';
-    }).join('');
-    viewResults.classList.add('open');
-  }
-  viewq.addEventListener('input', renderViewResults);
-  viewResults.addEventListener('click', (e) => {
-    const row = e.target.closest('.vrow[data-view]');
-    if (row) selectView(row.dataset.view);
-  });
-
-  document.getElementById('pickedClear').addEventListener('click', () => {
-    currentView = null;
-    picked.classList.remove('open');
-    builder.classList.remove('open');
-    viewq.value = '';
-    viewq.focus();
-  });
 
   function fieldsOf(viewName) {
     const entry = viewsIndex()[viewName];
@@ -380,46 +399,255 @@ function renderHtml(embeddedJson, stats) {
     return out;
   }
 
-  function selectView(name) {
-    currentView = name;
-    currentFields = fieldsOf(name);
+  // ── Saved-query library ──────────────────────────────────────────────────
+  const LIB = Array.isArray(DATA.L) ? DATA.L : [];
+  const libList = document.getElementById('libList');
+  const libFilter = document.getElementById('libFilter');
+
+  function renderLibList() {
+    const term = libFilter.value.trim().toUpperCase();
+    const items = LIB.filter(q => !term ||
+      (q.title || '').toUpperCase().includes(term) ||
+      (q.description || '').toUpperCase().includes(term) ||
+      (q.views || []).some(v => (v.name || '').toUpperCase().includes(term)));
+    if (LIB.length === 0) {
+      libList.innerHTML = '<p class="lib-empty">No saved queries yet — be the first to contribute one with "💾 Save this query" below the builder.</p>';
+      return;
+    }
+    if (items.length === 0) {
+      libList.innerHTML = '<p class="lib-empty">No saved query matches "' + escapeHtml(libFilter.value) + '".</p>';
+      return;
+    }
+    libList.innerHTML = items.map((q, i) => {
+      const idx = LIB.indexOf(q);
+      const viewsTag = (q.views || []).map(v => v.name).join(', ');
+      const contrib = q.contributor ? ' · by ' + escapeHtml(q.contributor) : '';
+      return '<div class="lib-item"><span class="title">' + escapeHtml(q.title || '(untitled)') + '</span>' +
+        '<span class="tag">' + escapeHtml(viewsTag) + contrib + '</span>' +
+        '<button class="link" data-load="' + idx + '">Load ↓</button>' +
+        (q.description ? '<span class="desc">' + escapeHtml(q.description) + '</span>' : '') +
+        '</div>';
+    }).join('');
+  }
+  libFilter.addEventListener('input', renderLibList);
+  libList.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-load]');
+    if (btn) loadSavedQuery(LIB[Number(btn.dataset.load)]);
+  });
+  renderLibList();
+  document.getElementById('statsLine').textContent = ${JSON.stringify(`${stats.viewCount} view(s) available · ${stats.libCount} saved quer${stats.libCount === 1 ? 'y' : 'ies'}.`)};
+
+  // ── Primary view picker ──────────────────────────────────────────────────
+  const viewq = document.getElementById('viewq');
+  const viewResults = document.getElementById('viewResults');
+  const picked = document.getElementById('picked');
+  const joinsWrap = document.getElementById('joinsWrap');
+  const builder = document.getElementById('builder');
+
+  // joinedViews[0] is always the FROM view (joinType/on* unused on it).
+  // joinedViews[i>0]: { alias, name, fields, joinType, onLeftAlias, onLeftField, onRightField, onRawToggle, onRaw }
+  let joinedViews = [];
+
+  function searchViews(term) {
+    const names = Object.keys(viewsIndex());
+    const upper = term.toUpperCase();
+    const starts = [], contains = [];
+    for (const n of names) {
+      if (!upper) continue;
+      if (n.startsWith(upper)) starts.push(n);
+      else if (n.includes(upper)) contains.push(n);
+    }
+    return [...starts.sort(), ...contains.sort()].slice(0, 40);
+  }
+
+  function viewRowsHtml(matches) {
+    return matches.map(n => {
+      const meta = DATA.M[n] || ['', 0];
+      const warn = meta[1] ? ' <span class="warn">⚠ not queryable</span>' : '';
+      return '<div class="vrow" data-view="' + escapeHtml(n) + '"><span class="name">' + escapeHtml(n) + '</span>' + warn +
+        '<span class="tag">' + escapeHtml(meta[0] || '') + '</span></div>';
+    }).join('');
+  }
+
+  function renderViewResults() {
+    const term = viewq.value.trim();
+    if (!term) { viewResults.classList.remove('open'); viewResults.innerHTML = ''; return; }
+    const matches = searchViews(term);
+    viewResults.innerHTML = matches.length
+      ? viewRowsHtml(matches)
+      : '<div class="vrow" style="cursor:default;color:var(--text-muted)">No view name matches "' + escapeHtml(term) + '".</div>';
+    viewResults.classList.add('open');
+  }
+  viewq.addEventListener('input', renderViewResults);
+  viewResults.addEventListener('click', (e) => {
+    const row = e.target.closest('.vrow[data-view]');
+    if (row) pickPrimaryView(row.dataset.view);
+  });
+
+  document.getElementById('pickedClear').addEventListener('click', () => {
+    joinedViews = [];
+    picked.classList.remove('open');
+    joinsWrap.style.display = 'none';
+    builder.classList.remove('open');
+    viewq.value = '';
+    viewq.focus();
+  });
+
+  function pickPrimaryView(name) {
+    joinedViews = [{ alias: 't1', name, fields: fieldsOf(name) }];
     viewResults.classList.remove('open');
     viewq.value = name;
 
     const meta = DATA.M[name] || ['', 0];
     document.getElementById('pickedName').textContent = name;
-    const path = DATA.P[name];
+    const p = DATA.P[name];
     const link = document.getElementById('pickedLink');
-    if (path) { link.href = GITHUB_BLOB_BASE + path; link.style.display = ''; } else { link.style.display = 'none'; }
+    if (p) { link.href = GITHUB_BLOB_BASE + p; link.style.display = ''; } else { link.style.display = 'none'; }
     document.getElementById('pickedComponent').textContent = meta[0] || '';
     document.getElementById('pickedWarn').innerHTML = meta[1]
       ? '<span class="warn" style="border:1px solid var(--status-warn);border-radius:4px;padding:1px 6px;">⚠ abstract entity/action-parameter structure — no runtime entity set to query</span>' : '';
     picked.classList.add('open');
+    joinsWrap.style.display = '';
     builder.classList.add('open');
 
-    resetBuilderState();
-    renderSelectFields();
-    renderGroupByFields();
-    renderWhereRows();
-    renderHavingRows();
-    renderOrderRows();
+    renderJoins();
+    resetClauseState();
+  }
+
+  // ── Joins ────────────────────────────────────────────────────────────────
+  function nextAlias() { return 't' + (joinedViews.length + 1); }
+
+  document.getElementById('joinAdd').addEventListener('click', () => {
+    joinedViews.push({
+      alias: nextAlias(), name: '', fields: [], joinType: JOIN_TYPES[0],
+      onLeftAlias: joinedViews[0]?.alias || '', onLeftField: '', onRightField: '',
+      onRawToggle: false, onRaw: '',
+    });
+    renderJoins();
+    resetClauseState();
+  });
+
+  function priorFieldOptions(uptoIdx) {
+    const opts = [];
+    for (let i = 0; i < uptoIdx; i++) {
+      const v = joinedViews[i];
+      for (const f of (v.fields || [])) opts.push({ alias: v.alias, name: f.name });
+    }
+    return opts;
+  }
+
+  function renderJoins() {
+    const el = document.getElementById('joinRows');
+    el.innerHTML = joinedViews.slice(1).map((v, i0) => {
+      const idx = i0 + 1;
+      const meta = v.name ? (DATA.M[v.name] || ['', 0]) : ['', 0];
+      const warn = v.name && meta[1]
+        ? '<span class="join-warn">⚠ ' + escapeHtml(v.name) + ' is an abstract entity/action-parameter structure — no runtime entity set to query</span>' : '';
+      const joinTypeOpts = JOIN_TYPES.map(t => '<option' + (t === v.joinType ? ' selected' : '') + '>' + t + '</option>').join('');
+      const priorOpts = priorFieldOptions(idx);
+      const leftOpts = priorOpts.map(o => {
+        const val = o.alias + '.' + o.name;
+        const sel = v.onLeftAlias === o.alias && v.onLeftField === o.name ? ' selected' : '';
+        return '<option value="' + escapeHtml(val) + '"' + sel + '>' + escapeHtml(val) + '</option>';
+      }).join('');
+      const rightOpts = (v.fields || []).map(f =>
+        '<option' + (f.name === v.onRightField ? ' selected' : '') + '>' + escapeHtml(f.name) + '</option>'
+      ).join('');
+      const base = 'join_' + idx;
+      const onBuilder = '<select id="' + base + '_onLeft" name="' + base + '_onLeft" class="field" data-idx="' + idx + '" data-role="onLeft">' + leftOpts + '</select>' +
+        '<span style="color:var(--text-muted)">=</span>' +
+        '<span class="alias-badge">' + escapeHtml(v.alias) + '</span>' +
+        '<select id="' + base + '_onRight" name="' + base + '_onRight" class="field" data-idx="' + idx + '" data-role="onRight">' + rightOpts + '</select>';
+      const onRawBox = '<textarea id="' + base + '_onRaw" name="' + base + '_onRaw" class="raw" data-idx="' + idx + '" data-role="onRaw" style="' + (v.onRawToggle ? '' : 'display:none') + '" placeholder="e.g. t1.Product = t2.Product AND t1.Plant = t2.Plant">' + escapeHtml(v.onRaw || '') + '</textarea>';
+      return '<div class="join-row" data-row="' + idx + '">' +
+        '<select id="' + base + '_joinType" name="' + base + '_joinType" class="op" data-idx="' + idx + '" data-role="joinType">' + joinTypeOpts + '</select>' +
+        '<div class="viewpick">' +
+          '<input type="text" id="' + base + '_view" name="' + base + '_view" class="joinViewInput" data-idx="' + idx + '" placeholder="Type a view name…" value="' + escapeHtml(v.name) + '" autocomplete="off" spellcheck="false" />' +
+          '<div class="join-view-results" data-idx="' + idx + '" style="display:none;position:absolute;z-index:5;left:0;right:0;background:var(--page-plane);border:1px solid var(--border);border-radius:8px;max-height:220px;overflow-y:auto;"></div>' +
+        '</div>' +
+        '<span class="alias-badge">' + escapeHtml(v.alias) + '</span>' +
+        '<button class="remove" data-idx="' + idx + '" data-role="removeJoin">✕</button>' +
+        warn +
+        '<div class="on-line"><span style="color:var(--text-muted);font-size:12px">ON</span>' +
+        (v.name ? (v.onRawToggle ? onRawBox : onBuilder) : '<span class="subhint" style="margin:0">pick a view first</span>') +
+        (v.name ? '<label style="display:flex;align-items:center;gap:4px;font-size:11px;color:var(--text-muted)"><input type="checkbox" id="' + base + '_onRawToggle" name="' + base + '_onRawToggle" class="onRawToggle" data-idx="' + idx + '"' + (v.onRawToggle ? ' checked' : '') + ' /> raw ON</label>' : '') +
+        '</div></div>';
+    }).join('');
+
+    el.querySelectorAll('.joinViewInput').forEach(input => {
+      input.addEventListener('input', (e) => {
+        const idx = Number(e.target.dataset.idx);
+        const box = el.querySelector('.join-view-results[data-idx="' + idx + '"]');
+        const term = e.target.value.trim();
+        if (!term) { box.style.display = 'none'; box.innerHTML = ''; return; }
+        const matches = searchViews(term);
+        box.innerHTML = matches.length ? viewRowsHtml(matches) : '<div class="vrow" style="cursor:default;color:var(--text-muted)">No match.</div>';
+        box.style.display = matches.length ? '' : 'none';
+      });
+    });
+    el.querySelectorAll('.join-view-results').forEach(box => {
+      box.addEventListener('click', (e) => {
+        const row = e.target.closest('.vrow[data-view]');
+        if (!row) return;
+        const idx = Number(box.dataset.idx);
+        const name = row.dataset.view;
+        joinedViews[idx].name = name;
+        joinedViews[idx].fields = fieldsOf(name);
+        joinedViews[idx].onLeftField = ''; joinedViews[idx].onRightField = '';
+        renderJoins();
+        resetClauseState();
+      });
+    });
+    el.querySelectorAll('[data-role="joinType"]').forEach(sel => sel.addEventListener('change', (e) => {
+      joinedViews[Number(e.target.dataset.idx)].joinType = e.target.value; buildQuery();
+    }));
+    el.querySelectorAll('[data-role="onLeft"]').forEach(sel => sel.addEventListener('change', (e) => {
+      const [alias, field] = e.target.value.split('.');
+      const v = joinedViews[Number(e.target.dataset.idx)];
+      v.onLeftAlias = alias; v.onLeftField = field; buildQuery();
+    }));
+    el.querySelectorAll('[data-role="onRight"]').forEach(sel => sel.addEventListener('change', (e) => {
+      joinedViews[Number(e.target.dataset.idx)].onRightField = e.target.value; buildQuery();
+    }));
+    el.querySelectorAll('[data-role="onRaw"]').forEach(ta => ta.addEventListener('input', (e) => {
+      joinedViews[Number(e.target.dataset.idx)].onRaw = e.target.value; buildQuery();
+    }));
+    el.querySelectorAll('.onRawToggle').forEach(chk => chk.addEventListener('change', (e) => {
+      joinedViews[Number(e.target.dataset.idx)].onRawToggle = e.target.checked; renderJoins(); buildQuery();
+    }));
+    el.querySelectorAll('[data-role="removeJoin"]').forEach(btn => btn.addEventListener('click', (e) => {
+      joinedViews.splice(Number(e.target.dataset.idx), 1);
+      joinedViews.forEach((v, i) => { v.alias = 't' + (i + 1); });
+      renderJoins();
+      resetClauseState();
+    }));
+
     buildQuery();
   }
 
+  // ── Combined field universe (qualified once more than one view) ─────────
+  function allFields() {
+    const multi = joinedViews.length > 1;
+    return joinedViews.filter(v => v.name).flatMap(v =>
+      (v.fields || []).map(f => ({ ...f, alias: v.alias, qualifiedName: multi ? v.alias + '.' + f.name : f.name }))
+    );
+  }
+
   // ── Builder state ────────────────────────────────────────────────────────
-  let selectState = {}; // fieldName -> { checked, agg }
-  let groupByState = {}; // fieldName -> checked
+  let selectState = {}; // qualifiedName -> { checked, agg }
+  let groupByState = {}; // qualifiedName -> checked
   let whereConds = []; // { field, op, value, value2, joiner }
   let havingConds = [];
   let orderConds = []; // { field, dir }
 
   const RAW_SECTIONS = ['select', 'where', 'groupBy', 'having', 'order'];
 
-  function resetBuilderState() {
+  function resetClauseState() {
     selectState = {};
     groupByState = {};
-    for (const f of currentFields) { selectState[f.name] = { checked: false, agg: AGGS[0] }; groupByState[f.name] = false; }
-    whereConds = [{ field: currentFields[0]?.name || '', op: '=', value: '', value2: '', joiner: 'AND' }];
+    const fields = allFields();
+    for (const f of fields) { selectState[f.qualifiedName] = { checked: false, agg: AGGS[0] }; groupByState[f.qualifiedName] = false; }
+    whereConds = [{ field: fields[0]?.qualifiedName || '', op: '=', value: '', value2: '', joiner: 'AND' }];
     havingConds = [];
     orderConds = [];
     for (const prefix of RAW_SECTIONS) {
@@ -430,6 +658,13 @@ function renderHtml(embeddedJson, stats) {
     }
     document.getElementById('selectFieldFilter').value = '';
     document.getElementById('groupByFieldFilter').value = '';
+
+    renderSelectFields();
+    renderGroupByFields();
+    renderWhereRows();
+    renderHavingRows();
+    renderOrderRows();
+    buildQuery();
   }
 
   // Each section (Select/Where/Group By/Having/Order By) can be typed as raw
@@ -466,13 +701,14 @@ function renderHtml(embeddedJson, stats) {
 
   function renderSelectFields() {
     const el = document.getElementById('selectFields');
-    el.innerHTML = currentFields.map(f => {
-      const id = 'sel_' + f.name;
+    const fields = allFields();
+    el.innerHTML = fields.map(f => {
+      const id = 'sel_' + f.qualifiedName;
       const aggOpts = AGGS.map(a => '<option value="' + a + '">' + a + '</option>').join('');
-      return '<div class="field-item" data-name="' + escapeHtml(f.name.toUpperCase()) + '"><input type="checkbox" id="' + id + '" data-field="' + escapeHtml(f.name) + '" class="selChk" />' +
-        '<label for="' + id + '" title="' + escapeHtml(f.source || f.name) + '">' + escapeHtml(f.name) + '</label>' +
+      return '<div class="field-item" data-name="' + escapeHtml(f.qualifiedName.toUpperCase()) + '"><input type="checkbox" id="' + id + '" data-field="' + escapeHtml(f.qualifiedName) + '" class="selChk" />' +
+        '<label for="' + id + '" title="' + escapeHtml(f.source || f.qualifiedName) + '">' + escapeHtml(f.qualifiedName) + '</label>' +
         (f.isKey ? '<span class="key">key</span>' : '') +
-        '<select id="agg_' + id + '" name="agg_' + id + '" data-field="' + escapeHtml(f.name) + '" class="selAgg">' + aggOpts + '</select></div>';
+        '<select id="agg_' + id + '" name="agg_' + id + '" data-field="' + escapeHtml(f.qualifiedName) + '" class="selAgg">' + aggOpts + '</select></div>';
     }).join('') || '<span style="color:var(--text-muted)">No parsed field list for this view yet.</span>';
     el.querySelectorAll('.selChk').forEach(chk => chk.addEventListener('change', (e) => {
       selectState[e.target.dataset.field].checked = e.target.checked; buildQuery();
@@ -484,10 +720,11 @@ function renderHtml(embeddedJson, stats) {
 
   function renderGroupByFields() {
     const el = document.getElementById('groupByFields');
-    el.innerHTML = currentFields.map(f => {
-      const id = 'grp_' + f.name;
-      return '<div class="field-item" data-name="' + escapeHtml(f.name.toUpperCase()) + '"><input type="checkbox" id="' + id + '" data-field="' + escapeHtml(f.name) + '" class="grpChk" />' +
-        '<label for="' + id + '">' + escapeHtml(f.name) + '</label></div>';
+    const fields = allFields();
+    el.innerHTML = fields.map(f => {
+      const id = 'grp_' + f.qualifiedName;
+      return '<div class="field-item" data-name="' + escapeHtml(f.qualifiedName.toUpperCase()) + '"><input type="checkbox" id="' + id + '" data-field="' + escapeHtml(f.qualifiedName) + '" class="grpChk" />' +
+        '<label for="' + id + '">' + escapeHtml(f.qualifiedName) + '</label></div>';
     }).join('') || '<span style="color:var(--text-muted)">No parsed field list for this view yet.</span>';
     el.querySelectorAll('.grpChk').forEach(chk => chk.addEventListener('change', (e) => {
       groupByState[e.target.dataset.field] = e.target.checked; buildQuery();
@@ -495,13 +732,13 @@ function renderHtml(embeddedJson, stats) {
   }
 
   function fieldOptionsHtml(selected) {
-    return currentFields.map(f => '<option value="' + escapeHtml(f.name) + '"' + (f.name === selected ? ' selected' : '') + '>' + escapeHtml(f.name) + '</option>').join('');
+    return allFields().map(f => '<option value="' + escapeHtml(f.qualifiedName) + '"' + (f.qualifiedName === selected ? ' selected' : '') + '>' + escapeHtml(f.qualifiedName) + '</option>').join('');
   }
 
   function needsNoValue(op) { return op === 'IS NULL' || op === 'IS NOT NULL'; }
   function needsSecondValue(op) { return op === 'BETWEEN'; }
 
-  function renderConditionRows(containerId, conds, onChange) {
+  function renderConditionRows(containerId, conds) {
     const el = document.getElementById(containerId);
     el.innerHTML = conds.map((c, i) => {
       const base = containerId + '_' + i;
@@ -521,9 +758,9 @@ function renderHtml(embeddedJson, stats) {
       input.addEventListener(evt, (e) => {
         const idx = Number(e.target.dataset.idx);
         const role = e.target.dataset.role;
-        if (role === 'remove') { conds.splice(idx, 1); renderConditionRows(containerId, conds, onChange); buildQuery(); return; }
+        if (role === 'remove') { conds.splice(idx, 1); renderConditionRows(containerId, conds); buildQuery(); return; }
         conds[idx][role] = e.target.value;
-        if (role === 'op') renderConditionRows(containerId, conds, onChange);
+        if (role === 'op') renderConditionRows(containerId, conds);
         buildQuery();
       });
     });
@@ -533,11 +770,11 @@ function renderHtml(embeddedJson, stats) {
   function renderHavingRows() { renderConditionRows('havingRows', havingConds); }
 
   document.getElementById('whereAdd').addEventListener('click', () => {
-    whereConds.push({ field: currentFields[0]?.name || '', op: '=', value: '', value2: '', joiner: 'AND' });
+    whereConds.push({ field: allFields()[0]?.qualifiedName || '', op: '=', value: '', value2: '', joiner: 'AND' });
     renderWhereRows(); buildQuery();
   });
   document.getElementById('havingAdd').addEventListener('click', () => {
-    havingConds.push({ field: currentFields[0]?.name || '', op: '=', value: '', value2: '', joiner: 'AND' });
+    havingConds.push({ field: allFields()[0]?.qualifiedName || '', op: '=', value: '', value2: '', joiner: 'AND' });
     renderHavingRows(); buildQuery();
   });
 
@@ -562,7 +799,7 @@ function renderHtml(embeddedJson, stats) {
     });
   }
   document.getElementById('orderAdd').addEventListener('click', () => {
-    orderConds.push({ field: currentFields[0]?.name || '', dir: 'ASC' });
+    orderConds.push({ field: allFields()[0]?.qualifiedName || '', dir: 'ASC' });
     renderOrderRows(); buildQuery();
   });
 
@@ -590,21 +827,36 @@ function renderHtml(embeddedJson, stats) {
     return conds.map((c, i) => (i === 0 ? '' : '  ' + c.joiner + ' ') + conditionText(c)).join('\\n');
   }
 
+  function joinOnText(v) {
+    if (v.onRawToggle) return (v.onRaw || '').trim();
+    if (!v.onLeftAlias || !v.onLeftField || !v.onRightField) return '';
+    return v.onLeftAlias + '.' + v.onLeftField + ' = ' + v.alias + '.' + v.onRightField;
+  }
+
+  function fromClauseLines() {
+    const multi = joinedViews.length > 1;
+    return joinedViews.filter(v => v.name).map((v, i) => {
+      if (i === 0) return 'FROM ' + v.name + (multi ? ' AS ' + v.alias : '');
+      const onText = joinOnText(v);
+      return v.joinType + ' ' + v.name + ' AS ' + v.alias + ' ON ' + (onText || '<join condition>');
+    });
+  }
+
   function isRaw(prefix) { return document.getElementById(prefix + 'RawToggle').checked; }
   function rawText(prefix) { return document.getElementById(prefix + 'Raw').value.trim(); }
 
   function buildQuery() {
     const out = document.getElementById('output');
-    if (!currentView) { out.textContent = ''; return; }
+    if (!joinedViews.length || !joinedViews[0].name) { out.textContent = ''; return; }
 
     let selectText;
     if (isRaw('select')) {
       selectText = rawText('select') || '*';
     } else {
-      const selected = currentFields.filter(f => selectState[f.name]?.checked);
+      const selected = allFields().filter(f => selectState[f.qualifiedName]?.checked);
       const selectParts = selected.map(f => {
-        const agg = selectState[f.name].agg;
-        return agg === AGGS[0] ? f.name : agg + '(' + f.name + ')';
+        const agg = selectState[f.qualifiedName].agg;
+        return agg === AGGS[0] ? f.qualifiedName : agg + '(' + f.qualifiedName + ')';
       });
       selectText = selectParts.length ? selectParts.join(',\\n  ') : '*';
     }
@@ -613,14 +865,14 @@ function renderHtml(embeddedJson, stats) {
     if (isRaw('groupBy')) {
       groupText = rawText('groupBy');
     } else {
-      groupText = currentFields.filter(f => groupByState[f.name]).map(f => f.name).join(', ');
+      groupText = allFields().filter(f => groupByState[f.qualifiedName]).map(f => f.qualifiedName).join(', ');
     }
 
     const whereText = isRaw('where') ? rawText('where') : conditionsText(whereConds.filter(c => c.field));
     const havingText = isRaw('having') ? rawText('having') : conditionsText(havingConds.filter(c => c.field));
     const orderText = isRaw('order') ? rawText('order') : orderConds.map(c => c.field + ' ' + c.dir).join(', ');
 
-    let lines = ['SELECT', '  ' + selectText, 'FROM ' + currentView];
+    let lines = ['SELECT', '  ' + selectText, ...fromClauseLines()];
     if (whereText) lines.push('WHERE\\n  ' + whereText);
     if (groupText) lines.push('GROUP BY ' + groupText);
     if (havingText) lines.push('HAVING\\n  ' + havingText);
@@ -639,7 +891,86 @@ function renderHtml(embeddedJson, stats) {
     });
   });
 
-  document.getElementById('statsLine').textContent = ${JSON.stringify(`${stats.viewCount} view(s) available for the picker.`)};
+  // ── Save (export JSON snippet) / Load ───────────────────────────────────
+  function currentQueryAsObject() {
+    return {
+      title: document.getElementById('saveTitle').value.trim(),
+      description: document.getElementById('saveDesc').value.trim(),
+      contributor: document.getElementById('saveContributor').value.trim() || undefined,
+      views: joinedViews.filter(v => v.name).map((v, i) => ({
+        alias: v.alias,
+        name: v.name,
+        joinType: i === 0 ? null : v.joinType,
+        on: i === 0 ? null : joinOnText(v),
+      })),
+      select: isRaw('select') ? rawText('select') : (function () {
+        const selected = allFields().filter(f => selectState[f.qualifiedName]?.checked);
+        return selected.map(f => {
+          const agg = selectState[f.qualifiedName].agg;
+          return agg === AGGS[0] ? f.qualifiedName : agg + '(' + f.qualifiedName + ')';
+        }).join(', ');
+      })(),
+      where: isRaw('where') ? rawText('where') : conditionsText(whereConds.filter(c => c.field)),
+      groupBy: isRaw('groupBy') ? rawText('groupBy') : allFields().filter(f => groupByState[f.qualifiedName]).map(f => f.qualifiedName).join(', '),
+      having: isRaw('having') ? rawText('having') : conditionsText(havingConds.filter(c => c.field)),
+      orderBy: isRaw('order') ? rawText('order') : orderConds.map(c => c.field + ' ' + c.dir).join(', '),
+    };
+  }
+
+  document.getElementById('saveGenBtn').addEventListener('click', () => {
+    const obj = currentQueryAsObject();
+    const box = document.getElementById('saveOutput');
+    if (!obj.title) {
+      box.style.display = '';
+      box.value = 'Add a title first (above) — it is how this query will be found and picked in the "Saved queries" list.';
+      return;
+    }
+    box.style.display = '';
+    box.value = JSON.stringify(obj, null, 2) + ',';
+  });
+
+  function loadSavedQuery(q) {
+    if (!q) return;
+    joinedViews = (q.views || []).map((v, i) => ({
+      alias: v.alias || 't' + (i + 1),
+      name: v.name,
+      fields: fieldsOf(v.name),
+      joinType: v.joinType || JOIN_TYPES[0],
+      onLeftAlias: '', onLeftField: '', onRightField: '',
+      onRawToggle: true,
+      onRaw: v.on || '',
+    }));
+    if (!joinedViews.length) return;
+
+    const primary = joinedViews[0];
+    viewq.value = primary.name;
+    const meta = DATA.M[primary.name] || ['', 0];
+    document.getElementById('pickedName').textContent = primary.name;
+    const p = DATA.P[primary.name];
+    const link = document.getElementById('pickedLink');
+    if (p) { link.href = GITHUB_BLOB_BASE + p; link.style.display = ''; } else { link.style.display = 'none'; }
+    document.getElementById('pickedComponent').textContent = meta[0] || '';
+    document.getElementById('pickedWarn').innerHTML = meta[1]
+      ? '<span class="warn" style="border:1px solid var(--status-warn);border-radius:4px;padding:1px 6px;">⚠ abstract entity/action-parameter structure — no runtime entity set to query</span>' : '';
+    picked.classList.add('open');
+    joinsWrap.style.display = '';
+    builder.classList.add('open');
+    renderJoins();
+
+    resetClauseState();
+    for (const prefix of ['select', 'where', 'groupBy', 'having', 'order']) {
+      const key = prefix === 'groupBy' ? 'groupBy' : prefix === 'order' ? 'orderBy' : prefix;
+      const val = q[key];
+      if (val) {
+        document.getElementById(prefix + 'RawToggle').checked = true;
+        document.getElementById(prefix + 'Raw').style.display = '';
+        document.getElementById(prefix + 'Raw').value = val;
+        document.getElementById(prefix + 'BuilderWrap').style.display = 'none';
+      }
+    }
+    buildQuery();
+    document.getElementById('picked').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 </script>
 </body>
 </html>
