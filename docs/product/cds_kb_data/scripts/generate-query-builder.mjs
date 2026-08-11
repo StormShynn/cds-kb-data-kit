@@ -16,8 +16,11 @@
 // index/query-library.json is a human-curated, git-tracked list of saved
 // queries (contributed the same way as everything else in this repo — edit
 // the JSON, open a PR). This script only reads and embeds it; there is no
-// backend for the page itself to write to, so its "Save" button exports a
-// JSON snippet to copy into that file rather than claiming to save anything.
+// backend for the page itself to write to, so "Save" writes to this
+// browser's localStorage (immediately usable from the "Saved queries" list
+// again, survives reloads) AND exports a JSON snippet — copying that into
+// query-library.json via a PR is what makes it visible to everyone else,
+// not just this browser.
 //
 // Usage:
 //   node scripts/generate-query-builder.mjs [dataDir] [outputFile]
@@ -121,7 +124,14 @@ function renderHtml(embeddedJson, stats) {
   }
 
   .lib-section { margin: 0 0 24px; padding: 14px 16px; background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px; }
-  .lib-section h2 { font-size: 13px; color: var(--text-secondary); margin: 0 0 8px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+  .lib-section h2 {
+    font-size: 13px; color: var(--text-secondary); margin: 0 0 8px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.04em; cursor: pointer; user-select: none;
+  }
+  .lib-section h2::before { content: '▾ '; display: inline-block; }
+  .lib-section.collapsed h2 { margin-bottom: 0; }
+  .lib-section.collapsed h2::before { content: '▸ '; }
+  .lib-section.collapsed > *:not(h2) { display: none; }
   .lib-section .subhint { color: var(--text-muted); font-size: 12px; margin: 0 0 10px; }
   .lib-list { max-height: 220px; overflow-y: auto; }
   .lib-item {
@@ -132,7 +142,14 @@ function renderHtml(embeddedJson, stats) {
   .lib-item .title { font-weight: 600; }
   .lib-item .desc { color: var(--text-secondary); font-size: 12px; flex-basis: 100%; }
   .lib-item .tag { color: var(--text-muted); font-size: 11px; }
+  .lib-item .tag.local { color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 1px 6px; }
+  .lib-item button.remove-local { margin-left: 0; }
   .lib-empty { color: var(--text-muted); font-size: 12px; padding: 6px 0; }
+  .import-panel { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--gridline); }
+  .import-panel textarea { width: 100%; }
+  .import-panel .msg { font-size: 12px; margin-top: 6px; }
+  .import-panel .msg.ok { color: var(--status-good); }
+  .import-panel .msg.err { color: var(--status-warn); }
 
   #viewq {
     width: 100%; background: var(--surface-1); border: 1px solid var(--border);
@@ -181,6 +198,7 @@ function renderHtml(embeddedJson, stats) {
   .join-row .viewpick { position: relative; flex: 1; min-width: 220px; }
   .join-row .join-warn { color: var(--status-warn); font-size: 11px; flex-basis: 100%; }
   .join-row .on-line { display: flex; align-items: center; gap: 6px; flex-basis: 100%; flex-wrap: wrap; }
+  .join-row .raw-toggle { flex-basis: 100%; margin-bottom: 6px; }
 
   .builder { display: none; margin-top: 24px; }
   .builder.open { display: block; }
@@ -192,7 +210,14 @@ function renderHtml(embeddedJson, stats) {
   }
   .section { margin-top: 22px; }
   .builder-left .section:first-child { margin-top: 0; }
-  .section h2 { font-size: 13px; color: var(--text-secondary); margin: 0 0 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+  .section h2 {
+    font-size: 13px; color: var(--text-secondary); margin: 0 0 10px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.04em; cursor: pointer; user-select: none;
+  }
+  .section h2::before { content: '▾ '; display: inline-block; }
+  .section.collapsed h2 { margin-bottom: 0; }
+  .section.collapsed h2::before { content: '▸ '; }
+  .section.collapsed > *:not(h2) { display: none; }
   .section .subhint { color: var(--text-muted); font-size: 12px; margin: -6px 0 10px; }
 
   .field-filter { width: 100%; margin-bottom: 6px; }
@@ -238,6 +263,16 @@ function renderHtml(embeddedJson, stats) {
     font-family: ui-monospace, "SF Mono", Consolas, monospace; white-space: pre-wrap;
     word-break: break-word;
   }
+  /* Lightweight ABAP/SQL-keyword syntax highlighting for #output — a small
+     hand-rolled tokenizer inspired by common ABAP editor conventions
+     (abaplint itself is a static-analysis linter for whole programs, not a
+     standalone highlighter, so it isn't embedded here — see the JS comment
+     next to highlightAbap()). */
+  .tok-kw { color: #7ec8ff; font-weight: 600; }
+  .tok-fn { color: #c792ea; }
+  .tok-str { color: #e6a45e; }
+  .tok-num { color: #f78c6c; }
+  .tok-op { color: #89ddff; }
   .output-bar { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
   .output-bar .copied { color: var(--status-good); font-size: 12px; display: none; }
 
@@ -255,11 +290,17 @@ function renderHtml(embeddedJson, stats) {
   <p class="subtitle">Pick CDS view(s) — join more than one if you need to — then compose SELECT / WHERE / GROUP BY / HAVING / ORDER BY against their real field names.</p>
   <p class="disclaimer">⚠️ This only generates reference syntax from field names in this data repo. It does not connect to, validate against, or run anything on a real SAP system — check the output before using it.</p>
 
-  <div class="lib-section">
-    <h2>📚 Saved queries</h2>
-    <p class="subhint">Contributed queries anyone can load and keep editing. Contributing is a PR to <code>index/query-library.json</code> — same as everything else in this repo. Use "💾 Save this query" below the builder to generate the JSON snippet to add.</p>
+  <div class="lib-section collapsed" id="libSection">
+    <h2 id="libSectionToggle">📚 Saved queries (<span id="libCount">0</span>)</h2>
+    <p class="subhint">Queries saved with "💾 Save" below live in this browser (localStorage) so they show up here again on reload. Sharing them with everyone else is a PR adding the generated JSON to <code>index/query-library.json</code> — same as everything else in this repo.</p>
     <input type="text" id="libFilter" class="field-filter" placeholder="Filter saved queries by title, description, or view…" autocomplete="off" spellcheck="false" />
     <div class="lib-list" id="libList"></div>
+    <div class="import-panel">
+      <p class="subhint" style="margin:0 0 6px">Already have a query's JSON (from a teammate, a PR, this page's own export)? Paste it here to add it straight to this browser's saved list — no need to rebuild it.</p>
+      <textarea id="importInput" class="raw" placeholder='{"title": "...", "views": [...], "select": "...", ...}'></textarea>
+      <button id="importBtn">Add to saved queries</button>
+      <span class="msg" id="importMsg"></span>
+    </div>
   </div>
 
   <input id="viewq" type="text" placeholder="Type a view name, e.g. I_Product, I_SalesOrderItem…" autocomplete="off" spellcheck="false" />
@@ -347,11 +388,11 @@ function renderHtml(embeddedJson, stats) {
 
           <div class="save-panel">
             <h2 style="font-size:13px;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.04em;margin:0 0 8px;">💾 Save this query</h2>
-            <p class="subhint" style="margin-top:0">This page can't write to the repo itself — fill in a title, generate the JSON snippet, then add it to <code>index/query-library.json</code> via a PR to share it.</p>
+            <p class="subhint" style="margin-top:0">Fill in a title, then Save — it's added to "📚 Saved queries" above right away (this browser only). The JSON snippet it also shows is what you'd paste into <code>index/query-library.json</code> via a PR to share it with everyone else.</p>
             <input type="text" id="saveTitle" placeholder="Title, e.g. Products missing a description" autocomplete="off" />
             <input type="text" id="saveDesc" placeholder="One-line description (optional)" autocomplete="off" />
             <input type="text" id="saveContributor" placeholder="Your name/handle (optional)" autocomplete="off" />
-            <button id="saveGenBtn">Generate JSON snippet</button>
+            <button id="saveGenBtn">💾 Save</button>
             <textarea id="saveOutput" class="raw" style="display:none" readonly></textarea>
           </div>
         </div>
@@ -400,42 +441,103 @@ function renderHtml(embeddedJson, stats) {
   }
 
   // ── Saved-query library ──────────────────────────────────────────────────
-  const LIB = Array.isArray(DATA.L) ? DATA.L : [];
+  // SHARED comes from index/query-library.json, embedded at build time —
+  // read-only here (changing it for real means a PR, since this page has no
+  // backend to write to). LOCAL_LIB is this browser's own saves, persisted
+  // to localStorage so "Save" is immediately useful (shows back up here,
+  // survives reloads) instead of only producing inert JSON text.
+  const SHARED = Array.isArray(DATA.L) ? DATA.L : [];
+  const LOCAL_LIB_KEY = 'cds-query-builder-saved-queries';
+  let LOCAL_LIB = [];
+  try { LOCAL_LIB = JSON.parse(localStorage.getItem(LOCAL_LIB_KEY) || '[]'); } catch { LOCAL_LIB = []; }
+  function persistLocalLib() {
+    try { localStorage.setItem(LOCAL_LIB_KEY, JSON.stringify(LOCAL_LIB)); } catch {}
+  }
+  function allSavedQueries() {
+    return [...SHARED.map(q => ({ ...q, __source: 'shared' })), ...LOCAL_LIB.map(q => ({ ...q, __source: 'local' }))];
+  }
+
+  const libSection = document.getElementById('libSection');
   const libList = document.getElementById('libList');
   const libFilter = document.getElementById('libFilter');
 
+  document.getElementById('libSectionToggle').addEventListener('click', () => {
+    libSection.classList.toggle('collapsed');
+  });
+
   function renderLibList() {
+    const all = allSavedQueries();
+    document.getElementById('libCount').textContent = String(all.length);
     const term = libFilter.value.trim().toUpperCase();
-    const items = LIB.filter(q => !term ||
+    const items = all.filter(q => !term ||
       (q.title || '').toUpperCase().includes(term) ||
       (q.description || '').toUpperCase().includes(term) ||
       (q.views || []).some(v => (v.name || '').toUpperCase().includes(term)));
-    if (LIB.length === 0) {
-      libList.innerHTML = '<p class="lib-empty">No saved queries yet — be the first to contribute one with "💾 Save this query" below the builder.</p>';
+    if (all.length === 0) {
+      libList.innerHTML = '<p class="lib-empty">No saved queries yet — be the first with "💾 Save" below the builder, or paste one below.</p>';
       return;
     }
     if (items.length === 0) {
       libList.innerHTML = '<p class="lib-empty">No saved query matches "' + escapeHtml(libFilter.value) + '".</p>';
       return;
     }
-    libList.innerHTML = items.map((q, i) => {
-      const idx = LIB.indexOf(q);
-      const viewsTag = (q.views || []).map(v => v.name).join(', ');
+    libList.innerHTML = items.map((q) => {
+      const idx = all.indexOf(q);
+      const viewsTag = (q.views || []).map(v => v.name).filter(Boolean).join(', ');
       const contrib = q.contributor ? ' · by ' + escapeHtml(q.contributor) : '';
-      return '<div class="lib-item"><span class="title">' + escapeHtml(q.title || '(untitled)') + '</span>' +
+      const sourceBadge = q.__source === 'local'
+        ? ' <span class="tag local" title="Saved in this browser only — not yet in the shared index/query-library.json">local</span>'
+        : '';
+      const removeBtn = q.__source === 'local' ? '<button class="remove remove-local" data-remove="' + idx + '">✕</button>' : '';
+      return '<div class="lib-item"><span class="title">' + escapeHtml(q.title || '(untitled)') + '</span>' + sourceBadge +
         '<span class="tag">' + escapeHtml(viewsTag) + contrib + '</span>' +
-        '<button class="link" data-load="' + idx + '">Load ↓</button>' +
+        '<button class="link" data-load="' + idx + '">Load ↓</button>' + removeBtn +
         (q.description ? '<span class="desc">' + escapeHtml(q.description) + '</span>' : '') +
         '</div>';
     }).join('');
   }
   libFilter.addEventListener('input', renderLibList);
   libList.addEventListener('click', (e) => {
-    const btn = e.target.closest('[data-load]');
-    if (btn) loadSavedQuery(LIB[Number(btn.dataset.load)]);
+    const loadBtn = e.target.closest('[data-load]');
+    if (loadBtn) { loadSavedQuery(allSavedQueries()[Number(loadBtn.dataset.load)]); return; }
+    const removeBtn = e.target.closest('[data-remove]');
+    if (removeBtn) {
+      // allSavedQueries() shallow-copies every entry (for the __source tag),
+      // so an object-identity lookup back into LOCAL_LIB would never match —
+      // SHARED always comes first in that combined array, so the LOCAL_LIB
+      // index is just the combined index shifted back by SHARED's length.
+      const i = Number(removeBtn.dataset.remove) - SHARED.length;
+      if (i >= 0 && i < LOCAL_LIB.length) { LOCAL_LIB.splice(i, 1); persistLocalLib(); renderLibList(); }
+    }
   });
   renderLibList();
-  document.getElementById('statsLine').textContent = ${JSON.stringify(`${stats.viewCount} view(s) available · ${stats.libCount} saved quer${stats.libCount === 1 ? 'y' : 'ies'}.`)};
+
+  // ── Paste-to-save (import) ──────────────────────────────────────────────
+  document.getElementById('importBtn').addEventListener('click', () => {
+    const box = document.getElementById('importInput');
+    const msg = document.getElementById('importMsg');
+    let obj;
+    try {
+      obj = JSON.parse(box.value.replace(/,\s*$/, ''));
+    } catch (err) {
+      msg.className = 'msg err';
+      msg.textContent = 'Not valid JSON: ' + err.message;
+      return;
+    }
+    if (!obj || typeof obj !== 'object' || !obj.title) {
+      msg.className = 'msg err';
+      msg.textContent = 'Needs at least a "title" field.';
+      return;
+    }
+    LOCAL_LIB.push(obj);
+    persistLocalLib();
+    renderLibList();
+    box.value = '';
+    msg.className = 'msg ok';
+    msg.textContent = 'Added "' + obj.title + '" to this browser\\'s saved queries.';
+  });
+
+  document.getElementById('statsLine').textContent = ${JSON.stringify(`${stats.viewCount} view(s) available · ${stats.libCount} saved quer${stats.libCount === 1 ? 'y' : 'ies'} in the shared library (plus anything saved locally in your browser).`)};
 
   // ── Primary view picker ──────────────────────────────────────────────────
   const viewq = document.getElementById('viewq');
@@ -707,6 +809,13 @@ function renderHtml(embeddedJson, stats) {
   }
   RAW_SECTIONS.forEach(wireRawToggle);
 
+  // Collapse/expand each clause section (Select/Where/Group By/Having/Order
+  // By) by clicking its heading — scoped to builder-left only, so the
+  // sticky "Generated query" output on the right always stays visible.
+  document.querySelectorAll('.builder-left .section > h2').forEach((h2) => {
+    h2.addEventListener('click', () => h2.parentElement.classList.toggle('collapsed'));
+  });
+
   // Quick filter above a field-grid: hides non-matching .field-item rows
   // instead of re-rendering, so ticked/aggregate state on visible rows is
   // never disturbed by typing into the filter.
@@ -876,6 +985,39 @@ function renderHtml(embeddedJson, stats) {
   function isRaw(prefix) { return document.getElementById(prefix + 'RawToggle').checked; }
   function rawText(prefix) { return document.getElementById(prefix + 'Raw').value.trim(); }
 
+  // Small hand-rolled ABAP/SQL-style keyword highlighter for #output — good
+  // enough for the fixed vocabulary this page's own generator produces (and
+  // reasonable for hand-typed raw text too), not a real parser. abaplint
+  // (github.com/abaplint/abaplint) is a static-analysis linter for whole
+  // ABAP programs, not a lightweight standalone highlighter for a snippet
+  // like this, so it isn't pulled in — bundling it would also break this
+  // page's one-file, works-over-file:// design; this instead borrows its
+  // general keyword/string/number color convention.
+  const ABAP_KEYWORDS = new Set(['SELECT', 'FROM', 'WHERE', 'GROUP', 'BY', 'HAVING', 'ORDER', 'JOIN', 'INNER', 'LEFT', 'RIGHT', 'FULL', 'ON', 'AND', 'OR', 'AS', 'IN', 'LIKE', 'NOT', 'IS', 'NULL', 'BETWEEN', 'ASC', 'DESC']);
+  const ABAP_FUNCS = new Set(['COUNT', 'SUM', 'AVG', 'MIN', 'MAX']);
+  const ABAP_OPS = new Set(['=', '<>', '>', '<', '>=', '<=']);
+  function highlightAbap(text) {
+    // String literals first, so nothing inside them is re-tokenized as a
+    // keyword/operator — split keeps the quoted segments at odd indices.
+    return text.split(/('(?:[^']|'')*')/g).map((part, i) => {
+      if (i % 2 === 1) return '<span class="tok-str">' + escapeHtml(part) + '</span>';
+      // Word-splitting on whitespace/punctuation is enough here (this
+      // page's own output always space-separates keywords/operators) —
+      // simpler and less escaping-prone than a \\b-based regex alternation.
+      return part.split(/(\\s+|[(),])/g).map((tok) => {
+        if (!tok) return '';
+        const upper = tok.toUpperCase();
+        let cls = null;
+        if (ABAP_FUNCS.has(upper)) cls = 'tok-fn';
+        else if (ABAP_KEYWORDS.has(upper)) cls = 'tok-kw';
+        else if (ABAP_OPS.has(tok)) cls = 'tok-op';
+        else if (/^\\d+(\\.\\d+)?$/.test(tok)) cls = 'tok-num';
+        const escaped = escapeHtml(tok);
+        return cls ? '<span class="' + cls + '">' + escaped + '</span>' : escaped;
+      }).join('');
+    }).join('');
+  }
+
   function buildQuery() {
     const out = document.getElementById('output');
     if (!joinedViews.length || !joinedViews[0].name) { out.textContent = ''; return; }
@@ -909,7 +1051,10 @@ function renderHtml(embeddedJson, stats) {
     if (havingText) lines.push('HAVING\\n  ' + havingText);
     if (orderText) lines.push('ORDER BY ' + orderText);
 
-    out.textContent = lines.join('\\n');
+    // innerHTML for the colored tokens — the Copy button still reads back
+    // .textContent, which returns the plain concatenated text regardless of
+    // how it was set, so highlighting never leaks into what gets copied.
+    out.innerHTML = highlightAbap(lines.join('\\n'));
   }
 
   document.getElementById('copyBtn').addEventListener('click', () => {
@@ -957,6 +1102,10 @@ function renderHtml(embeddedJson, stats) {
       box.value = 'Add a title first (above) — it is how this query will be found and picked in the "Saved queries" list.';
       return;
     }
+    LOCAL_LIB.push(obj);
+    persistLocalLib();
+    renderLibList();
+    libSection.classList.remove('collapsed');
     box.style.display = '';
     box.value = JSON.stringify(obj, null, 2) + ',';
   });
