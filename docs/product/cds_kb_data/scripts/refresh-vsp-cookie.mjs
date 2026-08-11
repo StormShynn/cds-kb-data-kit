@@ -86,8 +86,24 @@ async function main() {
     process.exit(1);
   }
 
+  // Playwright's own downloaded Chromium binary is a brand-new, unsigned-to-
+  // this-machine executable — corporate firewalls/antivirus commonly block
+  // a first-seen binary's outbound connections outright (net::
+  // ERR_NETWORK_ACCESS_DENIED), exactly like tools/vsp/vsp.exe hit earlier
+  // even though plain `curl` reached the same host fine. Launching the
+  // system's real, already-installed, already-trusted Edge instead
+  // (Playwright drives it the same way, just via its browser binary
+  // instead of its own) sidesteps that without needing a firewall
+  // exception. Falls back to Playwright's bundled Chromium if Edge isn't
+  // installed on this machine.
   console.log(`Mở trình duyệt tới ${system.url} (system: ${systemName})...`);
-  const browser = await playwright.chromium.launch({ headless: false });
+  let browser;
+  try {
+    browser = await playwright.chromium.launch({ headless: false, channel: 'msedge' });
+  } catch (e) {
+    console.log(`Không mở được Edge (${e.message.split('\n')[0]}) — thử Chromium mặc định của Playwright...`);
+    browser = await playwright.chromium.launch({ headless: false });
+  }
   const context = await browser.newContext();
   const page = await context.newPage();
   await page.goto(system.url);
