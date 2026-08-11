@@ -37,6 +37,7 @@ import { extractFrontmatter, scalar } from './lib/frontmatter.mjs';
 import { findExistingView } from './lib/view-files.mjs';
 import { readJson, writeJson } from './lib/json-file.mjs';
 import { rebuildIndex } from './lib/rebuild-index.mjs';
+import { looksLikeAbapDdl } from './lib/ddl-sanity.mjs';
 
 const DATA_DIR = '.';
 const VIEWS_DIR = path.join(DATA_DIR, 'views');
@@ -128,16 +129,26 @@ async function fetchBatch(names, systemName) {
   for (const name of names) {
     const result = runCapture(VSP_EXE, ['-s', systemName, 'source', 'DDLS', name]);
     const ddl = result.stdout?.trim();
-    if (result.status === 0 && ddl) {
+    // vsp.exe can exit 0 with a "successful" HTTP response that's actually a
+    // SAML SSO login redirect page (expired session cookie) rather than
+    // DDL — exit-code-and-non-empty-stdout alone can't tell the difference,
+    // which is exactly how 799 views got HTML written into them as if it
+    // were real DDL on 2026-08-10. Treating a not-DDL-looking response as a
+    // failure here means it counts toward consecutiveFailures like a real
+    // error, so this detection actually trips instead of silently
+    // "succeeding" through the whole candidate list.
+    if (result.status === 0 && ddl && looksLikeAbapDdl(ddl)) {
       await fs.writeFile(path.join(tmpDir, `${name}.ddl`), ddl, 'utf-8');
       fetched++;
       consecutiveFailures = 0;
       console.log(`   OK   ${name} (${ddl.length} chars)`);
     } else {
       consecutiveFailures++;
-      const reason = (result.stderr || '').split('\n').find(l => l.includes('Error:')) || 'unknown error';
-      skipped.push({ name, reason: reason.trim() });
-      console.log(`   SKIP ${name} — ${reason.trim()}`);
+      const reason = result.status === 0 && ddl && !looksLikeAbapDdl(ddl)
+        ? 'response doesn\'t look like DDL (starts with \'<\' or has no "define" keyword) — likely a login page, session cookie probably expired'
+        : ((result.stderr || '').split('\n').find(l => l.includes('Error:')) || 'unknown error').trim();
+      skipped.push({ name, reason });
+      console.log(`   SKIP ${name} — ${reason}`);
       if (consecutiveFailures >= MAX_CONSECUTIVE_FAILURES) {
         console.log(`\n${consecutiveFailures} lỗi liên tiếp — session cookie có thể đã hết hạn. Dừng batch sớm.`);
         console.log('Export cookie mới từ browser (đăng nhập lại SAP tenant) rồi ghi vào tools/vsp/cookies.txt.');

@@ -28,6 +28,7 @@ import path from 'node:path';
 import { parseDDL } from '../src/parser.mjs';
 import { autoTagWithMetadataFlag, loadTaxonomy } from '../src/auto-tagger.mjs';
 import { renderViewMd } from '../src/template.mjs';
+import { looksLikeAbapDdl, isValidAbapIdentifier } from './lib/ddl-sanity.mjs';
 import { synthesizeView } from '../src/synthesizer.mjs';
 import { addChangelogEntry } from '../src/changelog.mjs';
 import { resolveViewFolder, findExistingView } from './lib/view-files.mjs';
@@ -106,6 +107,17 @@ async function main() {
       continue;
     }
 
+    // Defense in depth against the 2026-08-10 incident (see
+    // scripts/lib/ddl-sanity.mjs): run-vsp-batch.mjs's fetchBatch already
+    // rejects a non-DDL response before it's even written to disk, but this
+    // script can also be invoked directly against a folder of pre-fetched
+    // .ddl files that bypassed that check.
+    if (!looksLikeAbapDdl(item.ddl)) {
+      console.warn(`   ⚠️  ${name}: doesn't look like ABAP DDL (starts with '<' or has no "define" keyword) — likely an HTML error/login page from an expired session, skipping`);
+      stats.skipped++;
+      continue;
+    }
+
     let parsed;
     try {
       parsed = parseDDL(item.ddl, { viewName: name });
@@ -117,6 +129,13 @@ async function main() {
 
     if (parsed.fields.length === 0) {
       console.warn(`   ⚠️  ${name}: parsed 0 fields — DDL may be a parameter/abstract entity, not a real view; skipping`);
+      stats.skipped++;
+      continue;
+    }
+
+    const badField = parsed.fields.find((f) => !isValidAbapIdentifier(f.name));
+    if (badField) {
+      console.warn(`   ⚠️  ${name}: parsed field name "${badField.name}" isn't a valid ABAP identifier — DDL content looks corrupted, skipping`);
       stats.skipped++;
       continue;
     }
