@@ -444,8 +444,10 @@ function renderHtml(embeddedJson, stats) {
   const joinsWrap = document.getElementById('joinsWrap');
   const builder = document.getElementById('builder');
 
-  // joinedViews[0] is always the FROM view (joinType/on* unused on it).
-  // joinedViews[i>0]: { alias, name, fields, joinType, onLeftAlias, onLeftField, onRightField, onRawToggle, onRaw }
+  // joinedViews[0] is always the FROM view (joinType/on*/raw unused on it).
+  // joinedViews[i>0]: { alias, name, fields, joinType, onLeftAlias, onLeftField, onRightField, rawToggle, raw }
+  // — rawToggle replaces the whole "JOIN_TYPE View AS alias ON condition"
+  // line with free text (raw) instead of just the ON condition.
   let joinedViews = [];
 
   function searchViews(term) {
@@ -521,7 +523,7 @@ function renderHtml(embeddedJson, stats) {
     joinedViews.push({
       alias: nextAlias(), name: '', fields: [], joinType: JOIN_TYPES[0],
       onLeftAlias: joinedViews[0]?.alias || '', onLeftField: '', onRightField: '',
-      onRawToggle: false, onRaw: '',
+      rawToggle: false, raw: '',
     });
     renderJoins();
     resetClauseState();
@@ -536,10 +538,30 @@ function renderHtml(embeddedJson, stats) {
     return opts;
   }
 
+  // Each join row can be typed as one raw JOIN...ON line instead of using the
+  // structured pickers below it — same escape-hatch pattern as every clause
+  // section (Select/Where/...). Trade-off: a raw row's view is unknown to
+  // this page, so it contributes no fields to SELECT/WHERE/GROUP BY/HAVING/
+  // ORDER BY's pickers (noted inline).
   function renderJoins() {
     const el = document.getElementById('joinRows');
     el.innerHTML = joinedViews.slice(1).map((v, i0) => {
       const idx = i0 + 1;
+      const base = 'join_' + idx;
+      const rawToggleHtml = '<div class="raw-toggle" style="margin:0 0 8px;"><input type="checkbox" id="' + base + '_rawToggle" name="' + base + '_rawToggle" class="rawToggle" data-idx="' + idx + '"' + (v.rawToggle ? ' checked' : '') + ' /><label for="' + base + '_rawToggle">Type raw JOIN text instead of using the builder below</label></div>';
+      const removeBtn = '<button class="remove" data-idx="' + idx + '" data-role="removeJoin">✕ remove</button>';
+
+      if (v.rawToggle) {
+        const rawBox = '<textarea id="' + base + '_raw" name="' + base + '_raw" class="raw" data-idx="' + idx + '" data-role="raw" placeholder="e.g. LEFT JOIN I_ProductText AS ' + escapeHtml(v.alias) + ' ON t1.Product = ' + escapeHtml(v.alias) + '.Product">' + escapeHtml(v.raw || '') + '</textarea>';
+        const knownWarn = v.name
+          ? '<span class="join-warn">' + escapeHtml(v.name) + '\\'s fields are still available below — only the JOIN line itself is raw text.</span>'
+          : '<span class="join-warn">No view picked yet, so this row contributes no fields to the pickers below (only the JOIN line text).</span>';
+        return '<div class="join-row" data-row="' + idx + '">' + rawToggleHtml +
+          '<span class="alias-badge">' + escapeHtml(v.alias) + '</span>' + removeBtn +
+          knownWarn +
+          rawBox + '</div>';
+      }
+
       const meta = v.name ? (DATA.M[v.name] || ['', 0]) : ['', 0];
       const warn = v.name && meta[1]
         ? '<span class="join-warn">⚠ ' + escapeHtml(v.name) + ' is an abstract entity/action-parameter structure — no runtime entity set to query</span>' : '';
@@ -553,24 +575,21 @@ function renderHtml(embeddedJson, stats) {
       const rightOpts = (v.fields || []).map(f =>
         '<option' + (f.name === v.onRightField ? ' selected' : '') + '>' + escapeHtml(f.name) + '</option>'
       ).join('');
-      const base = 'join_' + idx;
       const onBuilder = '<select id="' + base + '_onLeft" name="' + base + '_onLeft" class="field" data-idx="' + idx + '" data-role="onLeft">' + leftOpts + '</select>' +
         '<span style="color:var(--text-muted)">=</span>' +
         '<span class="alias-badge">' + escapeHtml(v.alias) + '</span>' +
         '<select id="' + base + '_onRight" name="' + base + '_onRight" class="field" data-idx="' + idx + '" data-role="onRight">' + rightOpts + '</select>';
-      const onRawBox = '<textarea id="' + base + '_onRaw" name="' + base + '_onRaw" class="raw" data-idx="' + idx + '" data-role="onRaw" style="' + (v.onRawToggle ? '' : 'display:none') + '" placeholder="e.g. t1.Product = t2.Product AND t1.Plant = t2.Plant">' + escapeHtml(v.onRaw || '') + '</textarea>';
-      return '<div class="join-row" data-row="' + idx + '">' +
+      return '<div class="join-row" data-row="' + idx + '">' + rawToggleHtml +
         '<select id="' + base + '_joinType" name="' + base + '_joinType" class="op" data-idx="' + idx + '" data-role="joinType">' + joinTypeOpts + '</select>' +
         '<div class="viewpick">' +
           '<input type="text" id="' + base + '_view" name="' + base + '_view" class="joinViewInput" data-idx="' + idx + '" placeholder="Type a view name…" value="' + escapeHtml(v.name) + '" autocomplete="off" spellcheck="false" />' +
           '<div class="join-view-results" data-idx="' + idx + '" style="display:none;position:absolute;z-index:5;left:0;right:0;background:var(--page-plane);border:1px solid var(--border);border-radius:8px;max-height:220px;overflow-y:auto;"></div>' +
         '</div>' +
         '<span class="alias-badge">' + escapeHtml(v.alias) + '</span>' +
-        '<button class="remove" data-idx="' + idx + '" data-role="removeJoin">✕</button>' +
+        removeBtn +
         warn +
         '<div class="on-line"><span style="color:var(--text-muted);font-size:12px">ON</span>' +
-        (v.name ? (v.onRawToggle ? onRawBox : onBuilder) : '<span class="subhint" style="margin:0">pick a view first</span>') +
-        (v.name ? '<label style="display:flex;align-items:center;gap:4px;font-size:11px;color:var(--text-muted)"><input type="checkbox" id="' + base + '_onRawToggle" name="' + base + '_onRawToggle" class="onRawToggle" data-idx="' + idx + '"' + (v.onRawToggle ? ' checked' : '') + ' /> raw ON</label>' : '') +
+        (v.name ? onBuilder : '<span class="subhint" style="margin:0">pick a view first</span>') +
         '</div></div>';
     }).join('');
 
@@ -609,11 +628,15 @@ function renderHtml(embeddedJson, stats) {
     el.querySelectorAll('[data-role="onRight"]').forEach(sel => sel.addEventListener('change', (e) => {
       joinedViews[Number(e.target.dataset.idx)].onRightField = e.target.value; buildQuery();
     }));
-    el.querySelectorAll('[data-role="onRaw"]').forEach(ta => ta.addEventListener('input', (e) => {
-      joinedViews[Number(e.target.dataset.idx)].onRaw = e.target.value; buildQuery();
+    el.querySelectorAll('[data-role="raw"]').forEach(ta => ta.addEventListener('input', (e) => {
+      joinedViews[Number(e.target.dataset.idx)].raw = e.target.value; buildQuery();
     }));
-    el.querySelectorAll('.onRawToggle').forEach(chk => chk.addEventListener('change', (e) => {
-      joinedViews[Number(e.target.dataset.idx)].onRawToggle = e.target.checked; renderJoins(); buildQuery();
+    el.querySelectorAll('.rawToggle').forEach(chk => chk.addEventListener('change', (e) => {
+      const v = joinedViews[Number(e.target.dataset.idx)];
+      v.rawToggle = e.target.checked;
+      if (v.rawToggle && !v.raw && v.name) v.raw = joinLineText(v);
+      renderJoins();
+      resetClauseState();
     }));
     el.querySelectorAll('[data-role="removeJoin"]').forEach(btn => btn.addEventListener('click', (e) => {
       joinedViews.splice(Number(e.target.dataset.idx), 1);
@@ -828,18 +851,26 @@ function renderHtml(embeddedJson, stats) {
   }
 
   function joinOnText(v) {
-    if (v.onRawToggle) return (v.onRaw || '').trim();
     if (!v.onLeftAlias || !v.onLeftField || !v.onRightField) return '';
     return v.onLeftAlias + '.' + v.onLeftField + ' = ' + v.alias + '.' + v.onRightField;
   }
 
+  // Full "JOIN_TYPE View AS alias ON condition" line for a non-raw join row
+  // — used both to render that row's line in the generated query and to
+  // pre-fill its raw textarea with a sensible starting point when the user
+  // flips that row to raw mode instead of handing them a blank box.
+  function joinLineText(v) {
+    return v.joinType + ' ' + v.name + ' AS ' + v.alias + ' ON ' + (joinOnText(v) || '<join condition>');
+  }
+
   function fromClauseLines() {
     const multi = joinedViews.length > 1;
-    return joinedViews.filter(v => v.name).map((v, i) => {
-      if (i === 0) return 'FROM ' + v.name + (multi ? ' AS ' + v.alias : '');
-      const onText = joinOnText(v);
-      return v.joinType + ' ' + v.name + ' AS ' + v.alias + ' ON ' + (onText || '<join condition>');
-    });
+    return joinedViews.map((v, i) => {
+      if (i === 0) return v.name ? 'FROM ' + v.name + (multi ? ' AS ' + v.alias : '') : null;
+      if (v.rawToggle) return (v.raw || '').trim() || '<join line>';
+      if (!v.name) return null;
+      return joinLineText(v);
+    }).filter(Boolean);
   }
 
   function isRaw(prefix) { return document.getElementById(prefix + 'RawToggle').checked; }
@@ -897,12 +928,13 @@ function renderHtml(embeddedJson, stats) {
       title: document.getElementById('saveTitle').value.trim(),
       description: document.getElementById('saveDesc').value.trim(),
       contributor: document.getElementById('saveContributor').value.trim() || undefined,
-      views: joinedViews.filter(v => v.name).map((v, i) => ({
-        alias: v.alias,
-        name: v.name,
-        joinType: i === 0 ? null : v.joinType,
-        on: i === 0 ? null : joinOnText(v),
-      })),
+      views: joinedViews
+        .filter((v, i) => i === 0 ? !!v.name : (v.name || (v.rawToggle && (v.raw || '').trim())))
+        .map((v, i) => {
+          if (i === 0) return { alias: v.alias, name: v.name, joinType: null, on: null };
+          if (v.rawToggle) return { alias: v.alias, name: v.name || null, raw: (v.raw || '').trim() };
+          return { alias: v.alias, name: v.name, joinType: v.joinType, on: joinOnText(v) };
+        }),
       select: isRaw('select') ? rawText('select') : (function () {
         const selected = allFields().filter(f => selectState[f.qualifiedName]?.checked);
         return selected.map(f => {
@@ -931,15 +963,24 @@ function renderHtml(embeddedJson, stats) {
 
   function loadSavedQuery(q) {
     if (!q) return;
-    joinedViews = (q.views || []).map((v, i) => ({
-      alias: v.alias || 't' + (i + 1),
-      name: v.name,
-      fields: fieldsOf(v.name),
-      joinType: v.joinType || JOIN_TYPES[0],
-      onLeftAlias: '', onLeftField: '', onRightField: '',
-      onRawToggle: true,
-      onRaw: v.on || '',
-    }));
+    joinedViews = (q.views || []).map((v, i) => {
+      const alias = v.alias || 't' + (i + 1);
+      const name = v.name || '';
+      const fields = name ? fieldsOf(name) : [];
+      if (i === 0) return { alias, name, fields };
+      // Loaded joins always render in raw mode (pre-filled with the saved
+      // line or reconstructed from name/joinType/on) — simplest to show
+      // exactly what was saved, but the view's fields (when known) still
+      // flow into the pickers via allFields(), so the query stays editable
+      // rather than a frozen snippet.
+      const joinType = v.joinType || JOIN_TYPES[0];
+      const raw = v.raw != null ? v.raw : (name ? joinType + ' ' + name + ' AS ' + alias + ' ON ' + (v.on || '<join condition>') : '');
+      return {
+        alias, name, fields, joinType,
+        onLeftAlias: '', onLeftField: '', onRightField: '',
+        rawToggle: true, raw,
+      };
+    });
     if (!joinedViews.length) return;
 
     const primary = joinedViews[0];
