@@ -356,6 +356,7 @@
   const AGGS = ['—', 'COUNT', 'SUM', 'AVG', 'MIN', 'MAX'];
   const OPS = ['=', '<>', '>', '<', '>=', '<=', 'LIKE', 'NOT LIKE', 'IN', 'BETWEEN', 'IS NULL', 'IS NOT NULL'];
   const JOIN_TYPES = ['INNER JOIN', 'LEFT JOIN', 'RIGHT JOIN', 'FULL JOIN'];
+  const CARDINALITIES = ['[0..1]', '[1..1]', '[0..*]', '[1..*]'];
 
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -509,9 +510,22 @@
   const builder = document.getElementById('builder');
 
   // joinedViews[0] is always the FROM view (joinType/on*/raw unused on it).
-  // joinedViews[i>0]: { alias, name, fields, joinType, onLeftAlias, onLeftField, onRightField, rawToggle, raw }
+  // joinedViews[i>0]: { alias, name, fields, joinType, onConditions, rawToggle, raw,
+  //                     declareAssoc, assocAlias, assocCardinality }
+  // onConditions: [{ leftAlias, leftField, rightField }, ...] — AND'ed
+  // together; more than one entry covers a composite-key join (e.g. header
+  // + item both needing CompanyCode AND SalesOrder to match).
   // — rawToggle replaces the whole "JOIN_TYPE View AS alias ON condition"
   // line with free text (raw) instead of just the ON condition.
+  // — declareAssoc (manual-JOIN rows only): the CDS view tab renders this
+  // row as a brand-new `association [card] to Target as _Alias on ...`
+  // declaration instead of an inline JOIN — for authoring a new CDS view
+  // that should own the association itself (the same idiom real SAP views
+  // use for a link their base table doesn't already expose), as opposed to
+  // the "use an existing association" mode which reuses one the primary
+  // view already declares. The SQL/OpenSQL tab is unaffected — a plain ad-
+  // hoc query has no concept of declaring a persistent association, so it
+  // always renders the JOIN form regardless of this flag.
   let joinedViews = [];
 
   function searchViews(term) {
@@ -587,8 +601,8 @@
     joinedViews.push({
       mode: null, // set to 'assoc' or 'join' once the row picks one or the other
       alias: nextAlias(), name: '', fields: [], joinType: JOIN_TYPES[0],
-      onLeftAlias: joinedViews[0]?.alias || '', onLeftField: '', onRightField: '',
-      rawToggle: false, raw: '',
+      onConditions: [], rawToggle: false, raw: '',
+      declareAssoc: false, assocAlias: '', assocCardinality: CARDINALITIES[2],
     });
     renderJoins();
     resetClauseState();
@@ -601,6 +615,40 @@
       for (const f of (v.fields || [])) opts.push({ alias: v.alias, name: f.name });
     }
     return opts;
+  }
+
+  // Default name suggested for a newly-declared association — strips the
+  // view's own naming prefix (I_/C_/R_/P_/E_...) and prepends "_", matching
+  // the convention real SAP views use (e.g. I_BPAddressIndependentMobile's
+  // own "_BusinessPartner"). Editable — this is just a starting point.
+  function defaultAssocAlias(viewName) {
+    return '_' + (viewName || '').replace(/^[A-Z][A-Z0-9]?_/, '');
+  }
+
+  // Picks a starting ON condition for a freshly-joined view instead of
+  // leaving it blank. Matters because the <select>s below render with
+  // nothing marked `selected` when the field is '' — the browser then just
+  // shows its first <option> instead, which LOOKS like a real choice but
+  // isn't reflected in state, so the generated query kept printing the
+  // '<join condition>' placeholder even though two fields visibly appeared
+  // picked. Guessing here keeps the visible default and the actual state in
+  // sync from the moment the join is added. Prefers a same-named field that
+  // is a key on the new view (the common case — same business key on both
+  // sides), then any same-named field, then just falls back to the first
+  // field on each side (matching what the browser would have defaulted to
+  // anyway, but now with state that agrees with the display).
+  // usedRightFields excludes fields already picked by this join row's other
+  // conditions, so "+ add condition" (composite-key joins) suggests a
+  // different field instead of guessing the exact same pair twice.
+  function guessJoinCondition(idx, usedRightFields) {
+    const used = usedRightFields || new Set();
+    const v = joinedViews[idx];
+    const prior = priorFieldOptions(idx);
+    const rightFields = (v.fields || []).filter(f => !used.has(f.name));
+    const rightKeyNames = new Set(rightFields.filter(f => f.isKey).map(f => f.name));
+    const match = prior.find(o => rightKeyNames.has(o.name)) || prior.find(o => rightFields.some(f => f.name === o.name));
+    if (match) return { leftAlias: match.alias, leftField: match.name, rightField: match.name };
+    return { leftAlias: prior[0]?.alias || '', leftField: prior[0]?.name || '', rightField: rightFields[0]?.name || (v.fields || [])[0]?.name || '' };
   }
 
   // Each join row is either an existing CDS association exposed as a path
@@ -671,18 +719,50 @@
 
       const joinTypeOpts = JOIN_TYPES.map(t => '<option' + (t === v.joinType ? ' selected' : '') + '>' + t + '</option>').join('');
       const priorOpts = priorFieldOptions(idx);
-      const leftOpts = priorOpts.map(o => {
-        const val = o.alias + '.' + o.name;
-        const sel = v.onLeftAlias === o.alias && v.onLeftField === o.name ? ' selected' : '';
-        return '<option value="' + escapeHtml(val) + '"' + sel + '>' + escapeHtml(val) + '</option>';
-      }).join('');
-      const rightOpts = (v.fields || []).map(f =>
-        '<option' + (f.name === v.onRightField ? ' selected' : '') + '>' + escapeHtml(f.name) + '</option>'
-      ).join('');
-      const onBuilder = '<select id="' + base + '_onLeft" name="' + base + '_onLeft" class="field" data-idx="' + idx + '" data-role="onLeft">' + leftOpts + '</select>' +
-        '<span style="color:var(--text-muted)">=</span>' +
-        '<span class="alias-badge">' + escapeHtml(v.alias) + '</span>' +
-        '<select id="' + base + '_onRight" name="' + base + '_onRight" class="field" data-idx="' + idx + '" data-role="onRight">' + rightOpts + '</select>';
+      // Guess a first condition instead of leaving the row with none — same
+      // reasoning as guessJoinCondition's own comment: a blank condition
+      // list would render selects with nothing marked `selected`, which
+      // looks picked (browser shows the first option) but isn't real state.
+      if (!v.onConditions || !v.onConditions.length) v.onConditions = [guessJoinCondition(idx)];
+      const onLines = v.onConditions.map((c, ci) => {
+        const leftOpts = priorOpts.map(o => {
+          const val = o.alias + '.' + o.name;
+          const sel = c.leftAlias === o.alias && c.leftField === o.name ? ' selected' : '';
+          return '<option value="' + escapeHtml(val) + '"' + sel + '>' + escapeHtml(val) + '</option>';
+        }).join('');
+        const rightOpts = (v.fields || []).map(f =>
+          '<option' + (f.name === c.rightField ? ' selected' : '') + '>' + escapeHtml(f.name) + '</option>'
+        ).join('');
+        const lead = '<span style="color:var(--text-muted);font-size:12px">' + (ci === 0 ? 'ON' : 'AND') + '</span>';
+        const removeCondBtn = v.onConditions.length > 1
+          ? '<button class="remove" data-idx="' + idx + '" data-cidx="' + ci + '" data-role="removeOnCond">✕</button>' : '';
+        return '<div class="on-line">' + lead +
+          '<select id="' + base + '_onLeft' + ci + '" name="' + base + '_onLeft' + ci + '" class="field" data-idx="' + idx + '" data-cidx="' + ci + '" data-role="onLeft">' + leftOpts + '</select>' +
+          '<span style="color:var(--text-muted)">=</span>' +
+          '<span class="alias-badge">' + escapeHtml(v.alias) + '</span>' +
+          '<select id="' + base + '_onRight' + ci + '" name="' + base + '_onRight' + ci + '" class="field" data-idx="' + idx + '" data-cidx="' + ci + '" data-role="onRight">' + rightOpts + '</select>' +
+          removeCondBtn + '</div>';
+      }).join('') +
+        '<button class="link" data-idx="' + idx + '" data-role="addOnCond" style="flex-basis:100%">+ add condition</button>';
+
+      // Optional: in the CDS view tab only, render this row as a brand-new
+      // `association [...] to ... as ... on ...` declaration instead of an
+      // inline JOIN — see the joinedViews comment up top for when this
+      // differs from "use an existing association" mode. The SQL/OpenSQL
+      // tab always shows the plain JOIN regardless (ad-hoc queries can't
+      // declare a persistent association).
+      if (!v.assocAlias) v.assocAlias = defaultAssocAlias(v.name);
+      const cardOpts = CARDINALITIES.map(c => '<option' + (c === v.assocCardinality ? ' selected' : '') + '>' + c + '</option>').join('');
+      const assocDetail = v.declareAssoc
+        ? '<div class="on-line">' +
+            '<span style="color:var(--text-muted);font-size:12px">cardinality</span>' +
+            '<select id="' + base + '_assocCard" name="' + base + '_assocCard" class="op" data-idx="' + idx + '" data-role="assocCard">' + cardOpts + '</select>' +
+            '<span style="color:var(--text-muted);font-size:12px">as</span>' +
+            '<input type="text" id="' + base + '_assocAlias" name="' + base + '_assocAlias" class="field" data-idx="' + idx + '" data-role="assocAlias" value="' + escapeHtml(v.assocAlias) + '" style="min-width:160px" />' +
+          '</div>'
+        : '';
+      const declareAssocToggle = '<div class="raw-toggle"><input type="checkbox" id="' + base + '_declareAssoc" name="' + base + '_declareAssoc" class="declareAssoc" data-idx="' + idx + '"' + (v.declareAssoc ? ' checked' : '') + ' /><label for="' + base + '_declareAssoc">In the CDS view output, declare this as a new association instead of an inline JOIN</label></div>' + assocDetail;
+
       return '<div class="join-row" data-row="' + idx + '">' + rawToggleHtml +
         '<select id="' + base + '_joinType" name="' + base + '_joinType" class="op" data-idx="' + idx + '" data-role="joinType">' + joinTypeOpts + '</select>' +
         '<div class="viewpick">' +
@@ -692,7 +772,9 @@
         '<span class="alias-badge">' + escapeHtml(v.alias) + '</span>' +
         removeBtn +
         abstractWarn +
-        '<div class="on-line"><span style="color:var(--text-muted);font-size:12px">ON</span>' + onBuilder + '</div></div>';
+        onLines +
+        '<div style="flex-basis:100%">' + declareAssocToggle + '</div>' +
+        '</div>';
     }).join('');
 
     el.querySelectorAll('[data-role="pickAssoc"]').forEach(sel => sel.addEventListener('change', (e) => {
@@ -733,7 +815,8 @@
         joinedViews[idx].mode = 'join';
         joinedViews[idx].name = name;
         joinedViews[idx].fields = fieldsOf(name);
-        joinedViews[idx].onLeftField = ''; joinedViews[idx].onRightField = '';
+        joinedViews[idx].onConditions = [guessJoinCondition(idx)];
+        if (!joinedViews[idx].assocAlias) joinedViews[idx].assocAlias = defaultAssocAlias(name);
         renderJoins();
         resetClauseState();
       });
@@ -744,13 +827,36 @@
     el.querySelectorAll('[data-role="onLeft"]').forEach(sel => sel.addEventListener('change', (e) => {
       const [alias, field] = e.target.value.split('.');
       const v = joinedViews[Number(e.target.dataset.idx)];
-      v.onLeftAlias = alias; v.onLeftField = field; buildQuery();
+      const c = v.onConditions[Number(e.target.dataset.cidx)];
+      c.leftAlias = alias; c.leftField = field; buildQuery();
     }));
     el.querySelectorAll('[data-role="onRight"]').forEach(sel => sel.addEventListener('change', (e) => {
-      joinedViews[Number(e.target.dataset.idx)].onRightField = e.target.value; buildQuery();
+      const v = joinedViews[Number(e.target.dataset.idx)];
+      v.onConditions[Number(e.target.dataset.cidx)].rightField = e.target.value; buildQuery();
+    }));
+    el.querySelectorAll('[data-role="addOnCond"]').forEach(btn => btn.addEventListener('click', (e) => {
+      const idx = Number(e.target.dataset.idx);
+      const used = new Set(joinedViews[idx].onConditions.map(c => c.rightField).filter(Boolean));
+      joinedViews[idx].onConditions.push(guessJoinCondition(idx, used));
+      renderJoins();
+    }));
+    el.querySelectorAll('[data-role="removeOnCond"]').forEach(btn => btn.addEventListener('click', (e) => {
+      const v = joinedViews[Number(e.target.dataset.idx)];
+      v.onConditions.splice(Number(e.target.dataset.cidx), 1);
+      renderJoins();
     }));
     el.querySelectorAll('[data-role="raw"]').forEach(ta => ta.addEventListener('input', (e) => {
       joinedViews[Number(e.target.dataset.idx)].raw = e.target.value; buildQuery();
+    }));
+    el.querySelectorAll('.declareAssoc').forEach(chk => chk.addEventListener('change', (e) => {
+      joinedViews[Number(e.target.dataset.idx)].declareAssoc = e.target.checked;
+      renderJoins();
+    }));
+    el.querySelectorAll('[data-role="assocCard"]').forEach(sel => sel.addEventListener('change', (e) => {
+      joinedViews[Number(e.target.dataset.idx)].assocCardinality = e.target.value; buildQuery();
+    }));
+    el.querySelectorAll('[data-role="assocAlias"]').forEach(input => input.addEventListener('input', (e) => {
+      joinedViews[Number(e.target.dataset.idx)].assocAlias = e.target.value.trim(); buildQuery();
     }));
     el.querySelectorAll('.rawToggle').forEach(chk => chk.addEventListener('change', (e) => {
       const v = joinedViews[Number(e.target.dataset.idx)];
@@ -995,8 +1101,9 @@
   }
 
   function joinOnText(v) {
-    if (!v.onLeftAlias || !v.onLeftField || !v.onRightField) return '';
-    return v.onLeftAlias + '.' + v.onLeftField + ' = ' + v.alias + '.' + v.onRightField;
+    const conds = (v.onConditions || []).filter(c => c.leftAlias && c.leftField && c.rightField);
+    if (!conds.length) return '';
+    return conds.map(c => c.leftAlias + '.' + c.leftField + ' = ' + v.alias + '.' + c.rightField).join(' AND ');
   }
 
   // Full "JOIN_TYPE View AS alias ON condition" line for a non-raw join row
@@ -1018,6 +1125,69 @@
     }).filter(Boolean);
   }
 
+  // ── CDS-view-tab-only rendering for declareAssoc rows ────────────────────
+  // A row with declareAssoc doesn't belong in the FROM clause's JOIN list —
+  // it becomes its own `association [card] to Target as Alias on ...` line
+  // (see cdsAssocLines), and every other reference to that row's plain
+  // t2/t3/... alias in the generated CDS text needs to become the chosen
+  // association alias instead (see cdsAliasMap/applyCdsAliasMap). None of
+  // this touches the SQL/OpenSQL tab, which has no notion of declaring a
+  // persistent association and always shows the plain JOIN form.
+  function cdsFromClauseLines() {
+    const hasManualJoin = joinedViews.some((v) => v !== joinedViews[0] && v.name && v.mode !== 'assoc' && !v.declareAssoc);
+    return joinedViews.map((v, i) => {
+      if (i === 0) return v.name ? 'from ' + v.name + (hasManualJoin ? ' as ' + v.alias : '') : null;
+      if (v.mode === 'assoc' || v.declareAssoc) return null;
+      if (v.rawToggle) return (v.raw || '').trim() || '<join line>';
+      if (!v.name) return null;
+      return joinLineText(v);
+    }).filter(Boolean);
+  }
+
+  function cdsAssocLines() {
+    return joinedViews.filter((v, i) => i > 0 && v.mode === 'join' && !v.rawToggle && v.declareAssoc && v.name).map((v) => {
+      const alias = (v.assocAlias || '').trim() || v.alias;
+      const card = v.assocCardinality || CARDINALITIES[2];
+      const conds = (v.onConditions || []).filter(c => c.leftAlias && c.leftField && c.rightField);
+      const onText = conds.length
+        ? conds.map(c => (c.leftAlias === joinedViews[0].alias ? '$projection.' + c.leftField : c.leftAlias + '.' + c.leftField) + ' = ' + alias + '.' + c.rightField).join(' and ')
+        : '<join condition>';
+      return 'association ' + card + ' to ' + v.name + ' as ' + alias + ' on ' + onText;
+    });
+  }
+
+  // oldAlias -> newAlias for every declareAssoc row, plus the primary
+  // view's own alias -> '' once no real SQL JOIN is left to need it (e.g.
+  // "t1.BusinessPartner" -> "BusinessPartner" when every other view ended
+  // up declared as an association instead of a JOIN).
+  function cdsAliasMap() {
+    const map = {};
+    const hasManualJoin = joinedViews.some((v) => v !== joinedViews[0] && v.name && v.mode !== 'assoc' && !v.declareAssoc);
+    if (!hasManualJoin && joinedViews[0]) map[joinedViews[0].alias] = '';
+    joinedViews.forEach((v, i) => {
+      if (i > 0 && v.mode === 'join' && !v.rawToggle && v.declareAssoc && v.name) {
+        map[v.alias] = (v.assocAlias || '').trim() || v.alias;
+      }
+    });
+    return map;
+  }
+
+  function applyCdsAliasMap(text, map) {
+    let out = text;
+    for (const [oldAlias, newAlias] of Object.entries(map)) {
+      if (oldAlias === newAlias) continue;
+      const esc = oldAlias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      out = out.replace(new RegExp('(^|[\\s,(])' + esc + '\\.', 'g'), '$1' + newAlias + (newAlias ? '.' : ''));
+    }
+    // "as X" was decided by comparing "t1.X" (qualified) against "X" (plain)
+    // — always different, so an alias always got added. Stripping "t1."
+    // above can make the two sides equal (e.g. "key BusinessPartner as
+    // BusinessPartner"), so collapse that redundant "as" back out here,
+    // after the fact, rather than re-deriving needsAlias against the
+    // post-strip name everywhere it's decided.
+    return out.replace(/\b(\w+) as \1\b/g, '$1');
+  }
+
   function isRaw(prefix) { return document.getElementById(prefix + 'RawToggle').checked; }
   function rawText(prefix) { return document.getElementById(prefix + 'Raw').value.trim(); }
 
@@ -1029,7 +1199,7 @@
   // like this, so it isn't pulled in — bundling it would also break this
   // page's one-file, works-over-file:// design; this instead borrows its
   // general keyword/string/number color convention.
-  const ABAP_KEYWORDS = new Set(['SELECT', 'FROM', 'WHERE', 'GROUP', 'BY', 'HAVING', 'ORDER', 'JOIN', 'INNER', 'LEFT', 'RIGHT', 'FULL', 'ON', 'AND', 'OR', 'AS', 'IN', 'LIKE', 'NOT', 'IS', 'NULL', 'BETWEEN', 'ASC', 'DESC', 'DEFINE', 'VIEW', 'ENTITY', 'KEY']);
+  const ABAP_KEYWORDS = new Set(['SELECT', 'FROM', 'WHERE', 'GROUP', 'BY', 'HAVING', 'ORDER', 'JOIN', 'INNER', 'LEFT', 'RIGHT', 'FULL', 'ON', 'AND', 'OR', 'AS', 'IN', 'LIKE', 'NOT', 'IS', 'NULL', 'BETWEEN', 'ASC', 'DESC', 'DEFINE', 'VIEW', 'ENTITY', 'KEY', 'ASSOCIATION', 'TO']);
   const ABAP_FUNCS = new Set(['COUNT', 'SUM', 'AVG', 'MIN', 'MAX']);
   const ABAP_OPS = new Set(['=', '<>', '>', '<', '>=', '<=']);
   function highlightAbap(text) {
@@ -1106,6 +1276,8 @@
     const out = document.getElementById('outputCds');
     if (!joinedViews.length || !joinedViews[0].name) { out.textContent = ''; return; }
 
+    const aliasMap = cdsAliasMap();
+
     let elementsText;
     if (isRaw('select')) {
       elementsText = rawText('select') || '*';
@@ -1120,15 +1292,17 @@
       });
       elementsText = elementLines.length ? elementLines.join(',\n  ') : '*';
     }
+    elementsText = applyCdsAliasMap(elementsText, aliasMap);
 
-    const groupText = isRaw('groupBy') ? rawText('groupBy')
-      : allFields().filter(f => groupByState[f.qualifiedName]).map(f => f.qualifiedName).join(', ');
-    const whereText = isRaw('where') ? rawText('where') : conditionsText(whereConds.filter(c => c.field));
-    const havingText = isRaw('having') ? rawText('having') : conditionsText(havingConds.filter(c => c.field));
+    const groupText = applyCdsAliasMap(isRaw('groupBy') ? rawText('groupBy')
+      : allFields().filter(f => groupByState[f.qualifiedName]).map(f => f.qualifiedName).join(', '), aliasMap);
+    const whereText = applyCdsAliasMap(isRaw('where') ? rawText('where') : conditionsText(whereConds.filter(c => c.field)), aliasMap);
+    const havingText = applyCdsAliasMap(isRaw('having') ? rawText('having') : conditionsText(havingConds.filter(c => c.field)), aliasMap);
     const orderText = isRaw('order') ? rawText('order') : orderConds.map(c => c.field + ' ' + c.dir).join(', ');
 
-    const sqlFrom = fromClauseLines();
-    const cdsFrom = ['as select from ' + sqlFrom[0].replace(/^FROM /, '')].concat(sqlFrom.slice(1));
+    const sqlFrom = cdsFromClauseLines();
+    const assocLines = cdsAssocLines();
+    const cdsFrom = ['as select from ' + sqlFrom[0].replace(/^from /, '')].concat(sqlFrom.slice(1)).concat(assocLines);
 
     const lines = ['define view entity Z_MyView', '  ' + cdsFrom.join('\n  '), '{', '  ' + elementsText, '}'];
     if (whereText) lines.push('where ' + whereText);
@@ -1278,8 +1452,7 @@
       const raw = v.raw != null ? v.raw : (name ? joinType + ' ' + name + ' AS ' + alias + ' ON ' + (v.on || '<join condition>') : '');
       return {
         alias, name, fields, joinType, mode: 'join',
-        onLeftAlias: '', onLeftField: '', onRightField: '',
-        rawToggle: true, raw,
+        onConditions: [], rawToggle: true, raw,
       };
     });
     if (!joinedViews.length) return;
