@@ -517,7 +517,7 @@ function renderHtml(embeddedJson, stats) {
     }).join('') || '<p class="subhint">No conditions — leave empty to omit this clause.</p>';
 
     el.querySelectorAll('[data-role]').forEach(input => {
-      const evt = input.tagName === 'INPUT' ? 'input' : 'change';
+      const evt = input.tagName === 'BUTTON' ? 'click' : input.tagName === 'INPUT' ? 'input' : 'change';
       input.addEventListener(evt, (e) => {
         const idx = Number(e.target.dataset.idx);
         const role = e.target.dataset.role;
@@ -551,7 +551,8 @@ function renderHtml(embeddedJson, stats) {
       '<button class="remove" data-idx="' + i + '" data-role="remove">✕</button></div>';
     }).join('') || '<p class="subhint">No sort fields.</p>';
     el.querySelectorAll('[data-role]').forEach(input => {
-      input.addEventListener('change', (e) => {
+      const evt = input.tagName === 'BUTTON' ? 'click' : 'change';
+      input.addEventListener(evt, (e) => {
         const idx = Number(e.target.dataset.idx);
         const role = e.target.dataset.role;
         if (role === 'remove') { orderConds.splice(idx, 1); renderOrderRows(); buildQuery(); return; }
