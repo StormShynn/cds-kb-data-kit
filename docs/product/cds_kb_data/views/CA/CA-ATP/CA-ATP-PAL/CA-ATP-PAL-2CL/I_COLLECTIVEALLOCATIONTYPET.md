@@ -30,9 +30,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CollectiveAllocationType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as collectiveallocationtype preserving type )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `CollectiveAllocationTypeDesc` |  | |  | `cast( ddtext as collectiveallocationtypedesc preserving type )` |  |  |
+| `CollectiveAllocationType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as collectiveallocationtype preserving type )` | `CHAR(2)` | Collective Allocation Type |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `CollectiveAllocationTypeDesc` |  | |  | `cast( ddtext as collectiveallocationtypedesc preserving type )` | `CHAR(60)` | Description for Collective Allocation Type |
 | `_Language` | | ✓ | | | | |
 | `_CollectiveAllocationType` | | ✓ | | | | |
 

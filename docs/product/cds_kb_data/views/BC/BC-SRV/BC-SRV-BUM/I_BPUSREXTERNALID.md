@@ -30,11 +30,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |  |  |
-| `BPIdentificationType` | ✓ | |  | `type` |  |  |
-| `BPIdentificationNumber` | ✓ | |  | `idnumber` |  |  |
-| `ValidityStartDate` |  | |  | `valid_date_from` |  |  |
-| `ValidityEndDate` |  | |  | `valid_date_to` |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` | `CHAR(10)` | Business Partner Number |
+| `BPIdentificationType` | ✓ | |  | `type` | `CHAR(6)` | Identification Type |
+| `BPIdentificationNumber` | ✓ | |  | `idnumber` | `CHAR(60)` | Identification Number |
+| `ValidityStartDate` |  | |  | `valid_date_from` | `DATS(8)` | Validity Start for ID Number |
+| `ValidityEndDate` |  | |  | `valid_date_to` | `DATS(8)` | Validity End for ID Number |
 | `_BusinessUserBasic` | | ✓ | | | | |
 
 ## Associations

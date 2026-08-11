@@ -31,7 +31,29 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `'LastName'` |  | |  | `by: 'LastName'` |  |  |
+| `BusinessPartner` | ✓ | |  |  | `CHAR(10)` | Business Partner Number |
+| `BPIdentificationNumber` |  | |  |  | `CHAR(60)` | Identification Number |
+| `UserID` |  | |  |  | `CHAR(12)` | User ID |
+| `FirstName` |  | |  |  | `CHAR(40)` | First Name of Business Partner (Person) |
+| `LastName` |  | |  |  | `CHAR(40)` | Last Name of Business Partner (Person) |
+| `DefaultEmailAddress` |  | |  |  | `CHAR(241)` | Email Address |
+| `PersonFullName` |  | |  |  | `CHAR(80)` | User Description |
+| `Building` |  | |  |  | `CHAR(10)` | Building (number or code) |
+| `RoomNumber` |  | |  |  | `CHAR(10)` | Room or Apartment Number |
+| `Department` |  | |  |  | `CHAR(40)` | Department |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `DataControllerSet` |  | |  |  | `CHAR(1)` | BP: Data Controller Set Flag |
+| `DataController1` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController2` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController3` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController4` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController5` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController6` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController7` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController8` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController9` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController10` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
 
 ## Source Code
 

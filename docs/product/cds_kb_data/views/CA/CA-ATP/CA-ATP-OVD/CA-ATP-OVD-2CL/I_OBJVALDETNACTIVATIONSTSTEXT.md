@@ -32,10 +32,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |  |  |
-| `ObjValDetnActivationStatus` | ✓ | |  | `cast ( domvalue_l as ovd_activation_status )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
-| `ObjValDetnActivationStatusDesc` |  | |  | `ddtext` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `ObjValDetnActivationStatus` | ✓ | |  | `cast ( domvalue_l as ovd_activation_status )` | `CHAR(1)` | Status |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `ObjValDetnActivationStatusDesc` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_Language` | | ✓ | | | | |
 | `_Status` | | ✓ | | | | |
 

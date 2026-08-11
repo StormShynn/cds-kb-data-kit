@@ -30,9 +30,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DaylightSavingRule` | ✓ | |  | `dstrule` |  |  |
-| `DaylightSavingTimeDiff` |  | |  | `dstdiff` |  |  |
-| `DaylightSavingRuleIsActive` |  | |  | `flagactive` |  |  |
+| `DaylightSavingRule` | ✓ | |  | `dstrule` | `CHAR(6)` | Daylight Saving Time Rule |
+| `DaylightSavingTimeDiff` |  | |  | `dstdiff` | `TIMS(6)` | Difference Between Daylight Saving Time and Winter Time |
+| `DaylightSavingRuleIsActive` |  | |  | `flagactive` | `CHAR(1)` | Time zones active |
 | `_DaylightSavingRuleText` | | ✓ | | | | |
 
 ## Associations

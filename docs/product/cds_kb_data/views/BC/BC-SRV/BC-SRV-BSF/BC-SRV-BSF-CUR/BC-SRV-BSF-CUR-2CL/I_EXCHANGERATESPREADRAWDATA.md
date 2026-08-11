@@ -31,11 +31,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ExchangeRateType` | ✓ | |  | `kurst` |  |  |
-| `SourceCurrency` | ✓ | |  | `fcurr` |  |  |
-| `TargetCurrency` | ✓ | |  | `tcurr` |  |  |
-| `ValidityStartDate` | ✓ | |  | `case gdatu when '' then cast('00000000' as abap.dats) else cast(substring(cast(99999999 - cast(cast(gdatu as abap.numc(8)) as abap.int4) as abap.char(20)), 1, 8) as abap.dats) end` |  |  |
-| `CurrencyConversionSpreadRatio` |  | |  | `spred` |  |  |
+| `ExchangeRateType` | ✓ | |  | `kurst` | `CHAR(4)` | Exchange Rate Type |
+| `SourceCurrency` | ✓ | |  | `fcurr` | `CUKY(5)` | From-Currency |
+| `TargetCurrency` | ✓ | |  | `tcurr` | `CUKY(5)` | To-Currency |
+| `ValidityStartDate` | ✓ | |  | `case gdatu when '' then cast('00000000' as abap.dats) else cast(substring(cast(99999999 - cast(cast(gdatu as abap.numc(8)) as abap.int4) as abap.char(20)), 1, 8) as abap.dats) end` | `DATS(8)` |  |
+| `CurrencyConversionSpreadRatio` |  | |  | `spred` | `DEC(9)` | Spread between buying/selling rates and average rate |
 | `_ExchangeRateType` | | ✓ | | | | |
 | `_SourceCurrency` | | ✓ | | | | |
 | `_TargetCurrency` | | ✓ | | | | |
