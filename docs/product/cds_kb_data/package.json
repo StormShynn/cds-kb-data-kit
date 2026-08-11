@@ -18,7 +18,8 @@
     "build-sqlite-index": "node scripts/build-sqlite-index.mjs .",
     "enrich-descriptions": "node scripts/enrich-descriptions.mjs .",
     "rebuild-index": "node enrich_index.mjs .",
-    "resync-folders": "node scripts/migrate-to-module-folders.mjs . && node enrich_index.mjs ."
+    "resync-folders": "node scripts/migrate-to-module-folders.mjs . && node enrich_index.mjs .",
+    "refresh-vsp-cookie": "node scripts/refresh-vsp-cookie.mjs"
   },
   "dependencies": {
     "minisearch": "^7.2.0"
@@ -27,6 +28,7 @@
     "node": ">=24"
   },
   "devDependencies": {
-    "@abaplint/core": "^2.120.21"
+    "@abaplint/core": "^2.120.21",
+    "playwright": "^1.55.0"
   }
 }
