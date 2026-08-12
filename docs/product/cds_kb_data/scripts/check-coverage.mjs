@@ -191,7 +191,16 @@ function buildReport(hubArtifacts, localInfo, manifest, extMap, atcMap) {
         // Independent of `status` above — RELEASED-but-not-dev-extensible
         // views still count as missing/full/metadata-only, this only feeds
         // the report's "Hide Dev-Ext: Not Released" toggle.
-        devExtStatus: extMap.get(name) || null,
+        devExtStatus: extMap.get(name)?.devExt || null,
+        // Independent axis — can this entity be a data source for a new
+        // custom CDS view via Key User Extensibility (no-code/low-code),
+        // separate from devExtStatus's ABAP Developer Extensibility answer.
+        keyUserExtStatus: extMap.get(name)?.keyUserExt || null,
+        // Two more independent axes — can CUSTOM FIELDS be added directly to
+        // THIS entity itself (as opposed to using it as a data source, which
+        // is what devExtStatus/keyUserExtStatus answer).
+        extensibleKeyUser: extMap.get(name)?.extensibleKeyUser || null,
+        extensibleDevExt: extMap.get(name)?.extensibleDevExt || null,
         // Second, independent opinion on the same question (see
         // fetchAtcReleaseMap above) — shown next to devExtStatus for
         // cross-reference, never used to override it.
@@ -258,7 +267,8 @@ function renderHtml(report, viewPaths = {}) {
   const rowsJson = JSON.stringify(report.rows.map(r => [
     r.name, r.displayName, r.description, r.status,
     formatDateTime(r.createdAt), formatDateTime(r.modifiedAt), formatDateTime(r.lastFetchedAt),
-    r.regId || '', r.devExtStatus || '', r.atcState || '', pathOf(r.name, r.path),
+    r.regId || '', r.devExtStatus || '', r.keyUserExtStatus || '', r.extensibleKeyUser || '', r.extensibleDevExt || '',
+    r.atcState || '', pathOf(r.name, r.path),
   ])).replace(/<\/script/gi, '<\\/script');
   const extraRowsJson = JSON.stringify(report.extra.map(r => [
     r.name, r.description, r.appComponent, r.releaseState, r.sourceAvailable, pathOf(r.name, r.path),
@@ -414,11 +424,14 @@ function renderHtml(report, viewPaths = {}) {
           <th style="width:70px">Status</th>
           <th style="width:280px">Name</th>
           <th>Description</th>
-          <th style="width:110px">Dev Extensibility</th>
-          <th style="width:110px">ATC Release State</th>
-          <th style="width:110px">Created</th>
-          <th style="width:110px">Modified</th>
-          <th style="width:110px">Last Fetched</th>
+          <th style="width:100px">Dev Extensibility</th>
+          <th style="width:100px" title="Release State (Key User Extensibility) — can this entity be used as a data source in a no-code/low-code custom CDS view">Key User Ext.</th>
+          <th style="width:90px" title="Extensible (Key User Extensibility) — can custom fields be added directly to this entity itself via Key User Extensibility">Ext. Fields (KU)</th>
+          <th style="width:90px" title="Extensible (Developer Extensibility) — can custom fields be added directly to this entity itself via ABAP Developer Extensibility">Ext. Fields (Dev)</th>
+          <th style="width:100px">ATC Release State</th>
+          <th style="width:100px">Created</th>
+          <th style="width:100px">Modified</th>
+          <th style="width:100px">Last Fetched</th>
         </tr>
       </thead>
       <tbody id="tbody"></tbody>
@@ -454,7 +467,7 @@ function renderHtml(report, viewPaths = {}) {
 
   <div class="footer">
     Source: api.sap.com Business Accelerator Hub catalog (public, unauthenticated), single bulk call · Created/Modified are the Hub's own timestamps for that view; Last Fetched is when this KB last pulled it.<br />
-    Dev Extensibility comes from a second bulk call (the Hub's CdsViewsContent.CdsViews OData collection), joined by view name · "Not Released" means the view can't be extended via ABAP developer extensibility even though it's RELEASED for consumption — it's still counted in every stat above, use the checkbox to hide it.<br />
+    Dev Extensibility, Key User Ext., and both "Ext. Fields" columns come from the same second bulk call (the Hub's CdsViewsContent.CdsViews OData collection), joined by view name · "Dev Extensibility"/"Key User Ext." answer "can this entity be used as a data source in a new custom CDS view" (ABAP Developer Extensibility vs. the no-code Key User Extensibility app, respectively — independent of each other) · "Ext. Fields (KU)"/"Ext. Fields (Dev)" answer a DIFFERENT question — "can custom fields be added directly to this entity itself" — see hook/quy-trinh-check-cds-released-developer-extensibility.md · "Not Released"/"No" means that specific axis is blocked even though the view is RELEASED for consumption overall — it's still counted in every stat above, use the checkbox to hide rows where Dev Extensibility is Not Released or unknown.<br />
     ATC Release State is a third, independent signal: SAP's own ABAP Cloud "released objects" list (github.com/SAP/abap-atc-cr-cv-s4hc, no API key) filtered to CDS view (DDLS) entries · shown for cross-reference only, it never changes Dev Extensibility or any stat above — the two agree on every "Not Released" case seen so far, but ~125 views the Hub calls Released aren't in this list at all ("—").<br />
     Each row's <strong>Copy</strong> copies the CDS view name; <strong>↗</strong> opens this KB's .md on github.com when the view exists locally. Hub registry ID remains a tooltip on the name. Private fetch-time source URLs stay in coverage.json only, not on this page.
   </div>
@@ -567,7 +580,7 @@ function renderHtml(report, viewPaths = {}) {
     afterToggle();
   }
 
-  const rows = ${rowsJson}; // [name, displayName, description, status, createdAt, modifiedAt, lastFetchedAt, regId, devExtStatus, atcState, path]
+  const rows = ${rowsJson}; // [name, displayName, description, status, createdAt, modifiedAt, lastFetchedAt, regId, devExtStatus, keyUserExtStatus, extensibleKeyUser, extensibleDevExt, atcState, path]
   const STATUS_BADGE = {
     'full': '<span class="status-good">✓ Full DDL</span>',
     'metadata-only': '<span class="status-warning">◐ Metadata-only</span>',
@@ -588,20 +601,27 @@ function renderHtml(report, viewPaths = {}) {
       return matchesSearch(r, q);
     });
     renderRowsInto(tbody, rowCount, filtered, rows.length, r => {
-      const [name, displayName, description, status, createdAt, modifiedAt, lastFetchedAt, regId, devExtStatus, atcState, path] = r;
+      const [name, displayName, description, status, createdAt, modifiedAt, lastFetchedAt, regId,
+        devExtStatus, keyUserExtStatus, extensibleKeyUser, extensibleDevExt, atcState, path] = r;
       const devExtClass = devExtStatus === 'Not Released' ? 'not-released' : devExtStatus === 'Released' ? 'released' : '';
+      const keyUserExtClass = keyUserExtStatus === 'Not Released' ? 'not-released' : keyUserExtStatus === 'Released' ? 'released' : '';
+      const extKeyUserClass = extensibleKeyUser === 'No' ? 'not-released' : extensibleKeyUser === 'Yes' ? 'released' : '';
+      const extDevExtClass = extensibleDevExt === 'No' ? 'not-released' : extensibleDevExt === 'Yes' ? 'released' : '';
       const expanded = expandedNames.has(name);
       const titleAttr = ' title="Hub registry ID: ' + escapeHtml(regId || 'n/a') + '"';
       const row = '<tr class="view-row" data-name="' + escapeHtml(name) + '"><td class="status-cell">' + (STATUS_BADGE[status] || status) + '</td>' +
         nameCellHtml(name, path, expanded, titleAttr) +
         '<td class="desc-cell">' + (displayName || description || '').replace(/</g, '&lt;') + '</td>' +
         '<td class="ext-cell ' + devExtClass + '">' + (devExtStatus || '—') + '</td>' +
+        '<td class="ext-cell ' + keyUserExtClass + '">' + (keyUserExtStatus || '—') + '</td>' +
+        '<td class="ext-cell ' + extKeyUserClass + '">' + (extensibleKeyUser || '—') + '</td>' +
+        '<td class="ext-cell ' + extDevExtClass + '">' + (extensibleDevExt || '—') + '</td>' +
         '<td class="atc-cell ' + (atcState || '') + '">' + (atcState || '—') + '</td>' +
         '<td class="date-cell">' + (createdAt || '—') + '</td>' +
         '<td class="date-cell">' + (modifiedAt || '—') + '</td>' +
         '<td class="date-cell">' + (lastFetchedAt || '—') + '</td></tr>';
-      return expanded ? row + renderDetailRow(name, 8) : row;
-    }, 8);
+      return expanded ? row + renderDetailRow(name, 11) : row;
+    }, 11);
   }
 
   tbody.addEventListener('click', e => onViewRowClick(e, render));

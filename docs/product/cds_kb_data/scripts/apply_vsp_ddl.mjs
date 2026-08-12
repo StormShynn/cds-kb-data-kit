@@ -172,7 +172,8 @@ async function main() {
     let existing = {
       appComponent: '', softwareComponent: '', cleanCoreLevel: '', systemType: '',
       description: '', semanticEn: '', semanticVi: '', sourceUrl: '', keywords: [], tags: [],
-      releaseState: '', devExtStatus: '', atcState: '', atcSuccessor: '',
+      releaseState: '', devExtStatus: '', keyUserExtStatus: '', extensibleKeyUser: '', extensibleDevExt: '',
+      atcState: '', atcSuccessor: '',
     };
     if (existingFile) {
       try {
@@ -194,6 +195,9 @@ async function main() {
           // from DDL — always carry a pre-existing value through an
           // upgrade rather than dropping it.
           devExtStatus: scalar(fm, 'dev_ext_status'),
+          keyUserExtStatus: scalar(fm, 'key_user_ext_status'),
+          extensibleKeyUser: scalar(fm, 'extensible_key_user'),
+          extensibleDevExt: scalar(fm, 'extensible_dev_ext'),
           atcState: scalar(fm, 'atc_state'),
           atcSuccessor: scalar(fm, 'atc_successor'),
         };
@@ -245,6 +249,9 @@ async function main() {
       softwareComponent: existing.softwareComponent || 'SAPSCORE',
       releaseState,
       devExtStatus: existing.devExtStatus || undefined,
+      keyUserExtStatus: existing.keyUserExtStatus || undefined,
+      extensibleKeyUser: existing.extensibleKeyUser || undefined,
+      extensibleDevExt: existing.extensibleDevExt || undefined,
       atcState: existing.atcState || undefined,
       atcSuccessor: existing.atcSuccessor || undefined,
       cleanCoreLevel: existing.cleanCoreLevel || undefined,

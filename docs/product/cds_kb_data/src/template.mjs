@@ -30,13 +30,40 @@ function releaseStateLabel(state) {
 // neither implies the other. Absent (null/undefined) means this KB has no
 // signal either way — NOT the same as "not released" — fall back to the
 // ADT compiler / content-assist check described in that doc.
-function devExtStatusLabel(status) {
+export function devExtStatusLabel(status) {
   if (!status) return null;
   const map = {
     'released': 'Released',
     'not_released': 'Not Released',
   };
   return map[status.toLowerCase()] || status;
+}
+
+// key_user_ext_status is a SEPARATE axis again — SAP's
+// ReleaseStateKeyUserExtensibility. Same question as dev_ext_status above
+// ("can this entity be a data source for a new custom CDS view") but for the
+// no-code/low-code "Custom CDS Views" (Key User Extensibility) app instead of
+// ABAP Developer Extensibility. An entity can be released for one and not
+// the other — see the hook doc.
+export function keyUserExtStatusLabel(status) {
+  if (!status) return null;
+  const map = {
+    'released': 'Released',
+    'not_released': 'Not Released',
+  };
+  return map[status.toLowerCase()] || status;
+}
+
+// extensible_key_user / extensible_dev_ext are a DIFFERENT question from
+// dev_ext_status/key_user_ext_status above: those ask "can I USE this entity
+// as a data source when building a new custom view"; these ask "can CUSTOM
+// FIELDS be added directly to THIS entity itself" (SAP's
+// ExtensibleWithKeyUserExtensibility / ExtensibleWithDeveloperExtensibility).
+// Independent of every other axis on this page.
+export function extensibleLabel(value) {
+  if (!value) return null;
+  const map = { 'yes': 'Yes', 'no': 'No' };
+  return map[value.toLowerCase()] || value;
 }
 
 // atc_state is a THIRD, independent axis from both release_state and
@@ -98,6 +125,19 @@ export function renderFrontmatter(view) {
   // never confused with a fetched "not_released" value.
   if (view.devExtStatus) {
     frontmatter.push(`dev_ext_status: ${view.devExtStatus}`);
+  }
+  // Distinct axis again — see keyUserExtStatusLabel() above. Same
+  // omit-when-unknown convention as dev_ext_status.
+  if (view.keyUserExtStatus) {
+    frontmatter.push(`key_user_ext_status: ${view.keyUserExtStatus}`);
+  }
+  // Two more independent axes — see extensibleLabel() above. Same
+  // omit-when-unknown convention.
+  if (view.extensibleKeyUser) {
+    frontmatter.push(`extensible_key_user: ${view.extensibleKeyUser}`);
+  }
+  if (view.extensibleDevExt) {
+    frontmatter.push(`extensible_dev_ext: ${view.extensibleDevExt}`);
   }
   // Third, independent axis — see atcStateLabel() above. Same
   // omit-when-unknown convention as dev_ext_status.
@@ -161,6 +201,18 @@ function renderPropertyTable(view) {
     // depth under views/ (one folder per app_component segment), so no
     // single relative path back to hook/ would be correct for all of them.
     rows.push(`| Release State (Developer Extensibility) | ${devExtLabel} — separate from "Release State" above; see [dev-ext check procedure](https://github.com/StormShynn/cds-kb-data-kit/blob/main/docs/product/cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md) before \`association to\`/\`select from\` this entity in custom ABAP Developer Extensibility CDS views |`);
+  }
+  const keyUserExtLabel = keyUserExtStatusLabel(view.keyUserExtStatus);
+  if (keyUserExtLabel) {
+    rows.push(`| Release State (Key User Extensibility) | ${keyUserExtLabel} — can this entity be used as a data source when building a new custom CDS view via the no-code/low-code "Custom CDS Views" app; independent from the Developer Extensibility row above |`);
+  }
+  const extensibleKeyUserLabel = extensibleLabel(view.extensibleKeyUser);
+  if (extensibleKeyUserLabel) {
+    rows.push(`| Extensible (Key User Extensibility) | ${extensibleKeyUserLabel} — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |`);
+  }
+  const extensibleDevExtLabel = extensibleLabel(view.extensibleDevExt);
+  if (extensibleDevExtLabel) {
+    rows.push(`| Extensible (Developer Extensibility) | ${extensibleDevExtLabel} — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |`);
   }
   const atcLabel = atcStateLabel(view.atcState);
   if (atcLabel) {

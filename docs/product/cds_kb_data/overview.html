@@ -6,11 +6,14 @@
 <style>
   :root {
     --surface-1: #1a1a19;
+    --surface-2: #232322;
     --page-plane: #0d0d0d;
     --text-primary: #ffffff;
     --text-secondary: #c3c2b7;
     --text-muted: #898781;
     --border: rgba(255,255,255,0.10);
+    --accent: #4c9eff;
+    --status-good: #0ca30c;
   }
   * { box-sizing: border-box; }
   html, body { height: 100%; }
@@ -45,24 +48,66 @@
   .frame-wrap { flex: 1; position: relative; min-height: 0; }
   iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: none; background: var(--page-plane); }
   iframe.active { display: block; }
+
+  .mcp-btn {
+    background: var(--accent); border: 1px solid var(--accent); color: #06121f;
+    border-radius: 6px; padding: 6px 14px; font-size: 13px; font-weight: 600;
+    cursor: pointer; white-space: nowrap;
+  }
+  .mcp-btn:hover { filter: brightness(1.08); }
+
+  .modal-overlay {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6);
+    align-items: center; justify-content: center; z-index: 100; padding: 20px;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--page-plane); border: 1px solid var(--border); border-radius: 10px;
+    max-width: 640px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 22px 24px;
+  }
+  .modal h2 { font-size: 17px; margin: 0 0 4px; }
+  .modal .modal-sub { color: var(--text-muted); font-size: 13px; margin: 0 0 16px; }
+  .modal .modal-close {
+    float: right; background: none; border: none; color: var(--text-muted);
+    font-size: 20px; cursor: pointer; line-height: 1; padding: 0 4px;
+  }
+  .modal .modal-close:hover { color: var(--text-primary); }
+  .modal-tabs { display: flex; gap: 6px; margin-bottom: 12px; }
+  .modal-tab {
+    background: transparent; border: 1px solid var(--border); color: var(--text-secondary);
+    border-radius: 6px; padding: 5px 12px; font-size: 12px; cursor: pointer;
+  }
+  .modal-tab[aria-selected="true"] { color: var(--text-primary); border-color: var(--accent); background: var(--surface-1); }
+  .mcp-pane { display: none; }
+  .mcp-pane.active { display: block; }
+  .mcp-pane p { font-size: 13px; color: var(--text-secondary); margin: 0 0 10px; line-height: 1.5; }
+  .mcp-pane code { font-family: ui-monospace, "SF Mono", Consolas, monospace; background: var(--surface-2); padding: 1px 5px; border-radius: 4px; }
+  .mcp-code-wrap { position: relative; }
+  .mcp-code {
+    width: 100%; margin: 0; background: #050505; border: 1px solid var(--border);
+    color: #d6f5c3; border-radius: 8px; padding: 14px 16px; font-size: 12.5px;
+    font-family: ui-monospace, "SF Mono", Consolas, monospace; white-space: pre-wrap;
+    word-break: break-word; box-sizing: border-box;
+  }
+  .mcp-copy-row { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+  .mcp-copy-row button {
+    background: var(--surface-2); border: 1px solid var(--border); color: var(--text-primary);
+    border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer;
+  }
+  .mcp-copy-row button:hover { border-color: var(--accent); }
+  .mcp-copy-row .copied { color: var(--status-good); font-size: 12px; display: none; }
 </style>
 </head>
 <body>
 <header>
   <h1>CDS Knowledge Base · <span>Overview</span></h1>
+  <button class="mcp-btn" id="mcpBtn">🔌 Connect via MCP</button>
   <div class="tabs" role="tablist">
     <button id="tab-btn-dashboard" role="tab" aria-selected="true">📊 Dashboard</button>
     <button id="tab-btn-coverage" role="tab" aria-selected="false">📡 Hub Coverage</button>
     <button id="tab-btn-search" role="tab" aria-selected="false">🔍 Search</button>
     <button id="tab-btn-fieldsearch" role="tab" aria-selected="false">🔎 Field/Table Search</button>
     <button id="tab-btn-querybuilder" role="tab" aria-selected="false">🛠️ Query Builder</button>
-  </div>
-  <div class="open-new">
-    <a href="dashboard.html" target="_blank">open dashboard in new tab ↗</a>
-    <a href="coverage-report.html" target="_blank">open coverage in new tab ↗</a>
-    <a href="search.html" target="_blank">open search in new tab ↗</a>
-    <a href="field-search.html" target="_blank">open field search in new tab ↗</a>
-    <a href="query-builder.html" target="_blank">open query builder in new tab ↗</a>
   </div>
 </header>
 <div class="frame-wrap">
@@ -72,6 +117,66 @@
   <iframe id="frame-fieldsearch" src="field-search.html" title="Field/Table Search"></iframe>
   <iframe id="frame-querybuilder" src="query-builder.html" title="Query Builder"></iframe>
 </div>
+
+<div class="modal-overlay" id="mcpModalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mcpModalTitle">
+    <button class="modal-close" id="mcpModalClose" aria-label="Close">×</button>
+    <h2 id="mcpModalTitle">Connect an AI agent via MCP</h2>
+    <p class="modal-sub">Pick the block that matches your client, copy it, paste it into your <code>mcpServers</code> config — no install, no API key.</p>
+    <div class="modal-tabs" role="tablist">
+      <button class="modal-tab" id="mcpTabDirect" role="tab" aria-selected="true">Direct HTTP (recommended)</button>
+      <button class="modal-tab" id="mcpTabStdio" role="tab" aria-selected="false">stdio bridge</button>
+    </div>
+
+    <div class="mcp-pane active" id="mcpPaneDirect">
+      <p>For clients with native remote-MCP support (Claude Desktop/Code, recent Cursor/VS Code builds).</p>
+      <div class="mcp-code-wrap">
+        <pre class="mcp-code" id="mcpCodeDirect">{
+  "mcpServers": {
+    "cds-kb": {
+      "type": "http",
+      "url": "https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com/mcp"
+    }
+  }
+}</pre>
+      </div>
+      <div class="mcp-copy-row">
+        <button data-copy-target="mcpCodeDirect">📋 Copy</button>
+        <span class="copied" id="mcpCopiedDirect">Copied!</span>
+      </div>
+    </div>
+
+    <div class="mcp-pane" id="mcpPaneStdio">
+      <p>For stdio-only clients: bridges the URL above over stdio via <code>supergateway</code> (needs Node ≥ 20 on this machine, no other install).</p>
+      <div class="mcp-code-wrap">
+        <pre class="mcp-code" id="mcpCodeStdio">{
+  "mcpServers": {
+    "cds-kb": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "supergateway@3.4.3",
+        "--streamableHttp",
+        "https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com/mcp"
+      ]
+    }
+  }
+}</pre>
+      </div>
+      <div class="mcp-copy-row">
+        <button data-copy-target="mcpCodeStdio">📋 Copy</button>
+        <span class="copied" id="mcpCopiedStdio">Copied!</span>
+      </div>
+    </div>
+
+    <p class="modal-sub" style="margin-top:16px;margin-bottom:0">
+      Public, no auth, no rate limit beyond casual-abuse protection — hosted on a SAP BTP trial, so this URL may change if the trial resets.
+      Full options (self-hosting, OAuth, other clients) in the
+      <a href="https://github.com/StormShynn/cds-kb-data-kit/blob/main/docs/product/cds_kb_mcp/README.md" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">cds-kb-mcp README ↗</a>.
+    </p>
+  </div>
+</div>
+
 <script>
   const buttons = { dashboard: document.getElementById('tab-btn-dashboard'), coverage: document.getElementById('tab-btn-coverage'), search: document.getElementById('tab-btn-search'), fieldsearch: document.getElementById('tab-btn-fieldsearch'), querybuilder: document.getElementById('tab-btn-querybuilder') };
   const frames = { dashboard: document.getElementById('frame-dashboard'), coverage: document.getElementById('frame-coverage'), search: document.getElementById('frame-search'), fieldsearch: document.getElementById('frame-fieldsearch'), querybuilder: document.getElementById('frame-querybuilder') };
@@ -86,6 +191,44 @@
   buttons.search.addEventListener('click', () => show('search'));
   buttons.fieldsearch.addEventListener('click', () => show('fieldsearch'));
   buttons.querybuilder.addEventListener('click', () => show('querybuilder'));
+
+  // ── MCP connect modal ──────────────────────────────────────────────────
+  const mcpOverlay = document.getElementById('mcpModalOverlay');
+  document.getElementById('mcpBtn').addEventListener('click', () => mcpOverlay.classList.add('open'));
+  document.getElementById('mcpModalClose').addEventListener('click', () => mcpOverlay.classList.remove('open'));
+  mcpOverlay.addEventListener('click', (e) => { if (e.target === mcpOverlay) mcpOverlay.classList.remove('open'); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') mcpOverlay.classList.remove('open'); });
+
+  const mcpTabs = { direct: document.getElementById('mcpTabDirect'), stdio: document.getElementById('mcpTabStdio') };
+  const mcpPanes = { direct: document.getElementById('mcpPaneDirect'), stdio: document.getElementById('mcpPaneStdio') };
+  function showMcpTab(name) {
+    for (const k of Object.keys(mcpPanes)) {
+      mcpPanes[k].classList.toggle('active', k === name);
+      mcpTabs[k].setAttribute('aria-selected', String(k === name));
+    }
+  }
+  mcpTabs.direct.addEventListener('click', () => showMcpTab('direct'));
+  mcpTabs.stdio.addEventListener('click', () => showMcpTab('stdio'));
+
+  // Copy button per code block — falls back to a manual-select prompt if
+  // the Clipboard API is unavailable (non-HTTPS context, older browser).
+  document.querySelectorAll('[data-copy-target]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const targetId = btn.getAttribute('data-copy-target');
+      const text = document.getElementById(targetId).textContent;
+      const copiedEl = document.getElementById(targetId.replace('mcpCode', 'mcpCopied'));
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        window.prompt('Copy this manually (clipboard access blocked):', text);
+        return;
+      }
+      if (copiedEl) {
+        copiedEl.style.display = 'inline';
+        setTimeout(() => { copiedEl.style.display = 'none'; }, 1500);
+      }
+    });
+  });
 </script>
 </body>
 </html>

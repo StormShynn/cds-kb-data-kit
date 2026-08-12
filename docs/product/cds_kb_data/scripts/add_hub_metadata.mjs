@@ -43,7 +43,7 @@ import { resolveViewFolder, findExistingView } from './lib/view-files.mjs';
 import { readJson, writeJson } from './lib/json-file.mjs';
 import { runPool } from './lib/concurrency.mjs';
 import { rebuildIndex } from './lib/rebuild-index.mjs';
-import { normalizeDevExtStatus } from './lib/hub-extensibility.mjs';
+import { normalizeDevExtStatus, normalizeYesNo } from './lib/hub-extensibility.mjs';
 
 const DATA_DIR = '.';
 const VIEWS_DIR = path.join(DATA_DIR, 'views');
@@ -183,6 +183,12 @@ async function processItem(item, opts, taxonomy, rowsByName, manifest, stats) {
     // — only set when the Hub's extensibility catalog actually has a value;
     // undefined (not written) otherwise, never a guessed default.
     devExtStatus: normalizeDevExtStatus(row?.devExtStatus) || undefined,
+    // Same shape/normalization as devExtStatus above, independent axis.
+    keyUserExtStatus: normalizeDevExtStatus(row?.keyUserExtStatus) || undefined,
+    // Yes/No axes — different question from the two above (see
+    // hook/quy-trinh-check-cds-released-developer-extensibility.md).
+    extensibleKeyUser: normalizeYesNo(row?.extensibleKeyUser) || undefined,
+    extensibleDevExt: normalizeYesNo(row?.extensibleDevExt) || undefined,
     // Third, independent axis (SAP ATC/Clean Core released-objects list) —
     // already lowerCamelCase from SAP, no normalization needed.
     atcState: row?.atcState || undefined,

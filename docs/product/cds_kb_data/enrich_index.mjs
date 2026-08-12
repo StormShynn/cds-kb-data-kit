@@ -59,7 +59,16 @@ if (!options.storeFields.includes('releaseState')) options.storeFields.push('rel
 // only — never a ranking signal, since "not released for dev-ext" says
 // nothing about whether the view is a good search match.
 if (!options.storeFields.includes('devExtStatus')) options.storeFields.push('devExtStatus');
-// atcState/atcSuccessor: a THIRD, independent axis (SAP's own ABAP Cloud
+// keyUserExtStatus/extensibleKeyUser/extensibleDevExt: three more
+// independent axes from the same Hub row as devExtStatus (see hub-extensibility.mjs) —
+// keyUserExtStatus answers the same "usable as a data source" question for
+// the no-code Key User Extensibility app; extensibleKeyUser/extensibleDevExt
+// answer a different question ("can custom fields be added to this entity
+// itself"). None are ranking signals, same reasoning as devExtStatus above.
+if (!options.storeFields.includes('keyUserExtStatus')) options.storeFields.push('keyUserExtStatus');
+if (!options.storeFields.includes('extensibleKeyUser')) options.storeFields.push('extensibleKeyUser');
+if (!options.storeFields.includes('extensibleDevExt')) options.storeFields.push('extensibleDevExt');
+// atcState/atcSuccessor: a further independent axis (SAP's own ABAP Cloud
 // released-objects list) — also never a ranking signal, same reasoning as
 // devExtStatus above.
 if (!options.storeFields.includes('atcState')) options.storeFields.push('atcState');
@@ -175,9 +184,9 @@ if (privateOverlayCount) {
 
 const docs = [];
 const fieldsMap = {};
-const fieldIndex = {}; // FIELD_NAME (uppercase) -> [{ view, isKey, appComponent, lob, bo, releaseState, devExtStatus, atcState, atcSuccessor, isAbstract, isMasterData, usageCount, referencedByCount }]
-const tableIndex = {}; // TABLE/VIEW NAME (uppercase) -> [{ view, relation: 'source'|'association', alias, appComponent, lob, bo, releaseState, devExtStatus, atcState, atcSuccessor, isAbstract, isMasterData, usageCount, referencedByCount }]
-const rawFieldIndex = {}; // RAW DDIC COLUMN NAME (uppercase) -> [{ view, field: <semantic name>, isKey, appComponent, lob, bo, releaseState, devExtStatus, atcState, atcSuccessor, isAbstract, isMasterData, usageCount, referencedByCount }]
+const fieldIndex = {}; // FIELD_NAME (uppercase) -> [{ view, isKey, appComponent, lob, bo, releaseState, devExtStatus, keyUserExtStatus, extensibleKeyUser, extensibleDevExt, atcState, atcSuccessor, isAbstract, isMasterData, usageCount, referencedByCount }]
+const tableIndex = {}; // TABLE/VIEW NAME (uppercase) -> [{ view, relation: 'source'|'association', alias, appComponent, lob, bo, releaseState, devExtStatus, keyUserExtStatus, extensibleKeyUser, extensibleDevExt, atcState, atcSuccessor, isAbstract, isMasterData, usageCount, referencedByCount }]
+const rawFieldIndex = {}; // RAW DDIC COLUMN NAME (uppercase) -> [{ view, field: <semantic name>, isKey, appComponent, lob, bo, releaseState, devExtStatus, keyUserExtStatus, extensibleKeyUser, extensibleDevExt, atcState, atcSuccessor, isAbstract, isMasterData, usageCount, referencedByCount }]
 let enriched = 0, withLabel = 0, withBo = 0, synCount = 0;
 let metadataOnlyCount = 0, withDdlCount = 0;
 // Keyword-phrase frequency map for index/suggestions.json (search.html's
@@ -307,6 +316,9 @@ for (let i = 0; i < viewEntries.length; i++) {
   const module = appComponent ? appComponent.split('-')[0] : '';
   const releaseState = scalar(fm, 'release_state') || 'released';
   const devExtStatus = scalar(fm, 'dev_ext_status') || null;
+  const keyUserExtStatus = scalar(fm, 'key_user_ext_status') || null;
+  const extensibleKeyUser = scalar(fm, 'extensible_key_user') || null;
+  const extensibleDevExt = scalar(fm, 'extensible_dev_ext') || null;
   const atcState = scalar(fm, 'atc_state') || null;
   const atcSuccessor = scalar(fm, 'atc_successor') || null;
   const isAbstract = isAbstractEntity(content);
@@ -346,7 +358,7 @@ for (let i = 0; i < viewEntries.length; i++) {
           const rawName = bareMatch || (castMatch && BARE_IDENTIFIER_RE.test(castMatch) ? castMatch : null);
           if (rawName && rawName.toUpperCase() !== fieldName.toUpperCase()) {
             const rawKey = rawName.toUpperCase();
-            (rawFieldIndex[rawKey] ||= []).push({ view: name, field: fieldName, isKey, appComponent, lob, bo, releaseState, devExtStatus, atcState, atcSuccessor, isAbstract, isMasterData, usageCount });
+            (rawFieldIndex[rawKey] ||= []).push({ view: name, field: fieldName, isKey, appComponent, lob, bo, releaseState, devExtStatus, keyUserExtStatus, extensibleKeyUser, extensibleDevExt, atcState, atcSuccessor, isAbstract, isMasterData, usageCount });
           }
         }
       } else {
@@ -357,7 +369,7 @@ for (let i = 0; i < viewEntries.length; i++) {
       }
       if (!fieldName) continue;
       const key = fieldName.toUpperCase();
-      (fieldIndex[key] ||= []).push({ view: name, isKey, appComponent, lob, bo, releaseState, devExtStatus, atcState, atcSuccessor, isAbstract, isMasterData, usageCount });
+      (fieldIndex[key] ||= []).push({ view: name, isKey, appComponent, lob, bo, releaseState, devExtStatus, keyUserExtStatus, extensibleKeyUser, extensibleDevExt, atcState, atcSuccessor, isAbstract, isMasterData, usageCount });
     }
   }
 
@@ -367,13 +379,13 @@ for (let i = 0; i < viewEntries.length; i++) {
   // views involve it" instead of grepping every DDL source block by hand.
   if (sourceTable) {
     const key = sourceTable.toUpperCase();
-    (tableIndex[key] ||= []).push({ view: name, relation: 'source', alias: null, appComponent, lob, bo, releaseState, devExtStatus, atcState, atcSuccessor, isAbstract, isMasterData, usageCount });
+    (tableIndex[key] ||= []).push({ view: name, relation: 'source', alias: null, appComponent, lob, bo, releaseState, devExtStatus, keyUserExtStatus, extensibleKeyUser, extensibleDevExt, atcState, atcSuccessor, isAbstract, isMasterData, usageCount });
   }
   if (assocTable) {
     for (const [alias, targetView] of assocTable.rows) {
       if (!targetView) continue;
       const key = targetView.toUpperCase();
-      (tableIndex[key] ||= []).push({ view: name, relation: 'association', alias, appComponent, lob, bo, releaseState, devExtStatus, atcState, atcSuccessor, isAbstract, isMasterData, usageCount });
+      (tableIndex[key] ||= []).push({ view: name, relation: 'association', alias, appComponent, lob, bo, releaseState, devExtStatus, keyUserExtStatus, extensibleKeyUser, extensibleDevExt, atcState, atcSuccessor, isAbstract, isMasterData, usageCount });
     }
   }
 
@@ -444,6 +456,9 @@ for (let i = 0; i < viewEntries.length; i++) {
     usageCount: usageCounts[name] || 0,
     releaseState,
     devExtStatus,
+    keyUserExtStatus,
+    extensibleKeyUser,
+    extensibleDevExt,
     atcState,
     atcSuccessor,
     isAbstract,

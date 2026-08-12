@@ -2,34 +2,49 @@
 // Single source of truth for fetching SAP's independent, per-view release
 // signals that this KB's own release_state does NOT cover:
 //
-//   - fetchExtensibilityMap(): "Released for Developer Extensibility"
-//     (ReleaseStateDeveloperExtensibility) — can this entity be used via
-//     `association to`/`select from` in a custom ABAP Developer
-//     Extensibility CDS view. A view can be release_state: released (SAP
-//     confirms it exists / is a public API) while this is "Not Released".
+//   - fetchExtensibilityMap(): four related-but-distinct flags from the same
+//     Hub OData row, all confirmed present on CdsViewsContent.CdsViews (see
+//     docs/product/cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md):
+//       - devExt (ReleaseStateDeveloperExtensibility) — can this entity be
+//         used via `association to`/`select from` in a custom ABAP Developer
+//         Extensibility CDS view.
+//       - keyUserExt (ReleaseStateKeyUserExtensibility) — can this entity be
+//         used as a data source when building a new custom CDS view via the
+//         no-code/low-code "Custom CDS Views" (Key User Extensibility) app.
+//         Independent from devExt — an entity can be released for one and
+//         not the other.
+//       - extensibleKeyUser (ExtensibleWithKeyUserExtensibility) — can
+//         CUSTOM FIELDS be added directly to THIS entity itself via Key User
+//         Extensibility. A different question from keyUserExt above (using
+//         the entity as a source vs. extending the entity itself).
+//       - extensibleDevExt (ExtensibleWithDeveloperExtensibility) — same
+//         question as extensibleKeyUser, for ABAP Developer Extensibility.
+//     A view can be release_state: released (SAP confirms it exists / is a
+//     public API) while devExt/keyUserExt is "Not Released" and/or
+//     extensibleKeyUser/extensibleDevExt is "No" — none of these five flags
+//     implies any other.
 //   - fetchAtcReleaseMap(): SAP's own ABAP Cloud "released objects" list
 //     (the same public dataset ATC/Clean Core checks use) — a second,
 //     independent opinion on release/deprecation, PLUS (uniquely) a
 //     concrete successor object name when one deprecates/replaces another
 //     (e.g. I_COSTELEMENT -> notToBeReleased, successor I_GLACCOUNT).
 //
-// See docs/product/cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md
-// for why release_state must never be conflated with either of these.
-//
 // Extracted from scripts/check-coverage.mjs so scripts/backfill-dev-ext-status.mjs
-// / scripts/backfill-atc-state.mjs (and any future consumer) share the exact
-// same fetch/parse logic instead of hand-copied implementations drifting
-// from each other.
+// / scripts/backfill-extensibility-signals.mjs / scripts/backfill-atc-state.mjs
+// (and any future consumer) share the exact same fetch/parse logic instead of
+// hand-copied implementations drifting from each other.
 
-// This OData collection is the only place the Hub exposes Developer
-// Extensibility state — a global registry (~19k rows across every SAP
-// product, not just S/4HANA Cloud), so it's filtered with $select down to
-// the two fields actually used here. One unpaged call returns every row
-// (confirmed empirically: $inlinecount reports ~19,122 and the same count
-// comes back with no $skiptoken/$top needed).
+// This OData collection is the only place the Hub exposes these flags — a
+// global registry (~19k rows across every SAP product, not just S/4HANA
+// Cloud), so it's filtered with $select down to the fields actually used
+// here. One unpaged call returns every row (confirmed empirically:
+// $inlinecount reports ~19,122 and the same count comes back with no
+// $skiptoken/$top needed).
 const EXT_URL =
   'https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews' +
-  '?$format=json&$select=TechnicalName,ReleaseStateDeveloperExtensibility&$inlinecount=allpages';
+  '?$format=json&$select=TechnicalName,ReleaseStateDeveloperExtensibility,' +
+  'ReleaseStateKeyUserExtensibility,ExtensibleWithKeyUserExtensibility,' +
+  'ExtensibleWithDeveloperExtensibility&$inlinecount=allpages';
 
 // Optional, unused today (confirmed empirically that EXT_URL works with zero
 // auth) — kept as a fallback in case the Hub ever tightens anonymous access.
@@ -42,8 +57,12 @@ function sapHeaders(extra) {
 }
 
 /**
- * Name -> "Released" | "Not Released", sourced from EXT_URL (raw SAP
- * strings, not normalized — callers decide their own storage convention).
+ * Name -> { devExt, keyUserExt, extensibleKeyUser, extensibleDevExt }, raw
+ * SAP strings ("Released"/"Not Released"/"Yes"/"No"), not normalized —
+ * callers decide their own storage convention (normalizeDevExtStatus /
+ * normalizeYesNo below). A key is present only if the Hub row had at least
+ * one non-null flag; individual properties may still be null/undefined if
+ * that specific flag was absent on the row.
  * Never throws — this is a display/enrichment aid, not a hard dependency,
  * so a Hub hiccup here shouldn't fail the whole caller.
  */
@@ -57,9 +76,18 @@ export async function fetchExtensibilityMap() {
     const data = await resp.json();
     const map = new Map();
     for (const r of data.d.results) {
-      if (r.ReleaseStateDeveloperExtensibility != null) {
-        map.set(r.TechnicalName, r.ReleaseStateDeveloperExtensibility);
-      }
+      if (
+        r.ReleaseStateDeveloperExtensibility == null &&
+        r.ReleaseStateKeyUserExtensibility == null &&
+        r.ExtensibleWithKeyUserExtensibility == null &&
+        r.ExtensibleWithDeveloperExtensibility == null
+      ) continue;
+      map.set(r.TechnicalName, {
+        devExt: r.ReleaseStateDeveloperExtensibility ?? null,
+        keyUserExt: r.ReleaseStateKeyUserExtensibility ?? null,
+        extensibleKeyUser: r.ExtensibleWithKeyUserExtensibility ?? null,
+        extensibleDevExt: r.ExtensibleWithDeveloperExtensibility ?? null,
+      });
     }
     return map;
   } catch (err) {
@@ -68,10 +96,16 @@ export async function fetchExtensibilityMap() {
   }
 }
 
-/** "Released" / "Not Released" (raw SAP string) -> this KB's frontmatter convention. */
+/** "Released" / "Not Released" (raw SAP string) -> this KB's frontmatter convention. Shared by devExt and keyUserExt — same raw shape from the Hub. */
 export function normalizeDevExtStatus(raw) {
   if (!raw) return null;
   return String(raw).trim().toLowerCase().replace(/\s+/g, '_');
+}
+
+/** "Yes" / "No" (raw SAP string) -> this KB's frontmatter convention ("yes"/"no"). */
+export function normalizeYesNo(raw) {
+  if (!raw) return null;
+  return String(raw).trim().toLowerCase();
 }
 
 // SAP's official ABAP Cloud released-objects list (public_cloud scope, which

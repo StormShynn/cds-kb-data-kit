@@ -75,7 +75,7 @@ async function main() {
 
   await runPool(files, 32, async ({ name, relPath }) => {
     const filePath = path.join(viewsDir, ...relPath.split('/'));
-    const raw = extMap.get(name);
+    const raw = extMap.get(name)?.devExt;
     if (raw == null) {
       stats.noData++;
       return;
