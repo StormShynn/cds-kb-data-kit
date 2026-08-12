@@ -1,13 +1,13 @@
 # cds-kb-mcp
 
 A **dataless** MCP server that gives AI agents instant, ranked access to SAP
-S/4HANA CDS views via semantic search, business taxonomy, and on-demand
-definition retrieval. In this harness it sits beside
-[`../cds_kb_data`](../cds_kb_data) and auto-uses that tree when present.
+S/4HANA CDS views via semantic search, business taxonomy, on-demand definition
+retrieval, and CDS DDL compose/generate/validate. Built on the **MCP SDK v2**
+(spec `2026-07-28`, stateless Streamable HTTP + stdio). In this harness it sits
+beside [`../cds_kb_data`](../cds_kb_data) and auto-uses that tree when present.
 
 > **TL;DR (end users):** Prefer the hosted server — no install. Point a Streamable
-> HTTP client at `/mcp`, or bridge `/sse` with `supergateway`. See
-> [Client Configuration](#client-configuration).
+> HTTP client at `/mcp`. See [Client Configuration](#client-configuration).
 >
 > **TL;DR (this monorepo):** `cd docs/product/cds_kb_mcp && npm start` — resolves
 > sibling `../cds_kb_data` automatically. Use `npm run start:remote` only when you
@@ -24,8 +24,10 @@ definition retrieval. In this harness it sits beside
 - [Prerequisites](#prerequisites)
 - [Client Configuration](#client-configuration) — hosted MCP for end users
 - [Tools Reference](#tools-reference)
-- [Hosted auth](#hosted-auth)
+- [Resources & Prompts](#resources--prompts)
+- [Hosted auth](#hosted-auth) — API key, JWKS, **OAuth 2.1**
 - [Usage ranking](#usage-ranking)
+- [Operations](#operations) — `/health`, `/metrics`, rate limits
 - [Architecture](#architecture)
 
 ---
@@ -40,10 +42,13 @@ the data index changes).
 | **Coverage**        | ~10,600 CDS views (see `version.json` `viewCount`)                                                         |
 | **Enrichment**      | Semantic description + synonyms where present (`enrichedCount` in `version.json`)                          |
 | **Taxonomy**        | Lines of Business → Business Objects → keyword map (EN + VI)                                               |
-| **Search ranking**  | Field-boosted MiniSearch (`name×3`, `semanticDescription×2.5`, `synonyms×2`)                               |
+| **Search ranking**  | Field-boosted MiniSearch (`name×3`, `semanticDescription×2.5`, `synonyms×2`) + optional **vector hybrid** (`index/embeddings.json`) + **usageCount** popularity boost |
 | **Module aliasing** | Filter by `"Finance"` / `"Procurement"` / `"Sales"` instead of `FI` / `MM` / `SD`                          |
-| **Tools**           | 12 MCP tools: search/taxonomy/deps + `suggest_base_views`, `compose_query`, `generate_cds_view`, `validate_cds_ddl`, `propose_query_library_entry`, `kb_info` |
-| **Bundle**          | Single ~1.9 MB `.cjs` file (unminified), Node ≥ 18                                                          |
+| **Tools**           | 12 MCP tools — every one declares an `outputSchema` and returns JSON `structuredContent`                   |
+| **Resources**       | `cds://view/{name}`, `cds://taxonomy`, `cds://stats` — attachable straight into agent context              |
+| **Prompts**         | `explain_view`, `compose_query`, `validate_ddl` — one-call packaged workflows                              |
+| **Auth**            | API key, remote JWKS, and full **OAuth 2.1 + PKCE** authorization server                                   |
+| **Bundle**          | Single ~2 MB `.cjs` file (unminified), Node ≥ 20                                                           |
 | **Data isolation**  | Server ships **no view data**. Harness sibling `cds_kb_data`, or GitHub remote / local `--data`.           |
 
 ---
@@ -94,7 +99,7 @@ Open both folders in one VS Code/Cursor window via `cds-kb.code-workspace`.
 
 Before configuring your client, ensure your local machine meets the following requirements:
 
-1. **Node.js**: Only needed for Option 1/2 (the `supergateway` bridge) or local stdio. Option 0 (direct Streamable HTTP) needs nothing installed — the client talks to the URL itself. If you do need Node, minimum version **Node.js v18** or above — verify with `node -v`.
+1. **Node.js**: Only needed for Option 1/2 (the `supergateway` bridge) or local stdio. Option 0 (direct Streamable HTTP) needs nothing installed — the client talks to the URL itself. Minimum version **Node.js v20** or above — verify with `node -v`. (This server itself requires Node ≥ 20; the MCP SDK v2 requires it.)
 2. **Network Connectivity**:
    - Outbound HTTPS access to the hosted server — primary: `https://cds-kb-mcp-production.up.railway.app`, fallback: `https://cds-kb-mcp.cfapps.ap21.hana.ondemand.com`
    - Option 1/2 only: access to `registry.npmjs.org` to fetch `supergateway`. If your machine is behind a corporate firewall/VPN/proxy that blocks npm registry downloads, either use Option 0 instead, or use the global installation method (**Option 2** below).
@@ -106,12 +111,14 @@ Before configuring your client, ensure your local machine meets the following re
 
 Because the MCP server is hosted remotely, **most end users do not need to clone this repository or install any local dependencies**. For harness/local wiring, see [Harness monorepo (local)](#harness-monorepo-local) above.
 
-The server exposes two transports side by side — pick whichever your client supports, both hit the same tools/data:
-
-- **`/mcp` (Streamable HTTP)** — the current MCP transport spec. Connect directly with just a URL, no extra process. Use this if your client (Claude Code, recent Claude Desktop/Cursor/VS Code builds, etc.) supports remote MCP servers natively.
-- **`/sse` (legacy SSE)** — the older transport. For clients that only speak local stdio, bridge it with the `supergateway` package as shown below.
+The server exposes **Streamable HTTP** on a single **`/mcp`** endpoint (the current MCP transport spec — stateless per request). The legacy SSE transport was removed with the SDK v2 upgrade; clients that only speak local stdio bridge `/mcp` with `supergateway` as shown below.
 
 Two hosted endpoints are available for either transport — start with **Primary**, and switch to **Fallback** only if the primary is unreachable from your network.
+
+> **Hosting on the cheap:** if you host this server yourself, **SAP BTP Cloud
+> Foundry has a free tier** (no card needed for Trial) and the repo ships a
+> ready-to-push `manifest.yml` — see [mcp_btp_deployment_guide.md](./mcp_btp_deployment_guide.md),
+> Part A. It needs a `CDS_KB_DATA_TOKEN` GitHub PAT because the data repo is private.
 
 ### Option 0: Direct Streamable HTTP (Recommended if your client supports it)
 
@@ -134,9 +141,7 @@ The exact config key for a remote HTTP server (`"type": "http"` vs `"transport"`
 
 ### Option 1: Lock Version with npx (Recommended & Easiest, for stdio-only clients)
 
-Locks the `supergateway` version to `2.0.0`. This works on all devices with Node.js v18 or above, and prevents NPM from dynamically fetching the latest v3.x which requires Node v20+.
-
-Add one of these blocks to your `mcpServers` configuration file (e.g., `claude_desktop_config.json` or `mcp_config.json`):
+`supergateway` v3 connects to a remote **Streamable HTTP** endpoint via `--streamableHttp` and exposes it locally over stdio. Add one of these blocks to your `mcpServers` configuration file (e.g., `claude_desktop_config.json` or `mcp_config.json`):
 
 **Primary:**
 
@@ -147,9 +152,9 @@ Add one of these blocks to your `mcpServers` configuration file (e.g., `claude_d
       "command": "npx",
       "args": [
         "-y",
-        "supergateway@2.0.0",
-        "--sse",
-        "https://cds-kb-mcp-production.up.railway.app/sse"
+        "supergateway@3.4.3",
+        "--streamableHttp",
+        "https://cds-kb-mcp-production.up.railway.app/mcp"
       ]
     }
   }
@@ -165,9 +170,9 @@ Add one of these blocks to your `mcpServers` configuration file (e.g., `claude_d
       "command": "npx",
       "args": [
         "-y",
-        "supergateway@2.0.0",
-        "--sse",
-        "https://cds-kb-mcp.cfapps.ap21.hana.ondemand.com/sse"
+        "supergateway@3.4.3",
+        "--streamableHttp",
+        "https://cds-kb-mcp.cfapps.ap21.hana.ondemand.com/mcp"
       ]
     }
   }
@@ -181,7 +186,7 @@ Best for enterprise environments behind corporate firewalls, VPNs, or proxy serv
 1. Install `supergateway` globally on your machine once:
 
    ```bash
-   npm install -g supergateway@2.0.0
+   npm install -g supergateway@3.4.3
    ```
 
 2. Update your IDE's `mcpServers` configuration to call the globally installed binary directly (no `npx`):
@@ -194,8 +199,8 @@ Best for enterprise environments behind corporate firewalls, VPNs, or proxy serv
        "cds-kb": {
          "command": "supergateway",
          "args": [
-           "--sse",
-           "https://cds-kb-mcp-production.up.railway.app/sse"
+           "--streamableHttp",
+           "https://cds-kb-mcp-production.up.railway.app/mcp"
          ]
        }
      }
@@ -210,8 +215,8 @@ Best for enterprise environments behind corporate firewalls, VPNs, or proxy serv
        "cds-kb": {
          "command": "supergateway",
          "args": [
-           "--sse",
-           "https://cds-kb-mcp.cfapps.ap21.hana.ondemand.com/sse"
+           "--streamableHttp",
+           "https://cds-kb-mcp.cfapps.ap21.hana.ondemand.com/mcp"
          ]
        }
      }
@@ -220,13 +225,15 @@ Best for enterprise environments behind corporate firewalls, VPNs, or proxy serv
 
    *(Note for Windows users: If your IDE cannot locate the global command, use `supergateway.cmd` as the command, or specify the absolute path to your global `npm` prefix).*
 
+   Need a custom header (e.g. API key)? Pass `--header "Authorization: Bearer <KEY>"` — see `supergateway --help`.
+
 Once configured, restart your IDE. The tools will immediately be available for your agent to use.
 
 ---
 
 ## Tools Reference
 
-The server exposes **eleven tools**. They are designed so an AI agent can go from a vague business question to a searched view, then **compose → generate → validate** CDS DDL without leaving MCP.
+The server exposes **twelve tools**. Every tool declares an **`outputSchema`** (JSON Schema) and returns both human-readable `content` **and** machine-parseable **`structuredContent`** — so programmatic/agentic integrations can parse results without regex. The flow: search → pick a view → **compose → generate → validate** CDS DDL without leaving MCP.
 
 ### 1. `search_cds`
 
@@ -242,7 +249,7 @@ Find CDS views by business meaning, name, tag, or classic SAP keyword (`VBAK`, `
 | `bo`      | string   | optional | Business object filter (partial match, e.g. `"salesorder"`)                            |
 | `limit`   | int 1-50 | optional | Max results (default 10)                                                               |
 
-Returns: ranked list with `name`, `score`, `module`, short description, and path.
+Returns: ranked list with `name`, `score`, `module`, short description, and path. Ranking blends BM25 (MiniSearch) + cosine similarity when `index/embeddings.json` is present + `usageCount` popularity boost when `index/usage-stats.json` is present.
 
 ```text
 1. **I_CAOPENITEMLIST**  [FI-FIO-AR-2CL]  (score 14.2)
@@ -304,7 +311,7 @@ Report the active data source, server version, view count, enrichment %, private
 
 ```text
 source: local:D:\...\docs\product\cds_kb_data
-server: cds-kb-mcp 1.4.0
+server: cds-kb-mcp 2.0.0
 views: 10619
 enriched: 3267 (30.8%)
 privateOverlay: 1
@@ -343,17 +350,68 @@ Build a JSON snippet + markdown PR body for `index/query-library.json`. With `GI
 
 ---
 
+## Resources & Prompts
+
+Beyond tools, the server exposes MCP **resources** and **prompts** — the two other
+primitives of the 2026 MCP spec. Agents can *attach* resources directly into their
+context (saving tokens vs. tool round-trips) and load canned prompts in one call.
+
+### Resources
+
+| URI | Description |
+| --- | --- |
+| `cds://view/{name}` | Full markdown definition of one CDS view by name (dynamic template) |
+| `cds://taxonomy` | The full LOB → Business Object → keyword taxonomy (EN + VI) |
+| `cds://stats` | Live KB stats: view count, enrichment %, index build time, auth mode |
+
+Example client usage (pseudo-config):
+
+```json
+{
+  "mcpServers": { "cds-kb": { "type": "http", "url": "https://.../mcp" } },
+  "resources": [
+    { "uri": "cds://view/I_GLACCOUNT", "mimeType": "text/markdown" },
+    { "uri": "cds://taxonomy", "mimeType": "application/json" }
+  ]
+}
+```
+
+### Prompts
+
+| Name | Arguments | Purpose |
+| --- | --- | --- |
+| `explain_view` | `name` (required) | Fetch a view and explain it in plain language: what it represents, key fields, associations, when to use it |
+| `compose_query` | `intent` (required) | Turn a business need into a composed CDS query (uses `search_cds` + `compose_query`) |
+| `validate_ddl` | `ddl` (required) | Validate a pasted DDL snippet with `validate_cds_ddl` and explain the diagnostics |
+
+---
+
 ## Hosted auth
 
-Hosted HTTP (`/mcp`, `/sse`) is public unless the deploy sets auth env:
+Hosted `/mcp` is **open (no auth)** unless the deploy sets one of the auth modes below. Local stdio needs no API key.
 
 | Mode | Env | Client |
 | --- | --- | --- |
+| OAuth 2.1 + PKCE | `CDS_KB_OAUTH_SECRET` (≥ 32 chars, HS256 signing key; optional `CDS_KB_OAUTH_CLIENT_ID` default `cds-kb-client`, `CDS_KB_OAUTH_TOKEN_TTL`, `CDS_KB_PUBLIC_URL`) | Client runs the standard authorization-code + PKCE flow against `/oauth/authorize` + `/oauth/token`; server publishes AS metadata at `/.well-known/oauth-authorization-server` and Protected Resource Metadata at `/.well-known/oauth-protected-resource` — modern MCP clients (Claude Desktop, Cursor, VS Code) auto-discover and run this flow |
 | API key | `API_KEY` | `Authorization: Bearer <API_KEY>` or `?api_key=<API_KEY>` |
 | JWKS / JWT | `CDS_KB_JWKS_URL` (+ optional `CDS_KB_JWT_ISSUER`, `CDS_KB_JWT_AUDIENCE`) | `Authorization: Bearer <JWT>` verified via remote JWKS (`jose`) |
-| Both | JWKS + `API_KEY` | Either a valid JWT or the API key |
+| Combined | any of the above | A valid OAuth token, JWT, or API key all pass |
 
-On SAP BTP, prefer an API Management / Approuter + XSUAA **gateway in front of the app** rather than embedding an XSUAA SDK in this Node process. Local stdio needs no API key.
+OAuth notes:
+
+- To enable, set `CDS_KB_OAUTH_SECRET` to a secret of at least 32 characters
+  (HS256 signing key). The server itself acts as the authorization server:
+  `/oauth/authorize` (validates the request, enforces PKCE S256, and redirects
+  back with a one-time code) and `/oauth/token` (code + verifier → JWT) are
+  served in-process. **`/oauth/token` must be reachable at a public HTTPS URL**
+  for real clients; the issuer/redirect is derived from `X-Forwarded-Proto`/`Host`
+  or `CDS_KB_PUBLIC_URL`. Access tokens are HS256-signed JWTs pinned to that
+  issuer — no external IdP needed. Want a real login/consent screen or an
+  external IdP instead? Put an API Management / Approuter + XSUAA gateway in
+  front of the app on SAP BTP — see `mcp_btp_deployment_guide.md`.
+- Access tokens are signed JWTs (HS256) with `jose`; no external IdP needed. Want
+  to delegate to an external provider instead? Put an API Management / Approuter +
+  XSUAA gateway in front of the app on SAP BTP — see `mcp_btp_deployment_guide.md`.
 
 ### S3 / MinIO data source
 
@@ -373,6 +431,36 @@ Precedence: `--data` / `CDS_KB_DATA` → S3 (when configured) → `--remote` / `
 
 Missing Worker secrets → ranking still works; popularity just does not nudge results yet.
 
+### Hybrid (vector) search
+
+The data repo ships `scripts/build-embeddings.mjs` (`npm run build-embeddings` in
+`cds_kb_data`, needs `CDS_KB_EMBED_API_KEY`; no-op when unset). When it produces
+`index/embeddings.json`, `search_cds` combines BM25 + cosine similarity for the
+top candidates. Until then, search runs BM25-only — which is already strong.
+
+---
+
+## Operations
+
+| Endpoint | Purpose |
+| --- | --- |
+| `GET /health` | Liveness: `{"status":"ok","views":...,"uptimeSeconds":...}` — no auth required |
+| `GET /metrics` | Prometheus-text counters + latency histogram: `cds_kb_http_requests_total`, `cds_kb_mcp_request_duration_ms`, process gauges |
+| `POST /mcp` (+ `GET`/`DELETE` for stateless sessions) | Streamable HTTP MCP endpoint |
+| `GET /oauth/authorize`, `POST /oauth/token` | OAuth 2.1 authorization server (enabled via `CDS_KB_OAUTH_SECRET`) |
+| `GET /.well-known/oauth-protected-resource`, `/.well-known/oauth-authorization-server` | OAuth discovery metadata |
+
+Rate limiting: a fixed-window limiter (default 120 req/min per IP; tune with
+`CDS_KB_RATE_LIMIT_MAX` / `CDS_KB_RATE_LIMIT_WINDOW_SECONDS`) protects `/mcp`,
+`/oauth/authorize`, and `/oauth/token`. Responds `429` with `Retry-After`.
+`/health` and the well-known metadata endpoints are never limited.
+
+### Local dev with MCP Inspector
+
+```bash
+npx @modelcontextprotocol/inspector node src/server.mjs --data ../cds_kb_data
+```
+
 ---
 
 ## Architecture
@@ -381,15 +469,17 @@ Missing Worker secrets → ranking still works; popularity just does not nudge r
 ┌──────────────────────────────────────────────────────────────────┐
 │                         AI Client (Claude)                       │
 │   search → suggest_base_views → compose_query → generate/validate│
+│   resources: cds://view/… · prompts: explain_view / …            │
 └──────────────────────────┬───────────────────────────────────────┘
-                           │  MCP / JSON-RPC — stdio, or HTTP via /mcp (Streamable HTTP) / /sse (legacy SSE)
+                           │  MCP / JSON-RPC — stdio, or Streamable HTTP at /mcp
 ┌──────────────────────────▼───────────────────────────────────────┐
-│                   cds-kb-mcp (this server)                       │
-│  tools: search · deps · suggest · compose · generate · validate  │
+│              cds-kb-mcp 2.0.0 (MCP SDK v2, spec 2026-07-28)      │
+│  tools (12, outputSchema+structuredContent) · resources · prompts│
+│  rate limit → auth (API key | JWKS | OAuth 2.1+PKCE) → handlers   │
 │                       │                                          │
 │  ┌────────────────────▼───────────────────┐                      │
-│  │   MiniSearch (in-memory index)         │                      │
-│  │   + RAP facets / private overlay flags │                      │
+│  │   MiniSearch (BM25) + embeddings cos   │                      │
+│  │   + RAP facets / usageCount boost      │                      │
 │  └────────────────────┬───────────────────┘                      │
 │                       │                                          │
 │  ┌────────────────────▼───────────────────┐                      │

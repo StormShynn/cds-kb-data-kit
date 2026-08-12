@@ -18,6 +18,8 @@
     "generate-query-builder": "node scripts/generate-query-builder.mjs .",
     "build-sqlite-index": "node scripts/build-sqlite-index.mjs .",
     "enrich-descriptions": "node scripts/enrich-descriptions.mjs .",
+    "build-embeddings": "node scripts/build-embeddings.mjs .",
+    "pull-usage-stats": "node scripts/pull-usage-stats.mjs",
     "rebuild-index": "node enrich_index.mjs .",
     "resync-folders": "node scripts/migrate-to-module-folders.mjs . && node enrich_index.mjs .",
     "refresh-vsp-cookie": "node scripts/refresh-vsp-cookie.mjs"

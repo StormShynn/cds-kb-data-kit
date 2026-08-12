@@ -13,19 +13,18 @@ import MiniSearch from 'minisearch';
 import { z } from 'zod';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
-import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
-import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
+import { McpServer, ResourceTemplate, createMcpHandler } from '@modelcontextprotocol/server';
+import { serveStdio } from '@modelcontextprotocol/server/stdio';
+import { toNodeHandler } from '@modelcontextprotocol/node';
 import express from 'express';
-import { v4 as uuidv4 } from 'uuid';
-import { SSEServerTransport } from '@modelcontextprotocol/sdk/server/sse.js';
-import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
-import { isInitializeRequest } from '@modelcontextprotocol/sdk/types.js';
 import { resolveDataSource, SECTION_NAMES } from './datasource.mjs';
 import { recordView, flushOnExit } from './usage-tracker.mjs';
 import { composeQuery } from './query-compose.mjs';
 import { generateCdsView, validateCdsDdl } from './ddl-tools.mjs';
 import { createAuthMiddleware, describeAuthMode } from './auth.mjs';
 import { proposeQueryLibraryEntry } from './propose-library.mjs';
+import { oauthEnabled, describeOAuth, buildOAuthMetadata, authorizeHandler, tokenHandler } from './oauth.mjs';
+import { inc, histogram, healthHandler, metricsHandler, rateLimitMiddleware } from './metrics.mjs';
 
 // ── Vietnamese accent-insensitive normalization ─────────────────────────────
 // The data repo's enrich_index.mjs builds search_index.json with
@@ -297,12 +296,34 @@ function refreshIndexPeriodically(intervalMs) {
   }, intervalMs);
 }
 
-const SERVER_VERSION = '1.5.0';
+const SERVER_VERSION = '2.0.0';
 const SERVER_INSTRUCTIONS =
   `This is cds-kb-mcp v${SERVER_VERSION}, built by StormShyn. ` +
   'The first time you use a tool from this server in a conversation, briefly mention to the user ' +
   '(in your own words, one short sentence) that you are using the cds-kb-mcp SAP CDS knowledge base, built by StormShyn. ' +
   'Do not repeat this mention on later tool calls in the same conversation.';
+
+// Shared structured snapshot used by the kb_info tool and the cds://stats resource.
+function buildKbInfo() {
+  return {
+    source: ds.describe(),
+    server: `cds-kb-mcp ${SERVER_VERSION}`,
+    auth: describeAuthMode(),
+    views: meta.viewCount ?? 0,
+    enriched: meta.enrichedCount ?? 0,
+    enrichPct: meta.viewCount ? Number(((100 * (meta.enrichedCount ?? 0)) / meta.viewCount).toFixed(1)) : 0,
+    privateOverlay: meta.privateCount ?? 0,
+    withDdl: meta.withDdlCount ?? 0,
+    metadataOnly: meta.metadataOnlyCount ?? 0,
+    withAccessControl: meta.withAccessControlCount ?? 0,
+    embeddings: embeddingsData?.vectors ? 'yes' : 'no',
+    usageEndpoint: (process.env.CDS_KB_USAGE_ENDPOINT || '').trim() ? 'set' : 'unset',
+    usageStatsConfigured: usageStatsConfigured ? 'yes' : 'no',
+    modules: Object.keys(moduleStats).length,
+    builtAt: meta.builtAt ?? '',
+    commit: meta.commit ? meta.commit.slice(0, 8) : '',
+  };
+}
 
 function createServer() {
   const server = new McpServer(
@@ -334,6 +355,19 @@ function createServer() {
         search_mode: z.enum(['bm25', 'hybrid']).optional().describe('bm25 (default) or hybrid (BM25 + embeddings when available)'),
         limit: z.number().int().min(1).max(50).optional().describe('Max results (default 10)'),
       },
+      outputSchema: z.object({
+        query: z.string(),
+        count: z.number(),
+        results: z.array(z.object({
+          name: z.string(),
+          score: z.number(),
+          module: z.string().nullable(),
+          lob: z.string().nullable(),
+          bo: z.string().nullable(),
+          description: z.string().nullable(),
+          path: z.string(),
+        })),
+      }),
     },
     async ({ query, module, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, search_mode = 'bm25', limit = 10 }) => {
       const resolvedModule = resolveModule(module);
@@ -348,9 +382,22 @@ function createServer() {
         (!sourceKind || (r.sourceKind || 'public').toLowerCase() === sourceKind.toLowerCase());
 
       const results = await rankedSearch(query, { filter: facetFilter, limit, searchMode: search_mode });
+      const structured = {
+        query,
+        count: results.length,
+        results: results.map((r) => ({
+          name: r.name,
+          score: r.score,
+          module: r.module ?? null,
+          lob: r.lob ?? null,
+          bo: r.bo ?? null,
+          description: r.semanticDescription || r.description || null,
+          path: r.path,
+        })),
+      };
       if (results.length === 0) {
         const hint = resolvedModule ? ` (module=${resolvedModule})` : '';
-        return { content: [{ type: 'text', text: `No CDS views matched "${query}"${hint}. Try broader terms or remove filters.` }] };
+        return { content: [{ type: 'text', text: `No CDS views matched "${query}"${hint}. Try broader terms or remove filters.` }], structuredContent: structured };
       }
       const lines = results.map((r, i) => {
         const desc = r.semanticDescription || r.description || '';
@@ -358,6 +405,7 @@ function createServer() {
       });
       return {
         content: [{ type: 'text', text: `Top ${results.length} CDS views for "${query}":\n\n${lines.join('\n')}\n\nUse get_cds_view(name) to read the full definition, or get_cds_view(name, sections) for specific parts.` }],
+        structuredContent: structured,
       };
     },
   );
@@ -377,6 +425,12 @@ function createServer() {
           .optional()
           .describe('Which sections to return. Omit for all. Options: metadata, fields, associations, source'),
       },
+      outputSchema: z.object({
+        name: z.string(),
+        found: z.boolean(),
+        sections: z.array(z.string()).nullable(),
+        text: z.string(),
+      }),
     },
     async ({ name, sections }) => {
       try {
@@ -400,14 +454,14 @@ function createServer() {
           }
         }
         recordView(name);
-        return { content: [{ type: 'text', text }] };
+        return { content: [{ type: 'text', text }], structuredContent: { name, found: true, sections: sections ?? null, text } };
       } catch (e) {
         // Distinguish "view does not exist" from transport/cache failure so callers know whether to retry.
         const notFound = e?.code === 'ENOENT' || /404/.test(e?.message || '');
         const msg = notFound
           ? `View "${name}" not found. Use search_cds first to get the exact name.`
           : `Failed to fetch view "${name}": ${e?.message || 'unknown error'}. The data source may be temporarily unreachable.`;
-        return { content: [{ type: 'text', text: msg }], isError: true };
+        return { content: [{ type: 'text', text: msg }], isError: true, structuredContent: { name, found: false, sections: sections ?? null, text: msg } };
       }
     },
   );
@@ -422,6 +476,11 @@ function createServer() {
         'Use this to understand how data is organized before searching, or to discover valid tags for get_views_by_tag. ' +
         'Provides rich keywords and synonyms that can help formulate better search queries.',
       inputSchema: {},
+      outputSchema: z.object({
+        lobCount: z.number(),
+        boCount: z.number(),
+        text: z.string(),
+      }),
     },
     async () => {
       if (taxonomyData && taxonomyData.lobs && taxonomyData.bos) {
@@ -433,7 +492,7 @@ function createServer() {
           `## Lines of Business (${taxonomyData.lobs.length})\n${lobLines.join('\n')}\n\n` +
           `## Business Objects (${taxonomyData.bos.length} total, sample of 30)\n${boSample.join('\n')}\n\n` +
           `Use get_views_by_tag(tag) to list all views for a specific tag (e.g. "bo:salesorder").`;
-        return { content: [{ type: 'text', text }] };
+        return { content: [{ type: 'text', text }], structuredContent: { lobCount: taxonomyData.lobs.length, boCount: taxonomyData.bos.length, text } };
       }
 
       // Fallback if taxonomy not available
@@ -442,8 +501,10 @@ function createServer() {
         const boList = info.bos.length > 0 ? `  BOs: ${info.bos.join(', ')}` : '';
         return `- **${mod}** (${info.count} views) — ${info.lob}${boList}`;
       });
+      const text = `SAP Modules (${sorted.length} modules, ${meta.viewCount} total views):\n\n${lines.join('\n')}`;
       return {
-        content: [{ type: 'text', text: `SAP Modules (${sorted.length} modules, ${meta.viewCount} total views):\n\n${lines.join('\n')}` }],
+        content: [{ type: 'text', text }],
+        structuredContent: { lobCount: sorted.length, boCount: Object.values(moduleStats).reduce((a, m) => a + m.bos.length, 0), text },
       };
     },
   );
@@ -461,6 +522,11 @@ function createServer() {
         tag: z.string().describe('The exact tag to filter by, e.g. "bo:salesorder"'),
         limit: z.number().int().min(1).max(200).optional().describe('Max results (default 50)'),
       },
+      outputSchema: z.object({
+        tag: z.string(),
+        count: z.number(),
+        results: z.array(z.object({ name: z.string(), description: z.string().nullable(), path: z.string() })),
+      }),
     },
     async ({ tag, limit = 50 }) => {
       // Parse tag type and value
@@ -482,8 +548,13 @@ function createServer() {
 
       // Use MiniSearch.wildcard to return all documents that pass the filter
       const results = mini.search(MiniSearch.wildcard, { filter: filterFn }).slice(0, limit);
+      const structured = {
+        tag,
+        count: results.length,
+        results: results.map((r) => ({ name: r.name, description: r.semanticDescription || r.description || null, path: r.path })),
+      };
       if (results.length === 0) {
-        return { content: [{ type: 'text', text: `No views found for tag "${tag}". Use get_taxonomy to find valid tags.` }] };
+        return { content: [{ type: 'text', text: `No views found for tag "${tag}". Use get_taxonomy to find valid tags.` }], structuredContent: structured };
       }
 
       const lines = results.map((r, i) => {
@@ -493,6 +564,7 @@ function createServer() {
 
       return {
         content: [{ type: 'text', text: `Found ${results.length} CDS views for tag "${tag}":\n\n${lines.join('\n')}` }],
+        structuredContent: structured,
       };
     },
   );
@@ -514,6 +586,12 @@ function createServer() {
         name: z.string().describe('Exact field name, raw DDIC column name, or table/CDS-view name, e.g. "MATNR", "VWERK", or "I_JournalEntryItem"'),
         limit: z.number().int().min(1).max(100).optional().describe('Max results per category (default 30)'),
       },
+      outputSchema: z.object({
+        name: z.string(),
+        fieldMatches: z.array(z.object({ view: z.string(), isKey: z.boolean(), appComponent: z.string().nullable() })),
+        tableMatches: z.array(z.object({ view: z.string(), relation: z.string(), alias: z.string().nullable(), appComponent: z.string().nullable() })),
+        rawMatches: z.array(z.object({ view: z.string(), field: z.string(), isKey: z.boolean(), appComponent: z.string().nullable() })),
+      }),
     },
     async ({ name, limit = 30 }) => {
       const key = name.trim().toUpperCase();
@@ -553,7 +631,10 @@ function createServer() {
         const built = fieldIndexData || tableIndexData || rawFieldIndexData
           ? ''
           : ' (this data repo has no field-index.json/table-index.json/raw-field-index.json yet — rebuild its index)';
-        return { content: [{ type: 'text', text: `No CDS view uses "${name}" as a field, raw DDIC column, table, or association target${built}. Try search_cds for a business-language query instead.` }] };
+        return {
+          content: [{ type: 'text', text: `No CDS view uses "${name}" as a field, raw DDIC column, table, or association target${built}. Try search_cds for a business-language query instead.` }],
+          structuredContent: { name: key, fieldMatches: [], tableMatches: [], rawMatches: [] },
+        };
       }
 
       const abstractNote = (m) => (m.isAbstract ? ' ⚠️ abstract entity/action-parameter structure, not a queryable view' : m.isMasterData ? ' (master data)' : '');
@@ -577,7 +658,16 @@ function createServer() {
           (rawMatches.length > shown.length ? `\n...and ${rawMatches.length - shown.length} more (raise limit)` : ''));
       }
 
-      return { content: [{ type: 'text', text: `Results for "${name}":\n\n${parts.join('\n\n')}\n\nUse get_cds_view(name) to read any of these.` }] };
+      const structured = {
+        name: key,
+        fieldMatches: fieldMatches.map((m) => ({ view: m.view, isKey: !!m.isKey, appComponent: m.appComponent ?? null })),
+        tableMatches: tableMatches.map((m) => ({ view: m.view, relation: m.relation, alias: m.alias ?? null, appComponent: m.appComponent ?? null })),
+        rawMatches: rawMatches.map((m) => ({ view: m.view, field: m.field, isKey: !!m.isKey, appComponent: m.appComponent ?? null })),
+      };
+      return {
+        content: [{ type: 'text', text: `Results for "${name}":\n\n${parts.join('\n\n')}\n\nUse get_cds_view(name) to read any of these.` }],
+        structuredContent: structured,
+      };
     },
   );
 
@@ -596,6 +686,11 @@ function createServer() {
         name: z.string().describe('Exact CDS view name, e.g. "I_MaterialStock_2"'),
         limit: z.number().int().min(1).max(100).optional().describe('Max "depended on by" results (default 30)'),
       },
+      outputSchema: z.object({
+        name: z.string(),
+        dependsOn: z.array(z.object({ target: z.string(), relation: z.string(), alias: z.string().nullable() })),
+        dependents: z.array(z.object({ view: z.string(), relation: z.string(), alias: z.string().nullable(), appComponent: z.string().nullable() })),
+      }),
     },
     async ({ name, limit = 30 }) => {
       const key = name.trim().toUpperCase();
@@ -607,7 +702,11 @@ function createServer() {
       } catch (e) {
         const notFound = e?.code === 'ENOENT' || /404/.test(e?.message || '');
         if (notFound) {
-          return { content: [{ type: 'text', text: `View "${name}" not found. Use search_cds first to get the exact name.` }], isError: true };
+          return {
+            content: [{ type: 'text', text: `View "${name}" not found. Use search_cds first to get the exact name.` }],
+            isError: true,
+            structuredContent: { name: key, dependsOn: [], dependents: [] },
+          };
         }
         // Non-fatal for the "depends on" half — still show "depended on by" below if the view name is otherwise valid.
       }
@@ -615,7 +714,10 @@ function createServer() {
       const dependents = tableIndexData?.tables?.[key] || [];
 
       if (dependsOn.length === 0 && dependents.length === 0) {
-        return { content: [{ type: 'text', text: `"${name}" has no recorded dependencies either way — it may be a base/interface view nothing else builds on, or a leaf view with no associations.` }] };
+        return {
+          content: [{ type: 'text', text: `"${name}" has no recorded dependencies either way — it may be a base/interface view nothing else builds on, or a leaf view with no associations.` }],
+          structuredContent: { name: key, dependsOn: [], dependents: [] },
+        };
       }
 
       const parts = [];
@@ -630,7 +732,15 @@ function createServer() {
           (dependents.length > shown.length ? `\n...and ${dependents.length - shown.length} more (raise limit)` : ''));
       }
 
-      return { content: [{ type: 'text', text: `Dependencies for ${name}:\n\n${parts.join('\n\n')}\n\nUse get_cds_view(name) to read any of these.` }] };
+      const structured = {
+        name: key,
+        dependsOn: dependsOn.map((d) => ({ target: d.target, relation: d.relation, alias: d.alias ?? null })),
+        dependents: dependents.map((m) => ({ view: m.view, relation: m.relation, alias: m.alias ?? null, appComponent: m.appComponent ?? null })),
+      };
+      return {
+        content: [{ type: 'text', text: `Dependencies for ${name}:\n\n${parts.join('\n\n')}\n\nUse get_cds_view(name) to read any of these.` }],
+        structuredContent: structured,
+      };
     },
   );
 
@@ -643,33 +753,47 @@ function createServer() {
         'Report the active data source, server version, view count, enrichment %, private overlay count, ' +
         'DDL/metadata completeness, embeddings/usage flags, and index build time.',
       inputSchema: {},
+      outputSchema: z.object({
+        source: z.string(),
+        server: z.string(),
+        auth: z.string(),
+        views: z.number(),
+        enriched: z.number(),
+        enrichPct: z.number(),
+        privateOverlay: z.number(),
+        withDdl: z.number(),
+        metadataOnly: z.number(),
+        withAccessControl: z.number(),
+        embeddings: z.string(),
+        usageEndpoint: z.string(),
+        usageStatsConfigured: z.string(),
+        modules: z.number(),
+        builtAt: z.string(),
+        commit: z.string(),
+      }),
     },
     async () => {
-      const commit = meta.commit ? meta.commit.slice(0, 8) : '(no version manifest)';
-      const views = meta.viewCount ?? 0;
-      const enriched = meta.enrichedCount ?? 0;
-      const enrichPct = views ? ((100 * enriched) / views).toFixed(1) : '?';
-      const usageEndpoint = (process.env.CDS_KB_USAGE_ENDPOINT || '').trim() ? 'set' : 'unset';
-      const embeddings = embeddingsData?.vectors ? 'yes' : 'no';
+      const info = buildKbInfo();
       return {
         content: [{
           type: 'text', text:
-            `source: ${ds.describe()}\n` +
-            `server: cds-kb-mcp ${SERVER_VERSION}\n` +
-            `auth: ${describeAuthMode()}\n` +
-            `views: ${meta.viewCount ?? '?'}\n` +
-            `enriched: ${meta.enrichedCount ?? '?'} (${enrichPct}%)\n` +
-            `privateOverlay: ${meta.privateCount ?? 0}\n` +
-            `withDdl: ${meta.withDdlCount ?? '?'}\n` +
-            `metadataOnly: ${meta.metadataOnlyCount ?? '?'}\n` +
-            `withAccessControl: ${meta.withAccessControlCount ?? '?'}\n` +
-            `embeddings: ${embeddings}\n` +
-            `usageEndpoint: ${usageEndpoint}\n` +
-            `usageStatsConfigured: ${usageStatsConfigured ? 'yes' : 'no'}\n` +
-            `modules: ${Object.keys(moduleStats).length}\n` +
-            `builtAt: ${meta.builtAt ?? '?'}\n` +
-            `commit: ${commit}`,
+            `source: ${info.source}\n` +
+            `server: ${info.server}\n` +
+            `auth: ${info.auth}\n` +
+            `views: ${info.views}\n` +
+            `enriched: ${info.enriched} (${info.enrichPct}%)\n` +
+            `privateOverlay: ${info.privateOverlay}\n` +
+            `withDdl: ${info.withDdl}\n` +
+            `metadataOnly: ${info.metadataOnly}\n` +
+            `withAccessControl: ${info.withAccessControl}\n` +
+            `embeddings: ${info.embeddings}\n` +
+            `usageEndpoint: ${info.usageEndpoint}\n` +
+            `usageStatsConfigured: ${info.usageStatsConfigured}\n` +
+            `modules: ${info.modules}\n` +
+            `builtAt: ${info.builtAt}\n` +
+            `commit: ${info.commit}`,
         }],
+        structuredContent: info,
       };
     },
   );
@@ -695,6 +819,18 @@ function createServer() {
         search_mode: z.enum(['bm25', 'hybrid']).optional().describe('bm25 (default) or hybrid'),
         limit: z.number().int().min(1).max(20).optional().describe('Max suggestions (default 5)'),
       },
+      outputSchema: z.object({
+        query: z.string(),
+        count: z.number(),
+        results: z.array(z.object({
+          name: z.string(),
+          score: z.number(),
+          module: z.string().nullable(),
+          appComponent: z.string().nullable(),
+          description: z.string().nullable(),
+          path: z.string(),
+        })),
+      }),
     },
     async ({ query, module, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, search_mode = 'bm25', limit = 5 }) => {
       const resolvedModule = resolveModule(module);
@@ -711,9 +847,21 @@ function createServer() {
         r.releaseState !== 'unverified';
 
       const results = await rankedSearch(query, { filter: facetFilter, limit, searchMode: search_mode });
+      const structured = {
+        query,
+        count: results.length,
+        results: results.map((r) => ({
+          name: r.name,
+          score: r.score,
+          module: r.module ?? null,
+          appComponent: r.appComponent ?? null,
+          description: r.semanticDescription || r.description || null,
+          path: r.path,
+        })),
+      };
       if (results.length === 0) {
         const hint = resolvedModule ? ` (module=${resolvedModule})` : '';
-        return { content: [{ type: 'text', text: `No suitable base views for "${query}"${hint}. Try broader terms or remove filters.` }] };
+        return { content: [{ type: 'text', text: `No suitable base views for "${query}"${hint}. Try broader terms or remove filters.` }], structuredContent: structured };
       }
       const lines = results.map((r, i) => {
         const reasons = [];
@@ -730,6 +878,7 @@ function createServer() {
           type: 'text',
           text: `Suggested base views for "${query}":\n\n${lines.join('\n')}\n\nNext: compose_query or generate_cds_view with views[0].name = the pick above.`,
         }],
+        structuredContent: structured,
       };
     },
   );
@@ -758,6 +907,12 @@ function createServer() {
         orderBy: z.string().optional(),
         viewName: z.string().optional().describe('CDS view entity name (default Z_MyView)'),
       },
+      outputSchema: z.object({
+        openSql: z.string().nullable(),
+        cdsView: z.string().nullable(),
+        warnings: z.array(z.string()),
+        text: z.string(),
+      }),
     },
     async (args) => {
       const result = composeQuery(args);
@@ -766,7 +921,10 @@ function createServer() {
       if (result.openSql) parts.push('## OpenSQL\n```sql\n' + result.openSql + '\n```');
       if (result.cdsView) parts.push('## CDS view skeleton\n```abap\n' + result.cdsView + '\n```');
       if (!parts.length) parts.push('compose_query produced no output.');
-      return { content: [{ type: 'text', text: parts.join('\n\n') }] };
+      return {
+        content: [{ type: 'text', text: parts.join('\n\n') }],
+        structuredContent: { openSql: result.openSql ?? null, cdsView: result.cdsView ?? null, warnings: result.warnings, text: parts.join('\n\n') },
+      };
     },
   );
 
@@ -798,6 +956,12 @@ function createServer() {
         having: z.string().optional(),
         orderBy: z.string().optional(),
       },
+      outputSchema: z.object({
+        ddl: z.string().nullable(),
+        openSql: z.string().nullable(),
+        warnings: z.array(z.string()),
+        text: z.string(),
+      }),
     },
     async (args) => {
       const result = generateCdsView(args);
@@ -805,7 +969,11 @@ function createServer() {
       if (result.warnings.length) parts.push('## Warnings\n' + result.warnings.map((w) => `- ${w}`).join('\n'));
       if (result.ddl) parts.push('## DDL\n```abap\n' + result.ddl + '\n```');
       if (result.openSql) parts.push('## OpenSQL\n```sql\n' + result.openSql + '\n```');
-      return { content: [{ type: 'text', text: parts.join('\n\n') || 'No DDL generated.' }] };
+      const text = parts.join('\n\n') || 'No DDL generated.';
+      return {
+        content: [{ type: 'text', text }],
+        structuredContent: { ddl: result.ddl ?? null, openSql: result.openSql ?? null, warnings: result.warnings, text },
+      };
     },
   );
 
@@ -820,6 +988,15 @@ function createServer() {
       inputSchema: {
         ddl: z.string().describe('Full CDS DDL text to validate'),
       },
+      outputSchema: z.object({
+        ok: z.boolean(),
+        parsed: z.boolean(),
+        name: z.string().nullable(),
+        fieldCount: z.number(),
+        assocCount: z.number(),
+        diagnostics: z.array(z.string()),
+        text: z.string(),
+      }),
     },
     async ({ ddl }) => {
       const result = await validateCdsDdl(ddl);
@@ -832,7 +1009,18 @@ function createServer() {
         (result.diagnostics.length
           ? `diagnostics:\n${result.diagnostics.map((d) => `- ${d}`).join('\n')}`
           : 'diagnostics: (none)');
-      return { content: [{ type: 'text', text }] };
+      return {
+        content: [{ type: 'text', text }],
+        structuredContent: {
+          ok: result.ok,
+          parsed: result.parsed,
+          name: result.name ?? null,
+          fieldCount: result.fieldCount,
+          assocCount: result.assocCount,
+          diagnostics: result.diagnostics,
+          text,
+        },
+      };
     },
   );
 
@@ -863,6 +1051,13 @@ function createServer() {
         orderBy: z.string().optional(),
         viewName: z.string().optional(),
       },
+      outputSchema: z.object({
+        jsonSnippet: z.string(),
+        markdown: z.string(),
+        prUrl: z.string().nullable(),
+        error: z.string().nullable(),
+        text: z.string(),
+      }),
     },
     async (args) => {
       const result = await proposeQueryLibraryEntry(args);
@@ -876,8 +1071,98 @@ function createServer() {
       ];
       if (result.prUrl) parts.push(`\nDraft PR: ${result.prUrl}`);
       if (result.error) parts.push(`\nGitHub propose failed (local snippet still valid): ${result.error}`);
-      return { content: [{ type: 'text', text: parts.join('\n') }] };
+      const text = parts.join('\n');
+      return {
+        content: [{ type: 'text', text }],
+        structuredContent: { jsonSnippet: result.jsonSnippet, markdown: result.markdown, prUrl: result.prUrl ?? null, error: result.error ?? null, text },
+      };
     },
+  );
+
+  // ── Resources ────────────────────────────────────────────────────────────
+  // cds://view/<NAME> — full markdown of one view (dynamic template).
+  server.registerResource(
+    'view',
+    new ResourceTemplate('cds://view/{name}', { list: undefined }),
+    { title: 'CDS view definition', description: 'Full markdown definition of a single CDS view by name', mimeType: 'text/markdown' },
+    async (uri, variables) => {
+      const name = variables?.name || '';
+      try {
+        const text = await ds.getView(name);
+        return { contents: [{ uri: uri.href, text, mimeType: 'text/markdown' }] };
+      } catch {
+        return { contents: [{ uri: uri.href, text: `View "${name}" not found. Use search_cds to find the exact name.` }] };
+      }
+    },
+  );
+
+  // cds://taxonomy — the semantic map as JSON.
+  server.registerResource(
+    'taxonomy',
+    'cds://taxonomy',
+    { title: 'Knowledge base taxonomy', mimeType: 'application/json' },
+    async (uri) => ({
+      contents: [{ uri: uri.href, text: JSON.stringify(taxonomyData || { lobs: [], bos: [] }), mimeType: 'application/json' }],
+    }),
+  );
+
+  // cds://stats — live kb_info snapshot as JSON.
+  server.registerResource(
+    'stats',
+    'cds://stats',
+    { title: 'Knowledge base stats', mimeType: 'application/json' },
+    async (uri) => ({
+      contents: [{ uri: uri.href, text: JSON.stringify(buildKbInfo(), null, 2), mimeType: 'application/json' }],
+    }),
+  );
+
+  // ── Prompts ────────────────────────────────────────────────────────────────
+  server.registerPrompt(
+    'explain_view',
+    {
+      title: 'Explain a CDS view',
+      description: 'Ask the model to fetch a CDS view and explain its purpose, key fields, associations, and usage.',
+      argsSchema: { name: z.string().describe('CDS view name to explain, e.g. I_SalesDocument') },
+    },
+    ({ name }) => ({
+      messages: [{
+        role: 'user',
+        content: { type: 'text', text: `Use get_cds_view to fetch ${name}, then explain in plain language: what it represents, its key fields, its associations, and when a developer would use it.` },
+      }],
+    }),
+  );
+
+  server.registerPrompt(
+    'compose_query',
+    {
+      title: 'Compose a CDS query',
+      description: 'Turn a business question into the suggest_base_views -> compose_query -> generate_cds_view -> validate_cds_ddl workflow.',
+      argsSchema: {
+        intent: z.string().describe('Business intent, e.g. "overdue customer invoices"'),
+        baseView: z.string().optional().describe('Optional concrete base view; else one is suggested first'),
+      },
+    },
+    ({ intent, baseView }) => ({
+      messages: [{
+        role: 'user',
+        content: { type: 'text', text: `Compose a CDS view for: "${intent}"${baseView ? ` using ${baseView} as the base view.` : ' — first call suggest_base_views to pick a base view.'} Then generate_cds_view and validate_cds_ddl the result.` },
+      }],
+    }),
+  );
+
+  server.registerPrompt(
+    'validate_ddl',
+    {
+      title: 'Validate CDS DDL',
+      description: 'Ask the model to run generated DDL through validate_cds_ddl and fix any diagnostics.',
+      argsSchema: { ddl: z.string().describe('The CDS DDL to validate') },
+    },
+    ({ ddl }) => ({
+      messages: [{
+        role: 'user',
+        content: { type: 'text', text: `Validate this CDS DDL with validate_cds_ddl, then fix any diagnostics and re-validate:\n\n${ddl}` },
+      }],
+    }),
   );
 
   return server;
@@ -897,102 +1182,84 @@ async function main() {
   refreshIndexPeriodically(refreshMinutes * 60 * 1000);
 
   const port = process.env.PORT;
-  const useSSE = process.env.USE_SSE === 'true' || !!port;
+  const useHTTP = process.env.USE_SSE === 'true' || !!port;
 
-  if (useSSE) {
+  if (useHTTP) {
     const app = express();
-    const transports = new Map();
     const requireAuth = await createAuthMiddleware();
     const authMode = describeAuthMode();
+    const limiter = rateLimitMiddleware();
 
-    app.get("/sse", requireAuth, async (req, res) => {
-      const transport = new SSEServerTransport("/messages", res);
-      const sessionId = transport.sessionId;
-      transports.set(sessionId, transport);
+    // ── Ops endpoints (public, no auth) ──────────────────────────────────────
+    app.get('/health', healthHandler(() => ({ viewCount: meta.viewCount, commit: meta.commit })));
+    app.get('/metrics', metricsHandler);
 
-      console.error(`[cds-kb] SSE session opened: ${sessionId}`);
-
-      res.on("close", () => {
-        transports.delete(sessionId);
-        console.error(`[cds-kb] SSE session closed: ${sessionId}`);
-      });
-
-      const server = createServer();
-      await server.connect(transport);
-    });
-
-    app.post("/messages", requireAuth, async (req, res) => {
-      const sessionId = req.query.sessionId;
-      const transport = transports.get(sessionId);
-
-      if (!transport) {
-        return res.status(404).send("Session not found");
-      }
-
-      await transport.handlePostMessage(req, res);
-    });
-
-    // ── Streamable HTTP (current MCP transport spec) — single /mcp endpoint.
-    // Clients that support it connect directly with just this URL, no
-    // supergateway stdio bridge needed. Kept alongside /sse+/messages above
-    // so existing supergateway-based client configs keep working unchanged.
-    const streamableTransports = new Map();
-
-    app.post("/mcp", requireAuth, express.json(), async (req, res) => {
-      const sessionId = req.headers["mcp-session-id"];
-      let transport = sessionId ? streamableTransports.get(sessionId) : undefined;
-
-      if (!transport) {
-        if (sessionId) {
-          return res.status(404).json({ jsonrpc: "2.0", error: { code: -32001, message: "Session not found" }, id: null });
-        }
-        if (!isInitializeRequest(req.body)) {
-          return res.status(400).json({ jsonrpc: "2.0", error: { code: -32000, message: "Bad Request: no valid session ID and not an initialize request" }, id: null });
-        }
-        transport = new StreamableHTTPServerTransport({
-          sessionIdGenerator: () => uuidv4(),
-          onsessioninitialized: (sid) => {
-            streamableTransports.set(sid, transport);
-            console.error(`[cds-kb] Streamable HTTP session opened: ${sid}`);
-          },
+    // ── OAuth 2.1 discovery + endpoints (mounted only when enabled) ──────────
+    if (oauthEnabled()) {
+      app.get('/.well-known/oauth-protected-resource', (req, res) => {
+        const metaDoc = buildOAuthMetadata(req);
+        res.json({
+          resource: `${metaDoc.issuer}/mcp`,
+          authorization_servers: [metaDoc.issuer],
+          scopes_supported: metaDoc.scopes_supported,
+          resource_name: 'cds-kb-mcp SAP CDS knowledge base',
         });
-        transport.onclose = () => {
-          if (transport.sessionId) {
-            streamableTransports.delete(transport.sessionId);
-            console.error(`[cds-kb] Streamable HTTP session closed: ${transport.sessionId}`);
-          }
-        };
-        const server = createServer();
-        await server.connect(transport);
-      }
+      });
+      app.get('/.well-known/oauth-authorization-server', (req, res) => {
+        res.json(buildOAuthMetadata(req));
+      });
+      // authorize/token are rate-limited too — minting codes and exchanging them
+      // are both abuse surfaces on a public server, even though codes are random.
+      app.get('/oauth/authorize', limiter, authorizeHandler);
+      app.post('/oauth/token', limiter, express.urlencoded({ extended: false }), tokenHandler);
+    }
 
-      await transport.handleRequest(req, res, req.body);
+    // ── MCP endpoint — modern stateless Streamable HTTP (2026-07-28 era) with
+    // a stateless fallback for 2025-era clients. createMcpHandler serves one
+    // request per fresh server instance from the factory, so no session state
+    // is kept server-side: any instance behind a plain load balancer can serve
+    // any request. toNodeHandler adapts the web-standard handler to Express.
+    const mcpHttp = createMcpHandler(
+      () => createServer(),
+      { legacy: 'stateless', onerror: (e) => console.error(`[cds-kb-mcp] MCP handler error: ${e.message}`) },
+    );
+    const nodeMcpHandler = toNodeHandler(mcpHttp, {
+      onerror: (e) => console.error(`[cds-kb-mcp] MCP node handler error: ${e.message}`),
     });
 
-    const handleStreamableSession = async (req, res) => {
-      const sessionId = req.headers["mcp-session-id"];
-      const transport = sessionId && streamableTransports.get(sessionId);
-      if (!transport) {
-        return res.status(400).send("Invalid or missing session ID");
-      }
-      await transport.handleRequest(req, res);
+    // Request metrics (counter + latency histogram) for the MCP surface — feeds
+    // the /metrics endpoint with a real tools/list · tools/call breakdown.
+    const mcpMetrics = (req, res, next) => {
+      const started = process.hrtime.bigint();
+      const method = req.body?.method || req.method || 'unknown';
+      res.on('finish', () => {
+        const ms = Number(process.hrtime.bigint() - started) / 1e6;
+        inc('cds_kb_http_requests_total', { method, status: String(res.statusCode) });
+        histogram('cds_kb_mcp_request_duration_ms', ms, { method });
+      });
+      next();
     };
-    app.get("/mcp", requireAuth, handleStreamableSession);
-    app.delete("/mcp", requireAuth, handleStreamableSession);
+
+    app.post('/mcp', limiter, requireAuth, express.json(), mcpMetrics, (req, res) => nodeMcpHandler(req, res, req.body));
+    app.get('/mcp', limiter, requireAuth, mcpMetrics, (req, res) => nodeMcpHandler(req, res));
+    app.delete('/mcp', limiter, requireAuth, mcpMetrics, (req, res) => nodeMcpHandler(req, res));
 
     const serverPort = port || 8080;
     app.listen(serverPort, () => {
-      console.error(`[cds-kb-mcp] HTTP server ready on port ${serverPort} (legacy SSE at /sse+/messages, Streamable HTTP at /mcp). ${ds.describe()} | views=${meta.viewCount} modules=${Object.keys(moduleStats).length}`);
+      console.error(`[cds-kb-mcp] HTTP server ready on port ${serverPort} (Streamable HTTP at /mcp). ${ds.describe()} | views=${meta.viewCount} modules=${Object.keys(moduleStats).length}`);
       if (authMode === 'none') {
-        console.error(`[cds-kb-mcp] WARNING: No API_KEY / CDS_KB_JWKS_URL. Server is public!`);
+        console.error(`[cds-kb-mcp] WARNING: No API_KEY / CDS_KB_JWKS_URL / CDS_KB_OAUTH_SECRET. Server is public!`);
       } else {
         console.error(`[cds-kb-mcp] Authentication ENABLED (${authMode})`);
       }
+      if (oauthEnabled()) {
+        console.error(`[cds-kb-mcp] OAuth 2.1: ${describeOAuth()}`);
+      }
     });
   } else {
-    // Default local behavior
-    const server = createServer();
-    await server.connect(new StdioServerTransport());
+    // Default local behavior — stdio. serveStdio pins one fresh server instance
+    // per connection and serves both the modern and the 2025-era protocol.
+    await serveStdio(() => createServer(), { legacy: 'serve' });
     console.error(`[cds-kb-mcp] Stdio server ready. ${ds.describe()} | views=${meta.viewCount} enriched=${meta.enrichedCount} modules=${Object.keys(moduleStats).length}`);
   }
 }

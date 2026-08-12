@@ -1,13 +1,18 @@
 # Render Blueprint — https://render.com/docs/blueprint-spec
 # Deploys cds-kb-mcp as a free-tier web service (Streamable HTTP at /mcp,
-# legacy SSE at /sse + /messages).
+# spec 2026-07-28, MCP SDK v2).
 #
 # Env vars to set in the Render dashboard after first deploy:
-#   CDS_KB_DATA_TOKEN  -> GitHub fine-grained PAT, Contents:Read-only on
-#                         StormShynn/cds-kb-data (the data repo is private)
+#   CDS_KB_DATA_TOKEN  -> only needed if StormShynn/cds-kb-data-kit (the data
+#                         source below) ever goes private; it's public today
 #   API_KEY            -> optional shared secret (Bearer / ?api_key=)
 #   CDS_KB_JWKS_URL    -> optional remote JWKS for JWT auth (with optional
 #                         CDS_KB_JWT_ISSUER / CDS_KB_JWT_AUDIENCE)
+#   CDS_KB_OAUTH_SECRET   -> optional OAuth 2.1 signing key (>= 32 chars); enables
+#                         /oauth/authorize + /oauth/token + discovery metadata
+#   CDS_KB_OAUTH_CLIENT_ID -> optional OAuth client id (default cds-kb-client)
+#   CDS_KB_PUBLIC_URL     -> optional public base URL for OAuth issuer/redirect
+#   CDS_KB_RATE_LIMIT_MAX / CDS_KB_RATE_LIMIT_WINDOW_MS -> optional rate limit tuning
 #   CDS_KB_S3_*        -> optional S3/MinIO datasource (BUCKET + ACCESS_KEY_ID +
 #                         SECRET_ACCESS_KEY required; PREFIX/REGION/ENDPOINT/
 #                         FORCE_PATH_STYLE for MinIO). Wins over CDS_KB_REMOTE
@@ -22,7 +27,7 @@ services:
     startCommand: node src/server.mjs
     envVars:
       - key: CDS_KB_REMOTE
-        value: https://raw.githubusercontent.com/StormShynn/cds-kb-data/main
+        value: https://raw.githubusercontent.com/StormShynn/cds-kb-data-kit/main/docs/product/cds_kb_data
       - key: CDS_KB_INDEX_REFRESH_MINUTES
         value: '15'
       - key: CDS_KB_DATA_TOKEN

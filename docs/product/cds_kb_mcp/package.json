@@ -1,7 +1,7 @@
 {
   "name": "cds-kb-mcp",
-  "version": "1.5.0",
-  "description": "Dataless MCP server for the SAP CDS knowledge base — search, compose, generate, and validate CDS view DDL. In this harness, prefers sibling docs/product/cds_kb_data; otherwise S3 when configured, else GitHub remote. Explicit --data/--remote always win over sibling/default.",
+  "version": "2.0.0",
+  "description": "Dataless MCP server for the SAP CDS knowledge base — search, compose, generate, and validate CDS view DDL. Built on the MCP 2026-07-28 SDK (stateless Streamable HTTP + stdio). In this harness, prefers sibling docs/product/cds_kb_data; otherwise S3 when configured, else GitHub remote. Explicit --data/--remote always win over sibling/default.",
   "type": "module",
   "bin": {
     "cds-kb-mcp": "dist/cds-kb-mcp.cjs"
@@ -10,11 +10,11 @@
     "build": "node build.mjs",
     "start": "node src/server.mjs",
     "start:local": "node src/server.mjs --data ../cds_kb_data",
-    "start:remote": "node src/server.mjs --remote https://raw.githubusercontent.com/StormShynn/cds-kb-data/main",
+    "start:remote": "node src/server.mjs --remote https://raw.githubusercontent.com/StormShynn/cds-kb-data-kit/main/docs/product/cds_kb_data",
     "test": "node test_tools.mjs ../cds_kb_data"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "keywords": [
     "mcp",
@@ -28,12 +28,14 @@
   "dependencies": {
     "@abaplint/core": "^2.120.21",
     "@aws-sdk/client-s3": "^3.787.0",
-    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@modelcontextprotocol/core": "^2.0.0",
+    "@modelcontextprotocol/express": "^2.0.0",
+    "@modelcontextprotocol/node": "^2.0.0",
+    "@modelcontextprotocol/server": "^2.0.0",
     "express": "^5.2.1",
     "jose": "^6.0.10",
     "minisearch": "^7.2.0",
-    "uuid": "^14.0.1",
-    "zod": "^3.23.0"
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "esbuild": "^0.28.1"

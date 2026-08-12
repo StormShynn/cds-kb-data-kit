@@ -24,7 +24,7 @@ await build({
   // caused by any particular dependency version, it's the ESM output
   // format itself that doesn't work for this dependency tree.
   format: 'cjs',
-  target: 'node18',
+  target: 'node20',
   outfile,
   // Extra safety net even under CJS: express (via body-parser -> debug)
   // only pulls in tty/supports-color to decide whether to colorize console

@@ -1,22 +1,24 @@
-// auth.mjs — optional HTTP auth for SSE / Streamable HTTP transports.
-// Modes:
-//   - CDS_KB_JWKS_URL set → verify Bearer JWT via remote JWKS (jose);
-//     API_KEY still accepted as query/header for bridges that cannot send JWT.
-//   - only API_KEY → existing Bearer / ?api_key= behaviour.
-//   - neither → next() (public).
+// auth.mjs — optional HTTP auth for the Streamable HTTP transport.
+// Modes (any combination):
+//   - CDS_KB_OAUTH_SECRET set → OAuth 2.1 Bearer JWT (self-issued, see oauth.mjs)
+//   - CDS_KB_JWKS_URL set     → verify Bearer JWT via remote JWKS (jose)
+//   - API_KEY set             → shared secret via Bearer header or ?api_key=
+//   - neither                 → public (next)
+//
+// Order tried per request: API key (fastest) → OAuth JWT → JWKS JWT.
 
 import { createRemoteJWKSet, jwtVerify } from 'jose';
+import { oauthEnabled, oauthVerifier } from './oauth.mjs';
 
 /**
- * @returns {'none'|'api_key'|'jwks'|'jwks+api_key'}
+ * @returns {'none'|'api_key'|'jwks'|'oauth'|...} — '+' joined when several modes are on.
  */
 export function describeAuthMode() {
-  const jwks = !!(process.env.CDS_KB_JWKS_URL || '').trim();
-  const apiKey = !!(process.env.API_KEY || '').trim();
-  if (jwks && apiKey) return 'jwks+api_key';
-  if (jwks) return 'jwks';
-  if (apiKey) return 'api_key';
-  return 'none';
+  const parts = [];
+  if (oauthEnabled()) parts.push('oauth');
+  if ((process.env.CDS_KB_JWKS_URL || '').trim()) parts.push('jwks');
+  if ((process.env.API_KEY || '').trim()) parts.push('api_key');
+  return parts.length ? parts.join('+') : 'none';
 }
 
 function apiKeyMatches(req, apiKey) {
@@ -40,8 +42,9 @@ export async function createAuthMiddleware() {
   const apiKey = (process.env.API_KEY || '').trim();
   const issuer = (process.env.CDS_KB_JWT_ISSUER || '').trim() || undefined;
   const audience = (process.env.CDS_KB_JWT_AUDIENCE || '').trim() || undefined;
+  const oauthOn = oauthEnabled();
 
-  if (!jwksUrl && !apiKey) {
+  if (!jwksUrl && !apiKey && !oauthOn) {
     return (_req, _res, next) => next();
   }
 
@@ -52,13 +55,23 @@ export async function createAuthMiddleware() {
 
   return async (req, res, next) => {
     try {
+      // 1) API key (query or Bearer) — fastest path.
       if (apiKey && apiKeyMatches(req, apiKey)) return next();
 
-      if (jwks) {
-        const auth = req.headers?.authorization;
-        if (auth) {
-          const [scheme, token] = auth.split(' ');
-          if (scheme === 'Bearer' && token && token !== apiKey) {
+      // 2) Bearer token → OAuth JWT, then JWKS JWT.
+      const auth = req.headers?.authorization;
+      if (auth) {
+        const [scheme, token] = auth.split(' ');
+        if (scheme === 'Bearer' && token && token !== apiKey) {
+          if (oauthOn) {
+            try {
+              await oauthVerifier.verifyAccessToken(token);
+              return next();
+            } catch {
+              /* not our token — fall through to JWKS */
+            }
+          }
+          if (jwks) {
             const opts = {};
             if (issuer) opts.issuer = issuer;
             if (audience) opts.audience = audience;
@@ -68,11 +81,8 @@ export async function createAuthMiddleware() {
         }
       }
 
-      // API_KEY-only mode (or JWKS failed / missing Bearer)
-      if (!jwks && apiKey) {
-        return res.status(401).send('Unauthorized');
-      }
-      if (jwks) {
+      // 3) Nothing matched — 401 unless the server is truly public.
+      if (jwksUrl || apiKey || oauthOn) {
         return res.status(401).send('Unauthorized');
       }
       return next();

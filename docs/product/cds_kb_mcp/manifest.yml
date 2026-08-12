@@ -1,10 +1,32 @@
 ---
+# SAP BTP Cloud Foundry manifest for cds-kb-mcp v2 (Streamable HTTP only).
+#
+# cf push from docs/product/cds_kb_mcp:
+#   cf api https://api.cf.<region>.hana.ondemand.com
+#   cf login
+#   cf push
+#
+# The BTP app has no local cds_kb_data tree, so it loads index/views from the
+# monorepo's own GitHub remote (public repo, no PAT needed — see CDS_KB_REMOTE
+# below). Optional env (set with `cf set-env cds-kb-mcp KEY VALUE` before
+# cf push, or via the BTP cockpit): API_KEY / CDS_KB_OAUTH_SECRET (+
+# CDS_KB_OAUTH_CLIENT_ID, CDS_KB_PUBLIC_URL) / CDS_KB_JWKS_URL / CDS_KB_S3_* /
+# CDS_KB_EMBED_API_KEY / CDS_KB_USAGE_ENDPOINT. See README.md.
 applications:
   - name: cds-kb-mcp
-    memory: 512M
+    memory: 256M
+    instances: 1
     buildpacks:
       - nodejs_buildpack
     command: npm start
+    timeout: 180
     env:
+      # Belt-and-braces: forces HTTP mode. In v2 the only HTTP transport is
+      # Streamable HTTP at /mcp — SSE was removed with the MCP SDK v2 upgrade.
+      # PORT (auto-set by CF) also enables HTTP mode.
       USE_SSE: "true"
-      # API_KEY: "your-secret-key-here" # Uncomment to enable API Key authentication
+      CDS_KB_REMOTE: https://raw.githubusercontent.com/StormShynn/cds-kb-data-kit/main/docs/product/cds_kb_data
+      CDS_KB_INDEX_REFRESH_MINUTES: "15"
+      # CDS_KB_DATA_TOKEN: "github-fine-grained-pat"   # Only needed if cds-kb-data-kit ever goes private
+      # API_KEY: "your-secret-key-here"                # Optional auth
+      # CDS_KB_OAUTH_SECRET: "a-32-char-min-secret-for-oauth-2-1"  # Optional OAuth 2.1
