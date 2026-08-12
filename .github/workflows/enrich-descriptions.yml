@@ -45,6 +45,13 @@ concurrency:
 jobs:
   enrich:
     runs-on: ubuntu-latest
+    # `if:` conditionals can't reference the `secrets` context directly
+    # (GitHub Actions rejects it at parse time — the errors this workflow
+    # was failing with). Compute the presence check once here instead,
+    # where `secrets` is allowed same as in a step's `env:`, and have every
+    # `if:` below compare against this job-level env var instead.
+    env:
+      HAS_LLM_KEY: ${{ secrets.GROQ_API_KEY != '' || secrets.OPENROUTER_API_KEY != '' || secrets.LLM_ENRICH_API_KEY != '' }}
     defaults:
       run:
         working-directory: docs/product/cds_kb_data
@@ -66,7 +73,7 @@ jobs:
         run: npm ci --ignore-scripts
 
       - name: Run LLM enrichment
-        if: ${{ secrets.GROQ_API_KEY != '' || secrets.OPENROUTER_API_KEY != '' || secrets.LLM_ENRICH_API_KEY != '' }}
+        if: ${{ env.HAS_LLM_KEY == 'true' }}
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
@@ -79,11 +86,11 @@ jobs:
           node scripts/enrich-descriptions.mjs . "${ARGS[@]}"
 
       - name: Rebuild indexes
-        if: ${{ github.event.inputs.dry_run != 'true' && (secrets.GROQ_API_KEY != '' || secrets.OPENROUTER_API_KEY != '' || secrets.LLM_ENRICH_API_KEY != '') }}
+        if: ${{ github.event.inputs.dry_run != 'true' && env.HAS_LLM_KEY == 'true' }}
         run: node enrich_index.mjs .
 
       - name: Commit and open PR for review
-        if: ${{ github.event.inputs.dry_run != 'true' && (secrets.GROQ_API_KEY != '' || secrets.OPENROUTER_API_KEY != '' || secrets.LLM_ENRICH_API_KEY != '') }}
+        if: ${{ github.event.inputs.dry_run != 'true' && env.HAS_LLM_KEY == 'true' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
