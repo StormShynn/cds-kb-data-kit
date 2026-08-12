@@ -101,7 +101,7 @@ Before configuring your client, ensure your local machine meets the following re
 
 1. **Node.js**: Only needed for Option 1/2 (the `supergateway` bridge) or local stdio. Option 0 (direct Streamable HTTP) needs nothing installed — the client talks to the URL itself. Minimum version **Node.js v20** or above — verify with `node -v`. (This server itself requires Node ≥ 20; the MCP SDK v2 requires it.)
 2. **Network Connectivity**:
-   - Outbound HTTPS access to the hosted server: `https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com` (SAP BTP Cloud Foundry trial, public, no auth — see [mcp_btp_deployment_guide.md](./mcp_btp_deployment_guide.md) A.8 for what happens when this trial's ~90-day clock runs out and the URL changes)
+   - Outbound HTTPS access to the hosted server: `https://mcp.tringhia.io.vn` (stable domain — a Cloudflare Worker reverse proxy in front of the actual SAP BTP Cloud Foundry trial instance, public, no auth. The BTP trial URL behind it rotates every ~90 days when the trial is reclaimed; the Worker's `BACKEND_URL` variable gets updated to point at the new one, so this domain itself never changes — see [mcp_btp_deployment_guide.md](./mcp_btp_deployment_guide.md) A.8)
    - Option 1/2 only: access to `registry.npmjs.org` to fetch `supergateway`. If your machine is behind a corporate firewall/VPN/proxy that blocks npm registry downloads, either use Option 0 instead, or use the global installation method (**Option 2** below).
 3. **Compatible IDE**: An IDE supporting MCP (e.g. Cursor, Claude Desktop, VS Code, Gemini IDE, Claude Code).
 
@@ -113,13 +113,13 @@ Because the MCP server is hosted remotely, **most end users do not need to clone
 
 The server exposes **Streamable HTTP** on a single **`/mcp`** endpoint (the current MCP transport spec — stateless per request). The legacy SSE transport was removed with the SDK v2 upgrade; clients that only speak local stdio bridge `/mcp` with `supergateway` as shown below.
 
-One hosted endpoint is available for either transport, running on a SAP BTP Cloud Foundry trial:
+One hosted endpoint is available for either transport:
 
 ```text
-https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com
+https://mcp.tringhia.io.vn
 ```
 
-It's public — no API key, no OAuth — so anyone (community use) can point a client at it directly. Trial subaccounts get reclaimed after ~90 days, so this URL is expected to change periodically; if it 404s, someone needs to redeploy per [mcp_btp_deployment_guide.md](./mcp_btp_deployment_guide.md) A.8 and update this README with the new one.
+It's public — no API key, no OAuth — so anyone (community use) can point a client at it directly. This is a stable domain: a Cloudflare Worker sits in front of the actual server, which runs on a SAP BTP Cloud Foundry trial. Trial subaccounts get reclaimed after ~90 days, so the *underlying* BTP URL changes periodically — but that's an internal detail now. When it happens, the Worker's `BACKEND_URL` variable is updated to point at the new BTP route per [mcp_btp_deployment_guide.md](./mcp_btp_deployment_guide.md) A.8, and `mcp.tringhia.io.vn` itself never needs to change — no client config below ever needs updating for that reason.
 
 > **Hosting your own copy:** SAP BTP Cloud Foundry has a free tier (no card
 > needed for Trial) and the repo ships a ready-to-push `manifest.yml` — see
@@ -136,7 +136,7 @@ No extra package, no bridge process — just a URL:
   "mcpServers": {
     "cds-kb": {
       "type": "http",
-      "url": "https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com/mcp"
+      "url": "https://mcp.tringhia.io.vn/mcp"
     }
   }
 }
@@ -157,7 +157,7 @@ The exact config key for a remote HTTP server (`"type": "http"` vs `"transport"`
         "-y",
         "supergateway@3.4.3",
         "--streamableHttp",
-        "https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com/mcp"
+        "https://mcp.tringhia.io.vn/mcp"
       ]
     }
   }
@@ -183,7 +183,7 @@ Best for enterprise environments behind corporate firewalls, VPNs, or proxy serv
          "command": "supergateway",
          "args": [
            "--streamableHttp",
-           "https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com/mcp"
+           "https://mcp.tringhia.io.vn/mcp"
          ]
        }
      }

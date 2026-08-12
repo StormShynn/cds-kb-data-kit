@@ -5,7 +5,7 @@ import http from 'node:http';
 import https from 'node:https';
 import { URL } from 'node:url';
 
-const baseUrl = process.argv[2] || 'https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com';
+const baseUrl = process.argv[2] || 'https://mcp.tringhia.io.vn';
 const apiKey  = process.argv[3] || process.env.API_KEY || '';
 const base = new URL(baseUrl);
 const lib  = base.protocol === 'https:' ? https : http;

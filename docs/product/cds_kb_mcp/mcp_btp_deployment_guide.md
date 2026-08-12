@@ -133,6 +133,8 @@ curl -s -X POST "<APP_URL>/oauth/token" \
 
 ### A.8 Runbook: Tái tạo toàn bộ sau khi BTP Trial hết hạn (~90 ngày)
 
+**Cập nhật 2026-08-13:** README.md giờ trỏ tới `https://mcp.tringhia.io.vn` — một Cloudflare Worker reverse proxy đứng trước route BTP thật (xem [`domain-proxy/README.md`](./domain-proxy/README.md)), không phải trỏ thẳng route `cfapps.*.hana.ondemand.com` nữa. Domain này **không đổi** qua mỗi lần trial reset — chỉ có biến `BACKEND_URL` của Worker cần cập nhật (bước 6 dưới đây đã sửa lại cho đúng). README.md/client config từ giờ không cần đụng tới nữa khi trial hết hạn.
+
 Trạng thái tại thời điểm viết (2026-08-12) — **các giá trị org/space/route dưới đây sẽ đổi mỗi khi tạo trial mới**, ghi lại chỉ để biết hình dạng cấu hình cần tái lập:
 
 | Mục | Giá trị lúc deploy lần này |
@@ -152,7 +154,7 @@ Khi trial hết hạn, toàn bộ org/space/app trên bị xoá. Các bước t�
 3. **Không cần sửa gì trong repo** — `manifest.yml` hiện tại (đã commit) đã đúng: data source public, memory 512M, start command chạy bundle. Chỉ cần đảm bảo `dist/cds-kb-mcp.cjs` mới nhất: `cd docs/product/cds_kb_mcp && npm ci && npm run build`.
 4. **`cf push`** — app sẽ nhận route mới dạng `cds-kb-mcp.cfapps.<region-moi>.hana.ondemand.com` (region/subdomain đổi theo subaccount mới; nếu hostname `cds-kb-mcp` bị trùng trên domain đó, CF sẽ báo lỗi route — đổi `name:` trong `manifest.yml` nếu vậy).
 5. **Verify:** `curl https://<route-moi>/health` phải trả `{"status":"ok","views":...}`, và `POST /mcp` (đúng header `Accept: application/json, text/event-stream`) phải trả `200` **không cần token** — mặc định server này để **public, không auth**, vì mục đích là chia sẻ cho cộng đồng dùng tự do (đây là quyết định có chủ đích, không phải quên bật auth).
-6. **Cập nhật URL mới** vào README.md (mục "Client Configuration" — hiện đang trỏ `cds-kb-mcp.cfapps.us10-001.hana.ondemand.com`) và vào bất kỳ client config nào đang trỏ route cũ.
+6. **Cập nhật `BACKEND_URL`** trên Cloudflare Worker (xem [`domain-proxy/README.md`](./domain-proxy/README.md)) thành route mới ở bước 4 — Dashboard → Worker `mcp-proxy` (hoặc tên bạn đặt) → Settings → Variables and Secrets → sửa giá trị `BACKEND_URL`. Domain `mcp.tringhia.io.vn` trong README.md và mọi client config **không cần đổi gì** — đây chính là lý do có lớp proxy này.
 7. **Dọn việc cũ:** nếu còn GitHub PAT nào set thừa cho `CDS_KB_DATA_TOKEN` (không cần nữa vì data source public), `cf unset-env cds-kb-mcp CDS_KB_DATA_TOKEN`.
 
 > Nếu sau này đổi ý muốn giới hạn truy cập (VD server bị lạm dụng), xem lại mục A.7 để bật `API_KEY` hoặc OAuth 2.1 — cả hai đã có sẵn trong code, chỉ cần `cf set-env` + `cf restage`, không cần sửa code.
