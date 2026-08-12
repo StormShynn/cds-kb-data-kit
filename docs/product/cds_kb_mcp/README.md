@@ -101,7 +101,7 @@ Before configuring your client, ensure your local machine meets the following re
 
 1. **Node.js**: Only needed for Option 1/2 (the `supergateway` bridge) or local stdio. Option 0 (direct Streamable HTTP) needs nothing installed — the client talks to the URL itself. Minimum version **Node.js v20** or above — verify with `node -v`. (This server itself requires Node ≥ 20; the MCP SDK v2 requires it.)
 2. **Network Connectivity**:
-   - Outbound HTTPS access to the hosted server — primary: `https://cds-kb-mcp-production.up.railway.app`, fallback: `https://cds-kb-mcp.cfapps.ap21.hana.ondemand.com`
+   - Outbound HTTPS access to the hosted server: `https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com` (SAP BTP Cloud Foundry trial, public, no auth — see [mcp_btp_deployment_guide.md](./mcp_btp_deployment_guide.md) A.8 for what happens when this trial's ~90-day clock runs out and the URL changes)
    - Option 1/2 only: access to `registry.npmjs.org` to fetch `supergateway`. If your machine is behind a corporate firewall/VPN/proxy that blocks npm registry downloads, either use Option 0 instead, or use the global installation method (**Option 2** below).
 3. **Compatible IDE**: An IDE supporting MCP (e.g. Cursor, Claude Desktop, VS Code, Gemini IDE, Claude Code).
 
@@ -113,12 +113,19 @@ Because the MCP server is hosted remotely, **most end users do not need to clone
 
 The server exposes **Streamable HTTP** on a single **`/mcp`** endpoint (the current MCP transport spec — stateless per request). The legacy SSE transport was removed with the SDK v2 upgrade; clients that only speak local stdio bridge `/mcp` with `supergateway` as shown below.
 
-Two hosted endpoints are available for either transport — start with **Primary**, and switch to **Fallback** only if the primary is unreachable from your network.
+One hosted endpoint is available for either transport, running on a SAP BTP Cloud Foundry trial:
 
-> **Hosting on the cheap:** if you host this server yourself, **SAP BTP Cloud
-> Foundry has a free tier** (no card needed for Trial) and the repo ships a
-> ready-to-push `manifest.yml` — see [mcp_btp_deployment_guide.md](./mcp_btp_deployment_guide.md),
-> Part A. It needs a `CDS_KB_DATA_TOKEN` GitHub PAT because the data repo is private.
+```text
+https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com
+```
+
+It's public — no API key, no OAuth — so anyone (community use) can point a client at it directly. Trial subaccounts get reclaimed after ~90 days, so this URL is expected to change periodically; if it 404s, someone needs to redeploy per [mcp_btp_deployment_guide.md](./mcp_btp_deployment_guide.md) A.8 and update this README with the new one.
+
+> **Hosting your own copy:** SAP BTP Cloud Foundry has a free tier (no card
+> needed for Trial) and the repo ships a ready-to-push `manifest.yml` — see
+> [mcp_btp_deployment_guide.md](./mcp_btp_deployment_guide.md), Part A. The
+> data source (`CDS_KB_REMOTE`) points at this monorepo's own public GitHub
+> repo, so no GitHub PAT is needed.
 
 ### Option 0: Direct Streamable HTTP (Recommended if your client supports it)
 
@@ -129,21 +136,17 @@ No extra package, no bridge process — just a URL:
   "mcpServers": {
     "cds-kb": {
       "type": "http",
-      "url": "https://cds-kb-mcp-production.up.railway.app/mcp"
+      "url": "https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com/mcp"
     }
   }
 }
 ```
-
-Fallback: `"url": "https://cds-kb-mcp.cfapps.ap21.hana.ondemand.com/mcp"`.
 
 The exact config key for a remote HTTP server (`"type": "http"` vs `"transport"` vs a dedicated `claude mcp add --transport http` CLI flag) varies by client — check your client's own MCP docs if the block above isn't accepted verbatim. If your client has no remote-HTTP option at all, use Option 1 or 2 below instead.
 
 ### Option 1: Lock Version with npx (Recommended & Easiest, for stdio-only clients)
 
-`supergateway` v3 connects to a remote **Streamable HTTP** endpoint via `--streamableHttp` and exposes it locally over stdio. Add one of these blocks to your `mcpServers` configuration file (e.g., `claude_desktop_config.json` or `mcp_config.json`):
-
-**Primary:**
+`supergateway` v3 connects to a remote **Streamable HTTP** endpoint via `--streamableHttp` and exposes it locally over stdio. Add this block to your `mcpServers` configuration file (e.g., `claude_desktop_config.json` or `mcp_config.json`):
 
 ```json
 {
@@ -154,25 +157,7 @@ The exact config key for a remote HTTP server (`"type": "http"` vs `"transport"`
         "-y",
         "supergateway@3.4.3",
         "--streamableHttp",
-        "https://cds-kb-mcp-production.up.railway.app/mcp"
-      ]
-    }
-  }
-}
-```
-
-**Fallback (SAP BTP Cloud Foundry):**
-
-```json
-{
-  "mcpServers": {
-    "cds-kb": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "supergateway@3.4.3",
-        "--streamableHttp",
-        "https://cds-kb-mcp.cfapps.ap21.hana.ondemand.com/mcp"
+        "https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com/mcp"
       ]
     }
   }
@@ -191,8 +176,6 @@ Best for enterprise environments behind corporate firewalls, VPNs, or proxy serv
 
 2. Update your IDE's `mcpServers` configuration to call the globally installed binary directly (no `npx`):
 
-   **Primary:**
-
    ```json
    {
      "mcpServers": {
@@ -200,23 +183,7 @@ Best for enterprise environments behind corporate firewalls, VPNs, or proxy serv
          "command": "supergateway",
          "args": [
            "--streamableHttp",
-           "https://cds-kb-mcp-production.up.railway.app/mcp"
-         ]
-       }
-     }
-   }
-   ```
-
-   **Fallback (SAP BTP Cloud Foundry):**
-
-   ```json
-   {
-     "mcpServers": {
-       "cds-kb": {
-         "command": "supergateway",
-         "args": [
-           "--streamableHttp",
-           "https://cds-kb-mcp.cfapps.ap21.hana.ondemand.com/mcp"
+           "https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com/mcp"
          ]
        }
      }

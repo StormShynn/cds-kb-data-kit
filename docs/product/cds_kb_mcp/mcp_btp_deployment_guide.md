@@ -141,7 +141,7 @@ Trạng thái tại thời điểm viết (2026-08-12) — **các giá trị org
 | Org / Space | `0f096230trial` / `dev` (tên tự sinh khi tạo trial — **sẽ khác** ở trial mới) |
 | App / route | `cds-kb-mcp` → `https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com` |
 | Data source | `CDS_KB_REMOTE` trỏ `cds-kb-data-kit` (public, đã set sẵn trong `manifest.yml`, không cần sửa) |
-| Auth | OAuth 2.1 (`CDS_KB_OAUTH_SECRET` + `CDS_KB_PUBLIC_URL`, set rời qua `cf set-env`, **không** nằm trong git) |
+| Auth | **Không (public)** — server này chia sẻ cho cộng đồng dùng tự do, cố tình không đặt `API_KEY`/`CDS_KB_OAUTH_SECRET`. (Từng bật OAuth 2.1 để test — mục A.7 vẫn còn cách bật lại nếu sau này cần giới hạn truy cập.) |
 | Memory | `512M` (đã set sẵn trong `manifest.yml`) |
 | Start command | `node dist/cds-kb-mcp.cjs` (đã set sẵn trong `manifest.yml`) |
 
@@ -151,18 +151,11 @@ Khi trial hết hạn, toàn bộ org/space/app trên bị xoá. Các bước t�
 2. **Đăng nhập cf CLI với org/space mới** — chạy `cf login -a https://api.cf.<region-moi>.hana.ondemand.com` rồi chọn org/space qua menu tương tác (không dùng `-o`/`-s` cứng vì tên org mới sẽ khác `0f096230trial`).
 3. **Không cần sửa gì trong repo** — `manifest.yml` hiện tại (đã commit) đã đúng: data source public, memory 512M, start command chạy bundle. Chỉ cần đảm bảo `dist/cds-kb-mcp.cjs` mới nhất: `cd docs/product/cds_kb_mcp && npm ci && npm run build`.
 4. **`cf push`** — app sẽ nhận route mới dạng `cds-kb-mcp.cfapps.<region-moi>.hana.ondemand.com` (region/subdomain đổi theo subaccount mới; nếu hostname `cds-kb-mcp` bị trùng trên domain đó, CF sẽ báo lỗi route — đổi `name:` trong `manifest.yml` nếu vậy).
-5. **Verify chưa auth:** `curl https://<route-moi>/health` phải trả `{"status":"ok","views":...}`.
-6. **Sinh OAuth secret mới** (đừng tái dùng secret cũ — trial cũ đã bị xoá nên secret đó vô nghĩa) theo lệnh ở mục A.7, rồi:
+5. **Verify:** `curl https://<route-moi>/health` phải trả `{"status":"ok","views":...}`, và `POST /mcp` (đúng header `Accept: application/json, text/event-stream`) phải trả `200` **không cần token** — mặc định server này để **public, không auth**, vì mục đích là chia sẻ cho cộng đồng dùng tự do (đây là quyết định có chủ đích, không phải quên bật auth).
+6. **Cập nhật URL mới** vào README.md (mục "Client Configuration" — hiện đang trỏ `cds-kb-mcp.cfapps.us10-001.hana.ondemand.com`) và vào bất kỳ client config nào đang trỏ route cũ.
+7. **Dọn việc cũ:** nếu còn GitHub PAT nào set thừa cho `CDS_KB_DATA_TOKEN` (không cần nữa vì data source public), `cf unset-env cds-kb-mcp CDS_KB_DATA_TOKEN`.
 
-   ```bash
-   cf set-env cds-kb-mcp CDS_KB_OAUTH_SECRET "<chuoi-moi>"
-   cf set-env cds-kb-mcp CDS_KB_PUBLIC_URL "https://<route-moi>"
-   cf restage cds-kb-mcp
-   ```
-
-7. **Verify có auth:** lặp lại đoạn script OAuth ở mục A.7 với `<APP_URL>` = route mới; `POST /mcp` không token phải trả `401`.
-8. **Cập nhật URL mới** vào README.md (bảng "Hosted endpoints" nếu bạn dùng route này làm endpoint chia sẻ cho người khác) và vào bất kỳ client config nào đang trỏ route cũ.
-9. **Dọn việc cũ:** nếu vẫn còn GitHub PAT nào set thừa từ lần trước cho `CDS_KB_DATA_TOKEN` (không cần nữa vì data source public), `cf unset-env cds-kb-mcp CDS_KB_DATA_TOKEN`.
+> Nếu sau này đổi ý muốn giới hạn truy cập (VD server bị lạm dụng), xem lại mục A.7 để bật `API_KEY` hoặc OAuth 2.1 — cả hai đã có sẵn trong code, chỉ cần `cf set-env` + `cf restage`, không cần sửa code.
 
 ---
 
