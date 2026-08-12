@@ -29,36 +29,36 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassInternalID` | ✓ | |  | `clint` |  |  |
-| `ClassType` |  | |  | `klart` |  |  |
-| `Class` |  | |  | `class` |  |  |
-| `ClassStatus` |  | |  | `statu` |  |  |
-| `ClassGroup` |  | |  | `klagr` |  |  |
-| `ClassSearchAuthGrp` |  | |  | `bgrse` |  |  |
-| `ClassClassfctnAuthGrp` |  | |  | `bgrkl` |  |  |
-| `ClassMaintAuthGrp` |  | |  | `bgrkp` |  |  |
-| `CreatedByUser` |  | |  | `aname` |  |  |
-| `CreationDate` |  | |  | `adatu` |  |  |
-| `LastChangedByUser` |  | |  | `vname` |  |  |
-| `LastChangeDate` |  | |  | `vdatu` |  |  |
-| `ValidityStartDate` |  | |  | `vondt` |  |  |
-| `ValidityEndDate` |  | |  | `bisdt` |  |  |
-| `SameClassfctnReaction` |  | |  | `cast( Class.praus as char1 preserving type )` |  |  |
-| `ClfnOrganizationalArea` |  | |  | `cast( Class.sicht as clfnorganizationalarea preserving type )` |  |  |
-| `DocumentInfoRecordDocNumber` |  | |  | `doknr` |  |  |
-| `DocumentInfoRecordDocType` |  | |  | `dokar` |  |  |
-| `DocumentInfoRecordDocPart` |  | |  | `doktl` |  |  |
-| `DocumentInfoRecordDocVersion` |  | |  | `dokvr` |  |  |
-| `ClassStandardOrgName` |  | |  | `nnorm` |  |  |
-| `ClassStandardNumber` |  | |  | `normn` |  |  |
-| `ClassStandardStartDate` |  | |  | `ausgd` |  |  |
-| `ClassStandardVersionStartDate` |  | |  | `versd` |  |  |
-| `ClassStandardVersion` |  | |  | `versi` |  |  |
-| `ClassStandardCharcTable` |  | |  | `leist` |  |  |
-| `ClassBaseUnit` |  | |  | `meins` |  |  |
-| `ClassIsUsableInBOM` |  | |  | `vwstl` |  |  |
-| `ClassIsLocal` |  | |  | `locla` |  |  |
-| `ClassLastChangedDateTime` |  | |  | `lastchangeddatetime` |  |  |
+| `ClassInternalID` | ✓ | |  | `clint` | `NUMC(10)` | Internal Class Number |
+| `ClassType` |  | |  | `klart` | `CHAR(3)` | Class Type |
+| `Class` |  | |  | `class` | `CHAR(18)` | Class number |
+| `ClassStatus` |  | |  | `statu` | `CHAR(1)` | Class status |
+| `ClassGroup` |  | |  | `klagr` | `CHAR(10)` | Class Group |
+| `ClassSearchAuthGrp` |  | |  | `bgrse` | `CHAR(3)` | Authorization Group for Finding Objects |
+| `ClassClassfctnAuthGrp` |  | |  | `bgrkl` | `CHAR(3)` | Classification Authorization Group |
+| `ClassMaintAuthGrp` |  | |  | `bgrkp` | `CHAR(3)` | Class Authorization Group |
+| `CreatedByUser` |  | |  | `aname` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  | `adatu` | `DATS(8)` | Record Creation Date |
+| `LastChangedByUser` |  | |  | `vname` | `CHAR(12)` | Name of Person Who Changed Object |
+| `LastChangeDate` |  | |  | `vdatu` | `DATS(8)` | Last Changed On |
+| `ValidityStartDate` |  | |  | `vondt` | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  | `bisdt` | `DATS(8)` | Valid-to date |
+| `SameClassfctnReaction` |  | |  | `cast( Class.praus as char1 preserving type )` | `CHAR(1)` | Single-Character Flag |
+| `ClfnOrganizationalArea` |  | |  | `cast( Class.sicht as clfnorganizationalarea preserving type )` | `CHAR(10)` | Organizational Area |
+| `DocumentInfoRecordDocNumber` |  | |  | `doknr` | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocType` |  | |  | `dokar` | `CHAR(3)` | Document Type |
+| `DocumentInfoRecordDocPart` |  | |  | `doktl` | `CHAR(3)` | Document Part |
+| `DocumentInfoRecordDocVersion` |  | |  | `dokvr` | `CHAR(2)` | Document Version |
+| `ClassStandardOrgName` |  | |  | `nnorm` | `CHAR(10)` | Name of standards organization |
+| `ClassStandardNumber` |  | |  | `normn` | `CHAR(20)` | Standard Number |
+| `ClassStandardStartDate` |  | |  | `ausgd` | `DATS(8)` | Issue date |
+| `ClassStandardVersionStartDate` |  | |  | `versd` | `DATS(8)` | Version date |
+| `ClassStandardVersion` |  | |  | `versi` | `NUMC(2)` | Version Number |
+| `ClassStandardCharcTable` |  | |  | `leist` | `CHAR(20)` | Characteristics table |
+| `ClassBaseUnit` |  | |  | `meins` | `UNIT(3)` | Base Unit of Measure |
+| `ClassIsUsableInBOM` |  | |  | `vwstl` | `CHAR(1)` | Can Be Used in Bills of Material |
+| `ClassIsLocal` |  | |  | `locla` | `CHAR(1)` | Local class |
+| `ClassLastChangedDateTime` |  | |  | `lastchangeddatetime` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
 | `_ClassDescription` | | ✓ | | | | |
 | `_ClassKeyword` | | ✓ | | | | |
 | `_ClassStatus` | | ✓ | | | | |

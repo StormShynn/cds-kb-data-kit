@@ -29,10 +29,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassInternalID` | ✓ | |  | `clint` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ClassKeywordPositionNumber` | ✓ | |  | `klpos` |  |  |
-| `ClassKeywordText` |  | |  | `kschl` |  |  |
+| `ClassInternalID` | ✓ | |  | `clint` | `NUMC(10)` | Internal Class Number |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ClassKeywordPositionNumber` | ✓ | |  | `klpos` | `NUMC(2)` | Position Number |
+| `ClassKeywordText` |  | |  | `kschl` | `CHAR(40)` | Keywords |
 | `_Language` | | ✓ | | | | |
 | `_Class` | | ✓ | | | | |
 

@@ -32,8 +32,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassType` | ✓ | |  |  |  |  |
-| `ClassStatus` | ✓ | |  |  |  |  |
+| `ClassType` | ✓ | |  |  | `CHAR(3)` | Class Type |
+| `ClassStatus` | ✓ | |  |  | `CHAR(1)` | Class status |
 | `_Text` |  | |  | `_ClassStatusText` |  |  |
 
 ## Source Code

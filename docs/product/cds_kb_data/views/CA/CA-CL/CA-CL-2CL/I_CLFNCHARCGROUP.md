@@ -29,8 +29,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcGroup` | ✓ | |  | `cast ( CharacteristicGroup.atkla as charcgroup preserving type )` |  |  |
-| `ConfigurationDeprecationCode` |  | |  | `configurationdeprecationcode` |  |  |
+| `CharcGroup` | ✓ | |  | `cast ( CharacteristicGroup.atkla as charcgroup preserving type )` | `CHAR(10)` | Characteristic Group |
+| `ConfigurationDeprecationCode` |  | |  | `configurationdeprecationcode` | `CHAR(1)` | Deprecated Entries |
 | `_CharacteristicGroupText` | | ✓ | | | | |
 
 ## Source Code

@@ -29,8 +29,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassGroup` | ✓ | |  | `klagr` |  |  |
-| `ConfigurationDeprecationCode` |  | |  | `configurationdeprecationcode` |  |  |
+| `ClassGroup` | ✓ | |  | `klagr` | `CHAR(10)` | Class Group |
+| `ConfigurationDeprecationCode` |  | |  | `configurationdeprecationcode` | `CHAR(1)` | Deprecated Entries |
 | `_ClassGroupText` | | ✓ | | | | |
 
 ## Source Code

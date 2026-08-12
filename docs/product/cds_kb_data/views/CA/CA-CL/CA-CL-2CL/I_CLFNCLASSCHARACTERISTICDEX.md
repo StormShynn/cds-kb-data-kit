@@ -30,23 +30,23 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassInternalID` | ✓ | |  |  |  |  |
-| `CharcPositionNumber` | ✓ | |  |  |  |  |
-| `ValidityEndDate` | ✓ | |  |  |  |  |
-| `TimeIntervalNumber` |  | |  |  |  |  |
-| `CharcInternalID` |  | |  |  |  |  |
-| `OverwrittenCharcInternalID` |  | |  |  |  |  |
-| `ClfnOrganizationalArea` |  | |  |  |  |  |
-| `ClassType` |  | |  |  |  |  |
-| `ChangeNumber` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `IsDeleted` |  | |  |  |  |  |
-| `CharcOriginText` |  | |  |  |  |  |
-| `CharcIsProposalRelevant` |  | |  |  |  |  |
-| `CharcIsPrptnOrProdUnitRelevant` |  | |  |  |  |  |
-| `CharcIsPrintRelevant` |  | |  |  |  |  |
-| `CharcIsSearchRelevant` |  | |  |  |  |  |
-| `CharcIsDisplayRelevant` |  | |  |  |  |  |
+| `ClassInternalID` | ✓ | |  |  | `NUMC(10)` | Internal Class Number |
+| `CharcPositionNumber` | ✓ | |  |  | `NUMC(3)` | Position number |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Valid-to date |
+| `TimeIntervalNumber` |  | |  |  | `NUMC(4)` | Internal Counter for Archiving Objects by ECM |
+| `CharcInternalID` |  | |  |  | `NUMC(10)` | Characteristic Internal ID |
+| `OverwrittenCharcInternalID` |  | |  |  | `NUMC(10)` | Characteristic Internal ID |
+| `ClfnOrganizationalArea` |  | |  |  | `CHAR(10)` | Organizational Area |
+| `ClassType` |  | |  |  | `CHAR(3)` | Class Type |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `CharcOriginText` |  | |  |  | `CHAR(10)` | Characteristic origin |
+| `CharcIsProposalRelevant` |  | |  |  | `CHAR(1)` | Proposal Relevant |
+| `CharcIsPrptnOrProdUnitRelevant` |  | |  |  | `CHAR(1)` | Proportion/Product Unit Relevant |
+| `CharcIsPrintRelevant` |  | |  |  | `CHAR(1)` | Characteristic Is Print Relevant Indicator |
+| `CharcIsSearchRelevant` |  | |  |  | `CHAR(1)` | Characteristic Is Search Relevant Indicator |
+| `CharcIsDisplayRelevant` |  | |  |  | `CHAR(1)` | Characteristic Is Display Relevant Indicator |
 | `_Class` | | ✓ | | | | |
 
 ## Associations

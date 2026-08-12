@@ -31,7 +31,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassGroup` | ✓ | |  |  |  |  |
+| `ClassGroup` | ✓ | |  |  | `CHAR(10)` | Class Group |
 | `_Text` |  | |  | `_ClassGroupText` |  |  |
 
 ## Source Code

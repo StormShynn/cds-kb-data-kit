@@ -29,20 +29,20 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassInternalID` | ✓ | |  |  |  |  |
-| `CharcInternalID` | ✓ | |  |  |  |  |
-| `CharcPositionNumber` |  | |  |  |  |  |
-| `Characteristic` |  | |  |  |  |  |
-| `AncestorClassInternalID` |  | |  |  |  |  |
-| `ClassType` |  | |  |  |  |  |
-| `ChangeNumber` |  | |  |  |  |  |
-| `CharcIsPrintRelevant` |  | |  |  |  |  |
-| `CharcIsSearchRelevant` |  | |  |  |  |  |
-| `CharcIsDisplayRelevant` |  | |  |  |  |  |
-| `CharcIsProposalRelevant` |  | |  |  |  |  |
-| `CharcIsPrptnOrProdUnitRelevant` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
+| `ClassInternalID` | ✓ | |  |  | `NUMC(10)` | Internal Class Number |
+| `CharcInternalID` | ✓ | |  |  | `NUMC(10)` | Characteristic Internal ID |
+| `CharcPositionNumber` |  | |  |  | `NUMC(3)` | Position number |
+| `Characteristic` |  | |  |  | `CHAR(30)` | Characteristic Name |
+| `AncestorClassInternalID` |  | |  |  | `NUMC(10)` | Internal Class Number |
+| `ClassType` |  | |  |  | `CHAR(3)` | Class Type |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `CharcIsPrintRelevant` |  | |  |  | `CHAR(1)` | Characteristic Is Print Relevant Indicator |
+| `CharcIsSearchRelevant` |  | |  |  | `CHAR(1)` | Characteristic Is Search Relevant Indicator |
+| `CharcIsDisplayRelevant` |  | |  |  | `CHAR(1)` | Characteristic Is Display Relevant Indicator |
+| `CharcIsProposalRelevant` |  | |  |  | `CHAR(1)` | Proposal Relevant |
+| `CharcIsPrptnOrProdUnitRelevant` |  | |  |  | `CHAR(1)` | Proportion/Product Unit Relevant |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-to date |
 | `_Class` | | ✓ | | | | |
 | `_Characteristic` | | ✓ | | | | |
 

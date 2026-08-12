@@ -32,7 +32,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcStatus` | ✓ | |  |  |  |  |
+| `CharcStatus` | ✓ | |  |  | `CHAR(1)` | Characteristic status |
 | `_Text` |  | |  | `_CharacteristicStatusText` |  |  |
 
 ## Source Code

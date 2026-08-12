@@ -31,10 +31,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
-| `CharcExponentFormat` | ✓ | |  | `cast( dd07t.domvalue_l as atdex)` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
-| `CharcExponentFormatName` |  | |  | `cast( dd07t.ddtext as charcexponentformatname preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CharcExponentFormat` | ✓ | |  | `cast( dd07t.domvalue_l as atdex)` | `NUMC(1)` | Exponent Display Format |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CharcExponentFormatName` |  | |  | `cast( dd07t.ddtext as charcexponentformatname preserving type )` | `CHAR(60)` | Characteristic Exponent Format Name |
 | `_Language` | | ✓ | | | | |
 | `_CharcExponentFormat` | | ✓ | | | | |
 

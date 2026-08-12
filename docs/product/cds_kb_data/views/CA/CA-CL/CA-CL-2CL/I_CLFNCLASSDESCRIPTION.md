@@ -30,10 +30,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassInternalID` | ✓ | |  | `clint` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ClassDescription` |  | |  | `cast( ClassDescription.kschl as klsbez preserving type )` |  |  |
-| `ClassKeywordPositionNumber` |  | |  | `klpos` |  |  |
+| `ClassInternalID` | ✓ | |  | `clint` | `NUMC(10)` | Internal Class Number |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ClassDescription` |  | |  | `cast( ClassDescription.kschl as klsbez preserving type )` | `CHAR(40)` | Class Description |
+| `ClassKeywordPositionNumber` |  | |  | `klpos` | `NUMC(2)` | Position Number |
 | `_Language` | | ✓ | | | | |
 | `_Class` | | ✓ | | | | |
 

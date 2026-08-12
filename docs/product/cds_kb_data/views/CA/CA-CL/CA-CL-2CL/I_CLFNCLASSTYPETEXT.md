@@ -31,9 +31,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassType` | ✓ | |  | `klart` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ClassTypeName` |  | |  | `artxt` |  |  |
+| `ClassType` | ✓ | |  | `klart` | `CHAR(3)` | Class Type |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ClassTypeName` |  | |  | `artxt` | `CHAR(40)` | Text describing class type |
 | `_Language` | | ✓ | | | | |
 | `_ClassTypeBasic` | | ✓ | | | | |
 

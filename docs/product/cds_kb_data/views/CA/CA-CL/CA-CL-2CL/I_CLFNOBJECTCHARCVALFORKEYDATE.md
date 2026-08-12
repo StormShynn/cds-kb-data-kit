@@ -29,33 +29,33 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClfnObjectID` | ✓ | |  |  |  |  |
-| `ClfnObjectTable` | ✓ | |  |  |  |  |
-| `CharcInternalID` | ✓ | |  |  |  |  |
-| `CharcValuePositionNumber` | ✓ | |  |  |  |  |
-| `ClfnObjectType` | ✓ | |  |  |  |  |
-| `ClassType` | ✓ | |  |  |  |  |
-| `ClfnObjectInternalID` |  | |  |  |  |  |
-| `CharcValueDependency` |  | |  | `CharcValueIntervalType` |  |  |
-| `CharcValue` |  | |  |  |  |  |
-| `CharcFromNumericValue` |  | |  |  |  |  |
-| `CharcFromNumericValueUnit` |  | |  |  |  |  |
-| `CharcToNumericValue` |  | |  |  |  |  |
-| `CharcToNumericValueUnit` |  | |  |  |  |  |
-| `CharcFromDecimalValue` |  | |  |  |  |  |
-| `CharcToDecimalValue` |  | |  |  |  |  |
-| `CharcFromAmount` |  | |  |  |  |  |
-| `CharcToAmount` |  | |  |  |  |  |
-| `Currency` |  | |  |  |  |  |
-| `CharcFromDate` |  | |  |  |  |  |
-| `CharcToDate` |  | |  |  |  |  |
-| `CharcFromTime` |  | |  |  |  |  |
-| `CharcToTime` |  | |  |  |  |  |
-| `CharacteristicAuthor` |  | |  |  |  |  |
-| `ChangeNumber` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
-| `LastChangeDateTime` |  | |  |  |  |  |
+| `ClfnObjectID` | ✓ | |  |  | `CHAR(90)` | Key of Object to be Classified |
+| `ClfnObjectTable` | ✓ | |  |  | `CHAR(30)` | Classification Object |
+| `CharcInternalID` | ✓ | |  |  | `NUMC(10)` | Characteristic Internal ID |
+| `CharcValuePositionNumber` | ✓ | |  |  | `NUMC(3)` | Characteristic value counter |
+| `ClfnObjectType` | ✓ | |  |  | `CHAR(1)` | Indicator: Object/Class |
+| `ClassType` | ✓ | |  |  | `CHAR(3)` | Class Type |
+| `ClfnObjectInternalID` |  | |  |  | `NUMC(18)` | Internal Object Number |
+| `CharcValueDependency` |  | |  | `CharcValueIntervalType` | `CHAR(1)` | Code for value dependency |
+| `CharcValue` |  | |  |  | `CHAR(70)` | Characteristic Value |
+| `CharcFromNumericValue` |  | |  |  | `FLTP(16)` | Internal floating point from |
+| `CharcFromNumericValueUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement |
+| `CharcToNumericValue` |  | |  |  | `FLTP(16)` | Internal floating point value to |
+| `CharcToNumericValueUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement |
+| `CharcFromDecimalValue` |  | |  |  | `DEC(31)` | Lower Boundary for Numeric Field |
+| `CharcToDecimalValue` |  | |  |  | `DEC(31)` | Upper Boundary for Numeric Field |
+| `CharcFromAmount` |  | |  |  | `CURR(23)` | Lower Boundary for Currency Field |
+| `CharcToAmount` |  | |  |  | `CURR(23)` | Upper Boundary for Currency Field |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `CharcFromDate` |  | |  |  | `DATS(8)` | Lower Boundary for Date-Interval |
+| `CharcToDate` |  | |  |  | `DATS(8)` | Upper Boundary for Date-Interval |
+| `CharcFromTime` |  | |  |  | `TIMS(6)` | Lower Boundary for Time-Interval |
+| `CharcToTime` |  | |  |  | `TIMS(6)` | Upper Boundary for Time-Interval |
+| `CharacteristicAuthor` |  | |  |  | `CHAR(1)` | Classification Author |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-to date |
+| `LastChangeDateTime` |  | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
 | `_Characteristic` | | ✓ | | | | |
 | `_CharacteristicValue` | | ✓ | | | | |
 

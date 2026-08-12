@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  |  |  |  |
-| `ClassType` | ✓ | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  | `NUMC(10)` | Characteristic Internal ID |
+| `ClassType` | ✓ | |  |  | `CHAR(3)` | Class Type |
 | `_ClassType` | | ✓ | | | | |
 
 ## Associations

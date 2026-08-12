@@ -31,10 +31,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
-| `CharcValueIntervalType` | ✓ | |  | `cast( dd07t.domvalue_l as atcod )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
-| `CharcValueIntervalTypeName` |  | |  | `cast( dd07t.ddtext as charcvalueintervaltypename preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CharcValueIntervalType` | ✓ | |  | `cast( dd07t.domvalue_l as atcod )` | `CHAR(1)` | Code for value dependency |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CharcValueIntervalTypeName` |  | |  | `cast( dd07t.ddtext as charcvalueintervaltypename preserving type )` | `CHAR(60)` | Characteristic Value Interval Type Name |
 | `_Language` | | ✓ | | | | |
 | `_CharcValueIntervalType` | | ✓ | | | | |
 

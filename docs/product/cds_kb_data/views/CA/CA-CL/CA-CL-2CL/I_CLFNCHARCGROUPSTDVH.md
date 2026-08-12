@@ -31,7 +31,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcGroup` | ✓ | |  |  |  |  |
+| `CharcGroup` | ✓ | |  |  | `CHAR(10)` | Characteristic Group |
 | `_Text` |  | |  | `_CharacteristicGroupText` |  |  |
 
 ## Source Code

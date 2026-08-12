@@ -32,10 +32,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassType` | ✓ | |  | `klart` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ClassStatus` | ✓ | |  | `status` |  |  |
-| `ClassStatusName` |  | |  | `stext` |  |  |
+| `ClassType` | ✓ | |  | `klart` | `CHAR(3)` | Class Type |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ClassStatus` | ✓ | |  | `status` | `CHAR(1)` | Class status |
+| `ClassStatusName` |  | |  | `stext` | `CHAR(40)` | Text for a table entry |
 | `_Language` | | ✓ | | | | |
 | `_ClassType` | | ✓ | | | | |
 | `_ClassStatus` | | ✓ | | | | |

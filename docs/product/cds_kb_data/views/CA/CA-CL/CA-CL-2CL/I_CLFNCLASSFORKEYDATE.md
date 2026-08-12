@@ -29,36 +29,36 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassInternalID` | ✓ | |  |  |  |  |
-| `ClassType` |  | |  |  |  |  |
-| `Class` |  | |  |  |  |  |
-| `ClassStatus` |  | |  |  |  |  |
-| `ClassGroup` |  | |  |  |  |  |
-| `ClassSearchAuthGrp` |  | |  |  |  |  |
-| `ClassClassfctnAuthGrp` |  | |  |  |  |  |
-| `ClassMaintAuthGrp` |  | |  |  |  |  |
-| `DocumentInfoRecordDocNumber` |  | |  |  |  |  |
-| `DocumentInfoRecordDocType` |  | |  |  |  |  |
-| `DocumentInfoRecordDocPart` |  | |  |  |  |  |
-| `DocumentInfoRecordDocVersion` |  | |  |  |  |  |
-| `SameClassfctnReaction` |  | |  |  |  |  |
-| `ClfnOrganizationalArea` |  | |  |  |  |  |
-| `ClassStandardOrgName` |  | |  |  |  |  |
-| `ClassStandardNumber` |  | |  |  |  |  |
-| `ClassStandardStartDate` |  | |  |  |  |  |
-| `ClassStandardVersionStartDate` |  | |  |  |  |  |
-| `ClassStandardVersion` |  | |  |  |  |  |
-| `ClassStandardCharcTable` |  | |  |  |  |  |
-| `ClassBaseUnit` |  | |  |  |  |  |
-| `ClassIsUsableInBOM` |  | |  |  |  |  |
-| `ClassIsLocal` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `LastChangeDate` |  | |  |  |  |  |
-| `ClassLastChangedDateTime` |  | |  |  |  |  |
+| `ClassInternalID` | ✓ | |  |  | `NUMC(10)` | Internal Class Number |
+| `ClassType` |  | |  |  | `CHAR(3)` | Class Type |
+| `Class` |  | |  |  | `CHAR(18)` | Class number |
+| `ClassStatus` |  | |  |  | `CHAR(1)` | Class status |
+| `ClassGroup` |  | |  |  | `CHAR(10)` | Class Group |
+| `ClassSearchAuthGrp` |  | |  |  | `CHAR(3)` | Authorization Group for Finding Objects |
+| `ClassClassfctnAuthGrp` |  | |  |  | `CHAR(3)` | Classification Authorization Group |
+| `ClassMaintAuthGrp` |  | |  |  | `CHAR(3)` | Class Authorization Group |
+| `DocumentInfoRecordDocNumber` |  | |  |  | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocType` |  | |  |  | `CHAR(3)` | Document Type |
+| `DocumentInfoRecordDocPart` |  | |  |  | `CHAR(3)` | Document Part |
+| `DocumentInfoRecordDocVersion` |  | |  |  | `CHAR(2)` | Document Version |
+| `SameClassfctnReaction` |  | |  |  | `CHAR(1)` | Single-Character Flag |
+| `ClfnOrganizationalArea` |  | |  |  | `CHAR(10)` | Organizational Area |
+| `ClassStandardOrgName` |  | |  |  | `CHAR(10)` | Name of standards organization |
+| `ClassStandardNumber` |  | |  |  | `CHAR(20)` | Standard Number |
+| `ClassStandardStartDate` |  | |  |  | `DATS(8)` | Issue date |
+| `ClassStandardVersionStartDate` |  | |  |  | `DATS(8)` | Version date |
+| `ClassStandardVersion` |  | |  |  | `NUMC(2)` | Version Number |
+| `ClassStandardCharcTable` |  | |  |  | `CHAR(20)` | Characteristics table |
+| `ClassBaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `ClassIsUsableInBOM` |  | |  |  | `CHAR(1)` | Can Be Used in Bills of Material |
+| `ClassIsLocal` |  | |  |  | `CHAR(1)` | Local class |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-to date |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `ClassLastChangedDateTime` |  | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
 | `_ClassDescription` | | ✓ | | | | |
 | `_ClassKeyword` | | ✓ | | | | |
 | `_ClassCharc` | | ✓ | | | | |

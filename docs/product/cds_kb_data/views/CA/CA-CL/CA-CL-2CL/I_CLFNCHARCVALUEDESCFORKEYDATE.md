@@ -29,13 +29,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  |  |  |  |
-| `CharcValuePositionNumber` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `CharcValueDescription` |  | |  |  |  |  |
-| `ChangeNumber` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  | `NUMC(10)` | Characteristic Internal ID |
+| `CharcValuePositionNumber` | ✓ | |  |  | `NUMC(4)` | Int counter |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `CharcValueDescription` |  | |  |  | `CHAR(70)` | Characteristic value description |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-to date |
 | `_Characteristic` | | ✓ | | | | |
 | `_CharacteristicValue` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |

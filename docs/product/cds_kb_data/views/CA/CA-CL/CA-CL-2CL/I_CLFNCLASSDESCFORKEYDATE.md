@@ -29,9 +29,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassInternalID` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `ClassDescription` |  | |  |  |  |  |
+| `ClassInternalID` | ✓ | |  |  | `NUMC(10)` | Internal Class Number |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `ClassDescription` |  | |  |  | `CHAR(40)` | Class Description |
 | `_Class` | | ✓ | | | | |
 
 ## Associations
