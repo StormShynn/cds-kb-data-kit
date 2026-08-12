@@ -91,6 +91,79 @@ cf restage cds-kb-mcp   # restart để áp dụng env
 cf stop cds-kb-mcp     # bật lại: cf start cds-kb-mcp
 ```
 
+### A.7 Sinh key (API key / OAuth secret)
+
+Không có "nơi lấy key" — cả `API_KEY` và `CDS_KB_OAUTH_SECRET` đều là chuỗi bí mật **do bạn tự sinh ra**, server không phát hành key cho ai cả.
+
+```bash
+# OAuth secret: BẮT BUỘC ≥ 32 ký tự (server tự chối nếu ngắn hơn — xem oauthEnabled() trong src/oauth.mjs)
+node -e "console.log(require('crypto').randomBytes(32).toString('base64url'))"
+
+# API key: bất kỳ chuỗi random nào cũng được, không giới hạn độ dài
+node -e "console.log(require('crypto').randomBytes(24).toString('hex'))"
+```
+
+Set lên app rồi restage để áp dụng:
+
+```bash
+cf set-env cds-kb-mcp CDS_KB_OAUTH_SECRET "<chuỗi vừa sinh>"
+cf set-env cds-kb-mcp CDS_KB_PUBLIC_URL "https://<route-thật-cua-app>"   # bắt buộc đi kèm OAuth — dùng làm issuer
+cf restage cds-kb-mcp
+```
+
+> **Không commit secret vào git.** Repo `cds-kb-data-kit` là **public** — `manifest.yml` chỉ để sẵn dòng comment cho `API_KEY`/`CDS_KB_OAUTH_SECRET` làm gợi ý, giá trị thật luôn set qua `cf set-env` (không nằm trong file được commit). `cf push` sau này **không xoá** các env var đã set rời như vậy, kể cả khi chúng không có trong `manifest.yml`.
+
+Test nhanh flow OAuth 2.1 + PKCE thật (thay `<APP_URL>`):
+
+```bash
+VERIFIER="mot-chuoi-tuy-y-toi-thieu-43-ky-tu-theo-chuan-pkce-1234567890"
+CHALLENGE=$(node -e "console.log(require('crypto').createHash('sha256').update('$VERIFIER').digest('base64url'))")
+LOC=$(curl -s -D - -o /dev/null "<APP_URL>/oauth/authorize?response_type=code&client_id=cds-kb-client&redirect_uri=https://example.com/cb&code_challenge=$CHALLENGE&code_challenge_method=S256" | grep -i '^location:')
+CODE=$(echo "$LOC" | grep -oP '(?<=code=)[a-f0-9]+')
+curl -s -X POST "<APP_URL>/oauth/token" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  --data-urlencode "grant_type=authorization_code" \
+  --data-urlencode "code=$CODE" \
+  --data-urlencode "code_verifier=$VERIFIER" \
+  --data-urlencode "redirect_uri=https://example.com/cb"
+# => {"access_token":"eyJ...","token_type":"Bearer","expires_in":3600,...}  <-- OK
+```
+
+> **Lưu ý client thực tế:** flow trên là để *test bằng tay*. Client hỗ trợ remote MCP đời mới (Claude Desktop, Cursor bản mới) tự động chạy được flow OAuth 2.1 này qua `/.well-known/oauth-authorization-server` khi bạn khai `"type": "http", "url": "<APP_URL>/mcp"`. [Unverified] Mình chưa xác nhận được `supergateway` (dùng để bridge cho client chỉ hỗ trợ stdio) có tự chạy được flow OAuth trình duyệt hay không — nếu dùng `supergateway`, cách chắc ăn hơn là dùng `API_KEY` (`-h "Authorization: Bearer <key>"`) thay vì OAuth.
+
+### A.8 Runbook: Tái tạo toàn bộ sau khi BTP Trial hết hạn (~90 ngày)
+
+Trạng thái tại thời điểm viết (2026-08-12) — **các giá trị org/space/route dưới đây sẽ đổi mỗi khi tạo trial mới**, ghi lại chỉ để biết hình dạng cấu hình cần tái lập:
+
+| Mục | Giá trị lúc deploy lần này |
+| --- | --- |
+| Region | `us10-001` (API: `https://api.cf.us10-001.hana.ondemand.com`) |
+| Org / Space | `0f096230trial` / `dev` (tên tự sinh khi tạo trial — **sẽ khác** ở trial mới) |
+| App / route | `cds-kb-mcp` → `https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com` |
+| Data source | `CDS_KB_REMOTE` trỏ `cds-kb-data-kit` (public, đã set sẵn trong `manifest.yml`, không cần sửa) |
+| Auth | OAuth 2.1 (`CDS_KB_OAUTH_SECRET` + `CDS_KB_PUBLIC_URL`, set rời qua `cf set-env`, **không** nằm trong git) |
+| Memory | `512M` (đã set sẵn trong `manifest.yml`) |
+| Start command | `node dist/cds-kb-mcp.cjs` (đã set sẵn trong `manifest.yml`) |
+
+Khi trial hết hạn, toàn bộ org/space/app trên bị xoá. Các bước tái tạo, theo đúng thứ tự:
+
+1. **Tạo BTP trial mới.** [Unverified] mình không chắc URL đăng ký hiện tại (SAP hay đổi domain) — tìm "SAP BTP free trial account" trên Google thay vì dùng URL cũ, vì URL có thể đã đổi.
+2. **Đăng nhập cf CLI với org/space mới** — chạy `cf login -a https://api.cf.<region-moi>.hana.ondemand.com` rồi chọn org/space qua menu tương tác (không dùng `-o`/`-s` cứng vì tên org mới sẽ khác `0f096230trial`).
+3. **Không cần sửa gì trong repo** — `manifest.yml` hiện tại (đã commit) đã đúng: data source public, memory 512M, start command chạy bundle. Chỉ cần đảm bảo `dist/cds-kb-mcp.cjs` mới nhất: `cd docs/product/cds_kb_mcp && npm ci && npm run build`.
+4. **`cf push`** — app sẽ nhận route mới dạng `cds-kb-mcp.cfapps.<region-moi>.hana.ondemand.com` (region/subdomain đổi theo subaccount mới; nếu hostname `cds-kb-mcp` bị trùng trên domain đó, CF sẽ báo lỗi route — đổi `name:` trong `manifest.yml` nếu vậy).
+5. **Verify chưa auth:** `curl https://<route-moi>/health` phải trả `{"status":"ok","views":...}`.
+6. **Sinh OAuth secret mới** (đừng tái dùng secret cũ — trial cũ đã bị xoá nên secret đó vô nghĩa) theo lệnh ở mục A.7, rồi:
+
+   ```bash
+   cf set-env cds-kb-mcp CDS_KB_OAUTH_SECRET "<chuoi-moi>"
+   cf set-env cds-kb-mcp CDS_KB_PUBLIC_URL "https://<route-moi>"
+   cf restage cds-kb-mcp
+   ```
+
+7. **Verify có auth:** lặp lại đoạn script OAuth ở mục A.7 với `<APP_URL>` = route mới; `POST /mcp` không token phải trả `401`.
+8. **Cập nhật URL mới** vào README.md (bảng "Hosted endpoints" nếu bạn dùng route này làm endpoint chia sẻ cho người khác) và vào bất kỳ client config nào đang trỏ route cũ.
+9. **Dọn việc cũ:** nếu vẫn còn GitHub PAT nào set thừa từ lần trước cho `CDS_KB_DATA_TOKEN` (không cần nữa vì data source public), `cf unset-env cds-kb-mcp CDS_KB_DATA_TOKEN`.
+
 ---
 
 ## Kiến Trúc Hệ Thống
