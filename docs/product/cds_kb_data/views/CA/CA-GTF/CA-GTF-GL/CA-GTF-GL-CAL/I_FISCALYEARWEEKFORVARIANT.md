@@ -5,6 +5,7 @@ app_component: CA-GTF-GL-CAL
 software_component: SAP_BASIS
 release_state: released
 dev_ext_status: released
+atc_state: released
 clean_core_level: A
 system_type: public_cloud
 source_available: true

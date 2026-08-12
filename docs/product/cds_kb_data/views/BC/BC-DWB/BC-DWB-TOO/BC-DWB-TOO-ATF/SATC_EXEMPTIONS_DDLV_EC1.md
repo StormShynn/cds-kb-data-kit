@@ -4,6 +4,7 @@ description: "Satc Exemptions Ddlv EC 1"
 app_component: BC-DWB-TOO-ATF
 software_component: SAP_BASIS
 release_state: released
+atc_state: released
 clean_core_level: A
 system_type: public_cloud
 source_available: true

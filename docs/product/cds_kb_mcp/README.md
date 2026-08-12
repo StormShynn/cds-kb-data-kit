@@ -42,7 +42,7 @@ the data index changes).
 | **Coverage**        | ~10,600 CDS views (see `version.json` `viewCount`)                                                         |
 | **Enrichment**      | Semantic description + synonyms where present (`enrichedCount` in `version.json`)                          |
 | **Taxonomy**        | Lines of Business → Business Objects → keyword map (EN + VI)                                               |
-| **Search ranking**  | Field-boosted MiniSearch (`name×3`, `semanticDescription×2.5`, `synonyms×2`) + optional **vector hybrid** (`index/embeddings.json`) + **usageCount** popularity boost |
+| **Search ranking**  | Field-boosted MiniSearch (`name×3`, `semanticDescription×2.5`, `synonyms×2`) + optional **vector hybrid** (`index/embeddings.json` — not yet built for this KB, see below) + **usageCount** popularity boost (also not yet populated — see below) |
 | **Module aliasing** | Filter by `"Finance"` / `"Procurement"` / `"Sales"` instead of `FI` / `MM` / `SD`                          |
 | **Tools**           | 12 MCP tools — every one declares an `outputSchema` and returns JSON `structuredContent`                   |
 | **Resources**       | `cds://view/{name}`, `cds://taxonomy`, `cds://stats` — attachable straight into agent context              |
@@ -216,18 +216,28 @@ Find CDS views by business meaning, name, tag, or classic SAP keyword (`VBAK`, `
 | `bo`      | string   | optional | Business object filter (partial match, e.g. `"salesorder"`)                            |
 | `limit`   | int 1-50 | optional | Max results (default 10)                                                               |
 
-Returns: ranked list with `name`, `score`, `module`, short description, `devExtStatus`, and path. Ranking blends BM25 (MiniSearch) + cosine similarity when `index/embeddings.json` is present + `usageCount` popularity boost when `index/usage-stats.json` is present.
+Returns: ranked list with `name`, `score`, `module`, short description, `devExtStatus`, `atcState`, `atcSuccessor`, and path. Ranking blends BM25 (MiniSearch) + cosine similarity when `index/embeddings.json` is present + `usageCount` popularity boost when `index/usage-stats.json` is present — as of this writing, **neither file exists in this KB** (no CI workflow has ever run `build-embeddings`/`pull-usage-stats` with real credentials), so `search_mode=hybrid` silently falls back to plain BM25 and popularity never nudges results. See [Hybrid (vector) search](#hybrid-vector-search) below for what it takes to actually turn these on.
 
-> **`devExtStatus` ≠ "released".** A view showing up here at all just means it's
-> in the general SAP Hub catalog. `devExtStatus` (`released` / `not_released` /
-> `null` = unknown) is SAP's *separate* `ReleaseStateDeveloperExtensibility`
-> signal — the only one that answers "can I `association to`/`select from`
-> this in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view".
-> `compose_query`/`generate_cds_view` warn automatically when a referenced
-> view is `not_released` or unknown. See
+> **Three independent release signals — do not conflate them.** A view
+> showing up here at all just means it's in the general SAP Hub catalog
+> (`release_state`).
+>
+> - `devExtStatus` (`released` / `not_released` / `null` = unknown) is SAP's
+>   *separate* `ReleaseStateDeveloperExtensibility` signal — the only one that
+>   answers "can I `association to`/`select from` this in a custom S/4HANA
+>   Cloud ABAP Developer Extensibility CDS view".
+> - `atcState` (`released` / `deprecated` / `notToBeReleased` / `null` =
+>   unknown) is a **third**, independent signal from SAP's own ABAP Cloud
+>   released-objects list (the same dataset ATC/Clean Core checks use).
+>   `atcSuccessor`, when set, names the concrete replacement object SAP
+>   recommends instead.
+>
+> `compose_query`/`generate_cds_view` warn automatically on any of: `devExtStatus`
+> `not_released`, unknown `devExtStatus`, or `atcState` `deprecated`/`notToBeReleased`
+> (with the successor, if SAP names one). See
 > [`hook/quy-trinh-check-cds-released-developer-extensibility.md`](../cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md)
-> for the full explanation and mitigation options. `devExtStatus` is also an
-> optional filter param on `search_cds` / `suggest_base_views`.
+> for the full explanation and mitigation options. `devExtStatus`/`atcState` are
+> also optional filter params on `search_cds` / `suggest_base_views`.
 
 ```text
 1. **I_CAOPENITEMLIST**  [FI-FIO-AR-2CL]  (score 14.2)
@@ -268,7 +278,7 @@ No parameters.
 
 Exact lookup by field name, raw DDIC column, or table/CDS view name (not fuzzy
 search). Prefer this when you already have a concrete name from ABAP/DDL.
-Each match includes `devExtStatus` (see `search_cds` above).
+Each match includes `devExtStatus`/`atcState`/`atcSuccessor` (see `search_cds` above).
 
 | Parameter | Type      | Required | Description |
 |---|---|---|---|
@@ -277,7 +287,7 @@ Each match includes `devExtStatus` (see `search_cds` above).
 
 ### 6. `get_view_dependencies`
 
-Views that are built FROM or associate to a given view/table (uses `table-index.json`). Each entry includes `devExtStatus` — useful to spot that an association target is a released alternative even when the view you started from isn't.
+Views that are built FROM or associate to a given view/table (uses `table-index.json`). Each entry includes `devExtStatus`/`atcState`/`atcSuccessor` — useful to spot that an association target is a released alternative (or has a SAP-named successor) even when the view you started from isn't.
 
 | Parameter | Type | Required | Description |
 |---|---|---|---|
@@ -290,7 +300,7 @@ Report the active data source, server version, view count, enrichment %, private
 
 ```text
 source: local:D:\...\docs\product\cds_kb_data
-server: cds-kb-mcp 2.1.0
+server: cds-kb-mcp 2.2.0
 views: 10619
 enriched: 3267 (30.8%)
 privateOverlay: 1
@@ -313,7 +323,7 @@ Recommend concrete (non-abstract, non-unverified) CDS views to use as the `FROM`
 
 ### 9. `compose_query`
 
-Build OpenSQL + a CDS `define view entity` skeleton from the Query Builder JSON shape (`views[]`, `select`, `where`, `groupBy`, `having`, `orderBy`, `viewName`). Warns in `warnings[]` when a referenced view is SAP-confirmed `not_released` for Developer Extensibility, or has no such signal in this KB — see the `devExtStatus` note under `search_cds` above.
+Build OpenSQL + a CDS `define view entity` skeleton from the Query Builder JSON shape (`views[]`, `select`, `where`, `groupBy`, `having`, `orderBy`, `viewName`). Warns in `warnings[]` when a referenced view is SAP-confirmed `not_released` for Developer Extensibility, has no such signal in this KB, or is `deprecated`/`notToBeReleased` per SAP's ATC list (names the successor when SAP does) — see the release-signals note under `search_cds` above.
 
 ### 10. `generate_cds_view`
 
@@ -412,10 +422,15 @@ Missing Worker secrets → ranking still works; popularity just does not nudge r
 
 ### Hybrid (vector) search
 
-The data repo ships `scripts/build-embeddings.mjs` (`npm run build-embeddings` in
-`cds_kb_data`, needs `CDS_KB_EMBED_API_KEY`; no-op when unset). When it produces
-`index/embeddings.json`, `search_cds` combines BM25 + cosine similarity for the
-top candidates. Until then, search runs BM25-only — which is already strong.
+**Not currently active.** The data repo ships `scripts/build-embeddings.mjs`
+(`npm run build-embeddings` in `cds_kb_data`), which needs `CDS_KB_EMBED_API_KEY`
+and no-ops silently when it's unset — and no GitHub Actions workflow in this repo
+sets that secret or calls the script, so `index/embeddings.json` has never actually
+been generated. Until someone runs it with a real key (one-time, or wire it into
+a workflow for periodic refresh), `search_mode=hybrid` is dead code that falls
+back to plain BM25 every time — which is already strong on its own, so this
+isn't blocking anything, just worth knowing before assuming hybrid mode is doing
+something.
 
 ---
 
@@ -452,7 +467,7 @@ npx @modelcontextprotocol/inspector node src/server.mjs --data ../cds_kb_data
 └──────────────────────────┬───────────────────────────────────────┘
                            │  MCP / JSON-RPC — stdio, or Streamable HTTP at /mcp
 ┌──────────────────────────▼───────────────────────────────────────┐
-│              cds-kb-mcp 2.1.0 (MCP SDK v2, spec 2026-07-28)      │
+│              cds-kb-mcp 2.2.0 (MCP SDK v2, spec 2026-07-28)      │
 │  tools (12, outputSchema+structuredContent) · resources · prompts│
 │  rate limit → auth (API key | JWKS | OAuth 2.1+PKCE) → handlers   │
 │                       │                                          │

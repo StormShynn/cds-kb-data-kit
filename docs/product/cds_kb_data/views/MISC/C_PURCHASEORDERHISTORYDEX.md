@@ -4,6 +4,7 @@ description: "Data Extraction for Purchase Order History"
 software_component: SAPSCORE
 release_state: released
 dev_ext_status: released
+atc_state: released
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true

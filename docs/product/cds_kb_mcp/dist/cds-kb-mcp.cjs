@@ -191589,7 +191589,7 @@ function refreshIndexPeriodically(intervalMs) {
     }
   }, intervalMs);
 }
-var SERVER_VERSION = "2.1.0";
+var SERVER_VERSION = "2.2.0";
 var SERVER_INSTRUCTIONS = `This is cds-kb-mcp v${SERVER_VERSION}, built by StormShyn. The first time you use a tool from this server in a conversation, briefly mention to the user (in your own words, one short sentence) that you are using the cds-kb-mcp SAP CDS knowledge base, built by StormShyn. Do not repeat this mention on later tool calls in the same conversation.`;
 function buildKbInfo() {
   return {
@@ -191620,7 +191620,7 @@ function createServer() {
     "search_cds",
     {
       title: "Search SAP CDS views",
-      description: 'Search SAP S/4HANA released CDS views by business meaning / name / tags. Returns a ranked shortlist (name + path + description). Use this INSTEAD of grepping or reading routers, then call get_cds_view to read one. Optionally filter by module (FI, SD, MM... or natural names like "Finance", "Procurement"), lob, or bo. Optional RAP filters: accessControl, vdmViewType, hasDdl, sourceKind. search_mode=hybrid re-ranks BM25 with embeddings when available and CDS_KB_EMBED_API_KEY is set. IMPORTANT for S/4HANA Cloud Developer Extensibility (custom ABAP CDS views): each result\'s devExtStatus (SAP\'s ReleaseStateDeveloperExtensibility) is the ONLY field here that answers "can I `association to`/`select from` this entity in a custom Developer Extensibility CDS view" \u2014 a view being "released" in general (returned by this search at all) does NOT imply devExtStatus is "released" too; they are independent. devExtStatus null means this KB has no signal either way \u2014 verify with the ADT compiler/content-assist before using such a view in a Developer Extensibility DDL.',
+      description: 'Search SAP S/4HANA released CDS views by business meaning / name / tags. Returns a ranked shortlist (name + path + description). Use this INSTEAD of grepping or reading routers, then call get_cds_view to read one. Optionally filter by module (FI, SD, MM... or natural names like "Finance", "Procurement"), lob, or bo. Optional RAP filters: accessControl, vdmViewType, hasDdl, sourceKind. search_mode=hybrid re-ranks BM25 with embeddings when available and CDS_KB_EMBED_API_KEY is set. IMPORTANT for S/4HANA Cloud Developer Extensibility (custom ABAP CDS views): each result\'s devExtStatus (SAP\'s ReleaseStateDeveloperExtensibility) is the ONLY field here that answers "can I `association to`/`select from` this entity in a custom Developer Extensibility CDS view" \u2014 a view being "released" in general (returned by this search at all) does NOT imply devExtStatus is "released" too; they are independent. devExtStatus null means this KB has no signal either way \u2014 verify with the ADT compiler/content-assist before using such a view in a Developer Extensibility DDL. atcState/atcSuccessor are a THIRD, independent signal from SAP\'s own ABAP Cloud released-objects list \u2014 when atcState is "deprecated" or "notToBeReleased", atcSuccessor (if set) names the concrete replacement view.',
       inputSchema: {
         query: external_exports.string().describe('Natural-language or keyword query, e.g. "overdue customer invoices"'),
         module: external_exports.string().optional().describe('Module filter \u2014 code (FI, SD, MM) or name ("Finance", "Procurement")'),
@@ -191632,6 +191632,9 @@ function createServer() {
         sourceKind: external_exports.string().optional().describe('e.g. "public" or "private" (private overlay)'),
         devExtStatus: external_exports.enum(["released", "not_released"]).optional().describe(
           'Filter by SAP Developer Extensibility release state (ReleaseStateDeveloperExtensibility) \u2014 NOT the same as the general release state. Use "released" to only get views confirmed usable via `association to`/`select from` in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view.'
+        ),
+        atcState: external_exports.enum(["released", "deprecated", "notToBeReleased"]).optional().describe(
+          "Filter by SAP's ABAP Cloud released-objects (ATC/Clean Core) state \u2014 a third, independent signal."
         ),
         search_mode: external_exports.enum(["bm25", "hybrid"]).optional().describe("bm25 (default) or hybrid (BM25 + embeddings when available)"),
         limit: external_exports.number().int().min(1).max(50).optional().describe("Max results (default 10)")
@@ -191647,14 +191650,16 @@ function createServer() {
           bo: external_exports.string().nullable(),
           description: external_exports.string().nullable(),
           devExtStatus: external_exports.string().nullable(),
+          atcState: external_exports.string().nullable(),
+          atcSuccessor: external_exports.string().nullable(),
           path: external_exports.string()
         }))
       })
     },
-    async ({ query, module: module2, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, devExtStatus, search_mode = "bm25", limit = 10 }) => {
+    async ({ query, module: module2, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, devExtStatus, atcState, search_mode = "bm25", limit = 10 }) => {
       const resolvedModule = resolveModule(module2);
       const contains = (a5, b5) => (a5 || "").toLowerCase().includes((b5 || "").toLowerCase());
-      const facetFilter = (r5) => (!resolvedModule || (r5.module || "").toUpperCase() === resolvedModule) && (!lob || contains(r5.lob, lob)) && (!bo || contains(r5.bo, bo)) && (!accessControl || contains(r5.accessControl, accessControl)) && (!vdmViewType || contains(r5.vdmViewType, vdmViewType)) && (hasDdl === void 0 || !!r5.hasDdl === hasDdl) && (!sourceKind || (r5.sourceKind || "public").toLowerCase() === sourceKind.toLowerCase()) && (!devExtStatus || r5.devExtStatus === devExtStatus);
+      const facetFilter = (r5) => (!resolvedModule || (r5.module || "").toUpperCase() === resolvedModule) && (!lob || contains(r5.lob, lob)) && (!bo || contains(r5.bo, bo)) && (!accessControl || contains(r5.accessControl, accessControl)) && (!vdmViewType || contains(r5.vdmViewType, vdmViewType)) && (hasDdl === void 0 || !!r5.hasDdl === hasDdl) && (!sourceKind || (r5.sourceKind || "public").toLowerCase() === sourceKind.toLowerCase()) && (!devExtStatus || r5.devExtStatus === devExtStatus) && (!atcState || r5.atcState === atcState);
       const results = await rankedSearch(query, { filter: facetFilter, limit, searchMode: search_mode });
       const structured = {
         query,
@@ -191667,6 +191672,8 @@ function createServer() {
           bo: r5.bo ?? null,
           description: r5.semanticDescription || r5.description || null,
           devExtStatus: r5.devExtStatus ?? null,
+          atcState: r5.atcState ?? null,
+          atcSuccessor: r5.atcSuccessor ?? null,
           path: r5.path
         }))
       };
@@ -191677,7 +191684,8 @@ function createServer() {
       const lines = results.map((r5, i5) => {
         const desc = r5.semanticDescription || r5.description || "";
         const devExtNote = r5.devExtStatus ? `  [dev-ext: ${r5.devExtStatus}]` : "";
-        return `${i5 + 1}. **${r5.name}**  [${r5.appComponent || r5.module || "-"}]  (score ${r5.score.toFixed(1)})${devExtNote}
+        const atcNote = r5.atcState ? `  [atc: ${r5.atcState}${r5.atcSuccessor ? ` -> ${r5.atcSuccessor}` : ""}]` : "";
+        return `${i5 + 1}. **${r5.name}**  [${r5.appComponent || r5.module || "-"}]  (score ${r5.score.toFixed(1)})${devExtNote}${atcNote}
    ${desc}
    path: ${r5.path}`;
       });
@@ -191842,9 +191850,9 @@ ${lines.join("\n")}` }],
       },
       outputSchema: external_exports.object({
         name: external_exports.string(),
-        fieldMatches: external_exports.array(external_exports.object({ view: external_exports.string(), isKey: external_exports.boolean(), appComponent: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable() })),
-        tableMatches: external_exports.array(external_exports.object({ view: external_exports.string(), relation: external_exports.string(), alias: external_exports.string().nullable(), appComponent: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable() })),
-        rawMatches: external_exports.array(external_exports.object({ view: external_exports.string(), field: external_exports.string(), isKey: external_exports.boolean(), appComponent: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable() }))
+        fieldMatches: external_exports.array(external_exports.object({ view: external_exports.string(), isKey: external_exports.boolean(), appComponent: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable(), atcState: external_exports.string().nullable(), atcSuccessor: external_exports.string().nullable() })),
+        tableMatches: external_exports.array(external_exports.object({ view: external_exports.string(), relation: external_exports.string(), alias: external_exports.string().nullable(), appComponent: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable(), atcState: external_exports.string().nullable(), atcSuccessor: external_exports.string().nullable() })),
+        rawMatches: external_exports.array(external_exports.object({ view: external_exports.string(), field: external_exports.string(), isKey: external_exports.boolean(), appComponent: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable(), atcState: external_exports.string().nullable(), atcSuccessor: external_exports.string().nullable() }))
       })
     },
     async ({ name, limit = 30 }) => {
@@ -191896,9 +191904,9 @@ ${lines.join("\n")}` + (rawMatches.length > shown.length ? `
       }
       const structured = {
         name: key,
-        fieldMatches: fieldMatches.map((m3) => ({ view: m3.view, isKey: !!m3.isKey, appComponent: m3.appComponent ?? null, devExtStatus: m3.devExtStatus ?? null })),
-        tableMatches: tableMatches.map((m3) => ({ view: m3.view, relation: m3.relation, alias: m3.alias ?? null, appComponent: m3.appComponent ?? null, devExtStatus: m3.devExtStatus ?? null })),
-        rawMatches: rawMatches.map((m3) => ({ view: m3.view, field: m3.field, isKey: !!m3.isKey, appComponent: m3.appComponent ?? null, devExtStatus: m3.devExtStatus ?? null }))
+        fieldMatches: fieldMatches.map((m3) => ({ view: m3.view, isKey: !!m3.isKey, appComponent: m3.appComponent ?? null, devExtStatus: m3.devExtStatus ?? null, atcState: m3.atcState ?? null, atcSuccessor: m3.atcSuccessor ?? null })),
+        tableMatches: tableMatches.map((m3) => ({ view: m3.view, relation: m3.relation, alias: m3.alias ?? null, appComponent: m3.appComponent ?? null, devExtStatus: m3.devExtStatus ?? null, atcState: m3.atcState ?? null, atcSuccessor: m3.atcSuccessor ?? null })),
+        rawMatches: rawMatches.map((m3) => ({ view: m3.view, field: m3.field, isKey: !!m3.isKey, appComponent: m3.appComponent ?? null, devExtStatus: m3.devExtStatus ?? null, atcState: m3.atcState ?? null, atcSuccessor: m3.atcSuccessor ?? null }))
       };
       return {
         content: [{ type: "text", text: `Results for "${name}":
@@ -191921,8 +191929,8 @@ Use get_cds_view(name) to read any of these.` }],
       },
       outputSchema: external_exports.object({
         name: external_exports.string(),
-        dependsOn: external_exports.array(external_exports.object({ target: external_exports.string(), relation: external_exports.string(), alias: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable() })),
-        dependents: external_exports.array(external_exports.object({ view: external_exports.string(), relation: external_exports.string(), alias: external_exports.string().nullable(), appComponent: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable() }))
+        dependsOn: external_exports.array(external_exports.object({ target: external_exports.string(), relation: external_exports.string(), alias: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable(), atcState: external_exports.string().nullable(), atcSuccessor: external_exports.string().nullable() })),
+        dependents: external_exports.array(external_exports.object({ view: external_exports.string(), relation: external_exports.string(), alias: external_exports.string().nullable(), appComponent: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable(), atcState: external_exports.string().nullable(), atcSuccessor: external_exports.string().nullable() }))
       })
     },
     async ({ name, limit = 30 }) => {
@@ -191948,12 +191956,19 @@ Use get_cds_view(name) to read any of these.` }],
           structuredContent: { name: key, dependsOn: [], dependents: [] }
         };
       }
-      const dependsOnDevExt = (target) => docsByName.get(String(target).toUpperCase())?.devExtStatus ?? null;
+      const releaseSignalsOf = (target) => {
+        const doc = docsByName.get(String(target).toUpperCase());
+        return { devExtStatus: doc?.devExtStatus ?? null, atcState: doc?.atcState ?? null, atcSuccessor: doc?.atcSuccessor ?? null };
+      };
       const parts = [];
       if (dependsOn.length > 0) {
         const lines = dependsOn.map((d5) => {
-          const devExt = dependsOnDevExt(d5.target);
-          return `- **${d5.target}** (${d5.relation === "source" ? "FROM" : `via \`${d5.alias}\``})${devExt ? `  [dev-ext: ${devExt}]` : ""}`;
+          const sig = releaseSignalsOf(d5.target);
+          const notes = [
+            sig.devExtStatus ? `dev-ext: ${sig.devExtStatus}` : "",
+            sig.atcState ? `atc: ${sig.atcState}${sig.atcSuccessor ? ` -> ${sig.atcSuccessor}` : ""}` : ""
+          ].filter(Boolean).join(", ");
+          return `- **${d5.target}** (${d5.relation === "source" ? "FROM" : `via \`${d5.alias}\``})${notes ? `  [${notes}]` : ""}`;
         });
         parts.push(`## Depends on (${dependsOn.length})
 ${lines.join("\n")}`);
@@ -191967,8 +191982,8 @@ ${lines.join("\n")}` + (dependents.length > shown.length ? `
       }
       const structured = {
         name: key,
-        dependsOn: dependsOn.map((d5) => ({ target: d5.target, relation: d5.relation, alias: d5.alias ?? null, devExtStatus: dependsOnDevExt(d5.target) })),
-        dependents: dependents.map((m3) => ({ view: m3.view, relation: m3.relation, alias: m3.alias ?? null, appComponent: m3.appComponent ?? null, devExtStatus: m3.devExtStatus ?? null }))
+        dependsOn: dependsOn.map((d5) => ({ target: d5.target, relation: d5.relation, alias: d5.alias ?? null, ...releaseSignalsOf(d5.target) })),
+        dependents: dependents.map((m3) => ({ view: m3.view, relation: m3.relation, alias: m3.alias ?? null, appComponent: m3.appComponent ?? null, devExtStatus: m3.devExtStatus ?? null, atcState: m3.atcState ?? null, atcSuccessor: m3.atcSuccessor ?? null }))
       };
       return {
         content: [{ type: "text", text: `Dependencies for ${name}:
@@ -192047,6 +192062,9 @@ commit: ${info.commit}`
         devExtStatus: external_exports.enum(["released", "not_released"]).optional().describe(
           "Filter by SAP Developer Extensibility release state \u2014 see search_cds for why this is a separate axis from the general release state."
         ),
+        atcState: external_exports.enum(["released", "deprecated", "notToBeReleased"]).optional().describe(
+          "Filter by SAP's ABAP Cloud released-objects (ATC/Clean Core) state \u2014 see search_cds."
+        ),
         search_mode: external_exports.enum(["bm25", "hybrid"]).optional().describe("bm25 (default) or hybrid"),
         limit: external_exports.number().int().min(1).max(20).optional().describe("Max suggestions (default 5)")
       },
@@ -192060,14 +192078,16 @@ commit: ${info.commit}`
           appComponent: external_exports.string().nullable(),
           description: external_exports.string().nullable(),
           devExtStatus: external_exports.string().nullable(),
+          atcState: external_exports.string().nullable(),
+          atcSuccessor: external_exports.string().nullable(),
           path: external_exports.string()
         }))
       })
     },
-    async ({ query, module: module2, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, devExtStatus, search_mode = "bm25", limit = 5 }) => {
+    async ({ query, module: module2, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, devExtStatus, atcState, search_mode = "bm25", limit = 5 }) => {
       const resolvedModule = resolveModule(module2);
       const contains = (a5, b5) => (a5 || "").toLowerCase().includes((b5 || "").toLowerCase());
-      const facetFilter = (r5) => (!resolvedModule || (r5.module || "").toUpperCase() === resolvedModule) && (!lob || contains(r5.lob, lob)) && (!bo || contains(r5.bo, bo)) && (!accessControl || contains(r5.accessControl, accessControl)) && (!vdmViewType || contains(r5.vdmViewType, vdmViewType)) && (hasDdl === void 0 || !!r5.hasDdl === hasDdl) && (!sourceKind || (r5.sourceKind || "public").toLowerCase() === sourceKind.toLowerCase()) && (!devExtStatus || r5.devExtStatus === devExtStatus) && !r5.isAbstract && r5.releaseState !== "unverified";
+      const facetFilter = (r5) => (!resolvedModule || (r5.module || "").toUpperCase() === resolvedModule) && (!lob || contains(r5.lob, lob)) && (!bo || contains(r5.bo, bo)) && (!accessControl || contains(r5.accessControl, accessControl)) && (!vdmViewType || contains(r5.vdmViewType, vdmViewType)) && (hasDdl === void 0 || !!r5.hasDdl === hasDdl) && (!sourceKind || (r5.sourceKind || "public").toLowerCase() === sourceKind.toLowerCase()) && (!devExtStatus || r5.devExtStatus === devExtStatus) && (!atcState || r5.atcState === atcState) && !r5.isAbstract && r5.releaseState !== "unverified";
       const results = await rankedSearch(query, { filter: facetFilter, limit, searchMode: search_mode });
       const structured = {
         query,
@@ -192079,6 +192099,8 @@ commit: ${info.commit}`
           appComponent: r5.appComponent ?? null,
           description: r5.semanticDescription || r5.description || null,
           devExtStatus: r5.devExtStatus ?? null,
+          atcState: r5.atcState ?? null,
+          atcSuccessor: r5.atcSuccessor ?? null,
           path: r5.path
         }))
       };
@@ -192093,6 +192115,7 @@ commit: ${info.commit}`
         if (r5.hasDdl) reasons.push("has DDL");
         if (r5.sourceKind === "private") reasons.push("private-overlay");
         if (r5.devExtStatus) reasons.push(`dev-ext: ${r5.devExtStatus}`);
+        if (r5.atcState) reasons.push(`atc: ${r5.atcState}${r5.atcSuccessor ? ` -> ${r5.atcSuccessor}` : ""}`);
         const why = reasons.length ? ` \u2014 ${reasons.join(", ")}` : "";
         const desc = r5.semanticDescription || r5.description || "";
         return `${i5 + 1}. **${r5.name}**  [${r5.appComponent || r5.module || "-"}]  (score ${r5.score.toFixed(1)})${why}
@@ -192112,7 +192135,7 @@ Next: compose_query or generate_cds_view with views[0].name = the pick above.`
       };
     }
   );
-  function devExtWarnings(args) {
+  function releaseSignalWarnings(args) {
     const names = /* @__PURE__ */ new Set();
     if (args.baseView) names.add(args.baseView);
     for (const v of args.views || []) {
@@ -192130,6 +192153,12 @@ Next: compose_query or generate_cds_view with views[0].name = the pick above.`
       } else if (!status && doc) {
         unknown2.push(name);
       }
+      if (doc?.atcState === "deprecated" || doc?.atcState === "notToBeReleased") {
+        const successorNote = doc.atcSuccessor ? ` SAP names \`${doc.atcSuccessor}\` as the successor \u2014 use that instead.` : "";
+        warnings.push(
+          `SAP ATC/Clean Core: ${name} is "${doc.atcState}" on SAP's own ABAP Cloud released-objects list (independent of Developer Extensibility status above).${successorNote}`
+        );
+      }
     }
     if (unknown2.length) {
       warnings.push(
@@ -192142,7 +192171,7 @@ Next: compose_query or generate_cds_view with views[0].name = the pick above.`
     "compose_query",
     {
       title: "Compose OpenSQL + CDS view skeleton",
-      description: 'Build OpenSQL SELECT and a CDS define view entity skeleton from a structured query object (same shape as the Query Builder share JSON: views[], select, where, groupBy, having, orderBy, viewName). Warns when any views[].name is SAP-confirmed "Not Released" for Developer Extensibility (would fail ADT activation in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view) or has no such signal in this KB.',
+      description: `Build OpenSQL SELECT and a CDS define view entity skeleton from a structured query object (same shape as the Query Builder share JSON: views[], select, where, groupBy, having, orderBy, viewName). Warns when any views[].name is SAP-confirmed "Not Released" for Developer Extensibility (would fail ADT activation in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view), has no such signal in this KB, or is deprecated/notToBeReleased on SAP's own ABAP Cloud released-objects list (names a successor when SAP does).`,
       inputSchema: {
         views: external_exports.array(external_exports.object({
           alias: external_exports.string().optional(),
@@ -192168,7 +192197,7 @@ Next: compose_query or generate_cds_view with views[0].name = the pick above.`
     },
     async (args) => {
       const result = composeQuery(args);
-      const warnings = [...devExtWarnings(args), ...result.warnings];
+      const warnings = [...releaseSignalWarnings(args), ...result.warnings];
       const parts = [];
       if (warnings.length) parts.push("## Warnings\n" + warnings.map((w) => `- ${w}`).join("\n"));
       if (result.openSql) parts.push("## OpenSQL\n```sql\n" + result.openSql + "\n```");
@@ -192184,7 +192213,7 @@ Next: compose_query or generate_cds_view with views[0].name = the pick above.`
     "generate_cds_view",
     {
       title: "Generate a CDS view entity DDL skeleton",
-      description: 'Generate annotated CDS DDL (@AccessControl, @EndUserText.label + define view entity) from a base view or the same structured views[] used by compose_query. Does not invent field lists from Hub metadata alone \u2014 pass select/where yourself. Validate with validate_cds_ddl next. Warns when baseView/views[].name is SAP-confirmed "Not Released" for Developer Extensibility or has no such signal in this KB.',
+      description: "Generate annotated CDS DDL (@AccessControl, @EndUserText.label + define view entity) from a base view or the same structured views[] used by compose_query. Does not invent field lists from Hub metadata alone \u2014 pass select/where yourself. Validate with validate_cds_ddl next. Same Developer Extensibility / SAP ATC release-signal warnings as compose_query.",
       inputSchema: {
         name: external_exports.string().optional().describe("New view name (default Z_MyView)"),
         label: external_exports.string().optional(),
@@ -192213,7 +192242,7 @@ Next: compose_query or generate_cds_view with views[0].name = the pick above.`
     },
     async (args) => {
       const result = generateCdsView(args);
-      const warnings = [...devExtWarnings(args), ...result.warnings];
+      const warnings = [...releaseSignalWarnings(args), ...result.warnings];
       const parts = [];
       if (warnings.length) parts.push("## Warnings\n" + warnings.map((w) => `- ${w}`).join("\n"));
       if (result.ddl) parts.push("## DDL\n```abap\n" + result.ddl + "\n```");

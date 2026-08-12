@@ -4,6 +4,7 @@ description: "Ddcds Type Enumval Numc 1 Scp"
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released
+atc_state: released
 clean_core_level: A
 system_type: public_cloud
 source_available: true

@@ -39,6 +39,22 @@ function devExtStatusLabel(status) {
   return map[status.toLowerCase()] || status;
 }
 
+// atc_state is a THIRD, independent axis from both release_state and
+// dev_ext_status — SAP's own ABAP Cloud "released objects" list (the same
+// public dataset ATC/Clean Core checks use), a second opinion specifically
+// on release/deprecation that also names a concrete successor object when
+// one exists (atc_successor), which neither of the other two signals do.
+// Absent means this KB has no signal — not "released", not "deprecated".
+function atcStateLabel(state) {
+  if (!state) return null;
+  const map = {
+    'released': 'Released',
+    'deprecated': 'Deprecated',
+    'nottobereleased': 'Not To Be Released',
+  };
+  return map[state.toLowerCase()] || state;
+}
+
 // ── YAML frontmatter ────────────────────────────────────────────────────────
 
 // Free-text fields (Hub descriptions, synthesized semantic_en/vi, keywords)
@@ -82,6 +98,14 @@ export function renderFrontmatter(view) {
   // never confused with a fetched "not_released" value.
   if (view.devExtStatus) {
     frontmatter.push(`dev_ext_status: ${view.devExtStatus}`);
+  }
+  // Third, independent axis — see atcStateLabel() above. Same
+  // omit-when-unknown convention as dev_ext_status.
+  if (view.atcState) {
+    frontmatter.push(`atc_state: ${view.atcState}`);
+  }
+  if (view.atcSuccessor) {
+    frontmatter.push(`atc_successor: ${view.atcSuccessor}`);
   }
 
   if (view.cleanCoreLevel) {
@@ -137,6 +161,11 @@ function renderPropertyTable(view) {
     // depth under views/ (one folder per app_component segment), so no
     // single relative path back to hook/ would be correct for all of them.
     rows.push(`| Release State (Developer Extensibility) | ${devExtLabel} — separate from "Release State" above; see [dev-ext check procedure](https://github.com/StormShynn/cds-kb-data-kit/blob/main/docs/product/cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md) before \`association to\`/\`select from\` this entity in custom ABAP Developer Extensibility CDS views |`);
+  }
+  const atcLabel = atcStateLabel(view.atcState);
+  if (atcLabel) {
+    const successorNote = view.atcSuccessor ? ` — SAP names \`${view.atcSuccessor}\` as the successor to use instead` : '';
+    rows.push(`| Release State (SAP ATC / Clean Core) | ${atcLabel}${successorNote} — a third, independent signal from SAP's ABAP Cloud released-objects list |`);
   }
   if (view.systemType) {
     rows.push(`| System Type | ${view.systemType} |`);

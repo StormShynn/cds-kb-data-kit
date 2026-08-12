@@ -4,6 +4,7 @@ description: "Commscenariohdr (Query)"
 app_component: CA-GTF-GEM
 software_component: INFRA_HOME
 release_state: released
+atc_state: released
 clean_core_level: A
 system_type: public_cloud
 source_available: true

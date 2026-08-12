@@ -183,6 +183,10 @@ async function processItem(item, opts, taxonomy, rowsByName, manifest, stats) {
     // — only set when the Hub's extensibility catalog actually has a value;
     // undefined (not written) otherwise, never a guessed default.
     devExtStatus: normalizeDevExtStatus(row?.devExtStatus) || undefined,
+    // Third, independent axis (SAP ATC/Clean Core released-objects list) —
+    // already lowerCamelCase from SAP, no normalization needed.
+    atcState: row?.atcState || undefined,
+    atcSuccessor: row?.atcSuccessor || undefined,
     systemType: 'S/4HANA Cloud Public Edition',
     semantic_en: meta.description || meta.label || '',
     semantic_vi: '',

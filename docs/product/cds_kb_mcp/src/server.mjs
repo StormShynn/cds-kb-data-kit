@@ -296,7 +296,7 @@ function refreshIndexPeriodically(intervalMs) {
   }, intervalMs);
 }
 
-const SERVER_VERSION = '2.1.0';
+const SERVER_VERSION = '2.2.0';
 const SERVER_INSTRUCTIONS =
   `This is cds-kb-mcp v${SERVER_VERSION}, built by StormShyn. ` +
   'The first time you use a tool from this server in a conversation, briefly mention to the user ' +
@@ -348,7 +348,9 @@ function createServer() {
         '"can I `association to`/`select from` this entity in a custom Developer Extensibility CDS view" — ' +
         'a view being "released" in general (returned by this search at all) does NOT imply devExtStatus is ' +
         '"released" too; they are independent. devExtStatus null means this KB has no signal either way — ' +
-        'verify with the ADT compiler/content-assist before using such a view in a Developer Extensibility DDL.',
+        'verify with the ADT compiler/content-assist before using such a view in a Developer Extensibility DDL. ' +
+        'atcState/atcSuccessor are a THIRD, independent signal from SAP\'s own ABAP Cloud released-objects list — ' +
+        'when atcState is "deprecated" or "notToBeReleased", atcSuccessor (if set) names the concrete replacement view.',
       inputSchema: {
         query: z.string().describe('Natural-language or keyword query, e.g. "overdue customer invoices"'),
         module: z.string().optional().describe('Module filter — code (FI, SD, MM) or name ("Finance", "Procurement")'),
@@ -362,6 +364,9 @@ function createServer() {
           'Filter by SAP Developer Extensibility release state (ReleaseStateDeveloperExtensibility) — ' +
           'NOT the same as the general release state. Use "released" to only get views confirmed usable ' +
           'via `association to`/`select from` in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view.'
+        ),
+        atcState: z.enum(['released', 'deprecated', 'notToBeReleased']).optional().describe(
+          'Filter by SAP\'s ABAP Cloud released-objects (ATC/Clean Core) state — a third, independent signal.'
         ),
         search_mode: z.enum(['bm25', 'hybrid']).optional().describe('bm25 (default) or hybrid (BM25 + embeddings when available)'),
         limit: z.number().int().min(1).max(50).optional().describe('Max results (default 10)'),
@@ -377,11 +382,13 @@ function createServer() {
           bo: z.string().nullable(),
           description: z.string().nullable(),
           devExtStatus: z.string().nullable(),
+          atcState: z.string().nullable(),
+          atcSuccessor: z.string().nullable(),
           path: z.string(),
         })),
       }),
     },
-    async ({ query, module, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, devExtStatus, search_mode = 'bm25', limit = 10 }) => {
+    async ({ query, module, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, devExtStatus, atcState, search_mode = 'bm25', limit = 10 }) => {
       const resolvedModule = resolveModule(module);
       const contains = (a, b) => (a || '').toLowerCase().includes((b || '').toLowerCase());
       const facetFilter = (r) =>
@@ -392,7 +399,8 @@ function createServer() {
         (!vdmViewType || contains(r.vdmViewType, vdmViewType)) &&
         (hasDdl === undefined || !!r.hasDdl === hasDdl) &&
         (!sourceKind || (r.sourceKind || 'public').toLowerCase() === sourceKind.toLowerCase()) &&
-        (!devExtStatus || r.devExtStatus === devExtStatus);
+        (!devExtStatus || r.devExtStatus === devExtStatus) &&
+        (!atcState || r.atcState === atcState);
 
       const results = await rankedSearch(query, { filter: facetFilter, limit, searchMode: search_mode });
       const structured = {
@@ -406,6 +414,8 @@ function createServer() {
           bo: r.bo ?? null,
           description: r.semanticDescription || r.description || null,
           devExtStatus: r.devExtStatus ?? null,
+          atcState: r.atcState ?? null,
+          atcSuccessor: r.atcSuccessor ?? null,
           path: r.path,
         })),
       };
@@ -416,7 +426,8 @@ function createServer() {
       const lines = results.map((r, i) => {
         const desc = r.semanticDescription || r.description || '';
         const devExtNote = r.devExtStatus ? `  [dev-ext: ${r.devExtStatus}]` : '';
-        return `${i + 1}. **${r.name}**  [${r.appComponent || r.module || '-'}]  (score ${r.score.toFixed(1)})${devExtNote}\n   ${desc}\n   path: ${r.path}`;
+        const atcNote = r.atcState ? `  [atc: ${r.atcState}${r.atcSuccessor ? ` -> ${r.atcSuccessor}` : ''}]` : '';
+        return `${i + 1}. **${r.name}**  [${r.appComponent || r.module || '-'}]  (score ${r.score.toFixed(1)})${devExtNote}${atcNote}\n   ${desc}\n   path: ${r.path}`;
       });
       return {
         content: [{ type: 'text', text: `Top ${results.length} CDS views for "${query}":\n\n${lines.join('\n')}\n\nUse get_cds_view(name) to read the full definition, or get_cds_view(name, sections) for specific parts.` }],
@@ -603,9 +614,9 @@ function createServer() {
       },
       outputSchema: z.object({
         name: z.string(),
-        fieldMatches: z.array(z.object({ view: z.string(), isKey: z.boolean(), appComponent: z.string().nullable(), devExtStatus: z.string().nullable() })),
-        tableMatches: z.array(z.object({ view: z.string(), relation: z.string(), alias: z.string().nullable(), appComponent: z.string().nullable(), devExtStatus: z.string().nullable() })),
-        rawMatches: z.array(z.object({ view: z.string(), field: z.string(), isKey: z.boolean(), appComponent: z.string().nullable(), devExtStatus: z.string().nullable() })),
+        fieldMatches: z.array(z.object({ view: z.string(), isKey: z.boolean(), appComponent: z.string().nullable(), devExtStatus: z.string().nullable(), atcState: z.string().nullable(), atcSuccessor: z.string().nullable() })),
+        tableMatches: z.array(z.object({ view: z.string(), relation: z.string(), alias: z.string().nullable(), appComponent: z.string().nullable(), devExtStatus: z.string().nullable(), atcState: z.string().nullable(), atcSuccessor: z.string().nullable() })),
+        rawMatches: z.array(z.object({ view: z.string(), field: z.string(), isKey: z.boolean(), appComponent: z.string().nullable(), devExtStatus: z.string().nullable(), atcState: z.string().nullable(), atcSuccessor: z.string().nullable() })),
       }),
     },
     async ({ name, limit = 30 }) => {
@@ -675,9 +686,9 @@ function createServer() {
 
       const structured = {
         name: key,
-        fieldMatches: fieldMatches.map((m) => ({ view: m.view, isKey: !!m.isKey, appComponent: m.appComponent ?? null, devExtStatus: m.devExtStatus ?? null })),
-        tableMatches: tableMatches.map((m) => ({ view: m.view, relation: m.relation, alias: m.alias ?? null, appComponent: m.appComponent ?? null, devExtStatus: m.devExtStatus ?? null })),
-        rawMatches: rawMatches.map((m) => ({ view: m.view, field: m.field, isKey: !!m.isKey, appComponent: m.appComponent ?? null, devExtStatus: m.devExtStatus ?? null })),
+        fieldMatches: fieldMatches.map((m) => ({ view: m.view, isKey: !!m.isKey, appComponent: m.appComponent ?? null, devExtStatus: m.devExtStatus ?? null, atcState: m.atcState ?? null, atcSuccessor: m.atcSuccessor ?? null })),
+        tableMatches: tableMatches.map((m) => ({ view: m.view, relation: m.relation, alias: m.alias ?? null, appComponent: m.appComponent ?? null, devExtStatus: m.devExtStatus ?? null, atcState: m.atcState ?? null, atcSuccessor: m.atcSuccessor ?? null })),
+        rawMatches: rawMatches.map((m) => ({ view: m.view, field: m.field, isKey: !!m.isKey, appComponent: m.appComponent ?? null, devExtStatus: m.devExtStatus ?? null, atcState: m.atcState ?? null, atcSuccessor: m.atcSuccessor ?? null })),
       };
       return {
         content: [{ type: 'text', text: `Results for "${name}":\n\n${parts.join('\n\n')}\n\nUse get_cds_view(name) to read any of these.` }],
@@ -703,8 +714,8 @@ function createServer() {
       },
       outputSchema: z.object({
         name: z.string(),
-        dependsOn: z.array(z.object({ target: z.string(), relation: z.string(), alias: z.string().nullable(), devExtStatus: z.string().nullable() })),
-        dependents: z.array(z.object({ view: z.string(), relation: z.string(), alias: z.string().nullable(), appComponent: z.string().nullable(), devExtStatus: z.string().nullable() })),
+        dependsOn: z.array(z.object({ target: z.string(), relation: z.string(), alias: z.string().nullable(), devExtStatus: z.string().nullable(), atcState: z.string().nullable(), atcSuccessor: z.string().nullable() })),
+        dependents: z.array(z.object({ view: z.string(), relation: z.string(), alias: z.string().nullable(), appComponent: z.string().nullable(), devExtStatus: z.string().nullable(), atcState: z.string().nullable(), atcSuccessor: z.string().nullable() })),
       }),
     },
     async ({ name, limit = 30 }) => {
@@ -736,16 +747,23 @@ function createServer() {
       }
 
       // dependsOn targets come from parsing this view's own DDL text, not
-      // from the index — devExtStatus is looked up separately via
+      // from the index — release signals are looked up separately via
       // docsByName so callers can see, per association target, whether it's
       // safe to keep in a custom Developer Extensibility CDS view.
-      const dependsOnDevExt = (target) => docsByName.get(String(target).toUpperCase())?.devExtStatus ?? null;
+      const releaseSignalsOf = (target) => {
+        const doc = docsByName.get(String(target).toUpperCase());
+        return { devExtStatus: doc?.devExtStatus ?? null, atcState: doc?.atcState ?? null, atcSuccessor: doc?.atcSuccessor ?? null };
+      };
 
       const parts = [];
       if (dependsOn.length > 0) {
         const lines = dependsOn.map((d) => {
-          const devExt = dependsOnDevExt(d.target);
-          return `- **${d.target}** (${d.relation === 'source' ? 'FROM' : `via \`${d.alias}\``})${devExt ? `  [dev-ext: ${devExt}]` : ''}`;
+          const sig = releaseSignalsOf(d.target);
+          const notes = [
+            sig.devExtStatus ? `dev-ext: ${sig.devExtStatus}` : '',
+            sig.atcState ? `atc: ${sig.atcState}${sig.atcSuccessor ? ` -> ${sig.atcSuccessor}` : ''}` : '',
+          ].filter(Boolean).join(', ');
+          return `- **${d.target}** (${d.relation === 'source' ? 'FROM' : `via \`${d.alias}\``})${notes ? `  [${notes}]` : ''}`;
         });
         parts.push(`## Depends on (${dependsOn.length})\n${lines.join('\n')}`);
       }
@@ -758,8 +776,8 @@ function createServer() {
 
       const structured = {
         name: key,
-        dependsOn: dependsOn.map((d) => ({ target: d.target, relation: d.relation, alias: d.alias ?? null, devExtStatus: dependsOnDevExt(d.target) })),
-        dependents: dependents.map((m) => ({ view: m.view, relation: m.relation, alias: m.alias ?? null, appComponent: m.appComponent ?? null, devExtStatus: m.devExtStatus ?? null })),
+        dependsOn: dependsOn.map((d) => ({ target: d.target, relation: d.relation, alias: d.alias ?? null, ...releaseSignalsOf(d.target) })),
+        dependents: dependents.map((m) => ({ view: m.view, relation: m.relation, alias: m.alias ?? null, appComponent: m.appComponent ?? null, devExtStatus: m.devExtStatus ?? null, atcState: m.atcState ?? null, atcSuccessor: m.atcSuccessor ?? null })),
       };
       return {
         content: [{ type: 'text', text: `Dependencies for ${name}:\n\n${parts.join('\n\n')}\n\nUse get_cds_view(name) to read any of these.` }],
@@ -844,6 +862,9 @@ function createServer() {
           'Filter by SAP Developer Extensibility release state — see search_cds for why this is a ' +
           'separate axis from the general release state.'
         ),
+        atcState: z.enum(['released', 'deprecated', 'notToBeReleased']).optional().describe(
+          'Filter by SAP\'s ABAP Cloud released-objects (ATC/Clean Core) state — see search_cds.'
+        ),
         search_mode: z.enum(['bm25', 'hybrid']).optional().describe('bm25 (default) or hybrid'),
         limit: z.number().int().min(1).max(20).optional().describe('Max suggestions (default 5)'),
       },
@@ -857,11 +878,13 @@ function createServer() {
           appComponent: z.string().nullable(),
           description: z.string().nullable(),
           devExtStatus: z.string().nullable(),
+          atcState: z.string().nullable(),
+          atcSuccessor: z.string().nullable(),
           path: z.string(),
         })),
       }),
     },
-    async ({ query, module, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, devExtStatus, search_mode = 'bm25', limit = 5 }) => {
+    async ({ query, module, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, devExtStatus, atcState, search_mode = 'bm25', limit = 5 }) => {
       const resolvedModule = resolveModule(module);
       const contains = (a, b) => (a || '').toLowerCase().includes((b || '').toLowerCase());
       const facetFilter = (r) =>
@@ -873,6 +896,7 @@ function createServer() {
         (hasDdl === undefined || !!r.hasDdl === hasDdl) &&
         (!sourceKind || (r.sourceKind || 'public').toLowerCase() === sourceKind.toLowerCase()) &&
         (!devExtStatus || r.devExtStatus === devExtStatus) &&
+        (!atcState || r.atcState === atcState) &&
         !r.isAbstract &&
         r.releaseState !== 'unverified';
 
@@ -887,6 +911,8 @@ function createServer() {
           appComponent: r.appComponent ?? null,
           description: r.semanticDescription || r.description || null,
           devExtStatus: r.devExtStatus ?? null,
+          atcState: r.atcState ?? null,
+          atcSuccessor: r.atcSuccessor ?? null,
           path: r.path,
         })),
       };
@@ -901,6 +927,7 @@ function createServer() {
         if (r.hasDdl) reasons.push('has DDL');
         if (r.sourceKind === 'private') reasons.push('private-overlay');
         if (r.devExtStatus) reasons.push(`dev-ext: ${r.devExtStatus}`);
+        if (r.atcState) reasons.push(`atc: ${r.atcState}${r.atcSuccessor ? ` -> ${r.atcSuccessor}` : ''}`);
         const why = reasons.length ? ` — ${reasons.join(', ')}` : '';
         const desc = r.semanticDescription || r.description || '';
         return `${i + 1}. **${r.name}**  [${r.appComponent || r.module || '-'}]  (score ${r.score.toFixed(1)})${why}\n   ${desc}\n   path: ${r.path}`;
@@ -915,14 +942,15 @@ function createServer() {
     },
   );
 
-  // Developer Extensibility check for compose_query/generate_cds_view: looks
-  // up each referenced view's devExtStatus (docsByName — the loaded index's
-  // per-view stored fields, see enrich_index.mjs) and turns a SAP-confirmed
-  // "not_released" into an actionable warning instead of letting the DDL get
-  // generated silently and fail ADT activation later. See
+  // Release-signal check for compose_query/generate_cds_view: looks up each
+  // referenced view's devExtStatus AND atcState (docsByName — the loaded
+  // index's per-view stored fields, see enrich_index.mjs) and turns a
+  // SAP-confirmed problem into an actionable warning instead of letting the
+  // DDL get generated silently and fail ADT activation (or build on a
+  // deprecated object) later. See
   // hook/quy-trinh-check-cds-released-developer-extensibility.md for why
-  // this can't be inferred from the general release_state alone.
-  function devExtWarnings(args) {
+  // neither signal can be inferred from the general release_state alone.
+  function releaseSignalWarnings(args) {
     const names = new Set();
     if (args.baseView) names.add(args.baseView);
     for (const v of args.views || []) {
@@ -942,6 +970,13 @@ function createServer() {
         );
       } else if (!status && doc) {
         unknown.push(name);
+      }
+      if (doc?.atcState === 'deprecated' || doc?.atcState === 'notToBeReleased') {
+        const successorNote = doc.atcSuccessor ? ` SAP names \`${doc.atcSuccessor}\` as the successor — use that instead.` : '';
+        warnings.push(
+          `SAP ATC/Clean Core: ${name} is "${doc.atcState}" on SAP's own ABAP Cloud released-objects list ` +
+          `(independent of Developer Extensibility status above).${successorNote}`
+        );
       }
     }
     if (unknown.length) {
@@ -963,7 +998,8 @@ function createServer() {
         'Build OpenSQL SELECT and a CDS define view entity skeleton from a structured query object ' +
         '(same shape as the Query Builder share JSON: views[], select, where, groupBy, having, orderBy, viewName). ' +
         'Warns when any views[].name is SAP-confirmed "Not Released" for Developer Extensibility (would fail ADT ' +
-        'activation in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view) or has no such signal in this KB.',
+        'activation in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view), has no such signal in this KB, ' +
+        'or is deprecated/notToBeReleased on SAP\'s own ABAP Cloud released-objects list (names a successor when SAP does).',
       inputSchema: {
         views: z.array(z.object({
           alias: z.string().optional(),
@@ -989,7 +1025,7 @@ function createServer() {
     },
     async (args) => {
       const result = composeQuery(args);
-      const warnings = [...devExtWarnings(args), ...result.warnings];
+      const warnings = [...releaseSignalWarnings(args), ...result.warnings];
       const parts = [];
       if (warnings.length) parts.push('## Warnings\n' + warnings.map((w) => `- ${w}`).join('\n'));
       if (result.openSql) parts.push('## OpenSQL\n```sql\n' + result.openSql + '\n```');
@@ -1010,8 +1046,8 @@ function createServer() {
       description:
         'Generate annotated CDS DDL (@AccessControl, @EndUserText.label + define view entity) from a base view ' +
         'or the same structured views[] used by compose_query. Does not invent field lists from Hub metadata alone — ' +
-        'pass select/where yourself. Validate with validate_cds_ddl next. Warns when baseView/views[].name is ' +
-        'SAP-confirmed "Not Released" for Developer Extensibility or has no such signal in this KB.',
+        'pass select/where yourself. Validate with validate_cds_ddl next. Same Developer Extensibility / ' +
+        'SAP ATC release-signal warnings as compose_query.',
       inputSchema: {
         name: z.string().optional().describe('New view name (default Z_MyView)'),
         label: z.string().optional(),
@@ -1040,7 +1076,7 @@ function createServer() {
     },
     async (args) => {
       const result = generateCdsView(args);
-      const warnings = [...devExtWarnings(args), ...result.warnings];
+      const warnings = [...releaseSignalWarnings(args), ...result.warnings];
       const parts = [];
       if (warnings.length) parts.push('## Warnings\n' + warnings.map((w) => `- ${w}`).join('\n'));
       if (result.ddl) parts.push('## DDL\n```abap\n' + result.ddl + '\n```');

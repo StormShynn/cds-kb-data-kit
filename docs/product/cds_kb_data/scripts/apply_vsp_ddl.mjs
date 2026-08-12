@@ -172,7 +172,7 @@ async function main() {
     let existing = {
       appComponent: '', softwareComponent: '', cleanCoreLevel: '', systemType: '',
       description: '', semanticEn: '', semanticVi: '', sourceUrl: '', keywords: [], tags: [],
-      releaseState: '', devExtStatus: '',
+      releaseState: '', devExtStatus: '', atcState: '', atcSuccessor: '',
     };
     if (existingFile) {
       try {
@@ -189,10 +189,13 @@ async function main() {
           keywords: listBlock(fm, 'keywords'),
           tags: listBlock(fm, 'tags'),
           releaseState: scalar(fm, 'release_state'),
-          // Fetched separately (scripts/backfill-dev-ext-status.mjs / Hub
-          // extensibility catalog), never derived from DDL — always carry a
-          // pre-existing value through an upgrade rather than dropping it.
+          // Fetched separately (scripts/backfill-dev-ext-status.mjs /
+          // scripts/backfill-atc-state.mjs / Hub catalogs), never derived
+          // from DDL — always carry a pre-existing value through an
+          // upgrade rather than dropping it.
           devExtStatus: scalar(fm, 'dev_ext_status'),
+          atcState: scalar(fm, 'atc_state'),
+          atcSuccessor: scalar(fm, 'atc_successor'),
         };
       } catch { /* existingFile came from findExistingView, so this really shouldn't fail */ }
     }
@@ -242,6 +245,8 @@ async function main() {
       softwareComponent: existing.softwareComponent || 'SAPSCORE',
       releaseState,
       devExtStatus: existing.devExtStatus || undefined,
+      atcState: existing.atcState || undefined,
+      atcSuccessor: existing.atcSuccessor || undefined,
       cleanCoreLevel: existing.cleanCoreLevel || undefined,
       systemType: existing.systemType || 'S/4HANA Cloud Public Edition',
       semantic_en: existing.semanticEn || synthesis.semantic_en,

@@ -4,6 +4,7 @@ description: "Fcihome MA Analytic V 11"
 app_component: FI-CA-INV-2CL
 software_component: SAPPCORE_H
 release_state: released
+atc_state: released
 clean_core_level: A
 system_type: public_cloud
 source_available: true

@@ -4,6 +4,7 @@ description: "Decom 01 Fund"
 app_component: CA-EPT-TAS
 software_component: SAPPCORE_H
 release_state: released
+atc_state: released
 clean_core_level: A
 system_type: public_cloud
 source_available: true

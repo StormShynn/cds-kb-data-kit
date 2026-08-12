@@ -4,6 +4,7 @@ description: "Business PartnerTP 3"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released
+atc_state: released
 clean_core_level: A
 system_type: public_cloud
 source_available: true

@@ -4,6 +4,7 @@ description: "Financialtransactionnpvtp"
 app_component: FIN-FSCM-TRM-MR-2CL
 software_component: SAPSCORE
 release_state: released
+atc_state: released
 clean_core_level: A
 system_type: public_cloud
 source_available: true

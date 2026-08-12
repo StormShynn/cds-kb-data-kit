@@ -35,7 +35,7 @@ import path from 'node:path';
 import { listViewFiles } from './lib/view-files.mjs';
 import { runPool } from './lib/concurrency.mjs';
 import { escapeHtml } from './lib/html-escape.mjs';
-import { fetchExtensibilityMap } from './lib/hub-extensibility.mjs';
+import { fetchExtensibilityMap, fetchAtcReleaseMap } from './lib/hub-extensibility.mjs';
 
 // Same blob base as search.html / field-search.html — opens the KB .md on github.com.
 const GITHUB_BLOB_BASE = 'https://github.com/StormShynn/cds-kb-data-kit/blob/main/docs/product/cds_kb_data/';
@@ -56,12 +56,9 @@ const HUB_URL =
 // TechnicalName there (both already uppercase), so a plain Map join is
 // enough — no need for the one-request-per-view detail endpoint (hubMetadataUrl).
 
-// SAP's official ABAP Cloud released-objects list (public_cloud scope, which
-// matches this KB's default systemType — see add_hub_metadata.mjs). Plain
-// static JSON on GitHub, no auth, no rate-limit uncertainty like the Hub's
-// undocumented OData collection above.
-const ATC_RELEASE_URL =
-  'https://raw.githubusercontent.com/SAP/abap-atc-cr-cv-s4hc/main/src/objectReleaseInfoLatest.json';
+// fetchAtcReleaseMap (scripts/lib/hub-extensibility.mjs) cross-references
+// SAP's own ABAP Cloud "released objects" list — a second, independent
+// signal, plus a concrete successor object name when SAP's dataset names one.
 
 // Both Hub calls above already work with zero auth — confirmed empirically
 // (every run in this file's history) and, for EXT_URL's entity set
@@ -88,33 +85,6 @@ async function fetchHubCatalog() {
   });
   if (!resp.ok) throw new Error(`Hub catalog fetch failed (${resp.status})`);
   return await resp.json();
-}
-
-/**
- * Name -> "released" | "deprecated" | "notToBeReleased", for TADIR object
- * type DDLS (CDS view sources) only, sourced from ATC_RELEASE_URL. Same
- * never-throws contract as fetchExtensibilityMap — a cross-reference column,
- * not a dependency for the core counts.
- */
-async function fetchAtcReleaseMap() {
-  try {
-    const resp = await fetch(ATC_RELEASE_URL, {
-      headers: { 'User-Agent': 'cds-kb-mcp-coverage-check', Accept: 'application/json' },
-      signal: AbortSignal.timeout(120000),
-    });
-    if (!resp.ok) throw new Error(`ATC released-objects fetch failed (${resp.status})`);
-    const data = await resp.json();
-    const map = new Map();
-    for (const entry of data.objectReleaseInfo || []) {
-      if ((entry.tadirObject || '').toUpperCase() === 'DDLS' && entry.tadirObjName) {
-        map.set(entry.tadirObjName.toUpperCase(), entry.state);
-      }
-    }
-    return map;
-  } catch (err) {
-    console.error(`⚠️  ATC released-objects fetch failed, continuing without it: ${err.message}`);
-    return new Map();
-  }
 }
 
 /**
@@ -222,10 +192,11 @@ function buildReport(hubArtifacts, localInfo, manifest, extMap, atcMap) {
         // views still count as missing/full/metadata-only, this only feeds
         // the report's "Hide Dev-Ext: Not Released" toggle.
         devExtStatus: extMap.get(name) || null,
-        // Second, independent opinion on the same question (see ATC_RELEASE_URL
-        // above) — shown next to devExtStatus for cross-reference, never used
-        // to override it.
-        atcState: atcMap.get(name) || null,
+        // Second, independent opinion on the same question (see
+        // fetchAtcReleaseMap above) — shown next to devExtStatus for
+        // cross-reference, never used to override it.
+        atcState: atcMap.get(name)?.state || null,
+        atcSuccessor: atcMap.get(name)?.successor || null,
       };
     })
     .sort((a, b) => a.name.localeCompare(b.name));
