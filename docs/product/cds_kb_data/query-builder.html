@@ -206,7 +206,6 @@
     word-break: break-word;
   }
 
-  .save-panel { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--gridline); }
   .save-panel input[type=text] { width: 100%; margin-bottom: 8px; }
   .save-panel textarea { width: 100%; margin-top: 8px; }
   .save-panel .subhint { margin-top: 8px; }
@@ -336,8 +335,8 @@
        at all, and the same Save/Share/Generate-JSON actions serve both the
        structured builder above and a pasted note, so the whole panel needs
        to stay reachable either way. -->
-  <div class="save-panel">
-    <h2 style="font-size:13px;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.04em;margin:0 0 8px;">💾 Save this query</h2>
+  <div class="save-panel lib-section collapsed" id="savePanelSection">
+    <h2 id="savePanelToggle">💾 Save this query</h2>
     <p class="subhint" style="margin-top:0">Fill in a title, then <strong>Save</strong> to add it to "📚 Saved queries" above (this browser only). <strong>Share link</strong> copies a URL that carries this whole query, so whoever opens it lands on the builder already filled in. Use <strong>Generate JSON</strong> for the snippet to paste into <code>index/query-library.json</code> via a PR — that does not write to localStorage.</p>
     <textarea id="rawNoteInput" class="raw" rows="7" placeholder="…or paste your own ABAP/OpenSQL code here to save as a plain-text note instead — no view needs to be picked above. Useful for a query the builder can't represent (classic TABLE~FIELD syntax, parenthesized OR/AND, …):&#10;&#10;SELECT I_UNITOFMEASURETEXT~LANGUAGE, ...&#10;FROM I_UNITOFMEASURETEXT&#10;WHERE ( I_UNITOFMEASURETEXT~UNITOFMEASURE = 'Z01' OR ... )"></textarea>
     <p class="subhint" style="margin-top:0">When the box above has text, <strong>Save</strong> / <strong>Share link</strong> / <strong>Generate JSON</strong> below save exactly that text as a note (with the title/description you fill in) instead of whatever is picked above.</p>
@@ -433,6 +432,11 @@
 
   document.getElementById('libSectionToggle').addEventListener('click', () => {
     libSection.classList.toggle('collapsed');
+  });
+
+  const savePanelSection = document.getElementById('savePanelSection');
+  document.getElementById('savePanelToggle').addEventListener('click', () => {
+    savePanelSection.classList.toggle('collapsed');
   });
 
   function renderLibList() {
@@ -985,8 +989,9 @@
     const fields = allFields();
     el.innerHTML = fields.map(f => {
       const id = 'sel_' + f.qualifiedName;
-      const aggOpts = AGGS.map(a => '<option value="' + a + '">' + a + '</option>').join('');
-      return '<div class="field-item" data-name="' + escapeHtml(f.qualifiedName.toUpperCase()) + '"><input type="checkbox" id="' + id + '" data-field="' + escapeHtml(f.qualifiedName) + '" class="selChk" />' +
+      const state = selectState[f.qualifiedName] || { checked: false, agg: AGGS[0] };
+      const aggOpts = AGGS.map(a => '<option value="' + a + '"' + (a === state.agg ? ' selected' : '') + '>' + a + '</option>').join('');
+      return '<div class="field-item" data-name="' + escapeHtml(f.qualifiedName.toUpperCase()) + '"><input type="checkbox" id="' + id + '" data-field="' + escapeHtml(f.qualifiedName) + '" class="selChk"' + (state.checked ? ' checked' : '') + ' />' +
         '<label for="' + id + '" title="' + escapeHtml(f.source || f.qualifiedName) + '">' + escapeHtml(f.qualifiedName) + '</label>' +
         (f.isKey ? '<span class="key">key</span>' : '') +
         '<select id="agg_' + id + '" name="agg_' + id + '" data-field="' + escapeHtml(f.qualifiedName) + '" class="selAgg">' + aggOpts + '</select></div>';
@@ -1004,7 +1009,8 @@
     const fields = allFields();
     el.innerHTML = fields.map(f => {
       const id = 'grp_' + f.qualifiedName;
-      return '<div class="field-item" data-name="' + escapeHtml(f.qualifiedName.toUpperCase()) + '"><input type="checkbox" id="' + id + '" data-field="' + escapeHtml(f.qualifiedName) + '" class="grpChk" />' +
+      const checked = groupByState[f.qualifiedName] ? ' checked' : '';
+      return '<div class="field-item" data-name="' + escapeHtml(f.qualifiedName.toUpperCase()) + '"><input type="checkbox" id="' + id + '" data-field="' + escapeHtml(f.qualifiedName) + '" class="grpChk"' + checked + ' />' +
         '<label for="' + id + '">' + escapeHtml(f.qualifiedName) + '</label></div>';
     }).join('') || '<span style="color:var(--text-muted)">No parsed field list for this view yet.</span>';
     el.querySelectorAll('.grpChk').forEach(chk => chk.addEventListener('change', (e) => {
@@ -1573,6 +1579,106 @@ function composeQuery(q = {}) {
     }
   });
 
+  // ── Reconstructing structured builder state on load ──────────────────────
+  // "Load ↓" previously always dropped SELECT/WHERE/GROUP BY/HAVING/ORDER BY
+  // and manual JOINs into raw-text mode, even for a query that was built
+  // entirely from the structured pickers and saved in this tool's own exact
+  // serialization format (see currentQueryAsObject/conditionsText/joinOnText
+  // above). These parsers reconstruct that structured state so it re-opens
+  // editable — checkboxes ticked, condition rows filled in, JOIN ON
+  // dropdowns set — instead of a frozen text blob. Each one returns null the
+  // moment anything doesn't match the exact format this tool generates
+  // (a field this view no longer has, a parenthesized group, hand-typed
+  // free-form SQL, ...), and the caller falls back to raw-text mode exactly
+  // as before — never a partial or guessed structured state.
+  function unquoteSqlValue(raw) {
+    const v = (raw || '').trim();
+    const m = /^'((?:[^']|'')*)'$/.exec(v);
+    return m ? m[1].replace(/''/g, "'") : v;
+  }
+
+  function parseFieldList(text, fields, allowAgg) {
+    const t = (text || '').trim();
+    if (!t) return [];
+    const known = new Set(fields.map(f => f.qualifiedName));
+    const out = [];
+    for (const raw of t.split(',').map(s => s.trim()).filter(Boolean)) {
+      const aggMatch = allowAgg && /^([A-Z]+)\((.+)\)$/.exec(raw);
+      const agg = aggMatch ? aggMatch[1] : AGGS[0];
+      const name = aggMatch ? aggMatch[2].trim() : raw;
+      if (!known.has(name) || (aggMatch && !AGGS.includes(agg))) return null;
+      out.push({ qualifiedName: name, agg });
+    }
+    return out;
+  }
+
+  function parseConditionList(text, fields) {
+    const t = (text || '').trim();
+    if (!t) return [];
+    const known = new Set(fields.map(f => f.qualifiedName));
+    const lines = t.split('\n');
+    const out = [];
+    for (let i = 0; i < lines.length; i++) {
+      let line = lines[i].trim();
+      let joiner = 'AND';
+      if (i > 0) {
+        const jm = /^(AND|OR)\s+(.*)$/.exec(line);
+        if (!jm) return null;
+        joiner = jm[1];
+        line = jm[2].trim();
+      }
+      let m;
+      let cond;
+      if ((m = /^(.+?)\s+(IS NULL|IS NOT NULL)$/.exec(line))) {
+        cond = { field: m[1].trim(), op: m[2], value: '', value2: '', joiner };
+      } else if ((m = /^(.+?)\s+IN\s*\((.*)\)$/.exec(line))) {
+        cond = { field: m[1].trim(), op: 'IN', value: m[2].split(', ').map(unquoteSqlValue).join(','), value2: '', joiner };
+      } else if ((m = /^(.+?)\s+BETWEEN\s+(.+?)\s+AND\s+(.+)$/.exec(line))) {
+        cond = { field: m[1].trim(), op: 'BETWEEN', value: unquoteSqlValue(m[2]), value2: unquoteSqlValue(m[3]), joiner };
+      } else if ((m = /^(.+?)\s+(=|<>|>=|<=|>|<|LIKE|NOT LIKE)\s+(.+)$/.exec(line))) {
+        cond = { field: m[1].trim(), op: m[2], value: unquoteSqlValue(m[3]), value2: '', joiner };
+      } else {
+        return null;
+      }
+      if (!known.has(cond.field)) return null;
+      out.push(cond);
+    }
+    return out;
+  }
+
+  function parseOrderByList(text, fields) {
+    const t = (text || '').trim();
+    if (!t) return [];
+    const known = new Set(fields.map(f => f.qualifiedName));
+    const out = [];
+    for (const raw of t.split(',').map(s => s.trim()).filter(Boolean)) {
+      const m = /^(.+?)\s+(ASC|DESC)$/.exec(raw);
+      if (!m || !known.has(m[1])) return null;
+      out.push({ field: m[1], dir: m[2] });
+    }
+    return out;
+  }
+
+  // priorOptions: [{alias,name}] — fields available on the left-hand side,
+  // from views already placed before this join row (see priorFieldOptions).
+  // rightAlias/rightFields: this row's own alias and field list — every
+  // right-hand side of its own ON must reference itself.
+  function parseJoinOn(onText, priorOptions, rightAlias, rightFields) {
+    const t = (onText || '').trim();
+    if (!t) return null;
+    const priorSet = new Set(priorOptions.map(o => o.alias + '.' + o.name));
+    const rightNames = new Set(rightFields.map(f => f.name));
+    const out = [];
+    for (const part of t.split(/\s+AND\s+/)) {
+      const m = /^(\S+)\.(\S+)\s*=\s*(\S+)\.(\S+)$/.exec(part.trim());
+      if (!m) return null;
+      const [, lAlias, lField, rAlias, rField] = m;
+      if (rAlias !== rightAlias || !rightNames.has(rField) || !priorSet.has(lAlias + '.' + lField)) return null;
+      out.push({ leftAlias: lAlias, leftField: lField, rightField: rField });
+    }
+    return out.length ? out : null;
+  }
+
   function loadSavedQuery(q) {
     if (!q) return;
     // Restore for every saved-query shape below — previously only the
@@ -1583,6 +1689,7 @@ function composeQuery(q = {}) {
     document.getElementById('saveTitle').value = q.title || '';
     document.getElementById('saveDesc').value = q.description || '';
     document.getElementById('saveContributor').value = q.contributor || '';
+    savePanelSection.classList.remove('collapsed');
 
     if (q.rawNote) {
       // A pasted-note entry has no views/select/where/... to load into the
@@ -1599,23 +1706,31 @@ function composeQuery(q = {}) {
     }
     document.getElementById('rawNoteInput').value = '';
 
-    joinedViews = (q.views || []).map((v, i) => {
+    // Built as an explicit loop (not .map()) so parseJoinOn can call the
+    // existing priorFieldOptions(i) helper for row i — it reads
+    // joinedViews[0..i-1] directly, which only works if those rows are
+    // already in place by the time row i is processed.
+    joinedViews = [];
+    (q.views || []).forEach((v, i) => {
       const alias = v.alias || 't' + (i + 1);
       const name = v.name || '';
       const fields = name ? fieldsOf(name) : [];
-      if (i === 0) return { alias, name, fields };
-      if (v.mode === 'assoc') return { alias, name, fields, mode: 'assoc', assocAlias: alias };
-      // Loaded manual joins always render in raw mode (pre-filled with the
-      // saved line or reconstructed from name/joinType/on) — simplest to
-      // show exactly what was saved, but the view's fields (when known)
-      // still flow into the pickers via allFields(), so the query stays
-      // editable rather than a frozen snippet.
+      if (i === 0) { joinedViews.push({ alias, name, fields }); return; }
+      if (v.mode === 'assoc') { joinedViews.push({ alias, name, fields, mode: 'assoc', assocAlias: alias }); return; }
+
       const joinType = v.joinType || JOIN_TYPES[0];
-      const raw = v.raw != null ? v.raw : (name ? joinType + ' ' + name + ' AS ' + alias + ' ON ' + (v.on || '<join condition>') : '');
-      return {
-        alias, name, fields, joinType, mode: 'join',
-        onConditions: [], rawToggle: true, raw,
-      };
+      // A saved structured join has v.on (no v.raw) in exactly the
+      // "L.field = R.field [AND ...]" shape joinOnText produces — try to
+      // parse it back into the ON-condition builder's dropdowns. A saved
+      // raw join (v.raw) or anything parseJoinOn can't make sense of falls
+      // back to raw mode with the saved/reconstructed line, same as before.
+      const parsedConds = (!v.raw && v.on) ? parseJoinOn(v.on, priorFieldOptions(i), alias, fields) : null;
+      if (parsedConds) {
+        joinedViews.push({ alias, name, fields, joinType, mode: 'join', onConditions: parsedConds, rawToggle: false, raw: '' });
+      } else {
+        const raw = v.raw != null ? v.raw : (name ? joinType + ' ' + name + ' AS ' + alias + ' ON ' + (v.on || '<join condition>') : '');
+        joinedViews.push({ alias, name, fields, joinType, mode: 'join', onConditions: [], rawToggle: true, raw });
+      }
     });
     if (!joinedViews.length) return;
 
@@ -1634,17 +1749,59 @@ function composeQuery(q = {}) {
     builder.classList.add('open');
     renderJoins();
 
-    resetClauseState();
-    for (const prefix of ['select', 'where', 'groupBy', 'having', 'order']) {
-      const key = prefix === 'groupBy' ? 'groupBy' : prefix === 'order' ? 'orderBy' : prefix;
-      const val = q[key];
-      if (val) {
-        document.getElementById(prefix + 'RawToggle').checked = true;
-        document.getElementById(prefix + 'Raw').style.display = '';
-        document.getElementById(prefix + 'Raw').value = val;
-        document.getElementById(prefix + 'BuilderWrap').style.display = 'none';
-      }
+    // Reset raw-toggle DOM state the same way resetClauseState() does, but
+    // without calling it directly — it also seeds selectState/groupByState/
+    // whereConds to their empty defaults, which would immediately erase
+    // whatever gets parsed back in just below.
+    const fields = allFields();
+    selectState = {};
+    groupByState = {};
+    for (const f of fields) { selectState[f.qualifiedName] = { checked: false, agg: AGGS[0] }; groupByState[f.qualifiedName] = false; }
+    for (const prefix of RAW_SECTIONS) {
+      document.getElementById(prefix + 'RawToggle').checked = false;
+      document.getElementById(prefix + 'Raw').style.display = 'none';
+      document.getElementById(prefix + 'Raw').value = '';
+      document.getElementById(prefix + 'BuilderWrap').style.display = '';
     }
+    document.getElementById('selectFieldFilter').value = '';
+    document.getElementById('groupByFieldFilter').value = '';
+
+    function fallBackToRaw(prefix, text) {
+      document.getElementById(prefix + 'RawToggle').checked = true;
+      document.getElementById(prefix + 'Raw').style.display = '';
+      document.getElementById(prefix + 'Raw').value = text;
+      document.getElementById(prefix + 'BuilderWrap').style.display = 'none';
+    }
+
+    const selectParsed = parseFieldList(q.select, fields, true);
+    if (selectParsed) for (const s of selectParsed) selectState[s.qualifiedName] = { checked: true, agg: s.agg };
+    else if ((q.select || '').trim()) fallBackToRaw('select', q.select);
+
+    const groupParsed = parseFieldList(q.groupBy, fields, false);
+    if (groupParsed) for (const s of groupParsed) groupByState[s.qualifiedName] = true;
+    else if ((q.groupBy || '').trim()) fallBackToRaw('groupBy', q.groupBy);
+
+    const defaultWhere = () => [{ field: fields[0]?.qualifiedName || '', op: '=', value: '', value2: '', joiner: 'AND' }];
+    const whereParsed = parseConditionList(q.where, fields);
+    if (whereParsed) whereConds = whereParsed.length ? whereParsed : defaultWhere();
+    else if ((q.where || '').trim()) { whereConds = defaultWhere(); fallBackToRaw('where', q.where); }
+    else whereConds = defaultWhere();
+
+    const havingParsed = parseConditionList(q.having, fields);
+    if (havingParsed) havingConds = havingParsed;
+    else if ((q.having || '').trim()) { havingConds = []; fallBackToRaw('having', q.having); }
+    else havingConds = [];
+
+    const orderParsed = parseOrderByList(q.orderBy, fields);
+    if (orderParsed) orderConds = orderParsed;
+    else if ((q.orderBy || '').trim()) { orderConds = []; fallBackToRaw('order', q.orderBy); }
+    else orderConds = [];
+
+    renderSelectFields();
+    renderGroupByFields();
+    renderWhereRows();
+    renderHavingRows();
+    renderOrderRows();
     buildQuery();
     document.getElementById('picked').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
