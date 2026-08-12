@@ -4,6 +4,7 @@ description: "This CDS view helps to retrieve a subset of retail site data, in p
 app_component: LO-RFM-MD-SIT-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: not_released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SITEDEX')/$value

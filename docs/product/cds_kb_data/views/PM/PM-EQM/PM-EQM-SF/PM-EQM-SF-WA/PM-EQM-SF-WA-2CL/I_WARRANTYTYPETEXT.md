@@ -4,6 +4,7 @@ description: "Warrantytypetext"
 app_component: PM-EQM-SF-WA-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: released
 clean_core_level: A
 system_type: public_cloud
 source_available: true

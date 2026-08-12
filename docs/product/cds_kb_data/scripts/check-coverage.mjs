@@ -35,6 +35,7 @@ import path from 'node:path';
 import { listViewFiles } from './lib/view-files.mjs';
 import { runPool } from './lib/concurrency.mjs';
 import { escapeHtml } from './lib/html-escape.mjs';
+import { fetchExtensibilityMap } from './lib/hub-extensibility.mjs';
 
 // Same blob base as search.html / field-search.html — opens the KB .md on github.com.
 const GITHUB_BLOB_BASE = 'https://github.com/StormShynn/cds-kb-data-kit/blob/main/docs/product/cds_kb_data/';
@@ -47,16 +48,13 @@ const HUB_URL =
   `https://api.sap.com/api/1.0/container/${HUB_CONTAINER}/artifacts` +
   `?containerType=product&$filter=${encodeURIComponent("Type eq 'CDSVIEW'")}&$top=100000`;
 
-// The artifacts endpoint above has no per-extensibility-contract field. This
-// OData collection is the only place the Hub exposes it — but it's a global
-// registry (~19k rows across every product, not just SAPS4HANACloud), so it's
-// filtered with $select down to the two fields actually used here. Confirmed
-// 1:1, no dupes: every RELEASED CDSVIEW artifact's Name matches exactly one
-// TechnicalName here (both already uppercase), so a plain Map join is enough
-// — no need for the one-request-per-view detail endpoint (hubMetadataUrl).
-const EXT_URL =
-  'https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews' +
-  '?$format=json&$select=TechnicalName,ReleaseStateDeveloperExtensibility&$inlinecount=allpages';
+// fetchExtensibilityMap (scripts/lib/hub-extensibility.mjs) joins in each
+// view's Developer Extensibility release state from a second, separate Hub
+// OData collection — a RELEASED CDS view can still be "Not Released" for
+// that specific contract (e.g. C_BILLOFOPERATIONSBASICOPDEX). Confirmed 1:1,
+// no dupes: every RELEASED CDSVIEW artifact's Name matches exactly one
+// TechnicalName there (both already uppercase), so a plain Map join is
+// enough — no need for the one-request-per-view detail endpoint (hubMetadataUrl).
 
 // SAP's official ABAP Cloud released-objects list (public_cloud scope, which
 // matches this KB's default systemType — see add_hub_metadata.mjs). Plain
@@ -90,32 +88,6 @@ async function fetchHubCatalog() {
   });
   if (!resp.ok) throw new Error(`Hub catalog fetch failed (${resp.status})`);
   return await resp.json();
-}
-
-/**
- * Name -> "Released" | "Not Released", sourced from EXT_URL. Never throws —
- * this column is a display/filter aid, not part of the missing/full/metadata
- * counts, so a Hub hiccup here shouldn't fail the whole coverage run.
- */
-async function fetchExtensibilityMap() {
-  try {
-    const resp = await fetch(EXT_URL, {
-      headers: sapHeaders(),
-      signal: AbortSignal.timeout(120000),
-    });
-    if (!resp.ok) throw new Error(`Extensibility catalog fetch failed (${resp.status})`);
-    const data = await resp.json();
-    const map = new Map();
-    for (const r of data.d.results) {
-      if (r.ReleaseStateDeveloperExtensibility != null) {
-        map.set(r.TechnicalName, r.ReleaseStateDeveloperExtensibility);
-      }
-    }
-    return map;
-  } catch (err) {
-    console.error(`⚠️  Extensibility catalog fetch failed, continuing without it: ${err.message}`);
-    return new Map();
-  }
 }
 
 /**

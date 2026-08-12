@@ -3,6 +3,7 @@ name: C_PURCHASEORDERDEX
 description: "Data Extraction for Purchase Order"
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: released
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true

@@ -4,6 +4,7 @@ description: "Caution Do not use this CDS view. Instead, use the CDS view Financ
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LETTEROFCREDIT')/$value

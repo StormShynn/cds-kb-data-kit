@@ -4,6 +4,7 @@ description: "This CDS view is an interface view which provides work in process 
 app_component: CO-PC-OBJ-ORD-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: not_released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MFGORDEREVTBSDWIPVARCQRY')/$value

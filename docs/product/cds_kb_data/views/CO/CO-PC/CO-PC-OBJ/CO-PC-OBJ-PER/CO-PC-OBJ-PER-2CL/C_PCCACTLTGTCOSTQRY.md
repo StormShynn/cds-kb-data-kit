@@ -4,6 +4,7 @@ description: "This CDS view retrieves actual and target cost details of product 
 app_component: CO-PC-OBJ-PER-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: not_released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PCCACTLTGTCOSTQRY')/$value

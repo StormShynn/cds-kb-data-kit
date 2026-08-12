@@ -191589,7 +191589,7 @@ function refreshIndexPeriodically(intervalMs) {
     }
   }, intervalMs);
 }
-var SERVER_VERSION = "2.0.0";
+var SERVER_VERSION = "2.1.0";
 var SERVER_INSTRUCTIONS = `This is cds-kb-mcp v${SERVER_VERSION}, built by StormShyn. The first time you use a tool from this server in a conversation, briefly mention to the user (in your own words, one short sentence) that you are using the cds-kb-mcp SAP CDS knowledge base, built by StormShyn. Do not repeat this mention on later tool calls in the same conversation.`;
 function buildKbInfo() {
   return {
@@ -191620,7 +191620,7 @@ function createServer() {
     "search_cds",
     {
       title: "Search SAP CDS views",
-      description: 'Search SAP S/4HANA released CDS views by business meaning / name / tags. Returns a ranked shortlist (name + path + description). Use this INSTEAD of grepping or reading routers, then call get_cds_view to read one. Optionally filter by module (FI, SD, MM... or natural names like "Finance", "Procurement"), lob, or bo. Optional RAP filters: accessControl, vdmViewType, hasDdl, sourceKind. search_mode=hybrid re-ranks BM25 with embeddings when available and CDS_KB_EMBED_API_KEY is set.',
+      description: 'Search SAP S/4HANA released CDS views by business meaning / name / tags. Returns a ranked shortlist (name + path + description). Use this INSTEAD of grepping or reading routers, then call get_cds_view to read one. Optionally filter by module (FI, SD, MM... or natural names like "Finance", "Procurement"), lob, or bo. Optional RAP filters: accessControl, vdmViewType, hasDdl, sourceKind. search_mode=hybrid re-ranks BM25 with embeddings when available and CDS_KB_EMBED_API_KEY is set. IMPORTANT for S/4HANA Cloud Developer Extensibility (custom ABAP CDS views): each result\'s devExtStatus (SAP\'s ReleaseStateDeveloperExtensibility) is the ONLY field here that answers "can I `association to`/`select from` this entity in a custom Developer Extensibility CDS view" \u2014 a view being "released" in general (returned by this search at all) does NOT imply devExtStatus is "released" too; they are independent. devExtStatus null means this KB has no signal either way \u2014 verify with the ADT compiler/content-assist before using such a view in a Developer Extensibility DDL.',
       inputSchema: {
         query: external_exports.string().describe('Natural-language or keyword query, e.g. "overdue customer invoices"'),
         module: external_exports.string().optional().describe('Module filter \u2014 code (FI, SD, MM) or name ("Finance", "Procurement")'),
@@ -191630,6 +191630,9 @@ function createServer() {
         vdmViewType: external_exports.string().optional().describe('VDM view type filter, e.g. "#BASIC"'),
         hasDdl: external_exports.boolean().optional().describe("If true, only views with DDL source; if false, only without"),
         sourceKind: external_exports.string().optional().describe('e.g. "public" or "private" (private overlay)'),
+        devExtStatus: external_exports.enum(["released", "not_released"]).optional().describe(
+          'Filter by SAP Developer Extensibility release state (ReleaseStateDeveloperExtensibility) \u2014 NOT the same as the general release state. Use "released" to only get views confirmed usable via `association to`/`select from` in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view.'
+        ),
         search_mode: external_exports.enum(["bm25", "hybrid"]).optional().describe("bm25 (default) or hybrid (BM25 + embeddings when available)"),
         limit: external_exports.number().int().min(1).max(50).optional().describe("Max results (default 10)")
       },
@@ -191643,14 +191646,15 @@ function createServer() {
           lob: external_exports.string().nullable(),
           bo: external_exports.string().nullable(),
           description: external_exports.string().nullable(),
+          devExtStatus: external_exports.string().nullable(),
           path: external_exports.string()
         }))
       })
     },
-    async ({ query, module: module2, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, search_mode = "bm25", limit = 10 }) => {
+    async ({ query, module: module2, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, devExtStatus, search_mode = "bm25", limit = 10 }) => {
       const resolvedModule = resolveModule(module2);
       const contains = (a5, b5) => (a5 || "").toLowerCase().includes((b5 || "").toLowerCase());
-      const facetFilter = (r5) => (!resolvedModule || (r5.module || "").toUpperCase() === resolvedModule) && (!lob || contains(r5.lob, lob)) && (!bo || contains(r5.bo, bo)) && (!accessControl || contains(r5.accessControl, accessControl)) && (!vdmViewType || contains(r5.vdmViewType, vdmViewType)) && (hasDdl === void 0 || !!r5.hasDdl === hasDdl) && (!sourceKind || (r5.sourceKind || "public").toLowerCase() === sourceKind.toLowerCase());
+      const facetFilter = (r5) => (!resolvedModule || (r5.module || "").toUpperCase() === resolvedModule) && (!lob || contains(r5.lob, lob)) && (!bo || contains(r5.bo, bo)) && (!accessControl || contains(r5.accessControl, accessControl)) && (!vdmViewType || contains(r5.vdmViewType, vdmViewType)) && (hasDdl === void 0 || !!r5.hasDdl === hasDdl) && (!sourceKind || (r5.sourceKind || "public").toLowerCase() === sourceKind.toLowerCase()) && (!devExtStatus || r5.devExtStatus === devExtStatus);
       const results = await rankedSearch(query, { filter: facetFilter, limit, searchMode: search_mode });
       const structured = {
         query,
@@ -191662,6 +191666,7 @@ function createServer() {
           lob: r5.lob ?? null,
           bo: r5.bo ?? null,
           description: r5.semanticDescription || r5.description || null,
+          devExtStatus: r5.devExtStatus ?? null,
           path: r5.path
         }))
       };
@@ -191671,7 +191676,8 @@ function createServer() {
       }
       const lines = results.map((r5, i5) => {
         const desc = r5.semanticDescription || r5.description || "";
-        return `${i5 + 1}. **${r5.name}**  [${r5.appComponent || r5.module || "-"}]  (score ${r5.score.toFixed(1)})
+        const devExtNote = r5.devExtStatus ? `  [dev-ext: ${r5.devExtStatus}]` : "";
+        return `${i5 + 1}. **${r5.name}**  [${r5.appComponent || r5.module || "-"}]  (score ${r5.score.toFixed(1)})${devExtNote}
    ${desc}
    path: ${r5.path}`;
       });
@@ -191836,9 +191842,9 @@ ${lines.join("\n")}` }],
       },
       outputSchema: external_exports.object({
         name: external_exports.string(),
-        fieldMatches: external_exports.array(external_exports.object({ view: external_exports.string(), isKey: external_exports.boolean(), appComponent: external_exports.string().nullable() })),
-        tableMatches: external_exports.array(external_exports.object({ view: external_exports.string(), relation: external_exports.string(), alias: external_exports.string().nullable(), appComponent: external_exports.string().nullable() })),
-        rawMatches: external_exports.array(external_exports.object({ view: external_exports.string(), field: external_exports.string(), isKey: external_exports.boolean(), appComponent: external_exports.string().nullable() }))
+        fieldMatches: external_exports.array(external_exports.object({ view: external_exports.string(), isKey: external_exports.boolean(), appComponent: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable() })),
+        tableMatches: external_exports.array(external_exports.object({ view: external_exports.string(), relation: external_exports.string(), alias: external_exports.string().nullable(), appComponent: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable() })),
+        rawMatches: external_exports.array(external_exports.object({ view: external_exports.string(), field: external_exports.string(), isKey: external_exports.boolean(), appComponent: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable() }))
       })
     },
     async ({ name, limit = 30 }) => {
@@ -191890,9 +191896,9 @@ ${lines.join("\n")}` + (rawMatches.length > shown.length ? `
       }
       const structured = {
         name: key,
-        fieldMatches: fieldMatches.map((m3) => ({ view: m3.view, isKey: !!m3.isKey, appComponent: m3.appComponent ?? null })),
-        tableMatches: tableMatches.map((m3) => ({ view: m3.view, relation: m3.relation, alias: m3.alias ?? null, appComponent: m3.appComponent ?? null })),
-        rawMatches: rawMatches.map((m3) => ({ view: m3.view, field: m3.field, isKey: !!m3.isKey, appComponent: m3.appComponent ?? null }))
+        fieldMatches: fieldMatches.map((m3) => ({ view: m3.view, isKey: !!m3.isKey, appComponent: m3.appComponent ?? null, devExtStatus: m3.devExtStatus ?? null })),
+        tableMatches: tableMatches.map((m3) => ({ view: m3.view, relation: m3.relation, alias: m3.alias ?? null, appComponent: m3.appComponent ?? null, devExtStatus: m3.devExtStatus ?? null })),
+        rawMatches: rawMatches.map((m3) => ({ view: m3.view, field: m3.field, isKey: !!m3.isKey, appComponent: m3.appComponent ?? null, devExtStatus: m3.devExtStatus ?? null }))
       };
       return {
         content: [{ type: "text", text: `Results for "${name}":
@@ -191915,8 +191921,8 @@ Use get_cds_view(name) to read any of these.` }],
       },
       outputSchema: external_exports.object({
         name: external_exports.string(),
-        dependsOn: external_exports.array(external_exports.object({ target: external_exports.string(), relation: external_exports.string(), alias: external_exports.string().nullable() })),
-        dependents: external_exports.array(external_exports.object({ view: external_exports.string(), relation: external_exports.string(), alias: external_exports.string().nullable(), appComponent: external_exports.string().nullable() }))
+        dependsOn: external_exports.array(external_exports.object({ target: external_exports.string(), relation: external_exports.string(), alias: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable() })),
+        dependents: external_exports.array(external_exports.object({ view: external_exports.string(), relation: external_exports.string(), alias: external_exports.string().nullable(), appComponent: external_exports.string().nullable(), devExtStatus: external_exports.string().nullable() }))
       })
     },
     async ({ name, limit = 30 }) => {
@@ -191942,9 +191948,13 @@ Use get_cds_view(name) to read any of these.` }],
           structuredContent: { name: key, dependsOn: [], dependents: [] }
         };
       }
+      const dependsOnDevExt = (target) => docsByName.get(String(target).toUpperCase())?.devExtStatus ?? null;
       const parts = [];
       if (dependsOn.length > 0) {
-        const lines = dependsOn.map((d5) => `- **${d5.target}** (${d5.relation === "source" ? "FROM" : `via \`${d5.alias}\``})`);
+        const lines = dependsOn.map((d5) => {
+          const devExt = dependsOnDevExt(d5.target);
+          return `- **${d5.target}** (${d5.relation === "source" ? "FROM" : `via \`${d5.alias}\``})${devExt ? `  [dev-ext: ${devExt}]` : ""}`;
+        });
         parts.push(`## Depends on (${dependsOn.length})
 ${lines.join("\n")}`);
       }
@@ -191957,8 +191967,8 @@ ${lines.join("\n")}` + (dependents.length > shown.length ? `
       }
       const structured = {
         name: key,
-        dependsOn: dependsOn.map((d5) => ({ target: d5.target, relation: d5.relation, alias: d5.alias ?? null })),
-        dependents: dependents.map((m3) => ({ view: m3.view, relation: m3.relation, alias: m3.alias ?? null, appComponent: m3.appComponent ?? null }))
+        dependsOn: dependsOn.map((d5) => ({ target: d5.target, relation: d5.relation, alias: d5.alias ?? null, devExtStatus: dependsOnDevExt(d5.target) })),
+        dependents: dependents.map((m3) => ({ view: m3.view, relation: m3.relation, alias: m3.alias ?? null, appComponent: m3.appComponent ?? null, devExtStatus: m3.devExtStatus ?? null }))
       };
       return {
         content: [{ type: "text", text: `Dependencies for ${name}:
@@ -192034,6 +192044,9 @@ commit: ${info.commit}`
         vdmViewType: external_exports.string().optional().describe("VDM view type filter"),
         hasDdl: external_exports.boolean().optional().describe("If true, only views with DDL source; if false, only without"),
         sourceKind: external_exports.string().optional().describe('e.g. "public" or "private"'),
+        devExtStatus: external_exports.enum(["released", "not_released"]).optional().describe(
+          "Filter by SAP Developer Extensibility release state \u2014 see search_cds for why this is a separate axis from the general release state."
+        ),
         search_mode: external_exports.enum(["bm25", "hybrid"]).optional().describe("bm25 (default) or hybrid"),
         limit: external_exports.number().int().min(1).max(20).optional().describe("Max suggestions (default 5)")
       },
@@ -192046,14 +192059,15 @@ commit: ${info.commit}`
           module: external_exports.string().nullable(),
           appComponent: external_exports.string().nullable(),
           description: external_exports.string().nullable(),
+          devExtStatus: external_exports.string().nullable(),
           path: external_exports.string()
         }))
       })
     },
-    async ({ query, module: module2, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, search_mode = "bm25", limit = 5 }) => {
+    async ({ query, module: module2, lob, bo, accessControl, vdmViewType, hasDdl, sourceKind, devExtStatus, search_mode = "bm25", limit = 5 }) => {
       const resolvedModule = resolveModule(module2);
       const contains = (a5, b5) => (a5 || "").toLowerCase().includes((b5 || "").toLowerCase());
-      const facetFilter = (r5) => (!resolvedModule || (r5.module || "").toUpperCase() === resolvedModule) && (!lob || contains(r5.lob, lob)) && (!bo || contains(r5.bo, bo)) && (!accessControl || contains(r5.accessControl, accessControl)) && (!vdmViewType || contains(r5.vdmViewType, vdmViewType)) && (hasDdl === void 0 || !!r5.hasDdl === hasDdl) && (!sourceKind || (r5.sourceKind || "public").toLowerCase() === sourceKind.toLowerCase()) && !r5.isAbstract && r5.releaseState !== "unverified";
+      const facetFilter = (r5) => (!resolvedModule || (r5.module || "").toUpperCase() === resolvedModule) && (!lob || contains(r5.lob, lob)) && (!bo || contains(r5.bo, bo)) && (!accessControl || contains(r5.accessControl, accessControl)) && (!vdmViewType || contains(r5.vdmViewType, vdmViewType)) && (hasDdl === void 0 || !!r5.hasDdl === hasDdl) && (!sourceKind || (r5.sourceKind || "public").toLowerCase() === sourceKind.toLowerCase()) && (!devExtStatus || r5.devExtStatus === devExtStatus) && !r5.isAbstract && r5.releaseState !== "unverified";
       const results = await rankedSearch(query, { filter: facetFilter, limit, searchMode: search_mode });
       const structured = {
         query,
@@ -192064,6 +192078,7 @@ commit: ${info.commit}`
           module: r5.module ?? null,
           appComponent: r5.appComponent ?? null,
           description: r5.semanticDescription || r5.description || null,
+          devExtStatus: r5.devExtStatus ?? null,
           path: r5.path
         }))
       };
@@ -192077,6 +192092,7 @@ commit: ${info.commit}`
         if ((r5.referencedByCount || 0) > 0) reasons.push(`referencedBy=${r5.referencedByCount}`);
         if (r5.hasDdl) reasons.push("has DDL");
         if (r5.sourceKind === "private") reasons.push("private-overlay");
+        if (r5.devExtStatus) reasons.push(`dev-ext: ${r5.devExtStatus}`);
         const why = reasons.length ? ` \u2014 ${reasons.join(", ")}` : "";
         const desc = r5.semanticDescription || r5.description || "";
         return `${i5 + 1}. **${r5.name}**  [${r5.appComponent || r5.module || "-"}]  (score ${r5.score.toFixed(1)})${why}
@@ -192096,11 +192112,37 @@ Next: compose_query or generate_cds_view with views[0].name = the pick above.`
       };
     }
   );
+  function devExtWarnings(args) {
+    const names = /* @__PURE__ */ new Set();
+    if (args.baseView) names.add(args.baseView);
+    for (const v of args.views || []) {
+      if (v?.name) names.add(v.name);
+    }
+    const warnings = [];
+    const unknown2 = [];
+    for (const name of names) {
+      const doc = docsByName.get(String(name).trim().toUpperCase());
+      const status = doc?.devExtStatus;
+      if (status === "not_released") {
+        warnings.push(
+          `Developer Extensibility: ${name} is SAP-confirmed "Not Released" for Developer Extensibility \u2014 \`association to\`/\`select from\` it will fail ADT activation in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view. See hook/quy-trinh-check-cds-released-developer-extensibility.md for mitigation options (key-field-only association, a released Value-Help view, or an app-tier join).`
+        );
+      } else if (!status && doc) {
+        unknown2.push(name);
+      }
+    }
+    if (unknown2.length) {
+      warnings.push(
+        `Developer Extensibility: no signal in this KB for ${unknown2.join(", ")} \u2014 verify with the ADT compiler or content-assist (Ctrl+Space) before using in a Developer Extensibility CDS view; released elsewhere does not imply released for Developer Extensibility.`
+      );
+    }
+    return warnings;
+  }
   server.registerTool(
     "compose_query",
     {
       title: "Compose OpenSQL + CDS view skeleton",
-      description: "Build OpenSQL SELECT and a CDS define view entity skeleton from a structured query object (same shape as the Query Builder share JSON: views[], select, where, groupBy, having, orderBy, viewName).",
+      description: 'Build OpenSQL SELECT and a CDS define view entity skeleton from a structured query object (same shape as the Query Builder share JSON: views[], select, where, groupBy, having, orderBy, viewName). Warns when any views[].name is SAP-confirmed "Not Released" for Developer Extensibility (would fail ADT activation in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view) or has no such signal in this KB.',
       inputSchema: {
         views: external_exports.array(external_exports.object({
           alias: external_exports.string().optional(),
@@ -192126,14 +192168,15 @@ Next: compose_query or generate_cds_view with views[0].name = the pick above.`
     },
     async (args) => {
       const result = composeQuery(args);
+      const warnings = [...devExtWarnings(args), ...result.warnings];
       const parts = [];
-      if (result.warnings.length) parts.push("## Warnings\n" + result.warnings.map((w) => `- ${w}`).join("\n"));
+      if (warnings.length) parts.push("## Warnings\n" + warnings.map((w) => `- ${w}`).join("\n"));
       if (result.openSql) parts.push("## OpenSQL\n```sql\n" + result.openSql + "\n```");
       if (result.cdsView) parts.push("## CDS view skeleton\n```abap\n" + result.cdsView + "\n```");
       if (!parts.length) parts.push("compose_query produced no output.");
       return {
         content: [{ type: "text", text: parts.join("\n\n") }],
-        structuredContent: { openSql: result.openSql ?? null, cdsView: result.cdsView ?? null, warnings: result.warnings, text: parts.join("\n\n") }
+        structuredContent: { openSql: result.openSql ?? null, cdsView: result.cdsView ?? null, warnings, text: parts.join("\n\n") }
       };
     }
   );
@@ -192141,7 +192184,7 @@ Next: compose_query or generate_cds_view with views[0].name = the pick above.`
     "generate_cds_view",
     {
       title: "Generate a CDS view entity DDL skeleton",
-      description: "Generate annotated CDS DDL (@AccessControl, @EndUserText.label + define view entity) from a base view or the same structured views[] used by compose_query. Does not invent field lists from Hub metadata alone \u2014 pass select/where yourself. Validate with validate_cds_ddl next.",
+      description: 'Generate annotated CDS DDL (@AccessControl, @EndUserText.label + define view entity) from a base view or the same structured views[] used by compose_query. Does not invent field lists from Hub metadata alone \u2014 pass select/where yourself. Validate with validate_cds_ddl next. Warns when baseView/views[].name is SAP-confirmed "Not Released" for Developer Extensibility or has no such signal in this KB.',
       inputSchema: {
         name: external_exports.string().optional().describe("New view name (default Z_MyView)"),
         label: external_exports.string().optional(),
@@ -192170,14 +192213,15 @@ Next: compose_query or generate_cds_view with views[0].name = the pick above.`
     },
     async (args) => {
       const result = generateCdsView(args);
+      const warnings = [...devExtWarnings(args), ...result.warnings];
       const parts = [];
-      if (result.warnings.length) parts.push("## Warnings\n" + result.warnings.map((w) => `- ${w}`).join("\n"));
+      if (warnings.length) parts.push("## Warnings\n" + warnings.map((w) => `- ${w}`).join("\n"));
       if (result.ddl) parts.push("## DDL\n```abap\n" + result.ddl + "\n```");
       if (result.openSql) parts.push("## OpenSQL\n```sql\n" + result.openSql + "\n```");
       const text = parts.join("\n\n") || "No DDL generated.";
       return {
         content: [{ type: "text", text }],
-        structuredContent: { ddl: result.ddl ?? null, openSql: result.openSql ?? null, warnings: result.warnings, text }
+        structuredContent: { ddl: result.ddl ?? null, openSql: result.openSql ?? null, warnings, text }
       };
     }
   );

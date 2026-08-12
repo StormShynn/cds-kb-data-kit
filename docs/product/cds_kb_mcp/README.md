@@ -216,7 +216,18 @@ Find CDS views by business meaning, name, tag, or classic SAP keyword (`VBAK`, `
 | `bo`      | string   | optional | Business object filter (partial match, e.g. `"salesorder"`)                            |
 | `limit`   | int 1-50 | optional | Max results (default 10)                                                               |
 
-Returns: ranked list with `name`, `score`, `module`, short description, and path. Ranking blends BM25 (MiniSearch) + cosine similarity when `index/embeddings.json` is present + `usageCount` popularity boost when `index/usage-stats.json` is present.
+Returns: ranked list with `name`, `score`, `module`, short description, `devExtStatus`, and path. Ranking blends BM25 (MiniSearch) + cosine similarity when `index/embeddings.json` is present + `usageCount` popularity boost when `index/usage-stats.json` is present.
+
+> **`devExtStatus` ≠ "released".** A view showing up here at all just means it's
+> in the general SAP Hub catalog. `devExtStatus` (`released` / `not_released` /
+> `null` = unknown) is SAP's *separate* `ReleaseStateDeveloperExtensibility`
+> signal — the only one that answers "can I `association to`/`select from`
+> this in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view".
+> `compose_query`/`generate_cds_view` warn automatically when a referenced
+> view is `not_released` or unknown. See
+> [`hook/quy-trinh-check-cds-released-developer-extensibility.md`](../cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md)
+> for the full explanation and mitigation options. `devExtStatus` is also an
+> optional filter param on `search_cds` / `suggest_base_views`.
 
 ```text
 1. **I_CAOPENITEMLIST**  [FI-FIO-AR-2CL]  (score 14.2)
@@ -257,6 +268,7 @@ No parameters.
 
 Exact lookup by field name, raw DDIC column, or table/CDS view name (not fuzzy
 search). Prefer this when you already have a concrete name from ABAP/DDL.
+Each match includes `devExtStatus` (see `search_cds` above).
 
 | Parameter | Type      | Required | Description |
 |---|---|---|---|
@@ -265,7 +277,7 @@ search). Prefer this when you already have a concrete name from ABAP/DDL.
 
 ### 6. `get_view_dependencies`
 
-Views that are built FROM or associate to a given view/table (uses `table-index.json`).
+Views that are built FROM or associate to a given view/table (uses `table-index.json`). Each entry includes `devExtStatus` — useful to spot that an association target is a released alternative even when the view you started from isn't.
 
 | Parameter | Type | Required | Description |
 |---|---|---|---|
@@ -278,7 +290,7 @@ Report the active data source, server version, view count, enrichment %, private
 
 ```text
 source: local:D:\...\docs\product\cds_kb_data
-server: cds-kb-mcp 2.0.0
+server: cds-kb-mcp 2.1.0
 views: 10619
 enriched: 3267 (30.8%)
 privateOverlay: 1
@@ -301,11 +313,11 @@ Recommend concrete (non-abstract, non-unverified) CDS views to use as the `FROM`
 
 ### 9. `compose_query`
 
-Build OpenSQL + a CDS `define view entity` skeleton from the Query Builder JSON shape (`views[]`, `select`, `where`, `groupBy`, `having`, `orderBy`, `viewName`).
+Build OpenSQL + a CDS `define view entity` skeleton from the Query Builder JSON shape (`views[]`, `select`, `where`, `groupBy`, `having`, `orderBy`, `viewName`). Warns in `warnings[]` when a referenced view is SAP-confirmed `not_released` for Developer Extensibility, or has no such signal in this KB — see the `devExtStatus` note under `search_cds` above.
 
 ### 10. `generate_cds_view`
 
-Generate annotated DDL (`@AccessControl`, `@EndUserText.label` + compose body) from `baseView` or `views[]`. Pass `select`/`where` yourself — it does not invent field lists from Hub metadata alone.
+Generate annotated DDL (`@AccessControl`, `@EndUserText.label` + compose body) from `baseView` or `views[]`. Pass `select`/`where` yourself — it does not invent field lists from Hub metadata alone. Same Developer Extensibility `warnings[]` as `compose_query`.
 
 ### 11. `validate_cds_ddl`
 
@@ -440,7 +452,7 @@ npx @modelcontextprotocol/inspector node src/server.mjs --data ../cds_kb_data
 └──────────────────────────┬───────────────────────────────────────┘
                            │  MCP / JSON-RPC — stdio, or Streamable HTTP at /mcp
 ┌──────────────────────────▼───────────────────────────────────────┐
-│              cds-kb-mcp 2.0.0 (MCP SDK v2, spec 2026-07-28)      │
+│              cds-kb-mcp 2.1.0 (MCP SDK v2, spec 2026-07-28)      │
 │  tools (12, outputSchema+structuredContent) · resources · prompts│
 │  rate limit → auth (API key | JWKS | OAuth 2.1+PKCE) → handlers   │
 │                       │                                          │

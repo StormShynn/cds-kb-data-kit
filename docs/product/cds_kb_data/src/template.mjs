@@ -19,6 +19,26 @@ function releaseStateLabel(state) {
   return map[state.toLowerCase()] || state;
 }
 
+// dev_ext_status is a SEPARATE axis from release_state above — see
+// docs/product/cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md.
+// release_state reflects the Hub's general artifact catalog ("Released API" —
+// does this entity exist / is it a public API at all); dev_ext_status
+// reflects SAP's ReleaseStateDeveloperExtensibility field specifically — can
+// this entity be used via `association to` / `select from` in a CUSTOM CDS
+// view under S/4HANA Cloud ABAP Developer Extensibility. A view can be
+// release_state: released and dev_ext_status: not_released at the same time;
+// neither implies the other. Absent (null/undefined) means this KB has no
+// signal either way — NOT the same as "not released" — fall back to the
+// ADT compiler / content-assist check described in that doc.
+function devExtStatusLabel(status) {
+  if (!status) return null;
+  const map = {
+    'released': 'Released',
+    'not_released': 'Not Released',
+  };
+  return map[status.toLowerCase()] || status;
+}
+
 // ── YAML frontmatter ────────────────────────────────────────────────────────
 
 // Free-text fields (Hub descriptions, synthesized semantic_en/vi, keywords)
@@ -57,6 +77,12 @@ export function renderFrontmatter(view) {
 
   // Default release state
   frontmatter.push(`release_state: ${view.releaseState || 'released'}`);
+  // Distinct axis — see devExtStatusLabel() above. Omitted entirely (not
+  // written as "unknown") when this KB has no signal, so its absence is
+  // never confused with a fetched "not_released" value.
+  if (view.devExtStatus) {
+    frontmatter.push(`dev_ext_status: ${view.devExtStatus}`);
+  }
 
   if (view.cleanCoreLevel) {
     frontmatter.push(`clean_core_level: ${view.cleanCoreLevel}`);
@@ -105,6 +131,13 @@ function renderPropertyTable(view) {
     rows.push(`| Software Component | \`${view.softwareComponent}\` |`);
   }
   rows.push(`| Release State | ${releaseStateLabel(view.releaseState)}${view.cleanCoreLevel ? ` (Level ${view.cleanCoreLevel})` : ''} |`);
+  const devExtLabel = devExtStatusLabel(view.devExtStatus);
+  if (devExtLabel) {
+    // Absolute GitHub URL, not a relative link — view files nest at varying
+    // depth under views/ (one folder per app_component segment), so no
+    // single relative path back to hook/ would be correct for all of them.
+    rows.push(`| Release State (Developer Extensibility) | ${devExtLabel} — separate from "Release State" above; see [dev-ext check procedure](https://github.com/StormShynn/cds-kb-data-kit/blob/main/docs/product/cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md) before \`association to\`/\`select from\` this entity in custom ABAP Developer Extensibility CDS views |`);
+  }
   if (view.systemType) {
     rows.push(`| System Type | ${view.systemType} |`);
   }

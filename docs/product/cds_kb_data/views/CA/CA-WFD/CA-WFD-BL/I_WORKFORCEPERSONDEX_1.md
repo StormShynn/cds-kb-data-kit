@@ -4,6 +4,7 @@ description: "This CDS view is designed to provide a comprehensive overview of w
 app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: not_released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKFORCEPERSONDEX_1')/$value

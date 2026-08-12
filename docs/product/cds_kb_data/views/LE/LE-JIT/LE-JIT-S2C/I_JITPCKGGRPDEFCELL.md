@@ -4,6 +4,7 @@ description: "This CDS view provides the cell definition data for JIT packing gr
 app_component: LE-JIT-S2C
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_JITPCKGGRPDEFCELL')/$value

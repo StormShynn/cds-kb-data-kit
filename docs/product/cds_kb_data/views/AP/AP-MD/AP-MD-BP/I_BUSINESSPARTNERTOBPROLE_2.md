@@ -4,6 +4,7 @@ description: "Business PartnerTOBPROLE 2"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released
+dev_ext_status: released
 clean_core_level: A
 system_type: public_cloud
 source_available: true

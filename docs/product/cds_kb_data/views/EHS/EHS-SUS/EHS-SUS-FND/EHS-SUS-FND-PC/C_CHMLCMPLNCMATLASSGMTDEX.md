@@ -4,6 +4,7 @@ description: "Chemical Compliance Info Material"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: not_released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHMLCMPLNCMATLASSGMTDEX')/$value

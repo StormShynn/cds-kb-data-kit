@@ -4,6 +4,7 @@ description: "Retail Fashion Management Sales Document Type per Sales Area"
 app_component: LO-RFM-CA-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: not_released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RFM_SLSDOCTYPEPERSLSAREA')/$value

@@ -4,6 +4,7 @@ description: "This CDS view was deprecated with 1811. . SAP may make the CDS vie
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTGROUP')/$value

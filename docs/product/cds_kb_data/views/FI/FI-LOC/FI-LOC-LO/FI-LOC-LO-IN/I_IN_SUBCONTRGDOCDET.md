@@ -4,6 +4,7 @@ description: "This CDS view retrieves data records of reconciliation status and 
 app_component: FI-LOC-LO-IN
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: not_released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_IN_SUBCONTRGDOCDET')/$value

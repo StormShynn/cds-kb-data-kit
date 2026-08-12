@@ -4,6 +4,7 @@ description: "This CDS view provides the supported values for DepreciationType. 
 app_component: FI-AA-AA-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSETDEPRECIATIONPHASETEXT')/$value

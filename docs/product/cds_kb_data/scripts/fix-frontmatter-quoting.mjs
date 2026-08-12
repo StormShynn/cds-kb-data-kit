@@ -52,6 +52,7 @@ async function processFile(filePath) {
     appComponent: scalar(fm, 'app_component'),
     softwareComponent: scalar(fm, 'software_component'),
     releaseState: scalar(fm, 'release_state'),
+    devExtStatus: scalar(fm, 'dev_ext_status'),
     cleanCoreLevel: scalar(fm, 'clean_core_level'),
     systemType: scalar(fm, 'system_type'),
     sourceUrl: scalar(fm, 'source_url'),

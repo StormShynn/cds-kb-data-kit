@@ -4,6 +4,7 @@ description: "This CDS view is designed to provide information about payment met
 app_component: FI-AP-IS-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PAYMENTMETHODINCOMPANYCODE')/$value

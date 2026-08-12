@@ -4,6 +4,7 @@ description: "This CDS view enables you to view a list of all available status t
 app_component: SCM-EWM-DLP-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_WHSEREQSTATUSTYPE')/$value

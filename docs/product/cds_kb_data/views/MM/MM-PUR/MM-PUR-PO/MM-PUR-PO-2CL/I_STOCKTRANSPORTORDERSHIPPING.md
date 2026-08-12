@@ -4,6 +4,7 @@ description: "Stock Transport Order Shipping Data"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: not_released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOCKTRANSPORTORDERSHIPPING')/$value

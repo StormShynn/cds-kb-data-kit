@@ -4,6 +4,7 @@ description: "Change document for WBS Element data"
 app_component: PS-ST
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: not_released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WBSELEMENTCHANGEDOCUMENTS')/$value

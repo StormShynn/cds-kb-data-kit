@@ -4,6 +4,7 @@ description: "The CDS entity C_GLAccountLineItemQuery functions as an analytical
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: not_released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLACCOUNTLINEITEMQUERY')/$value

@@ -4,6 +4,7 @@ description: "The primary purpose of this CDS view is to provide a structured an
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: not_released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONSOLIDATIONMATRIXRPT10Q')/$value

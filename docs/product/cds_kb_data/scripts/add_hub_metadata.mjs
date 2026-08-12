@@ -43,6 +43,7 @@ import { resolveViewFolder, findExistingView } from './lib/view-files.mjs';
 import { readJson, writeJson } from './lib/json-file.mjs';
 import { runPool } from './lib/concurrency.mjs';
 import { rebuildIndex } from './lib/rebuild-index.mjs';
+import { normalizeDevExtStatus } from './lib/hub-extensibility.mjs';
 
 const DATA_DIR = '.';
 const VIEWS_DIR = path.join(DATA_DIR, 'views');
@@ -118,6 +119,11 @@ async function buildWorkQueue() {
 
 async function processItem(item, opts, taxonomy, rowsByName, manifest, stats) {
   const { name, reason } = item;
+  // coverage.json's row.devExtStatus already carries the Hub's Developer
+  // Extensibility state (see check-coverage.mjs) for anything the Hub
+  // artifacts call knows about — stamp it onto new writes here instead of
+  // leaving them to rely solely on the separate backfill script.
+  const row = rowsByName.get(name);
   // Looked up by name anywhere in the tree, not a flat guess — a view
   // migrated into a module folder must still be recognized as existing, or
   // this would "new"-write a duplicate metadata-only stub at the old flat
@@ -173,6 +179,10 @@ async function processItem(item, opts, taxonomy, rowsByName, manifest, stats) {
     appComponent: meta.appComponent || '',
     softwareComponent: 'SAPSCORE',
     releaseState: 'released', // SAP-confirmed via the Hub catalog, not a guess
+    // Separate axis from releaseState above (see hook/quy-trinh-check-...md)
+    // — only set when the Hub's extensibility catalog actually has a value;
+    // undefined (not written) otherwise, never a guessed default.
+    devExtStatus: normalizeDevExtStatus(row?.devExtStatus) || undefined,
     systemType: 'S/4HANA Cloud Public Edition',
     semantic_en: meta.description || meta.label || '',
     semantic_vi: '',
@@ -199,7 +209,6 @@ async function processItem(item, opts, taxonomy, rowsByName, manifest, stats) {
   console.log(`   ✅ ${name} (${reason}): ${action} (${fields.length} fields, ${tags.length} tags)`);
   stats[action]++;
 
-  const row = rowsByName.get(name);
   manifest[name] = { modifiedAt: row?.modifiedAt || null, fetchedAt: new Date().toISOString() };
 
   if (opts.track) {

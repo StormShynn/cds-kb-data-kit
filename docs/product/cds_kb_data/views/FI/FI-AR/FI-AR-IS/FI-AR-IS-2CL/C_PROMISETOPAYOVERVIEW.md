@@ -4,6 +4,7 @@ description: "This CDS view provides details of promises to pay in SAP Dispute M
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: not_released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROMISETOPAYOVERVIEW')/$value
