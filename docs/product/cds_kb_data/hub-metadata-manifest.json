@@ -642,5 +642,173 @@
   "I_PROJBILLGELMNTSDUEOVERDUE": {
     "modifiedAt": 1784095349852,
     "fetchedAt": "2026-08-07T16:00:32.027Z"
+  },
+  "C_BKPOAPAYMENTWORKFLOWEDP": {
+    "modifiedAt": 1784095925243,
+    "fetchedAt": "2026-08-12T13:22:19.234Z"
+  },
+  "C_BANKRATINGANALYSISQUERY": {
+    "modifiedAt": 1784095927678,
+    "fetchedAt": "2026-08-12T13:22:19.236Z"
+  },
+  "C_CMPLOBLASGTTSKBYOVRDDTEQ": {
+    "modifiedAt": 1784095783991,
+    "fetchedAt": "2026-08-12T13:22:19.290Z"
+  },
+  "C_ENTPROJOVHDBDGTCMTMTQRY": {
+    "modifiedAt": 1784095861955,
+    "fetchedAt": "2026-08-12T13:22:20.179Z"
+  },
+  "C_CMPLRQRSLTMARKETABILITYDEX": {
+    "modifiedAt": 1784095784542,
+    "fetchedAt": "2026-08-12T13:22:20.179Z"
+  },
+  "C_ENTPROJCOSTBRKDWNQUERY": {
+    "modifiedAt": 1784095863021,
+    "fetchedAt": "2026-08-12T13:22:20.201Z"
+  },
+  "C_ENTPROJOVHDPLNACTLCMTMTQRY": {
+    "modifiedAt": 1784095861898,
+    "fetchedAt": "2026-08-12T13:22:21.012Z"
+  },
+  "C_FINSGLERRITMWRKFLWEMLTMPL": {
+    "modifiedAt": 1784095323066,
+    "fetchedAt": "2026-08-12T13:22:21.012Z"
+  },
+  "C_ENTPROJOVHDDEBITCRDTQRY": {
+    "modifiedAt": 1784095862500,
+    "fetchedAt": "2026-08-12T13:22:21.036Z"
+  },
+  "C_INVMTPRJPLNACTLCMTMTQ": {
+    "modifiedAt": 1784095862199,
+    "fetchedAt": "2026-08-12T13:22:21.877Z"
+  },
+  "C_INVMTPROJACTLLINEITMQ": {
+    "modifiedAt": 1784095862171,
+    "fetchedAt": "2026-08-12T13:22:21.902Z"
+  },
+  "C_INVMTPROJACTLLINEITM2Q": {
+    "modifiedAt": 1784095862801,
+    "fetchedAt": "2026-08-12T13:22:21.903Z"
+  },
+  "C_INVMTPROJBDGTCMTMTQUERY": {
+    "modifiedAt": 1784095862750,
+    "fetchedAt": "2026-08-12T13:22:22.677Z"
+  },
+  "C_INVMTPROJPLNACTLCMTMT2Q": {
+    "modifiedAt": 1784095862018,
+    "fetchedAt": "2026-08-12T13:22:22.701Z"
+  },
+  "C_INVMTPROJBDGTCMTMT2QUERY": {
+    "modifiedAt": 1784095861836,
+    "fetchedAt": "2026-08-12T13:22:22.746Z"
+  },
+  "C_MARKETSEGMENTPLANACTQ": {
+    "modifiedAt": 1784095862279,
+    "fetchedAt": "2026-08-12T13:22:23.626Z"
+  },
+  "C_PMTUPCOMINGRENEWALFLTRQ": {
+    "modifiedAt": 1784095784667,
+    "fetchedAt": "2026-08-12T13:22:23.627Z"
+  },
+  "C_PUBSECFINACCTGITEMQRY": {
+    "modifiedAt": 1784095784416,
+    "fetchedAt": "2026-08-12T13:22:23.675Z"
+  },
+  "C_RAOPENREVENUEPERPERIODQRY_4": {
+    "modifiedAt": 1784095862392,
+    "fetchedAt": "2026-08-12T13:22:24.513Z"
+  },
+  "C_RAFISCALYEARPERIODVH": {
+    "modifiedAt": 1784095862253,
+    "fetchedAt": "2026-08-12T13:22:24.554Z"
+  },
+  "C_SUSTSUPPLIERINVOICEITEMDEX": {
+    "modifiedAt": 1784095784355,
+    "fetchedAt": "2026-08-12T13:22:24.554Z"
+  },
+  "I_ACTLPLNSRVCMARGITEMDST": {
+    "modifiedAt": 1784095862365,
+    "fetchedAt": "2026-08-12T13:22:25.475Z"
+  },
+  "I_ACTPLNJRNLENTRITEMCUBE_2": {
+    "modifiedAt": 1784095862083,
+    "fetchedAt": "2026-08-12T13:22:25.500Z"
+  },
+  "I_BANKRATINGANALYSISCUBE": {
+    "modifiedAt": 1784095927495,
+    "fetchedAt": "2026-08-12T13:22:25.526Z"
+  },
+  "I_BPCREDITPROFILEDEX": {
+    "modifiedAt": 1784095925267,
+    "fetchedAt": "2026-08-12T13:22:26.325Z"
+  },
+  "I_CNTRLSUPLRCONFITEMBASIC": {
+    "modifiedAt": 1784095489178,
+    "fetchedAt": "2026-08-12T13:22:26.348Z"
+  },
+  "I_CNTRLSUPLRCONFBASIC": {
+    "modifiedAt": 1784095489362,
+    "fetchedAt": "2026-08-12T13:22:26.348Z"
+  },
+  "I_CREDITMANAGEMENTACCOUNTDEX": {
+    "modifiedAt": 1784095925143,
+    "fetchedAt": "2026-08-12T13:22:27.165Z"
+  },
+  "I_CNTRLSUPLRCONFLINEBASIC": {
+    "modifiedAt": 1784095489060,
+    "fetchedAt": "2026-08-12T13:22:27.167Z"
+  },
+  "I_ENTPROJCOSTBRKDWNCUBE": {
+    "modifiedAt": 1784095862226,
+    "fetchedAt": "2026-08-12T13:22:27.218Z"
+  },
+  "I_HUITMSRLNMBRINVTRYWRHSMGMT": {
+    "modifiedAt": 1784095550730,
+    "fetchedAt": "2026-08-12T13:22:27.996Z"
+  },
+  "I_HNDLGUNTITMINVTRYWRHSMGMT": {
+    "modifiedAt": 1784095549798,
+    "fetchedAt": "2026-08-12T13:22:28.053Z"
+  },
+  "I_HNDLGUNTHDRINVTRYWRHSMGMT": {
+    "modifiedAt": 1784095549958,
+    "fetchedAt": "2026-08-12T13:22:28.054Z"
+  },
+  "I_INVMTPROJBDGTCMTMTCUBE": {
+    "modifiedAt": 1784095862144,
+    "fetchedAt": "2026-08-12T13:22:28.860Z"
+  },
+  "I_INVMTPROJACTLLINEITMCUBE": {
+    "modifiedAt": 1784095862827,
+    "fetchedAt": "2026-08-12T13:22:28.860Z"
+  },
+  "I_INVMTPRJPLNACTLCMTMTCUBE": {
+    "modifiedAt": 1784095862595,
+    "fetchedAt": "2026-08-12T13:22:28.860Z"
+  },
+  "I_PERMITUPCOMINGRENEWALCUBE": {
+    "modifiedAt": 1784095784051,
+    "fetchedAt": "2026-08-12T13:22:29.706Z"
+  },
+  "I_IN_SUBCONTRGDOCDET_2": {
+    "modifiedAt": 1784095572736,
+    "fetchedAt": "2026-08-12T13:22:29.706Z"
+  },
+  "I_MKTSGMTREPCRCYFLD": {
+    "modifiedAt": 1784095862963,
+    "fetchedAt": "2026-08-12T13:22:29.729Z"
+  },
+  "I_SERVICEMARGINDST": {
+    "modifiedAt": 1784095861730,
+    "fetchedAt": "2026-08-12T13:22:30.568Z"
+  },
+  "I_REVENUEGROWTHPROMOTIONVH": {
+    "modifiedAt": 1784095783931,
+    "fetchedAt": "2026-08-12T13:22:30.568Z"
+  },
+  "I_RAOPENREVENUEPERPERIODCUBE_4": {
+    "modifiedAt": 1784095863106,
+    "fetchedAt": "2026-08-12T13:22:30.602Z"
   }
 }
