@@ -1478,7 +1478,13 @@ function composeQuery(q = {}) {
           if (i === 0) return { alias: v.alias, name: v.name, joinType: null, on: null };
           if (v.mode === 'assoc') return { alias: v.alias, name: v.name, mode: 'assoc' };
           if (v.rawToggle) return { alias: v.alias, name: v.name || null, raw: (v.raw || '').trim() };
-          return { alias: v.alias, name: v.name, joinType: v.joinType, on: joinOnText(v) };
+          const out = { alias: v.alias, name: v.name, joinType: v.joinType, on: joinOnText(v) };
+          // declareAssoc only affects the CDS-view tab's rendering of this
+          // row (see cdsAssocLines/cdsAliasMap) — carry it along so a
+          // reloaded query still shows `association [...] on ...` there
+          // instead of silently reverting to a plain inline JOIN.
+          if (v.declareAssoc) { out.declareAssoc = true; out.assocAlias = v.assocAlias; out.assocCardinality = v.assocCardinality; }
+          return out;
         }),
       select: isRaw('select') ? rawText('select') : (function () {
         const selected = allFields().filter(f => selectState[f.qualifiedName]?.checked);
@@ -1726,7 +1732,15 @@ function composeQuery(q = {}) {
       // back to raw mode with the saved/reconstructed line, same as before.
       const parsedConds = (!v.raw && v.on) ? parseJoinOn(v.on, priorFieldOptions(i), alias, fields) : null;
       if (parsedConds) {
-        joinedViews.push({ alias, name, fields, joinType, mode: 'join', onConditions: parsedConds, rawToggle: false, raw: '' });
+        joinedViews.push({
+          alias, name, fields, joinType, mode: 'join', onConditions: parsedConds, rawToggle: false, raw: '',
+          // Only meaningful in structured mode — the CDS-view tab's
+          // declare-a-new-association toggle (see cdsAssocLines) — so it's
+          // restored here, never on the raw-fallback branch below.
+          declareAssoc: !!v.declareAssoc,
+          assocAlias: v.assocAlias || defaultAssocAlias(name),
+          assocCardinality: v.assocCardinality || CARDINALITIES[2],
+        });
       } else {
         const raw = v.raw != null ? v.raw : (name ? joinType + ' ' + name + ' AS ' + alias + ' ON ' + (v.on || '<join condition>') : '');
         joinedViews.push({ alias, name, fields, joinType, mode: 'join', onConditions: [], rawToggle: true, raw });
