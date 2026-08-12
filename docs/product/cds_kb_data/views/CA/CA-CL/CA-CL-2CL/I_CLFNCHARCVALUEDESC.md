@@ -30,15 +30,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  | `cast ( CharacteristicValueDesc.atinn as atinn_no_conv preserving type )` |  |  |
-| `CharcValuePositionNumber` | ✓ | |  | `atzhl` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `TimeIntervalNumber` | ✓ | |  | `adzhl` |  |  |
-| `CharcValueDescription` |  | |  | `atwtb` |  |  |
-| `ChangeNumber` |  | |  | `aennr` |  |  |
-| `ValidityStartDate` |  | |  | `datuv` |  |  |
-| `ValidityEndDate` |  | |  | `datub` |  |  |
-| `IsDeleted` |  | |  | `lkenz` |  |  |
+| `CharcInternalID` | ✓ | |  | `cast ( CharacteristicValueDesc.atinn as atinn_no_conv preserving type )` | `NUMC(10)` | Characteristic Internal ID |
+| `CharcValuePositionNumber` | ✓ | |  | `atzhl` | `NUMC(4)` | Int counter |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `TimeIntervalNumber` | ✓ | |  | `adzhl` | `NUMC(4)` | Internal Counter for Archiving Objects by ECM |
+| `CharcValueDescription` |  | |  | `atwtb` | `CHAR(70)` | Characteristic value description |
+| `ChangeNumber` |  | |  | `aennr` | `CHAR(12)` | Change Number |
+| `ValidityStartDate` |  | |  | `datuv` | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  | `datub` | `DATS(8)` | Valid-to date |
+| `IsDeleted` |  | |  | `lkenz` | `CHAR(1)` | Deletion Indicator |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

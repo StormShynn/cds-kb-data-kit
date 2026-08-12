@@ -30,37 +30,37 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  | `cast ( CharacteristicValue.atinn as atinn_no_conv preserving type )` |  |  |
-| `CharcValuePositionNumber` | ✓ | |  | `atzhl` |  |  |
-| `TimeIntervalNumber` | ✓ | |  | `adzhl` |  |  |
-| `CharcValueParentPositionNumber` |  | |  | `atzhh` |  |  |
-| `CharcValueHasChild` |  | |  | `atwhi` |  |  |
-| `CharcValueIntervalType` |  | |  | `atcod` |  |  |
-| `CharcValue` |  | |  | `atwrt` |  |  |
-| `CharcFromNumericValue` |  | |  | `atflv` |  |  |
-| `CharcToNumericValue` |  | |  | `atflb` |  |  |
-| `IsDefaultValue` |  | |  | `atstd` |  |  |
-| `CharcFromNumericValueUnit` |  | |  | `atawe` |  |  |
-| `CharcToNumericValueUnit` |  | |  | `ataw1` |  |  |
-| `CharcFromDecimalValue` |  | |  | `dec_from` |  |  |
-| `CharcToDecimalValue` |  | |  | `dec_to` |  |  |
-| `CharcFromDate` |  | |  | `date_from` |  |  |
-| `CharcToDate` |  | |  | `date_to` |  |  |
-| `CharcFromTime` |  | |  | `time_from` |  |  |
-| `CharcToTime` |  | |  | `time_to` |  |  |
-| `CharcFromAmount` |  | |  | `curr_from` |  |  |
-| `CharcToAmount` |  | |  | `curr_to` |  |  |
-| `Currency` |  | |  | `currency` |  |  |
-| `LongTextID` |  | |  | `txtnr` |  |  |
-| `ChangeNumber` |  | |  | `aennr` |  |  |
-| `ValidityStartDate` |  | |  | `datuv` |  |  |
-| `ValidityEndDate` |  | |  | `datub` |  |  |
-| `IsDeleted` |  | |  | `lkenz` |  |  |
-| `DocumentInfoRecordDocNumber` |  | |  | `doknr` |  |  |
-| `DocumentInfoRecordDocPart` |  | |  | `doktl` |  |  |
-| `DocumentInfoRecordDocVersion` |  | |  | `dokvr` |  |  |
-| `DocumentInfoRecordDocType` |  | |  | `dokar` |  |  |
-| `CharcIdentificationCode` |  | |  | `atidn` |  |  |
+| `CharcInternalID` | ✓ | |  | `cast ( CharacteristicValue.atinn as atinn_no_conv preserving type )` | `NUMC(10)` | Characteristic Internal ID |
+| `CharcValuePositionNumber` | ✓ | |  | `atzhl` | `NUMC(4)` | Int counter |
+| `TimeIntervalNumber` | ✓ | |  | `adzhl` | `NUMC(4)` | Internal Counter for Archiving Objects by ECM |
+| `CharcValueParentPositionNumber` |  | |  | `atzhh` | `NUMC(4)` | Int. counter for value hierarchy |
+| `CharcValueHasChild` |  | |  | `atwhi` | `CHAR(1)` | Indicator that Subordinate Values Exist |
+| `CharcValueIntervalType` |  | |  | `atcod` | `CHAR(1)` | Code for value dependency |
+| `CharcValue` |  | |  | `atwrt` | `CHAR(70)` | Characteristic Value |
+| `CharcFromNumericValue` |  | |  | `atflv` | `FLTP(16)` | Internal floating point from |
+| `CharcToNumericValue` |  | |  | `atflb` | `FLTP(16)` | Internal floating point value to |
+| `IsDefaultValue` |  | |  | `atstd` | `CHAR(1)` | Default value |
+| `CharcFromNumericValueUnit` |  | |  | `atawe` | `UNIT(3)` | Unit of Measurement |
+| `CharcToNumericValueUnit` |  | |  | `ataw1` | `UNIT(3)` | Unit of Measurement |
+| `CharcFromDecimalValue` |  | |  | `dec_from` | `DECF(34)` | Lower Boundary for Numeric Field |
+| `CharcToDecimalValue` |  | |  | `dec_to` | `DECF(34)` | Upper Boundary for Numeric Field |
+| `CharcFromDate` |  | |  | `date_from` | `DATS(8)` | Lower Boundary for Date-Interval |
+| `CharcToDate` |  | |  | `date_to` | `DATS(8)` | Upper Boundary for Date-Interval |
+| `CharcFromTime` |  | |  | `time_from` | `TIMS(6)` | Lower Boundary for Time-Interval |
+| `CharcToTime` |  | |  | `time_to` | `TIMS(6)` | Upper Boundary for Time-Interval |
+| `CharcFromAmount` |  | |  | `curr_from` | `CURR(23)` | Lower Boundary for Currency Field |
+| `CharcToAmount` |  | |  | `curr_to` | `CURR(23)` | Upper Boundary for Currency Field |
+| `Currency` |  | |  | `currency` | `CUKY(5)` | Currency Key |
+| `LongTextID` |  | |  | `txtnr` | `NUMC(4)` | Number of Related Text |
+| `ChangeNumber` |  | |  | `aennr` | `CHAR(12)` | Change Number |
+| `ValidityStartDate` |  | |  | `datuv` | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  | `datub` | `DATS(8)` | Valid-to date |
+| `IsDeleted` |  | |  | `lkenz` | `CHAR(1)` | Deletion Indicator |
+| `DocumentInfoRecordDocNumber` |  | |  | `doknr` | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocPart` |  | |  | `doktl` | `CHAR(3)` | Document Part |
+| `DocumentInfoRecordDocVersion` |  | |  | `dokvr` | `CHAR(2)` | Document Version |
+| `DocumentInfoRecordDocType` |  | |  | `dokar` | `CHAR(3)` | Document Type |
+| `CharcIdentificationCode` |  | |  | `atidn` | `CHAR(2)` | Object identification |
 | `_Currency` | | ✓ | | | | |
 
 ## Associations

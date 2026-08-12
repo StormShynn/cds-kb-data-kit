@@ -31,9 +31,28 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `'KSSK'` |  | |  | `table: 'KSSK'` |  |  |
-| `'ADZHL']` |  | |  | `tableElement: ['OBJEK','MAFID','KLART','CLINT','ADZHL']` |  |  |
-| `'TimeIntervalNumber']` |  | |  | `viewElement: ['ClfnObjectID','ClfnObjectType','ClassType','ClassInternalID','TimeIntervalNumber']` |  |  |
+| `ClfnObjectID` | ✓ | |  |  | `CHAR(90)` | Key of Object to be Classified |
+| `ClassInternalID` | ✓ | |  |  | `NUMC(10)` | Internal Class Number |
+| `ClassType` | ✓ | |  |  | `CHAR(3)` | Class Type |
+| `ClfnObjectType` | ✓ | |  |  | `CHAR(1)` | Indicator: Object/Class |
+| `TimeIntervalNumber` | ✓ | |  |  | `NUMC(4)` | Internal Counter for Archiving Objects by ECM |
+| `ClfnObjectTable` |  | |  |  | `CHAR(30)` | Classification Object |
+| `ClfnStatus` |  | |  |  | `CHAR(1)` | Classification status |
+| `ClassPositionNumber` |  | |  |  | `INT2(5)` | Sort position |
+| `ClassIsStandardClass` |  | |  |  | `CHAR(1)` | Class Is Standard Class Indicator |
+| `BOMIsRecursive` |  | |  |  | `CHAR(1)` | BOM is recursive |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-to date |
+| `LastChangeDateTime` |  | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| `_Class` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Class` | `I_ClfnClass` | [1..1] |
 
 ## Source Code
 

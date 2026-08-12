@@ -30,14 +30,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassType` | ✓ | |  | `klart` |  |  |
-| `ClfnObjectTable` |  | |  | `obtab` |  |  |
-| `MultipleObjTableClfnIsAllowed` |  | |  | `multobj` |  |  |
-| `ClfnNewNumberingIsAllowed` |  | |  | `ausp_new` |  |  |
-| `ClassTypeIsInternal` |  | |  | `intklart` |  |  |
-| `EngChangeMgmtIsAllowed` |  | |  | `aediezuord` |  |  |
-| `MultipleClassIsAllowed` |  | |  | `mfkls` |  |  |
-| `ClassTypeIsUsableInVarConfign` |  | |  | `varklart` |  |  |
+| `ClassType` | ✓ | |  | `klart` | `CHAR(3)` | Class Type |
+| `ClfnObjectTable` |  | |  | `obtab` | `CHAR(30)` | Classification Object |
+| `MultipleObjTableClfnIsAllowed` |  | |  | `multobj` | `CHAR(1)` | Multiple Objects Allowed |
+| `ClfnNewNumberingIsAllowed` |  | |  | `ausp_new` | `CHAR(1)` | Table AUSP Optimized Regarding Date (Internal Use Only) |
+| `ClassTypeIsInternal` |  | |  | `intklart` | `CHAR(1)` | Internal class type |
+| `EngChangeMgmtIsAllowed` |  | |  | `aediezuord` | `CHAR(1)` | Engin. change mgmt (time-related) for classification |
+| `MultipleClassIsAllowed` |  | |  | `mfkls` | `CHAR(1)` | Indicator: multiple classification |
+| `ClassTypeIsUsableInVarConfign` |  | |  | `varklart` | `CHAR(1)` | Only Variant Class Type |
 | `_ClassTypeText` | | ✓ | | | | |
 
 ## Source Code

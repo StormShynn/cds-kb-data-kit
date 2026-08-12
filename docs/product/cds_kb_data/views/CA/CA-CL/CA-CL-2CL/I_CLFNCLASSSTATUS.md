@@ -31,9 +31,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassType` | ✓ | |  | `klart` |  |  |
-| `ClassStatus` | ✓ | |  | `status` |  |  |
-| `ClassificationIsAllowed` |  | |  | `cast ( ClassStatus.klfkz as classificationisallowed preserving type )` |  |  |
+| `ClassType` | ✓ | |  | `klart` | `CHAR(3)` | Class Type |
+| `ClassStatus` | ✓ | |  | `status` | `CHAR(1)` | Class status |
+| `ClassificationIsAllowed` |  | |  | `cast ( ClassStatus.klfkz as classificationisallowed preserving type )` | `CHAR(1)` | Classification Is Allowed Indicator |
 | `_ClassType` | | ✓ | | | | |
 | `_ClassStatusText` | | ✓ | | | | |
 

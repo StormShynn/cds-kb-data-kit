@@ -31,9 +31,44 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `'CAWN'` |  | |  | `table: 'CAWN'` |  |  |
-| `'ADZHL']` |  | |  | `tableElement: ['ATINN','ATZHL','ADZHL']` |  |  |
-| `'TimeIntervalNumber']` |  | |  | `viewElement: ['CharcInternalID','CharcValuePositionNumber','TimeIntervalNumber']` |  |  |
+| `CharcInternalID` | ✓ | |  |  | `NUMC(10)` | Characteristic Internal ID |
+| `CharcValuePositionNumber` | ✓ | |  |  | `NUMC(4)` | Int counter |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Valid-to date |
+| `TimeIntervalNumber` |  | |  |  | `NUMC(4)` | Internal Counter for Archiving Objects by ECM |
+| `CharcValueParentPositionNumber` |  | |  |  | `NUMC(4)` | Int. counter for value hierarchy |
+| `CharcValueHasChild` |  | |  |  | `CHAR(1)` | Indicator that Subordinate Values Exist |
+| `CharcValueIntervalType` |  | |  |  | `CHAR(1)` | Code for value dependency |
+| `CharcValue` |  | |  |  | `CHAR(70)` | Characteristic Value |
+| `CharcFromNumericValue` |  | |  |  | `FLTP(16)` | Internal floating point from |
+| `CharcToNumericValue` |  | |  |  | `FLTP(16)` | Internal floating point value to |
+| `IsDefaultValue` |  | |  |  | `CHAR(1)` | Default value |
+| `CharcFromNumericValueUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement |
+| `CharcToNumericValueUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement |
+| `CharcFromDecimalValue` |  | |  |  | `DECF(34)` | Lower Boundary for Numeric Field |
+| `CharcToDecimalValue` |  | |  |  | `DECF(34)` | Upper Boundary for Numeric Field |
+| `CharcFromDate` |  | |  |  | `DATS(8)` | Lower Boundary for Date-Interval |
+| `CharcToDate` |  | |  |  | `DATS(8)` | Upper Boundary for Date-Interval |
+| `CharcFromTime` |  | |  |  | `TIMS(6)` | Lower Boundary for Time-Interval |
+| `CharcToTime` |  | |  |  | `TIMS(6)` | Upper Boundary for Time-Interval |
+| `CharcFromAmount` |  | |  |  | `CURR(23)` | Lower Boundary for Currency Field |
+| `CharcToAmount` |  | |  |  | `CURR(23)` | Upper Boundary for Currency Field |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `DocumentInfoRecordDocNumber` |  | |  |  | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocPart` |  | |  |  | `CHAR(3)` | Document Part |
+| `DocumentInfoRecordDocVersion` |  | |  |  | `CHAR(2)` | Document Version |
+| `DocumentInfoRecordDocType` |  | |  |  | `CHAR(3)` | Document Type |
+| `_Currency` | | ✓ | | | | |
+| `_Characteristic` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Currency` | `I_Currency` | [0..1] |
+| `_Characteristic` | `I_ClfnCharacteristicDEX` | [1..*] |
 
 ## Source Code
 

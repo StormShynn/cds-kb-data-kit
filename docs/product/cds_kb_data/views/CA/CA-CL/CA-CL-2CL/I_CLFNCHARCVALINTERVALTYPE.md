@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcValueIntervalType` | ✓ | |  | `cast( dd07l.domvalue_l as atcod )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CharcValueIntervalType` | ✓ | |  | `cast( dd07l.domvalue_l as atcod )` | `CHAR(1)` | Code for value dependency |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

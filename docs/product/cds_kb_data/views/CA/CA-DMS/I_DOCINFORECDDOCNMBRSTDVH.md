@@ -32,8 +32,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocNumber` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  |  | `CHAR(3)` | Document Type |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  | `CHAR(25)` | Document Number |
 | `_DocType` | | ✓ | | | | |
 
 ## Source Code

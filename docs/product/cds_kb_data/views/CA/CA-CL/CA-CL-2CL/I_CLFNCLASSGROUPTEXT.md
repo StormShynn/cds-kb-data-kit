@@ -32,9 +32,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassGroup` | ✓ | |  | `klagr` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ClassGroupName` |  | |  | `ktext` |  |  |
+| `ClassGroup` | ✓ | |  | `klagr` | `CHAR(10)` | Class Group |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ClassGroupName` |  | |  | `ktext` | `CHAR(40)` | Class Group Description |
 | `_Language` | | ✓ | | | | |
 | `_ClassGroup` | | ✓ | | | | |
 

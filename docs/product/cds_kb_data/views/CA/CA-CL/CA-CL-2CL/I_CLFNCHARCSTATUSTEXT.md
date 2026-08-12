@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CharcStatus` | ✓ | |  | `atmst` |  |  |
-| `CharcStatusName` |  | |  | `atstt` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CharcStatus` | ✓ | |  | `atmst` | `CHAR(1)` | Characteristic status |
+| `CharcStatusName` |  | |  | `atstt` | `CHAR(20)` | Characteristic Status |
 | `_Language` | | ✓ | | | | |
 | `_CharcStatus` | | ✓ | | | | |
 

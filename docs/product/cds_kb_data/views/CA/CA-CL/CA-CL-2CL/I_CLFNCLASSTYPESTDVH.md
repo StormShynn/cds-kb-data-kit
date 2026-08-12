@@ -32,7 +32,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassType` | ✓ | |  |  |  |  |
+| `ClassType` | ✓ | |  |  | `CHAR(3)` | Class Type |
 | `_Text` |  | |  | `_ClassTypeText` |  |  |
 
 ## Source Code

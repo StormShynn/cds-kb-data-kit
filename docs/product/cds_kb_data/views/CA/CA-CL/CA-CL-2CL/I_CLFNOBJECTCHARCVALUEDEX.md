@@ -31,9 +31,42 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `'AUSP'` |  | |  | `table: 'AUSP'` |  |  |
-| `'ADZHL']` |  | |  | `tableElement: ['OBJEK','ATINN','ATZHL','MAFID','KLART','ADZHL']` |  |  |
-| `'TimeIntervalNumber']` |  | |  | `viewElement: ['ClfnObjectID','CharcInternalID','ClfnCharcValuePositionNumber','ClfnObjectType','ClassType','TimeIntervalNumber']` |  |  |
+| `ClfnObjectID` | ✓ | |  |  | `CHAR(90)` | Key of Object to be Classified |
+| `CharcInternalID` | ✓ | |  |  | `NUMC(10)` | Characteristic Internal ID |
+| `ClfnCharcValuePositionNumber` | ✓ | |  | `CharcValuePositionNumber` | `NUMC(3)` | Characteristic value counter |
+| `ClfnObjectType` | ✓ | |  |  | `CHAR(1)` | Indicator: Object/Class |
+| `ClassType` | ✓ | |  |  | `CHAR(3)` | Class Type |
+| `TimeIntervalNumber` | ✓ | |  |  | `NUMC(4)` | Internal Counter for Archiving Objects by ECM |
+| `ClfnObjectTable` |  | |  |  | `CHAR(30)` | Classification Object |
+| `CharcValueIntervalType` |  | |  |  | `CHAR(1)` | Code for value dependency |
+| `CharcValue` |  | |  |  | `CHAR(70)` | Characteristic Value |
+| `CharcFromNumericValue` |  | |  |  | `FLTP(16)` | Internal floating point from |
+| `CharcFromNumericValueUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement |
+| `CharcToNumericValue` |  | |  |  | `FLTP(16)` | Internal floating point value to |
+| `CharcToNumericValueUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement |
+| `CharcFromDecimalValue` |  | |  |  | `DEC(31)` | Lower Boundary for Numeric Field |
+| `CharcToDecimalValue` |  | |  |  | `DEC(31)` | Upper Boundary for Numeric Field |
+| `CharcFromAmount` |  | |  |  | `CURR(23)` | Lower Boundary for Currency Field |
+| `CharcToAmount` |  | |  |  | `CURR(23)` | Upper Boundary for Currency Field |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `CharcFromDate` |  | |  |  | `DATS(8)` | Lower Boundary for Date-Interval |
+| `CharcToDate` |  | |  |  | `DATS(8)` | Upper Boundary for Date-Interval |
+| `CharcFromTime` |  | |  |  | `TIMS(6)` | Lower Boundary for Time-Interval |
+| `CharcToTime` |  | |  |  | `TIMS(6)` | Upper Boundary for Time-Interval |
+| `CharcAuthor` |  | |  | `CharacteristicAuthor` | `CHAR(1)` | Classification Author |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `CharcValueSortPosition` |  | |  |  | `NUMC(4)` | Sort field for AUSP char. values |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-to date |
+| `LastChangeDateTime` |  | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| `_Characteristic` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Characteristic` | `I_ClfnCharacteristic` | [1..*] |
 
 ## Source Code
 

@@ -32,9 +32,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CharcGroup` | ✓ | |  | `cast ( CharacteristicGroupText.atkla as charcgroup preserving type )` |  |  |
-| `CharcGroupName` |  | |  | `atklt` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CharcGroup` | ✓ | |  | `cast ( CharacteristicGroupText.atkla as charcgroup preserving type )` | `CHAR(10)` | Characteristic Group |
+| `CharcGroupName` |  | |  | `atklt` | `CHAR(40)` | Description of Characteristics Group |
 | `_Language` | | ✓ | | | | |
 | `_CharcGroup` | | ✓ | | | | |
 

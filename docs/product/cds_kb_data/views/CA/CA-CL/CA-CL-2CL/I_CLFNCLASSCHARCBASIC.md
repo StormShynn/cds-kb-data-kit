@@ -30,23 +30,23 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ClassInternalID` | ✓ | |  | `clint` |  |  |
-| `CharcPositionNumber` | ✓ | |  | `posnr` |  |  |
-| `TimeIntervalNumber` | ✓ | |  | `adzhl` |  |  |
-| `CharcInternalID` |  | |  | `cast ( ClassCharc.imerk as atinn_no_conv preserving type )` |  |  |
-| `OverwrittenCharcInternalID` |  | |  | `cast ( ClassCharc.omerk as atinn_no_conv preserving type )` |  |  |
-| `ClfnOrganizationalArea` |  | |  | `cast ( ClassCharc.abtei as clfnorganizationalarea preserving type )` |  |  |
-| `ClassType` |  | |  | `klart` |  |  |
-| `ChangeNumber` |  | |  | `aennr` |  |  |
-| `ValidityStartDate` |  | |  | `datuv` |  |  |
-| `ValidityEndDate` |  | |  | `datub` |  |  |
-| `IsDeleted` |  | |  | `lkenz` |  |  |
-| `CharcOriginText` |  | |  | `herku` |  |  |
-| `CharcIsProposalRelevant` |  | |  | `prop_rel` |  |  |
-| `CharcIsPrptnOrProdUnitRelevant` |  | |  | `pprel` |  |  |
-| `CharcIsPrintRelevant` |  | |  | `cast ( case when ClassCharc.amerk = '1000000000' then 'X' when ClassCharc.amerk = '1200000000' then 'X' when ClassCharc.amerk = '1300000000' then 'X' when ClassCharc.amerk = '1400000000' then 'X' when ClassCharc.amerk = '1230000000' then 'X' when ClassCharc.amerk = '1240000000' then 'X' when ClassCharc.amerk = '1340000000' then 'X' when ClassCharc.amerk = '1234000000' then 'X' when not ( ClassCharc.amerk = '1000000000' and ClassCharc.amerk = '1200000000' and ClassCharc.amerk = '1300000000' and ClassCharc.amerk = '1400000000' and ClassCharc.amerk = '1230000000' and ClassCharc.amerk = '1240000000' and ClassCharc.amerk = '1340000000' and ClassCharc.amerk = '1234000000' ) then '' end as charcisprintrelevant preserving type )` |  |  |
-| `CharcIsSearchRelevant` |  | |  | `cast ( case when ClassCharc.amerk = '2000000000' then 'X' when ClassCharc.amerk = '1200000000' then 'X' when ClassCharc.amerk = '2300000000' then 'X' when ClassCharc.amerk = '2400000000' then 'X' when ClassCharc.amerk = '1230000000' then 'X' when ClassCharc.amerk = '1240000000' then 'X' when ClassCharc.amerk = '2340000000' then 'X' when ClassCharc.amerk = '1234000000' then 'X' when not ( ClassCharc.amerk = '2000000000' and ClassCharc.amerk = '1200000000' and ClassCharc.amerk = '2300000000' and ClassCharc.amerk = '2400000000' and ClassCharc.amerk = '1230000000' and ClassCharc.amerk = '1240000000' and ClassCharc.amerk = '2340000000' and ClassCharc.amerk = '1234000000' ) then '' end as charcissearchrelevant preserving type )` |  |  |
-| `CharcIsDisplayRelevant` |  | |  | `cast ( case when ClassCharc.amerk = '3000000000' then 'X' when ClassCharc.amerk = '1300000000' then 'X' when ClassCharc.amerk = '2300000000' then 'X' when ClassCharc.amerk = '3400000000' then 'X' when ClassCharc.amerk = '1230000000' then 'X' when ClassCharc.amerk = '1340000000' then 'X' when ClassCharc.amerk = '2340000000' then 'X' when ClassCharc.amerk = '1234000000' then 'X' when not ( ClassCharc.amerk = '3000000000' and ClassCharc.amerk = '1300000000' and ClassCharc.amerk = '2300000000' and ClassCharc.amerk = '3400000000' and ClassCharc.amerk = '1230000000' and ClassCharc.amerk = '1340000000' and ClassCharc.amerk = '2340000000' and ClassCharc.amerk = '1234000000' ) then '' end as charcisdisplayrelevant preserving type )` |  |  |
+| `ClassInternalID` | ✓ | |  | `clint` | `NUMC(10)` | Internal Class Number |
+| `CharcPositionNumber` | ✓ | |  | `posnr` | `NUMC(3)` | Position number |
+| `TimeIntervalNumber` | ✓ | |  | `adzhl` | `NUMC(4)` | Internal Counter for Archiving Objects by ECM |
+| `CharcInternalID` |  | |  | `cast ( ClassCharc.imerk as atinn_no_conv preserving type )` | `NUMC(10)` | Characteristic Internal ID |
+| `OverwrittenCharcInternalID` |  | |  | `cast ( ClassCharc.omerk as atinn_no_conv preserving type )` | `NUMC(10)` | Characteristic Internal ID |
+| `ClfnOrganizationalArea` |  | |  | `cast ( ClassCharc.abtei as clfnorganizationalarea preserving type )` | `CHAR(10)` | Organizational Area |
+| `ClassType` |  | |  | `klart` | `CHAR(3)` | Class Type |
+| `ChangeNumber` |  | |  | `aennr` | `CHAR(12)` | Change Number |
+| `ValidityStartDate` |  | |  | `datuv` | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  | `datub` | `DATS(8)` | Valid-to date |
+| `IsDeleted` |  | |  | `lkenz` | `CHAR(1)` | Deletion Indicator |
+| `CharcOriginText` |  | |  | `herku` | `CHAR(10)` | Characteristic origin |
+| `CharcIsProposalRelevant` |  | |  | `prop_rel` | `CHAR(1)` | Proposal Relevant |
+| `CharcIsPrptnOrProdUnitRelevant` |  | |  | `pprel` | `CHAR(1)` | Proportion/Product Unit Relevant |
+| `CharcIsPrintRelevant` |  | |  | `cast ( case when ClassCharc.amerk = '1000000000' then 'X' when ClassCharc.amerk = '1200000000' then 'X' when ClassCharc.amerk = '1300000000' then 'X' when ClassCharc.amerk = '1400000000' then 'X' when ClassCharc.amerk = '1230000000' then 'X' when ClassCharc.amerk = '1240000000' then 'X' when ClassCharc.amerk = '1340000000' then 'X' when ClassCharc.amerk = '1234000000' then 'X' when not ( ClassCharc.amerk = '1000000000' and ClassCharc.amerk = '1200000000' and ClassCharc.amerk = '1300000000' and ClassCharc.amerk = '1400000000' and ClassCharc.amerk = '1230000000' and ClassCharc.amerk = '1240000000' and ClassCharc.amerk = '1340000000' and ClassCharc.amerk = '1234000000' ) then '' end as charcisprintrelevant preserving type )` | `CHAR(1)` | Characteristic Is Print Relevant Indicator |
+| `CharcIsSearchRelevant` |  | |  | `cast ( case when ClassCharc.amerk = '2000000000' then 'X' when ClassCharc.amerk = '1200000000' then 'X' when ClassCharc.amerk = '2300000000' then 'X' when ClassCharc.amerk = '2400000000' then 'X' when ClassCharc.amerk = '1230000000' then 'X' when ClassCharc.amerk = '1240000000' then 'X' when ClassCharc.amerk = '2340000000' then 'X' when ClassCharc.amerk = '1234000000' then 'X' when not ( ClassCharc.amerk = '2000000000' and ClassCharc.amerk = '1200000000' and ClassCharc.amerk = '2300000000' and ClassCharc.amerk = '2400000000' and ClassCharc.amerk = '1230000000' and ClassCharc.amerk = '1240000000' and ClassCharc.amerk = '2340000000' and ClassCharc.amerk = '1234000000' ) then '' end as charcissearchrelevant preserving type )` | `CHAR(1)` | Characteristic Is Search Relevant Indicator |
+| `CharcIsDisplayRelevant` |  | |  | `cast ( case when ClassCharc.amerk = '3000000000' then 'X' when ClassCharc.amerk = '1300000000' then 'X' when ClassCharc.amerk = '2300000000' then 'X' when ClassCharc.amerk = '3400000000' then 'X' when ClassCharc.amerk = '1230000000' then 'X' when ClassCharc.amerk = '1340000000' then 'X' when ClassCharc.amerk = '2340000000' then 'X' when ClassCharc.amerk = '1234000000' then 'X' when not ( ClassCharc.amerk = '3000000000' and ClassCharc.amerk = '1300000000' and ClassCharc.amerk = '2300000000' and ClassCharc.amerk = '3400000000' and ClassCharc.amerk = '1230000000' and ClassCharc.amerk = '1340000000' and ClassCharc.amerk = '2340000000' and ClassCharc.amerk = '1234000000' ) then '' end as charcisdisplayrelevant preserving type )` | `CHAR(1)` | Characteristic Is Display Relevant Indicator |
 | `_Class` | | ✓ | | | | |
 
 ## Associations

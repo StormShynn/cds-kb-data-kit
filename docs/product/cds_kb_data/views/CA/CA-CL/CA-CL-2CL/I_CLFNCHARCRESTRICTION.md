@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  | `cast ( CharcRestriction.atinn as atinn_no_conv preserving type )` |  |  |
-| `ClassType` | ✓ | |  | `klart` |  |  |
+| `CharcInternalID` | ✓ | |  | `cast ( CharcRestriction.atinn as atinn_no_conv preserving type )` | `NUMC(10)` | Characteristic Internal ID |
+| `ClassType` | ✓ | |  | `klart` | `CHAR(3)` | Class Type |
 
 ## Source Code
 

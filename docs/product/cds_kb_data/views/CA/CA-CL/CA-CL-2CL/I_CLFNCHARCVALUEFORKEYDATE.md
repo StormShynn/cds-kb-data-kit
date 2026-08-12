@@ -30,34 +30,34 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  |  |  |  |
-| `CharcValuePositionNumber` | ✓ | |  |  |  |  |
-| `CharcValueParentPositionNumber` |  | |  |  |  |  |
-| `CharcValueHasChild` |  | |  |  |  |  |
-| `CharcValueDependency` |  | |  | `CharcValueIntervalType` |  |  |
-| `CharcValue` |  | |  |  |  |  |
-| `CharcFromNumericValue` |  | |  |  |  |  |
-| `CharcToNumericValue` |  | |  |  |  |  |
-| `IsDefaultValue` |  | |  |  |  |  |
-| `CharcFromNumericValueUnit` |  | |  |  |  |  |
-| `CharcToNumericValueUnit` |  | |  |  |  |  |
-| `CharcFromDecimalValue` |  | |  |  |  |  |
-| `CharcToDecimalValue` |  | |  |  |  |  |
-| `CharcFromDate` |  | |  |  |  |  |
-| `CharcToDate` |  | |  |  |  |  |
-| `CharcFromTime` |  | |  |  |  |  |
-| `CharcToTime` |  | |  |  |  |  |
-| `CharcFromAmount` |  | |  |  |  |  |
-| `CharcToAmount` |  | |  |  |  |  |
-| `Currency` |  | |  |  |  |  |
-| `LongTextID` |  | |  |  |  |  |
-| `ChangeNumber` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
-| `DocumentInfoRecordDocNumber` |  | |  |  |  |  |
-| `DocumentInfoRecordDocPart` |  | |  |  |  |  |
-| `DocumentInfoRecordDocVersion` |  | |  |  |  |  |
-| `DocumentInfoRecordDocType` |  | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  | `NUMC(10)` | Characteristic Internal ID |
+| `CharcValuePositionNumber` | ✓ | |  |  | `NUMC(4)` | Int counter |
+| `CharcValueParentPositionNumber` |  | |  |  | `NUMC(4)` | Int. counter for value hierarchy |
+| `CharcValueHasChild` |  | |  |  | `CHAR(1)` | Indicator that Subordinate Values Exist |
+| `CharcValueDependency` |  | |  | `CharcValueIntervalType` | `CHAR(1)` | Code for value dependency |
+| `CharcValue` |  | |  |  | `CHAR(70)` | Characteristic Value |
+| `CharcFromNumericValue` |  | |  |  | `FLTP(16)` | Internal floating point from |
+| `CharcToNumericValue` |  | |  |  | `FLTP(16)` | Internal floating point value to |
+| `IsDefaultValue` |  | |  |  | `CHAR(1)` | Default value |
+| `CharcFromNumericValueUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement |
+| `CharcToNumericValueUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement |
+| `CharcFromDecimalValue` |  | |  |  | `DECF(34)` | Lower Boundary for Numeric Field |
+| `CharcToDecimalValue` |  | |  |  | `DECF(34)` | Upper Boundary for Numeric Field |
+| `CharcFromDate` |  | |  |  | `DATS(8)` | Lower Boundary for Date-Interval |
+| `CharcToDate` |  | |  |  | `DATS(8)` | Upper Boundary for Date-Interval |
+| `CharcFromTime` |  | |  |  | `TIMS(6)` | Lower Boundary for Time-Interval |
+| `CharcToTime` |  | |  |  | `TIMS(6)` | Upper Boundary for Time-Interval |
+| `CharcFromAmount` |  | |  |  | `CURR(23)` | Lower Boundary for Currency Field |
+| `CharcToAmount` |  | |  |  | `CURR(23)` | Upper Boundary for Currency Field |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `LongTextID` |  | |  |  | `NUMC(4)` | Number of Related Text |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-to date |
+| `DocumentInfoRecordDocNumber` |  | |  |  | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocPart` |  | |  |  | `CHAR(3)` | Document Part |
+| `DocumentInfoRecordDocVersion` |  | |  |  | `CHAR(2)` | Document Version |
+| `DocumentInfoRecordDocType` |  | |  |  | `CHAR(3)` | Document Type |
 | `_Characteristic` | | ✓ | | | | |
 | `_CharacteristicValueDesc` | | ✓ | | | | |
 

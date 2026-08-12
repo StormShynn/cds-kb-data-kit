@@ -31,9 +31,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CharcStatus` | ✓ | |  | `atmst` |  |  |
-| `CharcIsReleased` |  | |  | `atfre` |  |  |
-| `CharcIsMarkedForDeletion` |  | |  | `atlvm` |  |  |
+| `CharcStatus` | ✓ | |  | `atmst` | `CHAR(1)` | Characteristic status |
+| `CharcIsReleased` |  | |  | `atfre` | `CHAR(1)` | Characteristic status: released |
+| `CharcIsMarkedForDeletion` |  | |  | `atlvm` | `CHAR(1)` | Characteristic Status: Selected for Deletion |
 | `_CharacteristicStatusText` | | ✓ | | | | |
 
 ## Source Code

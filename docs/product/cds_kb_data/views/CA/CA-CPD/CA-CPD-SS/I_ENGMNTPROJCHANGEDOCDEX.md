@@ -32,27 +32,27 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ChangeDocObject` | ✓ | |  |  |  |  |
-| `ChangeDocObjectClass` | ✓ | |  |  |  |  |
-| `ChangeDocument` | ✓ | |  |  |  |  |
-| `DatabaseTable` | ✓ | |  |  |  |  |
-| `ChangeDocTableKey` | ✓ | |  |  |  |  |
-| `ChangeDocDatabaseTableField` | ✓ | |  |  |  |  |
-| `ChangeDocItemChangeType` | ✓ | |  |  |  |  |
-| `ChangeDocItemChangeTypeText` |  | |  |  |  |  |
-| `DatabaseTableText` |  | |  |  |  |  |
-| `ChangeDocGlobalFieldName` |  | |  |  |  |  |
-| `ChangeTransactionCode` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `UserName` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreationTime` |  | |  |  |  |  |
-| `ChangeDocPreviousFieldValue` |  | |  |  |  |  |
-| `ChangeDocNewFieldValue` |  | |  |  |  |  |
+| `ChangeDocObject` | ✓ | |  |  | `CHAR(90)` | Object value |
+| `ChangeDocObjectClass` | ✓ | |  |  | `CHAR(15)` | Object Class |
+| `ChangeDocument` | ✓ | |  |  | `CHAR(10)` | Change Number of Document |
+| `DatabaseTable` | ✓ | |  |  | `CHAR(30)` | Table Name |
+| `ChangeDocTableKey` | ✓ | |  |  | `CHAR(70)` | Key of Modified Table Row |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  | `CHAR(30)` | Field Name |
+| `ChangeDocItemChangeType` | ✓ | |  |  | `CHAR(1)` | Type of Change |
+| `ChangeDocItemChangeTypeText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `DatabaseTableText` |  | |  |  | `CHAR(60)` | Short Description of Repository Objects |
+| `ChangeDocGlobalFieldName` |  | |  |  | `CHAR(30)` | DD: Field Name Original Spelling |
+| `ChangeTransactionCode` |  | |  |  | `CHAR(20)` | Transaction in which a change was made |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | User Name of Person Making Change in Change Document |
+| `UserName` |  | |  |  | `CHAR(80)` | User Description |
+| `CreationDate` |  | |  |  | `DATS(8)` | Creation Date of Change Document |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time of Change |
+| `ChangeDocPreviousFieldValue` |  | |  |  | `CHAR(254)` | Old Content of Changed Field |
+| `ChangeDocNewFieldValue` |  | |  |  | `CHAR(254)` | New Content of Changed Field |
 | `ChangeDocPreviousStrFieldValue` |  | |  |  |  |  |
 | `ChangeDocNewStrFieldValue` |  | |  |  |  |  |
-| `EngagementProject` |  | |  |  |  |  |
-| `WorkPackage` |  | |  |  |  |  |
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Engagement Project ID |
+| `WorkPackage` |  | |  |  | `CHAR(50)` | Work Package ID |
 
 ## Source Code
 

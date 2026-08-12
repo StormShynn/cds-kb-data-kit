@@ -31,9 +31,24 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `'CAWNT'` |  | |  | `table: 'CAWNT'` |  |  |
-| `'ADZHL']` |  | |  | `tableElement: ['ATINN','ATZHL','SPRAS','ADZHL']` |  |  |
-| `'TimeIntervalNumber']` |  | |  | `viewElement: ['CharcInternalID','CharcValuePositionNumber','Language','TimeIntervalNumber']` |  |  |
+| `CharcInternalID` | ✓ | |  |  | `NUMC(10)` | Characteristic Internal ID |
+| `CharcValuePositionNumber` | ✓ | |  |  | `NUMC(4)` | Int counter |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Valid-to date |
+| `TimeIntervalNumber` |  | |  |  | `NUMC(4)` | Internal Counter for Archiving Objects by ECM |
+| `CharcValueDescription` |  | |  |  | `CHAR(70)` | Characteristic value description |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `_Language` | | ✓ | | | | |
+| `_Characteristic` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_Characteristic` | `I_ClfnCharacteristicDEX` | [1..*] |
 
 ## Source Code
 
