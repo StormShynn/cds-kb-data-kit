@@ -101,9 +101,16 @@ async function main() {
 
 function renderHtml(embeddedJson, stats) {
   return `<!DOCTYPE html>
-<!-- GENERATED FILE — do not edit query-builder.html by hand. Every edit belongs in
-     scripts/generate-query-builder.mjs; the next \`npm run generate-query-builder\`
-     overwrites this file completely (a hand-added output tab was lost that way once). -->
+<!-- STALE GENERATOR — do NOT run \`npm run generate-query-builder\` and commit the
+     result; it will silently delete ~838 lines of features hand-edited straight into
+     query-builder.html since this script was last updated (multi-view JOIN, "declare
+     new association" toggle, raw ABAP-note saving, Generate JSON/Share link — the
+     top-level always-visible #savePanelSection in particular does not exist below at
+     all). .github/workflows/deploy-pages.yml deliberately stopped calling this script
+     and now ships the committed query-builder.html as-is, exactly like
+     coverage-report.html. Until someone ports that drift back into this file (the
+     correct long-term fix), query-builder.html itself is the source of truth — edit
+     it directly. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
