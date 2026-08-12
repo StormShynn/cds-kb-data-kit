@@ -17,7 +17,7 @@ Repo này **đã có sẵn `manifest.yml` cấu hình sẵn** cho BTP Cloud Foun
 | **BTP Trial** | 0đ, không cần thẻ | ~90 ngày | Đơn giản nhất để thử; hết hạn thì tạo lại |
 | **BTP Free Tier** (Pay-As-You-Go / CPEA) | 0đ nếu dùng đúng free tier services | Vĩnh viễn | Cần doanh nghiệp/PAYG; chỉ tính phí khi vượt quota |
 
-> Railway từng miễn phí nhưng giờ tính phí — **BTP Trial là lựa chọn thay thế 0đ phổ biến**. Free tier Cloud Foundry cấp quota tổng (VD 4 GB trial); app nhỏ 256M (như manifest này) nằm thoải mái trong đó.
+> Railway từng miễn phí nhưng giờ tính phí — **BTP Trial là lựa chọn thay thế 0đ phổ biến**. Free tier Cloud Foundry cấp quota tổng (VD 4 GB trial); app 512M (như manifest này) nằm thoải mái trong đó. (256M **không đủ** — app OOM-crash lúc load index MiniSearch cho ~10.6k views, đã kiểm chứng thật trên BTP trial.)
 
 ### A.1 Cài đặt cf CLI + đăng nhập
 
@@ -57,7 +57,9 @@ npm ci
 cf push
 ```
 
-`nodejs_buildpack` tự cài dependencies theo `package-lock.json` và chạy `npm start` (`node src/server.mjs`). CF tự set `PORT` → server chạy HTTP mode, endpoint là `POST https://<app>.cfapps.<region>.hana.ondemand.com/mcp`.
+`nodejs_buildpack` tự cài dependencies theo `package-lock.json` và chạy lệnh trong `command:` của `manifest.yml`: **`node dist/cds-kb-mcp.cjs`** (bundle đã build sẵn), **không phải** `npm start` (`node src/server.mjs`). Lý do: `src/query-compose.mjs` import một file từ `../../cds_kb_data/scripts/lib/...` — chỉ tồn tại trong monorepo cục bộ (harness), không được đóng gói khi `cf push` (chỉ push thư mục `cds_kb_mcp`). Chạy mã nguồn thô trên BTP sẽ crash với `ERR_MODULE_NOT_FOUND`. Bundle (`npm run build`, chạy trước khi commit) đã inline sẵn phần này qua esbuild nên tự chứa (self-contained). Nếu bạn sửa code trong `src/`, nhớ chạy lại `npm run build` trước khi `cf push`, nếu không BTP vẫn chạy bundle cũ.
+
+CF tự set `PORT` → server chạy HTTP mode, endpoint là `POST https://<app>.cfapps.<region>.hana.ondemand.com/mcp`.
 
 ### A.4 Xác minh + cấu hình client
 
