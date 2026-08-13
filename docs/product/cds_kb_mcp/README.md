@@ -44,7 +44,7 @@ the data index changes).
 | **Taxonomy**        | Lines of Business → Business Objects → keyword map (EN + VI)                                               |
 | **Search ranking**  | Field-boosted MiniSearch (`name×3`, `semanticDescription×2.5`, `synonyms×2`) + optional **vector hybrid** (`index/embeddings.json` — not yet built for this KB, see below) + **usageCount** popularity boost (also not yet populated — see below) |
 | **Module aliasing** | Filter by `"Finance"` / `"Procurement"` / `"Sales"` instead of `FI` / `MM` / `SD`                          |
-| **Tools**           | 12 MCP tools — every one declares an `outputSchema` and returns JSON `structuredContent`                   |
+| **Tools**           | 13 MCP tools — every one declares an `outputSchema` and returns JSON `structuredContent`                   |
 | **Resources**       | `cds://view/{name}`, `cds://taxonomy`, `cds://stats` — attachable straight into agent context              |
 | **Prompts**         | `explain_view`, `compose_query`, `validate_ddl` — one-call packaged workflows                              |
 | **Auth**            | API key, remote JWKS, and full **OAuth 2.1 + PKCE** authorization server                                   |
@@ -200,7 +200,7 @@ Once configured, restart your IDE. The tools will immediately be available for y
 
 ## Tools Reference
 
-The server exposes **twelve tools**. Every tool declares an **`outputSchema`** (JSON Schema) and returns both human-readable `content` **and** machine-parseable **`structuredContent`** — so programmatic/agentic integrations can parse results without regex. The flow: search → pick a view → **compose → generate → validate** CDS DDL without leaving MCP.
+The server exposes **thirteen tools**. Every tool declares an **`outputSchema`** (JSON Schema) and returns both human-readable `content` **and** machine-parseable **`structuredContent`** — so programmatic/agentic integrations can parse results without regex. The flow: search → pick a view → **compose → generate → validate** CDS DDL without leaving MCP.
 
 ### 1. `search_cds`
 
@@ -300,7 +300,7 @@ Report the active data source, server version, view count, enrichment %, private
 
 ```text
 source: local:D:\...\docs\product\cds_kb_data
-server: cds-kb-mcp 2.2.0
+server: cds-kb-mcp 2.3.0
 views: 10619
 enriched: 3267 (30.8%)
 privateOverlay: 1
@@ -337,6 +337,17 @@ Parse DDL with `@abaplint/core` CDSParser. Returns soft diagnostics (`ok` / `par
 
 Build a JSON snippet + markdown PR body for `index/query-library.json`. With `GITHUB_TOKEN` + `CDS_KB_PROPOSE_REPO=owner/name`, opens a **draft** PR on `propose/query-*` (never merges). On API failure, still returns the local snippet.
 
+### 13. `search_query_library`
+
+Search the shared saved-query list (`index/query-library.json`) by title, description, target CDS view name, or generated view name — the curated, PR-reviewed entries the Query Builder also embeds. Returns a ranked shortlist; take a result's `views[]`/`select`/`where` into `compose_query` / `generate_cds_view` to reuse a known-good shape.
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `query` | string | ✓ | Search text — title words, CDS view name, or business intent |
+| `limit` | int 1-50 | optional | Default 10 |
+
+To add an entry: `propose_query_library_entry` → review the draft PR → merge adds it to the library (then `npm run generate-query-builder` refreshes the Query Builder page).
+
 ---
 
 ## Resources & Prompts
@@ -352,6 +363,7 @@ context (saving tokens vs. tool round-trips) and load canned prompts in one call
 | `cds://view/{name}` | Full markdown definition of one CDS view by name (dynamic template) |
 | `cds://taxonomy` | The full LOB → Business Object → keyword taxonomy (EN + VI) |
 | `cds://stats` | Live KB stats: view count, enrichment %, index build time, auth mode |
+| `cds://query-library` | The shared saved-query list (`index/query-library.json`) as JSON |
 
 Example client usage (pseudo-config):
 
@@ -418,19 +430,21 @@ Precedence: `--data` / `CDS_KB_DATA` → S3 (when configured) → `--remote` / `
 2. The data repo’s `pull-usage-stats` workflow writes `index/usage-stats.json`, and
 3. `enrich_index.mjs` rebuilds the search index.
 
-Missing Worker secrets → ranking still works; popularity just does not nudge results yet.
+Missing Worker secrets → ranking still works; popularity just does not nudge results yet. To go live, deploy the collector Worker (`.github/workflows/deploy-usage-worker.yml`, manual trigger) and add the `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` secrets — see [`worker/README.md`](./worker/README.md) for the full walkthrough (KV namespace, `PULL_TOKEN`, and the two data-repo secrets the `pull-usage-stats.yml` workflow consumes).
 
 ### Hybrid (vector) search
 
-**Not currently active.** The data repo ships `scripts/build-embeddings.mjs`
-(`npm run build-embeddings` in `cds_kb_data`), which needs `CDS_KB_EMBED_API_KEY`
-and no-ops silently when it's unset — and no GitHub Actions workflow in this repo
-sets that secret or calls the script, so `index/embeddings.json` has never actually
-been generated. Until someone runs it with a real key (one-time, or wire it into
-a workflow for periodic refresh), `search_mode=hybrid` is dead code that falls
-back to plain BM25 every time — which is already strong on its own, so this
-isn't blocking anything, just worth knowing before assuming hybrid mode is doing
-something.
+Activated by the `.github/workflows/build-embeddings.yml` workflow (weekly +
+manual trigger), which runs `scripts/build-embeddings.mjs` and commits
+`index/embeddings.json` when the `CDS_KB_EMBED_API_KEY` repo secret is set. The
+script no-ops (exit 0) without that secret, so the workflow is safe to merge
+before the key exists. To turn hybrid on: set `CDS_KB_EMBED_API_KEY` (optionally
+`CDS_KB_EMBED_URL` / `CDS_KB_EMBED_MODEL`) as repository secrets and run the
+workflow once — the committed vectors are picked up by the next hosted index
+refresh (`kb_info` then reports `embeddings: yes`). Until then,
+`search_mode=hybrid` falls back to plain BM25 every time — which is already
+strong on its own, so this isn't blocking anything, just worth knowing before
+assuming hybrid mode is doing something.
 
 ---
 
@@ -467,7 +481,7 @@ npx @modelcontextprotocol/inspector node src/server.mjs --data ../cds_kb_data
 └──────────────────────────┬───────────────────────────────────────┘
                            │  MCP / JSON-RPC — stdio, or Streamable HTTP at /mcp
 ┌──────────────────────────▼───────────────────────────────────────┐
-│              cds-kb-mcp 2.2.0 (MCP SDK v2, spec 2026-07-28)      │
+│              cds-kb-mcp 2.3.0 (MCP SDK v2, spec 2026-07-28)      │
 │  tools (12, outputSchema+structuredContent) · resources · prompts│
 │  rate limit → auth (API key | JWKS | OAuth 2.1+PKCE) → handlers   │
 │                       │                                          │

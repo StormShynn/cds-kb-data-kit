@@ -252,6 +252,20 @@ define view entity Z_GoodView
   }
   console.log('✅ kb_info visibility fields');
 
+  console.log('\n=== TEST 15: search_query_library ===');
+  const rlib = await call('tools/call', {
+    name: 'search_query_library',
+    arguments: { query: 'open purchase orders', limit: 5 },
+  });
+  const tlib = rlib.result?.content?.[0]?.text || '';
+  console.log(tlib.slice(0, 500));
+  if (!tlib || !/Open purchase orders|saved quer/i.test(tlib)) {
+    console.error('❌ search_query_library failed — expected the seeded "Open purchase orders" entry');
+    proc.kill();
+    process.exit(1);
+  }
+  console.log('✅ search_query_library');
+
   console.log('\n✅ All tests passed!');
   proc.kill();
   process.exit(0);

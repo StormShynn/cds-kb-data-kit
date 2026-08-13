@@ -19,6 +19,7 @@
 //   async getFieldIndex()    -> returns parsed field-index.json (or null if not available)
 //   async getTableIndex()    -> returns parsed table-index.json (or null if not available)
 //   async getRawFieldIndex() -> returns parsed raw-field-index.json (or null if not available)
+//   async getQueryLibrary()  -> returns parsed index/query-library.json (array of saved queries, or null if not available)
 //   describe()               -> short human string for logs
 
 import { existsSync } from 'node:fs';
@@ -208,6 +209,14 @@ export class LocalDataSource {
   }
   async getEmbeddings() {
     const file = path.join(this.root, 'index', 'embeddings.json');
+    try {
+      return JSON.parse(await fs.readFile(file, 'utf-8'));
+    } catch {
+      return null;
+    }
+  }
+  async getQueryLibrary() {
+    const file = path.join(this.root, 'index', 'query-library.json');
     try {
       return JSON.parse(await fs.readFile(file, 'utf-8'));
     } catch {
@@ -539,6 +548,10 @@ export class RemoteDataSource {
   async getEmbeddings() {
     return this.#loadCachedIndexFile('embeddings.json');
   }
+
+  async getQueryLibrary() {
+    return this.#loadCachedIndexFile('query-library.json');
+  }
 }
 
 // ── S3 / MinIO backend ──────────────────────────────────────────────────────
@@ -768,6 +781,10 @@ export class S3DataSource {
 
   async getEmbeddings() {
     return this.#loadCachedJson('index/embeddings.json', 'embeddings.json');
+  }
+
+  async getQueryLibrary() {
+    return this.#loadCachedJson('index/query-library.json', 'query-library.json');
   }
 }
 

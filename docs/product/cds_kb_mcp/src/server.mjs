@@ -142,6 +142,38 @@ function parseViewDependencies(md) {
   return deps;
 }
 
+// ── Query library search ────────────────────────────────────────────────────
+// index/query-library.json is a small, human-curated list of saved queries
+// (the Query Builder embeds the same file), so a dependency-free token
+// overlap ranking is plenty — no MiniSearch instance needed. normalizeTerm
+// keeps it Vietnamese accent-insensitive like the main index.
+function searchQueryLibrary(query, limit) {
+  if (!query || !Array.isArray(queryLibraryData) || queryLibraryData.length === 0) return [];
+  const tokens = String(query).split(/\s+/).map(normalizeTerm).filter(Boolean);
+  if (tokens.length === 0) return [];
+  return queryLibraryData
+    .map((q) => {
+      const title = normalizeTerm(q.title || '');
+      const description = normalizeTerm(q.description || '');
+      const viewName = normalizeTerm(q.viewName || '');
+      const viewText = (q.views || []).map((v) => normalizeTerm(v.name || '')).join(' ');
+      let score = 0;
+      for (const t of tokens) {
+        if (title === t) score += 5;
+        else if (title.includes(t)) score += 4;
+        if (viewName === t) score += 3;
+        else if (viewName.includes(t)) score += 2;
+        if (viewText.includes(t)) score += 2;
+        if (description.includes(t)) score += 1;
+      }
+      return { q, score };
+    })
+    .filter((s) => s.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((s) => s.q);
+}
+
 // ── State ───────────────────────────────────────────────────────────────────
 const ds = resolveDataSource();
 let mini;
@@ -153,6 +185,7 @@ let fieldIndexData = null; // field-index.json: { fields: { FIELD_NAME: [{view, 
 let tableIndexData = null; // table-index.json: { tables: { TABLE_NAME: [{view, relation, alias, appComponent, lob, bo}] } }
 let rawFieldIndexData = null; // raw-field-index.json: { fields: { RAW_DDIC_NAME: [{view, field, isKey, appComponent, lob, bo}] } }
 let embeddingsData = null; // index/embeddings.json or null
+let queryLibraryData = null; // index/query-library.json (array of saved queries) or null
 let usageStatsConfigured = false;
 
 function cosineSimilarity(a, b) {
@@ -278,6 +311,11 @@ async function loadIndex() {
   } catch {
     embeddingsData = null;
   }
+  try {
+    queryLibraryData = await ds.getQueryLibrary?.() ?? null;
+  } catch {
+    queryLibraryData = null;
+  }
   usageStatsConfigured = [...docsByName.values()].some((d) => (d?.usageCount || 0) > 0);
   if (!usageStatsConfigured && ds.root) {
     usageStatsConfigured = existsSync(path.join(ds.root, 'index', 'usage-stats.json'));
@@ -302,7 +340,7 @@ function refreshIndexPeriodically(intervalMs) {
   }, intervalMs);
 }
 
-const SERVER_VERSION = '2.2.0';
+const SERVER_VERSION = '2.3.0';
 const SERVER_INSTRUCTIONS =
   `This is cds-kb-mcp v${SERVER_VERSION}, built by StormShyn. ` +
   'The first time you use a tool from this server in a conversation, briefly mention to the user ' +
@@ -1197,6 +1235,66 @@ function createServer() {
     },
   );
 
+  // ── Tool 13: search_query_library ─────────────────────────────────────────
+  server.registerTool(
+    'search_query_library',
+    {
+      title: 'Search the shared query library',
+      description:
+        'Find a saved/reusable query in index/query-library.json by title, description, target CDS view name, or generated view name. ' +
+        'Entries are curated, PR-reviewed saved queries (propose_query_library_entry produces the snippet + draft PR to add one). ' +
+        'Use this to reuse a known-good query shape instead of composing from scratch: take a result\'s views[]/select/where into compose_query or generate_cds_view.',
+      inputSchema: {
+        query: z.string().describe('Search text — title words, CDS view name, or business intent'),
+        limit: z.number().int().min(1).max(50).optional().describe('Max results (default 10)'),
+      },
+      outputSchema: z.object({
+        query: z.string(),
+        count: z.number(),
+        results: z.array(z.object({
+          title: z.string(),
+          description: z.string().nullable(),
+          contributor: z.string().nullable(),
+          views: z.array(z.string()),
+          viewName: z.string().nullable(),
+        })),
+      }),
+    },
+    async ({ query, limit = 10 }) => {
+      const hits = searchQueryLibrary(query, limit);
+      const structured = {
+        query,
+        count: hits.length,
+        results: hits.map((q) => ({
+          title: q.title || '(untitled)',
+          description: q.description ?? null,
+          contributor: q.contributor ?? null,
+          views: (q.views || []).map((v) => v.name).filter(Boolean),
+          viewName: q.viewName ?? null,
+        })),
+      };
+      if (hits.length === 0) {
+        const hint = Array.isArray(queryLibraryData) && queryLibraryData.length === 0
+          ? ' The query library is empty — seed it with propose_query_library_entry or a PR adding an object to index/query-library.json.'
+          : '';
+        return { content: [{ type: 'text', text: `No saved query matched "${query}".${hint}` }], structuredContent: structured };
+      }
+      const lines = hits.map((q, i) => {
+        const views = (q.views || []).map((v) => v.name).filter(Boolean).join(', ');
+        const contrib = q.contributor ? `  (by ${q.contributor})` : '';
+        const desc = q.description ? `\n   ${q.description}` : '';
+        return `${i + 1}. **${q.title || '(untitled)'}**${contrib}\n   views: ${views}${q.viewName ? `  -> ${q.viewName}` : ''}${desc}`;
+      });
+      return {
+        content: [{
+          type: 'text',
+          text: `${hits.length} saved quer${hits.length === 1 ? 'y' : 'ies'} for "${query}":\n\n${lines.join('\n')}\n\nLoad it into compose_query / generate_cds_view (views[] + select/where) to reuse the shape.`,
+        }],
+        structuredContent: structured,
+      };
+    },
+  );
+
   // ── Resources ────────────────────────────────────────────────────────────
   // cds://view/<NAME> — full markdown of one view (dynamic template).
   server.registerResource(
@@ -1231,6 +1329,16 @@ function createServer() {
     { title: 'Knowledge base stats', mimeType: 'application/json' },
     async (uri) => ({
       contents: [{ uri: uri.href, text: JSON.stringify(buildKbInfo(), null, 2), mimeType: 'application/json' }],
+    }),
+  );
+
+  // cds://query-library — the shared saved-query list (index/query-library.json) as JSON.
+  server.registerResource(
+    'query-library',
+    'cds://query-library',
+    { title: 'Shared query library', mimeType: 'application/json' },
+    async (uri) => ({
+      contents: [{ uri: uri.href, text: JSON.stringify(Array.isArray(queryLibraryData) ? queryLibraryData : [], null, 2), mimeType: 'application/json' }],
     }),
   );
 

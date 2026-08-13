@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "title": "Open purchase orders",
+    "description": "Open purchase orders (not yet fully released) with supplier, company code, purchasing organization and processing status.",
+    "contributor": "StormShyn",
+    "views": [
+      { "alias": "t1", "name": "I_PURCHASEORDERAPI01" }
+    ],
+    "select": "PurchaseOrder, PurchaseOrderType, Supplier, CompanyCode, PurchasingOrganization, PurchasingGroup, PurchaseOrderDate, PurchasingProcessingStatus, ReleaseIsNotCompleted, DocumentCurrency",
+    "where": "PurchasingProcessingStatus = '02'",
+    "orderBy": "PurchaseOrderDate",
+    "viewName": "Z_C_OpenPurchaseOrders"
+  },
+  {
+    "title": "Material stock by plant",
+    "description": "Current warehouse stock quantity per material / plant / storage location / batch, with special-stock indicators.",
+    "contributor": "StormShyn",
+    "views": [
+      { "alias": "t1", "name": "I_MATERIALSTOCK_2" }
+    ],
+    "select": "Material, Plant, StorageLocation, Batch, InventoryStockType, InventorySpecialStockType, MatlWrhsStkQtyInMatlBaseUnit, SpecialStockIdfgStockOwner",
+    "where": "Plant <> ''",
+    "groupBy": "Material, Plant, StorageLocation, Batch",
+    "orderBy": "Material, Plant",
+    "viewName": "Z_C_MaterialStockOverview"
+  },
+  {
+    "title": "Sales order header list",
+    "description": "Sales orders with sold-to party, net amount and overall delivery status, newest first.",
+    "contributor": "StormShyn",
+    "views": [
+      { "alias": "t1", "name": "I_SALESORDER" }
+    ],
+    "select": "SalesOrder, SalesOrderType, SoldToParty, CreationDate, CreatedByUser, TotalNetAmount, StatisticsCurrency, OverallTotalDeliveryStatus",
+    "orderBy": "CreationDate DESC",
+    "viewName": "Z_C_SalesOrderList"
+  },
+  {
+    "title": "Product master by type",
+    "description": "Product master records with product type, product group and base unit, excluding deleted records.",
+    "contributor": "StormShyn",
+    "views": [
+      { "alias": "t1", "name": "I_PRODUCT" }
+    ],
+    "select": "Product, ProductExternalID, ProductType, ProductGroup, BaseUnit, CreationDate, IsMarkedForDeletion",
+    "where": "IsMarkedForDeletion = false",
+    "orderBy": "Product",
+    "viewName": "Z_C_ProductMaster"
+  }
+]
