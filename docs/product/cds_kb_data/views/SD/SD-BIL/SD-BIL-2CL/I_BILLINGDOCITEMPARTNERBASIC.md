@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCITEMPARTNERBASIC
 description: "Billing DocumentITEMPARTNERBASIC"
+semantic_vi: "Chỉ ra thông tin đối tác cơ bản cho các mục đơn giá hóa đơn, bao gồm thông tin khách hàng, nhà cung cấp và nhân viên. Sử dụng để lấy và hiển thị dữ liệu đối tác tại mức mục trong các đơn giá hóa đơn."
+keywords:
+  - "billing document"
+  - "đơn giá hóa đơn"
+  - "partner"
+  - "customer"
+  - "nhà cung cấp"
+  - "personnel"
+  - "address"
+  - "contact person"
+  - "reference business partner"
+  - "sd-bil"
+semantic_en: "Exposes basic partner information for billing document items, including customer, supplier, and personnel details. Used to retrieve and display partner data at the item level in billing documents."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

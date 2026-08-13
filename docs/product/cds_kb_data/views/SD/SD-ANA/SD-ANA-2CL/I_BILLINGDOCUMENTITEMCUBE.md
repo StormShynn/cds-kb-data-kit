@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCUMENTITEMCUBE
 description: "Billing DocumentUMENTITEMCUBE"
+semantic_vi: "View I_BILLINGDOCUMENTITEMCUBE hiển thị dữ liệu chi tiết về hóa đơn và các mục hóa đơn, phù hợp cho phân tích và báo cáo chi tiết về hóa đơn và các mục hóa đơn."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "analytical view"
+  - "view dữ liệu phân tích"
+  - "billing document item"
+  - "mục hóa đơn"
+  - "sap sd"
+  - "sd-ana-2cl"
+  - "sales and distribution"
+  - "dịch vụ bán hàng và phân phối"
+semantic_en: "The I_BILLINGDOCUMENTITEMCUBE view exposes billing document item data at an analytical level, suitable for detailed analysis and reporting on billing documents and their items."
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

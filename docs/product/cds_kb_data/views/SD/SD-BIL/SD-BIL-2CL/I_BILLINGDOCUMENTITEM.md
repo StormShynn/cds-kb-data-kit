@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCUMENTITEM
 description: "Billing DocumentUMENTITEM"
+semantic_vi: "View I_BILLINGDOCUMENTITEM CDS hiển thị dữ liệu mục đơn giá của hóa đơn, được sử dụng để quản lý và theo dõi từng mục trong một hóa đơn. Nó thường được sử dụng trong thành phần Sales và Distribution (SD), cụ thể trong quá trình hóa đơn."
+keywords:
+  - "billing document"
+  - "đơn giá hóa đơn"
+  - "sales and distribution"
+  - "sd"
+  - "billing process"
+  - "hóa đơn"
+  - "đơn mua hàng"
+  - "ekko"
+  - "billing document item"
+  - "mục đơn giá hóa đơn"
+semantic_en: "The I_BILLINGDOCUMENTITEM CDS view exposes billing document item data, which is used to manage and track individual items within a billing document. It is typically used in the Sales and Distribution (SD) component, specifically in the billing process."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCUMENTBASICSTDVH
 description: "Billing DocumentUMENTBASICSTDVH"
+semantic_vi: "View I_BILLINGDOCUMENTBASICSTDVH CDS cung cấp thông tin cơ bản tiêu chuẩn về hóa đơn thanh toán, có thể được sử dụng để lấy và hiển thị chi tiết hóa đơn thanh toán."
+keywords:
+  - "billing document"
+  - "đơn thanh toán"
+  - "sap cds"
+  - "sales & distribution"
+  - "billing"
+  - "document"
+  - "standard value help"
+  - "interface view"
+  - "value help"
+  - "sd-bil-2cl"
+semantic_en: "The I_BILLINGDOCUMENTBASICSTDVH CDS view provides basic standard information about billing documents, which can be used to retrieve and display billing document details."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

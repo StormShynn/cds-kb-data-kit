@@ -1,6 +1,17 @@
 ---
 name: I_BILLINGDOCUMENTREQUEST
 description: "Billing DocumentUMENTREQUEST"
+semantic_vi: "View I_BILLINGDOCUMENTREQUEST hiển thị dữ liệu yêu cầu hóa đơn, được sử dụng khi tạo hoặc quản lý hóa đơn trong thành phần Sales và Distribution."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "sddocumentcategory"
+  - "billingdocumentrequest"
+  - "sales and distribution"
+  - "component sd-bil-bdr-2cl"
+  - "lob sales & distribution"
+  - "bo billingdocument"
+semantic_en: "The I_BILLINGDOCUMENTREQUEST view exposes billing document request data, which is used when creating or managing billing documents in the Sales and Distribution component."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

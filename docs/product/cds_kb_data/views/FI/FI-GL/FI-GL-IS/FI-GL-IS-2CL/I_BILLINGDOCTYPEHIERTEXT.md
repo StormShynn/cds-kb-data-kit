@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGDOCTYPEHIERTEXT
 description: "Billing DocumentTYPEHIERTEXT"
+semantic_vi: "View I_BILLINGDOCTYPEHIERTEXT hiển thị dữ liệu văn bản cấp bậc loại hóa đơn, được sử dụng để hiển thị văn bản đại diện cho loại hóa đơn trong các ngôn ngữ và khoảng thời gian khác nhau."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "billing document type"
+  - "cấp bậc loại hóa đơn"
+  - "text view"
+  - "view dữ liệu văn bản"
+  - "fi-gl-is-2cl"
+  - "fi"
+  - "fi-gl"
+  - "fi-gl-is"
+  - "interface view"
+  - "component fi-gl-is-2cl"
+semantic_en: "The I_BILLINGDOCTYPEHIERTEXT CDS view exposes billing document type hierarchy text data, which is used to display the text representation of billing document types in different languages and time periods."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

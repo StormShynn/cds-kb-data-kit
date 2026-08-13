@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGDOCUMENTBASIC
 description: "Billing DocumentUMENTBASIC"
+semantic_vi: "View I_BILLINGDOCUMENTBASIC cung cấp thông tin cơ bản về các tài liệu hóa đơn, bao gồm các loại và loại tài liệu hóa đơn, có ích cho việc quản lý và báo cáo tài liệu hóa đơn."
+keywords:
+  - "billing document"
+  - "tài liệu hóa đơn"
+  - "billing document basic"
+  - "basic billing document"
+  - "sddocumentcategory"
+  - "billingdocumentcategory"
+  - "billingdocumenttype"
+  - "proposedbillingdocumenttype"
+  - "sap sd-bil-2cl"
+  - "sales & distribution"
+  - "billingdocument"
+semantic_en: "The I_BILLINGDOCUMENTBASIC view provides basic information about billing documents, including document categories and types, which is useful for billing document management and reporting."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

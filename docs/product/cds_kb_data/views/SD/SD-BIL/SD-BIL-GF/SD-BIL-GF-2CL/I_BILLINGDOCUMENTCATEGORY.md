@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGDOCUMENTCATEGORY
 description: "Billing DocumentUMENTCATEGORY"
+semantic_vi: "View I_BILLINGDOCUMENTCATEGORY hiển thị các loại hóa đơn và giá trị miền tương ứng, hữu ích khi làm việc với hóa đơn trong thành phần Sales và Distribution."
+keywords:
+  - "billing document"
+  - "hóa đơn"
+  - "domain value"
+  - "sales and distribution"
+  - "component sd-bil-gf-2cl"
+  - "lob sales & distribution"
+  - "bo billingdocument"
+  - "sd-bil-gf"
+  - "sd-bil"
+semantic_en: "The I_BILLINGDOCUMENTCATEGORY view exposes billing document categories and their corresponding domain values, useful when working with billing documents in the Sales and Distribution component."
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

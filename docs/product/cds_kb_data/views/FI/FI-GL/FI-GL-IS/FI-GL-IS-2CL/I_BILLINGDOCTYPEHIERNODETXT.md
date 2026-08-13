@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGDOCTYPEHIERNODETXT
 description: "Billing DocumentTYPEHIERNODETXT"
+semantic_vi: "Chứa dữ liệu văn bản cho loại hóa đơn theo cấu trúc cây và thời gian có hiệu lực. Sử dụng để lấy dữ liệu mô tả văn bản của loại hóa đơn theo cấu trúc cây."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "hierarchy node"
+  - "cấu trúc cây"
+  - "fi-gl"
+  - "fi-gl-is"
+  - "interface view"
+  - "hóa đơn"
+  - "loại hóa đơn"
+semantic_en: "Exposes billing document type hierarchy node text data for a given language and validity period. Used to retrieve text descriptions of billing document types in a hierarchical structure."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

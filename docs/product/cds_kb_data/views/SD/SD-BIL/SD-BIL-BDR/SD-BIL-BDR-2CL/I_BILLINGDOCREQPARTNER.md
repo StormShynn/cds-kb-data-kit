@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGDOCREQPARTNER
 description: "Billing DocumentREQPARTNER"
+semantic_vi: "View I_BILLINGDOCREQPARTNER hiển thị dữ liệu kinh doanh liên quan đến yêu cầu hóa đơn và đối tác của hóa đơn, hữu ích khi quản lý yêu cầu hóa đơn và thông tin đối tác tương ứng."
+keywords:
+  - "billing document request"
+  - "partner"
+  - "billing document"
+  - "đối tác hóa đơn"
+  - "yêu cầu hóa đơn"
+  - "hóa đơn"
+  - "partner function"
+  - "customer"
+  - "supplier"
+  - "personnel"
+  - "address"
+  - "contact person"
+semantic_en: "The Billing Document Request Partner view exposes business data related to billing document requests and their associated partners, useful when managing billing document requests and their corresponding partner information."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

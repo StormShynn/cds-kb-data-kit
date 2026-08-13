@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCUMENTITEMTEXTTP
 description: "Billing DocumentUMENTITEMTEXTTP"
+semantic_vi: "View Billing Document Item Text hiển thị dữ liệu văn bản chi tiết cho các mục trong hóa đơn, cho phép các nhà phát triển truy cập và thao tác dữ liệu văn bản liên quan đến từng mục trong hóa đơn. View này hữu ích cho các ứng dụng yêu cầu dữ liệu văn bản chi tiết cho các mục hóa đơn."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "text data"
+  - "dữ liệu văn bản"
+  - "item-level"
+  - "chi tiết mục"
+  - "sap sd"
+  - "sd-bil"
+  - "billing document item"
+  - "mục hóa đơn"
+semantic_en: "The Billing Document Item Text view exposes item-level text data for billing documents, allowing developers to access and manipulate text information associated with individual items within a billing document. This view is useful for applications that require detailed text data for billing document items."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

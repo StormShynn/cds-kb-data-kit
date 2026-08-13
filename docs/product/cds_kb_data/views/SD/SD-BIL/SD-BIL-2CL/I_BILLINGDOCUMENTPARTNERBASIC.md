@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGDOCUMENTPARTNERBASIC
 description: "Billing DocumentUMENTPARTNERBASIC"
+semantic_vi: "View I_BILLINGDOCUMENTPARTNERBASIC hiển thị thông tin cơ bản về đối tác hóa đơn, bao gồm chức năng, địa chỉ và đối tác kinh doanh. Nó được sử dụng để lấy và hiển thị dữ liệu đối tác trong hóa đơn."
+keywords:
+  - "billing document"
+  - "đối tác hóa đơn"
+  - "partner function"
+  - "địa chỉ"
+  - "business partner"
+  - "sddocpartneraddressrefertype"
+  - "ekko"
+  - "sales & distribution"
+  - "lob: sales & distribution"
+  - "bo: billingdocument"
+  - "sd-bil-2cl"
+semantic_en: "The I_BILLINGDOCUMENTPARTNERBASIC view exposes basic information about billing document partners, including their functions, addresses, and business partners. It is used to retrieve and display partner data in billing documents."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

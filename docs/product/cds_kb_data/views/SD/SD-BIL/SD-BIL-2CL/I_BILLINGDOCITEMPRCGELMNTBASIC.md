@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCITEMPRCGELMNTBASIC
 description: "Billing DocumentITEMPRCGELMNTBASIC"
+semantic_vi: "Chứa thông tin cơ bản về các yếu tố tính giá trong các đơn đặt hàng hóa, bao gồm các thủ tục tính giá và ứng dụng điều kiện."
+keywords:
+  - "billing document"
+  - "đơn đặt hàng hóa"
+  - "pricing procedure"
+  - "thủ tục tính giá"
+  - "condition application"
+  - "ứng dụng điều kiện"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+  - "sap sd"
+  - "ekko"
+semantic_en: "Exposes basic information about pricing elements in billing documents, including pricing procedures and condition applications. This view is useful for analyzing pricing data in sales and distribution processes."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

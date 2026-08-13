@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGDOCITEMPARTNER
 description: "Billing DocumentITEMPARTNER"
+semantic_vi: "View I_BILLINGDOCITEMPARTNER hiển thị thông tin đối tác của đơn hàng hóa, được sử dụng để quản lý mối quan hệ giữa các đơn hàng hóa, mặt hàng và đối tác kinh doanh."
+keywords:
+  - "billing document"
+  - "đơn hàng hóa"
+  - "partner"
+  - "business partner"
+  - "sap sd"
+  - "sales and distribution"
+  - "lob sales & distribution"
+  - "sd-bil-2cl"
+  - "interface view"
+semantic_en: "The I_BILLINGDOCITEMPARTNER view exposes billing document item partner information, which is used to manage relationships between billing documents, items, and business partners."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

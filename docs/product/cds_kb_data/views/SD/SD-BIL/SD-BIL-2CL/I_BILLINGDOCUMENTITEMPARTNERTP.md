@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCUMENTITEMPARTNERTP
 description: "Billing DocumentUMENTITEMPARTNERTP"
+semantic_vi: "View I_BILLINGDOCUMENTITEMPARTNERTP CDS hiển thị dữ liệu đối tác của đơn hàng hóa tiền, có liên quan khi xử lý đơn hàng hóa tiền tại mức độ chi tiết. Nó cung cấp thông tin về các đối tác tham gia vào quá trình hóa tiền."
+keywords:
+  - "billing document"
+  - "đơn hóa tiền"
+  - "partner"
+  - "đối tác"
+  - "billing document item"
+  - "đơn hàng hóa tiền chi tiết"
+  - "sap sd"
+  - "sales & distribution"
+  - "lob:sales & distribution"
+  - "bo:billingdocument"
+semantic_en: "The I_BILLINGDOCUMENTITEMPARTNERTP CDS view exposes billing document item partner data, which is relevant when processing billing documents at the item level. It provides information about the partners involved in the billing process."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

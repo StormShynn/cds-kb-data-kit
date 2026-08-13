@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGDOCUMENTITEMTP
 description: "Billing DocumentUMENTITEMTP"
+semantic_vi: "View I_BILLINGDOCUMENTITEMTP hiển thị dữ liệu chi tiết hóa đơn bán hàng, được sử dụng trong xử lý giao dịch cho thành phần Sales và Distribution."
+keywords:
+  - "billing document"
+  - "đơn bán hàng"
+  - "transactional processing"
+  - "sales and distribution"
+  - "component sd-bil-2cl"
+  - "lob sales & distribution"
+  - "bo billingdocument"
+  - "item-level"
+  - "interface-view"
+semantic_en: "The I_BILLINGDOCUMENTITEMTP view exposes billing document item data, which is used in transactional processing for the Sales and Distribution component."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

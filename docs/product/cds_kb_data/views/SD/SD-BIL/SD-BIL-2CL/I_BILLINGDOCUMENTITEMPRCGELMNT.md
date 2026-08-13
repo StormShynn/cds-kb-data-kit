@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGDOCUMENTITEMPRCGELMNT
 description: "Billing DocumentUMENTITEMPRCGELMNT"
+semantic_vi: "Chỉ ra các yếu tố định giá hóa đơn đơn vị, chẳng hạn như quy trình định giá và ứng dụng điều kiện, cho một đơn vị hóa đơn cụ thể."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "pricing procedure"
+  - "quy trình định giá"
+  - "condition application"
+  - "ứng dụng điều kiện"
+  - "sap sd"
+  - "sd-bil"
+  - "sales & distribution"
+semantic_en: "Exposes billing document item pricing elements, such as pricing procedures and condition applications, for a specific billing document item."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

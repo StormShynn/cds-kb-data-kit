@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCREQPRCGELMNT
 description: "Billing DocumentREQPRCGELMNT"
+semantic_vi: "View I_BILLINGDOCREQPRCGELMNT hiển thị dữ liệu yêu cầu hóa đơn tính tiền, bao gồm các thủ tục tính giá và ứng dụng điều kiện, có liên quan khi xử lý hóa đơn tính tiền trong thành phần Sales và Distribution."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "pricing procedure"
+  - "thủ tục tính giá"
+  - "condition application"
+  - "ứng dụng điều kiện"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+  - "sap sd"
+  - "sd-bil-bdr-2cl"
+semantic_en: "The I_BILLINGDOCREQPRCGELMNT view exposes billing document request data, including pricing procedures and condition applications, which is relevant when processing billing documents in the Sales and Distribution component."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

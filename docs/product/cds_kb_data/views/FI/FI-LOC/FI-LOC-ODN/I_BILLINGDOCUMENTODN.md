@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGDOCUMENTODN
 description: "Billing DocumentUMENTODN"
+semantic_vi: "View I_BILLINGDOCUMENTODN hiển thị thông tin về hóa đơn thanh toán, cụ thể là số chứng từ chính thức và chi tiết liên quan. Nó được sử dụng khi truy cập hoặc chỉnh sửa dữ liệu hóa đơn thanh toán."
+keywords:
+  - "billing document"
+  - "hóa đơn thanh toán"
+  - "official document number"
+  - "số chứng từ chính thức"
+  - "fi-loc-odn"
+  - "sap cds view"
+  - "finance"
+  - "billing"
+  - "document"
+semantic_en: "The I_BILLINGDOCUMENTODN CDS view exposes billing document information, specifically the official document number and its associated details. It is used when accessing or manipulating billing document data."
 app_component: FI-LOC-ODN
 software_component: SAPSCORE
 release_state: released

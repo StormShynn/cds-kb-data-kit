@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGDOCUMENTITEMSTDVH
 description: "Billing DocumentUMENTITEMSTDVH"
+semantic_vi: "View I_BILLINGDOCUMENTITEMSTDVH CDS cung cấp hỗ trợ giá trị tiêu chuẩn cho các mục đơn hàng hóa, cho phép các nhà phát triển truy cập và lọc dữ liệu mục đơn hàng hóa dựa trên các tiêu chí khác nhau."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "ekko"
+  - "sales and distribution"
+  - "lob: sales & distribution"
+  - "bo: billing document"
+  - "sd-bil"
+  - "interface-view"
+  - "value-help"
+  - "standard-value-help"
+  - "billing-document-item"
+  - "item-level"
+semantic_en: "The I_BILLINGDOCUMENTITEMSTDVH CDS view provides standard value help for billing document items, allowing developers to access and filter billing document item data based on various criteria."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

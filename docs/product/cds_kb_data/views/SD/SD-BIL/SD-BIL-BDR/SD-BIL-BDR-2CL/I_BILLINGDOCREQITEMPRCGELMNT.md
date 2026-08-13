@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGDOCREQITEMPRCGELMNT
 description: "Billing DocumentREQITEMPRCGELMNT"
+semantic_vi: "View I_BILLINGDOCREQITEMPRCGELMNT hiển thị thông tin giá cho các mục trong yêu cầu hóa đơn, được sử dụng khi tạo hóa đơn."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "item pricing"
+  - "giá cho mục"
+  - "pricing procedure"
+  - "thủ tục giá"
+  - "condition application"
+  - "điều kiện áp dụng"
+  - "condition type"
+  - "loại điều kiện"
+  - "pricing datetime"
+  - "thời gian giá trị"
+semantic_en: "The Billing Document Request Item Pricing Element view exposes pricing information for items in a billing document request, which is used when generating a billing document."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

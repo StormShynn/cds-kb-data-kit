@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCUMENTPRCGELMNT
 description: "Billing DocumentUMENTPRCGELMNT"
+semantic_vi: "View I_BILLINGDOCUMENTPRCGELMNT hiển thị các yếu tố tính giá cho hóa đơn, được sử dụng để tính giá cho hóa đơn trong thành phần Sales và Distribution."
+keywords:
+  - "billing document"
+  - "hóa đơn tính giá"
+  - "sales and distribution"
+  - "component sd-bil-2cl"
+  - "pricing elements"
+  - "yếu tố tính giá"
+  - "condition application"
+  - "điều kiện áp dụng"
+  - "condition type"
+  - "loại điều kiện"
+semantic_en: "The I_BILLINGDOCUMENTPRCGELMNT view exposes billing document pricing elements, which are used to calculate prices for billing documents in the Sales and Distribution component."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

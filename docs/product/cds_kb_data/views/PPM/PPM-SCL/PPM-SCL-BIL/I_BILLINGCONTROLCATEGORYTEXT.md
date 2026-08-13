@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGCONTROLCATEGORYTEXT
 description: "Billingcontrolcategorytext"
+semantic_vi: "View Billing Control Category Text cung cấp các mô tả văn bản cho các loại kiểm soát hóa đơn, có thể được sử dụng để hiển thị tên loại trong các ngôn ngữ khác nhau. Nó hữu ích cho các ứng dụng yêu cầu văn bản địa hóa cho các loại kiểm soát hóa đơn."
+keywords:
+  - "billing control category"
+  - "text view"
+  - "localized text"
+  - "category name"
+  - "language"
+  - "billing control"
+  - "category description"
+  - "sap cds view"
+  - "ppm scl bil"
+  - "interface view"
+semantic_en: "The Billing Control Category Text view provides text descriptions for billing control categories, which can be used to display category names in various languages. It is useful for applications that require localized text for billing control categories."
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,16 @@
 ---
 name: I_BILLINGDOCUMENT
 description: "Billing DocumentUMENT"
+semantic_vi: "View I_BILLINGDOCUMENT CDS hiển thị dữ liệu hóa đơn, được sử dụng khi truy cập hoặc xử lý hóa đơn trong thành phần Sales và Distribution."
+keywords:
+  - "billing document"
+  - "hóa đơn"
+  - "sales and distribution"
+  - "sd-bil"
+  - "component sd-bil-2cl"
+  - "lob sales & distribution"
+  - "bo billingdocument"
+semantic_en: "The I_BILLINGDOCUMENT CDS view exposes billing document data, which is used when accessing or processing billing documents in the Sales and Distribution component."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGDOCUMENTCATEGORYTEXT
 description: "Billing DocumentUMENTCATEGORYTEXT"
+semantic_vi: "View I_BILLINGDOCUMENTCATEGORYTEXT cung cấp mô tả văn bản cho các loại hóa đơn, có thể được sử dụng để hiển thị tên loại hóa đơn trong các ngôn ngữ khác nhau."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "category"
+  - "loại hóa đơn"
+  - "text view"
+  - "view"
+  - "sds-bil-gf-2cl"
+  - "sales & distribution"
+  - "billing document category"
+  - "sds-bil"
+  - "sds-bil-gf"
+semantic_en: "The I_BILLINGDOCUMENTCATEGORYTEXT view provides text descriptions for billing document categories, which can be used to display category names in different languages."
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGDOCPRCGELMNTBASIC
 description: "Billing DocumentPRCGELMNTBASIC"
+semantic_vi: "View I_BILLINGDOCPRCGELMNTBASIC hiển thị dữ liệu cơ bản về các phần tử giá trong các tài liệu hóa đơn, có thể được sử dụng để phân tích hoặc báo cáo về các thủ tục và điều kiện giá."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "pricing procedure"
+  - "thủ tục giá"
+  - "condition"
+  - "điều kiện"
+  - "pricing element"
+  - "phần tử giá"
+  - "sap sd"
+  - "sd-bil"
+  - "sales and distribution"
+semantic_en: "The I_BILLINGDOCPRCGELMNTBASIC view exposes basic data about pricing elements in billing documents, which can be used to analyze or report on pricing procedures and conditions."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

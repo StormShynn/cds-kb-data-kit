@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGDOCTYPEHIERNODE
 description: "Billing DocumentTYPEHIERNODE"
+semantic_vi: "View I_BILLINGDOCTYPEHIERNODE CDS hiển thị thông tin cấu trúc cấp bậc của hóa đơn, có thể hữu ích khi làm việc với cấu trúc hóa đơn phức tạp hoặc phân tích mối quan hệ giữa các hồ sơ."
+keywords:
+  - "billing document"
+  - "hóa đơn"
+  - "hierarchy"
+  - "cấu trúc cấp bậc"
+  - "fi-gl"
+  - "fi-gl-is"
+  - "interface-view"
+  - "billing"
+  - "finance"
+  - "finance industry"
+  - "finance management"
+semantic_en: "The I_BILLINGDOCTYPEHIERNODE CDS view exposes billing document hierarchy information, which is useful when working with complex billing structures or analyzing document relationships."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
