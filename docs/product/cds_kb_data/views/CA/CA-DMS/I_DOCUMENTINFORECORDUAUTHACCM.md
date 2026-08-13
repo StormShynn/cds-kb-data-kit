@@ -39,21 +39,21 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LogAccMObjectID` |  | |  |  |  |  |
-| `LogAccMActivitySecureID` |  | |  |  |  |  |
-| `LogAccMActivityRoleID` |  | |  |  |  |  |
-| `LogAccMUserAuthznObject` |  | |  |  |  |  |
-| `LogAccMUserAuthznField` |  | |  |  |  |  |
-| `LogAccMUserAuthznFrom` |  | |  |  |  |  |
-| `LogAccMUserEntityType` |  | |  |  |  |  |
-| `LogAccMUserEntityID` |  | |  |  |  |  |
-| `LogAccMObjectType` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `CreationDateTime` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `LastChangeDateTime` |  | |  |  |  |  |
-| `UserID` |  | |  |  |  |  |
-| `LogAccMReadActivityIsEnabled` |  | |  |  |  |  |
+| `LogAccMObjectID` |  | |  |  | `CHAR(90)` | Internal Key |
+| `LogAccMActivitySecureID` |  | |  |  | `RAW(16)` | Secure ID |
+| `LogAccMActivityRoleID` |  | |  |  | `CHAR(30)` | Role ID |
+| `LogAccMUserAuthznObject` |  | |  |  | `CHAR(10)` | Authorization Object |
+| `LogAccMUserAuthznField` |  | |  |  | `CHAR(10)` | Authorization Field |
+| `LogAccMUserAuthznFrom` |  | |  |  | `CHAR(40)` | Authorization Value |
+| `LogAccMUserEntityType` |  | |  |  | `CHAR(10)` | User Entity Type |
+| `LogAccMUserEntityID` |  | |  |  | `CHAR(32)` | User Entity ID |
+| `LogAccMObjectType` |  | |  |  | `CHAR(10)` | Object Type |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | User ID |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | User ID |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `UserID` |  | |  |  | `CHAR(12)` | User ID |
+| `LogAccMReadActivityIsEnabled` |  | |  |  | `CHAR(1)` | Data element for domain BOOLE: TRUE (='X') and FALSE (=' ') |
 | `_CreatedByUser` | | ✓ | | | | |
 | `_LastChangedByUser` | | ✓ | | | | |
 | `_LogAccMActvActyGrpProfile` | | ✓ | | | | |

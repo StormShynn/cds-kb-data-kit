@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |  |  |
-| `MDSubstnStatus` | ✓ | |  | `cast ( domvalue_l as md_substn_status )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
-| `MDSubstnStatusDescription` |  | |  | `cast( ddtext as md_substn_status_text preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `MDSubstnStatus` | ✓ | |  | `cast ( domvalue_l as md_substn_status )` | `CHAR(1)` | Substitution Status |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `MDSubstnStatusDescription` |  | |  | `cast( ddtext as md_substn_status_text preserving type )` | `CHAR(60)` | Status Text |
 | `_Language` | | ✓ | | | | |
 | `_Status` | | ✓ | | | | |
 

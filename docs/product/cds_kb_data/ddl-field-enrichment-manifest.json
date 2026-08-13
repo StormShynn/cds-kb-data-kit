@@ -17333,5 +17333,240 @@
     "attemptedAt": "2026-08-12T09:12:25.172Z",
     "found": true,
     "matched": 4
+  },
+  "I_DOCINFORECDDOCTYPESTDVH": {
+    "attemptedAt": "2026-08-13T09:12:56.532Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_DOCINFORECDDOCVERSSTDVH": {
+    "attemptedAt": "2026-08-13T09:12:57.065Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DOCINFORECDOBJTYPETODOCTYPE": {
+    "attemptedAt": "2026-08-13T09:12:57.615Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DOCINFORECORDACCMSECIDASGT": {
+    "attemptedAt": "2026-08-13T09:12:58.107Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_DOCUMENTINFORECORD": {
+    "attemptedAt": "2026-08-13T09:12:58.614Z",
+    "found": true,
+    "matched": 23
+  },
+  "I_DOCUMENTINFORECORDACCMACTV": {
+    "attemptedAt": "2026-08-13T09:12:59.178Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DOCUMENTINFORECORDAUTHZNGRP": {
+    "attemptedAt": "2026-08-13T09:12:59.731Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DOCUMENTINFORECORDAUTHZNGRPT": {
+    "attemptedAt": "2026-08-13T09:13:00.246Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DOCUMENTINFORECORDCADSTS": {
+    "attemptedAt": "2026-08-13T09:13:00.781Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_DOCUMENTINFORECORDCADSTST": {
+    "attemptedAt": "2026-08-13T09:13:01.408Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DOCUMENTINFORECORDDELTNSTS": {
+    "attemptedAt": "2026-08-13T09:13:01.933Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_DOCUMENTINFORECORDDELTNSTST": {
+    "attemptedAt": "2026-08-13T09:13:02.432Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DOCUMENTINFORECORDDESC": {
+    "attemptedAt": "2026-08-13T09:13:03.014Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_DOCUMENTINFORECORDDOCNUMBER": {
+    "attemptedAt": "2026-08-13T09:13:03.566Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DOCUMENTINFORECORDDOCPRT": {
+    "attemptedAt": "2026-08-13T09:13:04.108Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_DOCUMENTINFORECORDDOCSTATUS": {
+    "attemptedAt": "2026-08-13T09:13:04.622Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DOCUMENTINFORECORDDOCSTATUST": {
+    "attemptedAt": "2026-08-13T09:13:05.222Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DOCUMENTINFORECORDDOCTYPE": {
+    "attemptedAt": "2026-08-13T09:13:05.768Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DOCUMENTINFORECORDDOCTYPET": {
+    "attemptedAt": "2026-08-13T09:13:06.259Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DOCUMENTINFORECORDDOCVERSION": {
+    "attemptedAt": "2026-08-13T09:13:06.836Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DOCUMENTINFORECORDINDSTS": {
+    "attemptedAt": "2026-08-13T09:13:07.372Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_DOCUMENTINFORECORDINDSTST": {
+    "attemptedAt": "2026-08-13T09:13:07.907Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_DOCUMENTINFORECORDLBTRYOFFC": {
+    "attemptedAt": "2026-08-13T09:13:08.490Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_DOCUMENTINFORECORDLBTRYOFFCT": {
+    "attemptedAt": "2026-08-13T09:13:09.032Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DOCUMENTINFORECORDOBJECTLINK": {
+    "attemptedAt": "2026-08-13T09:13:09.616Z",
+    "found": true,
+    "matched": 22
+  },
+  "I_DOCUMENTINFORECORDOBJLINKT": {
+    "attemptedAt": "2026-08-13T09:13:10.166Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DOCUMENTINFORECORDOBJLINKVH": {
+    "attemptedAt": "2026-08-13T09:13:10.683Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DOCUMENTINFORECORDSTRUCSTS": {
+    "attemptedAt": "2026-08-13T09:13:11.218Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_DOCUMENTINFORECORDSTRUCSTST": {
+    "attemptedAt": "2026-08-13T09:13:11.793Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DOCUMENTINFORECORDUAUTHACCM": {
+    "attemptedAt": "2026-08-13T09:13:12.306Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_DOCUMENTINFORECORDUSERVH": {
+    "attemptedAt": "2026-08-13T09:13:12.822Z",
+    "found": true,
+    "matched": 11
+  },
+  "C_CDBCLASSIFICATIONQUERY": {
+    "attemptedAt": "2026-08-13T09:13:12.990Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"C_CDBCLASSIFICATIONQUERY\" (404)"
+  },
+  "C_CDBCLASSIFICTIONQRY_TST": {
+    "attemptedAt": "2026-08-13T09:13:13.407Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"C_CDBCLASSIFICTIONQRY_TST\" (404)"
+  },
+  "I_MDSUBSTNSTS": {
+    "attemptedAt": "2026-08-13T09:13:14.216Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_MDSUBSTNSTSTEXT": {
+    "attemptedAt": "2026-08-13T09:13:14.751Z",
+    "found": true,
+    "matched": 4
+  },
+  "DECOM01__FUND": {
+    "attemptedAt": "2026-08-13T09:13:14.942Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DECOM01__FUND\" (404)"
+  },
+  "VDMDEMOCDS_ABSTRACTENTITY": {
+    "attemptedAt": "2026-08-13T09:13:15.395Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VDMDEMOCDS_ABSTRACTENTITY\" (404)"
+  },
+  "VDMDEMOCDS_C1DEPRECATDELEMENT2": {
+    "attemptedAt": "2026-08-13T09:13:15.805Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VDMDEMOCDS_C1DEPRECATDELEMENT2\" (404)"
+  },
+  "VDMDEMOCDS_C1DEPRECATEDELEMENT": {
+    "attemptedAt": "2026-08-13T09:13:16.217Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VDMDEMOCDS_C1DEPRECATEDELEMENT\" (404)"
+  },
+  "VDMDEMOCDS_C1LIFECYCLECONTRACT": {
+    "attemptedAt": "2026-08-13T09:13:16.632Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VDMDEMOCDS_C1LIFECYCLECONTRACT\" (404)"
+  },
+  "VDMDEMOCDS_C1RELEASED": {
+    "attemptedAt": "2026-08-13T09:13:17.047Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VDMDEMOCDS_C1RELEASED\" (404)"
+  },
+  "VDMDEMOCDS_C1RELEASEDCLOUDDEV": {
+    "attemptedAt": "2026-08-13T09:13:17.503Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VDMDEMOCDS_C1RELEASEDCLOUDDEV\" (404)"
+  },
+  "VDMDEMOCDS_I_CODE": {
+    "attemptedAt": "2026-08-13T09:13:17.924Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VDMDEMOCDS_I_CODE\" (404)"
+  },
+  "VDMDEMOCDS_I_CODESTDVH": {
+    "attemptedAt": "2026-08-13T09:13:18.319Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VDMDEMOCDS_I_CODESTDVH\" (404)"
+  },
+  "VDMDEMOCDS_I_CODETEXT": {
+    "attemptedAt": "2026-08-13T09:13:18.718Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VDMDEMOCDS_I_CODETEXT\" (404)"
+  },
+  "VDMDEMOCDS_VIEWENTITY": {
+    "attemptedAt": "2026-08-13T09:13:19.138Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VDMDEMOCDS_VIEWENTITY\" (404)"
+  },
+  "VDMDEMOCDS_VIEWMIGRATION": {
+    "attemptedAt": "2026-08-13T09:13:19.543Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VDMDEMOCDS_VIEWMIGRATION\" (404)"
   }
 }

@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
-| `InternalDocumentStatus` | ✓ | |  | `dokst` |  |  |
-| `DocInfoRecdStatusType` |  | |  | `dosar` |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` | `CHAR(3)` | Document Type |
+| `InternalDocumentStatus` | ✓ | |  | `dokst` | `CHAR(2)` | Document Status |
+| `DocInfoRecdStatusType` |  | |  | `dosar` | `CHAR(1)` | Document status type |
 | `_DocTypeText` | | ✓ | | | | |
 | `_DocType` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |

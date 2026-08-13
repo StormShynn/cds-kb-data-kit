@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `IsDocInfoRecdCreatedFromCAD` | ✓ | |  | `domvalue_l` |  |  |
-| `CADStatusDescription` |  | |  | `ddtext` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `IsDocInfoRecdCreatedFromCAD` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CADStatusDescription` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_DocumentInfoRecordCADSts` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

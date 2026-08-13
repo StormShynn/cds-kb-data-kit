@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LogAccMObjectType` | ✓ | |  |  |  |  |
-| `LogAccMObjectTypeIsActive` |  | |  |  |  |  |
+| `LogAccMObjectType` | ✓ | |  |  | `CHAR(10)` | Object Type |
+| `LogAccMObjectTypeIsActive` |  | |  |  | `CHAR(1)` | Access Control Activated for Object Type |
 
 ## Source Code
 

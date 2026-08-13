@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LaboratoryOrDesignOffice` | ✓ | |  | `labor` |  |  |
+| `LaboratoryOrDesignOffice` | ✓ | |  | `labor` | `CHAR(3)` | Laboratory/Design Office |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

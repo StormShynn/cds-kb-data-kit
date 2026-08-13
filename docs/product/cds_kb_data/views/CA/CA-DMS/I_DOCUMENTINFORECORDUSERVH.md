@@ -40,17 +40,17 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` |  | |  | `('ASSOCIATED_TEXT_UI_HIDDEN') @ObjectModel.foreignKey.association: '_DocType' @EndUserText.label:'Document Type' @Search.ranking: #MEDIUM @Search.fuzzinessThreshold: 0.8 @Search.defaultSearchElement: true key document.DocumentInfoRecordDocType` |  |  |
-| `DocumentInfoRecordDocNumber` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocVersion` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocPart` | ✓ | |  |  |  |  |
-| `ResponsiblePersonName` | ✓ | |  |  |  |  |
-| `FirstName` |  | |  | `name_first` |  |  |
-| `LastName` |  | |  | `name_last` |  |  |
-| `ResponsiblePersonFullName` |  | |  | `UserDescription` |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `LastChangedByUserFullName` |  | |  | `UserDescription` |  |  |
-| `PersonNumber` |  | |  | `AddressPersonID` |  |  |
+| `DocumentInfoRecordDocType` |  | |  | `('ASSOCIATED_TEXT_UI_HIDDEN') @ObjectModel.foreignKey.association: '_DocType' @EndUserText.label:'Document Type' @Search.ranking: #MEDIUM @Search.fuzzinessThreshold: 0.8 @Search.defaultSearchElement: true key document.DocumentInfoRecordDocType` | `CHAR(3)` | Document Type |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocVersion` | ✓ | |  |  | `CHAR(2)` | Document Version |
+| `DocumentInfoRecordDocPart` | ✓ | |  |  | `CHAR(3)` | Document Part |
+| `ResponsiblePersonName` | ✓ | |  |  | `CHAR(12)` | Name of Person Responsible |
+| `FirstName` |  | |  | `name_first` | `CHAR(40)` | First Name |
+| `LastName` |  | |  | `name_last` | `CHAR(40)` | Last Name |
+| `ResponsiblePersonFullName` |  | |  | `UserDescription` | `CHAR(80)` | User Description |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `LastChangedByUserFullName` |  | |  | `UserDescription` | `CHAR(80)` | User Description |
+| `PersonNumber` |  | |  | `AddressPersonID` | `CHAR(10)` | Person Number |
 | `_DocTypeText` | | ✓ | | | | |
 | `_DocType` | | ✓ | | | | |
 | `_DocNumber` | | ✓ | | | | |

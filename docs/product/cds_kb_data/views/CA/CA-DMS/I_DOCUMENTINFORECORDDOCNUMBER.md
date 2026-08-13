@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
-| `DocumentInfoRecordDocNumber` | ✓ | |  | `doknr` |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` | `CHAR(3)` | Document Type |
+| `DocumentInfoRecordDocNumber` | ✓ | |  | `doknr` | `CHAR(25)` | Document Number |
 | `_Text` | | ✓ | | | | |
 | `_DocType` | | ✓ | | | | |
 

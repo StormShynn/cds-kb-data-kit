@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `IsDocInfoRecordStructure` | ✓ | |  | `substring( Domval.domvalue_l, 1, 1 )` |  |  |
+| `IsDocInfoRecordStructure` | ✓ | |  | `substring( Domval.domvalue_l, 1, 1 )` | `CHAR(1)` |  |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

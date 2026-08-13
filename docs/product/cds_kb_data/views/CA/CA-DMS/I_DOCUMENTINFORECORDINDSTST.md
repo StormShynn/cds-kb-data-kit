@@ -39,13 +39,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocNumber` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocType` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocVersion` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocPart` | ✓ | |  |  |  |  |
-| `DocInfoRecdIsMarkedForDeletion` |  | |  |  |  |  |
-| `IsDocInfoRecdStructure` |  | |  |  |  |  |
-| `IsDocInfoRecdCreatedFromCAD` |  | |  |  |  |  |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocType` | ✓ | |  |  | `CHAR(3)` | Document Type |
+| `DocumentInfoRecordDocVersion` | ✓ | |  |  | `CHAR(2)` | Document Version |
+| `DocumentInfoRecordDocPart` | ✓ | |  |  | `CHAR(3)` | Document Part |
+| `DocInfoRecdIsMarkedForDeletion` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `IsDocInfoRecdStructure` |  | |  |  | `CHAR(1)` |  |
+| `IsDocInfoRecdCreatedFromCAD` |  | |  |  | `CHAR(1)` | CAD Indicator |
 | `_DocType` | | ✓ | | | | |
 | `_DocNumber` | | ✓ | | | | |
 | `_DocVersion` | | ✓ | | | | |

@@ -38,14 +38,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LogAccMObjectID` | ✓ | |  |  |  |  |
-| `LogAccMSecureID` | ✓ | |  |  |  |  |
-| `LogAccMObjectType` | ✓ | |  |  |  |  |
-| `LogAccMObjectAssignmentType` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `CreationDateTime` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `LastChangeDateTime` |  | |  |  |  |  |
+| `LogAccMObjectID` | ✓ | |  |  | `CHAR(90)` | Internal Key |
+| `LogAccMSecureID` | ✓ | |  |  | `RAW(16)` | Secure ID |
+| `LogAccMObjectType` | ✓ | |  |  | `CHAR(10)` | Object Type |
+| `LogAccMObjectAssignmentType` |  | |  |  | `CHAR(1)` | Type of Object Assignment |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | User ID |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | User ID |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
 | `_LogAccMUsrSecureIDAssgmt` | | ✓ | | | | |
 | `_LogAccMSecureIDRepository` | | ✓ | | | | |
 | `_CreatedByUser` | | ✓ | | | | |
