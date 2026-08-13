@@ -1,6 +1,19 @@
 ---
 name: D_BILLGDOCCRTEFRMEXTPAYTCARDIP
 description: "D Billgdoccrtefrmextpaytcardip"
+semantic_vi: "View D_BILLGDOCCRTEFRMEXTPAYTCARDIP hiển thị dữ liệu thanh toán điện tử, bao gồm loại thanh toán, ngày hết hạn và chi tiết xác thực. Nó được sử dụng để lấy thông tin về các giao dịch thanh toán điện tử."
+keywords:
+  - "electronic payment"
+  - "thanh toán điện tử"
+  - "payment type"
+  - "loại thanh toán"
+  - "authorization"
+  - "xác thực"
+  - "sap"
+  - "sd-bil"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+semantic_en: "The D_BILLGDOCCRTEFRMEXTPAYTCARDIP view exposes electronic payment data, including payment types, validity dates, and authorization details. It is used to retrieve information about electronic payment transactions."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: C_SUPPLIERQUOTATIONDEX
 description: "Supplierquotationdex"
+semantic_vi: "View Supplierquotationdex cung cấp danh sách chi tiết đề xuất của nhà cung cấp, bao gồm thông tin như mã công ty, loại đơn mua hàng và thông tin nhà cung cấp. Nó được sử dụng để trích xuất và phân tích dữ liệu đề xuất của nhà cung cấp."
+keywords:
+  - "supplier quotation"
+  - "đề xuất nhà cung cấp"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "mm-pur"
+  - "mm-pur-ana"
+  - "sourcing & procurement"
+  - "supplier"
+  - "công ty"
+  - "đơn vị mua hàng"
+semantic_en: "The Supplierquotationdex view provides a comprehensive list of supplier quotations, including details such as company code, purchasing document category, and supplier information. It is used to extract and analyze supplier quotation data."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: C_SUPLRINVCWRKFLWEMLDEADLINE
 description: "Suplrinvcwrkflwemldeadline"
+semantic_vi: "View này hiển thị dữ liệu công việc luồng cho luồng hóa đơn nhà cung cấp, bao gồm mô tả công việc, trạng thái và thông tin tạo ra. Nó được sử dụng để theo dõi và quản lý các nhiệm vụ trong quá trình luồng hóa đơn nhà cung cấp."
+keywords:
+  - "supplier invoice workflow"
+  - "luồng hóa đơn nhà cung cấp"
+  - "workflow task"
+  - "công việc luồng"
+  - "task description"
+  - "mô tả công việc"
+  - "task status"
+  - "trạng thái công việc"
+  - "workflow process"
+  - "quá trình luồng"
+  - "sap mm iv"
+  - "mm iv"
+semantic_en: "This view exposes workflow task data for supplier invoice workflow, including task descriptions, statuses, and creation information. It is used to track and manage tasks within the supplier invoice workflow process."
 app_component: MM-IV-INT-WF-2CL
 software_component: SAPSCORE
 release_state: released

@@ -11,7 +11,7 @@ import {
 } from './paths.mjs';
 
 /**
- * Dry-run export plan for Z*/Y* scope only.
+ * Dry-run export plan for Z* / Y* scope only.
  */
 export async function planExport(connector, config, { packages, maxObjects = 100 } = {}) {
   const warnings = [];

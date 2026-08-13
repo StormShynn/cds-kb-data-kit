@@ -1,6 +1,21 @@
 ---
 name: D_BILLOFMATERIALORDEXPLODEBOMP
 description: "D Bill of MaterialORDEXPLODEBOMP"
+semantic_vi: "View D_BILLOFMATERIALORDEXPLODEBOMP hiển thị dữ liệu bảng kê vật liệu nở rộ cho đơn hàng bán hàng, bao gồm thông tin bảng kê và chi tiết vật liệu. Nó được sử dụng để phân tích và quản lý nhu cầu vật liệu cho sản xuất."
+keywords:
+  - "bill of material"
+  - "bảng kê vật liệu"
+  - "sales order"
+  - "đơn hàng bán hàng"
+  - "bom"
+  - "bảng kê"
+  - "material requirement"
+  - "nhu cầu vật liệu"
+  - "production planning"
+  - "kế hoạch sản xuất"
+  - "sap lo"
+  - "ekko"
+semantic_en: "The D_BILLOFMATERIALORDEXPLODEBOMP view exposes exploded bill of material data for a sales order, including the BOM header and item details. It is used to analyze and manage material requirements for production."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

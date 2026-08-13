@@ -1,6 +1,20 @@
 ---
 name: D_ARDISPUTECASECREATENOTEP
 description: "D Ardisputecasecreatenotep"
+semantic_vi: "View D_ARDISPUTECASECREATENOTEP hiển thị các ghi chú tạo lập trường tranh chấp tài chính trong thành phần FIN-FIO-CCD-COL-2CL, được sử dụng khi quản lý các tranh chấp tài chính."
+keywords:
+  - "dispute case"
+  - "financial dispute"
+  - "note"
+  - "fin-fio-ccd-col-2cl"
+  - "component"
+  - "financial"
+  - "dispute"
+  - "note content"
+  - "tạo lập trường tranh chấp"
+  - "ghi chú"
+  - "tài chính"
+semantic_en: "The D_ARDISPUTECASECREATENOTEP view exposes dispute case creation notes in the FIN-FIO-CCD-COL-2CL component, used when managing financial disputes."
 app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released

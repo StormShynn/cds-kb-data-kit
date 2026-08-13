@@ -1,6 +1,21 @@
 ---
 name: C_REUSBLOBJTORNTBLOBJASSGMTDEX
 description: "Reusblobjtorntblobjassgmtdex"
+semantic_vi: "Chỉ ra các giao dịch thuê tài sản bất động sản và các đối tượng sử dụng liên quan, hữu ích cho việc trích xuất và phân tích dữ liệu."
+keywords:
+  - "real estate"
+  - "rental object"
+  - "usability object"
+  - "assignment"
+  - "data extraction"
+  - "sap cds"
+  - "re-fx-bd-2cl"
+  - "consumption view"
+  - "data analysis"
+  - "bất động sản"
+  - "đối tượng sử dụng"
+  - "giao dịch thuê"
+semantic_en: "Exposes real estate rental object assignments and their associated usability objects, useful for data extraction and analysis."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

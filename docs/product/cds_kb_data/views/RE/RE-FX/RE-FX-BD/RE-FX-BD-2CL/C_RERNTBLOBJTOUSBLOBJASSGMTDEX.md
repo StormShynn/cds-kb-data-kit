@@ -1,6 +1,19 @@
 ---
 name: C_RERNTBLOBJTOUSBLOBJASSGMTDEX
 description: "Rerntblobjtousblobjassgmtdex"
+semantic_vi: "Chỉ ra các đối tượng thuê bất động sản được gán đến các đối tượng sử dụng với các ngày hiệu lực liên quan."
+keywords:
+  - "real estate"
+  - "rental object"
+  - "usable object"
+  - "assignment"
+  - "validity date"
+  - "sap cds view"
+  - "cds view"
+  - "re-fx-bd-2cl"
+  - "consumption view"
+  - "data extraction"
+semantic_en: "Exposes real estate rental object assignments to usable objects with associated validity dates. Used to retrieve data for reporting or integration purposes."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_BOMCOMPAREBOM1VERSUSBOM2R
 description: "D Bomcomparebom 1VERSUSBOM 2R"
+semantic_vi: "View này so sánh hai phiên bản BOM khác nhau cho một vật liệu, cung cấp chi tiết về kết quả so sánh và vật liệu BOM chính. Nó được sử dụng để phân tích và quản lý phiên bản BOM trong ứng dụng thành phần LO-MD-BOM-2CL."
+keywords:
+  - "bom"
+  - "bom version"
+  - "material"
+  - "comparison"
+  - "lo-md-bom-2cl"
+  - "logistics"
+  - "sap"
+  - "cds view"
+  - "bom item"
+  - "version comparison"
+semantic_en: "This view compares two different BOM versions for a material, providing details about the comparison result and the primary BOM item. It is used to analyze and manage BOM versions in the LO-MD-BOM-2CL application component."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

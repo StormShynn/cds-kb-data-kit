@@ -1,6 +1,19 @@
 ---
 name: C_SCHEDULEAGREEMENTHDRDEX
 description: "Scheduleagreementhdrdex"
+semantic_vi: "Chứa dữ liệu cấp đầu vào cho các thỏa thuận lịch trình, là các hợp đồng giữa một người mua và một nhà cung cấp cho việc mua hàng hóa hoặc dịch vụ. View này có thể được sử dụng để phân tích và báo cáo về các thỏa thuận lịch trình."
+keywords:
+  - "scheduling agreement"
+  - "thỏa thuận lịch trình"
+  - "purchase contract"
+  - "hợp đồng mua hàng"
+  - "sourcing"
+  - "procurement"
+  - "mm-pur-ana"
+  - "schedule line"
+  - "header level data"
+  - "data extraction"
+semantic_en: "Exposes header-level data for scheduling agreements, which are contracts between a buyer and a supplier for the purchase of goods or services. This view can be used to analyze and report on scheduling agreements."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

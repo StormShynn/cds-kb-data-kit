@@ -1,6 +1,18 @@
 ---
 name: D_BOMDELCHANGENOOUTPARAMETER
 description: "D Bomdelchangenooutparameter"
+semantic_vi: "View này hiển thị các số thay đổi trong quá trình xóa BOM mà không có tham số đầu ra, hữu ích cho việc theo dõi các thay đổi trong quá trình xóa BOM."
+keywords:
+  - "bom"
+  - "bom deletion"
+  - "change number"
+  - "output parameter"
+  - "logistics"
+  - "lo"
+  - "lo-md-bom"
+  - "sap"
+  - "cds view"
+semantic_en: "This view exposes BOM deletion change numbers without output parameters, useful for tracking changes in BOM deletion processes."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

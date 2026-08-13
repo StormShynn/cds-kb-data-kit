@@ -6,7 +6,8 @@ Date: 2026-08-13
 
 Active — C1–C4 product decisions locked (incl. C2b no-overwrite /
 gap-fill-create); C1 Issue-bot implemented in-repo (go-live = secret +
-deploy); SAP connector deferred (C3).
+deploy); **C3 ADT vertical slice implemented in-repo** (mocked tests only;
+live SAP DEV validate / deploy still outstanding).
 
 ## Outcome
 
@@ -21,7 +22,8 @@ via a Worker bot when the visitor is not logged into GitHub (C1), with deep-link
 ## Context
 
 - Completed: `docs/plans/completed/query-library-growth.md`
-- cds-kb-mcp is **dataless** (search/compose/propose against KB only; no live SAP)
+- cds-kb-mcp is **dataless by default** (search/compose/propose against KB;
+  optional `sap_*` tools stay `configured=false` until `SAP_ADT_*` is set)
 - Query Builder Propose: Worker `POST /propose-issue` first, then
   `issues/new?title=&body=` deep-link + clipboard fallback;
   template `.github/ISSUE_TEMPLATE/query-library-proposal.yml`
@@ -43,12 +45,15 @@ In scope:
 - GitHub Issue-without-login truth + **C1 Worker Issue bot**
 - Product decisions C1–C4 (**all locked**)
 
-Out of scope (this task):
+Out of scope (this task — original design pass):
 
-- Implementing ADT/RFC SAP connector (C3 — plan notes only)
 - Auto-merge into `query-library.json`
 - Live SAP query execution / row export into the public KB
 - Changing generate-query-builder stale guard
+
+C3 follow-up (2026-08-13): thin ADT read-only MCP slice in
+`docs/product/cds_kb_mcp` — see Progress / Result. Live SAP DEV validation
+remains operator-blocked.
 
 ## Approach
 
@@ -163,7 +168,7 @@ needed later.
 | **C1** | Build Worker Issue bot so Propose works without visitor GitHub login | **LOCKED YES** — implemented on usage collector Worker |
 | **C2** | Keep existing overlay setup; SAP learn scope = **Z* and Y* only**; skip SAP standard | **LOCKED** (2026-08-13) — see below |
 | **C2b** | Never overwrite existing custom overlay knowledge; gap-fill by **creating** CDS/query proposals (not overlaying SAP standard) | **LOCKED** (2026-08-13) — refinement of C2 |
-| **C3** | SAP systems: **DEV only**, **ADT first**, **no PRD** | **LOCKED** — connector not built this task; plan notes only |
+| **C3** | SAP systems: **DEV only**, **ADT first**, **no PRD** | **LOCKED** — in-repo vertical slice shipped (mocked); live DEV test pending |
 | **C4** | Public library may receive **both** curated query shapes **and** curated custom CDS snippets | **LOCKED** — Issue template + Propose payload carry `kind`: `query` \| `cds` |
 
 #### C2 — LOCKED (2026-08-13): existing overlay + Z*/Y* only
@@ -204,7 +209,9 @@ or propose into the public library via this path.
 private Git / machine-local paths remain optional overrides when a customer
 forbids any Z*/Y* DDL near the public tree — not a new default.
 
-Do not implement the SAP ADT connector in this task (C3 deferred).
+Do not invent a new private-overlay home; SAP **snapshots** use a separate
+gitignored path (`cds_kb_data/.sap_export` or `SAP_ADT_OUTPUT_ROOT`), then
+humans promote into `overlays/private/` markdown.
 
 #### C2b — LOCKED (2026-08-13): no overwrite custom knowledge; gap-fill by creating
 
@@ -250,16 +257,20 @@ view/shape is **missing**, **create** CDS views / proposals to enrich
 - [x] Tech radar #1: golden eval harness (`scripts/eval-compose.mjs` + fixtures; `npm run test:eval`)
 - [x] Tech radar #2: library-first compose (`compose_query` prompt + tool descriptions)
 - [x] Tech radar #3: hybrid RRF (replace 0.6/0.4 blend; `src/rrf.mjs` + `npm run test:rrf`)
+- [x] C3 thin ADT slice in `cds_kb_mcp` (`src/sap/*`, `sap_*` tools, `npm run test:sap`)
 - [ ] Deploy: set `GITHUB_ISSUE_TOKEN` + `wrangler deploy` (operator)
-- [ ] Later: sap-export thin slice (C3 — DEV / ADT only; filter Z*/Y*; skip-if-exists)
+- [ ] Live: SAP DEV ADT dry-run + one DDLS export with real credentials/network/auths
 
 ## Validation
 
 - Unit: `worker/test-propose-sanitize.mjs` (size / honeypot / secret patterns / kind)
 - Unit: `cds_kb_mcp/test_rrf.mjs` (RRF fusion / cosine rank helpers)
+- Unit: `cds_kb_mcp/npm run test:sap` (config rejection, namespace filter, no-overwrite,
+  path containment, deterministic hash, mocked ADT requests)
 - Golden: `cds_kb_mcp/npm run test:eval` (frozen search / library / compose intents)
 - Focused: Query Builder Propose JS has Worker path + deep-link fallback
 - Live: requires deploy + `GITHUB_ISSUE_TOKEN` (document only until operator runs it)
+- Live C3: requires `SAP_ADT_*` against approved DEV + Basis auth for ADT DDL read
 - Do not weaken generate-query-builder stale guard
 
 ## Result
@@ -273,8 +284,14 @@ Worker; go-live needs `GITHUB_ISSUE_TOKEN` + redeploy.
 Tech radar shipped in-repo (2026-08-13): golden `search_cds` /
 `search_query_library` / `compose_query` eval harness; library-first
 `compose_query` prompt + tool copy; hybrid search uses Reciprocal Rank Fusion
-over BM25 + cosine ranks (BM25 fallback when embeddings unavailable). Still
-user-ops: Issue-bot token deploy; C3 ADT connector later.
+over BM25 + cosine ranks (BM25 fallback when embeddings unavailable).
+
+**C3 vertical slice (2026-08-13, in-repo, not live-complete):** optional ADT
+tools on cds-kb-mcp (`sap_connection_test` … `sap_diff_snapshot`), env-based
+config (DEV/HTTPS/TLS, Z*/Y* only), mocked unit tests, snapshots under
+`.sap_export` (gitignored) with skip-if-exists. Plan stays **Active** until
+live DEV probe + operator auth validation. Still user-ops: Issue-bot token
+deploy; live SAP credentials/network/authorizations.
 
 ## Future tech radar (2026-08-13)
 

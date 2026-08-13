@@ -1,6 +1,18 @@
 ---
 name: D_BLGDCCRTEFRMEXTBLBLDOCITMIP
 description: "D Blgdccrtefrmextblbldocitmip"
+semantic_vi: "Chứa thông tin chi tiết của mục hóa đơn cho hóa đơn hóa đơn bên ngoài, được sử dụng khi truy cập chi tiết mục hóa đơn."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "external billing document"
+  - "mục hóa đơn"
+  - "công ty bán hàng"
+  - "kênh phân phối"
+  - "đơn vị kinh doanh"
+  - "ngày hóa đơn"
+  - "đơn vị mua hàng"
+semantic_en: "Exposes billing document item information for external billing documents, used when accessing billing document item details."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

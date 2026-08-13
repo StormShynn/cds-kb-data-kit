@@ -1,6 +1,19 @@
 ---
 name: D_BILLGDOCCRTECANCLNDOCP
 description: "D Billgdoccrtecanclndocp"
+semantic_vi: "View D_BILLGDOCCRTECANCLNDOCP cung cấp truy cập vào các bản ghi hủy đơn đặt hàng hóa đơn, được sử dụng để theo dõi việc hủy đơn đặt hàng hóa đơn trong thành phần Sales và Distribution của SAP. View này có thể được sử dụng để truy xuất và phân tích dữ liệu hủy đơn đặt hàng hóa đơn cho mục đích báo cáo kinh doanh và phân tích dữ liệu."
+keywords:
+  - "billing document"
+  - "đơn đặt hàng hóa đơn"
+  - "cancellation record"
+  - "hủy đơn đặt hàng"
+  - "sales and distribution"
+  - "sản xuất và phân phối"
+  - "sap"
+  - "ekko"
+  - "billing document cancellation"
+  - "hủy đơn đặt hàng hóa đơn"
+semantic_en: "The D_BILLGDOCCRTECANCLNDOCP view provides access to billing document cancellation records, which are used to track the cancellation of billing documents in the Sales and Distribution component of SAP. This view can be used to retrieve and analyze billing document cancellation data for business reporting and analytics purposes."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

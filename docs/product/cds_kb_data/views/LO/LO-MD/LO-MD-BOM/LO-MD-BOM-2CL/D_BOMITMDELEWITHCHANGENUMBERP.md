@@ -1,6 +1,19 @@
 ---
 name: D_BOMITMDELEWITHCHANGENUMBERP
 description: "D Bomitmdelewithchangenumberp"
+semantic_vi: "View D_BOMITMDELEWITHCHANGENUMBERP hiển thị việc xóa mục trong BOM kèm theo số thay đổi, thường được sử dụng khi quản lý tài liệu thay đổi kỹ thuật cho mục chỉnh sửa."
+keywords:
+  - "bom"
+  - "engineering change document"
+  - "đơn thay đổi kỹ thuật"
+  - "xóa mục trong bom"
+  - "số thay đổi"
+  - "tài liệu thay đổi kỹ thuật"
+  - "lo-md-bom"
+  - "logistics general"
+  - "ekko"
+  - "sap cds"
+semantic_en: "The D_BOMITMDELEWITHCHANGENUMBERP view exposes BOM item deletions with change numbers, typically used when managing engineering change documents for editing."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

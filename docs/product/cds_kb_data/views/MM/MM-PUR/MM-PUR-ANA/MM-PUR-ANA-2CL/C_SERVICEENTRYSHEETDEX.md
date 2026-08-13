@@ -1,6 +1,19 @@
 ---
 name: C_SERVICEENTRYSHEETDEX
 description: "Serviceentrysheetdex"
+semantic_vi: "View Serviceentrysheetdex hiển thị dữ liệu phiếu nhập dịch vụ, được sử dụng để theo dõi và quản lý các dịch vụ mua từ nhà cung cấp. Nó thường được sử dụng trong quá trình mua hàng để phân tích và báo cáo về các dịch vụ mua."
+keywords:
+  - "service entry sheet"
+  - "service purchase"
+  - "dịch vụ mua"
+  - "phiếu nhập dịch vụ"
+  - "procurement"
+  - "mua hàng"
+  - "sourcing"
+  - "approval status"
+  - "ekko"
+  - "mm-pur-ana"
+semantic_en: "The Serviceentrysheetdex view exposes service entry sheet data, which is used to track and manage services purchased from suppliers. It is typically used in the procurement process to analyze and report on service purchases."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,15 @@
 ---
 name: D_ARDISPUTECASECRTEDSPUTDITMP
 description: "D Ardisputecasecrtedsputditmp"
+semantic_vi: "View D_ARDISPUTECASECRTEDSPUTDITMP hiển thị dữ liệu chi tiết tài khoản liên quan đến tranh chấp, có thể được sử dụng khi phân tích hoặc giải quyết tranh chấp tài chính trong một công ty."
+keywords:
+  - "dispute"
+  - "accounting document item"
+  - "financial dispute"
+  - "tài khoản tranh chấp"
+  - "chi tiết tài khoản"
+  - "tranh chấp tài chính"
+semantic_en: "The D_ARDISPUTECASECRTEDSPUTDITMP view exposes accounting document item data related to disputes, which can be used when analyzing or resolving financial disputes within a company."
 app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released

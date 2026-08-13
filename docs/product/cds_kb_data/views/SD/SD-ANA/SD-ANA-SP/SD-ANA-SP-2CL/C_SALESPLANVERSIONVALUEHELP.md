@@ -1,6 +1,17 @@
 ---
 name: C_SALESPLANVERSIONVALUEHELP
 description: "Salesplanversionvaluehelp"
+semantic_vi: "Cung cấp dữ liệu giúp đỡ giá trị phiên kế hoạch bán hàng cho ứng dụng bán hàng và phân phối. Sử dụng view này để lấy thông tin mô tả phiên kế hoạch bán hàng và thông tin liên quan."
+keywords:
+  - "sales plan"
+  - "sales plan version"
+  - "value help"
+  - "sales and distribution"
+  - "sapan"
+  - "phiên kế hoạch bán hàng"
+  - "giúp đỡ giá trị"
+  - "sapan và phân phối"
+semantic_en: "Provides sales plan version value help data for sales and distribution applications. Use this view to retrieve sales plan version descriptions and related information."
 app_component: SD-ANA-SP-2CL
 software_component: SAPSCORE
 release_state: released

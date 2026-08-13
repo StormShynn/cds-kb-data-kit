@@ -11,6 +11,10 @@ tools/
 .vsp.json
 .vsp.json.example
 
+# SAP ADT export snapshots (local only; never commit credentials or dumps)
+**/.sap_export/
+docs/product/cds_kb_data/.sap_export/
+
 # Harness core maintenance binary
 scripts/bin/harness
 scripts/bin/harness.exe

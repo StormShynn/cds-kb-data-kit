@@ -1,6 +1,18 @@
 ---
 name: C_SALESPLANVALUEHELP
 description: "Salesplanvaluehelp"
+semantic_vi: "View C_SALESPLANVALUEHELP cung cấp truy cập dữ liệu hỗ trợ giá trị kế hoạch bán hàng, được sử dụng để hỗ trợ tạo và duy trì kế hoạch bán hàng trong hệ thống SAP. Nó có thể được sử dụng để lấy thông tin về giá trị kế hoạch bán hàng và các dữ liệu liên quan."
+keywords:
+  - "sales plan"
+  - "kế hoạch bán hàng"
+  - "value help"
+  - "hỗ trợ giá trị"
+  - "sap sales and distribution"
+  - "bán hàng và phân phối"
+  - "sd-ana-sp-2cl"
+  - "sales and distribution analytics"
+  - "kiểm kê và phân tích bán hàng"
+semantic_en: "The C_SALESPLANVALUEHELP view provides access to sales plan value help data, which is used to support the creation and maintenance of sales plans in the SAP system. It can be used to retrieve information about sales plan values and their associated metadata."
 app_component: SD-ANA-SP-2CL
 software_component: SAPSCORE
 release_state: released

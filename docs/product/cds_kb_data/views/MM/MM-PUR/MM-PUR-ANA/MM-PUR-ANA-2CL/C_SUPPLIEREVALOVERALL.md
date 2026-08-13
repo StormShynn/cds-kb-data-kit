@@ -1,6 +1,21 @@
 ---
 name: C_SUPPLIEREVALOVERALL
 description: "Supplierevaloverall"
+semantic_vi: "View C_SUPPLIEREVALOVERALL cung cấp đánh giá tổng thể của nhà cung cấp dựa trên các tiêu chí như hiệu suất giao hàng và tính hoàn chỉnh của tài liệu. Nó có thể được sử dụng để phân tích hiệu suất nhà cung cấp theo thời gian."
+keywords:
+  - "supplier evaluation"
+  - "đánh giá nhà cung cấp"
+  - "purchase analysis"
+  - "phân tích mua hàng"
+  - "supplier performance"
+  - "hiệu suất nhà cung cấp"
+  - "delivery performance"
+  - "hiệu suất giao hàng"
+  - "sap mm"
+  - "sap mm-pur"
+  - "sap mm-pur-ana"
+  - "cds view"
+semantic_en: "The C_SUPPLIEREVALOVERALL view provides an overall evaluation of suppliers based on various criteria such as delivery performance and document completeness. It can be used to analyze supplier performance over time."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

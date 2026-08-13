@@ -1,6 +1,19 @@
 ---
 name: C_SUPLRINVCSUPLRTOLSTTGDEX
 description: "Suplrinvcsuplrtolsttgdex"
+semantic_vi: "CDS view Suplrinvcsuplrtolsttgdex hiển thị dữ liệu nhóm cho phép kiểm tra hóa đơn nhà cung cấp, được sử dụng để quản lý và phân tích nhóm cho phép kiểm tra hóa đơn nhà cung cấp trong thành phần MM-PUR-ANA-2CL."
+keywords:
+  - "supplier invoice verification"
+  - "tolerance group"
+  - "mm-pur-ana-2cl"
+  - "sourcing & procurement"
+  - "đơn mua hàng"
+  - "hóa đơn nhà cung cấp"
+  - "thanh phần mm-pur-ana-2cl"
+  - "kiểm tra hóa đơn nhà cung cấp"
+  - "nhóm cho phép kiểm tra"
+  - "ekko"
+semantic_en: "The Suplrinvcsuplrtolsttgdex CDS view exposes supplier invoice verification tolerance group data, which is used to manage and analyze supplier invoice verification tolerances in the MM-PUR-ANA-2CL component."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

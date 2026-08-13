@@ -1,6 +1,18 @@
 ---
 name: D_BDRCRTEFRMEXTDATAP
 description: "D Bdrcrtefrmextdatap"
+semantic_vi: "View D_BDRCRTEFRMEXTDATAP hiển thị dữ liệu bên ngoài cho các biểu mẫu tạo tài liệu kinh doanh trong thành phần Sales và Distribution. Nó được sử dụng để truy cập và thao tác dữ liệu này trong phát triển ABAP và đám mây."
+keywords:
+  - "sales and distribution"
+  - "dữ liệu bên ngoài"
+  - "biểu mẫu tạo tài liệu kinh doanh"
+  - "sales and distribution component"
+  - "external data"
+  - "business document creation forms"
+  - "abap development"
+  - "cloud development"
+  - "sap sd-bil-bdr-2cl"
+semantic_en: "The D_BDRCRTEFRMEXTDATAP view exposes external data for business document creation forms in the Sales and Distribution component. It is used to access and manipulate this data in ABAP and cloud development."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

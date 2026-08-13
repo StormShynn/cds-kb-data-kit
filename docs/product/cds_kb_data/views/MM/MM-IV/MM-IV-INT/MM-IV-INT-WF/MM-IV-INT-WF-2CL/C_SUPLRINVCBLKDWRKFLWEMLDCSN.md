@@ -1,6 +1,21 @@
 ---
 name: C_SUPLRINVCBLKDWRKFLWEMLDCSN
 description: "Suplrinvcblkdwrkflwemldcsn"
+semantic_vi: "View Suplrinvcblkdwrkflwemldcsn hiển thị dữ liệu công việc liên quan đến hóa đơn nhà cung cấp, cung cấp thông tin về trạng thái công việc, tạo và mô tả. Nó được sử dụng trong thành phần MM-IV-INT-WF-2CL cho các công việc liên quan đến luồng làm việc."
+keywords:
+  - "workflow"
+  - "supplier invoice"
+  - "công việc"
+  - "hóa đơn nhà cung cấp"
+  - "luồng làm việc"
+  - "mm-iv-int-wf-2cl"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "mm"
+  - "mm-iv"
+  - "mm-iv-int"
+  - "consumption-view"
+semantic_en: "The Suplrinvcblkdwrkflwemldcsn CDS view exposes workflow task data related to supplier invoices, providing information on task status, creation, and description. It is used in the MM-IV-INT-WF-2CL component for workflow-related tasks."
 app_component: MM-IV-INT-WF-2CL
 software_component: SAPSCORE
 release_state: released

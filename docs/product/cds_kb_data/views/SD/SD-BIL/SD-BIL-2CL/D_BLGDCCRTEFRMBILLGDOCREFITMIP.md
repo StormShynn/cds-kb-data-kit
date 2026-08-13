@@ -1,6 +1,18 @@
 ---
 name: D_BLGDCCRTEFRMBILLGDOCREFITMIP
 description: "D Blgdccrtefrmbillgdocrefitmip"
+semantic_vi: "View D_BLGDCCRTEFRMBILLGDOCREFITMIP hiển thị các tham chiếu cho đơn đặt hàng vật liệu trong thời gian thực cho kế hoạch yêu cầu vật liệu trong bán hàng và phân phối. Nó được sử dụng để lấy tham chiếu cho đơn đặt hàng vật liệu trong kế hoạch yêu cầu vật liệu."
+keywords:
+  - "sales and distribution"
+  - "material requirements planning"
+  - "mặt hàng"
+  - "đơn đặt hàng vật liệu"
+  - "thời gian thực"
+  - "sử dụng trong kế hoạch yêu cầu vật liệu"
+  - "sử dụng trong bán hàng và phân phối"
+  - "ekko"
+  - "sap"
+semantic_en: "The D_BLGDCCRTEFRMBILLGDOCREFITMIP view exposes billing document item references for real-time material requirements planning in sales and distribution. It is used to retrieve billing document item references for material requirements planning."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

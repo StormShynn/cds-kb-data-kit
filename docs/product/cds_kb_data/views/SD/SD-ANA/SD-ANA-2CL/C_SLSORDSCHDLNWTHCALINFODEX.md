@@ -1,6 +1,19 @@
 ---
 name: C_SLSORDSCHDLNWTHCALINFODEX
 description: "Slsordschdlnwthcalinfodex"
+semantic_vi: "View này hiển thị thông tin lịch trình đơn hàng bán hàng, có thể được sử dụng để phân tích lịch trình đơn hàng bán hàng và tính trọng lượng net cho đơn hàng bán hàng."
+keywords:
+  - "sales order"
+  - "đơn hàng bán hàng"
+  - "schedule line"
+  - "thông tin lịch trình"
+  - "net weight"
+  - "trọng lượng net"
+  - "sales order schedule"
+  - "lich trinh don hang ban hang"
+  - "sap sd"
+  - "sap sales and distribution"
+semantic_en: "This view exposes sales order schedule line information, which can be used to analyze sales order schedules and calculate net weight for sales orders."
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

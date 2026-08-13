@@ -1,6 +1,19 @@
 ---
 name: C_SRVCCONTRPRICINGTYPEVH
 description: "Srvccontrpricingtypevh"
+semantic_vi: "Cung cấp danh sách loại giá cả hợp đồng dịch vụ cho việc quản lý hợp đồng dịch vụ CRM. View này được sử dụng để lấy giá trị loại giá cả cho việc chọn trong ứng dụng CRM."
+keywords:
+  - "service contract"
+  - "hợp đồng dịch vụ"
+  - "pricing type"
+  - "loại giá cả"
+  - "crm"
+  - "hợp đồng dịch vụ crm"
+  - "service contract management"
+  - "quản lý hợp đồng dịch vụ"
+  - "pricing type value"
+  - "giá trị loại giá cả"
+semantic_en: "Provides a list of service contract pricing types for use in CRM service contract management. This view is used to retrieve pricing type values for selection in CRM applications."
 app_component: CRM-S4-SRV-CTR-2CL
 software_component: SAPSCORE
 release_state: released

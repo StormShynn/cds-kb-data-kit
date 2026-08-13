@@ -1,6 +1,19 @@
 ---
 name: D_BLGDCCRTEFRMEXTBLLBLEDOCIP
 description: "D Blgdccrtefrmextbllbledocip"
+semantic_vi: "View này hiển thị dữ liệu mục đơn của tài liệu hóa đơn trong SAP Sales và Distribution. Nó được sử dụng để truy cập và thao tác mục đơn hóa đơn."
+keywords:
+  - "sap sales and distribution"
+  - "billing document"
+  - "document item"
+  - "d_blgdcctrefrmextbllbledocitmiip"
+  - "reference document"
+  - "d_blgdccrtefrmextbllbledocip"
+  - "sd-bil-2cl"
+  - "sales and distribution"
+  - "lob sales & distribution"
+  - "component sd-bil-2cl"
+semantic_en: "This view exposes document item data for billing documents in SAP Sales and Distribution. It is used to access and manipulate billing document items."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

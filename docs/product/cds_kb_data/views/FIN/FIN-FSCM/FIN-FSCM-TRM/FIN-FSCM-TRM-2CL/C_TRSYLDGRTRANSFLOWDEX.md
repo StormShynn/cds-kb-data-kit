@@ -1,6 +1,21 @@
 ---
 name: C_TRSYLDGRTRANSFLOWDEX
 description: "Trsyldgrtransflowdex"
+semantic_vi: "View C_TRSYLDGRTRANSFLOWDEX hiển thị dữ liệu luồng giao dịch sổ cái ngân sách, có thể sử dụng để phân tích và báo cáo về giao dịch và vị trí ngân sách."
+keywords:
+  - "treasury"
+  - "ledger"
+  - "transaction"
+  - "flow"
+  - "data"
+  - "analysis"
+  - "reporting"
+  - "sap"
+  - "cds"
+  - "view"
+  - "finance"
+  - "financial"
+semantic_en: "The C_TRSYLDGRTRANSFLOWDEX view exposes treasury ledger transaction flow data, which is useful for analyzing and reporting on treasury transactions and positions."
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

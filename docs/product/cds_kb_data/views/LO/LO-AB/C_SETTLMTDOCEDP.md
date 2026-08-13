@@ -1,6 +1,19 @@
 ---
 name: C_SETTLMTDOCEDP
 description: "Settlmtdocedp"
+semantic_vi: "Chứa dữ liệu về tài liệu thanh toán, bao gồm loại tài liệu, loại tài liệu và thông tin xử lý, được sử dụng trong logistics tổng thể để quản lý quá trình thanh toán."
+keywords:
+  - "settlement document"
+  - "tài liệu thanh toán"
+  - "logistics general"
+  - "lo"
+  - "lo-ab"
+  - "consumption view"
+  - "sap cds"
+  - "settlement process"
+  - "thanh toán"
+  - "lo-gi"
+semantic_en: "Exposes settlement document data, including document types, categories, and processing information, which is used in logistics general to manage settlement processes."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

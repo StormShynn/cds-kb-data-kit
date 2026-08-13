@@ -1,6 +1,18 @@
 ---
 name: C_SBRSOTSNPSHTANLYS1
 description: "Sbrsotsnpshtanlys 1"
+semantic_vi: "CDS view Sbrsotsnpshtanlys 1 hiển thị dữ liệu phân tích snapshot cho kế hoạch bán hàng và hoạt động. Nó được sử dụng để phân tích dữ liệu kế hoạch bán hàng và hoạt động tại một thời điểm cụ thể."
+keywords:
+  - "sales and operations planning"
+  - "sbrsotsnpshtanlys 1"
+  - "snapshot analysis"
+  - "đơn đặt hàng"
+  - "đơn mua hàng"
+  - "ekko"
+  - "cà phê"
+  - "cross-application components"
+  - "ca-gtf-gem"
+semantic_en: "Sbrsotsnpshtanlys 1 is a CDS view that exposes snapshot analysis data for sales and operations planning. It is used to analyze sales and operations planning data at a specific point in time."
 app_component: CA-GTF-GEM
 software_component: INFRA_HOME
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: C_SUPCSGNMTPPLINEINVCHISTDEX
 description: "Supcsgnmtpplineinvchistdex"
+semantic_vi: "View này hiển thị chi tiết lịch sử của các mặt hàng hóa đơn nhà cung cấp cho các dòng đơn đặt hàng vật liệu, cho phép phân tích các đơn đặt hàng và hóa đơn đã qua sử dụng. Nó được sử dụng để trích xuất dữ liệu cho mục đích báo cáo và phân tích."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "historical data"
+  - "supplier invoice"
+  - "material document"
+  - "analytics"
+  - "reporting"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "mm-pur-ana-2cl"
+semantic_en: "This view exposes historical details of supplier invoice items for material document lines, allowing for analysis of past purchases and invoices. It is used to extract data for reporting and analytics purposes."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

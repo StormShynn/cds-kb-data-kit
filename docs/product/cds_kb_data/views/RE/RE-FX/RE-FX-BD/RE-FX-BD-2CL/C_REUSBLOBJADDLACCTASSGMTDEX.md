@@ -1,6 +1,19 @@
 ---
 name: C_REUSBLOBJADDLACCTASSGMTDEX
 description: "Reusblobjaddlacctassgmtdex"
+semantic_vi: "View này hiển thị các chỉ định đối tượng bất động sản và trạng thái liên quan, hữu ích cho việc theo dõi các thay đổi và cập nhật đối tượng chỉ định theo thời gian."
+keywords:
+  - "real estate object assignment"
+  - "trạng thái đối tượng"
+  - "assignment type"
+  - "object status"
+  - "object assignment"
+  - "đối tượng bất động sản"
+  - "chỉ định đối tượng"
+  - "sự chỉ định"
+  - "object status change"
+  - "thay đổi trạng thái đối tượng"
+semantic_en: "This view exposes real estate object assignments and their associated status, useful for tracking changes and updates to object assignments over time."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

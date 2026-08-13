@@ -1,6 +1,21 @@
 ---
 name: D_BILLOFMATERIALCOMPAREBOMR
 description: "D Bill of MaterialCOMPAREBOMR"
+semantic_vi: "View D_BILLOFMATERIALCOMPAREBOMR cung cấp dữ liệu so sánh bảng thành phần (BOM) của vật liệu chính và vật liệu phụ, bao gồm kết quả so sánh và số lượng. Nó được sử dụng để phân tích và quản lý bảng thành phần vật liệu trong logistics."
+keywords:
+  - "bill of material"
+  - "bảng thành phần"
+  - "bom"
+  - "logistics"
+  - "lo"
+  - "lo-md"
+  - "material"
+  - "sap"
+  - "cds view"
+  - "so sánh"
+  - "đối sánh"
+  - "thành phần"
+semantic_en: "The D_BILLOFMATERIALCOMPAREBOMR view provides data for comparing bill of materials (BOMs) of primary and secondary materials, including comparison results and quantities. It is used to analyze and manage material BOMs in logistics."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

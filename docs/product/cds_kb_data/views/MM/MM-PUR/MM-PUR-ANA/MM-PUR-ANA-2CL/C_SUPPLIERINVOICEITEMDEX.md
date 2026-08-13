@@ -1,6 +1,21 @@
 ---
 name: C_SUPPLIERINVOICEITEMDEX
 description: "Supplier InvoiceITEMDEX"
+semantic_vi: "View C_SUPPLIERINVOICEITEMDEX hiển thị dữ liệu chi tiết hóa đơn nhà cung cấp, bao gồm số lượng và đơn vị, cho mục đích phân tích và báo cáo."
+keywords:
+  - "supplier invoice"
+  - "đơn nhà cung cấp"
+  - "item-level data"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "mm-pur-ana"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "bo:supplier"
+  - "mm-pur"
+  - "mm-pur-ana-2cl"
+semantic_en: "The Supplier Invoice ITEMDEX view exposes supplier invoice item-level data, including quantities and units, for analysis and reporting purposes."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

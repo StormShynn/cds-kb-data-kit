@@ -1,6 +1,19 @@
 ---
 name: D_BLGDCCRTEFRMBILLGDOCCTRLIP
 description: "D Blgdccrtefrmbillgdocctrlip"
+semantic_vi: "View này hiển thị thông tin kiểm soát tài liệu hóa đơn cho thương mại nước ngoài, có liên quan khi quản lý tài liệu thương mại nước ngoài trong thành phần SD-BIL-2CL của SAP."
+keywords:
+  - "foreign trade"
+  - "thương mại nước ngoài"
+  - "billing document"
+  - "tài liệu hóa đơn"
+  - "control information"
+  - "thông tin kiểm soát"
+  - "sap sd-bil-2cl"
+  - "ekko"
+  - "foreign trade document"
+  - "tài liệu thương mại nước ngoài"
+semantic_en: "This view exposes billing document control information for foreign trade, which is relevant when managing foreign trade documents in SAP SD-BIL-2CL component."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

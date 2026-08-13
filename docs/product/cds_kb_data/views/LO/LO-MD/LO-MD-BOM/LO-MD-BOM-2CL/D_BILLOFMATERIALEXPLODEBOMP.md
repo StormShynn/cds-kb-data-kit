@@ -1,6 +1,18 @@
 ---
 name: D_BILLOFMATERIALEXPLODEBOMP
 description: "D Bill of MaterialEXPLODEBOMP"
+semantic_vi: "View D_BILLOFMATERIALEXPLODEBOMP hiển thị dữ liệu bảng vật liệu nở, có thể hữu ích khi phân tích nhu cầu vật liệu và phụ thuộc trong quy trình sản xuất."
+keywords:
+  - "bill of material"
+  - "bảng vật liệu"
+  - "exploded bill of material"
+  - "bảng vật liệu nở"
+  - "bom"
+  - "sản xuất"
+  - "quy trình sản xuất"
+  - "logistics general"
+  - "lo-md-bom-2cl"
+semantic_en: "The D_BILLOFMATERIALEXPLODEBOMP view exposes exploded bill of material data, which is useful when analyzing material requirements and dependencies in a production process."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

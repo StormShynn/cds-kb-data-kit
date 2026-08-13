@@ -1,6 +1,18 @@
 ---
 name: D_BILLGDOCCRTEFRMBILLGDOCIP
 description: "D Billgdoccrtefrmbillgdocip"
+semantic_vi: "Chỉ ra các tham chiếu tạo hóa đơn cho hóa đơn, hữu ích khi phân tích hoặc báo cáo về mối quan hệ hóa đơn."
+keywords:
+  - "billing document"
+  - "hóa đơn"
+  - "billing document creation"
+  - "tạo hóa đơn"
+  - "reference"
+  - "tham chiếu"
+  - "sap"
+  - "sd-bil"
+  - "sales & distribution"
+semantic_en: "Exposes billing document creation references for billing documents, useful when analyzing or reporting on billing document relationships."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

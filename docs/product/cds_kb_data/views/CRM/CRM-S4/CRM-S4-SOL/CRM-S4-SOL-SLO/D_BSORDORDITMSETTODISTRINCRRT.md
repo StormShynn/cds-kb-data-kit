@@ -1,6 +1,17 @@
 ---
 name: D_BSORDORDITMSETTODISTRINCRRT
 description: "D Bsordorditmsettodistrincrrt"
+semantic_vi: "View này hiển thị các thiết lập cho mục đơn hàng dịch vụ trong các khoảng, liên quan đến các đơn hàng giải pháp kinh doanh CRM-S4-SOL-SLO."
+keywords:
+  - "service document"
+  - "distribution increment"
+  - "crm-s4-sol-slo"
+  - "business solution order"
+  - "đơn hàng dịch vụ"
+  - "đơn đặt hàng"
+  - "đơn vị kinh doanh"
+  - "s4-sol-slo"
+semantic_en: "This view exposes service document item settings for distribution in increments, relevant for CRM-S4-SOL-SLO business solution orders."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

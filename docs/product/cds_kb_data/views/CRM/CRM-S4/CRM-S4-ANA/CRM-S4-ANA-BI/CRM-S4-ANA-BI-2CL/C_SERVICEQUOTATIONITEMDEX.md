@@ -1,6 +1,21 @@
 ---
 name: C_SERVICEQUOTATIONITEMDEX
 description: "Servicequotationitemdex"
+semantic_vi: "View Servicequotationitemdex hiển thị dữ liệu chi tiết về các mục trong các bản báo giá dịch vụ, cung cấp thông tin về các loại đối tượng dịch vụ, các mục trong tài liệu và các bên liên quan. Nó được sử dụng để trích xuất và phân tích các mục trong bản báo giá dịch vụ."
+keywords:
+  - "service quotation"
+  - "báo giá dịch vụ"
+  - "service quotation item"
+  - "mục trong bản báo giá dịch vụ"
+  - "service object type"
+  - "loại đối tượng dịch vụ"
+  - "service document"
+  - "tài liệu dịch vụ"
+  - "service document item"
+  - "mục trong tài liệu dịch vụ"
+  - "crm"
+  - "erp"
+semantic_en: "The Servicequotationitemdex view exposes item-level data from service quotations, providing details such as service object types, document items, and associated parties. It is used to extract and analyze service quotation items."
 app_component: CRM-S4-ANA-BI-2CL
 software_component: SAPSCORE
 release_state: released

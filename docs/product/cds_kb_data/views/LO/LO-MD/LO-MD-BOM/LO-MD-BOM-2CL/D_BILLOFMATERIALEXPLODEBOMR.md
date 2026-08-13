@@ -1,6 +1,21 @@
 ---
 name: D_BILLOFMATERIALEXPLODEBOMR
 description: "D Bill of MaterialEXPLODEBOMR"
+semantic_vi: "View D_BILLOFMATERIALEXPLODEBOMR hiển thị dữ liệu bảng vật liệu nở, bao gồm các cấp bậc vật liệu và lượng, có thể được sử dụng để phân tích và quản lý cấu trúc vật liệu trong logistics."
+keywords:
+  - "bill of material"
+  - "bảng vật liệu"
+  - "exploded bill of material"
+  - "dữ liệu bảng vật liệu nở"
+  - "logistics"
+  - "lo"
+  - "lo-md-bom"
+  - "material"
+  - "vật liệu"
+  - "bom"
+  - "component"
+  - "ekko"
+semantic_en: "The D_BILLOFMATERIALEXPLODEBOMR view exposes exploded bill of material data, including material hierarchies and quantities, which can be used to analyze and manage material structures in logistics."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

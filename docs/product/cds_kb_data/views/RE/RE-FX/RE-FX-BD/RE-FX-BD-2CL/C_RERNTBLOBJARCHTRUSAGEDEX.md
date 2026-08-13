@@ -1,6 +1,21 @@
 ---
 name: C_RERNTBLOBJARCHTRUSAGEDEX
 description: "Rerntblobjarchtrusagedex"
+semantic_vi: "View Rerntblobjarchtrusagedex cung cấp dữ liệu về việc sử dụng đối tượng kiến trúc bất động sản, bao gồm đo lường và ngày hiệu lực, có thể được sử dụng để phân tích và báo cáo về việc sử dụng các đối tượng này theo thời gian."
+keywords:
+  - "real estate"
+  - "architecture object"
+  - "usage"
+  - "measurements"
+  - "validity dates"
+  - "data analysis"
+  - "reporting"
+  - "sap cds view"
+  - "rerntblobjarchtrusagedex"
+  - "kiến trúc bất động sản"
+  - "sử dụng"
+  - "đo lường"
+semantic_en: "The Rerntblobjarchtrusagedex view provides data on real estate architecture object usage, including measurements and validity dates, which can be used to analyze and report on the usage of these objects over time."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

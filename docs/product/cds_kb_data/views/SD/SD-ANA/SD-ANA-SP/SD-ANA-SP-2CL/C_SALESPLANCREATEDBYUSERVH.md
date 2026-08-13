@@ -1,6 +1,21 @@
 ---
 name: C_SALESPLANCREATEDBYUSERVH
 description: "Salesplancreatedbyuservh"
+semantic_vi: "View CDS Salesplancreatedbyuservh cung cấp thông tin về kế hoạch bán hàng được tạo bởi người dùng cụ thể, bao gồm UUID kế hoạch bán hàng, phiên bản và mô tả người dùng. Nó được sử dụng để xác định và phân tích kế hoạch bán hàng liên quan đến người dùng cụ thể."
+keywords:
+  - "sales plan"
+  - "kế hoạch bán hàng"
+  - "created by user"
+  - "tạo bởi người dùng"
+  - "sales plan uuid"
+  - "uuid kế hoạch bán hàng"
+  - "sap cds view"
+  - "view cds salesplancreatedbyuservh"
+  - "sd-ana-sp-2cl"
+  - "sales & distribution"
+  - "lob: sales & distribution"
+  - "consumption-view"
+semantic_en: "The Salesplancreatedbyuservh CDS view provides information about sales plans created by specific users, including the sales plan UUID, version, and user description. It is used to identify and analyze sales plans associated with particular users."
 app_component: SD-ANA-SP-2CL
 software_component: SAPSCORE
 release_state: released

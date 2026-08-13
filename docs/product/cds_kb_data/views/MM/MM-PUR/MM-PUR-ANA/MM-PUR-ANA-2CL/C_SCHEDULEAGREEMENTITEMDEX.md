@@ -1,6 +1,19 @@
 ---
 name: C_SCHEDULEAGREEMENTITEMDEX
 description: "Scheduleagreementitemdex"
+semantic_vi: "View Schedule Agreement Item Dex cung cấp dữ liệu chi tiết về các dòng lịch trình thỏa thuận, bao gồm chi tiết đơn đặt hàng mua và thông tin vật liệu. Nó được sử dụng để trích xuất và phân tích dữ liệu liên quan đến các dòng lịch trình và đơn đặt hàng mua."
+keywords:
+  - "schedule agreement"
+  - "schedule line"
+  - "purchasing document"
+  - "đơn đặt hàng mua"
+  - "dòng lịch trình"
+  - "thỏa thuận mua"
+  - "sourcing & procurement"
+  - "mm-pur-ana-2cl"
+  - "ekko"
+  - "material information"
+semantic_en: "The Schedule Agreement Item Dex view provides item-level data for schedule agreements, including purchasing document details and material information. It is used to extract and analyze data related to schedule lines and purchasing documents."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

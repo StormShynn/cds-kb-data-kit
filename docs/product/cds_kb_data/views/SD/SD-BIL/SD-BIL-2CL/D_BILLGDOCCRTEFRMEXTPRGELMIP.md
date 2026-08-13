@@ -1,6 +1,18 @@
 ---
 name: D_BILLGDOCCRTEFRMEXTPRGELMIP
 description: "D Billgdoccrtefrmextprgelmip"
+semantic_vi: "View này hiển thị các bản ghi điều kiện hóa đơn thanh toán cho các phần tử chương trình bên ngoài. Nó được sử dụng để truy cập và thao tác các bản ghi điều kiện cho các phần tử chương trình bên ngoài trong hóa đơn thanh toán."
+keywords:
+  - "billing document"
+  - "điều kiện hóa đơn thanh toán"
+  - "phần tử chương trình bên ngoài"
+  - "external program element"
+  - "condition record"
+  - "hóa đơn thanh toán"
+  - "sđt"
+  - "sd-bil"
+  - "sales & distribution"
+semantic_en: "This view exposes billing document condition records for external program elements. It is used to access and manipulate condition records for external program elements in billing documents."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

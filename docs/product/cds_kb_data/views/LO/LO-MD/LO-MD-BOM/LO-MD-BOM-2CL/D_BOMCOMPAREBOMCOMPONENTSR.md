@@ -1,6 +1,21 @@
 ---
 name: D_BOMCOMPAREBOMCOMPONENTSR
 description: "D Bomcomparebomcomponentsr"
+semantic_vi: "View này so sánh các thành phần của hai BOM, hiển thị các trường liên quan và sự khác biệt của chúng. Nó được sử dụng để phân tích và xác định các biến thể giữa BOM chính và BOM phụ."
+keywords:
+  - "bom"
+  - "component"
+  - "comparison"
+  - "sap"
+  - "cds"
+  - "view"
+  - "logistics"
+  - "general"
+  - "lo"
+  - "lo-md"
+  - "lo-md-bom"
+  - "bomcomparebomcomponentsr"
+semantic_en: "This view compares components of two BOMs, exposing relevant fields and their differences. It is used to analyze and identify variations between primary and secondary BOMs."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

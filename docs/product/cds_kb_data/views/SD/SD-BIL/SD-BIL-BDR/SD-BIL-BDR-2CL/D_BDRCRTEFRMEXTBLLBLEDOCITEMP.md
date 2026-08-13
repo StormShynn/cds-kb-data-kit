@@ -1,6 +1,21 @@
 ---
 name: D_BDRCRTEFRMEXTBLLBLEDOCITEMP
 description: "D Bdrcrtefrmextbllbledocitemp"
+semantic_vi: "Chứa dữ liệu yêu cầu hóa đơn bán hàng tại mức độ hàng hóa, thường được sử dụng trong quá trình hóa đơn và quản lý tài liệu."
+keywords:
+  - "sales"
+  - "distribution"
+  - "billing"
+  - "document"
+  - "request"
+  - "item"
+  - "sales document"
+  - "billing document"
+  - "sales and distribution"
+  - "đơn bán hàng"
+  - "đơn yêu cầu hóa đơn"
+  - "hàng hóa"
+semantic_en: "Exposes item-level billing document request data for sales and distribution, typically used in billing and document management processes."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: C_SUPLREVALBYQUANTITYCUBE
 description: "Suplrevalbyquantitycube"
+semantic_vi: "View Suplrevalbyquantitycube cung cấp dữ liệu phân tích về đánh giá nhà cung cấp theo số lượng, bao gồm đơn đặt hàng và trạng thái hoàn thành giao hàng, có liên quan đến phân tích nguồn cung và quản lý mua hàng."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "supplier evaluation"
+  - "đánh giá nhà cung cấp"
+  - "sourcing and procurement"
+  - "quản lý mua hàng"
+  - "analytical data"
+  - "dữ liệu phân tích"
+  - "mm-pur-ana-2cl"
+semantic_en: "The Suplrevalbyquantitycube view provides analytical data on supplier evaluation by quantity, including purchase orders and delivery completion status, relevant for sourcing and procurement analysis."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

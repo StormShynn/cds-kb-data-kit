@@ -1,6 +1,20 @@
 ---
 name: D_BOMASSIGNPLANTP
 description: "D Bomassignplantp"
+semantic_vi: "View D_BOMASSIGNPLANTP hiển thị việc gán nhà máy cho các biến thể của bảng vật liệu và được sử dụng để quản lý việc gán nhà máy cho BOM."
+keywords:
+  - "plant assignment"
+  - "bom variant"
+  - "plant"
+  - "bom"
+  - "assignment"
+  - "sap"
+  - "logistics"
+  - "lo"
+  - "lo-md"
+  - "lo-md-bom"
+  - "transactional processing"
+semantic_en: "The D_BOMASSIGNPLANTP CDS view exposes plant assignments for bill of material variants and is used to manage plant assignments for BOMs."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

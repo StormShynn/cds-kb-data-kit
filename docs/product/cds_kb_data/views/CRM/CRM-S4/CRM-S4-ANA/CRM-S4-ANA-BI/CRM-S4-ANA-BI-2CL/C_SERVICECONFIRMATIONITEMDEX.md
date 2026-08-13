@@ -1,6 +1,19 @@
 ---
 name: C_SERVICECONFIRMATIONITEMDEX
 description: "Serviceconfirmationitemdex"
+semantic_vi: "View Service Confirmation Item Dex cung cấp dữ liệu chi tiết về các mặt hàng xác nhận dịch vụ, bao gồm các mặt hàng của tài liệu dịch vụ và chi tiết liên quan."
+keywords:
+  - "service confirmation"
+  - "item-level data"
+  - "service document"
+  - "dịch vụ xác nhận"
+  - "dữ liệu chi tiết"
+  - "tài liệu dịch vụ"
+  - "crm"
+  - "sap"
+  - "ekko"
+  - "đơn xác nhận dịch vụ"
+semantic_en: "The Service Confirmation Item Dex view provides item-level data for service confirmations, including service document items and their associated details. It is used to extract and analyze service confirmation data."
 app_component: CRM-S4-ANA-BI-2CL
 software_component: SAPSCORE
 release_state: released

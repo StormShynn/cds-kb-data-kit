@@ -36,3 +36,11 @@ Rules:
 - Do not put docs named `README.md` inside `private/` — every `.md` there is treated as a view.
 
 Point MCP at the rebuilt local tree (`--data` / sibling auto-detect).
+
+## SAP ADT export snapshots (not view markdown)
+
+Read-only ADT snapshots from cds-kb-mcp `sap_export_snapshot` default to
+sibling `cds_kb_data/.sap_export/` (gitignored) — **not** this overlay folder.
+Promote reviewed Z*/Y* shapes into `private/` markdown manually (or via
+compose/generate/propose). Never auto-merge; never overwrite existing custom
+overlay files (skip-if-exists).

@@ -1,6 +1,18 @@
 ---
 name: C_RERENTABLEOBJECTDEX
 description: "Rerentableobjectdex"
+semantic_vi: "View CDS Rerentableobjectdex hiển thị một tập hợp các đối tượng cho thuê trong bất động sản, bao gồm UUID, loại cho thuê chung và trạng thái. Nó được sử dụng để trích xuất dữ liệu cho phân tích hoặc tích hợp với các hệ thống khác."
+keywords:
+  - "rentable object"
+  - "object cho thuê"
+  - "real estate"
+  - "bất động sản"
+  - "rental object"
+  - "uuid"
+  - "sap cds view"
+  - "view dữ liệu"
+  - "data extraction"
+semantic_en: "The Rerentableobjectdex CDS view exposes a collection of rentable objects in real estate, including their UUIDs, generic rental types, and status. It is used to extract data for analysis or integration with other systems."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

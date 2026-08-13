@@ -1,6 +1,19 @@
 ---
 name: C_RERNTBLOBJECTMEASUREMENTDEX
 description: "Rerntblobjectmeasurementdex"
+semantic_vi: "Chứa dữ liệu đo lường đối tượng cho thuê bất động sản, bao gồm loại đo lường, số lượng và đơn vị, trong một khoảng thời gian cụ thể. View này được sử dụng để trích xuất và phân tích dữ liệu đo lường đối tượng cho thuê."
+keywords:
+  - "rentable object"
+  - "đối tượng cho thuê"
+  - "data extraction"
+  - "trích xuất dữ liệu"
+  - "real estate"
+  - "bất động sản"
+  - "measurement data"
+  - "dữ liệu đo lường"
+  - "sap cds view"
+  - "view dữ liệu sap"
+semantic_en: "Exposes real estate rentable object measurement data, including measurement types, quantities, and units, for a specific time period. This view is used to extract and analyze rentable object measurement data."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: D_BDRCRTEFRMEXTPRCGELMNTP
 description: "D Bdrcrtefrmextprcgelmntp"
+semantic_vi: "View này hiển thị dữ liệu điều kiện tỷ lệ và số lượng cho các yếu tố giá trong một tài liệu bán hàng, thường được sử dụng khi phân tích điều kiện giá trong đơn đặt hàng bán hàng hoặc hóa đơn."
+keywords:
+  - "sales document"
+  - "đơn đặt hàng bán hàng"
+  - "hóa đơn"
+  - "condition rate"
+  - "tỷ lệ điều kiện"
+  - "pricing element"
+  - "yếu tố giá"
+  - "sales order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "sap"
+  - "sales and distribution"
+semantic_en: "This view exposes condition rate and quantity data for pricing elements in a sales document, typically used when analyzing pricing conditions in a sales order or invoice."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

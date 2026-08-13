@@ -1,6 +1,21 @@
 ---
 name: C_RU_EXCHDIFF
 description: "RU Exchdiff"
+semantic_vi: "View RU Exchdiff hiển thị sự khác biệt về tỷ giá hối đoái cho các tài liệu kế toán, cung cấp chi tiết về các khoản dư ban đầu và cuối cùng trong các đơn vị tiền tệ của công ty và các đơn vị tiền tệ nước ngoài. Nó được sử dụng để phân tích sự khác biệt về tỷ giá hối đoái trong kế toán tài chính."
+keywords:
+  - "exchange difference"
+  - "tỷ giá hối đoái"
+  - "sự khác biệt về tỷ giá hối đoái"
+  - "accounting document"
+  - "tài liệu kế toán"
+  - "financial accounting"
+  - "kế toán tài chính"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-fi-ru"
+  - "consumption-view"
+  - "component:fi-loc-fi-ru"
+semantic_en: "The RU Exchdiff view exposes exchange differences for accounting documents, providing details on the starting and ending balances in company code currencies and foreign currencies. It is used to analyze exchange differences in financial accounting."
 app_component: FI-LOC-FI-RU
 software_component: SAPSCORE
 release_state: released

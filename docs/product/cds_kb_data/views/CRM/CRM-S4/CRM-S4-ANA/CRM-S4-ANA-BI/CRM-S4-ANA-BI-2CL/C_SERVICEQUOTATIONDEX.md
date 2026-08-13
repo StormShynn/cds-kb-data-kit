@@ -1,6 +1,21 @@
 ---
 name: C_SERVICEQUOTATIONDEX
 description: "Servicequotationdex"
+semantic_vi: "View Servicequotationdex CDS hiển thị một tập hợp các đề xuất dịch vụ, cung cấp thông tin quan trọng như loại đối tượng dịch vụ, chi tiết tài liệu và ngày hạn hiệu lực. Nó được sử dụng để trích xuất và phân tích dữ liệu đề xuất dịch vụ."
+keywords:
+  - "service quotation"
+  - "đề xuất dịch vụ"
+  - "service object type"
+  - "tài liệu dịch vụ"
+  - "validity dates"
+  - "thời hạn hiệu lực"
+  - "service quotation data"
+  - "dữ liệu đề xuất dịch vụ"
+  - "crm"
+  - "s4hana"
+  - "sap"
+  - "c4c"
+semantic_en: "The Servicequotationdex CDS view exposes a collection of service quotations, providing key information such as service object type, document details, and validity dates. It is used to extract and analyze service quotation data."
 app_component: CRM-S4-ANA-BI-2CL
 software_component: SAPSCORE
 release_state: released

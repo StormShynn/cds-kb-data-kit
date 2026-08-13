@@ -1,6 +1,19 @@
 ---
 name: C_SUPLREVALBYQNAIRECUBE
 description: "Suplrevalbyqnairecube"
+semantic_vi: "View CDS Suplrevalbyqnairecube hiển thị dữ liệu đánh giá nhà cung cấp, bao gồm điểm số và ngày, cho mục đích phân tích. Nó được sử dụng để phân tích hiệu suất nhà cung cấp theo thời gian."
+keywords:
+  - "supplier evaluation"
+  - "đánh giá nhà cung cấp"
+  - "purchase analytics"
+  - "phân tích mua hàng"
+  - "sap mm"
+  - "mm-pur-ana"
+  - "sourcing and procurement"
+  - "thu mua và cung ứng"
+  - "ekko"
+  - "purchase order"
+semantic_en: "The Suplrevalbyqnairecube CDS view exposes supplier evaluation data, including scores and dates, for analytical purposes. It is used to analyze supplier performance over time."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

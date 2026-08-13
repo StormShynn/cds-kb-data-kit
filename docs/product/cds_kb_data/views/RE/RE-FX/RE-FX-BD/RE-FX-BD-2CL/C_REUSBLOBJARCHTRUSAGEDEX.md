@@ -1,6 +1,21 @@
 ---
 name: C_REUSBLOBJARCHTRUSAGEDEX
 description: "Reusblobjarchtrusagedex"
+semantic_vi: "CDS view Reusblobjarchtrusagedex cung cấp dữ liệu về việc sử dụng kiến trúc đối tượng tái sử dụng, bao gồm loại đối tượng, số đối tượng và UUID sử dụng, có thể được sử dụng để phân tích và quản lý kiến trúc đối tượng tái sử dụng trong các dự án bất động sản."
+keywords:
+  - "reusable object architecture"
+  - "kiến trúc đối tượng tái sử dụng"
+  - "real estate project"
+  - "dự án bất động sản"
+  - "sap cds view"
+  - "view"
+  - "reusable object"
+  - "object architecture"
+  - "architecture usage"
+  - "sử dụng kiến trúc"
+  - "re-fx-bd-2cl"
+  - "consumption view"
+semantic_en: "The Reusblobjarchtrusagedex CDS view provides data on reusable object architecture usage, including object types, numbers, and usage UUIDs, which can be used to analyze and manage reusable object architecture in real estate projects."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

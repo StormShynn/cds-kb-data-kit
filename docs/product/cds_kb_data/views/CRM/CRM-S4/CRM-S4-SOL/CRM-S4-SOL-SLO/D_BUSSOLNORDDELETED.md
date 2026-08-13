@@ -1,6 +1,17 @@
 ---
 name: D_BUSSOLNORDDELETED
 description: "D Bussolnorddeleted"
+semantic_vi: "View D_BUSSOLNORDDELETED CDS hiển thị các đơn hàng giải pháp kinh doanh đã bị xóa khỏi hệ thống CRM, cho phép các nhà phát triển truy cập và quản lý dữ liệu đơn hàng lịch sử. Nó được sử dụng khi truy xuất thông tin về các đơn hàng đã bị xóa trước đó."
+keywords:
+  - "crm"
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "deleted order"
+  - "đơn hàng đã bị xóa"
+  - "sap cds view"
+  - "view d_bussolnorddeleted"
+  - "crm-s4-sol-slo"
+semantic_en: "The D_BUSSOLNORDDELETED CDS view exposes deleted business solution orders from the CRM system, allowing developers to access and manage historical order data. It is used when retrieving information about previously deleted orders."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

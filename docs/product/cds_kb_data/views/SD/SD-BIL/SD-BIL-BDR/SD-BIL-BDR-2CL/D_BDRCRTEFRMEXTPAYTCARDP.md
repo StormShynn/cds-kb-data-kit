@@ -1,6 +1,19 @@
 ---
 name: D_BDRCRTEFRMEXTPAYTCARDP
 description: "D Bdrcrtefrmextpaytcardp"
+semantic_vi: "View D_BDRCRTEFRMEXTPAYTCARDP hiển thị dữ liệu thanh toán điện tử, bao gồm loại thanh toán, ngày hiệu lực và chi tiết ủy quyền. Nó được sử dụng để lấy thông tin thanh toán cho các giao dịch điện tử."
+keywords:
+  - "electronic payment"
+  - "thanh toán điện tử"
+  - "payment type"
+  - "loại thanh toán"
+  - "authorization"
+  - "ủy quyền"
+  - "sap"
+  - "sd-bil-bdr-2cl"
+  - "sales & distribution"
+  - "bán hàng và phân phối"
+semantic_en: "The D_BDRCRTEFRMEXTPAYTCARDP view exposes electronic payment data, including payment types, validity dates, and authorization details. It is used to retrieve payment information for electronic transactions."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

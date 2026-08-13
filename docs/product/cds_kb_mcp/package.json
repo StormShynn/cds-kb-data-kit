@@ -13,7 +13,8 @@
     "start:remote": "node src/server.mjs --remote https://raw.githubusercontent.com/StormShynn/cds-kb-mcp-data-kit/main/docs/product/cds_kb_data",
     "test": "node test_tools.mjs ../cds_kb_data",
     "test:rrf": "node test_rrf.mjs",
-    "test:eval": "node scripts/eval-compose.mjs ../cds_kb_data"
+    "test:eval": "node scripts/eval-compose.mjs ../cds_kb_data",
+    "test:sap": "node test_sap_export.mjs"
   },
   "engines": {
     "node": ">=20"

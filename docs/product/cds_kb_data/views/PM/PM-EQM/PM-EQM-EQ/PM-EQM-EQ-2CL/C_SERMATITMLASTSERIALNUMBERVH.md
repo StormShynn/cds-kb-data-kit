@@ -1,6 +1,21 @@
 ---
 name: C_SERMATITMLASTSERIALNUMBERVH
 description: "SERMATITMLASTSerial NumberVH"
+semantic_vi: "Cung cấp số serial cuối cùng cho vật tư thiết bị, được sử dụng trong bảo trì nhà máy cho quản lý thiết bị."
+keywords:
+  - "equipment material"
+  - "last serial number"
+  - "plant maintenance"
+  - "equipment management"
+  - "pm-eqm"
+  - "pm-eqm-eq"
+  - "serial number"
+  - "equipment"
+  - "material"
+  - "maintenance"
+  - "thiết bị"
+  - "vật tư"
+semantic_en: "Provides the last serial number for equipment materials, used in plant maintenance for equipment management."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

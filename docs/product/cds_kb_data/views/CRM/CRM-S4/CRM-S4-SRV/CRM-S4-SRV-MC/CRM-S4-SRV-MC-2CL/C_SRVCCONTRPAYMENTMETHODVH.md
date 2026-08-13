@@ -1,6 +1,18 @@
 ---
 name: C_SRVCCONTRPAYMENTMETHODVH
 description: "Srvccontrpaymentmethodvh"
+semantic_vi: "Chứa phương thức thanh toán hợp đồng dịch vụ cho các công ty hóa đơn, được sử dụng để cung cấp hỗ trợ giá trị giúp chọn phương thức thanh toán trong hợp đồng dịch vụ CRM."
+keywords:
+  - "service contract"
+  - "hợp đồng dịch vụ"
+  - "payment method"
+  - "phương thức thanh toán"
+  - "billing company"
+  - "công ty hóa đơn"
+  - "crm"
+  - "thanh toán"
+  - "hỗ trợ giá trị"
+semantic_en: "Exposes service contract payment methods for billing companies, used to provide a value help for selecting payment methods in CRM service contracts."
 app_component: CRM-S4-SRV-MC-2CL
 software_component: SAPSCORE
 release_state: released

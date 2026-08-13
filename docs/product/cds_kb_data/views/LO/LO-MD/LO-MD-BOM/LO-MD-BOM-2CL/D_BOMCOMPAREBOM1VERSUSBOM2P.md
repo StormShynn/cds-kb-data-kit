@@ -1,6 +1,19 @@
 ---
 name: D_BOMCOMPAREBOM1VERSUSBOM2P
 description: "D Bomcomparebom 1VERSUSBOM 2P"
+semantic_vi: "View này so sánh hai phiên bản của một BOM (Danh sách vật liệu) cho một vật liệu trong một nhà máy, hiển thị sự khác biệt giữa BOM chính và phụ. Nó được sử dụng để phân tích thay đổi trong BOM theo thời gian."
+keywords:
+  - "bom"
+  - "bill of materials"
+  - "danh sách vật liệu"
+  - "sự khác biệt"
+  - "thay đổi"
+  - "lo"
+  - "lo-md"
+  - "lo-md-bom"
+  - "ekko"
+  - "logistics general"
+semantic_en: "This view compares two versions of a BOM (Bill of Materials) for a material in a plant, showing the differences between the primary and secondary BOMs. It is used to analyze changes in the BOM over time."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

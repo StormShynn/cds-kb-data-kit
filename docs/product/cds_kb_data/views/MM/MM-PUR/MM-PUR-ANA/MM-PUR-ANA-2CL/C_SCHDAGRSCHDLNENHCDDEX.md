@@ -1,6 +1,21 @@
 ---
 name: C_SCHDAGRSCHDLNENHCDDEX
 description: "Schdagrschdlnenhcddex"
+semantic_vi: "View Schdagrschdlnenhcddex cung cấp dữ liệu về các mục đơn hàng lập kế hoạch và các dòng lịch trình liên quan, bao gồm hệ thống nguồn cung cấp trung tâm mua sắm và thông tin tổ chức mua sắm."
+keywords:
+  - "scheduling agreement"
+  - "đơn hàng lập kế hoạch"
+  - "schedule line"
+  - "dòng lịch trình"
+  - "procurement hub"
+  - "trung tâm mua sắm"
+  - "purchasing organization"
+  - "tổ chức mua sắm"
+  - "sourcing and procurement"
+  - "nghiên cứu và mua sắm"
+  - "mm-pur-ana"
+  - "mm-pur-ana-2cl"
+semantic_en: "The Schdagrschdlnenhcddex view provides data on scheduling agreement items and their associated schedule lines, including procurement hub source systems and purchasing organization information. It is used to analyze and extract data related to sourcing and procurement."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

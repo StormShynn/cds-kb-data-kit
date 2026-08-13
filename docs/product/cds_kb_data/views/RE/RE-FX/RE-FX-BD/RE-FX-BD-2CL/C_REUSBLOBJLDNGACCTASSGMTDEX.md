@@ -1,6 +1,19 @@
 ---
 name: C_REUSBLOBJLDNGACCTASSGMTDEX
 description: "Reusblobjldngacctassgmtdex"
+semantic_vi: "View này hiển thị chi tiết gán đối tượng bất động sản, bao gồm trạng thái và ngày hiệu lực, cho mục đích trích xuất dữ liệu và báo cáo."
+keywords:
+  - "real estate"
+  - "object assignment"
+  - "status"
+  - "validity dates"
+  - "data extraction"
+  - "reporting"
+  - "re-fx-bd-2cl"
+  - "consumption-view"
+  - "re-status-object-source"
+  - "re-object-assignment-type"
+semantic_en: "This view exposes real estate object assignment details, including status and validity dates, for use in data extraction and reporting."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

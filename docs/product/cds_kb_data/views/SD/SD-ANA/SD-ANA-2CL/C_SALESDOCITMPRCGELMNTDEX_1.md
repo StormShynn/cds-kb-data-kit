@@ -1,6 +1,19 @@
 ---
 name: C_SALESDOCITMPRCGELMNTDEX_1
 description: "Salesdocitmprcgelmntdex 1"
+semantic_vi: "View Salesdocitmprcgelmntdex 1 hiển thị chi tiết tài liệu giá bán hàng, bao gồm các ứng dụng và loại điều kiện, có liên quan khi phân tích tài liệu giá bán và điều kiện."
+keywords:
+  - "sales document"
+  - "đơn bán hàng"
+  - "pricing document"
+  - "tài liệu giá bán"
+  - "condition application"
+  - "điều kiện ứng dụng"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+  - "sap sd"
+  - "sd anan 2cl"
+semantic_en: "The Salesdocitmprcgelmntdex 1 view exposes pricing document item details, including condition applications and categories, which are relevant when analyzing sales document pricing and conditions."
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

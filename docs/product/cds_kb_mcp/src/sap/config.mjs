@@ -54,8 +54,8 @@ export function loadSapConfig(env = process.env) {
     errors.push(`system alias must be DEV (got ${alias || '(empty)'}); PRD and other aliases are rejected`);
   }
 
-  // Reject obvious production SID/host cues in URL path/host when alias claim is DEV
-  if (parsedUrl && /(?:^|[.\-_])prd(?:[.\-_]|$)/i.test(parsedUrl.hostname)) {
+  // Reject obvious production SID/host cues (s4prd, .prd., -prd-, etc.)
+  if (parsedUrl && /(?:^|[.\-_])prd(?:[.\-_]|$)|s4prd|eccprd|\.prd\./i.test(parsedUrl.hostname)) {
     errors.push('hostname looks like PRD; only DEV is allowed');
   }
 

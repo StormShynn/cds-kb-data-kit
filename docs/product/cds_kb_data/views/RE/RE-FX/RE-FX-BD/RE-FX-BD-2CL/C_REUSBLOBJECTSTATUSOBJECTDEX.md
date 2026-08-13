@@ -1,6 +1,18 @@
 ---
 name: C_REUSBLOBJECTSTATUSOBJECTDEX
 description: "Reusblobjectstatusobjectdex"
+semantic_vi: "Chứa dữ liệu trạng thái đối tượng bất động sản có thể tái sử dụng, có ích cho các ứng dụng yêu cầu thông tin trạng thái của đối tượng này."
+keywords:
+  - "reusable real estate object"
+  - "trạng thái đối tượng bất động sản"
+  - "real estate object status"
+  - "status profile"
+  - "status code"
+  - "real estate number"
+  - "sap cds view"
+  - "view c_reusblobjectstatusobjectdex"
+  - "re-fx-bd-2cl"
+semantic_en: "Exposes real estate object status data, useful for applications requiring status information of reusable real estate objects."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

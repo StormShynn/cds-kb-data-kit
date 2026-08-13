@@ -1,6 +1,17 @@
 ---
 name: D_BILLGDOCCRTEFRMEXTTXTIP
 description: "D Billgdoccrtefrmexttxtip"
+semantic_vi: "View D_BILLGDOCCRTEFRMEXTTXTIP hiển thị thông tin văn bản ngoài cho hóa đơn thanh toán, có thể được sử dụng khi hiển thị hoặc in hóa đơn thanh toán với văn bản bổ sung."
+keywords:
+  - "billing document"
+  - "hóa đơn thanh toán"
+  - "external text"
+  - "text information"
+  - "sap sd-bil"
+  - "sd-bil-2cl"
+  - "sales & distribution"
+  - "sales document"
+semantic_en: "The D_BILLGDOCCRTEFRMEXTTXTIP view exposes external text information for billing documents, which can be used when displaying or printing billing documents with additional text."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

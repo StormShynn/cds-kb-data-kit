@@ -1,6 +1,20 @@
 ---
 name: C_SALESCHANGEDOCITEMDEX
 description: "Saleschangedocitemdex"
+semantic_vi: "View CDS Saleschangedocitemdex hiển thị dữ liệu chi tiết về các tài liệu thay đổi trong Sales và Distribution, hữu ích cho việc phân tích các thay đổi tài liệu."
+keywords:
+  - "sales"
+  - "distribution"
+  - "changed documents"
+  - "item-level data"
+  - "sales and distribution"
+  - "document changes"
+  - "cds view"
+  - "saleschangedocitemdex"
+  - "đơn hàng"
+  - "dữ liệu chi tiết"
+  - "tài liệu thay đổi"
+semantic_en: "The Saleschangedocitemdex CDS view exposes item-level data for changed documents in Sales and Distribution, useful for analyzing document changes."
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

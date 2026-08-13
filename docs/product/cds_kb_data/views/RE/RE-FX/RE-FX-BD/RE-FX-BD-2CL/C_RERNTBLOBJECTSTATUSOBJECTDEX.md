@@ -1,6 +1,21 @@
 ---
 name: C_RERNTBLOBJECTSTATUSOBJECTDEX
 description: "Rerntblobjectstatusobjectdex"
+semantic_vi: "Chứa thông tin trạng thái đối tượng cho thuê bất động sản, bao gồm các hồ sơ trạng thái và mã trạng thái, cho mục đích trích xuất dữ liệu và báo cáo."
+keywords:
+  - "real estate"
+  - "rental object"
+  - "status"
+  - "profile"
+  - "code"
+  - "data extraction"
+  - "reporting"
+  - "sap"
+  - "cds view"
+  - "re-fx-bd-2cl"
+  - "consumption-view"
+  - "lob-other"
+semantic_en: "Exposes real estate rental object status information, including status profiles and codes, for use in data extraction and reporting."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: C_SERVICEENTRYSHEETITEMDEX
 description: "Serviceentrysheetitemdex"
+semantic_vi: "View Serviceentrysheetitemdex CDS hiển thị dữ liệu chi tiết từ các tờ khai dịch vụ và đơn đặt hàng, cho phép các nhà phát triển phân tích và trích xuất thông tin liên quan đến dịch vụ. Nó được sử dụng trong thành phần MM-PUR-ANA-2CL cho phân tích nguồn cung và quản lý mua hàng."
+keywords:
+  - "service entry sheet"
+  - "đơn dịch vụ"
+  - "đơn đặt hàng"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "mm-pur-ana-2cl"
+  - "sourcing & procurement"
+  - "sourcing"
+  - "procurement"
+  - "service-related"
+  - "dịch vụ"
+semantic_en: "The Serviceentrysheetitemdex CDS view exposes item-level data from service entry sheets and purchase orders, allowing developers to analyze and extract service-related information. It is used in the MM-PUR-ANA-2CL component for sourcing and procurement analysis."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

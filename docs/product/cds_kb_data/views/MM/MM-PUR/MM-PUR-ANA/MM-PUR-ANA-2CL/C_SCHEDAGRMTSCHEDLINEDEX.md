@@ -1,6 +1,20 @@
 ---
 name: C_SCHEDAGRMTSCHEDLINEDEX
 description: "Schedagrmtschedlinedex"
+semantic_vi: "View Schedagrmtschedlinedex cung cấp thông tin chi tiết về các mục hàng trong thỏa thuận lịch trình, bao gồm các ngày giao hàng và số lượng."
+keywords:
+  - "scheduling agreement"
+  - "thỏa thuận lịch trình"
+  - "schedule line item"
+  - "mục hàng lịch trình"
+  - "delivery date"
+  - "ngày giao hàng"
+  - "schedule line delivery date"
+  - "scheduling agreement item"
+  - "mục hàng thỏa thuận lịch trình"
+  - "purchase requisition"
+  - "yêu cầu mua hàng"
+semantic_en: "The Schedagrmtschedlinedex view provides detailed information about schedule line items in scheduling agreements, including delivery dates and quantities. It is used to analyze and report on scheduling agreement data."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

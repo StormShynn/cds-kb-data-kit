@@ -23,7 +23,7 @@ beside [`../cds_kb_data`](../cds_kb_data) and auto-uses that tree when present.
 - [Harness monorepo (local)](#harness-monorepo-local)
 - [Prerequisites](#prerequisites)
 - [Client Configuration](#client-configuration) — hosted MCP for end users
-- [Tools Reference](#tools-reference)
+- [Tools Reference](#tools-reference) — includes optional SAP ADT `sap_*` slice
 - [Resources & Prompts](#resources--prompts)
 - [Hosted auth](#hosted-auth) — API key, JWKS, **OAuth 2.1**
 - [Usage ranking](#usage-ranking)
@@ -44,7 +44,7 @@ the data index changes).
 | **Taxonomy**        | Lines of Business → Business Objects → keyword map (EN + VI)                                               |
 | **Search ranking**  | Field-boosted MiniSearch (`name×3`, `semanticDescription×2.5`, `synonyms×2`) + **hybrid RRF** (BM25 top-N ⊕ embedding cosine top-N via Reciprocal Rank Fusion when `index/embeddings.json` is present) + **usageCount** popularity boost (populated when the usage pipeline is wired up, see below) |
 | **Module aliasing** | Filter by `"Finance"` / `"Procurement"` / `"Sales"` instead of `FI` / `MM` / `SD`                          |
-| **Tools**           | 14 MCP tools — every one declares an `outputSchema` and returns JSON `structuredContent`                   |
+| **Tools**           | 14 KB tools + optional `sap_*` ADT slice — every tool declares an `outputSchema` and returns JSON `structuredContent` |
 | **Resources**       | `cds://view/{name}`, `cds://taxonomy`, `cds://stats` — attachable straight into agent context              |
 | **Prompts**         | `explain_view`, `compose_query`, `validate_ddl` — one-call packaged workflows                              |
 | **Auth**            | API key, remote JWKS, and full **OAuth 2.1 + PKCE** authorization server (+ **RFC 7591 dynamic client registration**) |
@@ -70,6 +70,7 @@ npm run start:remote      # GitHub remote (needs token if private)
 npm test                  # smoke tools against sibling data
 npm run test:rrf          # Reciprocal Rank Fusion unit tests (no index)
 npm run test:eval         # golden search/compose/library eval (local index)
+npm run test:sap          # mocked SAP ADT export slice (no live SAP)
 ```
 
 Cursor / Claude **stdio** against the sibling data tree:
@@ -202,7 +203,7 @@ Once configured, restart your IDE. The tools will immediately be available for y
 
 ## Tools Reference
 
-The server exposes **fourteen tools**. Every tool declares an **`outputSchema`** (JSON Schema) and returns both human-readable `content` **and** machine-parseable **`structuredContent`** — so programmatic/agentic integrations can parse results without regex. The flow: search → pick a view → **compose → generate → validate** CDS DDL without leaving MCP.
+The server exposes **fourteen KB tools** plus an **optional SAP ADT read-only slice** (`sap_*`). Every tool declares an **`outputSchema`** (JSON Schema) and returns both human-readable `content` **and** machine-parseable **`structuredContent`** — so programmatic/agentic integrations can parse results without regex. The flow: search → pick a view → **compose → generate → validate** CDS DDL without leaving MCP.
 
 ### 1. `search_cds`
 
@@ -374,6 +375,42 @@ Search the shared saved-query list (`index/query-library.json`) by title, descri
 | `limit` | int 1-50 | optional | Default 10 |
 
 To add an entry: Query Builder **Propose** / MCP `propose_query_library_entry` → review Issue or draft PR → merge → `npm run sync-query-library-embed` (do not run the stale generator). Offline: `npm run seed-query-proposals` writes `index/query-proposals.json` for curation.
+
+### Optional: SAP ADT read-only slice (`sap_*`)
+
+Optional **DEV-only** ADT tools for learning custom **Z\*/Y\*** repository objects (CDS `data_definition` / DDLS first). When `SAP_ADT_*` env is **unset**, tools still appear but every call returns a consistent envelope with `configured: false` — the server stays **dataless** toward SAP.
+
+**Locked policy:** HTTPS + TLS verify mandatory; system alias **DEV** only (never PRD); no table/business row reads; skip SAP standard; snapshot **skip-if-exists** (no overwrite); never auto-merge into the public KB or `overlays/private` markdown views.
+
+| Tool | Role |
+|------|------|
+| `sap_connection_test` | Probe ADT discovery |
+| `sap_list_packages` | List Z\*/Y\* packages |
+| `sap_list_objects` | List DDLS objects in a package |
+| `sap_get_object` | Fetch one custom object source |
+| `sap_get_dependencies` | Best-effort static DDL names (standard → external) |
+| `sap_plan_export` | Dry-run plan only |
+| `sap_export_snapshot` | Local write under output root (source + metadata + manifest) |
+| `sap_diff_snapshot` | Compare two local snapshot manifests/hashes |
+
+**Env (secrets never in files/logs):**
+
+| Variable | Required | Notes |
+|----------|----------|-------|
+| `SAP_ADT_BASE_URL` | ✓ when enabling | `https://host:port` only |
+| `SAP_ADT_USERNAME` | ✓ | Technical read-only user |
+| `SAP_ADT_PASSWORD` | ✓ | Secret manager / env only |
+| `SAP_ADT_CLIENT` | ✓ | SAP client |
+| `SAP_ADT_SYSTEM_ALIAS` | optional | Must be `DEV` (default) |
+| `SAP_ADT_OUTPUT_ROOT` | optional | Default: sibling `cds_kb_data/.sap_export` (gitignored) |
+
+Sample operator YAML (no secrets): [`config/sap-export.config.example.yaml`](./config/sap-export.config.example.yaml).
+
+**Promotion path:** review files under `.sap_export/` → manually create private overlay markdown and/or use `compose_query` / `generate_cds_view` / propose — **never** auto-merge. Do not treat export dumps as KB view markdown.
+
+**ADT compatibility:** endpoints vary by release/SICF. Documented paths include `/sap/bc/adt/discovery`, repository `informationsystem/search`, and `/sap/bc/adt/ddic/ddl/sources/{name}/source/main`. Probe per landscape; failures surface as structured errors (no SQL/table fallback).
+
+Tests: `npm run test:sap` (mocked; no live SAP).
 
 ---
 

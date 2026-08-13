@@ -1,6 +1,21 @@
 ---
 name: D_BILLOFMATERIALORDEXPLODEBOMR
 description: "D Bill of MaterialORDEXPLODEBOMR"
+semantic_vi: "View D_BILLOFMATERIALORDEXPLODEBOMR hiển thị dữ liệu bảng thành phần vật liệu cho BOM nở ra, bao gồm tên vật liệu, số lượng và đơn vị, có thể được sử dụng để phân tích và quản lý yêu cầu vật liệu cho đơn đặt hàng bán."
+keywords:
+  - "bill of material"
+  - "bảng thành phần vật liệu"
+  - "bom"
+  - "sales order"
+  - "đơn đặt hàng bán"
+  - "material"
+  - "vật liệu"
+  - "quantity"
+  - "số lượng"
+  - "unit"
+  - "đơn vị"
+  - "sap"
+semantic_en: "The D_BILLOFMATERIALORDEXPLODEBOMR view exposes bill of material data for exploded BOMs, including material names, quantities, and units, which can be used to analyze and manage material requirements for sales orders."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

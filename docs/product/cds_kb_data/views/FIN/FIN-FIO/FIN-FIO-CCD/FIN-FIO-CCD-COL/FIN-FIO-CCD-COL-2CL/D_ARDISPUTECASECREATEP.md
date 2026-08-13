@@ -1,6 +1,20 @@
 ---
 name: D_ARDISPUTECASECREATEP
 description: "D Ardisputecasecreatep"
+semantic_vi: "View D_ARDISPUTECASECREATEP hiển thị dữ liệu về các trường hợp tranh chấp được tạo trong thành phần FIN-FIO-CCD-COL-2CL, bao gồm thông tin khách hàng và chi tiết trường hợp. Nó được sử dụng để lấy dữ liệu cho việc tạo trường hợp tranh chấp."
+keywords:
+  - "dispute case"
+  - "tranh chấp"
+  - "fin-fio-ccd-col-2cl"
+  - "customer"
+  - "khách hàng"
+  - "case details"
+  - "chi tiết trường hợp"
+  - "dispute creation"
+  - "tạo trường hợp tranh chấp"
+  - "sap cds"
+  - "cds view"
+semantic_en: "The D_ARDISPUTECASECREATEP view exposes data about dispute cases created in the FIN-FIO-CCD-COL-2CL component, including customer information and case details. It is used to retrieve data for dispute case creation."
 app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released

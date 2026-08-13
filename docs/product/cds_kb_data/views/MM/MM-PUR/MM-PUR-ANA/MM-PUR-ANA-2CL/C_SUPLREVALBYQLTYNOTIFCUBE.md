@@ -1,6 +1,19 @@
 ---
 name: C_SUPLREVALBYQLTYNOTIFCUBE
 description: "Suplrevalbyqltynotifcube"
+semantic_vi: "View Suplrevalbyqltynotifcube cung cấp một khối dữ liệu đánh giá nhà cung cấp theo thông báo chất lượng, bao gồm các tài liệu liên quan và thông tin nhà cung cấp. Nó được sử dụng cho mục đích phân tích trong nguồn cung và quản lý chi phí."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "supplier evaluation"
+  - "đánh giá nhà cung cấp"
+  - "quality notification"
+  - "thông báo chất lượng"
+  - "sourcing and procurement"
+  - "nguồn cung và quản lý chi phí"
+  - "mm-pur-ana-2cl"
+semantic_en: "The Suplrevalbyqltynotifcube view provides a cube of supplier evaluation data by quality notification, including relevant documents and supplier information. It is used for analytical purposes in sourcing and procurement."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

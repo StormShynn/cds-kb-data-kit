@@ -1,6 +1,19 @@
 ---
 name: C_REUSBLOBJTOCONTRACTASSGMTDEX
 description: "Reusblobjtocontractassgmtdex"
+semantic_vi: "Chỉ ra các giao dịch hợp đồng bất động sản với các đối tượng tái sử dụng, cung cấp dữ liệu cho quản lý hợp đồng và theo dõi tài sản."
+keywords:
+  - "real estate"
+  - "contract"
+  - "assignment"
+  - "reusable object"
+  - "asset tracking"
+  - "contract management"
+  - "sap"
+  - "re-fx-bd-2cl"
+  - "consumption-view"
+  - "data-extraction"
+semantic_en: "Exposes real estate contract assignments with reusable object assignments, providing data for contract management and asset tracking."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

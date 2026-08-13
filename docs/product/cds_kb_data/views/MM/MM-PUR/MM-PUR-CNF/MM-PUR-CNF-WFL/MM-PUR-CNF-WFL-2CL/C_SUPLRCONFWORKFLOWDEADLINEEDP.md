@@ -1,6 +1,19 @@
 ---
 name: C_SUPLRCONFWORKFLOWDEADLINEEDP
 description: "Suplrconfworkflowdeadlineedp"
+semantic_vi: "Chỉ ra thời hạn xác nhận của nhà cung cấp cho đơn đặt hàng mua hàng, cung cấp thông tin về ID nhiệm vụ, nhà cung cấp và loại tiền tệ tài liệu."
+keywords:
+  - "supplier confirmation"
+  - "workflow deadline"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "thời hạn xác nhận nhà cung cấp"
+  - "nhiệm vụ"
+  - "nhà cung cấp"
+  - "loại tiền tệ tài liệu"
+  - "ekko"
+  - "mm-pur-cnf-wfl-2cl"
+semantic_en: "Exposes supplier confirmation workflow deadlines for purchase orders, providing information on task IDs, suppliers, and document currencies."
 app_component: MM-PUR-CNF-WFL-2CL
 software_component: SAPSCORE
 release_state: released

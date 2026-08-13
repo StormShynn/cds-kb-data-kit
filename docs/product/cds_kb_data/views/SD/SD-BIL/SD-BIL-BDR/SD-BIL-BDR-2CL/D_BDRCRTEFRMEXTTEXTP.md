@@ -1,6 +1,16 @@
 ---
 name: D_BDRCRTEFRMEXTTEXTP
 description: "D Bdrcrtefrmexttextp"
+semantic_vi: "View D_BDRCRTEFRMEXTTEXTP CDS exposing dữ liệu kinh doanh liên quan đến các bản ghi văn bản bên ngoài trong thành phần Sales và Distribution. Nó được sử dụng để lấy và quản lý các bản ghi văn bản bên ngoài liên quan đến các tài liệu kinh doanh."
+keywords:
+  - "sales and distribution"
+  - "external text records"
+  - "dữ liệu kinh doanh"
+  - "bản ghi văn bản bên ngoài"
+  - "cds view"
+  - "sap"
+  - "sd-bil-bdr-2cl"
+semantic_en: "The D_BDRCRTEFRMEXTTEXTP CDS view exposes business data related to external text records in the Sales and Distribution component. It is used to retrieve and manage external text records associated with business documents."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

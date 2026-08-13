@@ -1,0 +1,54 @@
+# Sample SAP ADT export config (documentation / operator template).
+# Runtime for cds-kb-mcp uses environment variables — do NOT put secrets here.
+# Copy patterns into your secret manager / shell env; keep this file secret-free.
+
+system_alias: DEV          # locked: DEV only (never PRD)
+connector: adt
+
+# Map to env (cds-kb-mcp names):
+#   base_url  → SAP_ADT_BASE_URL       (https://host:port only — no userinfo)
+#   username  → SAP_ADT_USERNAME
+#   password  → SAP_ADT_PASSWORD       (env / secret manager only)
+#   client    → SAP_ADT_CLIENT
+#   alias     → SAP_ADT_SYSTEM_ALIAS   (must be DEV)
+base_url_env: SAP_ADT_BASE_URL
+username_env: SAP_ADT_USERNAME
+password_env: SAP_ADT_PASSWORD
+sap_client_env: SAP_ADT_CLIENT
+
+read_only: true
+tls_verify: true           # mandatory — cannot be disabled
+production_enabled: false
+
+# Locked product policy: custom namespaces only
+package_include:
+  - "Z*"
+  - "Y*"
+package_exclude:
+  - "$TMP"
+related_object_include:
+  - "Z*"
+  - "Y*"
+dependency_max_depth: 5
+
+include_inactive: false
+include_generated: false
+include_table_contents: false   # never read business/table rows
+
+# Vertical slice: DDLS / data_definition first
+object_type_include:
+  - data_definition
+
+# Local snapshot root (NOT overlays/private markdown views).
+# Default when unset: sibling cds_kb_data/.sap_export (gitignored).
+# Promote reviewed DDL into overlays/private manually, then propose via
+# compose_query / generate_cds_view / propose — never auto-merge.
+output_root: ../cds_kb_data/.sap_export
+concurrency: 2
+request_timeout_seconds: 30
+
+# ADT endpoint compatibility notes (varies by release / SICF):
+#   GET  /sap/bc/adt/discovery
+#   POST /sap/bc/adt/repository/informationsystem/search
+#   GET  /sap/bc/adt/ddic/ddl/sources/{name}
+#   GET  /sap/bc/adt/ddic/ddl/sources/{name}/source/main

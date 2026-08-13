@@ -1,6 +1,18 @@
 ---
 name: C_SUPLRCSGNMTPPLINEWTHDRWLDEX
 description: "Suplrcsgnmtpplinewthdrwldex"
+semantic_vi: "View này hiển thị dữ liệu rút hàng từ đường ống cung ứng nhà cung cấp ở mức đầu, hữu ích cho việc phân tích rút hàng từ đường ống cung ứng trong phân tích mua hàng."
+keywords:
+  - "supplier consignment pipeline"
+  - "withdrawal data"
+  - "header level"
+  - "purchasing analytics"
+  - "consignment pipeline withdrawals"
+  - "đường ống cung ứng nhà cung cấp"
+  - "dữ liệu rút hàng"
+  - "mức đầu"
+  - "phân tích mua hàng"
+semantic_en: "This view exposes supplier consignment pipeline withdrawal data at the header level, useful for analyzing consignment pipeline withdrawals in purchasing analytics."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

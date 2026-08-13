@@ -1,6 +1,17 @@
 ---
 name: D_BILLGDOCCRTEFRMBILLGDOCREFIP
 description: "D Billgdoccrtefrmbillgdocrefip"
+semantic_vi: "Chỉ ra các mục tham chiếu hóa đơn thanh toán cho các phiếu giảm giá được tạo từ hóa đơn bán hàng. Sử dụng để truy cập và chỉnh sửa các mục này trong quá trình phân phối và bán hàng."
+keywords:
+  - "reference billing document"
+  - "credit memo"
+  - "billing document"
+  - "sales and distribution"
+  - "đơn thanh toán tham chiếu"
+  - "phiếu giảm giá"
+  - "hóa đơn bán hàng"
+  - "phân phối và bán hàng"
+semantic_en: "Exposes reference billing document items for credit memos created from billing documents. Used to access and manipulate these items in sales and distribution processes."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

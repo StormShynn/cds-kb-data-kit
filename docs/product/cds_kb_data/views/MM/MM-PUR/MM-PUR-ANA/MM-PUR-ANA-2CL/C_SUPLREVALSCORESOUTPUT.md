@@ -1,6 +1,19 @@
 ---
 name: C_SUPLREVALSCORESOUTPUT
 description: "Suplrevalscoresoutput"
+semantic_vi: "View CDS Suplrevalscoresoutput hiển thị điểm đánh giá nhà cung cấp và trạng thái liên quan, hữu ích cho việc phân tích và theo dõi hiệu suất nhà cung cấp theo thời gian."
+keywords:
+  - "supplier evaluation"
+  - "điểm đánh giá nhà cung cấp"
+  - "purchase analytics"
+  - "thống kê mua hàng"
+  - "sap mm"
+  - "mm-pur-ana"
+  - "sourcing & procurement"
+  - "thu mua & cung ứng"
+  - "ekko"
+  - "ekp"
+semantic_en: "The Suplrevalscoresoutput CDS view exposes supplier evaluation scores and their associated statuses, useful for analyzing and monitoring supplier performance over time."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

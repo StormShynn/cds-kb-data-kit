@@ -1,6 +1,21 @@
 ---
 name: C_TIMEVARIANCECUBE
 description: "Timevariancecube"
+semantic_vi: "View Timevariancecube cung cấp dữ liệu lịch sử về đơn đặt hàng mua hàng, mặt hàng và ngày giao hàng, cho phép phân tích lịch trình và sai lệch mua hàng. Nó được sử dụng để theo dõi và phân tích lịch trình giao hàng và ngày giao hàng thực tế cho đơn đặt hàng mua hàng."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "delivery date"
+  - "ngày giao hàng"
+  - "procurement timeline"
+  - "thời gian mua hàng"
+  - "delivery schedule"
+  - "lịch trình giao hàng"
+  - "variance analysis"
+  - "phân tích sai lệch"
+  - "sap mm"
+  - "mm-pur"
+semantic_en: "The Timevariancecube view provides historical data on purchase orders, items, and delivery dates, enabling analysis of procurement timelines and variances. It is used to track and analyze delivery schedules and actual delivery dates for procurement orders."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

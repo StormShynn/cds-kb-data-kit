@@ -1,6 +1,21 @@
 ---
 name: C_RERNTBLOBJTOCONTRASSGMTDEX
 description: "Rerntblobjtocontrassgmtdex"
+semantic_vi: "Chỉ ra các đối tượng thuê bất động sản với các hợp đồng và ngày hiệu lực liên quan. View này được sử dụng để lấy dữ liệu về các đối tượng thuê và hợp đồng tương ứng để phân tích dữ liệu hoặc báo cáo."
+keywords:
+  - "real estate rental"
+  - "object assignment"
+  - "contract"
+  - "validity date"
+  - "data analysis"
+  - "reporting"
+  - "bất động sản cho thuê"
+  - "giao nhiệm vụ"
+  - "hợp đồng"
+  - "ngày hiệu lực"
+  - "phân tích dữ liệu"
+  - "báo cáo"
+semantic_en: "Exposes real estate rental object assignments with their associated contracts and validity dates. This view is used to retrieve rental object assignments and their corresponding contracts for data analysis or reporting purposes."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

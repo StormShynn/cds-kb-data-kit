@@ -1,6 +1,19 @@
 ---
 name: C_SALESDOCUMENTITEMDEX_1
 description: "Salesdocumentitemdex 1"
+semantic_vi: "Chứa dữ liệu chi tiết về các mục của đơn hàng bán hàng để phân tích và báo cáo."
+keywords:
+  - "sales document"
+  - "đơn hàng bán hàng"
+  - "sales document item"
+  - "mục đơn hàng bán hàng"
+  - "sales analysis"
+  - "phân tích bán hàng"
+  - "sap sd"
+  - "sd-ana"
+  - "sales document item data"
+  - "dữ liệu mục đơn hàng bán hàng"
+semantic_en: "Exposes sales document item data for analysis and reporting purposes, typically used to analyze sales document items and their associated details."
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

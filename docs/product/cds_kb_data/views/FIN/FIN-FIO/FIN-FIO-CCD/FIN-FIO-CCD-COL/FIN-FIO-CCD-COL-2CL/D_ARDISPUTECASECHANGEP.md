@@ -1,6 +1,21 @@
 ---
 name: D_ARDISPUTECASECHANGEP
 description: "D Ardisputecasechangep"
+semantic_vi: "View D_ARDISPUTECASECHANGEP hiển thị dữ liệu liên quan đến thay đổi trường hợp tranh chấp, bao gồm chi tiết trường hợp và thông tin người điều phối. Nó được sử dụng khi quản lý tranh chấp và trường hợp liên quan."
+keywords:
+  - "dispute case"
+  - "tranh chấp trường hợp"
+  - "dispute case change"
+  - "thay đổi trường hợp tranh chấp"
+  - "case details"
+  - "chi tiết trường hợp"
+  - "case coordinator"
+  - "người điều phối trường hợp"
+  - "sap cds"
+  - "cds view"
+  - "fin-fio-ccd-col-2cl"
+  - "fin"
+semantic_en: "The D_ARDISPUTECASECHANGEP CDS view exposes data related to dispute case changes, including case details and coordinator information. It is used when managing disputes and their associated cases."
 app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released

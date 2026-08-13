@@ -1,6 +1,19 @@
 ---
 name: D_BDRCRTEFRMEXTPARTNERP
 description: "D Bdrcrtefrmextpartnerp"
+semantic_vi: "Chứa thông tin đối tác kinh doanh, bao gồm khách hàng, nhà cung cấp và thông tin liên hệ, cho việc sử dụng trong các quy trình kinh doanh bán hàng và phân phối."
+keywords:
+  - "sales"
+  - "distribution"
+  - "business partner"
+  - "customer"
+  - "supplier"
+  - "contact"
+  - "partner function"
+  - "business partner address"
+  - "contact person"
+  - "personnel"
+semantic_en: "Exposes business partner information, including customer, supplier, and contact details, for use in sales and distribution business processes."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

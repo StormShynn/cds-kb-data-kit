@@ -1,6 +1,21 @@
 ---
 name: D_BILLOFMATERIALCOMPAREBOMP
 description: "D Bill of MaterialCOMPAREBOMP"
+semantic_vi: "View D_BILLOFMATERIALCOMPAREBOMP hiển thị dữ liệu bảng tính vật liệu để so sánh, cho phép các nhà phát triển phân tích và quản lý BOM trên các biến thể và phiên bản khác nhau."
+keywords:
+  - "material"
+  - "bill-of-material"
+  - "bom"
+  - "compare"
+  - "variant"
+  - "version"
+  - "sap"
+  - "cds"
+  - "abap"
+  - "cloud"
+  - "logistics"
+  - "material-management"
+semantic_en: "The D_BILLOFMATERIALCOMPAREBOMP view exposes material bill of material data for comparison purposes, allowing developers to analyze and manage BOMs across different variants and versions."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

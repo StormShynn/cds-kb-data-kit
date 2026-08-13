@@ -1,6 +1,21 @@
 ---
 name: C_SERVICECONTRACTITEMDEX
 description: "Servicecontractitemdex"
+semantic_vi: "View CDS Servicecontractitemdex hiển thị chi tiết về các hợp đồng dịch vụ, bao gồm các mục của tài liệu dịch vụ, số lượng và giá trị. Nó được sử dụng để trích xuất và phân tích dữ liệu hợp đồng dịch vụ để có cái nhìn sâu sắc về kinh doanh."
+keywords:
+  - "service contract"
+  - "hợp đồng dịch vụ"
+  - "service document"
+  - "tài liệu dịch vụ"
+  - "service document item"
+  - "mục tài liệu dịch vụ"
+  - "service contract item"
+  - "mục hợp đồng dịch vụ"
+  - "crm"
+  - "ekko"
+  - "purchase order"
+  - "đơn mua hàng"
+semantic_en: "The Servicecontractitemdex CDS view exposes item-level details of service contracts, including service document items, quantities, and amounts. It is used to extract and analyze service contract data for business insights."
 app_component: CRM-S4-ANA-BI-2CL
 software_component: SAPSCORE
 release_state: released

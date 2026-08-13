@@ -1,6 +1,20 @@
 ---
 name: C_SERVICEORDERITEMDEX
 description: "Service OrderITEMDEX"
+semantic_vi: "View Service Order ITEMDEX cung cấp dữ liệu chi tiết về các đơn hàng dịch vụ, bao gồm các mục đơn hàng dịch vụ, số lượng và giá trị tiền tệ."
+keywords:
+  - "service order"
+  - "đơn hàng dịch vụ"
+  - "item-level data"
+  - "service document"
+  - "service order item"
+  - "mục đơn hàng dịch vụ"
+  - "service order analysis"
+  - "thống kê đơn hàng dịch vụ"
+  - "crm"
+  - "ekko"
+  - "purchase order"
+semantic_en: "The Service Order ITEMDEX view provides item-level data for service orders, including service document items, quantities, and monetary values. It is used to analyze and report on service order items."
 app_component: CRM-S4-ANA-BI-2CL
 software_component: SAPSCORE
 release_state: released

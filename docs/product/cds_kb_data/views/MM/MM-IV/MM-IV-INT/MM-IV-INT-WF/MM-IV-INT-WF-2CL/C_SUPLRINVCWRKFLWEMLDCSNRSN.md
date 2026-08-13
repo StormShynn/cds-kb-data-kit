@@ -1,6 +1,20 @@
 ---
 name: C_SUPLRINVCWRKFLWEMLDCSNRSN
 description: "Suplrinvcwrkflwemldcsnrsn"
+semantic_vi: "View này hiển thị dữ liệu công việc liên quan đến hóa đơn nhà cung cấp trong thành phần MM-IV-INT-WF-2CL, được sử dụng cho quản lý và theo dõi công việc."
+keywords:
+  - "workflow"
+  - "supplier invoice"
+  - "công việc"
+  - "hóa đơn nhà cung cấp"
+  - "mm-iv-int-wf-2cl"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "consumption-view"
+  - "component:mm-iv-int-wf-2cl"
+  - "mm"
+  - "mm-iv"
+semantic_en: "This view exposes workflow task data related to supplier invoices in the MM-IV-INT-WF-2CL component, used for workflow management and tracking."
 app_component: MM-IV-INT-WF-2CL
 software_component: SAPSCORE
 release_state: released
