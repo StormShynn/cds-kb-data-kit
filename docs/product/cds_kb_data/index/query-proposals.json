@@ -1,198 +1,8 @@
 {
   "generatedAt": "2026-08-13T12:27:08.477Z",
-  "count": 12,
-  "note": "Reviewable proposals only. Promote into query-library.json via PR or --promote; never auto-merge.",
+  "count": 7,
+  "note": "Reviewable proposals only. Promote into query-library.json via PR or --promote; never auto-merge. 10 entries that duplicated already-promoted query-library.json titles/views (PO TP, PO items, sales order items, billing documents, outbound deliveries, business partner, customer, supplier, journal entry items, G/L line items) were removed on 2026-08-13 — seed-query-proposals-from-usage.mjs should filter those out before writing this file next time.",
   "proposals": [
-    {
-      "status": "pending",
-      "source": "usage+catalog",
-      "score": 11,
-      "generatedAt": "2026-08-13T12:27:08.477Z",
-      "entry": {
-        "title": "Purchase order transactional processing",
-        "description": "Purchase order header TP view — useful starting point for PO status and supplier context.",
-        "contributor": "seed-query-proposals-from-usage",
-        "views": [
-          {
-            "alias": "t1",
-            "name": "I_PURCHASEORDERTP_2"
-          }
-        ],
-        "select": "PurchaseOrder, PurchaseOrderType, PurchaseOrderSubtype, PurchasingDocumentOrigin, PurchasingDocumentProcessCode, CreatedByUser, CreationDate, PurchaseOrderDate",
-        "viewName": "Z_C_PURCHASEORDERTP2"
-      }
-    },
-    {
-      "status": "pending",
-      "source": "usage+catalog",
-      "score": 10,
-      "generatedAt": "2026-08-13T12:27:08.477Z",
-      "entry": {
-        "title": "Purchase order items (API)",
-        "description": "PO item lines with material, plant and quantity fields for item-level analysis.",
-        "contributor": "seed-query-proposals-from-usage",
-        "views": [
-          {
-            "alias": "t1",
-            "name": "I_PURCHASEORDERITEMAPI01"
-          }
-        ],
-        "select": "PurchaseOrder, PurchaseOrderItem, PurchaseOrderItemUniqueID, PurchaseOrderCategory, DocumentCurrency, PurchasingDocumentDeletionCode, PurchasingDocumentItemOrigin, MaterialGroup",
-        "viewName": "Z_C_PURCHASEORDERITEMAPI01"
-      }
-    },
-    {
-      "status": "pending",
-      "source": "usage+catalog",
-      "score": 10,
-      "generatedAt": "2026-08-13T12:27:08.477Z",
-      "entry": {
-        "title": "Sales order items",
-        "description": "Sales order item list with product, quantity and net amount dimensions.",
-        "contributor": "seed-query-proposals-from-usage",
-        "views": [
-          {
-            "alias": "t1",
-            "name": "I_SALESORDERITEM"
-          }
-        ],
-        "select": "SalesOrder, SalesOrderItem, SalesOrderItemUUID, SalesOrderItemCategory, SalesOrderItemType, IsReturnsItem, CreatedByUser, CreationDate",
-        "viewName": "Z_C_SALESORDERITEM"
-      }
-    },
-    {
-      "status": "pending",
-      "source": "usage+catalog",
-      "score": 10,
-      "generatedAt": "2026-08-13T12:27:08.477Z",
-      "entry": {
-        "title": "Billing documents",
-        "description": "Billing document headers for SD billing status and customer overview.",
-        "contributor": "seed-query-proposals-from-usage",
-        "views": [
-          {
-            "alias": "t1",
-            "name": "I_BILLINGDOCUMENT"
-          }
-        ],
-        "select": "BillingDocument, SDDocumentCategory, BillingDocumentCategory, BillingDocumentType, CreatedByUser, CreationDate, CreationTime, LastChangeDate",
-        "viewName": "Z_C_BILLINGDOCUMENT"
-      }
-    },
-    {
-      "status": "pending",
-      "source": "usage+catalog",
-      "score": 10,
-      "generatedAt": "2026-08-13T12:27:08.477Z",
-      "entry": {
-        "title": "Outbound deliveries",
-        "description": "Delivery document headers for logistics execution tracking.",
-        "contributor": "seed-query-proposals-from-usage",
-        "views": [
-          {
-            "alias": "t1",
-            "name": "I_DELIVERYDOCUMENT"
-          }
-        ],
-        "select": "DeliveryDocument, SDDocumentCategory, DeliveryDocumentType, CreatedByUser, CreationDate, CreationTime, LastChangedByUser, LastChangeDate",
-        "viewName": "Z_C_DELIVERYDOCUMENT"
-      }
-    },
-    {
-      "status": "pending",
-      "source": "usage+catalog",
-      "score": 10,
-      "generatedAt": "2026-08-13T12:27:08.477Z",
-      "entry": {
-        "title": "Business partner master",
-        "description": "Business partner master data excluding deleted records where a deletion flag exists.",
-        "contributor": "seed-query-proposals-from-usage",
-        "views": [
-          {
-            "alias": "t1",
-            "name": "I_BUSINESSPARTNER"
-          }
-        ],
-        "select": "BusinessPartner, BusinessPartnerCategory, AuthorizationGroup, BusinessPartnerUUID, PersonNumber, ETag, BusinessPartnerName, BusinessPartnerFullName",
-        "viewName": "Z_C_BUSINESSPARTNER"
-      }
-    },
-    {
-      "status": "pending",
-      "source": "usage+catalog",
-      "score": 10,
-      "generatedAt": "2026-08-13T12:27:08.477Z",
-      "entry": {
-        "title": "Customer master",
-        "description": "Customer master overview for account and sales-area related reporting.",
-        "contributor": "seed-query-proposals-from-usage",
-        "views": [
-          {
-            "alias": "t1",
-            "name": "I_CUSTOMER"
-          }
-        ],
-        "select": "Customer, CustomerName, CustomerFullName, BPCustomerName, BPCustomerFullName, CreatedByUser, CreationDate, AddressID",
-        "viewName": "Z_C_CUSTOMER"
-      }
-    },
-    {
-      "status": "pending",
-      "source": "usage+catalog",
-      "score": 10,
-      "generatedAt": "2026-08-13T12:27:08.477Z",
-      "entry": {
-        "title": "Supplier master",
-        "description": "Supplier master overview for procurement partner reporting.",
-        "contributor": "seed-query-proposals-from-usage",
-        "views": [
-          {
-            "alias": "t1",
-            "name": "I_SUPPLIER"
-          }
-        ],
-        "select": "Supplier, SupplierAccountGroup, SupplierName, SupplierFullName, BPSupplierName, BPSupplierFullName, BusinessPartnerName1, BusinessPartnerName2",
-        "viewName": "Z_C_SUPPLIER"
-      }
-    },
-    {
-      "status": "pending",
-      "source": "usage+catalog",
-      "score": 10,
-      "generatedAt": "2026-08-13T12:27:08.477Z",
-      "entry": {
-        "title": "Journal entry items",
-        "description": "FI journal entry line items for account, company code and amount analysis.",
-        "contributor": "seed-query-proposals-from-usage",
-        "views": [
-          {
-            "alias": "t1",
-            "name": "I_JOURNALENTRYITEM"
-          }
-        ],
-        "select": "SourceLedger, CompanyCode, FiscalYear, AccountingDocument, LedgerGLLineItem, Ledger, LedgerFiscalYear, GLRecordType",
-        "viewName": "Z_C_JOURNALENTRYITEM"
-      }
-    },
-    {
-      "status": "pending",
-      "source": "usage+catalog",
-      "score": 10,
-      "generatedAt": "2026-08-13T12:27:08.477Z",
-      "entry": {
-        "title": "G/L account line items",
-        "description": "G/L line items for account balances and document drill-down.",
-        "contributor": "seed-query-proposals-from-usage",
-        "views": [
-          {
-            "alias": "t1",
-            "name": "I_GLACCOUNTLINEITEM"
-          }
-        ],
-        "select": "SourceLedger, CompanyCode, FiscalYear, AccountingDocument, LedgerGLLineItem, Ledger, LedgerFiscalYear, GLRecordType",
-        "viewName": "Z_C_GLACCOUNTLINEITEM"
-      }
-    },
     {
       "status": "pending",
       "source": "usage+catalog",
@@ -229,6 +39,108 @@
         ],
         "select": "MaterialDocumentYear, MaterialDocument, MaterialDocumentItem, Material, Plant, StorageLocation, StorageType, StorageBin",
         "viewName": "Z_C_MATERIALDOCUMENTITEM2"
+      }
+    },
+    {
+      "status": "pending",
+      "source": "coverage-gap-review",
+      "score": 8,
+      "generatedAt": "2026-08-13T12:27:08.477Z",
+      "entry": {
+        "title": "Production orders",
+        "description": "Production order header — plant, type, MRP controller, CO assignment (cost center, profit center) and planned/scheduled dates. Fills the Manufacturing (PP) gap; library had no production-order representation.",
+        "contributor": "claude-kb-review",
+        "views": [
+          {
+            "alias": "t1",
+            "name": "I_PRODUCTIONORDER"
+          }
+        ],
+        "select": "ProductionOrder, ProductionOrderText, ProductionOrderType, ProductionPlant, MRPController, CompanyCode, ControllingArea, ProfitCenter, CostCenter, OrderPlannedStartDate, OrderPlannedEndDate, IsMarkedForDeletion",
+        "where": "IsMarkedForDeletion = ''",
+        "orderBy": "OrderPlannedStartDate",
+        "viewName": "Z_C_PRODUCTIONORDER"
+      }
+    },
+    {
+      "status": "pending",
+      "source": "coverage-gap-review",
+      "score": 8,
+      "generatedAt": "2026-08-13T12:27:08.477Z",
+      "entry": {
+        "title": "Maintenance orders",
+        "description": "Maintenance order header — equipment, planner group, cost assignment and basic dates. Fills the Plant Maintenance (PM) gap; library had no maintenance-order representation.",
+        "contributor": "claude-kb-review",
+        "views": [
+          {
+            "alias": "t1",
+            "name": "I_MAINTENANCEORDERBASIC"
+          }
+        ],
+        "select": "MaintenanceOrder, MaintenanceOrderDesc, MaintenanceOrderType, MaintenancePlant, Equipment, MaintenancePlannerGroup, ResponsibleCostCenter, ControllingArea, CompanyCode, MaintOrdBasicStartDate, MaintOrdBasicEndDate, CreatedByUser, CreationDate",
+        "orderBy": "MaintOrdBasicStartDate",
+        "viewName": "Z_C_MAINTENANCEORDERBASIC"
+      }
+    },
+    {
+      "status": "pending",
+      "source": "coverage-gap-review",
+      "score": 8,
+      "generatedAt": "2026-08-13T12:27:08.477Z",
+      "entry": {
+        "title": "Inspection lots",
+        "description": "Inspection lot header — material, batch, plant, origin, quantities and usage-decision status. Fills the Quality Management (QM) gap; library had no inspection-lot representation.",
+        "contributor": "claude-kb-review",
+        "views": [
+          {
+            "alias": "t1",
+            "name": "I_INSPECTIONLOT"
+          }
+        ],
+        "select": "InspectionLot, InspectionLotText, Material, Batch, Plant, InspectionLotType, InspectionLotOrigin, ManufacturingOrder, InspectionLotQuantity, InspectionLotDefectiveQuantity, InspectionLotHasUsageDecision, InspectionLotCreatedBy, InspectionLotCreatedOn",
+        "orderBy": "InspectionLotCreatedOn",
+        "viewName": "Z_C_INSPECTIONLOT"
+      }
+    },
+    {
+      "status": "pending",
+      "source": "coverage-gap-review",
+      "score": 8,
+      "generatedAt": "2026-08-13T12:27:08.477Z",
+      "entry": {
+        "title": "Fixed assets",
+        "description": "Fixed asset master — asset class, description, lifecycle status and acquisition data. Fills the Asset Accounting (FI-AA) gap; library had no fixed-asset representation.",
+        "contributor": "claude-kb-review",
+        "views": [
+          {
+            "alias": "t1",
+            "name": "I_FIXEDASSET"
+          }
+        ],
+        "select": "CompanyCode, MasterFixedAsset, FixedAsset, AssetClass, FixedAssetDescription, Currency, AssetLifecycleStatus, AccountIsMarkedForDeletion, Supplier, CreationDate, CreatedByUser",
+        "where": "AccountIsMarkedForDeletion = ''",
+        "orderBy": "CreationDate",
+        "viewName": "Z_C_FIXEDASSET"
+      }
+    },
+    {
+      "status": "pending",
+      "source": "coverage-gap-review",
+      "score": 8,
+      "generatedAt": "2026-08-13T12:27:08.477Z",
+      "entry": {
+        "title": "Project/WBS elements",
+        "description": "Enterprise project (WBS) element — status, planned/actual dates and CO assignment (company code, controlling area, cost center, profit center). Fills the Project System (PS/PPM) gap; library had no project/WBS representation.",
+        "contributor": "claude-kb-review",
+        "views": [
+          {
+            "alias": "t1",
+            "name": "I_ENTERPRISEPROJECTELEMENT"
+          }
+        ],
+        "select": "ProjectElement, ProjectElementDescription, ProjectUUID, ProcessingStatus, PlannedStartDate, PlannedEndDate, ActualStartDate, ActualFinishDate, CompanyCode, ControllingArea, CostCenter, ProfitCenter, WBSElementInternalID",
+        "orderBy": "PlannedStartDate",
+        "viewName": "Z_C_ENTERPRISEPROJECTELEMENT"
       }
     }
   ]
