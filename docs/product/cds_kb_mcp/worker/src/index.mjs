@@ -104,10 +104,10 @@ export default {
 };
 
 function usageCounter(env) {
-  // global-v6: fresh instance so the DO-side rate limiter code actually loads
-  // (existing DO instances keep running their deployed version until evicted)
-  // and the rate-limit test pollution from bring-up is dropped.
-  const id = env.USAGE_DO.idFromName('global-v6');
+  // global-v7: fresh instance to drop bring-up test pollution accumulated
+  // under global-v6 (I_FINALCHECK, RATETEST6, RATETEST7 — smoke-test writes,
+  // not real usage) — same reset technique used for the v5 -> v6 bump.
+  const id = env.USAGE_DO.idFromName('global-v7');
   return env.USAGE_DO.get(id);
 }
 
