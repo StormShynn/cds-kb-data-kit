@@ -1,6 +1,20 @@
 ---
 name: I_ACCOUNTASSIGNMENTCATEGORY
 description: "Accountassignmentcategory"
+semantic_vi: "View AccountAssignmentCategory cung cấp thông tin về các loại phân bổ tài khoản, được sử dụng trong quản lý vật tư để theo dõi và quản lý các giao dịch tài chính liên quan đến kho hàng và mua sắm."
+keywords:
+  - "account assignment"
+  - "account assignment category"
+  - "material management"
+  - "inventory management"
+  - "procurement"
+  - "financial transaction"
+  - "sourcing & procurement"
+  - "mm"
+  - "ekko"
+  - "đơn mua hàng"
+  - "phân bổ tài khoản"
+semantic_en: "The AccountAssignmentCategory view provides information about categories of account assignments, which are used in material management to track and manage financial transactions related to inventory and procurement."
 app_component: MM
 software_component: SAPSCORE
 release_state: released

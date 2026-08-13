@@ -1,6 +1,18 @@
 ---
 name: D_SUPLRINVCCREATETAXP
 description: "D Suplrinvccreatetaxp"
+semantic_vi: "View D_SUPLRINVCCREATETAXP hiển thị dữ liệu thuế tạo hóa đơn nhà cung cấp, có liên quan khi xử lý hóa đơn cho nhà cung cấp."
+keywords:
+  - "supplier invoice"
+  - "hóa đơn nhà cung cấp"
+  - "tax data"
+  - "dữ liệu thuế"
+  - "invoice creation"
+  - "tạo hóa đơn"
+  - "sap mm"
+  - "mm iv"
+  - "lob sourcing & procurement"
+semantic_en: "The D_SUPLRINVCCREATETAXP view exposes supplier invoice creation tax data, which is relevant when processing invoices for suppliers."
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

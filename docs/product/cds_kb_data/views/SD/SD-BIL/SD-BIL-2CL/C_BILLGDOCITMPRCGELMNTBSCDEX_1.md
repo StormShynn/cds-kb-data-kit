@@ -1,6 +1,19 @@
 ---
 name: C_BILLGDOCITMPRCGELMNTBSCDEX_1
 description: "Billgdocitmprcgelmntbscdex 1"
+semantic_vi: "View này hiển thị dữ liệu định giá đơn hàng hóa, được sử dụng khi phân tích hoặc báo cáo về các thủ tục định giá cho đơn hàng hóa."
+keywords:
+  - "billing document"
+  - "đơn hàng hóa"
+  - "pricing procedure"
+  - "thủ tục định giá"
+  - "sap sd"
+  - "sales and distribution"
+  - "cds view"
+  - "view dữ liệu"
+  - "data extraction"
+  - "định giá đơn hàng"
+semantic_en: "This view exposes billing document item pricing data, which is used when analyzing or reporting on pricing procedures for billing documents."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

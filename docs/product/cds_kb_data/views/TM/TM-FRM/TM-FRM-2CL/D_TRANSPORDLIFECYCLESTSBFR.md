@@ -1,6 +1,16 @@
 ---
 name: D_TRANSPORDLIFECYCLESTSBFR
 description: "D Transpordlifecyclestsbfr"
+semantic_vi: "View D_TRANSPORDLIFECYCLESTSBFR hiển thị dữ liệu trạng thái vòng đời vận chuyển, có liên quan khi theo dõi trạng thái đơn vận chuyển trong thành phần TM-FRM-2CL."
+keywords:
+  - "transportation lifecycle"
+  - "transportation order"
+  - "tm-frm-2cl"
+  - "vòng đời vận chuyển"
+  - "đơn vận chuyển"
+  - "sap tm"
+  - "sap tm-frm"
+semantic_en: "The D_TRANSPORDLIFECYCLESTSBFR view exposes transportation lifecycle status data, which is relevant when tracking the status of transportation orders in the TM-FRM-2CL component."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

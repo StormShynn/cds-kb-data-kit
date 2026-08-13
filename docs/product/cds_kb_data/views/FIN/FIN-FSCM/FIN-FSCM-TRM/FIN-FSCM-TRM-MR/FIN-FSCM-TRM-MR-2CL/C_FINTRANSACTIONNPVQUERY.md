@@ -1,6 +1,21 @@
 ---
 name: C_FINTRANSACTIONNPVQUERY
 description: "Fintransactionnpvquery"
+semantic_vi: "Cds view C_FINTRANSACTIONNPVQUERY hiển thị dữ liệu giá trị hiện tại (NPV) cho các giao dịch tài chính, cung cấp thông tin về giá trị của dòng tiền tương lai tại một ngày cụ thể. Nó được sử dụng để phân tích và báo cáo về các giao dịch tài chính có tính toán NPV."
+keywords:
+  - "financial transaction"
+  - "giao dịch tài chính"
+  - "net present value"
+  - "giá trị hiện tại"
+  - "cash flow"
+  - "dòng tiền"
+  - "financial instrument"
+  - "công cụ tài chính"
+  - "sap cds view"
+  - "view c_fintransactionnpvquery"
+  - "financial analysis"
+  - "phân tích tài chính"
+semantic_en: "The C_FINTRANSACTIONNPVQUERY view exposes net present value (NPV) data for financial transactions, providing insights into the value of future cash flows at a specific date. It is used to analyze and report on financial transactions with NPV calculations."
 app_component: FIN-FSCM-TRM-MR-2CL
 software_component: SAPSCORE
 release_state: released

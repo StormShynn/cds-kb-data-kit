@@ -1,6 +1,19 @@
 ---
 name: C_PURCHASECONTRACTEXPIRY
 description: "Purchase ContractEXPIRY"
+semantic_vi: "Chứa thông tin về thời hạn hết hạn của hợp đồng mua hàng, có thể được sử dụng để phân tích và quản lý ngày hết hạn hợp đồng."
+keywords:
+  - "purchase contract"
+  - "hợp đồng mua hàng"
+  - "contract expiration"
+  - "thời hạn hết hạn"
+  - "purchase contract management"
+  - "quản lý hợp đồng mua hàng"
+  - "sap mm"
+  - "mm-pur"
+  - "mm-pur-ana"
+  - "sourcing & procurement"
+semantic_en: "Exposes information about the expiration of purchase contracts, which can be used to analyze and manage contract expiration dates."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

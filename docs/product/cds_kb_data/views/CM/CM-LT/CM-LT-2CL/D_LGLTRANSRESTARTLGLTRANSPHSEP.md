@@ -1,6 +1,17 @@
 ---
 name: D_LGLTRANSRESTARTLGLTRANSPHSEP
 description: "D Lgltransrestartlgltransphsep"
+semantic_vi: "View D_LGLTRANSRESTARTLGLTRANSPHSEP hiển thị thông tin restart cho các giao dịch pháp lý được phân tách giai đoạn. Nó được sử dụng khi xử lý giao dịch pháp lý cần restart."
+keywords:
+  - "legal transaction"
+  - "giao dịch pháp lý"
+  - "restart"
+  - "phân tách giai đoạn"
+  - "sap"
+  - "cm-lt-2cl"
+  - "component"
+  - "lob-other"
+semantic_en: "The D_LGLTRANSRESTARTLGLTRANSPHSEP view exposes restart information for legal transactions in a phase-separated format. It is used when handling legal transactions that require restarts."
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

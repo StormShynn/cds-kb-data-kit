@@ -1,6 +1,21 @@
 ---
 name: D_EMRKDFNDSCRTEDFLTEXPRTP
 description: "D Emrkdfndscrtedfltexprtp"
+semantic_vi: "View D_EMRKDFNDSCRTEDFLTEXPRTP hiển thị dữ liệu liên quan đến các trường được mã hóa trong một hệ thống xử lý giao dịch cụ thể, thường được sử dụng cho phân tích dữ liệu và báo cáo."
+keywords:
+  - "transactional processing"
+  - "encrypted fields"
+  - "transactional data"
+  - "data analysis"
+  - "reporting"
+  - "hệ thống xử lý giao dịch"
+  - "trường được mã hóa"
+  - "phân tích dữ liệu"
+  - "báo cáo"
+  - "psm"
+  - "component:psm"
+  - "lob:other"
+semantic_en: "The D_EMRKDFNDSCRTEDFLTEXPRTP view exposes transactional data related to encrypted fields in a specific transactional processing system, typically used for data analysis and reporting."
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

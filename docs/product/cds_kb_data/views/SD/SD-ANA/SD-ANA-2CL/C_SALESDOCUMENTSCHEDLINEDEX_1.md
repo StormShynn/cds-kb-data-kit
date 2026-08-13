@@ -1,6 +1,18 @@
 ---
 name: C_SALESDOCUMENTSCHEDLINEDEX_1
 description: "Salesdocumentschedlinedex 1"
+semantic_vi: "View này hiển thị dữ liệu dòng lịch trình tài liệu bán hàng, có thể được sử dụng để phân tích và báo cáo về các dòng lịch trình tài liệu bán hàng."
+keywords:
+  - "sales document"
+  - "dữ liệu bán hàng"
+  - "schedule line"
+  - "tài liệu bán hàng"
+  - "dòng lịch trình"
+  - "sales document schedule line"
+  - "dòng lịch trình tài liệu bán hàng"
+  - "sd-ana"
+  - "sales & distribution"
+semantic_en: "This view exposes sales document schedule line data, which can be used to analyze and report on sales document schedule lines."
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

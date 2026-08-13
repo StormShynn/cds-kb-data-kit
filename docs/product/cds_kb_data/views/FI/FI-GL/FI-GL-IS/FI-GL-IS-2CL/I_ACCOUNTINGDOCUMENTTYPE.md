@@ -1,6 +1,18 @@
 ---
 name: I_ACCOUNTINGDOCUMENTTYPE
 description: "Accounting DocumentUMENTTYPE"
+semantic_vi: "View I_ACCOUNTINGDOCUMENTTYPE cung cấp thông tin về loại tài liệu kế toán, bao gồm đặc điểm và quyền cho phép ghi sổ của chúng. Nó được sử dụng để xác định đặc điểm của tài liệu kế toán trong mô-đun FI-GL."
+keywords:
+  - "accounting document"
+  - "tài liệu kế toán"
+  - "fi-gl"
+  - "posting permission"
+  - "đặc điểm tài liệu kế toán"
+  - "hình thức tài liệu kế toán"
+  - "loại tài liệu kế toán"
+  - "accounting document type"
+  - "đặc điểm ghi sổ"
+semantic_en: "The I_ACCOUNTINGDOCUMENTTYPE CDS view provides information about accounting document types, including their characteristics and posting permissions. It is used to determine the properties of accounting documents in the FI-GL module."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

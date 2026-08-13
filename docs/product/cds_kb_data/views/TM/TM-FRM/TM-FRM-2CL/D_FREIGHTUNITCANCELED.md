@@ -1,6 +1,18 @@
 ---
 name: D_FREIGHTUNITCANCELED
 description: "D Freightunitcanceled"
+semantic_vi: "View D_FREIGHTUNITCANCELED hiển thị các đơn vị vận tải bị hủy bỏ và các đơn hàng vận chuyển liên quan, có ích cho việc phân tích và quản lý hoạt động vận tải."
+keywords:
+  - "freight"
+  - "transportation"
+  - "canceled"
+  - "freight unit"
+  - "transportation order"
+  - "tm-frm"
+  - "sap"
+  - "canceled freight"
+  - "freight management"
+semantic_en: "The D_FREIGHTUNITCANCELED view exposes canceled freight units and their associated transportation orders, useful for analyzing and managing freight operations."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: C_SUPPLIERINVOICEDEX
 description: "Supplier InvoiceDEX"
+semantic_vi: "Supplier InvoiceDEX là một view trích xuất dữ liệu mà lộ diện dữ liệu hóa đơn nhà cung cấp, bao gồm hóa đơn, năm tài chính và mã công ty. Nó được sử dụng để phân tích và báo cáo về hóa đơn nhà cung cấp."
+keywords:
+  - "supplier invoice"
+  - "đơn nhà cung cấp"
+  - "data extraction"
+  - "cds view"
+  - "mm-pur-ana-2cl"
+  - "sourcing & procurement"
+  - "supplier invoice dex"
+  - "lob:sourcing & procurement"
+  - "bo:supplier"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+semantic_en: "Supplier InvoiceDEX is a data extraction view that exposes supplier invoice data, including invoices, fiscal years, and company codes. It is used to analyze and report on supplier invoices."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

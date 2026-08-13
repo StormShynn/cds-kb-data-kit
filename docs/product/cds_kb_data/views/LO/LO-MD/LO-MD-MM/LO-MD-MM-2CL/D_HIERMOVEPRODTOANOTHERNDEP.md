@@ -1,6 +1,19 @@
 ---
 name: D_HIERMOVEPRODTOANOTHERNDEP
 description: "D Hiermoveprodtoanotherndep"
+semantic_vi: "Đại diện cho việc di chuyển hàng hóa theo cấu trúc cấp bậc đến một nút khác trong cấu trúc cấp bậc sản phẩm, được sử dụng để quản lý thay đổi cấu trúc sản phẩm."
+keywords:
+  - "product hierarchy"
+  - "hierarchical move"
+  - "product structure"
+  - "cấu trúc cấp bậc sản phẩm"
+  - "di chuyển hàng hóa"
+  - "sản phẩm"
+  - "cấu trúc sản phẩm"
+  - "sap logistics"
+  - "logistics general"
+  - "lo-md-mm-2cl"
+semantic_en: "Represents a hierarchical move of products to another node in the product hierarchy, used to manage product structure changes."
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

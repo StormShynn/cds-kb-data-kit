@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC3_SCP
 description: "Ddcds Type Enumval Numc 3 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_NUMC3_SCP hiển thị dữ liệu liên quan đến giá trị danh mục với loại số 3 trong Dữ liệu Dictionary của SAP. Nó có thể được sử dụng để lấy hoặc chỉnh sửa các giá trị này trong các ứng dụng ABAP hoặc dựa trên đám mây."
+keywords:
+  - "sap data dictionary"
+  - "ddcds"
+  - "enum value"
+  - "numeric type"
+  - "ddcds type enumval numc 3 scp"
+  - "ddcds type"
+  - "enumval"
+  - "numc 3"
+  - "scp"
+  - "sap basis components"
+  - "basis components"
+  - "component bc-dwb-dic"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_NUMC3_SCP view exposes data related to enumeration values with numeric type 3 in the SAP Data Dictionary. It can be used to retrieve or manipulate these values in ABAP or cloud-based applications."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

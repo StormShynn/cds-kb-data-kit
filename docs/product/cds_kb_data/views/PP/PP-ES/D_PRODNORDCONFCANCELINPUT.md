@@ -1,6 +1,19 @@
 ---
 name: D_PRODNORDCONFCANCELINPUT
 description: "D Prodnordconfcancelinput"
+semantic_vi: "Cung cấp dữ liệu đầu vào để hủy xác nhận sản xuất trong thành phần PP-ES, bao gồm ngày đăng ký, nội dung xác nhận và xác nhận hệ thống bên ngoài."
+keywords:
+  - "production confirmation"
+  - "hủy xác nhận sản xuất"
+  - "posting date"
+  - "ngày đăng ký"
+  - "confirmation text"
+  - "nội dung xác nhận"
+  - "external system confirmation"
+  - "xác nhận hệ thống bên ngoài"
+  - "pp-es"
+  - "sản xuất"
+semantic_en: "Provides input data for cancelling production confirmation in the PP-ES component, including posting date, confirmation text, and external system confirmation."
 app_component: PP-ES
 software_component: SAPSCORE
 release_state: released

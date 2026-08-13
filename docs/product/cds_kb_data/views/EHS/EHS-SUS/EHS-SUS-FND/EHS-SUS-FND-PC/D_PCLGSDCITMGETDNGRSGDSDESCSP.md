@@ -1,6 +1,18 @@
 ---
 name: D_PCLGSDCITMGETDNGRSGDSDESCSP
 description: "D Pclgsdcitmgetdngrsgdsdescsp"
+semantic_vi: "Chứa mô tả nhóm sản phẩm cho hàng hóa downstream trong thành phần EHS-SUS-FND-PC, được sử dụng khi truy xuất thông tin nhóm sản phẩm."
+keywords:
+  - "product group"
+  - "nhóm sản phẩm"
+  - "downstream goods"
+  - "hàng hóa downstream"
+  - "ehs-sus-fnd-pc"
+  - "component"
+  - "cấu phần"
+  - "sap"
+  - "cds view"
+semantic_en: "Exposes product group descriptions for downstream goods in the EHS-SUS-FND-PC component, used when retrieving product group information."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

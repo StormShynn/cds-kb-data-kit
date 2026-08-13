@@ -1,6 +1,19 @@
 ---
 name: D_CALCTDNGRSGDSPTSITMRGLNR
 description: "D Calctdngrsgdsptsitmrglnr"
+semantic_vi: "View D Calctdngrsgdsptsitmrglnr hiển thị dữ liệu tính toán cho điểm vận chuyển hàng nguy hiểm, bao gồm yêu cầu tuân thủ và yếu tố lượng. Nó được sử dụng để xác định các loại vận chuyển và điểm vận chuyển có liên quan cho hàng nguy hiểm."
+keywords:
+  - "dangerous goods"
+  - "hàng nguy hiểm"
+  - "transport point"
+  - "điểm vận chuyển"
+  - "compliance requirement"
+  - "yêu cầu tuân thủ"
+  - "calculation data"
+  - "dữ liệu tính toán"
+  - "sap ehs"
+  - "ehs sus dg"
+semantic_en: "The D Calctdngrsgdsptsitmrglnr view exposes calculation data for dangerous goods transport points, including compliance requirements and quantity factors. It is used to determine the relevant transport categories and points for dangerous goods."
 app_component: EHS-SUS-DG
 software_component: SAPSCORE
 release_state: released

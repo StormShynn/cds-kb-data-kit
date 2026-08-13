@@ -1,6 +1,19 @@
 ---
 name: D_MODPRODSPECADDITEMP
 description: "D Modprodspecadditemp"
+semantic_vi: "View D_MODPRODSPECADDITEMP hiển thị dữ liệu sản phẩm đặc tả cho việc thêm vào sản phẩm đặc tả sửa đổi. Nó được sử dụng khi tạo hoặc cập nhật sản phẩm đặc tả sửa đổi trong thành phần MM-PUR-MPS-2CL."
+keywords:
+  - "modification product specification"
+  - "sản phẩm đặc tả sửa đổi"
+  - "mm-pur-mps-2cl"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "sourcing & procurement"
+  - "item-level"
+  - "component"
+  - "lob"
+semantic_en: "The D_MODPRODSPECADDITEMP view exposes product specification item data for adding to a modification product specification. It is used when creating or updating a modification product specification in the MM-PUR-MPS-2CL component."
 app_component: MM-PUR-MPS-2CL
 software_component: SAPSCORE
 release_state: released

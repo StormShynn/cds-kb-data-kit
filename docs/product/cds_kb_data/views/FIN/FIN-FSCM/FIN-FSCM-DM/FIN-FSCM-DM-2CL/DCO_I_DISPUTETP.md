@@ -1,6 +1,19 @@
 ---
 name: /DCO/I_DISPUTETP
 description: "Disputetp"
+semantic_vi: "View Disputetp hiển thị dữ liệu khiếu nại thu hồi nợ, bao gồm trạng thái khiếu nại, mức độ ưu tiên và lý do tăng cấp, có thể được sử dụng để theo dõi và quản lý khiếu nại trong quá trình thu hồi nợ."
+keywords:
+  - "dispute"
+  - "debt collection"
+  - "disputetp"
+  - "fin-fscm-dm-2cl"
+  - "financial services"
+  - "dịch vụ tài chính"
+  - "thu hồi nợ"
+  - "khiếu nại"
+  - "trạng thái khiếu nại"
+  - "tăng cấp khiếu nại"
+semantic_en: "The Disputetp view exposes debt collection dispute data, including dispute status, priority, and escalation reasons, which can be used to track and manage disputes in the debt collection process."
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: C_CHANGERECORDPRODUCTITEMDEX
 description: "Change RecordPRODUCTITEMDEX"
+semantic_vi: "View Change Record PRODUCTITEMDEX cung cấp dữ liệu chi tiết về các thay đổi sản phẩm trong ứng dụng thành phần PLM-CR-2CL. Nó được sử dụng để trích xuất và phân tích các thay đổi sản phẩm."
+keywords:
+  - "change record"
+  - "product item"
+  - "plm-cr-2cl"
+  - "product lifecycle management"
+  - "thay đổi sản phẩm"
+  - "sản phẩm"
+  - "quản lý vòng đời sản phẩm"
+  - "trích xuất dữ liệu"
+  - "phân tích dữ liệu"
+semantic_en: "The Change Record PRODUCTITEMDEX view provides item-level data for change records in the PLM-CR-2CL application component. It is used to extract and analyze product item changes."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

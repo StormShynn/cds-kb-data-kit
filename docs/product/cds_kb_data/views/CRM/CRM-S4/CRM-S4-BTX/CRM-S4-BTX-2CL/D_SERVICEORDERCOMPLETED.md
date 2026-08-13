@@ -1,6 +1,18 @@
 ---
 name: D_SERVICEORDERCOMPLETED
 description: "D Service OrderCOMPLETED"
+semantic_vi: "View D_SERVICEORDERCOMPLETED hiển thị dữ liệu đơn đặt hàng dịch vụ đã hoàn thành, có thể được sử dụng để theo dõi trạng thái đơn đặt hàng dịch vụ trong hệ thống CRM."
+keywords:
+  - "service order"
+  - "đơn đặt hàng dịch vụ"
+  - "crm"
+  - "service order completed"
+  - "d_serviceordercompleted"
+  - "completed service order"
+  - "service order status"
+  - "đơn đặt hàng dịch vụ đã hoàn thành"
+  - "crm system"
+semantic_en: "The D_SERVICEORDERCOMPLETED CDS view exposes completed service order data, which can be used to track the status of service orders in the CRM system."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

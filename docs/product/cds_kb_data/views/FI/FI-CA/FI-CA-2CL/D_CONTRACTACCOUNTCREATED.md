@@ -1,6 +1,18 @@
 ---
 name: D_CONTRACTACCOUNTCREATED
 description: "D Contractaccountcreated"
+semantic_vi: "View D_CONTRACTACCOUNTCREATED hiển thị dữ liệu tạo tài khoản hợp đồng, có thể sử dụng để theo dõi và phân tích sự kiện tạo tài khoản hợp đồng."
+keywords:
+  - "contract account creation"
+  - "tạo tài khoản hợp đồng"
+  - "fi-ca"
+  - "fi"
+  - "finance"
+  - "contract"
+  - "account"
+  - "created"
+  - "lob:finance"
+semantic_en: "The D_CONTRACTACCOUNTCREATED view exposes contract account creation data, which can be used to track and analyze contract account creation events."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

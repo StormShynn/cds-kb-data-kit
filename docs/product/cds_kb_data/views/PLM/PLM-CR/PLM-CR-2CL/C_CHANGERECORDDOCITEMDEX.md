@@ -1,6 +1,19 @@
 ---
 name: C_CHANGERECORDDOCITEMDEX
 description: "Change RecordDOCITEMDEX"
+semantic_vi: "View Change RecordDOCITEMDEX hiển thị dữ liệu chi tiết về các mục trong các bản ghi thay đổi trong PLM-CR-2CL, cho phép các nhà phát triển trích xuất và phân tích các mục cụ thể trong các bản ghi thay đổi."
+keywords:
+  - "change record"
+  - "đơn thay đổi"
+  - "plm-cr-2cl"
+  - "item-level"
+  - "data extraction"
+  - "thay đổi"
+  - "plm"
+  - "cr"
+  - "item"
+  - "dữ liệu"
+semantic_en: "The Change RecordDOCITEMDEX view exposes item-level data for change records in PLM-CR-2CL, allowing developers to extract and analyze specific items within change records."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

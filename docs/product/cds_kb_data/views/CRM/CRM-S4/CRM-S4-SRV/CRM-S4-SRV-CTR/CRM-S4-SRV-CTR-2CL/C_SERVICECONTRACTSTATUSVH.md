@@ -1,6 +1,18 @@
 ---
 name: C_SERVICECONTRACTSTATUSVH
 description: "Servicecontractstatusvh"
+semantic_vi: "Cung cấp danh sách trạng thái hợp đồng dịch vụ để sử dụng trong ứng dụng CRM, chẳng hạn như hiển thị hoặc lọc hợp đồng dịch vụ theo trạng thái."
+keywords:
+  - "service contract"
+  - "hợp đồng dịch vụ"
+  - "crm"
+  - "status"
+  - "trạng thái"
+  - "service contract status"
+  - "trạng thái hợp đồng dịch vụ"
+  - "sap"
+  - "crm-s4-srv-ctr-2cl"
+semantic_en: "Provides a list of service contract statuses for use in CRM applications, such as displaying or filtering service contracts by status."
 app_component: CRM-S4-SRV-CTR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_PRFTCTRCHANGEVALIDITYPERIODP
 description: "D Prftctrchangevalidityperiodp"
+semantic_vi: "View D_PRFTCTRCHANGEVALIDITYPERIODP cung cấp dữ liệu về khoảng thời gian có hiệu lực của thay đổi trung tâm lợi nhuận, có thể được sử dụng khi phân tích hoặc báo cáo về các thay đổi trong cài đặt trung tâm lợi nhuận theo thời gian."
+keywords:
+  - "profit center"
+  - "thay đổi trung tâm lợi nhuận"
+  - "validity period"
+  - "khoảng thời gian có hiệu lực"
+  - "change management"
+  - "quản lý thay đổi"
+  - "sap cds"
+  - "cds view"
+  - "ekko"
+  - "eca-pca-md-2cl"
+semantic_en: "The D_PRFTCTRCHANGEVALIDITYPERIODP view provides data on the validity period of profit center changes, which can be used when analyzing or reporting on changes to profit center settings over time."
 app_component: EC-PCA-MD-2CL
 software_component: SAPSCORE
 release_state: released

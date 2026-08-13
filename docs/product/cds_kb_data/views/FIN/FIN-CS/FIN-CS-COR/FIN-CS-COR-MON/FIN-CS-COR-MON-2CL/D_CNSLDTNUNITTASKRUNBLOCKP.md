@@ -1,6 +1,18 @@
 ---
 name: D_CNSLDTNUNITTASKRUNBLOCKP
 description: "D Cnsldtnunittaskrunblockp"
+semantic_vi: "Cung cấp dữ liệu trạng thái khối chạy nhiệm vụ đơn vị hợp nhất tài chính, được sử dụng để xác định xem một nhiệm vụ chạy có bị chặn bởi yêu cầu người dùng hay không."
+keywords:
+  - "consolidation"
+  - "financial consolidation"
+  - "task run"
+  - "block status"
+  - "consolidation unit"
+  - "consolidation task"
+  - "fiscal year"
+  - "fiscal period"
+  - "user request"
+semantic_en: "Provides consolidation unit task run block status data for financial consolidation, used to determine if a task run is blocked upon user request."
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

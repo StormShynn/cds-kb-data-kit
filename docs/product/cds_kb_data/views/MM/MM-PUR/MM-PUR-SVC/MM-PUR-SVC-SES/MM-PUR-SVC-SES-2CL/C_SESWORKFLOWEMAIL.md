@@ -1,6 +1,20 @@
 ---
 name: C_SESWORKFLOWEMAIL
 description: "Sesworkflowemail"
+semantic_vi: "View C_SESWORKFLOWEMAIL hiển thị dữ liệu liên quan đến email cho các nhiệm vụ luồng làm việc trong quá trình cung cấp và mua sắm, chẳng hạn như các bình luận về nhiệm vụ và đơn đặt hàng mua hàng liên quan."
+keywords:
+  - "workflow"
+  - "email"
+  - "sourcing"
+  - "procurement"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "nhiệm vụ luồng làm việc"
+  - "cung cấp"
+  - "mua sắm"
+  - "task comment"
+  - "ekko"
+semantic_en: "The C_SESWORKFLOWEMAIL view exposes email-related data for workflow tasks in the sourcing and procurement process, such as task comments and associated purchase orders."
 app_component: MM-PUR-SVC-SES-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_FREIGHTBOOKINGCREATEP
 description: "D Freightbookingcreatep"
+semantic_vi: "View D Freightbookingcreatep hiển thị dữ liệu đơn hàng vận chuyển cho đặt hàng vận tải, có thể sử dụng khi tạo hoặc quản lý đặt hàng vận tải trong thành phần TM-FRM-2CL."
+keywords:
+  - "freight booking"
+  - "đặt hàng vận tải"
+  - "transportation order"
+  - "đơn hàng vận chuyển"
+  - "tm-frm-2cl"
+  - "sap"
+  - "cds view"
+  - "view"
+  - "transportation"
+  - "freight"
+semantic_en: "The D Freightbookingcreatep view exposes transportation order data for freight bookings, which can be used when creating or managing freight bookings in the TM-FRM-2CL component."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

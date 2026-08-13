@@ -1,6 +1,18 @@
 ---
 name: D_CREDITMEMOREQUESTDELETED
 description: "D Creditmemorequestdeleted"
+semantic_vi: "View D_CREDITMEMOREQUESTDELETED hiển thị dữ liệu yêu cầu giảm giá đã xóa, có thể sử dụng để theo dõi và phân tích yêu cầu giảm giá đã xóa trong quá trình bán hàng."
+keywords:
+  - "credit memo request"
+  - "yêu cầu giảm giá"
+  - "sales process"
+  - "quá trình bán hàng"
+  - "deleted data"
+  - "dữ liệu đã xóa"
+  - "sap sales"
+  - "bán hàng sap"
+  - "sd-sls-cmr-2cl"
+semantic_en: "The D_CREDITMEMOREQUESTDELETED view exposes deleted credit memo requests data, which can be used to track and analyze deleted credit memo requests in the sales process."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

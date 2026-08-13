@@ -1,6 +1,19 @@
 ---
 name: D_SLSSCHEDGAGREEMENTCHANGED
 description: "D Slsschedgagreementchanged"
+semantic_vi: "View này hiển thị các sự kiện thay đổi thỏa thuận lịch trình bán hàng, có thể được sử dụng để theo dõi các thay đổi trong thỏa thuận lịch trình bán hàng theo thời gian."
+keywords:
+  - "sales schedule agreement"
+  - "thỏa thuận lịch trình bán hàng"
+  - "schedule agreement change"
+  - "sự kiện thay đổi thỏa thuận"
+  - "sales organization"
+  - "sales schedule"
+  - "agreement change"
+  - "thay đổi thỏa thuận"
+  - "sales schedule agreement change event"
+  - "sự kiện thay đổi thỏa thuận lịch trình bán hàng"
+semantic_en: "This view exposes sales schedule agreement change events, which can be used to track changes to sales schedule agreements over time."
 app_component: SD-SLS-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

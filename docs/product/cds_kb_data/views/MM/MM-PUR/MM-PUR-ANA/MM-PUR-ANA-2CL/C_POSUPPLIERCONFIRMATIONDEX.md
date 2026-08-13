@@ -1,6 +1,21 @@
 ---
 name: C_POSUPPLIERCONFIRMATIONDEX
 description: "Posupplierconfirmationdex"
+semantic_vi: "View C_POSUPPLIERCONFIRMATIONDEX hiển thị dữ liệu xác nhận nhà cung cấp cho đơn đặt hàng mua hàng, bao gồm số lượng được xác nhận và chi tiết giao hàng. Nó được sử dụng để phân tích và báo cáo về xác nhận nhà cung cấp cho mục đích mua sắm và nguồn cung cấp."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "supplier confirmation"
+  - "xác nhận nhà cung cấp"
+  - "delivery details"
+  - "chi tiết giao hàng"
+  - "procurement"
+  - "mua sắm"
+  - "sourcing"
+  - "nguồn cung cấp"
+  - "sap mm"
+  - "sap mm-pur"
+semantic_en: "The C_POSUPPLIERCONFIRMATIONDEX view exposes supplier confirmation data for purchase orders, including confirmed quantities and delivery details. It is used to analyze and report on supplier confirmations for procurement and sourcing purposes."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

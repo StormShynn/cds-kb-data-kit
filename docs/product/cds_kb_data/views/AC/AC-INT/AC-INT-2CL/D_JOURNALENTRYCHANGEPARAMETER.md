@@ -1,6 +1,19 @@
 ---
 name: D_JOURNALENTRYCHANGEPARAMETER
 description: "D Journal EntryCHANGEPARAMETER"
+semantic_vi: "View D_JOURNALENTRYCHANGEPARAMETER hiển thị các tham số thay đổi cho journal entry, được sử dụng để theo dõi các thay đổi được thực hiện trên journal entries trong hệ thống. Nó hữu ích cho các nhà phát triển cần truy cập và quản lý dữ liệu journal entry."
+keywords:
+  - "journal entry"
+  - "journal entry change"
+  - "journal entry data"
+  - "sap cds view"
+  - "d journalearntrychangeparameter"
+  - "journal entry parameters"
+  - "journal entry tracking"
+  - "đơn đăng ký"
+  - "đơn đăng ký thay đổi"
+  - "dữ liệu đơn đăng ký"
+semantic_en: "The D_JOURNALENTRYCHANGEPARAMETER view exposes journal entry change parameters, which are used to track changes made to journal entries in the system. It is useful for developers who need to access and manage journal entry data."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

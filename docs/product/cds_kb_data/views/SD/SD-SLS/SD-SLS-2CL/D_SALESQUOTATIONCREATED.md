@@ -1,6 +1,18 @@
 ---
 name: D_SALESQUOTATIONCREATED
 description: "D Salesquotationcreated"
+semantic_vi: "View D_SALESQUOTATIONCREATED hiển thị các sự kiện tạo đơn giá bán, cung cấp dữ liệu về khi và cách tạo đơn giá bán trong hệ thống. Nó có thể được sử dụng để phân tích các mẫu tạo đơn giá bán và tối ưu hóa quy trình bán hàng."
+keywords:
+  - "sales quotation"
+  - "đơn giá bán"
+  - "sales quotation creation"
+  - "tạo đơn giá bán"
+  - "sales process"
+  - "quy trình bán hàng"
+  - "sap sales"
+  - "sales and distribution"
+  - "sd-sls-2cl"
+semantic_en: "The D_SALESQUOTATIONCREATED view exposes sales quotation creation events, providing data on when and how sales quotations are generated in the system. It can be used to analyze sales quotation creation patterns and optimize sales processes."
 app_component: SD-SLS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_DNGRSGDSCLASSFCTNGETDESCSR
 description: "D Dngrsgdsclassfctngetdescsr"
+semantic_vi: "Chứa dữ liệu phương thức vận chuyển hàng nguy hiểm và mô tả cho yêu cầu hoàn thiện tài liệu. Sử dụng để lấy phương thức vận chuyển và mô tả cho yêu cầu hoàn thiện tài liệu trong EHS-SUS-DG."
+keywords:
+  - "dangerous goods"
+  - "mode of transport"
+  - "document completion request"
+  - "ehs-sus-dg"
+  - "completion request"
+  - "transport mode"
+  - "description"
+  - "hàng nguy hiểm"
+  - "phương thức vận chuyển"
+  - "yêu cầu hoàn thiện tài liệu"
+semantic_en: "Exposes dangerous goods mode of transport and description data for document completion requests. Used to retrieve transport mode and description for document completion requests in EHS-SUS-DG."
 app_component: EHS-SUS-DG
 software_component: SAPSCORE
 release_state: released

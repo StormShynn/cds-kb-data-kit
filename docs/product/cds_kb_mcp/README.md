@@ -335,7 +335,21 @@ Parse DDL with `@abaplint/core` CDSParser. Returns soft diagnostics (`ok` / `par
 
 ### 12. `propose_query_library_entry`
 
-Build a JSON snippet + markdown PR body for `index/query-library.json`. With `GITHUB_TOKEN` + `CDS_KB_PROPOSE_REPO=owner/name`, opens a **draft** PR on `propose/query-*` (never merges). On API failure, still returns the local snippet.
+Build a JSON snippet + markdown PR body for `docs/product/cds_kb_data/index/query-library.json`
+(override with `CDS_KB_PROPOSE_PATH`). With `GITHUB_TOKEN` + `CDS_KB_PROPOSE_REPO=owner/name`,
+opens a **draft** PR on `propose/query-*` (never merges). On API failure, still returns the local snippet.
+
+The Query Builder page also has **Propose to shared library** (opens a GitHub Issue via
+`.github/ISSUE_TEMPLATE/query-library-proposal.yml`) and **Export local saves** for bundle proposals —
+no GitHub token required in the browser.
+
+Offline seeding: in `cds_kb_data`, run `npm run seed-query-proposals` to write
+`index/query-proposals.json` from usage-stats + a starter catalog; optional `--promote N`
+appends into `query-library.json`, then `npm run sync-query-library-embed` refreshes `DATA.L`.
+
+Anonymous query-**shape** telemetry (opt-in): set `CDS_KB_SHAPE_TELEMETRY=1` on MCP (and keep
+`CDS_KB_USAGE_ENDPOINT` pointing at `/ping`); the collector also accepts browser opt-in pings on
+`/ping-shapes`. Pull with `npm run pull-query-shapes` in the data tree.
 
 ### 13. `view_changelog`
 
@@ -357,7 +371,7 @@ Search the shared saved-query list (`index/query-library.json`) by title, descri
 | `query` | string | ✓ | Search text — title words, CDS view name, or business intent |
 | `limit` | int 1-50 | optional | Default 10 |
 
-To add an entry: `propose_query_library_entry` → review the draft PR → merge adds it to the library (then hand-sync the Query Builder page's embedded library — `query-builder.html` is the source of truth; the `generate-query-builder` generator is deprecated).
+To add an entry: Query Builder **Propose** / MCP `propose_query_library_entry` → review Issue or draft PR → merge → `npm run sync-query-library-embed` (do not run the stale generator). Offline: `npm run seed-query-proposals` writes `index/query-proposals.json` for curation.
 
 ---
 

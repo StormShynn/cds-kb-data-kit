@@ -1,0 +1,60 @@
+name: Query library proposal
+description: Propose a curated query shape or custom CDS snippet for the shared library
+title: "Query library: "
+labels: ["query-library"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing a reusable CDS query sample or curated custom CDS snippet.
+        Maintainers will review before merging into the shared library.
+        Do **not** include customer data or system-specific literals in WHERE clauses.
+        Public library policy (C4): both **query shapes** and **curated CDS snippets** are welcome after review.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Proposal kind
+      description: Query shape → query-library.json entry. CDS snippet → curated custom DDL/excerpt (scrubbed).
+      options:
+        - query
+        - cds
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Short, searchable title (also used in the Query Builder list for query shapes)
+      placeholder: Open purchase orders
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One or two sentences on what the query or CDS snippet answers
+    validations:
+      required: true
+  - type: input
+    id: contributor
+    attributes:
+      label: Contributor
+      description: Name or handle (optional)
+  - type: textarea
+    id: json
+    attributes:
+      label: Query JSON object (kind = query)
+      description: Paste the object from Query Builder → Generate JSON / Propose (single object, trailing comma OK). Leave blank for CDS-only proposals.
+      render: json
+  - type: textarea
+    id: cds_snippet
+    attributes:
+      label: CDS snippet (kind = cds)
+      description: Scrubbed custom CDS DDL / excerpt only — no tenant literals, credentials, or hostnames. Leave blank for query-shape proposals.
+      render: abap
+  - type: textarea
+    id: notes
+    attributes:
+      label: Reviewer notes
+      description: Anything else (module, caveats, why this is reusable)

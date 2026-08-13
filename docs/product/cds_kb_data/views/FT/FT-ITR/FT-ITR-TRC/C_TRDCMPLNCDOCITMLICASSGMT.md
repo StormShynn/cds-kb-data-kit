@@ -1,6 +1,19 @@
 ---
 name: C_TRDCMPLNCDOCITMLICASSGMT
 description: "Trdcmplncdocitmlicassgmt"
+semantic_vi: "View CDS Trdcmplncdocitmlicassgmt hiển thị các bản phân phối giấy tờ liên quan đến thương mại, có liên quan đến việc quản lý giấy phép thương mại và tài liệu liên quan."
+keywords:
+  - "trade compliance"
+  - "trung gian thương mại"
+  - "license assignment"
+  - "phân phối giấy phép"
+  - "document item"
+  - "đối tượng tài liệu"
+  - "company code"
+  - "mã công ty"
+  - "legal regulation"
+  - "quy định pháp luật"
+semantic_en: "The Trdcmplncdocitmlicassgmt CDS view exposes trade compliance document item license assignments, which are relevant when managing trade compliance licenses and their associated documents."
 app_component: FT-ITR-TRC
 software_component: SAPSCORE
 release_state: released

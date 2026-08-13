@@ -1,6 +1,19 @@
 ---
 name: D_LGLTRANSCANCELTSKGRPP
 description: "D Lgltranscanceltskgrpp"
+semantic_vi: "View D_LGLTRANSCANCELTSKGRPP hiển thị các bản ghi nhóm nhiệm vụ bị hủy bỏ cho các giao dịch pháp lý, có thể được sử dụng để theo dõi và quản lý các nhiệm vụ bị hủy bỏ trong một luồng làm việc."
+keywords:
+  - "legal transaction"
+  - "giao dịch pháp lý"
+  - "cancelled task"
+  - "nhiệm vụ bị hủy bỏ"
+  - "workflow"
+  - "luồng làm việc"
+  - "task group"
+  - "nhóm nhiệm vụ"
+  - "sap"
+  - "cm-lt-2cl"
+semantic_en: "The D_LGLTRANSCANCELTSKGRPP view exposes cancelled task group records for legal transactions, which can be used to track and manage cancelled tasks in a workflow."
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

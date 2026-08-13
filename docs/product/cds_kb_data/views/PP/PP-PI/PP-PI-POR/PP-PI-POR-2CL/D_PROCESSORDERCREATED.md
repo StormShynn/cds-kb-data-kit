@@ -1,6 +1,20 @@
 ---
 name: D_PROCESSORDERCREATED
 description: "D Processordercreated"
+semantic_vi: "View D_ProcessOrderCreated hiển thị dữ liệu tạo đơn đặt hàng quy trình, có liên quan khi theo dõi việc khởi tạo quy trình sản xuất trong bối cảnh sản xuất."
+keywords:
+  - "process order"
+  - "đơn đặt hàng quy trình"
+  - "manufacturing order"
+  - "sản xuất"
+  - "production plant"
+  - "trạm sản xuất"
+  - "sap pp"
+  - "pp-pi"
+  - "pp-pi-por"
+  - "component:pp-pi-por-2cl"
+  - "lob:manufacturing"
+semantic_en: "The D_ProcessOrderCreated view exposes process order creation data, which is relevant when tracking the initiation of production processes in a manufacturing context."
 app_component: PP-PI-POR-2CL
 software_component: SAPSCORE
 release_state: released

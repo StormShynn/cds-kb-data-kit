@@ -1,6 +1,18 @@
 ---
 name: D_ENTPROJENTPROJELMNTCHGD
 description: "D Entprojentprojelmntchgd"
+semantic_vi: "View D_ENTPROJENTPROJELMNTCHGD hiển thị dữ liệu lịch sử thay đổi của phần tử dự án, có thể được sử dụng để theo dõi các thay đổi được thực hiện đối với phần tử dự án qua thời gian."
+keywords:
+  - "project element"
+  - "project element change history"
+  - "dự án"
+  - "phần tử dự án"
+  - "lịch sử thay đổi"
+  - "ppm"
+  - "ppm-scl-str"
+  - "project management"
+  - "quản lý dự án"
+semantic_en: "The D_ENTPROJENTPROJELMNTCHGD view exposes project element change history data, which can be used to track changes made to project elements over time."
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,17 @@
 ---
 name: APIHUB_ANALYTICALQUERY
 description: "Apihub Analyticalquery"
+semantic_vi: "View APIHUB_ANALYTICALQUERY hiển thị dữ liệu phân tích liên quan đến API hub, hữu ích cho các nhà phát triển cần phân tích hiệu suất và sử dụng API hub."
+keywords:
+  - "api hub"
+  - "analytical query"
+  - "api performance"
+  - "api usage"
+  - "apihub analyticalquery"
+  - "ca-gtf-gem"
+  - "cross-application components"
+  - "sap cds view"
+semantic_en: "The Apihub Analyticalquery view exposes analytical data for API hub-related business processes, useful for developers who need to analyze API hub performance and usage."
 app_component: CA-GTF-GEM
 software_component: INFRA_HOME
 release_state: released

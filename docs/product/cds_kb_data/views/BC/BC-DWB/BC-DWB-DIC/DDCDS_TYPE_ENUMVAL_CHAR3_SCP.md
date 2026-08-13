@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR3_SCP
 description: "Ddcds Type Enumval Char 3 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_CHAR3_SCP cung cấp dữ liệu về loại dữ liệu SAP, cụ thể là giá trị danh mục ký tự có chiều dài 3. Nó được sử dụng để truy cập và thao tác với loại dữ liệu này trong phát triển ABAP và đám mây."
+keywords:
+  - "sap data type"
+  - "character type"
+  - "enumeration value"
+  - "ddcds"
+  - "abap"
+  - "cloud development"
+  - "sap cds"
+  - "data type"
+  - "danh mục ký tự"
+  - "giá trị danh mục"
+  - "loại dữ liệu"
+  - "ddcds_type_enumval_char3_scp"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_CHAR3_SCP view provides data about SAP data types, specifically character type enumeration values with a length of 3. It is used to access and manipulate these data types in ABAP and cloud development."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

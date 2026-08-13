@@ -1,6 +1,21 @@
 ---
 name: C_CH_ELECTRONICDOCTYPETEXTVH
 description: "CH Electronicdoctypetextvh"
+semantic_vi: "View CH Electronicdoctypetextvh cung cấp danh sách các loại tài liệu điện tử và mô tả văn bản tương ứng, có thể được sử dụng để lọc hoặc hiển thị các loại tài liệu điện tử trong các ứng dụng kinh doanh khác nhau."
+keywords:
+  - "electronic document"
+  - "document type"
+  - "text description"
+  - "value help"
+  - "ca-gtf-csc-edo-ch"
+  - "cross-application components"
+  - "lob:cross-application components"
+  - "ca-gtf"
+  - "ca-gtf-csc"
+  - "consumption-view"
+  - "text"
+  - "component:ca-gtf-csc-edo-ch"
+semantic_en: "The CH Electronicdoctypetextvh view provides a list of electronic document types and their corresponding text descriptions, which can be used to filter or display electronic document types in various business applications."
 app_component: CA-GTF-CSC-EDO-CH
 software_component: SAPSCORE
 release_state: released

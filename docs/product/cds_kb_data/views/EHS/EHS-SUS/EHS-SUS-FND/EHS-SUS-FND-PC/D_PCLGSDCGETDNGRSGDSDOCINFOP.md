@@ -1,6 +1,19 @@
 ---
 name: D_PCLGSDCGETDNGRSGDSDOCINFOP
 description: "D Pclgsdcgetdngrsgdsdocinfop"
+semantic_vi: "Cung cấp thông tin về tài liệu giao hàng cho EHS-SUS-FND-PC, được sử dụng khi truy xuất tài liệu giao hàng."
+keywords:
+  - "goods delivery"
+  - "giao hàng"
+  - "document information"
+  - "thông tin tài liệu"
+  - "ehs-sus-fnd-pc"
+  - "ekko"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "supply chain"
+  - "chuỗi cung ứng"
+semantic_en: "Provides document information for goods delivery in EHS-SUS-FND-PC component, used when retrieving goods delivery documents."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

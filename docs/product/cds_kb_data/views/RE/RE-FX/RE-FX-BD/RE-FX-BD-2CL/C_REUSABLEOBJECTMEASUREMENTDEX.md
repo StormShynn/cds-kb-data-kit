@@ -1,6 +1,21 @@
 ---
 name: C_REUSABLEOBJECTMEASUREMENTDEX
 description: "Reusableobjectmeasurementdex"
+semantic_vi: "Chứa dữ liệu đo lường đối tượng tái sử dụng, có thể sử dụng để theo dõi và phân tích đo lường của các đối tượng bất động sản qua thời gian."
+keywords:
+  - "reusable object"
+  - "measurement data"
+  - "real estate object"
+  - "data extraction"
+  - "consumption view"
+  - "sap cds view"
+  - "re-fx-bd-2cl"
+  - "đối tượng tái sử dụng"
+  - "dữ liệu đo lường"
+  - "đối tượng bất động sản"
+  - "xuất dữ liệu"
+  - "trình xem dữ liệu"
+semantic_en: "Exposes reusable object measurement data, which can be used to track and analyze measurements of real estate objects over time."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: C_SALESORGANIZATIONDEX
 description: "Sales OrganizationDEX"
+semantic_vi: "View Sales OrganizationDEX cung cấp dữ liệu về các tổ chức bán hàng, bao gồm các loại tiền tệ, khách hàng thanh toán, mã công ty, quốc gia và biến thể năm tài chính. Nó được sử dụng để trích xuất và phân tích dữ liệu tổ chức bán hàng."
+keywords:
+  - "sales organization"
+  - "tổ chức bán hàng"
+  - "sales organization data"
+  - "dữ liệu tổ chức bán hàng"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+  - "sap sd"
+  - "sap sd-ana"
+  - "sales organization currency"
+  - "tiền tệ tổ chức bán hàng"
+semantic_en: "The Sales OrganizationDEX view provides data about sales organizations, including their currencies, billing customers, company codes, countries, and fiscal year variants. It is used to extract and analyze sales organization data."
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

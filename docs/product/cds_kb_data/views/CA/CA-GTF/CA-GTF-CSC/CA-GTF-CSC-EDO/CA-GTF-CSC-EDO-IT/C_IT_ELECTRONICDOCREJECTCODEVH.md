@@ -1,6 +1,21 @@
 ---
 name: C_IT_ELECTRONICDOCREJECTCODEVH
 description: "IT Electronicdocrejectcodevh"
+semantic_vi: "View CDS IT Electronicdocrejectcodevh cung cấp mã từ chối tài liệu điện tử và văn bản tương ứng trong các ngôn ngữ khác nhau. Nó được sử dụng để lấy mã từ chối cho tài liệu điện tử."
+keywords:
+  - "electronic document"
+  - "rejection code"
+  - "language"
+  - "text"
+  - "sap cds view"
+  - "cds view"
+  - "electronic document rejection code"
+  - "tài liệu điện tử"
+  - "mã từ chối"
+  - "ngôn ngữ"
+  - "tên"
+  - "sap"
+semantic_en: "The IT Electronicdocrejectcodevh CDS view provides electronic document rejection codes and their corresponding text in different languages. It is used to retrieve rejection codes for electronic documents."
 app_component: CA-GTF-CSC-EDO-IT
 software_component: SAPSCORE
 release_state: released

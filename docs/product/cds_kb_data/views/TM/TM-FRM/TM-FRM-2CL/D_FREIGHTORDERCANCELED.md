@@ -1,6 +1,16 @@
 ---
 name: D_FREIGHTORDERCANCELED
 description: "D Freightordercanceled"
+semantic_vi: "View D_FREIGHTORDERCANCELED hiển thị các đơn hàng vận chuyển bị hủy bỏ và chi tiết liên quan, hữu ích cho việc theo dõi và phân tích các đơn hàng vận chuyển bị hủy bỏ."
+keywords:
+  - "freight order"
+  - "đơn hàng vận chuyển"
+  - "canceled shipment"
+  - "đơn hàng vận chuyển bị hủy bỏ"
+  - "transportation order"
+  - "sap tm"
+  - "tm-frm-2cl"
+semantic_en: "The D_FREIGHTORDERCANCELED view exposes canceled freight orders and their associated details, useful for tracking and analyzing canceled shipments."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: D_BOMCOMPAREBOMCOMPONENTSP
 description: "D Bomcomparebomcomponentsp"
+semantic_vi: "View này hiển thị dữ liệu so sánh BOM, bao gồm các thành phần BOM chính và phụ, cho việc sử dụng trong logistics và quản lý vật liệu."
+keywords:
+  - "bom"
+  - "component"
+  - "logistics"
+  - "material management"
+  - "sap"
+  - "cds view"
+  - "bom comparison"
+  - "lo"
+  - "lo-md"
+  - "lo-md-bom"
+  - "lob:logistics general"
+semantic_en: "This view exposes BOM comparison data, including primary and secondary BOM components, for use in logistics and material management."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

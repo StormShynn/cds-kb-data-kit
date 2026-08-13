@@ -1,6 +1,21 @@
 ---
 name: C_SUPLREVALBYQUALITYCUBE
 description: "Suplrevalbyqualitycube"
+semantic_vi: "View Suplrevalbyqualitycube cung cấp dữ liệu về đánh giá nhà cung cấp theo khối lượng chất lượng, bao gồm các tài liệu liên quan và lô kiểm tra, cho mục đích phân tích nguồn cung và quản lý chi phí."
+keywords:
+  - "supplier evaluation"
+  - "quality cube"
+  - "inspection lot"
+  - "purchase order"
+  - "đánh giá nhà cung cấp"
+  - "khối lượng chất lượng"
+  - "lô kiểm tra"
+  - "đơn mua hàng"
+  - "sourcing and procurement"
+  - "thiết bị kiểm tra"
+  - "sourcing"
+  - "procurement"
+semantic_en: "The Suplrevalbyqualitycube view provides data on supplier evaluations by quality cube, including relevant documents and inspection lots, for use in sourcing and procurement analytics."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

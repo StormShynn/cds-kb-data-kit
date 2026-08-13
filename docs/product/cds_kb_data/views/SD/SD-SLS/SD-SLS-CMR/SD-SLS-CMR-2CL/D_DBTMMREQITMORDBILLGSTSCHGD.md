@@ -1,6 +1,19 @@
 ---
 name: D_DBTMMREQITMORDBILLGSTSCHGD
 description: "D Dbtmmreqitmordbillgstschgd"
+semantic_vi: "View D_DBTMMREQITMORDBILLGSTSCHGD hiển thị các thay đổi trạng thái hóa đơn liên quan đến yêu cầu giảm giá đơn hàng, có thể được sử dụng để theo dõi các thay đổi trạng thái hóa đơn cho yêu cầu giảm giá trong bán hàng và phân phối."
+keywords:
+  - "debit memo request"
+  - "thay đổi trạng thái hóa đơn"
+  - "sales and distribution"
+  - "sự kiện giảm giá"
+  - "trạng thái hóa đơn liên quan"
+  - "yêu cầu giảm giá"
+  - "đơn hàng giảm giá"
+  - "đơn mua hàng"
+  - "ekko"
+  - "sự kiện giảm giá đơn hàng"
+semantic_en: "The D_DBTMMREQITMORDBILLGSTSCHGD view exposes debit memo request item order-related billing status changes, which can be used to track changes in billing status for debit memo requests in sales and distribution."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

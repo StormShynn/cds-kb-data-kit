@@ -1,6 +1,20 @@
 ---
 name: C_CHANGERECORDDEX_2
 description: "Change RecordDEX 2"
+semantic_vi: "View Change RecordDEX 2 hiển thị một bộ sưu tập các bản ghi thay đổi, được sử dụng để theo dõi các thay đổi được thực hiện đối với dữ liệu sản phẩm trong hệ thống PLM. Nó được sử dụng để trích xuất và phân tích các bản ghi thay đổi cho mục đích tiêu thụ dữ liệu và báo cáo."
+keywords:
+  - "change record"
+  - "thay đổi"
+  - "plm"
+  - "plm-cr"
+  - "data extraction"
+  - "change record dex"
+  - "component:plm-cr-2cl"
+  - "lob:other"
+  - "product data"
+  - "sản phẩm"
+  - "thay đổi dữ liệu"
+semantic_en: "The Change RecordDEX 2 view exposes a collection of change records, which are used to track changes made to product data in the PLM system. It is used to extract and analyze change records for data consumption and reporting purposes."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

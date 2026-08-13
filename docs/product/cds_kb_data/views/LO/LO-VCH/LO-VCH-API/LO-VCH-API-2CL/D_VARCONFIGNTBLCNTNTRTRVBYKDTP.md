@@ -1,6 +1,20 @@
 ---
 name: D_VARCONFIGNTBLCNTNTRTRVBYKDTP
 description: "D Varconfigntblcntntrtrvbykdtp"
+semantic_vi: "View này hiển thị nội dung bảng cấu hình biến theo ngày khóa cho các giao dịch Logistics General. Nó được sử dụng để lấy dữ liệu cấu hình biến cho một ngày cụ thể."
+keywords:
+  - "logistics general"
+  - "variable configuration"
+  - "cấu hình biến"
+  - "transactional data"
+  - "data retrieval"
+  - "lo"
+  - "lo-vch"
+  - "lo-vch-api"
+  - "transactional processing"
+  - "cấu hình"
+  - "ngày khóa"
+semantic_en: "This view exposes variable configuration table content by key date for Logistics General transactions. It is used to retrieve variable configuration data for a specific date."
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

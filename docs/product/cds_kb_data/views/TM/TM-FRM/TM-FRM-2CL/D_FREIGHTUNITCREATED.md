@@ -1,6 +1,18 @@
 ---
 name: D_FREIGHTUNITCREATED
 description: "D Freightunitcreated"
+semantic_vi: "View D_FREIGHTUNITCREATED hiển thị thông tin về đơn vị vận tải được tạo trong hệ thống quản lý vận tải, có thể sử dụng để theo dõi và quản lý việc tạo đơn vị vận tải."
+keywords:
+  - "freight unit"
+  - "đơn vị vận tải"
+  - "transportation management"
+  - "tm"
+  - "freight"
+  - "vận tải"
+  - "sap"
+  - "transportation order"
+  - "đơn vận tải"
+semantic_en: "The D_FREIGHTUNITCREATED view exposes information about created freight units in the Transportation Management system, which can be used to track and manage freight unit creation."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

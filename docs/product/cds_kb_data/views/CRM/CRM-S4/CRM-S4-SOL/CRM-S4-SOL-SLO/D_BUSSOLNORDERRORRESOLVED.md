@@ -1,6 +1,18 @@
 ---
 name: D_BUSSOLNORDERRORRESOLVED
 description: "D Bussolnorderrorresolved"
+semantic_vi: "View D_BUSSOLNORDERRORRESOLVED trong cơ sở dữ liệu CDS hiển thị các lỗi giải pháp kinh doanh đã được giải quyết trong hệ thống CRM, cung cấp thông tin về mô tả lỗi và giải pháp. Nó được sử dụng để phân tích và giải quyết các lỗi giải pháp kinh doanh."
+keywords:
+  - "crm"
+  - "business solution error"
+  - "lỗi giải pháp kinh doanh"
+  - "resolved error"
+  - "error resolution"
+  - "s4-sol-slo"
+  - "sap crm"
+  - "đơn vị kinh doanh"
+  - "giải pháp kinh doanh"
+semantic_en: "The D_BUSSOLNORDERRORRESOLVED CDS view exposes resolved business solution errors in the CRM system, providing information on error descriptions and resolutions. It is used to analyze and resolve business solution errors."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

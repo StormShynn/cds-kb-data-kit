@@ -1,6 +1,21 @@
 ---
 name: C_PURCHASINGORGANIZATIONDEX
 description: "Purchasingorganizationdex"
+semantic_vi: "View Purchasing Organization Dex cung cấp danh sách toàn diện các tổ chức mua hàng, bao gồm tên và mã công ty liên quan, có thể được sử dụng để phân tích và quản lý dữ liệu mua hàng."
+keywords:
+  - "purchasing organization"
+  - "tổ chức mua hàng"
+  - "company code"
+  - "mã công ty"
+  - "purchasing data"
+  - "dữ liệu mua hàng"
+  - "sap mm"
+  - "mm-pur"
+  - "mm-pur-ana"
+  - "sourcing and procurement"
+  - "sourcing & procurement"
+  - "purchasing organization dex"
+semantic_en: "The Purchasing Organization Dex view provides a comprehensive list of purchasing organizations, including their names and associated company codes, which can be used to analyze and manage purchasing data."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,17 @@
 ---
 name: D_OUTBOUNDDELIVERYCREATED
 description: "D Outbound DeliveryCREATED"
+semantic_vi: "View D Outbound Delivery CREATED hiển thị dữ liệu về các đơn hàng vận chuyển mới được tạo trong hệ thống SAP, có thể được sử dụng để theo dõi và phân tích hoạt động tạo đơn hàng vận chuyển."
+keywords:
+  - "outbound delivery"
+  - "đơn hàng vận chuyển"
+  - "sddocumentcategory"
+  - "deliverydocumenttype"
+  - "salesorganization"
+  - "sap logistics execution"
+  - "lob:logistics execution"
+  - "le-shp-gf-2cl"
+semantic_en: "The D Outbound Delivery CREATED view exposes data about newly created outbound deliveries in the SAP system, which can be used to track and analyze delivery creation activities."
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

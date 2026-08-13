@@ -1,6 +1,18 @@
 ---
 name: D_MAINTORDSTSMARKFORDELETIONP
 description: "D Maintordstsmarkfordeletionp"
+semantic_vi: "View D_MAINTORDSTSMARKFORDELETIONP hiển thị các dấu hiệu trạng thái công việc bảo trì cho xóa, được sử dụng để theo dõi các công việc bảo trì được lên lịch để xóa."
+keywords:
+  - "maintenance order"
+  - "đơn bảo trì"
+  - "status mark"
+  - "xóa"
+  - "pm"
+  - "pm-woc"
+  - "plant maintenance"
+  - "component:pm-woc-mo-2cl"
+  - "lob:plant maintenance"
+semantic_en: "The D_MAINTORDSTSMARKFORDELETIONP view exposes maintenance order status marks for deletion, which are used to track maintenance orders that are scheduled for deletion."
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

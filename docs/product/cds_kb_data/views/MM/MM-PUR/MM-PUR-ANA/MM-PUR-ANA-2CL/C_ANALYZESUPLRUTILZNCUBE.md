@@ -1,6 +1,19 @@
 ---
 name: C_ANALYZESUPLRUTILZNCUBE
 description: "Analyzesuplrutilzncube"
+semantic_vi: "Analyzesuplrutilzncube cung cấp dữ liệu sử dụng nhà cung cấp cho mục đích phân tích, chẳng hạn như đánh giá hiệu suất nhà cung cấp và quản lý hợp đồng."
+keywords:
+  - "supplier"
+  - "utilization"
+  - "contract"
+  - "management"
+  - "analytical"
+  - "mm-pur-ana"
+  - "sourcing"
+  - "procurement"
+  - "lob"
+  - "mm"
+semantic_en: "Analyzesuplrutilzncube provides supplier utilization data for analytical purposes, such as evaluating supplier performance and contract management."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

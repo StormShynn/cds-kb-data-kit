@@ -19,6 +19,9 @@
     "enrich-descriptions": "node scripts/enrich-descriptions.mjs .",
     "build-embeddings": "node scripts/build-embeddings.mjs .",
     "pull-usage-stats": "node scripts/pull-usage-stats.mjs",
+    "pull-query-shapes": "node scripts/pull-query-shapes.mjs",
+    "seed-query-proposals": "node scripts/seed-query-proposals-from-usage.mjs",
+    "sync-query-library-embed": "node scripts/sync-query-library-embed.mjs",
     "rebuild-index": "node enrich_index.mjs .",
     "resync-folders": "node scripts/migrate-to-module-folders.mjs . && node enrich_index.mjs .",
     "refresh-vsp-cookie": "node scripts/refresh-vsp-cookie.mjs"

@@ -1,6 +1,19 @@
 ---
 name: C_REUSABLEOBJECTDEX
 description: "Reusableobjectdex"
+semantic_vi: "View CDS Reusableobjectdex cung cấp danh sách các đối tượng tái sử dụng trong bất động sản, bao gồm ID, tên và trạng thái của chúng. Nó được sử dụng để trích xuất và tiêu thụ dữ liệu liên quan đến các đối tượng tái sử dụng trong các ứng dụng bất động sản."
+keywords:
+  - "reusable object"
+  - "real estate"
+  - "object id"
+  - "object name"
+  - "object status"
+  - "data extraction"
+  - "consumption view"
+  - "sap cds view"
+  - "re-fx-bd-2cl"
+  - "lob other"
+semantic_en: "The Reusableobjectdex CDS view provides a list of reusable objects in real estate, including their IDs, names, and statuses. It is used to extract and consume data related to reusable objects in real estate applications."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

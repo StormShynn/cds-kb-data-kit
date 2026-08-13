@@ -1,6 +1,20 @@
 ---
 name: ABP_BEHV_DRAFT_USER_ACCESS
 description: "Abp Behv Draft User Access"
+semantic_vi: "Chứa dữ liệu truy cập bản nháp cho quy trình phê duyệt dựa trên hành vi trong SAP. View này được sử dụng để lấy quyền truy cập người dùng và tham số hành vi được chia sẻ cho bản phê duyệt."
+keywords:
+  - "draft user access"
+  - "behavior-based approval"
+  - "sap cds view"
+  - "user access role"
+  - "shared behavior parameter"
+  - "abp behv draft user access"
+  - "bc-aba-la"
+  - "basis components"
+  - "sap cds"
+  - "user id"
+  - "abp_behv_par_share"
+semantic_en: "Exposes draft user access data for behavior-based approval processes in SAP. This view is used to retrieve user access roles and shared behavior parameters for draft approvals."
 app_component: BC-ABA-LA
 software_component: SAP_BASIS
 release_state: released

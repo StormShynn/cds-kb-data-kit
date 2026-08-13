@@ -1,0 +1,7 @@
+{
+  "fetchedAt": null,
+  "shapeCount": 0,
+  "totalPings": 0,
+  "shapes": {},
+  "note": "Populated by scripts/pull-query-shapes.mjs from the usage collector /shape-totals endpoint. Structural metadata only — no WHERE literals, titles, or raw notes."
+}

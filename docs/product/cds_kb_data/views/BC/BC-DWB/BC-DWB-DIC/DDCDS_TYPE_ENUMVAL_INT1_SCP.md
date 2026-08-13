@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_INT1_SCP
 description: "Ddcds Type Enumval Int 1 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_INT1_SCP cung cấp truy cập vào giá trị danh mục cho một loại dữ liệu cụ thể, có thể được sử dụng để lấy hoặc cập nhật dữ liệu trong hệ thống SAP."
+keywords:
+  - "sap"
+  - "cds"
+  - "enum"
+  - "data type"
+  - "sap system"
+  - "ddcds"
+  - "type"
+  - "enumval"
+  - "int1"
+  - "scp"
+  - "dwb"
+  - "dic"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_INT1_SCP view provides access to enumeration values for a specific data type, which can be used to retrieve or update data in the SAP system."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

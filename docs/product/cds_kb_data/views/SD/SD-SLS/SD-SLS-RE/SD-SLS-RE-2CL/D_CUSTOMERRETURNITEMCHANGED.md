@@ -1,6 +1,21 @@
 ---
 name: D_CUSTOMERRETURNITEMCHANGED
 description: "D Customerreturnitemchanged"
+semantic_vi: "View này hiển thị các sự kiện thay đổi của hàng trả lại khách hàng, cung cấp dữ liệu về khi và cách hàng trả lại khách hàng được sửa đổi. Nó có thể được sử dụng để theo dõi các thay đổi của hàng trả lại khách hàng theo thời gian thực."
+keywords:
+  - "customer return item"
+  - "customer return item change"
+  - "event"
+  - "sales and distribution"
+  - "customer"
+  - "item-level"
+  - "sales organization"
+  - "distribution channel"
+  - "organization division"
+  - "sold-to party"
+  - "customer return item category"
+  - "product"
+semantic_en: "This view exposes customer return item change events, providing data on when and how customer return items are modified. It can be used to track changes to customer return items in real-time."
 app_component: SD-SLS-RE-2CL
 software_component: SAPSCORE
 release_state: released

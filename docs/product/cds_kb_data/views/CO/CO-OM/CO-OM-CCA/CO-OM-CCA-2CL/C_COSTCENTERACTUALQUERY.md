@@ -1,6 +1,21 @@
 ---
 name: C_COSTCENTERACTUALQUERY
 description: "Cost CenterACTUALQUERY"
+semantic_vi: "View C_COSTCENTERACTUALQUERY cung cấp dữ liệu trung thực về trung tâm chi phí cho báo cáo tài chính và phân tích, thường được sử dụng cho mục đích lập ngân sách và quản lý chi phí."
+keywords:
+  - "cost center"
+  - "trung tâm chi phí"
+  - "financial reporting"
+  - "báo cáo tài chính"
+  - "budgeting"
+  - "lập ngân sách"
+  - "cost management"
+  - "quản lý chi phí"
+  - "actual data"
+  - "dữ liệu trung thực"
+  - "sap controlling"
+  - "controlling"
+semantic_en: "The C_COSTCENTERACTUALQUERY view provides actual cost center data for financial reporting and analysis, typically used for budgeting and cost management purposes."
 app_component: CO-OM-CCA-2CL
 software_component: SAPSCORE
 release_state: released

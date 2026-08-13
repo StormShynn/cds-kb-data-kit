@@ -1,6 +1,21 @@
 ---
 name: D_RESVNDOCUMENTITEMCHANGED
 description: "D Resvndocumentitemchanged"
+semantic_vi: "View này hiển thị dữ liệu thay đổi của mục trong tài liệu đặt hàng, có thể được sử dụng để theo dõi các thay đổi của mục trong tài liệu đặt hàng."
+keywords:
+  - "reservation"
+  - "document"
+  - "item"
+  - "change"
+  - "reservation document"
+  - "reservation item"
+  - "reservation document item"
+  - "mm-im-rs"
+  - "sourcing & procurement"
+  - "lob"
+  - "component"
+  - "mm-im-rs-2cl"
+semantic_en: "This view exposes reservation document item change data, which can be used to track changes to items in a reservation document."
 app_component: MM-IM-RS-2CL
 software_component: SAPSCORE
 release_state: released

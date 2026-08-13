@@ -1,6 +1,17 @@
 ---
 name: C_CHGRECRESPONSIBLEDEX
 description: "Chgrecresponsibledex"
+semantic_vi: "View Chgrecresponsibledex hiển thị dữ liệu trách nhiệm thay đổi, có liên quan khi phân tích hoặc báo cáo về quy trình quản lý thay đổi trong PLM-CR-2CL."
+keywords:
+  - "change record"
+  - "responsibility"
+  - "plm-cr-2cl"
+  - "change management"
+  - "thay đổi"
+  - "trách nhiệm"
+  - "plm"
+  - "quản lý thay đổi"
+semantic_en: "The Chgrecresponsibledex view exposes change record responsibility data, which is relevant when analyzing or reporting on change management processes in PLM-CR-2CL."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

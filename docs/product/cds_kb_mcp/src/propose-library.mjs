@@ -37,11 +37,15 @@ export async function proposeQueryLibraryEntry(input = {}) {
   }
 
   const composed = composeQuery(entry);
+  const libraryPath =
+    (process.env.CDS_KB_PROPOSE_PATH || '').trim() ||
+    'docs/product/cds_kb_data/index/query-library.json';
   const jsonSnippet = JSON.stringify(entry, null, 2) + ',';
 
   let markdown =
     `## Propose query library entry\n\n` +
-    `Add the following object to \`index/query-library.json\` (array of saved queries), then rebuild the Query Builder page.\n\n` +
+    `Add the following object to \`${libraryPath}\` (array of saved queries), then hand-sync \`DATA.L\` in \`query-builder.html\` ` +
+    `(do **not** run the stale \`generate-query-builder\` script without \`--force\`).\n\n` +
     `\`\`\`json\n${jsonSnippet}\n\`\`\`\n`;
   if (composed.warnings?.length) {
     markdown += `\n### Compose warnings\n${composed.warnings.map((w) => `- ${w}`).join('\n')}\n`;
@@ -86,7 +90,7 @@ export async function proposeQueryLibraryEntry(input = {}) {
     });
     if (!createRef.ok) throw new Error(`POST ref -> ${createRef.status} ${await createRef.text()}`);
 
-    const path = 'index/query-library.json';
+    const path = libraryPath;
     let existingSha = null;
     let list = [];
     const fileRes = await fetch(

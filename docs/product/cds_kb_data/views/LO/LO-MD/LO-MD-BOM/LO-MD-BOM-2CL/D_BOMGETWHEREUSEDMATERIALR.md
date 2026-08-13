@@ -1,6 +1,20 @@
 ---
 name: D_BOMGETWHEREUSEDMATERIALR
 description: "D Bomgetwhereusedmaterialr"
+semantic_vi: "View này hiển thị danh sách vật liệu được sử dụng trong một bảng kê vật liệu (BOM) và việc sử dụng của chúng trong các BOM khác. Nó có thể được sử dụng để phân tích sự phụ thuộc của vật liệu và tối ưu hóa cấu trúc BOM."
+keywords:
+  - "bill of material"
+  - "bảng kê vật liệu"
+  - "material"
+  - "vật liệu"
+  - "bom"
+  - "bill of materials"
+  - "dependency"
+  - "phụ thuộc"
+  - "sap"
+  - "ekko"
+  - "logistics"
+semantic_en: "This view exposes a list of materials used in a bill of material (BOM) and their usage in other BOMs. It can be used to analyze material dependencies and optimize BOM structures."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

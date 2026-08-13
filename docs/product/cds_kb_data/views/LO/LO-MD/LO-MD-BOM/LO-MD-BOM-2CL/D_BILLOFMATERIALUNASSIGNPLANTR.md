@@ -1,6 +1,19 @@
 ---
 name: D_BILLOFMATERIALUNASSIGNPLANTR
 description: "D Bill of MaterialUNASSIGNPLANTR"
+semantic_vi: "Chứa thông tin về nhà máy chưa được gán cho một bộ phận vật liệu, hữu ích khi quản lý các bộ phận vật liệu và nhà máy liên quan."
+keywords:
+  - "bill of material"
+  - "bộ phận vật liệu"
+  - "plant"
+  - "nhà máy"
+  - "unassigned"
+  - "chưa được gán"
+  - "sap lo-md-bom-2cl"
+  - "logistics general"
+  - "material"
+  - "vật liệu"
+semantic_en: "Exposes unassigned plant information for a bill of material, useful when managing material components and their associated plants."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

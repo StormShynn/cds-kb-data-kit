@@ -1,6 +1,20 @@
 ---
 name: C_CABILLPRNTINVCGHDRCORRESPNC
 description: "Cabillprntinvcghdrcorrespnc"
+semantic_vi: "View C_CABILLPRNTINVCGHDRCORRESPNC cung cấp truy cập vào các bản ghi tương ứng cho hóa đơn trong thành phần FI-CA-INV-2CL, cho phép các nhà phát triển truy cập và quản lý các bản ghi này."
+keywords:
+  - "invoice"
+  - "đơn hàng"
+  - "tương ứng"
+  - "correspondence"
+  - "fi-ca-inv-2cl"
+  - "fi"
+  - "fi-ca"
+  - "fi-ca-inv"
+  - "sap"
+  - "finance"
+  - "đơn mua hàng"
+semantic_en: "The C_CABILLPRNTINVCGHDRCORRESPNC view provides access to correspondence records for invoices in the FI-CA-INV-2CL component, allowing developers to retrieve and manage these records."
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

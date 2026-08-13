@@ -1,6 +1,20 @@
 ---
 name: C_BILLINGDOCITEMBASICDEX_1
 description: "Billing DocumentITEMBASICDEX 1"
+semantic_vi: "Chứa thông tin cơ bản về các mục đơn giá hóa đơn, bao gồm các loại mục đơn giá hóa đơn bán hàng và loại mục đơn giá hóa đơn, hữu ích cho việc trích xuất và phân tích dữ liệu trong bán hàng và phân phối."
+keywords:
+  - "billing document item"
+  - "sales document item category"
+  - "sales document item type"
+  - "return item processing type"
+  - "billing document type"
+  - "billing document category"
+  - "sales and distribution"
+  - "data extraction"
+  - "ekko"
+  - "đơn giá hóa đơn"
+  - "đơn mua hàng"
+semantic_en: "Exposes basic information about billing document items, including sales document item categories and types, useful for data extraction and analysis in sales and distribution."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

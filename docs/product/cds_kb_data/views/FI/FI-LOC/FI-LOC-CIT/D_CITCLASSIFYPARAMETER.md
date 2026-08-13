@@ -1,6 +1,19 @@
 ---
 name: D_CITCLASSIFYPARAMETER
 description: "D Citclassifyparameter"
+semantic_vi: "View D_CITCLASSIFYPARAMETER hiển thị các tham số phân loại cho các giao dịch tài chính của công ty, có thể được sử dụng để lọc hoặc phân tích giao dịch theo các tiêu chí cụ thể như mã công ty, cấu trúc và sổ cái."
+keywords:
+  - "classification parameter"
+  - "financial transaction"
+  - "company code"
+  - "hierarchy"
+  - "ledger"
+  - "fi-loc-cit"
+  - "fi"
+  - "fi-loc"
+  - "component:fi-loc-cit"
+  - "lob:finance"
+semantic_en: "The D_CITCLASSIFYPARAMETER view exposes classification parameters for a company's financial transactions, which can be used to filter or analyze transactions by specific criteria such as company code, hierarchy, and ledger."
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

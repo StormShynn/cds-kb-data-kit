@@ -1,6 +1,19 @@
 ---
 name: D_CITINITIATERESULT
 description: "D Citinitiateresult"
+semantic_vi: "View D_CITINITIATERESULT cung cấp dữ liệu kết quả khởi xướng thuế thu nhập doanh nghiệp, có thể được sử dụng để phân tích và báo cáo kết quả khởi xướng thuế thu nhập doanh nghiệp trên các mã đơn vị công ty và ngày báo cáo khác nhau."
+keywords:
+  - "corporate income tax"
+  - "tax initiator results"
+  - "company code"
+  - "reporting date"
+  - "fi-loc-cit"
+  - "fi"
+  - "finance"
+  - "tax"
+  - "lob:finance"
+  - "component:fi-loc-cit"
+semantic_en: "The D_CITINITIATERESULT view provides corporate income tax initiator results data, which can be used to analyze and report on corporate income tax initiator results across different company codes and reporting dates."
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

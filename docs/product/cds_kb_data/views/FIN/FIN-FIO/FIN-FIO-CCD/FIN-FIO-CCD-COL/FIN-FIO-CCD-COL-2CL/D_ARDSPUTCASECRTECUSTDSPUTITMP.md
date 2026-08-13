@@ -1,6 +1,19 @@
 ---
 name: D_ARDSPUTCASECRTECUSTDSPUTITMP
 description: "D Ardsputcasecrtecustdsputitmp"
+semantic_vi: "View D_ARDSPUTCASECRTECUSTDSPUTITMP cung cấp truy cập vào các mục tính toán tạm thời cho một mã công ty cụ thể, số tài khoản, năm tài chính và hệ thống logic. Nó được sử dụng để truy xuất và xử lý mục tính toán tạm thời."
+keywords:
+  - "accounting document item"
+  - "mục tính toán tạm thời"
+  - "company code"
+  - "mã công ty"
+  - "fiscal year"
+  - "năm tài chính"
+  - "logical system"
+  - "hệ thống logic"
+  - "sap cds view"
+  - "view cds sap"
+semantic_en: "The D_ARDSPUTCASECRTECUSTDSPUTITMP view provides access to temporary accounting document items for a specific company code, accounting document, fiscal year, and logical system. It is used to retrieve and process temporary accounting document items."
 app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released

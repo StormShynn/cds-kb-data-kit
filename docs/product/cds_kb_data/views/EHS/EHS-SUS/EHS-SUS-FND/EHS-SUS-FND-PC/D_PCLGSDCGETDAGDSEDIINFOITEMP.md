@@ -1,6 +1,21 @@
 ---
 name: D_PCLGSDCGETDAGDSEDIINFOITEMP
 description: "D Pclgsdcgetdagdsediinfoitemp"
+semantic_vi: "View D_PCLGSDCGETDAGDSEDIINFOITEMP hiển thị dữ liệu chi tiết về các vật tư trong hệ thống EHS-SUS-FND-PC, có thể được sử dụng để lấy thông tin chi tiết về từng vật tư."
+keywords:
+  - "item-level"
+  - "d_pclgsdcgetdagdsediinfoitemp"
+  - "ehs-sus-fnd-pc"
+  - "component:ehs-sus-fnd-pc"
+  - "lob:other"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "material"
+  - "vật tư"
+  - "item"
+  - "sap"
+semantic_en: "The D_PCLGSDCGETDAGDSEDIINFOITEMP view exposes item-level data for EHS-SUS-FND-PC component, which can be used to retrieve detailed information about items in the system."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

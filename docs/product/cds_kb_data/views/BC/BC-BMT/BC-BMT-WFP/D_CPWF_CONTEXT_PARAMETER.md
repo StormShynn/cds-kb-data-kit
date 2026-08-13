@@ -1,6 +1,15 @@
 ---
 name: D_CPWF_CONTEXT_PARAMETER
 description: "D Cpwf Context Parameter"
+semantic_vi: "View D_CPWF_CONTEXT_PARAMETER hiển thị các tham số ngữ cảnh cho CPWF, một thành phần của Các thành phần cơ bản (BC-BMT-WFP). Nó được sử dụng khi làm việc với chức năng CPWF."
+keywords:
+  - "cpwf"
+  - "basis components"
+  - "bc-bmt-wfp"
+  - "context parameter"
+  - "tham số ngữ cảnh"
+  - "các thành phần cơ bản"
+semantic_en: "The D_CPWF_CONTEXT_PARAMETER CDS view exposes context parameters for CPWF, a component of the Basis Components (BC-BMT-WFP). It is used when working with CPWF functionality."
 app_component: BC-BMT-WFP
 software_component: SAP_BASIS
 release_state: released

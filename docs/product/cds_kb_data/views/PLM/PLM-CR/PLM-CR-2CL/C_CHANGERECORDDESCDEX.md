@@ -1,6 +1,21 @@
 ---
 name: C_CHANGERECORDDESCDEX
 description: "Change RecordDESCDEX"
+semantic_vi: "View Change Record DESCDEX cung cấp mô tả của các bản ghi thay đổi trong một ngôn ngữ cụ thể, cho phép các nhà phát triển truy cập và sử dụng thông tin này trong các ứng dụng của họ. View này hữu ích cho việc truy xuất mô tả chi tiết của các bản ghi thay đổi."
+keywords:
+  - "change record"
+  - "change record description"
+  - "change record descdex"
+  - "change record uuid"
+  - "language"
+  - "change record text"
+  - "plm"
+  - "plm-cr"
+  - "plm-cr-2cl"
+  - "change management"
+  - "thay đổi"
+  - "bản ghi thay đổi"
+semantic_en: "The Change Record DESCDEX view provides a description of change records in a specific language, enabling developers to access and utilize this information in their applications. This view is useful for retrieving detailed descriptions of change records."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

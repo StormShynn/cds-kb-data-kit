@@ -1,6 +1,20 @@
 ---
 name: D_GLADJMTREVERSEJOURNALENTRYP
 description: "D GLADJMTREVERSEJournal EntryP"
+semantic_vi: "View D_GLADJMTREVERSEJOURNALENTRYP hiển thị dữ liệu đảo ngược journal entry, được sử dụng để đảo ngược hoặc hủy bỏ một journal entry trong hệ thống kế toán."
+keywords:
+  - "journal entry"
+  - "đơn journal"
+  - "reverse journal entry"
+  - "đảo ngược journal entry"
+  - "accounting system"
+  - "hệ thống kế toán"
+  - "sap"
+  - "ac-int-2cl"
+  - "component"
+  - "lob other"
+  - "bo journal entry"
+semantic_en: "The D_GLADJMTREVERSEJOURNALENTRYP view exposes journal entry reversal data, which is used to reverse or cancel a journal entry in the accounting system."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

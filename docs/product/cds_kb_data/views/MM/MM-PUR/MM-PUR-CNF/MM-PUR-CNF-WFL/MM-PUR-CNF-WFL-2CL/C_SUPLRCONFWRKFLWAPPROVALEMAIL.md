@@ -1,6 +1,17 @@
 ---
 name: C_SUPLRCONFWRKFLWAPPROVALEMAIL
 description: "Suplrconfwrkflwapprovalemail"
+semantic_vi: "View Suplrconfwrkflwapprovalemail hiển thị dữ liệu email xác nhận phê duyệt luồng công việc của nhà cung cấp, có thể được sử dụng khi quản lý các đơn mua hàng và phê duyệt."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "supplier confirmation"
+  - "workflow approval email"
+  - "sourcing & procurement"
+  - "mm-pur-cnf-wfl-2cl"
+  - "lob:sourcing & procurement"
+semantic_en: "The Suplrconfwrkflwapprovalemail view exposes supplier confirmation workflow approval email data, which can be used when managing purchase order confirmations and approvals."
 app_component: MM-PUR-CNF-WFL-2CL
 software_component: SAPSCORE
 release_state: released

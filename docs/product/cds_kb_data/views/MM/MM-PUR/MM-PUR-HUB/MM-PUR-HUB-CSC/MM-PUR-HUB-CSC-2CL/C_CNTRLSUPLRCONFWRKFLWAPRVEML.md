@@ -1,6 +1,20 @@
 ---
 name: C_CNTRLSUPLRCONFWRKFLWAPRVEML
 description: "Cntrlsuplrconfwrkflwaprveml"
+semantic_vi: "View Cntrlsuplrconfwrkflwaprveml hiển thị dữ liệu luồng công việc xác nhận nhà cung cấp cho các tài liệu mua hàng, cho phép bạn theo dõi và quản lý xác nhận nhà cung cấp trong thành phần MM-PUR-HUB-CSC-2CL."
+keywords:
+  - "supplier confirmation"
+  - "workflow"
+  - "purchasing document"
+  - "đơn mua hàng"
+  - "xác nhận nhà cung cấp"
+  - "luồng công việc"
+  - "mm-pur-hub-csc-2cl"
+  - "sourcing & procurement"
+  - "ekko"
+  - "sap mm"
+  - "purchase order"
+semantic_en: "The Cntrlsuplrconfwrkflwaprveml view exposes supplier confirmation workflow data for purchasing documents, allowing you to track and manage supplier confirmations within the MM-PUR-HUB-CSC-2CL component."
 app_component: MM-PUR-HUB-CSC-2CL
 software_component: SAPSCORE
 release_state: released

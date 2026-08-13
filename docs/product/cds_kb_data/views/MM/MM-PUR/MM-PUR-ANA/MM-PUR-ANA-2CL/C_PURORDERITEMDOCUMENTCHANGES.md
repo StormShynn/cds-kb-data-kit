@@ -1,6 +1,21 @@
 ---
 name: C_PURORDERITEMDOCUMENTCHANGES
 description: "Purorderitemdocumentchanges"
+semantic_vi: "View C_PURORDERITEMDOCUMENTCHANGES hiển thị các thay đổi trong các tài liệu đơn hàng mua hàng vật tư, có thể được sử dụng để phân tích và theo dõi các sửa đổi của đơn hàng mua hàng vật tư theo thời gian."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "purchase order item"
+  - "tài liệu đơn hàng mua hàng"
+  - "thay đổi"
+  - "sửa đổi"
+  - "analysis"
+  - "tracking"
+  - "cds view"
+  - "view"
+  - "mm-pur-ana-2cl"
+semantic_en: "The C_PURORDERITEMDOCUMENTCHANGES view exposes changes to purchase order item documents, which can be used to analyze and track modifications to purchase order items over time."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

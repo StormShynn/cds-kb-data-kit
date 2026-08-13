@@ -1,6 +1,18 @@
 ---
 name: C_CDBCLASSIFICTIONQRY_TST
 description: "Cdbclassifictionqry Tst"
+semantic_vi: "View này hiển thị một truy vấn phân loại cho mục đích thử nghiệm, có thể liên quan đến việc phân loại dữ liệu hoặc phân loại trong mô-đun Cross-Application Components (CA). Nó có thể được sử dụng để truy xuất hoặc thao tác dữ liệu phân loại cho các kịch bản thử nghiệm hoặc phát triển."
+keywords:
+  - "cross-application components"
+  - "ca"
+  - "data classification"
+  - "classification query"
+  - "testing"
+  - "development"
+  - "sap"
+  - "cldbclassifictionqry"
+  - "tst"
+semantic_en: "This view exposes a classification query for testing purposes, likely related to data classification or categorization within the Cross-Application Components (CA) module. It can be used to retrieve or manipulate classification data for testing or development scenarios."
 app_component: CA-DT
 software_component: SAPPCORE_H
 release_state: released

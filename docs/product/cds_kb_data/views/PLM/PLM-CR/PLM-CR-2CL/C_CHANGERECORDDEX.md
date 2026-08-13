@@ -1,6 +1,19 @@
 ---
 name: C_CHANGERECORDDEX
 description: "Change RecordDEX"
+semantic_vi: "View Change RecordDEX hiển thị danh sách toàn diện các bản ghi thay đổi, cung cấp thông tin chính như UUID bản ghi thay đổi, loại và trạng thái. Nó được sử dụng để trích xuất và phân tích các bản ghi thay đổi trong thành phần PLM-CR-2CL."
+keywords:
+  - "change record"
+  - "bản ghi thay đổi"
+  - "plm-cr-2cl"
+  - "change record uuid"
+  - "thay đổi"
+  - "trạng thái"
+  - "loại"
+  - "uuid"
+  - "plm"
+  - "cr"
+semantic_en: "The Change RecordDEX view exposes a comprehensive list of change records, providing key information such as change record UUID, type, and status. It is used to extract and analyze change records in the PLM-CR-2CL component."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

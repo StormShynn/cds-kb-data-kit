@@ -1,6 +1,18 @@
 ---
 name: D_CNSLDTNUNITTSKRUNEXECTTASKP
 description: "D Cnsldtnunittskrunexecttaskp"
+semantic_vi: "Chứa dữ liệu thực hiện đơn vị công tác hợp nhất cho một khoảng thời gian và nhiệm vụ nhất định, được sử dụng để phân tích và quản lý công tác hợp nhất."
+keywords:
+  - "consolidation"
+  - "unit task execution"
+  - "fiscal period"
+  - "consolidation task"
+  - "sap cds view"
+  - "fin-cs-cor-mon-2cl"
+  - "đơn vị công tác hợp nhất"
+  - "thời kỳ kế toán"
+  - "nhiệm vụ hợp nhất"
+semantic_en: "Exposes consolidation unit task execution unit data for a specific fiscal period and task, used to analyze and manage consolidation tasks."
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

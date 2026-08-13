@@ -1,6 +1,18 @@
 ---
 name: D_BILLGDOCCRTEFRMEXTPARTNERIP
 description: "D Billgdoccrtefrmextpartnerip"
+semantic_vi: "Chứa thông tin đối tác kinh doanh cho hóa đơn, bao gồm thông tin khách hàng và nhà cung cấp. View này hữu ích khi cần lấy thông tin đối tác trong quá trình kinh doanh hóa đơn."
+keywords:
+  - "partner"
+  - "billing"
+  - "customer"
+  - "supplier"
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "hóa đơn"
+  - "khách hàng"
+  - "nhà cung cấp"
+semantic_en: "Exposes business partner information for billing documents, including customer and supplier details. This view is useful for retrieving partner data in billing-related business processes."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: C_SDDOCMULTILEVELPROCFLOWDEX
 description: "Sddocmultilevelprocflowdex"
+semantic_vi: "Chứa thông tin mối quan hệ giữa các tài liệu và cấp độ luồng quy trình cho tài liệu phân phối và bán hàng, hữu ích cho việc phân tích cấu trúc tài liệu và luồng quy trình."
+keywords:
+  - "sales"
+  - "distribution"
+  - "document"
+  - "relationship"
+  - "process flow"
+  - "document hierarchy"
+  - "sales and distribution"
+  - "sddoc"
+  - "document category"
+  - "document item"
+semantic_en: "Exposes document relationships and process flow levels for sales and distribution documents, useful for analyzing document hierarchies and process flows."
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

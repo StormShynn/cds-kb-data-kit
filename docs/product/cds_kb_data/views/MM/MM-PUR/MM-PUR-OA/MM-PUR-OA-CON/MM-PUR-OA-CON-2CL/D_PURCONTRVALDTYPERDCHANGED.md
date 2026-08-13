@@ -1,6 +1,19 @@
 ---
 name: D_PURCONTRVALDTYPERDCHANGED
 description: "D Purcontrvaldtyperdchanged"
+semantic_vi: "View này hiển thị dữ liệu về tính hợp lệ của hợp đồng mua hàng, bao gồm ngày bắt đầu và kết thúc cho các khoảng thời gian hợp lệ hiện tại và trước đó. Nó có thể được sử dụng để theo dõi các thay đổi về khoảng thời gian hợp lệ của hợp đồng mua hàng theo thời gian."
+keywords:
+  - "purchase contract"
+  - "hợp đồng mua hàng"
+  - "validity period"
+  - "thời gian hợp lệ"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "sap mm"
+  - "mm-pur"
+  - "mm-pur-oa"
+semantic_en: "This view exposes purchase contract validity data, including start and end dates for current and previous validity periods. It can be used to track changes to purchase contract validity periods over time."
 app_component: MM-PUR-OA-CON-2CL
 software_component: SAPSCORE
 release_state: released

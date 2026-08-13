@@ -1,6 +1,19 @@
 ---
 name: HOME_TEST_V3_QUERY
 description: "Home Test V 3 (Query)"
+semantic_vi: "View Home Test V 3 (Query) hiển thị dữ liệu cho mục đích thử nghiệm, có thể được sử dụng trong giai đoạn phát triển hoặc kiểm tra chất lượng."
+keywords:
+  - "home test"
+  - "query"
+  - "sap cds"
+  - "ca-gtf-anl"
+  - "analytical"
+  - "cross-application components"
+  - "development"
+  - "quality assurance"
+  - "testing"
+  - "đoán thử nghiệm"
+semantic_en: "The Home Test V 3 (Query) view exposes data for testing purposes, likely used during development or quality assurance phases."
 app_component: CA-GTF-ANL
 software_component: SAPPCORE_H
 release_state: released

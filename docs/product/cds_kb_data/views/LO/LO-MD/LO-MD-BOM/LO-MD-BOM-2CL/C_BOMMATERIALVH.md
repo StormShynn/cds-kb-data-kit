@@ -1,6 +1,18 @@
 ---
 name: C_BOMMATERIALVH
 description: "Bommaterialvh"
+semantic_vi: "View C_BOMMATERIALVH cung cấp danh sách vật liệu và các thành phần của bảng tính toán vật liệu (BOM), hữu ích cho quản lý vật liệu và lập kế hoạch sản xuất."
+keywords:
+  - "material"
+  - "bom"
+  - "component"
+  - "material management"
+  - "production planning"
+  - "c_bommaterialvh"
+  - "sap"
+  - "lo-md-bom-2cl"
+  - "logistics general"
+semantic_en: "The CDS view C_BOMMATERIALVH provides a list of materials and their bill of materials (BOM) components, useful for material management and production planning."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

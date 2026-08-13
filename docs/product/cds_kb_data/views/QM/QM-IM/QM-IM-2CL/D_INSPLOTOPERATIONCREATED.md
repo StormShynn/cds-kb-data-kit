@@ -1,6 +1,16 @@
 ---
 name: D_INSPLOTOPERATIONCREATED
 description: "D Insplotoperationcreated"
+semantic_vi: "View D_INSPLOTOPERATIONCREATED hiển thị dữ liệu tạo hoạt động kiểm tra chất lượng trong Quản lý chất lượng, hữu ích cho việc theo dõi và phân tích hoạt động kiểm tra."
+keywords:
+  - "quality management"
+  - "quản lý chất lượng"
+  - "inspection operation"
+  - "hoạt động kiểm tra"
+  - "qm-im-2cl"
+  - "sap qm"
+  - "cds view"
+semantic_en: "The D_INSPLOTOPERATIONCREATED view exposes inspection operation creation data in Quality Management, useful for tracking and analyzing inspection operations."
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

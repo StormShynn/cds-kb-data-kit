@@ -1,6 +1,20 @@
 ---
 name: D_MAINTORDRESETTECHCOMPLETEP
 description: "D Maintordresettechcompletep"
+semantic_vi: "View này hiển thị dữ liệu hoàn thành kỹ thuật của đơn đặt hàng bảo trì được đặt lại, được sử dụng để xác định trạng thái của đơn đặt hàng bảo trì đã được đặt lại thành trạng thái hoàn thành kỹ thuật."
+keywords:
+  - "maintenance order"
+  - "đơn đặt hàng bảo trì"
+  - "technical completion"
+  - "hoàn thành kỹ thuật"
+  - "reset"
+  - "đặt lại"
+  - "pm"
+  - "plant maintenance"
+  - "công việc bảo trì"
+  - "công cụ"
+  - "công cụ bảo trì"
+semantic_en: "This view exposes maintenance order reset technical completion data, which is used to determine the status of maintenance orders that have been reset to a technical completion state."
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

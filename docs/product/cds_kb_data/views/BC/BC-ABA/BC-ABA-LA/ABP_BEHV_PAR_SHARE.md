@@ -1,6 +1,21 @@
 ---
 name: ABP_BEHV_PAR_SHARE
 description: "Abp Behv Par Share"
+semantic_vi: "View ABP_BEHV_PAR_SHARE hiển thị các tham số hành vi được chia sẻ trên tất cả các thực thể kinh doanh trong một hệ thống ABAP, hữu ích cho các nhà phát triển khi làm việc với hành vi thực thể kinh doanh và cài đặt tham số."
+keywords:
+  - "abp"
+  - "behavioral parameters"
+  - "business entity"
+  - "share"
+  - "abap"
+  - "system"
+  - "developers"
+  - "business entity behavior"
+  - "parameter settings"
+  - "tham số hành vi"
+  - "thực thể kinh doanh"
+  - "chia sẻ"
+semantic_en: "The ABP_BEHV_PAR_SHARE view exposes behavioral parameters shared across all business entities in an ABAP system, useful for developers when working with business entity behavior and parameter settings."
 app_component: BC-ABA-LA
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,15 @@
 ---
 name: C_RECRRGSUPLRINVCTMPLWHGDTAX
 description: "Recrrgsuplrinvctmplwhgdtax"
+semantic_vi: "View này hiển thị dữ liệu thuế giữ lại cho các mẫu hóa đơn nhà cung cấp, được sử dụng để tính toán số tiền thuế cho các giao dịch."
+keywords:
+  - "withholding tax"
+  - "supplier invoice template"
+  - "tax calculation"
+  - "đơn thuế giữ lại"
+  - "mẫu hóa đơn nhà cung cấp"
+  - "tính toán thuế"
+semantic_en: "This view exposes withholding tax data for supplier invoice templates, used to calculate tax amounts for transactions."
 app_component: FI-FIO-AP-2CL
 software_component: SAPSCORE
 release_state: released

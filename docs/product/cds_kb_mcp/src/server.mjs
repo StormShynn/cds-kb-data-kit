@@ -18,7 +18,7 @@ import { serveStdio } from '@modelcontextprotocol/server/stdio';
 import { toNodeHandler } from '@modelcontextprotocol/node';
 import express from 'express';
 import { resolveDataSource, SECTION_NAMES } from './datasource.mjs';
-import { recordView, flushOnExit } from './usage-tracker.mjs';
+import { recordView, recordQueryShape, flushOnExit } from './usage-tracker.mjs';
 import { composeQuery } from './query-compose.mjs';
 import { generateCdsView, validateCdsDdl } from './ddl-tools.mjs';
 import { createAuthMiddleware, describeAuthMode } from './auth.mjs';
@@ -1131,6 +1131,7 @@ function createServer() {
     },
     async (args) => {
       const result = composeQuery(args);
+      recordQueryShape(args);
       const warnings = [...releaseSignalWarnings(args), ...result.warnings];
       const parts = [];
       if (warnings.length) parts.push('## Warnings\n' + warnings.map((w) => `- ${w}`).join('\n'));
@@ -1248,8 +1249,9 @@ function createServer() {
     {
       title: 'Propose a query-library.json entry',
       description:
-        'Build a JSON snippet + markdown PR body for adding a saved query to index/query-library.json. ' +
-        'If GITHUB_TOKEN and CDS_KB_PROPOSE_REPO (owner/name) are set, opens a draft PR on a propose/query-* branch. Never merges.',
+        'Build a JSON snippet + markdown PR body for adding a saved query to docs/product/cds_kb_data/index/query-library.json. ' +
+        'If GITHUB_TOKEN and CDS_KB_PROPOSE_REPO (owner/name) are set, opens a draft PR on a propose/query-* branch ' +
+        '(file path override: CDS_KB_PROPOSE_PATH). Never merges.',
       inputSchema: {
         title: z.string().describe('Short title for the saved query'),
         description: z.string().optional(),
@@ -1278,9 +1280,10 @@ function createServer() {
       }),
     },
     async (args) => {
+      recordQueryShape(args);
       const result = await proposeQueryLibraryEntry(args);
       const parts = [
-        '## JSON snippet for index/query-library.json',
+        '## JSON snippet for docs/product/cds_kb_data/index/query-library.json',
         '```json',
         result.jsonSnippet,
         '```',

@@ -1,6 +1,19 @@
 ---
 name: C_CABILLGREQWRKFLWEMLTMPL
 description: "Cabillgreqwrkflwemltmpl"
+semantic_vi: "View này hiển thị dữ liệu luồng công việc yêu cầu hóa đơn hàng hóa, bao gồm chi tiết nhiệm vụ và thông tin liên quan đến tài liệu. Nó được sử dụng để truy cập và quản lý yêu cầu hóa đơn hàng hóa trong thành phần FI-CA-INV-2CL."
+keywords:
+  - "bill of goods request"
+  - "yêu cầu hóa đơn hàng hóa"
+  - "workflow"
+  - "fi-ca-inv-2cl"
+  - "fi"
+  - "fi-ca"
+  - "fi-ca-inv"
+  - "consumption-view"
+  - "workflow-task"
+  - "document-information"
+semantic_en: "This view exposes bill of goods request workflow data, including task details and related document information. It is used to access and manage bill of goods requests within the FI-CA-INV-2CL component."
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

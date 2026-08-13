@@ -1,6 +1,20 @@
 ---
 name: C_CHANGEMSTROBJMGMTRECORDDEX
 description: "Changemstrobjmgmtrecorddex"
+semantic_vi: "View CDS Change Management Object Management Record Dex hiển thị một tập hợp các bản ghi quản lý đối tượng liên quan đến quản lý thay đổi, cung cấp thông tin chi tiết như ID đối tượng, mức độ sửa đổi và thông tin tạo lập. Nó được sử dụng để trích xuất dữ liệu cho việc sử dụng trong ứng dụng PLM-WUI-OBJ-ECN-2CL."
+keywords:
+  - "change management"
+  - "object management"
+  - "record dex"
+  - "plm-wui-obj-ecn-2cl"
+  - "object id"
+  - "revision level"
+  - "creation information"
+  - "đổi thay đổi"
+  - "quản lý đối tượng"
+  - "bản ghi"
+  - "thông tin tạo lập"
+semantic_en: "The Change Management Object Management Record Dex view exposes a collection of object management records associated with change management, providing details such as object IDs, revision levels, and creation information. It is used to extract data for consumption in PLM-WUI-OBJ-ECN-2CL applications."
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

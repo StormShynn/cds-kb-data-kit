@@ -1,6 +1,17 @@
 ---
 name: C_CHANGEMASTERDEX_2
 description: "Change MasterERDEX 2"
+semantic_vi: "View Change MasterERDEX 2 hiển thị dữ liệu thay đổi master cho đơn đặt hàng thay đổi kỹ thuật, cung cấp các trường khóa chính như số thay đổi, trạng thái và nhóm xác thực. Nó được sử dụng để trích xuất và tiêu thụ dữ liệu liên quan đến đơn đặt hàng thay đổi kỹ thuật."
+keywords:
+  - "change master"
+  - "engineering change order"
+  - "thay đổi kỹ thuật"
+  - "đơn đặt hàng thay đổi"
+  - "cds view"
+  - "sap plm"
+  - "plm-wui"
+  - "plm-wui-obj-ecn-2cl"
+semantic_en: "The Change MasterERDEX 2 view exposes change master data for engineering change orders, providing key fields such as change number, status, and authorization group. It is used to extract and consume data related to engineering change orders."
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

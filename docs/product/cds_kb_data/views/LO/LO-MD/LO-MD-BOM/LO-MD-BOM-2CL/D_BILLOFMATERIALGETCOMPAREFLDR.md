@@ -1,6 +1,19 @@
 ---
 name: D_BILLOFMATERIALGETCOMPAREFLDR
 description: "D Bill of MaterialGETCOMPAREFLDR"
+semantic_vi: "View D_BILLOFMATERIALGETCOMPAREFLDR cung cấp truy cập vào các trường so sánh của bảng vật liệu, được sử dụng để so sánh các vật liệu khác nhau hoặc phiên bản của một vật liệu trong bảng vật liệu. Nó thường được sử dụng khi phân tích hoặc duy trì cấu trúc vật liệu trong logistics."
+keywords:
+  - "bill of material"
+  - "bảng vật liệu"
+  - "so sánh"
+  - "logistics"
+  - "lo"
+  - "lo-md"
+  - "lo-md-bom"
+  - "material"
+  - "vật liệu"
+  - "ekko"
+semantic_en: "The D_BILLOFMATERIALGETCOMPAREFLDR view provides access to bill of material comparison fields, which are used to compare different materials or versions of a material in a bill of material. It is typically used when analyzing or maintaining material structures in logistics."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

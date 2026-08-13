@@ -1,6 +1,19 @@
 ---
 name: C_CHANGERECORDBOMITEMDEX
 description: "Change RecordBOMITEMDEX"
+semantic_vi: "Chỉ ra dữ liệu chi tiết về vật tư trong Change Record BOM ITEM DEX, được sử dụng để theo dõi các thay đổi của danh mục vật tư (BOM) trong một bản ghi thay đổi. View này hữu ích cho việc phân tích và báo cáo về các thay đổi vật tư BOM."
+keywords:
+  - "change record"
+  - "bom"
+  - "item-level"
+  - "plm"
+  - "plm-cr"
+  - "consumption-view"
+  - "data-extraction"
+  - "bom-item"
+  - "change-record-referenceuuid"
+  - "plm-cr-2cl"
+semantic_en: "Exposes item-level data from the Change Record BOM ITEM DEX, which is used to track changes to bill of materials (BOM) items in a change record. This view is useful for analyzing and reporting on BOM item changes."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: C_BUSINESSSOLUTIONORDERITEMDEX
 description: "Businesssolutionorderitemdex"
+semantic_vi: "Chứa dữ liệu chi tiết đơn hàng giải pháp kinh doanh, thường được sử dụng cho mục đích phân tích và báo cáo trong ứng dụng CRM."
+keywords:
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "crm"
+  - "analytics"
+  - "reporting"
+  - "service document"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "service document item"
+semantic_en: "Exposes business solution order item data, typically used for analytics and reporting purposes in CRM applications."
 app_component: CRM-S4-ANA-BI-2CL
 software_component: SAPSCORE
 release_state: released

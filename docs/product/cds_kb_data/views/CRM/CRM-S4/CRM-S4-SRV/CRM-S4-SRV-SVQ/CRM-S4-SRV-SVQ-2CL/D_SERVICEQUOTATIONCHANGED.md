@@ -1,6 +1,21 @@
 ---
 name: D_SERVICEQUOTATIONCHANGED
 description: "D Servicequotationchanged"
+semantic_vi: "View D_SERVICEQUOTATIONCHANGED hiển thị dữ liệu thay đổi của đề xuất dịch vụ, có thể được sử dụng để theo dõi các thay đổi của đề xuất dịch vụ trong CRM."
+keywords:
+  - "service quotation"
+  - "đề xuất dịch vụ"
+  - "crm"
+  - "service quotation change"
+  - "thay đổi đề xuất dịch vụ"
+  - "sap"
+  - "crm-s4-srv-svq-2cl"
+  - "lob:other"
+  - "service quotation type"
+  - "service quotation description"
+  - "service quotation uuid"
+  - "custmgmtobjecttype"
+semantic_en: "The D_SERVICEQUOTATIONCHANGED view exposes service quotation change data, which can be used to track changes to service quotations in CRM."
 app_component: CRM-S4-SRV-SVQ-2CL
 software_component: SAPSCORE
 release_state: released

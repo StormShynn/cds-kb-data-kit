@@ -1,6 +1,21 @@
 ---
 name: C_CHANGEMASTERSTATUSDEX
 description: "Change MasterERSTATUSDEX"
+semantic_vi: "View Change Master ER STATUS DEX cung cấp dữ liệu về trạng thái thay đổi chủ, bao gồm thay đổi được cho phép, trạng thái khóa phân phối và ngày thay đổi được cho phép. Nó được sử dụng để trích xuất và phân tích dữ liệu trạng thái thay đổi chủ."
+keywords:
+  - "change master"
+  - "status"
+  - "change"
+  - "distribution"
+  - "lock"
+  - "plm"
+  - "plm-wui"
+  - "plm-wui-obj"
+  - "ecn"
+  - "change-number-status"
+  - "change-is-allowed"
+  - "date-change-is-allowed"
+semantic_en: "The Change Master ER STATUS DEX view provides data on change master status, including allowed changes, distribution lock status, and dates when changes are allowed. It is used to extract and analyze change master status data."
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

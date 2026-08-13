@@ -1,6 +1,19 @@
 ---
 name: D_OUTBOUNDDELIVERYCHANGED
 description: "D Outbound DeliveryCHANGED"
+semantic_vi: "View D Outbound Delivery CHANGED hiển thị dữ liệu kinh doanh thực tế liên quan đến việc thay đổi đơn hàng xuất đi, có thể được sử dụng để theo dõi và phân tích các thay đổi được thực hiện trên tài liệu giao hàng trong thành phần Logistics Execution."
+keywords:
+  - "outbound delivery"
+  - "đơn hàng xuất đi"
+  - "delivery document"
+  - "logistics execution"
+  - "sap cds view"
+  - "cds view"
+  - "delivery changed"
+  - "đơn hàng thay đổi"
+  - "sap logistics"
+  - "ekko"
+semantic_en: "The D Outbound Delivery CHANGED view exposes real-world business data related to changed outbound deliveries, which can be used to track and analyze changes made to delivery documents in the Logistics Execution component."
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

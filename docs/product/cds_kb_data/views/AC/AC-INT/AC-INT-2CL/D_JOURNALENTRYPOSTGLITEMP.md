@@ -1,6 +1,21 @@
 ---
 name: D_JOURNALENTRYPOSTGLITEMP
 description: "D Journal EntryPOSTGLITEMP"
+semantic_vi: "View D Journal Entry POST GL Item cung cấp truy cập vào các mục ghi sổ kế toán tại mức mục, cho phép phân tích và xử lý chi tiết các giao dịch tài chính."
+keywords:
+  - "journal entry"
+  - "journal entry item"
+  - "financial transaction"
+  - "item level"
+  - "accounting"
+  - "journal entry post gl item"
+  - "d journal entry post gl item"
+  - "journal entry post gl"
+  - "gl item"
+  - "journal entry item level"
+  - "financial transaction analysis"
+  - "đơn ghi sổ kế toán"
+semantic_en: "The D Journal Entry POST GL Item view provides access to journal entry items at the item level, allowing for detailed analysis and processing of financial transactions."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

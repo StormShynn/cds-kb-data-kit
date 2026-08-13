@@ -1,6 +1,17 @@
 ---
 name: D_LEGALDOCUPDATEPAPERTYPEP
 description: "D Legaldocupdatepapertypep"
+semantic_vi: "View D_LEGALDOCUPDATEPAPERTYPEP hiển thị các loại giấy tờ pháp lý cập nhật, có liên quan khi quản lý cập nhật tài liệu trong thành phần CM-DOC-2CL."
+keywords:
+  - "legal document"
+  - "update paper type"
+  - "cm-doc-2cl"
+  - "component"
+  - "document management"
+  - "tài liệu pháp lý"
+  - "loại giấy tờ cập nhật"
+  - "quản lý tài liệu"
+semantic_en: "The D_LEGALDOCUPDATEPAPERTYPEP view exposes legal document update paper types, which are relevant when managing document updates in the CM-DOC-2CL component."
 app_component: CM-DOC-2CL
 software_component: SAPSCORE
 release_state: released

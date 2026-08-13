@@ -1,6 +1,20 @@
 ---
 name: D_BILLGDOCCRTEFRMEXTDATAIP
 description: "D Billgdoccrtefrmextdataip"
+semantic_vi: "View D_BILLGDOCCRTEFRMEXTDATAIP hiển thị dữ liệu ngoài liên quan đến hóa đơn và phiếu hoàn tiền trong thành phần bán hàng và phân phối. Nó được sử dụng để truy cập thông tin bổ sung về hóa đơn và phiếu hoàn tiền."
+keywords:
+  - "sales"
+  - "distribution"
+  - "billing"
+  - "document"
+  - "credit"
+  - "memo"
+  - "external"
+  - "data"
+  - "sap"
+  - "sd"
+  - "billgdoccrtefrmextdataip"
+semantic_en: "The D_BILLGDOCCRTEFRMEXTDATAIP view exposes external data related to billing documents and credit memos in the sales and distribution component. It is used to access additional information about billing documents and credit memos."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

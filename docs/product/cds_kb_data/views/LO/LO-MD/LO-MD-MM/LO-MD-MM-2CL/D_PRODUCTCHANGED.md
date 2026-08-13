@@ -1,6 +1,21 @@
 ---
 name: D_PRODUCTCHANGED
 description: "D Productchanged"
+semantic_vi: "View D_PRODUCTCHANGED lưu trữ dữ liệu thay đổi sản phẩm, có thể hữu ích khi phân tích các bản cập nhật hoặc sửa đổi sản phẩm."
+keywords:
+  - "product"
+  - "change"
+  - "data"
+  - "update"
+  - "modification"
+  - "sản phẩm"
+  - "thay đổi"
+  - "dữ liệu"
+  - "cập nhật"
+  - "sửa đổi"
+  - "cds"
+  - "view"
+semantic_en: "The D_PRODUCTCHANGED view captures product change data, which is useful when analyzing product updates or modifications."
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

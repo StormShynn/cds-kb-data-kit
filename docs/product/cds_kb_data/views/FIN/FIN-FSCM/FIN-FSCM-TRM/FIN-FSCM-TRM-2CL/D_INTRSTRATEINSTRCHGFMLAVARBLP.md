@@ -1,6 +1,20 @@
 ---
 name: D_INTRSTRATEINSTRCHGFMLAVARBLP
 description: "D Intrstrateinstrchgfmlavarblp"
+semantic_vi: "View này hiển thị dữ liệu giao dịch tài chính liên quan đến công thức và biến thay đổi tài sản, có ích cho việc phân tích và quản lý giao dịch tài chính trong thành phần FIN-FSCM-TRM-2CL."
+keywords:
+  - "financial transaction"
+  - "instrument change"
+  - "formula variable"
+  - "financial management"
+  - "fin-fscm-trm-2cl"
+  - "component"
+  - "financial data"
+  - "tài chính"
+  - "giao dịch"
+  - "công thức biến"
+  - "quản lý tài chính"
+semantic_en: "This view exposes financial transaction data related to instrument change formulas and variables, useful for analyzing and managing financial transactions in the FIN-FSCM-TRM-2CL component."
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: C_CHANGERECDMAILTMPLFORAPPRVL
 description: "Changerecdmailtmplforapprvl"
+semantic_vi: "View này hiển thị các mẫu thư thay đổi bản ghi cho phê duyệt, có thể được sử dụng để quản lý và theo dõi các thay đổi trong vòng đời của sản phẩm. Nó đặc biệt hữu ích cho các nhà phát triển của thành phần PLM-CR-2CL cần tích hợp với các luồng làm việc của bản ghi thay đổi."
+keywords:
+  - "change record"
+  - "thay đổi bản ghi"
+  - "approval"
+  - "phê duyệt"
+  - "plm-cr-2cl"
+  - "product lifecycle"
+  - "vòng đời sản phẩm"
+  - "change record workflow"
+  - "luồng làm việc bản ghi thay đổi"
+semantic_en: "This view exposes change record mail templates for approval, which can be used to manage and track changes in a product's lifecycle. It is particularly useful for PLM-CR-2CL component developers who need to integrate with change record workflows."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

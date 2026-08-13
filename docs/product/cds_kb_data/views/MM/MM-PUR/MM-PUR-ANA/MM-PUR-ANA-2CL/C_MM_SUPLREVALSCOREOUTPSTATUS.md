@@ -1,6 +1,21 @@
 ---
 name: C_MM_SUPLREVALSCOREOUTPSTATUS
 description: "MM Suplrevalscoreoutpstatus"
+semantic_vi: "View C_MM_SUPLREVALSCOREOUTPSTATUS hiển thị dữ liệu trạng thái kết quả đánh giá điểm hiệu suất nhà cung cấp, có liên quan khi phân tích hiệu suất và kết quả đánh giá nhà cung cấp."
+keywords:
+  - "supplier evaluation"
+  - "đánh giá nhà cung cấp"
+  - "supplerevalscoreoutpstatus"
+  - "cds view"
+  - "mm-pur-ana-2cl"
+  - "sourcing & procurement"
+  - "lob"
+  - "lob:sourcing & procurement"
+  - "mm"
+  - "mm-pur"
+  - "mm-pur-ana"
+  - "consumption-view"
+semantic_en: "The MM Suplrevalscoreoutpstatus view exposes supplier evaluation score output status data, which is relevant when analyzing supplier performance and evaluation results."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

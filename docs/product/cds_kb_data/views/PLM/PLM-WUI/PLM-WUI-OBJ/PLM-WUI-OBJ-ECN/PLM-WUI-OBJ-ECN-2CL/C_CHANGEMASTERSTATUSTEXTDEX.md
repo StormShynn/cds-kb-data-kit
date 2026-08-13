@@ -1,6 +1,21 @@
 ---
 name: C_CHANGEMASTERSTATUSTEXTDEX
 description: "Change MasterERSTATUSTEXTDEX"
+semantic_vi: "View Change Master ER Status Text Dex cung cấp danh sách các bản ghi trạng thái văn bản thay đổi chủ, có thể được sử dụng để lấy trạng thái văn bản cho trạng thái thay đổi chủ cụ thể trong một ngôn ngữ cụ thể. View này hữu ích khi hiển thị thông tin trạng thái thay đổi chủ cho người dùng trong các ngôn ngữ khác nhau."
+keywords:
+  - "change master"
+  - "change master status"
+  - "status text"
+  - "language"
+  - "change number status"
+  - "change number status text"
+  - "plm"
+  - "plm-wui"
+  - "plm-wui-obj"
+  - "plm-wui-obj-ecn-2cl"
+  - "text"
+  - "status"
+semantic_en: "The Change Master ER Status Text Dex view provides a list of change master status text records, which can be used to retrieve the status text for a specific change master status in a particular language. This view is useful when displaying change master status information to users in different languages."
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

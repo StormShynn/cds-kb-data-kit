@@ -1,6 +1,19 @@
 ---
 name: C_RECRRGSUPLRINVCTMPLINSTCE
 description: "Recrrgsuplrinvctmplinstce"
+semantic_vi: "View này hiển thị dữ liệu bản sao lặp lại của mẫu đơn yêu cầu thanh toán nhà cung cấp, được sử dụng khi phân tích hoặc xử lý đơn thanh toán lặp lại."
+keywords:
+  - "recurring supplier invoice"
+  - "đơn thanh toán lặp lại nhà cung cấp"
+  - "financial management"
+  - "fi"
+  - "fi-fio-ap-2cl"
+  - "ekko"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "accounting document"
+  - "tài liệu kế toán"
+semantic_en: "This view exposes recurring supplier invoice template instance data for financial management, used when analyzing or processing recurring invoices."
 app_component: FI-FIO-AP-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: C_CDBCLASSIFICATIONQUERY
 description: "Cdbclassificationquery"
+semantic_vi: "View Cdbclassificationquery cung cấp dữ liệu phân loại cho phân tích dựa trên tiêu thụ trong thành phần CA-DT. Nó có thể được sử dụng để phân tích và lọc dữ liệu dựa trên tiêu chí phân loại."
+keywords:
+  - "classification"
+  - "consumption-based analysis"
+  - "ca-dt"
+  - "cdbclassificationquery"
+  - "cross-application components"
+  - "analytical"
+  - "classification data"
+  - "ca"
+  - "đơn vị phân loại"
+  - "phân tích dựa trên tiêu thụ"
+semantic_en: "The Cdbclassificationquery view provides classification data for consumption-based analysis in the CA-DT component. It can be used to analyze and filter data based on classification criteria."
 app_component: CA-DT
 software_component: SAPPCORE_H
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_SRVCCONTRACTPERFORMRENEWALP
 description: "D Srvccontractperformrenewalp"
+semantic_vi: "View này hiển thị dữ liệu thực hiện lại hợp đồng dịch vụ, bao gồm trạng thái tạo và phát hành, cho việc quản lý hợp đồng dịch vụ CRM."
+keywords:
+  - "service contract"
+  - "hợp đồng dịch vụ"
+  - "crm"
+  - "contract performance"
+  - "thực hiện hợp đồng"
+  - "renewal"
+  - "phục hồi"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+semantic_en: "This view exposes service contract performance renewal data, including creation and release status, for use in CRM service contract management."
 app_component: CRM-S4-SRV-CTR-2CL
 software_component: SAPSCORE
 release_state: released

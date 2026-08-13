@@ -1,6 +1,19 @@
 ---
 name: DECOM01__FUND
 description: "Decom 01 Fund"
+semantic_vi: "View Decom 01 Fund hiển thị dữ liệu liên quan đến quỹ, có thể sử dụng khi làm việc với thông tin tài chính trong thành phần CA-EPT-TAS."
+keywords:
+  - "fund"
+  - "quỹ"
+  - "ca-ept-tas"
+  - "financial"
+  - "tài chính"
+  - "decomposition"
+  - "phân tích"
+  - "component"
+  - "thành phần"
+  - "sap"
+semantic_en: "The Decom 01 Fund view exposes fund-related data, which is useful when working with financial information in the CA-EPT-TAS component."
 app_component: CA-EPT-TAS
 software_component: SAPPCORE_H
 release_state: released

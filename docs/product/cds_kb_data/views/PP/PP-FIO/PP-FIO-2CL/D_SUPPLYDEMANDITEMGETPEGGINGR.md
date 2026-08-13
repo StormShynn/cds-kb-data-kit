@@ -1,6 +1,21 @@
 ---
 name: D_SUPPLYDEMANDITEMGETPEGGINGR
 description: "D Supplydemanditemgetpeggingr"
+semantic_vi: "View D_SUPPLYDEMANDITEMGETPEGGINGR CDS hiển thị dữ liệu nhu cầu và cung cấp vật liệu tại mức độ chi tiết vật phẩm, hữu ích cho kế hoạch và thực hiện sản xuất trong SAP PP-FIO-2CL."
+keywords:
+  - "material demand"
+  - "supply data"
+  - "manufacturing planning"
+  - "sap pp-fio-2cl"
+  - "demand and supply"
+  - "material requirement planning"
+  - "mrp"
+  - "demand mrp element"
+  - "supply chain management"
+  - "nguồn cung cấp"
+  - "kế hoạch sản xuất"
+  - "truy vấn dữ liệu"
+semantic_en: "The D_SUPPLYDEMANDITEMGETPEGGINGR CDS view exposes material demand and supply data at the item level, useful for manufacturing planning and execution in SAP PP-FIO-2CL."
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

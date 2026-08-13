@@ -1,6 +1,20 @@
 ---
 name: I_ACCTASSGMTDISTRINDICATORTXT
 description: "Acctassgmtdistrindicatortxt"
+semantic_vi: "View I_ACCTASSGMTDISTRINDICATORTXT hiển thị dữ liệu văn bản cho chỉ số phân bổ phân bổ tài khoản, được sử dụng trong thành phần MM-PUR-GF-MAS-2CL cho nguồn cung và mua sắm."
+keywords:
+  - "account assignment"
+  - "distribution indicator"
+  - "text data"
+  - "mm-pur-gf-mas-2cl"
+  - "sourcing and procurement"
+  - "lob"
+  - "component"
+  - "ekko"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "phân bổ tài khoản"
+semantic_en: "The Acctassgmtdistrindicatortxt CDS view exposes text data for account assignment distribution indicators, which are used in the MM-PUR-GF-MAS-2CL component for sourcing and procurement."
 app_component: MM-PUR-GF-MAS-2CL
 software_component: SAPSCORE
 release_state: released
