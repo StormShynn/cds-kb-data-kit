@@ -1,0 +1,76 @@
+# .github/workflows/build-embeddings.yml
+# Optional: build index/embeddings.json (view semantic_en/description vectors)
+# so cds-kb-mcp's search_mode=hybrid can re-rank BM25 with cosine similarity
+# (see scripts/build-embeddings.mjs and the server's rankedSearch).
+#
+# Strictly opt-in: build-embeddings.mjs exits 0 and writes nothing when
+# CDS_KB_EMBED_API_KEY is unset, so this workflow is safe to merge before the
+# secret exists — it just prints "skipping". With the secret set, it embeds
+# the current views, commits index/embeddings.json, and the next hosted
+# cds-kb-mcp index refresh picks it up (kb_info reports `embeddings: yes`).
+#
+# The vector file is derived from the tracked view frontmatter and stored in
+# git (like search_index.json), not regenerated on the fly, so a fresh clone
+# or BTP restart never needs the API key — only refresh runs do.
+
+name: Build Embeddings
+
+on:
+  schedule:
+    # Weekly, Sunday 06:00 UTC — off the other bots' daily schedules so the
+    # commit never races daily-fetch/enrich-descriptions.
+    - cron: '0 6 * * 0'
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Views to embed this run (0 = all)'
+        type: number
+        default: 0
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-embeddings
+  cancel-in-progress: false
+
+jobs:
+  build-embeddings:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs/product/cds_kb_data
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: docs/product/cds_kb_data/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Build embeddings
+        env:
+          CDS_KB_EMBED_API_KEY: ${{ secrets.CDS_KB_EMBED_API_KEY }}
+          CDS_KB_EMBED_URL: ${{ secrets.CDS_KB_EMBED_URL }}
+          CDS_KB_EMBED_MODEL: ${{ secrets.CDS_KB_EMBED_MODEL }}
+        run: |
+          ARGS=(.)
+          if [ -n "${{ github.event.inputs.limit }}" ] && [ "${{ github.event.inputs.limit }}" != "0" ]; then
+            ARGS+=(--limit ${{ github.event.inputs.limit }})
+          fi
+          node scripts/build-embeddings.mjs "${ARGS[@]}"
+
+      - name: Commit and push if changed
+        uses: ./.github/actions/commit-and-push
+        with:
+          paths: docs/product/cds_kb_data/index/embeddings.json
+          commit-message: "Build embeddings [skip ci]"
+          empty-message: Embeddings unchanged or not configured
+          success-message: Embeddings updated
