@@ -290,7 +290,6 @@ async function rankedSearch(query, { filter, limit = 10, searchMode = 'bm25' } =
 
   if (wantHybrid && embeddingsData?.vectors && results.length > 0) {
     const qVec = await embedQueryText(query);
-    logInfo('DEBUG hybrid', { mode: embeddingsData?.mode, model: embeddingsData?.model, vecKeys: Object.keys(embeddingsData?.vectors || {}).length, qVec: qVec ? qVec.length : null });
     if (qVec) {
       const scores = results.map((r) => r.score);
       const maxS = Math.max(...scores, 1e-9);
