@@ -112,6 +112,10 @@ jobs:
           cp dashboard.html coverage-report.html search.html field-search.html query-builder.html "$SITE/"
           mkdir -p "$SITE/index"
           cp index/view-fields.js "$SITE/index/"
+          # query-builder.html embeds only the featured entries and fetches the
+          # full library at runtime, so these two must ship with the site or the
+          # "Saved queries" list silently stays at the featured bootstrap.
+          cp index/query-library.json index/query-library-index.json "$SITE/index/"
           echo "SITE_DIR=$SITE" >> "$GITHUB_ENV"
 
       - name: Setup Pages
