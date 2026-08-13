@@ -1,6 +1,19 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC5_T_SCP
 description: "Ddcds Type Enumval Numc 5 T Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_NUMC5_T_SCP hiển thị một loại giá trị danh mục với chuỗi ký tự số có độ dài 5, được sử dụng trong Dữ liệu Dictionary của SAP. Nó được sử dụng khi làm việc với loại dữ liệu trong Dữ liệu Dictionary của SAP."
+keywords:
+  - "sap"
+  - "data dictionary"
+  - "ddcds"
+  - "enumval"
+  - "numeric character string"
+  - "sap cds"
+  - "ddcds type"
+  - "enum value"
+  - "sap data dictionary"
+  - "sap cds view"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_NUMC5_T_SCP view exposes a type of enumeration value with a numeric character string of length 5, used in SAP's Data Dictionary. It is used when working with data types in SAP's Data Dictionary."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

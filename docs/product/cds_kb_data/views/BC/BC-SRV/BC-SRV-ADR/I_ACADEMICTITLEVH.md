@@ -1,6 +1,19 @@
 ---
 name: I_ACADEMICTITLEVH
 description: "Academictitlevh"
+semantic_vi: "Cung cấp danh sách các tiêu đề học thuật và tên tương ứng, hữu ích cho hỗ trợ giá trị trong ứng dụng nơi chứng chỉ học thuật có liên quan."
+keywords:
+  - "academic title"
+  - "tiêu đề học thuật"
+  - "value help"
+  - "hỗ trợ giá trị"
+  - "sap cds"
+  - "cds view"
+  - "academic credentials"
+  - "chứng chỉ học thuật"
+  - "basis components"
+  - "bc-srv-adr"
+semantic_en: "Provides a list of academic titles and their corresponding names, useful for value help in applications where academic credentials are relevant."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

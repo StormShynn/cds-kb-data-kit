@@ -1,6 +1,21 @@
 ---
 name: I_ACCDOCITEMCATEGORYTEXT
 description: "Accdocitemcategorytext"
+semantic_vi: "View Accdocitemcategorytext cung cấp các mô tả văn bản cho các loại tài khoản giao dịch tài khoản trong một ngôn ngữ cụ thể, hữu ích khi hiển thị tên loại tài khoản trong các ứng dụng đa ngôn ngữ."
+keywords:
+  - "accounting document item category"
+  - "tài khoản giao dịch tài khoản"
+  - "text view"
+  - "view"
+  - "fi-gl-gl-a-2cl"
+  - "fi"
+  - "fi-gl"
+  - "fi-gl-gl"
+  - "interface view"
+  - "item-level"
+  - "text"
+  - "finance"
+semantic_en: "The Accdocitemcategorytext view provides text descriptions for accounting document item categories in a specific language, useful when displaying category names in multi-language applications."
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

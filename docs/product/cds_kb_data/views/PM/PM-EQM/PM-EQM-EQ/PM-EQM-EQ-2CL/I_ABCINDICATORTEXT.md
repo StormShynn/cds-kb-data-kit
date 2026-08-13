@@ -1,6 +1,19 @@
 ---
 name: I_ABCINDICATORTEXT
 description: "Abcindicatortext"
+semantic_vi: "View I_ABCINDICATORTEXT hiển thị dữ liệu văn bản chỉ số ABC, được sử dụng để hiển thị thông tin mô tả cho chỉ số ABC trong bảo trì thiết bị. Nó được sử dụng khi hiển thị hoặc báo cáo về chỉ số ABC trong bối cảnh bảo trì thiết bị."
+keywords:
+  - "abc indicator"
+  - "text view"
+  - "plant maintenance"
+  - "equipment maintenance"
+  - "pm eqm eq"
+  - "pm eqm"
+  - "pm"
+  - "plant maintenance equipment"
+  - "equipment maintenance management"
+  - "abc indicator text"
+semantic_en: "The I_ABCINDICATORTEXT CDS view exposes ABC indicator text data, which is used to display descriptive information for ABC indicators in plant maintenance. It is used when displaying or reporting on ABC indicators in the context of equipment maintenance."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

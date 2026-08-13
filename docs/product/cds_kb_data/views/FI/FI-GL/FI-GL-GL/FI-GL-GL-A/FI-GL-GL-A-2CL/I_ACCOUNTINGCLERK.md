@@ -1,6 +1,19 @@
 ---
 name: I_ACCOUNTINGCLERK
 description: "Accountingclerk"
+semantic_vi: "View Accounting Clerk cung cấp truy cập dữ liệu nhân viên kế toán, bao gồm tên, ID người dùng và mã công ty, có thể được sử dụng để quản lý và duy trì thông tin nhân viên kế toán trong thành phần FI-GL-GL-A-2CL."
+keywords:
+  - "accounting clerk"
+  - "nhân viên kế toán"
+  - "fi-gl-gl-a-2cl"
+  - "company code"
+  - "mã công ty"
+  - "user id"
+  - "id người dùng"
+  - "sap fi"
+  - "finance"
+  - "tài chính"
+semantic_en: "The Accounting Clerk view provides access to accounting clerk data, including their names, user IDs, and company codes, which can be used to manage and maintain accounting clerk information in the FI-GL-GL-A-2CL component."
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

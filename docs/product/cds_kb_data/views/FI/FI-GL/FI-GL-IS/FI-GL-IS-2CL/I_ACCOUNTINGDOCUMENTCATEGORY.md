@@ -1,6 +1,19 @@
 ---
 name: I_ACCOUNTINGDOCUMENTCATEGORY
 description: "Accounting DocumentUMENTCATEGORY"
+semantic_vi: "View I_ACCOUNTINGDOCUMENTCATEGORY cung cấp truy cập vào các loại tài liệu kế toán, được sử dụng để phân loại và phân loại tài liệu kế toán trong hệ thống SAP. View này có thể được sử dụng để truy xuất và quản lý các loại tài liệu kế toán cho mục đích báo cáo tài chính và phân tích."
+keywords:
+  - "accounting document"
+  - "tài liệu kế toán"
+  - "accounting document category"
+  - "loại tài liệu kế toán"
+  - "sap fi-gl"
+  - "fi-gl-is-2cl"
+  - "financial reporting"
+  - "báo cáo tài chính"
+  - "financial analysis"
+  - "phân tích tài chính"
+semantic_en: "The I_ACCOUNTINGDOCUMENTCATEGORY view provides access to accounting document categories, which are used to classify and categorize accounting documents in the SAP system. This view can be used to retrieve and manage accounting document categories for financial reporting and analysis purposes."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

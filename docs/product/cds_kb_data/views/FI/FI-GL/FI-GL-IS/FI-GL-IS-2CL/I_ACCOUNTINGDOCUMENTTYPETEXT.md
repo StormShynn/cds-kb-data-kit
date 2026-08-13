@@ -1,6 +1,18 @@
 ---
 name: I_ACCOUNTINGDOCUMENTTYPETEXT
 description: "Accounting DocumentUMENTTYPETEXT"
+semantic_vi: "View I_ACCOUNTINGDOCUMENTTYPETEXT hiển thị tên loại tài liệu kế toán trong các ngôn ngữ khác nhau, cho phép hiển thị tên loại tài liệu trong các ứng dụng tài chính theo ngôn ngữ địa phương."
+keywords:
+  - "accounting document type"
+  - "tài liệu kế toán"
+  - "loại tài liệu kế toán"
+  - "ngôn ngữ"
+  - "tài chính"
+  - "fi-gl"
+  - "fi-gl-is"
+  - "finance"
+  - "địa phương hóa"
+semantic_en: "The I_ACCOUNTINGDOCUMENTTYPETEXT view exposes accounting document type names in different languages, allowing for localized display of document types in financial applications."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

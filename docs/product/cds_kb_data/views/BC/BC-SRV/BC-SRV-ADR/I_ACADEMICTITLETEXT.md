@@ -1,6 +1,20 @@
 ---
 name: I_ACADEMICTITLETEXT
 description: "Academictitletext"
+semantic_vi: "View Academictitletext cung cấp thông tin về tiêu đề học thuật trong nhiều ngôn ngữ, bao gồm tên tiêu đề. Nó được sử dụng để lấy thông tin chi tiết về tiêu đề học thuật cho các mục đích khác nhau."
+keywords:
+  - "academic title"
+  - "tiêu đề học thuật"
+  - "academic title name"
+  - "tên tiêu đề học thuật"
+  - "language"
+  - "ngôn ngữ"
+  - "sap cds view"
+  - "view"
+  - "basis components"
+  - "components"
+  - "academic title text"
+semantic_en: "The Academictitletext view provides academic title information in multiple languages, including the title name. It is used to retrieve academic title details for various purposes."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,16 @@
 ---
 name: F_FISCALCALENDARDAYSHIFT
 description: "Fiscalcalendardayshift"
+semantic_vi: "View F_FISCALCALENDARDAYSHIFT hiển thị các thay đổi ngày trong lịch tài chính cho một biến thể năm tài chính cụ thể, có thể được sử dụng để xác định các thay đổi ngày cho một biến thể năm tài chính cụ thể trong kế toán tài chính."
+keywords:
+  - "fiscal calendar"
+  - "day shift"
+  - "fiscal year variant"
+  - "financial accounting"
+  - "kế toán tài chính"
+  - "biến thể năm tài chính"
+  - "thay đổi ngày"
+semantic_en: "The F_FISCALCALENDARDAYSHIFT view exposes fiscal calendar day shifts for a given fiscal year variant, which can be used to determine the day shifts for a specific fiscal year variant in financial accounting."
 app_component: FI-GL-GL-2CL
 software_component: SAPSCORE
 release_state: released

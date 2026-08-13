@@ -1,6 +1,21 @@
 ---
 name: F_VALUATIONAREATYPE
 description: "Valuationareatype"
+semantic_vi: "View Valuationareatype CDS hiển thị các loại giá trị khu vực được sử dụng trong việc đánh giá vật liệu, điều này rất quan trọng cho quản lý kho và báo cáo tài chính. Nó được sử dụng để truy xuất và phân tích các loại giá trị khu vực cho các kịch bản kinh doanh cụ thể."
+keywords:
+  - "valuation area type"
+  - "loại giá trị khu vực"
+  - "material valuation"
+  - "đánh giá vật liệu"
+  - "inventory management"
+  - "quản lý kho"
+  - "financial reporting"
+  - "báo cáo tài chính"
+  - "mm-im-gf"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "fact-view"
+semantic_en: "The Valuationareatype CDS view exposes valuation area types used in material valuation, which is essential for inventory management and financial reporting. It is used to retrieve and analyze valuation area types for specific business scenarios."
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

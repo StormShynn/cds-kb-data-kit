@@ -1,6 +1,17 @@
 ---
 name: HOME_TEST_V3_NO_SERVICE
 description: "Home Test V 3 NO Service"
+semantic_vi: "View Home Test V 3 NO Service cung cấp truy cập dữ liệu thử nghiệm cho thành phần CA-GTF-ANL, không bao gồm các trường liên quan đến dịch vụ."
+keywords:
+  - "home test"
+  - "ca-gtf-anl"
+  - "cross-application components"
+  - "test data"
+  - "no service"
+  - "dữ liệu thử nghiệm"
+  - "thành phần ca-gtf-anl"
+  - "components anl"
+semantic_en: "The Home Test V 3 NO Service view provides access to test data for the CA-GTF-ANL component, excluding service-related fields."
 app_component: CA-GTF-ANL
 software_component: SAPPCORE_H
 release_state: released

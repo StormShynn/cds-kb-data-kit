@@ -1,6 +1,21 @@
 ---
 name: I_ACCOUNTINGDOCUMENTJOURNAL
 description: "Accounting DocumentUMENTJOURNAL"
+semantic_vi: "View I_ACCOUNTINGDOCUMENTJOURNAL hiển thị dữ liệu nhật ký tài khoản kế toán, được sử dụng để theo dõi và quản lý các giao dịch tài chính trong một công ty. Nó thường được sử dụng trong kế toán và báo cáo tài chính."
+keywords:
+  - "accounting document"
+  - "tài khoản kế toán"
+  - "financial transaction"
+  - "giao dịch tài chính"
+  - "journal entry"
+  - "nhật ký tài khoản"
+  - "accounting document journal"
+  - "tài khoản kế toán nhật ký"
+  - "sap fi-gl"
+  - "fi-gl-is-2cl"
+  - "financial accounting"
+  - "kế toán tài chính"
+semantic_en: "The I_ACCOUNTINGDOCUMENTJOURNAL view exposes accounting document journal data, which is used to track and manage financial transactions in a company. It is typically used in financial accounting and reporting."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

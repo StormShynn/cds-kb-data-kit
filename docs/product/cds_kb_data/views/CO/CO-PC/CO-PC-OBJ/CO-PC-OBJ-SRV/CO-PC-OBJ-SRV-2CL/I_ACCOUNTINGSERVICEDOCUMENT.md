@@ -1,6 +1,20 @@
 ---
 name: I_ACCOUNTINGSERVICEDOCUMENT
 description: "ACCOUNTINGService DocumentUMENT"
+semantic_vi: "View I_ACCOUNTINGSERVICEDOCUMENT hiển thị dữ liệu tài khoản dịch vụ tài liệu, có liên quan khi làm việc với tài liệu dịch vụ trong Controlling."
+keywords:
+  - "accounting"
+  - "service document"
+  - "controlling"
+  - "dịch vụ tài liệu"
+  - "tài khoản"
+  - "dịch vụ"
+  - "tài liệu"
+  - "service"
+  - "document"
+  - "ekko"
+  - "đơn dịch vụ"
+semantic_en: "The I_ACCOUNTINGSERVICEDOCUMENT view exposes accounting service document data, which is relevant when working with service documents in Controlling."
 app_component: CO-PC-OBJ-SRV-2CL
 software_component: SAPSCORE
 release_state: released

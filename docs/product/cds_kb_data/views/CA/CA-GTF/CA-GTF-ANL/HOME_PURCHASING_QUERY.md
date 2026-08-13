@@ -1,6 +1,21 @@
 ---
 name: HOME_PURCHASING_QUERY
 description: "Home Purchasing (Query)"
+semantic_vi: "View Home Purchasing (Query) cung cấp truy cập dữ liệu mua hàng, cho phép các nhà phát triển truy vấn và phân tích thông tin mua hàng."
+keywords:
+  - "purchase"
+  - "mua hàng"
+  - "purchasing"
+  - "query"
+  - "view"
+  - "data"
+  - "analysis"
+  - "ekko"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "cross-application"
+  - "components"
+semantic_en: "The Home Purchasing (Query) view provides access to purchasing data, allowing developers to query and analyze purchasing information."
 app_component: CA-GTF-ANL
 software_component: SAPPCORE_H
 release_state: released

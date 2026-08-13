@@ -1,6 +1,19 @@
 ---
 name: I_ACCOUNTINGDOCUMENTCATEGORYT
 description: "Accounting DocumentUMENTCATEGORYT"
+semantic_vi: "View Accounting Document Category cung cấp thông tin về các loại tài khoản kế toán, bao gồm tên và giá trị miền, có thể được sử dụng để phân loại và phân tích các giao dịch tài chính."
+keywords:
+  - "accounting document category"
+  - "tài khoản kế toán"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "domain value"
+  - "giá trị miền"
+  - "fi-gl"
+  - "fi-gl-is-2cl"
+  - "finance"
+  - "tài chính"
+semantic_en: "The Accounting Document Category view provides information about accounting document categories, including their names and domain values, which can be used to categorize and analyze financial transactions."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

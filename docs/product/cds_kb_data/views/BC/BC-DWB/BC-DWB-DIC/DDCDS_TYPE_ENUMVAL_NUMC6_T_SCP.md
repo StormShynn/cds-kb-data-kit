@@ -1,6 +1,20 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC6_T_SCP
 description: "Ddcds Type Enumval Numc 6 T Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_NUMC6_T_SCP CDS hiển thị một loại giá trị danh mục với giá trị số 6, được sử dụng trong thành phần SAP BC-DWB-DIC. Nó được sử dụng để lấy dữ liệu liên quan đến giá trị danh mục."
+keywords:
+  - "enum"
+  - "enumeration"
+  - "dwb"
+  - "dic"
+  - "sap"
+  - "basis components"
+  - "cds view"
+  - "ddcds type"
+  - "enumval numc 6 t scp"
+  - "danh mục"
+  - "giá trị danh mục"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_NUMC6_T_SCP CDS view exposes a type of enumeration value with a numeric value of 6, used in the SAP component BC-DWB-DIC. It is used to retrieve data related to enumeration values."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

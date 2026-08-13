@@ -1,6 +1,18 @@
 ---
 name: I_ACCOUNTASSIGNMENTTYPET
 description: "Accountassignmenttypet"
+semantic_vi: "View Accountassignmenttypet CDS hiển thị các loại gán tài khoản, được sử dụng để phân loại và quản lý các loại gán tài khoản khác nhau trong kế toán tài chính. View này hữu ích cho các nhà phát triển cần làm việc với các loại gán tài khoản trong FI-GL-IS-2CL."
+keywords:
+  - "account assignment"
+  - "gán tài khoản"
+  - "account assignment type"
+  - "loại gán tài khoản"
+  - "fi-gl-is-2cl"
+  - "financial accounting"
+  - "kế toán tài chính"
+  - "sap"
+  - "cds view"
+semantic_en: "The Accountassignmenttypet CDS view exposes account assignment types, which are used to categorize and manage different types of account assignments in financial accounting. This view is useful for developers who need to work with account assignment types in FI-GL-IS-2CL."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

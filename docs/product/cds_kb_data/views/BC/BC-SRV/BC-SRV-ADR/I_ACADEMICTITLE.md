@@ -1,6 +1,16 @@
 ---
 name: I_ACADEMICTITLE
 description: "Academictitle"
+semantic_vi: "View Academictitle CDS hiển thị dữ liệu danh hiệu học thuật, có thể được sử dụng để lấy và hiển thị danh hiệu học thuật và tên tương ứng."
+keywords:
+  - "academic title"
+  - "danh hiệu học thuật"
+  - "sap cds view"
+  - "basis components"
+  - "bc-srv-adr"
+  - "interface view"
+  - "released"
+semantic_en: "The Academictitle CDS view exposes academic title data, which can be used to retrieve and display academic titles and their corresponding names."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

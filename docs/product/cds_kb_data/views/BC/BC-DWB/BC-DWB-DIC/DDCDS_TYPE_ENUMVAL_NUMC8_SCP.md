@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC8_SCP
 description: "Ddcds Type Enumval Numc 8 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_NUMC8_SCP hiển thị dữ liệu về giá trị liệt kê cho trường số có độ dài 8 ký tự trong SAP. Nó được sử dụng để truy cập và chỉnh sửa các giá trị này trong phát triển ABAP và đám mây."
+keywords:
+  - "sap"
+  - "ddcds"
+  - "enumval"
+  - "numc8"
+  - "scp"
+  - "abap"
+  - "cloud"
+  - "development"
+  - "basis"
+  - "components"
+  - "enumeration"
+  - "values"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_NUMC8_SCP view exposes data about enumeration values for numeric fields with a length of 8 characters in SAP systems. It is used to access and manipulate these values in ABAP and cloud development."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

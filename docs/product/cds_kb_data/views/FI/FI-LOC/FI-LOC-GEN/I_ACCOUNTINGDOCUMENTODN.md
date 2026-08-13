@@ -1,6 +1,19 @@
 ---
 name: I_ACCOUNTINGDOCUMENTODN
 description: "Accounting DocumentUMENTODN"
+semantic_vi: "View Accounting DocumentUMENTODN hiển thị thông tin về tài liệu kế toán, bao gồm số và ngày của tài liệu chính thức, có thể được sử dụng để truy xuất và phân tích dữ liệu tài liệu kế toán."
+keywords:
+  - "accounting document"
+  - "tài liệu kế toán"
+  - "official document number"
+  - "số tài liệu chính thức"
+  - "fi"
+  - "fi-loc-gen"
+  - "finance"
+  - "finance industry"
+  - "sap"
+  - "cds view"
+semantic_en: "The Accounting DocumentUMENTODN view exposes accounting document information, including official document numbers and dates, which can be used to retrieve and analyze accounting document data."
 app_component: FI-LOC-GEN
 software_component: SAPSCORE
 release_state: released

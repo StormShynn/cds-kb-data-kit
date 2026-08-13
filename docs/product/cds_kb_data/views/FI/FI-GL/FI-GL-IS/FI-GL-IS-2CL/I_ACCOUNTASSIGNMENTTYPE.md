@@ -1,6 +1,19 @@
 ---
 name: I_ACCOUNTASSIGNMENTTYPE
 description: "Accountassignmenttype"
+semantic_vi: "View I_ACCOUNTASSIGNMENTTYPE hiển thị các loại gán tài khoản được sử dụng trong kế toán tài chính, có thể được sử dụng để xác định cách gán chi phí vào sổ cái chung của công ty."
+keywords:
+  - "account assignment"
+  - "financial accounting"
+  - "accounting type"
+  - "gán tài khoản"
+  - "kế toán tài chính"
+  - "loại kế toán"
+  - "fi-gl"
+  - "fi-gl-is"
+  - "fi"
+  - "fi-gl-is-2cl"
+semantic_en: "The I_ACCOUNTASSIGNMENTTYPE view exposes account assignment types used in financial accounting, which can be used to determine how to assign costs to accounts in a company's general ledger."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

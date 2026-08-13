@@ -1,6 +1,20 @@
 ---
 name: I_ABCINDICATOR
 description: "Abcindicator"
+semantic_vi: "View Abcindicator cung cấp truy cập dữ liệu chỉ số ABC, được sử dụng để ưu tiên hoạt động bảo trì trong bảo trì nhà máy. Nó được sử dụng để lấy thông tin chỉ số ABC để phân tích và báo cáo."
+keywords:
+  - "abc indicator"
+  - "plant maintenance"
+  - "bảo trì nhà máy"
+  - "chỉ số abc"
+  - "activity priority"
+  - "truy vấn dữ liệu"
+  - "data retrieval"
+  - "sap pm"
+  - "bảo trì"
+  - "maintenance"
+  - "activity prioritization"
+semantic_en: "The Abcindicator view provides access to ABC indicator data, which is used to prioritize maintenance activities in plant maintenance. It is used to retrieve ABC indicator information for analysis and reporting purposes."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

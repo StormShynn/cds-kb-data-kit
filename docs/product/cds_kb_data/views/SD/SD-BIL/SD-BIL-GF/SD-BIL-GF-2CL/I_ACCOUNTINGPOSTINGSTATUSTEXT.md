@@ -1,6 +1,21 @@
 ---
 name: I_ACCOUNTINGPOSTINGSTATUSTEXT
 description: "Accountingpostingstatustext"
+semantic_vi: "View Accountingpostingstatustext cung cấp mô tả văn bản cho trạng thái đăng ký kế toán trong các ngôn ngữ khác nhau, có thể được sử dụng để hiển thị thông tin trạng thái trong giao diện người dùng."
+keywords:
+  - "accounting posting status"
+  - "trạng thái đăng ký kế toán"
+  - "text view"
+  - "view"
+  - "status"
+  - "language"
+  - "description"
+  - "mô tả"
+  - "sap"
+  - "sd-bil-gf-2cl"
+  - "sales & distribution"
+  - "sales"
+semantic_en: "The Accountingpostingstatustext view provides text descriptions for accounting posting statuses in different languages, which can be used to display status information in user interfaces."
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_ACCOUNTINGPRINCIPLETEXT
 description: "Accountingprincipletext"
+semantic_vi: "View Accounting Principle Text cung cấp các mô tả văn bản của nguyên tắc kế toán trong nhiều ngôn ngữ khác nhau, cho phép các nhà phát triển truy cập và sử dụng thông tin này trong các ứng dụng của họ. View này hữu ích khi hiển thị tên và mô tả của nguyên tắc kế toán trong giao diện người dùng."
+keywords:
+  - "accounting principle"
+  - "nguyên tắc kế toán"
+  - "text view"
+  - "view"
+  - "fi-gl-gl-a-2cl"
+  - "fi"
+  - "fi-gl"
+  - "fi-gl-gl"
+  - "interface view"
+  - "text"
+  - "finance"
+  - "finance industry"
+semantic_en: "The Accounting Principle Text view provides text descriptions of accounting principles in multiple languages, enabling developers to access and utilize this information in their applications. This view is useful when displaying accounting principle names and descriptions in a user interface."
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_ABAPTRANSPORTREQUESTTEXT
 description: "Abaptransportrequesttext"
+semantic_vi: "View I_ABAPTRANSPORTREQUESTTEXT cung cấp dữ liệu văn bản cho yêu cầu vận chuyển trong SAP, cho phép các nhà phát triển truy cập và hiển thị mô tả yêu cầu vận chuyển trong các ngôn ngữ khác nhau."
+keywords:
+  - "transport request"
+  - "yêu cầu vận chuyển"
+  - "text view"
+  - "view"
+  - "transport"
+  - "request"
+  - "description"
+  - "language"
+  - "sap"
+  - "basis components"
+  - "bc-cts-org"
+semantic_en: "The I_ABAPTRANSPORTREQUESTTEXT view provides text data for transport requests in SAP, allowing developers to access and display transport request descriptions in different languages."
 app_component: BC-CTS-ORG
 software_component: SAP_BASIS
 release_state: released

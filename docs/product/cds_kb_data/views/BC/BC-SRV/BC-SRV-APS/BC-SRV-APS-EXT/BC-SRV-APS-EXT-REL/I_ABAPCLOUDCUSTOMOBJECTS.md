@@ -1,6 +1,19 @@
 ---
 name: I_ABAPCLOUDCUSTOMOBJECTS
 description: "Abapcloudcustomobjects"
+semantic_vi: "Chỉ ra các đối tượng tùy chỉnh được tạo trong môi trường ABAP Cloud, được sử dụng để quản lý và theo dõi các đối tượng tùy chỉnh trên toàn hệ thống."
+keywords:
+  - "abap cloud"
+  - "custom object"
+  - "object type"
+  - "object name"
+  - "category"
+  - "abap object"
+  - "abap cloud custom object"
+  - "basis components"
+  - "sap cds view"
+  - "custom object management"
+semantic_en: "Exposes custom objects created in the ABAP Cloud environment, used to manage and track custom objects across the system."
 app_component: BC-SRV-APS-EXT-REL
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC8_T_SCP
 description: "Ddcds Type Enumval Numc 8 T Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_NUMC8_T_SCP hiển thị một loại giá trị danh mục với chuỗi ký tự số có độ dài 8, được sử dụng trong SAP Data Dictionary (DDIC) cho mô hình hóa và xác thực dữ liệu."
+keywords:
+  - "sap"
+  - "ddic"
+  - "data dictionary"
+  - "enumeration"
+  - "enum"
+  - "ddcds"
+  - "type"
+  - "numc8"
+  - "scp"
+  - "sap data dictionary"
+  - "ddic data modeling"
+  - "ddic validation"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_NUMC8_T_SCP view exposes a type of enumeration value with a numeric character string of length 8, used in SAP Data Dictionary (DDIC) for data modeling and validation."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

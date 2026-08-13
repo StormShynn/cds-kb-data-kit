@@ -1,6 +1,18 @@
 ---
 name: I_ACCOUNTINGPRINCIPLE
 description: "Accountingprinciple"
+semantic_vi: "View I_ACCOUNTINGPRINCIPLE hiển thị các nguyên tắc kế toán được sử dụng trong quản lý tài chính, thường được truy cập khi thiết lập hoặc phân tích các tài khoản kế toán chung."
+keywords:
+  - "accounting principle"
+  - "nguyên tắc kế toán"
+  - "fi"
+  - "fi-gl"
+  - "fi-gl-gl"
+  - "general ledger"
+  - "tài khoản kế toán chung"
+  - "accounting management"
+  - "quản lý kế toán"
+semantic_en: "The I_ACCOUNTINGPRINCIPLE view exposes accounting principles used in financial management, typically accessed when setting up or analyzing general ledger accounts."
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

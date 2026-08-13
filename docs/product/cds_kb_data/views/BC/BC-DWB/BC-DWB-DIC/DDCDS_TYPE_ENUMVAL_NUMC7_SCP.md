@@ -1,6 +1,19 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC7_SCP
 description: "Ddcds Type Enumval Numc 7 Scp"
+semantic_vi: "Chứa dữ liệu về giá trị danh mục cho kiểu số có 7 chữ số, được sử dụng trong Data Dictionary của SAP. View này hữu ích cho các nhà phát triển làm việc với Data Dictionary của SAP và giá trị danh mục."
+keywords:
+  - "sap data dictionary"
+  - "danh mục dữ liệu sap"
+  - "enum value"
+  - "giá trị danh mục"
+  - "numeric type"
+  - "kiểu số"
+  - "data dictionary"
+  - "danh mục dữ liệu"
+  - "sap cds view"
+  - "view cds sap"
+semantic_en: "Exposes data about enumeration values for numeric type with 7 digits, used in SAP Data Dictionary. This view is useful for developers working with SAP Data Dictionary and enumeration values."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

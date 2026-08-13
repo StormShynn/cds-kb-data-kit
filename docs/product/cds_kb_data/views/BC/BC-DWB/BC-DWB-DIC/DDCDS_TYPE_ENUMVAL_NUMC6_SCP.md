@@ -1,6 +1,20 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC6_SCP
 description: "Ddcds Type Enumval Numc 6 Scp"
+semantic_vi: "Chỉ ra các giá trị liệt kê cho một loại cụ thể với độ dài số là 6. Sử dụng trong các thành phần cơ bản của SAP cho định nghĩa và xác thực dữ liệu."
+keywords:
+  - "sap basis components"
+  - "data definition"
+  - "validation"
+  - "enumeration"
+  - "type"
+  - "numeric length"
+  - "ddcds"
+  - "enumval"
+  - "scp"
+  - "bcdwbdic"
+  - "basis components"
+semantic_en: "Exposes enumeration values for a specific type with a numeric length of 6. Used in SAP Basis Components for data definition and validation."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

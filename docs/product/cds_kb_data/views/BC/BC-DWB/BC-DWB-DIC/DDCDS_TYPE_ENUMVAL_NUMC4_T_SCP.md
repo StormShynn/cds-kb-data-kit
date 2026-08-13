@@ -1,6 +1,19 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC4_T_SCP
 description: "Ddcds Type Enumval Numc 4 T Scp"
+semantic_vi: "View này hiển thị giá trị danh mục dữ liệu SAP loại số với 4 chữ số thập phân, có thể được sử dụng để lấy và hiển thị giá trị danh mục cho một loại và ngôn ngữ cụ thể."
+keywords:
+  - "sap"
+  - "data type"
+  - "enumeration"
+  - "numeric"
+  - "decimal"
+  - "type"
+  - "language"
+  - "ddcds"
+  - "enumval"
+  - "numc4tscp"
+semantic_en: "This view exposes SAP data type enumeration values for numeric type with 4 decimal places, which can be used to retrieve and display enumeration values for a specific type and language."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

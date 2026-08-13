@@ -1,6 +1,20 @@
 ---
 name: I_ACCOUNTINGDOCUMENTCATGROUPT
 description: "Accounting DocumentUMENTCATGROUPT"
+semantic_vi: "View I_ACCOUNTINGDOCUMENTCATGROUPT hiển thị các nhóm tài khoản và tên nhóm tài khoản trong các ngôn ngữ khác nhau. Nó được sử dụng để truy xuất và quản lý các nhóm tài khoản."
+keywords:
+  - "accounting document"
+  - "tài khoản"
+  - "document category"
+  - "nhóm tài khoản"
+  - "fi-gl"
+  - "fi-gl-is"
+  - "accounting document category"
+  - "fi"
+  - "fi-gl-is-2cl"
+  - "finance"
+  - "finance accounting"
+semantic_en: "The I_ACCOUNTINGDOCUMENTCATGROUPT view exposes accounting document categories and their corresponding names in different languages. It is used to retrieve and manage accounting document categories."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

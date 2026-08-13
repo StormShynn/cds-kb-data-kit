@@ -1,6 +1,20 @@
 ---
 name: F_LDGRCOCODEFSCLYRVARIANT
 description: "Ldgrcocodefsclyrvariant"
+semantic_vi: "View F_LDGRCOCODEFSCLYRVARIANT CDS cung cấp dữ liệu tài chính cho một mã đơn vị công ty và biến niên độ tài chính cụ thể trong một sổ cái, thường được sử dụng cho báo cáo và phân tích tài chính."
+keywords:
+  - "financial data"
+  - "sổ cái"
+  - "ledger"
+  - "company code"
+  - "mã đơn vị công ty"
+  - "fiscal year variant"
+  - "biến niên độ tài chính"
+  - "financial reporting"
+  - "phân tích tài chính"
+  - "fi-gl"
+  - "fi-gl-is"
+semantic_en: "The F_LDGRCOCODEFSCLYRVARIANT CDS view provides financial data for a specific company code and fiscal year variant within a ledger, typically used for financial reporting and analysis."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

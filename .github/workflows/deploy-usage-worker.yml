@@ -7,7 +7,10 @@
 # Required secrets (see worker/README.md):
 #   CLOUDFLARE_API_TOKEN   — a token scoped to "Workers Scripts: Edit" for the account
 #   CLOUDFLARE_ACCOUNT_ID  — the Cloudflare account id
-#   GITHUB_ISSUE_TOKEN     — fine-grained PAT: Issues write on PROPOSE_REPO only
+# Optional secret:
+#   GITHUB_ISSUE_TOKEN     — fine-grained PAT: Issues write on PROPOSE_REPO only.
+#                            Without it, /propose-issue responds 503; everything
+#                            else (ping/totals/shape-totals) deploys fine.
 # No KV namespace setup needed anymore — counts live in a Durable Object
 # (binding + migration are already in wrangler.toml; the class is created on
 # first deploy). PULL_TOKEN is a wrangler secret you set once before deploy.
@@ -25,6 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HAS_CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+      HAS_ISSUE_TOKEN: ${{ secrets.GITHUB_ISSUE_TOKEN != '' }}
     defaults:
       run:
         working-directory: docs/product/cds_kb_mcp/worker
@@ -37,7 +41,7 @@ jobs:
         if: ${{ env.HAS_CLOUDFLARE_TOKEN == 'false' }}
         run: echo "CLOUDFLARE_API_TOKEN not set — skipping worker deploy (exit 0)."
 
-      - name: Setup wrangler
+      - name: Deploy worker
         if: ${{ env.HAS_CLOUDFLARE_TOKEN == 'true' }}
         uses: cloudflare/wrangler-action@v3
         with:
@@ -49,10 +53,26 @@ jobs:
           # every GET /totals returns 401 and the scheduled
           # pull-usage-stats.yml job can never read counts. The value is the
           # same CDS_KB_USAGE_PULL_TOKEN secret the pull workflow sends, so
-          # the two always match.
+          # the two always match. GITHUB_ISSUE_TOKEN is handled in a separate,
+          # optional step below — wrangler-action fails outright if a listed
+          # secret's env value is empty, and that repo secret isn't always set.
           secrets: |
             PULL_TOKEN
-            GITHUB_ISSUE_TOKEN
         env:
           PULL_TOKEN: ${{ secrets.CDS_KB_USAGE_PULL_TOKEN }}
+
+      # Optional: only runs when GITHUB_ISSUE_TOKEN is actually configured.
+      # Without it, /propose-issue just responds 503 ("bot not configured") —
+      # the rest of the worker (ping/totals/shape-totals) works fine either way.
+      - name: Set optional Propose Issue bot secret
+        if: ${{ env.HAS_CLOUDFLARE_TOKEN == 'true' && env.HAS_ISSUE_TOKEN == 'true' }}
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: docs/product/cds_kb_mcp/worker
+          command: deploy
+          secrets: |
+            GITHUB_ISSUE_TOKEN
+        env:
           GITHUB_ISSUE_TOKEN: ${{ secrets.GITHUB_ISSUE_TOKEN }}
