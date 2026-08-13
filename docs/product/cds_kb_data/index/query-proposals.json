@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-13T12:27:08.477Z",
-  "count": 7,
-  "note": "Reviewable proposals only. Promote into query-library.json via PR or --promote; never auto-merge. 10 entries that duplicated already-promoted query-library.json titles/views (PO TP, PO items, sales order items, billing documents, outbound deliveries, business partner, customer, supplier, journal entry items, G/L line items) were removed on 2026-08-13 — seed-query-proposals-from-usage.mjs should filter those out before writing this file next time.",
+  "generatedAt": "2026-08-13T16:35:40.162Z",
+  "count": 13,
+  "note": "Reviewable proposals only. Promote into query-library.json via PR or --promote; never auto-merge. Scraped join recipes promoted 2026-08-13; remaining pending entries still need review.",
   "proposals": [
     {
       "status": "pending",
@@ -142,6 +142,227 @@
         "orderBy": "PlannedStartDate",
         "viewName": "Z_C_ENTERPRISEPROJECTELEMENT"
       }
+    },
+    {
+      "status": "promoted",
+      "source": "github+web-scrape",
+      "score": 12,
+      "generatedAt": "2026-08-13T16:33:49.408Z",
+      "evidence": [
+        "github:StormShynn/sap-abap-agent skills/sap-abap-sql (CDS released views over EKKO)",
+        "web:processmind.com SAP S/4HANA SCM data-template (PO+item+supplier join pattern)"
+      ],
+      "entry": {
+        "id": "po-header-items-supplier",
+        "kind": "recipe",
+        "title": "Purchase order lines with supplier",
+        "description": "PO header joined to item lines and supplier master — scrubbed join recipe from public SCM SQL templates + ABAP Cloud SQL guidance (I_PurchaseOrder* mapped to API01 views present in this KB).",
+        "contributor": "scrape-github-web-2026-08-13",
+        "views": [
+          {
+            "alias": "t1",
+            "name": "I_PURCHASEORDERAPI01",
+            "joinType": null,
+            "on": null
+          },
+          {
+            "alias": "t2",
+            "name": "I_PURCHASEORDERITEMAPI01",
+            "joinType": "INNER JOIN",
+            "on": "t1.PurchaseOrder = t2.PurchaseOrder"
+          },
+          {
+            "alias": "t3",
+            "name": "I_SUPPLIER",
+            "joinType": "LEFT OUTER JOIN",
+            "on": "t1.Supplier = t3.Supplier"
+          }
+        ],
+        "select": "t1.PurchaseOrder, t1.PurchaseOrderType, t1.PurchaseOrderDate, t1.CompanyCode, t1.Supplier, t3.SupplierName, t2.PurchaseOrderItem, t2.Material, t2.Plant",
+        "orderBy": "t1.PurchaseOrderDate, t1.PurchaseOrder, t2.PurchaseOrderItem",
+        "viewName": "Z_C_PoLinesWithSupplier"
+      },
+      "promotedAt": "2026-08-13T16:35:40.162Z"
+    },
+    {
+      "status": "promoted",
+      "source": "web-scrape",
+      "score": 12,
+      "generatedAt": "2026-08-13T16:33:49.408Z",
+      "evidence": [
+        "web:processmind.com SAP S/4HANA SCM data-template (sales order + item + customer)"
+      ],
+      "entry": {
+        "id": "sales-order-items-customer",
+        "kind": "recipe",
+        "title": "Sales order items with customer",
+        "description": "Sales order header joined to items and sold-to customer — public SCM SQL join pattern, field names checked against KB view-fields.",
+        "contributor": "scrape-github-web-2026-08-13",
+        "views": [
+          {
+            "alias": "t1",
+            "name": "I_SALESORDER",
+            "joinType": null,
+            "on": null
+          },
+          {
+            "alias": "t2",
+            "name": "I_SALESORDERITEM",
+            "joinType": "INNER JOIN",
+            "on": "t1.SalesOrder = t2.SalesOrder"
+          },
+          {
+            "alias": "t3",
+            "name": "I_CUSTOMER",
+            "joinType": "LEFT OUTER JOIN",
+            "on": "t1.SoldToParty = t3.Customer"
+          }
+        ],
+        "select": "t1.SalesOrder, t1.SalesOrderType, t1.CreationDate, t1.SoldToParty, t3.CustomerName, t2.SalesOrderItem, t2.Material, t2.Plant, t2.RequestedDeliveryDate",
+        "orderBy": "t1.CreationDate DESC, t1.SalesOrder, t2.SalesOrderItem",
+        "viewName": "Z_C_SalesOrderItemsCustomer"
+      },
+      "promotedAt": "2026-08-13T16:35:40.162Z"
+    },
+    {
+      "status": "promoted",
+      "source": "web-scrape",
+      "score": 11,
+      "generatedAt": "2026-08-13T16:33:49.408Z",
+      "evidence": [
+        "web:processmind.com SAP S/4HANA SCM data-template (billing document + item + customer)"
+      ],
+      "entry": {
+        "id": "billing-items-customer",
+        "kind": "recipe",
+        "title": "Billing document items with customer",
+        "description": "Billing header joined to items and sold-to customer — public SCM SQL join pattern adapted to KB field names.",
+        "contributor": "scrape-github-web-2026-08-13",
+        "views": [
+          {
+            "alias": "t1",
+            "name": "I_BILLINGDOCUMENT",
+            "joinType": null,
+            "on": null
+          },
+          {
+            "alias": "t2",
+            "name": "I_BILLINGDOCUMENTITEM",
+            "joinType": "INNER JOIN",
+            "on": "t1.BillingDocument = t2.BillingDocument"
+          },
+          {
+            "alias": "t3",
+            "name": "I_CUSTOMER",
+            "joinType": "LEFT OUTER JOIN",
+            "on": "t1.SoldToParty = t3.Customer"
+          }
+        ],
+        "select": "t1.BillingDocument, t1.BillingDocumentType, t1.CreationDate, t1.SoldToParty, t3.CustomerName, t2.BillingDocumentItem, t2.Material, t2.Plant",
+        "orderBy": "t1.CreationDate DESC, t1.BillingDocument, t2.BillingDocumentItem",
+        "viewName": "Z_C_BillingItemsCustomer"
+      },
+      "promotedAt": "2026-08-13T16:35:40.162Z"
+    },
+    {
+      "status": "promoted",
+      "source": "web-scrape",
+      "score": 11,
+      "generatedAt": "2026-08-13T16:33:49.408Z",
+      "evidence": [
+        "web:processmind.com SAP S/4HANA SCM data-template (outbound delivery + item + customer)"
+      ],
+      "entry": {
+        "id": "outbound-delivery-items-customer",
+        "kind": "recipe",
+        "title": "Outbound delivery items with customer",
+        "description": "Outbound delivery header joined to items and sold-to customer — public SCM SQL join pattern; uses I_OutboundDelivery* (KB also has I_DeliveryDocument).",
+        "contributor": "scrape-github-web-2026-08-13",
+        "views": [
+          {
+            "alias": "t1",
+            "name": "I_OUTBOUNDDELIVERY",
+            "joinType": null,
+            "on": null
+          },
+          {
+            "alias": "t2",
+            "name": "I_OUTBOUNDDELIVERYITEM",
+            "joinType": "INNER JOIN",
+            "on": "t1.OutboundDelivery = t2.OutboundDelivery"
+          },
+          {
+            "alias": "t3",
+            "name": "I_CUSTOMER",
+            "joinType": "LEFT OUTER JOIN",
+            "on": "t1.SoldToParty = t3.Customer"
+          }
+        ],
+        "select": "t1.OutboundDelivery, t1.DeliveryDocumentType, t1.CreationDate, t1.SoldToParty, t3.CustomerName, t2.OutboundDeliveryItem, t2.Material, t2.Plant",
+        "orderBy": "t1.CreationDate DESC, t1.OutboundDelivery, t2.OutboundDeliveryItem",
+        "viewName": "Z_C_OutboundDeliveryItemsCust"
+      },
+      "promotedAt": "2026-08-13T16:35:40.162Z"
+    },
+    {
+      "status": "promoted",
+      "source": "web-scrape",
+      "score": 11,
+      "generatedAt": "2026-08-13T16:33:49.408Z",
+      "evidence": [
+        "web:processmind.com SAP S/4HANA SCM data-template (material document header+item; GR goods movement filter scrubbed to placeholder-free structural where)"
+      ],
+      "entry": {
+        "id": "material-document-header-items",
+        "kind": "recipe",
+        "title": "Material document header with items",
+        "description": "Material document header joined to item lines (composite key year+document). Mapped from public SCM SQL that used I_MaterialDocumentHeader/Item → KB *_2 views. Optional GR filter left as comment-free structural example without live tenant literals.",
+        "contributor": "scrape-github-web-2026-08-13",
+        "views": [
+          {
+            "alias": "t1",
+            "name": "I_MATERIALDOCUMENTHEADER_2",
+            "joinType": null,
+            "on": null
+          },
+          {
+            "alias": "t2",
+            "name": "I_MATERIALDOCUMENTITEM_2",
+            "joinType": "INNER JOIN",
+            "on": "t1.MaterialDocument = t2.MaterialDocument AND t1.MaterialDocumentYear = t2.MaterialDocumentYear"
+          }
+        ],
+        "select": "t1.MaterialDocumentYear, t1.MaterialDocument, t1.DocumentDate, t1.CreatedByUser, t2.MaterialDocumentItem, t2.Material, t2.Plant, t2.GoodsMovementType, t2.PurchaseOrder, t2.PurchaseOrderItem",
+        "orderBy": "t1.DocumentDate DESC, t1.MaterialDocument, t2.MaterialDocumentItem",
+        "viewName": "Z_C_MaterialDocumentHeaderItems"
+      },
+      "promotedAt": "2026-08-13T16:35:40.162Z"
+    },
+    {
+      "status": "promoted",
+      "source": "github-scrape",
+      "score": 10,
+      "generatedAt": "2026-08-13T16:33:49.408Z",
+      "evidence": [
+        "github:StormShynn/sap-abap-agent skills/sap-abap-sql (SELECT FROM i_journalentry instead of BKPF)"
+      ],
+      "entry": {
+        "id": "journal-entry-headers",
+        "kind": "recipe",
+        "title": "Journal entry headers",
+        "description": "FI journal entry headers from released CDS (ABAP Cloud guidance: I_JournalEntry instead of BKPF). Complements existing library journal-entry-items recipe.",
+        "contributor": "scrape-github-web-2026-08-13",
+        "views": [
+          {
+            "alias": "t1",
+            "name": "I_JOURNALENTRY"
+          }
+        ],
+        "select": "CompanyCode, FiscalYear, AccountingDocument, AccountingDocumentType, DocumentDate, PostingDate, FiscalPeriod, CreatedByUser",
+        "orderBy": "DocumentDate DESC, AccountingDocument",
+        "viewName": "Z_C_JournalEntryHeaders"
+      },
+      "promotedAt": "2026-08-13T16:35:40.162Z"
     }
   ]
 }

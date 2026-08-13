@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "count": 15,
+  "count": 21,
   "entries": [
     {
       "id": "open-purchase-orders",
@@ -211,7 +211,100 @@
       "viewName": "Z_C_GLACCOUNTLINEITEM",
       "featured": false,
       "fingerprint": "27c23700c883fcf6"
+    },
+    {
+      "id": "po-header-items-supplier",
+      "kind": "recipe",
+      "recipeId": null,
+      "title": "Purchase order lines with supplier",
+      "description": "PO header joined to item lines and supplier master — scrubbed join recipe from public SCM SQL templates + ABAP Cloud SQL guidance (I_PurchaseOrder* mapped to API01 views present in this KB).",
+      "contributor": "scrape-github-web-2026-08-13",
+      "views": [
+        "I_PURCHASEORDERAPI01",
+        "I_PURCHASEORDERITEMAPI01",
+        "I_SUPPLIER"
+      ],
+      "viewName": "Z_C_PoLinesWithSupplier",
+      "featured": true,
+      "fingerprint": "24a16d5fb85def9f"
+    },
+    {
+      "id": "sales-order-items-customer",
+      "kind": "recipe",
+      "recipeId": null,
+      "title": "Sales order items with customer",
+      "description": "Sales order header joined to items and sold-to customer — public SCM SQL join pattern, field names checked against KB view-fields.",
+      "contributor": "scrape-github-web-2026-08-13",
+      "views": [
+        "I_SALESORDER",
+        "I_SALESORDERITEM",
+        "I_CUSTOMER"
+      ],
+      "viewName": "Z_C_SalesOrderItemsCustomer",
+      "featured": true,
+      "fingerprint": "18dcfe950f17d662"
+    },
+    {
+      "id": "billing-items-customer",
+      "kind": "recipe",
+      "recipeId": null,
+      "title": "Billing document items with customer",
+      "description": "Billing header joined to items and sold-to customer — public SCM SQL join pattern adapted to KB field names.",
+      "contributor": "scrape-github-web-2026-08-13",
+      "views": [
+        "I_BILLINGDOCUMENT",
+        "I_BILLINGDOCUMENTITEM",
+        "I_CUSTOMER"
+      ],
+      "viewName": "Z_C_BillingItemsCustomer",
+      "featured": false,
+      "fingerprint": "39950677b3928ccc"
+    },
+    {
+      "id": "outbound-delivery-items-customer",
+      "kind": "recipe",
+      "recipeId": null,
+      "title": "Outbound delivery items with customer",
+      "description": "Outbound delivery header joined to items and sold-to customer — public SCM SQL join pattern; uses I_OutboundDelivery* (KB also has I_DeliveryDocument).",
+      "contributor": "scrape-github-web-2026-08-13",
+      "views": [
+        "I_OUTBOUNDDELIVERY",
+        "I_OUTBOUNDDELIVERYITEM",
+        "I_CUSTOMER"
+      ],
+      "viewName": "Z_C_OutboundDeliveryItemsCust",
+      "featured": false,
+      "fingerprint": "712d52b7769d66fd"
+    },
+    {
+      "id": "material-document-header-items",
+      "kind": "recipe",
+      "recipeId": null,
+      "title": "Material document header with items",
+      "description": "Material document header joined to item lines (composite key year+document). Mapped from public SCM SQL that used I_MaterialDocumentHeader/Item → KB *_2 views. Optional GR filter left as comment-free structural example without live tenant literals.",
+      "contributor": "scrape-github-web-2026-08-13",
+      "views": [
+        "I_MATERIALDOCUMENTHEADER_2",
+        "I_MATERIALDOCUMENTITEM_2"
+      ],
+      "viewName": "Z_C_MaterialDocumentHeaderItems",
+      "featured": false,
+      "fingerprint": "a6b1bf4140e03310"
+    },
+    {
+      "id": "journal-entry-headers",
+      "kind": "recipe",
+      "recipeId": null,
+      "title": "Journal entry headers",
+      "description": "FI journal entry headers from released CDS (ABAP Cloud guidance: I_JournalEntry instead of BKPF). Complements existing library journal-entry-items recipe.",
+      "contributor": "scrape-github-web-2026-08-13",
+      "views": [
+        "I_JOURNALENTRY"
+      ],
+      "viewName": "Z_C_JournalEntryHeaders",
+      "featured": false,
+      "fingerprint": "87f6f0d3e7ca5913"
     }
   ],
-  "generatedAt": "2026-08-13T16:18:25.249Z"
+  "generatedAt": "2026-08-13T16:35:55.243Z"
 }
