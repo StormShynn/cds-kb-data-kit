@@ -21,10 +21,13 @@ const MAX_COUNT_PER_EVENT = 1000;
 const MAX_SHAPE_ID_LENGTH = 64;
 const MAX_VIEWS_PER_SHAPE = 12;
 
+// Per-IP rate limiting lives INSIDE the Durable Object (see #rateLimited in
+// UsageCounter): the DO is the one global single-instance, so buckets are
+// shared across every worker isolate. A per-isolate map (tried first) splits
+// the window across isolates and never trips.
 const RATE_LIMIT_MAX = 120;
 const RATE_LIMIT_WINDOW_MS = 60_000;
 const RATE_LIMIT_MAX_BUCKETS = 10_000;
-const ipBuckets = new Map();
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -39,26 +42,6 @@ function clientIp(request) {
     request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
     'unknown'
   );
-}
-
-function rateLimited(request) {
-  const ip = clientIp(request);
-  const now = Date.now();
-  if (ipBuckets.size > RATE_LIMIT_MAX_BUCKETS) {
-    for (const [k, v] of ipBuckets) {
-      if (now - v.windowStart >= RATE_LIMIT_WINDOW_MS) ipBuckets.delete(k);
-    }
-  }
-  const b = ipBuckets.get(ip);
-  if (!b || now - b.windowStart >= RATE_LIMIT_WINDOW_MS) {
-    ipBuckets.set(ip, { count: 1, windowStart: now });
-    return null;
-  }
-  b.count++;
-  if (b.count > RATE_LIMIT_MAX) {
-    return new Response('Too Many Requests', { status: 429, headers: { 'retry-after': '60', ...CORS_HEADERS } });
-  }
-  return null;
 }
 
 function corsJson(body, status = 200) {
@@ -78,23 +61,15 @@ export default {
       }
 
       if (request.method === 'POST' && url.pathname === '/ping') {
-        const limited = rateLimited(request);
-        if (limited) return limited;
         return await handlePing(request, env);
       }
       if (request.method === 'GET' && url.pathname === '/totals') {
-        const limited = rateLimited(request);
-        if (limited) return limited;
         return await handleTotals(request, env);
       }
       if (request.method === 'POST' && url.pathname === '/ping-shapes') {
-        const limited = rateLimited(request);
-        if (limited) return limited;
         return await handleShapePing(request, env);
       }
       if (request.method === 'GET' && url.pathname === '/shape-totals') {
-        const limited = rateLimited(request);
-        if (limited) return limited;
         return await handleShapeTotals(request, env);
       }
       return new Response('Not found', { status: 404 });
@@ -106,7 +81,10 @@ export default {
 };
 
 function usageCounter(env) {
-  const id = env.USAGE_DO.idFromName('global-v3');
+  // global-v4: fresh instance so the DO-side rate limiter code actually loads
+  // (existing DO instances keep running their deployed version until evicted)
+  // and the rate-limit test pollution from bring-up is dropped.
+  const id = env.USAGE_DO.idFromName('global-v4');
   return env.USAGE_DO.get(id);
 }
 
@@ -136,7 +114,7 @@ async function handlePing(request, env) {
 
   const resp = await usageCounter(env).fetch(new Request('https://usage-do/ping', {
     method: 'POST',
-    headers: { 'content-type': 'application/json' },
+    headers: { 'content-type': 'application/json', 'x-client-ip': clientIp(request) },
     body: JSON.stringify({ events: clean }),
   }));
   return new Response(resp.body, { status: resp.status, headers: { 'content-type': 'application/json' } });
@@ -148,7 +126,9 @@ async function handleTotals(request, env) {
     return new Response('Unauthorized', { status: 401 });
   }
 
-  const resp = await usageCounter(env).fetch(new Request('https://usage-do/totals'));
+  const resp = await usageCounter(env).fetch(new Request('https://usage-do/totals', {
+    headers: { 'x-client-ip': clientIp(request) },
+  }));
   return new Response(resp.body, { status: resp.status, headers: { 'content-type': 'application/json' } });
 }
 
@@ -211,7 +191,7 @@ async function handleShapePing(request, env) {
 
   const resp = await usageCounter(env).fetch(new Request('https://usage-do/ping-shapes', {
     method: 'POST',
-    headers: { 'content-type': 'application/json' },
+    headers: { 'content-type': 'application/json', 'x-client-ip': clientIp(request) },
     body: JSON.stringify({ events: clean }),
   }));
   return new Response(resp.body, {
@@ -226,7 +206,9 @@ async function handleShapeTotals(request, env) {
     return new Response('Unauthorized', { status: 401 });
   }
 
-  const resp = await usageCounter(env).fetch(new Request('https://usage-do/shape-totals'));
+  const resp = await usageCounter(env).fetch(new Request('https://usage-do/shape-totals', {
+    headers: { 'x-client-ip': clientIp(request) },
+  }));
   return new Response(resp.body, { status: resp.status, headers: { 'content-type': 'application/json' } });
 }
 
@@ -239,6 +221,33 @@ export class UsageCounter {
     this.totals = new Map();
     this.shapes = new Map(); // shapeId -> { count, views, selectFieldCount, selectFieldHash, flags }
     this.hydrated = false;
+    this.rateBuckets = new Map(); // ip -> { count, windowStart } — global across worker isolates
+  }
+
+  // Per-IP fixed-window limiter. Single instance => the window is shared by
+  // every caller; in-memory (best-effort abuse protection, resets on eviction).
+  #rateLimited(ip) {
+    const now = Date.now();
+    if (this.rateBuckets.size > RATE_LIMIT_MAX_BUCKETS) {
+      for (const [k, v] of this.rateBuckets) {
+        if (now - v.windowStart >= RATE_LIMIT_WINDOW_MS) this.rateBuckets.delete(k);
+      }
+    }
+    const b = this.rateBuckets.get(ip);
+    if (!b || now - b.windowStart >= RATE_LIMIT_WINDOW_MS) {
+      this.rateBuckets.set(ip, { count: 1, windowStart: now });
+      return false;
+    }
+    b.count++;
+    return b.count > RATE_LIMIT_MAX;
+  }
+
+  #rateLimitedResponse() {
+    return new Response('Too Many Requests', { status: 429, headers: { 'retry-after': '60' } });
+  }
+
+  #requestIp(request) {
+    return request.headers.get('x-client-ip') || 'unknown';
   }
 
   async #hydrate() {
@@ -261,13 +270,13 @@ export class UsageCounter {
         return await this.#onPing(request);
       }
       if (request.method === 'GET' && url.pathname === '/totals') {
-        return await this.#onTotals();
+        return await this.#onTotals(request);
       }
       if (request.method === 'POST' && url.pathname === '/ping-shapes') {
         return await this.#onShapePing(request);
       }
       if (request.method === 'GET' && url.pathname === '/shape-totals') {
-        return await this.#onShapeTotals();
+        return await this.#onShapeTotals(request);
       }
       return new Response('Not found', { status: 404 });
     } catch (e) {
@@ -276,6 +285,8 @@ export class UsageCounter {
   }
 
   async #onPing(request) {
+    if (this.#rateLimited(this.#requestIp(request))) return this.#rateLimitedResponse();
+
     let body;
     try {
       body = await request.json();
@@ -300,7 +311,8 @@ export class UsageCounter {
     return new Response('ok', { status: 200 });
   }
 
-  async #onTotals() {
+  async #onTotals(request) {
+    if (this.#rateLimited(this.#requestIp(request))) return this.#rateLimitedResponse();
     await this.#hydrate();
     const totals = {};
     for (const [view, count] of this.totals) {
@@ -312,6 +324,8 @@ export class UsageCounter {
   }
 
   async #onShapePing(request) {
+    if (this.#rateLimited(this.#requestIp(request))) return this.#rateLimitedResponse();
+
     let body;
     try {
       body = await request.json();
@@ -352,7 +366,8 @@ export class UsageCounter {
     });
   }
 
-  async #onShapeTotals() {
+  async #onShapeTotals(request) {
+    if (this.#rateLimited(this.#requestIp(request))) return this.#rateLimitedResponse();
     await this.#hydrate();
     const totals = {};
     for (const [shapeId, meta] of this.shapes) {
