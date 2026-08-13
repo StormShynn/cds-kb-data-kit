@@ -1,6 +1,20 @@
 ---
 name: I_BPADDRINDEPENDENTPHONETP_3
 description: "Bpaddrindependentphonetp 3"
+semantic_vi: "Số điện thoại đối tác kinh doanh độc lập với địa chỉ, được sử dụng cho xử lý giao dịch trong thành phần AP-MD-BP-RAP."
+keywords:
+  - "business partner"
+  - "phone number"
+  - "address"
+  - "transactional processing"
+  - "ap-md-bp-rap"
+  - "sap"
+  - "cds view"
+  - "partner kinh doanh"
+  - "số điện thoại"
+  - "địa chỉ"
+  - "xử lý giao dịch"
+semantic_en: "Business partner phone numbers independent of address, used for transactional processing in AP-MD-BP-RAP component."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released
