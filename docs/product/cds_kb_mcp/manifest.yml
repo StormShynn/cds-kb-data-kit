@@ -14,8 +14,10 @@
 # CDS_KB_EMBED_API_KEY / CDS_KB_USAGE_ENDPOINT. See README.md.
 applications:
   - name: cds-kb-mcp
-    memory: 2G   # 512M OOM-crashes every ~15min on periodic index refresh (CDS_KB_INDEX_REFRESH_MINUTES);
-                 # 256M OOM-crashes just loading the ~10.6k-view MiniSearch index (both verified on BTP trial)
+    memory: 4G   # org trial quota max (4G total org-wide) — leaves zero headroom for any other
+                 # app/service in this org/space. 512M OOM-crashed every ~15min on periodic index
+                 # refresh (CDS_KB_INDEX_REFRESH_MINUTES); 256M OOM-crashed just loading the
+                 # ~10.6k-view MiniSearch index (both verified on BTP trial)
     instances: 1
     buildpacks:
       - nodejs_buildpack
