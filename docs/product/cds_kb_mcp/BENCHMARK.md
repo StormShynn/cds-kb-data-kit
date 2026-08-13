@@ -86,6 +86,35 @@ Key takeaways:
 
 ---
 
+## 4b. Hybrid search (local embeddings) vs. pure BM25
+
+Added in v2.4.0: `search_mode=hybrid` re-ranks the BM25 shortlist with cosine similarity against local `all-MiniLM-L6-v2` embeddings (built keyless by the data repo; query vectors embed in-process via transformers.js). This section compares the two modes directly — same server, same index, same queries.
+
+**Method:** 12 hand-curated queries, each with one known-good target view (anchored to the view's actual `semanticDescription`). 7 are *literal* (target tokens appear in the name/description) and 5 are *paraphrase* (natural language/synonyms avoiding the name). Every query is answerable — the target appears within the top-50 in at least one mode — so the metrics measure *ranking quality*, not guessability. Each query ran through the live `search_cds` tool (stdio, `--data` local) 3× per mode; median latency reported. Full per-query breakdown + raw JSON: `bench/result_hybrid_vs_bm25.json`.
+
+### Headline results
+
+| Metric | BM25 | Hybrid | Δ |
+|---|---:|---:|---:|
+| MRR | 0.554 | **0.610** | +0.056 |
+| Precision @ 1 | 0.417 | **0.500** | +0.083 |
+| Precision @ 3 | 0.667 | 0.667 | 0 |
+| Precision @ 5 | 0.750 | 0.667 | −0.083 |
+| Precision @ 10 | 0.750 | **0.833** | +0.083 |
+| Median latency / query | 33.6 ms | 42.1 ms | +8.5 ms |
+| Hybrid cold start (one-time model load) | — | 742 ms | — |
+
+### Where hybrid helps and where it doesn't
+
+- **Rescue case (biggest win):** `"how are customers related to business partners"` → `I_CUSTOMER_TO_BUSINESSPARTNER` moved **#5 → #1** (MRR 0.2 → 1.0). No index token matches "customers related to business partners", so only the vector layer finds it.
+- **Ranking lift:** `"receivables that are past due, bucketed by how late they are"` #16 → #10; `"material descriptions in different languages"` #39 → #34.
+- **Neutral / slightly worse on exact-match queries:** literal queries stay #1 in both modes; `"document clearing status"` actually slipped #3 → #6 (the general-domain MiniLM dilutes precise tokens like *clearing* vs. *billing*).
+- **Hard vocabulary gap is shared, not solved:** 5 of the first 15 candidate paraphrase intents (e.g., "supplier invoices on hold awaiting posting") were *unanswerable in both modes* (target outside top-50) and were dropped. The q8-quantized MiniLM does not generalize to deep SAP-jargon paraphrases beyond the index's enriched `semanticDescription` / `synonyms` — embeddings complement the synonym layer, they don't replace it.
+
+**Verdict:** hybrid buys a modest but real ranking edge on paraphrased intents (~+10% MRR, +8 pt P@1/P@10) for ~+8 ms/query warm latency and a one-time ~0.7 s cold start — a good default when the query comes from an agent's natural language, not from the view's own vocabulary.
+
+---
+
 ## 5. Network-resilience features (added in v1.2)
 
 The remote backend now handles real-world network conditions gracefully:
@@ -110,6 +139,7 @@ Harness lives in `bench/` at the repo root:
 node bench/bench_mcp.mjs           # MCP, local-mode → bench/result_mcp.json
 node bench/bench_files.mjs         # File-based baseline → bench/result_files.json
 node bench/bench_mcp_remote.mjs    # MCP, online cold + warm → bench/result_mcp_remote.json
+node bench/bench_hybrid_vs_bm25.mjs  # Hybrid (local embeddings) vs. BM25 → bench/result_hybrid_vs_bm25.json
 ```
 
 Each script writes a JSON report to `bench/*.json` with per-query timings, token estimates, and the actual view names surfaced.

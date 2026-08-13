@@ -1,0 +1,343 @@
+{
+  "generatedAt": "2026-08-13T11:15:33.212Z",
+  "server": "cds-kb-mcp (src/server.mjs, stdio, --data local)",
+  "index": {
+    "dataPath": "D:\\__StormShyn\\harness_sap-cds-kb-data-v1\\docs\\product\\cds_kb_data"
+  },
+  "embeddingModel": "Xenova/all-MiniLM-L6-v2 (local, dim 384)",
+  "hybridBlend": "0.6 * normBM25 + 0.4 * cosine",
+  "rankDepth": 50,
+  "reps": 3,
+  "queries": [
+    {
+      "query": "purchase order",
+      "target": "I_PURCHASEORDERTP_2",
+      "kind": "literal",
+      "bm25": {
+        "rank": 1,
+        "msMedian": 26.7,
+        "msMin": 26.4,
+        "top3": [
+          "I_PURCHASEORDERTP_2",
+          "I_PURCHASEORDERPARTNERTP_2",
+          "I_PURCHASEORDERITEMTP_2"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "msMedian": 32.2,
+        "msMin": 28.7,
+        "top3": [
+          "I_PURCHASEORDERTP_2",
+          "I_PURCHASEORDERITEMTP_2",
+          "I_PURCHASEORDERPARTNERTP_2"
+        ]
+      }
+    },
+    {
+      "query": "contract accounting open item list",
+      "target": "I_CAOPENITEMLIST",
+      "kind": "literal",
+      "bm25": {
+        "rank": 1,
+        "msMedian": 32.3,
+        "msMin": 31,
+        "top3": [
+          "I_CAOPENITEMLIST",
+          "I_CAOPENITEMLISTITEM",
+          "I_CADUNNINGITEM"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "msMedian": 42.1,
+        "msMin": 38.3,
+        "top3": [
+          "I_CAOPENITEMLIST",
+          "I_CAOPENITEMLISTITEM",
+          "I_CADUNNINGITEM"
+        ]
+      }
+    },
+    {
+      "query": "contract accounting overdue item",
+      "target": "I_CAOVERDUEITEM",
+      "kind": "literal",
+      "bm25": {
+        "rank": 1,
+        "msMedian": 30.9,
+        "msMin": 27.8,
+        "top3": [
+          "I_CAOVERDUEITEM",
+          "I_CADUNNINGITEM",
+          "I_PROVIDERCONTRACTITEM"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "msMedian": 34,
+        "msMin": 32.7,
+        "top3": [
+          "I_CAOVERDUEITEM",
+          "I_CADUNNINGITEM",
+          "I_CADOCUMENTBPITEMCUBE"
+        ]
+      }
+    },
+    {
+      "query": "document clearing status",
+      "target": "I_CACLEARINGSTATUS",
+      "kind": "literal",
+      "bm25": {
+        "rank": 3,
+        "msMedian": 33.6,
+        "msMin": 31.4,
+        "top3": [
+          "I_BILLINGDOCCLEARINGSTATUS",
+          "I_BILLINGDOCCLEARINGSTATUSTEXT",
+          "I_CACLEARINGSTATUS"
+        ]
+      },
+      "hybrid": {
+        "rank": 6,
+        "msMedian": 41.1,
+        "msMin": 39.6,
+        "top3": [
+          "I_BILLINGDOCCLEARINGSTATUS",
+          "I_BILLINGDOCCLEARINGSTATUSTEXT",
+          "I_FINTRANSCNTRLCLRGSTATUS"
+        ]
+      }
+    },
+    {
+      "query": "parked accounts payable item",
+      "target": "I_PARKEDOPLACCTGDOCPYBLSITEM",
+      "kind": "literal",
+      "bm25": {
+        "rank": 1,
+        "msMedian": 33.5,
+        "msMin": 33,
+        "top3": [
+          "I_PARKEDOPLACCTGDOCPYBLSITEM",
+          "I_PARKEDOPLACCTGDOCRBLSITEM",
+          "I_PARKEDOPLACCTGDOCASSETITEM"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "msMedian": 40.6,
+        "msMin": 39.2,
+        "top3": [
+          "I_PARKEDOPLACCTGDOCPYBLSITEM",
+          "I_PARKEDOPLACCTGDOCRBLSITEM",
+          "I_PARKEDOPLACCTGDOCASSETITEM"
+        ]
+      }
+    },
+    {
+      "query": "product descriptions",
+      "target": "I_PRODUCTDESCRIPTION",
+      "kind": "literal",
+      "bm25": {
+        "rank": 2,
+        "msMedian": 17.6,
+        "msMin": 16.8,
+        "top3": [
+          "I_PRODUCTDESCRIPTION_2",
+          "I_PRODUCTDESCRIPTION",
+          "I_PRODUCTPLANTESPP"
+        ]
+      },
+      "hybrid": {
+        "rank": 2,
+        "msMedian": 26.7,
+        "msMin": 24.3,
+        "top3": [
+          "I_PRODUCTDESCRIPTION_2",
+          "I_PRODUCTDESCRIPTION",
+          "I_PRODUCTPLANTESPP"
+        ]
+      }
+    },
+    {
+      "query": "customer to business partner relationship",
+      "target": "I_CUSTOMER_TO_BUSINESSPARTNER",
+      "kind": "literal",
+      "bm25": {
+        "rank": 1,
+        "msMedian": 40.8,
+        "msMin": 40.8,
+        "top3": [
+          "I_CUSTOMER_TO_BUSINESSPARTNER",
+          "I_CUSTOMERTOBUSINESSPARTNER",
+          "I_BPRELATIONSHIP"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "msMedian": 42.6,
+        "msMin": 40.6,
+        "top3": [
+          "I_CUSTOMER_TO_BUSINESSPARTNER",
+          "I_CUSTOMERTOBUSINESSPARTNER",
+          "I_SUPPLIER_TO_BUSINESSPARTNER"
+        ]
+      }
+    },
+    {
+      "query": "history of cleared line items in accounting documents",
+      "target": "I_OPLACCTGDOCITEMCLRGHIST",
+      "kind": "paraphrase",
+      "bm25": {
+        "rank": 44,
+        "msMedian": 62,
+        "msMin": 57.5,
+        "top3": [
+          "I_JOURNALENTRYOPERATIONALVIEW",
+          "I_GLACCOUNTLINEITEMCUBE",
+          "_DCO_I_ACCOUNTINGDOCUMENT"
+        ]
+      },
+      "hybrid": {
+        "rank": 50,
+        "msMedian": 70.6,
+        "msMin": 69.3,
+        "top3": [
+          "I_JOURNALENTRYOPERATIONALVIEW",
+          "I_GLACCOUNTLINEITEMCUBE",
+          "_DCO_I_ACCOUNTINGDOCUMENT"
+        ]
+      }
+    },
+    {
+      "query": "receivables that are past due, bucketed by how late they are",
+      "target": "I_OVERDUEACCOUNTSRECEIVABLES",
+      "kind": "paraphrase",
+      "bm25": {
+        "rank": 16,
+        "msMedian": 65.6,
+        "msMin": 62.6,
+        "top3": [
+          "I_CRDTMBUSINESSPARTNERVH",
+          "I_ARAGINGGRIDGENLEDGERCUBE",
+          "C_ARAGINGGRIDGENLEDGERQRY"
+        ]
+      },
+      "hybrid": {
+        "rank": 10,
+        "msMedian": 80.1,
+        "msMin": 79.5,
+        "top3": [
+          "I_ARAGINGGRIDGENLEDGERCUBE",
+          "I_CRDTMBUSINESSPARTNERVH",
+          "C_ARAGINGGRIDGENLEDGERQRY"
+        ]
+      }
+    },
+    {
+      "query": "material descriptions in different languages",
+      "target": "I_PRODUCTDESCRIPTION",
+      "kind": "paraphrase",
+      "bm25": {
+        "rank": 39,
+        "msMedian": 43.9,
+        "msMin": 37.1,
+        "top3": [
+          "I_SETTLMTDOCTYPETEXT",
+          "I_JITDELIVSQNCGRPDESCBASIC",
+          "I_CRDTDECISIONDOCUMENTCATEGORY"
+        ]
+      },
+      "hybrid": {
+        "rank": 34,
+        "msMedian": 42.5,
+        "msMin": 40.6,
+        "top3": [
+          "I_SETTLMTDOCTYPETEXT",
+          "I_CRDTDECISIONDOCUMENTCATEGORY",
+          "I_JITDELIVSQNCGRPDESCBASIC"
+        ]
+      }
+    },
+    {
+      "query": "how are customers related to business partners",
+      "target": "I_CUSTOMER_TO_BUSINESSPARTNER",
+      "kind": "paraphrase",
+      "bm25": {
+        "rank": 5,
+        "msMedian": 48.6,
+        "msMin": 46.3,
+        "top3": [
+          "I_BUSINESSPROCESS",
+          "I_WORKASSGMTWORKORDERDEX",
+          "I_WORKASSGMTPAYMENTDEX"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "msMedian": 48.9,
+        "msMin": 45.3,
+        "top3": [
+          "I_CUSTOMER_TO_BUSINESSPARTNER",
+          "I_WORKASSGMTWORKORDERDEX",
+          "I_BUSINESSPROCESS"
+        ]
+      }
+    },
+    {
+      "query": "overdue receivables per time bucket in the aging report",
+      "target": "I_OVERDUEACCOUNTSRECEIVABLES",
+      "kind": "paraphrase",
+      "bm25": {
+        "rank": 2,
+        "msMedian": 30.2,
+        "msMin": 23.2,
+        "top3": [
+          "C_OVERDUEACCTRBLS",
+          "I_OVERDUEACCOUNTSRECEIVABLES",
+          "C_ARJRNLENTRITMAGINGGRID"
+        ]
+      },
+      "hybrid": {
+        "rank": 2,
+        "msMedian": 40.3,
+        "msMin": 36,
+        "top3": [
+          "C_OVERDUEACCTRBLS",
+          "I_OVERDUEACCOUNTSRECEIVABLES",
+          "C_ARJRNLENTRITMAGINGGRID"
+        ]
+      }
+    }
+  ],
+  "dropped": [],
+  "summary": {
+    "evaluatedQueries": 12,
+    "droppedQueries": 0,
+    "coldStartHybridMs": 742,
+    "bm25": {
+      "mrr": 0.554,
+      "p1": 0.417,
+      "p3": 0.667,
+      "p5": 0.75,
+      "p10": 0.75,
+      "msMedian": 33.6
+    },
+    "hybrid": {
+      "mrr": 0.61,
+      "p1": 0.5,
+      "p3": 0.667,
+      "p5": 0.667,
+      "p10": 0.833,
+      "msMedian": 42.1
+    },
+    "deltas": {
+      "mrr": 0.056,
+      "p1": 0.083,
+      "p3": 0,
+      "p5": -0.083,
+      "p10": 0.083,
+      "msMedian": 8.5
+    }
+  }
+}

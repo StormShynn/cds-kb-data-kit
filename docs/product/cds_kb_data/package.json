@@ -34,5 +34,8 @@
     "@abaplint/core": "^2.120.21",
     "@huggingface/transformers": "^3.8.1",
     "playwright": "^1.55.0"
+  },
+  "overrides": {
+    "sharp": "^0.35.3"
   }
 }
