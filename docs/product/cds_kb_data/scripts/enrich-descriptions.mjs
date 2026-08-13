@@ -242,7 +242,7 @@ async function callLLM(view) {
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${apiKey}`,
-      ...(providerName === 'openrouter' ? { 'HTTP-Referer': 'https://github.com/StormShynn/cds-kb-data-kit', 'X-Title': 'cds-kb-data enrichment' } : {}),
+      ...(providerName === 'openrouter' ? { 'HTTP-Referer': 'https://github.com/StormShynn/cds-kb-mcp-data-kit', 'X-Title': 'cds-kb-data enrichment' } : {}),
     },
     body: JSON.stringify(body),
     signal: AbortSignal.timeout(60000),

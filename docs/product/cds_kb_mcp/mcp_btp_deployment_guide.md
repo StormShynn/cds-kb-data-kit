@@ -35,15 +35,15 @@ cf login        # email + password (SSO passcode nếu được yêu cầu)
 App trên BTP **không có thư mục `cds_kb_data` bên cạnh** nên phải nạp data từ GitHub remote. `CDS_KB_REMOTE` trong `manifest.yml` đã trỏ sẵn vào chính repo của project này:
 
 ```text
-https://raw.githubusercontent.com/StormShynn/cds-kb-data-kit/main/docs/product/cds_kb_data
+https://raw.githubusercontent.com/StormShynn/cds-kb-mcp-data-kit/main/docs/product/cds_kb_data
 ```
 
-Repo `StormShynn/cds-kb-data-kit` là **public**, nên **không cần tạo GitHub PAT** — `raw.githubusercontent.com` đọc thẳng được, không cần xác thực gì cả.
+Repo `StormShynn/cds-kb-mcp-data-kit` là **public**, nên **không cần tạo GitHub PAT** — `raw.githubusercontent.com` đọc thẳng được, không cần xác thực gì cả.
 
 Kiểm tra nhanh (tuỳ chọn) trước khi push:
 
 ```bash
-curl -s https://raw.githubusercontent.com/StormShynn/cds-kb-data-kit/main/docs/product/cds_kb_data/index/version.json
+curl -s https://raw.githubusercontent.com/StormShynn/cds-kb-mcp-data-kit/main/docs/product/cds_kb_data/index/version.json
 # => {"schemaVersion":1,"viewCount":10618,...}   <-- OK
 ```
 
@@ -111,7 +111,7 @@ cf set-env cds-kb-mcp CDS_KB_PUBLIC_URL "https://<route-thật-cua-app>"   # b�
 cf restage cds-kb-mcp
 ```
 
-> **Không commit secret vào git.** Repo `cds-kb-data-kit` là **public** — `manifest.yml` chỉ để sẵn dòng comment cho `API_KEY`/`CDS_KB_OAUTH_SECRET` làm gợi ý, giá trị thật luôn set qua `cf set-env` (không nằm trong file được commit). `cf push` sau này **không xoá** các env var đã set rời như vậy, kể cả khi chúng không có trong `manifest.yml`.
+> **Không commit secret vào git.** Repo `cds-kb-mcp-data-kit` là **public** — `manifest.yml` chỉ để sẵn dòng comment cho `API_KEY`/`CDS_KB_OAUTH_SECRET` làm gợi ý, giá trị thật luôn set qua `cf set-env` (không nằm trong file được commit). `cf push` sau này **không xoá** các env var đã set rời như vậy, kể cả khi chúng không có trong `manifest.yml`.
 
 Test nhanh flow OAuth 2.1 + PKCE thật (thay `<APP_URL>`):
 
@@ -142,7 +142,7 @@ Trạng thái tại thời điểm viết (2026-08-12) — **các giá trị org
 | Region | `us10-001` (API: `https://api.cf.us10-001.hana.ondemand.com`) |
 | Org / Space | `0f096230trial` / `dev` (tên tự sinh khi tạo trial — **sẽ khác** ở trial mới) |
 | App / route | `cds-kb-mcp` → `https://cds-kb-mcp.cfapps.us10-001.hana.ondemand.com` |
-| Data source | `CDS_KB_REMOTE` trỏ `cds-kb-data-kit` (public, đã set sẵn trong `manifest.yml`, không cần sửa) |
+| Data source | `CDS_KB_REMOTE` trỏ `cds-kb-mcp-data-kit` (public, đã set sẵn trong `manifest.yml`, không cần sửa) |
 | Auth | **Không (public)** — server này chia sẻ cho cộng đồng dùng tự do, cố tình không đặt `API_KEY`/`CDS_KB_OAUTH_SECRET`. (Từng bật OAuth 2.1 để test — mục A.7 vẫn còn cách bật lại nếu sau này cần giới hạn truy cập.) |
 | Memory | `512M` (đã set sẵn trong `manifest.yml`) |
 | Start command | `node dist/cds-kb-mcp.cjs` (đã set sẵn trong `manifest.yml`) |

@@ -10,7 +10,7 @@
     "build": "node build.mjs",
     "start": "node src/server.mjs",
     "start:local": "node src/server.mjs --data ../cds_kb_data",
-    "start:remote": "node src/server.mjs --remote https://raw.githubusercontent.com/StormShynn/cds-kb-data-kit/main/docs/product/cds_kb_data",
+    "start:remote": "node src/server.mjs --remote https://raw.githubusercontent.com/StormShynn/cds-kb-mcp-data-kit/main/docs/product/cds_kb_data",
     "test": "node test_tools.mjs ../cds_kb_data"
   },
   "engines": {

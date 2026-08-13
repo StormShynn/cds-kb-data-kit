@@ -23,7 +23,12 @@
 // query visible to everyone else, not just this browser.
 //
 // Usage:
-//   node scripts/generate-query-builder.mjs [dataDir] [outputFile]
+//   node scripts/generate-query-builder.mjs [dataDir] [outputFile] [--force]
+//
+// STALE: this script is ~838+ lines behind the hand-edited query-builder.html
+// (multi-view JOIN, always-visible #savePanelSection, Share link, raw notes, …).
+// By default it refuses to write. Pass --force only if you intentionally want
+// the outdated generator output. Prefer editing query-builder.html directly.
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -31,11 +36,12 @@ import { fileURLToPath } from 'node:url';
 import { listViewFiles } from './lib/view-files.mjs';
 import { extractFrontmatter, scalar } from './lib/frontmatter.mjs';
 
-const GITHUB_BLOB_BASE = 'https://github.com/StormShynn/cds-kb-data-kit/blob/main/docs/product/cds_kb_data/';
+const GITHUB_BLOB_BASE = 'https://github.com/StormShynn/cds-kb-mcp-data-kit/blob/main/docs/product/cds_kb_data/';
 
 const args = process.argv.slice(2);
-const DATA_DIR = args[0] && !args[0].startsWith('--') ? args[0] : '.';
-const OUTPUT_FILE = args[1] && !args[1].startsWith('--') ? args[1] : path.join(DATA_DIR, 'query-builder.html');
+const FORCE = args.includes('--force');
+const DATA_DIR = args.find((a) => !a.startsWith('--')) || '.';
+const OUTPUT_FILE = args.filter((a) => !a.startsWith('--'))[1] || path.join(DATA_DIR, 'query-builder.html');
 
 // Same signal as enrich_index.mjs's isAbstractEntity (kept in sync by hand —
 // this script only needs a yes/no warning badge, not the full index build,
@@ -60,6 +66,14 @@ async function readJson(file, fallback) {
 }
 
 async function main() {
+  if (!FORCE) {
+    console.error(
+      `Refusing to overwrite ${OUTPUT_FILE}: generate-query-builder.mjs is stale relative to the hand-edited query-builder.html ` +
+        `(multi-view JOIN, #savePanelSection, Share link, raw notes, …). Edit query-builder.html directly, or pass --force only if you intentionally want the outdated generator output.`,
+    );
+    process.exit(1);
+  }
+
   console.log('📋 Reading view-paths.json, query-library.json, and scanning view frontmatter...');
   const viewPaths = await readJson(path.join(DATA_DIR, 'index', 'view-paths.json'), {});
   const queryLibrary = await readJson(path.join(DATA_DIR, 'index', 'query-library.json'), []);

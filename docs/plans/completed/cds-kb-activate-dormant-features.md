@@ -146,12 +146,15 @@ Limitations:
 
 Operator follow-ups (need credentials this environment does not have):
 
-1. Set `CDS_KB_EMBED_API_KEY` GitHub secret, then run
-   `.github/workflows/build-embeddings.yml` via `workflow_dispatch` to
-   generate+commit `index/embeddings.json` (enables `search_mode=hybrid`).
-2. Create a KV namespace, put its id in `docs/product/cds_kb_mcp/worker/wrangler.toml`
-   (`REPLACE_WITH_YOUR_KV_NAMESPACE_ID`), set `CLOUDFLARE_API_TOKEN` /
-   `CLOUDFLARE_ACCOUNT_ID` secrets, then run `deploy-usage-worker.yml`.
-3. Point the collector at the deployed Worker via `CDS_KB_USAGE_ENDPOINT` and
-   set `CDS_KB_USAGE_PULL_TOKEN` so `pull-usage-stats.yml` can fetch counts
-   into `index/usage-stats.json` (enables the usage ranking boost).
+1. ~~Set `CDS_KB_EMBED_API_KEY` GitHub secret...~~ **Resolved differently**: embeddings
+   are now generated **keyless** via the local ONNX model (`Xenova/all-MiniLM-L6-v2`)
+   — `CDS_KB_EMBED_API_KEY` was never set and was deleted. `index/embeddings.json`
+   (base64 Float32, ~21 MB) is generated+committed by `build-embeddings.yml`.
+2. ~~Create a KV namespace, put its id in `wrangler.toml`...~~ **Resolved differently**:
+   the user's commit rewrote the collector to a **Durable Object** (`USAGE_DO`), so no
+   KV namespace is used (the one created provisionally was deleted). Deployed to
+   `cds-kb-usage-collector.chinghia190399.workers.dev` via `deploy-usage-worker.yml`
+   with `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` secrets.
+3. **Done**: `CDS_KB_USAGE_ENDPOINT` and `CDS_KB_USAGE_PULL_TOKEN` are set (worker
+   `PULL_TOKEN` + GitHub secret); `pull-usage-stats.yml` fetches counts into
+   `index/usage-stats.json` and the usage ranking boost is live (`/totals` verified).

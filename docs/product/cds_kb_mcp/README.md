@@ -357,7 +357,7 @@ Search the shared saved-query list (`index/query-library.json`) by title, descri
 | `query` | string | ✓ | Search text — title words, CDS view name, or business intent |
 | `limit` | int 1-50 | optional | Default 10 |
 
-To add an entry: `propose_query_library_entry` → review the draft PR → merge adds it to the library (then `npm run generate-query-builder` refreshes the Query Builder page).
+To add an entry: `propose_query_library_entry` → review the draft PR → merge adds it to the library (then hand-sync the Query Builder page's embedded library — `query-builder.html` is the source of truth; the `generate-query-builder` generator is deprecated).
 
 ---
 

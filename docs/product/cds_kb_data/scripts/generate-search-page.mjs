@@ -24,7 +24,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const GITHUB_BLOB_BASE = 'https://github.com/StormShynn/cds-kb-data-kit/blob/main/docs/product/cds_kb_data/';
+const GITHUB_BLOB_BASE = 'https://github.com/StormShynn/cds-kb-mcp-data-kit/blob/main/docs/product/cds_kb_data/';
 
 const args = process.argv.slice(2);
 const DATA_DIR = args[0] && !args[0].startsWith('--') ? args[0] : '.';

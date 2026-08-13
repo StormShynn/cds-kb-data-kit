@@ -200,7 +200,7 @@ function renderPropertyTable(view) {
     // Absolute GitHub URL, not a relative link — view files nest at varying
     // depth under views/ (one folder per app_component segment), so no
     // single relative path back to hook/ would be correct for all of them.
-    rows.push(`| Release State (Developer Extensibility) | ${devExtLabel} — separate from "Release State" above; see [dev-ext check procedure](https://github.com/StormShynn/cds-kb-data-kit/blob/main/docs/product/cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md) before \`association to\`/\`select from\` this entity in custom ABAP Developer Extensibility CDS views |`);
+    rows.push(`| Release State (Developer Extensibility) | ${devExtLabel} — separate from "Release State" above; see [dev-ext check procedure](https://github.com/StormShynn/cds-kb-mcp-data-kit/blob/main/docs/product/cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md) before \`association to\`/\`select from\` this entity in custom ABAP Developer Extensibility CDS views |`);
   }
   const keyUserExtLabel = keyUserExtStatusLabel(view.keyUserExtStatus);
   if (keyUserExtLabel) {

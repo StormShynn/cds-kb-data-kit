@@ -11,7 +11,7 @@
 # below). Optional env (set with `cf set-env cds-kb-mcp KEY VALUE` before
 # cf push, or via the BTP cockpit): API_KEY / CDS_KB_OAUTH_SECRET (+
 # CDS_KB_OAUTH_CLIENT_ID, CDS_KB_PUBLIC_URL) / CDS_KB_JWKS_URL / CDS_KB_S3_* /
-# CDS_KB_EMBED_API_KEY / CDS_KB_USAGE_ENDPOINT. See README.md.
+# CDS_KB_USAGE_ENDPOINT (CDS_KB_EMBED_API_KEY optional — hybrid search is keyless). See README.md.
 applications:
   - name: cds-kb-mcp
     memory: 4G   # org trial quota max (4G total org-wide) — leaves zero headroom for any other
@@ -39,12 +39,15 @@ applications:
       #   cf create-service application-logs lite cds-kb-mcp-logs
       - cds-kb-mcp-logs
     env:
-      # Belt-and-braces: forces HTTP mode. In v2 the only HTTP transport is
-      # Streamable HTTP at /mcp — SSE was removed with the MCP SDK v2 upgrade.
-      # PORT (auto-set by CF) also enables HTTP mode.
-      USE_SSE: "true"
-      CDS_KB_REMOTE: https://raw.githubusercontent.com/StormShynn/cds-kb-data-kit/main/docs/product/cds_kb_data
+      # PORT (auto-set by CF) switches the server to HTTP mode; the only
+      # HTTP transport in v2 is Streamable HTTP at /mcp (SSE was removed with
+      # the MCP SDK v2 upgrade). USE_SSE was a v1-era no-op — dropped.
+      CDS_KB_REMOTE: https://raw.githubusercontent.com/StormShynn/cds-kb-mcp-data-kit/main/docs/product/cds_kb_data
       CDS_KB_INDEX_REFRESH_MINUTES: "15"
-      # CDS_KB_DATA_TOKEN: "github-fine-grained-pat"   # Only needed if cds-kb-data-kit ever goes private
+      # Usage collector /ping (NOT bare origin — the worker only accepts
+      # pings at /ping; a future `cf push` would silently kill telemetry if
+      # this lacks the suffix).
+      CDS_KB_USAGE_ENDPOINT: https://cds-kb-usage-collector.chinghia190399.workers.dev/ping
+      # CDS_KB_DATA_TOKEN: "github-fine-grained-pat"   # Only needed if cds-kb-mcp-data-kit ever goes private
       # API_KEY: "your-secret-key-here"                # Optional auth
       # CDS_KB_OAUTH_SECRET: "a-32-char-min-secret-for-oauth-2-1"  # Optional OAuth 2.1

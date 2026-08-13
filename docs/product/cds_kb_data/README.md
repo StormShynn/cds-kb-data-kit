@@ -59,7 +59,7 @@ hub-metadata-manifest.json     Tracks which views scripts/add_hub_metadata.mjs w
 These `.html` files don't render on github.com's file viewer (it shows raw
 source, not a live page) — either pull the repo and open `overview.html`
 locally, or use the published copy at
-<https://stormshynn.github.io/cds-kb-data-kit/> (deployed by
+<https://stormshynn.github.io/cds-kb-mcp-data-kit/> (deployed by
 `.github/workflows/deploy-pages.yml`, see below).
 
 ## Automation scripts
@@ -109,7 +109,7 @@ something currently required. Same header convention as
 | `ci.yml` | on every PR + pushes touching `docs/product/cds_kb_data/**` | Runs `npm test` (incl. the abaplint DDL cross-check) + `scripts/validate-views.mjs` |
 
 This repo is public, with GitHub Pages serving `overview.html` (and the
-pages it embeds) at <https://stormshynn.github.io/cds-kb-data-kit/> — see
+pages it embeds) at <https://stormshynn.github.io/cds-kb-mcp-data-kit/> — see
 `deploy-pages.yml`. Pages content lives two folders deeper than this repo's
 root (`docs/product/cds_kb_data/`), which the branch-based Pages source
 setting can't point at directly (it only supports `/` or `/docs`), so

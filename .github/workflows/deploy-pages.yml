@@ -1,6 +1,6 @@
 # .github/workflows/deploy-pages.yml
 # Publish overview.html (and everything it embeds) to GitHub Pages at
-# https://stormshynn.github.io/cds-kb-data-kit/
+# https://stormshynn.github.io/cds-kb-mcp-data-kit/
 #
 # Pages content lives at docs/product/cds_kb_data/, two folders deeper than
 # this repo's root — the branch-based Pages source setting can only point at

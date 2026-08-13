@@ -42,7 +42,7 @@ const DEV_EXT_ROW_MARKER = 'Release State (Developer Extensibility)';
 // Same absolute GitHub URL as template.mjs's renderPropertyTable — kept in
 // sync manually since that string lives inline there, not exported.
 const HOOK_URL =
-  'https://github.com/StormShynn/cds-kb-data-kit/blob/main/docs/product/cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md';
+  'https://github.com/StormShynn/cds-kb-mcp-data-kit/blob/main/docs/product/cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md';
 
 /** Returns the updated file content, or null if no change is needed. */
 function insertDevExtRow(content) {

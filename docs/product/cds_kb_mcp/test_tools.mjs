@@ -286,6 +286,96 @@ define view entity Z_GoodView
   }
   console.log('✅ search_query_library');
 
+  console.log('\n=== TEST 16: resources/read (cds://stats, cds://query-library, cds://view/{name}) ===');
+  const r16a = await call('resources/read', { uri: 'cds://stats' });
+  const t16a = r16a.result?.contents?.[0]?.text || '';
+  console.log('cds://stats:', t16a.slice(0, 200));
+  if (!/viewCount/.test(t16a) && !/embeddings/.test(t16a)) {
+    console.error('❌ cds://stats failed — expected kb_info-shaped JSON');
+    proc.kill();
+    process.exit(1);
+  }
+  const r16b = await call('resources/read', { uri: 'cds://query-library' });
+  const t16b = r16b.result?.contents?.[0]?.text || '';
+  console.log('cds://query-library:', t16b.slice(0, 200));
+  if (!/Open purchase orders/.test(t16b)) {
+    console.error('❌ cds://query-library failed — expected the seeded library entries');
+    proc.kill();
+    process.exit(1);
+  }
+  const r16c = await call('resources/read', { uri: 'cds://view/I_MaterialStock_2' });
+  const t16c = r16c.result?.contents?.[0]?.text || '';
+  console.log('cds://view/I_MaterialStock_2:', t16c.slice(0, 200));
+  if (!/I_MaterialStock_2/i.test(t16c)) {
+    console.error('❌ cds://view/I_MaterialStock_2 failed — expected view markdown');
+    proc.kill();
+    process.exit(1);
+  }
+  console.log('✅ resources/read');
+
+  console.log('\n=== TEST 17: prompts/get (explain_view, compose_query, validate_ddl) ===');
+  const r17a = await call('prompts/get', { name: 'explain_view', arguments: { name: 'I_MaterialStock_2' } });
+  const t17a = r17a.result?.messages?.[0]?.content?.text || '';
+  console.log('explain_view:', t17a.slice(0, 160));
+  if (!/get_cds_view/.test(t17a)) {
+    console.error('❌ explain_view prompt failed');
+    proc.kill();
+    process.exit(1);
+  }
+  const r17b = await call('prompts/get', { name: 'compose_query', arguments: { intent: 'overdue invoices', baseView: 'I_SalesOrder' } });
+  const t17b = r17b.result?.messages?.[0]?.content?.text || '';
+  console.log('compose_query:', t17b.slice(0, 160));
+  if (!/Compose a CDS view/.test(t17b)) {
+    console.error('❌ compose_query prompt failed');
+    proc.kill();
+    process.exit(1);
+  }
+  const r17c = await call('prompts/get', { name: 'validate_ddl', arguments: { ddl: 'define view entity Z_X as select from I_Product { key Product }' } });
+  const t17c = r17c.result?.messages?.[0]?.content?.text || '';
+  console.log('validate_ddl:', t17c.slice(0, 160));
+  if (!/Validate this CDS DDL/.test(t17c)) {
+    console.error('❌ validate_ddl prompt failed');
+    proc.kill();
+    process.exit(1);
+  }
+  console.log('✅ prompts/get');
+
+  console.log('\n=== TEST 18: completion/complete (prompt arg + resource template) ===');
+  const r18a = await call('completion/complete', {
+    ref: { type: 'ref/prompt', name: 'explain_view' },
+    argument: { name: 'name', value: 'I_Material' },
+  });
+  const compA = r18a.result?.completion?.values || [];
+  console.log('prompt completions:', compA.slice(0, 5).join(', '));
+  if (compA.length === 0) {
+    console.error('❌ completion/complete (prompt) returned no values');
+    proc.kill();
+    process.exit(1);
+  }
+  const r18b = await call('completion/complete', {
+    ref: { type: 'ref/resource', uri: 'cds://view/{name}' },
+    argument: { name: 'name', value: 'I_Material' },
+  });
+  const compB = r18b.result?.completion?.values || [];
+  console.log('resource completions:', compB.slice(0, 5).join(', '));
+  if (compB.length === 0) {
+    console.error('❌ completion/complete (resource) returned no values');
+    proc.kill();
+    process.exit(1);
+  }
+  console.log('✅ completion/complete');
+
+  console.log('\n=== TEST 19: search_cds search_mode=hybrid ===');
+  const r19 = await call('tools/call', { name: 'search_cds', arguments: { query: 'purchase order', search_mode: 'hybrid', limit: 5 } });
+  const t19 = r19.result?.content?.[0]?.text || '';
+  console.log(t19.slice(0, 400));
+  if (!t19 || /No CDS views matched/i.test(t19)) {
+    console.error('❌ search_cds hybrid failed — expected results (hybrid or BM25 fallback)');
+    proc.kill();
+    process.exit(1);
+  }
+  console.log('✅ search_cds search_mode=hybrid');
+
   console.log('\n✅ All tests passed!');
   proc.kill();
   process.exit(0);

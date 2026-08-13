@@ -448,7 +448,7 @@ function createServer() {
         'Use this INSTEAD of grepping or reading routers, then call get_cds_view to read one. ' +
         'Optionally filter by module (FI, SD, MM... or natural names like "Finance", "Procurement"), lob, or bo. ' +
         'Optional RAP filters: accessControl, vdmViewType, hasDdl, sourceKind. ' +
-        'search_mode=hybrid re-ranks BM25 with embeddings when available and CDS_KB_EMBED_API_KEY is set. ' +
+        'search_mode=hybrid re-ranks BM25 with embeddings when available (local ONNX model by default, optional remote API via CDS_KB_EMBED_API_KEY). ' +
         'IMPORTANT for S/4HANA Cloud Developer Extensibility (custom ABAP CDS views): each result\'s ' +
         'devExtStatus (SAP\'s ReleaseStateDeveloperExtensibility) is the ONLY field here that answers ' +
         '"can I `association to`/`select from` this entity in a custom Developer Extensibility CDS view" — ' +

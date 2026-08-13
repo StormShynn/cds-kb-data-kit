@@ -15,7 +15,6 @@
     "generate-dashboard": "node scripts/generate-dashboard.mjs",
     "generate-field-search": "node scripts/generate-field-search.mjs",
     "generate-search-page": "node scripts/generate-search-page.mjs .",
-    "generate-query-builder": "node scripts/generate-query-builder.mjs .",
     "build-sqlite-index": "node scripts/build-sqlite-index.mjs .",
     "enrich-descriptions": "node scripts/enrich-descriptions.mjs .",
     "build-embeddings": "node scripts/build-embeddings.mjs .",

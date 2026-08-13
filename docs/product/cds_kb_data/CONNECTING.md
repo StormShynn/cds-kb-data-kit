@@ -53,8 +53,9 @@ are set (optional `CDS_KB_S3_PREFIX`, `CDS_KB_S3_REGION`, `CDS_KB_S3_ENDPOINT`,
 (`index/search_index.json`, `views/...`). See `S3DataSource` in
 `../cds_kb_mcp/src/datasource.mjs`. Local `--data` / `CDS_KB_DATA` still wins.
 
-Optional `index/embeddings.json` (built by `scripts/build-embeddings.mjs` when
-`CDS_KB_EMBED_API_KEY` is set) enables hybrid search in the MCP.
+Optional `index/embeddings.json` (built by `scripts/build-embeddings.mjs` — local
+ONNX model by default, `CDS_KB_EMBED_API_KEY` switches to a remote API) enables
+keyless hybrid search in the MCP.
 
 ## 3. What's actually in here
 

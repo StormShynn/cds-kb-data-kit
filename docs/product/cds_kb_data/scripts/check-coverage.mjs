@@ -38,7 +38,7 @@ import { escapeHtml } from './lib/html-escape.mjs';
 import { fetchExtensibilityMap, fetchAtcReleaseMap } from './lib/hub-extensibility.mjs';
 
 // Same blob base as search.html / field-search.html — opens the KB .md on github.com.
-const GITHUB_BLOB_BASE = 'https://github.com/StormShynn/cds-kb-data-kit/blob/main/docs/product/cds_kb_data/';
+const GITHUB_BLOB_BASE = 'https://github.com/StormShynn/cds-kb-mcp-data-kit/blob/main/docs/product/cds_kb_data/';
 
 const HTML_ONLY = process.argv.includes('--html-only');
 const DATA_DIR = process.argv.slice(2).find(a => !a.startsWith('--')) || '.';

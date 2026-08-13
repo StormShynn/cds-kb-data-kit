@@ -847,7 +847,7 @@ export function resolveDataSource(argv = process.argv.slice(2)) {
   const sibling = resolveSiblingDataDir();
   if (sibling) return new LocalDataSource(sibling);
 
-  const defaultRemote = 'https://raw.githubusercontent.com/StormShynn/cds-kb-data-kit/main/docs/product/cds_kb_data';
+  const defaultRemote = 'https://raw.githubusercontent.com/StormShynn/cds-kb-mcp-data-kit/main/docs/product/cds_kb_data';
   return new RemoteDataSource(defaultRemote);
 }
 
