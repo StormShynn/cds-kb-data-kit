@@ -34,13 +34,17 @@ const MAX_EVENTS_PER_REQUEST = 500;
 const MAX_VIEW_NAME_LENGTH = 100;
 const MAX_COUNT_PER_EVENT = 1000; // clamps one bad/buggy client from skewing a single view's total in one request
 
-// ── Per-IP fixed-window rate limiter (in-memory, zero deps) ─────────────────
-// Generous limits: a real cds-kb-mcp instance flushes once per ~5 min, so
-// 120 req/min per IP is ~600x headroom while still stopping abuse loops.
+// ── Per-IP fixed-window rate limiter (lives INSIDE the Durable Object) ─────
+// The rate buckets must be shared across every worker isolate, and the DO is
+// the one global single-instance we already have — every /ping and /totals
+// already routes through it, so the check happens inline at zero extra hops.
+// In-memory DO state is best-effort (an eviction resets the window — fine for
+// abuse protection, not an SLA). Generous limits: a real cds-kb-mcp instance
+// flushes once per ~5 min, so 120 req/min per IP is ~600x headroom while
+// still stopping abuse loops.
 const RATE_LIMIT_MAX = 120;
 const RATE_LIMIT_WINDOW_MS = 60_000;
 const RATE_LIMIT_MAX_BUCKETS = 10_000;
-const ipBuckets = new Map(); // ip -> { count, windowStart }
 
 function clientIp(request) {
   return (
@@ -50,39 +54,15 @@ function clientIp(request) {
   );
 }
 
-function rateLimited(request) {
-  const ip = clientIp(request);
-  const now = Date.now();
-  if (ipBuckets.size > RATE_LIMIT_MAX_BUCKETS) {
-    for (const [k, v] of ipBuckets) {
-      if (now - v.windowStart >= RATE_LIMIT_WINDOW_MS) ipBuckets.delete(k);
-    }
-  }
-  const b = ipBuckets.get(ip);
-  if (!b || now - b.windowStart >= RATE_LIMIT_WINDOW_MS) {
-    ipBuckets.set(ip, { count: 1, windowStart: now });
-    return null;
-  }
-  b.count++;
-  if (b.count > RATE_LIMIT_MAX) {
-    return new Response('Too Many Requests', { status: 429, headers: { 'retry-after': '60' } });
-  }
-  return null;
-}
-
 export default {
   async fetch(request, env) {
     try {
       const url = new URL(request.url);
 
       if (request.method === 'POST' && url.pathname === '/ping') {
-        const limited = rateLimited(request);
-        if (limited) return limited;
         return await handlePing(request, env);
       }
       if (request.method === 'GET' && url.pathname === '/totals') {
-        const limited = rateLimited(request);
-        if (limited) return limited;
         return await handleTotals(request, env);
       }
       return new Response('Not found', { status: 404 });
@@ -133,7 +113,7 @@ async function handlePing(request, env) {
 
   const resp = await usageCounter(env).fetch(new Request('https://usage-do/ping', {
     method: 'POST',
-    headers: { 'content-type': 'application/json' },
+    headers: { 'content-type': 'application/json', 'x-client-ip': clientIp(request) },
     body: JSON.stringify({ events: clean }),
   }));
   return new Response(resp.body, { status: resp.status, headers: { 'content-type': 'application/json' } });
@@ -145,7 +125,9 @@ async function handleTotals(request, env) {
     return new Response('Unauthorized', { status: 401 });
   }
 
-  const resp = await usageCounter(env).fetch(new Request('https://usage-do/totals'));
+  const resp = await usageCounter(env).fetch(new Request('https://usage-do/totals', {
+    headers: { 'x-client-ip': clientIp(request) },
+  }));
   return new Response(resp.body, { status: resp.status, headers: { 'content-type': 'application/json' } });
 }
 
@@ -162,6 +144,28 @@ export class UsageCounter {
     this.state = state;
     this.totals = new Map(); // VIEW_NAME -> count, hydrated from storage on first use
     this.hydrated = false;
+    this.rateBuckets = new Map(); // ip -> { count, windowStart } — shared across all worker isolates
+  }
+
+  // Per-IP fixed-window limiter, global because the DO is a single instance.
+  #rateLimited(ip) {
+    const now = Date.now();
+    if (this.rateBuckets.size > RATE_LIMIT_MAX_BUCKETS) {
+      for (const [k, v] of this.rateBuckets) {
+        if (now - v.windowStart >= RATE_LIMIT_WINDOW_MS) this.rateBuckets.delete(k);
+      }
+    }
+    const b = this.rateBuckets.get(ip);
+    if (!b || now - b.windowStart >= RATE_LIMIT_WINDOW_MS) {
+      this.rateBuckets.set(ip, { count: 1, windowStart: now });
+      return false;
+    }
+    b.count++;
+    return b.count > RATE_LIMIT_MAX;
+  }
+
+  #rateLimitedResponse() {
+    return new Response('Too Many Requests', { status: 429, headers: { 'retry-after': '60' } });
   }
 
   async #hydrate() {
@@ -181,7 +185,7 @@ export class UsageCounter {
         return await this.#onPing(request);
       }
       if (request.method === 'GET' && url.pathname === '/totals') {
-        return await this.#onTotals();
+        return await this.#onTotals(request);
       }
       return new Response('Not found', { status: 404 });
     } catch (e) {
@@ -190,6 +194,9 @@ export class UsageCounter {
   }
 
   async #onPing(request) {
+    const ip = request.headers.get('x-client-ip') || 'unknown';
+    if (this.#rateLimited(ip)) return this.#rateLimitedResponse();
+
     let body;
     try {
       body = await request.json();
@@ -214,7 +221,9 @@ export class UsageCounter {
     return new Response('ok', { status: 200 });
   }
 
-  async #onTotals() {
+  async #onTotals(request) {
+    const ip = request.headers.get('x-client-ip') || 'unknown';
+    if (this.#rateLimited(ip)) return this.#rateLimitedResponse();
     await this.#hydrate();
     const totals = {};
     for (const [view, count] of this.totals) {

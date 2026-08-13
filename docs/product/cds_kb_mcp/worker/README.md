@@ -80,9 +80,12 @@ the `pull-usage-stats.yml` workflow:
 - `/ping` is rate-limited in code: fixed window of **120 requests/min per IP**
   (returns 429 + `Retry-After`). A real cds-kb-mcp instance flushes once per
   ~5 min, so this is ~600x headroom while still stopping abuse loops. `/totals`
-  gets the same limiter as defense-in-depth behind `PULL_TOKEN`. Limits are
-  in-memory per isolate (`RATE_LIMIT_MAX` / `RATE_LIMIT_WINDOW_MS` at the top
-  of `worker/src/index.mjs`); raise them if you ever see legitimate 429s.
+  gets the same limiter as defense-in-depth behind `PULL_TOKEN`. The buckets
+  live inside the Durable Object (`#rateLimited`, `RATE_LIMIT_MAX` /
+  `RATE_LIMIT_WINDOW_MS` at the top of `worker/src/index.mjs`) because the DO
+  is the one global single-instance — a per-isolate map would split the window
+  across Worker isolates and never trip. Raise the constants if you ever see
+  legitimate 429s.
 - This is a directional popularity signal, not an exact count: any instance
   running with telemetry disabled, offline, or killed before a flush
   contributes nothing for that period.
