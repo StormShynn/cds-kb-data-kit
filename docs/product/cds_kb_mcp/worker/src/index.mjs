@@ -104,10 +104,10 @@ export default {
 };
 
 function usageCounter(env) {
-  // global-v4: fresh instance so the DO-side rate limiter code actually loads
+  // global-v6: fresh instance so the DO-side rate limiter code actually loads
   // (existing DO instances keep running their deployed version until evicted)
   // and the rate-limit test pollution from bring-up is dropped.
-  const id = env.USAGE_DO.idFromName('global-v5');
+  const id = env.USAGE_DO.idFromName('global-v6');
   return env.USAGE_DO.get(id);
 }
 
@@ -366,7 +366,6 @@ export class UsageCounter {
   // every caller; in-memory (best-effort abuse protection, resets on eviction).
   #rateLimited(ip) {
     const now = Date.now();
-    console.error('RL-DEBUG bucket-start', { ip, size: this.rateBuckets.size, first: this.rateBuckets.get(ip) });
     if (this.rateBuckets.size > RATE_LIMIT_MAX_BUCKETS) {
       for (const [k, v] of this.rateBuckets) {
         if (now - v.windowStart >= RATE_LIMIT_WINDOW_MS) this.rateBuckets.delete(k);
@@ -378,7 +377,6 @@ export class UsageCounter {
       return false;
     }
     b.count++;
-    console.error('RL-DEBUG', { ip, count: b.count });
     return b.count > RATE_LIMIT_MAX;
   }
 
