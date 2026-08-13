@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `MDSubstnStatus` | ✓ | |  | `cast ( domvalue_l as md_substn_status )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `MDSubstnStatus` | ✓ | |  | `cast ( domvalue_l as md_substn_status )` | `CHAR(1)` | Substitution Status |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

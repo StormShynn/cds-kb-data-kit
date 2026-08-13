@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `IsDocInfoRecordStructure` | ✓ | |  | `domvalue_l` |  |  |
-| `DocInfoRecdStrucDescription` |  | |  | `ddtext` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `IsDocInfoRecordStructure` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `DocInfoRecdStrucDescription` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_DocumentInfoRecordStrucSts` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

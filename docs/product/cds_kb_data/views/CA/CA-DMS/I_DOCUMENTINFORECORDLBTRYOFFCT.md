@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `LaboratoryOrDesignOffice` | ✓ | |  | `labor` |  |  |
-| `LaboratoryOrDesignOfficeName` |  | |  | `lbtxt` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `LaboratoryOrDesignOffice` | ✓ | |  | `labor` | `CHAR(3)` | Laboratory/Design Office |
+| `LaboratoryOrDesignOfficeName` |  | |  | `lbtxt` | `CHAR(30)` | Description of the laboratory/engineering office |
 | `_Language` | | ✓ | | | | |
 | `_LabOffice` | | ✓ | | | | |
 

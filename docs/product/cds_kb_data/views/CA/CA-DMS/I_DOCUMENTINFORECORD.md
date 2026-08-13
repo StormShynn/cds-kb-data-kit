@@ -39,29 +39,29 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocVersion` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocNumber` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocPart` | ✓ | |  |  |  |  |
-| `DocumentInfoRecord` |  | |  |  |  |  |
-| `InternalDocumentStatus` |  | |  |  |  |  |
-| `ExternalDocumentStatus` |  | | `_DocStatusVH` | `ExternalDocumentStatus` |  |  |
-| `LaboratoryOrDesignOffice` |  | |  |  |  |  |
-| `Plant` |  | |  |  |  |  |
-| `AuthorizationGroup` |  | |  |  |  |  |
-| `ChangeNumber` |  | |  |  |  |  |
-| `DocInfoRecdIsMarkedForDeletion` |  | |  |  |  |  |
-| `IsDocInfoRecdCreatedFromCAD` |  | |  |  |  |  |
-| `IsDocInfoRecdStructure` |  | |  |  |  |  |
-| `DocInfoRecdSourceDocNumber` |  | |  |  |  |  |
-| `DocInfoRecdSourceDocPart` |  | |  |  |  |  |
-| `DocInfoRecdSourceDocVersion` |  | |  |  |  |  |
-| `ResponsiblePersonName` |  | |  |  |  |  |
-| `CreationDateTime` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `ChangedDateTime` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `DocumentInfoRecordIsFrozen` |  | |  |  |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  |  | `CHAR(3)` | Document Type |
+| `DocumentInfoRecordDocVersion` | ✓ | |  |  | `CHAR(2)` | Document Version |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocPart` | ✓ | |  |  | `CHAR(3)` | Document Part |
+| `DocumentInfoRecord` |  | |  |  | `CHAR(70)` | Document Info Record key in concatenated form |
+| `InternalDocumentStatus` |  | |  |  | `CHAR(2)` | Document Status |
+| `ExternalDocumentStatus` |  | | `_DocStatusVH` | `ExternalDocumentStatus` | `CHAR(2)` | Status of a document (language-dependent) |
+| `LaboratoryOrDesignOffice` |  | |  |  | `CHAR(3)` | Laboratory/Design Office |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `DocInfoRecdIsMarkedForDeletion` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `IsDocInfoRecdCreatedFromCAD` |  | |  |  | `CHAR(1)` | CAD Indicator |
+| `IsDocInfoRecdStructure` |  | |  |  | `CHAR(1)` |  |
+| `DocInfoRecdSourceDocNumber` |  | |  |  | `CHAR(25)` | Document Number of Source Document |
+| `DocInfoRecdSourceDocPart` |  | |  |  | `CHAR(3)` | Document Part of Source Document |
+| `DocInfoRecdSourceDocVersion` |  | |  |  | `CHAR(2)` | Document Version of Source Document |
+| `ResponsiblePersonName` |  | |  |  | `CHAR(12)` | Name of Person Responsible |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Time Document Was Created |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Document Creator's Name |
+| `ChangedDateTime` |  | |  |  | `DEC(15)` | Time last change was made |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `DocumentInfoRecordIsFrozen` |  | |  |  | `CHAR(1)` | Freeze Flag |
 | `_DocType` | | ✓ | | | | |
 | `_DocNumber` | | ✓ | | | | |
 | `_DocVersion` | | ✓ | | | | |

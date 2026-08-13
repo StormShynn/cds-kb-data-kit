@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `LinkedSAPObject` | ✓ | |  | `dokob` |  |  |
-| `ObjectDescription` |  | |  | `ktxt` |  |  |
-| `ObjectType` |  | |  | `objab` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `LinkedSAPObject` | ✓ | |  | `dokob` | `CHAR(10)` | Linked SAP Object |
+| `ObjectDescription` |  | |  | `ktxt` | `CHAR(20)` | Object Description |
+| `ObjectType` |  | |  | `objab` | `CHAR(3)` | Language-dependent object type |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

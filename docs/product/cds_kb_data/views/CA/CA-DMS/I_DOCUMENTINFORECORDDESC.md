@@ -39,14 +39,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
-| `DocumentInfoRecordDocNumber` | ✓ | |  | `doknr` |  |  |
-| `DocumentInfoRecordDocVersion` | ✓ | |  | `dokvr` |  |  |
-| `DocumentInfoRecordDocPart` | ✓ | |  | `doktl` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `DocumentDescription` |  | |  | `dktxt` |  |  |
-| `LongTextExists` |  | |  | `ltxin` |  |  |
-| `DocInfoRecdShortText` |  | |  | `dktxt_uc` |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` | `CHAR(3)` | Document Type |
+| `DocumentInfoRecordDocNumber` | ✓ | |  | `doknr` | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocVersion` | ✓ | |  | `dokvr` | `CHAR(2)` | Document Version |
+| `DocumentInfoRecordDocPart` | ✓ | |  | `doktl` | `CHAR(3)` | Document Part |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language |
+| `DocumentDescription` |  | |  | `dktxt` | `CHAR(40)` | Document Description |
+| `LongTextExists` |  | |  | `ltxin` | `CHAR(1)` | Long Text Exists |
+| `DocInfoRecdShortText` |  | |  | `dktxt_uc` | `CHAR(40)` | DMS: Short Texts in Capital Letters |
 | `_DocType` | | ✓ | | | | |
 | `_DocNumber` | | ✓ | | | | |
 | `_DocPart` | | ✓ | | | | |

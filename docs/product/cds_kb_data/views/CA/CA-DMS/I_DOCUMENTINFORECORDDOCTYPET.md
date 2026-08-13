@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
-| `Language` | ✓ | |  | `cvlang` |  |  |
-| `DocumentTypeDescription` |  | |  | `dartxt` |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` | `CHAR(3)` | Document Type |
+| `Language` | ✓ | |  | `cvlang` | `LANG(1)` | Language |
+| `DocumentTypeDescription` |  | |  | `dartxt` | `CHAR(20)` | Description of Document Type |
 | `_DocType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

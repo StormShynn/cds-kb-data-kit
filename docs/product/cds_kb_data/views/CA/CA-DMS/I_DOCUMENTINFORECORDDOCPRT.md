@@ -39,11 +39,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
-| `DocumentInfoRecordDocNumber` | ✓ | |  | `doknr` |  |  |
-| `DocumentInfoRecordDocVersion` | ✓ | |  | `dokvr` |  |  |
-| `DocumentInfoRecordDocPart` | ✓ | |  | `doktl` |  |  |
-| `DocumentDescription` |  | |  | `_DocDescription[1:Language = $session.system_language].DocumentDescription` |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` | `CHAR(3)` | Document Type |
+| `DocumentInfoRecordDocNumber` | ✓ | |  | `doknr` | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocVersion` | ✓ | |  | `dokvr` | `CHAR(2)` | Document Version |
+| `DocumentInfoRecordDocPart` | ✓ | |  | `doktl` | `CHAR(3)` | Document Part |
+| `DocumentDescription` |  | |  | `_DocDescription[1:Language = $session.system_language].DocumentDescription` | `CHAR(40)` | Document Description |
 | `_TEXT` | | ✓ | | | | |
 | `_DocType` | | ✓ | | | | |
 | `_DocNumber` | | ✓ | | | | |

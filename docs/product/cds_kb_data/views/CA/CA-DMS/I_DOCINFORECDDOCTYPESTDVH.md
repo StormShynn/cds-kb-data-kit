@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  |  | `CHAR(3)` | Document Type |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

@@ -39,28 +39,28 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocNumber` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocVersion` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocPart` | ✓ | |  |  |  |  |
-| `LinkedSAPObject` | ✓ | |  |  |  |  |
-| `LinkedSAPObjectKey` | ✓ | |  |  |  |  |
-| `DocObjectLinkCounter` | ✓ | |  |  |  |  |
-| `CreationDateTime` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `ChangedDateTime` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `DocInfoRecdLinkStatus` |  | |  |  |  |  |
-| `DocInfoRecdObjectLinkStatus` |  | |  |  |  |  |
-| `ObjectTypeDatabaseTable` |  | |  |  |  |  |
-| `DocInfoRecdAdditionalObjectKey` |  | |  |  |  |  |
-| `DocLinkDirectionIsActive` |  | |  |  |  |  |
-| `IsDefaultDocument` |  | |  |  |  |  |
-| `DocInfoRecdIsMarkedForDeletion` |  | |  |  |  |  |
-| `DocInfoRecdLongTextUUID` |  | |  |  |  |  |
-| `IsDocInfoRecdCreatedFromCAD` |  | |  |  |  |  |
-| `DocInfoRecdConfignMgmtFixed` |  | |  |  |  |  |
-| `IsArchived` |  | |  |  |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  |  | `CHAR(3)` | Document Type |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocVersion` | ✓ | |  |  | `CHAR(2)` | Document Version |
+| `DocumentInfoRecordDocPart` | ✓ | |  |  | `CHAR(3)` | Document Part |
+| `LinkedSAPObject` | ✓ | |  |  | `CHAR(10)` | Linked SAP Object |
+| `LinkedSAPObjectKey` | ✓ | |  |  | `CHAR(90)` | Document Management Object Key |
+| `DocObjectLinkCounter` | ✓ | |  |  | `NUMC(4)` | Counter key |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Time Document Was Created |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Document Creator's Name |
+| `ChangedDateTime` |  | |  |  | `DEC(15)` | Time last change was made |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `DocInfoRecdLinkStatus` |  | |  |  | `CHAR(1)` | Link Status of a Document |
+| `DocInfoRecdObjectLinkStatus` |  | |  |  | `CHAR(2)` | Object Link Status for Document |
+| `ObjectTypeDatabaseTable` |  | |  |  | `CHAR(30)` | Classification Object |
+| `DocInfoRecdAdditionalObjectKey` |  | |  |  | `CHAR(90)` | Document Management Object Key |
+| `DocLinkDirectionIsActive` |  | |  |  | `CHAR(1)` | Direction of Document Link Active |
+| `IsDefaultDocument` |  | |  |  | `CHAR(1)` | Indicator: Default Document for View |
+| `DocInfoRecdIsMarkedForDeletion` |  | |  |  | `CHAR(1)` | Deletion Indicator: Object Link |
+| `DocInfoRecdLongTextUUID` |  | |  |  | `CHAR(32)` | DMS: GUID for Allocation of Long Texts |
+| `IsDocInfoRecdCreatedFromCAD` |  | |  |  | `CHAR(1)` | CAD: Assignment Document  <-> Material |
+| `DocInfoRecdConfignMgmtFixed` |  | |  |  | `CHAR(1)` | Document Fixed |
+| `IsArchived` |  | |  |  | `CHAR(1)` | Archive Flag |
 | `_Text` | | ✓ | | | | |
 | `_CreatedUser` | | ✓ | | | | |
 | `_ChangedUser` | | ✓ | | | | |

@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
-| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |  |  |
-| `DocInfoRecdNumberAssignType` |  | |  | `numvg` |  |  |
-| `DocInfoRecdInternalNumberRange` |  | |  | `inumnr` |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` | `CHAR(3)` | Document Type |
+| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` | `CHAR(1)` | Deprecated Entries |
+| `DocInfoRecdNumberAssignType` |  | |  | `numvg` | `CHAR(1)` | Type of Number Assignment |
+| `DocInfoRecdInternalNumberRange` |  | |  | `inumnr` | `CHAR(2)` | Number of number range for internal number assignment |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

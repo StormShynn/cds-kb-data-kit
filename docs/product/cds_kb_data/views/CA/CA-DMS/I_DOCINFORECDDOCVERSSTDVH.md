@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocNumber` | ✓ | |  |  |  |  |
-| `DocumentInfoRecordDocVersion` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  |  | `CHAR(3)` | Document Type |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocVersion` | ✓ | |  |  | `CHAR(2)` | Document Version |
 | `_DocType` | | ✓ | | | | |
 | `_DocNumber` | | ✓ | | | | |
 

@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
-| `LinkedSAPObject` | ✓ | |  | `dokob` |  |  |
-| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` | `CHAR(3)` | Document Type |
+| `LinkedSAPObject` | ✓ | |  | `dokob` | `CHAR(10)` | Linked SAP Object |
+| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` | `CHAR(1)` | Deprecated Entries |
 | `_Text` | | ✓ | | | | |
 | `_DocType` | | ✓ | | | | |
 

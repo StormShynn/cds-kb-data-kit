@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
-| `LinkedSAPObject` | ✓ | |  | `dokob` |  |  |
-| `ObjectTypeDatabaseTable` |  | |  | `vobj` |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` | `CHAR(3)` | Document Type |
+| `LinkedSAPObject` | ✓ | |  | `dokob` | `CHAR(10)` | Linked SAP Object |
+| `ObjectTypeDatabaseTable` |  | |  | `vobj` | `CHAR(30)` | Classification Object |
 | `_DocTypeText` | | ✓ | | | | |
 | `_DocType` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |

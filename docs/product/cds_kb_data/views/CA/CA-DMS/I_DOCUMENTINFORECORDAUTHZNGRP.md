@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AuthorizationGroup` | ✓ | |  | `brgru` |  |  |
-| `DocInfoRecdAuthznObject` |  | |  | `brobj` |  |  |
+| `AuthorizationGroup` | ✓ | |  | `brgru` | `CHAR(4)` | Authorization Group |
+| `DocInfoRecdAuthznObject` |  | |  | `brobj` | `CHAR(10)` | Authorization object |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

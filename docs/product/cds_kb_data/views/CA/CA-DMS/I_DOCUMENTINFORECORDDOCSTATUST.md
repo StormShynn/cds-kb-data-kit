@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cvlang` |  |  |
-| `InternalDocumentStatus` | ✓ | |  | `dokst` |  |  |
-| `ExternalDocumentStatus` |  | |  | `stabk` |  |  |
-| `DocumentStatusName` |  | |  | `dostx` |  |  |
+| `Language` | ✓ | |  | `cvlang` | `LANG(1)` | Language |
+| `InternalDocumentStatus` | ✓ | |  | `dokst` | `CHAR(2)` | Document Status |
+| `ExternalDocumentStatus` |  | |  | `stabk` | `CHAR(2)` | Status of a document (language-dependent) |
+| `DocumentStatusName` |  | |  | `dostx` | `CHAR(16)` | Description of document status |
 | `_DocStatus` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 
