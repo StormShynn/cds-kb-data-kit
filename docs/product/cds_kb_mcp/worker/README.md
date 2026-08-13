@@ -8,7 +8,47 @@ totals and fold them into search ranking (see
 `../cds_kb_data/scripts/pull-usage-stats.mjs` and
 `server.mjs`'s `boostDocument`).
 
-No account/identity data ever reaches this Worker — only `{view, count}`.
+No account/identity data ever reaches this Worker — only `{view, count}` for
+view popularity, and (optionally) anonymous query **shapes**
+(`{shapeId, views, selectFieldCount, selectFieldHash, flags, count}`) that
+never include WHERE literals, titles, contributors, or raw notes.
+
+**Also hosts the Query Builder Propose Issue bot** (`POST /propose-issue`):
+creates a GitHub Issue with a bot token so visitors need not be logged into
+GitHub. Same Worker keeps one deploy URL and reuses Durable Object rate
+limits (see plan `docs/plans/active/ai-sap-learn-share-loop.md`, decision C1).
+
+## Endpoints
+
+| Method | Path | Auth | Purpose |
+|---|---|---|---|
+| POST | `/ping` | public (rate-limited) | View-read deltas `{events:[{view,count}]}` |
+| GET | `/totals` | `?token=PULL_TOKEN` | Cumulative view counts |
+| POST | `/ping-shapes` | public + CORS (rate-limited) | Anonymous query shapes from MCP (`CDS_KB_SHAPE_TELEMETRY=1`) or Query Builder opt-in |
+| GET | `/shape-totals` | `?token=PULL_TOKEN` | Cumulative shape aggregates |
+| OPTIONS | `/ping-shapes`, `/propose-issue` | public | CORS preflight for the browser builder |
+| POST | `/propose-issue` | public + CORS (stricter rate limit) | Create curated-library GitHub Issue (`title`, `body`\|`markdown`, `kind`: `query`\|`cds`) |
+
+### `POST /propose-issue`
+
+JSON body:
+
+```json
+{
+  "title": "Query library: Open purchase orders",
+  "body": "## Propose … markdown …",
+  "kind": "query"
+}
+```
+
+- `kind`: `query` (default) or `cds` — curated query shape vs curated CDS snippet (C4).
+- Honeypot fields `website` / `company` / `url` / `hp`: if non-empty, returns soft success and creates nothing.
+- Rejects oversized title/body and obvious secret patterns (tokens, private keys, etc.).
+- Never logs the full body (only kind + lengths).
+- Labels: `query-library`, plus `cds-snippet` when `kind=cds` (retries without labels if the repo lacks them).
+- Response: `{ "issueUrl": "https://github.com/…/issues/N" }` or `{ "error": "…" }`.
+
+**Abuse limits:** **8 proposals / IP / hour** (Durable Object bucket, separate from the 120/min ping limiter).
 
 ## Storage: Durable Object (not KV)
 
@@ -32,6 +72,7 @@ is abandoned (nothing reads it anymore), not deleted.
 Requires a free Cloudflare account.
 
 ```bash
+cd docs/product/cds_kb_mcp/worker
 npm install -g wrangler        # or use `npx wrangler ...` below instead
 wrangler login
 
@@ -43,10 +84,27 @@ wrangler secret put PULL_TOKEN
 # -> paste any long random string when prompted; keep a copy, you'll need
 #    it again as CDS_KB_USAGE_PULL_TOKEN in the data repo's GitHub secrets
 
-# 3. Deploy
+# 3. Issue bot secret (required for live Propose without visitor GitHub login)
+wrangler secret put GITHUB_ISSUE_TOKEN
+# -> fine-grained PAT: Issues write on PROPOSE_REPO only
+#    (or classic PAT with public_repo). Least privilege preferred.
+# Optional: change target repo via wrangler.toml [vars] PROPOSE_REPO
+#    (default StormShynn/cds-kb-mcp-data-kit)
+
+# 4. Deploy
 wrangler deploy
 # -> prints the live URL, e.g. https://cds-kb-usage-collector.<you>.workers.dev
 ```
+
+**Go-live checklist for Propose bot**
+
+1. Create label `query-library` (and optionally `cds-snippet`) on `PROPOSE_REPO`.
+2. `wrangler secret put GITHUB_ISSUE_TOKEN`
+3. `wrangler deploy`
+4. Confirm Query Builder `PROPOSE_ISSUE_ENDPOINT` points at
+   `https://cds-kb-usage-collector.<you>.workers.dev/propose-issue`
+5. Without the secret, `/propose-issue` returns 503 and the builder falls back
+   to the GitHub deep-link + clipboard path.
 
 ## Wire it up
 
@@ -70,6 +128,13 @@ the `pull-usage-stats.yml` workflow:
 - `CDS_KB_USAGE_ENDPOINT` → `https://cds-kb-usage-collector.<you>.workers.dev/totals`
 - `CDS_KB_USAGE_PULL_TOKEN` → the same string you gave `PULL_TOKEN` above
 
+## Local checks
+
+```bash
+cd docs/product/cds_kb_mcp/worker
+node test-propose-sanitize.mjs
+```
+
 ## Known limits (v1)
 
 - Durable Objects still bill on requests (free tier includes a generous
@@ -86,8 +151,10 @@ the `pull-usage-stats.yml` workflow:
   is the one global single-instance — a per-isolate map would split the window
   across Worker isolates and never trip. Raise the constants if you ever see
   legitimate 429s.
+- `/propose-issue` uses a **separate** bucket: **8 / IP / hour**.
 - This is a directional popularity signal, not an exact count: any instance
   running with telemetry disabled, offline, or killed before a flush
   contributes nothing for that period.
 - Migrating existing counts from the old KV namespace is not automated — a
   fresh deploy starts from zero (acceptable: the signal is directional).
+- Issue bot does **not** open PRs and never merges library changes.

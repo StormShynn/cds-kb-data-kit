@@ -2,6 +2,11 @@ name = "cds-kb-usage-collector"
 main = "src/index.mjs"
 compatibility_date = "2026-01-01"
 
+# Public Propose target (Query Builder Issue bot). Override per env if needed.
+# Token is a secret: wrangler secret put GITHUB_ISSUE_TOKEN
+[vars]
+PROPOSE_REPO = "StormShynn/cds-kb-mcp-data-kit"
+
 # Counts are stored in a Durable Object (USAGE_DO) — atomic, SQLite-backed,
 # and not subject to Workers KV's free-plan 1,000 writes/day limit. See
 # worker/README.md for the full walkthrough (the old KV namespace is gone;
