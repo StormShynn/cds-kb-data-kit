@@ -119,13 +119,17 @@ export class UsageCounter {
 
   async fetch(request) {
     const url = new URL(request.url);
-    if (request.method === 'POST' && url.pathname === '/ping') {
-      return this.#onPing(request);
+    try {
+      if (request.method === 'POST' && url.pathname === '/ping') {
+        return await this.#onPing(request);
+      }
+      if (request.method === 'GET' && url.pathname === '/totals') {
+        return await this.#onTotals();
+      }
+      return new Response('Not found', { status: 404 });
+    } catch (e) {
+      return new Response(`DO error: ${e.message}`, { status: 500 });
     }
-    if (request.method === 'GET' && url.pathname === '/totals') {
-      return this.#onTotals();
-    }
-    return new Response('Not found', { status: 404 });
   }
 
   async #onPing(request) {
