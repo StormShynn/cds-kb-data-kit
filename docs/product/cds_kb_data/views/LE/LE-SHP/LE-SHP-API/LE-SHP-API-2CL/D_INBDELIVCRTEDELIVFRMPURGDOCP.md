@@ -1,6 +1,21 @@
 ---
 name: D_INBDELIVCRTEDELIVFRMPURGDOCP
 description: "D Inbdelivcrtedelivfrmpurgdocp"
+semantic_vi: "View D_INBDELIVCRTEDELIVFRMPURGDOCP hiển thị thông tin về chứng từ vận chuyển từ góc độ nhà cung cấp, bao gồm ngày giờ vận chuyển và phương tiện vận chuyển. Nó được sử dụng để lấy dữ liệu cho chứng từ vận chuyển được tạo bởi nhà cung cấp."
+keywords:
+  - "delivery document"
+  - "chứng từ vận chuyển"
+  - "supplier"
+  - "nhà cung cấp"
+  - "delivery date"
+  - "ngày vận chuyển"
+  - "means of transport"
+  - "phương tiện vận chuyển"
+  - "sap logistics execution"
+  - "logistics execution"
+  - "ekko"
+  - "công ty logistics"
+semantic_en: "The D_INBDELIVCRTEDELIVFRMPURGDOCP CDS view exposes delivery document information from the supplier's perspective, including delivery dates, times, and means of transport. It is used to retrieve data for delivery documents created by suppliers."
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: D_JOURNALENTRYPOSTPARAMETER
 description: "D Journal EntryPOSTPARAMETER"
+semantic_vi: "CDS view D_JOURNALENTRYPOSTPARAMETER hiển thị các tham số đăng ký journal entry, được sử dụng để đăng ký journal entries trong hệ thống SAP."
+keywords:
+  - "journal entry"
+  - "đăng ký journal entry"
+  - "posting parameters"
+  - "tham số đăng ký"
+  - "sap"
+  - "ac-int-2cl"
+  - "accounting document"
+  - "document reference id"
+  - "invoice reference document"
+semantic_en: "The D_JOURNALENTRYPOSTPARAMETER CDS view exposes journal entry posting parameters, which are used to post journal entries in a SAP system."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

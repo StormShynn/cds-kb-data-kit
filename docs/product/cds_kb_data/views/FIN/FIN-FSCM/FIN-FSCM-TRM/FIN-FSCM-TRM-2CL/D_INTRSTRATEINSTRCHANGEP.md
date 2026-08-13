@@ -1,6 +1,18 @@
 ---
 name: D_INTRSTRATEINSTRCHANGEP
 description: "D Intrstrateinstrchangep"
+semantic_vi: "View này hiển thị dữ liệu thay đổi lãi suất nội địa cho các giao dịch tài chính, cung cấp thông tin về lãi suất và điều kiện. Nó có thể được sử dụng để phân tích và quản lý thay đổi lãi suất nội địa cho các giao dịch tài chính."
+keywords:
+  - "intrastate interest change"
+  - "financial transaction"
+  - "lãi suất nội địa"
+  - "điều kiện lãi suất"
+  - "giao dịch tài chính"
+  - "sap cds view"
+  - "fin-fscm-trm-2cl"
+  - "component:fin-fscm-trm-2cl"
+  - "lob:other"
+semantic_en: "This view exposes intrastate interest change data for financial transactions, providing information on interest rates and conditions. It can be used to analyze and manage intrastate interest changes for financial transactions."
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

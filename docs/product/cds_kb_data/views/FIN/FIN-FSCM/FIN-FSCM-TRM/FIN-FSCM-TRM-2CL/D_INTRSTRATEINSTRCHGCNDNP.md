@@ -1,6 +1,20 @@
 ---
 name: D_INTRSTRATEINSTRCHGCNDNP
 description: "D Intrstrateinstrchgcndnp"
+semantic_vi: "View này hiển thị dữ liệu điều kiện giao dịch tài chính, cụ thể là điều kiện tính lãi cho giao dịch quốc gia. Nó được sử dụng để lấy và phân tích chi tiết điều kiện cho giao dịch tài chính trong cùng một quốc gia."
+keywords:
+  - "financial transaction"
+  - "điều kiện giao dịch tài chính"
+  - "tính lãi"
+  - "giao dịch quốc gia"
+  - "sap cds"
+  - "fin-fscm-trm"
+  - "component:fin-fscm-trm-2cl"
+  - "lob:other"
+  - "financial condition"
+  - "condition item"
+  - "condition percentage rate"
+semantic_en: "This view exposes financial transaction condition data, specifically interest calculation conditions for intrastate transactions. It is used to retrieve and analyze condition details for financial transactions within the same country."
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

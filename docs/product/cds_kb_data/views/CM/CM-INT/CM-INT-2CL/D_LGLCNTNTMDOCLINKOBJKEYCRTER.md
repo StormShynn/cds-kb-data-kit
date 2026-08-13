@@ -1,6 +1,21 @@
 ---
 name: D_LGLCNTNTMDOCLINKOBJKEYCRTER
 description: "D Lglcntntmdoclinkobjkeycrter"
+semantic_vi: "View D_LGLCNTNTMDOCLINKOBJKEYCRTER hiển thị các khóa liên kết đối tượng cho tài liệu quản lý nội dung, có thể được sử dụng để lấy thông tin tài liệu liên quan."
+keywords:
+  - "sap cds view"
+  - "content management"
+  - "document link"
+  - "object key"
+  - "cm-int-2cl"
+  - "lob other"
+  - "cm"
+  - "cm-int"
+  - "document management"
+  - "tài liệu quản lý nội dung"
+  - "đối tượng liên kết"
+  - "khóa đối tượng"
+semantic_en: "The D_LGLCNTNTMDOCLINKOBJKEYCRTER view exposes linked object keys for content management documents, which can be used to retrieve related document information."
 app_component: CM-INT-2CL
 software_component: SAPSCORE
 release_state: released

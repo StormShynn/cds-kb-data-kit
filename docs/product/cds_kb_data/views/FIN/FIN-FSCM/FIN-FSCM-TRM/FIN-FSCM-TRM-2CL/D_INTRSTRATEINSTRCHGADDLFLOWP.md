@@ -1,6 +1,19 @@
 ---
 name: D_INTRSTRATEINSTRCHGADDLFLOWP
 description: "D Intrstrateinstrchgaddlflowp"
+semantic_vi: "View này hiển thị thông tin lưu chuyển bổ sung cho các giao dịch tài chính nội địa, bao gồm ngày tạo và chi tiết thanh toán. Nó được sử dụng để phân tích và theo dõi giao dịch tài chính nội địa."
+keywords:
+  - "intrastate financial transaction"
+  - "giao dịch tài chính nội địa"
+  - "financial instrument"
+  - "financial transaction"
+  - "flow information"
+  - "thông tin lưu chuyển"
+  - "financial instrument activity"
+  - "financial transaction direction"
+  - "payment details"
+  - "chi tiết thanh toán"
+semantic_en: "This view exposes additional flow information for intrastate financial transactions, including creation dates and payment details. It is used to analyze and track intrastate financial transactions."
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

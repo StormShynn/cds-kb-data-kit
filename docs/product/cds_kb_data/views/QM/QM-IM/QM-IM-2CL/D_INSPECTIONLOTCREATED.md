@@ -1,6 +1,19 @@
 ---
 name: D_INSPECTIONLOTCREATED
 description: "D Inspectionlotcreated"
+semantic_vi: "View D_INSPECTIONLOTCREATED hiển thị dữ liệu tạo lô kiểm tra, có liên quan khi theo dõi việc tạo lô kiểm tra trong quy trình quản lý chất lượng."
+keywords:
+  - "inspection"
+  - "lot"
+  - "creation"
+  - "quality management"
+  - "qm"
+  - "inspection lot"
+  - "plant"
+  - "business object"
+  - "sap business object type"
+  - "business object item"
+semantic_en: "The D_INSPECTIONLOTCREATED view exposes inspection lot creation data, which is relevant when tracking the creation of inspection lots in quality management processes."
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

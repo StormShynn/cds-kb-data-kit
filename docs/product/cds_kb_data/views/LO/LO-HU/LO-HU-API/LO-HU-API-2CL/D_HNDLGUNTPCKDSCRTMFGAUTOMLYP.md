@@ -1,6 +1,20 @@
 ---
 name: D_HNDLGUNTPCKDSCRTMFGAUTOMLYP
 description: "D Hndlguntpckdscrtmfgautomlyp"
+semantic_vi: "Tự động tạo quyền sản xuất cho đơn đặt hàng sản xuất, bao gồm đơn đặt hàng sản xuất, số lượng, đơn vị đo lường, vị trí lưu trữ, lô hàng và số hướng dẫn đóng gói."
+keywords:
+  - "production order"
+  - "đơn đặt hàng sản xuất"
+  - "manufacturing authorization"
+  - "quyền sản xuất"
+  - "automatically generated"
+  - "tự động tạo"
+  - "sap lo"
+  - "logistics general"
+  - "ekko"
+  - "production order quantity"
+  - "đơn vị đo lường"
+semantic_en: "Automatically generated manufacturing authorization for production orders, including production order, quantity, unit of measure, storage location, batch, and packing instruction number. This view is used to retrieve manufacturing authorization data for production orders."
 app_component: LO-HU-API-2CL
 software_component: SAPSCORE
 release_state: released

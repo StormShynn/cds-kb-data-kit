@@ -1,6 +1,17 @@
 ---
 name: D_JOURNALENTRYPOSTCURRENCYAMTP
 description: "D Journal EntryPOSTCURRENCYAMTP"
+semantic_vi: "View D_JOURNALENTRYPOSTCURRENCYAMTP hiển thị các khoản tiền trong nhật ký giao dịch ở các loại tiền tệ khác nhau, thường được sử dụng khi xử lý các giao dịch trong nhiều loại tiền tệ."
+keywords:
+  - "journal entry"
+  - "nhiệt ký giao dịch"
+  - "currency"
+  - "tiền tệ"
+  - "transactional processing"
+  - "xử lý giao dịch"
+  - "sap"
+  - "ac-int-2cl"
+semantic_en: "The D_JOURNALENTRYPOSTCURRENCYAMTP CDS view exposes journal entry amounts in different currencies, typically used when processing transactions across multiple currencies."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

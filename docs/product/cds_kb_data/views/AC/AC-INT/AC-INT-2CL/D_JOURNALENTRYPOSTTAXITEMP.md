@@ -1,6 +1,20 @@
 ---
 name: D_JOURNALENTRYPOSTTAXITEMP
 description: "D Journal EntryPOSTTAXITEMP"
+semantic_vi: "View D_JOURNALENTRYPOSTTAXITEMP hiển thị dữ liệu chi tiết thuế trong hồ sơ kế toán, bao gồm thuế suất và khu vực thuế, để sử dụng trong tính toán và báo cáo thuế."
+keywords:
+  - "journal entry"
+  - "tax item"
+  - "tax rate"
+  - "tax jurisdiction"
+  - "tax determination date"
+  - "journal entry post tax item"
+  - "d_journalentryposttaxitemp"
+  - "dữ liệu chi tiết thuế"
+  - "hồ sơ kế toán"
+  - "thuế suất"
+  - "khu vực thuế"
+semantic_en: "The D_JOURNALENTRYPOSTTAXITEMP view exposes journal entry tax item data, including tax rates and jurisdictions, for use in tax calculations and reporting."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

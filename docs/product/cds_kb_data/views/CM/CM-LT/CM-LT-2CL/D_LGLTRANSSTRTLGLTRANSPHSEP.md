@@ -1,6 +1,19 @@
 ---
 name: D_LGLTRANSSTRTLGLTRANSPHSEP
 description: "D Lgltransstrtlgltransphsep"
+semantic_vi: "View này hiển thị danh sách các giai đoạn giao dịch pháp lý cho một UUID giai đoạn cụ thể, được sử dụng để quản lý và theo dõi giao dịch pháp lý theo cách có cấu trúc."
+keywords:
+  - "legal transaction"
+  - "giai đoạn giao dịch pháp lý"
+  - "phase uuid"
+  - "transaction phase"
+  - "giai đoạn giao dịch"
+  - "legal transaction management"
+  - "quản lý giao dịch pháp lý"
+  - "sap cm"
+  - "cm lt"
+  - "component cm lt 2cl"
+semantic_en: "This view exposes a list of legal transaction phases for a specific phase UUID, used to manage and track legal transactions in a structured manner."
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

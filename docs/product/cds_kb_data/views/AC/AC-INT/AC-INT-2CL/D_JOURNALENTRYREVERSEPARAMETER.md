@@ -1,6 +1,18 @@
 ---
 name: D_JOURNALENTRYREVERSEPARAMETER
 description: "D Journal EntryREVERSEPARAMETER"
+semantic_vi: "View D_JOURNALENTRYREVERSEPARAMETER hiển thị các tham số đảo ngược journal entry, được sử dụng để đảo ngược journal entries trong hệ thống. Nó được sử dụng khi đảo ngược journal entries."
+keywords:
+  - "journal entry"
+  - "đơn đăng ký"
+  - "reversal"
+  - "đảo ngược"
+  - "sap"
+  - "ac-int-2cl"
+  - "posting date"
+  - "reason"
+  - "created by user"
+semantic_en: "The D_JOURNALENTRYREVERSEPARAMETER view exposes journal entry reversal parameters, which are used to reverse journal entries in the system. It is used when reversing journal entries."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

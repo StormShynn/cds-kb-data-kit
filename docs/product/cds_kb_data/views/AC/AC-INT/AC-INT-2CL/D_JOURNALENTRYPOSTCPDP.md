@@ -1,6 +1,21 @@
 ---
 name: D_JOURNALENTRYPOSTCPDP
 description: "D Journal EntryPOSTCPDP"
+semantic_vi: "View D Journal EntryPOSTCPDP hiển thị dữ liệu ghi chép tài khoản cho đối tác kinh doanh, bao gồm địa chỉ và thông tin thuế, có liên quan đến mục đích tài chính và kế toán."
+keywords:
+  - "journal entry"
+  - "đơn ghi chép tài khoản"
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "address"
+  - "địa chỉ"
+  - "tax information"
+  - "thông tin thuế"
+  - "financial"
+  - "tài chính"
+  - "accounting"
+  - "kế toán"
+semantic_en: "The D Journal EntryPOSTCPDP view exposes journal entry data for business partners, including addresses and tax information, which is relevant for financial and accounting purposes."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

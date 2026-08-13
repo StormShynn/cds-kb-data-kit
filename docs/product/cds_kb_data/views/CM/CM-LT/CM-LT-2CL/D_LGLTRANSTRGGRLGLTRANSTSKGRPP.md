@@ -1,6 +1,20 @@
 ---
 name: D_LGLTRANSTRGGRLGLTRANSTSKGRPP
 description: "D Lgltranstrggrlgltranstskgrpp"
+semantic_vi: "View này hiển thị mối quan hệ nhóm nhiệm vụ giao dịch pháp lý và các nhóm nhiệm vụ tương ứng. Nó được sử dụng để quản lý và phân tích các kết nối giữa giao dịch pháp lý và các nhiệm vụ liên quan."
+keywords:
+  - "legal transaction"
+  - "task group"
+  - "giao dịch pháp lý"
+  - "nhóm nhiệm vụ"
+  - "sap cds"
+  - "cm-lt-2cl"
+  - "component"
+  - "lob:other"
+  - "nhiệm vụ"
+  - "quản lý"
+  - "phân tích"
+semantic_en: "This view exposes legal transaction task group relationships and their corresponding task group assignments. It is used to manage and analyze the connections between legal transactions and their associated tasks."
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

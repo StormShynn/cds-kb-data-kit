@@ -1,6 +1,18 @@
 ---
 name: D_INTRSTRATEINSTRCHGSCALEP
 description: "D Intrstrateinstrchgscalep"
+semantic_vi: "View D_IntrstrateInstrchgscalep hiển thị dữ liệu hướng dẫn giao dịch tài chính và điều kiện, hữu ích cho việc phân tích và xử lý thay đổi hướng dẫn giao dịch nội địa trong giao dịch tài chính."
+keywords:
+  - "financial transaction"
+  - "điều kiện tài chính"
+  - "hướng dẫn giao dịch"
+  - "giao dịch nội địa"
+  - "cds view"
+  - "view d_intrstrateinstrchgscalep"
+  - "fin-fscm-trm-2cl"
+  - "financial transaction direction"
+  - "condition data"
+semantic_en: "The D_IntrstrateInstrchgscalep view exposes financial transaction direction and condition data, useful for analyzing and processing intrastate instruction changes in financial transactions."
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

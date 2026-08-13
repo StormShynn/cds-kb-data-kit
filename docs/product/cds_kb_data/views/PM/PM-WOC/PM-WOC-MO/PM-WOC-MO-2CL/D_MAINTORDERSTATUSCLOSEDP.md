@@ -1,6 +1,21 @@
 ---
 name: D_MAINTORDERSTATUSCLOSEDP
 description: "D Maintorderstatusclosedp"
+semantic_vi: "View này hiển thị trạng thái của các đơn bảo trì đã được đóng, cung cấp một bản xem xét của trạng thái đơn tại một thời điểm cụ thể. Nó có thể được sử dụng để theo dõi việc đóng đơn bảo trì và phân tích trạng thái của đơn đã đóng theo thời gian."
+keywords:
+  - "maintenance order"
+  - "đơn bảo trì"
+  - "status"
+  - "trạng thái"
+  - "closed"
+  - "đóng"
+  - "maintenance order status"
+  - "trạng thái đơn bảo trì"
+  - "pm"
+  - "plant maintenance"
+  - "bảo trì nhà máy"
+  - "pm-woc"
+semantic_en: "This view exposes the status of maintenance orders that have been closed, providing a snapshot of the order's status at a specific point in time. It can be used to track the closure of maintenance orders and analyze the status of closed orders over time."
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

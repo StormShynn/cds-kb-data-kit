@@ -1,6 +1,19 @@
 ---
 name: D_GLADJMTPOSTJOURNALENTRYP
 description: "D GLADJMTPOSTJournal EntryP"
+semantic_vi: "View D_GLADJMTPOSTJOURNALENTRYP hiển thị dữ liệu đăng ký journal, bao gồm chi tiết tài khoản và ngày đăng ký, có thể được sử dụng để phân tích và báo cáo về các giao dịch tài chính."
+keywords:
+  - "journal entry"
+  - "journal posting"
+  - "accounting document"
+  - "posting date"
+  - "financial transaction"
+  - "dữ liệu đăng ký journal"
+  - "dữ liệu tài khoản"
+  - "giao dịch tài chính"
+  - "sap journal entry"
+  - "sap accounting document"
+semantic_en: "The D_GLADJMTPOSTJOURNALENTRYP view exposes journal entry posting data, including accounting document details and posting dates, which can be used to analyze and report on financial transactions."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

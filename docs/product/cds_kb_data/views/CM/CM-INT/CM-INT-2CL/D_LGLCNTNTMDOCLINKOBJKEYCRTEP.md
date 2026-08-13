@@ -1,6 +1,19 @@
 ---
 name: D_LGLCNTNTMDOCLINKOBJKEYCRTEP
 description: "D Lglcntntmdoclinkobjkeycrtep"
+semantic_vi: "View D_LGLCNTNTMDOCLINKOBJKEYCRTEP hiển thị liên kết giữa các tài liệu quản lý nội dung và đối tượng tạo ra chúng trong thành phần CM-INT-2CL."
+keywords:
+  - "content management"
+  - "document link"
+  - "creation object"
+  - "cm-int-2cl"
+  - "sap"
+  - "lob other"
+  - "document management"
+  - "tài liệu quản lý nội dung"
+  - "liên kết tài liệu"
+  - "đối tượng tạo ra"
+semantic_en: "The D_LGLCNTNTMDOCLINKOBJKEYCRTEP view exposes links between content management documents and their creation objects in the CM-INT-2CL component."
 app_component: CM-INT-2CL
 software_component: SAPSCORE
 release_state: released

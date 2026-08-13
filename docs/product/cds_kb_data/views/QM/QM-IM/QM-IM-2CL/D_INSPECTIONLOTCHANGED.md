@@ -1,6 +1,18 @@
 ---
 name: D_INSPECTIONLOTCHANGED
 description: "D Inspectionlotchanged"
+semantic_vi: "View D_INSPECTIONLOTCHANGED hiển thị dữ liệu thay đổi lô kiểm tra, có thể sử dụng khi phân tích thay đổi lô kiểm tra trong quản lý chất lượng."
+keywords:
+  - "inspection"
+  - "lot"
+  - "change"
+  - "quality management"
+  - "qm"
+  - "inspection lot"
+  - "d_inspectionlotchanged"
+  - "thay đổi lô kiểm tra"
+  - "quản lý chất lượng"
+semantic_en: "The D_INSPECTIONLOTCHANGED CDS view exposes inspection lot change data, which is useful when analyzing changes to inspection lots in quality management."
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

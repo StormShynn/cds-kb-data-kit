@@ -1,6 +1,19 @@
 ---
 name: D_JOURNALENTRYPOSTAPITEMP
 description: "D Journal EntryPOSTAPITEMP"
+semantic_vi: "View D Journal EntryPOSTAPITEMP hiển thị dữ liệu chi tiết của các khoản mục trong chứng từ kế toán, có thể sử dụng để phân tích và báo cáo các giao dịch cụ thể."
+keywords:
+  - "journal entry"
+  - "item-level"
+  - "accounting"
+  - "financial management"
+  - "transaction"
+  - "đơn chứng từ kế toán"
+  - "dữ liệu chi tiết"
+  - "giao dịch"
+  - "sản phẩm"
+  - "thanh toán"
+semantic_en: "The D Journal EntryPOSTAPITEMP view exposes journal entry item-level data for accounting and financial management, useful for analyzing and reporting on specific transactions."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

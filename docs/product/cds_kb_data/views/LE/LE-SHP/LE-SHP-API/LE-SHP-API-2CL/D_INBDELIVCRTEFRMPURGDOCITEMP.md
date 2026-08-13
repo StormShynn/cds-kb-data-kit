@@ -1,6 +1,19 @@
 ---
 name: D_INBDELIVCRTEFRMPURGDOCITEMP
 description: "D Inbdelivcrtefrmpurgdocitemp"
+semantic_vi: "View D_INBDELIVCRTEFRMPURGDOCITEMP hiển thị dữ liệu chi tiết của đơn hàng vận chuyển nội địa. Nó được sử dụng khi truy cập chi tiết hàng hóa của đơn hàng vận chuyển nội địa."
+keywords:
+  - "delivery"
+  - "document"
+  - "item"
+  - "inland"
+  - "sap"
+  - "cds"
+  - "view"
+  - "logistics"
+  - "execution"
+  - "ekko"
+semantic_en: "The D_INBDELIVCRTEFRMPURGDOCITEMP view exposes delivery document item data for inland deliveries. It is used when accessing item-level details for inland delivery documents."
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

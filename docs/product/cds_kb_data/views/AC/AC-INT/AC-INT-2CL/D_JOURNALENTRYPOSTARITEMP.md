@@ -1,6 +1,21 @@
 ---
 name: D_JOURNALENTRYPOSTARITEMP
 description: "D Journal EntryPOSTARITEMP"
+semantic_vi: "View D_JOURNALENTRYPOSTARITEMP hiển thị dữ liệu chi tiết của các ghi chú kế toán, bao gồm các dòng tài khoản, khách hàng và điều kiện thanh toán, có thể hữu ích khi phân tích hoặc báo cáo về các ghi chú kế toán cụ thể hoặc các mục của chúng."
+keywords:
+  - "journal entry"
+  - "đơn ghi chú kế toán"
+  - "account line"
+  - "dòng tài khoản"
+  - "customer"
+  - "khách hàng"
+  - "payment terms"
+  - "điều kiện thanh toán"
+  - "sap"
+  - "cds view"
+  - "view dữ liệu"
+  - "data view"
+semantic_en: "The D_JOURNALENTRYPOSTARITEMP view exposes journal entry item-level data, including account lines, customers, and payment terms, which is useful when analyzing or reporting on specific journal entries or their items."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

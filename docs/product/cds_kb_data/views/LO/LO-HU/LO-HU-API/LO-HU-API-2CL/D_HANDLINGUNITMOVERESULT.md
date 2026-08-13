@@ -1,6 +1,19 @@
 ---
 name: D_HANDLINGUNITMOVERESULT
 description: "D Handlingunitmoveresult"
+semantic_vi: "View D_HANDLINGUNITMOVERESULT cung cấp thông tin về chuyển động đơn vị xử lý, bao gồm kho, đặc điểm đơn vị xử lý và chi tiết bao bì. Nó được sử dụng để theo dõi và quản lý chuyển động đơn vị xử lý trong hoạt động logistics."
+keywords:
+  - "handling unit move"
+  - "chuyển động đơn vị xử lý"
+  - "logistics"
+  - "lo"
+  - "lo-hu"
+  - "lo-hu-api"
+  - "warehouse"
+  - "handling unit"
+  - "packaging material"
+  - "gross weight"
+semantic_en: "The D_HANDLINGUNITMOVERESULT view provides information about handling unit moves, including the warehouse, handling unit characteristics, and packaging details. It is used to track and manage handling unit movements in logistics operations."
 app_component: LO-HU-API-2CL
 software_component: SAPSCORE
 release_state: released

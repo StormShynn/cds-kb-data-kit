@@ -1,6 +1,21 @@
 ---
 name: D_INTRSTRATEINSTRCHGSGLDTEP
 description: "D Intrstrateinstrchgsgldtep"
+semantic_vi: "View này hiển thị dữ liệu về phí lãi suất nội địa cho một ngày cụ thể, có thể được sử dụng để phân tích phí lãi suất cho các giao dịch nội địa."
+keywords:
+  - "intrastate interest charge"
+  - "phí lãi suất nội địa"
+  - "financial transaction"
+  - "giao dịch tài chính"
+  - "interest rate"
+  - "lãi suất"
+  - "sap cds view"
+  - "view dữ liệu"
+  - "financial data"
+  - "dữ liệu tài chính"
+  - "intrastate transaction"
+  - "giao dịch nội địa"
+semantic_en: "This view exposes intrastate interest charge data for a specific date, which can be used to analyze interest charges for intrastate transactions."
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

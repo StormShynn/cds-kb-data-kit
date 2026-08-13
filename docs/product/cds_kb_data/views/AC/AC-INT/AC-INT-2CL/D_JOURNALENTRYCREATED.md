@@ -1,6 +1,21 @@
 ---
 name: D_JOURNALENTRYCREATED
 description: "D Journal EntryCREATED"
+semantic_vi: "View D_JOURNALENTRYCREATED trong CDS hiển thị các journal entry được tạo trong SAP, có thể được sử dụng để theo dõi các giao dịch tài chính và tác động của chúng lên các tài khoản của công ty."
+keywords:
+  - "journal entry"
+  - "journal entry created"
+  - "created journal entry"
+  - "sap journal entry"
+  - "journal entry created date"
+  - "journal entry created time"
+  - "journal entry created by"
+  - "journal entry created user"
+  - "journal entry created fiscal year"
+  - "journal entry created period"
+  - "accounting journal entry"
+  - "financial journal entry"
+semantic_en: "The D_JOURNALENTRYCREATED CDS view exposes created journal entries in SAP, which can be used to track financial transactions and their impact on the company's accounts."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

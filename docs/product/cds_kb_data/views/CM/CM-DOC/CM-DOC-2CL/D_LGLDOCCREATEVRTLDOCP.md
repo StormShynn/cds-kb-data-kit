@@ -1,6 +1,21 @@
 ---
 name: D_LGLDOCCREATEVRTLDOCP
 description: "D Lgldoccreatevrtldocp"
+semantic_vi: "View D_LGLDOCCREATEVRTLDOCP hiển thị dữ liệu tài liệu tạo virtually tài liệu, được sử dụng khi tạo hoặc quản lý tài liệu trong thành phần CM-DOC-2CL."
+keywords:
+  - "document"
+  - "create"
+  - "virtual document"
+  - "cm-doc-2cl"
+  - "component"
+  - "management"
+  - "sap"
+  - "cds view"
+  - "tài liệu"
+  - "tạo"
+  - "tài liệu ảo"
+  - "quản lý"
+semantic_en: "The D_LGLDOCCREATEVRTLDOCP CDS view exposes document creation virtual document data, which is used when creating or managing documents in the CM-DOC-2CL component."
 app_component: CM-DOC-2CL
 software_component: SAPSCORE
 release_state: released

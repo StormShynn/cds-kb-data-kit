@@ -1,6 +1,18 @@
 ---
 name: D_LGLDOCCREATEFILEFROMVRTLDOCP
 description: "D Lgldoccreatefilefromvrtldocp"
+semantic_vi: "View này hiển thị dữ liệu tạo tài liệu từ xử lý tài liệu ảo, cho phép các nhà phát triển truy cập và thao tác thông tin tạo tài liệu."
+keywords:
+  - "document creation"
+  - "virtual document processing"
+  - "cm-doc-2cl"
+  - "lob other"
+  - "sap cds view"
+  - "tạo tài liệu"
+  - "xử lý tài liệu ảo"
+  - "cm-doc"
+  - "component cm-doc-2cl"
+semantic_en: "This view exposes document creation data from virtual document processing, allowing developers to access and manipulate document creation information."
 app_component: CM-DOC-2CL
 software_component: SAPSCORE
 release_state: released

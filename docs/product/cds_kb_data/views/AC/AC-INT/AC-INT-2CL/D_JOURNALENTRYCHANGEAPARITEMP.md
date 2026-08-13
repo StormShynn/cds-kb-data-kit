@@ -1,6 +1,21 @@
 ---
 name: D_JOURNALENTRYCHANGEAPARITEMP
 description: "D Journal EntryCHANGEAPARITEMP"
+semantic_vi: "View D_JOURNALENTRYCHANGEAPARITEMP hiển thị dữ liệu chi tiết về ghi sổ kế toán cho các tài liệu thay đổi, thường được sử dụng khi phân tích hoặc xử lý các thay đổi trong ghi sổ kế toán."
+keywords:
+  - "journal entry"
+  - "journal entry change"
+  - "change document"
+  - "journal entry item"
+  - "journal entry data"
+  - "journal entry analysis"
+  - "journal entry processing"
+  - "đơn ghi sổ kế toán"
+  - "đơn ghi sổ kế toán thay đổi"
+  - "tài liệu thay đổi"
+  - "dữ liệu chi tiết ghi sổ kế toán"
+  - "phân tích ghi sổ kế toán"
+semantic_en: "The D_JOURNALENTRYCHANGEAPARITEMP view exposes journal entry item-level data for change documents, typically used when analyzing or processing changes to journal entries."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

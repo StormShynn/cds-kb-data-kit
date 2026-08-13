@@ -1,6 +1,20 @@
 ---
 name: D_JOURNALENTRYPOSTWHGDITEMP
 description: "D Journal EntryPOSTWHGDITEMP"
+semantic_vi: "View D_JOURNALENTRYPOSTWHGDITEMP hiển thị dữ liệu thuế giữ lại chi tiết tại từng dòng của chứng từ kế toán, được sử dụng khi xử lý thuế giữ lại cho chứng từ kế toán."
+keywords:
+  - "journal entry"
+  - "withholding tax"
+  - "tax data"
+  - "journal entry item"
+  - "post withholding tax"
+  - "sap cds view"
+  - "d_journalentrypostwhgditemp"
+  - "thue giu ai"
+  - "thue giu tai ke toan"
+  - "chung tu ke toan"
+  - "sap"
+semantic_en: "The D_JOURNALENTRYPOSTWHGDITEMP view exposes journal entry item-level withholding tax data, which is used when processing withholding tax for journal entries."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

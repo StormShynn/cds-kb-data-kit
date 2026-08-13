@@ -1,6 +1,18 @@
 ---
 name: D_JOURNALENTRYPOSTCOPAP
 description: "D Journal EntryPOSTCOPAP"
+semantic_vi: "View D_JOURNALENTRYPOSTCOPAP hiển thị dữ liệu ghi sổ kế toán sau CO/PA, được sử dụng khi xử lý giao dịch tài chính trong SAP."
+keywords:
+  - "journal entry"
+  - "đơn ghi sổ"
+  - "post-co-pa"
+  - "sap accounting"
+  - "kế toán sap"
+  - "financial transaction"
+  - "giao dịch tài chính"
+  - "sap cds"
+  - "cds view"
+semantic_en: "The D_JOURNALENTRYPOSTCOPAP view exposes journal entry data for post-CO/PA accounting, which is used when processing financial transactions in SAP."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

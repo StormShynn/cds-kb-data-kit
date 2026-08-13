@@ -1,6 +1,17 @@
 ---
 name: D_INSPECTIONLOTCANCELED
 description: "D Inspectionlotcanceled"
+semantic_vi: "View D_INSPECTIONLOTCANCELED cung cấp dữ liệu về lô kiểm tra đã bị hủy bỏ trong Quản lý Chất lượng. Nó được sử dụng để phân tích và báo cáo về lô kiểm tra bị hủy bỏ."
+keywords:
+  - "inspection lot"
+  - "canceled inspection lot"
+  - "quality management"
+  - "qm-im-2cl"
+  - "plant"
+  - "đô kiểm tra"
+  - "lô kiểm tra bị hủy bỏ"
+  - "quản lý chất lượng"
+semantic_en: "The D_INSPECTIONLOTCANCELED view provides data on inspection lots that have been canceled in Quality Management. It is used to analyze and report on canceled inspection lots."
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

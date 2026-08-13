@@ -1,6 +1,18 @@
 ---
 name: D_LGLDOCCRTELGLDOCWITHFILEP
 description: "D Lgldoccrtelgldocwithfilep"
+semantic_vi: "View này hiển thị các đối tượng liên kết nội dung tài liệu với thông tin tệp, thường được sử dụng khi quản lý và truy cập nội dung tài liệu trong thành phần CM-DOC-2CL."
+keywords:
+  - "document content"
+  - "file information"
+  - "cm-doc-2cl"
+  - "lob other"
+  - "sap cm"
+  - "document linked object"
+  - "tài liệu liên kết"
+  - "thông tin tệp"
+  - "nội dung tài liệu"
+semantic_en: "This view exposes document content linked objects with file information, typically used when managing and accessing document content in the CM-DOC-2CL component."
 app_component: CM-DOC-2CL
 software_component: SAPSCORE
 release_state: released

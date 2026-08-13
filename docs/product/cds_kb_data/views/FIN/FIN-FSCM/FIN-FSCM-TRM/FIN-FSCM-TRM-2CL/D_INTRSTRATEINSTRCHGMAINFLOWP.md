@@ -1,6 +1,21 @@
 ---
 name: D_INTRSTRATEINSTRCHGMAINFLOWP
 description: "D Intrstrateinstrchgmainflowp"
+semantic_vi: "View D_Intrstrateinstrchgmainflowp hiển thị dữ liệu luồng giao dịch tài sản tài chính, bao gồm ngày tạo, hoạt động tài sản tài chính và số tiền thanh toán. Nó được sử dụng để phân tích và xử lý giao dịch tài chính."
+keywords:
+  - "financial instrument"
+  - "transaction flow"
+  - "financial transaction"
+  - "sap cds view"
+  - "fin-fscm-trm-2cl"
+  - "fin-fscm"
+  - "fin"
+  - "financial instrument activity"
+  - "payment amount"
+  - "đầu tư tài chính"
+  - "luồng giao dịch"
+  - "giao dịch tài chính"
+semantic_en: "The D_Intrstrateinstrchgmainflowp view exposes financial instrument transaction flow data, including creation dates, financial instrument activities, and payment amounts. It is used to analyze and process financial transactions."
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

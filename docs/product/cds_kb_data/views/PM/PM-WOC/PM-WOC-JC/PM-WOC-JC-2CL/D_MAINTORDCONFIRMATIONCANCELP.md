@@ -1,6 +1,19 @@
 ---
 name: D_MAINTORDCONFIRMATIONCANCELP
 description: "D Maintordconfirmationcancelp"
+semantic_vi: "View D_MAINTORDCONFIRMATIONCANCELP hiển thị dữ liệu hủy xác nhận đơn đặt hàng bảo trì, được sử dụng khi quản lý đơn đặt hàng bảo trì đã bị hủy hoặc xác nhận."
+keywords:
+  - "maintenance order"
+  - "đơn đặt hàng bảo trì"
+  - "cancellation"
+  - "hủy"
+  - "confirmation"
+  - "xác nhận"
+  - "sap pm"
+  - "pm woc"
+  - "pm woc jc"
+  - "plant maintenance"
+semantic_en: "The D_MAINTORDCONFIRMATIONCANCELP view exposes maintenance order confirmation cancellation data, which is used when managing maintenance orders that have been cancelled or confirmed."
 app_component: PM-WOC-JC-2CL
 software_component: SAPSCORE
 release_state: released

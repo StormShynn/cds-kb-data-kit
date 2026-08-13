@@ -1,6 +1,19 @@
 ---
 name: D_MAINTORDASSIGNNOTIFICATIONP
 description: "D Maintordassignnotificationp"
+semantic_vi: "View này hiển thị thông báo chỉ định đơn đặt hàng bảo trì, được sử dụng để gán nhiệm vụ bảo trì cho các đơn đặt hàng cụ thể. Nó được sử dụng để lấy và quản lý thông báo này trong thành phần Bảo trì Cây Cối."
+keywords:
+  - "maintenance order"
+  - "đơn đặt hàng bảo trì"
+  - "plant maintenance"
+  - "pm"
+  - "pm-woc"
+  - "notification"
+  - "thông báo"
+  - "assignment"
+  - "gán nhiệm vụ"
+  - "cds view"
+semantic_en: "This view exposes maintenance order assignment notifications, which are used to assign maintenance tasks to specific orders. It is used to retrieve and manage these notifications in the Plant Maintenance component."
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

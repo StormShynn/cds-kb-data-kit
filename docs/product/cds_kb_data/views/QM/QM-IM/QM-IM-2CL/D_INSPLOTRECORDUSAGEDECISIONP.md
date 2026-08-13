@@ -1,6 +1,17 @@
 ---
 name: D_INSPLOTRECORDUSAGEDECISIONP
 description: "D Insplotrecordusagedecisionp"
+semantic_vi: "View D_INSPLOTRECORDUSAGEDECISIONP hiển thị các bản ghi quyết định sử dụng lô kiểm tra, có liên quan khi xác định quyết định sử dụng lô kiểm tra trong quản lý chất lượng."
+keywords:
+  - "inspection lot"
+  - "đô kiểm tra"
+  - "quality management"
+  - "quản lý chất lượng"
+  - "decision record"
+  - "bản ghi quyết định"
+  - "sap qm"
+  - "qm-im-2cl"
+semantic_en: "The D_INSPLOTRECORDUSAGEDECISIONP CDS view exposes inspection lot usage decision records, which are relevant when determining the usage decision for an inspection lot in quality management."
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

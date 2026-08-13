@@ -1,6 +1,19 @@
 ---
 name: D_JOURNALENTRYCHANGEGLITEMP
 description: "D Journal EntryCHANGEGLITEMP"
+semantic_vi: "View D_JOURNALENTRYCHANGEGLITEMP cung cấp truy cập vào chi tiết thay đổi journal entry ở mức độ chi tiết của từng mục, bao gồm các dòng tài khoản, văn bản của mục đơn và lý do khác biệt thanh toán."
+keywords:
+  - "journal entry"
+  - "journal entry change"
+  - "item level"
+  - "account line item"
+  - "document item text"
+  - "payment difference reason"
+  - "d_journalentrychangeglitemp"
+  - "journal entry change gl item"
+  - "sap cds view"
+  - "journal entry change details"
+semantic_en: "The D_JOURNALENTRYCHANGEGLITEMP view provides access to journal entry change details at the item level, including account line items, document item texts, and payment difference reasons."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released
