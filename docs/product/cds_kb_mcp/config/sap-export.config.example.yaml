@@ -39,8 +39,8 @@ include_table_contents: false   # never read business/table rows
 object_type_include:
   - data_definition
 
-# Local snapshot root (NOT overlays/private markdown views).
-# Default when unset: sibling cds_kb_data/.sap_export (gitignored).
+# Explicit allowlisted local snapshot root (NOT overlays/private markdown views).
+# Required before sap_export_snapshot can write.
 # Promote reviewed DDL into overlays/private manually, then propose via
 # compose_query / generate_cds_view / propose — never auto-merge.
 output_root: ../cds_kb_data/.sap_export

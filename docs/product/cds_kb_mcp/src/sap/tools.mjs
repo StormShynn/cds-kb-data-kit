@@ -4,7 +4,7 @@
  */
 import { z } from 'zod';
 import path from 'node:path';
-import { loadSapConfig, describeSapConfig, DEFAULT_OUTPUT_ROOT } from './config.mjs';
+import { loadSapConfig, describeSapConfig } from './config.mjs';
 import { createConnector, SapConnectorError } from './connector.mjs';
 import { mcpFromEnvelope, sapEnvelope, unconfiguredEnvelope } from './envelope.mjs';
 import { assertContained } from './paths.mjs';
@@ -96,7 +96,7 @@ export function registerSapTools(server, deps = {}) {
   const sapNote =
     'Optional SAP DEV ADT read-only slice (C3). When SAP_ADT_* env is unset, returns configured=false. ' +
     'Never PRD. Only Z*/Y* custom objects. No table/row reads. Snapshots write under SAP_ADT_OUTPUT_ROOT ' +
-    `(default ${DEFAULT_OUTPUT_ROOT}) — not overlays/private markdown views. Promote to private overlay manually after review.`;
+    '(operator allowlist required) — not overlays/private markdown views. Promote to private overlay manually after review.';
 
   server.registerTool(
     'sap_connection_test',
@@ -225,6 +225,12 @@ export function registerSapTools(server, deps = {}) {
     },
     async ({ outputRoot, packages, objects, maxObjects = 50 } = {}) =>
       withConnector('sap_export_snapshot', async (connector, config) => {
+        if (!config.outputRoot) {
+          throw new SapConnectorError(
+            'SAP_ADT_OUTPUT_ROOT must be configured before snapshot writes',
+            { code: 'OUTPUT_ROOT_REQUIRED' },
+          );
+        }
         const configuredRoot = path.resolve(config.outputRoot);
         const target = path.resolve(outputRoot || configuredRoot);
         // Constrain writes: target must equal configured root or be inside it

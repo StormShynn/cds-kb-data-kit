@@ -1,6 +1,19 @@
 ---
 name: D_ENTPROJCOPYTOACTIVEDOCUMENTP
 description: "D Entprojcopytoactivedocumentp"
+semantic_vi: "Chứa dữ liệu yêu cầu sao chép dự án cho tài liệu hoạt động, được sử dụng khi quản lý bản sao dự án doanh nghiệp."
+keywords:
+  - "project copy"
+  - "active document"
+  - "enterprise project"
+  - "dự án sao chép"
+  - "tài liệu hoạt động"
+  - "dự án doanh nghiệp"
+  - "ppm"
+  - "ppm-scl-str"
+  - "transactional-processing"
+  - "document"
+semantic_en: "Exposes project copy request data for active documents, used when managing enterprise project copies."
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

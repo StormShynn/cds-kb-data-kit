@@ -1,6 +1,19 @@
 ---
 name: D_GLADJMTITEMPOSTJOURNALENTRYP
 description: "D GLADJMTITEMPOSTJournal EntryP"
+semantic_vi: "View D_GLADJMTITEMPOSTJOURNALENTRYP hiển thị dữ liệu chi tiết của các khoản mục trong journal entry cho các điều chỉnh trong bảng cân đối kế toán, thường được sử dụng cho phân tích và báo cáo tài chính."
+keywords:
+  - "general ledger"
+  - "journal entry"
+  - "financial analysis"
+  - "accounting"
+  - "sap"
+  - "cds view"
+  - "financial reporting"
+  - "điều chỉnh bảng cân đối kế toán"
+  - "journal entry chi tiết"
+  - "phân tích tài chính"
+semantic_en: "The D_GLADJMTITEMPOSTJOURNALENTRYP view exposes journal entry item-level data for adjustments in general ledger, typically used for financial analysis and reporting."
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

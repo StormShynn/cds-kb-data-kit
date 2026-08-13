@@ -1,6 +1,20 @@
 ---
 name: D_EQUIPCRTEMASSMATLSRLNMBRR
 description: "D Equipcrtemassmatlsrlnmbrr"
+semantic_vi: "Dữ liệu mối quan hệ vật liệu khối lượng lớn cho thiết bị bảo trì, được sử dụng trong quy trình bảo trì thiết bị."
+keywords:
+  - "equipment maintenance"
+  - "thiết bị bảo trì"
+  - "mass material relationship"
+  - "quan hệ vật liệu khối lượng lớn"
+  - "pm-eqm"
+  - "plant maintenance"
+  - "bảo trì nhà máy"
+  - "equipment"
+  - "thiết bị"
+  - "maintenance"
+  - "bảo trì"
+semantic_en: "Equipment maintenance mass material relationship data, used in equipment maintenance processes."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

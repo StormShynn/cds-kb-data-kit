@@ -1,6 +1,21 @@
 ---
 name: D_DEBITMEMOREQUESTCREATED
 description: "D Debitmemorequestcreated"
+semantic_vi: "View D_DEBITMEMOREQUESTCREATED hiển thị các sự kiện tạo yêu cầu ghi nợ, cung cấp dữ liệu về khi và cách yêu cầu ghi nợ được tạo trong quá trình bán hàng."
+keywords:
+  - "debit memo"
+  - "ghi nợ"
+  - "sales process"
+  - "event"
+  - "sự kiện"
+  - "sales organization"
+  - "sales order"
+  - "đơn bán hàng"
+  - "ekko"
+  - "sap sales"
+  - "sds"
+  - "cmr"
+semantic_en: "The D_DEBITMEMOREQUESTCREATED view exposes debit memo request creation events, providing data on when and how debit memos are requested in the sales process."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

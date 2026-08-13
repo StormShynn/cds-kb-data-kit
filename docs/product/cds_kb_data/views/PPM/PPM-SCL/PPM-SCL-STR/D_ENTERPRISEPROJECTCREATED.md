@@ -1,6 +1,16 @@
 ---
 name: D_ENTERPRISEPROJECTCREATED
 description: "D Enterpriseprojectcreated"
+semantic_vi: "View D_ENTERPRISEPROJECTCREATED hiển thị dữ liệu tạo dự án doanh nghiệp, có thể sử dụng khi theo dõi việc tạo mới dự án trong ứng dụng PPM-SCL-STR."
+keywords:
+  - "enterprise project"
+  - "project creation"
+  - "ppm-scl-str"
+  - "dự án doanh nghiệp"
+  - "tạo dự án"
+  - "project management"
+  - "quản lý dự án"
+semantic_en: "The D_ENTERPRISEPROJECTCREATED view exposes enterprise project creation data, which is useful when tracking the creation of new projects in the PPM-SCL-STR application."
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

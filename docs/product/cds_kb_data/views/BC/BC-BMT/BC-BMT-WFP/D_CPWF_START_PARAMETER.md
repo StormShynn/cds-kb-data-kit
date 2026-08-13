@@ -1,6 +1,20 @@
 ---
 name: D_CPWF_START_PARAMETER
 description: "D Cpwf Start Parameter"
+semantic_vi: "View D_CPWF_START_PARAMETER hiển thị các tham số bắt đầu luồng làm việc cho định nghĩa luồng điều kiện, có thể được sử dụng khi thiết lập hoặc kiểm tra luồng làm việc."
+keywords:
+  - "workflow"
+  - "luồng làm việc"
+  - "workflow definition"
+  - "định nghĩa luồng"
+  - "start parameter"
+  - "tham số bắt đầu"
+  - "conditional processing"
+  - "xử lý điều kiện"
+  - "sap"
+  - "basis components"
+  - "bc-bmt-wfp"
+semantic_en: "The D_CPWF_START_PARAMETER view exposes workflow start parameters for conditional processing of workflow definitions, which can be used when setting up or troubleshooting workflow configurations."
 app_component: BC-BMT-WFP
 software_component: SAP_BASIS
 release_state: released

@@ -14599,11 +14599,11 @@ var require_mime_types = __commonJS({
       }
       return exts[0];
     }
-    function lookup2(path3) {
-      if (!path3 || typeof path3 !== "string") {
+    function lookup2(path7) {
+      if (!path7 || typeof path7 !== "string") {
         return false;
       }
-      var extension2 = extname("x." + path3).toLowerCase().slice(1);
+      var extension2 = extname("x." + path7).toLowerCase().slice(1);
       if (!extension2) {
         return false;
       }
@@ -18276,13 +18276,13 @@ var require_view = __commonJS({
   "node_modules/express/lib/view.js"(exports2, module2) {
     "use strict";
     var debug = require_debug_stub()("express:view");
-    var path3 = require("node:path");
-    var fs2 = require("node:fs");
-    var dirname = path3.dirname;
-    var basename = path3.basename;
-    var extname = path3.extname;
-    var join5 = path3.join;
-    var resolve = path3.resolve;
+    var path7 = require("node:path");
+    var fs3 = require("node:fs");
+    var dirname = path7.dirname;
+    var basename = path7.basename;
+    var extname = path7.extname;
+    var join5 = path7.join;
+    var resolve = path7.resolve;
     module2.exports = View;
     function View(name, options) {
       var opts = options || {};
@@ -18311,17 +18311,17 @@ var require_view = __commonJS({
       this.path = this.lookup(fileName);
     }
     View.prototype.lookup = function lookup2(name) {
-      var path4;
+      var path8;
       var roots = [].concat(this.root);
       debug('lookup "%s"', name);
-      for (var i5 = 0; i5 < roots.length && !path4; i5++) {
+      for (var i5 = 0; i5 < roots.length && !path8; i5++) {
         var root5 = roots[i5];
         var loc = resolve(root5, name);
         var dir = dirname(loc);
         var file2 = basename(loc);
-        path4 = this.resolve(dir, file2);
+        path8 = this.resolve(dir, file2);
       }
-      return path4;
+      return path8;
     };
     View.prototype.render = function render(options, callback) {
       var sync = true;
@@ -18343,21 +18343,21 @@ var require_view = __commonJS({
     };
     View.prototype.resolve = function resolve2(dir, file2) {
       var ext = this.ext;
-      var path4 = join5(dir, file2);
-      var stat = tryStat(path4);
+      var path8 = join5(dir, file2);
+      var stat = tryStat(path8);
       if (stat && stat.isFile()) {
-        return path4;
+        return path8;
       }
-      path4 = join5(dir, basename(file2, ext), "index" + ext);
-      stat = tryStat(path4);
+      path8 = join5(dir, basename(file2, ext), "index" + ext);
+      stat = tryStat(path8);
       if (stat && stat.isFile()) {
-        return path4;
+        return path8;
       }
     };
-    function tryStat(path4) {
-      debug('stat "%s"', path4);
+    function tryStat(path8) {
+      debug('stat "%s"', path8);
       try {
-        return fs2.statSync(path4);
+        return fs3.statSync(path8);
       } catch (e5) {
         return void 0;
       }
@@ -18474,14 +18474,14 @@ var require_etag = __commonJS({
   "node_modules/etag/index.js"(exports2, module2) {
     "use strict";
     module2.exports = etag;
-    var crypto4 = require("crypto");
+    var crypto5 = require("crypto");
     var Stats = require("fs").Stats;
     var toString = Object.prototype.toString;
     function entitytag(entity) {
       if (entity.length === 0) {
         return '"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk"';
       }
-      var hash2 = crypto4.createHash("sha1").update(entity, "utf8").digest("base64").substring(0, 27);
+      var hash2 = crypto5.createHash("sha1").update(entity, "utf8").digest("base64").substring(0, 27);
       var len = typeof entity === "string" ? Buffer.byteLength(entity, "utf8") : entity.length;
       return '"' + len.toString(16) + "-" + hash2 + '"';
     }
@@ -19597,15 +19597,15 @@ var require_dist4 = __commonJS({
       let index = 0;
       function consumeUntil(end) {
         const output = [];
-        let path3 = "";
+        let path7 = "";
         function writePath() {
-          if (!path3)
+          if (!path7)
             return;
           output.push({
             type: "text",
-            value: encodePath(path3)
+            value: encodePath(path7)
           });
-          path3 = "";
+          path7 = "";
         }
         while (index < chars2.length) {
           const value = chars2[index++];
@@ -19617,7 +19617,7 @@ var require_dist4 = __commonJS({
             if (index === chars2.length) {
               throw new PathError(`Unexpected end after \\ at index ${index}`, str);
             }
-            path3 += chars2[index++];
+            path7 += chars2[index++];
             continue;
           }
           if (value === ":" || value === "*") {
@@ -19661,7 +19661,7 @@ var require_dist4 = __commonJS({
           if (value === "}" || value === "(" || value === ")" || value === "[" || value === "]" || value === "+" || value === "?" || value === "!") {
             throw new PathError(`Unexpected ${value} at index ${index - 1}`, str);
           }
-          path3 += value;
+          path7 += value;
         }
         if (end) {
           throw new PathError(`Unexpected end at index ${index}, expected ${end}`, str);
@@ -19671,17 +19671,17 @@ var require_dist4 = __commonJS({
       }
       return new TokenData(consumeUntil(""), str);
     }
-    function compile(path3, options = {}) {
+    function compile(path7, options = {}) {
       const { encode: encode5 = encodeURIComponent, delimiter = DEFAULT_DELIMITER } = options;
-      const data = typeof path3 === "object" ? path3 : parse4(path3, options);
+      const data = typeof path7 === "object" ? path7 : parse4(path7, options);
       const fn = tokensToFunction(data.tokens, delimiter, encode5);
-      return function path4(params = {}) {
+      return function path8(params = {}) {
         const missing = [];
-        const path5 = fn(params, missing);
+        const path9 = fn(params, missing);
         if (missing.length) {
           throw new TypeError(`Missing parameters: ${missing.join(", ")}`);
         }
-        return path5;
+        return path9;
       };
     }
     function tokensToFunction(tokens, delimiter, encode5) {
@@ -19743,9 +19743,9 @@ var require_dist4 = __commonJS({
         return encodeValue(value);
       };
     }
-    function match(path3, options = {}) {
+    function match(path7, options = {}) {
       const { decode: decode4 = decodeURIComponent, delimiter = DEFAULT_DELIMITER } = options;
-      const { regexp, keys } = pathToRegexp(path3, options);
+      const { regexp, keys } = pathToRegexp(path7, options);
       const decoders = keys.map((key) => {
         if (decode4 === false)
           return NOOP_VALUE;
@@ -19757,7 +19757,7 @@ var require_dist4 = __commonJS({
         const m3 = regexp.exec(input);
         if (!m3)
           return false;
-        const path4 = m3[0];
+        const path8 = m3[0];
         const params = /* @__PURE__ */ Object.create(null);
         for (let i5 = 1; i5 < m3.length; i5++) {
           if (m3[i5] === void 0)
@@ -19766,21 +19766,21 @@ var require_dist4 = __commonJS({
           const decoder2 = decoders[i5 - 1];
           params[key.name] = decoder2(m3[i5]);
         }
-        return { path: path4, params };
+        return { path: path8, params };
       };
     }
-    function pathToRegexp(path3, options = {}) {
+    function pathToRegexp(path7, options = {}) {
       const { delimiter = DEFAULT_DELIMITER, end = true, sensitive = false, trailing = true } = options;
       const keys = [];
       let source = "";
       let combinations = 0;
-      function process4(path4) {
-        if (Array.isArray(path4)) {
-          for (const p3 of path4)
+      function process4(path8) {
+        if (Array.isArray(path8)) {
+          for (const p3 of path8)
             process4(p3);
           return;
         }
-        const data = typeof path4 === "object" ? path4 : parse4(path4, options);
+        const data = typeof path8 === "object" ? path8 : parse4(path8, options);
         flatten(data.tokens, 0, [], (tokens) => {
           if (combinations >= 256) {
             throw new PathError("Too many path combinations", data.originalPath);
@@ -19791,7 +19791,7 @@ var require_dist4 = __commonJS({
           combinations++;
         });
       }
-      process4(path3);
+      process4(path7);
       let pattern = `^(?:${source})`;
       if (trailing)
         pattern += "(?:" + escape2(delimiter) + "$)?";
@@ -19931,18 +19931,18 @@ var require_layer = __commonJS({
     var TRAILING_SLASH_REGEXP = /\/+$/;
     var MATCHING_GROUP_REGEXP = /\((?:\?<(.*?)>)?(?!\?)/g;
     module2.exports = Layer;
-    function Layer(path3, options, fn) {
+    function Layer(path7, options, fn) {
       if (!(this instanceof Layer)) {
-        return new Layer(path3, options, fn);
+        return new Layer(path7, options, fn);
       }
-      debug("new %o", path3);
+      debug("new %o", path7);
       const opts = options || {};
       this.handle = fn;
       this.keys = [];
       this.name = fn.name || "<anonymous>";
       this.params = void 0;
       this.path = void 0;
-      this.slash = path3 === "/" && opts.end === false;
+      this.slash = path7 === "/" && opts.end === false;
       function matcher(_path) {
         if (_path instanceof RegExp) {
           const keys = [];
@@ -19981,7 +19981,7 @@ var require_layer = __commonJS({
           decode: decodeParam
         });
       }
-      this.matchers = Array.isArray(path3) ? path3.map(matcher) : [matcher(path3)];
+      this.matchers = Array.isArray(path7) ? path7.map(matcher) : [matcher(path7)];
     }
     Layer.prototype.handleError = function handleError(error52, req, res, next) {
       const fn = this.handle;
@@ -20021,9 +20021,9 @@ var require_layer = __commonJS({
         next(err);
       }
     };
-    Layer.prototype.match = function match(path3) {
+    Layer.prototype.match = function match(path7) {
       let match2;
-      if (path3 != null) {
+      if (path7 != null) {
         if (this.slash) {
           this.params = {};
           this.path = "";
@@ -20031,7 +20031,7 @@ var require_layer = __commonJS({
         }
         let i5 = 0;
         while (!match2 && i5 < this.matchers.length) {
-          match2 = this.matchers[i5](path3);
+          match2 = this.matchers[i5](path7);
           i5++;
         }
       }
@@ -20059,13 +20059,13 @@ var require_layer = __commonJS({
         throw err;
       }
     }
-    function loosen(path3) {
-      if (path3 instanceof RegExp || path3 === "/") {
-        return path3;
+    function loosen(path7) {
+      if (path7 instanceof RegExp || path7 === "/") {
+        return path7;
       }
-      return Array.isArray(path3) ? path3.map(function(p3) {
+      return Array.isArray(path7) ? path7.map(function(p3) {
         return loosen(p3);
-      }) : String(path3).replace(TRAILING_SLASH_REGEXP, "");
+      }) : String(path7).replace(TRAILING_SLASH_REGEXP, "");
     }
   }
 });
@@ -20081,9 +20081,9 @@ var require_route = __commonJS({
     var flatten = Array.prototype.flat;
     var methods = METHODS.map((method) => method.toLowerCase());
     module2.exports = Route;
-    function Route(path3) {
-      debug("new %o", path3);
-      this.path = path3;
+    function Route(path7) {
+      debug("new %o", path7);
+      this.path = path7;
       this.stack = [];
       this.methods = /* @__PURE__ */ Object.create(null);
     }
@@ -20291,8 +20291,8 @@ var require_router = __commonJS({
         if (++sync > 100) {
           return setImmediate(next, err);
         }
-        const path3 = getPathname(req);
-        if (path3 == null) {
+        const path7 = getPathname(req);
+        if (path7 == null) {
           return done(layerError);
         }
         let layer;
@@ -20300,7 +20300,7 @@ var require_router = __commonJS({
         let route;
         while (match !== true && idx < stack.length) {
           layer = stack[idx++];
-          match = matchLayer(layer, path3);
+          match = matchLayer(layer, path7);
           route = layer.route;
           if (typeof match !== "boolean") {
             layerError = layerError || match;
@@ -20338,18 +20338,18 @@ var require_router = __commonJS({
           } else if (route) {
             layer.handleRequest(req, res, next);
           } else {
-            trimPrefix(layer, layerError, layerPath, path3);
+            trimPrefix(layer, layerError, layerPath, path7);
           }
           sync = 0;
         });
       }
-      function trimPrefix(layer, layerError, layerPath, path3) {
+      function trimPrefix(layer, layerError, layerPath, path7) {
         if (layerPath.length !== 0) {
-          if (layerPath !== path3.substring(0, layerPath.length)) {
+          if (layerPath !== path7.substring(0, layerPath.length)) {
             next(layerError);
             return;
           }
-          const c5 = path3[layerPath.length];
+          const c5 = path7[layerPath.length];
           if (c5 && c5 !== "/") {
             next(layerError);
             return;
@@ -20373,7 +20373,7 @@ var require_router = __commonJS({
     };
     Router.prototype.use = function use(handler) {
       let offset = 0;
-      let path3 = "/";
+      let path7 = "/";
       if (typeof handler !== "function") {
         let arg = handler;
         while (Array.isArray(arg) && arg.length !== 0) {
@@ -20381,7 +20381,7 @@ var require_router = __commonJS({
         }
         if (typeof arg !== "function") {
           offset = 1;
-          path3 = handler;
+          path7 = handler;
         }
       }
       const callbacks = flatten.call(slice.call(arguments, offset), Infinity);
@@ -20393,8 +20393,8 @@ var require_router = __commonJS({
         if (typeof fn !== "function") {
           throw new TypeError("argument handler must be a function");
         }
-        debug("use %o %s", path3, fn.name || "<anonymous>");
-        const layer = new Layer(path3, {
+        debug("use %o %s", path7, fn.name || "<anonymous>");
+        const layer = new Layer(path7, {
           sensitive: this.caseSensitive,
           strict: false,
           end: false
@@ -20404,9 +20404,9 @@ var require_router = __commonJS({
       }
       return this;
     };
-    Router.prototype.route = function route(path3) {
-      const route2 = new Route(path3);
-      const layer = new Layer(path3, {
+    Router.prototype.route = function route(path7) {
+      const route2 = new Route(path7);
+      const layer = new Layer(path7, {
         sensitive: this.caseSensitive,
         strict: this.strict,
         end: true
@@ -20419,8 +20419,8 @@ var require_router = __commonJS({
       return route2;
     };
     methods.concat("all").forEach(function(method) {
-      Router.prototype[method] = function(path3) {
-        const route = this.route(path3);
+      Router.prototype[method] = function(path7) {
+        const route = this.route(path7);
         route[method].apply(route, slice.call(arguments, 1));
         return this;
       };
@@ -20449,9 +20449,9 @@ var require_router = __commonJS({
       const fqdnIndex = url2.substring(0, pathLength).indexOf("://");
       return fqdnIndex !== -1 ? url2.substring(0, url2.indexOf("/", 3 + fqdnIndex)) : void 0;
     }
-    function matchLayer(layer, path3) {
+    function matchLayer(layer, path7) {
       try {
-        return layer.match(path3);
+        return layer.match(path7);
       } catch (err) {
         return err;
       }
@@ -20679,7 +20679,7 @@ var require_application = __commonJS({
     };
     app.use = function use(fn) {
       var offset = 0;
-      var path3 = "/";
+      var path7 = "/";
       if (typeof fn !== "function") {
         var arg = fn;
         while (Array.isArray(arg) && arg.length !== 0) {
@@ -20687,7 +20687,7 @@ var require_application = __commonJS({
         }
         if (typeof arg !== "function") {
           offset = 1;
-          path3 = fn;
+          path7 = fn;
         }
       }
       var fns = flatten.call(slice.call(arguments, offset), Infinity);
@@ -20697,12 +20697,12 @@ var require_application = __commonJS({
       var router = this.router;
       fns.forEach(function(fn2) {
         if (!fn2 || !fn2.handle || !fn2.set) {
-          return router.use(path3, fn2);
+          return router.use(path7, fn2);
         }
-        debug(".use app under %s", path3);
-        fn2.mountpath = path3;
+        debug(".use app under %s", path7);
+        fn2.mountpath = path7;
         fn2.parent = this;
-        router.use(path3, function mounted_app(req, res, next) {
+        router.use(path7, function mounted_app(req, res, next) {
           var orig = req.app;
           fn2.handle(req, res, function(err) {
             Object.setPrototypeOf(req, orig.request);
@@ -20714,8 +20714,8 @@ var require_application = __commonJS({
       }, this);
       return this;
     };
-    app.route = function route(path3) {
-      return this.router.route(path3);
+    app.route = function route(path7) {
+      return this.router.route(path7);
     };
     app.engine = function engine(ext, fn) {
       if (typeof fn !== "function") {
@@ -20758,7 +20758,7 @@ var require_application = __commonJS({
       }
       return this;
     };
-    app.path = function path3() {
+    app.path = function path7() {
       return this.parent ? this.parent.path() + this.mountpath : "";
     };
     app.enabled = function enabled(setting) {
@@ -20774,17 +20774,17 @@ var require_application = __commonJS({
       return this.set(setting, false);
     };
     methods.forEach(function(method) {
-      app[method] = function(path3) {
+      app[method] = function(path7) {
         if (method === "get" && arguments.length === 1) {
-          return this.set(path3);
+          return this.set(path7);
         }
-        var route = this.route(path3);
+        var route = this.route(path7);
         route[method].apply(route, slice.call(arguments, 1));
         return this;
       };
     });
-    app.all = function all(path3) {
-      var route = this.route(path3);
+    app.all = function all(path7) {
+      var route = this.route(path7);
       var args = slice.call(arguments, 1);
       for (var i5 = 0; i5 < methods.length; i5++) {
         route[methods[i5]].apply(route, args);
@@ -21694,7 +21694,7 @@ var require_request = __commonJS({
       var subdomains2 = !isIP(hostname3) ? hostname3.split(".").reverse() : [hostname3];
       return subdomains2.slice(offset);
     });
-    defineGetter(req, "path", function path3() {
+    defineGetter(req, "path", function path7() {
       return parse4(this).pathname;
     });
     defineGetter(req, "host", function host() {
@@ -21905,8 +21905,8 @@ var require_content_disposition = __commonJS({
       this.type = type;
       this.parameters = parameters;
     }
-    function basename(path3) {
-      const normalized = path3.replaceAll("\\", "/");
+    function basename(path7) {
+      const normalized = path7.replaceAll("\\", "/");
       let end = normalized.length;
       while (end > 0 && normalized[end - 1] === "/") {
         end--;
@@ -21956,17 +21956,17 @@ var require_content_disposition = __commonJS({
 // node_modules/cookie-signature/index.js
 var require_cookie_signature = __commonJS({
   "node_modules/cookie-signature/index.js"(exports2) {
-    var crypto4 = require("crypto");
+    var crypto5 = require("crypto");
     exports2.sign = function(val, secret) {
       if ("string" != typeof val) throw new TypeError("Cookie value must be provided as a string.");
       if (null == secret) throw new TypeError("Secret key must be provided.");
-      return val + "." + crypto4.createHmac("sha256", secret).update(val).digest("base64").replace(/\=+$/, "");
+      return val + "." + crypto5.createHmac("sha256", secret).update(val).digest("base64").replace(/\=+$/, "");
     };
     exports2.unsign = function(input, secret) {
       if ("string" != typeof input) throw new TypeError("Signed cookie string must be provided.");
       if (null == secret) throw new TypeError("Secret key must be provided.");
       var tentativeValue = input.slice(0, input.lastIndexOf(".")), expectedInput = exports2.sign(tentativeValue, secret), expectedBuffer = Buffer.from(expectedInput), inputBuffer = Buffer.from(input);
-      return expectedBuffer.length === inputBuffer.length && crypto4.timingSafeEqual(expectedBuffer, inputBuffer) ? tentativeValue : false;
+      return expectedBuffer.length === inputBuffer.length && crypto5.timingSafeEqual(expectedBuffer, inputBuffer) ? tentativeValue : false;
     };
   }
 });
@@ -22263,32 +22263,32 @@ var require_send = __commonJS({
     var escapeHtml = require_escape_html();
     var etag = require_etag();
     var fresh = require_fresh();
-    var fs2 = require("fs");
+    var fs3 = require("fs");
     var mime = require_mime_types();
     var ms = require_ms();
     var onFinished = require_on_finished();
     var parseRange = require_range_parser();
-    var path3 = require("path");
+    var path7 = require("path");
     var statuses = require_statuses();
     var Stream = require("stream");
     var util = require("util");
-    var extname = path3.extname;
-    var join5 = path3.join;
-    var normalize = path3.normalize;
-    var resolve = path3.resolve;
-    var sep2 = path3.sep;
+    var extname = path7.extname;
+    var join5 = path7.join;
+    var normalize = path7.normalize;
+    var resolve = path7.resolve;
+    var sep2 = path7.sep;
     var BYTES_RANGE_REGEXP = /^ *bytes=/;
     var MAX_MAXAGE = 60 * 60 * 24 * 365 * 1e3;
     var UP_PATH_REGEXP = /(?:^|[\\/])\.\.(?:[\\/]|$)/;
     module2.exports = send;
-    function send(req, path4, options) {
-      return new SendStream(req, path4, options);
+    function send(req, path8, options) {
+      return new SendStream(req, path8, options);
     }
-    function SendStream(req, path4, options) {
+    function SendStream(req, path8, options) {
       Stream.call(this);
       var opts = options || {};
       this.options = opts;
-      this.path = path4;
+      this.path = path8;
       this.req = req;
       this._acceptRanges = opts.acceptRanges !== void 0 ? Boolean(opts.acceptRanges) : true;
       this._cacheControl = opts.cacheControl !== void 0 ? Boolean(opts.cacheControl) : true;
@@ -22402,10 +22402,10 @@ var require_send = __commonJS({
       var lastModified = this.res.getHeader("Last-Modified");
       return parseHttpDate(lastModified) <= parseHttpDate(ifRange);
     };
-    SendStream.prototype.redirect = function redirect(path4) {
+    SendStream.prototype.redirect = function redirect(path8) {
       var res = this.res;
       if (hasListeners(this, "directory")) {
-        this.emit("directory", res, path4);
+        this.emit("directory", res, path8);
         return;
       }
       if (this.hasTrailingSlash()) {
@@ -22425,38 +22425,38 @@ var require_send = __commonJS({
     SendStream.prototype.pipe = function pipe2(res) {
       var root5 = this._root;
       this.res = res;
-      var path4 = decode4(this.path);
-      if (path4 === -1) {
+      var path8 = decode4(this.path);
+      if (path8 === -1) {
         this.error(400);
         return res;
       }
-      if (~path4.indexOf("\0")) {
+      if (~path8.indexOf("\0")) {
         this.error(400);
         return res;
       }
       var parts;
       if (root5 !== null) {
-        if (path4) {
-          path4 = normalize("." + sep2 + path4);
+        if (path8) {
+          path8 = normalize("." + sep2 + path8);
         }
-        if (UP_PATH_REGEXP.test(path4)) {
-          debug('malicious path "%s"', path4);
+        if (UP_PATH_REGEXP.test(path8)) {
+          debug('malicious path "%s"', path8);
           this.error(403);
           return res;
         }
-        parts = path4.split(sep2);
-        path4 = normalize(join5(root5, path4));
+        parts = path8.split(sep2);
+        path8 = normalize(join5(root5, path8));
       } else {
-        if (UP_PATH_REGEXP.test(path4)) {
-          debug('malicious path "%s"', path4);
+        if (UP_PATH_REGEXP.test(path8)) {
+          debug('malicious path "%s"', path8);
           this.error(403);
           return res;
         }
-        parts = normalize(path4).split(sep2);
-        path4 = resolve(path4);
+        parts = normalize(path8).split(sep2);
+        path8 = resolve(path8);
       }
       if (containsDotFile(parts)) {
-        debug('%s dotfile "%s"', this._dotfiles, path4);
+        debug('%s dotfile "%s"', this._dotfiles, path8);
         switch (this._dotfiles) {
           case "allow":
             break;
@@ -22470,13 +22470,13 @@ var require_send = __commonJS({
         }
       }
       if (this._index.length && this.hasTrailingSlash()) {
-        this.sendIndex(path4);
+        this.sendIndex(path8);
         return res;
       }
-      this.sendFile(path4);
+      this.sendFile(path8);
       return res;
     };
-    SendStream.prototype.send = function send2(path4, stat) {
+    SendStream.prototype.send = function send2(path8, stat) {
       var len = stat.size;
       var options = this.options;
       var opts = {};
@@ -22488,9 +22488,9 @@ var require_send = __commonJS({
         this.headersAlreadySent();
         return;
       }
-      debug('pipe "%s"', path4);
-      this.setHeader(path4, stat);
-      this.type(path4);
+      debug('pipe "%s"', path8);
+      this.setHeader(path8, stat);
+      this.type(path8);
       if (this.isConditionalGET()) {
         if (this.isPreconditionFailure()) {
           this.error(412);
@@ -22539,30 +22539,30 @@ var require_send = __commonJS({
         res.end();
         return;
       }
-      this.stream(path4, opts);
+      this.stream(path8, opts);
     };
-    SendStream.prototype.sendFile = function sendFile(path4) {
+    SendStream.prototype.sendFile = function sendFile(path8) {
       var i5 = 0;
       var self = this;
-      debug('stat "%s"', path4);
-      fs2.stat(path4, function onstat(err, stat) {
-        var pathEndsWithSep = path4[path4.length - 1] === sep2;
-        if (err && err.code === "ENOENT" && !extname(path4) && !pathEndsWithSep) {
+      debug('stat "%s"', path8);
+      fs3.stat(path8, function onstat(err, stat) {
+        var pathEndsWithSep = path8[path8.length - 1] === sep2;
+        if (err && err.code === "ENOENT" && !extname(path8) && !pathEndsWithSep) {
           return next(err);
         }
         if (err) return self.onStatError(err);
-        if (stat.isDirectory()) return self.redirect(path4);
+        if (stat.isDirectory()) return self.redirect(path8);
         if (pathEndsWithSep) return self.error(404);
-        self.emit("file", path4, stat);
-        self.send(path4, stat);
+        self.emit("file", path8, stat);
+        self.send(path8, stat);
       });
       function next(err) {
         if (self._extensions.length <= i5) {
           return err ? self.onStatError(err) : self.error(404);
         }
-        var p3 = path4 + "." + self._extensions[i5++];
+        var p3 = path8 + "." + self._extensions[i5++];
         debug('stat "%s"', p3);
-        fs2.stat(p3, function(err2, stat) {
+        fs3.stat(p3, function(err2, stat) {
           if (err2) return next(err2);
           if (stat.isDirectory()) return next();
           self.emit("file", p3, stat);
@@ -22570,7 +22570,7 @@ var require_send = __commonJS({
         });
       }
     };
-    SendStream.prototype.sendIndex = function sendIndex(path4) {
+    SendStream.prototype.sendIndex = function sendIndex(path8) {
       var i5 = -1;
       var self = this;
       function next(err) {
@@ -22578,9 +22578,9 @@ var require_send = __commonJS({
           if (err) return self.onStatError(err);
           return self.error(404);
         }
-        var p3 = join5(path4, self._index[i5]);
+        var p3 = join5(path8, self._index[i5]);
         debug('stat "%s"', p3);
-        fs2.stat(p3, function(err2, stat) {
+        fs3.stat(p3, function(err2, stat) {
           if (err2) return next(err2);
           if (stat.isDirectory()) return next();
           self.emit("file", p3, stat);
@@ -22589,10 +22589,10 @@ var require_send = __commonJS({
       }
       next();
     };
-    SendStream.prototype.stream = function stream(path4, options) {
+    SendStream.prototype.stream = function stream(path8, options) {
       var self = this;
       var res = this.res;
-      var stream2 = fs2.createReadStream(path4, options);
+      var stream2 = fs3.createReadStream(path8, options);
       this.emit("stream", stream2);
       stream2.pipe(res);
       function cleanup2() {
@@ -22607,17 +22607,17 @@ var require_send = __commonJS({
         self.emit("end");
       });
     };
-    SendStream.prototype.type = function type(path4) {
+    SendStream.prototype.type = function type(path8) {
       var res = this.res;
       if (res.getHeader("Content-Type")) return;
-      var ext = extname(path4);
+      var ext = extname(path8);
       var type2 = mime.contentType(ext) || "application/octet-stream";
       debug("content-type %s", type2);
       res.setHeader("Content-Type", type2);
     };
-    SendStream.prototype.setHeader = function setHeader(path4, stat) {
+    SendStream.prototype.setHeader = function setHeader(path8, stat) {
       var res = this.res;
-      this.emit("headers", res, path4, stat);
+      this.emit("headers", res, path8, stat);
       if (this._acceptRanges && !res.getHeader("Accept-Ranges")) {
         debug("accept ranges");
         res.setHeader("Accept-Ranges", "bytes");
@@ -22675,9 +22675,9 @@ var require_send = __commonJS({
       }
       return err instanceof Error ? createError(status, err, { expose: false }) : createError(status, err);
     }
-    function decode4(path4) {
+    function decode4(path8) {
       try {
-        return decodeURIComponent(path4);
+        return decodeURIComponent(path8);
       } catch (err) {
         return -1;
       }
@@ -22821,7 +22821,7 @@ var require_response = __commonJS({
     var http = require("node:http");
     var onFinished = require_on_finished();
     var mime = require_mime_types();
-    var path3 = require("node:path");
+    var path7 = require("node:path");
     var pathIsAbsolute = require("node:path").isAbsolute;
     var statuses = require_statuses();
     var sign4 = require_cookie_signature().sign;
@@ -22830,8 +22830,8 @@ var require_response = __commonJS({
     var setCharset = require_utils4().setCharset;
     var cookie = require_cookie();
     var send = require_send();
-    var extname = path3.extname;
-    var resolve = path3.resolve;
+    var extname = path7.extname;
+    var resolve = path7.resolve;
     var vary = require_vary();
     var { Buffer: Buffer2 } = require("node:buffer");
     var res = Object.create(http.ServerResponse.prototype);
@@ -22977,26 +22977,26 @@ var require_response = __commonJS({
       this.type("txt");
       return this.send(body);
     };
-    res.sendFile = function sendFile(path4, options, callback) {
+    res.sendFile = function sendFile(path8, options, callback) {
       var done = callback;
       var req = this.req;
       var res2 = this;
       var next = req.next;
       var opts = options || {};
-      if (!path4) {
+      if (!path8) {
         throw new TypeError("path argument is required to res.sendFile");
       }
-      if (typeof path4 !== "string") {
+      if (typeof path8 !== "string") {
         throw new TypeError("path must be a string to res.sendFile");
       }
       if (typeof options === "function") {
         done = options;
         opts = {};
       }
-      if (!opts.root && !pathIsAbsolute(path4)) {
+      if (!opts.root && !pathIsAbsolute(path8)) {
         throw new TypeError("path must be absolute or specify root to res.sendFile");
       }
-      var pathname = encodeURI(path4);
+      var pathname = encodeURI(path8);
       opts.etag = this.app.enabled("etag");
       var file2 = send(req, pathname, opts);
       sendfile(res2, file2, opts, function(err) {
@@ -23007,7 +23007,7 @@ var require_response = __commonJS({
         }
       });
     };
-    res.download = function download(path4, filename, options, callback) {
+    res.download = function download(path8, filename, options, callback) {
       var done = callback;
       var name = filename;
       var opts = options || null;
@@ -23024,7 +23024,7 @@ var require_response = __commonJS({
         opts = filename;
       }
       var headers = {
-        "Content-Disposition": contentDisposition(name || path4)
+        "Content-Disposition": contentDisposition(name || path8)
       };
       if (opts && opts.headers) {
         var keys = Object.keys(opts.headers);
@@ -23037,7 +23037,7 @@ var require_response = __commonJS({
       }
       opts = Object.create(opts);
       opts.headers = headers;
-      var fullPath = !opts.root ? resolve(path4) : path4;
+      var fullPath = !opts.root ? resolve(path8) : path8;
       return this.sendFile(fullPath, opts, done);
     };
     res.contentType = res.type = function contentType(type) {
@@ -23320,11 +23320,11 @@ var require_serve_static = __commonJS({
         }
         var forwardError = !fallthrough;
         var originalUrl = parseUrl2.original(req);
-        var path3 = parseUrl2(req).pathname;
-        if (path3 === "/" && originalUrl.pathname.substr(-1) !== "/") {
-          path3 = "";
+        var path7 = parseUrl2(req).pathname;
+        if (path7 === "/" && originalUrl.pathname.substr(-1) !== "/") {
+          path7 = "";
         }
-        var stream = send(req, path3, opts);
+        var stream = send(req, path7, opts);
         stream.on("directory", onDirectory);
         if (setHeaders) {
           stream.on("headers", setHeaders);
@@ -27419,14 +27419,14 @@ var init_readFile = __esm({
     import_promises2 = require("node:fs/promises");
     filePromises = {};
     fileIntercept = {};
-    readFile2 = (path3, options) => {
-      if (fileIntercept[path3] !== void 0) {
-        return fileIntercept[path3];
+    readFile2 = (path7, options) => {
+      if (fileIntercept[path7] !== void 0) {
+        return fileIntercept[path7];
       }
-      if (!filePromises[path3] || options?.ignoreCache) {
-        filePromises[path3] = (0, import_promises2.readFile)(path3, "utf8");
+      if (!filePromises[path7] || options?.ignoreCache) {
+        filePromises[path7] = (0, import_promises2.readFile)(path7, "utf8");
       }
-      return filePromises[path3];
+      return filePromises[path7];
     };
   }
 });
@@ -27538,8 +27538,8 @@ var init_externalDataInterceptor = __esm({
       getFileRecord() {
         return fileIntercept;
       },
-      interceptFile(path3, contents) {
-        fileIntercept[path3] = Promise.resolve(contents);
+      interceptFile(path7, contents) {
+        fileIntercept[path7] = Promise.resolve(contents);
       },
       getTokenRecord() {
         return tokenIntercept;
@@ -28337,8 +28337,8 @@ var init_createConfigValueProvider = __esm({
               return endpoint.url.href;
             }
             if ("hostname" in endpoint) {
-              const { protocol, hostname: hostname3, port, path: path3 } = endpoint;
-              return `${protocol}//${hostname3}${port ? ":" + port : ""}${path3}`;
+              const { protocol, hostname: hostname3, port, path: path7 } = endpoint;
+              return `${protocol}//${hostname3}${port ? ":" + port : ""}${path7}`;
             }
           }
           return endpoint;
@@ -28713,18 +28713,18 @@ var getAttrPathList;
 var init_getAttrPathList = __esm({
   "node_modules/@smithy/core/dist-es/submodules/endpoints/util-endpoints/lib/getAttrPathList.js"() {
     init_types2();
-    getAttrPathList = (path3) => {
-      const parts = path3.split(".");
+    getAttrPathList = (path7) => {
+      const parts = path7.split(".");
       const pathList = [];
       for (const part of parts) {
         const squareBracketIndex = part.indexOf("[");
         if (squareBracketIndex !== -1) {
           if (part.indexOf("]") !== part.length - 1) {
-            throw new EndpointError(`Path: '${path3}' does not end with ']'`);
+            throw new EndpointError(`Path: '${path7}' does not end with ']'`);
           }
           const arrayIndex = part.slice(squareBracketIndex + 1, -1);
           if (Number.isNaN(parseInt(arrayIndex))) {
-            throw new EndpointError(`Invalid array index: '${arrayIndex}' in path: '${path3}'`);
+            throw new EndpointError(`Invalid array index: '${arrayIndex}' in path: '${path7}'`);
           }
           if (squareBracketIndex !== 0) {
             pathList.push(part.slice(0, squareBracketIndex));
@@ -28745,9 +28745,9 @@ var init_getAttr = __esm({
   "node_modules/@smithy/core/dist-es/submodules/endpoints/util-endpoints/lib/getAttr.js"() {
     init_types2();
     init_getAttrPathList();
-    getAttr = (value, path3) => getAttrPathList(path3).reduce((acc, index) => {
+    getAttr = (value, path7) => getAttrPathList(path7).reduce((acc, index) => {
       if (typeof acc !== "object") {
-        throw new EndpointError(`Index '${index}' in '${path3}' not found in '${JSON.stringify(value)}'`);
+        throw new EndpointError(`Index '${index}' in '${path7}' not found in '${JSON.stringify(value)}'`);
       } else if (Array.isArray(acc)) {
         const i5 = parseInt(index);
         return acc[i5 < 0 ? acc.length + i5 : i5];
@@ -28808,8 +28808,8 @@ var init_parseURL = __esm({
             return value;
           }
           if (typeof value === "object" && "hostname" in value) {
-            const { hostname: hostname4, port, protocol: protocol2 = "", path: path3 = "", query = {} } = value;
-            const url2 = new URL(`${protocol2}//${hostname4}${port ? `:${port}` : ""}${path3}`);
+            const { hostname: hostname4, port, protocol: protocol2 = "", path: path7 = "", query = {} } = value;
+            const url2 = new URL(`${protocol2}//${hostname4}${port ? `:${port}` : ""}${path7}`);
             url2.search = Object.entries(query).map(([k5, v]) => `${k5}=${v}`).join("&");
             return url2;
           }
@@ -32432,11 +32432,11 @@ var init_HttpBindingProtocol = __esm({
           const opTraits = translateTraits(operationSchema.traits);
           if (opTraits.http) {
             request.method = opTraits.http[0];
-            const [path3, search] = opTraits.http[1].split("?");
+            const [path7, search] = opTraits.http[1].split("?");
             if (request.path == "/") {
-              request.path = path3;
+              request.path = path7;
             } else {
-              request.path += path3;
+              request.path += path7;
             }
             const traitSearchParams = new URLSearchParams(search ?? "");
             for (const [key, value] of traitSearchParams) {
@@ -32837,8 +32837,8 @@ var init_requestBuilder = __esm({
         return this;
       }
       p(memberName, labelValueProvider, uriLabel, isGreedyLabel) {
-        this.resolvePathStack.push((path3) => {
-          this.path = resolvedPath(path3, this.input, memberName, labelValueProvider, uriLabel, isGreedyLabel);
+        this.resolvePathStack.push((path7) => {
+          this.path = resolvedPath(path7, this.input, memberName, labelValueProvider, uriLabel, isGreedyLabel);
         });
         return this;
       }
@@ -34947,9 +34947,9 @@ var init_createPaginator = __esm({
       command5 = withCommand(command5) ?? command5;
       return await client.send(command5, ...args);
     };
-    get = (fromObject, path3) => {
+    get = (fromObject, path7) => {
       let cursor = fromObject;
-      const pathComponents = path3.split(".");
+      const pathComponents = path7.split(".");
       for (const step of pathComponents) {
         if (!cursor || typeof cursor !== "object") {
           return void 0;
@@ -38201,10 +38201,10 @@ ${longDate}
 ${credentialScope}
 ${toHex2(hashedRequest)}`;
       }
-      getCanonicalPath({ path: path3 }) {
+      getCanonicalPath({ path: path7 }) {
         if (this.uriEscapePath) {
           const normalizedPathSegments = [];
-          for (const pathSegment of path3.split("/")) {
+          for (const pathSegment of path7.split("/")) {
             if (pathSegment?.length === 0)
               continue;
             if (pathSegment === ".")
@@ -38215,11 +38215,11 @@ ${toHex2(hashedRequest)}`;
               normalizedPathSegments.push(pathSegment);
             }
           }
-          const normalizedPath = `${path3?.startsWith("/") ? "/" : ""}${normalizedPathSegments.join("/")}${normalizedPathSegments.length > 0 && path3?.endsWith("/") ? "/" : ""}`;
+          const normalizedPath = `${path7?.startsWith("/") ? "/" : ""}${normalizedPathSegments.join("/")}${normalizedPathSegments.length > 0 && path7?.endsWith("/") ? "/" : ""}`;
           const doubleEncoded = escapeUri2(normalizedPath);
           return doubleEncoded.replace(/%2F/g, "/");
         }
-        return path3;
+        return path7;
       }
       validateResolvedCredentials(credentials) {
         if (typeof credentials !== "object" || typeof credentials.accessKeyId !== "string" || typeof credentials.secretAccessKey !== "string") {
@@ -43394,12 +43394,12 @@ or increase socketAcquisitionWarningTimeout=(millis) in the NodeHttpHandler conf
             const password = request.password ?? "";
             auth = `${username}:${password}`;
           }
-          let path3 = request.path;
+          let path7 = request.path;
           if (queryString) {
-            path3 += `?${queryString}`;
+            path7 += `?${queryString}`;
           }
           if (request.fragment) {
-            path3 += `#${request.fragment}`;
+            path7 += `#${request.fragment}`;
           }
           let hostname3 = request.hostname ?? "";
           if (hostname3[0] === "[" && hostname3.endsWith("]")) {
@@ -43411,7 +43411,7 @@ or increase socketAcquisitionWarningTimeout=(millis) in the NodeHttpHandler conf
             headers: request.headers,
             host: hostname3,
             method: request.method,
-            path: path3,
+            path: path7,
             port: request.port,
             agent,
             auth
@@ -43814,16 +43814,16 @@ or increase socketAcquisitionWarningTimeout=(millis) in the NodeHttpHandler conf
             reject(err);
           };
           const queryString = query ? buildQueryString2(query) : "";
-          let path3 = request.path;
+          let path7 = request.path;
           if (queryString) {
-            path3 += `?${queryString}`;
+            path7 += `?${queryString}`;
           }
           if (request.fragment) {
-            path3 += `#${request.fragment}`;
+            path7 += `#${request.fragment}`;
           }
           const clientHttp2Stream = session.request({
             ...request.headers,
-            [constants.HTTP2_HEADER_PATH]: path3,
+            [constants.HTTP2_HEADER_PATH]: path7,
             [constants.HTTP2_HEADER_METHOD]: method
           });
           if (effectiveRequestTimeout) {
@@ -43905,7 +43905,7 @@ var require_dist_cjs8 = __commonJS({
     var { setCredentialFeature: setCredentialFeature2 } = (init_client3(), __toCommonJS(client_exports2));
     var { CredentialsProviderError: CredentialsProviderError2 } = (init_config2(), __toCommonJS(config_exports));
     var { NodeHttpHandler } = require_dist_cjs7();
-    var fs2 = require("node:fs/promises");
+    var fs3 = require("node:fs/promises");
     var { HttpRequest: HttpRequest2 } = (init_protocols(), __toCommonJS(protocols_exports));
     var { sdkStreamMixin: sdkStreamMixin3, parseRfc3339DateTime: parseRfc3339DateTime2 } = (init_serde(), __toCommonJS(serde_exports));
     var ECS_CONTAINER_HOST = "169.254.170.2";
@@ -44029,7 +44029,7 @@ Set AWS_CONTAINER_CREDENTIALS_FULL_URI or AWS_CONTAINER_CREDENTIALS_RELATIVE_URI
       const provider = retryWrapper(async () => {
         const request = createGetRequest(url2);
         if (tokenFile) {
-          request.headers.Authorization = validateToken((await fs2.readFile(tokenFile)).toString());
+          request.headers.Authorization = validateToken((await fs3.readFile(tokenFile)).toString());
         } else if (token) {
           request.headers.Authorization = validateToken(token);
         }
@@ -48253,7 +48253,7 @@ var require_dist_cjs11 = __commonJS({
     var { setCredentialFeature: setCredentialFeature2 } = (init_client3(), __toCommonJS(client_exports2));
     var { CredentialsProviderError: CredentialsProviderError2, parseKnownFiles: parseKnownFiles2, getProfileName: getProfileName2 } = (init_config2(), __toCommonJS(config_exports));
     var { HttpRequest: HttpRequest2 } = (init_protocols(), __toCommonJS(protocols_exports));
-    var { createHash: createHash7, createPrivateKey, createPublicKey, sign: sign4 } = require("node:crypto");
+    var { createHash: createHash8, createPrivateKey, createPublicKey, sign: sign4 } = require("node:crypto");
     var { promises } = require("node:fs");
     var { homedir: homedir2 } = require("node:os");
     var { dirname, join: join5 } = require("node:path");
@@ -48422,7 +48422,7 @@ var require_dist_cjs11 = __commonJS({
       getTokenFilePath() {
         const directory = process.env.AWS_LOGIN_CACHE_DIRECTORY ?? join5(homedir2(), ".aws", "login", "cache");
         const loginSessionBytes = Buffer.from(this.loginSession, "utf8");
-        const loginSessionSha256 = createHash7("sha256").update(loginSessionBytes).digest("hex");
+        const loginSessionSha256 = createHash8("sha256").update(loginSessionBytes).digest("hex");
         return join5(directory, `${loginSessionSha256}.json`);
       }
       derToRawSignature(derSignature) {
@@ -66886,8 +66886,8 @@ var require_inlinefs = __commonJS({
       getRunnable() {
         const right = (0, combi_1.tok)(tokens_1.ParenRightW);
         const left = (0, combi_1.tok)(tokens_1.ParenLeft);
-        const fs2 = (0, combi_1.seq)("FIELD-SYMBOL", left, _1.TargetFieldSymbol, right);
-        return (0, combi_1.ver)(version_1.Release.v740sp02, fs2, { also: combi_1.AlsoIn.OpenABAP });
+        const fs3 = (0, combi_1.seq)("FIELD-SYMBOL", left, _1.TargetFieldSymbol, right);
+        return (0, combi_1.ver)(version_1.Release.v740sp02, fs3, { also: combi_1.AlsoIn.OpenABAP });
       }
     };
     exports2.InlineFS = InlineFS;
@@ -85163,8 +85163,8 @@ DATA(sdf) = VALUE type(
           const parameters = [];
           const fieldAssignments = vb.findDirectExpressions(Expressions.FieldAssignment);
           if (fieldAssignments.length >= 2) {
-            for (const fs2 of fieldAssignments) {
-              const children = fs2.getChildren();
+            for (const fs3 of fieldAssignments) {
+              const children = fs3.getChildren();
               if (children.length < 3) {
                 continue;
               }
@@ -85207,8 +85207,8 @@ DATA(sdf) = VALUE type(
           if (fieldAssignments.length <= 1) {
             continue;
           }
-          for (const fs2 of fieldAssignments) {
-            const children = fs2.getChildren();
+          for (const fs3 of fieldAssignments) {
+            const children = fs3.getChildren();
             if (children.length < 3) {
               continue;
             }
@@ -85228,8 +85228,8 @@ DATA(sdf) = VALUE type(
           if (fieldAssignments.length <= 1) {
             continue;
           }
-          for (const fs2 of fieldAssignments) {
-            const children = fs2.getChildren();
+          for (const fs3 of fieldAssignments) {
+            const children = fs3.getChildren();
             if (children.length < 3) {
               continue;
             }
@@ -98634,12 +98634,12 @@ var require_basic_types = __commonJS({
       }
       getRAPBaseEntityName(name) {
         const association = name.indexOf("\\_");
-        const path3 = name.indexOf("\\\\");
+        const path7 = name.indexOf("\\\\");
         const action = name.indexOf("~");
-        if (association === -1 && path3 === -1 && action === -1) {
+        if (association === -1 && path7 === -1 && action === -1) {
           return name;
         }
-        const candidates = [association, path3, action].filter((i5) => i5 !== -1);
+        const candidates = [association, path7, action].filter((i5) => i5 !== -1);
         const splitAt = Math.min(...candidates);
         return name.substring(0, splitAt);
       }
@@ -109838,9 +109838,9 @@ FIND statement with MATCH COUNT is considered okay if subrc is not checked`,
         let assigned = void 0;
         let assignedn = void 0;
         if (statements[index].get() instanceof Statements.Assign || statements[index].get() instanceof Statements.ReadTable) {
-          const fs2 = (_b = (_a4 = statements[index].findFirstExpression(Expressions.FSTarget)) === null || _a4 === void 0 ? void 0 : _a4.findFirstExpression(Expressions.FieldSymbol)) === null || _b === void 0 ? void 0 : _b.getFirstToken().getStr();
-          assigned = (fs2 === null || fs2 === void 0 ? void 0 : fs2.toUpperCase()) + " IS ASSIGNED";
-          assignedn = (fs2 === null || fs2 === void 0 ? void 0 : fs2.toUpperCase()) + " IS NOT ASSIGNED";
+          const fs3 = (_b = (_a4 = statements[index].findFirstExpression(Expressions.FSTarget)) === null || _a4 === void 0 ? void 0 : _a4.findFirstExpression(Expressions.FieldSymbol)) === null || _b === void 0 ? void 0 : _b.getFirstToken().getStr();
+          assigned = (fs3 === null || fs3 === void 0 ? void 0 : fs3.toUpperCase()) + " IS ASSIGNED";
+          assignedn = (fs3 === null || fs3 === void 0 ? void 0 : fs3.toUpperCase()) + " IS NOT ASSIGNED";
         }
         for (let i5 = index + 1; i5 < statements.length; i5++) {
           const statement = statements[i5];
@@ -111463,10 +111463,10 @@ var require_inline_fs = __commonJS({
       static runSyntax(node, input, type) {
         var _a4;
         const token = (_a4 = node.findFirstExpression(Expressions.TargetFieldSymbol)) === null || _a4 === void 0 ? void 0 : _a4.getFirstToken();
-        const fs2 = node.findFirstExpression(Expressions.FieldSymbol);
-        if (fs2 && fs2.concatTokens().length > 30) {
-          const message2 = "FIELD-SYMBOLS name too long, " + fs2.concatTokens();
-          input.issues.push((0, _syntax_input_1.syntaxIssue)(input, fs2.getFirstToken(), message2));
+        const fs3 = node.findFirstExpression(Expressions.FieldSymbol);
+        if (fs3 && fs3.concatTokens().length > 30) {
+          const message2 = "FIELD-SYMBOLS name too long, " + fs3.concatTokens();
+          input.issues.push((0, _syntax_input_1.syntaxIssue)(input, fs3.getFirstToken(), message2));
         }
         if (token && type) {
           const identifier = new _typed_identifier_1.TypedIdentifier(token, input.filename, type, [
@@ -111707,13 +111707,13 @@ var require_fieldsymbol2 = __commonJS({
     var basic_1 = require_basic();
     var FieldSymbol = class {
       runSyntax(node, input) {
-        const fs2 = node.findFirstExpression(Expressions.FieldSymbol);
-        const fsname = fs2 === null || fs2 === void 0 ? void 0 : fs2.getFirstToken();
-        if (fs2 === void 0 || fsname === void 0) {
+        const fs3 = node.findFirstExpression(Expressions.FieldSymbol);
+        const fsname = fs3 === null || fs3 === void 0 ? void 0 : fs3.getFirstToken();
+        if (fs3 === void 0 || fsname === void 0) {
           return;
         }
-        if (fs2.concatTokens().length > 30) {
-          const message2 = "FIELD-SYMBOLS name too long, " + fs2.concatTokens();
+        if (fs3.concatTokens().length > 30) {
+          const message2 = "FIELD-SYMBOLS name too long, " + fs3.concatTokens();
           input.issues.push((0, _syntax_input_1.syntaxIssue)(input, fsname, message2));
         }
         if (node.getChildren().length === 5) {
@@ -120007,9 +120007,9 @@ var require_collect2 = __commonJS({
         if (target) {
           target_1.Target.runSyntax(target, input);
         }
-        const fs2 = node.findDirectExpression(Expressions.FSTarget);
-        if (fs2) {
-          fstarget_1.FSTarget.runSyntax(fs2, input, void 0);
+        const fs3 = node.findDirectExpression(Expressions.FSTarget);
+        if (fs3) {
+          fstarget_1.FSTarget.runSyntax(fs3, input, void 0);
         }
       }
     };
@@ -123880,9 +123880,9 @@ References in testclass includes are ignored`
         }
         const previous = {};
         previous[obj.getName()] = true;
-        const path3 = this.findCycle(obj.getName(), obj.getName(), previous);
-        if (path3) {
-          const message2 = "Cyclic definition/usage: " + obj.getName() + " -> " + path3;
+        const path7 = this.findCycle(obj.getName(), obj.getName(), previous);
+        if (path7) {
+          const message2 = "Cyclic definition/usage: " + obj.getName() + " -> " + path7;
           return [issue_1.Issue.atIdentifier(id, message2, this.getMetadata().key, this.conf.severity)];
         }
         return [];
@@ -126123,7 +126123,7 @@ var require_downport = __commonJS({
     })();
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Downport = exports2.DownportConf = void 0;
-    var crypto4 = __importStar(require("crypto"));
+    var crypto5 = __importStar(require("crypto"));
     var tokens_1 = require_tokens();
     var Expressions = __importStar(require_expressions());
     var Statements = __importStar(require_statements());
@@ -128735,7 +128735,7 @@ ${indentation}  WHEN OTHERS.
         }
         let postfix = "";
         if (spag.getIdentifier().stype === _scope_type_1.ScopeType.ClassDefinition) {
-          const hash2 = crypto4.createHash("sha1").update(spag.getIdentifier().sname).digest("hex");
+          const hash2 = crypto5.createHash("sha1").update(spag.getIdentifier().sname).digest("hex");
           postfix = "_" + hash2.substring(0, 10);
         }
         while (true) {
@@ -133386,8 +133386,8 @@ var require_keep_single_parameter_on_one_line = __commonJS({
       }
       ///////////////////////////////////////
       containsFieldAssigments(s2) {
-        const fs2 = s2.findAllExpressions(Expressions.FieldAssignment);
-        return fs2.length > 1;
+        const fs3 = s2.findAllExpressions(Expressions.FieldAssignment);
+        return fs3.length > 1;
       }
       containsNewLineTableExpression(s2) {
         for (const st of s2.findAllExpressions(Expressions.TableExpression)) {
@@ -155352,9 +155352,9 @@ var SearchableMap = class _SearchableMap {
     if (!prefix.startsWith(this._prefix)) {
       throw new Error("Mismatched prefix");
     }
-    const [node, path3] = trackDown(this._tree, prefix.slice(this._prefix.length));
+    const [node, path7] = trackDown(this._tree, prefix.slice(this._prefix.length));
     if (node === void 0) {
-      const [parentNode, key] = last(path3);
+      const [parentNode, key] = last(path7);
       for (const k5 of parentNode.keys()) {
         if (k5 !== LEAF && k5.startsWith(key)) {
           const node2 = /* @__PURE__ */ new Map();
@@ -155574,18 +155574,18 @@ var SearchableMap = class _SearchableMap {
     return _SearchableMap.from(Object.entries(object2));
   }
 };
-var trackDown = (tree, key, path3 = []) => {
+var trackDown = (tree, key, path7 = []) => {
   if (key.length === 0 || tree == null) {
-    return [tree, path3];
+    return [tree, path7];
   }
   for (const k5 of tree.keys()) {
     if (k5 !== LEAF && key.startsWith(k5)) {
-      path3.push([tree, k5]);
-      return trackDown(tree.get(k5), key.slice(k5.length), path3);
+      path7.push([tree, k5]);
+      return trackDown(tree.get(k5), key.slice(k5.length), path7);
     }
   }
-  path3.push([tree, key]);
-  return trackDown(void 0, "", path3);
+  path7.push([tree, key]);
+  return trackDown(void 0, "", path7);
 };
 var lookup = (tree, key) => {
   if (key.length === 0 || tree == null) {
@@ -155627,38 +155627,38 @@ var createPath = (node, key) => {
   return node;
 };
 var remove = (tree, key) => {
-  const [node, path3] = trackDown(tree, key);
+  const [node, path7] = trackDown(tree, key);
   if (node === void 0) {
     return;
   }
   node.delete(LEAF);
   if (node.size === 0) {
-    cleanup(path3);
+    cleanup(path7);
   } else if (node.size === 1) {
     const [key2, value] = node.entries().next().value;
-    merge(path3, key2, value);
+    merge(path7, key2, value);
   }
 };
-var cleanup = (path3) => {
-  if (path3.length === 0) {
+var cleanup = (path7) => {
+  if (path7.length === 0) {
     return;
   }
-  const [node, key] = last(path3);
+  const [node, key] = last(path7);
   node.delete(key);
   if (node.size === 0) {
-    cleanup(path3.slice(0, -1));
+    cleanup(path7.slice(0, -1));
   } else if (node.size === 1) {
     const [key2, value] = node.entries().next().value;
     if (key2 !== LEAF) {
-      merge(path3.slice(0, -1), key2, value);
+      merge(path7.slice(0, -1), key2, value);
     }
   }
 };
-var merge = (path3, key, value) => {
-  if (path3.length === 0) {
+var merge = (path7, key, value) => {
+  if (path7.length === 0) {
     return;
   }
-  const [node, nodeKey] = last(path3);
+  const [node, nodeKey] = last(path7);
   node.set(nodeKey + key, value);
   node.delete(nodeKey);
 };
@@ -157767,10 +157767,10 @@ function mergeDefs(...defs) {
 function cloneDef(schema) {
   return mergeDefs(schema._zod.def);
 }
-function getElementAtPath(obj, path3) {
-  if (!path3)
+function getElementAtPath(obj, path7) {
+  if (!path7)
     return obj;
-  return path3.reduce((acc, key) => acc?.[key], obj);
+  return path7.reduce((acc, key) => acc?.[key], obj);
 }
 function promiseAllObject(promisesObj) {
   const keys = Object.keys(promisesObj);
@@ -158179,11 +158179,11 @@ function explicitlyAborted(x, startIndex = 0) {
   }
   return false;
 }
-function prefixIssues(path3, issues) {
+function prefixIssues(path7, issues) {
   return issues.map((iss) => {
     var _a4;
     (_a4 = iss).path ?? (_a4.path = []);
-    iss.path.unshift(path3);
+    iss.path.unshift(path7);
     return iss;
   });
 }
@@ -158330,16 +158330,16 @@ function flattenError(error52, mapper = (issue2) => issue2.message) {
 }
 function formatError(error52, mapper = (issue2) => issue2.message) {
   const fieldErrors = { _errors: [] };
-  const processError = (error53, path3 = []) => {
+  const processError = (error53, path7 = []) => {
     for (const issue2 of error53.issues) {
       if (issue2.code === "invalid_union" && issue2.errors.length) {
-        issue2.errors.map((issues) => processError({ issues }, [...path3, ...issue2.path]));
+        issue2.errors.map((issues) => processError({ issues }, [...path7, ...issue2.path]));
       } else if (issue2.code === "invalid_key") {
-        processError({ issues: issue2.issues }, [...path3, ...issue2.path]);
+        processError({ issues: issue2.issues }, [...path7, ...issue2.path]);
       } else if (issue2.code === "invalid_element") {
-        processError({ issues: issue2.issues }, [...path3, ...issue2.path]);
+        processError({ issues: issue2.issues }, [...path7, ...issue2.path]);
       } else {
-        const fullpath = [...path3, ...issue2.path];
+        const fullpath = [...path7, ...issue2.path];
         if (fullpath.length === 0) {
           fieldErrors._errors.push(mapper(issue2));
         } else {
@@ -158366,17 +158366,17 @@ function formatError(error52, mapper = (issue2) => issue2.message) {
 }
 function treeifyError(error52, mapper = (issue2) => issue2.message) {
   const result = { errors: [] };
-  const processError = (error53, path3 = []) => {
+  const processError = (error53, path7 = []) => {
     var _a4, _b;
     for (const issue2 of error53.issues) {
       if (issue2.code === "invalid_union" && issue2.errors.length) {
-        issue2.errors.map((issues) => processError({ issues }, [...path3, ...issue2.path]));
+        issue2.errors.map((issues) => processError({ issues }, [...path7, ...issue2.path]));
       } else if (issue2.code === "invalid_key") {
-        processError({ issues: issue2.issues }, [...path3, ...issue2.path]);
+        processError({ issues: issue2.issues }, [...path7, ...issue2.path]);
       } else if (issue2.code === "invalid_element") {
-        processError({ issues: issue2.issues }, [...path3, ...issue2.path]);
+        processError({ issues: issue2.issues }, [...path7, ...issue2.path]);
       } else {
-        const fullpath = [...path3, ...issue2.path];
+        const fullpath = [...path7, ...issue2.path];
         if (fullpath.length === 0) {
           result.errors.push(mapper(issue2));
           continue;
@@ -158408,8 +158408,8 @@ function treeifyError(error52, mapper = (issue2) => issue2.message) {
 }
 function toDotPath(_path) {
   const segs = [];
-  const path3 = _path.map((seg) => typeof seg === "object" ? seg.key : seg);
-  for (const seg of path3) {
+  const path7 = _path.map((seg) => typeof seg === "object" ? seg.key : seg);
+  for (const seg of path7) {
     if (typeof seg === "number")
       segs.push(`[${seg}]`);
     else if (typeof seg === "symbol")
@@ -171101,13 +171101,13 @@ function resolveRef(ref, ctx) {
   if (!ref.startsWith("#")) {
     throw new Error("External $ref is not supported, only local refs (#/...) are allowed");
   }
-  const path3 = ref.slice(1).split("/").filter(Boolean);
-  if (path3.length === 0) {
+  const path7 = ref.slice(1).split("/").filter(Boolean);
+  if (path7.length === 0) {
     return ctx.rootSchema;
   }
   const defsKey = ctx.version === "draft-2020-12" ? "$defs" : "definitions";
-  if (path3[0] === defsKey) {
-    const key = path3[1];
+  if (path7[0] === defsKey) {
+    const key = path7[1];
     if (!key || !ctx.defs[key]) {
       throw new Error(`Reference not found: ${ref}`);
     }
@@ -171517,7 +171517,7 @@ config(en_default());
 
 // src/server.mjs
 var import_node_fs4 = require("node:fs");
-var import_node_path7 = __toESM(require("node:path"), 1);
+var import_node_path11 = __toESM(require("node:path"), 1);
 
 // node_modules/@modelcontextprotocol/server/dist/chunk-Br0eD_fh.mjs
 var __create2 = Object.create;
@@ -175141,9 +175141,9 @@ var rev2026Codec = {
     });
     const parsed = buildSchemas2026().RequestMetaEnvelopeSchema.safeParse(meta4);
     if (!parsed.success) for (const issue2 of parsed.error.issues) {
-      const path3 = issue2.path.map(String);
-      const key = path3.length > 0 ? path3.join(".") : "_meta";
-      if (path3.length === 1 && issues.some((existing) => existing.key === key && existing.problem === "missing")) continue;
+      const path7 = issue2.path.map(String);
+      const key = path7.length > 0 ? path7.join(".") : "_meta";
+      if (path7.length === 1 && issues.some((existing) => existing.key === key && existing.problem === "missing")) continue;
       issues.push({
         key,
         problem: issue2.message
@@ -175466,29 +175466,29 @@ var PERMITTED_X_MCP_HEADER_TYPES = /* @__PURE__ */ new Set([
 function scanXMcpHeaderDeclarations(inputSchema) {
   const declarations = [];
   const seenLower = /* @__PURE__ */ new Map();
-  const visit = (node, path3, reachable) => {
+  const visit = (node, path7, reachable) => {
     if (node === null || typeof node !== "object") return void 0;
     const schema = node;
     if (X_MCP_HEADER_KEY in schema) {
-      if (!reachable || path3.length === 0) return `${pathName(path3)}: x-mcp-header is only permitted on properties statically reachable via a chain of 'properties' keys (not under items, additionalProperties, oneOf/anyOf/allOf/not, if/then/else, or $ref)`;
+      if (!reachable || path7.length === 0) return `${pathName(path7)}: x-mcp-header is only permitted on properties statically reachable via a chain of 'properties' keys (not under items, additionalProperties, oneOf/anyOf/allOf/not, if/then/else, or $ref)`;
       const raw = schema[X_MCP_HEADER_KEY];
-      if (typeof raw !== "string" || raw.length === 0) return `${pathName(path3)}: x-mcp-header MUST be a non-empty string`;
-      if (!RFC9110_TOKEN.test(raw)) return `${pathName(path3)}: x-mcp-header '${raw}' is not a valid RFC 9110 token (no spaces, control characters or HTTP delimiters)`;
+      if (typeof raw !== "string" || raw.length === 0) return `${pathName(path7)}: x-mcp-header MUST be a non-empty string`;
+      if (!RFC9110_TOKEN.test(raw)) return `${pathName(path7)}: x-mcp-header '${raw}' is not a valid RFC 9110 token (no spaces, control characters or HTTP delimiters)`;
       const type = typeof schema.type === "string" ? schema.type : void 0;
-      if (type === void 0 || !PERMITTED_X_MCP_HEADER_TYPES.has(type)) return `${pathName(path3)}: x-mcp-header is only permitted on primitive-typed properties (string, integer, boolean); got ${type ?? "<none>"}`;
+      if (type === void 0 || !PERMITTED_X_MCP_HEADER_TYPES.has(type)) return `${pathName(path7)}: x-mcp-header is only permitted on primitive-typed properties (string, integer, boolean); got ${type ?? "<none>"}`;
       const lower = raw.toLowerCase();
       const prior = seenLower.get(lower);
       if (prior !== void 0) return `x-mcp-header '${raw}' is not case-insensitively unique (also declared as '${prior}')`;
       seenLower.set(lower, raw);
       declarations.push({
-        path: path3,
+        path: path7,
         headerName: raw,
         type
       });
     }
     const properties = schema.properties;
     if (properties !== null && typeof properties === "object") for (const [key, child] of Object.entries(properties)) {
-      const fault$1 = visit(child, [...path3, key], reachable);
+      const fault$1 = visit(child, [...path7, key], reachable);
       if (fault$1 !== void 0) return fault$1;
     }
     for (const k5 of NON_REACHABLE_SUBSCHEMA_KEYWORDS) {
@@ -175496,7 +175496,7 @@ function scanXMcpHeaderDeclarations(inputSchema) {
       if (sub === void 0) continue;
       const branches = Array.isArray(sub) ? sub : sub !== null && typeof sub === "object" && OBJECT_VALUED_SUBSCHEMA_KEYWORDS.has(k5) ? Object.values(sub) : [sub];
       for (const branch of branches) {
-        const fault$1 = visit(branch, [...path3, `<${k5}>`], false);
+        const fault$1 = visit(branch, [...path7, `<${k5}>`], false);
         if (fault$1 !== void 0) return fault$1;
       }
     }
@@ -175536,8 +175536,8 @@ var OBJECT_VALUED_SUBSCHEMA_KEYWORDS = /* @__PURE__ */ new Set([
   "$defs",
   "definitions"
 ]);
-function pathName(path3) {
-  return path3.length === 0 ? "<root>" : path3.join(".");
+function pathName(path7) {
+  return path7.length === 0 ? "<root>" : path7.join(".");
 }
 var BASE64_SENTINEL_PREFIX = "=?base64?";
 var BASE64_SENTINEL_SUFFIX = "?=";
@@ -175568,9 +175568,9 @@ function decodeMcpParamValue(value) {
     return;
   }
 }
-function valueAtPath(root5, path3) {
+function valueAtPath(root5, path7) {
   let node = root5;
-  for (const key of path3) {
+  for (const key of path7) {
     if (node === null || typeof node !== "object") return void 0;
     node = node[key];
   }
@@ -176064,7 +176064,7 @@ var PROPERTY_KEYS_BY_TYPE = {
   array: shapeKeys([UntitledMultiSelectEnumSchemaSchema, TitledMultiSelectEnumSchemaSchema])
 };
 var SUPPORTED_STRING_FORMATS = new Set(StringSchemaSchema.shape.format.unwrap().options);
-function walkProperty(node, path3, vendor, unsupported) {
+function walkProperty(node, path7, vendor, unsupported) {
   if (!isJsonObject(node)) return node;
   const allowedKeys = typeof node.type === "string" && Object.hasOwn(PROPERTY_KEYS_BY_TYPE, node.type) ? PROPERTY_KEYS_BY_TYPE[node.type] : void 0;
   if (allowedKeys === void 0) return node;
@@ -176072,8 +176072,8 @@ function walkProperty(node, path3, vendor, unsupported) {
   for (const [key, value] of Object.entries(node)) if (allowedKeys.has(key) || isAnnotationOnlyJsonSchemaKeyword(key)) pruned[key] = value;
   else if (key === "pattern" && node.type === "string" && typeof node.format === "string") {
     if (!SUPPORTED_STRING_FORMATS.has(node.format)) pruned[key] = value;
-    else if (typeof value !== "string" || !isLibraryFormatPattern(node.format, value, vendor)) unsupported.push(`${path3}.${key}`);
-  } else unsupported.push(`${path3}.${key}`);
+    else if (typeof value !== "string" || !isLibraryFormatPattern(node.format, value, vendor)) unsupported.push(`${path7}.${key}`);
+  } else unsupported.push(`${path7}.${key}`);
   return pruned;
 }
 function walkRequestedSchema(converted, vendor) {
@@ -176090,11 +176090,11 @@ function describeUnsupportedProperties(pruned, fallback2) {
   const offenders = Object.entries(pruned.properties).filter(([, node]) => !parseSchema(PrimitiveSchemaDefinitionSchema, node).success).map(([name]) => `properties.${name}`);
   return offenders.length > 0 ? offenders.join(", ") : fallback2;
 }
-function findDroppedConstraintPaths(original, parsed, path3 = "") {
-  if (Array.isArray(original) && Array.isArray(parsed)) return original.flatMap((item, index) => findDroppedConstraintPaths(item, parsed[index], `${path3}[${index}]`));
+function findDroppedConstraintPaths(original, parsed, path7 = "") {
+  if (Array.isArray(original) && Array.isArray(parsed)) return original.flatMap((item, index) => findDroppedConstraintPaths(item, parsed[index], `${path7}[${index}]`));
   if (!isJsonObject(original) || !isJsonObject(parsed)) return [];
   return Object.entries(original).flatMap(([key, value]) => {
-    const childPath = path3 ? `${path3}.${key}` : key;
+    const childPath = path7 ? `${path7}.${key}` : key;
     if (!Object.prototype.hasOwnProperty.call(parsed, key)) return isAnnotationOnlyJsonSchemaKeyword(key) ? [] : [childPath];
     return findDroppedConstraintPaths(value, parsed[key], childPath);
   });
@@ -180388,8 +180388,8 @@ var require_utils = /* @__PURE__ */ __commonJSMin(((exports2, module2) => {
     for (let i5 = 0; i5 < str.length; i5++) if (str[i5] === token) ind++;
     return ind;
   }
-  function removeDotSegments(path3) {
-    let input = path3;
+  function removeDotSegments(path7) {
+    let input = path7;
     const output = [];
     let nextSlash = -1;
     let len = 0;
@@ -180542,8 +180542,8 @@ var require_schemes = /* @__PURE__ */ __commonJSMin(((exports2, module2) => {
       wsComponent.secure = void 0;
     }
     if (wsComponent.resourceName) {
-      const [path3, query] = wsComponent.resourceName.split("?");
-      wsComponent.path = path3 && path3 !== "/" ? path3 : void 0;
+      const [path7, query] = wsComponent.resourceName.split("?");
+      wsComponent.path = path7 && path7 !== "/" ? path7 : void 0;
       wsComponent.query = query;
       wsComponent.resourceName = void 0;
     }
@@ -184531,11 +184531,11 @@ var require_dist = /* @__PURE__ */ __commonJSMin(((exports2, module2) => {
     if (!f5) throw new Error(`Unknown format "${name}"`);
     return f5;
   };
-  function addFormats2(ajv, list2, fs2, exportName) {
+  function addFormats2(ajv, list2, fs3, exportName) {
     var _a4;
     var _b;
     (_a4 = (_b = ajv.opts.code).formats) !== null && _a4 !== void 0 || (_b.formats = (0, codegen_1._)`require("ajv-formats/dist/formats").${exportName}`);
-    for (const f5 of list2) ajv.addFormat(f5, fs2[f5]);
+    for (const f5 of list2) ajv.addFormat(f5, fs3[f5]);
   }
   module2.exports = exports2 = formatsPlugin;
   Object.defineProperty(exports2, "__esModule", { value: true });
@@ -189117,42 +189117,126 @@ function resolveDataSource(argv = process.argv.slice(2)) {
 }
 
 // src/usage-tracker.mjs
+var import_node_crypto8 = require("node:crypto");
 var ENDPOINT = process.env.CDS_KB_USAGE_ENDPOINT || "";
+var SHAPE_TELEMETRY = /^(1|true|yes)$/i.test(process.env.CDS_KB_SHAPE_TELEMETRY || "");
 var FLUSH_INTERVAL_MS = (parseFloat(process.env.CDS_KB_USAGE_FLUSH_MINUTES) || 5) * 60 * 1e3;
 var FLUSH_TIMEOUT_MS = 5e3;
 var deltas = /* @__PURE__ */ new Map();
+var shapeDeltas = /* @__PURE__ */ new Map();
 var timer = null;
+function shapeEndpoint() {
+  if (!ENDPOINT) return "";
+  try {
+    const url2 = new URL(ENDPOINT);
+    if (url2.pathname.endsWith("/ping")) {
+      url2.pathname = url2.pathname.replace(/\/ping$/, "/ping-shapes");
+    } else if (!url2.pathname.endsWith("/ping-shapes")) {
+      url2.pathname = url2.pathname.replace(/\/?$/, "/") + "ping-shapes";
+    }
+    return url2.toString();
+  } catch {
+    return "";
+  }
+}
+function buildQueryShape(obj = {}) {
+  const views = (Array.isArray(obj.views) ? obj.views : []).map((v) => String(v?.name || "").trim().toUpperCase()).filter(Boolean).sort();
+  const selectFields = String(obj.select || "").split(",").map((s2) => s2.trim().replace(/^.*\./, "").toUpperCase()).filter(Boolean).sort();
+  const flags = {
+    hasWhere: !!(obj.where && String(obj.where).trim()),
+    hasGroupBy: !!(obj.groupBy && String(obj.groupBy).trim()),
+    hasHaving: !!(obj.having && String(obj.having).trim()),
+    hasOrderBy: !!(obj.orderBy && String(obj.orderBy).trim()),
+    hasJoin: views.length > 1,
+    joinCount: Math.max(0, views.length - 1),
+    hasRawNote: !!(obj.rawNote && String(obj.rawNote).trim())
+  };
+  const selectFieldHash = (0, import_node_crypto8.createHash)("sha256").update(selectFields.join("|")).digest("hex");
+  const shapeId = (0, import_node_crypto8.createHash)("sha256").update(JSON.stringify({ views, selectFieldHash, flags })).digest("hex");
+  return {
+    shapeId,
+    views,
+    selectFieldCount: selectFields.length,
+    selectFieldHash,
+    flags
+  };
+}
 function recordView(name) {
   if (!ENDPOINT || !name) return;
   const key = String(name).toUpperCase();
   deltas.set(key, (deltas.get(key) || 0) + 1);
+  scheduleFlush();
+}
+function recordQueryShape(obj) {
+  if (!ENDPOINT || !SHAPE_TELEMETRY || !obj) return;
+  const shape = typeof obj.shapeId === "string" ? obj : buildQueryShape(obj);
+  if (!shape?.shapeId) return;
+  const prev = shapeDeltas.get(shape.shapeId);
+  if (prev) {
+    prev.count += 1;
+  } else {
+    shapeDeltas.set(shape.shapeId, { meta: shape, count: 1 });
+  }
+  scheduleFlush();
+}
+function scheduleFlush() {
   if (!timer) {
     timer = setTimeout(flush2, FLUSH_INTERVAL_MS);
     timer.unref?.();
   }
 }
-async function flush2() {
-  timer = null;
-  if (deltas.size === 0) return;
-  const pending = deltas;
-  deltas = /* @__PURE__ */ new Map();
-  const events = [...pending.entries()].map(([view, count]) => ({ view, count }));
+async function postJson(url2, body) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), FLUSH_TIMEOUT_MS);
   try {
-    const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), FLUSH_TIMEOUT_MS);
-    const res = await fetch(ENDPOINT, {
+    const res = await fetch(url2, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ events }),
+      body: JSON.stringify(body),
       signal: ctrl.signal
     });
-    clearTimeout(t);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  } catch (e5) {
-    for (const [view, count] of pending) {
-      deltas.set(view, (deltas.get(view) || 0) + count);
+  } finally {
+    clearTimeout(t);
+  }
+}
+async function flush2() {
+  timer = null;
+  const pendingViews = deltas;
+  const pendingShapes = shapeDeltas;
+  deltas = /* @__PURE__ */ new Map();
+  shapeDeltas = /* @__PURE__ */ new Map();
+  if (pendingViews.size > 0 && ENDPOINT) {
+    const events = [...pendingViews.entries()].map(([view, count]) => ({ view, count }));
+    try {
+      await postJson(ENDPOINT, { events });
+    } catch (e5) {
+      for (const [view, count] of pendingViews) {
+        deltas.set(view, (deltas.get(view) || 0) + count);
+      }
+      logWarn("usage ping failed, will retry next flush", { err: e5 });
     }
-    logWarn("usage ping failed, will retry next flush", { err: e5 });
+  }
+  const shapesUrl = shapeEndpoint();
+  if (pendingShapes.size > 0 && shapesUrl) {
+    const events = [...pendingShapes.values()].map(({ meta: meta4, count }) => ({
+      shapeId: meta4.shapeId,
+      views: meta4.views,
+      selectFieldCount: meta4.selectFieldCount,
+      selectFieldHash: meta4.selectFieldHash,
+      flags: meta4.flags,
+      count
+    }));
+    try {
+      await postJson(shapesUrl, { events });
+    } catch (e5) {
+      for (const [id, row] of pendingShapes) {
+        const cur = shapeDeltas.get(id);
+        if (cur) cur.count += row.count;
+        else shapeDeltas.set(id, row);
+      }
+      logWarn("shape ping failed, will retry next flush", { err: e5 });
+    }
   }
 }
 function flushOnExit() {
@@ -189231,6 +189315,38 @@ function composeQuery(q3 = {}) {
     cdsView: cdsLines.join("\n"),
     warnings
   };
+}
+
+// src/rrf.mjs
+var RRF_K = 60;
+function reciprocalRankFusion(rankedLists, opts = {}) {
+  const k5 = opts.k ?? RRF_K;
+  const getId = opts.getId || ((item) => String(item?.name ?? item?.id ?? "").toUpperCase());
+  const scores = /* @__PURE__ */ new Map();
+  const items = /* @__PURE__ */ new Map();
+  for (const list2 of rankedLists) {
+    if (!Array.isArray(list2) || list2.length === 0) continue;
+    list2.forEach((item, idx) => {
+      const id = getId(item);
+      if (!id) return;
+      const add = 1 / (k5 + idx + 1);
+      scores.set(id, (scores.get(id) || 0) + add);
+      if (!items.has(id)) items.set(id, item);
+    });
+  }
+  return [...scores.entries()].sort((a5, b5) => b5[1] - a5[1]).map(([id, rrf]) => {
+    const base = items.get(id);
+    return { ...base, score: rrf, _rrf: rrf };
+  });
+}
+function rankByCosine(candidates, queryVec, getVec, cosine) {
+  if (!queryVec || !Array.isArray(candidates) || candidates.length === 0) return [];
+  return candidates.map((r5) => {
+    const name = String(r5.name || "");
+    const vec = getVec(name);
+    const cos = vec ? cosine(queryVec, vec) : null;
+    return cos == null ? null : { ...r5, _cos: cos };
+  }).filter(Boolean).sort((a5, b5) => b5._cos - a5._cos);
 }
 
 // src/ddl-tools.mjs
@@ -190992,7 +191108,7 @@ function createRemoteJWKSet(url2, options) {
 }
 
 // src/oauth.mjs
-var import_node_crypto8 = require("node:crypto");
+var import_node_crypto9 = require("node:crypto");
 var SECRET = (process.env.CDS_KB_OAUTH_SECRET || "").trim();
 var CLIENT_ID = (process.env.CDS_KB_OAUTH_CLIENT_ID || "cds-kb-client").trim();
 var TOKEN_TTL = parseInt(process.env.CDS_KB_OAUTH_TOKEN_TTL || "3600", 10) || 3600;
@@ -191006,7 +191122,7 @@ function registerClient(body) {
     err.status = 400;
     throw err;
   }
-  const clientId = `dyn_${(0, import_node_crypto8.randomBytes)(12).toString("hex")}`;
+  const clientId = `dyn_${(0, import_node_crypto9.randomBytes)(12).toString("hex")}`;
   const entry = {
     clientName: String(body.client_name || "dynamic-client"),
     redirectUris,
@@ -191070,13 +191186,13 @@ function b64url(buf) {
   return Buffer.from(buf).toString("base64url");
 }
 function sha256(data) {
-  return (0, import_node_crypto8.createHash)("sha256").update(data).digest();
+  return (0, import_node_crypto9.createHash)("sha256").update(data).digest();
 }
 function pkceChallenge(verifier) {
   return b64url(sha256(verifier));
 }
 function randomCode() {
-  return (0, import_node_crypto8.randomBytes)(24).toString("hex");
+  return (0, import_node_crypto9.randomBytes)(24).toString("hex");
 }
 function issuerOf(req) {
   const explicit = (process.env.CDS_KB_PUBLIC_URL || "").trim();
@@ -191270,10 +191386,11 @@ async function proposeQueryLibraryEntry(input = {}) {
     if (entry[k5] === void 0 || entry[k5] === "") delete entry[k5];
   }
   const composed = composeQuery(entry);
+  const libraryPath = (process.env.CDS_KB_PROPOSE_PATH || "").trim() || "docs/product/cds_kb_data/index/query-library.json";
   const jsonSnippet = JSON.stringify(entry, null, 2) + ",";
   let markdown = `## Propose query library entry
 
-Add the following object to \`index/query-library.json\` (array of saved queries), then rebuild the Query Builder page.
+Add the following object to \`${libraryPath}\` (array of saved queries), then hand-sync \`DATA.L\` in \`query-builder.html\` (do **not** run the stale \`generate-query-builder\` script without \`--force\`).
 
 \`\`\`json
 ${jsonSnippet}
@@ -191324,11 +191441,11 @@ ${composed.openSql}
       body: JSON.stringify({ ref: `refs/heads/${branch}`, sha: baseSha })
     });
     if (!createRef.ok) throw new Error(`POST ref -> ${createRef.status} ${await createRef.text()}`);
-    const path3 = "index/query-library.json";
+    const path7 = libraryPath;
     let existingSha = null;
     let list2 = [];
     const fileRes = await fetch(
-      `https://api.github.com/repos/${owner}/${name}/contents/${path3}?ref=${branch}`,
+      `https://api.github.com/repos/${owner}/${name}/contents/${path7}?ref=${branch}`,
       { headers }
     );
     if (fileRes.ok) {
@@ -191342,11 +191459,11 @@ ${composed.openSql}
         list2 = [];
       }
     } else if (fileRes.status !== 404) {
-      throw new Error(`GET ${path3} -> ${fileRes.status}`);
+      throw new Error(`GET ${path7} -> ${fileRes.status}`);
     }
     list2.push(entry);
     const content = Buffer.from(JSON.stringify(list2, null, 2) + "\n", "utf-8").toString("base64");
-    const putRes = await fetch(`https://api.github.com/repos/${owner}/${name}/contents/${path3}`, {
+    const putRes = await fetch(`https://api.github.com/repos/${owner}/${name}/contents/${path7}`, {
       method: "PUT",
       headers: { ...headers, "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -191503,6 +191620,1225 @@ function rateLimitMiddleware({
       return;
     }
     next();
+  };
+}
+
+// src/sap/tools.mjs
+var import_node_path10 = __toESM(require("node:path"), 1);
+
+// src/sap/config.mjs
+var import_node_path7 = __toESM(require("node:path"), 1);
+var EXTRACTOR_VERSION = "cds-kb-mcp-sap-adt/0.1.0";
+var ALLOWED_ALIASES = /* @__PURE__ */ new Set(["DEV"]);
+function loadSapConfig(env2 = process.env) {
+  const baseUrl = (env2.SAP_ADT_BASE_URL || "").trim();
+  const username = (env2.SAP_ADT_USERNAME || "").trim();
+  const password = env2.SAP_ADT_PASSWORD || "";
+  const client = (env2.SAP_ADT_CLIENT || "").trim();
+  const alias = (env2.SAP_ADT_SYSTEM_ALIAS || "DEV").trim().toUpperCase();
+  if (!baseUrl && !username && !password && !client) {
+    return { configured: false };
+  }
+  const errors = [];
+  if (!baseUrl) errors.push("SAP_ADT_BASE_URL is required");
+  if (!username) errors.push("SAP_ADT_USERNAME is required");
+  if (!password) errors.push("SAP_ADT_PASSWORD is required");
+  if (!client) errors.push("SAP_ADT_CLIENT is required");
+  let parsedUrl;
+  try {
+    parsedUrl = new URL(baseUrl);
+  } catch {
+    errors.push("SAP_ADT_BASE_URL must be a valid URL");
+  }
+  if (parsedUrl) {
+    if (parsedUrl.protocol !== "https:") {
+      errors.push("SAP_ADT_BASE_URL must use https:// (TLS required)");
+    }
+    if (parsedUrl.username || parsedUrl.password) {
+      errors.push("SAP_ADT_BASE_URL must not embed credentials");
+    }
+  }
+  if (!ALLOWED_ALIASES.has(alias)) {
+    errors.push(`system alias must be DEV (got ${alias || "(empty)"}); PRD and other aliases are rejected`);
+  }
+  if (parsedUrl && /(?:^|[.\-_])prd(?:[.\-_]|$)|s4prd|eccprd|\.prd\./i.test(parsedUrl.hostname)) {
+    errors.push("hostname looks like PRD; only DEV is allowed");
+  }
+  const tlsVerify = env2.SAP_ADT_TLS_VERIFY;
+  if (tlsVerify !== void 0 && tlsVerify !== "" && !["1", "true", "yes"].includes(String(tlsVerify).toLowerCase())) {
+    errors.push("TLS verification is mandatory; SAP_ADT_TLS_VERIFY cannot disable verify");
+  }
+  const packageInclude = parseList(env2.SAP_ADT_PACKAGE_INCLUDE, ["Z*", "Y*"]);
+  const packageExclude = parseList(env2.SAP_ADT_PACKAGE_EXCLUDE, ["$TMP"]);
+  const relatedInclude = parseList(env2.SAP_ADT_RELATED_INCLUDE, ["Z*", "Y*"]);
+  const objectTypes = parseList(env2.SAP_ADT_OBJECT_TYPES, ["data_definition"]);
+  for (const pat of packageInclude) {
+    if (!isCustomNamespacePattern(pat)) {
+      errors.push(`package_include pattern "${pat}" rejected \u2014 only Z*/Y* custom namespaces`);
+    }
+  }
+  for (const pat of relatedInclude) {
+    if (!isCustomNamespacePattern(pat)) {
+      errors.push(`related_object_include pattern "${pat}" rejected \u2014 only Z*/Y* custom namespaces`);
+    }
+  }
+  let dependencyMaxDepth = Number.parseInt(env2.SAP_ADT_DEPENDENCY_MAX_DEPTH || "5", 10);
+  if (!Number.isFinite(dependencyMaxDepth) || dependencyMaxDepth < 0 || dependencyMaxDepth > 20) {
+    errors.push("SAP_ADT_DEPENDENCY_MAX_DEPTH must be an integer 0\u201320");
+    dependencyMaxDepth = 5;
+  }
+  const timeoutMs = Math.min(
+    Math.max(Number.parseInt(env2.SAP_ADT_TIMEOUT_MS || "30000", 10) || 3e4, 1e3),
+    12e4
+  );
+  const outputRootRaw = (env2.SAP_ADT_OUTPUT_ROOT || "").trim();
+  let outputRoot = null;
+  if (outputRootRaw) {
+    try {
+      outputRoot = import_node_path7.default.resolve(outputRootRaw);
+    } catch {
+      errors.push("SAP_ADT_OUTPUT_ROOT is not a valid path");
+    }
+  }
+  if (errors.length) {
+    const err = new Error(errors.join("; "));
+    err.code = "SAP_CONFIG_INVALID";
+    err.details = errors;
+    throw err;
+  }
+  return {
+    configured: true,
+    systemAlias: alias,
+    connector: "adt",
+    baseUrl: parsedUrl.origin + (parsedUrl.pathname.replace(/\/$/, "") || ""),
+    username,
+    // password kept on object but never logged
+    password,
+    sapClient: client,
+    readOnly: true,
+    tlsVerify: true,
+    productionEnabled: false,
+    packageInclude,
+    packageExclude,
+    relatedObjectInclude: relatedInclude,
+    dependencyMaxDepth,
+    includeInactive: false,
+    includeGenerated: false,
+    includeTableContents: false,
+    objectTypeInclude: objectTypes,
+    outputRoot,
+    concurrency: Math.min(Math.max(Number.parseInt(env2.SAP_ADT_CONCURRENCY || "2", 10) || 2, 1), 8),
+    requestTimeoutMs: timeoutMs,
+    extractorVersion: EXTRACTOR_VERSION
+  };
+}
+function describeSapConfig(config2) {
+  if (!config2 || !config2.configured) {
+    return { configured: false };
+  }
+  return {
+    configured: true,
+    systemAlias: config2.systemAlias,
+    connector: config2.connector,
+    baseHost: safeHost(config2.baseUrl),
+    sapClient: config2.sapClient,
+    packageInclude: config2.packageInclude,
+    relatedObjectInclude: config2.relatedObjectInclude,
+    objectTypeInclude: config2.objectTypeInclude,
+    outputRoot: config2.outputRoot,
+    tlsVerify: true,
+    readOnly: true
+  };
+}
+function isCustomNamespacePattern(pat) {
+  const p3 = String(pat || "").trim().toUpperCase();
+  if (!p3) return false;
+  return /^[ZY][A-Z0-9_/*]*$/.test(p3);
+}
+function matchesNamespace(name, patterns) {
+  const n3 = String(name || "").toUpperCase();
+  return (patterns || []).some((pat) => matchGlob(n3, String(pat).toUpperCase()));
+}
+function isCustomObjectName(name) {
+  const n3 = String(name || "").trim().toUpperCase();
+  return n3.startsWith("Z") || n3.startsWith("Y");
+}
+function matchGlob(value, pattern) {
+  if (pattern.endsWith("*")) {
+    return value.startsWith(pattern.slice(0, -1));
+  }
+  return value === pattern;
+}
+function parseList(raw, fallback2) {
+  if (raw === void 0 || raw === null || String(raw).trim() === "") return [...fallback2];
+  return String(raw).split(/[,;\s]+/).map((s2) => s2.trim()).filter(Boolean);
+}
+function safeHost(urlStr) {
+  try {
+    return new URL(urlStr).hostname;
+  } catch {
+    return "(invalid)";
+  }
+}
+
+// src/sap/xml.mjs
+function extractAttrs(xml, localName, attr) {
+  const out = [];
+  if (!xml) return out;
+  const tagRe = new RegExp(`<(?:[\\w.-]+:)?${escapeReg(localName)}\\b([^>]*)>`, "gi");
+  let m3;
+  while ((m3 = tagRe.exec(xml)) !== null) {
+    const attrs = m3[1] || "";
+    const v = readAttr(attrs, attr);
+    if (v != null) out.push(decodeXml(v));
+  }
+  return out;
+}
+function parseAdtObjectEntries(xml) {
+  const entries = [];
+  if (!xml) return entries;
+  const tagRe = /<(?:[\w.-]+:)?(?:objectReference|object|abapObject|element|entry)\b([^>]*?)\/>|<(?:[\w.-]+:)?(?:objectReference|object|abapObject|element|entry)\b([^>]*)>/gi;
+  let m3;
+  while ((m3 = tagRe.exec(xml)) !== null) {
+    const attrs = m3[1] || m3[2] || "";
+    const name = readAttr(attrs, "adtcore:name") || readAttr(attrs, "name");
+    if (!name) continue;
+    const type = readAttr(attrs, "adtcore:type") || readAttr(attrs, "type") || "";
+    const pkg = readAttr(attrs, "adtcore:packageName") || readAttr(attrs, "packageName") || readAttr(attrs, "package") || "";
+    entries.push({
+      name: decodeXml(name),
+      type: decodeXml(type),
+      package: decodeXml(pkg)
+    });
+  }
+  if (entries.length === 0) {
+    const nameRe = /adtcore:name="([^"]+)"/gi;
+    let nm;
+    while ((nm = nameRe.exec(xml)) !== null) {
+      const slice = xml.slice(Math.max(0, nm.index - 200), nm.index + 200);
+      const type = /adtcore:type="([^"]+)"/i.exec(slice)?.[1] || "";
+      const pkg = /adtcore:packageName="([^"]+)"/i.exec(slice)?.[1] || "";
+      entries.push({ name: decodeXml(nm[1]), type: decodeXml(type), package: decodeXml(pkg) });
+    }
+  }
+  return dedupeByName(entries);
+}
+function parsePackageNames(xml) {
+  const names = /* @__PURE__ */ new Set();
+  for (const e5 of parseAdtObjectEntries(xml)) {
+    if (e5.name) names.add(e5.name);
+  }
+  for (const n3 of extractAttrs(xml, "package", "adtcore:name")) names.add(n3);
+  for (const n3 of extractAttrs(xml, "package", "name")) names.add(n3);
+  const textRe = /<(?:[\w.-]+:)?name>([^<]+)<\/(?:[\w.-]+:)?name>/gi;
+  let m3;
+  while ((m3 = textRe.exec(xml)) !== null) {
+    names.add(decodeXml(m3[1].trim()));
+  }
+  return [...names].filter(Boolean).sort();
+}
+function readAttr(attrs, name) {
+  const esc2 = escapeReg(name);
+  const re = new RegExp(`(?:^|\\s)${esc2}\\s*=\\s*"([^"]*)"`, "i");
+  const m3 = re.exec(attrs);
+  if (m3) return m3[1];
+  if (name.includes(":")) {
+    const bare = name.split(":").pop();
+    const re2 = new RegExp(`(?:^|\\s)${escapeReg(bare)}\\s*=\\s*"([^"]*)"`, "i");
+    const m22 = re2.exec(attrs);
+    if (m22) return m22[1];
+  }
+  return null;
+}
+function decodeXml(s2) {
+  return String(s2).replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&amp;/g, "&");
+}
+function escapeReg(s2) {
+  return String(s2).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+function dedupeByName(entries) {
+  const seen = /* @__PURE__ */ new Map();
+  for (const e5 of entries) {
+    const key = `${(e5.type || "").toUpperCase()}::${e5.name.toUpperCase()}`;
+    if (!seen.has(key)) seen.set(key, e5);
+  }
+  return [...seen.values()];
+}
+
+// src/sap/connector.mjs
+var SapConnectorError = class extends Error {
+  constructor(message2, { status, path: reqPath, code } = {}) {
+    super(message2);
+    this.name = "SapConnectorError";
+    this.status = status;
+    this.path = reqPath;
+    this.code = code || "SAP_CONNECTOR";
+  }
+};
+function createConnector(config2, deps = {}) {
+  if (!config2?.configured) {
+    throw new SapConnectorError("SAP not configured", { code: "NOT_CONFIGURED" });
+  }
+  if (config2.connector === "adt") {
+    return new AdtConnector(config2, deps);
+  }
+  throw new SapConnectorError(`unsupported connector: ${config2.connector}`, { code: "UNSUPPORTED" });
+}
+var AdtConnector = class {
+  /**
+   * @param {object} config
+   * @param {{ fetch?: typeof fetch }} deps
+   */
+  constructor(config2, deps = {}) {
+    this.config = config2;
+    this.fetchFn = deps.fetch || globalThis.fetch.bind(globalThis);
+    this._csrf = null;
+    this._cookie = null;
+  }
+  async testConnection() {
+    const res = await this.request("GET", "/sap/bc/adt/discovery", {
+      headers: { Accept: "application/xml, application/atomsvc+xml, */*" }
+    });
+    return {
+      ok: res.status >= 200 && res.status < 300,
+      status: res.status,
+      systemAlias: this.config.systemAlias,
+      discoveryBytes: res.bodyText?.length ?? 0,
+      endpoint: "/sap/bc/adt/discovery"
+    };
+  }
+  /**
+   * List packages matching include patterns (client-side re-check).
+   */
+  async listPackages({ max = 200 } = {}) {
+    const patterns = this.config.packageInclude;
+    const collected = [];
+    const warnings = [];
+    for (const pat of patterns) {
+      const query = pat.endsWith("*") ? pat.slice(0, -1) : pat;
+      try {
+        const qs = new URLSearchParams({
+          operation: "quickSearch",
+          query: `${query}*`,
+          maxResults: String(Math.min(max, 200))
+        });
+        const res = await this.request(
+          "POST",
+          `/sap/bc/adt/repository/informationsystem/search?${qs}`,
+          {
+            headers: {
+              Accept: "application/xml, application/atom+xml, */*",
+              "Content-Type": "application/xml"
+            },
+            body: ""
+          }
+        );
+        const names = parsePackageNames(res.bodyText).filter(
+          (n3) => matchesNamespace(n3, patterns) && !matchesNamespace(n3, this.config.packageExclude)
+        );
+        for (const name of names) {
+          if (!collected.find((p3) => p3.name === name)) {
+            collected.push({ name, systemAlias: this.config.systemAlias });
+          }
+        }
+      } catch (e5) {
+        warnings.push(`package search for ${pat}: ${e5.message}`);
+      }
+    }
+    collected.sort((a5, b5) => a5.name.localeCompare(b5.name));
+    return { items: collected.slice(0, max), warnings, next_cursor: null };
+  }
+  /**
+   * List repository objects in a package (DDLS / data_definition first).
+   */
+  async listObjects({ packageName, objectType = "data_definition", max = 200 } = {}) {
+    if (!packageName) throw new SapConnectorError("packageName required", { code: "BAD_INPUT" });
+    if (!matchesNamespace(packageName, this.config.packageInclude)) {
+      throw new SapConnectorError(`package ${packageName} outside Z*/Y* include`, { code: "NAMESPACE" });
+    }
+    const adtType = toAdtType(objectType);
+    const qs = new URLSearchParams({
+      operation: "quickSearch",
+      query: `package:${packageName}`,
+      maxResults: String(Math.min(max, 500))
+    });
+    if (adtType) qs.set("objectType", adtType);
+    const res = await this.request(
+      "POST",
+      `/sap/bc/adt/repository/informationsystem/search?${qs}`,
+      {
+        headers: {
+          Accept: "application/xml, application/atom+xml, */*",
+          "Content-Type": "application/xml"
+        },
+        body: ""
+      }
+    );
+    let entries = parseAdtObjectEntries(res.bodyText);
+    entries = entries.filter((e5) => {
+      if (!isCustomObjectName(e5.name)) return false;
+      if (!matchesNamespace(e5.name, this.config.relatedObjectInclude) && !matchesNamespace(e5.package || packageName, this.config.packageInclude)) {
+        if (!matchesNamespace(packageName, this.config.packageInclude)) return false;
+      }
+      if (objectType === "data_definition" && e5.type && !isDdlType(e5.type)) return false;
+      return true;
+    });
+    const items = entries.map((e5) => ({
+      name: e5.name,
+      objectType: fromAdtType(e5.type) || objectType,
+      package: e5.package || packageName,
+      systemAlias: this.config.systemAlias,
+      adtType: e5.type || null
+    }));
+    items.sort((a5, b5) => a5.name.localeCompare(b5.name));
+    return { items: items.slice(0, max), warnings: [], next_cursor: null };
+  }
+  /**
+   * Fetch one object — data_definition / DDLS first.
+   */
+  async getObject({ objectType = "data_definition", name, includeInactive = false } = {}) {
+    if (!name) throw new SapConnectorError("name required", { code: "BAD_INPUT" });
+    if (!isCustomObjectName(name)) {
+      throw new SapConnectorError(`object ${name} is not Z*/Y* \u2014 SAP standard skipped`, { code: "NAMESPACE" });
+    }
+    if (includeInactive || this.config.includeInactive) {
+      throw new SapConnectorError("inactive versions require explicit future opt-in", { code: "INACTIVE" });
+    }
+    const ot = objectType || "data_definition";
+    if (ot !== "data_definition" && ot !== "ddls" && ot !== "DDLX" && ot !== "DDLS") {
+      return {
+        identity: {
+          systemAlias: this.config.systemAlias,
+          objectType: ot,
+          name: name.toUpperCase()
+        },
+        supported: false,
+        reason: `object type ${ot} not in vertical slice (data_definition/DDLS only)`,
+        source: null,
+        metadata: null
+      };
+    }
+    const enc = encodeURIComponent(name.toUpperCase());
+    const metaPath = `/sap/bc/adt/ddic/ddl/sources/${enc}`;
+    const sourcePath = `/sap/bc/adt/ddic/ddl/sources/${enc}/source/main`;
+    let metadataXml = "";
+    let packageName = "";
+    const warnings = [];
+    try {
+      const metaRes = await this.request("GET", metaPath, {
+        headers: { Accept: "application/vnd.sap.adt.ddl+xml, application/xml, */*" }
+      });
+      metadataXml = metaRes.bodyText || "";
+      packageName = /adtcore:packageName="([^"]+)"/i.exec(metadataXml)?.[1] || "";
+    } catch (e5) {
+      warnings.push(`metadata: ${e5.message}`);
+    }
+    const srcRes = await this.request("GET", sourcePath, {
+      headers: { Accept: "text/plain, text/*, */*" }
+    });
+    const source = normalizeLf(srcRes.bodyText || "");
+    return {
+      identity: {
+        systemAlias: this.config.systemAlias,
+        objectType: "data_definition",
+        name: name.toUpperCase(),
+        package: packageName || null
+      },
+      supported: true,
+      source,
+      metadata: {
+        package: packageName || null,
+        language: "EN",
+        active: true,
+        adtType: "DDLS/DF",
+        handler: "data_definition",
+        extractorVersion: this.config.extractorVersion
+      },
+      warnings,
+      rawMetadataXmlBytes: metadataXml.length
+    };
+  }
+  /**
+   * Best-effort static dependencies from DDL source text (no live where-used).
+   */
+  async getDependencies({ objectType = "data_definition", name, sourceText } = {}) {
+    let source = sourceText;
+    if (!source) {
+      const obj = await this.getObject({ objectType, name });
+      if (!obj.supported) {
+        return { identity: obj.identity, dependencies: [], external: [], warnings: [obj.reason] };
+      }
+      source = obj.source;
+    }
+    return extractDdlDependencies(source, name, this.config);
+  }
+  /**
+   * Low-level HTTPS request with Basic auth, sap-client, timeouts.
+   * Injected fetch enables mocked tests.
+   */
+  async request(method, urlPath, { headers = {}, body } = {}) {
+    if (!this.config.tlsVerify) {
+      throw new SapConnectorError("TLS verify must remain enabled", { code: "TLS" });
+    }
+    const url2 = new URL(urlPath.startsWith("http") ? urlPath : `${this.config.baseUrl}${urlPath}`);
+    if (url2.protocol !== "https:") {
+      throw new SapConnectorError("HTTPS only", { code: "TLS", path: urlPath });
+    }
+    if (!url2.searchParams.has("sap-client")) {
+      url2.searchParams.set("sap-client", this.config.sapClient);
+    }
+    const auth = Buffer.from(`${this.config.username}:${this.config.password}`, "utf8").toString("base64");
+    const reqHeaders = {
+      Authorization: `Basic ${auth}`,
+      "sap-client": this.config.sapClient,
+      ...headers
+    };
+    if (this._csrf) reqHeaders["x-csrf-token"] = this._csrf;
+    if (this._cookie) reqHeaders.Cookie = this._cookie;
+    const controller = new AbortController();
+    const timer2 = setTimeout(() => controller.abort(), this.config.requestTimeoutMs);
+    let res;
+    try {
+      res = await this.fetchFn(url2.toString(), {
+        method,
+        headers: reqHeaders,
+        body: body === void 0 ? void 0 : body,
+        signal: controller.signal,
+        redirect: "manual"
+      });
+    } catch (e5) {
+      clearTimeout(timer2);
+      if (e5.name === "AbortError") {
+        throw new SapConnectorError(`timeout after ${this.config.requestTimeoutMs}ms`, {
+          code: "TIMEOUT",
+          path: url2.pathname
+        });
+      }
+      throw new SapConnectorError(e5.message || "network error", { code: "NETWORK", path: url2.pathname });
+    }
+    clearTimeout(timer2);
+    const csrf = res.headers?.get?.("x-csrf-token");
+    if (csrf && csrf !== "Required") this._csrf = csrf;
+    const setCookie = res.headers?.get?.("set-cookie");
+    if (setCookie) this._cookie = setCookie.split(";")[0];
+    if (res.status === 403 && method !== "GET" && !headers["x-csrf-token"]) {
+      await this._fetchCsrf();
+      return this.request(method, urlPath, {
+        headers: { ...headers, "x-csrf-token": this._csrf || "Fetch" },
+        body
+      });
+    }
+    const bodyText = typeof res.text === "function" ? await res.text() : "";
+    if (res.status < 200 || res.status >= 300) {
+      throw new SapConnectorError(`HTTP ${res.status} for ${url2.pathname}`, {
+        status: res.status,
+        path: url2.pathname,
+        code: "HTTP"
+      });
+    }
+    return { status: res.status, bodyText, headers: res.headers };
+  }
+  async _fetchCsrf() {
+    const res = await this.request("GET", "/sap/bc/adt/discovery", {
+      headers: { "x-csrf-token": "Fetch", Accept: "application/xml, */*" }
+    });
+    return res;
+  }
+};
+function extractDdlDependencies(source, rootName, config2) {
+  const text = String(source || "");
+  const names = /* @__PURE__ */ new Set();
+  const patterns = [
+    /\bas\s+select\s+from\s+([\/A-Za-z_][\w\/]*)/gi,
+    /\bselect\s+from\s+([\/A-Za-z_][\w\/]*)/gi,
+    /\bassociation\b[^;]*?\bto\s+([\/A-Za-z_][\w\/]*)/gi,
+    /\bcomposition\b[^;]*?\bof\s+([\/A-Za-z_][\w\/]*)/gi,
+    /\bredirect\s+(?:to\s+)?(?:parent\s+)?([\/A-Za-z_][\w\/]*)/gi,
+    /\bextending\s+([\/A-Za-z_][\w\/]*)/gi,
+    /\bprovider\s+contract\s+\w+\s+view\s+entity\s+\w+\s+as\s+projection\s+on\s+([\/A-Za-z_][\w\/]*)/gi,
+    /\bas\s+projection\s+on\s+([\/A-Za-z_][\w\/]*)/gi
+  ];
+  for (const re of patterns) {
+    let m3;
+    while ((m3 = re.exec(text)) !== null) {
+      const n3 = m3[1].replace(/"/g, "").toUpperCase();
+      if (n3 && n3 !== String(rootName || "").toUpperCase()) names.add(n3);
+    }
+  }
+  const related = config2?.relatedObjectInclude || ["Z*", "Y*"];
+  const dependencies = [];
+  const external = [];
+  for (const n3 of [...names].sort()) {
+    const entry = {
+      name: n3,
+      objectType: "data_definition",
+      confidence: "static_ddl_parse"
+    };
+    if (isCustomObjectName(n3) && matchesNamespace(n3, related)) {
+      dependencies.push({ ...entry, inclusion: "related_custom" });
+    } else {
+      external.push({ ...entry, inclusion: "external_reference" });
+    }
+  }
+  return {
+    identity: {
+      systemAlias: config2?.systemAlias || "DEV",
+      objectType: "data_definition",
+      name: String(rootName || "").toUpperCase()
+    },
+    dependencies,
+    external,
+    warnings: [
+      "Dependencies are best-effort static parses of DDL text; dynamic references are not resolved."
+    ]
+  };
+}
+function toAdtType(objectType) {
+  const t = String(objectType || "").toLowerCase();
+  if (t === "data_definition" || t === "ddls") return "DDLS/DF";
+  if (t === "package") return "DEVC/K";
+  return null;
+}
+function fromAdtType(adtType) {
+  const t = String(adtType || "").toUpperCase();
+  if (t.startsWith("DDLS")) return "data_definition";
+  if (t.startsWith("DEVC")) return "package";
+  return null;
+}
+function isDdlType(adtType) {
+  return String(adtType || "").toUpperCase().startsWith("DDLS");
+}
+function normalizeLf(s2) {
+  return String(s2).replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+}
+
+// src/sap/envelope.mjs
+var import_node_crypto10 = require("node:crypto");
+function sapEnvelope(opts = {}) {
+  return {
+    ok: opts.ok !== false && !(opts.errors && opts.errors.length),
+    configured: opts.configured !== false,
+    data: opts.data ?? {},
+    warnings: Array.isArray(opts.warnings) ? opts.warnings : [],
+    errors: Array.isArray(opts.errors) ? opts.errors : [],
+    trace_id: opts.trace_id || (0, import_node_crypto10.randomUUID)()
+  };
+}
+function unconfiguredEnvelope(toolName, extra = {}) {
+  return sapEnvelope({
+    ok: false,
+    configured: false,
+    data: { tool: toolName, ...extra },
+    errors: [
+      "SAP ADT not configured. Set SAP_ADT_BASE_URL, SAP_ADT_USERNAME, SAP_ADT_PASSWORD, SAP_ADT_CLIENT (HTTPS DEV only)."
+    ]
+  });
+}
+function mcpFromEnvelope(envelope) {
+  const text = JSON.stringify(envelope, null, 2);
+  return {
+    content: [{ type: "text", text }],
+    structuredContent: envelope
+  };
+}
+
+// src/sap/paths.mjs
+var import_node_crypto11 = __toESM(require("node:crypto"), 1);
+var import_node_path8 = __toESM(require("node:path"), 1);
+var WIN_RESERVED = /^(CON|PRN|AUX|NUL|COM[1-9]|LPT[1-9])$/i;
+function normalizeObjectPathSegment(name) {
+  const raw = String(name || "").trim().toUpperCase();
+  if (!raw) throw new Error("empty object name");
+  if (raw.includes("..") || raw.includes("/") || raw.includes("\\") || raw.includes("\0")) {
+    throw new Error(`unsafe object name: ${name}`);
+  }
+  let seg = raw.replace(/[^A-Z0-9._-]/g, "_");
+  if (WIN_RESERVED.test(seg)) seg = `_${seg}`;
+  if (!seg) throw new Error(`object name normalized empty: ${name}`);
+  return seg;
+}
+function typeDir(objectType) {
+  const t = String(objectType || "unknown").toLowerCase().replace(/[^a-z0-9_]/g, "_");
+  return t || "unknown";
+}
+function objectDir(outputRoot, objectType, objectName) {
+  const root5 = import_node_path8.default.resolve(outputRoot);
+  const dir = import_node_path8.default.resolve(root5, "objects", typeDir(objectType), normalizeObjectPathSegment(objectName));
+  assertContained(root5, dir);
+  return dir;
+}
+function assertContained(root5, candidate) {
+  const r5 = import_node_path8.default.resolve(root5);
+  const c5 = import_node_path8.default.resolve(candidate);
+  const rel = import_node_path8.default.relative(r5, c5);
+  if (rel.startsWith("..") || import_node_path8.default.isAbsolute(rel)) {
+    throw new Error(`path escapes output root: ${candidate}`);
+  }
+  return c5;
+}
+function hashContent(text) {
+  const normalized = String(text).replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+  return {
+    text: normalized,
+    sha256: import_node_crypto11.default.createHash("sha256").update(normalized, "utf8").digest("hex")
+  };
+}
+function stableStringify(obj) {
+  return JSON.stringify(sortKeys(obj), null, 2) + "\n";
+}
+function sortKeys(value) {
+  if (Array.isArray(value)) return value.map(sortKeys);
+  if (value && typeof value === "object") {
+    const out = {};
+    for (const k5 of Object.keys(value).sort()) {
+      out[k5] = sortKeys(value[k5]);
+    }
+    return out;
+  }
+  return value;
+}
+
+// src/sap/snapshot.mjs
+var import_promises4 = __toESM(require("node:fs/promises"), 1);
+var import_node_path9 = __toESM(require("node:path"), 1);
+async function planExport(connector, config2, { packages, maxObjects = 100 } = {}) {
+  const warnings = [];
+  const roots = [];
+  const unsupported = [];
+  const skippedStandard = [];
+  let packageList = packages;
+  if (!packageList?.length) {
+    const listed = await connector.listPackages({ max: 50 });
+    warnings.push(...listed.warnings || []);
+    packageList = listed.items.map((p3) => p3.name);
+  }
+  for (const pkg of packageList) {
+    if (!matchesNamespace(pkg, config2.packageInclude)) {
+      warnings.push(`skip package ${pkg}: outside include`);
+      continue;
+    }
+    if (matchesNamespace(pkg, config2.packageExclude)) {
+      warnings.push(`skip package ${pkg}: excluded`);
+      continue;
+    }
+    const objs = await connector.listObjects({
+      packageName: pkg,
+      objectType: "data_definition",
+      max: maxObjects
+    });
+    for (const o3 of objs.items) {
+      if (!isCustomObjectName(o3.name)) {
+        skippedStandard.push({ name: o3.name, reason: "sap_standard" });
+        continue;
+      }
+      roots.push({
+        name: o3.name,
+        objectType: o3.objectType || "data_definition",
+        package: o3.package || pkg,
+        inclusionReason: "root-package"
+      });
+    }
+  }
+  roots.sort((a5, b5) => a5.name.localeCompare(b5.name));
+  return {
+    systemAlias: config2.systemAlias,
+    selection: {
+      packageInclude: config2.packageInclude,
+      packageExclude: config2.packageExclude,
+      relatedObjectInclude: config2.relatedObjectInclude,
+      objectTypeInclude: config2.objectTypeInclude,
+      dryRun: true
+    },
+    packages: packageList,
+    roots,
+    relatedPreview: [],
+    skippedStandard,
+    unsupported,
+    counts: {
+      packages: packageList.length,
+      roots: roots.length,
+      skippedStandard: skippedStandard.length
+    },
+    warnings
+  };
+}
+async function exportSnapshot(connector, config2, {
+  outputRoot,
+  packages,
+  objects,
+  maxObjects = 50
+} = {}) {
+  if (!config2.outputRoot) {
+    throw new Error("SAP_ADT_OUTPUT_ROOT must be configured before snapshot writes");
+  }
+  const configuredRoot = import_node_path9.default.resolve(config2.outputRoot);
+  const root5 = import_node_path9.default.resolve(outputRoot || configuredRoot);
+  assertContained(configuredRoot, root5);
+  await import_promises4.default.mkdir(root5, { recursive: true });
+  const plan = objects?.length ? {
+    roots: objects.map((o3) => ({
+      name: o3.name || o3,
+      objectType: o3.objectType || "data_definition",
+      package: o3.package || null,
+      inclusionReason: "explicit"
+    })),
+    warnings: [],
+    skippedStandard: [],
+    unsupported: []
+  } : await planExport(connector, config2, { packages, maxObjects });
+  const snapshotUtc = (/* @__PURE__ */ new Date()).toISOString();
+  const manifestObjects = [];
+  const externalDeps = [];
+  const failures = [];
+  const unsupported = [...plan.unsupported || []];
+  const warnings = [...plan.warnings || []];
+  let written = 0;
+  let skippedExisting = 0;
+  for (const rootObj of plan.roots.slice(0, maxObjects)) {
+    if (!isCustomObjectName(rootObj.name)) {
+      warnings.push(`skip ${rootObj.name}: not Z*/Y*`);
+      continue;
+    }
+    try {
+      const obj = await connector.getObject({
+        objectType: rootObj.objectType || "data_definition",
+        name: rootObj.name
+      });
+      if (!obj.supported) {
+        unsupported.push({
+          name: rootObj.name,
+          objectType: rootObj.objectType,
+          reason: obj.reason
+        });
+        continue;
+      }
+      const dir = objectDir(root5, "data_definition", obj.identity.name);
+      const sourcePath = import_node_path9.default.join(dir, "source.asddls");
+      const metaPath = import_node_path9.default.join(dir, "metadata.json");
+      const sourceHash = hashContent(obj.source || "");
+      const deps = extractDdlDependencies(obj.source, obj.identity.name, config2);
+      for (const e5 of deps.external) {
+        externalDeps.push({
+          from: obj.identity.name,
+          ...e5
+        });
+      }
+      const metadata = {
+        identity: obj.identity,
+        package: obj.metadata?.package || rootObj.package,
+        objectType: "data_definition",
+        language: obj.metadata?.language || "EN",
+        active: true,
+        inclusionReason: rootObj.inclusionReason || "root-package",
+        handler: "data_definition",
+        extractorVersion: config2.extractorVersion || EXTRACTOR_VERSION,
+        dependencies: deps.dependencies,
+        externalDependencies: deps.external,
+        files: {
+          source: "source.asddls",
+          metadata: "metadata.json"
+        },
+        hashes: {
+          source_sha256: sourceHash.sha256
+        },
+        warnings: obj.warnings || []
+      };
+      const metaHash = hashContent(stableStringify(metadata));
+      metadata.hashes.metadata_sha256 = metaHash.sha256;
+      const existsSource = await fileExists(sourcePath);
+      const existsMeta = await fileExists(metaPath);
+      if (existsSource || existsMeta) {
+        skippedExisting += 1;
+        manifestObjects.push({
+          ...metadata,
+          writeStatus: "skipped_exists"
+        });
+        continue;
+      }
+      await import_promises4.default.mkdir(dir, { recursive: true });
+      await import_promises4.default.writeFile(sourcePath, sourceHash.text, "utf8");
+      const metadataForWrite = {
+        ...metadata,
+        hashes: {
+          source_sha256: sourceHash.sha256
+        }
+      };
+      const metaBody = hashContent(stableStringify(metadataForWrite));
+      metadataForWrite.hashes.metadata_sha256 = metaBody.sha256;
+      const fileMeta = {
+        identity: metadataForWrite.identity,
+        package: metadataForWrite.package,
+        objectType: metadataForWrite.objectType,
+        language: metadataForWrite.language,
+        active: metadataForWrite.active,
+        inclusionReason: metadataForWrite.inclusionReason,
+        handler: metadataForWrite.handler,
+        extractorVersion: metadataForWrite.extractorVersion,
+        dependencies: metadataForWrite.dependencies,
+        externalDependencies: metadataForWrite.externalDependencies,
+        files: metadataForWrite.files,
+        hashes: { source_sha256: sourceHash.sha256 },
+        warnings: metadataForWrite.warnings
+      };
+      const fileMetaBody = hashContent(stableStringify(fileMeta));
+      await import_promises4.default.writeFile(metaPath, fileMetaBody.text, "utf8");
+      written += 1;
+      manifestObjects.push({
+        ...fileMeta,
+        hashes: {
+          source_sha256: sourceHash.sha256,
+          metadata_sha256: fileMetaBody.sha256
+        },
+        writeStatus: "written"
+      });
+    } catch (e5) {
+      failures.push({
+        name: rootObj.name,
+        objectType: rootObj.objectType,
+        error: e5.message
+      });
+    }
+  }
+  manifestObjects.sort(
+    (a5, b5) => String(a5.identity?.name || "").localeCompare(String(b5.identity?.name || ""))
+  );
+  externalDeps.sort(
+    (a5, b5) => `${a5.from}:${a5.name}`.localeCompare(`${b5.from}:${b5.name}`)
+  );
+  const manifest = {
+    schema_version: 1,
+    extractor_version: config2.extractorVersion || EXTRACTOR_VERSION,
+    system_alias: config2.systemAlias,
+    snapshot_utc: snapshotUtc,
+    selection: {
+      packageInclude: config2.packageInclude,
+      relatedObjectInclude: config2.relatedObjectInclude,
+      objectTypeInclude: ["data_definition"],
+      outputRoot: root5
+    },
+    objects: manifestObjects,
+    external_dependencies: externalDeps,
+    unsupported,
+    failures,
+    skipped_standard: plan.skippedStandard || [],
+    counts: {
+      written,
+      skipped_existing: skippedExisting,
+      failed: failures.length,
+      unsupported: unsupported.length
+    }
+  };
+  const manifestPath = import_node_path9.default.join(root5, "manifest.json");
+  await import_promises4.default.writeFile(manifestPath, stableStringify(manifest), "utf8");
+  return {
+    outputRoot: root5,
+    manifestPath,
+    counts: manifest.counts,
+    warnings,
+    manifest
+  };
+}
+async function diffSnapshots(leftRoot, rightRoot) {
+  const left = await readManifest(leftRoot);
+  const right = await readManifest(rightRoot);
+  const leftMap = indexByName(left.objects || []);
+  const rightMap = indexByName(right.objects || []);
+  const names = /* @__PURE__ */ new Set([...leftMap.keys(), ...rightMap.keys()]);
+  const added = [];
+  const removed = [];
+  const changed = [];
+  const same = [];
+  for (const name of [...names].sort()) {
+    const L = leftMap.get(name);
+    const R = rightMap.get(name);
+    if (L && !R) removed.push(name);
+    else if (!L && R) added.push(name);
+    else {
+      const lh = L.hashes?.source_sha256;
+      const rh = R.hashes?.source_sha256;
+      if (lh !== rh) changed.push({ name, left: lh, right: rh });
+      else same.push(name);
+    }
+  }
+  return {
+    left: { root: import_node_path9.default.resolve(leftRoot), snapshot_utc: left.snapshot_utc, objects: leftMap.size },
+    right: { root: import_node_path9.default.resolve(rightRoot), snapshot_utc: right.snapshot_utc, objects: rightMap.size },
+    added,
+    removed,
+    changed,
+    same_count: same.length
+  };
+}
+async function readManifest(root5) {
+  const p3 = import_node_path9.default.join(import_node_path9.default.resolve(root5), "manifest.json");
+  const raw = await import_promises4.default.readFile(p3, "utf8");
+  return JSON.parse(raw);
+}
+function indexByName(objects) {
+  const m3 = /* @__PURE__ */ new Map();
+  for (const o3 of objects) {
+    const name = o3.identity?.name || o3.name;
+    if (name) m3.set(String(name).toUpperCase(), o3);
+  }
+  return m3;
+}
+async function fileExists(p3) {
+  try {
+    await import_promises4.default.access(p3);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+// src/sap/tools.mjs
+var envelopeSchema = external_exports.object({
+  ok: external_exports.boolean(),
+  configured: external_exports.boolean(),
+  data: external_exports.record(external_exports.string(), external_exports.unknown()),
+  warnings: external_exports.array(external_exports.string()),
+  errors: external_exports.array(external_exports.string()),
+  trace_id: external_exports.string()
+});
+function registerSapTools(server, deps = {}) {
+  const env2 = deps.env || process.env;
+  let cachedConfig = null;
+  let configError = null;
+  try {
+    cachedConfig = loadSapConfig(env2);
+    if (cachedConfig.configured) {
+      logInfo("SAP ADT tools enabled", describeSapConfig(cachedConfig));
+    }
+  } catch (e5) {
+    configError = e5;
+    logWarn("SAP ADT config rejected", { err: e5.message });
+  }
+  function getConfig() {
+    if (configError) {
+      return { kind: "invalid", error: configError };
+    }
+    if (!cachedConfig?.configured) {
+      return { kind: "unconfigured" };
+    }
+    return { kind: "ok", config: cachedConfig };
+  }
+  function connectorFor(config2) {
+    return createConnector(config2, { fetch: deps.fetch });
+  }
+  async function withConnector(toolName, fn) {
+    const state2 = getConfig();
+    if (state2.kind === "unconfigured") {
+      return mcpFromEnvelope(unconfiguredEnvelope(toolName));
+    }
+    if (state2.kind === "invalid") {
+      return mcpFromEnvelope(
+        sapEnvelope({
+          ok: false,
+          configured: false,
+          data: { tool: toolName },
+          errors: state2.error.details || [state2.error.message]
+        })
+      );
+    }
+    try {
+      const connector = connectorFor(state2.config);
+      const data = await fn(connector, state2.config);
+      return mcpFromEnvelope(
+        sapEnvelope({
+          ok: true,
+          configured: true,
+          data: { ...data, systemAlias: state2.config.systemAlias },
+          warnings: data.warnings || []
+        })
+      );
+    } catch (e5) {
+      const msg = e5 instanceof SapConnectorError ? e5.message : e5.message || String(e5);
+      return mcpFromEnvelope(
+        sapEnvelope({
+          ok: false,
+          configured: true,
+          data: { tool: toolName },
+          errors: [msg],
+          warnings: []
+        })
+      );
+    }
+  }
+  const sapNote = "Optional SAP DEV ADT read-only slice (C3). When SAP_ADT_* env is unset, returns configured=false. Never PRD. Only Z*/Y* custom objects. No table/row reads. Snapshots write under SAP_ADT_OUTPUT_ROOT (operator allowlist required) \u2014 not overlays/private markdown views. Promote to private overlay manually after review.";
+  server.registerTool(
+    "sap_connection_test",
+    {
+      title: "SAP ADT connection test",
+      description: `${sapNote} Probe ADT discovery on the configured DEV system.`,
+      inputSchema: {},
+      outputSchema: envelopeSchema
+    },
+    async () => withConnector("sap_connection_test", async (connector) => {
+      const result = await connector.testConnection();
+      return { connection: result, warnings: [] };
+    })
+  );
+  server.registerTool(
+    "sap_list_packages",
+    {
+      title: "List SAP packages (Z*/Y*)",
+      description: `${sapNote} List custom packages matching configured include patterns.`,
+      inputSchema: {
+        max: external_exports.number().int().min(1).max(500).optional().describe("Max packages (default 100)")
+      },
+      outputSchema: envelopeSchema
+    },
+    async ({ max = 100 } = {}) => withConnector("sap_list_packages", async (connector) => {
+      const result = await connector.listPackages({ max });
+      return { items: result.items, next_cursor: result.next_cursor, warnings: result.warnings };
+    })
+  );
+  server.registerTool(
+    "sap_list_objects",
+    {
+      title: "List SAP objects in package",
+      description: `${sapNote} List data_definition (DDLS) objects in a Z*/Y* package.`,
+      inputSchema: {
+        packageName: external_exports.string().describe("Package name, e.g. ZSD_CUSTOM"),
+        objectType: external_exports.string().optional().describe("Default data_definition"),
+        max: external_exports.number().int().min(1).max(500).optional()
+      },
+      outputSchema: envelopeSchema
+    },
+    async ({ packageName, objectType = "data_definition", max = 200 }) => withConnector("sap_list_objects", async (connector) => {
+      const result = await connector.listObjects({ packageName, objectType, max });
+      return { items: result.items, next_cursor: result.next_cursor, warnings: result.warnings };
+    })
+  );
+  server.registerTool(
+    "sap_get_object",
+    {
+      title: "Get SAP repository object",
+      description: `${sapNote} Fetch one custom object source \u2014 data_definition/DDLS first.`,
+      inputSchema: {
+        name: external_exports.string().describe("Object name, e.g. ZI_MyView"),
+        objectType: external_exports.string().optional().describe("Default data_definition")
+      },
+      outputSchema: envelopeSchema
+    },
+    async ({ name, objectType = "data_definition" }) => withConnector("sap_get_object", async (connector) => {
+      const obj = await connector.getObject({ name, objectType });
+      return { object: obj, warnings: obj.warnings || [] };
+    })
+  );
+  server.registerTool(
+    "sap_get_dependencies",
+    {
+      title: "Get static DDL dependencies",
+      description: `${sapNote} Best-effort static dependency names from DDL; SAP-standard refs are external.`,
+      inputSchema: {
+        name: external_exports.string().describe("Root object name"),
+        objectType: external_exports.string().optional().describe("Default data_definition")
+      },
+      outputSchema: envelopeSchema
+    },
+    async ({ name, objectType = "data_definition" }) => withConnector("sap_get_dependencies", async (connector) => {
+      const deps2 = await connector.getDependencies({ name, objectType });
+      return { ...deps2 };
+    })
+  );
+  server.registerTool(
+    "sap_plan_export",
+    {
+      title: "Plan SAP export (dry-run)",
+      description: `${sapNote} Dry-run only \u2014 lists Z*/Y* roots that would be exported; no filesystem writes.`,
+      inputSchema: {
+        packages: external_exports.array(external_exports.string()).optional().describe("Optional package list; otherwise discover"),
+        maxObjects: external_exports.number().int().min(1).max(500).optional()
+      },
+      outputSchema: envelopeSchema
+    },
+    async ({ packages, maxObjects = 100 } = {}) => withConnector("sap_plan_export", async (connector, config2) => {
+      const plan = await planExport(connector, config2, { packages, maxObjects });
+      return { plan, warnings: plan.warnings };
+    })
+  );
+  server.registerTool(
+    "sap_export_snapshot",
+    {
+      title: "Export SAP snapshot (local)",
+      description: `${sapNote} Write deterministic source+metadata+manifest under output root. Skip-if-exists (no overwrite). Does not write overlays/private view markdown. Requires explicit outputRoot or configured SAP_ADT_OUTPUT_ROOT.`,
+      inputSchema: {
+        outputRoot: external_exports.string().optional().describe("Absolute or relative output root (must stay under configured root unless equal)"),
+        packages: external_exports.array(external_exports.string()).optional(),
+        objects: external_exports.array(external_exports.object({ name: external_exports.string(), objectType: external_exports.string().optional(), package: external_exports.string().optional() })).optional(),
+        maxObjects: external_exports.number().int().min(1).max(200).optional()
+      },
+      outputSchema: envelopeSchema
+    },
+    async ({ outputRoot, packages, objects, maxObjects = 50 } = {}) => withConnector("sap_export_snapshot", async (connector, config2) => {
+      if (!config2.outputRoot) {
+        throw new SapConnectorError(
+          "SAP_ADT_OUTPUT_ROOT must be configured before snapshot writes",
+          { code: "OUTPUT_ROOT_REQUIRED" }
+        );
+      }
+      const configuredRoot = import_node_path10.default.resolve(config2.outputRoot);
+      const target = import_node_path10.default.resolve(outputRoot || configuredRoot);
+      assertContained(configuredRoot, target);
+      const result = await exportSnapshot(connector, config2, {
+        outputRoot: target,
+        packages,
+        objects,
+        maxObjects
+      });
+      return {
+        outputRoot: result.outputRoot,
+        manifestPath: result.manifestPath,
+        counts: result.counts,
+        promotion: "Review files under output root, then manually create private overlay markdown / propose via compose_query or generate_cds_view \u2014 never auto-merge.",
+        warnings: result.warnings
+      };
+    })
+  );
+  server.registerTool(
+    "sap_diff_snapshot",
+    {
+      title: "Diff two SAP snapshots",
+      description: `${sapNote} Compare manifest source hashes between two local snapshot roots.`,
+      inputSchema: {
+        leftRoot: external_exports.string().describe("Left snapshot directory (contains manifest.json)"),
+        rightRoot: external_exports.string().describe("Right snapshot directory")
+      },
+      outputSchema: envelopeSchema
+    },
+    async ({ leftRoot, rightRoot }) => {
+      const state2 = getConfig();
+      try {
+        const diff = await diffSnapshots(leftRoot, rightRoot);
+        return mcpFromEnvelope(
+          sapEnvelope({
+            ok: true,
+            configured: state2.kind === "ok",
+            data: { diff },
+            warnings: state2.kind === "ok" ? [] : ["SAP ADT env unset \u2014 diff is local filesystem only"]
+          })
+        );
+      } catch (e5) {
+        return mcpFromEnvelope(
+          sapEnvelope({
+            ok: false,
+            configured: state2.kind === "ok",
+            data: { tool: "sap_diff_snapshot" },
+            errors: [e5.message]
+          })
+        );
+      }
+    }
+  );
+  return {
+    getConfigState: getConfig,
+    describe: () => {
+      const s2 = getConfig();
+      if (s2.kind === "ok") return describeSapConfig(s2.config);
+      if (s2.kind === "invalid") return { configured: false, error: s2.error.message };
+      return { configured: false };
+    }
   };
 }
 
@@ -191710,18 +193046,30 @@ async function rankedSearch(query, { filter, limit = 10, searchMode = "bm25" } =
   if (wantHybrid && embeddingsData?.vectors && results.length > 0) {
     const qVec = await embedQueryText(query);
     if (qVec) {
-      const scores = results.map((r5) => r5.score);
-      const maxS = Math.max(...scores, 1e-9);
-      const minS = Math.min(...scores);
-      const span = Math.max(maxS - minS, 1e-9);
-      results = results.map((r5) => {
-        const name = String(r5.name || "").toUpperCase();
-        const vec = embeddingsData.vectors[name] || embeddingsData.vectors[r5.name];
-        const cos = vec ? cosineSimilarity(qVec, vec) : 0;
-        const normBm25 = (r5.score - minS) / span;
-        const hybrid = 0.6 * normBm25 + 0.4 * cos;
-        return { ...r5, score: hybrid * maxS, _hybrid: hybrid, _cos: cos };
-      }).sort((a5, b5) => b5.score - a5.score);
+      const getVec = (name) => {
+        const n3 = String(name || "");
+        return embeddingsData.vectors[n3.toUpperCase()] || embeddingsData.vectors[n3] || null;
+      };
+      const bm25List = results;
+      const vectorList = rankByCosine(bm25List, qVec, getVec, cosineSimilarity);
+      if (vectorList.length > 0) {
+        const maxBm25 = Math.max(...bm25List.map((r5) => r5.score), 1e-9);
+        const cosByName = new Map(
+          vectorList.map((v) => [String(v.name || "").toUpperCase(), v._cos])
+        );
+        const fused = reciprocalRankFusion([bm25List, vectorList], {
+          getId: (r5) => String(r5.name || "").toUpperCase()
+        });
+        const maxRrf = Math.max(...fused.map((r5) => r5._rrf), 1e-9);
+        results = fused.map((r5) => {
+          const key = String(r5.name || "").toUpperCase();
+          return {
+            ...r5,
+            score: r5._rrf / maxRrf * maxBm25,
+            _cos: cosByName.get(key)
+          };
+        });
+      }
     }
   }
   return results.slice(0, limit);
@@ -191788,7 +193136,7 @@ async function loadIndex() {
   }
   usageStatsConfigured = [...docsByName.values()].some((d5) => (d5?.usageCount || 0) > 0);
   if (!usageStatsConfigured && ds.root) {
-    usageStatsConfigured = (0, import_node_fs4.existsSync)(import_node_path7.default.join(ds.root, "index", "usage-stats.json"));
+    usageStatsConfigured = (0, import_node_fs4.existsSync)(import_node_path11.default.join(ds.root, "index", "usage-stats.json"));
   }
 }
 function refreshIndexPeriodically(intervalMs) {
@@ -191806,7 +193154,8 @@ function refreshIndexPeriodically(intervalMs) {
   }, intervalMs);
 }
 var SERVER_VERSION = "2.4.0";
-var SERVER_INSTRUCTIONS = `This is cds-kb-mcp v${SERVER_VERSION}, built by StormShyn. The first time you use a tool from this server in a conversation, briefly mention to the user (in your own words, one short sentence) that you are using the cds-kb-mcp SAP CDS knowledge base, built by StormShyn. Do not repeat this mention on later tool calls in the same conversation.`;
+var SERVER_INSTRUCTIONS = `This is cds-kb-mcp v${SERVER_VERSION}, built by StormShyn. The first time you use a tool from this server in a conversation, briefly mention to the user (in your own words, one short sentence) that you are using the cds-kb-mcp SAP CDS knowledge base, built by StormShyn. Do not repeat this mention on later tool calls in the same conversation. Optional sap_* tools are DEV ADT read-only (Z*/Y* only); when SAP_ADT_* is unset they return configured=false and the KB stays dataless.`;
+var sapToolsDescribe = () => ({ configured: false });
 function buildKbInfo() {
   return {
     source: ds.describe(),
@@ -191822,6 +193171,7 @@ function buildKbInfo() {
     embeddings: embeddingsData?.vectors ? "yes" : "no",
     usageEndpoint: (process.env.CDS_KB_USAGE_ENDPOINT || "").trim() ? "set" : "unset",
     usageStatsConfigured: usageStatsConfigured ? "yes" : "no",
+    sapAdt: sapToolsDescribe(),
     modules: Object.keys(moduleStats).length,
     builtAt: meta3.builtAt ?? "",
     commit: meta3.commit ? meta3.commit.slice(0, 8) : ""
@@ -191836,7 +193186,7 @@ function createServer() {
     "search_cds",
     {
       title: "Search SAP CDS views",
-      description: 'Search SAP S/4HANA released CDS views by business meaning / name / tags. Returns a ranked shortlist (name + path + description). Use this INSTEAD of grepping or reading routers, then call get_cds_view to read one. Optionally filter by module (FI, SD, MM... or natural names like "Finance", "Procurement"), lob, or bo. Optional RAP filters: accessControl, vdmViewType, hasDdl, sourceKind. search_mode=hybrid re-ranks BM25 with embeddings when available (local ONNX model by default, optional remote API via CDS_KB_EMBED_API_KEY). IMPORTANT for S/4HANA Cloud Developer Extensibility (custom ABAP CDS views): each result\'s devExtStatus (SAP\'s ReleaseStateDeveloperExtensibility) is the ONLY field here that answers "can I `association to`/`select from` this entity in a custom Developer Extensibility CDS view" \u2014 a view being "released" in general (returned by this search at all) does NOT imply devExtStatus is "released" too; they are independent. devExtStatus null means this KB has no signal either way \u2014 verify with the ADT compiler/content-assist before using such a view in a Developer Extensibility DDL. atcState/atcSuccessor are a THIRD, independent signal from SAP\'s own ABAP Cloud released-objects list \u2014 when atcState is "deprecated" or "notToBeReleased", atcSuccessor (if set) names the concrete replacement view.',
+      description: 'Search SAP S/4HANA released CDS views by business meaning / name / tags. Returns a ranked shortlist (name + path + description). Use this INSTEAD of grepping or reading routers, then call get_cds_view to read one. Optionally filter by module (FI, SD, MM... or natural names like "Finance", "Procurement"), lob, or bo. Optional RAP filters: accessControl, vdmViewType, hasDdl, sourceKind. search_mode=hybrid fuses BM25 + embedding ranks via Reciprocal Rank Fusion when embeddings are available (local ONNX model by default, optional remote API via CDS_KB_EMBED_API_KEY; falls back to BM25 if embeddings are missing). IMPORTANT for S/4HANA Cloud Developer Extensibility (custom ABAP CDS views): each result\'s devExtStatus (SAP\'s ReleaseStateDeveloperExtensibility) is the ONLY field here that answers "can I `association to`/`select from` this entity in a custom Developer Extensibility CDS view" \u2014 a view being "released" in general (returned by this search at all) does NOT imply devExtStatus is "released" too; they are independent. devExtStatus null means this KB has no signal either way \u2014 verify with the ADT compiler/content-assist before using such a view in a Developer Extensibility DDL. atcState/atcSuccessor are a THIRD, independent signal from SAP\'s own ABAP Cloud released-objects list \u2014 when atcState is "deprecated" or "notToBeReleased", atcSuccessor (if set) names the concrete replacement view.',
       inputSchema: {
         query: external_exports.string().describe('Natural-language or keyword query, e.g. "overdue customer invoices"'),
         module: external_exports.string().optional().describe('Module filter \u2014 code (FI, SD, MM) or name ("Finance", "Procurement")'),
@@ -191852,7 +193202,7 @@ function createServer() {
         atcState: external_exports.enum(["released", "deprecated", "notToBeReleased"]).optional().describe(
           "Filter by SAP's ABAP Cloud released-objects (ATC/Clean Core) state \u2014 a third, independent signal."
         ),
-        search_mode: external_exports.enum(["bm25", "hybrid"]).optional().describe("bm25 (default) or hybrid (BM25 + embeddings when available)"),
+        search_mode: external_exports.enum(["bm25", "hybrid"]).optional().describe("bm25 (default) or hybrid (RRF over BM25 + embeddings when available)"),
         limit: external_exports.number().int().min(1).max(50).optional().describe("Max results (default 10)")
       },
       outputSchema: external_exports.object({
@@ -192231,6 +193581,7 @@ Use get_cds_view(name) to read any of these.` }],
         embeddings: external_exports.string(),
         usageEndpoint: external_exports.string(),
         usageStatsConfigured: external_exports.string(),
+        sapAdt: external_exports.record(external_exports.string(), external_exports.unknown()),
         modules: external_exports.number(),
         builtAt: external_exports.string(),
         commit: external_exports.string()
@@ -192253,6 +193604,7 @@ withAccessControl: ${info.withAccessControl}
 embeddings: ${info.embeddings}
 usageEndpoint: ${info.usageEndpoint}
 usageStatsConfigured: ${info.usageStatsConfigured}
+sapAdt: ${JSON.stringify(info.sapAdt)}
 modules: ${info.modules}
 builtAt: ${info.builtAt}
 commit: ${info.commit}`
@@ -192265,7 +193617,7 @@ commit: ${info.commit}`
     "suggest_base_views",
     {
       title: "Suggest base CDS views for a new query",
-      description: "Recommend concrete (non-abstract) CDS views to use as the FROM base when composing a new view. Uses the same ranking as search_cds, then filters out abstract entities and unverified entries. Prefer these over inventing a base name. Next: compose_query or generate_cds_view.",
+      description: "Recommend concrete (non-abstract) CDS views to use as the FROM base when composing a new view. Library-first: prefer search_query_library for the same intent before calling this. Uses the same ranking as search_cds, then filters out abstract entities and unverified entries. Prefer these over inventing a base name. Next: compose_query or generate_cds_view.",
       inputSchema: {
         query: external_exports.string().describe("Business intent or keywords for the base view"),
         module: external_exports.string().optional().describe('Module filter \u2014 code (FI, SD, MM) or name ("Finance", "Procurement")'),
@@ -192387,7 +193739,7 @@ Next: compose_query or generate_cds_view with views[0].name = the pick above.`
     "compose_query",
     {
       title: "Compose OpenSQL + CDS view skeleton",
-      description: `Build OpenSQL SELECT and a CDS define view entity skeleton from a structured query object (same shape as the Query Builder share JSON: views[], select, where, groupBy, having, orderBy, viewName). Warns when any views[].name is SAP-confirmed "Not Released" for Developer Extensibility (would fail ADT activation in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view), has no such signal in this KB, or is deprecated/notToBeReleased on SAP's own ABAP Cloud released-objects list (names a successor when SAP does).`,
+      description: `Build OpenSQL SELECT and a CDS define view entity skeleton from a structured query object (same shape as the Query Builder share JSON: views[], select, where, groupBy, having, orderBy, viewName). Library-first: when starting from a business intent, call search_query_library first and reuse a hit's views[]/select/where here before inventing a new shape via search_cds / suggest_base_views. Warns when any views[].name is SAP-confirmed "Not Released" for Developer Extensibility (would fail ADT activation in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view), has no such signal in this KB, or is deprecated/notToBeReleased on SAP's own ABAP Cloud released-objects list (names a successor when SAP does).`,
       inputSchema: {
         views: external_exports.array(external_exports.object({
           alias: external_exports.string().optional(),
@@ -192413,6 +193765,7 @@ Next: compose_query or generate_cds_view with views[0].name = the pick above.`
     },
     async (args) => {
       const result = composeQuery(args);
+      recordQueryShape(args);
       const warnings = [...releaseSignalWarnings(args), ...result.warnings];
       const parts = [];
       if (warnings.length) parts.push("## Warnings\n" + warnings.map((w) => `- ${w}`).join("\n"));
@@ -192515,7 +193868,7 @@ ${result.diagnostics.map((d5) => `- ${d5}`).join("\n")}` : "diagnostics: (none)"
     "propose_query_library_entry",
     {
       title: "Propose a query-library.json entry",
-      description: "Build a JSON snippet + markdown PR body for adding a saved query to index/query-library.json. If GITHUB_TOKEN and CDS_KB_PROPOSE_REPO (owner/name) are set, opens a draft PR on a propose/query-* branch. Never merges.",
+      description: "Build a JSON snippet + markdown PR body for adding a saved query to docs/product/cds_kb_data/index/query-library.json. If GITHUB_TOKEN and CDS_KB_PROPOSE_REPO (owner/name) are set, opens a draft PR on a propose/query-* branch (file path override: CDS_KB_PROPOSE_PATH). Never merges.",
       inputSchema: {
         title: external_exports.string().describe("Short title for the saved query"),
         description: external_exports.string().optional(),
@@ -192544,9 +193897,10 @@ ${result.diagnostics.map((d5) => `- ${d5}`).join("\n")}` : "diagnostics: (none)"
       })
     },
     async (args) => {
+      recordQueryShape(args);
       const result = await proposeQueryLibraryEntry(args);
       const parts = [
-        "## JSON snippet for index/query-library.json",
+        "## JSON snippet for docs/product/cds_kb_data/index/query-library.json",
         "```json",
         result.jsonSnippet,
         "```",
@@ -192568,7 +193922,7 @@ GitHub propose failed (local snippet still valid): ${result.error}`);
     "search_query_library",
     {
       title: "Search the shared query library",
-      description: "Find a saved/reusable query in index/query-library.json by title, description, target CDS view name, or generated view name. Entries are curated, PR-reviewed saved queries (propose_query_library_entry produces the snippet + draft PR to add one). Use this to reuse a known-good query shape instead of composing from scratch: take a result's views[]/select/where into compose_query or generate_cds_view.",
+      description: "Find a saved/reusable query in index/query-library.json by title, description, target CDS view name, or generated view name. Entries are curated, PR-reviewed saved queries (propose_query_library_entry produces the snippet + draft PR to add one). Library-first: call this BEFORE search_cds / suggest_base_views when composing from a business intent; on a hit, take views[]/select/where into compose_query or generate_cds_view. On a miss, fall back to open search.",
       inputSchema: {
         query: external_exports.string().describe("Search text \u2014 title words, CDS view name, or business intent"),
         limit: external_exports.number().int().min(1).max(50).optional().describe("Max results (default 10)")
@@ -192760,16 +194114,19 @@ Use get_cds_view(name) to read any of these.` }],
     "compose_query",
     {
       title: "Compose a CDS query",
-      description: "Turn a business question into the suggest_base_views -> compose_query -> generate_cds_view -> validate_cds_ddl workflow.",
+      description: "Turn a business question into a library-first workflow: search_query_library \u2192 (on miss) suggest_base_views / search_cds \u2192 compose_query \u2192 generate_cds_view \u2192 validate_cds_ddl.",
       argsSchema: {
         intent: external_exports.string().describe('Business intent, e.g. "overdue customer invoices"'),
-        baseView: external_exports.string().optional().describe("Optional concrete base view; else one is suggested first")
+        baseView: external_exports.string().optional().describe("Optional concrete base view; else library hit or suggest_base_views first")
       }
     },
     ({ intent, baseView }) => ({
       messages: [{
         role: "user",
-        content: { type: "text", text: `Compose a CDS view for: "${intent}"${baseView ? ` using ${baseView} as the base view.` : " \u2014 first call suggest_base_views to pick a base view."} Then generate_cds_view and validate_cds_ddl the result.` }
+        content: {
+          type: "text",
+          text: `Compose a CDS view for: "${intent}". ` + (baseView ? `Prefer base view ${baseView} if it fits. ` : "") + "Library-first: call search_query_library with the intent first. If there is a strong hit, reuse its views[]/select/where/orderBy (adapt lightly) via compose_query \u2014 do not invent a new shape. Only on a library miss, call suggest_base_views (or search_cds) to pick a base view, then compose_query. Then generate_cds_view and validate_cds_ddl the result."
+        }
       }]
     })
   );
@@ -192789,6 +194146,8 @@ ${ddl}` }
       }]
     })
   );
+  const sapReg = registerSapTools(server);
+  sapToolsDescribe = () => sapReg.describe();
   return server;
 }
 async function main() {

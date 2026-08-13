@@ -1,6 +1,21 @@
 ---
 name: D_COSTESTGETBRKDWNBYCOMPVIEWR
 description: "D Costestgetbrkdwnbycompviewr"
+semantic_vi: "View D_COSTESTGETBRKDWNBYCOMPVIEWR cung cấp ước tính chi phí được phân chia theo công ty và khu vực kiểm soát tài chính, hữu ích cho kế hoạch tài chính và phân tích."
+keywords:
+  - "cost estimate"
+  - "ước tính chi phí"
+  - "company"
+  - "công ty"
+  - "controlling area"
+  - "khu vực kiểm soát tài chính"
+  - "financial planning"
+  - "kế hoạch tài chính"
+  - "analysis"
+  - "phân tích"
+  - "sap controlling"
+  - "sap controlling area"
+semantic_en: "The D_COSTESTGETBRKDWNBYCOMPVIEWR view provides cost estimates broken down by company and controlling area, useful for financial planning and analysis."
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released

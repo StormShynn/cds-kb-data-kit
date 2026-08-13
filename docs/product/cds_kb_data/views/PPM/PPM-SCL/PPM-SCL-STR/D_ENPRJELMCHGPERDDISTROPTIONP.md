@@ -1,6 +1,19 @@
 ---
 name: D_ENPRJELMCHGPERDDISTROPTIONP
 description: "D Enprjelmchgperddistroptionp"
+semantic_vi: "View này hiển thị các tùy chọn phân phối phần tử dự án cho các thay đổi dự án, có thể được sử dụng để lập kế hoạch và quản lý các thay đổi dự án và các phần tử liên quan."
+keywords:
+  - "project change"
+  - "phân phối phần tử dự án"
+  - "thay đổi dự án"
+  - "project element"
+  - "dự án"
+  - "phần tử dự án"
+  - "planning"
+  - "quản lý"
+  - "ppm"
+  - "ppm-scl-str"
+semantic_en: "This view exposes project element distribution options for project changes, which can be used to plan and manage project changes and their associated elements."
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

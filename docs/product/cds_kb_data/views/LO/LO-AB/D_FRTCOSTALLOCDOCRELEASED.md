@@ -1,6 +1,20 @@
 ---
 name: D_FRTCOSTALLOCDOCRELEASED
 description: "D Frtcostallocdocreleased"
+semantic_vi: "View này hiển thị các phân bổ tài khoản thanh toán cho các tài liệu đã phát hành trong thành phần Logistics General, được sử dụng để phân tích và báo cáo về quá trình thanh toán."
+keywords:
+  - "settlement document"
+  - "phân bổ tài khoản thanh toán"
+  - "tài liệu đã phát hành"
+  - "thành phần logistics general"
+  - "quá trình thanh toán"
+  - "phân tích"
+  - "báo cáo"
+  - "lo-ab"
+  - "lease"
+  - "component:lo-ab"
+  - "lob:logistics general"
+semantic_en: "This view exposes settlement document allocations for released documents in the Logistics General component, used to analyze and report on settlement processes."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

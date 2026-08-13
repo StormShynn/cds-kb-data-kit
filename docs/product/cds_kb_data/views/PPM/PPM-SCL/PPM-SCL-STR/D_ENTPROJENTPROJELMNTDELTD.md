@@ -1,6 +1,17 @@
 ---
 name: D_ENTPROJENTPROJELMNTDELTD
 description: "D Entprojentprojelmntdeltd"
+semantic_vi: "View này hiển thị dữ liệu xóa phần tử dự án cho quản lý dự án trong thành phần PPM-SCL-STR. Nó được sử dụng để lấy thông tin về các phần tử dự án đã bị xóa."
+keywords:
+  - "project element"
+  - "project management"
+  - "ppm-scl-str"
+  - "project deletion"
+  - "dự án"
+  - "phần tử dự án"
+  - "quản lý dự án"
+  - "xóa dự án"
+semantic_en: "This view exposes project element deletion data for project management in the PPM-SCL-STR component. It is used to retrieve information about deleted project elements."
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

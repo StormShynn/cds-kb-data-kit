@@ -1,6 +1,18 @@
 ---
 name: D_EQUIPMENTINSTALLATIONP
 description: "D Equipmentinstallationp"
+semantic_vi: "View D_EQUIPMENTINSTALLATIONP hiển thị dữ liệu lắp đặt thiết bị, bao gồm thiết bị trên cùng, vị trí chức năng và chi tiết lắp đặt. Nó được sử dụng để truy cập và quản lý thông tin lắp đặt thiết bị."
+keywords:
+  - "equipment installation"
+  - "dụng cụ lắp đặt"
+  - "equipment"
+  - "thiết bị"
+  - "pm eqm"
+  - "plant maintenance"
+  - "lắp đặt"
+  - "thiết bị trên cùng"
+  - "vị trí chức năng"
+semantic_en: "The D_EQUIPMENTINSTALLATIONP view exposes equipment installation data, including the superordinate equipment, functional location, and installation details. It is used to access and manage equipment installation information."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

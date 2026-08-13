@@ -1,6 +1,19 @@
 ---
 name: D_FREIGHTUNITASSIGNPARAMETER
 description: "D Freightunitassignparameter"
+semantic_vi: "View D_FREIGHTUNITASSIGNPARAMETER hiển thị các tham số gán đơn vị vận tải, được sử dụng trong quản lý vận tải để gán đơn vị vận tải vào đơn hàng vận chuyển."
+keywords:
+  - "freight unit"
+  - "assignment parameter"
+  - "transportation management"
+  - "tm"
+  - "tm-frm"
+  - "freight unit assignment"
+  - "shipment"
+  - "đơn vị vận tải"
+  - "tham số gán"
+  - "quản lý vận tải"
+semantic_en: "The D_FREIGHTUNITASSIGNPARAMETER view exposes freight unit assignment parameters, which are used in transportation management to assign freight units to shipments."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

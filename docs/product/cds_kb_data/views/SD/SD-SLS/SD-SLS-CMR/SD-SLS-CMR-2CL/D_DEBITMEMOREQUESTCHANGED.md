@@ -1,6 +1,19 @@
 ---
 name: D_DEBITMEMOREQUESTCHANGED
 description: "D Debitmemorequestchanged"
+semantic_vi: "View D_DEBITMEMOREQUESTCHANGED lưu trữ các thay đổi yêu cầu ghi nợ, thường được sử dụng khi phân tích hoặc kiểm toán các thay đổi trong yêu cầu ghi nợ trong thành phần Sales và Distribution."
+keywords:
+  - "debit memo request"
+  - "yêu cầu ghi nợ"
+  - "sales and distribution"
+  - "thành phần sales và distribution"
+  - "debit memo request change"
+  - "thay đổi yêu cầu ghi nợ"
+  - "sap sales and distribution"
+  - "sales and distribution component"
+  - "component sales và distribution"
+  - "debit memo request changes"
+semantic_en: "The D_DEBITMEMOREQUESTCHANGED view captures debit memo request changes, typically used when analyzing or auditing changes to debit memo requests in the Sales and Distribution component."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

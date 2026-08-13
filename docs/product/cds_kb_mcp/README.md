@@ -402,11 +402,11 @@ Optional **DEV-only** ADT tools for learning custom **Z\*/Y\*** repository objec
 | `SAP_ADT_PASSWORD` | ✓ | Secret manager / env only |
 | `SAP_ADT_CLIENT` | ✓ | SAP client |
 | `SAP_ADT_SYSTEM_ALIAS` | optional | Must be `DEV` (default) |
-| `SAP_ADT_OUTPUT_ROOT` | optional | Default: sibling `cds_kb_data/.sap_export` (gitignored) |
+| `SAP_ADT_OUTPUT_ROOT` | required for snapshot writes | Explicit allowlisted local root; use `cds_kb_data/.sap_export` if desired (gitignored) |
 
 Sample operator YAML (no secrets): [`config/sap-export.config.example.yaml`](./config/sap-export.config.example.yaml).
 
-**Promotion path:** review files under `.sap_export/` → manually create private overlay markdown and/or use `compose_query` / `generate_cds_view` / propose — **never** auto-merge. Do not treat export dumps as KB view markdown.
+**Promotion path:** review files under the configured snapshot root → manually create private overlay markdown and/or use `compose_query` / `generate_cds_view` / propose — **never** auto-merge. Do not treat export dumps as KB view markdown.
 
 **ADT compatibility:** endpoints vary by release/SICF. Documented paths include `/sap/bc/adt/discovery`, repository `informationsystem/search`, and `/sap/bc/adt/ddic/ddl/sources/{name}/source/main`. Probe per landscape; failures surface as structured errors (no SQL/table fallback).
 

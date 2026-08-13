@@ -1,6 +1,20 @@
 ---
 name: D_DEBITMEMOREQITMSDPROCSTSCHGD
 description: "D Debitmemoreqitmsdprocstschgd"
+semantic_vi: "View D_DEBITMEMOREQITMSDPROCSTSCHGD hiển thị các thay đổi trạng thái xử lý yêu cầu giảm giá trong SAP Sales và Distribution, thường được sử dụng để theo dõi các bản cập nhật trạng thái của yêu cầu giảm giá."
+keywords:
+  - "debit memo request"
+  - "thay đổi trạng thái"
+  - "sử dụng giảm giá"
+  - "sản phẩm"
+  - "đơn đặt hàng"
+  - "đơn mua hàng"
+  - "sự kiện"
+  - "trạng thái"
+  - "sự thay đổi"
+  - "sự kiện giảm giá"
+  - "sự kiện giảm giá sản phẩm"
+semantic_en: "The D_DEBITMEMOREQITMSDPROCSTSCHGD view exposes debit memo request item processing status changes in SAP Sales and Distribution, typically used to track status updates of debit memo requests."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

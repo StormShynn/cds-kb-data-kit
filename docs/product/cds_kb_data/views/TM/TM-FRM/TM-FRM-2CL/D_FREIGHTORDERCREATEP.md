@@ -1,6 +1,17 @@
 ---
 name: D_FREIGHTORDERCREATEP
 description: "D Freightordercreatep"
+semantic_vi: "Đại diện cho quá trình tạo đơn hàng vận tải, cung cấp dữ liệu cho các đơn hàng vận tải và loại đơn hàng."
+keywords:
+  - "freight order"
+  - "đơn hàng vận tải"
+  - "transportation order"
+  - "đơn hàng vận chuyển"
+  - "sap tm"
+  - "tm-frm"
+  - "freight"
+  - "vận tải"
+semantic_en: "Represents a freight order creation process, providing data for transportation orders and their types."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

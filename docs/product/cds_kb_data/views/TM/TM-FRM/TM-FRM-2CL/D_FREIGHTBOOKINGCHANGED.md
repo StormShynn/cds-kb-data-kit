@@ -1,6 +1,17 @@
 ---
 name: D_FREIGHTBOOKINGCHANGED
 description: "D Freightbookingchanged"
+semantic_vi: "View D_FREIGHTBOOKINGCHANGED hiển thị các thay đổi trong việc đặt hàng vận tải liên quan đến đơn hàng vận chuyển, cung cấp dữ liệu về khi và cách những thay đổi này xảy ra. Nó được sử dụng để theo dõi và phân tích các thay đổi trong việc đặt hàng vận tải."
+keywords:
+  - "freight booking"
+  - "transportation order"
+  - "đơn hàng vận chuyển"
+  - "thay đổi đặt hàng vận tải"
+  - "sap tm"
+  - "tm-frm-2cl"
+  - "vận tải"
+  - "đặt hàng"
+semantic_en: "The D_FREIGHTBOOKINGCHANGED view exposes freight booking changes related to transportation orders, providing data on when and how these changes occur. It is used to track and analyze changes in freight bookings."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

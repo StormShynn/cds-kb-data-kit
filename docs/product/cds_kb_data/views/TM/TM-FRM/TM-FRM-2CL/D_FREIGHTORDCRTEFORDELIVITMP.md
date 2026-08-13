@@ -1,6 +1,19 @@
 ---
 name: D_FREIGHTORDCRTEFORDELIVITMP
 description: "D Freightordcrtefordelivitmp"
+semantic_vi: "View D_FREIGHTORDCRTEFORDELIVITMP hiển thị dữ liệu tạo đơn hàng vận chuyển cho các mặt hàng giao hàng, có thể được sử dụng để quản lý đơn hàng vận chuyển trong quản lý vận tải."
+keywords:
+  - "freight"
+  - "order"
+  - "delivery"
+  - "item"
+  - "transportation"
+  - "management"
+  - "tm"
+  - "freight order"
+  - "đơn hàng vận chuyển"
+  - "sản phẩm giao hàng"
+semantic_en: "The D_FREIGHTORDCRTEFORDELIVITMP view exposes freight order creation data for delivery items, which can be used to manage freight orders in transportation management."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

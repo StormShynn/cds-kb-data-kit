@@ -1,6 +1,19 @@
 ---
 name: D_CREDITMEMOREQORDBILLGSTSCHGD
 description: "D Creditmemoreqordbillgstschgd"
+semantic_vi: "View này hiển thị dữ liệu yêu cầu giảm giá hóa đơn liên quan đến thay đổi trạng thái hóa đơn, bao gồm tổ chức bán hàng, kênh phân phối, và trạng thái hóa đơn liên quan đến đơn hàng tổng thể."
+keywords:
+  - "credit memo"
+  - "đơn giảm giá"
+  - "hóa đơn"
+  - "trạng thái hóa đơn"
+  - "sales organization"
+  - "tổ chức bán hàng"
+  - "distribution channel"
+  - "kênh phân phối"
+  - "sap"
+  - "sd-sls-cmr"
+semantic_en: "This view exposes credit memo request data related to billing status changes, including the sales organization, distribution channel, and overall order-related billing status. It is used to analyze and report on credit memo requests."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

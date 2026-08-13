@@ -1,6 +1,20 @@
 ---
 name: D_COSTINGVARIANTEXPLAINWITHAIP
 description: "D Costingvariantexplainwithaip"
+semantic_vi: "Cung cấp giải thích biến phí với trí tuệ nhân tạo cho mục đích kiểm soát, thường được sử dụng trong kế hoạch sản xuất và kiểm soát chi phí."
+keywords:
+  - "costing variant"
+  - "biến phí"
+  - "controlling"
+  - "production planning"
+  - "kế hoạch sản xuất"
+  - "cost control"
+  - "kiểm soát chi phí"
+  - "ai"
+  - "trí tuệ nhân tạo"
+  - "sap co-pc"
+  - "sap co-pc-pcp-2cl"
+semantic_en: "Provides costing variant explanations with AI-powered insights for controlling purposes, typically used in production planning and cost control."
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released

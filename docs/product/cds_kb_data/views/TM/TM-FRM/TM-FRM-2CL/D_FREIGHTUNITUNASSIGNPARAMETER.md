@@ -1,6 +1,21 @@
 ---
 name: D_FREIGHTUNITUNASSIGNPARAMETER
 description: "D Freightunitunassignparameter"
+semantic_vi: "View D_FREIGHTUNITUNASSIGNPARAMETER hiển thị các tham số không gán đơn vị vận tải, được sử dụng khi không gán một đơn vị vận tải khỏi một đơn hàng vận chuyển hoặc đơn hàng giao hàng."
+keywords:
+  - "freight unit"
+  - "unassignment"
+  - "shipment"
+  - "delivery"
+  - "tm-frm"
+  - "tm"
+  - "freight"
+  - "component:tm-frm-2cl"
+  - "lob:other"
+  - "sap"
+  - "cds view"
+  - "vdm_freight_unit_uuid"
+semantic_en: "The D_FREIGHTUNITUNASSIGNPARAMETER view exposes freight unit unassignment parameters, which are used when unassigning a freight unit from a shipment or delivery."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

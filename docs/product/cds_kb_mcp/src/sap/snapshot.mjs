@@ -89,6 +89,9 @@ export async function exportSnapshot(connector, config, {
   objects,
   maxObjects = 50,
 } = {}) {
+  if (!config.outputRoot) {
+    throw new Error('SAP_ADT_OUTPUT_ROOT must be configured before snapshot writes');
+  }
   const configuredRoot = path.resolve(config.outputRoot);
   const root = path.resolve(outputRoot || configuredRoot);
   // Defense in depth: callers outside the MCP tools layer must not be able

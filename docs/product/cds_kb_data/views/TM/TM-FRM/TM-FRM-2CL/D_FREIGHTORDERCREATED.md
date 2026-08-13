@@ -1,6 +1,18 @@
 ---
 name: D_FREIGHTORDERCREATED
 description: "D Freightordercreated"
+semantic_vi: "View D Freightordercreated hiển thị dữ liệu về đơn hàng vận chuyển đã được tạo, có thể được sử dụng để theo dõi và phân tích hoạt động vận chuyển."
+keywords:
+  - "freight order"
+  - "đơn hàng vận chuyển"
+  - "transportation order"
+  - "đơn vận chuyển"
+  - "sap tm"
+  - "tm-frm"
+  - "ekko"
+  - "transportation"
+  - "vận chuyển"
+semantic_en: "The D Freightordercreated view exposes data about created freight orders, which can be used to track and analyze transportation activities."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

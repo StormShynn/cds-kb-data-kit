@@ -1,6 +1,21 @@
 ---
 name: D_ENTPROJACTNSETPROCGSTATUSP
 description: "D Entprojactnsetprocgstatusp"
+semantic_vi: "View D_ENTPROJACTNSETPROCGSTATUSP cung cấp thông tin trạng thái hoạt động dự án cho quản lý dự án để theo dõi tiến độ và đưa ra quyết định có căn cứ. Nó được sử dụng để theo dõi trạng thái hoạt động và nhiệm vụ dự án."
+keywords:
+  - "project"
+  - "activity"
+  - "status"
+  - "progress"
+  - "project manager"
+  - "ppm"
+  - "scl"
+  - "str"
+  - "dự án"
+  - "hoạt động"
+  - "trạng thái"
+  - "tiến độ"
+semantic_en: "The D_ENTPROJACTNSETPROCGSTATUSP view provides project activity status information for project managers to track progress and make informed decisions. It is used to monitor the status of project activities and tasks."
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

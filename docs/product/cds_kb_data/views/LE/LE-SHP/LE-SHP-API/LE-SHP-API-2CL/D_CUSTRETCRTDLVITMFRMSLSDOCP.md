@@ -1,6 +1,18 @@
 ---
 name: D_CUSTRETCRTDLVITMFRMSLSDOCP
 description: "D Custretcrtdlvitmfrmslsdocp"
+semantic_vi: "View này hiển thị dữ liệu chủ của hàng hóa trong đơn đặt hàng bán hàng, đặc biệt liên quan đến các đơn hàng trả lại khách hàng, và có thể được sử dụng để truy xuất hoặc cập nhật dữ liệu này trong các kịch bản thực hiện logistics."
+keywords:
+  - "delivery item"
+  - "sales document"
+  - "customer return"
+  - "logistics execution"
+  - "sap cds view"
+  - "view d_custretcrtdlvitmfrmslsdocp"
+  - "đơn hàng bán hàng"
+  - "đơn hàng trả lại khách hàng"
+  - "thực hiện logistics"
+semantic_en: "This view exposes delivery item master data for sales documents, specifically related to customer returns, and can be used to retrieve or update this data in logistics execution scenarios."
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

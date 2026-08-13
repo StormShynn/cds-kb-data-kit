@@ -1,6 +1,17 @@
 ---
 name: D_CUSTOMERMATERIALCREATED
 description: "D Customermaterialcreated"
+semantic_vi: "View D_CUSTOMERMATERIALCREATED hiển thị dữ liệu vật liệu dành cho khách hàng được tạo trong hệ thống, thường được sử dụng để phân tích hoặc báo cáo thông tin vật liệu dành cho khách hàng."
+keywords:
+  - "customer material"
+  - "material data"
+  - "created data"
+  - "sd-md-mm-2cl"
+  - "sales & distribution"
+  - "material management"
+  - "customer specific"
+  - "material information"
+semantic_en: "The D_CUSTOMERMATERIALCREATED view exposes customer-specific material data created in the system, typically used to analyze or report on customer-specific material information."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

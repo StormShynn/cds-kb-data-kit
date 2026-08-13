@@ -258,8 +258,11 @@ view/shape is **missing**, **create** CDS views / proposals to enrich
 - [x] Tech radar #2: library-first compose (`compose_query` prompt + tool descriptions)
 - [x] Tech radar #3: hybrid RRF (replace 0.6/0.4 blend; `src/rrf.mjs` + `npm run test:rrf`)
 - [x] C3 thin ADT slice in `cds_kb_mcp` (`src/sap/*`, `sap_*` tools, `npm run test:sap`)
-- [ ] Deploy: set `GITHUB_ISSUE_TOKEN` + `wrangler deploy` (operator)
-- [ ] Live: SAP DEV ADT dry-run + one DDLS export with real credentials/network/auths
+- [ ] Deploy: set a **fine-grained** `GITHUB_ISSUE_TOKEN` (Issues write only)
+  + `wrangler deploy`. Local Wrangler is unauthenticated; the repository
+  workflow has Cloudflare credentials but lacks this least-privilege token.
+- [ ] Live: SAP DEV ADT dry-run + one DDLS export. `SAP_ADT_*`, network
+  reachability, and Basis-derived read authorizations are unavailable here.
 
 ## Validation
 
@@ -271,6 +274,8 @@ view/shape is **missing**, **create** CDS views / proposals to enrich
 - Focused: Query Builder Propose JS has Worker path + deep-link fallback
 - Live: requires deploy + `GITHUB_ISSUE_TOKEN` (document only until operator runs it)
 - Live C3: requires `SAP_ADT_*` against approved DEV + Basis auth for ADT DDL read
+- Full local validation 2026-08-13: `test:sap`, `test:rrf`, `test:eval`
+  (13/13), `npm test`, build, Issue sanitizer, and Worker syntax all pass
 - Do not weaken generate-query-builder stale guard
 
 ## Result
@@ -289,9 +294,10 @@ over BM25 + cosine ranks (BM25 fallback when embeddings unavailable).
 **C3 vertical slice (2026-08-13, in-repo, not live-complete):** optional ADT
 tools on cds-kb-mcp (`sap_connection_test` … `sap_diff_snapshot`), env-based
 config (DEV/HTTPS/TLS, Z*/Y* only), mocked unit tests, snapshots under
-`.sap_export` (gitignored) with skip-if-exists. Plan stays **Active** until
-live DEV probe + operator auth validation. Still user-ops: Issue-bot token
-deploy; live SAP credentials/network/authorizations.
+an explicit allowlisted `SAP_ADT_OUTPUT_ROOT` with skip-if-exists. Plan stays
+**Active** until live DEV probe + operator auth validation. The broad GitHub CLI
+credential was deliberately not reused as a public Worker secret; Issue-bot
+deploy still needs a fine-grained token plus Cloudflare authentication.
 
 ## Future tech radar (2026-08-13)
 

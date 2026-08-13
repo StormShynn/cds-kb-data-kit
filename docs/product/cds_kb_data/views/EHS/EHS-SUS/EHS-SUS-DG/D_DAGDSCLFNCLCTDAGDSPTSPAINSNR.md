@@ -1,6 +1,18 @@
 ---
 name: D_DAGDSCLFNCLCTDAGDSPTSPAINSNR
 description: "D Dagdsclfnclctdagdsptspainsnr"
+semantic_vi: "Chứa thông tin về nhật ký tuân thủ sản phẩm và dữ liệu bao bì nguy hiểm cho sản phẩm và hướng dẫn đóng gói cụ thể, được sử dụng để theo dõi và quản lý thông tin an toàn và tuân thủ sản phẩm."
+keywords:
+  - "product compliance"
+  - "đơn vị tuân thủ sản phẩm"
+  - "dangerous goods"
+  - "dữ liệu bao bì nguy hiểm"
+  - "packaging instruction"
+  - "hướng dẫn đóng gói"
+  - "sap"
+  - "ehs"
+  - "ekko"
+semantic_en: "Exposes product compliance logs and dangerous goods enclosure data for a specific product and packaging instruction, used to track and manage product compliance and safety information."
 app_component: EHS-SUS-DG
 software_component: SAPSCORE
 release_state: released

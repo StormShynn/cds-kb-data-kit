@@ -1,6 +1,18 @@
 ---
 name: D_CRDMMREQITMSDPROCSTSCHGD
 description: "D Crdmmreqitmsdprocstschgd"
+semantic_vi: "View D_CRDMMREQITMSDPROCSTSCHGD hiển thị các thay đổi trạng thái xử lý yêu cầu giảm giá trong SAP Sales và Distribution, hữu ích cho việc theo dõi các bản cập nhật trạng thái trong yêu cầu giảm giá."
+keywords:
+  - "credit memo request"
+  - "yêu cầu giảm giá"
+  - "sales and distribution"
+  - "sự thay đổi trạng thái"
+  - "sự thay đổi trạng thái xử lý"
+  - "sdlg"
+  - "sd-sls-cmr"
+  - "sd-sls-cmr-2cl"
+  - "sự thay đổi trạng thái giảm giá"
+semantic_en: "The D_CRDMMREQITMSDPROCSTSCHGD view exposes credit memo request item processing status changes in SAP Sales and Distribution, useful for tracking status updates in credit memo requests."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

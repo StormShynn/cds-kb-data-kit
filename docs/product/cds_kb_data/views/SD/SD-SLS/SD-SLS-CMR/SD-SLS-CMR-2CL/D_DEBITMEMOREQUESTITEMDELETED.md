@@ -1,6 +1,19 @@
 ---
 name: D_DEBITMEMOREQUESTITEMDELETED
 description: "D Debitmemorequestitemdeleted"
+semantic_vi: "Sự kiện xóa đơn yêu cầu chiết khấu giảm giá hàng hóa, bao gồm ngày giờ, loại yêu cầu, tổ chức bán hàng và thông tin sản phẩm."
+keywords:
+  - "debit memo request"
+  - "xóa đơn yêu cầu chiết khấu giảm giá"
+  - "sales organization"
+  - "tổ chức bán hàng"
+  - "product"
+  - "sản phẩm"
+  - "event"
+  - "sự kiện"
+  - "sap"
+  - "sd-sls-cmr-2cl"
+semantic_en: "Debit memo request item deletion events, including date, request type, sales organization, and product information."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

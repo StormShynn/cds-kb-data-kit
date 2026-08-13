@@ -1,6 +1,19 @@
 ---
 name: D_CRDMMREQOVRLSDPROCSTSCHGD
 description: "D Crdmmreqovrlsdprocstschgd"
+semantic_vi: "View này hiển thị các thay đổi trạng thái quá trình SD tổng thể cho yêu cầu giảm giá. Nó được sử dụng để theo dõi trạng thái của yêu cầu giảm giá trong quá trình bán hàng."
+keywords:
+  - "credit memo request"
+  - "yêu cầu giảm giá"
+  - "sales process"
+  - "quá trình bán hàng"
+  - "sd process status"
+  - "trạng thái quá trình sd"
+  - "sap sales"
+  - "bán hàng sap"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+semantic_en: "This view exposes overall SD process status changes for credit memo requests. It is used to track the status of credit memo requests in the sales process."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

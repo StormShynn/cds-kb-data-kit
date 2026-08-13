@@ -1,6 +1,20 @@
 ---
 name: D_CONTRACTACCOUNTCHANGED
 description: "D Contractaccountchanged"
+semantic_vi: "View D_CONTRACTACCOUNTCHANGED lưu trữ các thay đổi liên quan đến tài khoản hợp đồng, cung cấp thông tin về các loại tài khoản hợp đồng và tham chiếu bên ngoài được cập nhật."
+keywords:
+  - "contract account"
+  - "tài khoản hợp đồng"
+  - "fi-ca"
+  - "fi"
+  - "finance"
+  - "finance industry"
+  - "contract"
+  - "hợp đồng"
+  - "accounting"
+  - "tài khoản"
+  - "lob:finance"
+semantic_en: "The D_CONTRACTACCOUNTCHANGED view captures changes to contract accounts, providing information on updated contract account categories and external references."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

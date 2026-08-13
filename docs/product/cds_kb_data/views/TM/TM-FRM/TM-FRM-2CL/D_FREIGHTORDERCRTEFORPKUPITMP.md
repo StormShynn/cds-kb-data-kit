@@ -1,6 +1,17 @@
 ---
 name: D_FREIGHTORDERCRTEFORPKUPITMP
 description: "D Freightordercrteforpkupitmp"
+semantic_vi: "View D Freightordercrteforpkupitmp hiển thị dữ liệu tạo đơn hàng vận chuyển cho các mặt hàng lấy hàng, có thể sử dụng khi quản lý đơn hàng vận chuyển trong thành phần TM-FRM-2CL."
+keywords:
+  - "freight order"
+  - "đơn hàng vận chuyển"
+  - "tm-frm-2cl"
+  - "freight booking item"
+  - "sản phẩm lấy hàng"
+  - "vận chuyển"
+  - "đơn hàng"
+  - "tm"
+semantic_en: "The D Freightordercrteforpkupitmp view exposes freight order creation data for pickup items, which can be used when managing freight orders in the TM-FRM-2CL component."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

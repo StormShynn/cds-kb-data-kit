@@ -1,6 +1,19 @@
 ---
 name: D_FREIGHTORDERCHANGED
 description: "D Freightorderchanged"
+semantic_vi: "View D_FREIGHTORDERCHANGED hiển thị dữ liệu thay đổi đơn hàng vận tải, thường được sử dụng khi quản lý đơn hàng vận chuyển và thông tin nhà cung cấp."
+keywords:
+  - "freight order"
+  - "đơn hàng vận tải"
+  - "transportation order"
+  - "thay đổi đơn hàng"
+  - "carrier"
+  - "nhà cung cấp"
+  - "sap tm"
+  - "tm-frm"
+  - "transportation mode"
+  - "loại hình vận tải"
+semantic_en: "The D_FREIGHTORDERCHANGED view exposes freight order change data, typically used when managing transportation orders and carrier information."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_FREIGHTUNITDELETED
 description: "D Freightunitdeleted"
+semantic_vi: "View D_FREIGHTUNITDELETED hiển thị các đơn vị vận tải đã xóa và các đơn hàng vận tải liên quan, loại đơn hàng và phương thức vận tải. Nó được sử dụng để theo dõi và quản lý các đơn vị vận tải đã xóa trong thành phần TM-FRM-2CL."
+keywords:
+  - "freight unit"
+  - "đơn vị vận tải"
+  - "transportation order"
+  - "đơn hàng vận tải"
+  - "tm-frm-2cl"
+  - "deleted freight unit"
+  - "đơn vị vận tải đã xóa"
+  - "sap tm"
+  - "sabtm"
+  - "freight management"
+semantic_en: "The D_FREIGHTUNITDELETED view exposes deleted freight units and their associated transportation orders, order types, and modes. It is used to track and manage deleted freight units in the TM-FRM-2CL component."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

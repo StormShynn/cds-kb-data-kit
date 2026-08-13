@@ -1,6 +1,20 @@
 ---
 name: D_EQUIPCRTEMASSMATLSRLNMBRP
 description: "D Equipcrtemassmatlsrlnmbrp"
+semantic_vi: "View này cung cấp thông tin số serial thiết bị cho quản lý vật liệu lớn trong bảo trì nhà máy. Nó được sử dụng để quản lý số serial thiết bị cho vật liệu."
+keywords:
+  - "equipment serial number"
+  - "số serial thiết bị"
+  - "mass material management"
+  - "quản lý vật liệu lớn"
+  - "plant maintenance"
+  - "bảo trì nhà máy"
+  - "equipment management"
+  - "quản lý thiết bị"
+  - "sap pm"
+  - "pm-eqm"
+  - "pm-eqm-eq"
+semantic_en: "This view provides equipment serial number information for mass material management in plant maintenance. It is used to manage equipment serial numbers for materials."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

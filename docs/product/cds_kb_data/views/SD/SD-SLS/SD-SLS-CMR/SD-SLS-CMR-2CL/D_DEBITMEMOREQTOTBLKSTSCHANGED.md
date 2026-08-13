@@ -1,6 +1,21 @@
 ---
 name: D_DEBITMEMOREQTOTBLKSTSCHANGED
 description: "D Debitmemoreqtotblkstschanged"
+semantic_vi: "View D_DEBITMEMOREQTOTBLKSTSCHANGED hiển thị các thay đổi trạng thái khóa tổng số tiền yêu cầu ghi nợ, có thể được sử dụng để theo dõi các thay đổi trạng thái khóa của yêu cầu ghi nợ."
+keywords:
+  - "debit memo request"
+  - "thay đổi trạng thái khóa"
+  - "tổng số tiền"
+  - "yêu cầu ghi nợ"
+  - "sales and distribution"
+  - "sales organization"
+  - "distribution channel"
+  - "organization division"
+  - "sold to party"
+  - "sap"
+  - "sd"
+  - "sd-sls"
+semantic_en: "The D_DEBITMEMOREQTOTBLKSTSCHANGED view exposes debit memo request totals block status changes, which can be used to track changes in the block status of debit memo requests."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

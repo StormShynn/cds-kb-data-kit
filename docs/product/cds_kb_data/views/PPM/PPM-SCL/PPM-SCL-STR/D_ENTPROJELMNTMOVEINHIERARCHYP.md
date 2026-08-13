@@ -1,6 +1,19 @@
 ---
 name: D_ENTPROJELMNTMOVEINHIERARCHYP
 description: "D Entprojelmntmoveinhierarchyp"
+semantic_vi: "View D_ENTPROJELMNTMOVEINHIERARCHYP hiển thị dữ liệu lịch sử di chuyển phần tử dự án, hữu ích cho việc theo dõi thay đổi trong cấu trúc dự án."
+keywords:
+  - "project element"
+  - "project hierarchy"
+  - "move history"
+  - "di chuyển phần tử dự án"
+  - "dữ liệu lịch sử"
+  - "cấu trúc dự án"
+  - "ppm"
+  - "ppm-scl-str"
+  - "project management"
+  - "quản lý dự án"
+semantic_en: "The D_ENTPROJELMNTMOVEINHIERARCHYP view exposes project element move history data, useful for tracking changes in project hierarchies."
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

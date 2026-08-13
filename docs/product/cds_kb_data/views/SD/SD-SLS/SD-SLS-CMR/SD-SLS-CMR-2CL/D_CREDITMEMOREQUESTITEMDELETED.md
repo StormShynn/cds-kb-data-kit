@@ -1,6 +1,21 @@
 ---
 name: D_CREDITMEMOREQUESTITEMDELETED
 description: "D Creditmemorequestitemdeleted"
+semantic_vi: "CDS view D_CREDITMEMOREQUESTITEMDELETED hiển thị các mục yêu cầu biên bản giảm giá đã bị xóa, có thể được sử dụng để theo dõi các thay đổi trong các đơn đặt hàng bán hàng hoặc để kiểm tra các mục đã bị xóa trong quá trình bán hàng."
+keywords:
+  - "credit memo"
+  - "đơn giảm giá"
+  - "sales order"
+  - "đơn đặt hàng bán hàng"
+  - "deleted item"
+  - "mục đã bị xóa"
+  - "sales process"
+  - "quá trình bán hàng"
+  - "sap"
+  - "sd"
+  - "sles"
+  - "cmr"
+semantic_en: "The D_CREDITMEMOREQUESTITEMDELETED CDS view exposes deleted credit memo request items, which can be used to track changes to sales orders or to audit deleted items in the sales process."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

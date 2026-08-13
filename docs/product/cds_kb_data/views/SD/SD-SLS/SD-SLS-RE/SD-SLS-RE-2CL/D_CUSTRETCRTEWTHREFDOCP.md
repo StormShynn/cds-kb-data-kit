@@ -1,6 +1,21 @@
 ---
 name: D_CUSTRETCRTEWTHREFDOCP
 description: "D Custretcrtewthrefdocp"
+semantic_vi: "Chỉ ra các loại tài liệu kinh doanh bán hàng và tài liệu tham chiếu tương ứng, có ích cho quá trình xử lý đơn đặt hàng bán hàng và quản lý tài liệu."
+keywords:
+  - "sales document"
+  - "đơn đặt hàng bán hàng"
+  - "sales document type"
+  - "tài liệu kinh doanh bán hàng"
+  - "reference sales document"
+  - "tài liệu tham chiếu"
+  - "sales order processing"
+  - "quá trình xử lý đơn đặt hàng bán hàng"
+  - "document management"
+  - "quản lý tài liệu"
+  - "sap sales"
+  - "sales distribution"
+semantic_en: "Exposes sales document types and their corresponding reference sales documents, useful for sales order processing and document management."
 app_component: SD-SLS-RE-2CL
 software_component: SAPSCORE
 release_state: released

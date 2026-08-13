@@ -1,6 +1,17 @@
 ---
 name: D_FREIGHTUNITCHANGED
 description: "D Freightunitchanged"
+semantic_vi: "View D_FREIGHTUNITCHANGED cung cấp dữ liệu về đơn vị hàng hóa đã được thay đổi, thường được sử dụng để theo dõi các bản cập nhật của đơn vị hàng hóa trong đơn hàng vận chuyển."
+keywords:
+  - "freight"
+  - "transportation order"
+  - "đơn hàng vận chuyển"
+  - "đơn vị hàng hóa"
+  - "cập nhật"
+  - "sap"
+  - "tm-frm"
+  - "tm"
+semantic_en: "The D_FREIGHTUNITCHANGED view provides data on freight units that have been changed, typically used to track updates to freight units in transportation orders."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

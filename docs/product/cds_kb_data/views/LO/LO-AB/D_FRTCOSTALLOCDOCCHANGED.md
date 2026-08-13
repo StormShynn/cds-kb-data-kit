@@ -1,6 +1,19 @@
 ---
 name: D_FRTCOSTALLOCDOCCHANGED
 description: "D Frtcostallocdocchanged"
+semantic_vi: "View này hiển thị lịch sử thay đổi tài liệu thanh toán cho logistics tổng thể, bao gồm loại quá trình thanh toán, loại tài liệu và mã công ty. Nó được sử dụng để theo dõi các thay đổi đối với tài liệu thanh toán trong logistics tổng thể."
+keywords:
+  - "settlement document"
+  - "thay đổi tài liệu thanh toán"
+  - "logistics general"
+  - "lo"
+  - "lo-ab"
+  - "ekko"
+  - "settlement process"
+  - "tài liệu thanh toán"
+  - "lo-gi"
+  - "thay đổi"
+semantic_en: "This view exposes settlement document change history for logistics general, including settlement process type, document type, and company code. It is used to track changes to settlement documents in logistics general."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: D_EMRKDFNDSDOCTYPESGETFORCRTER
 description: "D Emrkdfndsdoctypesgetforcrter"
+semantic_vi: "Trả về các loại tài liệu được earmarked cho một loại tài liệu earmarked funds cụ thể. Sử dụng để lấy loại tài liệu cho một loại cụ thể trong quản lý tài liệu earmarked funds."
+keywords:
+  - "earmarked funds"
+  - "document types"
+  - "tài liệu earmarked"
+  - "loại tài liệu"
+  - "psm"
+  - "component psm"
+  - "lob other"
+  - "sap cds"
+  - "cds view"
+semantic_en: "Returns earmarked funds document types for a specific earmarked funds document category. Used to retrieve document types for a particular category in earmarked funds management."
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

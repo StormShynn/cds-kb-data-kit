@@ -1,6 +1,19 @@
 ---
 name: D_CONTRACCTGDOCUMENTCHANGED
 description: "D Contracctgdocumentchanged"
+semantic_vi: "View này hiển thị các tài liệu kế toán đã thay đổi và thông tin khớp toán, hữu ích cho việc theo dõi các bản cập nhật tài liệu tài chính."
+keywords:
+  - "accounting document"
+  - "tài liệu kế toán"
+  - "financial document"
+  - "đơn tài chính"
+  - "reconciliation"
+  - "khớp toán"
+  - "fi"
+  - "fi-ca"
+  - "document change"
+  - "cập nhật tài liệu"
+semantic_en: "This view exposes changed accounting documents and their reconciliation information, useful for tracking financial document updates."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

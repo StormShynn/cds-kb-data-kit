@@ -1,6 +1,19 @@
 ---
 name: D_FREIGHTBOOKINGCANCELED
 description: "D Freightbookingcanceled"
+semantic_vi: "View D_FREIGHTBOOKINGCANCELED hiển thị dữ liệu đặt hàng vận chuyển bị hủy bỏ, có thể được sử dụng để lấy thông tin về các đơn hàng vận chuyển bị hủy bỏ."
+keywords:
+  - "freight booking"
+  - "đặt hàng vận chuyển"
+  - "canceled"
+  - "transportation order"
+  - "đơn hàng vận chuyển"
+  - "tm-frm"
+  - "tm"
+  - "freight"
+  - "carrier"
+  - "ekko"
+semantic_en: "The D_FREIGHTBOOKINGCANCELED view exposes canceled freight bookings data, which can be used to retrieve information about canceled transportation orders."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

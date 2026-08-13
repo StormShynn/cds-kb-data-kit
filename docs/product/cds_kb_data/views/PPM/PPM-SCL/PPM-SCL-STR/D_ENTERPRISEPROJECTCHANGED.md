@@ -1,6 +1,17 @@
 ---
 name: D_ENTERPRISEPROJECTCHANGED
 description: "D Enterpriseprojectchanged"
+semantic_vi: "View D_ENTERPRISEPROJECTCHANGED hiển thị dữ liệu thay đổi dự án doanh nghiệp, có thể sử dụng khi theo dõi thay đổi thông tin dự án."
+keywords:
+  - "enterprise project"
+  - "project change"
+  - "dự án doanh nghiệp"
+  - "thay đổi dự án"
+  - "ppm"
+  - "ppm-scl-str"
+  - "project management"
+  - "quản lý dự án"
+semantic_en: "The D_ENTERPRISEPROJECTCHANGED view exposes enterprise project change data, which can be used when tracking changes to project information."
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

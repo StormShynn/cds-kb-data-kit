@@ -1,6 +1,18 @@
 ---
 name: D_FREIGHTORDERCREATEFORPICKUPP
 description: "D Freightordercreateforpickupp"
+semantic_vi: "View D_FREIGHTORDERCREATEFORPICKUPP hiển thị dữ liệu đơn hàng vận chuyển cho lấy hàng, có thể sử dụng khi tạo hoặc quản lý đơn hàng vận chuyển cho lấy hàng."
+keywords:
+  - "freight order"
+  - "đơn hàng vận chuyển"
+  - "transportation order"
+  - "đơn vận chuyển"
+  - "pickup"
+  - "lấy hàng"
+  - "sap tm"
+  - "sap tm-frm"
+  - "sap freight management"
+semantic_en: "The D_FREIGHTORDERCREATEFORPICKUPP view exposes freight order data for pickup, which can be used when creating or managing freight orders for pickup."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

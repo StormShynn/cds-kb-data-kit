@@ -1,6 +1,21 @@
 ---
 name: D_DEBITMEMOREQUESTITEMCREATED
 description: "D Debitmemorequestitemcreated"
+semantic_vi: "View này hiển thị các sự kiện tạo đơn đề nghị giảm giá chi tiết, cung cấp thông tin về tổ chức bán hàng, kênh phân phối và sản phẩm liên quan. Nó có thể được sử dụng để theo dõi và phân tích việc tạo đơn đề nghị giảm giá chi tiết trong quá trình bán hàng."
+keywords:
+  - "debit memo request"
+  - "đơn đề nghị giảm giá"
+  - "sales organization"
+  - "tổ chức bán hàng"
+  - "distribution channel"
+  - "kênh phân phối"
+  - "product"
+  - "sản phẩm"
+  - "sap"
+  - "sales"
+  - "dịch vụ bán hàng"
+  - "ekko"
+semantic_en: "This view exposes debit memo request item creation events, providing information on the sales organization, distribution channel, and product involved. It can be used to track and analyze debit memo request item creation in the sales process."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

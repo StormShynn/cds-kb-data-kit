@@ -1,6 +1,19 @@
 ---
 name: D_CUSTOMERRETURNCREATED
 description: "D Customerreturncreated"
+semantic_vi: "View D_CUSTOMERRETURNCREATED hiển thị dữ liệu trả hàng của khách hàng khi một đơn trả hàng được tạo, cung cấp thông tin về tổ chức bán hàng, kênh phân phối và khách hàng bán."
+keywords:
+  - "customer return"
+  - "đơn trả hàng"
+  - "sales organization"
+  - "tổ chức bán hàng"
+  - "distribution channel"
+  - "kênh phân phối"
+  - "sold-to party"
+  - "khách hàng bán"
+  - "sap"
+  - "sd-sls-re-2cl"
+semantic_en: "The D_CUSTOMERRETURNCREATED view exposes customer return data when a return is created, providing information on the sales organization, distribution channel, and sold-to party."
 app_component: SD-SLS-RE-2CL
 software_component: SAPSCORE
 release_state: released

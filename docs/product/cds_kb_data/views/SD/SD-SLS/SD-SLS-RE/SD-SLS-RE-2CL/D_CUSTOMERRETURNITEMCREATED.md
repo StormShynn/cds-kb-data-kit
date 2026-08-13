@@ -1,6 +1,17 @@
 ---
 name: D_CUSTOMERRETURNITEMCREATED
 description: "D Customerreturnitemcreated"
+semantic_vi: "View D_CUSTOMERRETURNITEMCREATED hiển thị dữ liệu tạo lại hàng của khách hàng, có thể sử dụng để theo dõi và phân tích lại hàng của khách hàng trong quá trình bán hàng."
+keywords:
+  - "customer return"
+  - "đơn trả hàng"
+  - "sales process"
+  - "sự kiện tạo lại hàng"
+  - "sự kiện bán hàng"
+  - "sự kiện khách hàng"
+  - "sự kiện sản phẩm"
+  - "sự kiện phân phối"
+semantic_en: "The D_CUSTOMERRETURNITEMCREATED view exposes customer return item creation data, which can be used to track and analyze customer returns in the sales process."
 app_component: SD-SLS-RE-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: D_CONTRACCTGDOCUMENTCANCELED
 description: "D Contracctgdocumentcanceled"
+semantic_vi: "View D_CONTRACCTGDOCUMENTCANCELED hiển thị các tài liệu kế toán bị hủy và thông tin khớp toán, hữu ích cho các quá trình phân tích tài chính và khớp toán."
+keywords:
+  - "accounting document"
+  - "tài liệu kế toán"
+  - "canceled document"
+  - "tài liệu bị hủy"
+  - "reconciliation information"
+  - "thông tin khớp toán"
+  - "fi-ca"
+  - "fi"
+  - "finance"
+  - "finance component"
+  - "component fi-ca-2cl"
+  - "lob finance"
+semantic_en: "The D_CONTRACCTGDOCUMENTCANCELED CDS view exposes canceled accounting documents and their reconciliation information, useful for financial analysis and reconciliation processes."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,17 @@
 ---
 name: D_DEBITMEMOREQUESTITEMCHANGED
 description: "D Debitmemorequestitemchanged"
+semantic_vi: "View này hiển thị các sự kiện thay đổi yêu cầu ghi nợ, có thể được sử dụng để theo dõi các thay đổi của các mục yêu cầu ghi nợ trong thời gian thực."
+keywords:
+  - "debit memo request"
+  - "yêu cầu ghi nợ"
+  - "item change"
+  - "sự kiện thay đổi"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+  - "sap"
+  - "sd-sls-cmr-2cl"
+semantic_en: "This view exposes debit memo request item change events, which can be used to track changes to debit memo request items in real-time."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

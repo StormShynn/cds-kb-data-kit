@@ -1,6 +1,21 @@
 ---
 name: D_COSTINGVARIANTEXPLAINWITHAIR
 description: "D Costingvariantexplainwithair"
+semantic_vi: "Chỉ ra các giải thích về biến thể chi phí với kết quả AI, bao gồm văn bản và ngày tạo. View này được sử dụng để phân tích và hiểu các giải thích về biến thể chi phí."
+keywords:
+  - "costing variant"
+  - "explain"
+  - "ai result"
+  - "creation date"
+  - "controlling"
+  - "co-pc"
+  - "co-pc-pcp"
+  - "component:co-pc-pcp-2cl"
+  - "lob:controlling"
+  - "costing"
+  - "variant"
+  - "đơn vị tính toán"
+semantic_en: "Exposes costing variant explanations with AI results, including text and creation date. This view is used to analyze and understand costing variant explanations."
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released

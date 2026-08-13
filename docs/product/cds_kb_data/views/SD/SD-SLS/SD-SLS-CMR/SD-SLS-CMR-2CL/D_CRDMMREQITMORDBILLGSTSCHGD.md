@@ -1,6 +1,19 @@
 ---
 name: D_CRDMMREQITMORDBILLGSTSCHGD
 description: "D Crdmmreqitmordbillgstschgd"
+semantic_vi: "View D_CRDMMREQITMORDBILLGSTSCHGD hiển thị các thay đổi trạng thái hóa đơn liên quan đến yêu cầu giảm giá đơn hàng, có thể được sử dụng để theo dõi các thay đổi trạng thái hóa đơn cho yêu cầu giảm giá."
+keywords:
+  - "credit memo request"
+  - "thay đổi trạng thái hóa đơn"
+  - "order-related billing status"
+  - "yêu cầu giảm giá"
+  - "đơn hàng"
+  - "trạng thái hóa đơn"
+  - "sap"
+  - "sd-sls-cmr"
+  - "component:sd-sls-cmr-2cl"
+  - "lob:sales & distribution"
+semantic_en: "The D_CRDMMREQITMORDBILLGSTSCHGD view exposes credit memo request item order-related billing status changes, which can be used to track changes in billing status for credit memo requests."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

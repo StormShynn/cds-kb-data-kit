@@ -1,6 +1,20 @@
 ---
 name: D_CREDITMEMOREQUESTCREATED
 description: "D Creditmemorequestcreated"
+semantic_vi: "View này hiển thị các sự kiện tạo yêu cầu hoàn tiền, có thể được sử dụng để theo dõi và phân tích yêu cầu hoàn tiền trong quá trình bán hàng."
+keywords:
+  - "credit memo request"
+  - "yêu cầu hoàn tiền"
+  - "sales process"
+  - "quá trình bán hàng"
+  - "credit memo"
+  - "hoàn tiền"
+  - "sales"
+  - "bán hàng"
+  - "sap"
+  - "sd-sls-cmr"
+  - "sd-sls-cmr-2cl"
+semantic_en: "This view exposes credit memo request creation events, which can be used to track and analyze credit memo requests in the sales process."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

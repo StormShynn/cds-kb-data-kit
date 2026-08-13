@@ -1,6 +1,19 @@
 ---
 name: D_ENTERPRISEPROJECTDELETED
 description: "D Enterpriseprojectdeleted"
+semantic_vi: "View D_ENTERPRISEPROJECTDELETED hiển thị dữ liệu xóa dự án doanh nghiệp, có thể sử dụng khi theo dõi sự kiện vòng đời dự án hoặc phân tích lý do kết thúc dự án."
+keywords:
+  - "enterprise project"
+  - "project deletion"
+  - "dự án doanh nghiệp"
+  - "xóa dự án"
+  - "project lifecycle"
+  - "vòng đời dự án"
+  - "project termination"
+  - "kết thúc dự án"
+  - "ppm"
+  - "ppm-scl-str"
+semantic_en: "The D_ENTERPRISEPROJECTDELETED CDS view exposes enterprise project deletion data, which is useful when tracking project lifecycle events or analyzing project termination reasons."
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

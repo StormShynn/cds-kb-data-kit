@@ -1,6 +1,17 @@
 ---
 name: D_DEBITMEMOREQUESTDELETED
 description: "D Debitmemorequestdeleted"
+semantic_vi: "View D Debitmemorequestdeleted hiển thị các yêu cầu giảm giá đã xóa trong thành phần Sales và Distribution, cung cấp một bản ghi về các yêu cầu đã bị hủy bỏ hoặc xóa trước đây."
+keywords:
+  - "debit memo request"
+  - "yêu cầu giảm giá"
+  - "sales and distribution"
+  - "thành phần sales và distribution"
+  - "deleted records"
+  - "bản ghi đã xóa"
+  - "sap cds"
+  - "cds view"
+semantic_en: "The D Debitmemorequestdeleted view exposes deleted debit memo requests in the Sales and Distribution component, providing a record of past requests that were cancelled or deleted."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: D_CUSTRETITMCRTEWTHREFDOCP
 description: "D Custretitmcrtewthrefdocp"
+semantic_vi: "Chứa dữ liệu chính của mặt hàng trả lại khách hàng để xử lý trả hàng và hoàn tiền, bao gồm các hoạt động theo dõi và kết quả kiểm tra vật liệu."
+keywords:
+  - "customer return"
+  - "returns processing"
+  - "refund"
+  - "follow-up activity"
+  - "material inspection"
+  - "returns management"
+  - "sddocumentitem"
+  - "sdslsre"
+  - "sales and distribution"
+  - "đơn trả hàng"
+  - "xử lý trả hàng"
+  - "hoàn tiền"
+semantic_en: "Exposes customer return item master data for processing returns and refunds, including follow-up activities and material inspection results."
 app_component: SD-SLS-RE-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,17 @@
 ---
 name: D_CREDITMEMOREQUESTCHANGED
 description: "D Creditmemorequestchanged"
+semantic_vi: "View này hiển thị dữ liệu thay đổi yêu cầu hoàn tiền, cho phép các nhà phát triển theo dõi các thay đổi đối với yêu cầu hoàn tiền trong thành phần Bán hàng và Phân phối."
+keywords:
+  - "credit memo request"
+  - "yêu cầu hoàn tiền"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+  - "credit memo"
+  - "hoàn tiền"
+  - "sap"
+  - "sd-sls-cmr-2cl"
+semantic_en: "This view exposes credit memo request change data, allowing developers to track changes to credit memo requests in the Sales and Distribution component."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

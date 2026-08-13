@@ -1,6 +1,19 @@
 ---
 name: D_FRTCOSTALLOCDOCCREATED
 description: "D Frtcostallocdoccreated"
+semantic_vi: "View D_FRTCOSTALLOCDOCCREATED hiển thị dữ liệu phân bổ tài liệu thanh toán, được sử dụng khi tạo tài liệu thanh toán trong logistics."
+keywords:
+  - "settlement document"
+  - "phân bổ tài liệu thanh toán"
+  - "logistics"
+  - "lo"
+  - "lo-ab"
+  - "ekko"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "cost allocation"
+  - "tài liệu thanh toán"
+semantic_en: "The D_FRTCOSTALLOCDOCCREATED view exposes settlement document allocation data, which is used when creating settlement documents in logistics."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

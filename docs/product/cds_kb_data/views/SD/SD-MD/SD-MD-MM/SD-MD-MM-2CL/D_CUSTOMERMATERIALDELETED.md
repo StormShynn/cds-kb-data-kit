@@ -1,6 +1,20 @@
 ---
 name: D_CUSTOMERMATERIALDELETED
 description: "D Customermaterialdeleted"
+semantic_vi: "View này hiển thị dữ liệu vật liệu khách hàng bị xóa, có thể được sử dụng để theo dõi và phân tích việc xóa vật liệu khách hàng trong quá trình bán hàng và phân phối."
+keywords:
+  - "customer material"
+  - "deleted data"
+  - "sales distribution"
+  - "material management"
+  - "customer deletion"
+  - "xóa vật liệu"
+  - "dữ liệu bị xóa"
+  - "quản lý vật liệu"
+  - "khách hàng"
+  - "bán hàng"
+  - "phân phối"
+semantic_en: "This view exposes deleted customer material data, which can be used to track and analyze customer material deletions in the sales and distribution process."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

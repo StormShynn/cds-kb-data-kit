@@ -1,6 +1,19 @@
 ---
 name: D_CREDITMEMOREQUESTITEMCREATED
 description: "D Creditmemorequestitemcreated"
+semantic_vi: "View D_CREDITMEMOREQUESTITEMCREATED hiển thị các sự kiện tạo yêu cầu giảm giá chi tiết trong thời gian thực, cho phép các nhà phát triển theo dõi và phản ứng với các thay đổi chi tiết trong quy trình bán hàng và phân phối."
+keywords:
+  - "credit memo request"
+  - "item creation"
+  - "sales and distribution"
+  - "real-time"
+  - "event-driven"
+  - "sap cds"
+  - "sd-sls-cmr-2cl"
+  - "creditmemorequestitemcreated"
+  - "lob:sales & distribution"
+  - "component:sd-sls-cmr-2cl"
+semantic_en: "The D_CREDITMEMOREQUESTITEMCREATED view exposes credit memo request item creation events in real-time, allowing developers to track and react to item-level changes in sales and distribution processes."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

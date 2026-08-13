@@ -1,13 +1,8 @@
 // SAP ADT export config — secrets only from environment, never files/logs.
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const MCP_ROOT = path.resolve(__dirname, '..', '..');
-const DATA_SIBLING = path.resolve(MCP_ROOT, '..', 'cds_kb_data');
-
-/** Default snapshot root: sibling data tree, NOT overlays/private markdown views. */
-export const DEFAULT_OUTPUT_ROOT = path.join(DATA_SIBLING, '.sap_export');
+/** Snapshot writes require an explicit allowlisted root from the operator. */
+export const DEFAULT_OUTPUT_ROOT = null;
 
 export const EXTRACTOR_VERSION = 'cds-kb-mcp-sap-adt/0.1.0';
 
@@ -92,12 +87,14 @@ export function loadSapConfig(env = process.env) {
     120000,
   );
 
-  const outputRootRaw = (env.SAP_ADT_OUTPUT_ROOT || '').trim() || DEFAULT_OUTPUT_ROOT;
-  let outputRoot;
-  try {
-    outputRoot = path.resolve(outputRootRaw);
-  } catch {
-    errors.push('SAP_ADT_OUTPUT_ROOT is not a valid path');
+  const outputRootRaw = (env.SAP_ADT_OUTPUT_ROOT || '').trim();
+  let outputRoot = null;
+  if (outputRootRaw) {
+    try {
+      outputRoot = path.resolve(outputRootRaw);
+    } catch {
+      errors.push('SAP_ADT_OUTPUT_ROOT is not a valid path');
+    }
   }
 
   if (errors.length) {

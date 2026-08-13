@@ -1,6 +1,19 @@
 ---
 name: D_DBTMMREQOVRLSDPROCSTSCHGD
 description: "D Dbtmmreqovrlsdprocstschgd"
+semantic_vi: "CDS view D_DBTMMREQOVRLSDPROCSTSCHGD cung cấp thông tin trạng thái thời gian thực của yêu cầu ghi nợ trên toàn bộ quá trình bán hàng, cho phép các nhà phát triển theo dõi các thay đổi trong trạng thái quá trình bán hàng."
+keywords:
+  - "debit memo request"
+  - "yêu cầu ghi nợ"
+  - "sales process status"
+  - "trạng thái quá trình bán hàng"
+  - "sd process status"
+  - "tình trạng quá trình sd"
+  - "sap sales"
+  - "bán hàng sap"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+semantic_en: "The D_DBTMMREQOVRLSDPROCSTSCHGD CDS view provides real-time status information of debit memo requests across the sales process, enabling developers to track changes in overall process status. It is useful for monitoring and analyzing sales process status changes."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released
