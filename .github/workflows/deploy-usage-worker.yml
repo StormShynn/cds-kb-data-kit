@@ -44,7 +44,6 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: docs/product/cds_kb_mcp/worker
           command: deploy
-          environment: production
           # Deploy the /totals gate secret alongside the code. Without it,
           # every GET /totals returns 401 and the scheduled
           # pull-usage-stats.yml job can never read counts. The value is the
