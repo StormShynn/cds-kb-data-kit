@@ -1,6 +1,19 @@
 ---
 name: D_SALESCONTRACTDELETED
 description: "D Salescontractdeleted"
+semantic_vi: "Đại diện cho các hợp đồng bán hàng đã bị xóa, cung cấp thông tin về sự kiện xóa và dữ liệu tổ chức bán hàng liên quan."
+keywords:
+  - "sales contract"
+  - "hợp đồng bán hàng"
+  - "deleted"
+  - "xóa"
+  - "sales organization"
+  - "tổ chức bán hàng"
+  - "sap"
+  - "sd"
+  - "sales & distribution"
+  - "dịch vụ bán hàng"
+semantic_en: "Represents sales contracts that have been deleted, providing information on the deletion event and related sales organization data."
 app_component: SD-SLS-OA-CCO-2CL
 software_component: SAPSCORE
 release_state: released

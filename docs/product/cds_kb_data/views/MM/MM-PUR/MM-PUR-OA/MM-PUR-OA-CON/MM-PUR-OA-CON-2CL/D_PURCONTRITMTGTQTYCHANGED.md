@@ -1,6 +1,19 @@
 ---
 name: D_PURCONTRITMTGTQTYCHANGED
 description: "D Purcontritmtgtqtychanged"
+semantic_vi: "View D_PURCONTRITMTGTQTYCHANGED hiển thị các thay đổi về lượng mục tiêu trong hợp đồng mua hàng, có thể sử dụng để theo dõi và phân tích các thay đổi về lượng mục tiêu trong hợp đồng mua hàng."
+keywords:
+  - "purchase contract"
+  - "hợp đồng mua hàng"
+  - "target quantity"
+  - "lượng mục tiêu"
+  - "change"
+  - "thay đổi"
+  - "sap mm"
+  - "mm-pur"
+  - "mm-pur-oa"
+  - "sourcing & procurement"
+semantic_en: "The D_PURCONTRITMTGTQTYCHANGED CDS view exposes purchase contract target quantity changes, which can be used to track and analyze changes to target quantities in purchase contracts."
 app_component: MM-PUR-OA-CON-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: D_SRLZDMATLITMCHGMAINTPLANTP
 description: "D Srlzdmatlitmchgmaintplantp"
+semantic_vi: "Chứa dữ liệu về nhà máy bảo trì cho thay đổi thiết bị, được sử dụng trong quy trình bảo trì nhà máy."
+keywords:
+  - "plant maintenance"
+  - "equipment change"
+  - "nhà máy bảo trì"
+  - "thay đổi thiết bị"
+  - "pm-eqm"
+  - "transactional processing"
+  - "plant"
+  - "maintenance plant"
+  - "equipment maintenance"
+semantic_en: "Exposes maintenance plant data for equipment changes, used in plant maintenance processes."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

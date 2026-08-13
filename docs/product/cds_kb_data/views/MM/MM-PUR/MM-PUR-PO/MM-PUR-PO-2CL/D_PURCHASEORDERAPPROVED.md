@@ -1,6 +1,19 @@
 ---
 name: D_PURCHASEORDERAPPROVED
 description: "D Purchase OrderAPPROVED"
+semantic_vi: "View D_PURCHASEORDERAPPROVED hiển thị đơn đặt hàng mua đã được phê duyệt cho nguồn cung cấp và quản lý mua sắm, thường được sử dụng khi xác minh hoặc báo cáo trạng thái đơn đặt hàng mua."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "approved"
+  - "sourcing"
+  - "procurement"
+  - "ekko"
+  - "mm-pur-po"
+  - "purchase order status"
+  - "đơn đặt hàng mua đã được phê duyệt"
+  - "trạng thái đơn đặt hàng mua"
+semantic_en: "The D_PURCHASEORDERAPPROVED view exposes approved purchase orders for sourcing and procurement, typically used when verifying or reporting on purchase order status."
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

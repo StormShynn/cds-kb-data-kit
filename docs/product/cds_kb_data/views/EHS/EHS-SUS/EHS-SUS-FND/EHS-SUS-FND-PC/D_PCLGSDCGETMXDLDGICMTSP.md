@@ -1,6 +1,21 @@
 ---
 name: D_PCLGSDCGETMXDLDGICMTSP
 description: "D Pclgsdcgetmxdldgicmtsp"
+semantic_vi: "Chứa dữ liệu nhật ký tuân thủ về hàng hóa được vận chuyển giữa các quốc gia, được sử dụng để theo dõi và phân tích hàng hóa."
+keywords:
+  - "compliance"
+  - "log"
+  - "shipment"
+  - "transport"
+  - "country"
+  - "goods"
+  - "data"
+  - "analysis"
+  - "ekko"
+  - "ehs"
+  - "suspension"
+  - "foundations"
+semantic_en: "Exposes compliance log data for goods transported between countries, used to track and analyze shipments."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

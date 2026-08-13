@@ -1,6 +1,20 @@
 ---
 name: D_SALESDOCCREATEWITHREFITEMP
 description: "D Salesdoccreatewithrefitemp"
+semantic_vi: "CDS view D_SALESDOCCREATEWITHREFITEMP hiển thị dữ liệu vật liệu đơn hàng bán hàng để tạo đơn hàng bán hàng, cụ thể là tham chiếu đến các vật liệu đã tồn tại. Nó được sử dụng khi tạo mới đơn hàng bán hàng tham chiếu đến các vật liệu đã tồn tại."
+keywords:
+  - "sales document"
+  - "đơn hàng bán hàng"
+  - "sales document item"
+  - "vật liệu đơn hàng bán hàng"
+  - "create sales document"
+  - "tạo đơn hàng bán hàng"
+  - "reference item"
+  - "tham chiếu vật liệu"
+  - "sap sales"
+  - "sales distribution"
+  - "sd-sls-so-rap-2cl"
+semantic_en: "The D_SALESDOCCREATEWITHREFITEMP CDS view exposes sales document item data for creating sales documents, specifically referencing existing items. It is used when creating new sales documents that reference existing items."
 app_component: SD-SLS-SO-RAP-2CL
 software_component: SAPSCORE
 release_state: released

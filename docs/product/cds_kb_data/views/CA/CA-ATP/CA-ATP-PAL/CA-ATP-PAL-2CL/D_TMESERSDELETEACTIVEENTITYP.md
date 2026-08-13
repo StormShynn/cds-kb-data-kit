@@ -1,6 +1,18 @@
 ---
 name: D_TMESERSDELETEACTIVEENTITYP
 description: "D Tmesersdeleteactiveentityp"
+semantic_vi: "Xóa thực thể hoạt động trong khu vực lập kế hoạch ATP, được sử dụng để xóa các giao dịch đã tồn tại."
+keywords:
+  - "atp planning"
+  - "xóa thực thể"
+  - "giao dịch"
+  - "lập kế hoạch"
+  - "thực thể hoạt động"
+  - "xóa giao dịch"
+  - "ca-atp-pal"
+  - "sap cds"
+  - "tmeserswthassgmtisdeltd"
+semantic_en: "Deletes active entities in the ATP planning area, used to remove existing assignments."
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

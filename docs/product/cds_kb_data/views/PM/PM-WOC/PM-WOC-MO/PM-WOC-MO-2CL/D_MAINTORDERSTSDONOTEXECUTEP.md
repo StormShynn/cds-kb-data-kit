@@ -1,6 +1,20 @@
 ---
 name: D_MAINTORDERSTSDONOTEXECUTEP
 description: "D Maintorderstsdonotexecutep"
+semantic_vi: "View này hiển thị các hành động hủy đơn bảo trì và thông báo không được thực hiện, thường được sử dụng để lọc ra dữ liệu không mong muốn hoặc đã lỗi thời trong quản lý đơn bảo trì."
+keywords:
+  - "maintenance order"
+  - "đơn bảo trì"
+  - "cancellation action"
+  - "hành động hủy"
+  - "notification"
+  - "thông báo"
+  - "pm"
+  - "pm-woc"
+  - "pm-woc-mo"
+  - "note"
+  - "plant maintenance"
+semantic_en: "This view exposes maintenance order cancellation actions and notifications that should not be executed, typically used to filter out unwanted or obsolete data in maintenance order management."
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: D_SALESORDERITEMCREATED
 description: "D Sales OrderITEMCREATED"
+semantic_vi: "View D_SALESORDERITEMCREATED hiển thị dữ liệu tạo đơn hàng bán hàng chi tiết, có thể sử dụng khi theo dõi các thay đổi chi tiết của đơn hàng bán hàng."
+keywords:
+  - "sales order"
+  - "đơn hàng bán hàng"
+  - "item creation"
+  - "tạo đơn hàng bán hàng"
+  - "sales order item"
+  - "đơn hàng bán hàng chi tiết"
+  - "sap"
+  - "sd-sls-gf-bet-2cl"
+  - "sales & distribution"
+  - "sales order type"
+  - "loại đơn hàng bán hàng"
+semantic_en: "The D_SALESORDERITEMCREATED view exposes sales order item creation data, which is useful when tracking item-level changes in sales orders."
 app_component: SD-SLS-GF-BET-2CL
 software_component: SAPSCORE
 release_state: released

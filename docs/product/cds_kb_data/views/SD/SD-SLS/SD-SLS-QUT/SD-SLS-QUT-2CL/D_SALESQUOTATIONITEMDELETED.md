@@ -1,6 +1,20 @@
 ---
 name: D_SALESQUOTATIONITEMDELETED
 description: "D Salesquotationitemdeleted"
+semantic_vi: "View D_SALESQUOTATIONITEMDELETED hiển thị các sự kiện xóa mục hàng trong đơn đặt hàng bán, cung cấp dữ liệu về thời điểm và lý do tại sao mục hàng được xóa khỏi đơn đặt hàng bán."
+keywords:
+  - "sales quotation"
+  - "đơn đặt hàng bán"
+  - "xóa mục hàng"
+  - "event"
+  - "sales quotation item"
+  - "sales organization"
+  - "distribution channel"
+  - "organization division"
+  - "sold-to party"
+  - "sales quotation item category"
+  - "product"
+semantic_en: "The D_SALESQUOTATIONITEMDELETED view exposes sales quotation item deletion events, providing data on when and why items were removed from sales quotations."
 app_component: SD-SLS-QUT-2CL
 software_component: SAPSCORE
 release_state: released

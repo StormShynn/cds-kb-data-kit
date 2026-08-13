@@ -1,6 +1,21 @@
 ---
 name: D_PURGINFORECDORGPLNTDATACRTD
 description: "D Purginforecdorgplntdatacrtd"
+semantic_vi: "CDS view D_PURGINFORECDORGPLNTDATACRTD hiển thị dữ liệu nhận hàng đơn mua hàng cho nhà cung cấp, vật liệu và nhóm vật liệu cụ thể. Nó được sử dụng để lấy dữ liệu cho một tài liệu nhận hàng cụ thể được tạo cho một nhà máy."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "receipt document"
+  - "nhận hàng"
+  - "tài liệu nhận hàng"
+  - "cds view"
+  - "view"
+  - "sap"
+  - "mm-pur-vm"
+  - "mm-pur"
+  - "mm"
+semantic_en: "The D_PURGINFORECDORGPLNTDATACRTD CDS view exposes purchase order receipt data for a specific supplier, material, and material group. It is used to retrieve data for a specific receipt document created for a plant."
 app_component: MM-PUR-VM-REC-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,17 @@
 ---
 name: D_TRANSPORDCONFIRMATIONSTSCHGD
 description: "D Transpordconfirmationstschgd"
+semantic_vi: "View D_TRANSPORDCONFIRMATIONSTSCHGD hiển thị các thay đổi trạng thái xác nhận vận chuyển cho một đơn hàng vận chuyển, cho phép bạn theo dõi và phân tích các thay đổi trạng thái xác nhận vận chuyển."
+keywords:
+  - "transportation order"
+  - "đơn hàng vận chuyển"
+  - "transportation confirmation"
+  - "xác nhận vận chuyển"
+  - "status change"
+  - "thay đổi trạng thái"
+  - "sap tm"
+  - "tm-frm-2cl"
+semantic_en: "The D_TRANSPORDCONFIRMATIONSTSCHGD view exposes transportation confirmation status changes for a transportation order, allowing you to track and analyze changes to the status of a shipment confirmation."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_PURGINFORECDORGPLNTDATACHGD
 description: "D Purginforecdorgplntdatachgd"
+semantic_vi: "View D_PURGINFORECDORGPLNTDATACHGD hiển thị dữ liệu thay đổi về hồ sơ mua hàng nhóm tài liệu ghi nhận, có thể sử dụng để phân tích các thay đổi được thực hiện trên hồ sơ mua hàng cho các nhà cung cấp, vật liệu và nhóm vật liệu cụ thể."
+keywords:
+  - "purchase document"
+  - "đơn mua hàng"
+  - "hồ sơ mua hàng"
+  - "group plant data"
+  - "thay đổi dữ liệu"
+  - "sourcing & procurement"
+  - "mm-pur-vm"
+  - "mm-pur"
+  - "mm"
+  - "sap mm"
+semantic_en: "The D_PURGINFORECDORGPLNTDATACHGD view exposes purchase document record group plant data changes, which can be used to analyze changes made to purchase document records for specific suppliers, materials, and material groups."
 app_component: MM-PUR-VM-REC-2CL
 software_component: SAPSCORE
 release_state: released

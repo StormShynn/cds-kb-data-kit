@@ -1,6 +1,21 @@
 ---
 name: D_STRPTASKSTATUSCHANGED
 description: "D Strptaskstatuschanged"
+semantic_vi: "View D_STRPTASKSTATUSCHANGED hiển thị các thay đổi trạng thái nhiệm vụ báo cáo, cung cấp thông tin về thực thể báo cáo, loại báo cáo, trạng thái và ngày hạn. Nó có thể được sử dụng để theo dõi và phân tích các thay đổi trạng thái nhiệm vụ báo cáo theo thời gian."
+keywords:
+  - "status"
+  - "reporting"
+  - "task"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-srf"
+  - "status change"
+  - "trạng thái"
+  - "nhiệm vụ báo cáo"
+  - "thực thể báo cáo"
+  - "loại báo cáo"
+  - "trạng thái nhiệm vụ"
+semantic_en: "The D_STRPTASKSTATUSCHANGED view exposes status changes of reporting tasks, providing information on the reporting entity, category, status, and due date. It can be used to track and analyze reporting task status changes over time."
 app_component: FI-LOC-SRF-RUN
 software_component: SAPSCORE
 release_state: released

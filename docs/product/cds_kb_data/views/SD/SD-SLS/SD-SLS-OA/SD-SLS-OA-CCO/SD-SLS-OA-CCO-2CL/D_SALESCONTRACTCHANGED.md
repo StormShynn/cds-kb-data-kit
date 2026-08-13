@@ -1,6 +1,18 @@
 ---
 name: D_SALESCONTRACTCHANGED
 description: "D Salescontractchanged"
+semantic_vi: "View D_SALESCONTRACTCHANGED lưu trữ các thay đổi của hợp đồng bán hàng, cung cấp một bản ghi của khi và cách các hợp đồng bán hàng được cập nhật. Nó hữu ích cho việc theo dõi các thay đổi của hợp đồng bán hàng theo thời gian."
+keywords:
+  - "sales contract"
+  - "hợp đồng bán hàng"
+  - "sales contract change"
+  - "thay đổi hợp đồng bán hàng"
+  - "sap sales"
+  - "sales distribution"
+  - "sd sls"
+  - "sd sls oa"
+  - "sales contract tracking"
+semantic_en: "The D_SALESCONTRACTCHANGED view captures sales contract changes, providing a record of when and how sales contracts are updated. It is useful for tracking changes to sales contracts over time."
 app_component: SD-SLS-OA-CCO-2CL
 software_component: SAPSCORE
 release_state: released

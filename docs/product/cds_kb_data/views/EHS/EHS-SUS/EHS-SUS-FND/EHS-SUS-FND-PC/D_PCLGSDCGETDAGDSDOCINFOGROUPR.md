@@ -1,6 +1,21 @@
 ---
 name: D_PCLGSDCGETDAGDSDOCINFOGROUPR
 description: "D Pclgsdcgetdagdsdocinfogroupr"
+semantic_vi: "Chứa thông tin nhóm hàng hóa nguy hiểm cho mục đích lập hồ sơ, thường được sử dụng khi tạo hồ sơ cho vận chuyển hoặc hoạt động logistics."
+keywords:
+  - "dangerous goods"
+  - "grouping"
+  - "documentation"
+  - "shipment"
+  - "logistics"
+  - "ehs"
+  - "ehs-sus-fnd-pc"
+  - "sap"
+  - "cds view"
+  - "hàng hóa nguy hiểm"
+  - "lập hồ sơ"
+  - "vận chuyển"
+semantic_en: "Exposes dangerous goods grouping information for documentation purposes, typically used when generating documentation for shipments or logistics operations."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

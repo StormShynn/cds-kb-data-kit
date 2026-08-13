@@ -1,6 +1,19 @@
 ---
 name: D_SERVICECONTRACTCHANGED
 description: "D Servicecontractchanged"
+semantic_vi: "View D_SERVICECONTRACTCHANGED hiển thị dữ liệu thay đổi hợp đồng dịch vụ, có thể được sử dụng để theo dõi các thay đổi được thực hiện trên hợp đồng dịch vụ trong hệ thống CRM."
+keywords:
+  - "service contract"
+  - "hợp đồng dịch vụ"
+  - "crm"
+  - "service contract change"
+  - "thay đổi hợp đồng dịch vụ"
+  - "sap"
+  - "crm-s4-btx-2cl"
+  - "lob:other"
+  - "contract"
+  - "dịch vụ"
+semantic_en: "The D_SERVICECONTRACTCHANGED view exposes service contract change data, which can be used to track changes made to service contracts in the CRM system."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

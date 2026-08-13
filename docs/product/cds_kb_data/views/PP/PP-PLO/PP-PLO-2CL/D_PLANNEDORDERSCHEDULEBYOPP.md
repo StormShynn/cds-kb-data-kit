@@ -1,6 +1,20 @@
 ---
 name: D_PLANNEDORDERSCHEDULEBYOPP
 description: "D Planned OrderSCHEDULEBYOPP"
+semantic_vi: "View D Planned Order SCHEDULEBYOPP hiển thị dữ liệu lập kế hoạch đặt hàng theo kế hoạch, bao gồm ngày và giờ bắt đầu và kết thúc của hoạt động, để sử dụng trong kế hoạch và lập kế hoạch sản xuất."
+keywords:
+  - "planned order"
+  - "đặt hàng theo kế hoạch"
+  - "scheduling"
+  - "lập kế hoạch"
+  - "manufacturing"
+  - "sản xuất"
+  - "operation"
+  - "hoạt động"
+  - "pp-plo"
+  - "planned-order"
+  - "schedule-line"
+semantic_en: "The D Planned Order SCHEDULEBYOPP view exposes planned order scheduling data, including operation start and end dates and times, for use in manufacturing planning and scheduling."
 app_component: PP-PLO-2CL
 software_component: SAPSCORE
 release_state: released

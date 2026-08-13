@@ -1,6 +1,18 @@
 ---
 name: D_MATERIALDOCUMENTCANCELED_2
 description: "D Materialdocumentcanceled 2"
+semantic_vi: "View này hiển thị các mục đơn hàng vật liệu bị hủy bỏ, có thể được sử dụng để theo dõi và quản lý đơn hàng bị hủy và các giao dịch kho trong thành phần MM-IM-GF-2CL."
+keywords:
+  - "material document"
+  - "canceled material document"
+  - "inventory transaction"
+  - "mm-im-gf-2cl"
+  - "sourcing and procurement"
+  - "material management"
+  - "đơn hàng vật liệu"
+  - "đơn hàng bị hủy"
+  - "giao dịch kho"
+semantic_en: "This view exposes canceled material document items, which can be used to track and manage canceled orders and inventory transactions in the MM-IM-GF-2CL component."
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

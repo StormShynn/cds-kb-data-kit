@@ -1,6 +1,21 @@
 ---
 name: D_PURGSOURCELISTDELETED_2
 description: "D Purgsourcelistdeleted 2"
+semantic_vi: "View D_PURGSOURCELISTDELETED_2 hiển thị danh sách nguồn đã xóa trong quy trình mua hàng, bao gồm thông tin nhà cung cấp và tổ chức. Nó được sử dụng để theo dõi và quản lý danh sách nguồn đã xóa."
+keywords:
+  - "purchasing"
+  - "source list"
+  - "deleted"
+  - "supplier"
+  - "organization"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "danh sách nguồn"
+  - "nhà cung cấp"
+  - "tổ chức"
+  - "ekko"
+  - "mm-pur-sq"
+semantic_en: "The D_PURGSOURCELISTDELETED_2 CDS view exposes deleted source lists from the purchasing process, including supplier and organizational information. It is used to track and manage deleted source lists."
 app_component: MM-PUR-SQ-SLI-2CL
 software_component: SAPSCORE
 release_state: released

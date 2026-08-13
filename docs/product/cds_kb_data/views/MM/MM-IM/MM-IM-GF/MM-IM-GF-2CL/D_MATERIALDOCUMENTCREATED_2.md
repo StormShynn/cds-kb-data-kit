@@ -1,6 +1,17 @@
 ---
 name: D_MATERIALDOCUMENTCREATED_2
 description: "D Materialdocumentcreated 2"
+semantic_vi: "View này hiển thị dữ liệu tạo tài liệu vật liệu, có thể được sử dụng để theo dõi và phân tích quá trình tạo tài liệu vật liệu trong thành phần MM-IM-GF-2CL."
+keywords:
+  - "material document creation"
+  - "tạo tài liệu vật liệu"
+  - "mm-im-gf-2cl"
+  - "sourcing and procurement"
+  - "lob:sourcing & procurement"
+  - "bo:material"
+  - "inventory transaction type"
+  - "d_materialdocumentitemcrted_2"
+semantic_en: "This view exposes material document creation data, which can be used to track and analyze material document creation processes in the MM-IM-GF-2CL component."
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_SALESQUOTATIONITEMCHANGED
 description: "D Salesquotationitemchanged"
+semantic_vi: "View này hiển thị các sự kiện thay đổi chi tiết đơn đặt hàng bán hàng, có thể được sử dụng để theo dõi các thay đổi được thực hiện trên từng chi tiết đơn đặt hàng bán hàng."
+keywords:
+  - "sales quotation"
+  - "đơn đặt hàng bán hàng"
+  - "sales quotation item"
+  - "chi tiết đơn đặt hàng bán hàng"
+  - "change event"
+  - "sự kiện thay đổi"
+  - "sap"
+  - "sd-sls-qut-2cl"
+  - "sales & distribution"
+  - "lob:sales & distribution"
+semantic_en: "This view exposes sales quotation item change events, which can be used to track changes made to individual items within a sales quotation."
 app_component: SD-SLS-QUT-2CL
 software_component: SAPSCORE
 release_state: released

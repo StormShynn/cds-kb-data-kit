@@ -1,6 +1,18 @@
 ---
 name: D_SLSSCHEDGAGRMTITEMDELETED
 description: "D Slsschedgagrmtitemdeleted"
+semantic_vi: "View này hiển thị dữ liệu mục hàng thỏa thuận lịch trình bán hàng đã bị xóa, có thể được sử dụng để theo dõi và phân tích thay đổi trong thỏa thuận bán hàng theo thời gian."
+keywords:
+  - "sales schedule agreement"
+  - "thỏa thuận lịch trình bán hàng"
+  - "deleted item"
+  - "item đã bị xóa"
+  - "sales organization"
+  - "sales schedule agreement item"
+  - "mục hàng thỏa thuận lịch trình bán hàng"
+  - "sap sd"
+  - "sd-sls-oa-sch-2cl"
+semantic_en: "This view exposes deleted sales schedule agreement items data, which can be used to track and analyze changes to sales agreements over time."
 app_component: SD-SLS-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

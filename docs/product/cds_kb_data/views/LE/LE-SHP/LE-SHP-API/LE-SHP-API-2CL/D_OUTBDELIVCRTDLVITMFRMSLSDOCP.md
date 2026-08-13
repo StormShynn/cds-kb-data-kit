@@ -1,6 +1,19 @@
 ---
 name: D_OUTBDELIVCRTDLVITMFRMSLSDOCP
 description: "D Outbdelivcrtdlvitmfrmslsdocp"
+semantic_vi: "View này hiển thị các mặt hàng vận chuyển cho một ngày chọn vận chuyển cụ thể, được sử dụng để lấy các mặt hàng cần vận chuyển vào ngày cụ thể."
+keywords:
+  - "delivery"
+  - "delivery item"
+  - "delivery selection date"
+  - "sap"
+  - "cds view"
+  - "logistics execution"
+  - "le-shp-api-2cl"
+  - "vận chuyển"
+  - "đơn vận chuyển"
+  - "ngày chọn vận chuyển"
+semantic_en: "This view exposes delivery items for a specific delivery selection date, used to retrieve the items to be delivered on a particular date."
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

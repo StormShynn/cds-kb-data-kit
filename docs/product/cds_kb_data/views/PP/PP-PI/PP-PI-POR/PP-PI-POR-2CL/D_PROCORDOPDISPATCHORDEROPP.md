@@ -1,6 +1,19 @@
 ---
 name: D_PROCORDOPDISPATCHORDEROPP
 description: "D Procordopdispatchorderopp"
+semantic_vi: "View D_PROCORDOPDISPATCHORDEROPP hiển thị dữ liệu về hoạt động phân phối đơn hàng sản xuất, có liên quan khi quản lý lịch trình sản xuất và thời gian hoạt động."
+keywords:
+  - "dispatch order"
+  - "đơn hàng phân phối"
+  - "scheduling"
+  - "operation timeline"
+  - "thời gian hoạt động"
+  - "production schedule"
+  - "lịch trình sản xuất"
+  - "sap pp"
+  - "pp-ekko"
+  - "pp-pi-por"
+semantic_en: "The D_PROCORDOPDISPATCHORDEROPP view exposes dispatch order operation data, which is relevant when managing production schedules and operation timelines."
 app_component: PP-PI-POR-2CL
 software_component: SAPSCORE
 release_state: released

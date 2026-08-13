@@ -1,6 +1,18 @@
 ---
 name: D_SERVICEORDERTMPLRELEASED
 description: "D Service OrderTMPLRELEASED"
+semantic_vi: "View D_SERVICEORDERTMPLRELEASED hiển thị dữ liệu mẫu đơn dịch vụ, được sử dụng để quản lý đơn dịch vụ trong hệ thống CRM."
+keywords:
+  - "service order"
+  - "đơn dịch vụ"
+  - "crm"
+  - "service order template"
+  - "mẫu đơn dịch vụ"
+  - "lease"
+  - "service"
+  - "service management"
+  - "crm-s4-btx-2cl"
+semantic_en: "The D_SERVICEORDERTMPLRELEASED CDS view exposes service order template data, which is used to manage service orders in the CRM system."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

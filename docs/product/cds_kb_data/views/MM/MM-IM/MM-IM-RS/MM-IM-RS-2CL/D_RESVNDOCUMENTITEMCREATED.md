@@ -1,6 +1,20 @@
 ---
 name: D_RESVNDOCUMENTITEMCREATED
 description: "D Resvndocumentitemcreated"
+semantic_vi: "View D_RESVNDOCUMENTITEMCREATED hiển thị dữ liệu tạo đơn đặt hàng chi tiết, có thể sử dụng khi theo dõi hoặc phân tích việc tạo đơn đặt hàng chi tiết trong quy trình cung ứng và mua sắm."
+keywords:
+  - "reservation"
+  - "document"
+  - "item"
+  - "creation"
+  - "sourcing"
+  - "procurement"
+  - "mm-im-rs"
+  - "lob"
+  - "reservationitem"
+  - "documentitem"
+  - "sourcingandprocurement"
+semantic_en: "The D_RESVNDOCUMENTITEMCREATED view exposes reservation document item creation data, which is useful when tracking or analyzing item-level document creation in the sourcing and procurement process."
 app_component: MM-IM-RS-2CL
 software_component: SAPSCORE
 release_state: released

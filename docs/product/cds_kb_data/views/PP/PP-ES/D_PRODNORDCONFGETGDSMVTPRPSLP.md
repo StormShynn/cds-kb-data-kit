@@ -1,6 +1,19 @@
 ---
 name: D_PRODNORDCONFGETGDSMVTPRPSLP
 description: "D Prodnordconfgetgdsmvtprpslp"
+semantic_vi: "View D_PRODNORDCONFGETGDSMVTPRPSLP hiển thị dữ liệu xác nhận sản xuất cho các chuyển động hàng hóa, bao gồm các nhóm xác nhận sản xuất, ID đơn hàng và lượng sản phẩm thu được. Nó được sử dụng để lấy dữ liệu xác nhận sản xuất cho các đơn hàng và hoạt động cụ thể."
+keywords:
+  - "production confirmation"
+  - "xác nhận sản xuất"
+  - "goods movement"
+  - "chuyển động hàng hóa"
+  - "order confirmation"
+  - "xác nhận đơn hàng"
+  - "sap pp-es"
+  - "pp-es"
+  - "manufacturing"
+  - "sản xuất"
+semantic_en: "The D_PRODNORDCONFGETGDSMVTPRPSLP view exposes production confirmation data for goods movements, including confirmation groups, order IDs, and yield quantities. It is used to retrieve production confirmation records for specific orders and operations."
 app_component: PP-ES
 software_component: SAPSCORE
 release_state: released

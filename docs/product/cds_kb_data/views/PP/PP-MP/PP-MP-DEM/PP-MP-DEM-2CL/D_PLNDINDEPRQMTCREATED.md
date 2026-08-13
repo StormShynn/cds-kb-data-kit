@@ -1,6 +1,20 @@
 ---
 name: D_PLNDINDEPRQMTCREATED
 description: "D Plndindeprqmtcreated"
+semantic_vi: "View D_PLNDINDEPRQMTCREATED hiển thị dữ liệu tạo yêu cầu độc lập trong SAP PP-MP-DEM-2CL, hữu ích cho việc theo dõi thay đổi của yêu cầu độc lập."
+keywords:
+  - "independent requirement"
+  - "tạo yêu cầu độc lập"
+  - "sap pp-mp-dem-2cl"
+  - "planning"
+  - "manufacturing"
+  - "lob:manufacturing"
+  - "component:pp-mp-dem-2cl"
+  - "pp"
+  - "pp-mp"
+  - "pp-mp-dem"
+  - "plndindeprqmtcreated"
+semantic_en: "The D_PLNDINDEPRQMTCREATED view exposes independent requirement creation data in SAP PP-MP-DEM-2CL, useful for tracking changes to independent requirements."
 app_component: PP-MP-DEM-2CL
 software_component: SAPSCORE
 release_state: released

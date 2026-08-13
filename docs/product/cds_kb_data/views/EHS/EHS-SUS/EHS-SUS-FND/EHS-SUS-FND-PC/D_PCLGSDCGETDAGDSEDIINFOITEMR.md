@@ -1,6 +1,19 @@
 ---
 name: D_PCLGSDCGETDAGDSEDIINFOITEMR
 description: "D Pclgsdcgetdagdsediinfoitemr"
+semantic_vi: "View D_PCLGSDCGETDAGDSEDIINFOITEMR hiển thị thông tin chi tiết về hàng hóa nguy hiểm EDI (Giao tiếp dữ liệu điện tử) ở cấp độ hàng hóa trong thành phần EHS-SUS-FND-PC. Nó được sử dụng để lấy dữ liệu chi tiết về thông tin EDI cho các mặt hàng cụ thể."
+keywords:
+  - "dangerous goods"
+  - "edi"
+  - "item-level"
+  - "ehs-sus-fnd-pc"
+  - "lob:other"
+  - "component:ehs-sus-fnd-pc"
+  - "electronic data interchange"
+  - "hàng hóa nguy hiểm"
+  - "giao tiếp dữ liệu điện tử"
+  - "thông tin chi tiết"
+semantic_en: "The D_PCLGSDCGETDAGDSEDIINFOITEMR CDS view exposes item-level information for Dangerous Goods EDI (Electronic Data Interchange) in the EHS-SUS-FND-PC component. It is used to retrieve detailed data about EDI information for specific items."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

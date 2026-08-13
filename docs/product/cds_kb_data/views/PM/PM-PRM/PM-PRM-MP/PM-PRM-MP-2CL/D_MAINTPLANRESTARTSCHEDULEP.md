@@ -1,6 +1,17 @@
 ---
 name: D_MAINTPLANRESTARTSCHEDULEP
 description: "D Maintplanrestartschedulep"
+semantic_vi: "View này hiển thị lịch trình khởi động lại kế hoạch bảo trì, được sử dụng để lập kế hoạch và quản lý hoạt động bảo trì. Nó được sử dụng để truy xuất và phân tích lịch trình khởi động lại cho kế hoạch bảo trì."
+keywords:
+  - "maintenance plan"
+  - "lịch trình bảo trì"
+  - "restart schedule"
+  - "schedule line"
+  - "plant maintenance"
+  - "bảo trì nhà máy"
+  - "kế hoạch bảo trì"
+  - "lịch trình khởi động lại"
+semantic_en: "This view exposes planned maintenance restart schedules, which are used to plan and manage maintenance activities. It is used to retrieve and analyze restart schedules for maintenance plans."
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released

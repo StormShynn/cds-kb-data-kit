@@ -1,6 +1,21 @@
 ---
 name: D_PROCORDCONFGETGDSMVTPRPSLR
 description: "D Procordconfgetgdsmvtprpslr"
+semantic_vi: "View D_PROCORDCONFGETGDSMVTPRPSLR hiển thị dữ liệu xác nhận sản xuất cho các đơn đặt hàng sản xuất, bao gồm thông tin đặt hàng và vị trí lưu trữ. Nó được sử dụng để lấy dữ liệu xác nhận sản xuất cho các đơn đặt hàng và mục cụ thể."
+keywords:
+  - "production confirmation"
+  - "đơn đặt hàng sản xuất"
+  - "xác nhận sản xuất"
+  - "đặt hàng"
+  - "đơn đặt hàng"
+  - "reservation"
+  - "lưu trữ"
+  - "sfc"
+  - "pp-sfc"
+  - "manufacturing order"
+  - "sản xuất"
+  - "công cụ sản xuất"
+semantic_en: "The D_PROCORDCONFGETGDSMVTPRPSLR CDS view exposes production confirmation data for manufacturing orders, including reservation and storage location information. It is used to retrieve production confirmation data for specific orders and items."
 app_component: PP-SFC-EXE-CON-2CL
 software_component: SAPSCORE
 release_state: released

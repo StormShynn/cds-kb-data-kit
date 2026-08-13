@@ -1,6 +1,17 @@
 ---
 name: D_OUTBOUNDDELIVERYITEMCREATED
 description: "D Outbound DeliveryITEMCREATED"
+semantic_vi: "Chứa dữ liệu về mặt hàng vận chuyển ra ngoài được tạo trong hệ thống SAP, thường được sử dụng khi theo dõi hoặc phân tích các mặt hàng vận chuyển mới được tạo."
+keywords:
+  - "outbound delivery"
+  - "đơn vận chuyển ra ngoài"
+  - "delivery item"
+  - "mặt hàng vận chuyển"
+  - "sap logistics"
+  - "logistics execution"
+  - "ekko"
+  - "le-shp-gf-2cl"
+semantic_en: "Exposes outbound delivery item data created in the SAP system, typically used when tracking or analyzing newly created delivery items."
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

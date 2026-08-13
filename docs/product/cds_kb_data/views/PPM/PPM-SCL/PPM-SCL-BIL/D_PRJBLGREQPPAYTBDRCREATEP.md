@@ -1,6 +1,18 @@
 ---
 name: D_PRJBLGREQPPAYTBDRCREATEP
 description: "D Prjblgreqppaytbdrcreatep"
+semantic_vi: "View D_PRJBLGREQPPAYTBDRCREATEP hiển thị dữ liệu yêu cầu thanh toán dự án, có liên quan khi tạo yêu cầu thanh toán dự án trong thành phần PPM-SCL-BIL."
+keywords:
+  - "project billing request"
+  - "yêu cầu thanh toán dự án"
+  - "ppm-scl-bil"
+  - "billing request payment type"
+  - "thanh toán dự án"
+  - "d_prjblgreqppaytbdrcreatep"
+  - "project billing"
+  - "dự án"
+  - "payment type"
+semantic_en: "The D_PRJBLGREQPPAYTBDRCREATEP view exposes project billing request payment type data, which is relevant when creating project billing requests in the PPM-SCL-BIL component."
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

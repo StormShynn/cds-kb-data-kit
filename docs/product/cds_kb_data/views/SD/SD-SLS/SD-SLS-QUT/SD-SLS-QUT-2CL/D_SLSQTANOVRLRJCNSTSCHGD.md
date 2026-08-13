@@ -1,6 +1,21 @@
 ---
 name: D_SLSQTANOVRLRJCNSTSCHGD
 description: "D Slsqtanovrlrjcnstschgd"
+semantic_vi: "View này hiển thị các thay đổi trạng thái từ chối tài liệu đơn đặt hàng bán hàng tổng thể, có thể được sử dụng để theo dõi và phân tích các thay đổi trong trạng thái từ chối tài liệu đơn đặt hàng bán hàng tổng thể theo thời gian."
+keywords:
+  - "sales quotation"
+  - "đơn đặt hàng bán hàng"
+  - "tài liệu đơn đặt hàng"
+  - "trạng thái từ chối"
+  - "thay đổi trạng thái"
+  - "sự thay đổi"
+  - "sales quotation type"
+  - "sales organization"
+  - "distribution channel"
+  - "organization division"
+  - "sold to party"
+  - "overall sddocument rejection status"
+semantic_en: "This view exposes sales quotation overall document rejection status changes, which can be used to track and analyze changes in sales quotation document rejection status over time."
 app_component: SD-SLS-QUT-2CL
 software_component: SAPSCORE
 release_state: released

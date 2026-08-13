@@ -1,6 +1,18 @@
 ---
 name: D_OUTBDELIVDELIVBLOCKCHANGED
 description: "D Outbdelivdelivblockchanged"
+semantic_vi: "View này hiển thị dữ liệu thay đổi trạng thái chặn giao hàng cho các đơn hàng giao hàng ngoài, có thể được sử dụng để theo dõi các thay đổi trong trạng thái chặn giao hàng và lý do."
+keywords:
+  - "delivery block change"
+  - "outbound delivery"
+  - "đơn hàng giao hàng ngoài"
+  - "trạng thái chặn giao hàng"
+  - "lý do chặn giao hàng"
+  - "sap logistics execution"
+  - "lob logistics execution"
+  - "le ship"
+  - "le ship gf 2cl"
+semantic_en: "This view exposes delivery block change data for outbound deliveries, which can be used to track changes in delivery block status and reasons."
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

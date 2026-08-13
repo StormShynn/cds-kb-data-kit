@@ -1,6 +1,17 @@
 ---
 name: D_MAINTTASKLISTCREATEWITHREFP
 description: "D Maintenance Task ListCREATEWITHREFP"
+semantic_vi: "CDS view D_MAINTTASKLISTCREATEWITHREFP hiển thị danh sách danh sách công việc bảo trì có thể được tạo dựa trên các nhiệm vụ hiện có, thường được sử dụng khi lên kế hoạch và lên lịch hoạt động bảo trì."
+keywords:
+  - "maintenance task list"
+  - "danh sách công việc bảo trì"
+  - "pm-prm-tl"
+  - "plant maintenance"
+  - "component:pm-prm-tl-2cl"
+  - "lob:plant maintenance"
+  - "pm"
+  - "pm-prm"
+semantic_en: "The D_MAINTTASKLISTCREATEWITHREFP CDS view exposes a list of maintenance task lists that can be created with reference to existing tasks, typically used when planning and scheduling maintenance activities."
 app_component: PM-PRM-TL-2CL
 software_component: SAPSCORE
 release_state: released

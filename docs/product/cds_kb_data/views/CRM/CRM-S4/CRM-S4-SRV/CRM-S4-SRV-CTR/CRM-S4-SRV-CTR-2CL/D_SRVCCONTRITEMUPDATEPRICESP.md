@@ -1,6 +1,19 @@
 ---
 name: D_SRVCCONTRITEMUPDATEPRICESP
 description: "D Srvccontritemupdatepricesp"
+semantic_vi: "View cung cấp thông tin giá cả cho các mục trong hợp đồng dịch vụ. Nó được sử dụng để lấy dữ liệu giá cả cho các mục trong hợp đồng dịch vụ cần được cập nhật."
+keywords:
+  - "service contract"
+  - "hợp đồng dịch vụ"
+  - "pricing"
+  - "giá cả"
+  - "service contract item"
+  - "mục hợp đồng dịch vụ"
+  - "update"
+  - "cập nhật"
+  - "sap crm"
+  - "crm sap"
+semantic_en: "Service contract item update prices service view provides pricing information for service contract items. It is used to retrieve pricing data for service contract items that need to be updated."
 app_component: CRM-S4-SRV-CTR-2CL
 software_component: SAPSCORE
 release_state: released

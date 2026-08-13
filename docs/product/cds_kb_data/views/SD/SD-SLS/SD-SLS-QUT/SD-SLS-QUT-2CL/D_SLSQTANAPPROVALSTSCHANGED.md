@@ -1,6 +1,19 @@
 ---
 name: D_SLSQTANAPPROVALSTSCHANGED
 description: "D Slsqtanapprovalstschanged"
+semantic_vi: "View này hiển thị các thay đổi trạng thái phê duyệt đơn đặt hàng bán, cho phép bạn theo dõi khi trạng thái phê duyệt thay đổi cho đơn đặt hàng bán. Nó hữu ích cho việc theo dõi và phân tích quy trình phê duyệt đơn đặt hàng bán."
+keywords:
+  - "sales quotation"
+  - "đơn đặt hàng bán"
+  - "approval status"
+  - "phê duyệt"
+  - "sales quotation approval"
+  - "trạng thái phê duyệt"
+  - "approval process"
+  - "quy trình phê duyệt"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+semantic_en: "This view exposes sales quotation approval status changes, allowing you to track when approval status changes for sales quotations. It is useful for monitoring and analyzing sales quotation approval processes."
 app_component: SD-SLS-QUT-2CL
 software_component: SAPSCORE
 release_state: released

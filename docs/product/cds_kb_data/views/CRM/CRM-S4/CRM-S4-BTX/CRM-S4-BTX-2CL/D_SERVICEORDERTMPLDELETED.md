@@ -1,6 +1,20 @@
 ---
 name: D_SERVICEORDERTMPLDELETED
 description: "D Service OrderTMPLDELETED"
+semantic_vi: "Đại diện cho các mẫu đơn dịch vụ đã bị xóa trong CRM, được sử dụng để theo dõi và quản lý lịch sử xóa mẫu đơn dịch vụ."
+keywords:
+  - "service order template"
+  - "mẫu đơn dịch vụ"
+  - "deleted"
+  - "xóa"
+  - "crm"
+  - "service order"
+  - "đơn dịch vụ"
+  - "template"
+  - "mẫu"
+  - "deletion history"
+  - "lịch sử xóa"
+semantic_en: "Represents deleted service order templates in CRM, used to track and manage service order template deletion history."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

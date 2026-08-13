@@ -1,6 +1,18 @@
 ---
 name: D_SERVICEORDERTMPLCOMPLETED
 description: "D Service OrderTMPLCOMPLETED"
+semantic_vi: "View D_SERVICEORDERTMPLCOMPLETED hiển thị các mẫu đơn dịch vụ đã hoàn thành trong CRM, có thể được sử dụng để lấy và phân tích các mẫu đơn dịch vụ đã được hoàn thành."
+keywords:
+  - "service order template"
+  - "mẫu đơn dịch vụ"
+  - "crm"
+  - "service order"
+  - "đơn dịch vụ"
+  - "completed"
+  - "hoàn thành"
+  - "sap"
+  - "crm-s4-btx-2cl"
+semantic_en: "The D_SERVICEORDERTMPLCOMPLETED view exposes completed service order templates in CRM, which can be used to retrieve and analyze service order templates that have been completed."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

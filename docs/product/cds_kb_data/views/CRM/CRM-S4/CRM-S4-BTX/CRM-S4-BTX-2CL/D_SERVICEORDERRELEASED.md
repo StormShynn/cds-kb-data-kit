@@ -1,6 +1,19 @@
 ---
 name: D_SERVICEORDERRELEASED
 description: "D Service OrderRELEASED"
+semantic_vi: "View D_SERVICEORDERRELEASED hiển thị các đơn đặt hàng dịch vụ đã được phát hành trong hệ thống CRM, có thể được sử dụng để lấy thông tin về đơn đặt hàng dịch vụ đã hoàn thành cho khách hàng."
+keywords:
+  - "service order"
+  - "đơn đặt hàng dịch vụ"
+  - "crm"
+  - "service"
+  - "lease"
+  - "released"
+  - "service order type"
+  - "service order description"
+  - "service order uuid"
+  - "customer management object type"
+semantic_en: "The D_SERVICEORDERRELEASED view exposes released service orders in the CRM system, which can be used to retrieve information about completed service orders for customers."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

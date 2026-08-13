@@ -1,6 +1,20 @@
 ---
 name: D_PRJBLGELMCRTEPROJBILLGREQR
 description: "D Prjblgelmcrteprojbillgreqr"
+semantic_vi: "View D_PRJBLGELMCRTEPROJBILLGREQR hiển thị dữ liệu yêu cầu hóa đơn dự án, được sử dụng để quản lý và theo dõi yêu cầu hóa đơn cho các dự án."
+keywords:
+  - "project billing request"
+  - "yêu cầu hóa đơn dự án"
+  - "project billing"
+  - "dự án hóa đơn"
+  - "ppm"
+  - "ppm-scl"
+  - "ppm-scl-bil"
+  - "project management"
+  - "quản lý dự án"
+  - "billing request"
+  - "yêu cầu hóa đơn"
+semantic_en: "The D_PRJBLGELMCRTEPROJBILLGREQR view exposes project billing request data, which is used to manage and track billing requests for projects."
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

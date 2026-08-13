@@ -1,6 +1,21 @@
 ---
 name: D_SERVICECONTRACTCREATED
 description: "D Servicecontractcreated"
+semantic_vi: "View D_SERVICECONTRACTCREATED hiển thị dữ liệu tạo hợp đồng dịch vụ, cung cấp thông tin về loại đối tượng quản lý khách hàng, UUID hợp đồng dịch vụ và loại hợp đồng dịch vụ."
+keywords:
+  - "service contract"
+  - "hợp đồng dịch vụ"
+  - "customer management"
+  - "quản lý khách hàng"
+  - "crm"
+  - "sap"
+  - "service contract creation"
+  - "tạo hợp đồng dịch vụ"
+  - "service contract uuid"
+  - "uuid hợp đồng dịch vụ"
+  - "service contract type"
+  - "loại hợp đồng dịch vụ"
+semantic_en: "The D_SERVICECONTRACTCREATED view exposes service contract creation data, providing information on customer management object types, service contract UUIDs, and service contract types."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

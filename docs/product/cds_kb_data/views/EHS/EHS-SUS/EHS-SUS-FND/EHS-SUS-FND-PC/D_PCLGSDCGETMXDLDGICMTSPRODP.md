@@ -1,6 +1,19 @@
 ---
 name: D_PCLGSDCGETMXDLDGICMTSPRODP
 description: "D Pclgsdcgetmxdldgicmtsprodp"
+semantic_vi: "Chứa dữ liệu sản phẩm và thông tin đóng gói cho thành phần EHS-SUS-FND-PC, hữu ích cho việc quản lý sản phẩm và thông tin đóng gói của chúng."
+keywords:
+  - "product"
+  - "packing instruction"
+  - "ehs-sus-fnd-pc"
+  - "component"
+  - "product data"
+  - "đóng gói"
+  - "sản phẩm"
+  - "thông tin sản phẩm"
+  - "ehs"
+  - "sap"
+semantic_en: "Exposes product and packing instruction data for EHS-SUS-FND-PC component, useful for managing products and their packaging information."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

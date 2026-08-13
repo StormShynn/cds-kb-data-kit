@@ -1,6 +1,18 @@
 ---
 name: D_PRJBLGREQCRTEBILLGDOCREQP
 description: "D Prjblgreqcrtebillgdocreqp"
+semantic_vi: "View này hiển thị dữ liệu yêu cầu tạo tài liệu yêu cầu tạo hóa đơn dự án, được sử dụng khi tạo tài liệu yêu cầu tạo hóa đơn dự án trong thành phần PPM-SCL-BIL."
+keywords:
+  - "project billing request"
+  - "tài liệu yêu cầu tạo hóa đơn dự án"
+  - "ppm-scl-bil"
+  - "project management"
+  - "quản lý dự án"
+  - "project billing"
+  - "hóa đơn dự án"
+  - "document requirements"
+  - "yêu cầu tạo tài liệu"
+semantic_en: "This view exposes project billing request creation document requirements data, which is used when creating a project billing request document in the PPM-SCL-BIL component."
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

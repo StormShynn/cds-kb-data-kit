@@ -1,6 +1,18 @@
 ---
 name: D_SLSQTANITMGENINCPLSTSCHGD
 description: "D Slsqtanitmgenincplstschgd"
+semantic_vi: "View này hiển thị các thay đổi trạng thái không đầy đủ chung của mục hàng hóa trong đơn đặt hàng bán hàng, có thể được sử dụng để theo dõi các thay đổi trong trạng thái không đầy đủ chung của mục hàng hóa trong đơn đặt hàng bán hàng theo thời gian."
+keywords:
+  - "sales quotation"
+  - "đơn đặt hàng bán hàng"
+  - "incompletion status"
+  - "trạng thái không đầy đủ"
+  - "sales quotation item"
+  - "mục hàng hóa trong đơn đặt hàng bán hàng"
+  - "sap"
+  - "sd-sls"
+  - "sd-sls-qut"
+semantic_en: "This view exposes sales quotation item general incompletion status changes, which can be used to track changes in sales quotation item incompletion status over time."
 app_component: SD-SLS-QUT-2CL
 software_component: SAPSCORE
 release_state: released

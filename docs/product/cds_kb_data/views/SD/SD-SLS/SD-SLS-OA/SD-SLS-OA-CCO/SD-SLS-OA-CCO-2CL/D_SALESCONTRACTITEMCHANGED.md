@@ -1,6 +1,17 @@
 ---
 name: D_SALESCONTRACTITEMCHANGED
 description: "D Salescontractitemchanged"
+semantic_vi: "View này hiển thị các sự kiện thay đổi chi tiết hợp đồng bán hàng, cung cấp thông tin về thời điểm và chi tiết nào được thay đổi trong hợp đồng bán hàng."
+keywords:
+  - "sales contract"
+  - "hợp đồng bán hàng"
+  - "sales contract item"
+  - "chi tiết hợp đồng bán hàng"
+  - "change event"
+  - "sự kiện thay đổi"
+  - "sales organization"
+  - "sales contract type"
+semantic_en: "This view exposes sales contract item change events, providing information on when and what items were changed in a sales contract."
 app_component: SD-SLS-OA-CCO-2CL
 software_component: SAPSCORE
 release_state: released

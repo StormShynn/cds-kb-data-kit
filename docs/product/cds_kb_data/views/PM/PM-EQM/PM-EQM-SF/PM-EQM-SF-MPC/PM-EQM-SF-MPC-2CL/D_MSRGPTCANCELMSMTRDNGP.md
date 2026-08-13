@@ -1,6 +1,18 @@
 ---
 name: D_MSRGPTCANCELMSMTRDNGP
 description: "D Msrgptcancelmsmtrdngp"
+semantic_vi: "Chứa thông tin về khoảng thời gian đo lường đã bị hủy bỏ, bao gồm ngày và giờ kết thúc hủy bỏ. View này được sử dụng để lấy dữ liệu về việc đo lường bị hủy bỏ trong bảo trì nhà máy."
+keywords:
+  - "plant maintenance"
+  - "measurement reading"
+  - "cancelled interval"
+  - "msmt rdng interval end date"
+  - "msmt rdng interval end time"
+  - "pm-eqm-sf-mpc-2cl"
+  - "pm-eqm"
+  - "pm"
+  - "lob:plant maintenance"
+semantic_en: "Exposes measurement reading intervals that have been cancelled, including the end date and time of the cancellation. This view is used to retrieve data on cancelled measurement readings in plant maintenance."
 app_component: PM-EQM-SF-MPC-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: D_SUPLRQTANCRTEFRMRFQITEMP
 description: "D Suplrqtancrtefrmrfqitemp"
+semantic_vi: "View này hiển thị dữ liệu đơn đặt hàng của nhà cung cấp cho yêu cầu đặt hàng, bao gồm chi tiết và thông tin giá cả của từng mặt hàng. Nó được sử dụng để truy cập và thao tác dữ liệu đơn đặt hàng của nhà cung cấp trong thành phần MM-PUR-RFQ-2CL."
+keywords:
+  - "supplier quotation"
+  - "đơn đặt hàng nhà cung cấp"
+  - "request for quotation"
+  - "yêu cầu đặt hàng"
+  - "item data"
+  - "dữ liệu mặt hàng"
+  - "mm-pur-rfq-2cl"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+semantic_en: "This view exposes supplier quotation item data for a request for quotation, including item details and pricing information. It is used to access and manipulate supplier quotation item data in the MM-PUR-RFQ-2CL component."
 app_component: MM-PUR-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

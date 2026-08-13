@@ -1,6 +1,19 @@
 ---
 name: D_SUPLRINVCCREATEP
 description: "D Suplrinvccreatep"
+semantic_vi: "View D_SUPLRINVCCREATEP hiển thị dữ liệu tạo hóa đơn nhà cung cấp, bao gồm hóa đơn và phiếu hoàn tiền, và được sử dụng khi tạo hoặc xử lý hóa đơn nhà cung cấp trong thành phần MM-IV-LIV-2CL."
+keywords:
+  - "supplier invoice"
+  - "đơn nhà cung cấp"
+  - "mm-iv"
+  - "mm-iv-liv-2cl"
+  - "sourcing & procurement"
+  - "hóa đơn nhà cung cấp"
+  - "phiếu hoàn tiền"
+  - "ekko"
+  - "posting date"
+  - "tài khoản kế toán"
+semantic_en: "The D_SUPLRINVCCREATEP view exposes supplier invoice creation data, including invoices and credit memos, and is used when creating or processing supplier invoices in the MM-IV-LIV-2CL component."
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

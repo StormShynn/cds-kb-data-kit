@@ -1,6 +1,18 @@
 ---
 name: D_MAINTORDMRKDFORDELTNRESETP
 description: "D Maintordmrkdfordeltnresetp"
+semantic_vi: "View D_MAINTORDMRKDFORDELTNRESETP hiển thị dữ liệu reset thông báo bảo trì cho các giao dịch xóa trong Plant Maintenance. Nó được sử dụng để truy cập và thao tác dữ liệu này."
+keywords:
+  - "plant maintenance"
+  - "maintenance notification"
+  - "reset data"
+  - "deletion transaction"
+  - "transactional processing"
+  - "pm-woc"
+  - "pm-woc-mo"
+  - "lob:plant maintenance"
+  - "component:pm-woc-mo-2cl"
+semantic_en: "The D_MAINTORDMRKDFORDELTNRESETP view exposes maintenance notification reset data for deletion transactions in Plant Maintenance. It is used to access and manipulate this data."
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

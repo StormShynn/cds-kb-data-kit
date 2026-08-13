@@ -1,6 +1,20 @@
 ---
 name: D_SRLZDMATLITMCHGEQUIPCATP
 description: "D Srlzdmatlitmchgequipcatp"
+semantic_vi: "Lịch sử thay đổi loại thiết bị cho vật liệu trong bảo trì nhà máy, được sử dụng để theo dõi các thay đổi về loại thiết bị qua thời gian."
+keywords:
+  - "equipment category"
+  - "equipment category change history"
+  - "plant maintenance"
+  - "material item"
+  - "equipment"
+  - "category"
+  - "change history"
+  - "thay đổi loại thiết bị"
+  - "bảo trì nhà máy"
+  - "vật liệu"
+  - "thiết bị"
+semantic_en: "Equipment category change history for material items in plant maintenance, used to track changes to equipment categories over time."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

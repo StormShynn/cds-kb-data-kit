@@ -1,6 +1,18 @@
 ---
 name: D_PRJBLGREQPOSTPONEBYDATEP
 description: "D Prjblgreqpostponebydatep"
+semantic_vi: "Chứa yêu cầu thanh toán dự án có thể hoãn theo ngày, cho phép quản lý lịch trình và thời gian thanh toán dự án."
+keywords:
+  - "project billing"
+  - "dự án thanh toán"
+  - "postpone by date"
+  - "hoãn theo ngày"
+  - "project billing request"
+  - "yêu cầu thanh toán dự án"
+  - "ppm"
+  - "ppm-scl"
+  - "ppm-scl-bil"
+semantic_en: "Exposes project billing requests that can be postponed by date, allowing for the management of project billing schedules and timelines."
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

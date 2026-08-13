@@ -1,6 +1,18 @@
 ---
 name: D_PERSSETTLMTDOCRELEASED
 description: "D Perssettlmtdocreleased"
+semantic_vi: "Chứa thông tin về quá trình thanh toán và tài liệu cho logistics tổng thể, được sử dụng để phân tích và quản lý quá trình thanh toán."
+keywords:
+  - "settlement process"
+  - "logistics general"
+  - "lo-ab"
+  - "lease"
+  - "đơn thanh toán"
+  - "quá trình thanh toán"
+  - "lo-gi"
+  - "lo-gi tổng thể"
+  - "leasing"
+semantic_en: "Exposes settlement process and document information for logistics general, used to analyze and manage settlement processes."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

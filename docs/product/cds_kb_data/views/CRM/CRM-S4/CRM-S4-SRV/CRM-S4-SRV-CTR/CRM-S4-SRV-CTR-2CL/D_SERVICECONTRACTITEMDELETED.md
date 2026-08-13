@@ -1,6 +1,20 @@
 ---
 name: D_SERVICECONTRACTITEMDELETED
 description: "D Servicecontractitemdeleted"
+semantic_vi: "View D_SERVICECONTRACTITEMDELETED hiển thị các mục hợp đồng dịch vụ đã bị xóa trong CRM, có thể được sử dụng để theo dõi dữ liệu lịch sử hoặc kiểm tra các thay đổi đối với hợp đồng dịch vụ."
+keywords:
+  - "service contract"
+  - "hợp đồng dịch vụ"
+  - "deleted item"
+  - "đã bị xóa"
+  - "crm"
+  - "service contract item"
+  - "mục hợp đồng dịch vụ"
+  - "historical data"
+  - "dữ liệu lịch sử"
+  - "audit changes"
+  - "kiểm tra các thay đổi"
+semantic_en: "The D_SERVICECONTRACTITEMDELETED view exposes deleted service contract items in CRM, which can be used to track historical data or audit changes to service contracts."
 app_component: CRM-S4-SRV-CTR-2CL
 software_component: SAPSCORE
 release_state: released

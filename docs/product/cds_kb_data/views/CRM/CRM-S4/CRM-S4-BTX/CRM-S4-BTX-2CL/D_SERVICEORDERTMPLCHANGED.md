@@ -1,6 +1,18 @@
 ---
 name: D_SERVICEORDERTMPLCHANGED
 description: "D Service OrderTMPLCHANGED"
+semantic_vi: "View D_SERVICEORDERTMPLCHANGED hiển thị dữ liệu thay đổi mẫu đơn dịch vụ, có thể sử dụng khi theo dõi thay đổi mẫu đơn dịch vụ trong hệ thống CRM."
+keywords:
+  - "service order template"
+  - "đơn dịch vụ mẫu"
+  - "crm"
+  - "service order"
+  - "đơn dịch vụ"
+  - "template change"
+  - "thay đổi mẫu"
+  - "sap crm"
+  - "crm system"
+semantic_en: "The D_SERVICEORDERTMPLCHANGED view exposes service order template change data, which can be used when tracking changes to service order templates in the CRM system."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

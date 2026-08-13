@@ -1,6 +1,17 @@
 ---
 name: D_SRVCCONTRUPDATEPRICESP
 description: "D Srvccontrupdatepricesp"
+semantic_vi: "Dịch vụ xem lại giá cho hợp đồng dịch vụ cung cấp thông tin về giá cho hợp đồng dịch vụ, có thể được sử dụng để cập nhật giá trong hệ thống CRM."
+keywords:
+  - "service contract"
+  - "hợp đồng dịch vụ"
+  - "price update"
+  - "cập nhật giá"
+  - "crm"
+  - "hệ thống quản lý mối quan hệ khách hàng"
+  - "sap"
+  - "service view"
+semantic_en: "Service contract update prices service view provides pricing information for service contracts, which can be used to update prices in the CRM system."
 app_component: CRM-S4-SRV-CTR-2CL
 software_component: SAPSCORE
 release_state: released

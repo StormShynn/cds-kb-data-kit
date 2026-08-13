@@ -1,6 +1,20 @@
 ---
 name: D_TRANSPORDASSIGNFRTUNITP
 description: "D Transpordassignfrtunitp"
+semantic_vi: "CDS view D_TRANSPORDASSIGNFRTUNITP hiển thị các tham số gán đơn vị hàng hóa cho vận tải, hữu ích khi quản lý đơn hàng vận tải hoặc đơn vị hàng hóa."
+keywords:
+  - "transportation"
+  - "freight unit"
+  - "assignment parameter"
+  - "đơn vị hàng hóa"
+  - "gán tham số"
+  - "đơn hàng vận tải"
+  - "tm"
+  - "tm-frm"
+  - "transactional-processing"
+  - "sap"
+  - "cds view"
+semantic_en: "The D_TRANSPORDASSIGNFRTUNITP CDS view exposes freight unit assignment parameters for transportation, useful when managing transportation orders or freight units."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

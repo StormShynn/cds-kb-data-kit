@@ -1,6 +1,21 @@
 ---
 name: D_SERVICECONTRACTITEMCHANGED
 description: "D Servicecontractitemchanged"
+semantic_vi: "View này hiển thị dữ liệu vật tư hợp đồng dịch vụ đã thay đổi, cho phép các nhà phát triển theo dõi các bản cập nhật của vật tư hợp đồng dịch vụ theo thời gian thực. Nó có thể được sử dụng để xây dựng các ứng dụng yêu cầu thông tin vật tư hợp đồng dịch vụ được cập nhật."
+keywords:
+  - "service contract item"
+  - "service contract"
+  - "item-level"
+  - "crm"
+  - "service"
+  - "contract"
+  - "item"
+  - "changed"
+  - "update"
+  - "dịch vụ"
+  - "hợp đồng"
+  - "vật tư"
+semantic_en: "This view exposes service contract item data that has changed, allowing developers to track updates to service contract items in real-time. It can be used to build applications that require up-to-date service contract item information."
 app_component: CRM-S4-SRV-CTR-2CL
 software_component: SAPSCORE
 release_state: released

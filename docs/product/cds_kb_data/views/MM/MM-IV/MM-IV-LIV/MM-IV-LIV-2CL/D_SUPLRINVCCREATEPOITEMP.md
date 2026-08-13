@@ -1,6 +1,18 @@
 ---
 name: D_SUPLRINVCCREATEPOITEMP
 description: "D Suplrinvccreatepoitemp"
+semantic_vi: "View D_SUPLRINVCCREATEPOITEMP hiển thị dữ liệu đơn hàng nhà cung cấp liên quan đến đơn đặt hàng mua hàng, được sử dụng khi tạo hoặc cập nhật mục đơn đặt hàng mua hàng."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "supplier invoice"
+  - "đơn hàng nhà cung cấp"
+  - "create po item"
+  - "tạo mục đơn đặt hàng mua hàng"
+  - "mm-iv"
+  - "sourcing & procurement"
+semantic_en: "The D_SUPLRINVCCREATEPOITEMP view exposes supplier invoice item data related to purchase orders, used when creating or updating purchase order items."
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

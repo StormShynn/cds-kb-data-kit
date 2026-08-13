@@ -1,6 +1,20 @@
 ---
 name: D_RPTVMFGCONFIRMATIONCANCELP
 description: "D Rptvmfgconfirmationcancelp"
+semantic_vi: "View D_RPTVMFGCONFIRMATIONCANCELP cung cấp dữ liệu về việc hủy xác nhận sản xuất, có thể được sử dụng để phân tích và báo cáo về sự kiện hủy xác nhận sản xuất."
+keywords:
+  - "manufacturing"
+  - "confirmation"
+  - "cancellation"
+  - "production"
+  - "reporting"
+  - "pp-rem"
+  - "pp-rem-ade-2cl"
+  - "sap"
+  - "cancellation event"
+  - "hủy xác nhận sản xuất"
+  - "sự kiện hủy xác nhận sản xuất"
+semantic_en: "The D_RPTVMFGCONFIRMATIONCANCELP view provides data on manufacturing confirmation cancellations, which can be used to analyze and report on production confirmation cancellation events."
 app_component: PP-REM-ADE-2CL
 software_component: SAPSCORE
 release_state: released

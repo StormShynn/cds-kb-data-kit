@@ -1,6 +1,21 @@
 ---
 name: D_PURSCHEDGAGRMTCHANGED
 description: "D Purschedgagrmtchanged"
+semantic_vi: "View này hiển thị các thay đổi trong thỏa thuận mua hàng, có liên quan khi phân tích hoặc báo cáo các thay đổi trong thỏa thuận mua hàng theo thời gian."
+keywords:
+  - "purchasing agreement"
+  - "thỏa thuận mua hàng"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "agreement change"
+  - "thay đổi thỏa thuận"
+  - "purchasing document"
+  - "đơn mua"
+  - "mm-pur"
+  - "mm-pur-oa"
+  - "sourcing & procurement"
+  - "thuê mua"
+semantic_en: "This view exposes purchasing document agreement changes, which are relevant when analyzing or reporting on changes to purchasing agreements over time."
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_SRLZDMATLITMCHGUNQITMIDP
 description: "D Srlzdmatlitmchgunqitmidp"
+semantic_vi: "Chứa thông tin thay đổi của vật tư thiết bị trong bối cảnh bảo trì nhà máy, hữu ích cho việc theo dõi và phân tích thay đổi của vật tư thiết bị."
+keywords:
+  - "equipment maintenance"
+  - "plant maintenance"
+  - "equipment item"
+  - "change management"
+  - "pm-eqm"
+  - "pm-eqm-eq"
+  - "equipment change"
+  - "vật tư thiết bị"
+  - "bảo trì nhà máy"
+  - "thay đổi vật tư thiết bị"
+semantic_en: "Exposes equipment maintenance item changes in a plant maintenance context, useful for tracking and analyzing changes to equipment items."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

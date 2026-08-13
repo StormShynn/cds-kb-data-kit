@@ -1,6 +1,21 @@
 ---
 name: D_PROCESSORDERCHANGED
 description: "D Processorderchanged"
+semantic_vi: "View D_ProcessOrderChanged hiển thị các thay đổi trong quá trình sản xuất, hữu ích cho việc theo dõi và phân tích các bản cập nhật của đơn đặt hàng sản xuất."
+keywords:
+  - "process order"
+  - "đơn đặt hàng sản xuất"
+  - "manufacturing"
+  - "production order"
+  - "thay đổi"
+  - "cập nhật"
+  - "sản xuất"
+  - "process order changed"
+  - "d_processorderchanged"
+  - "pp"
+  - "pp-pi"
+  - "pp-pi-por"
+semantic_en: "The D_ProcessOrderChanged view exposes process order changes in manufacturing, useful for tracking and analyzing production order updates."
 app_component: PP-PI-POR-2CL
 software_component: SAPSCORE
 release_state: released

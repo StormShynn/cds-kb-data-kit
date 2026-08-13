@@ -1,6 +1,19 @@
 ---
 name: D_SALESDOCITEMCRTEWITHREFITEMP
 description: "D Salesdocitemcrtewithrefitemp"
+semantic_vi: "View D_SALESDOCITEMCRTEWITHREFITEMP CDS hiển thị dữ liệu tạo đơn hàng bán hàng với các mục tham khảo, có ích cho việc tạo mới đơn hàng bán hàng hoặc cập nhật các đơn hàng hiện có với chi tiết mục hàng."
+keywords:
+  - "sales document"
+  - "đơn hàng bán hàng"
+  - "item creation"
+  - "tạo mục"
+  - "reference item"
+  - "mục tham khảo"
+  - "sap sales"
+  - "sales order"
+  - "đơn đặt hàng bán hàng"
+  - "sd-sls-so-rap-2cl"
+semantic_en: "The D_SALESDOCITEMCRTEWITHREFITEMP CDS view exposes sales document item creation data with reference items, useful for creating new sales documents or updating existing ones with item-level details."
 app_component: SD-SLS-SO-RAP-2CL
 software_component: SAPSCORE
 release_state: released

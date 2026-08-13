@@ -1,6 +1,20 @@
 ---
 name: D_PROCORDCONFGETCONFPROPOSALP
 description: "D Procordconfgetconfproposalp"
+semantic_vi: "View D_PROCORDCONFGETCONFPROPOSALP hiển thị dữ liệu xác nhận sản xuất, cụ thể là đề xuất cho các bản ghi xác nhận, có thể được sử dụng để lấy chi tiết xác nhận cho đơn đặt hàng sản xuất."
+keywords:
+  - "production confirmation"
+  - "đơn đặt hàng sản xuất"
+  - "xác nhận sản xuất"
+  - "proposal"
+  - "confirmation record"
+  - "sản xuất"
+  - "đơn đặt hàng"
+  - "ekko"
+  - "pp-es"
+  - "manufacturing"
+  - "lob: manufacturing"
+semantic_en: "The D_PROCORDCONFGETCONFPROPOSALP view exposes production confirmation data, specifically proposals for confirmation records, which can be used to retrieve confirmation details for production orders."
 app_component: PP-ES
 software_component: SAPSCORE
 release_state: released

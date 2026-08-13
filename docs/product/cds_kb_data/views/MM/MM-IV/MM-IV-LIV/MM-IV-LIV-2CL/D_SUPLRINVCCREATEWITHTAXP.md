@@ -1,6 +1,20 @@
 ---
 name: D_SUPLRINVCCREATEWITHTAXP
 description: "D Suplrinvccreatewithtaxp"
+semantic_vi: "View D_SUPLRINVCCREATEWITHTAXP hiển thị dữ liệu thuế giữ lại cho hóa đơn nhà cung cấp, được sử dụng khi tạo hoặc xử lý hóa đơn nhà cung cấp có thuế."
+keywords:
+  - "supplier invoice"
+  - "hóa đơn nhà cung cấp"
+  - "withholding tax"
+  - "tax"
+  - "invoice"
+  - "hóa đơn"
+  - "supplier"
+  - "nhà cung cấp"
+  - "sap mm"
+  - "mm iv liv"
+  - "lob sourcing & procurement"
+semantic_en: "The D_SUPLRINVCCREATEWITHTAXP view exposes withholding tax data for supplier invoices, which is used when creating or processing supplier invoices with tax."
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

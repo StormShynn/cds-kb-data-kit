@@ -1,6 +1,19 @@
 ---
 name: D_SUPLRQTANCRTEFRMRFQALLITMSP
 description: "D Suplrqtancrtefrmrfqallitmsp"
+semantic_vi: "View D_SUPLRQTANCRTEFRMRFQALLITMSP hiển thị dữ liệu trích dẫn nhà cung cấp cho tất cả các mặt hàng trong một yêu cầu trích dẫn giá, có thể được sử dụng để phân tích và so sánh trích dẫn của nhà cung cấp."
+keywords:
+  - "supplier quotation"
+  - "trích dẫn nhà cung cấp"
+  - "request for quotation"
+  - "yêu cầu trích dẫn giá"
+  - "purchase requisition"
+  - "yêu cầu mua hàng"
+  - "rfq"
+  - "ekko"
+  - "mm-pur-rfq"
+  - "sourcing and procurement"
+semantic_en: "The D_SUPLRQTANCRTEFRMRFQALLITMSP view exposes supplier quotation data for all items in a request for quotation, which can be used to analyze and compare supplier quotes."
 app_component: MM-PUR-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

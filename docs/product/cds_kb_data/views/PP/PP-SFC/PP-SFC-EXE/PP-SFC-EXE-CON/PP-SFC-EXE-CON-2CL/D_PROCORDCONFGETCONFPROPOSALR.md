@@ -1,6 +1,18 @@
 ---
 name: D_PROCORDCONFGETCONFPROPOSALR
 description: "D Procordconfgetconfproposalr"
+semantic_vi: "View D_PROCORDCONFGETCONFPROPOSALR hiển thị dữ liệu đề xuất xác nhận sản xuất, có thể sử dụng để lấy đề xuất xác nhận cho đơn đặt hàng sản xuất."
+keywords:
+  - "production confirmation"
+  - "đề xuất xác nhận sản xuất"
+  - "production order"
+  - "đơn đặt hàng sản xuất"
+  - "sap pp"
+  - "pp-sfc"
+  - "pp-sfc-exe"
+  - "confirmation proposal"
+  - "xác nhận sản xuất"
+semantic_en: "The D_PROCORDCONFGETCONFPROPOSALR CDS view exposes production confirmation proposal data, which can be used to retrieve confirmation proposals for production orders."
 app_component: PP-SFC-EXE-CON-2CL
 software_component: SAPSCORE
 release_state: released

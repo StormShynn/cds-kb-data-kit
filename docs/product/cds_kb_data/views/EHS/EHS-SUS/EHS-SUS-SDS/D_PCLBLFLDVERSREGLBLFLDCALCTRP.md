@@ -1,6 +1,19 @@
 ---
 name: D_PCLBLFLDVERSREGLBLFLDCALCTRP
 description: "D Pclblfldversreglblfldcalctrp"
+semantic_vi: "Chỉ ra các phiên bản trường nhãn và các tác nhân tính toán tương ứng cho thành phần EHS-SUS-SDS."
+keywords:
+  - "ehs"
+  - "ehs-sus"
+  - "ehs-sus-sds"
+  - "label field"
+  - "calculation trigger"
+  - "component:ehs-sus-sds"
+  - "lob:other"
+  - "sds"
+  - "sustainability"
+  - "environmental health and safety"
+semantic_en: "Exposes label field versions and their corresponding calculation triggers for EHS-SUS-SDS component."
 app_component: EHS-SUS-SDS
 software_component: SAPSCORE
 release_state: released

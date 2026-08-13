@@ -1,6 +1,18 @@
 ---
 name: D_SERVICEORDERDELETED
 description: "D Service OrderDELETED"
+semantic_vi: "View D_SERVICEORDERDELETED CDS hiển thị các đơn đặt hàng dịch vụ đã bị xóa khỏi hệ thống CRM, cung cấp truy cập dữ liệu lịch sử cho phân tích và báo cáo."
+keywords:
+  - "service order"
+  - "đơn đặt hàng dịch vụ"
+  - "deleted service order"
+  - "đơn đặt hàng dịch vụ đã bị xóa"
+  - "crm"
+  - "customer relationship management"
+  - "sap crm"
+  - "service order history"
+  - "lịch sử đơn đặt hàng dịch vụ"
+semantic_en: "The D_SERVICEORDERDELETED CDS view exposes deleted service orders from the CRM system, providing access to historical data for analysis and reporting."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_SUPPLYDEMANDITEMGETITEMR
 description: "D Supplydemanditemgetitemr"
+semantic_vi: "View D_SUPPLYDEMANDITEMGETITEMR hiển thị dữ liệu nhu cầu và cung cấp vật liệu tại mức độ chi tiết vật tư, hữu ích cho kế hoạch và thực hiện sản xuất."
+keywords:
+  - "material demand"
+  - "supply data"
+  - "manufacturing planning"
+  - "mrp"
+  - "mrpplant"
+  - "mrpelement"
+  - "mrpelementitem"
+  - "mrpelementscheduleline"
+  - "demand and supply"
+  - "item level data"
+semantic_en: "The D_SUPPLYDEMANDITEMGETITEMR view exposes material demand and supply data at the item level, useful for manufacturing planning and execution."
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

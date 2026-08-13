@@ -1,6 +1,19 @@
 ---
 name: D_MATERIALDOCUMENTITEMCANCLD_2
 description: "D Materialdocumentitemcancld 2"
+semantic_vi: "Chứa dữ liệu hủy bỏ vật liệu tài liệu đơn vị, hữu ích cho việc quản lý đơn vị tài liệu vật liệu trong thành phần MM-IM-GF-2CL."
+keywords:
+  - "material document item"
+  - "cancellation"
+  - "mm-im-gf-2cl"
+  - "material document"
+  - "đơn vị tài liệu vật liệu"
+  - "hủy bỏ"
+  - "sourcing & procurement"
+  - "material"
+  - "lob:sourcing & procurement"
+  - "bo:material"
+semantic_en: "Exposes material document item cancellation data, useful for managing material document items in the MM-IM-GF-2CL component."
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

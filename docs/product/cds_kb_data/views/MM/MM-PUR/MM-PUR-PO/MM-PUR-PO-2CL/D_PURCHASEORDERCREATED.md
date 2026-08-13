@@ -1,6 +1,19 @@
 ---
 name: D_PURCHASEORDERCREATED
 description: "D Purchase OrderCREATED"
+semantic_vi: "View D_PURCHASEORDERCREATED hiển thị dữ liệu đơn đặt hàng được tạo trong hệ thống, có thể được sử dụng để phân tích hoặc báo cáo về đơn đặt hàng mới được tạo."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "purchase order created"
+  - "đơn đặt hàng mới"
+  - "sourcing and procurement"
+  - "lob:sourcing & procurement"
+  - "bo:purchaseorder"
+  - "mm-pur-po"
+  - "mm-pur-po-2cl"
+semantic_en: "The D_PURCHASEORDERCREATED view exposes purchase order data created in the system, which can be used to analyze or report on newly created purchase orders."
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

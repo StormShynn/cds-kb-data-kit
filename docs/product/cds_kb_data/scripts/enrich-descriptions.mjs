@@ -22,14 +22,26 @@
 //
 // Usage:
 //   node scripts/enrich-descriptions.mjs [dataDir] [--limit N] [--dry-run]
-//       [--provider groq|openrouter] [--model <name>] [--base-url <url>]
+//       [--provider groq|openrouter|openai] [--model <name>] [--base-url <url>]
+//
+// Provider selection: with no --provider flag, providers are tried in
+// PROVIDER_PRIORITY order (openrouter, then groq, then openai) — whichever
+// has a key configured. If the current provider exhausts its retries on a
+// view (rate-limited/erroring), it's marked dead for the rest of the run and
+// the next provider in the chain takes over, so a run drains OpenRouter's
+// small free quota first, spills over to Groq's much larger free quota, and
+// only falls through to OpenAI (paid, no free tier) as a last resort if both
+// free providers are exhausted in the same run. Pass --provider explicitly
+// to pin a single provider with no fallback.
 //
 // API key resolution (first present wins): the provider's own env var
-// (GROQ_API_KEY / OPENROUTER_API_KEY) or the generic LLM_ENRICH_API_KEY.
+// (GROQ_API_KEY / OPENROUTER_API_KEY / OPENAI_API_KEY) or the generic
+// LLM_ENRICH_API_KEY.
 //
 // Provider defaults (see PROVIDERS below):
 //   groq       -> llama-3.1-8b-instant   (14,400 req/day free tier)
 //   openrouter -> meta-llama/llama-3.1-8b-instruct:free (50 req/day free)
+//   openai     -> gpt-4o-mini (paid — billed to the OPENAI_API_KEY account)
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -50,14 +62,24 @@ const PROVIDERS = {
     defaultModel: 'meta-llama/llama-3.1-8b-instruct:free',
     apiKeyEnv: ['OPENROUTER_API_KEY', 'LLM_ENRICH_API_KEY'],
   },
+  openai: {
+    baseUrl: 'https://api.openai.com/v1',
+    defaultModel: 'gpt-4o-mini',
+    apiKeyEnv: ['OPENAI_API_KEY', 'LLM_ENRICH_API_KEY'],
+  },
 };
+
+// Auto (no --provider) fallback order: prefer the free tiers first — free
+// OpenRouter, then Groq's much larger free quota — and only reach for paid
+// OpenAI if a run manages to exhaust both of those.
+const PROVIDER_PRIORITY = ['openrouter', 'groq', 'openai'];
 
 // ── CLI args ────────────────────────────────────────────────────────────────
 // Parsed as (positional dataDir, then --flags) regardless of order, so a
 // flags-first invocation like `--provider groq` can't swallow the dataDir.
 
 const args = process.argv.slice(2);
-const opts = { dataDir: '.', limit: 0, dryRun: false, provider: 'groq', model: undefined, baseUrl: undefined };
+const opts = { dataDir: '.', limit: 0, dryRun: false, provider: undefined, model: undefined, baseUrl: undefined };
 const VALUE_FLAGS = new Set(['limit', 'provider', 'model', 'base-url']);
 for (let i = 0; i < args.length; i++) {
   const a = args[i];
@@ -73,15 +95,46 @@ for (let i = 0; i < args.length; i++) {
 const LIMIT = Number(opts.limit || 0); // 0 = no limit
 const DRY_RUN = opts.dryRun;
 const dataDir = opts.dataDir.trim() || '.';
-const providerName = String(opts.provider || 'groq').toLowerCase();
-const provider = PROVIDERS[providerName];
-if (!provider) {
-  console.error(`Unknown provider "${providerName}". Supported: ${Object.keys(PROVIDERS).join(', ')}`);
-  process.exit(2);
+
+function resolveApiKey(provider) {
+  return provider.apiKeyEnv.map((k) => process.env[k]).find(Boolean) || '';
 }
-const model = opts.model || provider.defaultModel;
-const baseUrl = (opts.baseUrl || provider.baseUrl).replace(/\/+$/, '');
-const apiKey = provider.apiKeyEnv.map((k) => process.env[k]).find(Boolean) || '';
+
+/**
+ * Build the ordered list of usable providers for this run. With an explicit
+ * --provider flag, that's the whole chain (no fallback) — --model/--base-url
+ * only apply in this single-provider mode. With no flag, every provider in
+ * PROVIDER_PRIORITY that has a key configured joins the chain in that order.
+ */
+function buildProviderChain() {
+  if (opts.provider) {
+    const name = String(opts.provider).toLowerCase();
+    const provider = PROVIDERS[name];
+    if (!provider) {
+      console.error(`Unknown provider "${name}". Supported: ${Object.keys(PROVIDERS).join(', ')}`);
+      process.exit(2);
+    }
+    const apiKey = resolveApiKey(provider);
+    if (!apiKey) return [];
+    return [{
+      name,
+      apiKey,
+      model: opts.model || provider.defaultModel,
+      baseUrl: (opts.baseUrl || provider.baseUrl).replace(/\/+$/, ''),
+    }];
+  }
+  return PROVIDER_PRIORITY
+    .map((name) => {
+      const provider = PROVIDERS[name];
+      const apiKey = resolveApiKey(provider);
+      if (!apiKey) return null;
+      return { name, apiKey, model: provider.defaultModel, baseUrl: provider.baseUrl.replace(/\/+$/, '') };
+    })
+    .filter(Boolean);
+}
+
+const providerChain = buildProviderChain();
+const deadProviders = new Set();
 
 // ── Free-text YAML quoting (same convention as src/template.mjs) ───────────
 
@@ -227,9 +280,9 @@ function buildPrompt(view) {
   ].join('\n');
 }
 
-async function callLLMOnce(view) {
+async function callLLMOnce(view, p) {
   const body = {
-    model,
+    model: p.model,
     messages: [
       { role: 'system', content: 'You produce strict JSON. No markdown, no extra text.' },
       { role: 'user', content: buildPrompt(view) },
@@ -237,19 +290,19 @@ async function callLLMOnce(view) {
     temperature: 0.2,
     max_tokens: 400,
   };
-  const resp = await fetch(`${baseUrl}/chat/completions`, {
+  const resp = await fetch(`${p.baseUrl}/chat/completions`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `Bearer ${apiKey}`,
-      ...(providerName === 'openrouter' ? { 'HTTP-Referer': 'https://github.com/StormShynn/cds-kb-mcp-data-kit', 'X-Title': 'cds-kb-data enrichment' } : {}),
+      Authorization: `Bearer ${p.apiKey}`,
+      ...(p.name === 'openrouter' ? { 'HTTP-Referer': 'https://github.com/StormShynn/cds-kb-mcp-data-kit', 'X-Title': 'cds-kb-data enrichment' } : {}),
     },
     body: JSON.stringify(body),
     signal: AbortSignal.timeout(60000),
   });
   if (!resp.ok) {
     const text = await resp.text().catch(() => '');
-    throw new Error(`${providerName} API ${resp.status}: ${text.slice(0, 200)}`);
+    throw new Error(`${p.name} API ${resp.status}: ${text.slice(0, 200)}`);
   }
   const data = await resp.json();
   const content = data?.choices?.[0]?.message?.content;
@@ -268,20 +321,21 @@ async function callLLMOnce(view) {
   return { semanticEn, semanticVi, keywords };
 }
 
-// Retry wrapper: GROQ free tier throttles at ~6k TPM (bursts of ~10-15 calls
-// then 429s for the rest of the minute window). Exponential backoff on 429/5xx
-// lets a long run grind through without wasting a whole chunk to rate limits.
-async function callLLM(view) {
+// Retry wrapper for a single provider: free tiers throttle at a handful of
+// req/s (bursts then 429s for the rest of the window). Exponential backoff
+// on 429/5xx lets a long run grind through without wasting a whole chunk to
+// transient rate limits.
+async function callWithRetry(view, p) {
   const attempts = 5;
   let delayMs = 5000;
   for (let a = 0; a < attempts; a++) {
     try {
-      return await callLLMOnce(view);
+      return await callLLMOnce(view, p);
     } catch (err) {
       const msg = String(err.message || '');
       const retriable = /(429|rate limit|5\d\d|abort|fetch failed|empty completion)/i.test(msg);
       if (!retriable || a === attempts - 1) throw err;
-      console.error(`⏳ retry ${a + 1}/${attempts} ${view.name} in ${delayMs / 1000}s — ${msg.slice(0, 100)}`);
+      console.error(`⏳ retry ${a + 1}/${attempts} [${p.name}] ${view.name} in ${delayMs / 1000}s — ${msg.slice(0, 100)}`);
       await new Promise((r) => setTimeout(r, delayMs));
       delayMs = Math.min(delayMs * 2, 60000);
     }
@@ -289,14 +343,35 @@ async function callLLM(view) {
   throw new Error('unreachable');
 }
 
+// Provider-chain wrapper: try providers in priority order (openrouter first,
+// then groq — see PROVIDER_PRIORITY). Once a provider exhausts its retries
+// for one view, it's assumed exhausted for the whole run (daily free-tier
+// quotas don't recover mid-run) and marked dead so every later view skips
+// straight to the next provider instead of re-paying its retry backoff.
+async function callLLM(view, chain) {
+  let lastErr;
+  for (const p of chain) {
+    if (deadProviders.has(p.name)) continue;
+    try {
+      return { ...(await callWithRetry(view, p)), provider: p.name };
+    } catch (err) {
+      lastErr = err;
+      deadProviders.add(p.name);
+      console.error(`⚠️  [${p.name}] exhausted retries — falling back to next provider for the rest of this run (${err.message.slice(0, 120)})`);
+    }
+  }
+  throw lastErr || new Error('No LLM provider available (all configured providers are dead or none configured)');
+}
+
 // ── Main ────────────────────────────────────────────────────────────────────
 
 async function main() {
-  if (!apiKey) {
-    console.log('ℹ️  No LLM API key configured (GROQ_API_KEY / OPENROUTER_API_KEY / LLM_ENRICH_API_KEY). Skipping enrichment — this is an opt-in feature.');
+  if (providerChain.length === 0) {
+    console.log('ℹ️  No LLM API key configured (GROQ_API_KEY / OPENROUTER_API_KEY / OPENAI_API_KEY / LLM_ENRICH_API_KEY). Skipping enrichment — this is an opt-in feature.');
     return;
   }
-  console.log(`Provider: ${providerName} (${model}) | dataDir: ${dataDir} | limit: ${LIMIT || 'unlimited'} | dry-run: ${DRY_RUN}`);
+  const chainDesc = providerChain.map((p) => `${p.name} (${p.model})`).join(' → ');
+  console.log(`Providers: ${chainDesc} | dataDir: ${dataDir} | limit: ${LIMIT || 'unlimited'} | dry-run: ${DRY_RUN}`);
 
   const candidates = await loadCandidates();
   // Target anything not FULLY enriched — a view with semantic_en but no
@@ -322,7 +397,7 @@ async function main() {
   for (let i = 0; i < targets.length; i++) {
     const view = targets[i];
     try {
-      const { semanticEn, semanticVi, keywords } = await callLLM(view);
+      const { semanticEn, semanticVi, keywords, provider } = await callLLM(view, providerChain);
       const abs = path.join(dataDir, 'views', ...view.relPath.split('/'));
       const md = await fs.readFile(abs, 'utf-8');
       // Keep an existing semantic_en (it's human-reviewed or already
@@ -335,10 +410,14 @@ async function main() {
       if (updated === md) { unchanged++; continue; }
       await fs.writeFile(abs, updated, 'utf-8');
       ok++;
-      console.log(`✅ ${i + 1}/${targets.length} ${view.name} — ${semanticEn.slice(0, 80)}${semanticEn.length > 80 ? '…' : ''}`);
+      console.log(`✅ ${i + 1}/${targets.length} [${provider}] ${view.name} — ${semanticEn.slice(0, 80)}${semanticEn.length > 80 ? '…' : ''}`);
     } catch (err) {
       failed++;
       console.error(`❌ ${i + 1}/${targets.length} ${view.name} — ${err.message}`);
+      if (deadProviders.size >= providerChain.length) {
+        console.error('❌ All configured providers are exhausted — stopping this run early.');
+        break;
+      }
     }
     // Respect free-tier rate limits (Groq ~30 RPM): one request at a time,
     // tiny pause between calls.

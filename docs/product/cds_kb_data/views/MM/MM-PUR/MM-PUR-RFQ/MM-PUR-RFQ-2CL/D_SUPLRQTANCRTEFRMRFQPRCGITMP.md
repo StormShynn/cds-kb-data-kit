@@ -1,6 +1,21 @@
 ---
 name: D_SUPLRQTANCRTEFRMRFQPRCGITMP
 description: "D Suplrqtancrtefrmrfqprcgitmp"
+semantic_vi: "CDS view D_SUPLRQTANCRTEFRMRFQPRCGITMP hiển thị các tiêu chí chấp nhận đơn giá của nhà cung cấp cho yêu cầu báo giá trong quản lý mua hàng. Nó được sử dụng để quản lý và phân tích đơn giá của nhà cung cấp trong quá trình mua hàng."
+keywords:
+  - "supplier quote"
+  - "đơn giá nhà cung cấp"
+  - "request for quotation"
+  - "yêu cầu báo giá"
+  - "procurement"
+  - "quản lý mua hàng"
+  - "condition type"
+  - "điều kiện loại"
+  - "condition rate value"
+  - "giá trị điều kiện"
+  - "condition currency"
+  - "tiền tệ điều kiện"
+semantic_en: "The D_SUPLRQTANCRTEFRMRFQPRCGITMP CDS view exposes supplier quote acceptance criteria for a request for quotation in procurement. It is used to manage and analyze supplier quotes during the procurement process."
 app_component: MM-PUR-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: D_PINVPOSTPINVDIFFERENCEP
 description: "D Pinvpostpinvdifferencep"
+semantic_vi: "View D_PINVPOSTPINVDIFFERENCEP hiển thị sự khác biệt về tồn kho vật lý cho một ngày đăng ký và lý do cụ thể, có thể được sử dụng để phân tích sự khác biệt trong mức tồn kho."
+keywords:
+  - "physical inventory"
+  - "sự khác biệt tồn kho vật lý"
+  - "posting date"
+  - "ngày đăng ký"
+  - "reason for physical inventory difference"
+  - "lý do khác biệt tồn kho vật lý"
+  - "inventory analysis"
+  - "phân tích tồn kho"
+  - "sap mm"
+  - "sap mm-im"
+  - "sap mm-im-pi"
+  - "sourcing & procurement"
+semantic_en: "The D_PINVPOSTPINVDIFFERENCEP view exposes physical inventory differences for a given posting date and reason, which can be used to analyze discrepancies in inventory levels."
 app_component: MM-IM-PI-2CL
 software_component: SAPSCORE
 release_state: released

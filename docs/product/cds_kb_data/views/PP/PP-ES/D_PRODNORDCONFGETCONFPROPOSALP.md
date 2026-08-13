@@ -1,6 +1,21 @@
 ---
 name: D_PRODNORDCONFGETCONFPROPOSALP
 description: "D Prodnordconfgetconfproposalp"
+semantic_vi: "View D_PRODNORDCONFGETCONFPROPOSALP hiển thị dữ liệu xác nhận sản xuất cho đề xuất, có thể được sử dụng khi phân tích hoặc báo cáo về các bản ghi xác nhận sản xuất."
+keywords:
+  - "production confirmation"
+  - "xác nhận sản xuất"
+  - "sản xuất"
+  - "đề xuất"
+  - "hàng hóa"
+  - "thị trường"
+  - "sản phẩm"
+  - "phân tích"
+  - "báo cáo"
+  - "sap"
+  - "pp-es"
+  - "manufacturing"
+semantic_en: "The D_PRODNORDCONFGETCONFPROPOSALP view exposes production confirmation data for proposals, which can be used when analyzing or reporting on production confirmation records."
 app_component: PP-ES
 software_component: SAPSCORE
 release_state: released

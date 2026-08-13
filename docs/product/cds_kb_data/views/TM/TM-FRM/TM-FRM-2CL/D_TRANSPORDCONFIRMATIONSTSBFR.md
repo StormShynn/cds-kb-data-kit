@@ -1,6 +1,19 @@
 ---
 name: D_TRANSPORDCONFIRMATIONSTSBFR
 description: "D Transpordconfirmationstsbfr"
+semantic_vi: "View D_TRANSPORDCONFIRMATIONSTSBFR hiển thị dữ liệu trạng thái xác nhận vận chuyển cho đơn đặt hàng vận chuyển. Nó được sử dụng để lấy trạng thái xác nhận vận chuyển."
+keywords:
+  - "transportation order"
+  - "đơn đặt hàng vận chuyển"
+  - "transportation confirmation"
+  - "xác nhận vận chuyển"
+  - "status"
+  - "thanh toán"
+  - "tm"
+  - "tm-frm"
+  - "sap"
+  - "cds view"
+semantic_en: "The D_TRANSPORDCONFIRMATIONSTSBFR view exposes transportation confirmation status data for transportation orders. It is used to retrieve the status of transportation confirmations."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

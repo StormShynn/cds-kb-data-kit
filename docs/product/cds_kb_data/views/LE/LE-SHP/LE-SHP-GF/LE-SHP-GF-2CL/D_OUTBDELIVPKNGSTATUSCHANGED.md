@@ -1,6 +1,19 @@
 ---
 name: D_OUTBDELIVPKNGSTATUSCHANGED
 description: "D Outbdelivpkngstatuschanged"
+semantic_vi: "View này hiển thị các thay đổi trạng thái tài liệu giao hàng, cho phép các nhà phát triển theo dõi các thay đổi trạng thái tổng hợp và xác nhận."
+keywords:
+  - "delivery document"
+  - "tài liệu giao hàng"
+  - "logistics execution"
+  - "status change"
+  - "thay đổi trạng thái"
+  - "overall picking status"
+  - "trạng thái tổng hợp"
+  - "sap cds"
+  - "cds view"
+  - "view d_outbdelivpkngstatuschanged"
+semantic_en: "This view exposes delivery document status changes, allowing developers to track changes in overall picking and confirmation statuses. It is used when analyzing logistics execution data."
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

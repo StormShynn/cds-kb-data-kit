@@ -1,6 +1,19 @@
 ---
 name: D_PURORDERAPPROVALREJECTED
 description: "D Purorderapprovalrejected"
+semantic_vi: "View D_PURORDERAPPROVALREJECTED hiển thị dữ liệu xét duyệt đơn mua hàng bị từ chối, có thể được sử dụng để phân tích hoặc báo cáo về đơn mua hàng không được xét duyệt."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "approval"
+  - "rejected"
+  - "purchase order approval"
+  - "đơn mua hàng xét duyệt"
+  - "sourcing & procurement"
+  - "mm-pur-po-2cl"
+  - "sap mm"
+  - "cds view"
+semantic_en: "The D_PURORDERAPPROVALREJECTED CDS view exposes rejected purchase order approval data, which can be used to analyze or report on purchase orders that were not approved."
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

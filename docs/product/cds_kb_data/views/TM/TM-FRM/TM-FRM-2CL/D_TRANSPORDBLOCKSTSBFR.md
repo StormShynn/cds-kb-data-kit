@@ -1,6 +1,16 @@
 ---
 name: D_TRANSPORDBLOCKSTSBFR
 description: "D Transpordblockstsbfr"
+semantic_vi: "View D_TRANSPORDBLOCKSTSBFR hiển thị dữ liệu trạng thái khối vận chuyển cho đơn hàng vận chuyển, có thể được sử dụng để xác định trạng thái thực hiện của đơn hàng vận chuyển."
+keywords:
+  - "transportation order"
+  - "đơn hàng vận chuyển"
+  - "transport block status"
+  - "trạng thái khối vận chuyển"
+  - "sap tm"
+  - "tm-frm-2cl"
+  - "sap cds view"
+semantic_en: "The D_TRANSPORDBLOCKSTSBFR view exposes transport block status data for transportation orders, which can be used to determine the execution status of transportation orders."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: D_MATERIALDOCUMENTITEMCRTED_2
 description: "D Materialdocumentitemcrted 2"
+semantic_vi: "View này hiển thị dữ liệu vật liệu tài liệu vật liệu, cụ thể cho các vật liệu được tạo, có thể được sử dụng để phân tích hoặc báo cáo về vật liệu tài liệu vật liệu đã được tạo."
+keywords:
+  - "material document item"
+  - "vật liệu tài liệu vật liệu"
+  - "created item"
+  - "đã được tạo"
+  - "material document"
+  - "tài liệu vật liệu"
+  - "sap mm"
+  - "mm-im-gf-2cl"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "bo:material"
+semantic_en: "This view exposes material document item data, specifically for created items, which can be used to analyze or report on material document items that have been created."
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

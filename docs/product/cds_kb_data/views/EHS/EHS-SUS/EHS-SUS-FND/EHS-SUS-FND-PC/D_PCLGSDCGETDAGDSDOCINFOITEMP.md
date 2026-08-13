@@ -1,6 +1,18 @@
 ---
 name: D_PCLGSDCGETDAGDSDOCINFOITEMP
 description: "D Pclgsdcgetdagdsdocinfoitemp"
+semantic_vi: "Chứa thông tin chi tiết về tài liệu mua hàng ở cấp độ vật tư trong EHS-SUS-FND-PC, hữu ích cho việc lấy dữ liệu chi tiết về vật tư."
+keywords:
+  - "item-level"
+  - "document information"
+  - "procurement document"
+  - "ehs-sus-fnd-pc"
+  - "dữ liệu vật tư"
+  - "thông tin tài liệu"
+  - "đơn mua hàng"
+  - "ekko"
+  - "cấp độ vật tư"
+semantic_en: "Exposes item-level document information for procurement documents in EHS-SUS-FND-PC, useful for retrieving detailed item data."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

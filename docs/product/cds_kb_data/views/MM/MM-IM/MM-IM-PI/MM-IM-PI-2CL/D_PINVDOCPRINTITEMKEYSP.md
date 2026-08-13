@@ -1,6 +1,21 @@
 ---
 name: D_PINVDOCPRINTITEMKEYSP
 description: "D Pinvdocprintitemkeysp"
+semantic_vi: "Các khóa in bản ghi vật lý tài liệu kiểm kê vật chất cung cấp truy cập vào dữ liệu cấp vật tư trong bản ghi vật lý tài liệu, cho phép các nhà phát triển quản lý và báo cáo về vật tư."
+keywords:
+  - "physical inventory document"
+  - "bản ghi vật lý tài liệu"
+  - "physical inventory document item"
+  - "bản ghi vật lý tài liệu vật tư"
+  - "fiscal year"
+  - "năm tài chính"
+  - "mm-im-pi"
+  - "mm-im-pi-2cl"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "item-level"
+  - "component:mm-im-pi-2cl"
+semantic_en: "Physical inventory document print item keys provide access to item-level data within a physical inventory document, enabling developers to manage and report on inventory items."
 app_component: MM-IM-PI-2CL
 software_component: SAPSCORE
 release_state: released

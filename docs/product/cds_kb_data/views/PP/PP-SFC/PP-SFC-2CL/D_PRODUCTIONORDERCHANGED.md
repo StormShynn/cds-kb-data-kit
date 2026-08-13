@@ -1,6 +1,18 @@
 ---
 name: D_PRODUCTIONORDERCHANGED
 description: "D Production OrderCHANGED"
+semantic_vi: "View D_PRODUCTIONORDERCHANGED hiển thị dữ liệu thay đổi đơn đặt hàng sản xuất, có thể được sử dụng để theo dõi các thay đổi được thực hiện trên đơn đặt hàng sản xuất trong quá trình sản xuất."
+keywords:
+  - "production order"
+  - "đơn đặt hàng sản xuất"
+  - "sfc"
+  - "pp-sfc"
+  - "manufacturing"
+  - "thay đổi đơn đặt hàng sản xuất"
+  - "sap"
+  - "cds view"
+  - "d_productionorderchanged"
+semantic_en: "The D_PRODUCTIONORDERCHANGED view exposes production order change data, which can be used to track changes made to production orders in the manufacturing process."
 app_component: PP-SFC-2CL
 software_component: SAPSCORE
 release_state: released

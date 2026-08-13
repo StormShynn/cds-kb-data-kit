@@ -1,6 +1,21 @@
 ---
 name: D_PCLGSDCGETMXDLDGICMTSCNTRYP
 description: "D Pclgsdcgetmxdldgicmtscntryp"
+semantic_vi: "Chứa dữ liệu quốc gia cho quản lý chuỗi cung ứng toàn cầu, được sử dụng để truy cập thông tin quốc gia cho các giao dịch chuỗi cung ứng."
+keywords:
+  - "country"
+  - "global supply chain"
+  - "supply chain management"
+  - "ehs-sus-fnd-pc"
+  - "ehs"
+  - "ehs-sus"
+  - "ehs-sus-fnd"
+  - "component:ehs-sus-fnd-pc"
+  - "lob:other"
+  - "national data"
+  - "chuỗi cung ứng toàn cầu"
+  - "quản lý chuỗi cung ứng"
+semantic_en: "Exposes country data for global supply chain management, used to access country-specific information for supply chain transactions."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

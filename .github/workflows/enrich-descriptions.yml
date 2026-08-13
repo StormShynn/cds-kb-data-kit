@@ -1,15 +1,19 @@
 # .github/workflows/enrich-descriptions.yml
 # Optional LLM enrichment of view descriptions (semantic_en / semantic_vi /
 # keywords). Strictly opt-in: every step that touches the LLM runs only when
-# one of GROQ_API_KEY / OPENROUTER_API_KEY / LLM_ENRICH_API_KEY repo secrets
-# is configured — with none set, the workflow runs, prints "skipping", and
-# exits 0 (no cost, no failures to page anyone about).
+# one of GROQ_API_KEY / OPENROUTER_API_KEY / OPENAI_API_KEY / LLM_ENRICH_API_KEY
+# repo secrets is configured — with none set, the workflow runs, prints
+# "skipping", and exits 0.
 #
 # The script chips away at the backlog: default --limit 150 per run, views
 # missing semantic_en sorted released-first, so over ~50 daily runs the
-# whole KB gets real descriptions. Free tiers comfortably cover 150/day
-# (Groq 14,400 req/day; OpenRouter free 50/day — for OpenRouter lower the
-# limit to ~40 via workflow_dispatch if you use it).
+# whole KB gets real descriptions. Provider order is OpenRouter -> Groq ->
+# OpenAI (see scripts/enrich-descriptions.mjs's PROVIDER_PRIORITY) — the two
+# free tiers comfortably cover 150/day (Groq 14,400 req/day; OpenRouter free
+# 50/day — for OpenRouter-only use, lower the limit to ~40 via
+# workflow_dispatch). OPENAI_API_KEY, if set, is a PAID last resort used only
+# if both free providers are exhausted in the same run — set it only if
+# you're fine with the small chance of an OpenAI bill on a heavy backlog day.
 #
 # Results open as a PR (like daily-fetch.yml) — frontmatter is data, and
 # generated descriptions are worth a human glance before merging. The index
@@ -51,7 +55,7 @@ jobs:
     # where `secrets` is allowed same as in a step's `env:`, and have every
     # `if:` below compare against this job-level env var instead.
     env:
-      HAS_LLM_KEY: ${{ secrets.GROQ_API_KEY != '' || secrets.OPENROUTER_API_KEY != '' || secrets.LLM_ENRICH_API_KEY != '' }}
+      HAS_LLM_KEY: ${{ secrets.GROQ_API_KEY != '' || secrets.OPENROUTER_API_KEY != '' || secrets.OPENAI_API_KEY != '' || secrets.LLM_ENRICH_API_KEY != '' }}
     defaults:
       run:
         working-directory: docs/product/cds_kb_data
@@ -77,6 +81,7 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           LLM_ENRICH_API_KEY: ${{ secrets.LLM_ENRICH_API_KEY }}
         run: |
           ARGS=(--limit ${{ github.event.inputs.limit || '150' }})

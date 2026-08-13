@@ -1,6 +1,19 @@
 ---
 name: D_STOGETORDERINGADDRESSR
 description: "D Stogetorderingaddressr"
+semantic_vi: "View D_STOGETORDERINGADDRESSR hiển thị địa chỉ vận chuyển hàng tồn kho và thông tin liên quan, hữu ích khi quản lý đơn đặt hàng mua hàng và chi tiết vận chuyển liên quan."
+keywords:
+  - "stock transport order"
+  - "địa chỉ vận chuyển hàng tồn kho"
+  - "purchase order"
+  - "đơn đặt hàng mua hàng"
+  - "address"
+  - "địa chỉ"
+  - "sap mm"
+  - "mm-pur-po"
+  - "ekko"
+  - "sourcing & procurement"
+semantic_en: "The D_STOGETORDERINGADDRESSR view exposes stock transport order addresses and related information, useful when managing purchase orders and their associated shipping details."
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

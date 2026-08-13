@@ -1,6 +1,21 @@
 ---
 name: D_OUTBDELIVPACKGSTATUSCHANGED
 description: "D Outbdelivpackgstatuschanged"
+semantic_vi: "View này hiển thị các thay đổi trạng thái gói hàng giao hàng trong Logistics Execution của SAP, hữu ích cho việc theo dõi các bản cập nhật trạng thái."
+keywords:
+  - "delivery"
+  - "package"
+  - "status"
+  - "change"
+  - "logistics"
+  - "execution"
+  - "sap"
+  - "lob"
+  - "logistics execution"
+  - "delivery package"
+  - "status change"
+  - "sddocumentcategory"
+semantic_en: "This view exposes delivery package status changes in SAP Logistics Execution, useful for tracking status updates."
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

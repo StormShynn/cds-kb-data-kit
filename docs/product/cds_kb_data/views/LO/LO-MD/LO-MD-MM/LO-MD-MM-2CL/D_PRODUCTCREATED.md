@@ -1,6 +1,18 @@
 ---
 name: D_PRODUCTCREATED
 description: "D Productcreated"
+semantic_vi: "View D_PRODUCTCREATED hiển thị dữ liệu tạo sản phẩm, có thể sử dụng khi theo dõi sự kiện tạo sản phẩm hoặc phân tích vòng đời sản phẩm."
+keywords:
+  - "product creation"
+  - "tạo sản phẩm"
+  - "product lifecycle"
+  - "sự kiện tạo sản phẩm"
+  - "vòng đời sản phẩm"
+  - "sap cds"
+  - "cds view"
+  - "logistics general"
+  - "lo-md-mm-2cl"
+semantic_en: "The D_PRODUCTCREATED view exposes product creation data, which can be used when tracking product creation events or analyzing product lifecycle."
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

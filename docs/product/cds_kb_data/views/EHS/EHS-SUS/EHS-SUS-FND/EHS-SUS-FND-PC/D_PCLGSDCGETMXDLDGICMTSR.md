@@ -1,6 +1,18 @@
 ---
 name: D_PCLGSDCGETMXDLDGICMTSR
 description: "D Pclgsdcgetmxdldgicmtsr"
+semantic_vi: "Chỉ ra các thông báo không tương thích khi tải sản phẩm trong các kịch bản tải hỗn hợp, thường được sử dụng để khắc phục các vấn đề khi tải sản phẩm."
+keywords:
+  - "mixed loading"
+  - "product loading"
+  - "incompatibility message"
+  - "tải hỗn hợp"
+  - "sản phẩm tải"
+  - "thông báo không tương thích"
+  - "sap ehs"
+  - "sap ehs sus"
+  - "sap ehs sus fnd pc"
+semantic_en: "Exposes product loading incompatibility messages for mixed loading scenarios, typically used to troubleshoot issues with product loading."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

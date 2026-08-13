@@ -1,6 +1,21 @@
 ---
 name: D_PURCHASEREQNITEMCHANGED
 description: "D Purchase RequisitionNITEMCHANGED"
+semantic_vi: "View D_PURCHASEREQNITEMCHANGED hiển thị các thay đổi của đơn đặt hàng yêu cầu mua hàng, cung cấp các trường khóa chính để xác định đơn đặt hàng yêu cầu mua hàng bị ảnh hưởng. Nó được sử dụng để theo dõi và phân tích các thay đổi của đơn đặt hàng yêu cầu mua hàng."
+keywords:
+  - "purchase requisition"
+  - "đơn đặt hàng yêu cầu mua hàng"
+  - "purchase requisition item"
+  - "đơn đặt hàng yêu cầu mua hàng chi tiết"
+  - "change"
+  - "thay đổi"
+  - "sap mm"
+  - "mm-pur-req"
+  - "ekko"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "sourcing & procurement"
+semantic_en: "The D_PURCHASEREQNITEMCHANGED CDS view exposes purchase requisition item changes, providing key fields for identifying affected purchase requisitions. It is used to track and analyze changes to purchase requisition items."
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

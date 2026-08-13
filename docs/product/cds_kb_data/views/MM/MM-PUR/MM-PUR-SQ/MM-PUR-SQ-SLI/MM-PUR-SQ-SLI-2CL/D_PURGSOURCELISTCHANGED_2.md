@@ -1,6 +1,19 @@
 ---
 name: D_PURGSOURCELISTCHANGED_2
 description: "D Purgsourcelistchanged 2"
+semantic_vi: "View D_PURGSOURCELISTCHANGED_2 hiển thị các thay đổi trong danh sách nguồn mua hàng, bao gồm các cập nhật nhà cung cấp và ngày hiệu lực, có thể được sử dụng để theo dõi các thay đổi trong danh sách nguồn mua hàng theo thời gian."
+keywords:
+  - "purchasing source list"
+  - "đơn mua hàng"
+  - "thay đổi nguồn mua"
+  - "cập nhật nhà cung cấp"
+  - "ngày hiệu lực"
+  - "purchasing organization"
+  - "purchase order unit"
+  - "ekko"
+  - "mm-pur"
+  - "mm-pur-sq"
+semantic_en: "The D_PURGSOURCELISTCHANGED_2 view exposes changes to purchasing source lists, including supplier and validity date updates, which can be used to track changes to purchasing source lists over time."
 app_component: MM-PUR-SQ-SLI-2CL
 software_component: SAPSCORE
 release_state: released

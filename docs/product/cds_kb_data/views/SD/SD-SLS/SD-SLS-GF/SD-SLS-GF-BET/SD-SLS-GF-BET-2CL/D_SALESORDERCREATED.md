@@ -1,6 +1,21 @@
 ---
 name: D_SALESORDERCREATED
 description: "D Sales OrderCREATED"
+semantic_vi: "View D_SALESORDERCREATED hiển thị các sự kiện tạo đơn hàng bán, cung cấp dữ liệu về thời điểm và cách tạo đơn hàng bán trong hệ thống. Nó có thể được sử dụng để phân tích và theo dõi quá trình tạo đơn hàng bán."
+keywords:
+  - "sales order"
+  - "đơn hàng bán"
+  - "event raised"
+  - "tạo đơn hàng"
+  - "sales order creation"
+  - "tạo đơn hàng bán"
+  - "sap sales"
+  - "sales distribution"
+  - "sales order type"
+  - "sales organization"
+  - "distribution channel"
+  - "organization division"
+semantic_en: "The D_SALESORDERCREATED view exposes sales order creation events, providing data on when and how sales orders are created in the system. It can be used to analyze and track sales order creation processes."
 app_component: SD-SLS-GF-BET-2CL
 software_component: SAPSCORE
 release_state: released

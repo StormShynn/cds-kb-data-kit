@@ -1,6 +1,19 @@
 ---
 name: D_SERIALIZEDMATLITMCHGMATLR
 description: "D Serializedmatlitmchgmatlr"
+semantic_vi: "View này hiển thị các vật liệu được mã hóa đã thay đổi bởi việc phát hành lô vật liệu trong bảo trì nhà máy. Nó được sử dụng để theo dõi các thay đổi của vật liệu được mã hóa khi lô vật liệu được phát hành."
+keywords:
+  - "serialized material"
+  - "material lot release"
+  - "plant maintenance"
+  - "material item"
+  - "change management"
+  - "sap pm"
+  - "sap eqm"
+  - "sap eq"
+  - "material lot"
+  - "plant maintenance management"
+semantic_en: "This view exposes serialized material items changed by a material lot release in plant maintenance. It is used to track changes to serialized materials when a material lot is released."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

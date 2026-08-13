@@ -1,6 +1,18 @@
 ---
 name: D_STOGETDELIVERYADDRESSR
 description: "D Stogetdeliveryaddressr"
+semantic_vi: "View D_STOGETDELIVERYADDRESSR hiển thị địa chỉ giao hàng liên quan đến đơn hàng vận chuyển hàng tồn kho và các mục của đơn hàng. Nó được sử dụng để lấy thông tin địa chỉ cho mục đích logistics."
+keywords:
+  - "delivery address"
+  - "stock transport order"
+  - "địa chỉ giao hàng"
+  - "đơn hàng vận chuyển hàng tồn kho"
+  - "logistics"
+  - "sourcing & procurement"
+  - "mm-pur-po-2cl"
+  - "sap mm"
+  - "address information"
+semantic_en: "The D_STOGETDELIVERYADDRESSR CDS view exposes delivery addresses associated with stock transport orders and their items. It is used to retrieve address information for logistics purposes."
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

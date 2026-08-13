@@ -1,6 +1,21 @@
 ---
 name: D_SALESCONTRACTITEMCREATED
 description: "D Salescontractitemcreated"
+semantic_vi: "View D_SALESCONTRACTITEMCREATED hiển thị các sự kiện tạo hợp đồng bán hàng chi tiết, cung cấp dữ liệu về khi và cách tạo chi tiết hợp đồng bán hàng trong hệ thống."
+keywords:
+  - "sales contract"
+  - "hợp đồng bán hàng"
+  - "sales contract item"
+  - "chi tiết hợp đồng bán hàng"
+  - "sales contract creation"
+  - "tạo hợp đồng bán hàng"
+  - "sap sales"
+  - "sales distribution"
+  - "sd-sls"
+  - "sd-sls-oa"
+  - "sales contract item created"
+  - "tạo chi tiết hợp đồng bán hàng"
+semantic_en: "The D_SALESCONTRACTITEMCREATED view exposes sales contract item creation events, providing data on when and how sales contract items are created in the system."
 app_component: SD-SLS-OA-CCO-2CL
 software_component: SAPSCORE
 release_state: released

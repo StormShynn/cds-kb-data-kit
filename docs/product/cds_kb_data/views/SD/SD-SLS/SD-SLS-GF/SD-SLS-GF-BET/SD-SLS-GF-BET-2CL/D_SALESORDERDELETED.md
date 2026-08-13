@@ -1,6 +1,20 @@
 ---
 name: D_SALESORDERDELETED
 description: "D Sales OrderDELETED"
+semantic_vi: "View D_SALESORDERDELETED hiển thị các sự kiện xóa đơn đặt hàng bán hàng, cung cấp thông tin về thời điểm và lý do đơn đặt hàng bán hàng được xóa."
+keywords:
+  - "sales order"
+  - "đơn đặt hàng bán hàng"
+  - "xóa đơn đặt hàng"
+  - "sự kiện xóa"
+  - "sales order deletion"
+  - "event raised"
+  - "sales order type"
+  - "sales organization"
+  - "distribution channel"
+  - "organization division"
+  - "sold to party"
+semantic_en: "The D_SALESORDERDELETED CDS view exposes sales order deletion events, providing information on when and why a sales order was deleted."
 app_component: SD-SLS-GF-BET-2CL
 software_component: SAPSCORE
 release_state: released

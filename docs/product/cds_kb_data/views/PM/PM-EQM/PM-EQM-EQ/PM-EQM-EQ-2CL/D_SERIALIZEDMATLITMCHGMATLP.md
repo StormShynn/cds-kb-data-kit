@@ -1,6 +1,17 @@
 ---
 name: D_SERIALIZEDMATLITMCHGMATLP
 description: "D Serializedmatlitmchgmatlp"
+semantic_vi: "Dữ liệu quản lý thay đổi vật liệu được phân loại theo vật liệu trong bảo trì nhà máy, được sử dụng để quản lý các thay đổi đối với vật liệu trong ngữ cảnh được phân loại."
+keywords:
+  - "serialized material item change master data"
+  - "plant maintenance"
+  - "dữ liệu quản lý thay đổi vật liệu"
+  - "bảo trì nhà máy"
+  - "sap pm"
+  - "pm-eqm-eq-2cl"
+  - "component pm-eqm-eq-2cl"
+  - "lob plant maintenance"
+semantic_en: "Serialized material item change master data for plant maintenance, used to manage changes to material items in a serialized context."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

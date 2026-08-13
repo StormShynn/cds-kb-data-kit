@@ -1,6 +1,19 @@
 ---
 name: D_MAINTORDTECHNICALCOMPLETEP
 description: "D Maintordtechnicalcompletep"
+semantic_vi: "View này hiển thị dữ liệu kỹ thuật hoàn chỉnh của đơn bảo trì, được sử dụng để theo dõi trạng thái của đơn bảo trì từ khi tạo đến khi hoàn thành."
+keywords:
+  - "maintenance order"
+  - "đơn bảo trì"
+  - "technical data"
+  - "data"
+  - "pm"
+  - "plant maintenance"
+  - "pm-woc"
+  - "pm-woc-mo"
+  - "component pm-woc-mo-2cl"
+  - "lob plant maintenance"
+semantic_en: "This view exposes complete maintenance order technical data, which is used to track the status of maintenance orders from creation to completion."
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

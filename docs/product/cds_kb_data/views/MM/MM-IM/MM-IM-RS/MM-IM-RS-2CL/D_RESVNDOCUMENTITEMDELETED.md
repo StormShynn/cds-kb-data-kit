@@ -1,6 +1,18 @@
 ---
 name: D_RESVNDOCUMENTITEMDELETED
 description: "D Resvndocumentitemdeleted"
+semantic_vi: "View này hiển thị các mục đã xóa trong tài liệu đặt hàng, có thể được sử dụng để theo dõi và quản lý các thay đổi trong tài liệu đặt hàng."
+keywords:
+  - "reservation document item"
+  - "đặt hàng"
+  - "tài liệu đặt hàng"
+  - "reservation"
+  - "xóa"
+  - "thay đổi"
+  - "sap mm"
+  - "mm-im-rs-2cl"
+  - "sourcing & procurement"
+semantic_en: "This view exposes deleted reservation document items, which can be used to track and manage changes to reservation documents."
 app_component: MM-IM-RS-2CL
 software_component: SAPSCORE
 release_state: released

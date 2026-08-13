@@ -1,6 +1,18 @@
 ---
 name: D_SELECTCUSTOMIZINGTRANSPTREQP
 description: "D Selectcustomizingtransptreqp"
+semantic_vi: "View này hiển thị dữ liệu tùy chỉnh yêu cầu vận chuyển, được sử dụng để quản lý yêu cầu vận chuyển trong hệ thống SAP. Nó thường được sử dụng bởi các nhà phát triển để lấy và cập nhật cài đặt tùy chỉnh yêu cầu vận chuyển."
+keywords:
+  - "transport request"
+  - "yêu cầu vận chuyển"
+  - "customizing"
+  - "cài đặt tùy chỉnh"
+  - "sap"
+  - "basis components"
+  - "bc-cus-tol-mbc"
+  - "transport"
+  - "trkorr"
+semantic_en: "This view exposes transport request customizing data, which is used to manage transport requests in SAP systems. It is typically used by developers to retrieve and update transport request customizing settings."
 app_component: BC-CUS-TOL-MBC
 software_component: SAP_BASIS
 release_state: released

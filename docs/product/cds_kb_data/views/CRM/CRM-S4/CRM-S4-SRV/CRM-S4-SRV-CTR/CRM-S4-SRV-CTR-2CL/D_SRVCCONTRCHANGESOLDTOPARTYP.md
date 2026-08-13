@@ -1,6 +1,19 @@
 ---
 name: D_SRVCCONTRCHANGESOLDTOPARTYP
 description: "D Srvccontrchangesoldtopartyp"
+semantic_vi: "View D_SRVCCONTRCHANGESOLDTOPARTYP hiển thị dữ liệu lịch sử thay đổi hợp đồng dịch vụ liên quan đến khách hàng bán hàng, giúp bạn theo dõi các thay đổi được thực hiện đối với hợp đồng dịch vụ theo thời gian."
+keywords:
+  - "service contract"
+  - "hợp đồng dịch vụ"
+  - "sold-to party"
+  - "khách hàng bán hàng"
+  - "service contract change"
+  - "thay đổi hợp đồng dịch vụ"
+  - "crm"
+  - "sap cds"
+  - "cds view"
+  - "hợp đồng dịch vụ lịch sử"
+semantic_en: "The D_SRVCCONTRCHANGESOLDTOPARTYP view exposes service contract change history data related to sold-to parties, allowing you to track changes made to service contracts over time."
 app_component: CRM-S4-SRV-CTR-2CL
 software_component: SAPSCORE
 release_state: released

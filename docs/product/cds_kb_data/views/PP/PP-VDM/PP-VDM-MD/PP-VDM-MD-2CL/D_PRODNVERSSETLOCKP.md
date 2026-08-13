@@ -1,6 +1,17 @@
 ---
 name: D_PRODNVERSSETLOCKP
 description: "D Prodnverssetlockp"
+semantic_vi: "View D_PRODNVERSSETLOCKP cung cấp thông tin khóa phiên bản sản xuất, được sử dụng để quản lý khóa phiên bản sản xuất trong quá trình sản xuất."
+keywords:
+  - "production version"
+  - "lock"
+  - "manufacturing"
+  - "sản xuất"
+  - "phiên bản"
+  - "khóa"
+  - "pp-vdm"
+  - "pp-vdm-md-2cl"
+semantic_en: "The D_PRODNVERSSETLOCKP view provides production version lock information, which is used to manage production version locking in manufacturing processes."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

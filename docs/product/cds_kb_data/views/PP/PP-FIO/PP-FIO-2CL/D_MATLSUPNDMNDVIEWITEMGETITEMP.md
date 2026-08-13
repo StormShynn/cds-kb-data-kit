@@ -1,6 +1,21 @@
 ---
 name: D_MATLSUPNDMNDVIEWITEMGETITEMP
 description: "D Matlsupndmndviewitemgetitemp"
+semantic_vi: "View này hiển thị dữ liệu cung cấp và nhu cầu vật liệu tại mức độ chi tiết, cho phép các nhà phát triển truy cập thông tin chi tiết về kế hoạch yêu cầu vật liệu. Nó được sử dụng để truy xuất dữ liệu chi tiết của từng vật liệu cho kế hoạch MRP."
+keywords:
+  - "material supply"
+  - "demand data"
+  - "item level"
+  - "mrp planning"
+  - "material requirements planning"
+  - "mrp plant"
+  - "mrp area"
+  - "mrp segment"
+  - "material shortage definition"
+  - "sap pp"
+  - "sap fio"
+  - "sap manufacturing"
+semantic_en: "This view exposes material supply and demand data at the item level, enabling developers to access detailed information for material requirements planning. It is used to retrieve specific item data for MRP planning."
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

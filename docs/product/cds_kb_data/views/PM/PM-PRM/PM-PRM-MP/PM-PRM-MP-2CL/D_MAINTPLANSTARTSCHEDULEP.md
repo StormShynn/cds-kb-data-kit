@@ -1,6 +1,17 @@
 ---
 name: D_MAINTPLANSTARTSCHEDULEP
 description: "D Maintplanstartschedulep"
+semantic_vi: "View này hiển thị lịch trình bắt đầu bảo trì kế hoạch cho một nhà máy, bao gồm ngày và giờ bắt đầu, và giá trị đọc lại kế hoạch bảo trì bắt đầu."
+keywords:
+  - "maintenance plan"
+  - "plant maintenance"
+  - "schedule"
+  - "planned start"
+  - "bảo trì kế hoạch"
+  - "nhà máy"
+  - "lịch trình"
+  - "thời gian bắt đầu"
+semantic_en: "This view exposes planned maintenance start schedules for a plant, including the start date and time, and the maintenance plan start counter reading value. It is used to retrieve the planned start schedule for a maintenance plan."
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released

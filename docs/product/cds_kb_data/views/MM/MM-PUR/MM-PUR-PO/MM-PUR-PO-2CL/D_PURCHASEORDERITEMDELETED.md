@@ -1,6 +1,19 @@
 ---
 name: D_PURCHASEORDERITEMDELETED
 description: "D Purchase OrderITEMDELETED"
+semantic_vi: "View D_PURCHASEORDERITEMDELETED hiển thị các mục đơn đặt hàng đã xóa, có thể được sử dụng để theo dõi các thay đổi của đơn đặt hàng theo thời gian."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "deleted item"
+  - "cds view"
+  - "mm-pur-po-2cl"
+  - "sourcing & procurement"
+  - "purchase order item"
+  - "lob:sourcing & procurement"
+  - "bo:purchaseorder"
+semantic_en: "The D_PURCHASEORDERITEMDELETED CDS view exposes deleted purchase order items, which can be used to track changes to purchase orders over time."
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

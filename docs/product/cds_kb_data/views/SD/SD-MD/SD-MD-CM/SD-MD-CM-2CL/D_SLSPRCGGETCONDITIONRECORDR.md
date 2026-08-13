@@ -1,6 +1,18 @@
 ---
 name: D_SLSPRCGGETCONDITIONRECORDR
 description: "D SLSPRCGGETCondition RecordR"
+semantic_vi: "Chứa các bản ghi điều kiện giá, cung cấp thông tin về loại điều kiện, ứng dụng và ngày hiệu lực. View này được sử dụng để lấy các bản ghi điều kiện cho các tính toán giá."
+keywords:
+  - "pricing-condition"
+  - "condition-record"
+  - "sd-md-cm"
+  - "sales-distribution"
+  - "lob-sales-distribution"
+  - "sales-order"
+  - "đơn-hàng-bán"
+  - "điều-kiện-giá"
+  - "ekko"
+semantic_en: "Exposes pricing condition records, providing details on condition types, applications, and validity dates. This view is used to retrieve condition records for pricing calculations."
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_SALESQUOTATIONITEMCREATED
 description: "D Salesquotationitemcreated"
+semantic_vi: "View D_SALESQUOTATIONITEMCREATED hiển thị các sự kiện tạo đơn giá bán chi tiết, cung cấp dữ liệu về khi và cách tạo và cập nhật đơn giá bán. Nó được sử dụng để theo dõi các thay đổi chi tiết trong đơn giá bán."
+keywords:
+  - "sales quotation"
+  - "đơn giá bán"
+  - "event"
+  - "tạo đơn giá bán"
+  - "cập nhật đơn giá bán"
+  - "sự kiện"
+  - "sales quotation item"
+  - "đơn giá bán chi tiết"
+  - "sap"
+  - "sd-sls-qut-2cl"
+semantic_en: "The D_SALESQUOTATIONITEMCREATED view exposes sales quotation item creation events, providing data on when and how sales quotations are created and updated. It is used to track item-level changes in sales quotations."
 app_component: SD-SLS-QUT-2CL
 software_component: SAPSCORE
 release_state: released

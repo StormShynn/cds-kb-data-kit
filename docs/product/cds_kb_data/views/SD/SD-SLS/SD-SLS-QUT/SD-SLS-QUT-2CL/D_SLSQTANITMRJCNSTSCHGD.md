@@ -1,6 +1,21 @@
 ---
 name: D_SLSQTANITMRJCNSTSCHGD
 description: "D Slsqtanitmrjcnstschgd"
+semantic_vi: "View này hiển thị dữ liệu lịch sử thay đổi chi tiết đơn đặt hàng bán hàng, bao gồm trạng thái thay đổi và lý do từ chối, cho mục đích phân tích và báo cáo."
+keywords:
+  - "sales quotation"
+  - "đơn đặt hàng bán hàng"
+  - "sales quotation item"
+  - "chi tiết đơn đặt hàng bán hàng"
+  - "change history"
+  - "lịch sử thay đổi"
+  - "status change"
+  - "thay đổi trạng thái"
+  - "rejection reason"
+  - "lý do từ chối"
+  - "sap sales and distribution"
+  - "sales and distribution"
+semantic_en: "This view exposes sales quotation item change history data, including status changes and rejection reasons, for analysis and reporting purposes."
 app_component: SD-SLS-QUT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,17 @@
 ---
 name: D_SERIALIZEDMATLITMCHGSRLNMBRR
 description: "D Serializedmatlitmchgsrlnmbrr"
+semantic_vi: "Lịch sử thay đổi vật liệu có ký hiệu hàng loạt được ghi lại trong view này, cung cấp lịch sử thay đổi cho vật liệu có ký hiệu hàng loạt trong ngữ cảnh bảo trì nhà máy."
+keywords:
+  - "serialized material"
+  - "plant maintenance"
+  - "material item changes"
+  - "history of changes"
+  - "vật liệu có ký hiệu hàng loạt"
+  - "bảo trì nhà máy"
+  - "thay đổi vật liệu có ký hiệu hàng loạt"
+  - "lịch sử thay đổi"
+semantic_en: "Serialized material item changes are recorded in this view, providing a history of changes to serialized materials in the plant maintenance context."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

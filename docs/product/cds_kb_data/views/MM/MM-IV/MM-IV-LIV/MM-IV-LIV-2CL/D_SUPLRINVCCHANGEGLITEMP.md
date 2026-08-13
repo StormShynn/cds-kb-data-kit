@@ -1,6 +1,19 @@
 ---
 name: D_SUPLRINVCCHANGEGLITEMP
 description: "D Suplrinvcchangeglitemp"
+semantic_vi: "View D_SUPLRINVCCHANGEGLITEMP hiển thị các thay đổi của đơn hàng nhà cung cấp liên quan đến tài khoản kế toán chung, cung cấp dữ liệu để phân tích và quản lý các giao dịch tài chính trong quá trình cung cấp và mua sắm."
+keywords:
+  - "supplier invoice"
+  - "đơn hàng nhà cung cấp"
+  - "tài khoản kế toán chung"
+  - "sourcing and procurement"
+  - "financial transactions"
+  - "ekko"
+  - "mm-iv"
+  - "mm-iv-liv"
+  - "item-level"
+  - "general ledger account"
+semantic_en: "The D_SUPLRINVCCHANGEGLITEMP view exposes supplier invoice item changes related to general ledger accounts, providing data for analyzing and managing financial transactions in the sourcing and procurement process."
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

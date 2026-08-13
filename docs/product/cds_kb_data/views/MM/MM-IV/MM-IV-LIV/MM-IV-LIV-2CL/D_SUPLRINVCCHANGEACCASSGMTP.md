@@ -1,6 +1,19 @@
 ---
 name: D_SUPLRINVCCHANGEACCASSGMTP
 description: "D Suplrinvcchangeaccassgmtp"
+semantic_vi: "View D_SUPLRINVCCHANGEACCASSGMTP hiển thị các bản phân bổ kế toán thay đổi hóa đơn nhà cung cấp, được sử dụng để quản lý các thay đổi đối với hóa đơn nhà cung cấp trong thành phần MM-IV-LIV-2CL."
+keywords:
+  - "supplier invoice"
+  - "đơn mua hàng"
+  - "ekko"
+  - "mm-iv-liv-2cl"
+  - "change accounting"
+  - "thay đổi kế toán"
+  - "sourcing & procurement"
+  - "transactional processing"
+  - "component"
+  - "lob"
+semantic_en: "The D_SUPLRINVCCHANGEACCASSGMTP view exposes supplier invoice change accounting assignments, which are used to manage changes to supplier invoices in the MM-IV-LIV-2CL component."
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

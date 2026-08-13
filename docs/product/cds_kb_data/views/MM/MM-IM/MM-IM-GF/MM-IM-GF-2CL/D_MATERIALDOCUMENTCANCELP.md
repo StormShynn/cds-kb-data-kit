@@ -1,6 +1,18 @@
 ---
 name: D_MATERIALDOCUMENTCANCELP
 description: "D Materialdocumentcancelp"
+semantic_vi: "View này hiển thị dữ liệu hủy bỏ tài liệu vật liệu, được sử dụng để theo dõi và quản lý hủy bỏ tài liệu vật liệu trong hệ thống SAP."
+keywords:
+  - "material document"
+  - "cancellation"
+  - "sourcing & procurement"
+  - "material document cancellation"
+  - "lob:sourcing & procurement"
+  - "bo:material"
+  - "mm-im-gf-2cl"
+  - "material documentcancelp"
+  - "posting date"
+semantic_en: "This view exposes material document cancellation data, which is used to track and manage cancellations of material documents in the SAP system."
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: D_OUTBDELIVCRTEDELIVFRMSLSDOCP
 description: "D Outbdelivcrtedelivfrmslsdocp"
+semantic_vi: "View D_OUTBDELIVCRTEDELIVFRMSLSDOCP hiển thị dữ liệu tạo đơn vận chuyển cho các công ty vận chuyển bên ngoài, được sử dụng khi tạo đơn vận chuyển cho các công ty vận chuyển bên ngoài."
+keywords:
+  - "delivery document"
+  - "đơn vận chuyển"
+  - "external delivery firm"
+  - "công ty vận chuyển bên ngoài"
+  - "sap logistics execution"
+  - "logistics execution"
+  - "ekko"
+  - "shipping point"
+  - "điểm giao hàng"
+semantic_en: "The D_OUTBDELIVCRTEDELIVFRMSLSDOCP view exposes delivery document creation data for external delivery firms, used when creating delivery documents for external delivery firms."
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

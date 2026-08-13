@@ -1,6 +1,19 @@
 ---
 name: D_PINVRECOUNTPHYSINVTRYDOCITMP
 description: "D Pinvrecountphysinvtrydocitmp"
+semantic_vi: "View D_PINVRECOUNTPHYSINVTRYDOCITMP hiển thị dữ liệu hồ sơ kiểm kê vật chất, bao gồm ngày dự kiến kiểm kê và số hồ sơ kiểm kê vật chất, có thể được sử dụng để theo dõi và quản lý số liệu kiểm kê vật chất."
+keywords:
+  - "physical inventory"
+  - "hồ sơ kiểm kê vật chất"
+  - "sap mm"
+  - "mm-im"
+  - "mm-im-pi"
+  - "sourcing and procurement"
+  - "đơn mua hàng"
+  - "ekko"
+  - "physical inventory count"
+  - "kiểm kê vật chất"
+semantic_en: "The D_PINVRECOUNTPHYSINVTRYDOCITMP view exposes physical inventory document data, including planned count dates and physical inventory numbers, which can be used to track and manage physical inventory counts."
 app_component: MM-IM-PI-2CL
 software_component: SAPSCORE
 release_state: released

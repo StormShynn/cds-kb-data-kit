@@ -1,6 +1,20 @@
 ---
 name: D_PCLGSDCGETDAGDSDOCINFOPOINTR
 description: "D Pclgsdcgetdagdsdocinfopointr"
+semantic_vi: "Chứa thông tin về các bao bì hàng hóa nguy hiểm, bao gồm số lượng, đơn vị và miễn trừ, được sử dụng trong thành phần EHS-SUS-FND-PC để quản lý yêu cầu tuân thủ."
+keywords:
+  - "dangerous goods"
+  - "compliance requirement"
+  - "ehs-sus-fnd-pc"
+  - "đông trùng hạ thảo"
+  - "yêu cầu tuân thủ"
+  - "thành phần"
+  - "hàng hóa nguy hiểm"
+  - "bao bì"
+  - "số lượng"
+  - "đơn vị"
+  - "miễn trừ"
+semantic_en: "Exposes information about dangerous goods enclosures, including quantities, units, and exemptions, used in EHS-SUS-FND-PC component for managing compliance requirements."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

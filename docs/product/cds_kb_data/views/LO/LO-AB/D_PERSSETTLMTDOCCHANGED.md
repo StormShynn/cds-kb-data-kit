@@ -1,6 +1,18 @@
 ---
 name: D_PERSSETTLMTDOCCHANGED
 description: "D Perssettlmtdocchanged"
+semantic_vi: "View này hiển thị dữ liệu thay đổi tài liệu thanh toán, có thể hữu ích khi phân tích hoặc báo cáo về thay đổi quy trình thanh toán trong logistics."
+keywords:
+  - "settlement document"
+  - "thay đổi tài liệu thanh toán"
+  - "logistics"
+  - "settlement process"
+  - "lo"
+  - "lo-ab"
+  - "lob:logistics general"
+  - "sap logistics"
+  - "thay đổi quy trình thanh toán"
+semantic_en: "This view exposes settlement document change data, which is useful when analyzing or reporting on settlement process changes in logistics."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

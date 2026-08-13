@@ -1,6 +1,21 @@
 ---
 name: D_MSRGPTTRANSFERMSMTRDNGP
 description: "D Msrgpttransfermsmtrdngp"
+semantic_vi: "View này hiển thị dữ liệu chuyển đổi đo lường trong bảo trì nhà máy, được sử dụng để cấu hình chuyển đổi dữ liệu đo lường giữa các điểm đo."
+keywords:
+  - "plant maintenance"
+  - "measurement data"
+  - "transfer settings"
+  - "measuring points"
+  - "pm-eqm"
+  - "pm-eqm-sf"
+  - "msrgpttransfermsmtrdngp"
+  - "d msrgpttransfermsmtrdngp"
+  - "msmtrdngintervalstartdate"
+  - "msmtrdngintervalstarttime"
+  - "msmtrdngintervalenddate"
+  - "msmtrdngintervalendtime"
+semantic_en: "This view exposes plant maintenance measurement data transfer settings, used to configure measurement data transfer between measuring points."
 app_component: PM-EQM-SF-MPC-2CL
 software_component: SAPSCORE
 release_state: released

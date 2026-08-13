@@ -1,6 +1,20 @@
 ---
 name: D_OUTBDELIVCRTEFRMSLSDOCITEMP
 description: "D Outbdelivcrtefrmslsdocitemp"
+semantic_vi: "View D Outbdelivcrtefrmslsdocitemp hiển thị các mục đơn hàng vận chuyển cho dịch vụ vận chuyển bên ngoài, có thể được sử dụng để lấy hoặc cập nhật thông tin chi tiết về mục hàng trong logistics thực thi."
+keywords:
+  - "delivery document"
+  - "đơn vận chuyển"
+  - "logistics execution"
+  - "ekko"
+  - "external freight service"
+  - "dịch vụ vận chuyển bên ngoài"
+  - "item-level"
+  - "component:le-shp-api-2cl"
+  - "lob:logistics execution"
+  - "le-shp-api"
+  - "le-shp"
+semantic_en: "The D Outbdelivcrtefrmslsdocitemp view exposes delivery document items for external freight services, which can be used to retrieve or update item-level information in logistics execution."
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

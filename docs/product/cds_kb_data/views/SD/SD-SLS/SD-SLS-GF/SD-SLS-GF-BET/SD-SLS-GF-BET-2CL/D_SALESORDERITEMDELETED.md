@@ -1,6 +1,20 @@
 ---
 name: D_SALESORDERITEMDELETED
 description: "D Sales OrderITEMDELETED"
+semantic_vi: "View D_SALESORDERITEMDELETED hiển thị các mặt hàng đơn đặt hàng đã xóa và dữ liệu liên quan, thường được sử dụng khi phân tích hoặc kiểm toán việc xóa mặt hàng đơn đặt hàng."
+keywords:
+  - "sales order item"
+  - "đơn đặt hàng"
+  - "xóa"
+  - "mặt hàng"
+  - "metadata"
+  - "sales order"
+  - "cds view"
+  - "view"
+  - "sap"
+  - "sd-sls-gf-bet-2cl"
+  - "sales & distribution"
+semantic_en: "The D_SALESORDERITEMDELETED CDS view exposes deleted sales order items and their associated metadata, typically used when analyzing or auditing sales order item deletions."
 app_component: SD-SLS-GF-BET-2CL
 software_component: SAPSCORE
 release_state: released

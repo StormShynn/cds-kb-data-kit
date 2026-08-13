@@ -1,6 +1,19 @@
 ---
 name: D_MAINTORDMAINWORKCOMPLETEP
 description: "D Maintordmainworkcompletep"
+semantic_vi: "View này hiển thị dữ liệu hoàn thành công việc bảo trì nhà máy, bao gồm ngày và giờ hoàn thành và xem xét liệu một ngày cụ thể có được sử dụng hay không."
+keywords:
+  - "plant maintenance"
+  - "work completion"
+  - "main work completed date time"
+  - "pm-woc"
+  - "pm-woc-mo"
+  - "pm"
+  - "bảo trì nhà máy"
+  - "hoàn thành công việc"
+  - "ngày hoàn thành"
+  - "sap pm"
+semantic_en: "This view exposes plant maintenance work completion data, including the date and time of completion and whether a specific date is used."
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

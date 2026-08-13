@@ -1,6 +1,19 @@
 ---
 name: D_SUPLRINVCCREATEACCASSGMTP
 description: "D Suplrinvccreateaccassgmtp"
+semantic_vi: "View D_SUPLRINVCCREATEACCASSGMTP hiển thị dữ liệu gán tài khoản hóa đơn nhà cung cấp cho xử lý giao dịch trong thành phần MM-IV-LIV-2CL. Nó được sử dụng khi tạo hoặc cập nhật hóa đơn nhà cung cấp."
+keywords:
+  - "supplier invoice"
+  - "đơn mua hàng"
+  - "account assignment"
+  - "gán tài khoản"
+  - "transactional processing"
+  - "xử lý giao dịch"
+  - "mm-iv-liv-2cl"
+  - "sourcing and procurement"
+  - "thuê mua và cung cấp"
+  - "ekko"
+semantic_en: "The D_SUPLRINVCCREATEACCASSGMTP view exposes supplier invoice account assignment data for transactional processing in the MM-IV-LIV-2CL component. It is used when creating or updating supplier invoices."
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

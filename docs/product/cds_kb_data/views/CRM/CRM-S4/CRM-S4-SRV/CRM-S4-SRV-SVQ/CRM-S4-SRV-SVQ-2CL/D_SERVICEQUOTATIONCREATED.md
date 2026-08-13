@@ -1,6 +1,16 @@
 ---
 name: D_SERVICEQUOTATIONCREATED
 description: "D Servicequotationcreated"
+semantic_vi: "Dữ liệu tạo đơn giá trị dịch vụ được lộ diện, hữu ích cho việc theo dõi đơn giá trị dịch vụ và đối tượng quản lý khách hàng liên quan."
+keywords:
+  - "service quotation"
+  - "đơn giá trị dịch vụ"
+  - "customer management object"
+  - "object type"
+  - "service quotation uuid"
+  - "service quotation description"
+  - "service quotation type"
+semantic_en: "Service quotation creation data is exposed, useful for tracking service quotations and their associated customer management objects."
 app_component: CRM-S4-SRV-SVQ-2CL
 software_component: SAPSCORE
 release_state: released

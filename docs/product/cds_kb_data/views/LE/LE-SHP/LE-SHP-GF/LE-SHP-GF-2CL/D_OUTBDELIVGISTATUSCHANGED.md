@@ -1,6 +1,21 @@
 ---
 name: D_OUTBDELIVGISTATUSCHANGED
 description: "D Outbdelivgistatuschanged"
+semantic_vi: "View D_OUTBDELIVGISTATUSCHANGED hiển thị các thay đổi trạng thái đơn hàng giao hàng trong Logistics Execution của SAP, hữu ích cho việc theo dõi các bản cập nhật trạng thái trong quá trình xử lý đơn hàng."
+keywords:
+  - "delivery document"
+  - "đơn hàng giao hàng"
+  - "status change"
+  - "thay đổi trạng thái"
+  - "logistics execution"
+  - "sap"
+  - "lob:logistics execution"
+  - "component:le-shp-gf-2cl"
+  - "sales organization"
+  - "delivery document type"
+  - "overall goods movement status"
+  - "prev overall goods movement status"
+semantic_en: "The D_OUTBDELIVGISTATUSCHANGED view exposes delivery document status changes in SAP Logistics Execution, useful for tracking status updates in delivery processing."
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: D_PINVPRINTPINVITEMSP
 description: "D Pinvprintpinvitemsp"
+semantic_vi: "View D_PINVPRINTPINVITEMSP hiển thị dữ liệu in đơn hàng mua hàng theo từng mục, được sử dụng khi in đơn hàng mua."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "print item"
+  - "in đơn hàng mua"
+  - "mm-im"
+  - "mm-im-pi"
+  - "sourcing & procurement"
+  - "các mục in đơn hàng mua"
+  - "dữ liệu in đơn hàng mua"
+semantic_en: "The D_PINVPRINTPINVITEMSP view exposes purchase order print item data, which is used when printing purchase orders."
 app_component: MM-IM-PI-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_SRLNMBRCHANGESERIALNUMBERP
 description: "D SRLNMBRCHANGESerial NumberP"
+semantic_vi: "View này hiển thị các thay đổi số hiệu của một đơn đặt hàng vật tư, cho phép bạn theo dõi các bản cập nhật số hiệu của một vật tư trong đơn đặt hàng. Nó được sử dụng khi bạn cần quản lý số hiệu của vật tư trong đơn đặt hàng."
+keywords:
+  - "purchase order item"
+  - "đơn đặt hàng vật tư"
+  - "serial number change"
+  - "số hiệu thay đổi"
+  - "purchase order"
+  - "đơn đặt hàng"
+  - "item"
+  - "vật tư"
+  - "sap mm"
+  - "mm-im-ekko"
+semantic_en: "This view exposes serial number changes for a purchase order item, allowing you to track updates to the serial number of an item in a purchase order. It is used when you need to manage serial numbers for items in a purchase order."
 app_component: MM-IM-PI-2CL
 software_component: SAPSCORE
 release_state: released

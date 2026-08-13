@@ -1,6 +1,18 @@
 ---
 name: D_PRODNORDERGETMISSINGPARTSR
 description: "D Prodnordergetmissingpartsr"
+semantic_vi: "View này hiển thị dữ liệu bộ phận thiếu trong đơn đặt hàng sản xuất, có thể được sử dụng để xác định và quản lý các bộ phận thiếu trong đơn đặt hàng sản xuất."
+keywords:
+  - "production order"
+  - "đơn đặt hàng sản xuất"
+  - "missing parts"
+  - "bộ phận thiếu"
+  - "sap pp"
+  - "sap pp-sfc"
+  - "sap cds view"
+  - "view dữ liệu"
+  - "data view"
+semantic_en: "This view exposes production order missing parts data, which can be used to identify and manage missing components in production orders."
 app_component: PP-SFC-2CL
 software_component: SAPSCORE
 release_state: released

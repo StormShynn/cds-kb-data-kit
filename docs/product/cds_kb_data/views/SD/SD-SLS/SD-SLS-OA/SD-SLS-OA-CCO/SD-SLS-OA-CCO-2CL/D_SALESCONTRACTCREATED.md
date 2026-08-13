@@ -1,6 +1,21 @@
 ---
 name: D_SALESCONTRACTCREATED
 description: "D Salescontractcreated"
+semantic_vi: "View D_SALESCONTRACTCREATED hiển thị các sự kiện tạo hợp đồng bán hàng, cung cấp dữ liệu về thời điểm và cách tạo hợp đồng bán hàng trong hệ thống. Nó có thể được sử dụng để phân tích các mẫu tạo hợp đồng bán hàng và xác định xu hướng."
+keywords:
+  - "sales contract"
+  - "hợp đồng bán hàng"
+  - "sales contract creation"
+  - "tạo hợp đồng bán hàng"
+  - "sap"
+  - "sd"
+  - "sales distribution"
+  - "sales organization"
+  - "distribution channel"
+  - "organization division"
+  - "sold to party"
+  - "event raised date time"
+semantic_en: "The D_SALESCONTRACTCREATED view exposes sales contract creation events, providing data on when and how sales contracts are created in the system. It can be used to analyze sales contract creation patterns and identify trends."
 app_component: SD-SLS-OA-CCO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: D_SUPLRINVCCANCELP
 description: "D Suplrinvccancelp"
+semantic_vi: "View D Suplrinvccancelp hiển thị dữ liệu hủy đơn hàng của nhà cung cấp, có thể được sử dụng để lấy thông tin về các đơn hàng bị hủy và lý do hủy."
+keywords:
+  - "supplier invoice"
+  - "đơn hàng nhà cung cấp"
+  - "hủy đơn hàng"
+  - "reversal reason"
+  - "reason for cancellation"
+  - "cancellation data"
+  - "dữ liệu hủy"
+  - "sap mm iv liv"
+  - "mm iv liv 2cl"
+semantic_en: "The D Suplrinvccancelp view exposes supplier invoice cancellation data, which can be used to retrieve information about cancelled invoices and their reversal reasons."
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

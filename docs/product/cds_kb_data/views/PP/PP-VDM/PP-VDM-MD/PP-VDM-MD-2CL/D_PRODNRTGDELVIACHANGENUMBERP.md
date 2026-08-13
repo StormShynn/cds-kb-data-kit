@@ -1,6 +1,19 @@
 ---
 name: D_PRODNRTGDELVIACHANGENUMBERP
 description: "D Prodnrtgdelviachangenumberp"
+semantic_vi: "Cung cấp số hiệu thay đổi tuyến đường sản xuất cho việc xóa bỏ, được sử dụng để theo dõi các thay đổi trong tuyến đường sản xuất."
+keywords:
+  - "production routing"
+  - "sản xuất tuyến đường"
+  - "change number"
+  - "số hiệu thay đổi"
+  - "deletion"
+  - "xóa bỏ"
+  - "sap pp-vdm"
+  - "pp-vdm-md-2cl"
+  - "manufacturing"
+  - "chế tạo"
+semantic_en: "Provides production routing change numbers for deletion, used to track changes in production routing."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

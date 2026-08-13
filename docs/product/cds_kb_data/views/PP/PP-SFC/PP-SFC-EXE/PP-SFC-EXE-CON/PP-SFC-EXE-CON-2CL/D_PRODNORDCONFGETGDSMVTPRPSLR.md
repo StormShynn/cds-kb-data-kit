@@ -1,6 +1,18 @@
 ---
 name: D_PRODNORDCONFGETGDSMVTPRPSLR
 description: "D Prodnordconfgetgdsmvtprpslr"
+semantic_vi: "View D_PRODNORDCONFGETGDSMVTPRPSLR hiển thị dữ liệu xác nhận sản xuất cho các chuyển động hàng hóa trong SAP PP-SFC-EXE-CON-2CL, được sử dụng để lấy chi tiết xác nhận cho các đơn đặt hàng sản xuất."
+keywords:
+  - "production confirmation"
+  - "sản xuất xác nhận"
+  - "goods movement"
+  - "chuyển động hàng hóa"
+  - "sap pp-sfc-exe-con-2cl"
+  - "manufacturing order"
+  - "đơn đặt hàng sản xuất"
+  - "confirmation details"
+  - "chi tiết xác nhận"
+semantic_en: "The D_PRODNORDCONFGETGDSMVTPRPSLR view exposes production confirmation data for goods movements in SAP PP-SFC-EXE-CON-2CL, used to retrieve confirmation details for production orders."
 app_component: PP-SFC-EXE-CON-2CL
 software_component: SAPSCORE
 release_state: released

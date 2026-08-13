@@ -1,6 +1,20 @@
 ---
 name: D_PROCESSORDERGETMISSINGPARTSR
 description: "D Processordergetmissingpartsr"
+semantic_vi: "View D_ProcessOrderGetMissingPartsR hiển thị dữ liệu liên quan đến đơn đặt hàng sản xuất thiếu bộ phận, có thể được sử dụng để xác định và quản lý các bộ phận thiếu trong quá trình sản xuất."
+keywords:
+  - "process order"
+  - "đơn đặt hàng sản xuất"
+  - "missing parts"
+  - "bộ phận thiếu"
+  - "production process"
+  - "quá trình sản xuất"
+  - "sap pp"
+  - "pp-pi"
+  - "pp-pi-por"
+  - "component:pp-pi-por-2cl"
+  - "lob:manufacturing"
+semantic_en: "The D_ProcessOrderGetMissingPartsR view exposes process order data related to missing parts, which can be used to identify and manage missing components in production processes."
 app_component: PP-PI-POR-2CL
 software_component: SAPSCORE
 release_state: released

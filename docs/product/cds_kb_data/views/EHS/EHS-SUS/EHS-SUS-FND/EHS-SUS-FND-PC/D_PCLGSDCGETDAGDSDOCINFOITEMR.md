@@ -1,6 +1,21 @@
 ---
 name: D_PCLGSDCGETDAGDSDOCINFOITEMR
 description: "D Pclgsdcgetdagdsdocinfoitemr"
+semantic_vi: "Chứa thông tin chi tiết về từng mặt hàng trong các tài liệu trong thành phần EHS-SUS-FND-PC, bao gồm chi tiết về vật liệu nguy hiểm và các thông số trọng lượng/tổng thể tích."
+keywords:
+  - "ehs"
+  - "ehs-sus"
+  - "ehs-sus-fnd"
+  - "ehs-sus-fnd-pc"
+  - "item-level"
+  - "hazardous-material"
+  - "weight"
+  - "volume"
+  - "gross-weight"
+  - "gross-volume"
+  - "component"
+  - "lob-other"
+semantic_en: "Exposes item-level information for documents in the EHS-SUS-FND-PC component, including hazardous material details and weight/volume measurements."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: D_SERVICEORDERRELEASEREVOKED
 description: "D Service OrderRELEASEREVOKED"
+semantic_vi: "View D_SERVICEORDERRELEASEREVOKED hiển thị dữ liệu về việc hủy bỏ việc phát hành đơn đặt hàng dịch vụ, có liên quan khi quản lý đơn đặt hàng dịch vụ đã bị hủy bỏ sau khi được phát hành."
+keywords:
+  - "service order"
+  - "đơn đặt hàng dịch vụ"
+  - "release"
+  - "hủy bỏ"
+  - "crm"
+  - "service"
+  - "sap"
+  - "c4c"
+  - "crm-s4-btx-2cl"
+semantic_en: "The D_SERVICEORDERRELEASEREVOKED CDS view exposes service order release revoked data, which is relevant when managing service orders that have been revoked after being released."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

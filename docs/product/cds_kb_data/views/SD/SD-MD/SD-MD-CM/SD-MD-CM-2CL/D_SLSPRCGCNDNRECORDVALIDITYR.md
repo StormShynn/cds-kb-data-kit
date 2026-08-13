@@ -1,6 +1,20 @@
 ---
 name: D_SLSPRCGCNDNRECORDVALIDITYR
 description: "D Slsprcgcndnrecordvalidityr"
+semantic_vi: "View này hiển thị các bản ghi điều kiện bán hàng và ngày hiệu lực của chúng, cho phép các nhà phát triển truy cập và quản lý dữ liệu điều kiện bán hàng. Nó được sử dụng để lấy bản ghi điều kiện và ngày hiệu lực liên quan đến các đơn đặt hàng bán hàng và mục."
+keywords:
+  - "sales condition"
+  - "điều kiện bán hàng"
+  - "record validity"
+  - "ngày hiệu lực"
+  - "sales document"
+  - "đơn đặt hàng bán hàng"
+  - "sales document item"
+  - "mục đơn đặt hàng bán hàng"
+  - "sap sd"
+  - "sd-md-cm"
+  - "sales & distribution"
+semantic_en: "This view exposes sales condition records and their validity dates, allowing developers to access and manage sales condition data. It is used to retrieve condition records and their associated validity dates for sales documents and items."
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

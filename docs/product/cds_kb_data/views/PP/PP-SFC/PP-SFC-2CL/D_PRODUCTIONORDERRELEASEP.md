@@ -1,6 +1,20 @@
 ---
 name: D_PRODUCTIONORDERRELEASEP
 description: "D Production OrderRELEASEP"
+semantic_vi: "View D_PRODUCTIONORDERRELEASEP hiển thị dữ liệu về việc phát hành đơn đặt hàng sản xuất, có liên quan khi quản lý đơn đặt hàng sản xuất trong thành phần PP-SFC-2CL của SAP."
+keywords:
+  - "production order"
+  - "đơn đặt hàng sản xuất"
+  - "pp-sfc-2cl"
+  - "sfc"
+  - "manufacturing"
+  - "release"
+  - "production order release"
+  - "đơn đặt hàng sản xuất phát hành"
+  - "sap pp"
+  - "lob:manufacturing"
+  - "bo:productionorder"
+semantic_en: "The D_PRODUCTIONORDERRELEASEP view exposes production order release data, which is relevant when managing production orders in the SAP PP-SFC-2CL component."
 app_component: PP-SFC-2CL
 software_component: SAPSCORE
 release_state: released

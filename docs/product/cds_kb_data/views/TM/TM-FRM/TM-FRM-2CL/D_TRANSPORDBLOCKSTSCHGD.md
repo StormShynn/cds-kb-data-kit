@@ -1,6 +1,17 @@
 ---
 name: D_TRANSPORDBLOCKSTSCHGD
 description: "D Transpordblockstschgd"
+semantic_vi: "View D_TRANSPORDBLOCKSTSCHGD cung cấp thông tin thay đổi trạng thái chặn vận chuyển đơn hàng, có thể được sử dụng để theo dõi và phân tích các thay đổi trạng thái chặn vận chuyển đơn hàng."
+keywords:
+  - "transportation order"
+  - "đơn vận chuyển"
+  - "block status"
+  - "trạng thái chặn"
+  - "transportation management"
+  - "quản lý vận chuyển"
+  - "sap tm"
+  - "tm-frm-2cl"
+semantic_en: "The D_TRANSPORDBLOCKSTSCHGD view provides transportation order block status changes, which can be used to track and analyze transportation order block status updates."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

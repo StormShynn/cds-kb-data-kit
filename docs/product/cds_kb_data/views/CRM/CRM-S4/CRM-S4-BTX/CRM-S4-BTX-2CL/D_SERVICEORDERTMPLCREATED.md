@@ -1,6 +1,18 @@
 ---
 name: D_SERVICEORDERTMPLCREATED
 description: "D Service OrderTMPLCREATED"
+semantic_vi: "View D_SERVICEORDERTMPLCREATED hiển thị dữ liệu tạo mẫu đơn dịch vụ, hữu ích khi theo dõi hoặc phân tích sự kiện tạo mẫu đơn dịch vụ."
+keywords:
+  - "service order"
+  - "đơn dịch vụ"
+  - "service order template"
+  - "mẫu đơn dịch vụ"
+  - "crm"
+  - "s4-btx-2cl"
+  - "lob:other"
+  - "service order creation"
+  - "tạo đơn dịch vụ"
+semantic_en: "The D_SERVICEORDERTMPLCREATED view exposes service order template creation data, useful when tracking or analyzing service order template creation events."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

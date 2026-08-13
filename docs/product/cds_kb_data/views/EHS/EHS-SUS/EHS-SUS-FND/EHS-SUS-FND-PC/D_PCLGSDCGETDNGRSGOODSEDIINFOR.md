@@ -1,6 +1,19 @@
 ---
 name: D_PCLGSDCGETDNGRSGOODSEDIINFOR
 description: "D Pclgsdcgetdngrsgoodsediinfor"
+semantic_vi: "View D_PCLGSDCGETDNGRSGOODSEDIINFOR hiển thị dữ liệu nhật ký tuân thủ liên quan đến thông tin EDI hàng hóa, có thể được sử dụng để theo dõi và phân tích nhật ký tuân thủ cho các giao dịch EDI hàng hóa."
+keywords:
+  - "compliance log"
+  - "goods edi"
+  - "đơn hàng"
+  - "nhật ký tuân thủ"
+  - "edi"
+  - "hàng hóa"
+  - "sustainability"
+  - "sustainability compliance"
+  - "sustainability log"
+  - "sustainability data"
+semantic_en: "The D_PCLGSDCGETDNGRSGOODSEDIINFOR view exposes compliance log data related to goods EDI information, which can be used to track and analyze compliance logs for goods EDI transactions."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

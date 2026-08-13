@@ -1,6 +1,19 @@
 ---
 name: D_PURCHASEORDERITEMUNBLOCKED
 description: "D Purchase OrderITEMUNBLOCKED"
+semantic_vi: "View D_PURCHASEORDERITEMUNBLOCKED hiển thị các mục đơn đặt hàng không bị chặn trong SAP, có thể sử dụng để lấy các mục không bị chặn cho việc mua hàng hoặc các quy trình kinh doanh khác."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "unblocked"
+  - "purchase order item"
+  - "mục đơn đặt hàng"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "bo:purchaseorder"
+  - "mm-pur-po-2cl"
+semantic_en: "The D_PURCHASEORDERITEMUNBLOCKED view exposes unblocked purchase order items in SAP, which can be used to retrieve items that are not blocked for purchasing or other business processes."
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

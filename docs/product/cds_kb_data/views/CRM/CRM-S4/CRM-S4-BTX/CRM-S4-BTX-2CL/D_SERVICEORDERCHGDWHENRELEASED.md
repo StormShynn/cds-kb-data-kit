@@ -1,6 +1,20 @@
 ---
 name: D_SERVICEORDERCHGDWHENRELEASED
 description: "D Service OrderCHGDWHENRELEASED"
+semantic_vi: "View D_SERVICEORDERCHGDWHENRELEASED hiển thị dữ liệu lịch sử thay đổi đơn hàng dịch vụ khi đơn hàng dịch vụ được phát hành. Nó cung cấp các trường khóa chính để xác định đơn hàng dịch vụ và các thay đổi liên quan."
+keywords:
+  - "service order"
+  - "đơn hàng dịch vụ"
+  - "crm"
+  - "service"
+  - "lease"
+  - "change history"
+  - "lịch sử thay đổi"
+  - "service order change"
+  - "đơn hàng dịch vụ thay đổi"
+  - "released"
+  - "phát hành"
+semantic_en: "The D_SERVICEORDERCHGDWHENRELEASED view exposes service order change history data when a service order is released. It provides key fields for identifying service orders and their associated changes."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

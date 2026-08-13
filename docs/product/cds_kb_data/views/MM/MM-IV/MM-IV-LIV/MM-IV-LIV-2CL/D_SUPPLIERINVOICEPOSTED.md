@@ -1,6 +1,19 @@
 ---
 name: D_SUPPLIERINVOICEPOSTED
 description: "D Supplier InvoicePOSTED"
+semantic_vi: "View D_SUPPLIERINVOICEPOSTED hiển thị dữ liệu hóa đơn nhà cung cấp đã được đăng ký, cho phép bạn theo dõi và phân tích hóa đơn cho nhà cung cấp."
+keywords:
+  - "supplier"
+  - "invoice"
+  - "posted"
+  - "mm-iv"
+  - "sourcing"
+  - "procurement"
+  - "supplier invoice"
+  - "đơn nhà cung cấp"
+  - "hóa đơn nhà cung cấp"
+  - "đăng ký hóa đơn"
+semantic_en: "The D_SUPPLIERINVOICEPOSTED view exposes supplier invoice data that has been posted, allowing you to track and analyze invoices for suppliers."
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

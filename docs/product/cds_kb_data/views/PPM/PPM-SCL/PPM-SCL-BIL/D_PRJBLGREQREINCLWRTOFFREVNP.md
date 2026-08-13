@@ -1,6 +1,19 @@
 ---
 name: D_PRJBLGREQREINCLWRTOFFREVNP
 description: "D Prjblgreqreinclwrtoffrevnp"
+semantic_vi: "View này hiển thị các mục yêu cầu thanh toán dự án với các công việc cần thực hiện và các vật tư không phải là tài sản không thu phí tương ứng. Nó được sử dụng khi quản lý yêu cầu thanh toán dự án trong thành phần PPM-SCL-BIL."
+keywords:
+  - "project billing request"
+  - "yêu cầu thanh toán dự án"
+  - "project billing request item"
+  - "mục yêu cầu thanh toán dự án"
+  - "included work"
+  - "công việc cần thực hiện"
+  - "off-revenue non-plant item"
+  - "vật tư không phải là tài sản không thu phí"
+  - "ppm-scl-bil"
+  - "thành phần ppm-scl-bil"
+semantic_en: "This view exposes project billing request items with included work to be done and their corresponding off-revenue non-plant items. It is used when managing project billing requests in the PPM-SCL-BIL component."
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

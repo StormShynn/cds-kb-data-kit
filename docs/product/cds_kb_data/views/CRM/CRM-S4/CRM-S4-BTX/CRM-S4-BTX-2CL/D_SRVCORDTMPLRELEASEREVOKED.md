@@ -1,6 +1,17 @@
 ---
 name: D_SRVCORDTMPLRELEASEREVOKED
 description: "D Srvcordtmplreleaserevoked"
+semantic_vi: "View D_SRVCORDTMPLRELEASEREVOKED hiển thị dữ liệu hủy bỏ việc phát hành mẫu đơn dịch vụ, có liên quan khi quản lý mẫu đơn dịch vụ trong CRM."
+keywords:
+  - "crm"
+  - "lease"
+  - "service order template"
+  - "dịch vụ"
+  - "mẫu đơn dịch vụ"
+  - "hủy bỏ"
+  - "phát hành"
+  - "crm-s4-btx-2cl"
+semantic_en: "The D_SRVCORDTMPLRELEASEREVOKED CDS view exposes service order template release revocation data, which is relevant when managing service order templates in CRM."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

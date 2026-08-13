@@ -1,6 +1,20 @@
 ---
 name: D_SLSQTANOVRLSDPROCSTSCHANGED
 description: "D Slsqtanovrlsdprocstschanged"
+semantic_vi: "View D_SLSQTANOVRLSDPROCSTSCHANGED lưu trữ các thay đổi trạng thái quá trình bán hàng tổng thể của các đề xuất bán hàng, cung cấp một bản ghi về thời điểm và cách trạng thái được cập nhật."
+keywords:
+  - "sales quotation"
+  - "đề xuất bán hàng"
+  - "overall sales process status"
+  - "thay đổi trạng thái quá trình bán hàng"
+  - "sales process"
+  - "quá trình bán hàng"
+  - "sales quotation type"
+  - "loại đề xuất bán hàng"
+  - "sap sales and distribution"
+  - "sales and distribution"
+  - "sd-sls-qut-2cl"
+semantic_en: "The D_SLSQTANOVRLSDPROCSTSCHANGED view captures changes to the overall sales process status of sales quotations, providing a record of when and how the status was updated."
 app_component: SD-SLS-QUT-2CL
 software_component: SAPSCORE
 release_state: released

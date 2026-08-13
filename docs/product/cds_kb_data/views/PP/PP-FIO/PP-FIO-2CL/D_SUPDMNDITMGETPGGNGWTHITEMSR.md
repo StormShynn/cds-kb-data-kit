@@ -1,6 +1,20 @@
 ---
 name: D_SUPDMNDITMGETPGGNGWTHITEMSR
 description: "D Supdmnditmgetpggngwthitemsr"
+semantic_vi: "View này hiển thị dữ liệu vật liệu và chi tiết hàng hóa liên quan đến kế hoạch cung ứng và nhu cầu sản xuất, cụ thể là liên kết và các mục tăng trưởng. Nó được sử dụng để lấy thông tin chi tiết cho mục đích lập kế hoạch và tối ưu hóa."
+keywords:
+  - "supply demand planning"
+  - "pegging"
+  - "growth items"
+  - "material"
+  - "item-level"
+  - "manufacturing"
+  - "mrp"
+  - "demand item"
+  - "supply item"
+  - "ekko"
+  - "pp-fio-2cl"
+semantic_en: "This view exposes material and item-level data related to supply and demand planning in manufacturing, specifically pegging and growth items. It is used to retrieve detailed information for planning and optimization purposes."
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

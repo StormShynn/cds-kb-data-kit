@@ -1,6 +1,21 @@
 ---
 name: D_PCLGSDCGETDNGRSGDSDOCINFOR
 description: "D Pclgsdcgetdngrsgdsdocinfor"
+semantic_vi: "View D_PCLGSDCGETDNGRSGDSDOCINFOR hiển thị thông tin về các tài liệu hàng hóa nguy hiểm, bao gồm văn bản điểm EU và RID, số lượng và nhật ký liên quan. Nó được sử dụng để lấy thông tin chi tiết về một tài liệu cụ thể."
+keywords:
+  - "dangerous goods"
+  - "hàng hóa nguy hiểm"
+  - "document"
+  - "tài liệu"
+  - "eu"
+  - "rid"
+  - "point text"
+  - "văn bản điểm"
+  - "quantity"
+  - "số lượng"
+  - "log"
+  - "nghật ký"
+semantic_en: "The D_PCLGSDCGETDNGRSGDSDOCINFOR CDS view exposes information about dangerous goods documents, including EU and RID point texts, quantities, and related logs. It is used to retrieve detailed information about a specific document."
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

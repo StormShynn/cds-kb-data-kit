@@ -1,6 +1,21 @@
 ---
 name: D_PRODNORDCONFGETCONFPROPOSALR
 description: "D Prodnordconfgetconfproposalr"
+semantic_vi: "View này hiển thị dữ liệu đề xuất xác nhận sản xuất cho một hoạt động và chuỗi số cụ thể. Nó được sử dụng để lấy dữ liệu đề xuất xác nhận sản xuất cho kế hoạch và thực hiện sản xuất."
+keywords:
+  - "production confirmation"
+  - "sản xuất xác nhận"
+  - "order operation"
+  - "hoạt động đơn hàng"
+  - "sequence"
+  - "chuỗi số"
+  - "production planning"
+  - "kế hoạch sản xuất"
+  - "execution"
+  - "thực hiện sản xuất"
+  - "sap pp"
+  - "pp-sfc"
+semantic_en: "This view exposes production confirmation proposal data for a specific order operation and sequence. It is used to retrieve confirmation proposal data for production planning and execution."
 app_component: PP-SFC-EXE-CON-2CL
 software_component: SAPSCORE
 release_state: released

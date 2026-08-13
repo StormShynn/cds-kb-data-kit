@@ -1,6 +1,18 @@
 ---
 name: D_TRANSPORDEXECUTIONSTSBFR
 description: "D Transpordexecutionstsbfr"
+semantic_vi: "View D_TRANSPORDEXECUTIONSTSBFR hiển thị dữ liệu trạng thái thực hiện vận chuyển, có thể được sử dụng để theo dõi trạng thái đơn hàng vận chuyển."
+keywords:
+  - "transportation execution status"
+  - "trạng thái thực hiện vận chuyển"
+  - "transportation order"
+  - "đơn hàng vận chuyển"
+  - "sap tm"
+  - "tm frm"
+  - "tm frm 2cl"
+  - "transportation management"
+  - "quản lý vận tải"
+semantic_en: "The D_TRANSPORDEXECUTIONSTSBFR view exposes transportation execution status data, which can be used to track the status of transportation orders."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

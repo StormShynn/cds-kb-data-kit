@@ -1,6 +1,19 @@
 ---
 name: D_SUPLRINVCCHANGEPOITEMP
 description: "D Suplrinvcchangepoitemp"
+semantic_vi: "View D_SUPLRINVCCHANGEPOITEMP cung cấp truy cập vào các bản ghi thay đổi hóa đơn nhà cung cấp cho các thay đổi ở mức độ chi tiết của hàng hóa trong thành phần MM-IV-LIV-2CL. Nó được sử dụng để lấy thông tin về các thay đổi được thực hiện trên hóa đơn nhà cung cấp."
+keywords:
+  - "supplier invoice"
+  - "thay đổi hóa đơn nhà cung cấp"
+  - "mm-iv-liv-2cl"
+  - "item-level change"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "ekko"
+  - "purchasing"
+  - "đơn mua hàng"
+  - "thay đổi ở mức độ chi tiết"
+semantic_en: "The D_SUPLRINVCCHANGEPOITEMP view provides access to supplier invoice change records for item-level changes in the MM-IV-LIV-2CL component. It is used to retrieve information about changes made to supplier invoices."
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

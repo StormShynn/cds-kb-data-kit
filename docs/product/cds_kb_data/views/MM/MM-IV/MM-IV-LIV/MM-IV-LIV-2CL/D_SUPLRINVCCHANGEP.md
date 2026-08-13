@@ -1,6 +1,20 @@
 ---
 name: D_SUPLRINVCCHANGEP
 description: "D Suplrinvcchangep"
+semantic_vi: "View D_SUPLRINVCCHANGEP CDS hiển thị dữ liệu thay đổi hóa đơn nhà cung cấp, có thể được sử dụng để theo dõi các thay đổi được thực hiện trên hóa đơn nhà cung cấp."
+keywords:
+  - "supplier invoice"
+  - "đơn nhà cung cấp"
+  - "cds view"
+  - "mm-iv"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "mm"
+  - "mm-iv-liv"
+  - "mm-iv-liv-2cl"
+  - "invoice change"
+  - "thay đổi hóa đơn"
+semantic_en: "The D_SUPLRINVCCHANGEP CDS view exposes supplier invoice change data, which can be used to track changes made to supplier invoices."
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released
