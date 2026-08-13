@@ -1,6 +1,19 @@
 ---
 name: I_AVAILABILITYCTRLPROFILE
 description: "Availabilityctrlprofile"
+semantic_vi: "View Availability Control Profile cung cấp thông tin về các thiết lập và quy tắc kiểm soát khả năng sẵn có của dữ liệu tài chính, chẳng hạn như vai trò ngân sách và tiền tệ. Nó được sử dụng để quản lý và phân tích dữ liệu tài chính trong thành phần FI-GL-IS-2CL."
+keywords:
+  - "availability control profile"
+  - "availability control profile type"
+  - "financial data"
+  - "budget currency role"
+  - "fi-gl-is-2cl"
+  - "finance"
+  - "sap"
+  - "cds view"
+  - "interface view"
+  - "financial information"
+semantic_en: "The Availability Control Profile view provides information about the settings and rules that control the availability of financial data, such as budget and currency roles. It is used to manage and analyze financial data in the FI-GL-IS-2CL component."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

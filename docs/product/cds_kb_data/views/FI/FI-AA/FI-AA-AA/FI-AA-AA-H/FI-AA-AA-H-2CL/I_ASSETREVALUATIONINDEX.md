@@ -1,6 +1,21 @@
 ---
 name: I_ASSETREVALUATIONINDEX
 description: "Assetrevaluationindex"
+semantic_vi: "View Asset Revaluation Index cung cấp truy cập vào dữ liệu chỉ số tái giá trị tài sản, được sử dụng để quản lý và theo dõi việc tái giá trị tài sản trong hệ thống tài chính của công ty. Nó có thể được sử dụng bởi các nhà phát triển để trích xuất và thao tác dữ liệu này cho mục đích báo cáo và phân tích."
+keywords:
+  - "asset revaluation"
+  - "tái giá trị tài sản"
+  - "asset revaluation index"
+  - "chỉ số tái giá trị tài sản"
+  - "fi"
+  - "fi-aa"
+  - "fi-aa-aa"
+  - "interface view"
+  - "data extraction"
+  - "financial system"
+  - "tài chính"
+  - "tài sản"
+semantic_en: "The Asset Revaluation Index view provides access to asset revaluation index data, which is used to manage and track the revaluation of assets in a company's financial system. It can be used by developers to extract and manipulate this data for reporting and analytics purposes."
 app_component: FI-AA-AA-H-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_AVAILABLECAPACITYSHIFT
 description: "Availablecapacityshift"
+semantic_vi: "View I_AVAILABLECAPACITYSHIFT hiển thị các ca có khả năng có sẵn cho kế hoạch sản xuất, cho phép các nhà phát triển truy cập và sử dụng dữ liệu này trong các ứng dụng của họ."
+keywords:
+  - "available capacity shift"
+  - "ca có khả năng có sẵn"
+  - "kế hoạch sản xuất"
+  - "production planning"
+  - "scheduling"
+  - "lịch trình"
+  - "sap pp-vdm-md-2cl"
+  - "pp-vdm-md-2cl"
+  - "manufacturing"
+  - "xây dựng"
+  - "công nghệ sản xuất"
+semantic_en: "The I_AVAILABLECAPACITYSHIFT view exposes available capacity shifts for production planning, allowing developers to access and utilize this data in their applications."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

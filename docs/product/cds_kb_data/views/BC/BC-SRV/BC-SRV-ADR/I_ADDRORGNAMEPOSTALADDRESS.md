@@ -1,6 +1,19 @@
 ---
 name: I_ADDRORGNAMEPOSTALADDRESS
 description: "Addrorgnamepostaladdress"
+semantic_vi: "Chứa dữ liệu địa chỉ bưu chính của một tổ chức, bao gồm ID địa chỉ, mã biểu diễn và chi tiết vị trí. Sử dụng view này để lấy thông tin địa chỉ cho mục đích kinh doanh."
+keywords:
+  - "address"
+  - "postal address"
+  - "organization"
+  - "location"
+  - "business data"
+  - "sap cds view"
+  - "bc-srv-adr"
+  - "address id"
+  - "representation code"
+  - "location details"
+semantic_en: "Exposes postal address data for an organization, including address ID, representation code, and location details. Use this view to retrieve address information for business purposes."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BANKSTATEMENTITEM
 description: "Bankstatementitem"
+semantic_vi: "View I_BANKSTATEMENTITEM hiển thị dữ liệu khoản mục trong bảng sao kê ngân hàng, được sử dụng để phân tích và xử lý từng giao dịch trong bảng sao kê."
+keywords:
+  - "bank statement"
+  - "khoản mục"
+  - "bank statement item"
+  - "fi"
+  - "fi-fio-ar-2cl"
+  - "finance"
+  - "banking"
+  - "transaction"
+  - "giao dịch"
+  - "sao kê"
+  - "bảng sao kê"
+semantic_en: "The I_BANKSTATEMENTITEM view exposes bank statement item data, which is used to analyze and process individual transactions within a bank statement."
 app_component: FI-FIO-AR-2CL
 software_component: SAPSCORE
 release_state: released

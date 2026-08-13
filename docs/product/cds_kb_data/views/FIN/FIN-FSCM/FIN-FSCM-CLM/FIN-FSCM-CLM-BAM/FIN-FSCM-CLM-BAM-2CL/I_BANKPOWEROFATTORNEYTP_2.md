@@ -1,6 +1,21 @@
 ---
 name: I_BANKPOWEROFATTORNEYTP_2
 description: "Bankpowerofattorneytp 2"
+semantic_vi: "View Bank Power of Attorney 2 cung cấp truy cập dữ liệu về quyền đại diện ngân hàng, bao gồm các chỉ định và ủy quyền, cho việc sử dụng trong các giao dịch tài chính và xử lý."
+keywords:
+  - "bank power of attorney"
+  - "quyền đại diện ngân hàng"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "bank account assignment"
+  - "chỉ định tài khoản ngân hàng"
+  - "authorization"
+  - "ủy quyền"
+  - "sap cds view"
+  - "view"
+  - "bank"
+  - "ngân hàng"
+semantic_en: "The Bank Power of Attorney 2 view provides access to bank power of attorney data, including assignments and authorizations, for use in financial transactions and processing."
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

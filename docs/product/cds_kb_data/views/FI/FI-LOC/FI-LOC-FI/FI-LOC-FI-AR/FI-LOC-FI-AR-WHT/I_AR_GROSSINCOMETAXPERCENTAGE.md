@@ -1,6 +1,21 @@
 ---
 name: I_AR_GROSSINCOMETAXPERCENTAGE
 description: "AR Grossincometaxpercentage"
+semantic_vi: "View AR Grossincometaxpercentage cung cấp tỷ lệ thuế cho thu nhập gross trong các khu vực và quốc gia khác nhau, dựa trên các mã hoạt động cụ thể. Nó được sử dụng để xác định tỷ lệ thuế cho các giao dịch thu nhập phải thu."
+keywords:
+  - "gross income tax rate"
+  - "tỷ lệ thuế thu nhập gross"
+  - "accounts receivable"
+  - "thu nhập phải thu"
+  - "tax rate"
+  - "tỷ lệ thuế"
+  - "fi-loc-fi-ar-wht"
+  - "finance"
+  - "tài chính"
+  - "sap"
+  - "fi"
+  - "fi-loc"
+semantic_en: "The AR Grossincometaxpercentage view provides tax rates for gross income in different regions and countries, based on specific activity codes. It is used to determine tax rates for accounts receivable transactions."
 app_component: FI-LOC-FI-AR-WHT
 software_component: SAPSCORE
 release_state: released

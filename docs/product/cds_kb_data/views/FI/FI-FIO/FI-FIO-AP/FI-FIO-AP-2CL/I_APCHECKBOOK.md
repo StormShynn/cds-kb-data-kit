@@ -1,6 +1,21 @@
 ---
 name: I_APCHECKBOOK
 description: "Apcheckbook"
+semantic_vi: "View I_APCHECKBOOK hiển thị thông tin về cuốn sổ chiết khấu, bao gồm chi tiết về cuốn sổ, trạng thái và các séc được gán."
+keywords:
+  - "chequebook"
+  - "sổ chiết khấu"
+  - "fi"
+  - "fio-ap-2cl"
+  - "finance"
+  - "accounting"
+  - "sap"
+  - "cds"
+  - "view"
+  - "payment"
+  - "company code"
+  - "house bank"
+semantic_en: "The I_APCHECKBOOK view exposes chequebook information, including details about chequebooks, their status, and assigned cheques. It is used to manage chequebook data in the FI-FIO-AP-2CL component."
 app_component: FI-FIO-AP-2CL
 software_component: SAPSCORE
 release_state: released

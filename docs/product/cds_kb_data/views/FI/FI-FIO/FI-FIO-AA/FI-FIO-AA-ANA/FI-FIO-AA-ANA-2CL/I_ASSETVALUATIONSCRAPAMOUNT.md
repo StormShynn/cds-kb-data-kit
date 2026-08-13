@@ -1,6 +1,18 @@
 ---
 name: I_ASSETVALUATIONSCRAPAMOUNT
 description: "Assetvaluationscrapamount"
+semantic_vi: "View I_ASSETVALUATIONSCRAPAMOUNT CDS hiển thị số lượng rác cho tài sản định giá, cung cấp dữ liệu về tỷ lệ rác và số lượng rác trong đồng tiền của công ty. Nó được sử dụng để phân tích và tính toán giá trị rác cho tài sản."
+keywords:
+  - "asset valuation"
+  - "scrap amount"
+  - "fixed asset"
+  - "company code currency"
+  - "fi"
+  - "fi-fio-aa-ana-2cl"
+  - "tài sản định giá"
+  - "số lượng rác"
+  - "đồng tiền công ty"
+semantic_en: "The I_ASSETVALUATIONSCRAPAMOUNT CDS view exposes asset valuation scrap amounts for fixed assets, providing data on scrap percentages and amounts in company code currency. It is used to analyze and calculate scrap values for assets."
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released

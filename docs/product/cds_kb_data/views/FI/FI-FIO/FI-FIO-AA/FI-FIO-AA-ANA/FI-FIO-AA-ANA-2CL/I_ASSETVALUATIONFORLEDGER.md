@@ -1,6 +1,21 @@
 ---
 name: I_ASSETVALUATIONFORLEDGER
 description: "Assetvaluationforledger"
+semantic_vi: "View I_ASSETVALUATIONFORLEDGER hiển thị dữ liệu đánh giá tài sản cho các tài khoản sổ cái, cung cấp thông tin về tài sản cố định, khấu hao và ngày đánh giá. Nó được sử dụng để phân tích và báo cáo về giá trị tài sản và khấu hao trên các sổ cái và các khoảng thời gian khác nhau."
+keywords:
+  - "asset valuation"
+  - "tài sản đánh giá"
+  - "ledger account"
+  - "tài khoản sổ cái"
+  - "fixed asset"
+  - "tài sản cố định"
+  - "depreciation"
+  - "khấu hao"
+  - "sap fi"
+  - "fi-fio-aa-ana-2cl"
+  - "finance"
+  - "finance lob"
+semantic_en: "The I_ASSETVALUATIONFORLEDGER CDS view exposes asset valuation data for ledger accounts, providing information on fixed assets, depreciation, and valuation dates. It is used to analyze and report on asset values and depreciation across different ledgers and time periods."
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_AE_CNSMPNTAXCTRLCODETXT
 description: "AE Cnsmpntaxctrlcodetxt"
+semantic_vi: "Chứa dữ liệu mã điều khiển thuế tiêu thụ tiêu dùng cho các quốc gia và ngôn ngữ khác nhau, được sử dụng khi quản lý các quy định thuế trên các khu vực khác nhau."
+keywords:
+  - "consumption tax"
+  - "tax control code"
+  - "language"
+  - "country"
+  - "language code"
+  - "tax regulation"
+  - "fi-loc-lo-ae"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "interface-view"
+  - "tax"
+semantic_en: "Exposes consumption tax control code text data for various countries and languages, used when managing tax regulations across different regions."
 app_component: FI-LOC-LO-AE
 software_component: SAPSCORE
 release_state: released

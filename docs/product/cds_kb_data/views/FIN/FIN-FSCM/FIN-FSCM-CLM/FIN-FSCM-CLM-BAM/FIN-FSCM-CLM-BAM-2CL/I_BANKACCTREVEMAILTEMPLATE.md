@@ -1,6 +1,17 @@
 ---
 name: I_BANKACCTREVEMAILTEMPLATE
 description: "Bankacctrevemailtemplate"
+semantic_vi: "View Bank Account Revenue Email Template hiển thị dữ liệu thu nhập tài khoản ngân hàng được sử dụng cho thông báo email trong thành phần FIN-FSCM-CLM-BAM-2CL. Nó cung cấp các trường khóa chính để xác định tài khoản ngân hàng và thông tin thu nhập liên quan."
+keywords:
+  - "bank account"
+  - "revenue"
+  - "email template"
+  - "fin-fscm-clm-bam-2cl"
+  - "tài khoản ngân hàng"
+  - "thu nhập"
+  - "thông báo email"
+  - "thiết lập email"
+semantic_en: "The Bank Account Revenue Email Template view exposes bank account revenue data used for email notifications in the FIN-FSCM-CLM-BAM-2CL component. It provides key fields for identifying bank accounts and their associated revenue information."
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

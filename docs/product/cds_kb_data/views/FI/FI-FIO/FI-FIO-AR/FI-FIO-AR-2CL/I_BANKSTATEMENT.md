@@ -1,6 +1,18 @@
 ---
 name: I_BANKSTATEMENT
 description: "Bankstatement"
+semantic_vi: "View I_BANKSTATEMENT CDS hiển thị dữ liệu bảng sao kê ngân hàng, bao gồm thông tin tài khoản và chi tiết giao dịch, có thể được sử dụng để phân tích và quản lý bảng sao kê ngân hàng."
+keywords:
+  - "bank statement"
+  - "bảng sao kê ngân hàng"
+  - "fi"
+  - "finance"
+  - "sap cds"
+  - "cds view"
+  - "bank account"
+  - "transaction details"
+  - "account information"
+semantic_en: "The I_BANKSTATEMENT CDS view exposes bank statement data, including account information and transaction details, which can be used to analyze and manage bank statements."
 app_component: FI-FIO-AR-2CL
 software_component: SAPSCORE
 release_state: released

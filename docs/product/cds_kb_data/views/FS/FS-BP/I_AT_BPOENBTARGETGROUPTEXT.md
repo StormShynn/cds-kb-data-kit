@@ -1,6 +1,20 @@
 ---
 name: I_AT_BPOENBTARGETGROUPTEXT
 description: "AT Bpoenbtargetgrouptext"
+semantic_vi: "View I_AT_BPOENBTARGETGROUPTEXT cung cấp mô tả văn bản cho các nhóm mục tiêu BPO eNB, có thể được sử dụng để hiển thị thông tin về các nhóm mục tiêu trong quy trình kinh doanh."
+keywords:
+  - "bpo"
+  - "target group"
+  - "mục tiêu"
+  - "bpo enb"
+  - "description"
+  - "mô tả"
+  - "text view"
+  - "view"
+  - "sap"
+  - "fs-bp"
+  - "interface view"
+semantic_en: "The I_AT_BPOENBTARGETGROUPTEXT view provides text descriptions for BPO eNB target groups, which can be used to display information about target groups in business processes."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

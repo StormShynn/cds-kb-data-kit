@@ -1,6 +1,18 @@
 ---
 name: I_APARTOLERANCEGROUPTEXT
 description: "Apartolerancegrouptext"
+semantic_vi: "Chứa dữ liệu văn bản nhóm dung sai cho tài khoản thu tiền, được sử dụng để hiển thị tên nhóm dung sai trong thành phần FI-AR-IS-2CL."
+keywords:
+  - "apartolerance"
+  - "group"
+  - "text"
+  - "fi-ar-is-2cl"
+  - "finance"
+  - "accounts payable"
+  - "dung sai"
+  - "thu tiền"
+  - "tài khoản"
+semantic_en: "Exposes tolerance group text data for accounts payable, used to display tolerance group names in the FI-AR-IS-2CL component."
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released

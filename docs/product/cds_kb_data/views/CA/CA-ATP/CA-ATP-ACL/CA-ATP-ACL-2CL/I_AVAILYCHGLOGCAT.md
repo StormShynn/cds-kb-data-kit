@@ -1,6 +1,18 @@
 ---
 name: I_AVAILYCHGLOGCAT
 description: "Availychglogcat"
+semantic_vi: "View Availychglogcat hiển thị các loại nhật ký thay đổi khả dụng và giá trị miền tương ứng, có thể được sử dụng để theo dõi và quản lý thay đổi khả dụng của sản phẩm trong chuỗi cung ứng."
+keywords:
+  - "availability change"
+  - "log category"
+  - "domain value"
+  - "supply chain"
+  - "product availability"
+  - "thay đổi khả dụng"
+  - "loại nhật ký"
+  - "giá trị miền"
+  - "chuỗi cung ứng"
+semantic_en: "The Availychglogcat view exposes availability change log categories and their corresponding domain values, which can be used to track and manage changes to product availability in a supply chain."
 app_component: CA-ATP-ACL-2CL
 software_component: SAPSCORE
 release_state: released

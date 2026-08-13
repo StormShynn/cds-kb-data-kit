@@ -1,6 +1,19 @@
 ---
 name: I_ASSETCLASS
 description: "Assetclass"
+semantic_vi: "View I_ASSETCLASS hiển thị dữ liệu loại tài sản, được sử dụng để phân loại và quản lý tài sản trong bối cảnh tài chính. Nó thường được sử dụng trong quá trình quản lý tài sản và kế toán."
+keywords:
+  - "asset class"
+  - "loại tài sản"
+  - "asset management"
+  - "quản lý tài sản"
+  - "financial accounting"
+  - "kế toán tài chính"
+  - "fi"
+  - "fi-fio-aa-ana-2cl"
+  - "fixed asset"
+  - "tài sản cố định"
+semantic_en: "The I_ASSETCLASS view exposes asset class data, which is used to categorize and manage assets in a financial context. It is typically used in asset management and accounting processes."
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released

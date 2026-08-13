@@ -1,6 +1,19 @@
 ---
 name: I_AVAILABLECAPACITYTYPETEXT
 description: "Availablecapacitytypetext"
+semantic_vi: "Chứa các loại khả năng sẵn có với tên trong các ngôn ngữ khác nhau, được sử dụng để hiển thị và quản lý khả năng sản xuất trong SAP PP-VDM-MD-2CL."
+keywords:
+  - "available capacity type"
+  - "sap pp-vdm-md-2cl"
+  - "manufacturing capacity"
+  - "language"
+  - "text view"
+  - "interface view"
+  - "pp-vdm"
+  - "pp"
+  - "manufacturing"
+  - "sap"
+semantic_en: "Exposes available capacity types with their names in different languages, used to display and manage manufacturing capacity in SAP PP-VDM-MD-2CL."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_APISWITHCLOUDDEVSUCCESSOR
 description: "Apiswithclouddevsuccessor"
+semantic_vi: "View này hiển thị danh sách các API cùng với các phiên bản kế thừa trong môi trường phát triển đám mây, hiển thị các đối tượng tiền nhiệm và hậu nhiệm cùng với các thuộc tính của chúng. Nó có thể được sử dụng để phân tích và quản lý mối quan hệ API trong bối cảnh phát triển đám mây."
+keywords:
+  - "api"
+  - "cloud development"
+  - "successor"
+  - "predecessor"
+  - "object"
+  - "properties"
+  - "relationship"
+  - "management"
+  - "analysis"
+  - "api relationship"
+  - "đám mây"
+  - "phát triển đám mây"
+semantic_en: "This view exposes a list of APIs with their cloud development successors, showing the predecessor and successor objects and their properties. It can be used to analyze and manage API relationships in a cloud development context."
 app_component: BC-SRV-APS-EXT-REL
 software_component: SAP_BASIS
 release_state: released

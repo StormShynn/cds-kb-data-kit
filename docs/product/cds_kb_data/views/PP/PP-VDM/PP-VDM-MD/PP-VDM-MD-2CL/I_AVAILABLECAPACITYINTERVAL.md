@@ -1,6 +1,18 @@
 ---
 name: I_AVAILABLECAPACITYINTERVAL
 description: "Availablecapacityinterval"
+semantic_vi: "View Availablecapacityinterval CDS exposing các khoảng thời gian khả năng sản xuất, đại diện cho khả năng sản xuất có sẵn trong thời gian. Nó được sử dụng để phân tích và quản lý kế hoạch sản xuất và lịch trình sản xuất."
+keywords:
+  - "production capacity"
+  - "khả năng sản xuất"
+  - "production planning"
+  - "kế hoạch sản xuất"
+  - "scheduling"
+  - "lịch trình sản xuất"
+  - "sap pp-vdm"
+  - "cds view"
+  - "view availablecapacityinterval"
+semantic_en: "The Availablecapacityinterval CDS view exposes production capacity intervals, which represent available production capacity over time. It is used to analyze and manage production planning and scheduling."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

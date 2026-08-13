@@ -1,6 +1,19 @@
 ---
 name: I_BANKADDRESSTP
 description: "Bankaddresstp"
+semantic_vi: "View I_BANKADDRESSTP CDS hiển thị dữ liệu địa chỉ ngân hàng, được sử dụng để lưu trữ và quản lý địa chỉ ngân hàng cho các giao dịch ngân hàng khác nhau."
+keywords:
+  - "bank address"
+  - "địa chỉ ngân hàng"
+  - "banking transaction"
+  - "giao dịch ngân hàng"
+  - "sap cds view"
+  - "view i_bankaddresstp"
+  - "address data"
+  - "data địa chỉ"
+  - "banking data"
+  - "data ngân hàng"
+semantic_en: "The I_BANKADDRESSTP CDS view exposes bank address data, which is used to store and manage bank addresses for various banking transactions."
 app_component: CA-BK-BNK-2CL
 software_component: SAP_BASIS
 release_state: released

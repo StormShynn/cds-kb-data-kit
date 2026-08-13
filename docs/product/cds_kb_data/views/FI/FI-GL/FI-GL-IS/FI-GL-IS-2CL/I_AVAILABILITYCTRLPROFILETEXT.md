@@ -1,6 +1,18 @@
 ---
 name: I_AVAILABILITYCTRLPROFILETEXT
 description: "Availabilityctrlprofiletext"
+semantic_vi: "View Availability Control Profile Text hiển thị các mô tả văn bản liên quan đến các hồ sơ kiểm soát khả dụng, được sử dụng để quản lý các mức tồn kho và khả dụng trong kế toán tài chính. View này hữu ích khi hiển thị hoặc báo cáo về mô tả văn bản của các hồ sơ này."
+keywords:
+  - "availability control profile"
+  - "hồ sơ kiểm soát khả dụng"
+  - "text description"
+  - "mô tả văn bản"
+  - "financial accounting"
+  - "kế toán tài chính"
+  - "inventory management"
+  - "quản lý tồn kho"
+  - "sap fi-gl-is-2cl"
+semantic_en: "The Availability Control Profile Text view exposes the text descriptions associated with availability control profiles, which are used to manage inventory levels and availability in financial accounting. This view is useful when displaying or reporting on the text descriptions of these profiles."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BANKACCTCHANGEREQUEST
 description: "Bankacctchangerequest"
+semantic_vi: "View Bank Account Change Request cung cấp thông tin về yêu cầu thay đổi tài khoản ngân hàng, bao gồm trạng thái và hạn chót. Nó được sử dụng để quản lý và theo dõi các thay đổi của tài khoản ngân hàng."
+keywords:
+  - "bank account change request"
+  - "yêu cầu thay đổi tài khoản ngân hàng"
+  - "bank account management"
+  - "quản lý tài khoản ngân hàng"
+  - "sap cds view"
+  - "view tài khoản ngân hàng"
+  - "bank account status"
+  - "trạng thái tài khoản ngân hàng"
+  - "bank account due date"
+  - "hạn chót tài khoản ngân hàng"
+  - "fin-fscm-clm-bam-2cl"
+semantic_en: "The Bank Account Change Request view provides information about bank account change requests, including their status and due dates. It is used to manage and track changes to bank accounts."
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

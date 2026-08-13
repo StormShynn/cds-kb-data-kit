@@ -1,6 +1,19 @@
 ---
 name: I_BANK_2
 description: "Bank 2"
+semantic_vi: "View Bank 2 hiển thị dữ liệu ngân hàng, bao gồm quốc gia, ID nội bộ, tên và thông tin địa chỉ. Nó được sử dụng để truy cập và thao tác dữ liệu ngân hàng trong hệ thống."
+keywords:
+  - "bank"
+  - "bank 2"
+  - "ca-bk-bnk-2cl"
+  - "cross-application components"
+  - "bank data"
+  - "ngân hàng"
+  - "thông tin ngân hàng"
+  - "ca-bk-bnk"
+  - "interface-view"
+  - "component:ca-bk-bnk-2cl"
+semantic_en: "The Bank 2 view exposes bank data, including country, internal ID, name, and address information. It is used to access and manipulate bank data in the system."
 app_component: CA-BK-BNK-2CL
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_ARDISPUTECASETP
 description: "Ardisputecasetp"
+semantic_vi: "View Ardisputecasetp hiển thị dữ liệu tài chính liên quan đến các trường hợp khiếu nại, bao gồm các khoản tiền gốc và bị khiếu nại, và được sử dụng để xử lý và quản lý khiếu nại."
+keywords:
+  - "dispute case"
+  - "dispute case view"
+  - "financial data"
+  - "disputed amount"
+  - "original amount"
+  - "dispute management"
+  - "trường hợp khiếu nại"
+  - "dữ liệu tài chính"
+  - "khoản tiền bị khiếu nại"
+  - "khoản tiền gốc"
+  - "quản lý khiếu nại"
+semantic_en: "The Ardisputecasetp view exposes financial data related to dispute cases, including original and disputed amounts, and is used to process and manage disputes."
 app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: I_BANKPROFILE
 description: "Bankprofile"
+semantic_vi: "View I_BANKPROFILE cung cấp thông tin về hồ sơ ngân hàng, bao gồm thông tin ngân hàng, xếp hạng tín nhiệm và thông tin tài khoản. Nó được sử dụng để truy cập và quản lý dữ liệu ngân hàng trong thành phần FIN-FSCM-CLM-BAM-2CL."
+keywords:
+  - "bank profile"
+  - "hồ sơ ngân hàng"
+  - "fin-fscm-clm-bam-2cl"
+  - "bank details"
+  - "thông tin ngân hàng"
+  - "credit rating"
+  - "xếp hạng tín nhiệm"
+  - "sap cds view"
+  - "view i_bankprofile"
+semantic_en: "The I_BANKPROFILE view provides information about bank profiles, including bank details, credit ratings, and account information. It is used to access and manage bank data in the FIN-FSCM-CLM-BAM-2CL component."
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,17 @@
 ---
 name: I_APARTOLERANCEGROUP
 description: "Apartolerancegroup"
+semantic_vi: "View Apartolerancegroup hiển thị dữ liệu tài chính liên quan đến nhóm dung sai thanh toán của nhà cung cấp, được sử dụng để quản lý các điều khoản thanh toán và giảm giá cho nhà cung cấp. Nó sẽ được sử dụng bởi các nhà phát triển để tích hợp với tính năng thanh toán của FI-AR-IS-2CL."
+keywords:
+  - "accounts payable"
+  - "dung sai thanh toán"
+  - "fi-ar-is-2cl"
+  - "payment terms"
+  - "thanh toán"
+  - "thanh toán của nhà cung cấp"
+  - "tính năng thanh toán"
+  - "tính năng tài chính"
+semantic_en: "The Apartolerancegroup view exposes financial data related to accounts payable tolerance groups, which are used to manage payment terms and discounts for suppliers. It would be used by developers to integrate with accounts payable functionality in SAP FI-AR-IS-2CL."
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_AVAILABLECAPACITYTYPE
 description: "Availablecapacitytype"
+semantic_vi: "Cung cấp thông tin về loại khả năng sẵn sàng có sẵn, được sử dụng để phân loại và quản lý khả năng sản xuất trong hoạt động sản xuất."
+keywords:
+  - "available capacity type"
+  - "loại khả năng sẵn sàng có sẵn"
+  - "production capacity"
+  - "khả năng sản xuất"
+  - "manufacturing operations"
+  - "hoạt động sản xuất"
+  - "capacity management"
+  - "quản lý khả năng"
+  - "pp-vdm"
+  - "pp-vdm-md-2cl"
+semantic_en: "Provides information about available capacity types, which are used to categorize and manage production capacity in manufacturing operations."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

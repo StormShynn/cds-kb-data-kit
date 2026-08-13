@@ -1,6 +1,19 @@
 ---
 name: I_ASSETTRANSACTIONTYPE
 description: "Assettransactiontype"
+semantic_vi: "View I_ASSETTRANSACTIONTYPE hiển thị dữ liệu loại giao dịch tài sản, được sử dụng để phân loại và quản lý giao dịch tài chính liên quan đến tài sản. Nó thường được sử dụng trong quá trình kế toán tài sản và quản lý tài chính."
+keywords:
+  - "asset transaction type"
+  - "loại giao dịch tài sản"
+  - "asset accounting"
+  - "kế toán tài sản"
+  - "financial management"
+  - "quản lý tài chính"
+  - "fi"
+  - "fi-fio-aa-ana-2cl"
+  - "asset"
+  - "tài sản"
+semantic_en: "The I_ASSETTRANSACTIONTYPE CDS view exposes asset transaction type data, which is used to categorize and manage asset-related financial transactions. It is typically used in asset accounting and financial management processes."
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released

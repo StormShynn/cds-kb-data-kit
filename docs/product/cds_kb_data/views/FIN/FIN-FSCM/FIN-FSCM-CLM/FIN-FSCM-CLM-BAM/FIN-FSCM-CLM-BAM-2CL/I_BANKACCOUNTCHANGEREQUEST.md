@@ -1,6 +1,20 @@
 ---
 name: I_BANKACCOUNTCHANGEREQUEST
 description: "Bankaccountchangerequest"
+semantic_vi: "View I_BANKACCOUNTCHANGEREQUEST hiển thị các yêu cầu thay đổi tài khoản ngân hàng, được sử dụng để quản lý các thay đổi đối với tài khoản ngân hàng trong hệ thống SAP."
+keywords:
+  - "bank account"
+  - "tài khoản ngân hàng"
+  - "bank account change request"
+  - "yêu cầu thay đổi tài khoản ngân hàng"
+  - "sap"
+  - "financial services"
+  - "dịch vụ tài chính"
+  - "fscm"
+  - "clm"
+  - "banking"
+  - "ngân hàng"
+semantic_en: "The I_BANKACCOUNTCHANGEREQUEST view exposes bank account change requests, which are used to manage changes to bank accounts in the SAP system."
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

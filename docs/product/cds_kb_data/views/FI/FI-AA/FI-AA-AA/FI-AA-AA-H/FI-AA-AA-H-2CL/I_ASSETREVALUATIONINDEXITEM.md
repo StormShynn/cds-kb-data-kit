@@ -1,6 +1,19 @@
 ---
 name: I_ASSETREVALUATIONINDEXITEM
 description: "Assetrevaluationindexitem"
+semantic_vi: "View I_ASSETREVALUATIONINDEXITEM hiển thị dữ liệu chỉ số tái đánh giá tài sản, được sử dụng để theo dõi thay đổi giá trị tài sản theo thời gian."
+keywords:
+  - "asset revaluation"
+  - "tái đánh giá tài sản"
+  - "index item"
+  - "đối tượng chỉ số"
+  - "fi-aa"
+  - "fi-aa-aa"
+  - "fi"
+  - "finance"
+  - "asset"
+  - "tài sản"
+semantic_en: "The Asset Revaluation Index Item view exposes asset revaluation index data, which is used to track changes in asset values over time."
 app_component: FI-AA-AA-H-2CL
 software_component: SAPSCORE
 release_state: released

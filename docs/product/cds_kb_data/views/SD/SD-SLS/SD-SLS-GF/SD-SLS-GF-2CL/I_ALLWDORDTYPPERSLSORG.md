@@ -1,6 +1,21 @@
 ---
 name: I_ALLWDORDTYPPERSLSORG
 description: "Allwdordtypperslsorg"
+semantic_vi: "View Allwdordtypperslsorg CDS hiển thị dữ liệu tổ chức bán hàng, bao gồm loại tài liệu bán hàng, kênh phân phối và bộ phận. Nó được sử dụng để phân tích các thiết lập và cấu hình tổ chức bán hàng."
+keywords:
+  - "sales organization"
+  - "tổ chức bán hàng"
+  - "sales document type"
+  - "loại tài liệu bán hàng"
+  - "distribution channel"
+  - "kênh phân phối"
+  - "division"
+  - "bộ phận"
+  - "sap sds"
+  - "sds"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+semantic_en: "The Allwdordtypperslsorg CDS view exposes sales organization data, including sales document types, distribution channels, and divisions. It is used to analyze sales organization settings and configurations."
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

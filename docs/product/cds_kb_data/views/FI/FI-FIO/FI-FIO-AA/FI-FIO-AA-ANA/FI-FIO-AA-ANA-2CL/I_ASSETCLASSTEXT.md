@@ -1,6 +1,17 @@
 ---
 name: I_ASSETCLASSTEXT
 description: "Assetclasstext"
+semantic_vi: "View I_ASSETCLASSTEXT cung cấp dữ liệu văn bản về lớp tài sản, bao gồm tên và mô tả, có thể được sử dụng để hiển thị thông tin lớp tài sản trong các ứng dụng khác nhau."
+keywords:
+  - "asset class"
+  - "tài sản lớp"
+  - "fi"
+  - "fi-fio-aa-ana-2cl"
+  - "asset class text"
+  - "văn bản lớp tài sản"
+  - "sap cds"
+  - "cds view"
+semantic_en: "The I_ASSETCLASSTEXT view provides asset class text data, including names and descriptions, which can be used to display asset class information in various applications."
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released

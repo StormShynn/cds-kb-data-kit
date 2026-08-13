@@ -1,6 +1,20 @@
 ---
 name: I_ASSETACCTDETERMINATIONTEXT
 description: "Assetacctdeterminationtext"
+semantic_vi: "View Asset Account Determination Text cung cấp mô tả quyết định tài khoản tài sản trong các ngôn ngữ khác nhau, có thể được sử dụng để hiển thị chi tiết quyết định tài khoản tài sản trong các ngôn ngữ khác nhau."
+keywords:
+  - "asset account determination"
+  - "tài khoản tài sản"
+  - "description"
+  - "mô tả"
+  - "language"
+  - "ngôn ngữ"
+  - "fi"
+  - "finance"
+  - "sap"
+  - "asset"
+  - "cds view"
+semantic_en: "The Asset Account Determination Text view provides asset account determination descriptions in different languages, which can be used to display asset account determination details in various languages."
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released

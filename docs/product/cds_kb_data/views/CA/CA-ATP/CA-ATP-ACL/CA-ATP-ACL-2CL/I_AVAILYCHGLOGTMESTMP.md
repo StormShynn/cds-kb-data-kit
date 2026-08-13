@@ -1,6 +1,20 @@
 ---
 name: I_AVAILYCHGLOGTMESTMP
 description: "Availychglogtmestmp"
+semantic_vi: "View Availychglogtmestmp hiển thị dữ liệu lịch sử thay đổi khả năng sẵn có, có thể được sử dụng để theo dõi các thay đổi trong khả năng sẵn có của sản phẩm theo thời gian."
+keywords:
+  - "availability"
+  - "change"
+  - "log"
+  - "historical"
+  - "data"
+  - "product"
+  - "sap"
+  - "cds"
+  - "view"
+  - "khả năng sẵn có"
+  - "thay đổi"
+semantic_en: "The Availychglogtmestmp view exposes historical availability change log data, which can be used to track changes in product availability over time."
 app_component: CA-ATP-ACL-2CL
 software_component: SAPSCORE
 release_state: released

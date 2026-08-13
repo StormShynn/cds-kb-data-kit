@@ -579,6 +579,44 @@ export class UsageCounter {
     });
   }
 
+  async #onDeleteTotals(request) {
+    if (this.#rateLimited(this.#requestIp(request))) return this.#rateLimitedResponse();
+
+    let body;
+    try {
+      body = await request.json();
+    } catch {
+      return new Response('Invalid JSON', { status: 400 });
+    }
+    await this.#hydrate();
+
+    const views = Array.isArray(body?.views) ? body.views : [];
+    const prefix = String(body?.prefix || '');
+    const toDelete = new Set(views);
+    if (prefix) {
+      for (const view of this.totals.keys()) {
+        if (view.startsWith(prefix)) toDelete.add(view);
+      }
+    }
+
+    const deleted = [];
+    const storageKeys = [];
+    for (const view of toDelete) {
+      if (this.totals.has(view)) {
+        this.totals.delete(view);
+        storageKeys.push(`v:${view}`);
+        deleted.push(view);
+      }
+    }
+    if (storageKeys.length > 0) {
+      await this.state.storage.delete(storageKeys);
+    }
+    return new Response(JSON.stringify({ ok: true, deleted }), {
+      status: 200,
+      headers: { 'content-type': 'application/json' },
+    });
+  }
+
   async #onShapePing(request) {
     if (this.#rateLimited(this.#requestIp(request))) return this.#rateLimitedResponse();
 
@@ -630,6 +668,36 @@ export class UsageCounter {
       totals[shapeId] = meta;
     }
     return new Response(JSON.stringify(totals), {
+      headers: { 'content-type': 'application/json' },
+    });
+  }
+
+  async #onDeleteShapeTotals(request) {
+    if (this.#rateLimited(this.#requestIp(request))) return this.#rateLimitedResponse();
+
+    let body;
+    try {
+      body = await request.json();
+    } catch {
+      return new Response('Invalid JSON', { status: 400 });
+    }
+    await this.#hydrate();
+
+    const shapeIds = Array.isArray(body?.shapeIds) ? body.shapeIds : [];
+    const deleted = [];
+    const storageKeys = [];
+    for (const shapeId of shapeIds) {
+      if (this.shapes.has(shapeId)) {
+        this.shapes.delete(shapeId);
+        storageKeys.push(`s:${shapeId}`);
+        deleted.push(shapeId);
+      }
+    }
+    if (storageKeys.length > 0) {
+      await this.state.storage.delete(storageKeys);
+    }
+    return new Response(JSON.stringify({ ok: true, deleted }), {
+      status: 200,
       headers: { 'content-type': 'application/json' },
     });
   }

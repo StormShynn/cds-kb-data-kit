@@ -1,6 +1,17 @@
 ---
 name: I_ATPCHECKINGGROUPTEXT
 description: "Atpcheckinggrouptext"
+semantic_vi: "View Atpcheckinggrouptext hiển thị mô tả nhóm kiểm tra ATP trong các ngôn ngữ khác nhau, có thể được sử dụng để hiển thị văn bản cho các nhóm kiểm tra ATP trong các ứng dụng khác nhau."
+keywords:
+  - "atp checking group"
+  - "mô tả nhóm kiểm tra atp"
+  - "ngôn ngữ"
+  - "text view"
+  - "interface view"
+  - "ca-atp"
+  - "cross-application components"
+  - "sap cds view"
+semantic_en: "The Atpcheckinggrouptext view exposes checking group descriptions in different languages, which can be used to display text for ATP checking groups in various applications."
 app_component: CA-ATP-2CL
 software_component: SAPSCORE
 release_state: released

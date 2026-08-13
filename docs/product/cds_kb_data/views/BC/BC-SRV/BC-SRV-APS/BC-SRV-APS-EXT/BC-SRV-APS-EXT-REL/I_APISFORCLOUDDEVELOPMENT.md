@@ -1,6 +1,19 @@
 ---
 name: I_APISFORCLOUDDEVELOPMENT
 description: "Apisforclouddevelopment"
+semantic_vi: "View I_APISFORCLOUDDEVELOPMENT CDS hiển thị thông tin về các đối tượng đã được phát hành trong SAP, bao gồm loại, tên và trạng thái phát hành. Nó được sử dụng để quản lý và theo dõi vòng đời của các đối tượng này."
+keywords:
+  - "sap"
+  - "released objects"
+  - "object lifecycle"
+  - "api"
+  - "cloud development"
+  - "basis components"
+  - "sap cds"
+  - "object directory"
+  - "release state"
+  - "planned decommissioning date"
+semantic_en: "The I_APISFORCLOUDDEVELOPMENT CDS view exposes information about released objects in SAP, including their type, name, and release state. It is used to manage and track the lifecycle of these objects."
 app_component: BC-SRV-APS-EXT-REL
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BANKGROUPPROFILE
 description: "Bankgroupprofile"
+semantic_vi: "View I_BANKGROUPPROFILE cung cấp dữ liệu hồ sơ nhóm ngân hàng, bao gồm số lượng tài khoản ngân hàng và mã công ty liên quan đến mỗi nhóm. Nó được sử dụng để phân tích và quản lý thông tin nhóm ngân hàng."
+keywords:
+  - "bank group profile"
+  - "hồ sơ nhóm ngân hàng"
+  - "sap cds view"
+  - "view i_bankgroupprofile"
+  - "bank group data"
+  - "thông tin nhóm ngân hàng"
+  - "financial management"
+  - "quản lý tài chính"
+  - "clm"
+  - "component fin-fscm-clm-bam-2cl"
+semantic_en: "The I_BANKGROUPPROFILE view provides bank group profile data, including the number of bank accounts and company codes associated with each group. It is used to analyze and manage bank group information."
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

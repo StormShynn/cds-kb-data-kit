@@ -1,6 +1,21 @@
 ---
 name: I_AVAILYCHGLOG
 description: "Availychglog"
+semantic_vi: "View Availychglog cung cấp truy cập vào nhật ký thay đổi khả năng sẵn có, theo dõi các thay đổi khả năng sẵn có của vật liệu trên các nhà máy và khu vực MR khác nhau. Nó được sử dụng để phân tích và quản lý khả năng sẵn có vật liệu."
+keywords:
+  - "availability change log"
+  - "nạp liệu thay đổi khả năng sẵn có"
+  - "material availability"
+  - "khả năng sẵn có vật liệu"
+  - "sap cds view"
+  - "view availychglog"
+  - "ca-atp-acl-2cl"
+  - "cross-application components"
+  - "availabilitychangeloguuid"
+  - "material"
+  - "plant"
+  - "mrparea"
+semantic_en: "The Availychglog view provides access to availability change logs, which track changes to material availability across different plants and MRPs. It is used to analyze and manage material availability."
 app_component: CA-ATP-ACL-2CL
 software_component: SAPSCORE
 release_state: released

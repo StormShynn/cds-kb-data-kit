@@ -1,6 +1,19 @@
 ---
 name: I_BANKENHANCED
 description: "Bankenhanced"
+semantic_vi: "View Bankenhanced cung cấp thông tin chi tiết về các ngân hàng, bao gồm quốc gia, ID nội bộ, tên, chi nhánh và địa chỉ. Nó được sử dụng để truy cập và thao tác dữ liệu ngân hàng trong hệ thống."
+keywords:
+  - "bank"
+  - "ngân hàng"
+  - "bankenhanced"
+  - "ca-bk-bnk-2cl"
+  - "cross-application components"
+  - "bank data"
+  - "bank information"
+  - "bank details"
+  - "bank address"
+  - "bank category"
+semantic_en: "The Bankenhanced view provides detailed information about banks, including their country, internal ID, name, branch, and address. It is used to access and manipulate bank data in the system."
 app_component: CA-BK-BNK-2CL
 software_component: SAP_BASIS
 release_state: released

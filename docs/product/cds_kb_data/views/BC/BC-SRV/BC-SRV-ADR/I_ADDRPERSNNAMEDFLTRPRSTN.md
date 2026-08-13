@@ -1,6 +1,19 @@
 ---
 name: I_ADDRPERSNNAMEDFLTRPRSTN
 description: "Addrpersnnamedfltrprstn"
+semantic_vi: "Chứa dữ liệu địa chỉ người dùng được lọc theo mã biểu diễn, phù hợp cho việc sử dụng trong các ứng dụng quản lý địa chỉ."
+keywords:
+  - "address management"
+  - "địa chỉ quản lý"
+  - "address representation code"
+  - "mã biểu diễn địa chỉ"
+  - "person address data"
+  - "dữ liệu địa chỉ người dùng"
+  - "sap cds view"
+  - "view i_addrpersnnamedfltrprstn"
+  - "bc-srv-adr"
+  - "basis components"
+semantic_en: "Exposes person address data filtered by representation code, suitable for use in address management applications."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

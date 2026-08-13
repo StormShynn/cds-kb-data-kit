@@ -1,6 +1,18 @@
 ---
 name: I_BANKCHANGEDOCUMENT
 description: "Bankchangedocument"
+semantic_vi: "View I_BANKCHANGEDOCUMENT hiển thị dữ liệu thay đổi tài khoản ngân hàng, có thể sử dụng để theo dõi các thay đổi được thực hiện trên dữ liệu ngân hàng trong hệ thống."
+keywords:
+  - "bank"
+  - "change"
+  - "document"
+  - "bank data"
+  - "change tracking"
+  - "tài khoản ngân hàng"
+  - "thay đổi"
+  - "dữ liệu ngân hàng"
+  - "theo dõi thay đổi"
+semantic_en: "The I_BANKCHANGEDOCUMENT view exposes bank change document data, which can be used to track changes made to bank data in the system."
 app_component: CA-BK-BNK-2CL
 software_component: SAP_BASIS
 release_state: released

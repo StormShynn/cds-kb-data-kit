@@ -1,6 +1,19 @@
 ---
 name: I_ATPCHECKINGGROUP
 description: "Atpcheckinggroup"
+semantic_vi: "View Atpcheckinggroup CDS hiển thị dữ liệu nhóm kiểm tra ATP, được sử dụng để quản lý và theo dõi kiểm tra ATP trong hệ thống SAP."
+keywords:
+  - "atp"
+  - "checking group"
+  - "sap"
+  - "atp checking"
+  - "ca-atp-2cl"
+  - "cross-application components"
+  - "lob"
+  - "cross-application"
+  - "atp checking group"
+  - "advanced atp is active"
+semantic_en: "The Atpcheckinggroup CDS view exposes ATP checking group data, which is used to manage and track ATP (Available-to-Promise) checks in SAP systems."
 app_component: CA-ATP-2CL
 software_component: SAPSCORE
 release_state: released

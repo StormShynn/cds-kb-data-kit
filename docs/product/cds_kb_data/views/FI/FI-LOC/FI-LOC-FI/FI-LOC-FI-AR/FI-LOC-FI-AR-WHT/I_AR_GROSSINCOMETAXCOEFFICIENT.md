@@ -1,6 +1,20 @@
 ---
 name: I_AR_GROSSINCOMETAXCOEFFICIENT
 description: "AR Grossincometaxcoefficient"
+semantic_vi: "View AR Grossincometaxcoefficient cung cấp các hệ số thu nhập trước thuế cho từng công ty, năm tài chính, khu vực và loại phân phối thuế lao động. Nó được sử dụng để truy cập hệ số thuế cho mục đích kế toán."
+keywords:
+  - "gross income tax coefficient"
+  - "ar grossincometaxcoefficient"
+  - "company code"
+  - "fiscal year"
+  - "region"
+  - "employment tax distribution type"
+  - "tax coefficient"
+  - "accounting"
+  - "thu nhập trước thuế"
+  - "hệ số thuế"
+  - "mục đích kế toán"
+semantic_en: "The AR Grossincometaxcoefficient view provides company-specific gross income tax coefficients for a given fiscal year, region, and employment tax distribution type. It is used to access tax coefficients for accounting purposes."
 app_component: FI-LOC-FI-AR-WHT
 software_component: SAPSCORE
 release_state: released
