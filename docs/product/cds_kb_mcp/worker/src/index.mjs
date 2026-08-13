@@ -31,15 +31,21 @@ const MAX_COUNT_PER_EVENT = 1000; // clamps one bad/buggy client from skewing a 
 
 export default {
   async fetch(request, env) {
-    const url = new URL(request.url);
+    try {
+      const url = new URL(request.url);
 
-    if (request.method === 'POST' && url.pathname === '/ping') {
-      return handlePing(request, env);
+      if (request.method === 'POST' && url.pathname === '/ping') {
+        return await handlePing(request, env);
+      }
+      if (request.method === 'GET' && url.pathname === '/totals') {
+        return await handleTotals(request, env);
+      }
+      return new Response('Not found', { status: 404 });
+    } catch (e) {
+      // Surface the real error message during bring-up (curl-able instead of
+      // Cloudflare's opaque 1101); will be tightened once stable.
+      return new Response(`worker error: ${e.message}`, { status: 500 });
     }
-    if (request.method === 'GET' && url.pathname === '/totals') {
-      return handleTotals(request, env);
-    }
-    return new Response('Not found', { status: 404 });
   },
 };
 
