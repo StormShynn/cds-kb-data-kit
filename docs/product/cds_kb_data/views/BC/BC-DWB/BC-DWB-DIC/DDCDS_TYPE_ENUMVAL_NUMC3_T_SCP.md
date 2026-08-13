@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC3_T_SCP
 description: "Ddcds Type Enumval Numc 3 T Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_NUMC3_T_SCP hiển thị một danh sách giá trị danh mục cho các trường số có độ dài 3, có thể được sử dụng để lọc hoặc lấy dữ liệu dựa trên các giá trị danh mục cụ thể."
+keywords:
+  - "enum"
+  - "enumeration"
+  - "sap"
+  - "basis components"
+  - "ddcds"
+  - "type"
+  - "numc"
+  - "scp"
+  - "ddcds_type_enumval_numc3_t_scp"
+  - "danh mục"
+  - "giá trị danh mục"
+  - "trường số"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_NUMC3_T_SCP view exposes a collection of enumeration values for numeric fields with a length of 3, which can be used to filter or retrieve data based on specific enumeration values."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

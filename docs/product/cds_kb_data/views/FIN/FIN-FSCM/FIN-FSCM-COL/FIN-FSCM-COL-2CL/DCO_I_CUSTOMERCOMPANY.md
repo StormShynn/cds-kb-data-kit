@@ -1,6 +1,21 @@
 ---
 name: /DCO/I_CUSTOMERCOMPANY
 description: "Customer Company"
+semantic_vi: "View DCO_I_CUSTOMERCOMPANY hiển thị dữ liệu công ty khách hàng, có liên quan đến quản lý tài chính và quản lý mối quan hệ khách hàng. Nó có thể được sử dụng để lấy thông tin công ty khách hàng cho khách hàng hoặc công ty cụ thể."
+keywords:
+  - "customer company"
+  - "dữ liệu công ty khách hàng"
+  - "financial management"
+  - "quản lý tài chính"
+  - "customer relationship management"
+  - "quản lý mối quan hệ khách hàng"
+  - "sap cds view"
+  - "view dco_i_customercompany"
+  - "customer"
+  - "company"
+  - "financial"
+  - "management"
+semantic_en: "The Customer Company CDS view exposes customer company data, which is relevant for financial management and customer relationship management. It can be used to retrieve customer company information for specific customers or companies."
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released

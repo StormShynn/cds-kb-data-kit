@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC1_T_SCP
 description: "Ddcds Type Enumval Numc 1 T Scp"
+semantic_vi: "View này hiển thị dữ liệu về giá trị danh sách cho các trường kiểu số trong hệ thống SAP, có thể được sử dụng để lấy và hiển thị giá trị danh sách cho các trường và ngôn ngữ cụ thể."
+keywords:
+  - "sap"
+  - "enum"
+  - "enumeration"
+  - "type"
+  - "field"
+  - "language"
+  - "ddcds"
+  - "cds"
+  - "view"
+  - "basis"
+  - "components"
+  - "bc-dwb-dic"
+semantic_en: "This view exposes data about enumeration values for numeric type fields in SAP systems, which can be used to retrieve and display enumeration values for specific fields and languages."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

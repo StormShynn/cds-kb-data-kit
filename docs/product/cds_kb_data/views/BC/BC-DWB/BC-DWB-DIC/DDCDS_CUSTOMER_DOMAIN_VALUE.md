@@ -1,6 +1,19 @@
 ---
 name: DDCDS_CUSTOMER_DOMAIN_VALUE
 description: "Ddcds Customer Domain Value"
+semantic_vi: "View DDCDS_CUSTOMER_DOMAIN_VALUE hiển thị giá trị miền khách hàng, được sử dụng để định nghĩa giá trị cụ thể cho trường khách hàng trong hệ thống SAP. View này có thể được sử dụng để lấy hoặc cập nhật giá trị miền khách hàng."
+keywords:
+  - "customer"
+  - "domain"
+  - "value"
+  - "sap"
+  - "basis"
+  - "components"
+  - "customer domain value"
+  - "ddcds_customer_domain_value"
+  - "customer field"
+  - "customer values"
+semantic_en: "The DDCDS_CUSTOMER_DOMAIN_VALUE view exposes customer domain values, which are used to define specific values for customer fields in SAP systems. This view can be used to retrieve or update customer domain values."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

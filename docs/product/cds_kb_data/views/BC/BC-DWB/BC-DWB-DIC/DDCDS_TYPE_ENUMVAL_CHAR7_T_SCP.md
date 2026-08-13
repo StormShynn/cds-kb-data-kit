@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR7_T_SCP
 description: "Ddcds Type Enumval Char 7 T Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_CHAR7_T_SCP hiển thị dữ liệu kiểu giá trị danh sách cho trường ký tự có độ dài 7 trong SAP, có thể sử dụng khi làm việc với kiểu dữ liệu SAP trong ABAP hoặc phát triển đám mây."
+keywords:
+  - "sap"
+  - "ddcds"
+  - "enumval"
+  - "char7"
+  - "scp"
+  - "abap"
+  - "cloud"
+  - "development"
+  - "data"
+  - "type"
+  - "enumeration"
+  - "value"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_CHAR7_T_SCP view exposes SAP data type enumeration values for character fields with a length of 7, which can be used when working with SAP data types in ABAP or cloud development."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

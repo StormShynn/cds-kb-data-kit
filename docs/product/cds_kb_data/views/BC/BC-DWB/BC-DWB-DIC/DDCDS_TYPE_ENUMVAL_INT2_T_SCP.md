@@ -1,6 +1,17 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_INT2_T_SCP
 description: "Ddcds Type Enumval Int 2 T Scp"
+semantic_vi: "View này hiển thị giá trị danh mục cho kiểu số nguyên trong SAP Data Dictionary, có ích cho việc lấy và hiển thị giá trị danh mục trong các ứng dụng SAP."
+keywords:
+  - "sap data dictionary"
+  - "danh mục dữ liệu sap"
+  - "enum"
+  - "danh mục"
+  - "integer type"
+  - "kiểu số nguyên"
+  - "sap applications"
+  - "ứng dụng sap"
+semantic_en: "This view exposes enumeration values for integer type in SAP Data Dictionary, useful for retrieving and displaying enumeration values in SAP applications."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

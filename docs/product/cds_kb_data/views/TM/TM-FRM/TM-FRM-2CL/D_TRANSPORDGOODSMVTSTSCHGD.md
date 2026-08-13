@@ -1,6 +1,17 @@
 ---
 name: D_TRANSPORDGOODSMVTSTSCHGD
 description: "D Transpordgoodsmvtstschgd"
+semantic_vi: "View D_TRANSPORDGOODSMVTSTSCHGD hiển thị các thay đổi trạng thái di chuyển hàng hóa trong đơn vận chuyển, có thể được sử dụng để theo dõi và phân tích các thay đổi trạng thái di chuyển hàng hóa trong đơn vận chuyển."
+keywords:
+  - "transportation order"
+  - "đơn vận chuyển"
+  - "goods movement"
+  - "di chuyển hàng hóa"
+  - "status change"
+  - "thay đổi trạng thái"
+  - "sap tm"
+  - "tm-frm-2cl"
+semantic_en: "The D_TRANSPORDGOODSMVTSTSCHGD CDS view exposes transportation order goods movement status changes, which can be used to track and analyze changes in the status of goods movements within a transportation order."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_INT2_SCP
 description: "Ddcds Type Enumval Int 2 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_INT2_SCP hiển thị dữ liệu kiểu giá trị danh mục cho kiểu số nguyên 2 trong ngữ cảnh cụ thể. Nó được sử dụng để lấy và quản lý các giá trị danh mục này."
+keywords:
+  - "sap"
+  - "cds"
+  - "enum"
+  - "ddcds"
+  - "type"
+  - "int2"
+  - "scp"
+  - "sap data type"
+  - "danh mục"
+  - "giá trị danh mục"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_INT2_SCP view exposes SAP data type enumeration values for integer type 2 in a specific context. It is used to retrieve and manage these enumeration values."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

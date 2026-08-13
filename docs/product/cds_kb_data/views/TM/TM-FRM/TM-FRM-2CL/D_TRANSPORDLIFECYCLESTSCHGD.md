@@ -1,6 +1,19 @@
 ---
 name: D_TRANSPORDLIFECYCLESTSCHGD
 description: "D Transpordlifecyclestschgd"
+semantic_vi: "View D_TRANSPORDLIFECYCLESTSCHGD hiển thị các thay đổi trạng thái vòng đời vận chuyển đơn, có thể được sử dụng để theo dõi và phân tích các thay đổi trạng thái vận chuyển đơn."
+keywords:
+  - "transportation order"
+  - "đơn vận chuyển"
+  - "transportation lifecycle"
+  - "trạng thái vòng đời vận chuyển"
+  - "status change"
+  - "thay đổi trạng thái"
+  - "tm"
+  - "tm-frm"
+  - "sap tm"
+  - "sap tm-frm"
+semantic_en: "The D_TRANSPORDLIFECYCLESTSCHGD view exposes transportation order lifecycle status changes, which can be used to track and analyze changes in transportation order status."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

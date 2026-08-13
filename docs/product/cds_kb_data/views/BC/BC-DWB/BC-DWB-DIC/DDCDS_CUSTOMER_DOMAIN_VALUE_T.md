@@ -1,6 +1,17 @@
 ---
 name: DDCDS_CUSTOMER_DOMAIN_VALUE_T
 description: "Ddcds Customer Domain Value T"
+semantic_vi: "Chứa các giá trị miền khách hàng, được sử dụng để lưu trữ và quản lý dữ liệu khách hàng theo một định dạng cấu trúc. View này có thể được sử dụng để lấy và thao tác các giá trị miền khách hàng cho các mục đích kinh doanh khác nhau."
+keywords:
+  - "customer domain"
+  - "customer data"
+  - "structured data"
+  - "sap cds view"
+  - "ddcds customer domain value t"
+  - "bc-dwb-dic"
+  - "basis components"
+  - "customer management"
+semantic_en: "Exposes customer domain values, which are used to store and manage customer-specific data in a structured format. This view can be used to retrieve and manipulate customer domain values for various business purposes."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

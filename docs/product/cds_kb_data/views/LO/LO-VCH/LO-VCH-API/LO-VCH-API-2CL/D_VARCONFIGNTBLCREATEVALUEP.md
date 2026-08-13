@@ -1,6 +1,20 @@
 ---
 name: D_VARCONFIGNTBLCREATEVALUEP
 description: "D Varconfigntblcreatevaluep"
+semantic_vi: "View D_VARCONFIGNTBLCREATEVALUEP hiển thị dữ liệu cấu hình cho các đặc tính biến trong bảng. Nó được sử dụng để tạo hoặc cập nhật giá trị cho các đặc tính này."
+keywords:
+  - "variable characteristic"
+  - "dặc tính biến"
+  - "configuration data"
+  - "cấu hình dữ liệu"
+  - "sap cds"
+  - "cds view"
+  - "lo-vch-api-2cl"
+  - "logistics general"
+  - "lob logistics general"
+  - "characteristic value"
+  - "giá trị đặc tính"
+semantic_en: "The D_VARCONFIGNTBLCREATEVALUEP view exposes configuration data for variable characteristics in a table. It is used to create or update values for these characteristics."
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

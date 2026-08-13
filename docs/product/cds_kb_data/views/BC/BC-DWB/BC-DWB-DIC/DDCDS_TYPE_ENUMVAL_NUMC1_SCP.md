@@ -1,6 +1,19 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC1_SCP
 description: "Ddcds Type Enumval Numc 1 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_NUMC1_SCP CDS hiển thị dữ liệu liên quan đến giá trị danh mục cho các trường số trong SAP Data Dictionary, có thể được sử dụng khi làm việc với loại dữ liệu Data Dictionary SAP và giá trị danh mục."
+keywords:
+  - "sap data dictionary"
+  - "danh mục dữ liệu sap"
+  - "enum value"
+  - "giá trị danh mục"
+  - "data type"
+  - "loại dữ liệu"
+  - "ddcds"
+  - "cds view"
+  - "view cds"
+  - "sap basis components"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_NUMC1_SCP CDS view exposes data related to enumeration values for numeric fields in SAP Data Dictionary, which can be used when working with SAP Data Dictionary data types and enumeration values."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: /DCO/I_DISPUTERESUBMISSIONTP
 description: "Disputeresubmissiontp"
+semantic_vi: "View Disputeresubmissiontp hiển thị dữ liệu resubmission tranh chấp, được sử dụng trong xử lý giao dịch cho dịch vụ tài chính. Nó cung cấp thông tin về các tranh chấp đã được resubmitted và trạng thái của chúng."
+keywords:
+  - "dispute"
+  - "resubmission"
+  - "financial services"
+  - "transactional processing"
+  - "disputeresubmissiontp"
+  - "fin-fscm-dm-2cl"
+  - "dispute resubmission data"
+  - "tranh chấp"
+  - "resubmission tranh chấp"
+  - "dịch vụ tài chính"
+  - "xử lý giao dịch"
+semantic_en: "The Disputeresubmissiontp view exposes dispute resubmission data, which is used in transactional processing for financial services. It provides information about resubmitted disputes and their status."
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released

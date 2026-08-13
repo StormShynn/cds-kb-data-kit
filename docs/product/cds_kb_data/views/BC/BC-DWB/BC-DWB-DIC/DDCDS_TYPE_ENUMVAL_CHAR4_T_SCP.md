@@ -1,6 +1,20 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR4_T_SCP
 description: "Ddcds Type Enumval Char 4 T Scp"
+semantic_vi: "CDS view DDCDS_TYPE_ENUMVAL_CHAR4_T_SCP hiển thị một loại giá trị danh sách có độ dài ký tự 4, thường được sử dụng trong SAP Basis Components cho định nghĩa dữ liệu và cấu hình."
+keywords:
+  - "sap basis components"
+  - "ddcds type enumval char 4 t scp"
+  - "cds view"
+  - "data definition"
+  - "configuration"
+  - "sap"
+  - "basis components"
+  - "dwdic"
+  - "ddcds"
+  - "enumval"
+  - "character length 4"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_CHAR4_T_SCP CDS view exposes a type of enumeration value with a character length of 4, typically used in SAP Basis Components for data definition and configuration."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

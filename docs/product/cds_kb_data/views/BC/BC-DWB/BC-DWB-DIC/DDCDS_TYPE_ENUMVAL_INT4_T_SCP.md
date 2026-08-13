@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_INT4_T_SCP
 description: "Ddcds Type Enumval Int 4 T Scp"
+semantic_vi: "View này hiển thị một loại giá trị danh mục với kiểu dữ liệu số nguyên, được sử dụng trong Data Dictionary (DDIC) của SAP cho việc xây dựng và xác minh mô hình dữ liệu."
+keywords:
+  - "sap"
+  - "ddic"
+  - "data dictionary"
+  - "enumeration"
+  - "enum"
+  - "integer"
+  - "data modeling"
+  - "validation"
+  - "ddcds"
+  - "type"
+  - "enumval"
+  - "int4"
+semantic_en: "This view exposes a type of enumeration value with integer data type, used in SAP Data Dictionary (DDIC) for data modeling and validation."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

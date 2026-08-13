@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR3_T_SCP
 description: "Ddcds Type Enumval Char 3 T Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_CHAR3_T_SCP cung cấp dữ liệu về giá trị danh sách cho các trường kiểu ký tự trong hệ thống SAP. Nó được sử dụng để truy cập và quản lý giá trị danh sách cho các trường ký tự."
+keywords:
+  - "sap"
+  - "ddcds"
+  - "enumval"
+  - "character"
+  - "type"
+  - "field"
+  - "sap system"
+  - "sap enumeration"
+  - "sap data"
+  - "sap management"
+  - "sap access"
+  - "sap character field"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_CHAR3_T_SCP view provides data about enumeration values for character type fields in SAP systems. It is used to access and manage enumeration values for character fields."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

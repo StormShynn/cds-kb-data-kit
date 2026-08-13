@@ -1,6 +1,17 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR2_T_SCP
 description: "Ddcds Type Enumval Char 2 T Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_CHAR2_T_SCP hiển thị các giá trị danh mục với kiểu dữ liệu ký tự cho SAP Dictionary, được sử dụng trong các thành phần cơ bản của SAP."
+keywords:
+  - "sap dictionary"
+  - "sap basis components"
+  - "ddcds type enumval char 2 t scp"
+  - "sap enumeration"
+  - "sap character data type"
+  - "sap dictionary values"
+  - "sap basis"
+  - "sap components"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_CHAR2_T_SCP view exposes enumeration values with character data type for SAP Dictionary, which is used in SAP Basis Components."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

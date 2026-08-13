@@ -1,6 +1,18 @@
 ---
 name: D_TRANSPORDSUBCONTRGSTSCHGD
 description: "D Transpordsubcontrgstschgd"
+semantic_vi: "View D_TRANSPORDSUBCONTRGSTSCHGD hiển thị các thay đổi trạng thái nhà thầu phụ vận tải, có thể được sử dụng để theo dõi các thay đổi trạng thái nhà thầu phụ cho các đơn hàng vận tải."
+keywords:
+  - "transportation order"
+  - "đơn hàng vận tải"
+  - "subcontractor status"
+  - "trạng thái nhà thầu phụ"
+  - "transportation management"
+  - "quản lý vận tải"
+  - "tm"
+  - "tm-frm"
+  - "sap cds view"
+semantic_en: "The D_TRANSPORDSUBCONTRGSTSCHGD view exposes transportation order subcontractor status changes, which can be used to track changes in subcontractor status for transportation orders."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

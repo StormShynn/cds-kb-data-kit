@@ -1,6 +1,20 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR4_SCP
 description: "Ddcds Type Enumval Char 4 Scp"
+semantic_vi: "Chứa giá trị liệt kê kiểu ký tự cho các loại dữ liệu trong Data Dictionary (DD) của SAP, hữu ích khi truy cập và quản lý metadata của loại dữ liệu."
+keywords:
+  - "sap"
+  - "data dictionary"
+  - "dd"
+  - "type"
+  - "enumeration"
+  - "metadata"
+  - "character"
+  - "ddcds"
+  - "sap cds"
+  - "basis components"
+  - "bc-dwb-dic"
+semantic_en: "Exposes character type enumeration values for SAP Data Dictionary (DD) types, useful for accessing and manipulating DD type metadata."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

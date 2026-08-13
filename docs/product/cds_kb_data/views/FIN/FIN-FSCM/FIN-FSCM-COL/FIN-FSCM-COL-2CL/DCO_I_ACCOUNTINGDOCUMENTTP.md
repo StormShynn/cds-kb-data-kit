@@ -1,6 +1,19 @@
 ---
 name: /DCO/I_ACCOUNTINGDOCUMENTTP
 description: "Accounting DocumentUMENTTP"
+semantic_vi: "View Accounting DocumentUMENTTP hiển thị dữ liệu tài khoản chứng từ, bao gồm loại tài khoản chứng từ, và được sử dụng để truy cập và xử lý tài khoản chứng từ trong thành phần FIN-FSCM-COL-2CL."
+keywords:
+  - "accounting document"
+  - "tài khoản chứng từ"
+  - "fin-fscm-col-2cl"
+  - "financial component"
+  - "thành phần tài chính"
+  - "document type"
+  - "loại tài khoản chứng từ"
+  - "accounting data"
+  - "dữ liệu tài khoản"
+  - "sap financials"
+semantic_en: "The Accounting DocumentUMENTTP view exposes accounting document data, including document types, and is used to access and process accounting documents in the FIN-FSCM-COL-2CL component."
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released

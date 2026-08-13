@@ -1,6 +1,17 @@
 ---
 name: D_TRANSPRATETABLEVALIDITYCOPYP
 description: "D Transpratetablevaliditycopyp"
+semantic_vi: "View D_TRANSPRATETABLEVALIDITYCOPYP hiển thị dữ liệu sao chép tính khả dụng của bảng giá vận chuyển, có thể được sử dụng để quản lý và phân tích các bản sao của bảng giá vận chuyển."
+keywords:
+  - "transportation rate"
+  - "table copy"
+  - "validity"
+  - "sap"
+  - "tm-md-cm-2cl"
+  - "lob other"
+  - "transprateratevaliditycpystartdate"
+  - "transprateratevaliditycpyenddate"
+semantic_en: "The D_TRANSPRATETABLEVALIDITYCOPYP view exposes transportation rate table validity copy data, which can be used to manage and analyze transportation rate table copies."
 app_component: TM-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

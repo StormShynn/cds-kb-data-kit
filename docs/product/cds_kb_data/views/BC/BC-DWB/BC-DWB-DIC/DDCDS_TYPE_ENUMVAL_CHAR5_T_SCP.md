@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR5_T_SCP
 description: "Ddcds Type Enumval Char 5 T Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_CHAR5_T_SCP cung cấp dữ liệu về giá trị danh sách có độ dài ký tự 5, có thể được sử dụng để hiển thị và quản lý giá trị danh sách trong ứng dụng SAP."
+keywords:
+  - "sap"
+  - "cds"
+  - "enum"
+  - "character"
+  - "length"
+  - "ddcds"
+  - "type"
+  - "enumval"
+  - "char5"
+  - "scp"
+  - "dwb"
+  - "dic"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_CHAR5_T_SCP view provides data about enumeration values with character length 5, which can be used to display and manage enumeration values in SAP applications."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

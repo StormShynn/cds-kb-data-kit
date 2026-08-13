@@ -1,6 +1,19 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR7_SCP
 description: "Ddcds Type Enumval Char 7 Scp"
+semantic_vi: "View này cung cấp thông tin về giá trị liệt kê cho các trường kiểu ký tự trong Data Dictionary SAP. Nó được sử dụng để truy cập và thao tác giá trị liệt kê cho các trường kiểu ký tự."
+keywords:
+  - "sap data dictionary"
+  - "ddcds"
+  - "enumeration"
+  - "character type"
+  - "field"
+  - "data dictionary"
+  - "sap"
+  - "ddcds type enumval char 7 scp"
+  - "bc-dwb-dic"
+  - "basis components"
+semantic_en: "This view provides information about enumeration values for character type fields in SAP Data Dictionary. It is used to access and manipulate enumeration values for character type fields."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

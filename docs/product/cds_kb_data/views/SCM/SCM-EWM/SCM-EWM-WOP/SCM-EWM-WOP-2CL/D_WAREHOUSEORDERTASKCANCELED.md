@@ -1,6 +1,21 @@
 ---
 name: D_WAREHOUSEORDERTASKCANCELED
 description: "D Warehouse OrderTASKCANCELED"
+semantic_vi: "View này hiển thị dữ liệu hủy bỏ nhiệm vụ đơn hàng kho, có thể được sử dụng để theo dõi và phân tích việc hủy bỏ nhiệm vụ đơn hàng kho trong hệ thống EWM."
+keywords:
+  - "warehouse order task"
+  - "cancellation"
+  - "ewm"
+  - "scm"
+  - "warehouse order"
+  - "task"
+  - "canceled"
+  - "đơn hàng kho"
+  - "hủy bỏ"
+  - "nhiệm vụ"
+  - "đơn hàng"
+  - "kho"
+semantic_en: "This view exposes warehouse order task cancellation data, which can be used to track and analyze cancellations of warehouse order tasks in the EWM system."
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR6_T_SCP
 description: "Ddcds Type Enumval Char 6 T Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_CHAR6_T_SCP hiển thị một loại giá trị danh mục có độ dài ký tự 6, được sử dụng trong Data Dictionary của SAP. Nó được sử dụng khi làm việc với loại dữ liệu trong Data Dictionary của SAP."
+keywords:
+  - "ddcds"
+  - "enumval"
+  - "char6"
+  - "scp"
+  - "sap"
+  - "data dictionary"
+  - "dwb"
+  - "dic"
+  - "basis components"
+  - "type"
+  - "enumeration"
+  - "value"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_CHAR6_T_SCP view exposes a type of enumeration value with a character length of 6, used in SAP's Data Dictionary. It is used when working with data types in SAP's Data Dictionary."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

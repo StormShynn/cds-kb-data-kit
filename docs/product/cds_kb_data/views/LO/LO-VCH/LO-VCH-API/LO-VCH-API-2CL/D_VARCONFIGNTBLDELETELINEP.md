@@ -1,6 +1,19 @@
 ---
 name: D_VARCONFIGNTBLDELETELINEP
 description: "D Varconfigntbldeletelinep"
+semantic_vi: "View này hiển thị dữ liệu bảng cấu hình biến cho dòng xóa, được sử dụng khi cập nhật hoặc xóa bản ghi cấu hình biến."
+keywords:
+  - "variable configuration"
+  - "deletion line"
+  - "update"
+  - "delete"
+  - "variable configuration record"
+  - "cấu hình biến"
+  - "dòng xóa"
+  - "cập nhật"
+  - "xóa"
+  - "bản ghi cấu hình biến"
+semantic_en: "This view exposes variable configuration table data for deletion lines, used when updating or deleting variable configuration records."
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

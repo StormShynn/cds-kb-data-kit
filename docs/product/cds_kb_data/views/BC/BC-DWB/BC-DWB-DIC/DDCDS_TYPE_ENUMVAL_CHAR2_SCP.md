@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR2_SCP
 description: "Ddcds Type Enumval Char 2 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_CHAR2_SCP hiển thị các giá trị danh mục cho kiểu dữ liệu ký tự trong SAP. Nó được sử dụng để truy cập và thao tác với các giá trị này."
+keywords:
+  - "sap"
+  - "cds"
+  - "enum"
+  - "character"
+  - "data"
+  - "ddcds"
+  - "type"
+  - "scp"
+  - "basis"
+  - "components"
+  - "dwb"
+  - "dic"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_CHAR2_SCP view exposes enumeration values for character type data in SAP. It is used to access and manipulate these values."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

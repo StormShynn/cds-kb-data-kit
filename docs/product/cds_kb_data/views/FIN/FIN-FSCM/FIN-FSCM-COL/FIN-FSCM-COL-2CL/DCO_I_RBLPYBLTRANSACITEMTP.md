@@ -1,6 +1,21 @@
 ---
 name: /DCO/I_RBLPYBLTRANSACITEMTP
 description: "Rblpybltransacitemtp"
+semantic_vi: "Chứa dữ liệu chi tiết tài khoản cho các giao dịch thu chi, được sử dụng cho xử lý chi tiết và cập nhật giao dịch."
+keywords:
+  - "accounting document"
+  - "đơn tài khoản"
+  - "transactional processing"
+  - "xử lý giao dịch"
+  - "item-level"
+  - "chi tiết"
+  - "receivable"
+  - "payable"
+  - "thu chi"
+  - "fin-fscm-col-2cl"
+  - "interface-view"
+  - "transactional-processing"
+semantic_en: "Exposes accounting document item data for receivable and payable transactions, used for item-level processing and transactional updates."
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released

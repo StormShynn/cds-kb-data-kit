@@ -1,6 +1,19 @@
 ---
 name: D_WAREHOUSEORDERTASKACTIVATED
 description: "D Warehouse OrderTASKACTIVATED"
+semantic_vi: "View D_WAREHOUSEORDERTASKACTIVATED hiển thị các nhiệm vụ đơn hàng kho đã kích hoạt trong SAP EWM, có thể được sử dụng để theo dõi và quản lý các hoạt động kho."
+keywords:
+  - "warehouse order task"
+  - "nhiệm vụ đơn hàng kho"
+  - "sap ewm"
+  - "scm"
+  - "scm ewm"
+  - "warehouse operation"
+  - "đơn hàng kho"
+  - "kho"
+  - "sap scm ewm wop"
+  - "component scm ewm wop 2cl"
+semantic_en: "The D_WAREHOUSEORDERTASKACTIVATED view exposes activated warehouse order tasks in SAP EWM, which can be used to track and manage warehouse operations."
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

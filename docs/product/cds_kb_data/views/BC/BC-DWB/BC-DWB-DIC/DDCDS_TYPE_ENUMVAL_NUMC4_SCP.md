@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC4_SCP
 description: "Ddcds Type Enumval Numc 4 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_NUMC4_SCP hiển thị các giá trị danh mục cho các trường số có độ dài 4 trong SAP Data Dictionary, thường được sử dụng khi làm việc với dữ liệu SAP Data Dictionary."
+keywords:
+  - "sap data dictionary"
+  - "ddcds"
+  - "enumval"
+  - "numeric field"
+  - "sap data dictionary data"
+  - "sap dd"
+  - "ddcds type"
+  - "enum identifier"
+  - "enum value"
+  - "sap basis components"
+  - "basis components"
+  - "bc-dwb-dic"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_NUMC4_SCP view exposes enumeration values for numeric fields with a length of 4 in SAP Data Dictionary, typically used when working with SAP Data Dictionary data."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

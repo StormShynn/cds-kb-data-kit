@@ -1,6 +1,19 @@
 ---
 name: D_TRANSPRATETBLVALIDITYUPDATEP
 description: "D Transpratetblvalidityupdatep"
+semantic_vi: "View D_TRANSPRATETBLVALIDITYUPDATEP hiển thị dữ liệu cập nhật mức phí vận chuyển, cụ thể tính hợp lệ của sự thay đổi mức phí trong đơn vị phần trăm và đơn vị tiền tệ. Nó được sử dụng khi cập nhật mức phí vận chuyển trong một phần trăm hoặc đơn vị tiền tệ cụ thể."
+keywords:
+  - "transportation rate"
+  - "mức phí vận chuyển"
+  - "update"
+  - "cập nhật"
+  - "percentage"
+  - "phần trăm"
+  - "currency"
+  - "đơn vị tiền tệ"
+  - "sap"
+  - "tm-md-cm-2cl"
+semantic_en: "The D_TRANSPRATETBLVALIDITYUPDATEP view exposes transportation rate update data, specifically the validity of rate changes in a percentage unit and currency. It is used when updating transportation rates in a specific percentage or currency unit."
 app_component: TM-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

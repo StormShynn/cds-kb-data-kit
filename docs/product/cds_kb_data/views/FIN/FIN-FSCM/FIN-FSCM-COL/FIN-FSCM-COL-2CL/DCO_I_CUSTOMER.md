@@ -1,6 +1,19 @@
 ---
 name: /DCO/I_CUSTOMER
 description: "Customer"
+semantic_vi: "View DCO_I_CUSTOMER hiển thị dữ liệu khách hàng, thường được sử dụng trong các dịch vụ tài chính và quản lý thu hồi. Nó cung cấp một bản xem xét dữ liệu khách hàng để phân tích và báo cáo."
+keywords:
+  - "customer"
+  - "khách hàng"
+  - "financial services"
+  - "dịch vụ tài chính"
+  - "collections management"
+  - "quản lý thu hồi"
+  - "sap"
+  - "fscm"
+  - "customer data"
+  - "dữ liệu khách hàng"
+semantic_en: "The DCO_I_CUSTOMER view exposes customer data, which is typically used in financial services and collections management. It provides a snapshot of customer information for analysis and reporting purposes."
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released

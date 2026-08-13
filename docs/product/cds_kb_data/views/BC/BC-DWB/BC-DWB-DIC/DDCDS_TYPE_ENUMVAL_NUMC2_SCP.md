@@ -1,6 +1,19 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC2_SCP
 description: "Ddcds Type Enumval Numc 2 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_NUMC2_SCP hiển thị dữ liệu liên quan đến giá trị enum cho các trường số trong Data Dictionary của SAP, có ích khi làm việc với loại dữ liệu và các quy tắc xác thực."
+keywords:
+  - "sap data dictionary"
+  - "ddcds"
+  - "enum"
+  - "numeric field"
+  - "data type"
+  - "validation rule"
+  - "loại dữ liệu"
+  - "quy tắc xác thực"
+  - "dữ liệu số"
+  - "data dictionary của sap"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_NUMC2_SCP view exposes data related to enumeration values for numeric fields in SAP Data Dictionary, which is useful when working with data types and validation rules."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

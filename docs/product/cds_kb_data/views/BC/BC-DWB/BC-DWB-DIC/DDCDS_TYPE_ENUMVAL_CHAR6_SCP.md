@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR6_SCP
 description: "Ddcds Type Enumval Char 6 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_CHAR6_SCP trong cơ sở dữ liệu CDS hiển thị một loại giá trị danh mục với độ dài ký tự 6, được sử dụng trong các thành phần cơ sở của SAP. Nó được sử dụng khi làm việc với giá trị danh mục trong các ứng dụng SAP."
+keywords:
+  - "sap"
+  - "basis components"
+  - "ddcds"
+  - "enumval"
+  - "character"
+  - "length"
+  - "enumeration"
+  - "value"
+  - "sap basis"
+  - "ddcds type"
+  - "enumval char 6"
+  - "sap application"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_CHAR6_SCP CDS view exposes a type of enumeration value with a character length of 6, which is used in SAP Basis Components. It is used when working with enumeration values in SAP applications."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC2_T_SCP
 description: "Ddcds Type Enumval Numc 2 T Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_NUMC2_T_SCP cung cấp dữ liệu về giá trị enum cho các loại số trong một ngôn ngữ cụ thể, có thể được sử dụng để hiển thị hoặc xác thực giá trị enum trong các ứng dụng SAP."
+keywords:
+  - "enum"
+  - "sap"
+  - "ddcds"
+  - "type"
+  - "numeric"
+  - "language"
+  - "validation"
+  - "display"
+  - "sap applications"
+  - "ngôn ngữ"
+  - "giá trị enum"
+  - "xác thực"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_NUMC2_T_SCP view provides data about enumeration values for numeric types in a specific language, which can be used to display or validate enumeration values in SAP applications."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

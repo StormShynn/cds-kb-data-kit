@@ -1,6 +1,20 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR1_SCP
 description: "Ddcds Type Enumval Char 1 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_CHAR1_SCP hiển thị dữ liệu liên quan đến loại dữ liệu dictionary SAP enum với độ dài ký tự 1, có thể được sử dụng khi làm việc với loại dữ liệu SAP và các thuộc tính của chúng."
+keywords:
+  - "sap"
+  - "data dictionary"
+  - "enum"
+  - "data type"
+  - "character length"
+  - "ddcds"
+  - "sap data types"
+  - "sap properties"
+  - "sap data dictionary"
+  - "sap enum values"
+  - "sap type enumval char 1 scp"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_CHAR1_SCP view exposes data related to SAP data dictionary type enum values with character length 1, which can be used when working with SAP data types and their properties."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,16 @@
 ---
 name: D_TRANSPORDREPORTEVENTP
 description: "D Transpordreporteventp"
+semantic_vi: "View này hiển thị dữ liệu sự kiện đơn hàng vận chuyển, có thể được sử dụng để theo dõi trạng thái đơn hàng vận chuyển và các sự kiện liên quan."
+keywords:
+  - "transportation order"
+  - "đơn hàng vận chuyển"
+  - "transportation order event"
+  - "sự kiện đơn hàng vận chuyển"
+  - "sap tm"
+  - "tm frm"
+  - "transactional processing"
+semantic_en: "This view exposes transportation order event data, which can be used to track the status of transportation orders and their associated events."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

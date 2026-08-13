@@ -1,6 +1,18 @@
 ---
 name: D_TRANSPORDSUBCONTRGSTSBFR
 description: "D Transpordsubcontrgstsbfr"
+semantic_vi: "View D_TRANSPORDSUBCONTRGSTSBFR hiển thị dữ liệu trạng thái nhà thầu phụ vận tải, có liên quan khi quản lý đơn hàng vận tải và mối quan hệ nhà thầu phụ."
+keywords:
+  - "transportation"
+  - "subcontractor"
+  - "status"
+  - "transport order"
+  - "đơn vận tải"
+  - "nhà thầu phụ"
+  - "trạng thái"
+  - "tm-frm"
+  - "tm"
+semantic_en: "The D_TRANSPORDSUBCONTRGSTSBFR view exposes transportation subcontractor status data, which is relevant when managing transportation orders and subcontractor relationships."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: D_WAREHOUSEORDERTASKCREATED
 description: "D Warehouse OrderTASKCREATED"
+semantic_vi: "Chứa dữ liệu tạo nhiệm vụ đặt hàng kho để sử dụng trong các ứng dụng quản lý chuỗi cung ứng (SCM) và quản lý kho mở rộng (EWM)."
+keywords:
+  - "warehouse"
+  - "order"
+  - "task"
+  - "scm"
+  - "ewm"
+  - "supply chain management"
+  - "extended warehouse management"
+  - "warehouse order"
+  - "task creation"
+  - "nhiệm vụ đặt hàng kho"
+  - "quản lý chuỗi cung ứng"
+  - "quản lý kho mở rộng"
+semantic_en: "Exposes warehouse order task creation data for use in Supply Chain Management (SCM) and Extended Warehouse Management (EWM) applications."
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

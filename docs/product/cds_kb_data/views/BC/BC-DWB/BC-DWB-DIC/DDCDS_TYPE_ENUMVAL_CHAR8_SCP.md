@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR8_SCP
 description: "Ddcds Type Enumval Char 8 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_CHAR8_SCP trong cơ sở dữ liệu CDS hiển thị các giá trị danh mục cho kiểu dữ liệu ký tự trong hệ thống SAP. Nó được sử dụng để lấy và quản lý các giá trị này trong phát triển ABAP và đám mây."
+keywords:
+  - "sap"
+  - "cdata"
+  - "enumeration"
+  - "character"
+  - "type"
+  - "data"
+  - "ddcds"
+  - "scp"
+  - "abap"
+  - "cloud"
+  - "development"
+  - "danh mục"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_CHAR8_SCP CDS view exposes enumeration values for character type data in SAP systems. It is used to retrieve and manage these values in ABAP and cloud development."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

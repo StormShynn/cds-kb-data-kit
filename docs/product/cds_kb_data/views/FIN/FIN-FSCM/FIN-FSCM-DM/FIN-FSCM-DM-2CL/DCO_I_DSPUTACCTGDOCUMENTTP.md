@@ -1,6 +1,17 @@
 ---
 name: /DCO/I_DSPUTACCTGDOCUMENTTP
 description: "Dsputacctgdocumenttp"
+semantic_vi: "View DCO_I_DSPUTACCTGDOCUMENTTP hiển thị thông tin khiếu nại tài khoản kế toán, bao gồm số tiền khiếu nại và quyết định, có thể được sử dụng để quản lý và theo dõi khiếu nại liên quan đến tài khoản kế toán."
+keywords:
+  - "accounting document"
+  - "dispute"
+  - "dsputacctgdocumenttp"
+  - "fin-fscm-dm-2cl"
+  - "financial services"
+  - "kế toán"
+  - "khái niệm khiếu nại"
+  - "tài khoản kế toán"
+semantic_en: "The DCO_I_DSPUTACCTGDOCUMENTTP view exposes accounting document dispute information, including dispute amounts and decisions, which can be used to manage and track disputes related to accounting documents."
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: D_VARCONFIGNTBLCNTNTCRTELINEP
 description: "D Varconfigntblcntntcrtelinep"
+semantic_vi: "Chứa nội dung bảng cấu hình biến được sử dụng khi tạo hoặc cập nhật bảng cấu hình biến trong Logistics General."
+keywords:
+  - "variable configuration"
+  - "cấu hình biến"
+  - "logistics general"
+  - "ekko"
+  - "lob"
+  - "lob logistics general"
+  - "lo-vch-api-2cl"
+  - "sap cds view"
+  - "bảng cấu hình"
+  - "cấu hình"
+  - "lo-vch"
+semantic_en: "Exposes variable configuration table content for creation of new lines, used when creating or updating variable configuration tables in Logistics General."
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

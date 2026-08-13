@@ -1,6 +1,20 @@
 ---
 name: D_WAREHOUSEORDERTASKCONFIRMED
 description: "D Warehouse OrderTASKCONFIRMED"
+semantic_vi: "CDS view D_WAREHOUSEORDERTASKCONFIRMED hiển thị dữ liệu xác nhận nhiệm vụ kho trong hệ thống EWM, có thể sử dụng để theo dõi trạng thái nhiệm vụ kho."
+keywords:
+  - "warehouse"
+  - "order"
+  - "task"
+  - "confirmation"
+  - "ewm"
+  - "scm"
+  - "scm-ewm"
+  - "warehouse order task"
+  - "d_warehouseordertaskconfirmed"
+  - "nhiệm vụ kho"
+  - "xác nhận nhiệm vụ kho"
+semantic_en: "The D_WAREHOUSEORDERTASKCONFIRMED CDS view exposes warehouse order task confirmation data, which is useful when tracking the status of warehouse tasks in the EWM system."
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

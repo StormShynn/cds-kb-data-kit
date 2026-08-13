@@ -1,6 +1,18 @@
 ---
 name: D_TRANSPORDUNASSIGNFRTUNITP
 description: "D Transpordunassignfrtunitp"
+semantic_vi: "View D_TRANSPORDUNASSIGNFRTUNITP hiển thị các tham số không gán đơn vị vận chuyển cho quản lý vận chuyển. Nó được sử dụng để lấy hoặc cập nhật các tham số không gán đơn vị vận chuyển."
+keywords:
+  - "freight unit"
+  - "unassignment"
+  - "transportation management"
+  - "tm"
+  - "tm-frm"
+  - "transactional processing"
+  - "đơn vị vận chuyển"
+  - "không gán"
+  - "quản lý vận chuyển"
+semantic_en: "The D_TRANSPORDUNASSIGNFRTUNITP CDS view exposes freight unit unassignment parameters for transportation management. It is used to retrieve or update freight unit unassignment parameters."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released
