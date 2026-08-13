@@ -191645,6 +191645,16 @@ function cosineSimilarity(a5, b5) {
   if (na === 0 || nb === 0) return 0;
   return dot / (Math.sqrt(na) * Math.sqrt(nb));
 }
+function decodeEmbeddings(emb) {
+  if (!emb || emb.format !== "f32-base64" || !emb.vectors) return emb;
+  const decoded = {};
+  for (const [name, b64] of Object.entries(emb.vectors)) {
+    const buf = Buffer.from(String(b64), "base64");
+    decoded[name] = new Float32Array(buf.buffer, buf.byteOffset, buf.byteLength / 4);
+  }
+  emb.vectors = decoded;
+  return emb;
+}
 var LOCAL_EMBED_MODEL = "Xenova/all-MiniLM-L6-v2";
 var localExtractorPromise = null;
 function localEmbedExtractor() {
@@ -191762,7 +191772,7 @@ async function loadIndex() {
   tableIndexData = await ds.getTableIndex?.() ?? null;
   rawFieldIndexData = await ds.getRawFieldIndex?.() ?? null;
   try {
-    embeddingsData = await ds.getEmbeddings?.() ?? null;
+    embeddingsData = decodeEmbeddings(await ds.getEmbeddings?.() ?? null);
   } catch {
     embeddingsData = null;
   }

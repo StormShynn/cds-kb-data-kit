@@ -202,6 +202,21 @@ function cosineSimilarity(a, b) {
   return dot / (Math.sqrt(na) * Math.sqrt(nb));
 }
 
+// embeddings.json stores vectors as base64-encoded Float32 buffers
+// (format: "f32-base64", see cds_kb_data/scripts/build-embeddings.mjs) to stay
+// under GitHub's 100 MB per-file limit. Decode each value back into a
+// Float32Array once on load so rankedSearch/cosineSimilarity can index them.
+function decodeEmbeddings(emb) {
+  if (!emb || emb.format !== 'f32-base64' || !emb.vectors) return emb;
+  const decoded = {};
+  for (const [name, b64] of Object.entries(emb.vectors)) {
+    const buf = Buffer.from(String(b64), 'base64');
+    decoded[name] = new Float32Array(buf.buffer, buf.byteOffset, buf.byteLength / 4);
+  }
+  emb.vectors = decoded;
+  return emb;
+}
+
 // Local query-embedding via transformers.js (ONNX, in-process) — the free,
 // keyless counterpart of the data repo's LOCAL build mode. Only loaded lazily
 // (dynamic import) so the dist bundle never contains onnxruntime, and only
@@ -349,7 +364,7 @@ async function loadIndex() {
   tableIndexData = await ds.getTableIndex?.() ?? null;
   rawFieldIndexData = await ds.getRawFieldIndex?.() ?? null;
   try {
-    embeddingsData = await ds.getEmbeddings?.() ?? null;
+    embeddingsData = decodeEmbeddings(await ds.getEmbeddings?.() ?? null);
   } catch {
     embeddingsData = null;
   }

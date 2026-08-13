@@ -16,6 +16,14 @@
 // same local model when no CDS_KB_EMBED_API_KEY is configured — so build and
 // query stay in agreement.
 //
+// Vectors are stored as base64-encoded Float32 buffers (format: "f32-base64"),
+// one string per view, instead of nested JSON number arrays. 10,000+ views ×
+// 384 dims as plain JSON numbers is ~110 MB — over GitHub's 100 MB per-file
+// limit — while the Float32 base64 form is ~22 MB (comparable to
+// search_index.json) and stays a single plain JSON file in git. The MCP server
+// decodes each value back to a Float32Array on load (server.mjs
+// decodeEmbeddings).
+//
 // Usage:
 //   node scripts/build-embeddings.mjs [dataDir] [--limit N]
 //
@@ -125,12 +133,14 @@ async function main() {
     console.log(`  ${Math.min(i + BATCH, items.length)} / ${items.length}`);
   }
 
+  const b64 = (arr) => Buffer.from(new Float32Array(arr).buffer).toString('base64');
   const out = {
     model,
     dim,
     mode: LOCAL_MODE ? 'local' : 'remote',
+    format: 'f32-base64',
     builtAt: new Date().toISOString(),
-    vectors,
+    vectors: Object.fromEntries(Object.entries(vectors).map(([name, v]) => [name, b64(v)])),
   };
   const outFile = path.join(dataDir, 'index', 'embeddings.json');
   await writeJson(outFile, out);
