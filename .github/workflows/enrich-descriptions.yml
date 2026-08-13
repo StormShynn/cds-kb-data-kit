@@ -113,6 +113,7 @@ jobs:
           git checkout -b "$BRANCH"
           git add views/ index/
           git commit -m "LLM description enrichment ($DATE)"
+          git push -u origin "$BRANCH"
 
           cat > pr_body.md <<'EOF'
           LLM-generated `semantic_en` / `semantic_vi` / `keywords` for views
