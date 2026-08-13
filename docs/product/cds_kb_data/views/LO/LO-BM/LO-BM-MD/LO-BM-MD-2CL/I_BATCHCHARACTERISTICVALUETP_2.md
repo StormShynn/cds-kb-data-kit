@@ -1,6 +1,21 @@
 ---
 name: I_BATCHCHARACTERISTICVALUETP_2
 description: "Batchcharacteristicvaluetp 2"
+semantic_vi: "Chỉ ra giá trị đặc trưng lô hàng cho vật liệu, được sử dụng trong logistics tổng thể cho xử lý giao dịch."
+keywords:
+  - "batch"
+  - "characteristic"
+  - "value"
+  - "material"
+  - "logistics"
+  - "transactional"
+  - "processing"
+  - "lo"
+  - "lo-bm"
+  - "lo-bm-md"
+  - "interface-view"
+  - "transactional-processing"
+semantic_en: "Exposes batch characteristic values for materials, used in logistics general for transactional processing."
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

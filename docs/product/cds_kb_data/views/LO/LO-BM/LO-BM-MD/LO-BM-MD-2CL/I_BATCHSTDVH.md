@@ -1,6 +1,21 @@
 ---
 name: I_BATCHSTDVH
 description: "Batchstdvh"
+semantic_vi: "View Batchstdvh cung cấp truy cập vào giá trị tiêu chuẩn batch cho hoạt động logistics, cho phép các nhà phát triển truy cập và sử dụng giá trị tiêu chuẩn batch trong các ứng dụng của họ."
+keywords:
+  - "batch"
+  - "standard value"
+  - "logistics"
+  - "sap"
+  - "cds view"
+  - "lo"
+  - "lo-bm"
+  - "lo-bm-md"
+  - "interface view"
+  - "value help"
+  - "batch standard value"
+  - "giá trị tiêu chuẩn batch"
+semantic_en: "The Batchstdvh view provides access to batch standard values for logistics operations, allowing developers to retrieve and utilize batch standard values in their applications."
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

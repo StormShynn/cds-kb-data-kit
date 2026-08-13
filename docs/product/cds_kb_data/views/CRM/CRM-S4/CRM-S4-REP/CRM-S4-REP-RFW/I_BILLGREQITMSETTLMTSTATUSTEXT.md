@@ -1,6 +1,19 @@
 ---
 name: I_BILLGREQITMSETTLMTSTATUSTEXT
 description: "Billgreqitmsettlmtstatustext"
+semantic_vi: "View Billgreqitmsettlmtstatustext cung cấp mô tả văn bản của trạng thái thanh toán yêu cầu hóa đơn cho từng mục hàng hóa trong nhiều ngôn ngữ. Nó có thể được sử dụng để hiển thị thông tin trạng thái cho người dùng theo ngôn ngữ mà họ chọn."
+keywords:
+  - "billing request"
+  - "settlement status"
+  - "language"
+  - "text view"
+  - "crm"
+  - "sap"
+  - "billgreqitmsettlmtstatustext"
+  - "trạng thái thanh toán"
+  - "ngôn ngữ"
+  - "trạng thái hóa đơn"
+semantic_en: "The Billgreqitmsettlmtstatustext view provides text descriptions of billing request item settlement status in different languages. It can be used to display status information to users in their preferred language."
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

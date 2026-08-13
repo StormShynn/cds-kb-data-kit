@@ -1,6 +1,20 @@
 ---
 name: I_BATCHSPLITTYPE
 description: "Batchsplittype"
+semantic_vi: "View BatchSplitType cung cấp thông tin về các loại tách lô được sử dụng trong kế hoạch sản xuất, cho phép các nhà phát triển truy cập và sử dụng dữ liệu này trong các ứng dụng của họ."
+keywords:
+  - "batch"
+  - "split"
+  - "type"
+  - "production"
+  - "planning"
+  - "pp-vdm"
+  - "interface-view"
+  - "component"
+  - "pp-vdm-2cl"
+  - "manufacturing"
+  - "splits"
+semantic_en: "The BatchSplitType view provides information about batch split types used in production planning, allowing developers to access and utilize this data in their applications."
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

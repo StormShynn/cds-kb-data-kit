@@ -1,6 +1,19 @@
 ---
 name: I_BATCHCLASSTP_2
 description: "Batchclasstp 2"
+semantic_vi: "View Batchclasstp 2 hiển thị thông tin lớp batch cho logistics tổng thể, bao gồm vật liệu, batch và loại lớp chi tiết. Nó được sử dụng trong xử lý giao dịch cho quản lý batch."
+keywords:
+  - "batch"
+  - "class"
+  - "logistics"
+  - "transactional"
+  - "processing"
+  - "management"
+  - "material"
+  - "batchidentifyingplant"
+  - "batchclasstp"
+  - "lo-bm-md-2cl"
+semantic_en: "The Batchclasstp 2 view exposes batch class information for logistics general, including material, batch, and class type details. It is used in transactional processing for batch management."
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

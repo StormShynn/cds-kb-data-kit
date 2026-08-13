@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGBLOCKSTATUSTEXT
 description: "Billingblockstatustext"
+semantic_vi: "View I_BILLINGBLOCKSTATUSTEXT CDS cung cấp mô tả trạng thái khối hóa đơn trong nhiều ngôn ngữ. Nó được sử dụng để lấy mô tả văn bản của trạng thái khối hóa đơn."
+keywords:
+  - "billing"
+  - "block"
+  - "status"
+  - "description"
+  - "language"
+  - "sap"
+  - "sd"
+  - "sles"
+  - "gf"
+  - "2cl"
+  - "sales"
+  - "distribution"
+semantic_en: "The I_BILLINGBLOCKSTATUSTEXT CDS view provides billing block status descriptions in multiple languages. It is used to retrieve the text representation of billing block statuses."
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

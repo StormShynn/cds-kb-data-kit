@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGBLOCKSTATUS
 description: "Billingblockstatus"
+semantic_vi: "View I_BILLINGBLOCKSTATUS cung cấp thông tin trạng thái khối hóa đơn, có liên quan khi quản lý đơn đặt hàng bán hàng hoặc hóa đơn trong thành phần Sales và Distribution."
+keywords:
+  - "billing block status"
+  - "trạng thái khối hóa đơn"
+  - "sales order"
+  - "đơn đặt hàng bán hàng"
+  - "invoice"
+  - "hóa đơn"
+  - "sap sd"
+  - "sales and distribution"
+  - "component sd-sls-gf-2cl"
+semantic_en: "The I_BILLINGBLOCKSTATUS view provides billing block status information, which is relevant when managing sales orders or invoices in the Sales and Distribution component."
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

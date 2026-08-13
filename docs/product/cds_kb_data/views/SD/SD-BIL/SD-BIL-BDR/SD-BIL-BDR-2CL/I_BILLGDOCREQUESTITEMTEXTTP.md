@@ -1,6 +1,19 @@
 ---
 name: I_BILLGDOCREQUESTITEMTEXTTP
 description: "Billgdocrequestitemtexttp"
+semantic_vi: "View I_BILLGDOCREQUESTITEMTEXTTP hiển thị dữ liệu văn bản chi tiết cho yêu cầu hóa đơn trong thành phần Sales và Distribution."
+keywords:
+  - "billing document request"
+  - "yêu cầu hóa đơn"
+  - "text data"
+  - "sales and distribution"
+  - "sales"
+  - "distribution"
+  - "sap"
+  - "sd-bil-bdr"
+  - "item-level"
+  - "transactional-processing"
+semantic_en: "The Billgdocrequestitemtexttp view exposes billing document request item text data, which is used to retrieve detailed text information for billing document requests in the Sales and Distribution component."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

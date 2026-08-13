@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGBLOCKREASON
 description: "Billingblockreason"
+semantic_vi: "CDS view I_BILLINGBLOCKREASON hiển thị lý do chặn hóa đơn được sử dụng trong Sales và Distribution, thường được truy cập khi phân tích hoặc giải quyết vấn đề hóa đơn."
+keywords:
+  - "billing block reason"
+  - "reason code"
+  - "chặn hóa đơn"
+  - "lý do chặn"
+  - "sales and distribution"
+  - "sản phẩm và phân phối"
+  - "sap sd"
+  - "sd-bil"
+  - "sd-bil-gf"
+semantic_en: "The I_BILLINGBLOCKREASON CDS view exposes billing block reasons used in Sales and Distribution, typically accessed when analyzing or troubleshooting billing issues."
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

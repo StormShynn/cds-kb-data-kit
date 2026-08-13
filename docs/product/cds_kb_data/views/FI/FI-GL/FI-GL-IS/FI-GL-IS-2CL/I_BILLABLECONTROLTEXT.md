@@ -1,6 +1,21 @@
 ---
 name: I_BILLABLECONTROLTEXT
 description: "Billablecontroltext"
+semantic_vi: "View I_BILLABLECONTROLTEXT cung cấp dữ liệu văn bản kiểm soát có thể tính phí, được sử dụng để hiển thị tên kiểm soát có thể tính phí trong các ngôn ngữ khác nhau. Nó thường được sử dụng khi hiển thị thông tin tài chính trong nhiều ngôn ngữ."
+keywords:
+  - "billable control"
+  - "billable control text"
+  - "financial information"
+  - "language"
+  - "fi-gl"
+  - "fi-gl-is"
+  - "fi"
+  - "fi-gl-is-2cl"
+  - "text view"
+  - "interface view"
+  - "đơn có thể tính phí"
+  - "văn bản kiểm soát có thể tính phí"
+semantic_en: "The I_BILLABLECONTROLTEXT view provides billable control text data, which is used to display billable control names in different languages. It is typically used when displaying financial information in multiple languages."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

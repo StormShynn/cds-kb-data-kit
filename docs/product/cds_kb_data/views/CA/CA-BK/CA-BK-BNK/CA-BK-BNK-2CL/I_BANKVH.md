@@ -1,6 +1,19 @@
 ---
 name: I_BANKVH
 description: "Bankvh"
+semantic_vi: "View I_BANKVH cung cấp thông tin về các ngân hàng, bao gồm quốc gia, ID nội bộ, tên, chi nhánh và mã SWIFT. Nó được sử dụng để lấy thông tin ngân hàng cho các mục đích kinh doanh khác nhau."
+keywords:
+  - "bank"
+  - "ngân hàng"
+  - "sap cds"
+  - "cds view"
+  - "bank details"
+  - "chi tiết ngân hàng"
+  - "bank information"
+  - "thông tin ngân hàng"
+  - "bank data"
+  - "thông tin dữ liệu ngân hàng"
+semantic_en: "The I_BANKVH view provides information about banks, including their country, internal ID, name, branch, and SWIFT code. It is used to retrieve bank details for various business purposes."
 app_component: CA-BK-BNK-2CL
 software_component: SAP_BASIS
 release_state: released

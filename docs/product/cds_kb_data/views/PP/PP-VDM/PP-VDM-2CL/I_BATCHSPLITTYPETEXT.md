@@ -1,6 +1,21 @@
 ---
 name: I_BATCHSPLITTYPETEXT
 description: "Batchsplittypetext"
+semantic_vi: "View Batchsplittypetext cung cấp mô tả văn bản cho các loại tách lô trong ngữ cảnh lập kế hoạch sản xuất và sản xuất. Nó được sử dụng để lấy tên các loại tách lô trong các ngôn ngữ khác nhau."
+keywords:
+  - "batch"
+  - "split"
+  - "type"
+  - "text"
+  - "production"
+  - "planning"
+  - "manufacturing"
+  - "batchsplittypetext"
+  - "pp-vdm"
+  - "pp"
+  - "vdm"
+  - "sap"
+semantic_en: "The Batchsplittypetext view provides text descriptions for batch split types in the context of production planning and manufacturing. It is used to retrieve the names of batch split types in different languages."
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

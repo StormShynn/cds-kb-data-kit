@@ -1,6 +1,19 @@
 ---
 name: I_BILLGDOCREQUESTTYPESTDVH
 description: "Billgdocrequesttypestdvh"
+semantic_vi: "View Billgdocrequesttypestdvh CDS cung cấp một giá trị giúp tiêu chuẩn cho loại yêu cầu tài liệu hóa đơn, được sử dụng trong ứng dụng thành phần bán hàng và phân phối SD-BIL-BDR-2CL. Nó có thể được sử dụng trong các kịch bản khi loại tài liệu hóa đơn cần được chọn hoặc lọc."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "request type"
+  - "loại yêu cầu"
+  - "value help"
+  - "giúp tiêu chuẩn"
+  - "standard value help"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+  - "sd-bil-bdr-2cl"
+semantic_en: "The Billgdocrequesttypestdvh CDS view provides a standard value help for billing document request types, which is used in the Sales and Distribution application component SD-BIL-BDR-2CL. It is likely used in scenarios where billing document types need to be selected or filtered."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

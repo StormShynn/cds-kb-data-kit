@@ -1,6 +1,20 @@
 ---
 name: I_BATCH
 description: "Batch"
+semantic_vi: "View Batch hiển thị dữ liệu liên quan đến lô hàng cho vật liệu, bao gồm thông tin nhà máy, nhà cung cấp và nguồn gốc, có ích khi quản lý kho hàng hoặc theo dõi sản xuất."
+keywords:
+  - "batch"
+  - "material"
+  - "inventory"
+  - "production"
+  - "plant"
+  - "supplier"
+  - "origin"
+  - "logistics"
+  - "sap"
+  - "cds"
+  - "view"
+semantic_en: "The Batch view exposes batch-related data for materials, including plant, supplier, and origin information, which is useful when managing inventory or tracking production."
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

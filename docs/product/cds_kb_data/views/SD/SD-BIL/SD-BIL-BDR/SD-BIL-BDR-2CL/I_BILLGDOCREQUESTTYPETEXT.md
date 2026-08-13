@@ -1,6 +1,20 @@
 ---
 name: I_BILLGDOCREQUESTTYPETEXT
 description: "Billgdocrequesttypetext"
+semantic_vi: "View I_BILLGDOCREQUESTTYPETEXT CDS hiển thị mô tả văn bản của loại yêu cầu tài liệu hóa đơn, có thể được sử dụng để hiển thị hoặc dịch các loại này trong các ngôn ngữ khác nhau."
+keywords:
+  - "billing document request type"
+  - "mô tả văn bản"
+  - "loại yêu cầu tài liệu hóa đơn"
+  - "sds"
+  - "sds-bil"
+  - "sds-bil-bdr"
+  - "interface view"
+  - "text view"
+  - "sales & distribution"
+  - "lob"
+  - "sap"
+semantic_en: "The I_BILLGDOCREQUESTTYPETEXT CDS view exposes text descriptions of billing document request types, which can be used to display or translate these types in different languages."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

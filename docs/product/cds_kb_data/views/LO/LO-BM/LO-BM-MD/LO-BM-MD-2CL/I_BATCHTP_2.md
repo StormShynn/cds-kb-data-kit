@@ -1,6 +1,21 @@
 ---
 name: I_BATCHTP_2
 description: "Batchtp 2"
+semantic_vi: "View Batchtp 2 hiển thị thông tin lô hàng cho vật liệu, bao gồm việc xác định lô hàng, nhà cung cấp và quốc gia nguồn gốc, có ích khi quản lý kho hàng và theo dõi lô hàng trong logistics."
+keywords:
+  - "batch"
+  - "material"
+  - "logistics"
+  - "inventory"
+  - "batch identification"
+  - "supplier"
+  - "country of origin"
+  - "sap"
+  - "cds view"
+  - "lo"
+  - "lo-bm"
+  - "lo-bm-md"
+semantic_en: "The Batchtp 2 view exposes batch information for materials, including batch identification, supplier, and country of origin, which is useful when managing inventory and tracking batches in logistics."
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

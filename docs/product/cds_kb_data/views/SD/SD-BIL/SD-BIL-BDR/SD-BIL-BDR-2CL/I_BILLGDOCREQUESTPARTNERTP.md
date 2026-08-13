@@ -1,6 +1,18 @@
 ---
 name: I_BILLGDOCREQUESTPARTNERTP
 description: "Billgdocrequestpartnertp"
+semantic_vi: "CDS view I_BILLGDOCREQUESTPARTNERTP hiển thị dữ liệu đối tác yêu cầu hóa đơn kinh doanh, được sử dụng trong quy trình kinh doanh bán hàng và phân phối."
+keywords:
+  - "billing document request"
+  - "đơn yêu cầu hóa đơn kinh doanh"
+  - "partner data"
+  - "dữ liệu đối tác"
+  - "sales and distribution"
+  - "kinh doanh bán hàng và phân phối"
+  - "sap"
+  - "sd-bil-bdr"
+  - "lob:sales & distribution"
+semantic_en: "The I_BILLGDOCREQUESTPARTNERTP CDS view exposes billing document request partner data, which is used in sales and distribution business processes."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

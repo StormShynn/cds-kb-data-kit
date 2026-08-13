@@ -1,6 +1,21 @@
 ---
 name: I_BASICMATERIALVH
 description: "Basicmaterialvh"
+semantic_vi: "View Basicmaterialvh CDS cung cấp truy cập dữ liệu vật liệu, có ích khi tìm kiếm vật liệu trong ứng dụng logistics."
+keywords:
+  - "material"
+  - "vật liệu"
+  - "logistics"
+  - "lo"
+  - "lo-md"
+  - "lo-md-mm"
+  - "basicmaterial"
+  - "basicmaterialvh"
+  - "sap"
+  - "cds"
+  - "view"
+  - "search"
+semantic_en: "The Basicmaterialvh CDS view provides access to material data, which is useful when searching for materials in logistics applications."
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

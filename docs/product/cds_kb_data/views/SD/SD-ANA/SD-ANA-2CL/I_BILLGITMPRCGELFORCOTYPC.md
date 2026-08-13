@@ -1,6 +1,17 @@
 ---
 name: I_BILLGITMPRCGELFORCOTYPC
 description: "Billgitmprcgelforcotypc"
+semantic_vi: "View I_BILLGITMPRCGELFORCOTYPC CDS hiển thị dữ liệu bước quy trình giá cho một mục đơn giá hóa đơn cụ thể, cho phép các nhà phát triển truy cập và điều chỉnh chi tiết giá trong ứng dụng bán hàng và phân phối."
+keywords:
+  - "pricing procedure"
+  - "bill to customer"
+  - "đơn giá hóa đơn"
+  - "quy trình giá"
+  - "công cụ phân tích dữ liệu"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+  - "ekko"
+semantic_en: "The I_BILLGITMPRCGELFORCOTYPC CDS view exposes pricing procedure step data for a specific billing document item, allowing developers to access and manipulate pricing details in the Sales and Distribution application."
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BATCHTEXTTP_2
 description: "Batchtexttp 2"
+semantic_vi: "View Batchtexttp 2 CDS hiển thị dữ liệu văn bản batch cho logistics tổng thể, cho phép các nhà phát triển truy cập và thao tác với mô tả batch trong ngữ cảnh xử lý giao dịch."
+keywords:
+  - "batch"
+  - "text"
+  - "logistics"
+  - "general"
+  - "transactional"
+  - "processing"
+  - "batchtexttp"
+  - "cds"
+  - "view"
+  - "material"
+  - "batchidentifyingplant"
+semantic_en: "The Batchtexttp 2 CDS view exposes batch text data for logistics general, allowing developers to access and manipulate batch descriptions in a transactional processing context."
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

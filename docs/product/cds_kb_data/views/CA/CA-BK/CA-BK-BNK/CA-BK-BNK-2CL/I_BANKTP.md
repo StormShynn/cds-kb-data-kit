@@ -1,6 +1,21 @@
 ---
 name: I_BANKTP
 description: "Banktp"
+semantic_vi: "View I_BANKTP hiển thị thông tin ngân hàng, bao gồm quốc gia, ID nội bộ, tên và mã SWIFT, có thể được sử dụng để xác định và xác minh ngân hàng cho các giao dịch hoặc mục đích kinh doanh khác."
+keywords:
+  - "bank"
+  - "ngân hàng"
+  - "bank information"
+  - "thông tin ngân hàng"
+  - "transaction"
+  - "giao dịch"
+  - "bank identification"
+  - "xác định ngân hàng"
+  - "bank verification"
+  - "xác minh ngân hàng"
+  - "sap cds view"
+  - "view i_banktp"
+semantic_en: "The I_BANKTP view exposes bank information, including country, internal ID, name, and SWIFT code, which can be used to identify and verify banks for transactions or other business purposes."
 app_component: CA-BK-BNK-2CL
 software_component: SAP_BASIS
 release_state: released

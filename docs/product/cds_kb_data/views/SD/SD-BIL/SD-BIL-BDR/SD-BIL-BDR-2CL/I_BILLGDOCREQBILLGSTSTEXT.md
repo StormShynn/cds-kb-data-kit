@@ -1,6 +1,19 @@
 ---
 name: I_BILLGDOCREQBILLGSTSTEXT
 description: "Billgdocreqbillgststext"
+semantic_vi: "View I_BILLGDOCREQBILLGSTSTEXT cung cấp dữ liệu văn bản trạng thái yêu cầu hóa đơn, có thể hữu ích khi hiển thị hoặc xử lý thông tin trạng thái hóa đơn trong giao dịch bán hàng và phân phối."
+keywords:
+  - "bill status"
+  - "trạng thái hóa đơn"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+  - "bill document request"
+  - "yêu cầu hóa đơn"
+  - "text view"
+  - "view văn bản"
+  - "sap sd"
+  - "sd sap"
+semantic_en: "The I_BILLGDOCREQBILLGSTSTEXT view provides bill document request bill status text data, which is useful when displaying or processing bill status information in sales and distribution transactions."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

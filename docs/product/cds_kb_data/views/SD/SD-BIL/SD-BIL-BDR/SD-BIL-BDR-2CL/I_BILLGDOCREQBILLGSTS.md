@@ -1,6 +1,17 @@
 ---
 name: I_BILLGDOCREQBILLGSTS
 description: "Billgdocreqbillgsts"
+semantic_vi: "View Billgdocreqbillgsts hiển thị trạng thái yêu cầu tài liệu hóa đơn và giá trị miền tương ứng, có thể được sử dụng để theo dõi và quản lý yêu cầu tài liệu hóa đơn trong mô-đun Bán hàng và Phân phối."
+keywords:
+  - "billgdocreqbillgsts"
+  - "billing document request"
+  - "trạng thái yêu cầu tài liệu hóa đơn"
+  - "domain value"
+  - "sales and distribution"
+  - "mô-đun bán hàng và phân phối"
+  - "sap"
+  - "sd-bil-bdr-2cl"
+semantic_en: "The Billgdocreqbillgsts view exposes the status of billing document requests and their corresponding domain values, which can be used to track and manage billing document requests in the Sales and Distribution module."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

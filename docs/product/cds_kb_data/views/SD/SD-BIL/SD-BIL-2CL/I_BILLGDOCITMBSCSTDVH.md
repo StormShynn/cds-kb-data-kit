@@ -1,6 +1,19 @@
 ---
 name: I_BILLGDOCITMBSCSTDVH
 description: "Billgdocitmbscstdvh"
+semantic_vi: "View I_BILLGDOCITMBSCSTDVH CDS cung cấp truy cập dữ liệu master về đơn hàng hóa, bao gồm các giá trị tiêu chuẩn cho đơn hàng và các mục đơn hàng. Nó được sử dụng để truy xuất và hiển thị thông tin đơn hàng hóa tiêu chuẩn."
+keywords:
+  - "billing document"
+  - "đơn hàng hóa"
+  - "billing document item"
+  - "mục đơn hàng hóa"
+  - "sales organization"
+  - "sales distribution"
+  - "standard value help"
+  - "giúp đỡ giá trị tiêu chuẩn"
+  - "sap sd"
+  - "sap sd-bil"
+semantic_en: "The I_BILLGDOCITMBSCSTDVH CDS view provides access to billing document item master data, including standard values for billing documents and items. It is used to retrieve and display standard billing document item information."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

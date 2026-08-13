@@ -1,6 +1,17 @@
 ---
 name: I_BILLABLECONTROL
 description: "Billablecontrol"
+semantic_vi: "View Billable Control cung cấp thông tin về các điều khiển có thể tính phí, được sử dụng để quản lý và theo dõi các mặt hàng có thể tính phí trong các giao dịch tài chính. Nó được sử dụng để lấy dữ liệu về các điều khiển có thể tính phí cho mục đích phân tích và báo cáo."
+keywords:
+  - "billable control"
+  - "điều khiển có thể tính phí"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "fi-gl"
+  - "fi-gl-is"
+  - "interface view"
+  - "component fi-gl-is-2cl"
+semantic_en: "The Billable Control view provides information about billable controls, which are used to manage and track billable items in financial transactions. It is used to retrieve data on billable controls for analysis and reporting purposes."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

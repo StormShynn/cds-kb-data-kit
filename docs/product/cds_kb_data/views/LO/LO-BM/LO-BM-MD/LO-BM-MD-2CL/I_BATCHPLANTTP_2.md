@@ -1,6 +1,21 @@
 ---
 name: I_BATCHPLANTTP_2
 description: "Batchplanttp 2"
+semantic_vi: "View Batchplanttp 2 cung cấp dữ liệu nhà máy lô, có liên quan đến xử lý giao dịch trong logistics. Nó có thể được sử dụng để truy cập và quản lý thông tin nhà máy lô."
+keywords:
+  - "batchplant"
+  - "transactional processing"
+  - "logistics"
+  - "plant"
+  - "batch"
+  - "sap"
+  - "cds view"
+  - "lo-bm-md-2cl"
+  - "lo"
+  - "lo-bm"
+  - "lo-bm-md"
+  - "interface-view"
+semantic_en: "The Batchplanttp 2 view provides batch plant data, which is relevant for transactional processing in logistics. It can be used to access and manage batch plant information."
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

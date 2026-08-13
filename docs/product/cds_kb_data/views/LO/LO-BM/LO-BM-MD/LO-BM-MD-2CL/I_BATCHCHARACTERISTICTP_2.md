@@ -1,6 +1,20 @@
 ---
 name: I_BATCHCHARACTERISTICTP_2
 description: "Batchcharacteristictp 2"
+semantic_vi: "Chứa dữ liệu đặc trưng lô hàng cho logistics tổng thể, được sử dụng trong xử lý giao dịch."
+keywords:
+  - "batch"
+  - "characteristic"
+  - "logistics"
+  - "general"
+  - "transactional"
+  - "processing"
+  - "lo"
+  - "lob"
+  - "sap"
+  - "cds"
+  - "view"
+semantic_en: "Exposes batch characteristic data for logistics general, used in transactional processing."
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

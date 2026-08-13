@@ -1,6 +1,19 @@
 ---
 name: I_BILLGREQITMSETTLMTSTATUS
 description: "Billgreqitmsettlmtstatus"
+semantic_vi: "View I_BILLGREQITMSETTLMTSTATUS hiển thị trạng thái thanh toán yêu cầu hóa đơn cho các mặt hàng. Nó được sử dụng để lấy trạng thái hiện tại của yêu cầu hóa đơn cho các mặt hàng."
+keywords:
+  - "billgreqitmsettlmtstatus"
+  - "settlement status"
+  - "billing request"
+  - "item status"
+  - "crm"
+  - "sap"
+  - "c4c"
+  - "rfw"
+  - "domain value"
+  - "billgreqitembillingstatus"
+semantic_en: "The Billgreqitmsettlmtstatus CDS view exposes the settlement status of billing requests for items. It is used to retrieve the current status of billing requests for items."
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

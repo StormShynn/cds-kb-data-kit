@@ -1,6 +1,18 @@
 ---
 name: I_BILLGITMPRCGELFORCOTYPAN
 description: "Billgitmprcgelforcotypan"
+semantic_vi: "View I_BILLGITMPRCGELFORCOTYPAN hiển thị dữ liệu bước quy trình giá cho một loại điều kiện và loại điều kiện cụ thể, có liên quan khi phân tích quy trình giá trong mô-đun Bán hàng và Phân phối."
+keywords:
+  - "pricing procedure"
+  - "quy trình giá"
+  - "condition type"
+  - "loại điều kiện"
+  - "condition category"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+  - "sap sd"
+  - "sd anasales and distribution analytics"
+semantic_en: "The I_BILLGITMPRCGELFORCOTYPAN view exposes pricing procedure step data for a specific condition type and category, which is relevant when analyzing pricing procedures in the Sales and Distribution module."
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

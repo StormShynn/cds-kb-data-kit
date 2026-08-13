@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGCONTROLCATEGORY
 description: "Billingcontrolcategory"
+semantic_vi: "View I_BILLINGCONTROLCATEGORY hiển thị các loại kiểm soát hóa đơn được sử dụng trong quản lý dự án. Nó được sử dụng để lấy và quản lý các loại kiểm soát hóa đơn cho các dự án."
+keywords:
+  - "billing control category"
+  - "project management"
+  - "dự án quản lý"
+  - "kiểm soát hóa đơn"
+  - "billing control"
+  - "project"
+  - "dự án"
+  - "sap ppm"
+  - "sap ppm-scl-bil"
+semantic_en: "The I_BILLINGCONTROLCATEGORY view exposes billing control categories used in project management. It is used to retrieve and manage billing control categories for projects."
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released
