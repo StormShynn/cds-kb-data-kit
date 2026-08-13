@@ -61,7 +61,12 @@ runs:
           if ls $p >/dev/null 2>&1; then EXISTING="$EXISTING $p"; fi
         done
 
-        if [ -z "$EXISTING" ] || git diff --quiet -- $EXISTING; then
+        # Untracked paths (e.g. index/embeddings.json before its first
+        # commit) are invisible to `git diff --quiet`, so check for them
+        # explicitly — otherwise a freshly generated derived file is treated
+        # as "unchanged" and never committed.
+        UNTRACKED=$(git ls-files --others --exclude-standard -- $EXISTING)
+        if [ -z "$EXISTING" ] || { git diff --quiet HEAD -- $EXISTING && [ -z "$UNTRACKED" ]; }; then
           echo "ℹ️  $EMPTY_MESSAGE"
           exit 0
         fi
