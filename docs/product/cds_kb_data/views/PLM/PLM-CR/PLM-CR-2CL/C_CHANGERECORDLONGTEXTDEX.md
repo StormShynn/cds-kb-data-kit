@@ -1,6 +1,19 @@
 ---
 name: C_CHANGERECORDLONGTEXTDEX
 description: "Change RecordLONGTEXTDEX"
+semantic_vi: "View Change Record LONG TEXT DEX hiển thị các mô tả chi tiết về các bản ghi thay đổi, có thể được sử dụng để phân tích và hiểu các thay đổi được thực hiện đối với sản phẩm hoặc quy trình."
+keywords:
+  - "change record"
+  - "thay đổi"
+  - "sản phẩm"
+  - "quy trình"
+  - "text description"
+  - "mô tả chi tiết"
+  - "plm"
+  - "plm-cr"
+  - "change record detail description"
+  - "change record reference text uuid"
+semantic_en: "The Change Record LONG TEXT DEX view exposes detailed text descriptions of change records, which can be used to analyze and understand changes made to products or processes."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_ACCDOCITEMCATEGORY
 description: "Accdocitemcategory"
+semantic_vi: "View I_ACCDOCITEMCATEGORY cung cấp truy cập vào các loại mục tài khoản tài liệu kế toán, được sử dụng để phân loại các mục trong tài liệu kế toán. Nó được sử dụng để truy xuất và quản lý các loại mục này cho mục đích kế toán tài chính."
+keywords:
+  - "accounting document"
+  - "tài liệu kế toán"
+  - "accounting document item category"
+  - "loại mục tài khoản tài liệu kế toán"
+  - "financial accounting"
+  - "kế toán tài chính"
+  - "fi-gl"
+  - "fi"
+  - "fi-gl-gl"
+  - "item-level"
+  - "interface-view"
+  - "lob:finance"
+semantic_en: "The I_ACCDOCITEMCATEGORY view provides access to accounting document item categories, which are used to categorize items within accounting documents. It is used to retrieve and manage these categories for financial accounting purposes."
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: C_PURORDSCHEDULELINEDEX
 description: "PURORDSchedule LineDEX"
+semantic_vi: "View CDS PURORDSchedule LineDEX hiển thị dữ liệu hàng hóa theo lịch trình đơn đặt hàng, bao gồm ngày và giờ giao hàng, có thể được sử dụng để phân tích và báo cáo về lịch trình mua sắm."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "schedule line"
+  - "procurement schedule"
+  - "delivery date"
+  - "delivery time"
+  - "purchase requisition"
+  - "sourcing & procurement"
+  - "mm-pur-ana-2cl"
+semantic_en: "The PURORDSchedule LineDEX CDS view exposes purchase order schedule line data, including delivery dates and times, which can be used to analyze and report on procurement schedules."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

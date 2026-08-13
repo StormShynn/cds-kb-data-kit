@@ -1,6 +1,19 @@
 ---
 name: C_CSTMSTRIFNMBRFORKEYDATE
 description: "Cstmstrifnmbrforkeydate"
+semantic_vi: "Cung cấp số thuế quan và mô tả tương ứng cho một số hiệu dụng phân loại thương mại và khoảng thời gian cụ thể. Sử dụng để lấy thông tin thuế quan cho một số hiệu dụng phân loại thương mại và thời gian cụ thể."
+keywords:
+  - "customs tariff"
+  - "trade classification"
+  - "function number scheme"
+  - "date range"
+  - "customs information"
+  - "thuế quan"
+  - "phân loại thương mại"
+  - "số hiệu dụng"
+  - "khoảng thời gian"
+  - "thông tin thuế quan"
+semantic_en: "Provides customs tariff numbers and corresponding descriptions for a specific trade classification function number scheme and date range. Used to retrieve customs tariff information for a given trade classification function number scheme and date."
 app_component: FT-ITR-CLS
 software_component: SAPSCORE
 release_state: released

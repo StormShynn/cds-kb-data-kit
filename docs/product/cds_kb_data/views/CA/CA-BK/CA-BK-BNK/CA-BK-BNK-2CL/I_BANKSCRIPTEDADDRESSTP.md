@@ -1,6 +1,19 @@
 ---
 name: I_BANKSCRIPTEDADDRESSTP
 description: "Bankscriptedaddresstp"
+semantic_vi: "CDS view I_BANKSCRIPTEDADDRESSTP hiển thị dữ liệu địa chỉ ngân hàng, thường được sử dụng trong xử lý giao dịch cho ngân hàng."
+keywords:
+  - "bank"
+  - "address"
+  - "transactional processing"
+  - "banking"
+  - "ca-bk-bnk-2cl"
+  - "cross-application components"
+  - "bank script"
+  - "address representation"
+  - "bank country"
+  - "bank internal id"
+semantic_en: "The I_BANKSCRIPTEDADDRESSTP CDS view exposes bank address data, which is typically used in transactional processing for banks."
 app_component: CA-BK-BNK-2CL
 software_component: SAP_BASIS
 release_state: released

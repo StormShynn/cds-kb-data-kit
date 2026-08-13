@@ -1,6 +1,20 @@
 ---
 name: C_PRMTHBRPLDPURREQNAPPRVLEML
 description: "Prmthbrpldpurreqnapprvleml"
+semantic_vi: "Chứa dữ liệu luồng làm việc phê duyệt yêu cầu mua hàng cho trung tâm mua hàng, cung cấp thông tin về việc tạo và hạn chót của nhiệm vụ. View này được sử dụng để theo dõi và quản lý quá trình phê duyệt yêu cầu mua hàng trong trung tâm mua hàng."
+keywords:
+  - "purchase requisition"
+  - "yêu cầu mua hàng"
+  - "procurement hub"
+  - "trung tâm mua hàng"
+  - "workflow"
+  - "luồng làm việc"
+  - "approval"
+  - "phê duyệt"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+semantic_en: "Exposes purchase requisition approval workflow data for procurement hub, providing information on task creation and due dates. This view is used to track and manage the approval process for purchase requisitions in the procurement hub."
 app_component: MM-PUR-HUB-PR-2CL
 software_component: SAPSCORE
 release_state: released

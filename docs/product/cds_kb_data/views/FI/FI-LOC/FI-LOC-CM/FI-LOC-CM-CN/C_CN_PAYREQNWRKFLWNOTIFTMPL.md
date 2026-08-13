@@ -1,6 +1,21 @@
 ---
 name: C_CN_PAYREQNWRKFLWNOTIFTMPL
 description: "CN Payreqnwrkflwnotiftmpl"
+semantic_vi: "View CN Payreqnwrkflwnotiftmpl hiển thị dữ liệu thông báo luồng công việc yêu cầu thanh toán, được sử dụng khi quản lý yêu cầu thanh toán và thông báo luồng công việc liên quan."
+keywords:
+  - "payment requisition"
+  - "yêu cầu thanh toán"
+  - "workflow notification"
+  - "luồng công việc thông báo"
+  - "fi-loc-cm-cn"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-cm"
+  - "consumption-view"
+  - "workflow"
+  - "component:fi-loc-cm-cn"
+  - "lob:finance"
+semantic_en: "The CN Payreqnwrkflwnotiftmpl view exposes payment requisition workflow notification data, used when managing payment requisitions and their associated workflow notifications."
 app_component: FI-LOC-CM-CN
 software_component: SAPSCORE
 release_state: released

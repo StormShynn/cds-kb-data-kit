@@ -1,6 +1,20 @@
 ---
 name: I_CACOMPANYCODEGROUP
 description: "CACompany CodeGROUP"
+semantic_vi: "View I_CACOMPANYCODEGROUP hiển thị các nhóm mã công ty và mã công ty thanh toán liên quan, có liên quan khi quản lý cấu hình mã công ty trong thành phần FI-CA-2CL."
+keywords:
+  - "company code"
+  - "company code group"
+  - "payment company code"
+  - "fi-ca-2cl"
+  - "fi"
+  - "finance"
+  - "sap"
+  - "company code configuration"
+  - "mã công ty"
+  - "nhóm mã công ty"
+  - "mã công ty thanh toán"
+semantic_en: "The I_CACOMPANYCODEGROUP CDS view exposes company code groups and their associated payment company codes, which are relevant when managing company code configurations in the FI-CA-2CL component."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

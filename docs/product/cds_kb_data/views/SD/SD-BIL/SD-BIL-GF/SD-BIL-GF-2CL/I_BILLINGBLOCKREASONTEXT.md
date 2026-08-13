@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGBLOCKREASONTEXT
 description: "Billingblockreasontext"
+semantic_vi: "View I_BILLINGBLOCKREASONTEXT cung cấp mô tả lý do chặn hóa đơn trong nhiều ngôn ngữ, có thể được sử dụng để hiển thị lý do chặn hóa đơn."
+keywords:
+  - "billing"
+  - "block"
+  - "reason"
+  - "description"
+  - "language"
+  - "sap"
+  - "sd"
+  - "sales"
+  - "distribution"
+  - "billingblockreasontext"
+  - "i_billingblockreasontext"
+semantic_en: "The I_BILLINGBLOCKREASONTEXT view provides billing block reason descriptions in multiple languages, which can be used to display the reason for blocking a billing document."
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

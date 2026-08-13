@@ -1,6 +1,21 @@
 ---
 name: C_REARCHTROBJHIERNDERLTNDEX
 description: "Rearchtrobjhiernderltndex"
+semantic_vi: "View C_REARCHTROBJHIERNDERLTNDEX cung cấp chỉ mục phân cấp của đối tượng kiến trúc, hiển thị mối quan hệ giữa các đối tượng và các loại đối tượng. Nó được sử dụng để phân tích và di chuyển cấu trúc của đối tượng kiến trúc."
+keywords:
+  - "architecture object"
+  - "đối tượng kiến trúc"
+  - "hierarchical index"
+  - "chỉ mục phân cấp"
+  - "object relationship"
+  - "quan hệ đối tượng"
+  - "sap cds view"
+  - "view cds sap"
+  - "re-fx-bd-2cl"
+  - "kiến trúc"
+  - "object category"
+  - "loại đối tượng"
+semantic_en: "The C_REARCHTROBJHIERNDERLTNDEX view provides a hierarchical index of architecture objects, exposing relationships between objects and their categories. It is used to analyze and navigate the structure of architecture objects."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

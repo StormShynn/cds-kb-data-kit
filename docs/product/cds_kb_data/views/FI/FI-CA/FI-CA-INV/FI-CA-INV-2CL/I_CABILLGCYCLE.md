@@ -1,6 +1,18 @@
 ---
 name: I_CABILLGCYCLE
 description: "Cabillgcycle"
+semantic_vi: "View Cabillgcycle hiển thị dữ liệu chu kỳ hóa đơn, được sử dụng để xác định kỳ hóa đơn cho khách hàng. Nó thường được sử dụng trong quá trình thu hồi và hóa đơn."
+keywords:
+  - "billing cycle"
+  - "chu kỳ hóa đơn"
+  - "accounts receivable"
+  - "thu hồi"
+  - "fi-ca"
+  - "fi-ca-inv"
+  - "fi"
+  - "finance"
+  - "sap cds"
+semantic_en: "The Cabillgcycle view exposes billing cycle data, which is used to determine the billing period for customers. It is typically used in accounts receivable and billing processes."
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_BUSPARTTAXTYPETEXT
 description: "Business PartnerTAXTYPETEXT"
+semantic_vi: "View Business Partner TAXTYPETEXT cung cấp mô tả văn bản cho loại thuế đối tác kinh doanh trong các ngôn ngữ khác nhau. Nó có thể được sử dụng để hiển thị tên loại thuế trong các ngôn ngữ khác nhau cho các ứng dụng liên quan đến đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "tax type"
+  - "language"
+  - "text description"
+  - "sap cds view"
+  - "ap-md-bp-rap"
+  - "lob other"
+  - "tax"
+  - "type"
+  - "description"
+  - "language code"
+  - "business partner tax type"
+semantic_en: "The Business Partner TAXTYPETEXT view provides text descriptions for business partner tax types in different languages. It can be used to display tax type names in various languages for business partner-related applications."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

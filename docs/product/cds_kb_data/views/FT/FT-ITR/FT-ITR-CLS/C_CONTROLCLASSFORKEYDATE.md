@@ -1,6 +1,19 @@
 ---
 name: C_CONTROLCLASSFORKEYDATE
 description: "Controlclassforkeydate"
+semantic_vi: "View Controlclassforkeydate CDS hiển thị thông tin lớp kiểm soát cho một ngày cụ thể, có thể được sử dụng để xác định lớp kiểm soát áp dụng cho một ngày cụ thể."
+keywords:
+  - "control class"
+  - "control class for key date"
+  - "control class information"
+  - "sap cds view"
+  - "control class determination"
+  - "control class for a specific date"
+  - "control class for key date determination"
+  - "sap ft itr cls"
+  - "control class data"
+  - "control class data for key date"
+semantic_en: "The Controlclassforkeydate CDS view exposes control class information for a specific date, which can be used to determine the applicable control class for a given date."
 app_component: FT-ITR-CLS
 software_component: SAPSCORE
 release_state: released

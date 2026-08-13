@@ -1,6 +1,19 @@
 ---
 name: I_CADFLTCLEARINGRSTRCNCODE
 description: "Cadfltclearingrstrcncode"
+semantic_vi: "View Cadfltclearingrstrcncode hiển thị mã hạn chế thanh toán cho tài khoản tiền mặt, được sử dụng để xác định loại thanh toán được phép cho tài khoản tiền mặt trong thành phần FI-CA-2CL."
+keywords:
+  - "cash account"
+  - "tài khoản tiền mặt"
+  - "clearing restriction code"
+  - "mã hạn chế thanh toán"
+  - "fi-ca-2cl"
+  - "fi"
+  - "finance"
+  - "sap"
+  - "cds view"
+  - "view"
+semantic_en: "The Cadfltclearingrstrcncode view exposes clearing restriction codes for cash accounts, used to determine the allowed clearing types for cash accounts in the FI-CA-2CL component."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

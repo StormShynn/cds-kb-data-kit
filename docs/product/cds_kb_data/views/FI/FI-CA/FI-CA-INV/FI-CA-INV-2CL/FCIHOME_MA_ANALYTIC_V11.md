@@ -1,6 +1,19 @@
 ---
 name: FCIHOME_MA_ANALYTIC_V11
 description: "Fcihome MA Analytic V 11"
+semantic_vi: "View FCIHOME_MA_ANALYTIC_V11 cung cấp dữ liệu cơ sở cho quản lý kho trong thành phần FI-CA-INV-2CL, hiển thị dữ liệu cho phân tích và báo cáo."
+keywords:
+  - "inventory management"
+  - "quản lý kho"
+  - "master data"
+  - "dữ liệu cơ sở"
+  - "fi-ca-inv-2cl"
+  - "fi-ca"
+  - "fi"
+  - "finance"
+  - "finance inventory"
+  - "kho tài chính"
+semantic_en: "The FCIHOME_MA_ANALYTIC_V11 view provides master data for inventory management in the FI-CA-INV-2CL component, exposing data for analysis and reporting."
 app_component: FI-CA-INV-2CL
 software_component: SAPPCORE_H
 release_state: released

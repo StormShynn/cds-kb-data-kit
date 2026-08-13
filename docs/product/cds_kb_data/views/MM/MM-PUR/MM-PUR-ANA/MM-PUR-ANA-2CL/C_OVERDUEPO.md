@@ -1,6 +1,19 @@
 ---
 name: C_OVERDUEPO
 description: "Overduepo"
+semantic_vi: "View C_OVERDUEPO hiển thị dữ liệu đơn đặt hàng mua quá hạn, cung cấp thông tin về đơn đặt hàng mua đã vượt quá hạn thanh toán. Nó được sử dụng để phân tích và quản lý các khoản thanh toán quá hạn trong quy trình mua sắm."
+keywords:
+  - "overdue purchase order"
+  - "đơn đặt hàng mua quá hạn"
+  - "purchase order payment deadline"
+  - "đơn đặt hàng mua"
+  - "procurement process"
+  - "quy trình mua sắm"
+  - "sap mm"
+  - "mm-pur-ana"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+semantic_en: "The C_OVERDUEPO view exposes overdue purchase order data, providing information on purchase orders that have exceeded their payment deadlines. It is used to analyze and manage overdue payments in the procurement process."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -324,9 +324,9 @@ define view entity Z_GoodView
   }
   const r17b = await call('prompts/get', { name: 'compose_query', arguments: { intent: 'overdue invoices', baseView: 'I_SalesOrder' } });
   const t17b = r17b.result?.messages?.[0]?.content?.text || '';
-  console.log('compose_query:', t17b.slice(0, 160));
-  if (!/Compose a CDS view/.test(t17b)) {
-    console.error('❌ compose_query prompt failed');
+  console.log('compose_query:', t17b.slice(0, 200));
+  if (!/Compose a CDS view/.test(t17b) || !/search_query_library/i.test(t17b)) {
+    console.error('❌ compose_query prompt failed — expected library-first search_query_library step');
     proc.kill();
     process.exit(1);
   }

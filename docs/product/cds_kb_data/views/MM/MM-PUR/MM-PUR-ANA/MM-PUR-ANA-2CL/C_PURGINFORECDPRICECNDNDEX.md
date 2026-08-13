@@ -1,6 +1,18 @@
 ---
 name: C_PURGINFORECDPRICECNDNDEX
 description: "Purginforecdpricecndndex"
+semantic_vi: "View này hiển thị các bản ghi thông tin mua hàng với giá và điều kiện đã ghi nhận, hữu ích cho việc phân tích dữ liệu mua sắm."
+keywords:
+  - "purchasing information record"
+  - "đơn mua hàng"
+  - "giá và điều kiện"
+  - "procurement data"
+  - "thông tin mua hàng"
+  - "giá ghi nhận"
+  - "điều kiện mua hàng"
+  - "ekko"
+  - "mm-pur-ana-2cl"
+semantic_en: "This view exposes purchasing information records with recorded prices and conditions, useful for analyzing procurement data."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: C_CN_PAYREQNWRKFLWAPPRVLTMPL
 description: "CN Payreqnwrkflwapprvltmpl"
+semantic_vi: "Chứa thông tin về các mẫu phê duyệt yêu cầu thanh toán cho các mã đơn vị công ty, được sử dụng để quản lý quy trình phê duyệt thanh toán."
+keywords:
+  - "payment requisition"
+  - "yêu cầu thanh toán"
+  - "workflow approval"
+  - "mẫu phê duyệt"
+  - "company code"
+  - "mã đơn vị công ty"
+  - "fi-loc-cm-cn"
+  - "finance"
+  - "thanh toán"
+semantic_en: "Exposes payment requisition workflow approval templates for company codes, used to manage payment approval processes."
 app_component: FI-LOC-CM-CN
 software_component: SAPSCORE
 release_state: released

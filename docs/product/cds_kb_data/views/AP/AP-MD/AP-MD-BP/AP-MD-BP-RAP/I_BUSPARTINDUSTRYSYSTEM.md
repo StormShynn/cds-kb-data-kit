@@ -1,6 +1,17 @@
 ---
 name: I_BUSPARTINDUSTRYSYSTEM
 description: "Business PartnerINDUSTRYSYSTEM"
+semantic_vi: "View I_BUSPARTINDUSTRYSYSTEM CDS hiển thị các loại hệ thống ngành cho đối tác kinh doanh, có thể được sử dụng để phân loại và quản lý dữ liệu đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "industry system"
+  - "đối tác kinh doanh"
+  - "hệ thống ngành"
+  - "categorization"
+  - "management"
+  - "sap"
+  - "cds view"
+semantic_en: "The I_BUSPARTINDUSTRYSYSTEM CDS view exposes industry system types for business partners, which can be used to categorize and manage business partner data."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

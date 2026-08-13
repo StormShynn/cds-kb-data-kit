@@ -1,6 +1,15 @@
 ---
 name: I_BR_PARTNERPLACETYPEDETN
 description: "BR Partnerplacetypedetn"
+semantic_vi: "View I_BR_PARTNERPLACETYPEDETN hiển thị dữ liệu kinh doanh liên quan đến loại địa điểm đối tác cho quan hệ kinh doanh trong thành phần FI-LOC-LO-BR, có thể được sử dụng khi làm việc với địa điểm đối tác kinh doanh."
+keywords:
+  - "business relation"
+  - "partner place"
+  - "fi-loc-lo-br"
+  - "địa điểm đối tác"
+  - "quan hệ kinh doanh"
+  - "thành phần"
+semantic_en: "The I_BR_PARTNERPLACETYPEDETN view exposes business data related to partner place types for business relations in the FI-LOC-LO-BR component, which can be used when working with business partner places."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

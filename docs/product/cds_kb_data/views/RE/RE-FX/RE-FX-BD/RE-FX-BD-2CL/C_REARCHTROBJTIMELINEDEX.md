@@ -1,6 +1,18 @@
 ---
 name: C_REARCHTROBJTIMELINEDEX
 description: "Rearchtrobjtimelinedex"
+semantic_vi: "View C_REARCHTROBJTIMELINEDEX hiển thị một chỉ mục thời gian của đối tượng kiến trúc, cung cấp một hồ sơ lịch sử về trạng thái và hoạt động của chúng. Nó được sử dụng để theo dõi các thay đổi và cập nhật trạng thái của đối tượng kiến trúc theo thời gian."
+keywords:
+  - "architecture object"
+  - "kiến trúc"
+  - "đối tượng kiến trúc"
+  - "timeline index"
+  - "index thời gian"
+  - "cập nhật trạng thái"
+  - "thay đổi"
+  - "sap cds"
+  - "c_rearchtrobjtimelinedex"
+semantic_en: "The C_REARCHTROBJTIMELINEDEX view exposes a timeline index of architecture objects, providing a historical record of their status and activity. It is used to track changes and status updates of architecture objects over time."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

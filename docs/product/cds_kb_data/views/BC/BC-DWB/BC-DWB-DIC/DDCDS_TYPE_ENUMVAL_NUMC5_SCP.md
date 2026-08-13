@@ -1,6 +1,21 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC5_SCP
 description: "Ddcds Type Enumval Numc 5 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_NUMC5_SCP hiển thị dữ liệu liên quan đến giá trị liệt kê cho trường số có độ dài 5 trong hệ thống SAP. Nó được sử dụng để lấy và quản lý các giá trị này."
+keywords:
+  - "sap"
+  - "cds"
+  - "enum"
+  - "numeric"
+  - "field"
+  - "length"
+  - "5"
+  - "ddcds"
+  - "type"
+  - "enumval"
+  - "scp"
+  - "sap system"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_NUMC5_SCP view exposes data related to enumeration values for numeric fields with a length of 5 in SAP systems. It is used to retrieve and manage these values."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

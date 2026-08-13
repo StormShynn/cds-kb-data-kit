@@ -1,6 +1,19 @@
 ---
 name: I_ACCTASSIGNMENTCATEGORYTEXT
 description: "Acctassignmentcategorytext"
+semantic_vi: "Chỉ ra tên loại phân bổ tài khoản trong các ngôn ngữ khác nhau để sử dụng trong quy trình cung cấp và mua hàng."
+keywords:
+  - "account assignment"
+  - "category"
+  - "language"
+  - "sourcing"
+  - "procurement"
+  - "mm"
+  - "ekko"
+  - "account assignment category"
+  - "category name"
+  - "language code"
+semantic_en: "Exposes account assignment category names in different languages for use in sourcing and procurement processes."
 app_component: MM
 software_component: SAPSCORE
 release_state: released

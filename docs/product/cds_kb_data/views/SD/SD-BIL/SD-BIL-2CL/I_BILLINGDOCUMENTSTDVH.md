@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGDOCUMENTSTDVH
 description: "Billing DocumentUMENTSTDVH"
+semantic_vi: "View giá trị giúp đỡ tiêu chuẩn tài liệu hóa đơn cung cấp truy cập vào dữ liệu tài liệu hóa đơn tiêu chuẩn, bao gồm các loại tài liệu và tổ chức bán hàng. Nó được sử dụng để lấy thông tin tài liệu hóa đơn để giúp đỡ giá trị trong các ứng dụng."
+keywords:
+  - "billing document"
+  - "tài liệu hóa đơn"
+  - "sales organization"
+  - "tổ chức bán hàng"
+  - "value help"
+  - "giúp đỡ giá trị"
+  - "standard value help"
+  - "giúp đỡ giá trị tiêu chuẩn"
+  - "sap"
+  - "sd-bil"
+  - "billing"
+  - "document"
+semantic_en: "The Billing Document Standard Value Help view provides access to standard billing document data, including document types and sales organizations. It is used to retrieve billing document information for value help in applications."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

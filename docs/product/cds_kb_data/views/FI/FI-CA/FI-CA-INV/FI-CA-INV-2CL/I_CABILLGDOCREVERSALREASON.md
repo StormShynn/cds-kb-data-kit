@@ -1,6 +1,18 @@
 ---
 name: I_CABILLGDOCREVERSALREASON
 description: "Cabillgdocreversalreason"
+semantic_vi: "View I_CABILLGDOCREVERSALREASON CDS hiển thị lý do đảo ngược cho tài liệu hàng hóa trong thành phần FI-CA-INV-2CL, được sử dụng để hiểu nguyên nhân đảo ngược tài liệu trong thanh toán và thu hồi"
+keywords:
+  - "reversal reason"
+  - "goods document"
+  - "fi-ca-inv-2cl"
+  - "accounts payable"
+  - "accounts receivable"
+  - "đảo ngược lý do"
+  - "tài liệu hàng hóa"
+  - "thanh toán"
+  - "thu hồi"
+semantic_en: "The I_CABILLGDOCREVERSALREASON CDS view exposes reversal reasons for goods documents in the FI-CA-INV-2CL component, used to understand the cause of document reversals in accounts payable and accounts receivable."
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

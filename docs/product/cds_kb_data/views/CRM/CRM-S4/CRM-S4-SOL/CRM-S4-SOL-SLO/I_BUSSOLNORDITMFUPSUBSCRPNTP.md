@@ -1,6 +1,21 @@
 ---
 name: I_BUSSOLNORDITMFUPSUBSCRPNTP
 description: "Bussolnorditmfupsubscrpntp"
+semantic_vi: "View Bussolnorditmfupsubscrpntp hiển thị dữ liệu hóa đơn theo dõi đăng ký cho giải pháp kinh doanh, thường được sử dụng trong xử lý giao dịch trong thành phần CRM-S4-SOL-SLO."
+keywords:
+  - "subscription billing"
+  - "business solution"
+  - "crm"
+  - "transactional processing"
+  - "crm-s4-sol-slo"
+  - "lob other"
+  - "subscription"
+  - "billing"
+  - "solution"
+  - "order"
+  - "đăng ký"
+  - "hóa đơn"
+semantic_en: "The Bussolnorditmfupsubscrpntp view exposes subscription billing data for business solutions, typically used in transactional processing within the CRM-S4-SOL-SLO component."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

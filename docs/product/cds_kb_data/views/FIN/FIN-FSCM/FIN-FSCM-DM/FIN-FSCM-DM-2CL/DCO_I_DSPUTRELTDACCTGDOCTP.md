@@ -1,6 +1,17 @@
 ---
 name: /DCO/I_DSPUTRELTDACCTGDOCTP
 description: "Dsputreltdacctgdoctp"
+semantic_vi: "View DCO_I_DSPUTRELTDACCTGDOCTP hiển thị dữ liệu tài khoản liên quan đến tranh chấp, bao gồm chi tiết tài khoản và số tiền tranh chấp. Nó được sử dụng trong dịch vụ tài chính để quản lý quá trình giải quyết tranh chấp."
+keywords:
+  - "dispute resolution"
+  - "accounting document"
+  - "financial services"
+  - "tranh chấp giải quyết"
+  - "tài khoản tài chính"
+  - "dịch vụ tài chính"
+  - "sap financials"
+  - "fin-fscm-dm-2cl"
+semantic_en: "The DCO_I_DSPUTRELTDACCTGDOCTP CDS view exposes accounting document data related to disputes, including document details and dispute amounts. It is used in financial services to manage dispute resolution processes."
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_BUSINESSPARTNERTYPETEXT
 description: "Business PartnerTYPETEXT"
+semantic_vi: "View Business Partner Type Text cung cấp mô tả văn bản của loại đối tác kinh doanh, được sử dụng để phân loại đối tác kinh doanh trong một công ty. View này có thể được sử dụng để lấy và hiển thị nhãn văn bản cho loại đối tác kinh doanh trong các ngôn ngữ khác nhau."
+keywords:
+  - "business partner"
+  - "partner"
+  - "type"
+  - "text"
+  - "description"
+  - "language"
+  - "sap"
+  - "cds"
+  - "view"
+  - "business partner type"
+  - "ap-md-bp-rap"
+  - "lob:other"
+semantic_en: "The Business Partner Type Text view provides text descriptions of business partner types, which are used to categorize business partners in a company. This view can be used to retrieve and display text labels for business partner types in various languages."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

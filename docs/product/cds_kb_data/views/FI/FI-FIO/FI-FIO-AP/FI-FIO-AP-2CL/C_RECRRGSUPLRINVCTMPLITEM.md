@@ -1,6 +1,18 @@
 ---
 name: C_RECRRGSUPLRINVCTMPLITEM
 description: "Recrrgsuplrinvctmplitem"
+semantic_vi: "View này hiển thị dữ liệu mẫu đơn yêu cầu thanh toán của nhà cung cấp, bao gồm thông tin tài khoản và số tiền giao dịch, có ích cho báo cáo và phân tích tài chính."
+keywords:
+  - "supplier invoice"
+  - "đơn yêu cầu thanh toán nhà cung cấp"
+  - "financial reporting"
+  - "báo cáo tài chính"
+  - "sap fi"
+  - "fi-fio-ap-2cl"
+  - "ekko"
+  - "recrrgsuplrinvc"
+  - "recrrgsuplrinvcitem"
+semantic_en: "This view exposes supplier invoice template item data, including account information and transaction amounts, which is useful for financial reporting and analysis."
 app_component: FI-FIO-AP-2CL
 software_component: SAPSCORE
 release_state: released

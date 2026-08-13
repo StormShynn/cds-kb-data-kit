@@ -1,6 +1,20 @@
 ---
 name: C_PRODLGLCTRLCLFNFORKEYDATE
 description: "Prodlglctrlclfnforkeydate"
+semantic_vi: "View này hiển thị dữ liệu kiểm soát pháp lý phân loại sản phẩm cho một ngày cụ thể, có thể được sử dụng để xác định phân loại kiểm soát liên quan cho sản phẩm tại một thời điểm cụ thể."
+keywords:
+  - "product legal control"
+  - "classification data"
+  - "control classification"
+  - "product date"
+  - "sap cds view"
+  - "ft-itr-cls"
+  - "consumption view"
+  - "legal regulation"
+  - "control class"
+  - "validity start date"
+  - "validity end date"
+semantic_en: "This view exposes product legal control classification data for a specific date, which can be used to determine the relevant control classification for a product at a particular point in time."
 app_component: FT-ITR-CLS
 software_component: SAPSCORE
 release_state: released

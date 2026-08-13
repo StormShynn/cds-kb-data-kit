@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFISSUER
 description: "BR Nfissuer"
+semantic_vi: "View BR Nfissuer hiển thị thông tin về người phát hành của một tài liệu thuế Brazil, có liên quan khi xử lý và xác minh tài liệu thuế ở Brazil."
+keywords:
+  - "brazilian tax document"
+  - "tài liệu thuế brazil"
+  - "issuer"
+  - "người phát hành"
+  - "tax processing"
+  - "xử lý thuế"
+  - "validation"
+  - "xác minh"
+  - "sap fi-loc-lo-br"
+  - "fi-loc-lo-br"
+semantic_en: "The BR Nfissuer view exposes information about the issuer of a Brazilian tax document, which is relevant when processing and validating tax documents in Brazil."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

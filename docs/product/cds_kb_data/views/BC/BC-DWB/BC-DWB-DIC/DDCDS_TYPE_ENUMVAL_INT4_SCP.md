@@ -1,6 +1,20 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_INT4_SCP
 description: "Ddcds Type Enumval Int 4 Scp"
+semantic_vi: "Chứa các giá trị danh mục cho kiểu số nguyên trong Datasheet của SAP, hữu ích khi cần lấy các giá trị danh mục cụ thể cho một kiểu và định danh."
+keywords:
+  - "sap"
+  - "data dictionary"
+  - "ddcds"
+  - "enum"
+  - "integer"
+  - "type"
+  - "enumeration"
+  - "danh mục"
+  - "kiểu số nguyên"
+  - "datasheet"
+  - "sap data dictionary"
+semantic_en: "Exposes enumeration values for integer type in SAP Data Dictionary, useful for retrieving specific enumeration values for a given type and identifier."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

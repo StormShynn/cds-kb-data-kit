@@ -1,6 +1,21 @@
 ---
 name: C_REGENERICRENTALOBJECTDEX
 description: "Regenericrentalobjectdex"
+semantic_vi: "View Regenericrentalobjectdex CDS hiển thị một bộ dữ liệu tổng quan về đối tượng cho thuê, bao gồm thông tin đối tượng cho thuê chung, trạng thái và chi tiết xác định. Nó được sử dụng để trích xuất và phân tích dữ liệu đối tượng cho thuê để đưa ra quyết định kinh doanh."
+keywords:
+  - "rental object"
+  - "đối tượng cho thuê"
+  - "generic rental object"
+  - "object status"
+  - "trạng thái đối tượng"
+  - "identification key"
+  - "chìa khóa xác định"
+  - "sap cds view"
+  - "view regenericrentalobjectdex"
+  - "cds view"
+  - "rental data"
+  - "dữ liệu cho thuê"
+semantic_en: "The Regenericrentalobjectdex CDS view exposes a comprehensive set of rental object data, including generic rental object information, status, and identification details. It is used to extract and analyze rental object data for business decision-making."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

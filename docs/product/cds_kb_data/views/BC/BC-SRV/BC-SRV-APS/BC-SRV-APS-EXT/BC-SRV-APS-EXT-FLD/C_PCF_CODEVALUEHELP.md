@@ -1,6 +1,17 @@
 ---
 name: C_PCF_CODEVALUEHELP
 description: "Pcf Codevaluehelp"
+semantic_vi: "Cung cấp hỗ trợ giá trị mã cho giá trị trường, hữu ích khi thực hiện mở rộng trường trong ứng dụng SAP."
+keywords:
+  - "code value help"
+  - "custom field extension"
+  - "sap application"
+  - "field value"
+  - "mã giá trị"
+  - "trường mở rộng"
+  - "hỗ trợ giá trị mã"
+  - "sap ứng dụng"
+semantic_en: "Provides code value help for field values, useful when implementing custom field extensions in SAP applications."
 app_component: BC-SRV-APS-EXT-FLD
 software_component: SAP_BASIS
 release_state: released

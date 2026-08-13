@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGPRICESOURCETEXT
 description: "Billingpricesourcetext"
+semantic_vi: "View I_BILLINGPRICESOURCETEXT cung cấp dữ liệu văn bản nguồn giá hóa đơn, được sử dụng để mô tả nguồn giá hóa đơn trong thành phần Sales và Distribution. Nó thường được sử dụng khi hiển thị hoặc báo cáo thông tin nguồn giá hóa đơn."
+keywords:
+  - "billing price source"
+  - "nguồn giá hóa đơn"
+  - "sales and distribution"
+  - "thành phần sales và distribution"
+  - "text view"
+  - "view text"
+  - "interface view"
+  - "view interface"
+  - "sap sd"
+  - "sap sd-md-cm"
+  - "sap sd-md-cm-2cl"
+semantic_en: "The I_BILLINGPRICESOURCETEXT view provides billing price source text data, which is used to describe the source of billing prices in the Sales and Distribution component. It is typically used when displaying or reporting billing price source information."
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

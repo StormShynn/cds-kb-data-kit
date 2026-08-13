@@ -1,6 +1,21 @@
 ---
 name: I_ACTIVEPLNDINDEPRQMT
 description: "Activeplndindeprqmt"
+semantic_vi: "View Activeplndindeprqmt cung cấp yêu cầu độc lập cho kế hoạch sản xuất, bao gồm thông tin sản phẩm và nhà máy, và được sử dụng để truy cập và phân tích các yêu cầu này."
+keywords:
+  - "production planning"
+  - "kế hoạch sản xuất"
+  - "independent requirements"
+  - "yêu cầu độc lập"
+  - "product information"
+  - "thông tin sản phẩm"
+  - "plant information"
+  - "thông tin nhà máy"
+  - "requirement planning"
+  - "kế hoạch yêu cầu"
+  - "sap pp-vdm"
+  - "pp-vdm-2cl"
+semantic_en: "The Activeplndindeprqmt view provides independent requirements for production planning, including product and plant information, and is used to access and analyze these requirements."
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -247,12 +247,17 @@ view/shape is **missing**, **create** CDS views / proposals to enrich
 - [x] C4: Issue template + Propose markdown support `query` | `cds`
 - [x] User confirmed C2 (2026-08-13): keep existing overlay; Z*/Y* only; skip chuẩn
 - [x] User refined C2b (2026-08-13): never overwrite custom overlay; gap-fill by creating CDS/query proposals
+- [x] Tech radar #1: golden eval harness (`scripts/eval-compose.mjs` + fixtures; `npm run test:eval`)
+- [x] Tech radar #2: library-first compose (`compose_query` prompt + tool descriptions)
+- [x] Tech radar #3: hybrid RRF (replace 0.6/0.4 blend; `src/rrf.mjs` + `npm run test:rrf`)
 - [ ] Deploy: set `GITHUB_ISSUE_TOKEN` + `wrangler deploy` (operator)
 - [ ] Later: sap-export thin slice (C3 — DEV / ADT only; filter Z*/Y*; skip-if-exists)
 
 ## Validation
 
 - Unit: `worker/test-propose-sanitize.mjs` (size / honeypot / secret patterns / kind)
+- Unit: `cds_kb_mcp/test_rrf.mjs` (RRF fusion / cosine rank helpers)
+- Golden: `cds_kb_mcp/npm run test:eval` (frozen search / library / compose intents)
 - Focused: Query Builder Propose JS has Worker path + deep-link fallback
 - Live: requires deploy + `GITHUB_ISSUE_TOKEN` (document only until operator runs it)
 - Do not weaken generate-query-builder stale guard
@@ -265,6 +270,12 @@ overwrite existing custom overlay; if missing, create CDS/query proposals to
 enrich — not overlay standard SAP. Issue bot code lives on the usage collector
 Worker; go-live needs `GITHUB_ISSUE_TOKEN` + redeploy.
 
+Tech radar shipped in-repo (2026-08-13): golden `search_cds` /
+`search_query_library` / `compose_query` eval harness; library-first
+`compose_query` prompt + tool copy; hybrid search uses Reciprocal Rank Fusion
+over BM25 + cosine ranks (BM25 fallback when embeddings unavailable). Still
+user-ops: Issue-bot token deploy; C3 ADT connector later.
+
 ## Future tech radar (2026-08-13)
 
 Grounded in current stack (MCP 2026-07-28 SDK, MiniSearch + local ONNX
@@ -273,9 +284,9 @@ roadmap commitment — ranked fit × effort after Issue-bot go-live + ADT slice.
 
 | # | Candidate | Effort | Verdict |
 |---|-----------|--------|---------|
-| 1 | Golden `compose_query` / search eval harness (frozen intents → expected views/fields/warnings; CI gate) | S–M | **Do next** after C1 live + C3 thin slice |
-| 2 | Library-first compose (prefer `search_query_library` hit before open search) | S | Do-now / soon — closes share→reuse loop |
-| 3 | Hybrid fusion: RRF (parallel BM25+vector) ± optional tiny rerank | S / M | Later if measured recall weak |
+| 1 | Golden `compose_query` / search eval harness (frozen intents → expected views/fields/warnings; CI gate) | S–M | **Shipped** — `npm run test:eval` |
+| 2 | Library-first compose (prefer `search_query_library` hit before open search) | S | **Shipped** — prompt + tool descriptions |
+| 3 | Hybrid fusion: RRF (parallel BM25+vector) ± optional tiny rerank | S / M | **Shipped** RRF (k=60); tiny rerank still later |
 | 4 | MCP elicitation / MRTR to clarify LOB/module before compose | M | Later when host clients support reliably |
 | 5 | Stronger multilingual embedding (e.g. bge-m3) if VI miss rate high | M | Later — measure first |
 | 6 | MCP Tasks for long ADT export jobs | M | Later with C3 scale-up |

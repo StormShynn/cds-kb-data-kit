@@ -1,6 +1,20 @@
 ---
 name: C_PRICEVARIANCECUBE
 description: "Pricevariancecube"
+semantic_vi: "View C_PRICEVARIANCECUBE cung cấp dữ liệu biến động giá cho đơn đặt hàng mua hàng, cho phép phân tích sự thay đổi giá theo thời gian. Nó được sử dụng để theo dõi và đánh giá sự biến động giá trong quá trình mua hàng."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "price variance"
+  - "biến động giá"
+  - "procurement"
+  - "mua hàng"
+  - "ekko"
+  - "cds view"
+  - "view cds"
+  - "cds price variance"
+  - "cds mua hàng"
+semantic_en: "The C_PRICEVARIANCECUBE view provides historical price variance data for purchase orders, allowing for analysis of price changes over time. It is used to track and evaluate price variations in procurement processes."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

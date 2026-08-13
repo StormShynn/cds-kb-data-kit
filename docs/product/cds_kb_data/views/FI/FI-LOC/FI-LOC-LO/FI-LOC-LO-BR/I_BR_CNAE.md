@@ -1,6 +1,20 @@
 ---
 name: I_BR_CNAE
 description: "BR Cnae"
+semantic_vi: "View I_BR_CNAE cung cấp truy cập vào mã CNAE Brazil, được sử dụng để phân loại doanh nghiệp và hoạt động ở Brazil. Nó có thể được sử dụng để truy xuất và quản lý các mã này trong ứng dụng SAP FI-LOC-LO-BR."
+keywords:
+  - "sap"
+  - "fi-loc-lo-br"
+  - "cnae"
+  - "brazil"
+  - "business classification"
+  - "đơn vị kinh doanh"
+  - "mã cnae"
+  - "fi"
+  - "finance"
+  - "location"
+  - "lob:finance"
+semantic_en: "The I_BR_CNAE view provides access to Brazilian CNAE codes, which are used to classify businesses and activities in Brazil. It can be used to retrieve and manage these codes in SAP FI-LOC-LO-BR applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

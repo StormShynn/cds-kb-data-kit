@@ -1,6 +1,18 @@
 ---
 name: I_BUSINESSPARTNERALIAS
 description: "Business PartnerALIAS"
+semantic_vi: "View Business Partner ALIAS hiển thị dữ liệu alias đối tác kinh doanh, có thể sử dụng để quản lý và duy trì alias đối tác kinh doanh trong thành phần chuỗi cung ứng tài chính (FS)."
+keywords:
+  - "business partner"
+  - "alias"
+  - "financial supply chain"
+  - "fs-bp"
+  - "lob other"
+  - "bo businesspartner"
+  - "sap cds view"
+  - "partner"
+  - "component fs-bp"
+semantic_en: "The Business Partner ALIAS view exposes business partner alias data, which can be used to manage and maintain business partner aliases in the Financial Supply Chain (FS) component."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

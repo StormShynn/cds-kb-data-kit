@@ -1,6 +1,21 @@
 ---
 name: C_PURINFORECORDDOCUMENTCHANGES
 description: "Purinforecorddocumentchanges"
+semantic_vi: "View C_PURINFORECORDDOCUMENTCHANGES hiển thị dữ liệu lịch sử thay đổi của đơn mua hàng, có thể được sử dụng để phân tích và theo dõi các thay đổi được thực hiện trên đơn mua hàng theo thời gian."
+keywords:
+  - "purchase document"
+  - "đơn mua hàng"
+  - "purchase order"
+  - "đơn đặt hàng mua"
+  - "change history"
+  - "lịch sử thay đổi"
+  - "purchase document change"
+  - "thay đổi đơn mua hàng"
+  - "sap mm"
+  - "mm-pur"
+  - "mm-pur-ana"
+  - "sourcing & procurement"
+semantic_en: "The C_PURINFORECORDDOCUMENTCHANGES view exposes purchase document change history data, which can be used to analyze and track changes made to purchase documents over time."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

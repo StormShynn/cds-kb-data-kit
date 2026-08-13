@@ -1,6 +1,21 @@
 ---
 name: C_CONCURACCTGDOCITMRLTNDEX
 description: "Concuracctgdocitmrltndex"
+semantic_vi: "View Concuracctgdocitmrltndex hiển thị mối quan hệ giữa các mục tài khoản trong các tài liệu Concur hệ thống, cho phép bạn truy xuất và phân tích các mối quan hệ này để phục vụ cho báo cáo tài chính và kiểm toán."
+keywords:
+  - "concur"
+  - "accounting"
+  - "document"
+  - "item"
+  - "relationship"
+  - "financial"
+  - "reporting"
+  - "auditing"
+  - "sap"
+  - "bns"
+  - "concuracctgdocitmrltndex"
+  - "tài khoản"
+semantic_en: "The Concuracctgdocitmrltndex view exposes accounting document item relationships for Concur system documents, allowing you to retrieve and analyze these relationships for financial reporting and auditing purposes."
 app_component: BNS-CON-SE-S4-FIN
 software_component: SAPSCORE
 release_state: released

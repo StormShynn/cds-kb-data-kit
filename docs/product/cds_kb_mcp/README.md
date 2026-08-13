@@ -42,7 +42,7 @@ the data index changes).
 | **Coverage**        | ~10,600 CDS views (see `version.json` `viewCount`)                                                         |
 | **Enrichment**      | Semantic description + synonyms where present (`enrichedCount` in `version.json`)                          |
 | **Taxonomy**        | Lines of Business → Business Objects → keyword map (EN + VI)                                               |
-| **Search ranking**  | Field-boosted MiniSearch (`name×3`, `semanticDescription×2.5`, `synonyms×2`) + **vector hybrid** (`index/embeddings.json` — built with a free local ONNX model by default, see below) + **usageCount** popularity boost (populated when the usage pipeline is wired up, see below) |
+| **Search ranking**  | Field-boosted MiniSearch (`name×3`, `semanticDescription×2.5`, `synonyms×2`) + **hybrid RRF** (BM25 top-N ⊕ embedding cosine top-N via Reciprocal Rank Fusion when `index/embeddings.json` is present) + **usageCount** popularity boost (populated when the usage pipeline is wired up, see below) |
 | **Module aliasing** | Filter by `"Finance"` / `"Procurement"` / `"Sales"` instead of `FI` / `MM` / `SD`                          |
 | **Tools**           | 14 MCP tools — every one declares an `outputSchema` and returns JSON `structuredContent`                   |
 | **Resources**       | `cds://view/{name}`, `cds://taxonomy`, `cds://stats` — attachable straight into agent context              |
@@ -68,6 +68,8 @@ npm start                 # auto: ../cds_kb_data if index exists
 npm run start:local       # explicit --data ../cds_kb_data
 npm run start:remote      # GitHub remote (needs token if private)
 npm test                  # smoke tools against sibling data
+npm run test:rrf          # Reciprocal Rank Fusion unit tests (no index)
+npm run test:eval         # golden search/compose/library eval (local index)
 ```
 
 Cursor / Claude **stdio** against the sibling data tree:
@@ -364,7 +366,7 @@ List recently added/updated CDS views from the data repo's `changelog.json` (eve
 
 ### 14. `search_query_library`
 
-Search the shared saved-query list (`index/query-library.json`) by title, description, target CDS view name, or generated view name — the curated, PR-reviewed entries the Query Builder also embeds. Returns a ranked shortlist; take a result's `views[]`/`select`/`where` into `compose_query` / `generate_cds_view` to reuse a known-good shape.
+Search the shared saved-query list (`index/query-library.json`) by title, description, target CDS view name, or generated view name — the curated, PR-reviewed entries the Query Builder also embeds. **Library-first:** call this before inventing a shape with `search_cds` / `suggest_base_views`; on a hit, take `views[]`/`select`/`where` into `compose_query` / `generate_cds_view`. On a miss, fall back to open search.
 
 | Parameter | Type | Required | Description |
 |---|---|---|---|
@@ -407,7 +409,7 @@ Example client usage (pseudo-config):
 | Name | Arguments | Purpose |
 | --- | --- | --- |
 | `explain_view` | `name` (required) | Fetch a view and explain it in plain language: what it represents, key fields, associations, when to use it |
-| `compose_query` | `intent` (required) | Turn a business need into a composed CDS query (uses `search_cds` + `compose_query`) |
+| `compose_query` | `intent` (required) | Library-first: `search_query_library` → (miss) `suggest_base_views`/`search_cds` → `compose_query` → generate/validate |
 | `validate_ddl` | `ddl` (required) | Validate a pasted DDL snippet with `validate_cds_ddl` and explain the diagnostics |
 
 ---
@@ -491,7 +493,9 @@ The committed vectors are picked up by the next hosted index refresh
 (`kb_info` then reports `embeddings: yes`). At query time the server embeds
 the search text with the same local model **in-process** when
 `CDS_KB_EMBED_API_KEY` is unset (`@huggingface/transformers`, lazily
-imported) — so hybrid re-ranking is fully keyless. Two caveats:
+imported) — so hybrid is fully keyless. With `search_mode=hybrid`, BM25
+top-N and cosine top-N of that shortlist are fused with **Reciprocal Rank
+Fusion** (RRF, k=60) instead of a fixed 0.6/0.4 score blend. Two caveats:
 
 - The local model is downloaded (~90 MB, cached under `~/.cache/huggingface`)
   on first embed; until then (or if the package/model can't load) hybrid
@@ -499,6 +503,19 @@ imported) — so hybrid re-ranking is fully keyless. Two caveats:
 - `@huggingface/transformers` is an **external** dependency of the esbuild
   bundle, so the single-file `dist/cds-kb-mcp.cjs` never contains it; a
   deployment without `node_modules` simply never enables local hybrid.
+
+### Golden eval (search / library / compose)
+
+Frozen intents live in `scripts/fixtures/eval-compose.json`. Run against the
+sibling local index (no live SAP, no network if indexes are present):
+
+```bash
+npm run test:eval
+# or: node scripts/eval-compose.mjs ../cds_kb_data
+```
+
+Exit code is non-zero on regressions. Also: `npm run test:rrf` for the RRF
+unit tests (no index required).
 
 ---
 

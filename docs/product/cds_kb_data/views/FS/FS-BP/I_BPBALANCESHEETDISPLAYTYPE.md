@@ -1,6 +1,21 @@
 ---
 name: I_BPBALANCESHEETDISPLAYTYPE
 description: "Bpbalancesheetdisplaytype"
+semantic_vi: "CDS view Bpbalancesheetdisplaytype hiển thị dữ liệu kinh doanh liên quan đến loại hiển thị bảng cân đối kế toán cho đối tác kinh doanh, có thể được sử dụng để hiển thị thông tin tài chính theo một định dạng cụ thể."
+keywords:
+  - "balance sheet"
+  - "bảng cân đối kế toán"
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "display type"
+  - "loại hiển thị"
+  - "financial information"
+  - "thông tin tài chính"
+  - "sap cds view"
+  - "view"
+  - "cds"
+  - "fs-bp"
+semantic_en: "The Bpbalancesheetdisplaytype CDS view exposes business data related to balance sheet display types for business partners, which can be used to display financial information in a specific format."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

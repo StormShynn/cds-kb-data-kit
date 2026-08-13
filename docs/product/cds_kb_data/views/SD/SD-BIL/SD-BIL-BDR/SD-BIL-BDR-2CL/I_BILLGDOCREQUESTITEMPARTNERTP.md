@@ -1,6 +1,18 @@
 ---
 name: I_BILLGDOCREQUESTITEMPARTNERTP
 description: "Billgdocrequestitempartnertp"
+semantic_vi: "Chỉ ra dữ liệu đối tác chi tiết cho yêu cầu hóa đơn trong thành phần bán hàng và phân phối, được sử dụng khi xử lý hóa đơn và quản lý mối quan hệ đối tác."
+keywords:
+  - "billing document request"
+  - "đơn yêu cầu hóa đơn"
+  - "partner data"
+  - "dữ liệu đối tác"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+  - "sap sd"
+  - "sap sd-bil"
+  - "sap sd-bil-bdr"
+semantic_en: "Exposes item-level partner data for billing document requests in the Sales and Distribution component, used when processing billing documents and managing partner relationships."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

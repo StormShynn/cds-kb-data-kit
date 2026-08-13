@@ -1,6 +1,20 @@
 ---
 name: C_POWTHNONCMPLNCPAYTTRM
 description: "Powthnoncmplncpayttrm"
+semantic_vi: "CDS view C_POWTHNONCMPLNCPAYTTRM hiển thị các điều khoản thanh toán không tuân thủ cho đơn đặt hàng mua hàng, cung cấp thông tin về nhà cung cấp và tổ chức mua hàng tham gia vào các giao dịch không tuân thủ."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "non-compliance"
+  - "thanh toán không tuân thủ"
+  - "supplier"
+  - "nhà cung cấp"
+  - "purchasing organization"
+  - "tổ chức mua hàng"
+  - "sap mm"
+  - "sap mm-pur"
+  - "sap mm-pur-ana"
+semantic_en: "The CDS view C_POWTHNONCMPLNCPAYTTRM exposes non-compliance payment terms for purchase orders, providing information on suppliers and purchasing organizations involved in non-compliant transactions."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

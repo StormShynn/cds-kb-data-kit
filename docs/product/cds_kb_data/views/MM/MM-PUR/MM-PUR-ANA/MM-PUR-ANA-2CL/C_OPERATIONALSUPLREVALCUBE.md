@@ -1,6 +1,20 @@
 ---
 name: C_OPERATIONALSUPLREVALCUBE
 description: "Operationalsuplrevalcube"
+semantic_vi: "View C_OPERATIONALSUPLREVALCUBE hiển thị dữ liệu đánh giá nhà cung cấp hoạt động, bao gồm các đơn đặt hàng mua và các chỉ số hoàn thành giao hàng liên quan. Nó được sử dụng cho mục đích phân tích, chẳng hạn như đánh giá hiệu suất nhà cung cấp theo thời gian."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "supplier evaluation"
+  - "đánh giá nhà cung cấp"
+  - "purchasing document"
+  - "đơn đặt hàng mua"
+  - "operational data"
+  - "dữ liệu hoạt động"
+  - "analytical view"
+  - "view phân tích"
+semantic_en: "The C_OPERATIONALSUPLREVALCUBE view exposes operational supplier evaluation data, including purchasing documents and relevant delivery completion metrics. It is used for analytical purposes, such as evaluating supplier performance over time."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

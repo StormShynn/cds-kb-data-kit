@@ -1,6 +1,21 @@
 ---
 name: C_PURCHASINGGROUPANALYSIS
 description: "Purchasinggroupanalysis"
+semantic_vi: "View Purchasing Group Analysis cung cấp dữ liệu để phân tích các nhóm mua hàng, được sử dụng để nhóm các tài liệu mua hàng như đơn đặt hàng và hợp đồng mua hàng. View này hữu ích để phân tích hiệu suất của nhóm mua hàng và xác định các xu hướng."
+keywords:
+  - "purchasing group"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "hợp đồng mua hàng"
+  - "ekko"
+  - "sourcing"
+  - "procurement"
+  - "purchasing document"
+  - "analysis"
+  - "trend"
+  - "mua hàng"
+  - "sourcing & procurement"
+semantic_en: "The Purchasing Group Analysis view provides data for analyzing purchasing groups, which are used to group purchasing documents such as purchase orders and contracts. This view is useful for analyzing purchasing group performance and identifying trends."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

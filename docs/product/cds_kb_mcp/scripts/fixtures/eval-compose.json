@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "description": "Frozen golden intents for search_cds / search_query_library / compose_query. Local indexes only — no live SAP or network. anyViewInTop matches case-insensitive substring of result names.",
+  "cases": [
+    {
+      "id": "search-sales-order-name",
+      "tool": "search_cds",
+      "args": { "query": "I_SalesOrder", "limit": 10 },
+      "expect": {
+        "anyViewInTop": ["I_SALESORDER"],
+        "topN": 5
+      }
+    },
+    {
+      "id": "search-purchase-order",
+      "tool": "search_cds",
+      "args": { "query": "purchase order", "limit": 10 },
+      "expect": {
+        "anyViewInTop": ["I_PURCHASEORDER", "I_PURCHASEORDERAPI01", "I_PURCHASEORDERITEMAPI01", "I_PURCHASEORDERTP"],
+        "topN": 10
+      }
+    },
+    {
+      "id": "search-vi-don-mua-hang",
+      "tool": "search_cds",
+      "args": { "query": "don mua hang", "limit": 10 },
+      "expect": {
+        "anyViewInTop": ["I_PURCHASEORDER", "I_PURCHASING", "I_SUPPLIER", "I_PURGINFO"],
+        "topN": 10
+      }
+    },
+    {
+      "id": "search-material-stock",
+      "tool": "search_cds",
+      "args": { "query": "material stock by plant", "limit": 10 },
+      "expect": {
+        "anyViewInTop": ["I_MATERIALSTOCK", "C_MATERIALSTOCK", "STOCKQTY", "STOCKQUANTITY", "PRODUCTSTOCK"],
+        "topN": 10
+      }
+    },
+    {
+      "id": "search-sales-order-intent",
+      "tool": "search_cds",
+      "args": { "query": "sales order", "limit": 10 },
+      "expect": {
+        "anyViewInTop": ["I_SALESORDER", "C_SALESORDER"],
+        "topN": 10
+      }
+    },
+    {
+      "id": "library-open-po",
+      "tool": "search_query_library",
+      "args": { "query": "open purchase orders", "limit": 5 },
+      "expect": {
+        "libraryTitleIncludes": "Open purchase orders",
+        "anyViewInLibraryHit": ["I_PURCHASEORDERAPI01"]
+      }
+    },
+    {
+      "id": "library-sales-order",
+      "tool": "search_query_library",
+      "args": { "query": "sales order header", "limit": 5 },
+      "expect": {
+        "libraryTitleIncludes": "Sales order",
+        "anyViewInLibraryHit": ["I_SALESORDER"]
+      }
+    },
+    {
+      "id": "library-material-stock",
+      "tool": "search_query_library",
+      "args": { "query": "material stock plant", "limit": 5 },
+      "expect": {
+        "libraryTitleIncludes": "Material stock",
+        "anyViewInLibraryHit": ["I_MATERIALSTOCK_2"]
+      }
+    },
+    {
+      "id": "compose-open-po-shape",
+      "tool": "compose_query",
+      "args": {
+        "views": [{ "alias": "t1", "name": "I_PurchaseOrderAPI01" }],
+        "select": "PurchaseOrder, PurchaseOrderType, Supplier, CompanyCode, PurchasingProcessingStatus",
+        "where": "PurchasingProcessingStatus = '02'",
+        "orderBy": "PurchaseOrderDate",
+        "viewName": "Z_C_EvalOpenPurchaseOrders"
+      },
+      "expect": {
+        "cdsContains": ["define view entity Z_C_EvalOpenPurchaseOrders", "I_PurchaseOrderAPI01", "PurchaseOrder"],
+        "openSqlContains": ["I_PurchaseOrderAPI01", "PurchasingProcessingStatus"],
+        "fieldHints": ["PurchaseOrder", "Supplier"]
+      }
+    },
+    {
+      "id": "compose-sales-order-shape",
+      "tool": "compose_query",
+      "args": {
+        "views": [{ "alias": "t1", "name": "I_SalesOrder" }],
+        "select": "SalesOrder, SalesOrderType, SoldToParty, TotalNetAmount",
+        "orderBy": "CreationDate DESC",
+        "viewName": "Z_C_EvalSalesOrderList"
+      },
+      "expect": {
+        "cdsContains": ["define view entity Z_C_EvalSalesOrderList", "I_SalesOrder", "SoldToParty"],
+        "openSqlContains": ["I_SalesOrder"],
+        "fieldHints": ["SalesOrder", "SoldToParty"]
+      }
+    },
+    {
+      "id": "compose-needs-from-warns",
+      "tool": "compose_query",
+      "args": {
+        "views": [],
+        "viewName": "Z_C_EvalNoFrom"
+      },
+      "expect": {
+        "warningAnyMatch": ["views\\[0\\]\\.name", "FROM view"]
+      }
+    },
+    {
+      "id": "compose-orderby-cds-note",
+      "tool": "compose_query",
+      "args": {
+        "views": [{ "alias": "t1", "name": "I_Product" }],
+        "select": "Product, ProductType",
+        "orderBy": "Product",
+        "viewName": "Z_C_EvalOrderByNote"
+      },
+      "expect": {
+        "cdsContains": ["define view entity Z_C_EvalOrderByNote", "omitted: not valid inside a CDS"],
+        "fieldHints": ["Product", "ProductType"]
+      }
+    }
+  ]
+}

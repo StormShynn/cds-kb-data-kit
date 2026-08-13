@@ -1,6 +1,20 @@
 ---
 name: C_EQUIPMENTCLFNCHARCVALUEDEX
 description: "Equipmentclfncharcvaluedex"
+semantic_vi: "View này hiển thị giá trị đặc tính thiết bị cho bảo trì thiết bị trong bảo trì nhà máy. Nó được sử dụng để trích xuất dữ liệu cho đặc tính thiết bị."
+keywords:
+  - "equipment"
+  - "equipment maintenance"
+  - "plant maintenance"
+  - "equipment characteristic"
+  - "equipment characteristic value"
+  - "equipment clfn"
+  - "equipment class type"
+  - "equipment characteristic internal id"
+  - "equipment characteristic value position number"
+  - "equipment characteristic data type"
+  - "equipment characteristic interval type"
+semantic_en: "This view exposes equipment characteristic values for equipment maintenance in plant maintenance. It is used to extract data for equipment characteristics."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

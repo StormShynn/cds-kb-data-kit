@@ -1,6 +1,18 @@
 ---
 name: C_CHANGERECORDEMAILTEMPLATE
 description: "Change RecordEMAILTEMPLATE"
+semantic_vi: "View thay đổi hồ sơ EMAILTEMPLATE cung cấp truy cập vào các mẫu email liên quan đến hồ sơ thay đổi trong thành phần PLM-CR-2CL. Nó được sử dụng để truy xuất và quản lý các mẫu email cho hồ sơ thay đổi."
+keywords:
+  - "change record"
+  - "email template"
+  - "plm-cr-2cl"
+  - "thay đổi hồ sơ"
+  - "mẫu email"
+  - "thành phần plm-cr-2cl"
+  - "hồ sơ thay đổi"
+  - "sap plm"
+  - "thay đổi hồ sơ email"
+semantic_en: "The Change Record EMAILTEMPLATE view provides access to email templates associated with change records in the PLM-CR-2CL component. It is used to retrieve and manage email templates for change records."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

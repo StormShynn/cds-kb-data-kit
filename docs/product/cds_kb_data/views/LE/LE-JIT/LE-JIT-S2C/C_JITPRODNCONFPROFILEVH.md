@@ -1,6 +1,18 @@
 ---
 name: C_JITPRODNCONFPROFILEVH
 description: "Jitprodnconfprofilevh"
+semantic_vi: "View CDS Jitprodnconfprofilevh cung cấp danh sách các hồ sơ cấu hình sản xuất JIT, được sử dụng trong thành phần LE-JIT-S2C cho logistics thực thi. Nó được sử dụng để lấy và hiển thị các hồ sơ này cho các mục đích kinh doanh khác nhau."
+keywords:
+  - "jit production"
+  - "logistics execution"
+  - "le-jit-s2c"
+  - "production configuration"
+  - "sap cds view"
+  - "view cds"
+  - "hồ sơ cấu hình sản xuất jit"
+  - "thực thi logistics"
+  - "thành phần le-jit-s2c"
+semantic_en: "The Jitprodnconfprofilevh CDS view provides a list of JIT production configuration profiles, which are used in the LE-JIT-S2C component for logistics execution. It is used to retrieve and display these profiles for various business purposes."
 app_component: LE-JIT-S2C
 software_component: SAPSCORE
 release_state: released

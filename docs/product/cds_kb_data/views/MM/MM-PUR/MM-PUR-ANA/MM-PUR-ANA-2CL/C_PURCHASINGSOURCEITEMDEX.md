@@ -1,6 +1,21 @@
 ---
 name: C_PURCHASINGSOURCEITEMDEX
 description: "Purchasingsourceitemdex"
+semantic_vi: "View Purchasingsourceitemdex cung cấp dữ liệu chi tiết về nguồn mua hàng, bao gồm vật liệu, nhà cung cấp và thỏa thuận mua hàng chi tiết. Nó được sử dụng để phân tích và trích xuất dữ liệu cho hoạt động nguồn cung và quản lý mua hàng."
+keywords:
+  - "purchasing"
+  - "source"
+  - "item"
+  - "material"
+  - "supplier"
+  - "purchase outline agreement"
+  - "sourcing"
+  - "procurement"
+  - "mm-pur-ana"
+  - "ekko"
+  - "đơn mua hàng"
+  - "nguồn mua hàng"
+semantic_en: "The Purchasingsourceitemdex view provides item-level data for purchasing sources, including materials, suppliers, and purchase outline agreements. It is used to analyze and extract data for sourcing and procurement activities."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,17 @@
 ---
 name: I_BUSINESSPARTNERINDUSTRY
 description: "Business PartnerINDUSTRY"
+semantic_vi: "View Business Partner INDUSTRY cung cấp thông tin phân loại ngành công nghiệp cho đối tác kinh doanh, có thể được sử dụng để phân loại và phân tích mối quan hệ kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "industrycategory"
+  - "loại ngành công nghiệp"
+  - "sap"
+  - "ap-md-bp"
+  - "industry classification"
+  - "phân loại ngành công nghiệp"
+semantic_en: "The Business Partner INDUSTRY view provides industry classification information for business partners, which can be used to categorize and analyze business relationships."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: C_CHGRECHDREXTENSIONDEX
 description: "Chgrechdrextensiondex"
+semantic_vi: "View CDS Chgrechdrextensiondex hiển thị dữ liệu mở rộng của bản ghi thay đổi, có liên quan khi phân tích hoặc báo cáo về bản ghi thay đổi trong thành phần PLM-CR-2CL."
+keywords:
+  - "change record"
+  - "thay đổi"
+  - "plm-cr-2cl"
+  - "header extension"
+  - "dữ liệu mở rộng"
+  - "bản ghi"
+  - "plm"
+  - "cr"
+  - "data extraction"
+  - "trích xuất dữ liệu"
+semantic_en: "The Chgrechdrextensiondex CDS view exposes change record header extension data, which is relevant when analyzing or reporting on change records in the PLM-CR-2CL component."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: C_MM_SUPLREVALOUTPSCORETYPEVH
 description: "MM Suplrevaloutpscoretypevh"
+semantic_vi: "View CDS MM Suplrevaloutpscoretypevh cung cấp hỗ trợ giá trị cho loại hành động đánh giá điểm số của nhà cung cấp, được sử dụng trong thành phần MM-PUR-ANA-2CL cho phân tích nguồn cung và mua sắm."
+keywords:
+  - "mm"
+  - "mm-pur"
+  - "mm-pur-ana"
+  - "value-help"
+  - "sourcing"
+  - "procurement"
+  - "supplier-evaluation"
+  - "score-output-action-type"
+  - "lob:sourcing & procurement"
+  - "component:mm-pur-ana-2cl"
+semantic_en: "The MM Suplrevaloutpscoretypevh CDS view provides a value help for supplier evaluation score output action types, which is used in the MM-PUR-ANA-2CL component for sourcing and procurement analysis."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

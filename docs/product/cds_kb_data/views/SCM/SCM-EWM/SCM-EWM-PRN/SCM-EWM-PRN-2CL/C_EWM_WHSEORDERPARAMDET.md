@@ -1,6 +1,19 @@
 ---
 name: C_EWM_WHSEORDERPARAMDET
 description: "Ewm Whseorderparamdet"
+semantic_vi: "View EWM Whseorderparamdet hiển thị chi tiết tham số đơn hàng kho, có liên quan khi quản lý đơn hàng kho và các tham số liên quan trong SAP EWM."
+keywords:
+  - "warehouse order"
+  - "đơn hàng kho"
+  - "sap ewm"
+  - "warehouse management"
+  - "quản lý kho"
+  - "tham số đơn hàng"
+  - "cds view"
+  - "view dữ liệu"
+  - "sap scm"
+  - "scm ewm"
+semantic_en: "The EWM Whseorderparamdet view exposes warehouse order parameter details, which are relevant when managing warehouse orders and their associated parameters in SAP EWM."
 app_component: SCM-EWM-PRN-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: C_PURORDACCOUNTASSIGNMENTDEX
 description: "Purordaccountassignmentdex"
+semantic_vi: "CDS view C_PURORDACCOUNTASSIGNMENTDEX hiển thị các gán tài khoản chi tiết cho đơn đặt hàng mua hàng, bao gồm trung tâm chi phí, tài sản cố định chủ, và mạng lưới dự án. Nó được sử dụng để phân tích và trích xuất dữ liệu từ đơn đặt hàng mua hàng cho mục đích nguồn cung và quản lý chi phí."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "account assignment"
+  - "gán tài khoản"
+  - "cost center"
+  - "trung tâm chi phí"
+  - "master fixed asset"
+  - "tài sản cố định chủ"
+  - "project network"
+  - "mạng lưới dự án"
+  - "sourcing and procurement"
+semantic_en: "The CDS view C_PURORDACCOUNTASSIGNMENTDEX exposes detailed account assignments for purchase orders, including cost centers, master fixed assets, and project networks. It is used to analyze and extract data from purchase orders for sourcing and procurement purposes."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

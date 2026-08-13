@@ -1,6 +1,17 @@
 ---
 name: C_PRMTHBRPLDPURREQNITMWFLEML
 description: "Prmthbrpldpurreqnitmwfleml"
+semantic_vi: "Chứa dữ liệu công việc luồng quy trình mua sắm trung tâm mua sắm, được sử dụng để theo dõi và quản lý công việc luồng quy trình liên quan đến yêu cầu mua sắm trung tâm mua sắm."
+keywords:
+  - "procurement hub"
+  - "purchase requisition"
+  - "workflow task"
+  - "mua sắm trung tâm"
+  - "yêu cầu mua sắm"
+  - "công việc luồng quy trình"
+  - "sourcing & procurement"
+  - "mm-pur-hub-pr-2cl"
+semantic_en: "Exposes procurement hub workflow task data for purchase requisition items, used to track and manage workflow tasks related to procurement hub purchase requisitions."
 app_component: MM-PUR-HUB-PR-2CL
 software_component: SAPSCORE
 release_state: released

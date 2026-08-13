@@ -1,6 +1,20 @@
 ---
 name: C_IT_ELECTRONICDOCPARTSTATVH
 description: "IT Electronicdocpartstatvh"
+semantic_vi: "View C_IT_ELECTRONICDOCPARTSTATVH hiển thị dữ liệu trạng thái phần của tài liệu điện tử, có thể sử dụng khi làm việc với tài liệu điện tử trong hệ thống SAP."
+keywords:
+  - "electronic document"
+  - "part status"
+  - "electronicdocpartstat"
+  - "value help"
+  - "ca-gtf"
+  - "csc-edo-it"
+  - "cross-application components"
+  - "lob"
+  - "consumption view"
+  - "tài liệu điện tử"
+  - "trạng thái phần"
+semantic_en: "The C_IT_ELECTRONICDOCPARTSTATVH view exposes electronic document part status data, which is useful when working with electronic documents in SAP systems."
 app_component: CA-GTF-CSC-EDO-IT
 software_component: SAPSCORE
 release_state: released

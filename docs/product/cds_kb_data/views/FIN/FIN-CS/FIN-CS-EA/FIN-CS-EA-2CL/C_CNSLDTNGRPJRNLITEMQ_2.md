@@ -1,6 +1,17 @@
 ---
 name: C_CNSLDTNGRPJRNLITEMQ_2
 description: "Cnsldtngrpjrnlitemq 2"
+semantic_vi: "Chứa dữ liệu chi tiết của nhật ký tập đoàn được tổng hợp cho mục đích hợp nhất tài chính, thường được sử dụng trong quá trình đóng sổ tài chính."
+keywords:
+  - "consolidated group journal"
+  - "financial consolidation"
+  - "cnsldtngrpjrnlitemq"
+  - "fin-cs-ea-2cl"
+  - "financial close"
+  - "đồng bộ hóa tập đoàn"
+  - "nhật ký tập đoàn"
+  - "hợp nhất tài chính"
+semantic_en: "Exposes consolidated group journal item data for financial consolidation purposes, typically used in the financial close process."
 app_component: FIN-CS-EA-2CL
 software_component: SAPPCORE_H
 release_state: released

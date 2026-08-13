@@ -1,6 +1,19 @@
 ---
 name: I_CABILLGPLNITMSTATUS
 description: "Cabillgplnitmstatus"
+semantic_vi: "View I_CABILLGPLNITMSTATUS hiển thị dữ liệu trạng thái mục kế hoạch cho hóa đơn trong thành phần FI-CA-INV-2CL. Nó được sử dụng để lấy trạng thái mục kế hoạch trong hóa đơn."
+keywords:
+  - "invoice"
+  - "hóa đơn"
+  - "planned item"
+  - "trạng thái mục kế hoạch"
+  - "fi-ca-inv-2cl"
+  - "fi"
+  - "fi-ca"
+  - "fi-ca-inv"
+  - "interface-view"
+  - "status"
+semantic_en: "The I_CABILLGPLNITMSTATUS view exposes planned item status data for invoices in the FI-CA-INV-2CL component. It is used to retrieve the status of planned items in invoices."
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

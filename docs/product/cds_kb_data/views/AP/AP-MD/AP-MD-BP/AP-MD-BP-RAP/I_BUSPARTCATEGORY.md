@@ -1,6 +1,19 @@
 ---
 name: I_BUSPARTCATEGORY
 description: "Business PartnerCATEGORY"
+semantic_vi: "View Business Partner CATEGORY cung cấp truy cập vào các loại đối tác kinh doanh, được sử dụng để phân loại đối tác kinh doanh trong một công ty. View này hữu ích cho các ứng dụng yêu cầu phân loại đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "category"
+  - "business partner category"
+  - "sap"
+  - "abap"
+  - "cloud"
+  - "cds view"
+  - "ap-md-bp-rap"
+  - "lob other"
+  - "domain value"
+semantic_en: "The Business Partner CATEGORY view provides access to business partner categories, which are used to classify business partners in a company. This view is useful for applications that require categorization of business partners."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

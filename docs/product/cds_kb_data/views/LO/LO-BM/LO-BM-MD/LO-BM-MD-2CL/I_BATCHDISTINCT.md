@@ -1,6 +1,21 @@
 ---
 name: I_BATCHDISTINCT
 description: "Batchdistinct"
+semantic_vi: "View Batchdistinct cung cấp dữ liệu cụ thể cho từng lô hàng trong quản lý logistics, bao gồm thông tin nhà máy, vật liệu, lô hàng và nhà cung cấp. Nó được sử dụng để quản lý và theo dõi lô hàng trong quá trình logistics."
+keywords:
+  - "batch"
+  - "logistics"
+  - "sap"
+  - "cds"
+  - "view"
+  - "plant"
+  - "material"
+  - "supplier"
+  - "batchdistinct"
+  - "lo"
+  - "lo-bm"
+  - "lo-bm-md"
+semantic_en: "The Batchdistinct view provides batch-specific data for logistics management, including plant, material, batch, and supplier information. It is used to manage and track batches in the logistics process."
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

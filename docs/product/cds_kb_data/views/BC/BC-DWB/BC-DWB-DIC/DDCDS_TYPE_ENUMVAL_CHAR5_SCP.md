@@ -1,6 +1,19 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR5_SCP
 description: "Ddcds Type Enumval Char 5 Scp"
+semantic_vi: "View DDCDS_TYPE_ENUMVAL_CHAR5_SCP cung cấp truy cập vào giá trị enum có độ dài ký tự 5, được sử dụng trong SAP Data Dictionary (DDIC) cho định nghĩa kiểu dữ liệu. Nó được sử dụng khi làm việc với kiểu dữ liệu trong hệ thống SAP."
+keywords:
+  - "sap data dictionary"
+  - "ddic"
+  - "data type"
+  - "enumeration value"
+  - "character length"
+  - "ddcds"
+  - "sap basis components"
+  - "basis components"
+  - "ddic data type"
+  - "enum value"
+semantic_en: "The DDCDS_TYPE_ENUMVAL_CHAR5_SCP view provides access to enumeration values with character length 5, which are used in SAP Data Dictionary (DDIC) for data type definitions. It is used when working with data types in SAP systems."
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

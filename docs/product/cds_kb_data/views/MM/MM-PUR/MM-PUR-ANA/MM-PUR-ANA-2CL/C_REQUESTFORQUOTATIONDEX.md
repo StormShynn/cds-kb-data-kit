@@ -1,6 +1,18 @@
 ---
 name: C_REQUESTFORQUOTATIONDEX
 description: "Requestforquotationdex"
+semantic_vi: "View Requestforquotationdex CDS hiển thị một tập hợp dữ liệu yêu cầu báo giá, bao gồm thông tin về đơn đặt hàng mua và chi tiết tạo, có thể được sử dụng để phân tích và báo cáo về RFQ trong quá trình cung cấp và quản lý nguồn cung."
+keywords:
+  - "rfq"
+  - "request for quotation"
+  - "đơn yêu cầu báo giá"
+  - "purchasing document"
+  - "đơn đặt hàng mua"
+  - "sourcing and procurement"
+  - "cung cấp và quản lý nguồn cung"
+  - "mm-pur-ana"
+  - "ekko"
+semantic_en: "The Requestforquotationdex CDS view exposes a collection of request for quotation data, including purchasing document information and creation details, which can be used to analyze and report on RFQs in the sourcing and procurement process."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

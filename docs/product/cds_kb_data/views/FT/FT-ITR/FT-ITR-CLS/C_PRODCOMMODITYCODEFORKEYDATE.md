@@ -1,6 +1,21 @@
 ---
 name: C_PRODCOMMODITYCODEFORKEYDATE
 description: "Prodcommoditycodeforkeydate"
+semantic_vi: "View này cung cấp mã hàng hóa cho sản phẩm theo số hiệu phương thức thương mại và ngày. Nó được sử dụng để lấy mã hàng hóa cho các sản phẩm và ngày cụ thể."
+keywords:
+  - "commodity code"
+  - "mã hàng hóa"
+  - "product"
+  - "sản phẩm"
+  - "trade class function number scheme"
+  - "số hiệu phương thức thương mại"
+  - "date"
+  - "ngày"
+  - "sap cds view"
+  - "view cds sap"
+  - "ft-itr-cls"
+  - "consumption view"
+semantic_en: "This view provides commodity codes for products by trade class function number scheme and date. It is used to retrieve commodity codes for specific products and dates."
 app_component: FT-ITR-CLS
 software_component: SAPSCORE
 release_state: released

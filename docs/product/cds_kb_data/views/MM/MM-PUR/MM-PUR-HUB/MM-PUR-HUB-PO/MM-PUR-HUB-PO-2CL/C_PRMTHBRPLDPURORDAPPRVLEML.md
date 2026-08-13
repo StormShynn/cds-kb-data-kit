@@ -1,6 +1,18 @@
 ---
 name: C_PRMTHBRPLDPURORDAPPRVLEML
 description: "Prmthbrpldpurordapprvleml"
+semantic_vi: "View Prmthbrpldpurordapprvleml hiển thị dữ liệu luồng phê duyệt đơn mua hàng, bao gồm ngày tạo và hạn chót của nhiệm vụ. Nó được sử dụng để theo dõi và quản lý các quy trình phê duyệt đơn mua hàng."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "workflow"
+  - "approval"
+  - "task"
+  - "due date"
+  - "ekko"
+  - "sourcing & procurement"
+  - "mm-pur-hub-po-2cl"
+semantic_en: "The Prmthbrpldpurordapprvleml view exposes purchase order approval workflow data, including task creation and due dates. It is used to track and manage purchase order approval processes."
 app_component: MM-PUR-HUB-PO-2CL
 software_component: SAPSCORE
 release_state: released

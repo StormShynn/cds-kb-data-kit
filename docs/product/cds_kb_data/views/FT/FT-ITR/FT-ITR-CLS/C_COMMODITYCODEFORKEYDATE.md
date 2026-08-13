@@ -1,6 +1,18 @@
 ---
 name: C_COMMODITYCODEFORKEYDATE
 description: "Commoditycodeforkeydate"
+semantic_vi: "View Commoditycodeforkeydate hiển thị mã hàng hóa và dữ liệu liên quan cho một ngày cụ thể, hữu ích cho các ứng dụng yêu cầu thông tin hàng hóa chính xác."
+keywords:
+  - "commodity code"
+  - "mã hàng hóa"
+  - "key date"
+  - "trị giá"
+  - "công cụ"
+  - "ft-itr-cls"
+  - "consumption view"
+  - "hàng hóa"
+  - "ngày khóa"
+semantic_en: "The Commoditycodeforkeydate view exposes commodity codes and related data for a specific date, useful for applications requiring precise commodity information."
 app_component: FT-ITR-CLS
 software_component: SAPSCORE
 release_state: released

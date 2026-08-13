@@ -1,6 +1,21 @@
 ---
 name: I_CADOCUMENTGLITEM
 description: "Cadocumentglitem"
+semantic_vi: "View Cadocumentglitem hiển thị dữ liệu chi tiết khoản mục kế toán cho một tài liệu, cung cấp truy cập vào các trường khóa chính như số tài liệu, số mục và thông tin tài khoản. Nó được sử dụng để lấy dữ liệu tài chính chi tiết cho một tài liệu và các mục cụ thể."
+keywords:
+  - "cadocumentglitem"
+  - "general ledger"
+  - "document"
+  - "item"
+  - "financial data"
+  - "fi-ca"
+  - "interface view"
+  - "document item"
+  - "account information"
+  - "tài liệu"
+  - "khoản mục kế toán"
+  - "dữ liệu tài chính"
+semantic_en: "The Cadocumentglitem view exposes general ledger item data for a document, providing access to key fields such as document number, item number, and account information. It is used to retrieve detailed financial data for a specific document and its items."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

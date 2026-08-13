@@ -1,6 +1,19 @@
 ---
 name: I_BPMINIMUMRESERVE
 description: "Bpminimumreserve"
+semantic_vi: "View I_BPMINIMUMRESERVE CDS hiển thị mức dự trữ tối thiểu cho đối tác kinh doanh và được sử dụng khi xác định yêu cầu dự trữ tối thiểu cho các giao dịch kinh doanh."
+keywords:
+  - "business partner"
+  - "dự trữ tối thiểu"
+  - "mức dự trữ"
+  - "business transaction"
+  - "đối tác kinh doanh"
+  - "giao dịch kinh doanh"
+  - "sap"
+  - "fs-bp"
+  - "interface-view"
+  - "lob:other"
+semantic_en: "The I_BPMINIMUMRESERVE CDS view exposes the minimum reserve for business partners and is used when determining the minimum reserve requirements for business transactions."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

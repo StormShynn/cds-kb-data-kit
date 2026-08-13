@@ -1,6 +1,19 @@
 ---
 name: I_CAACCOUNTASSIGNMENTCATEGORY
 description: "Caaccountassignmentcategory"
+semantic_vi: "View I_CAACCOUNTASSIGNMENTCATEGORY CDS hiển thị các loại phân bổ chi phí cho kế toán chi phí, được sử dụng để phân loại phân bổ chi phí trong kế hoạch tài chính và phân tích."
+keywords:
+  - "account assignment category"
+  - "phân bổ chi phí"
+  - "kế toán chi phí"
+  - "financial planning"
+  - "phân tích tài chính"
+  - "cost accounting"
+  - "fi-ca"
+  - "fi"
+  - "finance"
+  - "sap cds view"
+semantic_en: "The I_CAACCOUNTASSIGNMENTCATEGORY CDS view exposes account assignment categories for cost accounting, which are used to categorize cost assignments in financial planning and analysis."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

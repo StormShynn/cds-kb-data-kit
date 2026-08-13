@@ -1,6 +1,20 @@
 ---
 name: I_ASSETACCTDETERMINATION
 description: "Assetacctdetermination"
+semantic_vi: "View Asset Account Determination cung cấp thông tin tài khoản tài sản cho phân tích và báo cáo tài chính. Nó được sử dụng để xác định tài khoản tài sản chính xác cho tài sản cụ thể."
+keywords:
+  - "asset account determination"
+  - "tài khoản tài sản"
+  - "financial analysis"
+  - "phân tích tài chính"
+  - "asset account"
+  - "fi"
+  - "fi-fio-aa-ana-2cl"
+  - "finance"
+  - "tài chính"
+  - "asset"
+  - "tài sản"
+semantic_en: "The Asset Account Determination view provides asset account information for financial analysis and reporting. It is used to determine the correct asset account for a specific asset."
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released

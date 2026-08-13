@@ -1,6 +1,18 @@
 ---
 name: C_PURCONTRWORKFLOWEMAIL
 description: "Purcontrworkflowemail"
+semantic_vi: "CDS view C_PURCONTRWORKFLOWEMAIL hiển thị dữ liệu email luồng công việc hợp đồng mua hàng, có thể được sử dụng để theo dõi và quản lý các cuộc trò chuyện qua email liên quan đến hợp đồng mua hàng."
+keywords:
+  - "purchase contract"
+  - "hợp đồng mua hàng"
+  - "workflow"
+  - "email"
+  - "cds view"
+  - "c_purcontrworkflowemail"
+  - "sap"
+  - "mm-pur-oa-con-2cl"
+  - "sourcing and procurement"
+semantic_en: "The CDS view C_PURCONTRWORKFLOWEMAIL exposes purchase contract workflow email data, which can be used to track and manage email communications related to purchase contracts."
 app_component: MM-PUR-OA-CON-2CL
 software_component: SAPSCORE
 release_state: released

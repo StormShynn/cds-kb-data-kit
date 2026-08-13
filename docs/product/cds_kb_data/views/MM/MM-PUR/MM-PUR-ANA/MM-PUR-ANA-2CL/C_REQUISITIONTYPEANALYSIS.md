@@ -1,6 +1,20 @@
 ---
 name: C_REQUISITIONTYPEANALYSIS
 description: "Requisitiontypeanalysis"
+semantic_vi: "View C_REQUISITIONTYPEANALYSIS cung cấp dữ liệu phân tích cho các loại yêu cầu mua hàng khác nhau, cho phép các nhà phát triển hiểu và làm việc với các loại yêu cầu mua hàng khác nhau trong thành phần MM-PUR-ANA-2CL."
+keywords:
+  - "purchase requisition"
+  - "yêu cầu mua hàng"
+  - "requisition type"
+  - "loại yêu cầu mua hàng"
+  - "mm-pur-ana-2cl"
+  - "sourcing & procurement"
+  - "sourcing"
+  - "procurement"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+semantic_en: "The C_REQUISITIONTYPEANALYSIS view provides analysis data for different types of purchase requisitions, allowing developers to understand and work with various requisition types in the MM-PUR-ANA-2CL component."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

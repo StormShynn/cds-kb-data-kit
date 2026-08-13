@@ -1,6 +1,17 @@
 ---
 name: I_ADDRESSCOMMUNICATIONMETHOD
 description: "Addresscommunicationmethod"
+semantic_vi: "View I_ADDRESSCOMMUNICATIONMETHOD hiển thị phương thức giao tiếp địa chỉ, được sử dụng để xác định cách gửi hoặc nhận thông tin liên quan đến địa chỉ."
+keywords:
+  - "address"
+  - "communication"
+  - "method"
+  - "bc-srv-adr"
+  - "basis components"
+  - "address communication method"
+  - "phương thức giao tiếp địa chỉ"
+  - "giao tiếp địa chỉ"
+semantic_en: "The I_ADDRESSCOMMUNICATIONMETHOD view exposes address communication methods, which are used to determine how to send or receive information related to an address."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

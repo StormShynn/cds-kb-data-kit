@@ -1,6 +1,19 @@
 ---
 name: C_CHANGERECORDITEMDEX_2
 description: "Change RecordITEMDEX 2"
+semantic_vi: "Chứa dữ liệu chi tiết về các bản ghi thay đổi trong thành phần PLM-CR-2CL, hữu ích cho việc trích xuất và phân tích dữ liệu."
+keywords:
+  - "plm"
+  - "plm-cr"
+  - "change-record"
+  - "item-level"
+  - "data-extraction"
+  - "consumption-view"
+  - "change-recorditemdex"
+  - "plm-cr-2cl"
+  - "thay-doi"
+  - "du-lieu-chi-tiet"
+semantic_en: "Exposes item-level data from change records in the PLM-CR-2CL component, useful for data extraction and analysis."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

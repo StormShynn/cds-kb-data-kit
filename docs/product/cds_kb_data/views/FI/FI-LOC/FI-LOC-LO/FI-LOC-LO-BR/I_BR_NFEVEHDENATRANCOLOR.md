@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFEVEHDENATRANCOLOR
 description: "BR Nfevehdenatrancolor"
+semantic_vi: "View I_BR_NFEVEHDENATRANCOLOR hiển thị thông tin màu sắc xe ô tô theo DENATRAN Brazil, có thể được sử dụng khi làm việc với dữ liệu đăng ký xe trong ứng dụng component FI-LOC-LO-BR."
+keywords:
+  - "vehicle registration"
+  - "denatran"
+  - "color"
+  - "fi-loc-lo-br"
+  - "brazil"
+  - "finance"
+  - "interface view"
+  - "component fi-loc-lo-br"
+  - "lob finance"
+  - "denatran color"
+semantic_en: "The I_BR_NFEVEHDENATRANCOLOR view exposes Brazilian vehicle DENATRAN color information, which can be used when working with vehicle registration data in the FI-LOC-LO-BR application component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

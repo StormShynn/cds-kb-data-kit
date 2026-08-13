@@ -1,6 +1,17 @@
 ---
 name: C_PURORDOUTPUTAUTOMNCUBE
 description: "Purordoutputautomncube"
+semantic_vi: "View C_PURORDOUTPUTAUTOMNCUBE hiển thị dữ liệu đầu ra của đơn đặt hàng mua hàng, cung cấp thông tin về hiệu suất nhà cung cấp và phân tích mua sắm."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "supplier performance"
+  - "procurement analytics"
+  - "mm-pur-ana"
+  - "sourcing & procurement"
+  - "sap mm"
+semantic_en: "The C_PURORDOUTPUTAUTOMNCUBE view exposes purchase order output data, providing insights into supplier performance and procurement analytics."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

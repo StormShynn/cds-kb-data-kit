@@ -1,6 +1,19 @@
 ---
 name: C_REARCHITECTUREOBJECTDEX
 description: "Rearchitectureobjectdex"
+semantic_vi: "View C_REARCHITECTUREOBJECTDEX hiển thị danh sách các đối tượng tái kiến trúc, được sử dụng để theo dõi và quản lý các thay đổi đối với các quy trình kinh doanh và hệ thống hiện có. Nó có thể được sử dụng để phân tích và báo cáo trạng thái và lịch sử của các thay đổi này."
+keywords:
+  - "rearchitecture"
+  - "object"
+  - "rearchitecture object"
+  - "rearchitecture objects"
+  - "sap cds"
+  - "view"
+  - "c_rearchitectureobjectdex"
+  - "re-fx-bd-2cl"
+  - "rearchitecture object uuid"
+  - "rearchitecture object type"
+semantic_en: "The C_REARCHITECTUREOBJECTDEX view exposes a list of rearchitecture objects, which are used to track and manage changes to existing business processes and systems. It can be used to analyze and report on the status and history of these changes."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

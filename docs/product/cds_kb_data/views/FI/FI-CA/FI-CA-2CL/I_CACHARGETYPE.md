@@ -1,6 +1,15 @@
 ---
 name: I_CACHARGETYPE
 description: "Cachargetype"
+semantic_vi: "View I_CACHARGETYPE CDS hiển thị các loại phí trong SAP FI-CA, chẳng hạn như phí vận chuyển và bảo hiểm, có thể được sử dụng để phân tích và quản lý các giao dịch tài chính."
+keywords:
+  - "charge type"
+  - "cachargetype"
+  - "fi-ca"
+  - "financial transaction"
+  - "loại phí"
+  - "giao dịch tài chính"
+semantic_en: "The I_CACHARGETYPE CDS view exposes charge types used in SAP FI-CA, such as freight and insurance charges, which can be used to analyze and manage financial transactions."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

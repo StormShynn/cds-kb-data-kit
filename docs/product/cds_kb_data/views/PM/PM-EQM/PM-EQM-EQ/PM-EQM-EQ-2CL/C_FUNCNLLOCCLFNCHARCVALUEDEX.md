@@ -1,6 +1,17 @@
 ---
 name: C_FUNCNLLOCCLFNCHARCVALUEDEX
 description: "Funcnllocclfncharcvaluedex"
+semantic_vi: "View C_FUNCNLLOCCLFNCHARCVALUEDEX cung cấp giá trị đặc trưng chi tiết cho vị trí chức năng trong Plant Maintenance, cho phép các nhà phát triển truy cập và phân tích các giá trị này cho các ngày và thay đổi cụ thể."
+keywords:
+  - "plant maintenance"
+  - "vị trí chức năng"
+  - "giá trị đặc trưng"
+  - "ngày và thay đổi"
+  - "cds view"
+  - "view dữ liệu"
+  - "sap pm"
+  - "pm-eqm-eq-2cl"
+semantic_en: "The C_FUNCNLLOCCLFNCHARCVALUEDEX view provides detailed characteristic values for functional locations in Plant Maintenance, allowing developers to access and analyze these values for specific dates and changes."
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

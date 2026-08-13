@@ -1,6 +1,20 @@
 ---
 name: C_PURREQNITEMDOCUMENTCHANGES
 description: "Purreqnitemdocumentchanges"
+semantic_vi: "View này hiển thị các thay đổi của đơn đặt hàng yêu cầu mua hàng, có thể được sử dụng để theo dõi và phân tích các thay đổi của đơn đặt hàng yêu cầu mua hàng theo thời gian."
+keywords:
+  - "purchase requisition"
+  - "đơn đặt hàng yêu cầu mua hàng"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "mm-pur-ana"
+  - "sourcing & procurement"
+  - "document changes"
+  - "thay đổi tài liệu"
+  - "item changes"
+  - "thay đổi hàng"
+semantic_en: "This view exposes purchase requisition item document changes, which can be used to track and analyze changes to purchase requisition items over time."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

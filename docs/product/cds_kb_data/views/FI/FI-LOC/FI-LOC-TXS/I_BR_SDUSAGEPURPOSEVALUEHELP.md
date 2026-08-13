@@ -1,6 +1,21 @@
 ---
 name: I_BR_SDUSAGEPURPOSEVALUEHELP
 description: "BR Sdusagepurposevaluehelp"
+semantic_vi: "Cung cấp danh sách mục đích sử dụng kinh doanh cho mã nội bộ tính toán giao dịch, hữu ích khi chọn mục đích đúng khi tạo hoặc chỉnh sửa mã tính toán giao dịch."
+keywords:
+  - "transactional calculation"
+  - "business usage purpose"
+  - "internal code"
+  - "ekko"
+  - "fi-loc-txs"
+  - "finance"
+  - "value help"
+  - "purpose"
+  - "calculation code"
+  - "đơn vị kinh doanh"
+  - "mục đích sử dụng"
+  - "mã nội bộ"
+semantic_en: "Provides a list of business usage purposes for transactional calculation internal codes, useful for selecting the correct purpose when creating or editing transactional calculation codes."
 app_component: FI-LOC-TXS
 software_component: SAPSCORE
 release_state: released

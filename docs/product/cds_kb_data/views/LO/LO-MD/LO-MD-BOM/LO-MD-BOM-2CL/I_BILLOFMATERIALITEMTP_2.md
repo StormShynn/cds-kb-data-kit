@@ -1,6 +1,19 @@
 ---
 name: I_BILLOFMATERIALITEMTP_2
 description: "Bill of MaterialITEMTP 2"
+semantic_vi: "View Bill of Material ITEMTP 2 hiển thị dữ liệu chi tiết vật liệu cho danh sách vật liệu, bao gồm vật liệu, nhà máy và chi tiết vật liệu. Nó được sử dụng trong xử lý giao dịch cho logistics và quản lý vật liệu."
+keywords:
+  - "bill of material"
+  - "danh sách vật liệu"
+  - "logistics"
+  - "quản lý vật liệu"
+  - "transactional processing"
+  - "item-level data"
+  - "sap"
+  - "ekko"
+  - "lo-md-bom"
+  - "bom"
+semantic_en: "The Bill of Material ITEMTP 2 view exposes item-level data for bill of materials, including material, plant, and item details. It is used in transactional processing for logistics and material management."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

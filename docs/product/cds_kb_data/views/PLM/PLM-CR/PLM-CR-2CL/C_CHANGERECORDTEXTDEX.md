@@ -1,6 +1,21 @@
 ---
 name: C_CHANGERECORDTEXTDEX
 description: "Change RecordTEXTDEX"
+semantic_vi: "View CDS Change RecordTEXTDEX hiển thị dữ liệu văn bản thay đổi cho thành phần PLM-CR-2CL, cho phép các nhà phát triển truy cập và sử dụng thông tin này trong các ứng dụng của họ. Nó được sử dụng để lấy dữ liệu văn bản liên quan đến các bản ghi thay đổi."
+keywords:
+  - "change record"
+  - "text data"
+  - "plm-cr-2cl"
+  - "component"
+  - "change record text"
+  - "plm"
+  - "data extraction"
+  - "consumption view"
+  - "change record reference text uuid"
+  - "change record reference uuid"
+  - "change record uuid"
+  - "chg record description text"
+semantic_en: "The Change RecordTEXTDEX view exposes change record text data for PLM-CR-2CL component, allowing developers to access and utilize this information in their applications. It is used to retrieve text data associated with change records."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

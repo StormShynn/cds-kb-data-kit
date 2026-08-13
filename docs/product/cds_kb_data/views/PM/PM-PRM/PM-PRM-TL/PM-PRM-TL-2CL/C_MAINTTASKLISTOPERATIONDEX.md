@@ -1,6 +1,20 @@
 ---
 name: C_MAINTTASKLISTOPERATIONDEX
 description: "Maintenance Task ListOPERATIONDEX"
+semantic_vi: "View C_MAINTTASKLISTOPERATIONDEX hiển thị danh sách các hoạt động bảo trì nhiệm vụ, có thể được sử dụng để phân tích và quản lý các nhiệm vụ bảo trì trong ngữ cảnh bảo trì nhà máy."
+keywords:
+  - "maintenance task"
+  - "bảo trì nhiệm vụ"
+  - "plant maintenance"
+  - "bảo trì nhà máy"
+  - "operation"
+  - "hoạt động"
+  - "task list"
+  - "danh sách nhiệm vụ"
+  - "pm-prm-tl"
+  - "công cụ bảo trì"
+  - "sap pm"
+semantic_en: "The C_MAINTTASKLISTOPERATIONDEX view exposes a list of maintenance task operations, which can be used to analyze and manage maintenance tasks in a plant maintenance context."
 app_component: PM-PRM-TL-2CL
 software_component: SAPSCORE
 release_state: released

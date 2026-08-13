@@ -1,6 +1,19 @@
 ---
 name: C_GREGORIANCALSGLDATEFUNCVH
 description: "Gregoriancalsgldatefuncvh"
+semantic_vi: "View Gregoriancalsgldatefuncvh cung cấp danh sách các hàm ngày theo lịch Gregory với ngày bắt đầu và ngày kết thúc, có thể được sử dụng để lọc hoặc xác minh ngày trong các ứng dụng kinh doanh."
+keywords:
+  - "date function"
+  - "hàm ngày"
+  - "gregorian calendar"
+  - "lịch gregory"
+  - "date validation"
+  - "xác minh ngày"
+  - "sap cds view"
+  - "view cds sap"
+  - "ca-gtf-df"
+  - "cross-application components"
+semantic_en: "The Gregoriancalsgldatefuncvh view provides a list of date functions with their start and end dates, which can be used to filter or validate dates in business applications."
 app_component: CA-GTF-DF
 software_component: SAP_BASIS
 release_state: released

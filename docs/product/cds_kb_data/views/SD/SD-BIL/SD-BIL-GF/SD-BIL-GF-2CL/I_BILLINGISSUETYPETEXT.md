@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGISSUETYPETEXT
 description: "Billingissuetypetext"
+semantic_vi: "View I_BILLINGISSUETYPETEXT cung cấp mô tả văn bản cho các loại vấn đề hóa đơn trong các ngôn ngữ khác nhau, hữu ích cho việc hiển thị tên loại vấn đề hóa đơn trong các ứng dụng đa ngôn ngữ."
+keywords:
+  - "billing"
+  - "issue"
+  - "type"
+  - "text"
+  - "description"
+  - "language"
+  - "multilingual"
+  - "sap"
+  - "sd-bil"
+  - "sales & distribution"
+semantic_en: "The I_BILLINGISSUETYPETEXT view provides text descriptions for billing issue types in different languages, useful for displaying billing issue type names in multilingual applications."
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

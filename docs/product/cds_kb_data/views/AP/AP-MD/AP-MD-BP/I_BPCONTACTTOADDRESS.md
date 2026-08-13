@@ -1,6 +1,18 @@
 ---
 name: I_BPCONTACTTOADDRESS
 description: "Bpcontacttoaddress"
+semantic_vi: "Chứa thông tin liên hệ đối tác kinh doanh được liên kết với các địa chỉ cụ thể, hữu ích cho việc quản lý mối quan hệ địa chỉ trong thành phần AP-MD-BP."
+keywords:
+  - "business partner"
+  - "address"
+  - "contact"
+  - "relationship"
+  - "ap-md-bp"
+  - "interface view"
+  - "address representation code"
+  - "contact relationship function"
+  - "sap"
+semantic_en: "Exposes business partner contact information linked to specific addresses, useful for managing address relationships in the AP-MD-BP component."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

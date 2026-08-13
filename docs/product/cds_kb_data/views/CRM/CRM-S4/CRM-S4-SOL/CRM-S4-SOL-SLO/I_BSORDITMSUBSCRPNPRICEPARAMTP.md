@@ -1,6 +1,19 @@
 ---
 name: I_BSORDITMSUBSCRPNPRICEPARAMTP
 description: "Bsorditmsubscrpnpriceparamtp"
+semantic_vi: "View Bsorditmsubscrpnpriceparamtp hiển thị các tham số giá trị đăng ký cho đơn hàng giải pháp kinh doanh, có thể được sử dụng để truy xuất và quản lý các tham số này trong các giao dịch CRM."
+keywords:
+  - "subscription pricing"
+  - "business solution order"
+  - "đăng ký giá trị"
+  - "đơn hàng giải pháp kinh doanh"
+  - "tham số giá trị đăng ký"
+  - "tham số giá trị"
+  - "crm"
+  - "transactional processing"
+  - "component:crm-s4-sol-slo"
+  - "lob:other"
+semantic_en: "The Bsorditmsubscrpnpriceparamtp view exposes subscription pricing parameters for business solution orders, which can be used to retrieve and manage these parameters in CRM transactions."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSTRANSACTIONCATEGORY
 description: "Businesstransactioncategory"
+semantic_vi: "View I_BUSINESSTRANSACTIONCATEGORY hiển thị các loại giao dịch kinh doanh và các kiểm soát liên quan, hữu ích cho các giao dịch tài chính và quản lý kỳ kế toán."
+keywords:
+  - "business transaction category"
+  - "loại giao dịch kinh doanh"
+  - "financial transaction"
+  - "giao dịch tài chính"
+  - "period control"
+  - "kiểm soát kỳ"
+  - "fi-gl"
+  - "fi"
+  - "gl"
+  - "sap cds view"
+semantic_en: "The I_BUSINESSTRANSACTIONCATEGORY CDS view exposes business transaction categories and related controls, useful for financial transactions and period management."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

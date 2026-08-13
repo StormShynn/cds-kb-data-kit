@@ -1,6 +1,18 @@
 ---
 name: I_BUSSOLNORDITEMPRICEELEMENT
 description: "Bussolnorditempriceelement"
+semantic_vi: "View Bussolnorditempriceelement hiển thị dữ liệu giá trị cho từng mặt hàng trong giải pháp kinh doanh, được sử dụng trong báo cáo và phân tích CRM."
+keywords:
+  - "business solution"
+  - "item-level pricing"
+  - "crm reporting"
+  - "bussolnorditempriceelement"
+  - "giải pháp kinh doanh"
+  - "dữ liệu giá trị"
+  - "đơn vị kinh doanh"
+  - "giá trị mặt hàng"
+  - "báo cáo crm"
+semantic_en: "The Bussolnorditempriceelement view exposes item-level pricing data for business solutions, specifically for use in CRM reporting and analysis."
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

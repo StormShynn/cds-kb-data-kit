@@ -1,6 +1,18 @@
 ---
 name: I_CADUNCHRGANDINTRSTPOSTGCODET
 description: "Cadunchrgandintrstpostgcodet"
+semantic_vi: "View Cadunchrgandintrstpostgcodet hiển thị mã đăng ký và mã đăng ký tiền lãi và phí cho CAD không tính lãi, được sử dụng trong kế toán tài chính để xác định cách đăng ký tiền lãi và phí."
+keywords:
+  - "cad uncharged interest"
+  - "interest posting code"
+  - "charge posting code"
+  - "financial accounting"
+  - "fi-ca"
+  - "fi"
+  - "interface view"
+  - "component fi-ca-2cl"
+  - "lob finance"
+semantic_en: "The Cadunchrgandintrstpostgcodet view exposes interest and charge posting codes for CAD uncharged interest, used in financial accounting to determine how to post interest and charges."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

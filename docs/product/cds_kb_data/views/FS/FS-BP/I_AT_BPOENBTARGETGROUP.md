@@ -1,6 +1,18 @@
 ---
 name: I_AT_BPOENBTARGETGROUP
 description: "AT Bpoenbtargetgroup"
+semantic_vi: "View I_AT_BPOENBTARGETGROUP hiển thị dữ liệu kinh doanh liên quan đến nhóm mục tiêu cho BPO (Business Process Outsourcing) trong thành phần FS-BP của SAP. Nó có thể được sử dụng để lấy thông tin nhóm mục tiêu cho các quy trình BPO."
+keywords:
+  - "bpo"
+  - "target group"
+  - "nhiệm vụ kinh doanh"
+  - "bán hàng"
+  - "mua hàng"
+  - "thành phần fs-bp"
+  - "sap"
+  - "interface view"
+  - "cds view"
+semantic_en: "The I_AT_BPOENBTARGETGROUP view exposes business data related to target groups for BPO (Business Process Outsourcing) in SAP FS-BP component. It can be used to retrieve target group information for BPO processes."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

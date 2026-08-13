@@ -1,6 +1,19 @@
 ---
 name: I_ADDLCOMPANYCODEINFORMATION
 description: "ADDLCompany CodeINFORMATION"
+semantic_vi: "Cung cấp thông tin bổ sung về mã công ty để sử dụng trong các giao dịch và báo cáo tài chính."
+keywords:
+  - "company code"
+  - "mã công ty"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "reporting"
+  - "báo cáo"
+  - "sap fi-gl"
+  - "fi-gl"
+  - "company code information"
+  - "thông tin mã công ty"
+semantic_en: "Provides additional company code information for use in financial transactions and reporting."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

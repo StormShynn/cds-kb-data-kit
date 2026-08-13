@@ -1,6 +1,19 @@
 ---
 name: I_BILLOFOPERATIONSGROUP
 description: "Billofoperationsgroup"
+semantic_vi: "View Billofoperationsgroup CDS hiển thị dữ liệu nhóm hoạt động sản xuất, được sử dụng để tổ chức và quản lý hoạt động sản xuất trong môi trường sản xuất."
+keywords:
+  - "manufacturing"
+  - "operations group"
+  - "billofoperationsgroup"
+  - "pp-vdm"
+  - "pp-vdm-md-2cl"
+  - "sap"
+  - "cds view"
+  - "production operations"
+  - "nhóm hoạt động sản xuất"
+  - "dữ liệu sản xuất"
+semantic_en: "The Billofoperationsgroup CDS view exposes manufacturing operations group data, which is used to organize and manage production operations in a manufacturing environment."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

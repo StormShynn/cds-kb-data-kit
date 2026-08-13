@@ -1,6 +1,19 @@
 ---
 name: I_BPTRADINGPARTNER
 description: "Bptradingpartner"
+semantic_vi: "View I_BPTRADINGPARTNER cung cấp truy cập dữ liệu đối tác thương mại, đây là dữ liệu quan trọng để thiết lập và quản lý mối quan hệ kinh doanh với đối tác bên ngoài. Nó được sử dụng trong ứng dụng thành phần FS-BP."
+keywords:
+  - "trading partner"
+  - "đối tác thương mại"
+  - "fs-bp"
+  - "sap"
+  - "cds view"
+  - "partner data"
+  - "business relationship"
+  - "đối tác kinh doanh"
+  - "cds"
+  - "view"
+semantic_en: "The I_BPTRADINGPARTNER view provides access to trading partner data, which is essential for establishing and managing business relationships with external partners. It is used in the FS-BP application component."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

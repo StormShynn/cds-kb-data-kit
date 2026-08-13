@@ -1,6 +1,20 @@
 ---
 name: I_CABILLGPLNITEMTP_2
 description: "Cabillgplnitemtp 2"
+semantic_vi: "View Cabillgplnitemtp 2 hiển thị dữ liệu vật tư kế hoạch cho hóa đơn hàng hóa, bao gồm các loại vật tư, loại vật tư và số lượng, có thể được sử dụng trong các giao dịch FI-CA-INV-2CL."
+keywords:
+  - "cabillgplnitemtp"
+  - "planned item"
+  - "bill of goods"
+  - "fi-ca-inv-2cl"
+  - "transactional processing"
+  - "item level"
+  - "finance"
+  - "inventory"
+  - "đơn hàng hóa"
+  - "vật tư kế hoạch"
+  - "hóa đơn hàng hóa"
+semantic_en: "The Cabillgplnitemtp 2 view exposes planned item data for bills of goods, including item categories, types, and quantities, which can be used in FI-CA-INV-2CL transactions."
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

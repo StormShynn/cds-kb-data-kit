@@ -1,6 +1,21 @@
 ---
 name: C_PRMTHBRPLDPURREQNITMAPRVEML
 description: "Prmthbrpldpurreqnitmaprveml"
+semantic_vi: "View Prmthbrpldpurreqnitmaprveml hiển thị dữ liệu ánh xạ yêu cầu mua hàng của trung tâm mua hàng, được sử dụng để quản lý luồng công việc của yêu cầu mua hàng trong thành phần MM-PUR-HUB-PR-2CL."
+keywords:
+  - "purchase requisition"
+  - "yêu cầu mua hàng"
+  - "procurement hub"
+  - "trung tâm mua hàng"
+  - "ekko"
+  - "mm-pur-hub-pr-2cl"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "consumption-view"
+  - "mm"
+  - "mm-pur"
+  - "mm-pur-hub"
+semantic_en: "The Prmthbrpldpurreqnitmaprveml view exposes procurement hub purchase requisition item mapping data, which is used to manage the workflow of purchase requisitions in the MM-PUR-HUB-PR-2CL component."
 app_component: MM-PUR-HUB-PR-2CL
 software_component: SAPSCORE
 release_state: released

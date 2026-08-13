@@ -1,6 +1,19 @@
 ---
 name: C_PURCHASECONTRACTHISTORYDEX
 description: "Purchase ContractHISTORYDEX"
+semantic_vi: "View Purchase Contract History DEX cung cấp dữ liệu lịch sử về hợp đồng mua hàng, bao gồm đơn đặt hàng và các mục, có thể được sử dụng để phân tích và báo cáo về các hoạt động mua hàng trong quá khứ."
+keywords:
+  - "purchase contract"
+  - "hợp đồng mua hàng"
+  - "release order"
+  - "đơn đặt hàng"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "mm-pur-ana"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+semantic_en: "The Purchase Contract History DEX view provides historical data on purchase contracts, including release orders and items, which can be used to analyze and report on past purchasing activities."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

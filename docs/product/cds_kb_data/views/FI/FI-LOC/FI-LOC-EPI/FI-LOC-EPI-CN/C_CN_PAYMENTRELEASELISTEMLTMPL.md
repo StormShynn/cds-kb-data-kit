@@ -1,6 +1,19 @@
 ---
 name: C_CN_PAYMENTRELEASELISTEMLTMPL
 description: "CN Paymentreleaselistemltmpl"
+semantic_vi: "View C_CN_PAYMENTRELEASELISTEMLTMPL hiển thị các mục danh sách phát hành thanh toán cho các giao dịch cho thuê, cung cấp chi tiết như trạng thái luồng làm việc và số tiền tài chính. Nó được sử dụng để theo dõi và quản lý phát hành thanh toán trong luồng làm việc thanh toán cho thuê."
+keywords:
+  - "lease payment"
+  - "danh sách phát hành thanh toán"
+  - "workflow"
+  - "payment release"
+  - "giao dịch cho thuê"
+  - "thanh toán"
+  - "luồng làm việc"
+  - "fi-loc-epi-cn"
+  - "finance"
+  - "payment"
+semantic_en: "The C_CN_PAYMENTRELEASELISTEMLTMPL view exposes payment release list items for lease transactions, providing details such as workflow status and financial amounts. It is used to track and manage payment releases in a lease payment workflow."
 app_component: FI-LOC-EPI-CN
 software_component: SAPSCORE
 release_state: released

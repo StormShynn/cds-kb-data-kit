@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCREQITEMSTDVH
 description: "Billing DocumentREQITEMSTDVH"
+semantic_vi: "Cung cấp hỗ trợ giá trị tiêu chuẩn cho các yêu cầu hóa đơn yêu cầu, bao gồm thông tin hóa đơn yêu cầu, mục và loại."
+keywords:
+  - "billing document request"
+  - "đơn yêu cầu hóa đơn"
+  - "sales and distribution"
+  - "sales organization"
+  - "billing document request item"
+  - "item-level billing"
+  - "standard value help"
+  - "hỗ trợ giá trị tiêu chuẩn"
+  - "sales and distribution component"
+  - "component sd-bil-bdr-2cl"
+semantic_en: "Provides standard value help for billing document request items, including billing document request, item, and type information. Used to support item-level billing document requests in the Sales and Distribution component."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

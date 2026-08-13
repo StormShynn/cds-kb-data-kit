@@ -1,6 +1,18 @@
 ---
 name: I_BPGENDERVALUEHELP
 description: "Bpgendervaluehelp"
+semantic_vi: "Cung cấp danh sách giá trị giới tính cho dữ liệu đối tác kinh doanh, được sử dụng để hỗ trợ đầu vào người dùng trong ứng dụng."
+keywords:
+  - "gender"
+  - "business partner"
+  - "value help"
+  - "ap-md-bp"
+  - "interface view"
+  - "sap cds"
+  - "đối tác kinh doanh"
+  - "giá trị giúp đỡ"
+  - "giới tính"
+semantic_en: "Provides a list of gender values for business partner data, used to support user input in applications."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

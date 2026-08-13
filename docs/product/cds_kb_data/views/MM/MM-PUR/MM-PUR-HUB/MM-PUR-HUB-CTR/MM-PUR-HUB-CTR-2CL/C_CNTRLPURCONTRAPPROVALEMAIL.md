@@ -1,6 +1,21 @@
 ---
 name: C_CNTRLPURCONTRAPPROVALEMAIL
 description: "Cntrlpurcontrapprovalemail"
+semantic_vi: "Chứa dữ liệu email xác nhận hợp đồng mua hàng trong các nhiệm vụ luồng làm việc của thành phần MM-PUR-HUB-CTR-2CL. Sử dụng để truy cập thông tin email liên quan đến việc xác nhận hợp đồng mua hàng."
+keywords:
+  - "purchase contract"
+  - "hợp đồng mua hàng"
+  - "approval email"
+  - "workflow task"
+  - "luồng làm việc"
+  - "mm-pur-hub-ctr-2cl"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "email"
+  - "approval"
+  - "purchase order"
+  - "đơn mua hàng"
+semantic_en: "Exposes purchase contract approval email data for workflow tasks in the MM-PUR-HUB-CTR-2CL component. Used to access email information related to purchase contract approvals."
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

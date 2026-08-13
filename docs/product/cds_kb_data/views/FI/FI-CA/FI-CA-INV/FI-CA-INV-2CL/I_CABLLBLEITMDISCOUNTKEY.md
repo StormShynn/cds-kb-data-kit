@@ -1,6 +1,18 @@
 ---
 name: I_CABLLBLEITMDISCOUNTKEY
 description: "Cabllbleitmdiscountkey"
+semantic_vi: "View Cabllbleitmdiscountkey hiển thị các khóa giảm giá cho mục và dữ liệu sử dụng cho quản lý kho, hữu ích khi xử lý giảm giá cho mục trong thành phần FI-CA-INV-2CL."
+keywords:
+  - "inventory management"
+  - "giảm giá"
+  - "điều khoản giảm giá"
+  - "fi-ca-inv-2cl"
+  - "công cụ quản lý kho"
+  - "đơn vị giảm giá"
+  - "giảm giá cho mục"
+  - "discount key"
+  - "điều khoản giảm giá cho mục"
+semantic_en: "The Cabllbleitmdiscountkey view exposes item discount keys and utilization data for inventory management, useful when processing discounts for items in the FI-CA-INV-2CL component."
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

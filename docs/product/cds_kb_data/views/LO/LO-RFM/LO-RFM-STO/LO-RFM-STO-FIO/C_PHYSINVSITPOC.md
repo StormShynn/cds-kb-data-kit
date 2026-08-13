@@ -1,6 +1,21 @@
 ---
 name: C_PHYSINVSITPOC
 description: "Physinvsitpoc"
+semantic_vi: "View Physinvsitpoc hiển thị các bài đăng vật chất tồn kho và cung cấp thông tin về các chuyển động tồn kho. Nó được sử dụng để theo dõi và phân tích các giao dịch tồn kho trong thành phần Logistics General."
+keywords:
+  - "physical inventory"
+  - "stock posting"
+  - "stock movement"
+  - "logistics general"
+  - "lo"
+  - "lo-rfm"
+  - "lo-rfm-sto"
+  - "consumption view"
+  - "stock transaction"
+  - "tồn kho vật chất"
+  - "đăng tồn kho"
+  - "chuyển động tồn kho"
+semantic_en: "The Physinvsitpoc view exposes physical inventory stock postings and provides information on stock movements. It is used to track and analyze stock transactions in the Logistics General component."
 app_component: LO-RFM-STO-FIO
 software_component: SAPPCORE_H
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: C_PURCHASECONTRACTDEX
 description: "Purchase ContractDEX"
+semantic_vi: "View Purchase ContractDEX cung cấp truy cập thông tin chi tiết về hợp đồng mua hàng, bao gồm thông tin hợp đồng, thông tin nhà cung cấp và ngày tháng. Nó được sử dụng để phân tích và báo cáo về hợp đồng mua hàng trong thành phần MM-PUR-ANA-2CL."
+keywords:
+  - "purchase contract"
+  - "hợp đồng mua hàng"
+  - "mm-pur-ana-2cl"
+  - "sourcing and procurement"
+  - "lob:sourcing & procurement"
+  - "purchase contract type"
+  - "purchasing group"
+  - "purchasing organization"
+  - "supplier"
+  - "invoicing party"
+  - "supplying supplier"
+  - "creation date"
+semantic_en: "The Purchase ContractDEX view provides access to detailed information about purchase contracts, including contract details, supplier information, and dates. It is used to analyze and report on purchase contracts in the MM-PUR-ANA-2CL component."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_ADDRESSGROUPTEXT
 description: "Addressgrouptext"
+semantic_vi: "View I_ADDRESSGROUPTEXT hiển thị dữ liệu văn bản nhóm địa chỉ, được sử dụng để hiển thị thông tin mô tả về nhóm địa chỉ trong hệ thống. Nó thường được sử dụng khi hiển thị chi tiết nhóm địa chỉ."
+keywords:
+  - "address group"
+  - "địa chỉ nhóm"
+  - "address group text"
+  - "văn bản nhóm địa chỉ"
+  - "sap cds view"
+  - "view i_addressgrouptext"
+  - "address"
+  - "text"
+  - "group"
+  - "sap basis components"
+  - "bc-srv-adr"
+semantic_en: "The I_ADDRESSGROUPTEXT view exposes address group text data, which is used to display descriptive information about address groups in the system. It is typically used when displaying address group details."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

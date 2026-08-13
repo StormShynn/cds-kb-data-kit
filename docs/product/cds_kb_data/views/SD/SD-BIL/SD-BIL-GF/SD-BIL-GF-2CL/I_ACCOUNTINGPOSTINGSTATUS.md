@@ -1,6 +1,18 @@
 ---
 name: I_ACCOUNTINGPOSTINGSTATUS
 description: "Accountingpostingstatus"
+semantic_vi: "View I_ACCOUNTINGPOSTINGSTATUS CDS hiển thị trạng thái đăng ký kế toán, có thể được sử dụng để xác định trạng thái hiện tại của một giao dịch tài chính."
+keywords:
+  - "accounting posting"
+  - "trạng thái đăng ký kế toán"
+  - "financial transaction"
+  - "giao dịch tài chính"
+  - "posting status"
+  - "trạng thái đăng ký"
+  - "sap cds view"
+  - "view i_accountingpostingstatus"
+  - "sd-bil-gf-2cl"
+semantic_en: "The I_ACCOUNTINGPOSTINGSTATUS CDS view exposes the status of accounting postings, which can be used to determine the current state of a financial transaction."
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

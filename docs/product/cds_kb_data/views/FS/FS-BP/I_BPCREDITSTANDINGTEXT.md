@@ -1,6 +1,19 @@
 ---
 name: I_BPCREDITSTANDINGTEXT
 description: "Bpcreditstandingtext"
+semantic_vi: "Chứa dữ liệu văn bản về tình trạng tín dụng của một phần kinh doanh và ngôn ngữ, được sử dụng để lấy và hiển thị mô tả tình trạng tín dụng."
+keywords:
+  - "credit standing"
+  - "tình trạng tín dụng"
+  - "business part"
+  - "phần kinh doanh"
+  - "language"
+  - "ngôn ngữ"
+  - "description"
+  - "mô tả"
+  - "fs-bp"
+  - "ekko"
+semantic_en: "Exposes business credit standing text data for a specific business part and language, used to retrieve and display credit standing descriptions."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -227,7 +227,7 @@ function buildPrompt(view) {
   ].join('\n');
 }
 
-async function callLLM(view) {
+async function callLLMOnce(view) {
   const body = {
     model,
     messages: [
@@ -266,6 +266,27 @@ async function callLLM(view) {
     : [];
   if (!semanticEn || !semanticVi) throw new Error('LLM response missing semantic_en/semantic_vi');
   return { semanticEn, semanticVi, keywords };
+}
+
+// Retry wrapper: GROQ free tier throttles at ~6k TPM (bursts of ~10-15 calls
+// then 429s for the rest of the minute window). Exponential backoff on 429/5xx
+// lets a long run grind through without wasting a whole chunk to rate limits.
+async function callLLM(view) {
+  const attempts = 5;
+  let delayMs = 5000;
+  for (let a = 0; a < attempts; a++) {
+    try {
+      return await callLLMOnce(view);
+    } catch (err) {
+      const msg = String(err.message || '');
+      const retriable = /(429|rate limit|5\d\d|abort|fetch failed|empty completion)/i.test(msg);
+      if (!retriable || a === attempts - 1) throw err;
+      console.error(`⏳ retry ${a + 1}/${attempts} ${view.name} in ${delayMs / 1000}s — ${msg.slice(0, 100)}`);
+      await new Promise((r) => setTimeout(r, delayMs));
+      delayMs = Math.min(delayMs * 2, 60000);
+    }
+  }
+  throw new Error('unreachable');
 }
 
 // ── Main ────────────────────────────────────────────────────────────────────

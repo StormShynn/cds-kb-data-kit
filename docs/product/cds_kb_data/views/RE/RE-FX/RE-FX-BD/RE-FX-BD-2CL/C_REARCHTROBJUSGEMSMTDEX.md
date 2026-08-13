@@ -1,6 +1,17 @@
 ---
 name: C_REARCHTROBJUSGEMSMTDEX
 description: "Rearchtrobjusgemsmtdex"
+semantic_vi: "Chỉ ra dữ liệu đo lường cho các đối tượng kiến trúc, bao gồm thông tin sử dụng và cho thuê, trong các khoảng thời gian khác nhau. CDS này hữu ích cho việc phân tích và báo cáo về đo lường đối tượng kiến trúc."
+keywords:
+  - "architecture object"
+  - "kiến trúc"
+  - "dữ liệu đo lường"
+  - "sử dụng"
+  - "cho thuê"
+  - "thời gian"
+  - "kiểm kê"
+  - "công cụ đo lường"
+semantic_en: "Exposes measurement data for architecture objects, including usage and rental information, across different time periods. This view is useful for analyzing and reporting on architecture object measurements."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

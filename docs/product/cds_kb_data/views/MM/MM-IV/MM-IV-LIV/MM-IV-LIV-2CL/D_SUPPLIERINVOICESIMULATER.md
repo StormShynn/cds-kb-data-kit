@@ -1,6 +1,20 @@
 ---
 name: D_SUPPLIERINVOICESIMULATER
 description: "D Supplier InvoiceSIMULATER"
+semantic_vi: "View D_SUPPLIERINVOICESIMULATER hiển thị hóa đơn nhà cung cấp giả lập để kiểm tra và xác minh, thường được sử dụng trong giai đoạn phát triển và thử nghiệm của hệ thống SAP."
+keywords:
+  - "supplier invoice"
+  - "hóa đơn nhà cung cấp"
+  - "simulated invoice"
+  - "invoice simulation"
+  - "sap mm"
+  - "mm iv liv"
+  - "sourcing and procurement"
+  - "supplier management"
+  - "ekko"
+  - "đơn mua hàng"
+  - "hóa đơn giả lập"
+semantic_en: "The D_SUPPLIERINVOICESIMULATER view exposes simulated supplier invoices for testing and validation purposes, typically used during the development and testing phases of a SAP system."
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

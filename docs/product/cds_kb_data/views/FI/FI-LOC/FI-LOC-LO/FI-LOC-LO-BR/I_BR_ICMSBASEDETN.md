@@ -1,6 +1,20 @@
 ---
 name: I_BR_ICMSBASEDETN
 description: "BR Icmsbasedetn"
+semantic_vi: "View I_BR_ICMSBASEDETN hiển thị chi tiết thuế ICMS cơ bản Brazil, được sử dụng trong thành phần FI-LOC-LO-BR cho các giao dịch tài chính."
+keywords:
+  - "icms"
+  - "tax"
+  - "finance"
+  - "fi-loc-lo-br"
+  - "brazil"
+  - "base tax"
+  - "financial transactions"
+  - "điều kiện thuế"
+  - "thuế cơ bản"
+  - "giải ngân"
+  - "tài chính"
+semantic_en: "The I_BR_ICMSBASEDETN view exposes Brazilian ICMS base tax details, which are used in the FI-LOC-LO-BR component for financial transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: I_BUSINESSPARTNERROLESTDVH
 description: "Business PartnerROLESTDVH"
+semantic_vi: "View Business Partner ROLESTDVH cung cấp danh sách các vai trò và danh mục đối tác kinh doanh tiêu chuẩn, có thể được sử dụng để lọc hoặc chọn các vai trò cụ thể trong các giao dịch liên quan đến đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "vai trò đối tác kinh doanh"
+  - "danh mục đối tác kinh doanh"
+  - "role"
+  - "category"
+  - "transaction"
+  - "sap"
+  - "ap-md-bp"
+  - "ekko"
+semantic_en: "The Business Partner ROLESTDVH view provides a list of standard business partner roles and categories, which can be used to filter or select specific roles in business partner-related transactions."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

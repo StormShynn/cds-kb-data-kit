@@ -1,6 +1,18 @@
 ---
 name: I_BPRATINGPROCEDURETEXT
 description: "Bpratingproceduretext"
+semantic_vi: "Chứa mô tả các thủ tục đánh giá đối tác kinh doanh trong nhiều ngôn ngữ, hữu ích cho việc hiển thị chi tiết thủ tục trong các ứng dụng đa ngôn ngữ."
+keywords:
+  - "business partner"
+  - "rating procedure"
+  - "description"
+  - "language"
+  - "multi-language"
+  - "sap"
+  - "fs-bp"
+  - "bpratingproceduretext"
+  - "lob:other"
+semantic_en: "Exposes business partner rating procedure descriptions in multiple languages, useful for displaying procedure details in multi-language applications."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

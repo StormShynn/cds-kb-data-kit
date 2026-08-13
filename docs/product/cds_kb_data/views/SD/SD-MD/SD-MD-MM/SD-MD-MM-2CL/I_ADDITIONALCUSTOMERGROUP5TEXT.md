@@ -1,6 +1,21 @@
 ---
 name: I_ADDITIONALCUSTOMERGROUP5TEXT
 description: "Additionalcustomergroup 5TEXT"
+semantic_vi: "Chứa thông tin nhóm khách hàng bổ sung 5, bao gồm tên nhóm trong các ngôn ngữ khác nhau. Sử dụng view này để truy cập chi tiết nhóm khách hàng cho mục đích bán hàng và phân phối."
+keywords:
+  - "additional customer group"
+  - "customer group"
+  - "sales and distribution"
+  - "customer"
+  - "language"
+  - "sap"
+  - "sd-md-mm-2cl"
+  - "sales distribution"
+  - "customer group 5"
+  - "khách hàng"
+  - "nhóm khách hàng"
+  - "bán hàng"
+semantic_en: "Exposes additional customer group 5 information, including the group name in different languages. Use this view to access customer group details for sales and distribution purposes."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

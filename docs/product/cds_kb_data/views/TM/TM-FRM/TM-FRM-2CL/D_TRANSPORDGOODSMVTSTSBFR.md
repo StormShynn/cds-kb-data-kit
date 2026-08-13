@@ -1,6 +1,17 @@
 ---
 name: D_TRANSPORDGOODSMVTSTSBFR
 description: "D Transpordgoodsmvtstsbfr"
+semantic_vi: "View D_Transpordgoodsmvtstsbfr hiển thị dữ liệu trạng thái di chuyển hàng hóa trong đơn hàng vận chuyển, thường được sử dụng khi theo dõi trạng thái di chuyển hàng hóa trong đơn hàng vận chuyển."
+keywords:
+  - "transport order"
+  - "đơn hàng vận chuyển"
+  - "goods movement"
+  - "trạng thái di chuyển hàng hóa"
+  - "sap tm"
+  - "tm-frm-2cl"
+  - "ekko"
+  - "transport order goods movement status"
+semantic_en: "The D_Transpordgoodsmvtstsbfr view exposes transport order goods movement status data, typically used when tracking the status of goods movements in transport orders."
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

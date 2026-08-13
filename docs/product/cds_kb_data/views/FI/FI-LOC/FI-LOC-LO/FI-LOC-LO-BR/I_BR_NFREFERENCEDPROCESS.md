@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFREFERENCEDPROCESS
 description: "BR Nfreferencedprocess"
+semantic_vi: "View I_BR_NFREFERENCEDPROCESS hiển thị thông tin quá trình tham chiếu cho các ghi chú thuế Brazil, có thể được sử dụng để phân tích và quản lý các quy trình liên quan đến thuế."
+keywords:
+  - "tax note"
+  - "ghi chú thuế"
+  - "brazilian tax"
+  - "thuế brazil"
+  - "referenced process"
+  - "quá trình tham chiếu"
+  - "sap fi"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "tài chính"
+semantic_en: "The I_BR_NFREFERENCEDPROCESS view exposes referenced process information for Brazilian tax notes, which can be used to analyze and manage tax-related processes."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

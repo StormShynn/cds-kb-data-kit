@@ -1,6 +1,21 @@
 ---
 name: C_PARTSPERMILLIONCUBE
 description: "Partspermillioncube"
+semantic_vi: "View Partspermillioncube hiển thị dữ liệu mua hàng lịch sử cho vật liệu, nhà cung cấp và nhà máy, hữu ích cho việc phân tích xu hướng và chi phí mua hàng theo thời gian."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "procurement"
+  - "mua hàng"
+  - "sourcing"
+  - "sourcing & procurement"
+  - "mm-pur-ana"
+  - "mm-pur"
+  - "mm"
+  - "historical data"
+  - "data analysis"
+semantic_en: "The Partspermillioncube view exposes historical purchasing data for materials, suppliers, and plants, useful for analyzing procurement trends and costs over time."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

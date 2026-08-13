@@ -1,6 +1,19 @@
 ---
 name: I_BKPOACOMPANYCODETP_2
 description: "BKPOACompany CodeTP 2"
+semantic_vi: "View BKPOACompany CodeTP 2 cung cấp truy cập dữ liệu mã công ty liên quan đến quyền đại diện ngân hàng, bao gồm UUID mã công ty và quyền đại diện, và thông tin người dùng và thời gian戳 liên quan."
+keywords:
+  - "bank power of attorney"
+  - "company code"
+  - "fin-fscm-clm-bam-2cl"
+  - "transactional processing"
+  - "company-code"
+  - "lob:other"
+  - "bo:companycode"
+  - "bank power of attorney uuid"
+  - "company code uuid"
+  - "power of attorney uuid"
+semantic_en: "The BKPOACompany CodeTP 2 view provides access to company code data related to bank power of attorney, including company code and power of attorney UUIDs, and related user and timestamp information. It is used in the FIN-FSCM-CLM-BAM-2CL component for transactional processing."
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

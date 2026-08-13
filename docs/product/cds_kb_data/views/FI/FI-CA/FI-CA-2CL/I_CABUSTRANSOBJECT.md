@@ -1,6 +1,17 @@
 ---
 name: I_CABUSTRANSOBJECT
 description: "Cabustransobject"
+semantic_vi: "View Cabustransobject hiển thị các đối tượng giao dịch kinh doanh liên quan đến kế toán tiền mặt, cung cấp truy cập vào các trường khóa chính như đối tượng giao dịch kinh doanh. Nó được sử dụng để truy xuất và thao tác các đối tượng này trong các ứng dụng FI-CA-2CL."
+keywords:
+  - "cash accounting"
+  - "đối tượng giao dịch kinh doanh"
+  - "fi-ca-2cl"
+  - "business transaction object"
+  - "kế toán tiền mặt"
+  - "giao dịch kinh doanh"
+  - "transaction object"
+  - "fi ca 2cl"
+semantic_en: "The Cabustransobject view exposes business transaction objects related to cash accounting, providing access to key fields such as the business transaction object itself. It is used to retrieve and manipulate these objects in FI-CA-2CL applications."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

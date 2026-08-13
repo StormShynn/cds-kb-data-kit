@@ -1,6 +1,17 @@
 ---
 name: C_REARCHTROBJUSAGEDEX
 description: "Rearchtrobjusagedex"
+semantic_vi: "View C_REARCHTROBJUSAGEDEX hiển thị một chỉ mục chi tiết về việc sử dụng đối tượng kiến trúc, cung cấp một danh sách toàn diện về các đối tượng và trạng thái của chúng theo các ngày bắt đầu có hiệu lực khác nhau. View này hữu ích cho việc phân tích và quản lý dữ liệu sử dụng đối tượng kiến trúc."
+keywords:
+  - "architectural object"
+  - "kiến trúc"
+  - "sử dụng"
+  - "đối tượng"
+  - "trạng thái"
+  - "thời gian có hiệu lực"
+  - "công cụ quản lý"
+  - "sử dụng đối tượng"
+semantic_en: "The C_REARCHTROBJUSAGEDEX view exposes a detailed index of architectural object usages, providing a comprehensive list of objects and their statuses across different validity start dates. This view is useful for analyzing and managing architectural object usage data."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

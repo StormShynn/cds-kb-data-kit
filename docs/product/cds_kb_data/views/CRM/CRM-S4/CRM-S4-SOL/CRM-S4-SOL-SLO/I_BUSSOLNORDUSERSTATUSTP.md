@@ -1,6 +1,18 @@
 ---
 name: I_BUSSOLNORDUSERSTATUSTP
 description: "Bussolnorduserstatustp"
+semantic_vi: "View Bussolnorduserstatustp hiển thị dữ liệu trạng thái người dùng cho đơn hàng giải pháp kinh doanh, có liên quan đến xử lý giao dịch trong thành phần CRM-S4-SOL-SLO."
+keywords:
+  - "crm"
+  - "business solution order"
+  - "user status"
+  - "transactional processing"
+  - "status profile"
+  - "crm-s4-sol-slo"
+  - "bussolnorduserstatustp"
+  - "đơn hàng giải pháp kinh doanh"
+  - "trạng thái người dùng"
+semantic_en: "The Bussolnorduserstatustp CDS view exposes business solution order user status data, which is relevant for transactional processing in CRM-S4-SOL-SLO component."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

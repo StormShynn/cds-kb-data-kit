@@ -1,6 +1,19 @@
 ---
 name: C_PURCHASEREQUISITIONITEMDEX
 description: "Purchase RequisitionUISITIONITEMDEX"
+semantic_vi: "Chỉ ra dữ liệu chi tiết về đơn đặt hàng yêu cầu mua hàng, bao gồm trạng thái và thông tin văn bản, cho mục đích phân tích và báo cáo."
+keywords:
+  - "purchase requisition"
+  - "đơn đặt hàng yêu cầu mua hàng"
+  - "ekko"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "item-level"
+  - "purchase requisition item"
+  - "đơn đặt hàng yêu cầu mua hàng chi tiết"
+  - "mm-pur-ana-2cl"
+  - "sourcing & procurement"
+semantic_en: "Exposes item-level data from purchase requisitions, including status and text information, for analysis and reporting purposes."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

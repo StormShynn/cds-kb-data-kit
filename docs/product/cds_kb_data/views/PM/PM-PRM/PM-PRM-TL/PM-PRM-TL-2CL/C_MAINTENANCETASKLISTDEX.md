@@ -1,6 +1,19 @@
 ---
 name: C_MAINTENANCETASKLISTDEX
 description: "Maintenancetasklistdex"
+semantic_vi: "View Maintenancetasklistdex CDS hiển thị danh sách các nhiệm vụ bảo trì được nhóm theo loại, danh sách và phiên bản, cùng với thông tin về nhà máy và khu vực kiểm soát."
+keywords:
+  - "maintenance task"
+  - "nhiệm vụ bảo trì"
+  - "plant maintenance"
+  - "bảo trì nhà máy"
+  - "task list"
+  - "danh sách nhiệm vụ"
+  - "controlling area"
+  - "khu vực kiểm soát"
+  - "maintenance planning"
+  - "kế hoạch bảo trì"
+semantic_en: "The Maintenancetasklistdex CDS view exposes a list of maintenance tasks grouped by type, list, and version, along with associated plant and controlling area information. It is used to retrieve data for maintenance planning and execution."
 app_component: PM-PRM-TL-2CL
 software_component: SAPSCORE
 release_state: released

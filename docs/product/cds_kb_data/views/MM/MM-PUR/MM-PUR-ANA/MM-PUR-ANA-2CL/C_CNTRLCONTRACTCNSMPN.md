@@ -1,6 +1,20 @@
 ---
 name: C_CNTRLCONTRACTCNSMPN
 description: "Cntrlcontractcnsmpn"
+semantic_vi: "View Cntrlcontractcnsmpn hiển thị các hợp đồng mua hàng trung tâm và các mục liên quan, cung cấp thông tin về các khóa phân phối, loại hợp đồng mua hàng, nhà cung cấp và các chi tiết khác. Nó được sử dụng để phân tích và quản lý hợp đồng mua hàng trong ứng dụng thành phần MM-PUR-ANA-2CL."
+keywords:
+  - "purchase contract"
+  - "hợp đồng mua hàng"
+  - "central purchase contract"
+  - "mm-pur-ana-2cl"
+  - "sourcing & procurement"
+  - "lob sourcing & procurement"
+  - "consumption view"
+  - "contract"
+  - "component mm-pur-ana-2cl"
+  - "purchase order"
+  - "đơn mua hàng"
+semantic_en: "The Cntrlcontractcnsmpn view exposes central purchase contracts and their associated items, providing information on distribution keys, purchase contract types, suppliers, and other relevant details. It is used to analyze and manage purchase contracts in the MM-PUR-ANA-2CL application component."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

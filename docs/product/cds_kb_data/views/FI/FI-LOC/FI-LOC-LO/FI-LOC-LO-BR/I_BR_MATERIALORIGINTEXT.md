@@ -1,6 +1,20 @@
 ---
 name: I_BR_MATERIALORIGINTEXT
 description: "BR Materialorigintext"
+semantic_vi: "View I_BR_MATERIALORIGINTEXT cung cấp dữ liệu mô tả nguồn gốc vật liệu cho các trường hợp sử dụng kinh doanh liên quan đến quản lý vật liệu, chẳng hạn như hiển thị mô tả nguồn gốc vật liệu."
+keywords:
+  - "material"
+  - "origin"
+  - "text"
+  - "description"
+  - "material management"
+  - "sourcing"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "finance"
+  - "material origin"
+  - "language"
+semantic_en: "The I_BR_MATERIALORIGINTEXT view provides material origin text data for business use cases involving material management, such as displaying material origin descriptions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

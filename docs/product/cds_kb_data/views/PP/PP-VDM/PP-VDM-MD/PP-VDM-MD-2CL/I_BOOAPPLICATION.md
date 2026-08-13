@@ -1,6 +1,18 @@
 ---
 name: I_BOOAPPLICATION
 description: "Booapplication"
+semantic_vi: "View I_BOOAPPLICATION hiển thị dữ liệu ứng dụng sản xuất cho các hóa đơn hoạt động, cung cấp cách truy cập và quản lý thông tin ứng dụng trong bối cảnh lập kế hoạch và kiểm soát sản xuất."
+keywords:
+  - "manufacturing"
+  - "production planning"
+  - "bills of operations"
+  - "application data"
+  - "sản xuất"
+  - "lập kế hoạch sản xuất"
+  - "hóa đơn hoạt động"
+  - "dữ liệu ứng dụng"
+  - "pp-vdm-md-2cl"
+semantic_en: "The I_BOOAPPLICATION view exposes manufacturing application data for bills of operations, providing a way to access and manage application information in the context of production planning and control."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

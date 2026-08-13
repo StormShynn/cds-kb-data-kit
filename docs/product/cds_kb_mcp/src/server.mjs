@@ -20,6 +20,7 @@ import express from 'express';
 import { resolveDataSource, SECTION_NAMES } from './datasource.mjs';
 import { recordView, recordQueryShape, flushOnExit } from './usage-tracker.mjs';
 import { composeQuery } from './query-compose.mjs';
+import { reciprocalRankFusion, rankByCosine } from './rrf.mjs';
 import { generateCdsView, validateCdsDdl } from './ddl-tools.mjs';
 import { createAuthMiddleware, describeAuthMode } from './auth.mjs';
 import { proposeQueryLibraryEntry } from './propose-library.mjs';
@@ -280,8 +281,9 @@ async function embedQueryText(text) {
 }
 
 /**
- * BM25 search then optional hybrid re-rank with embeddings.
- * When search_mode=hybrid but no API key / no embeddings → BM25 only.
+ * BM25 search then optional hybrid fusion with embeddings via Reciprocal Rank
+ * Fusion (RRF) over BM25 top-N and cosine top-N of that shortlist.
+ * When search_mode=hybrid but embeddings / query embed unavailable → BM25 only.
  */
 async function rankedSearch(query, { filter, limit = 10, searchMode = 'bm25' } = {}) {
   const wantHybrid = searchMode === 'hybrid';
@@ -291,18 +293,33 @@ async function rankedSearch(query, { filter, limit = 10, searchMode = 'bm25' } =
   if (wantHybrid && embeddingsData?.vectors && results.length > 0) {
     const qVec = await embedQueryText(query);
     if (qVec) {
-      const scores = results.map((r) => r.score);
-      const maxS = Math.max(...scores, 1e-9);
-      const minS = Math.min(...scores);
-      const span = Math.max(maxS - minS, 1e-9);
-      results = results.map((r) => {
-        const name = String(r.name || '').toUpperCase();
-        const vec = embeddingsData.vectors[name] || embeddingsData.vectors[r.name];
-        const cos = vec ? cosineSimilarity(qVec, vec) : 0;
-        const normBm25 = (r.score - minS) / span;
-        const hybrid = 0.6 * normBm25 + 0.4 * cos;
-        return { ...r, score: hybrid * maxS, _hybrid: hybrid, _cos: cos };
-      }).sort((a, b) => b.score - a.score);
+      const getVec = (name) => {
+        const n = String(name || '');
+        return embeddingsData.vectors[n.toUpperCase()] || embeddingsData.vectors[n] || null;
+      };
+      const bm25List = results;
+      const vectorList = rankByCosine(bm25List, qVec, getVec, cosineSimilarity);
+      // RRF needs two ranked lists; if no vector hit matched, keep BM25 order.
+      if (vectorList.length > 0) {
+        const maxBm25 = Math.max(...bm25List.map((r) => r.score), 1e-9);
+        const cosByName = new Map(
+          vectorList.map((v) => [String(v.name || '').toUpperCase(), v._cos]),
+        );
+        const fused = reciprocalRankFusion([bm25List, vectorList], {
+          getId: (r) => String(r.name || '').toUpperCase(),
+        });
+        const maxRrf = Math.max(...fused.map((r) => r._rrf), 1e-9);
+        // Rescale RRF → BM25-ish display range so agents still see useful scores
+        // (raw RRF is ~0.01–0.03 and prints as 0.0 with toFixed(1)).
+        results = fused.map((r) => {
+          const key = String(r.name || '').toUpperCase();
+          return {
+            ...r,
+            score: (r._rrf / maxRrf) * maxBm25,
+            _cos: cosByName.get(key),
+          };
+        });
+      }
     }
   }
   return results.slice(0, limit);
@@ -448,7 +465,7 @@ function createServer() {
         'Use this INSTEAD of grepping or reading routers, then call get_cds_view to read one. ' +
         'Optionally filter by module (FI, SD, MM... or natural names like "Finance", "Procurement"), lob, or bo. ' +
         'Optional RAP filters: accessControl, vdmViewType, hasDdl, sourceKind. ' +
-        'search_mode=hybrid re-ranks BM25 with embeddings when available (local ONNX model by default, optional remote API via CDS_KB_EMBED_API_KEY). ' +
+        'search_mode=hybrid fuses BM25 + embedding ranks via Reciprocal Rank Fusion when embeddings are available (local ONNX model by default, optional remote API via CDS_KB_EMBED_API_KEY; falls back to BM25 if embeddings are missing). ' +
         'IMPORTANT for S/4HANA Cloud Developer Extensibility (custom ABAP CDS views): each result\'s ' +
         'devExtStatus (SAP\'s ReleaseStateDeveloperExtensibility) is the ONLY field here that answers ' +
         '"can I `association to`/`select from` this entity in a custom Developer Extensibility CDS view" — ' +
@@ -474,7 +491,7 @@ function createServer() {
         atcState: z.enum(['released', 'deprecated', 'notToBeReleased']).optional().describe(
           'Filter by SAP\'s ABAP Cloud released-objects (ATC/Clean Core) state — a third, independent signal.'
         ),
-        search_mode: z.enum(['bm25', 'hybrid']).optional().describe('bm25 (default) or hybrid (BM25 + embeddings when available)'),
+        search_mode: z.enum(['bm25', 'hybrid']).optional().describe('bm25 (default) or hybrid (RRF over BM25 + embeddings when available)'),
         limit: z.number().int().min(1).max(50).optional().describe('Max results (default 10)'),
       },
       outputSchema: z.object({
@@ -953,6 +970,7 @@ function createServer() {
       title: 'Suggest base CDS views for a new query',
       description:
         'Recommend concrete (non-abstract) CDS views to use as the FROM base when composing a new view. ' +
+        'Library-first: prefer search_query_library for the same intent before calling this. ' +
         'Uses the same ranking as search_cds, then filters out abstract entities and unverified entries. ' +
         'Prefer these over inventing a base name. Next: compose_query or generate_cds_view.',
       inputSchema: {
@@ -1103,6 +1121,8 @@ function createServer() {
       description:
         'Build OpenSQL SELECT and a CDS define view entity skeleton from a structured query object ' +
         '(same shape as the Query Builder share JSON: views[], select, where, groupBy, having, orderBy, viewName). ' +
+        'Library-first: when starting from a business intent, call search_query_library first and reuse a hit\'s ' +
+        'views[]/select/where here before inventing a new shape via search_cds / suggest_base_views. ' +
         'Warns when any views[].name is SAP-confirmed "Not Released" for Developer Extensibility (would fail ADT ' +
         'activation in a custom S/4HANA Cloud ABAP Developer Extensibility CDS view), has no such signal in this KB, ' +
         'or is deprecated/notToBeReleased on SAP\'s own ABAP Cloud released-objects list (names a successor when SAP does).',
@@ -1308,7 +1328,8 @@ function createServer() {
       description:
         'Find a saved/reusable query in index/query-library.json by title, description, target CDS view name, or generated view name. ' +
         'Entries are curated, PR-reviewed saved queries (propose_query_library_entry produces the snippet + draft PR to add one). ' +
-        'Use this to reuse a known-good query shape instead of composing from scratch: take a result\'s views[]/select/where into compose_query or generate_cds_view.',
+        'Library-first: call this BEFORE search_cds / suggest_base_views when composing from a business intent; ' +
+        'on a hit, take views[]/select/where into compose_query or generate_cds_view. On a miss, fall back to open search.',
       inputSchema: {
         query: z.string().describe('Search text — title words, CDS view name, or business intent'),
         limit: z.number().int().min(1).max(50).optional().describe('Max results (default 10)'),
@@ -1516,16 +1537,29 @@ function createServer() {
     'compose_query',
     {
       title: 'Compose a CDS query',
-      description: 'Turn a business question into the suggest_base_views -> compose_query -> generate_cds_view -> validate_cds_ddl workflow.',
+      description:
+        'Turn a business question into a library-first workflow: ' +
+        'search_query_library → (on miss) suggest_base_views / search_cds → compose_query → generate_cds_view → validate_cds_ddl.',
       argsSchema: {
         intent: z.string().describe('Business intent, e.g. "overdue customer invoices"'),
-        baseView: z.string().optional().describe('Optional concrete base view; else one is suggested first'),
+        baseView: z.string().optional().describe('Optional concrete base view; else library hit or suggest_base_views first'),
       },
     },
     ({ intent, baseView }) => ({
       messages: [{
         role: 'user',
-        content: { type: 'text', text: `Compose a CDS view for: "${intent}"${baseView ? ` using ${baseView} as the base view.` : ' — first call suggest_base_views to pick a base view.'} Then generate_cds_view and validate_cds_ddl the result.` },
+        content: {
+          type: 'text',
+          text:
+            `Compose a CDS view for: "${intent}". ` +
+            (baseView
+              ? `Prefer base view ${baseView} if it fits. `
+              : '') +
+            'Library-first: call search_query_library with the intent first. ' +
+            'If there is a strong hit, reuse its views[]/select/where/orderBy (adapt lightly) via compose_query — do not invent a new shape. ' +
+            'Only on a library miss, call suggest_base_views (or search_cds) to pick a base view, then compose_query. ' +
+            'Then generate_cds_view and validate_cds_ddl the result.',
+        },
       }],
     }),
   );

@@ -1,6 +1,21 @@
 ---
 name: C_PURCHASECONTRACTITEMDEX
 description: "Purchase ContractITEMDEX"
+semantic_vi: "View Purchase Contract ITEMDEX hiển thị chi tiết vật tư của hợp đồng mua hàng, cung cấp dữ liệu cho phân tích và báo cáo trong thành phần MM-PUR-ANA-2CL."
+keywords:
+  - "purchase contract"
+  - "hợp đồng mua hàng"
+  - "mm-pur-ana-2cl"
+  - "item-level"
+  - "data extraction"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "contract"
+  - "item"
+  - "purchase"
+  - "đơn mua hàng"
+  - "ekko"
+semantic_en: "The Purchase Contract ITEMDEX view exposes item-level details of purchase contracts, providing data for analysis and reporting in the MM-PUR-ANA-2CL component."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

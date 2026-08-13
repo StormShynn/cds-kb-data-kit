@@ -1,6 +1,19 @@
 ---
 name: I_CABILLGPROCESSTEXT
 description: "Cabillgprocesstext"
+semantic_vi: "View I_CABILLGPROCESSTEXT hiển thị dữ liệu văn bản cho quy trình hóa đơn trong SAP FI-CA, được sử dụng để lấy thông tin mô tả quy trình trong các ngôn ngữ khác nhau."
+keywords:
+  - "sap"
+  - "fi-ca"
+  - "billing process"
+  - "quy trình hóa đơn"
+  - "text view"
+  - "view"
+  - "language"
+  - "ngôn ngữ"
+  - "process description"
+  - "mô tả quy trình"
+semantic_en: "The I_CABILLGPROCESSTEXT view exposes text data for billing processes in SAP FI-CA, used to retrieve process descriptions in different languages."
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

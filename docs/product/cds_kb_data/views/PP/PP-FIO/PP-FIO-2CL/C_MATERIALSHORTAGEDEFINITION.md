@@ -1,6 +1,21 @@
 ---
 name: C_MATERIALSHORTAGEDEFINITION
 description: "Materialshortagedefinition"
+semantic_vi: "Cấu hình thiếu hụt vật liệu được sử dụng để quản lý thiếu hụt vật liệu trong kế hoạch sản xuất. View này cung cấp dữ liệu về hồ sơ thiếu hụt vật liệu, nhóm nhu cầu và tầm nhìn đánh giá."
+keywords:
+  - "material shortage"
+  - "thiếu hụt vật liệu"
+  - "production planning"
+  - "kế hoạch sản xuất"
+  - "material shortage profile"
+  - "hồ sơ thiếu hụt vật liệu"
+  - "demand category"
+  - "nhóm nhu cầu"
+  - "evaluation horizon"
+  - "tầm nhìn đánh giá"
+  - "sap pp"
+  - "pp fio 2cl"
+semantic_en: "Material shortage definitions are used to manage material shortages in production planning. This view provides data on material shortage profiles, demand categories, and evaluation horizons."
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

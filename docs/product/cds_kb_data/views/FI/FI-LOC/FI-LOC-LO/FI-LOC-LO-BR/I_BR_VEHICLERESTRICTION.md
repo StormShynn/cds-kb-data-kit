@@ -1,6 +1,18 @@
 ---
 name: I_BR_VEHICLERESTRICTION
 description: "BR Vehiclerestriction"
+semantic_vi: "View I_BR_VEHICLERESTRICTION hiển thị dữ liệu hạn chế phương tiện, có liên quan khi quản lý các quy tắc hoặc hạn chế phương tiện trong thành phần FI-LOC-LO-BR."
+keywords:
+  - "vehicle restriction"
+  - "hạn chế phương tiện"
+  - "fi-loc-lo-br"
+  - "sap cds"
+  - "finance"
+  - "vehicle data"
+  - "phương tiện"
+  - "business rules"
+  - "quy tắc kinh doanh"
+semantic_en: "The I_BR_VEHICLERESTRICTION view exposes vehicle restriction data, which is relevant when managing vehicle-related business rules or restrictions in the FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

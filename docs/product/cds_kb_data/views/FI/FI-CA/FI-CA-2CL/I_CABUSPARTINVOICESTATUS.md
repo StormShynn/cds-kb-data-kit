@@ -1,6 +1,18 @@
 ---
 name: I_CABUSPARTINVOICESTATUS
 description: "CABusiness PartnerINVOICESTATUS"
+semantic_vi: "View CABusiness PartnerINVOICESTATUS cung cấp thông tin về trạng thái hóa đơn của đối tác kinh doanh trong ngữ cảnh thu tiền và chi tiền. Nó được sử dụng để theo dõi trạng thái hóa đơn liên quan đến đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "invoice status"
+  - "cabsuspartinvoicestatus"
+  - "fi-ca-2cl"
+  - "finance"
+  - "accounts receivable"
+  - "accounts payable"
+  - "lob:finance"
+  - "component:fi-ca-2cl"
+semantic_en: "The CABusiness PartnerINVOICESTATUS view provides information about the invoice status of a business partner in the context of accounts receivable and accounts payable. It is used to track the status of invoices related to a business partner."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

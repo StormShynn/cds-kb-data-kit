@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGDOCUMENTITEMBASIC
 description: "Billing DocumentUMENTITEMBASIC"
+semantic_vi: "View I_BILLINGDOCUMENTITEMBASIC hiển thị thông tin cơ bản về các mục đơn giá, bao gồm các loại mục và loại mục, và được sử dụng khi truy vấn hoặc báo cáo dữ liệu đơn giá."
+keywords:
+  - "billing document"
+  - "đơn giá"
+  - "item category"
+  - "loại mục"
+  - "item type"
+  - "sales document"
+  - "đơn bán hàng"
+  - "sap sd"
+  - "sd-bil"
+semantic_en: "The I_BILLINGDOCUMENTITEMBASIC view exposes basic information about billing document items, including item categories and types, and is used when querying or reporting on billing document data."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

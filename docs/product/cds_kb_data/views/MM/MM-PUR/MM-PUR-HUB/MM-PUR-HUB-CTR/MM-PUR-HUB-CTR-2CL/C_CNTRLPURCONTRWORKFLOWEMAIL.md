@@ -1,6 +1,21 @@
 ---
 name: C_CNTRLPURCONTRWORKFLOWEMAIL
 description: "Cntrlpurcontrworkflowemail"
+semantic_vi: "Chứa dữ liệu email luồng công việc hợp đồng mua hàng để sử dụng trong thành phần MM-PUR-HUB-CTR-2CL."
+keywords:
+  - "purchase contract"
+  - "workflow email"
+  - "mm-pur-hub-ctr-2cl"
+  - "central purchase contract"
+  - "purchase contract type"
+  - "document currency"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+  - "mm"
+  - "mm-pur"
+  - "mm-pur-hub"
+  - "consumption-view"
+semantic_en: "Exposes purchase contract workflow email data for consumption in MM-PUR-HUB-CTR-2CL component."
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

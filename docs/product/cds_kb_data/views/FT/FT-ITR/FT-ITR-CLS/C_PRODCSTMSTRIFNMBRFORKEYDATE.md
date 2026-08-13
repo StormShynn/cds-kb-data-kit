@@ -1,6 +1,19 @@
 ---
 name: C_PRODCSTMSTRIFNMBRFORKEYDATE
 description: "Prodcstmstrifnmbrforkeydate"
+semantic_vi: "View này hiển thị số hiệu thuế quan sản phẩm và ngày hiệu lực liên quan đến một phương án chức năng thương mại và nội dung số hiệu thương mại. Nó được sử dụng để lấy thông tin thuế quan cho một sản phẩm và phương án chức năng thương mại cụ thể."
+keywords:
+  - "product customs tariff number"
+  - "số hiệu thuế quan sản phẩm"
+  - "trade class function number scheme"
+  - "phương án chức năng thương mại"
+  - "validity date"
+  - "ngày hiệu lực"
+  - "customs tariff information"
+  - "thông tin thuế quan"
+  - "sap cds view"
+  - "view c_prodcstmstrifnmbrforkydate"
+semantic_en: "This view exposes product customs tariff numbers and their associated validity dates for a given trade class function number scheme and content. It is used to retrieve customs tariff information for a specific product and trade class function number scheme."
 app_component: FT-ITR-CLS
 software_component: SAPSCORE
 release_state: released

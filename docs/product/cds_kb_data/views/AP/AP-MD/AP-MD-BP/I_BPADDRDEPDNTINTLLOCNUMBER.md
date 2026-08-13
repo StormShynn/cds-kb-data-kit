@@ -1,6 +1,17 @@
 ---
 name: I_BPADDRDEPDNTINTLLOCNUMBER
 description: "Bpaddrdepdntintllocnumber"
+semantic_vi: "Chứa thông tin số địa điểm quốc tế cho địa chỉ đối tác kinh doanh, được sử dụng để xác định và quản lý địa điểm đối tác kinh doanh trên nhiều quốc gia."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "address"
+  - "địa chỉ"
+  - "international location number"
+  - "số địa điểm quốc tế"
+  - "sap"
+  - "ap-md-bp"
+semantic_en: "Exposes international location numbers for business partner addresses, used to identify and manage business partner locations across different countries."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

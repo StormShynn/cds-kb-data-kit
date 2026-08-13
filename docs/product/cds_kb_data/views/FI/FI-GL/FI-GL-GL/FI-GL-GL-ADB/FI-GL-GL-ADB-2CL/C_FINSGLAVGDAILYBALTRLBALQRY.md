@@ -1,6 +1,19 @@
 ---
 name: C_FINSGLAVGDAILYBALTRLBALQRY
 description: "Finsglavgdailybaltrlbalqry"
+semantic_vi: "View Finsglavgdailybaltrlbalqry cung cấp dữ liệu cân đối hàng ngày cho tài khoản kế toán tổng hợp, cho phép các nhà phát triển phân tích các giao dịch tài chính và cân đối tài khoản theo thời gian."
+keywords:
+  - "general ledger"
+  - "tài khoản kế toán tổng hợp"
+  - "daily balance"
+  - "cân đối hàng ngày"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "fi-gl"
+  - "fi"
+  - "fi-gl-gl"
+  - "fi-gl-gl-adb-2cl"
+semantic_en: "The Finsglavgdailybaltrlbalqry view provides daily balance data for general ledger accounts, allowing developers to analyze financial transactions and balances over time."
 app_component: FI-GL-GL-ADB-2CL
 software_component: SAPSCORE
 release_state: released

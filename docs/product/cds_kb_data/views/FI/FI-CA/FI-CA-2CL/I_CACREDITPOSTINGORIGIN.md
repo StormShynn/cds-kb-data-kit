@@ -1,6 +1,19 @@
 ---
 name: I_CACREDITPOSTINGORIGIN
 description: "Cacreditpostingorigin"
+semantic_vi: "View Cacreditpostingorigin hiển thị dữ liệu nguồn gốc đăng ký tín dụng, có liên quan khi phân tích hoặc xử lý giao dịch tín dụng trong thành phần FI-CA-2CL."
+keywords:
+  - "credit"
+  - "posting"
+  - "origin"
+  - "fi-ca-2cl"
+  - "fi"
+  - "finance"
+  - "tín dụng"
+  - "đăng ký"
+  - "giao dịch"
+  - "dữ liệu nguồn gốc"
+semantic_en: "The Cacreditpostingorigin view exposes credit posting origin data, which is relevant when analyzing or processing credit transactions in the FI-CA-2CL component."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

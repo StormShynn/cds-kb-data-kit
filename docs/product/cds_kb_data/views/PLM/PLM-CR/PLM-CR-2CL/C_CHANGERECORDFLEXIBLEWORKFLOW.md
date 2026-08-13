@@ -1,6 +1,18 @@
 ---
 name: C_CHANGERECORDFLEXIBLEWORKFLOW
 description: "Change RecordFLEXIBLEWORKFLOW"
+semantic_vi: "View Change Record Flexible Workflow cung cấp truy cập dữ liệu thay đổi ghi chép, bao gồm trạng thái luồng làm việc và trạng thái vòng đời, để sử dụng trong việc quản lý ghi chép thay đổi trong ứng dụng PLM-CR-2CL."
+keywords:
+  - "change record"
+  - "thay đổi ghi chép"
+  - "workflow"
+  - "vòng đời"
+  - "plm-cr-2cl"
+  - "plm"
+  - "thay đổi"
+  - "ghi chép"
+  - "luồng làm việc"
+semantic_en: "The Change Record Flexible Workflow view provides access to change record data, including workflow status and lifecycle status, for use in managing change records in PLM-CR-2CL applications."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

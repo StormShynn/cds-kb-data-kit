@@ -1,6 +1,19 @@
 ---
 name: I_BUSEVTLOGBUSINESSEVENT
 description: "Busevtlogbusinessevent"
+semantic_vi: "View Busevtlogbusinessevent CDS hiển thị dữ liệu nhật ký sự kiện kinh doanh, có thể được sử dụng để phân tích và theo dõi các sự kiện kinh doanh và hoạt động trong hệ thống."
+keywords:
+  - "business event"
+  - "sự kiện kinh doanh"
+  - "business event log"
+  - "nghiệp vụ kinh doanh"
+  - "event operation"
+  - "sự kiện hoạt động"
+  - "sap business object"
+  - "mục tiêu kinh doanh sap"
+  - "ca-gtf-bel"
+  - "cross-application components"
+semantic_en: "The Busevtlogbusinessevent CDS view exposes business event log data, which can be used to analyze and track business events and operations in the system."
 app_component: CA-GTF-BEL
 software_component: SAP_BASIS
 release_state: released

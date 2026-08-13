@@ -1,6 +1,21 @@
 ---
 name: C_PURCONTRAPPROVALEMAIL
 description: "Purcontrapprovalemail"
+semantic_vi: "View C_PURCONTRAPPROVALEMAIL hiển thị dữ liệu email phê duyệt hợp đồng mua hàng, có liên quan khi quản lý hợp đồng mua hàng và luồng phê duyệt."
+keywords:
+  - "purchase contract"
+  - "hợp đồng mua hàng"
+  - "approval"
+  - "email"
+  - "workflow"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "sourcing"
+  - "procurement"
+  - "mm"
+  - "mm-pur"
+semantic_en: "The C_PURCONTRAPPROVALEMAIL view exposes purchase contract approval email data, which is relevant when managing purchase contracts and their approval workflows."
 app_component: MM-PUR-OA-CON-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: C_CNTRLSUPLRCONFWRKFLWDDLNEML
 description: "Cntrlsuplrconfwrkflwddlneml"
+semantic_vi: "Chứa dữ liệu luồng công việc xác nhận nhà cung cấp cho tài liệu mua hàng trong thành phần MM-PUR-HUB-CSC-2CL. Sử dụng để theo dõi và quản lý luồng công việc xác nhận nhà cung cấp."
+keywords:
+  - "supplier confirmation"
+  - "workflow"
+  - "purchasing document"
+  - "mm-pur-hub-csc-2cl"
+  - "sourcing & procurement"
+  - "lob"
+  - "sourcing"
+  - "procurement"
+  - "đơn mua hàng"
+  - "xác nhận nhà cung cấp"
+  - "luồng công việc"
+semantic_en: "Exposes supplier confirmation workflow data for purchasing documents in the MM-PUR-HUB-CSC-2CL component. Used to monitor and manage supplier confirmation workflows."
 app_component: MM-PUR-HUB-CSC-2CL
 software_component: SAPSCORE
 release_state: released

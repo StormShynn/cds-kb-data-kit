@@ -1,6 +1,21 @@
 ---
 name: C_POITEMCOUNTFORSUPLRCUBE
 description: "Poitemcountforsuplrcube"
+semantic_vi: "View C_POITEMCOUNTFORSUPLRCUBE cung cấp dữ liệu chi tiết về hàng hóa cho mục đích phân tích, đặc biệt là cho phân tích nguồn cung và quản lý mua hàng, cho phép người dùng phân tích đơn đặt hàng mua và hàng hóa theo nhà cung cấp, nhóm tài khoản và các tiêu chí khác."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "sourcing"
+  - "procurement"
+  - "analytical"
+  - "item-level"
+  - "supplier"
+  - "account group"
+  - "purchase order item"
+  - "mm-pur-ana"
+  - "mm-pur-ana-2cl"
+semantic_en: "The C_POITEMCOUNTFORSUPLRCUBE view provides item-level data for analytical purposes, specifically for sourcing and procurement analysis, allowing users to analyze purchase orders and items by supplier, account group, and other criteria."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

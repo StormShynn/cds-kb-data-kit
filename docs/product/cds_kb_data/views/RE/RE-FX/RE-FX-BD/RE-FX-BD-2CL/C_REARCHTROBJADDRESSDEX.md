@@ -1,6 +1,21 @@
 ---
 name: C_REARCHTROBJADDRESSDEX
 description: "Rearchtrobjaddressdex"
+semantic_vi: "View C_REARCHTROBJADDRESSDEX cung cấp địa chỉ đối tượng bất động sản, có thể được sử dụng để lấy và hiển thị thông tin địa chỉ cho đối tượng bất động sản trong thành phần RE-FX-BD-2CL."
+keywords:
+  - "real estate"
+  - "address"
+  - "object"
+  - "re-fx-bd-2cl"
+  - "component"
+  - "consumption view"
+  - "data extraction"
+  - "address data"
+  - "bất động sản"
+  - "địa chỉ"
+  - "đối tượng"
+  - "thành phần"
+semantic_en: "The C_REARCHTROBJADDRESSDEX view provides real estate object addresses, which can be used to retrieve and display address information for real estate objects in the RE-FX-BD-2CL component."
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_AE_CNSMPNTAXCTRLCODE
 description: "AE Cnsmpntaxctrlcode"
+semantic_vi: "View AE Cnsmpntaxctrlcode hiển thị mã điều khiển thuế tiêu thụ cho các quốc gia, được sử dụng để xác định tỷ lệ và quy định thuế cho các giao dịch tài chính. Nó được sử dụng trong thành phần FI-LOC-LO-AE cho các tính toán và báo cáo thuế."
+keywords:
+  - "consumption tax"
+  - "tax control code"
+  - "country code"
+  - "financial transaction"
+  - "tax rate"
+  - "tax regulation"
+  - "fi-loc-lo-ae"
+  - "lob:finance"
+  - "component:fi-loc-lo-ae"
+  - "tax calculation"
+  - "tax reporting"
+semantic_en: "The AE Cnsmpntaxctrlcode view exposes consumption tax control codes for countries, which are used to determine tax rates and regulations for financial transactions. It is used in the FI-LOC-LO-AE component for tax-related calculations and reporting."
 app_component: FI-LOC-LO-AE
 software_component: SAPSCORE
 release_state: released

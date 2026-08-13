@@ -1,6 +1,18 @@
 ---
 name: C_CHANGERECORDHIERARCHYDEX
 description: "Change RecordHIERARCHYDEX"
+semantic_vi: "View Change Record HIERARCHYDEX hiển thị một cấu trúc hiyerarchi của các bản ghi thay đổi, cho phép bạn điều hướng và phân tích mối quan hệ giữa các bản ghi thay đổi. View này hữu ích khi bạn cần hiểu tác động của các thay đổi trên các mức khác nhau của hiyerarchi."
+keywords:
+  - "change record"
+  - "hierarchical structure"
+  - "change record hierarchy"
+  - "thay đổi"
+  - "hierarchi"
+  - "cấu trúc hiyerarchi"
+  - "plm"
+  - "plm-cr"
+  - "change record relationships"
+semantic_en: "The Change Record HIERARCHYDEX view exposes a hierarchical structure of change records, allowing you to navigate and analyze the relationships between change records. This view is useful when you need to understand the impact of changes across different levels of the hierarchy."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

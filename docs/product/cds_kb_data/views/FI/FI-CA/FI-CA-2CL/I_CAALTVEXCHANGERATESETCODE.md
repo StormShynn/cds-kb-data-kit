@@ -1,6 +1,17 @@
 ---
 name: I_CAALTVEXCHANGERATESETCODE
 description: "CAALTVExchange RateSETCODE"
+semantic_vi: "View CAALTVExchange RateSETCODE cung cấp mã hiệu tập tỷ giá cho các giao dịch tài chính. Nó được sử dụng để xác định các tập tỷ giá cụ thể trong FI-CA-2CL."
+keywords:
+  - "exchange rate"
+  - "tỷ giá"
+  - "fi-ca-2cl"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "fi"
+  - "finance"
+  - "tài chính"
+semantic_en: "The CAALTVExchange RateSETCODE view provides exchange rate set codes for use in financial transactions. It is used to identify specific exchange rate sets in FI-CA-2CL."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

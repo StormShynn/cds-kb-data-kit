@@ -1,6 +1,20 @@
 ---
 name: I_ADDRESSPHONENUMBER_2
 description: "Addressphonenumber 2"
+semantic_vi: "Chứa thông tin số điện thoại liên quan đến địa chỉ, có thể sử dụng trong việc quản lý thông tin liên hệ trong các ứng dụng kinh doanh."
+keywords:
+  - "address"
+  - "phone number"
+  - "contact information"
+  - "business application"
+  - "số điện thoại"
+  - "thông tin liên hệ"
+  - "địa chỉ"
+  - "kinh doanh"
+  - "sds"
+  - "bc-srv-adr"
+  - "addressphonenumber"
+semantic_en: "Exposes phone numbers associated with addresses, useful for managing contact information in various business applications."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

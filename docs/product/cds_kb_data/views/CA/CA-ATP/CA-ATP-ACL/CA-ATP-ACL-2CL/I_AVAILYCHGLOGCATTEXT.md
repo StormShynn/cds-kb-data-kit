@@ -1,6 +1,21 @@
 ---
 name: I_AVAILYCHGLOGCATTEXT
 description: "Availychglogcattext"
+semantic_vi: "View Availychglogcattext hiển thị các mô tả văn bản của các loại thay đổi khả dụng, có thể được sử dụng để hiển thị tên và mô tả của các loại thay đổi khả dụng trong các ứng dụng."
+keywords:
+  - "availability change log"
+  - "category description"
+  - "text view"
+  - "interface view"
+  - "cross-application components"
+  - "ca-atp-acl"
+  - "ca-atp"
+  - "ca"
+  - "cross-application"
+  - "components"
+  - "availability change"
+  - "log category"
+semantic_en: "The Availychglogcattext view exposes text descriptions of availability change log categories, which can be used to display category names and descriptions in applications."
 app_component: CA-ATP-ACL-2CL
 software_component: SAPSCORE
 release_state: released

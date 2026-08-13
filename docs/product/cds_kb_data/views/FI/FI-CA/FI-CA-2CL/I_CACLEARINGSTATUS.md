@@ -1,6 +1,18 @@
 ---
 name: I_CACLEARINGSTATUS
 description: "Caclearingstatus"
+semantic_vi: "View Caclearingstatus cung cấp thông tin trạng thái thanh toán cho quản lý tiền mặt trong SAP FI-CA. Nó được sử dụng để lấy trạng thái thanh toán hiện tại của các giao dịch tiền mặt."
+keywords:
+  - "cash management"
+  - "fi-ca"
+  - "clearing status"
+  - "thanh toán"
+  - "quản lý tiền mặt"
+  - "trạng thái thanh toán"
+  - "sap fi-ca"
+  - "cach"
+  - "giro"
+semantic_en: "The Caclearingstatus view provides clearing status information for cash management in SAP FI-CA. It is used to retrieve the current clearing status of cash transactions."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

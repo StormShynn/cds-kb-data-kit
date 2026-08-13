@@ -1,6 +1,20 @@
 ---
 name: C_PURCHASINGINFORECORDDEX
 description: "Purchasinginforecorddex"
+semantic_vi: "CDS view C_PURCHASINGINFORECORDDEX hiển thị các hồ sơ thông tin mua hàng, bao gồm chi tiết nhà cung cấp và vật liệu, có thể được sử dụng để phân tích dữ liệu mua hàng và tối ưu hóa quy trình mua sắm."
+keywords:
+  - "purchasing information record"
+  - "đơn mua hàng"
+  - "hồ sơ thông tin mua hàng"
+  - "sourcing"
+  - "procurement"
+  - "ekko"
+  - "mm-pur"
+  - "mm-pur-ana"
+  - "purchase order"
+  - "sourcing & procurement"
+  - "lob:sourcing & procurement"
+semantic_en: "The CDS view C_PURCHASINGINFORECORDDEX exposes purchasing information records, including supplier and material details, which can be used to analyze purchasing data and optimize procurement processes."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

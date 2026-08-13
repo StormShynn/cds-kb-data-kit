@@ -1,6 +1,21 @@
 ---
 name: C_CITITEMCLASSIFICATIONTP
 description: "Cititemclassificationtp"
+semantic_vi: "View C_CITITEMCLASSIFICATIONTP hiển thị dữ liệu phân loại thuế thu nhập doanh nghiệp tại cấp chi tiết, bao gồm các loại phân loại, sổ sách và tài liệu kế toán. Nó được sử dụng cho xử lý và báo cáo trong lĩnh vực tài chính và kế toán."
+keywords:
+  - "corporate income tax"
+  - "item classification"
+  - "ledger"
+  - "accounting document"
+  - "transactional processing"
+  - "finance"
+  - "accounting"
+  - "fi-loc-cit"
+  - "fi"
+  - "fi-loc"
+  - "classification"
+  - "item-level"
+semantic_en: "The C_CITITEMCLASSIFICATIONTP view exposes corporate income tax item classification data, including classifications, ledgers, and accounting documents. It is used for transactional processing and reporting in the finance and accounting domain."
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

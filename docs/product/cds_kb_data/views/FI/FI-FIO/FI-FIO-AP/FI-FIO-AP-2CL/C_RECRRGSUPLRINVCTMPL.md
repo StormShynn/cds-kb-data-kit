@@ -1,6 +1,20 @@
 ---
 name: C_RECRRGSUPLRINVCTMPL
 description: "Recrrgsuplrinvctmpl"
+semantic_vi: "View CDS Recrrgsuplrinvctmpl hiển thị các mẫu hóa đơn nhà cung cấp và dữ liệu kế toán liên quan, hữu ích cho các giao dịch và báo cáo tài chính."
+keywords:
+  - "supplier invoice template"
+  - "mẫu hóa đơn nhà cung cấp"
+  - "accounting data"
+  - "data tài chính"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "fi"
+  - "fi-fio-ap-2cl"
+  - "ekko"
+  - "đơn mua hàng"
+  - "hóa đơn nhà cung cấp"
+semantic_en: "The Recrrgsuplrinvctmpl CDS view exposes supplier invoice templates and related accounting data, useful for financial transactions and reporting."
 app_component: FI-FIO-AP-2CL
 software_component: SAPSCORE
 release_state: released

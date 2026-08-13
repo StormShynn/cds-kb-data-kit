@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGDOCUMENTPARTNERTP
 description: "Billing DocumentUMENTPARTNERTP"
+semantic_vi: "Phân tích thông tin đối tác liên quan đến hóa đơn, được sử dụng để truy cập và thao tác dữ liệu đối tác liên quan đến hóa đơn."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "partner"
+  - "đối tác"
+  - "billing document partner"
+  - "hóa đơn đối tác"
+  - "sap sd"
+  - "sd-bil"
+  - "sales & distribution"
+semantic_en: "Exposes billing document partner information, used to access and manipulate partner data associated with billing documents."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: C_PRMTHBRPLDPURORDWRKFLWEML
 description: "Prmthbrpldpurordwrkflweml"
+semantic_vi: "Chứa thông tin về các nhiệm vụ luồng công việc đơn đặt hàng mua hàng và dữ liệu liên quan cho thành phần MM-PUR-HUB-PO-2CL, được sử dụng để quản lý và theo dõi các nhiệm vụ luồng công việc cho đơn đặt hàng mua hàng."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "workflow"
+  - "nhiệm vụ luồng công việc"
+  - "đơn đặt hàng mua hàng"
+  - "mm-pur-hub-po-2cl"
+  - "sourcing & procurement"
+  - "sourcing"
+  - "procurement"
+semantic_en: "Exposes purchase order workflow tasks and related data for MM-PUR-HUB-PO-2CL component, used to manage and track workflow tasks for purchase orders."
 app_component: MM-PUR-HUB-PO-2CL
 software_component: SAPSCORE
 release_state: released

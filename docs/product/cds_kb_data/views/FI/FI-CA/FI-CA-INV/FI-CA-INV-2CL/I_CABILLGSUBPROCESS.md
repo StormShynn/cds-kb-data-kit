@@ -1,6 +1,16 @@
 ---
 name: I_CABILLGSUBPROCESS
 description: "Cabillgsubprocess"
+semantic_vi: "View Cabillgsubprocess CDS hiển thị dữ liệu về các quá trình phụ của hóa đơn, có liên quan khi làm việc với quá trình xử lý hóa đơn trong thành phần FI-CA-INV-2CL."
+keywords:
+  - "invoice"
+  - "invoice sub-process"
+  - "fi-ca-inv-2cl"
+  - "cds view"
+  - "dữ liệu hóa đơn"
+  - "quá trình phụ hóa đơn"
+  - "thành phần fi-ca-inv-2cl"
+semantic_en: "The Cabillgsubprocess CDS view exposes invoice sub-process data, which is relevant when working with invoice processing in the FI-CA-INV-2CL component."
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

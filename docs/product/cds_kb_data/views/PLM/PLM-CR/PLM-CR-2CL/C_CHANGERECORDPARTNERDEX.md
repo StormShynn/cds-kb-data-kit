@@ -1,6 +1,17 @@
 ---
 name: C_CHANGERECORDPARTNERDEX
 description: "Change RecordPARTNERDEX"
+semantic_vi: "View Change Record PARTNERDEX cung cấp truy cập dữ liệu đối tác liên quan đến hồ sơ thay đổi trong ứng dụng thành phần PLM-CR-2CL. Nó được sử dụng để trích xuất và phân tích thông tin đối tác trong bối cảnh hồ sơ thay đổi."
+keywords:
+  - "change record"
+  - "partner"
+  - "plm-cr-2cl"
+  - "data extraction"
+  - "change record partner dex"
+  - "thay đổi hồ sơ đối tác"
+  - "truy cập dữ liệu"
+  - "phân tích thông tin"
+semantic_en: "The Change Record PARTNERDEX view provides access to partner data associated with change records in the PLM-CR-2CL application component. It is used to extract and analyze partner information in the context of change records."
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: C_PURORDSCHEDLINEENHCDDEX
 description: "Purordschedlineenhcddex"
+semantic_vi: "CDS view C_PURORDSCHEDLINEENHCDDEX hiển thị dữ liệu lịch trình đơn đặt hàng mua hàng được cải thiện cho tiêu thụ, thường được sử dụng trong thành phần MM-PUR-ANA-2CL cho phân tích nguồn cung và quản lý mua hàng."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "schedule line"
+  - "công ty mua hàng"
+  - "sourcing"
+  - "procurement"
+  - "mm-pur-ana-2cl"
+  - "cds view"
+  - "dữ liệu lịch trình"
+  - "đơn đặt hàng mua hàng"
+  - "công ty quản lý mua hàng"
+semantic_en: "The CDS view C_PURORDSCHEDLINEENHCDDEX exposes purchase order schedule line data for enhanced consumption, typically used in MM-PUR-ANA-2CL component for sourcing and procurement analysis."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

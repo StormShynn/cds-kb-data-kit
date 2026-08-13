@@ -1,6 +1,18 @@
 ---
 name: I_BPLEGALENTITY
 description: "Bplegalentity"
+semantic_vi: "View Bplegalentity hiển thị thông tin pháp nhân đối tác kinh doanh, được sử dụng để xác định và quản lý mối quan hệ kinh doanh với đối tác bên ngoài."
+keywords:
+  - "business partner"
+  - "legal entity"
+  - "business relationship"
+  - "partner"
+  - "legal entity information"
+  - "business partner legal entity"
+  - "fs-bp"
+  - "sap"
+  - "cds view"
+semantic_en: "The Bplegalentity view exposes business partner legal entity information, which is used to identify and manage business relationships with external partners."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

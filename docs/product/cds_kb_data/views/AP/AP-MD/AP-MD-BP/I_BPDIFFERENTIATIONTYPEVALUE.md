@@ -1,6 +1,18 @@
 ---
 name: I_BPDIFFERENTIATIONTYPEVALUE
 description: "Bpdifferentiationtypevalue"
+semantic_vi: "Giá trị loại đối tác kinh doanh phân biệt được sử dụng để phân loại đối tác kinh doanh dựa trên các đặc điểm của họ. View này cung cấp truy cập vào các giá trị này."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "differentiation type"
+  - "giá trị loại phân biệt"
+  - "sap"
+  - "ap-md-bp"
+  - "interface view"
+  - "business data"
+  - "data access"
+semantic_en: "Business partner differentiation type values are used to categorize business partners based on their characteristics. This view provides access to these values."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

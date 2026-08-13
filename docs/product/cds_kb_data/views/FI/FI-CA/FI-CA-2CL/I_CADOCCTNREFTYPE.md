@@ -1,6 +1,21 @@
 ---
 name: I_CADOCCTNREFTYPE
 description: "Cadocctnreftype"
+semantic_vi: "View Cadocctnreftype hiển thị các loại và danh mục tham chiếu cho các tài liệu trong thành phần FI-CA-2CL, được sử dụng để xác định và phân loại các hộp tài liệu."
+keywords:
+  - "cadocctnreftype"
+  - "document container"
+  - "container reference type"
+  - "container reference category"
+  - "fi-ca-2cl"
+  - "finance"
+  - "sap"
+  - "container"
+  - "document"
+  - "reference"
+  - "type"
+  - "category"
+semantic_en: "The Cadocctnreftype view exposes container reference types and categories for documents in the FI-CA-2CL component, used to identify and categorize document containers."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released
