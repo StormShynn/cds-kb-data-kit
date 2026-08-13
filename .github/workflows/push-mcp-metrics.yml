@@ -13,6 +13,9 @@
 
 name: Push MCP Metrics to Grafana Cloud
 
+permissions:
+  contents: read
+
 on:
   schedule:
     - cron: '*/10 * * * *'
