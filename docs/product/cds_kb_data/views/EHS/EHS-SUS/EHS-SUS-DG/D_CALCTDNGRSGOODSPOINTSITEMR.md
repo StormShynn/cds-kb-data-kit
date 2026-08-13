@@ -1,6 +1,20 @@
 ---
 name: D_CALCTDNGRSGOODSPOINTSITEMR
 description: "D Calctdngrsgoodspointsitemr"
+semantic_vi: "Tính điểm cho một mục cụ thể trong một bao bì nguy hiểm, được sử dụng trong thành phần EHS-SUS-DG cho quản lý vật liệu nguy hiểm tại mức mục."
+keywords:
+  - "dangerous goods"
+  - "ehs-sus-dg"
+  - "item-level"
+  - "calculated points"
+  - "enclosure quantity"
+  - "sap cds view"
+  - "điểm tính toán"
+  - "vật liệu nguy hiểm"
+  - "ehs-sus"
+  - "component:ehs-sus-dg"
+  - "lob:other"
+semantic_en: "Calculates the points for a specific item in a dangerous goods enclosure, used in EHS-SUS-DG component for item-level dangerous goods management."
 app_component: EHS-SUS-DG
 software_component: SAPSCORE
 release_state: released

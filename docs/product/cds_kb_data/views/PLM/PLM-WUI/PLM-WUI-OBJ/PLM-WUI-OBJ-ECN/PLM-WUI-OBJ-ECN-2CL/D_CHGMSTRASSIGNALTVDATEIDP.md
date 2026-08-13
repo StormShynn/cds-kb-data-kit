@@ -1,6 +1,19 @@
 ---
 name: D_CHGMSTRASSIGNALTVDATEIDP
 description: "D Chgmstrassignaltvdateidp"
+semantic_vi: "View D_CHGMSTRASSIGNALTVDATEIDP CDS hiển thị ID thay thế ngày thay đổi trong quản lý thay đổi của sản phẩm. Nó được sử dụng trong thành phần PLM-WUI-OBJ-ECN-2CL cho mục đích quản lý thay đổi."
+keywords:
+  - "change management"
+  - "change master assignment"
+  - "alternative date id"
+  - "plm"
+  - "plm-wui-obj-ecn-2cl"
+  - "product lifecycle"
+  - "thay đổi"
+  - "quản lý thay đổi"
+  - "sản phẩm"
+  - "đổi ngày"
+semantic_en: "The D_CHGMSTRASSIGNALTVDATEIDP CDS view exposes change master assignment alternative date IDs, which are used to manage changes in a product's lifecycle. It is used in the PLM-WUI-OBJ-ECN-2CL component for change management purposes."
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

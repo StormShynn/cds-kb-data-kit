@@ -1,6 +1,19 @@
 ---
 name: D_BUSSOLNORDORDITMSETTODISTRD
 description: "D Bussolnordorditmsettodistrd"
+semantic_vi: "View này hiển thị dữ liệu thanh toán đơn hàng giải pháp kinh doanh cho phân phối, được sử dụng khi đồng bộ hóa các mục đơn hàng giữa các giải pháp kinh doanh."
+keywords:
+  - "business solution"
+  - "order item"
+  - "settlement"
+  - "distribution"
+  - "crm"
+  - "sap"
+  - "s4hana"
+  - "solman"
+  - "slo"
+  - "ekko"
+semantic_en: "This view exposes business solution order item settlement data for distribution, used when synchronizing order items between business solutions."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

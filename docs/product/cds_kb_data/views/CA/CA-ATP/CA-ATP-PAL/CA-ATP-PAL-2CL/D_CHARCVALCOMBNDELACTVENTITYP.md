@@ -1,6 +1,21 @@
 ---
 name: D_CHARCVALCOMBNDELACTVENTITYP
 description: "D Charcvalcombndelactventityp"
+semantic_vi: "Loại hình hoạt động xóa kết hợp giá trị đặc trưng, được sử dụng để quản lý hoạt động xóa kết hợp giá trị đặc trưng."
+keywords:
+  - "characteristics value combinations"
+  - "deletion activity"
+  - "assignment"
+  - "ca-atp"
+  - "ca-atp-pal"
+  - "cross-application components"
+  - "sap"
+  - "cds view"
+  - "đặc trưng"
+  - "kết hợp giá trị"
+  - "hoạt động xóa"
+  - "giao diện ứng dụng"
+semantic_en: "Characteristics value combinations deletion activity entity type, used to manage deletion activities for characteristics value combinations assignments."
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

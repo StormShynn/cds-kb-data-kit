@@ -1,6 +1,19 @@
 ---
 name: D_CITRECLASSIFYPARAMETER
 description: "D Citreclassifyparameter"
+semantic_vi: "View D_CITRECLASSIFYPARAMETER hiển thị các tham số phân loại cho citre, được sử dụng trong các giao dịch tài chính. Nó có thể được sử dụng để lấy hoặc cập nhật các tham số này."
+keywords:
+  - "citre"
+  - "classification parameter"
+  - "tham số phân loại"
+  - "financial transaction"
+  - "giao dịch tài chính"
+  - "fi-loc-cit"
+  - "fi"
+  - "fi-loc"
+  - "component:fi-loc-cit"
+  - "lob:finance"
+semantic_en: "The D_CITRECLASSIFYPARAMETER CDS view exposes classification parameters for citre, which are used in financial transactions. It can be used to retrieve or update these parameters."
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

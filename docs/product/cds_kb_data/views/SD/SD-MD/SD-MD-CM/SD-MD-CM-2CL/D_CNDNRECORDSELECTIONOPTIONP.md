@@ -1,6 +1,17 @@
 ---
 name: D_CNDNRECORDSELECTIONOPTIONP
 description: "D Cndnrecordselectionoptionp"
+semantic_vi: "View này hiển thị các tùy chọn lựa chọn hồ sơ điều kiện giá cho một phạm vi cụ thể, được sử dụng khi định nghĩa điều kiện giá trong bán hàng và phân phối."
+keywords:
+  - "pricing condition"
+  - "record selection"
+  - "sales distribution"
+  - "sales and distribution"
+  - "sd-md-cm"
+  - "cndnrecordselectionoptionp"
+  - "prcgconditionrecordrange"
+  - "pricing condition record range"
+semantic_en: "This view exposes pricing condition record selection options for a specific range, used when defining pricing conditions in sales and distribution."
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

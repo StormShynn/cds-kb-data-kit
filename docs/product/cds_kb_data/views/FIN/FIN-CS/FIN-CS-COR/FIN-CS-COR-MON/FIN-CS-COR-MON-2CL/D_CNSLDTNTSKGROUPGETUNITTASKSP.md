@@ -1,6 +1,20 @@
 ---
 name: D_CNSLDTNTSKGROUPGETUNITTASKSP
 description: "D Cnsldtntskgroupgetunittasksp"
+semantic_vi: "Chứa dữ liệu nhóm nhiệm vụ được tổng hợp theo đơn vị cho một phiên bản tổng hợp tài chính, năm tài chính và kỳ tài chính cụ thể, cho phép các nhà phát triển truy xuất và xử lý dữ liệu này để thực hiện tổng hợp và báo cáo tài chính."
+keywords:
+  - "consolidation"
+  - "task group"
+  - "unit"
+  - "financial consolidation"
+  - "reporting"
+  - "fiscal year"
+  - "fiscal period"
+  - "sap cds view"
+  - "d_cnsldtntskgroupgetunittasksp"
+  - "fin-cs-cor-mon-2cl"
+  - "consolidation version"
+semantic_en: "Exposes consolidated task group data by unit for a specific consolidation version, fiscal year, and fiscal period, enabling developers to retrieve and process this data for financial consolidation and reporting purposes."
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

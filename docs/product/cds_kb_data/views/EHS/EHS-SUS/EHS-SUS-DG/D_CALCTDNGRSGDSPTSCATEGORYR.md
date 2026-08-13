@@ -1,6 +1,19 @@
 ---
 name: D_CALCTDNGRSGDSPTSCATEGORYR
 description: "D Calctdngrsgdsptscategoryr"
+semantic_vi: "Tính toán tổng lượng hàng nguy hiểm cho loại vận chuyển, được sử dụng trong thành phần EHS-SUS-DG cho yêu cầu tuân thủ."
+keywords:
+  - "dangerous goods"
+  - "transport category"
+  - "compliance requirement"
+  - "ehs-sus-dg"
+  - "component"
+  - "sap"
+  - "lob:other"
+  - "ehs"
+  - "ehs-sus"
+  - "component:ehs-sus-dg"
+semantic_en: "Calculates total quantity of dangerous goods for transport category, used in EHS-SUS-DG component for compliance requirements."
 app_component: EHS-SUS-DG
 software_component: SAPSCORE
 release_state: released

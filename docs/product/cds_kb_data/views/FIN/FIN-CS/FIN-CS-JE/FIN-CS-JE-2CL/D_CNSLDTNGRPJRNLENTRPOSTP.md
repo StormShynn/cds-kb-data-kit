@@ -1,6 +1,20 @@
 ---
 name: D_CNSLDTNGRPJRNLENTRPOSTP
 description: "D Cnsldtngrpjrnlentrpostp"
+semantic_vi: "View D_CNSLDTNGRPJRNLENTRPOSTP hiển thị dữ liệu đăng ký nhập vào tài khoản tổng hợp, được sử dụng trong quá trình hợp nhất tài chính."
+keywords:
+  - "consolidated journal entry"
+  - "financial consolidation"
+  - "fiscal year"
+  - "consolidation version"
+  - "transactional processing"
+  - "sap financials"
+  - "tổng hợp tài khoản"
+  - "quá trình hợp nhất tài chính"
+  - "năm tài chính"
+  - "bản tổng hợp"
+  - "xử lý giao dịch"
+semantic_en: "The D_CNSLDTNGRPJRNLENTRPOSTP view exposes consolidated journal entry posting data, which is used in financial consolidation processes."
 app_component: FIN-CS-JE-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,16 @@
 ---
 name: D_CNSLDTNUNITTSKRUNGETTSKSTSP
 description: "D Cnsldtnunittskrungettskstsp"
+semantic_vi: "Chỉ ra dữ liệu chạy nhiệm vụ được tổng hợp cho các công việc nền trong thành phần FIN-CS-COR-MON-2CL, hữu ích cho việc theo dõi và phân tích việc thực hiện nhiệm vụ."
+keywords:
+  - "consolidated task run"
+  - "background job"
+  - "fin-cs-cor-mon-2cl"
+  - "task execution"
+  - "nhiệm vụ chạy"
+  - "công việc nền"
+  - "dữ liệu tổng hợp"
+semantic_en: "Exposes consolidated task run data for background jobs in the FIN-CS-COR-MON-2CL component, useful for monitoring and analyzing task execution."
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_CNSLDTNUNITTSKRUNEXECTTASKR
 description: "D Cnsldtnunittskrunexecttaskr"
+semantic_vi: "Chứa thông tin về các nhiệm vụ thực hiện trong các công việc nền tảng được tích hợp, cho phép theo dõi và quản lý các nhiệm vụ này."
+keywords:
+  - "consolidated unit task run execution"
+  - "background job"
+  - "công việc nền tảng"
+  - "task management"
+  - "fin-cs-cor"
+  - "fin-cs-cor-mon-2cl"
+  - "financial consolidation"
+  - "consolidation unit"
+  - "task run"
+  - "execution task"
+semantic_en: "Exposes consolidated unit task run execution tasks for background jobs, providing a way to track and manage these tasks."
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

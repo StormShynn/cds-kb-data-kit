@@ -1,6 +1,21 @@
 ---
 name: D_CONTRACCTGBLGDOCUMENTCREATED
 description: "D Contracctgblgdocumentcreated"
+semantic_vi: "View này hiển thị dữ liệu tạo hóa đơn thanh toán hợp đồng tài khoản, có ích khi theo dõi sự kiện tạo hóa đơn trong thành phần FI-CA-INV-2CL."
+keywords:
+  - "contract account"
+  - "billing document"
+  - "document creation"
+  - "fi-ca-inv-2cl"
+  - "fi"
+  - "fi-ca"
+  - "fi-ca-inv"
+  - "document"
+  - "component"
+  - "finance"
+  - "hóa đơn thanh toán"
+  - "tạo hóa đơn"
+semantic_en: "This view exposes contract account billing document creation data, which is useful when tracking document creation events in the FI-CA-INV-2CL component."
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

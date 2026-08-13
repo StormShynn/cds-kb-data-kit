@@ -66,7 +66,8 @@ async function run() {
   const r15 = await call('tools/call', { name: 'search_cds', arguments: { query: 'đơn mua hàng', limit: 10 } });
   console.log(r15.result?.content?.[0]?.text?.slice(0, 400));
   const vi15 = r15.result?.content?.[0]?.text || '';
-  if (!vi15 || !/I_PURCHASEORDER|I_PURCHASING|I_SUPPLIER/i.test(vi15)) {
+  const purchaseViewRe = /I_PURCHASEORDER|I_PURCHASING|I_SUPPLIER|C_PURORDER|C_OVERDUEPO|PURINFORECORD/i;
+  if (!vi15 || !purchaseViewRe.test(vi15)) {
     console.error('❌ Vietnamese search failed — expected purchase-related views for "đơn mua hàng"');
     proc.kill();
     process.exit(1);
@@ -77,7 +78,7 @@ async function run() {
   const r16 = await call('tools/call', { name: 'search_cds', arguments: { query: 'don mua hang', limit: 10 } });
   console.log(r16.result?.content?.[0]?.text?.slice(0, 400));
   const vi16 = r16.result?.content?.[0]?.text || '';
-  if (!vi16 || !/I_PURCHASEORDER|I_PURCHASING|I_SUPPLIER/i.test(vi16)) {
+  if (!vi16 || !purchaseViewRe.test(vi16)) {
     console.error('❌ Unaccented Vietnamese search failed');
     proc.kill();
     process.exit(1);

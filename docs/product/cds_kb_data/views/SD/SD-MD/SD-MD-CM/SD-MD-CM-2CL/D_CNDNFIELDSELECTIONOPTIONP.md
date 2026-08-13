@@ -1,6 +1,21 @@
 ---
 name: D_CNDNFIELDSELECTIONOPTIONP
 description: "D Cndnfieldselectionoptionp"
+semantic_vi: "View này hiển thị các tùy chọn chọn trường điều kiện giá bán cho một bản ghi điều kiện. Nó được sử dụng để xác định phạm vi giá trị cho một trường điều kiện trong điều kiện giá bán."
+keywords:
+  - "pricing condition"
+  - "điều kiện giá bán"
+  - "field selection"
+  - "chọn trường"
+  - "condition record"
+  - "bản ghi điều kiện"
+  - "condition field"
+  - "trường điều kiện"
+  - "condition range"
+  - "phạm vi điều kiện"
+  - "sap cds"
+  - "cds view"
+semantic_en: "This view exposes pricing condition field selection options for a condition record. It is used to determine the range of values for a condition field in a pricing condition."
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

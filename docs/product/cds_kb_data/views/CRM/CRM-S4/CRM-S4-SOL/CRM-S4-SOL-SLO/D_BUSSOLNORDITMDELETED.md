@@ -1,6 +1,18 @@
 ---
 name: D_BUSSOLNORDITMDELETED
 description: "D Bussolnorditmdeleted"
+semantic_vi: "View D_BUSSOLNORDITMDELETED hiển thị các mục đơn hàng giải pháp kinh doanh đã bị xóa trong CRM, có thể được sử dụng để theo dõi và quản lý các mục đã bị xóa cho mục đích kiểm toán hoặc khôi phục dữ liệu."
+keywords:
+  - "business solution order item"
+  - "deleted item"
+  - "crm"
+  - "auditing"
+  - "data recovery"
+  - "đơn hàng giải pháp kinh doanh"
+  - "mục đã bị xóa"
+  - "kiểm toán"
+  - "khôi phục dữ liệu"
+semantic_en: "The D_BUSSOLNORDITMDELETED view exposes deleted business solution order items in CRM, which can be used to track and manage deleted items for auditing or data recovery purposes."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

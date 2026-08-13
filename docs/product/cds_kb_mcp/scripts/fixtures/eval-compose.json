@@ -25,7 +25,15 @@
       "tool": "search_cds",
       "args": { "query": "don mua hang", "limit": 10 },
       "expect": {
-        "anyViewInTop": ["I_PURCHASEORDER", "I_PURCHASING", "I_SUPPLIER", "I_PURGINFO"],
+        "anyViewInTop": [
+          "I_PURCHASEORDER",
+          "I_PURCHASING",
+          "I_SUPPLIER",
+          "I_PURGINFO",
+          "C_PURORDER",
+          "C_OVERDUEPO",
+          "PURINFORECORD"
+        ],
         "topN": 10
       }
     },

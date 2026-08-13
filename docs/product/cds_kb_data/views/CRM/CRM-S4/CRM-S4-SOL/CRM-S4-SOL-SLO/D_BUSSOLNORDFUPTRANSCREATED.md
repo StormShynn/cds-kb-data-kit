@@ -1,6 +1,21 @@
 ---
 name: D_BUSSOLNORDFUPTRANSCREATED
 description: "D Bussolnordfuptranscreated"
+semantic_vi: "View D_BUSSOLNORDFUPTRANSCREATED hiển thị dữ liệu giao dịch theo dõi sau khi dịch vụ, có liên quan khi theo dõi thay đổi của các mục đơn dịch vụ hoặc người kế nhiệm của chúng."
+keywords:
+  - "service document"
+  - "đơn dịch vụ"
+  - "follow-up transaction"
+  - "transaction data"
+  - "service document item"
+  - "đơn dịch vụ mục"
+  - "successor"
+  - "kế nhiệm"
+  - "service document follow-up"
+  - "crm"
+  - "sap"
+  - "cds view"
+semantic_en: "The D_BUSSOLNORDFUPTRANSCREATED view exposes service document follow-up transaction data, which is relevant when tracking changes to service document items or their successors."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: D_CEPUCOASLIOBJTOLGLTRNEXTP
 description: "D Cepucoasliobjtolgltrnextp"
+semantic_vi: "View này hiển thị dữ liệu vật tư đơn mua hàng cho các giao dịch pháp lý, cho phép bạn truy cập và xử lý vật tư đơn mua hàng trong ngữ cảnh giao dịch pháp lý. Nó được sử dụng trong xử lý giao dịch cho nguồn cung và quản lý mua hàng."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "legal transaction"
+  - "giao dịch pháp lý"
+  - "transactional processing"
+  - "xử lý giao dịch"
+  - "sourcing & procurement"
+  - "nguồn cung & quản lý mua hàng"
+  - "mm-pur-hub-ctr-2cl"
+semantic_en: "This view exposes purchase order item data for legal transactions, allowing you to access and process purchase order items in a legal transaction context. It is used in transactional processing for sourcing and procurement."
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

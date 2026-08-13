@@ -89,8 +89,11 @@ export async function exportSnapshot(connector, config, {
   objects,
   maxObjects = 50,
 } = {}) {
-  const root = path.resolve(outputRoot || config.outputRoot);
-  assertContained(root, root); // normalize
+  const configuredRoot = path.resolve(config.outputRoot);
+  const root = path.resolve(outputRoot || configuredRoot);
+  // Defense in depth: callers outside the MCP tools layer must not be able
+  // to redirect a snapshot beyond the configured allowlisted root.
+  assertContained(configuredRoot, root);
   await fs.mkdir(root, { recursive: true });
 
   const plan = objects?.length

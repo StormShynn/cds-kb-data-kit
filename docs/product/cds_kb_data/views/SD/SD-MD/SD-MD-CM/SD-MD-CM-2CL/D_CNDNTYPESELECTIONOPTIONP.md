@@ -1,6 +1,21 @@
 ---
 name: D_CNDNTYPESELECTIONOPTIONP
 description: "D Cndntypeselectionoptionp"
+semantic_vi: "View này hiển thị các tùy chọn loại điều kiện giá cho điều kiện giá trong bán hàng và phân phối, được sử dụng khi cấu hình điều kiện giá."
+keywords:
+  - "pricing condition"
+  - "sales and distribution"
+  - "cấu hình điều kiện giá"
+  - "loại điều kiện giá"
+  - "tùy chọn điều kiện giá"
+  - "sdsd"
+  - "sd-md-cm"
+  - "sd-md-cm-2cl"
+  - "sales distribution"
+  - "điều kiện giá"
+  - "loại điều kiện"
+  - "tùy chọn điều kiện"
+semantic_en: "This view exposes pricing condition type selection options for pricing conditions in sales and distribution, used when configuring pricing conditions."
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

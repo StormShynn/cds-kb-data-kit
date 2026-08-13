@@ -1,6 +1,20 @@
 ---
 name: D_CONDITIONRECORDCRITERIAITEMP
 description: "D Condition RecordCRITERIAITEMP"
+semantic_vi: "View D_CONDITIONRECORDCRITERIAITEMP hiển thị dữ liệu tiêu chí điều kiện bản ghi, được sử dụng để lọc và áp dụng điều kiện cho các mục trong tài liệu bán hàng."
+keywords:
+  - "condition record"
+  - "criteria item"
+  - "sales document"
+  - "điều kiện bản ghi"
+  - "tiêu chí mục"
+  - "tài liệu bán hàng"
+  - "sđd"
+  - "sdmd"
+  - "sdmdcm"
+  - "pricing-condition"
+  - "item-level"
+semantic_en: "The D_CONDITIONRECORDCRITERIAITEMP CDS view exposes condition record criteria item data, which is used to filter and apply conditions to items in sales documents."
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: D_BUSSOLNORDITMCREATED
 description: "D Bussolnorditmcreated"
+semantic_vi: "View D_BUSSOLNORDITMCREATED hiển thị dữ liệu tạo đơn hàng giải pháp kinh doanh, hữu ích khi theo dõi các mục mới được thêm vào đơn hàng giải pháp kinh doanh."
+keywords:
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "order item creation"
+  - "tạo đơn hàng"
+  - "crm"
+  - "sap"
+  - "solution order item"
+  - "đơn hàng giải pháp"
+  - "item creation"
+semantic_en: "The D_BUSSOLNORDITMCREATED view exposes business solution order item creation data, useful when tracking new items added to a business solution order."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

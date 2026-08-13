@@ -1,6 +1,18 @@
 ---
 name: D_CNSLDTNTSKGROUPGETUNITTASKSR
 description: "D Cnsldtntskgroupgetunittasksr"
+semantic_vi: "Chứa dữ liệu nhóm và đơn vị công việc liên quan đến quá trình giám sát tổng hợp tài chính. Sử dụng để lấy và hiển thị thông tin công việc trong quá trình tổng hợp tài chính."
+keywords:
+  - "financial consolidation"
+  - "consolidation task"
+  - "consolidation task group"
+  - "consolidation task unit"
+  - "financial monitoring"
+  - "tổng hợp tài chính"
+  - "công việc tổng hợp"
+  - "đơn vị công việc"
+  - "giám sát tài chính"
+semantic_en: "Exposes consolidation task group and unit task data for financial consolidation monitoring. Used to retrieve and display task information in the financial consolidation process."
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

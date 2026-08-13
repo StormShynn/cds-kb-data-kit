@@ -1,6 +1,18 @@
 ---
 name: D_CNDNTABLESELECTIONOPTIONP
 description: "D Cndntableselectionoptionp"
+semantic_vi: "Tùy chọn chọn bảng điều kiện giá cho điều kiện giá trong bán hàng và phân phối. View này được sử dụng để lấy tùy chọn bảng điều kiện giá."
+keywords:
+  - "pricing condition"
+  - "sales and distribution"
+  - "tùy chọn bảng điều kiện giá"
+  - "bán hàng và phân phối"
+  - "cndntableselectionoptionp"
+  - "sd-md-cm-2cl"
+  - "sd-md-cm"
+  - "sales distribution"
+  - "điều kiện giá"
+semantic_en: "Pricing condition table selection options for pricing conditions in sales and distribution. This view is used to retrieve pricing condition table range options."
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

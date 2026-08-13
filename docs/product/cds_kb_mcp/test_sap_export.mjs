@@ -229,12 +229,9 @@ async function runSnapshotTests() {
       outputRoot: path.join(tmp, '..', 'escape-out'),
       objects: [{ name: 'ZI_ALPHA' }],
     });
-    // exportSnapshot itself may not check parent of configured root — tools layer does.
-    // Here assertContained for a write under escape:
-    assertContained(tmp, path.join(tmp, '..', 'escape-out'));
     assert(false, 'should not contain escape');
   } catch {
-    assert(true, 'path containment blocks escape output root');
+    assert(true, 'exportSnapshot blocks escape output root directly');
   }
 
   // Deterministic source hash in manifest

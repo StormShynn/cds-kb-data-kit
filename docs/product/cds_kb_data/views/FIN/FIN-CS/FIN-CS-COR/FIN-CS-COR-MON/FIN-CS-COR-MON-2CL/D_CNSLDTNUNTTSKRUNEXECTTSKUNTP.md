@@ -1,6 +1,17 @@
 ---
 name: D_CNSLDTNUNTTSKRUNEXECTTSKUNTP
 description: "D Cnsldtnunttskrunexecttskuntp"
+semantic_vi: "Chứa dữ liệu thực thi cho các nhiệm vụ đơn vị tổng hợp trong ngữ cảnh tài chính, hữu ích cho việc theo dõi và phân tích việc thực thi nhiệm vụ."
+keywords:
+  - "consolidation unit"
+  - "financial context"
+  - "task execution"
+  - "đơn vị tổng hợp"
+  - "ngữ cảnh tài chính"
+  - "nhiệm vụ thực thi"
+  - "sap financials"
+  - "fin-cs-cor-mon-2cl"
+semantic_en: "Exposes execution data for consolidation unit tasks in a financial context, useful for monitoring and analyzing task execution."
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: D_CALCTDANGEROUSGOODSPOINTSR
 description: "D Calctdangerousgoodspointsr"
+semantic_vi: "Tính điểm hàng nguy hiểm cho một tài liệu, được sử dụng trong thành phần EHS-SUS-DG cho tuân thủ EHS."
+keywords:
+  - "dangerous goods"
+  - "ehs"
+  - "ehs-sus-dg"
+  - "compliance"
+  - "calculates points"
+  - "document"
+  - "hàng nguy hiểm"
+  - "tuân thủ ehs"
+  - "ehs-sus"
+  - "sap ehs"
+  - "sap ehs-sus-dg"
+semantic_en: "Calculates dangerous goods points for a document, used in EHS-SUS-DG component for EHS compliance."
 app_component: EHS-SUS-DG
 software_component: SAPSCORE
 release_state: released

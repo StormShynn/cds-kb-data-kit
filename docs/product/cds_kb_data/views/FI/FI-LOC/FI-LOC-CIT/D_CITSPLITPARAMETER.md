@@ -1,6 +1,18 @@
 ---
 name: D_CITSPLITPARAMETER
 description: "D Citsplitparameter"
+semantic_vi: "View D_CITSPLITPARAMETER hiển thị dữ liệu tham số chia cho thuế thành phố, có liên quan khi xử lý giao dịch thuế thành phố. Nó cung cấp các trường khóa chính như mã phân loại, số lượng hàng và tiền tệ."
+keywords:
+  - "city tax"
+  - "thuế thành phố"
+  - "split parameter"
+  - "tham số chia"
+  - "sap fi-loc-cit"
+  - "finance"
+  - "tài chính"
+  - "citi classification code"
+  - "mã phân loại thành phố"
+semantic_en: "The D_CITSPLITPARAMETER view exposes split parameter data for city tax, which is relevant when processing city tax transactions. It provides key fields such as classification code, item amount, and currency."
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

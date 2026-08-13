@@ -1,6 +1,21 @@
 ---
 name: D_BUSSOLNORDITMCHANGED
 description: "D Bussolnorditmchanged"
+semantic_vi: "View D_BUSSOLNORDITMCHANGED hiển thị các thay đổi trong đơn hàng giải pháp kinh doanh, có thể được sử dụng để theo dõi các thay đổi trong các đơn hàng của giải pháp kinh doanh."
+keywords:
+  - "business solution"
+  - "order item"
+  - "change"
+  - "tracking"
+  - "crm"
+  - "sap"
+  - "solution"
+  - "order"
+  - "item"
+  - "modification"
+  - "thay đổi"
+  - "đơn hàng"
+semantic_en: "The D_BUSSOLNORDITMCHANGED view exposes business solution order item changes, which can be used to track modifications to order items in a business solution."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

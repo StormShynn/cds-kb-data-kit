@@ -1,6 +1,19 @@
 ---
 name: D_CNSLDTNGRPJRNLENTRPOSTITEMP
 description: "D Cnsldtngrpjrnlentrpostitemp"
+semantic_vi: "View này hiển thị dữ liệu nhập vào chi tiết cho các mục nhập hợp nhất trong hệ thống tài chính, thường được sử dụng khi phân tích hoặc báo cáo về các mục riêng lẻ trong một mục nhập nhật ký hợp nhất."
+keywords:
+  - "consolidation"
+  - "posting"
+  - "journal entry"
+  - "item-level"
+  - "financial system"
+  - "hợp nhất"
+  - "nhập vào"
+  - "mục nhập nhật ký"
+  - "dữ liệu chi tiết"
+  - "tài chính"
+semantic_en: "This view exposes item-level posting data for consolidation entries in a financial system, typically used when analyzing or reporting on individual items within a consolidation journal entry."
 app_component: FIN-CS-JE-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: D_CITCHECKAUTHORIZATIONP
 description: "D Citcheckauthorizationp"
+semantic_vi: "View D_CITCHECKAUTHORIZATIONP hiển thị dữ liệu về quyền truy cập cho kiểm tra CIT, có thể được sử dụng để xác định xem người dùng có đủ quyền để thực hiện các tác vụ liên quan đến CIT hay không."
+keywords:
+  - "cit check"
+  - "kiểm tra cit"
+  - "authorization"
+  - "quyền truy cập"
+  - "sap fi-loc-cit"
+  - "finance"
+  - "tài chính"
+  - "cds view"
+  - "view dữ liệu"
+semantic_en: "The D_CITCHECKAUTHORIZATIONP view exposes authorization data for CIT checks, which can be used to determine if a user has the necessary permissions to perform CIT-related tasks."
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released
