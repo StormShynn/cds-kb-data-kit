@@ -1,6 +1,21 @@
 ---
 name: I_BILLOFOPERATIONSSTATUSTEXT
 description: "Billofoperationsstatustext"
+semantic_vi: "View Billofoperationsstatustext cung cấp mô tả văn bản cho trạng thái của đơn hàng vận hành trong các ngôn ngữ khác nhau. Nó được sử dụng để hiển thị thông tin trạng thái trong các ứng dụng."
+keywords:
+  - "bill of operations"
+  - "status text"
+  - "language"
+  - "manufacturing"
+  - "pp-vdm-md-2cl"
+  - "sap"
+  - "cds view"
+  - "interface view"
+  - "text view"
+  - "trạng thái đơn hàng vận hành"
+  - "mô tả văn bản"
+  - "ngôn ngữ"
+semantic_en: "The Billofoperationsstatustext view provides text descriptions for bill of operations statuses in different languages. It is used to display status information in applications."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGRELEVANCECODE
 description: "Billingrelevancecode"
+semantic_vi: "View I_BILLINGRELEVANCECODE hiển thị mã liên quan đến hóa đơn, được sử dụng để xác định mức độ liên quan của các tài liệu hóa đơn trong thành phần Sales và Distribution của SAP. View này có thể được sử dụng để truy xuất và phân tích các mã liên quan đến hóa đơn cho các mục đích kinh doanh khác nhau."
+keywords:
+  - "billing relevance code"
+  - "mã liên quan đến hóa đơn"
+  - "sales and distribution"
+  - "sản phẩm và phân phối"
+  - "sap"
+  - "sdsd"
+  - "billing document"
+  - "tài liệu hóa đơn"
+  - "relevance code"
+  - "mã liên quan"
+semantic_en: "The I_BILLINGRELEVANCECODE view exposes billing relevance codes, which are used to determine the relevance of billing documents in the Sales and Distribution component of SAP. This view can be used to retrieve and analyze billing relevance codes for various business purposes."
 app_component: SD-BF-MD-2CL
 software_component: SAPSCORE
 release_state: released

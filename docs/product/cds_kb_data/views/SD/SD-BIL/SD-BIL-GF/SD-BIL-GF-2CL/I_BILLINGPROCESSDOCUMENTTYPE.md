@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGPROCESSDOCUMENTTYPE
 description: "Billingprocessdocumenttype"
+semantic_vi: "View I_BILLINGPROCESSDOCUMENTTYPE hiển thị các loại tài liệu quy trình hóa đơn và các loại liên quan, được sử dụng để xác định và phân loại tài liệu hóa đơn trong mô-đun Bán hàng và Phân phối."
+keywords:
+  - "billing process"
+  - "document type"
+  - "sddocumentcategory"
+  - "sales and distribution"
+  - "lob sales & distribution"
+  - "sd-bil-gf-2cl"
+  - "component sd-bil-gf-2cl"
+  - "billing document category"
+  - "billgprocdoctype"
+  - "billgprocdoctype txt detn procedure"
+  - "billgprocdoctype item txt detn procedure"
+semantic_en: "The I_BILLINGPROCESSDOCUMENTTYPE CDS view exposes billing process document types and related categories, used to identify and categorize billing documents in the Sales and Distribution module."
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

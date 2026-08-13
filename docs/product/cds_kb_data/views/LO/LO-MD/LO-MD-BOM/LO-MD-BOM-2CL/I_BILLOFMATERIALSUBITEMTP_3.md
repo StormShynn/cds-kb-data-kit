@@ -1,6 +1,21 @@
 ---
 name: I_BILLOFMATERIALSUBITEMTP_3
 description: "Bill of MaterialSUBITEMTP 3"
+semantic_vi: "View Bill of Material SUBITEMTP 3 cung cấp thông tin về các thành phần vật liệu và mối quan hệ của chúng trong một bảng vật liệu, có ích cho việc quản lý và phân tích cấu trúc vật liệu."
+keywords:
+  - "bill of material"
+  - "bảng vật liệu"
+  - "material component"
+  - "thành phần vật liệu"
+  - "material structure"
+  - "cấu trúc vật liệu"
+  - "bom"
+  - "ekko"
+  - "logistics general"
+  - "lo"
+  - "lo-md"
+  - "lo-md-bom"
+semantic_en: "The Bill of Material SUBITEMTP 3 view provides information about material components and their relationships within a bill of material, which is useful for managing and analyzing material structures."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: D_CUSTOMERRETURNITEMDELETED
 description: "D Customerreturnitemdeleted"
+semantic_vi: "View này hiển thị các sự kiện xóa hàng trả lại khách hàng, có thể được sử dụng để theo dõi và phân tích hoạt động xóa hàng trả lại khách hàng."
+keywords:
+  - "customer return item deletion"
+  - "xóa hàng trả lại khách hàng"
+  - "event"
+  - "sự kiện"
+  - "sales and distribution"
+  - "sales distribution"
+  - "sd"
+  - "sd-sls"
+  - "sd-sls-re"
+  - "customer"
+  - "item-level"
+  - "sales organization"
+semantic_en: "This view exposes customer return item deletion events, which can be used to track and analyze customer return item deletion activities."
 app_component: SD-SLS-RE-2CL
 software_component: SAPSCORE
 release_state: released

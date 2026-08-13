@@ -1,6 +1,19 @@
 ---
 name: I_BOPFORMITEMRULE
 description: "Bopformitemrule"
+semantic_vi: "View Bopformitemrule hiển thị dữ liệu kinh doanh liên quan đến các quy tắc hình thức cho các biểu mẫu BOP (Business Object Processor), được sử dụng để định nghĩa quy tắc xử lý cấp mục cho các giao dịch tài chính."
+keywords:
+  - "bop"
+  - "form item rule"
+  - "financial transaction"
+  - "đơn vị kinh doanh"
+  - "quy tắc hình thức"
+  - "biểu mẫu bop"
+  - "giao dịch tài chính"
+  - "fi-loc-fi"
+  - "interface-view"
+  - "item-level"
+semantic_en: "The Bopformitemrule view exposes business data related to form item rules for BOP (Business Object Processor) forms, which are used to define item-level processing rules for financial transactions."
 app_component: FI-LOC-FI
 software_component: SAPSCORE
 release_state: released

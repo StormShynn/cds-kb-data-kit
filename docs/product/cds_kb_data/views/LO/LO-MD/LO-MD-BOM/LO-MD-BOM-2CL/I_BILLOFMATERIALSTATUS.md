@@ -1,6 +1,18 @@
 ---
 name: I_BILLOFMATERIALSTATUS
 description: "Bill of MaterialSTATUS"
+semantic_vi: "View I_BILLOFMATERIALSTATUS cung cấp thông tin về trạng thái của một danh mục vật liệu. Nó được sử dụng để theo dõi trạng thái của vật liệu trong một danh mục vật liệu."
+keywords:
+  - "bill of material"
+  - "trạng thái danh mục vật liệu"
+  - "sap cds view"
+  - "logistics general"
+  - "material status"
+  - "bom status"
+  - "lo-md-bom"
+  - "interface view"
+  - "material management"
+semantic_en: "The I_BILLOFMATERIALSTATUS view provides information about the status of a bill of material. It is used to track the status of materials in a bill of material."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

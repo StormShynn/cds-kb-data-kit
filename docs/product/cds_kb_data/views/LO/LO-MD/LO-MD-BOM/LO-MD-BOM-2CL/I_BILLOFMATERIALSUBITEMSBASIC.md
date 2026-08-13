@@ -1,6 +1,18 @@
 ---
 name: I_BILLOFMATERIALSUBITEMSBASIC
 description: "Bill of MaterialSUBITEMSBASIC"
+semantic_vi: "View Bill of Material SUBITEMSBASIC hiển thị dữ liệu chi tiết cho danh mục vật liệu, bao gồm chi tiết và số lượng của từng phần tử. Nó được sử dụng để truy cập và chỉnh sửa dữ liệu của từng phần tử trong ứng dụng thành phần LO-MD-BOM-2CL."
+keywords:
+  - "bill of material"
+  - "danh mục vật liệu"
+  - "bom item"
+  - "subitem"
+  - "bom subitem"
+  - "lo-md-bom-2cl"
+  - "logistics general"
+  - "material"
+  - "ekko"
+semantic_en: "The Bill of Material SUBITEMSBASIC view exposes item-level data for bill of materials, including subitem details and quantities. It is used to access and manipulate BOM item data in the LO-MD-BOM-2CL application component."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

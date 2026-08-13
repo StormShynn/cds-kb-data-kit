@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGPRICESOURCE
 description: "Billingpricesource"
+semantic_vi: "View I_BILLINGPRICESOURCE hiển thị nguồn giá hóa đơn, có liên quan khi xác định giá bán cho các giao dịch bán hàng."
+keywords:
+  - "billing price source"
+  - "nguồn giá hóa đơn"
+  - "sales transaction"
+  - "giao dịch bán hàng"
+  - "sap"
+  - "sd-md-cm"
+  - "sales and distribution"
+  - "dịch vụ bán hàng"
+  - "giá bán"
+semantic_en: "The I_BILLINGPRICESOURCE view exposes billing price sources, which are relevant when determining the pricing for sales transactions."
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

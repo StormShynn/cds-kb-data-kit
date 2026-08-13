@@ -1,6 +1,21 @@
 ---
 name: I_BOMVARIANTUSAGE
 description: "Bomvariantusage"
+semantic_vi: "View I_BOMVARIANTUSAGE cung cấp thông tin về việc sử dụng các biến thể của vật liệu trong sản xuất, kỹ thuật, tính toán giá thành, phân phối bán hàng, cấu hình cấp cao, bảo trì nhà máy và phụ tùng dự phòng. Nó được sử dụng để phân tích và quản lý tính liên quan của các biến thể vật liệu trong các quy trình kinh doanh khác nhau."
+keywords:
+  - "bill of material"
+  - "bom"
+  - "bom variant"
+  - "production"
+  - "engineering"
+  - "costing"
+  - "sales distribution"
+  - "high-level configuration"
+  - "plant maintenance"
+  - "spare parts"
+  - "logistics"
+  - "lo"
+semantic_en: "The I_BOMVARIANTUSAGE view provides information about the usage of bill of material variants in production, engineering, costing, sales distribution, high-level configuration, plant maintenance, and spare parts. It is used to analyze and manage the relevance of bill of material variants in different business processes."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

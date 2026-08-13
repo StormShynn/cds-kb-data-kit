@@ -1,6 +1,21 @@
 ---
 name: I_BILLOFMATERIALUSAGETEXT
 description: "Bill of MaterialUSAGETEXT"
+semantic_vi: "View Bill of Material Usage Text cung cấp mô tả văn bản cho việc sử dụng bản sao vật liệu, có thể được sử dụng để hiển thị thông tin chi tiết về việc sử dụng vật liệu trong một bản sao vật liệu."
+keywords:
+  - "bill of material"
+  - "bản sao vật liệu"
+  - "text view"
+  - "view"
+  - "material"
+  - "vật liệu"
+  - "usage"
+  - "sử dụng"
+  - "variant"
+  - "bản sao"
+  - "logistics"
+  - "lo"
+semantic_en: "The Bill of Material Usage Text view provides text descriptions for bill of material variant usage, which can be used to display detailed information about material usage in a bill of material."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

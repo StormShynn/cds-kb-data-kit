@@ -1,6 +1,19 @@
 ---
 name: I_BILLOFOPERATIONSUSAGETEXT
 description: "Billofoperationsusagetext"
+semantic_vi: "View I_BILLOFOPERATIONSUSAGETEXT cung cấp mô tả văn bản cho việc sử dụng bảng kê hoạt động, có liên quan đến quy trình sản xuất trong SAP PP-VDM-MD-2CL. Nó có thể được sử dụng để hiển thị hoặc truy xuất các mô tả dựa trên ngôn ngữ và sử dụng."
+keywords:
+  - "bill of operations"
+  - "sử dụng bảng kê hoạt động"
+  - "text view"
+  - "view"
+  - "sản xuất"
+  - "quy trình sản xuất"
+  - "sap pp-vdm-md-2cl"
+  - "manufacturing"
+  - "pp-vdm"
+  - "pp"
+semantic_en: "The I_BILLOFOPERATIONSUSAGETEXT view provides text descriptions for bill of operations usage, which is relevant for manufacturing processes in SAP PP-VDM-MD-2CL. It can be used to display or retrieve these descriptions based on language and usage."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

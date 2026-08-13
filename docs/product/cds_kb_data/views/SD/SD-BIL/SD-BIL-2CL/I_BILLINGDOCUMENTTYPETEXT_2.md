@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGDOCUMENTTYPETEXT_2
 description: "Billing DocumentUMENTTYPETEXT 2"
+semantic_vi: "Chứa dữ liệu văn bản loại hóa đơn cho mục đích logic kinh doanh và báo cáo liên quan đến hóa đơn."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "billing document type"
+  - "loại hóa đơn"
+  - "text data"
+  - "dữ liệu văn bản"
+  - "sap"
+  - "sd"
+  - "sales & distribution"
+  - "lob: sales & distribution"
+  - "bo: billing document"
+  - "component: sd-bil-2cl"
+semantic_en: "Exposes billing document type text data for use in billing document-related business logic and reporting."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGDOCUMENTTYPEHIER
 description: "Billing DocumentUMENTTYPEHIER"
+semantic_vi: "View I_BILLINGDOCUMENTTYPEHIER CDS hiển thị một hiệp hội các loại hóa đơn và ngày hiệu lực của chúng, hữu ích cho việc quản lý và phân tích các loại hóa đơn trong các khoảng thời gian khác nhau."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "billing document type"
+  - "loại hóa đơn"
+  - "validity date"
+  - "ngày hiệu lực"
+  - "hierarchy"
+  - "hiệp hội"
+  - "fi-gl"
+  - "fi-gl-is"
+  - "sap fi"
+  - "sap cds"
+semantic_en: "The I_BILLINGDOCUMENTTYPEHIER CDS view exposes a hierarchy of billing document types and their validity dates, useful for managing and analyzing billing document types across different time periods."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

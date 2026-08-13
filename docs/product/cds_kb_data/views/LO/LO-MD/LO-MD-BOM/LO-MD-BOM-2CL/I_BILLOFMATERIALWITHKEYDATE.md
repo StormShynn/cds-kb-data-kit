@@ -1,6 +1,18 @@
 ---
 name: I_BILLOFMATERIALWITHKEYDATE
 description: "Bill of MaterialWITHKEYDATE"
+semantic_vi: "Chứa dữ liệu về danh mục vật liệu với ngày khóa, được sử dụng cho quản lý vật liệu và lập kế hoạch sản xuất."
+keywords:
+  - "bill of material"
+  - "danh mục vật liệu"
+  - "material management"
+  - "quản lý vật liệu"
+  - "production planning"
+  - "lập kế hoạch sản xuất"
+  - "sap lo-md-bom-2cl"
+  - "ekko"
+  - "lo-md-bom"
+semantic_en: "Exposes bill of material data with key date, used for material management and production planning."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

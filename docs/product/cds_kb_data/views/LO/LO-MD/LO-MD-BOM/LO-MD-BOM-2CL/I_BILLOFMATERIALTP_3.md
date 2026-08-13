@@ -1,6 +1,21 @@
 ---
 name: I_BILLOFMATERIALTP_3
 description: "Bill of MaterialTP 3"
+semantic_vi: "View I_BILLOFMATERIALTP_3 cung cấp truy cập dữ liệu bảng vật liệu, bao gồm các thành phần vật liệu và tài liệu thay đổi kỹ thuật, cho việc xử lý giao dịch và quản lý vật liệu."
+keywords:
+  - "bill of material"
+  - "bảng vật liệu"
+  - "material management"
+  - "quản lý vật liệu"
+  - "transactional processing"
+  - "xử lý giao dịch"
+  - "engineering change document"
+  - "tài liệu thay đổi kỹ thuật"
+  - "sap"
+  - "logistics general"
+  - "lo-md-bom"
+  - "ekko"
+semantic_en: "The Bill of Material TP 3 view provides access to bill of material data, including material components and engineering change documents, for use in transactional processing and material management."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

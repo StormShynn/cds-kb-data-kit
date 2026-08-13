@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGPLANCATEGORYTEXT
 description: "Billingplancategorytext"
+semantic_vi: "View I_BILLINGPLANCATEGORYTEXT cung cấp mô tả văn bản cho các loại kế hoạch hóa hóa đơn trong các ngôn ngữ khác nhau, có thể được sử dụng để hiển thị tên loại kế hoạch hóa hóa đơn trong giao diện người dùng."
+keywords:
+  - "billing plan category"
+  - "text description"
+  - "language"
+  - "sap cds view"
+  - "sd-bil-iv-bp-2cl"
+  - "sales & distribution"
+  - "lob"
+  - "sales"
+  - "distribution"
+  - "billing"
+  - "category"
+  - "text"
+semantic_en: "The I_BILLINGPLANCATEGORYTEXT view provides text descriptions for billing plan categories in different languages, which can be used to display category names in user interfaces."
 app_component: SD-BIL-IV-BP-2CL
 software_component: SAPSCORE
 release_state: released

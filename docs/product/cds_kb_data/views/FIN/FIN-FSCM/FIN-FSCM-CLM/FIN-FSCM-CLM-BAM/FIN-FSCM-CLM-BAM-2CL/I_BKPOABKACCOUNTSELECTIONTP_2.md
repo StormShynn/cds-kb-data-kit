@@ -1,6 +1,19 @@
 ---
 name: I_BKPOABKACCOUNTSELECTIONTP_2
 description: "Bkpoabkaccountselectiontp 2"
+semantic_vi: "View I_Bkpoabkaccountselectiontp_2 hiển thị dữ liệu lựa chọn tài khoản ngân hàng cho quyền đại diện, được sử dụng trong xử lý giao dịch quản lý yêu cầu bồi thường."
+keywords:
+  - "bank account"
+  - "power of attorney"
+  - "claims management"
+  - "transactional processing"
+  - "sap cds view"
+  - "i_bkpoabkaccountselectiontp_2"
+  - "bkpoabkaccountselectiontp 2"
+  - "fin-fscm-clm-bam-2cl"
+  - "financial services"
+  - "dịch vụ tài chính"
+semantic_en: "The Bkpoabkaccountselectiontp 2 view exposes bank account selection data for power of attorney, used in transactional processing of claims management."
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_BOMGROUPLINKSDEX
 description: "Bomgrouplinksdex"
+semantic_vi: "View I_BOMGROUPLINKSDEX hiển thị danh sách liên kết nhóm vật liệu BOM, được sử dụng để kết nối các nhóm vật liệu BOM khác nhau trong một BOM. Dữ liệu này hữu ích khi phân tích hoặc chỉnh sửa cấu trúc BOM."
+keywords:
+  - "bom"
+  - "bill of material"
+  - "bom group"
+  - "bom link"
+  - "logistics"
+  - "sap"
+  - "cds view"
+  - "interface view"
+  - "data extraction"
+  - "bom structure"
+  - "vật liệu bom"
+  - "nhóm vật liệu bom"
+semantic_en: "The I_BOMGROUPLINKSDEX view exposes a list of bill of material group links, which are used to connect different bill of material groups in a BOM. This data is useful when analyzing or modifying BOM structures."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

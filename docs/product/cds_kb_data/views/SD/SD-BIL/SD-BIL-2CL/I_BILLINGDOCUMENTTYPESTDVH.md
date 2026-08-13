@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCUMENTTYPESTDVH
 description: "Billing DocumentUMENTTYPESTDVH"
+semantic_vi: "Cung cấp danh sách các loại hóa đơn tiêu chuẩn để sử dụng trong ứng dụng Sales và Distribution. View này có thể được sử dụng để điền dữ liệu giúp cho các trường chọn loại hóa đơn."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "sales and distribution"
+  - "application component"
+  - "sd-bil-2cl"
+  - "standard value help"
+  - "interface view"
+  - "value help"
+  - "billing document type"
+  - "loại hóa đơn tiêu chuẩn"
+semantic_en: "Provides a list of standard billing document types for use in the Sales and Distribution application. This view can be used to populate value help fields for billing document types."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

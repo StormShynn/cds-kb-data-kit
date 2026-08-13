@@ -1,6 +1,19 @@
 ---
 name: I_BILLOFOPERATIONSUSAGE
 description: "Billofoperationsusage"
+semantic_vi: "CDS view Billofoperationsusage hiển thị dữ liệu liên quan đến việc sử dụng hóa đơn hoạt động trong quy trình sản xuất, cung cấp thông tin về kế hoạch và thực hiện sản xuất."
+keywords:
+  - "bill of operations"
+  - "billofoperationsusage"
+  - "production planning"
+  - "sản xuất"
+  - "quy trình sản xuất"
+  - "công cụ sản xuất"
+  - "sản phẩm"
+  - "hóa đơn hoạt động"
+  - "công cụ kế toán"
+  - "thực hiện sản xuất"
+semantic_en: "The Billofoperationsusage CDS view exposes data related to the usage of bills of operations in manufacturing processes, providing insights into production planning and execution."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

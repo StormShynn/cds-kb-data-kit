@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGDOCUMENTREQUESTITEM
 description: "Billing DocumentUMENTREQUESTITEM"
+semantic_vi: "View I_BILLINGDOCUMENTREQUESTITEM hiển thị dữ liệu yêu cầu đơn hàng hóa tiền, được sử dụng khi quản lý đơn hàng hóa tiền và các mục liên quan."
+keywords:
+  - "billing document"
+  - "đơn hàng hóa tiền"
+  - "billing document request item"
+  - "item-level"
+  - "sales & distribution"
+  - "lob:sales & distribution"
+  - "bo:billingdocument"
+  - "sd-bil-bdr-2cl"
+  - "sd-bil"
+  - "sd"
+  - "interface-view"
+  - "component:sd-bil-bdr-2cl"
+semantic_en: "The I_BILLINGDOCUMENTREQUESTITEM view exposes billing document request item data, which is used when managing billing documents and their associated items."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

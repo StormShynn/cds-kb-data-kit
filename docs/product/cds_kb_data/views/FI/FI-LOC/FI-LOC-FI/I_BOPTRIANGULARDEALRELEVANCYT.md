@@ -1,6 +1,18 @@
 ---
 name: I_BOPTRIANGULARDEALRELEVANCYT
 description: "Boptriangulardealrelevancyt"
+semantic_vi: "View Boptriangulardealrelevancyt hiển thị dữ liệu liên quan đến các thỏa thuận tam giác trong hoạt động kinh doanh, hữu ích khi phân tích các giao dịch tài chính và tầm quan trọng của chúng trong bối cảnh thỏa thuận tam giác."
+keywords:
+  - "triangular deal"
+  - "deal relevancy"
+  - "financial transactions"
+  - "bop triangular deal relevancy"
+  - "fi-loc-fi"
+  - "finance"
+  - "đơn vị kinh doanh"
+  - "thỏa thuận tam giác"
+  - "giao dịch tài chính"
+semantic_en: "The Boptriangulardealrelevancyt view exposes triangular deal relevancy data for business operations, useful when analyzing financial transactions and their relevance in a triangular deal context."
 app_component: FI-LOC-FI
 software_component: SAPSCORE
 release_state: released

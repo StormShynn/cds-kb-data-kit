@@ -1,6 +1,15 @@
 ---
 name: I_BILLINGPLANCATEGORY
 description: "Billingplancategory"
+semantic_vi: "View I_BILLINGPLANCATEGORY hiển thị các loại kế hoạch hóa đơn, được sử dụng để phân loại kế hoạch hóa đơn trong thành phần Sales và Distribution."
+keywords:
+  - "billing plan"
+  - "loại kế hoạch hóa đơn"
+  - "sales and distribution"
+  - "categorize"
+  - "sđd"
+  - "sd-bil-iv-bp-2cl"
+semantic_en: "The I_BILLINGPLANCATEGORY view exposes billing plan categories, which are used to categorize billing plans in the Sales and Distribution component."
 app_component: SD-BIL-IV-BP-2CL
 software_component: SAPSCORE
 release_state: released

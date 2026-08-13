@@ -1,6 +1,21 @@
 ---
 name: I_BPADDRESSINDEPENDENTFAX
 description: "Bpaddressindependentfax"
+semantic_vi: "View I_BPADDRESSINDEPENDENTFAX cung cấp thông tin fax đối tác kinh doanh độc lập với địa chỉ, cho phép lấy thông tin fax chi tiết cho đối tác kinh doanh cụ thể, bất kể địa chỉ của họ."
+keywords:
+  - "business partner"
+  - "fax"
+  - "address"
+  - "independent"
+  - "sap"
+  - "cds view"
+  - "abap"
+  - "cloud"
+  - "ap-md-bp-rap"
+  - "address person id"
+  - "communication medium"
+  - "lob other"
+semantic_en: "The I_BPADDRESSINDEPENDENTFAX view provides business partner fax information that is independent of address, allowing for the retrieval of fax details for a specific business partner, regardless of their address."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

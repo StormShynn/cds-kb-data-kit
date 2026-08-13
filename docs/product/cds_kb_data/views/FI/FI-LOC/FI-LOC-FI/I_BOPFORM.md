@@ -1,6 +1,20 @@
 ---
 name: I_BOPFORM
 description: "Bopform"
+semantic_vi: "View Bopform hiển thị dữ liệu kinh doanh liên quan đến các biểu mẫu hóa đơn, được sử dụng trong các giao dịch tài chính. Nó có thể được sử dụng để lấy và thao tác dữ liệu biểu mẫu hóa đơn."
+keywords:
+  - "billing form"
+  - "biểu mẫu hóa đơn"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "bopform"
+  - "fi-loc-fi"
+  - "fi"
+  - "fi-loc"
+  - "interface-view"
+  - "component:fi-loc-fi"
+  - "lob:finance"
+semantic_en: "The Bopform view exposes business data related to billing forms, which are used in financial transactions. It can be used to retrieve and manipulate billing form data."
 app_component: FI-LOC-FI
 software_component: SAPSCORE
 release_state: released

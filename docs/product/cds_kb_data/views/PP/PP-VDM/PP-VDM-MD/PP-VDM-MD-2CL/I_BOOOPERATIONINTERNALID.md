@@ -1,6 +1,17 @@
 ---
 name: I_BOOOPERATIONINTERNALID
 description: "Boooperationinternalid"
+semantic_vi: "View Boooperationinternalid hiển thị ID nội bộ của các hoạt động trong bảng kê hoạt động, hữu ích cho việc tham chiếu các hoạt động cụ thể trong quy trình sản xuất."
+keywords:
+  - "bill of operations"
+  - "đơn kê hoạt động"
+  - "operation internal id"
+  - "id nội bộ hoạt động"
+  - "manufacturing process"
+  - "quy trình sản xuất"
+  - "sap pp-vdm"
+  - "cds view"
+semantic_en: "The Boooperationinternalid view exposes internal IDs of operations in a bill of operations, useful for referencing specific operations in manufacturing processes."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

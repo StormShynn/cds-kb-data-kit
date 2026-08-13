@@ -1,6 +1,19 @@
 ---
 name: I_BPADDRESSINDEPENDENTPHONE
 description: "Bpaddressindependentphone"
+semantic_vi: "Số điện thoại đối tác kinh doanh độc lập với địa chỉ, được sử dụng để lấy số điện thoại của đối tác kinh doanh mà không cần chỉ định địa chỉ."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "phone number"
+  - "số điện thoại"
+  - "address"
+  - "địa chỉ"
+  - "sap"
+  - "cds view"
+  - "view"
+  - "ap-md-bp"
+semantic_en: "Business partner phone numbers independent of address, used to retrieve phone numbers for business partners without specifying an address."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

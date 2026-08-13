@@ -1,6 +1,19 @@
 ---
 name: D_DEBITMEMOREQORDBILLGSTSCHGD
 description: "D Debitmemoreqordbillgstschgd"
+semantic_vi: "Lịch sử thay đổi yêu cầu ghi nợ cho trạng thái hóa đơn, được sử dụng để theo dõi các thay đổi trạng thái hóa đơn của yêu cầu ghi nợ trong quá trình xử lý đơn hàng bán."
+keywords:
+  - "debit memo"
+  - "đơn ghi nợ"
+  - "billing status"
+  - "trạng thái hóa đơn"
+  - "sales order"
+  - "đơn hàng bán"
+  - "sap"
+  - "sd-sls"
+  - "cmr"
+  - "change history"
+semantic_en: "Debit memo request change history for billing status, used to track changes to billing status of debit memos in sales order processing."
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,16 @@
 ---
 name: I_BILLINGDOCUMENTREQUESTTYPE
 description: "Billing DocumentUMENTREQUESTTYPE"
+semantic_vi: "Chứa thông tin về loại yêu cầu tài liệu hóa đơn và chi tiết liên quan, được sử dụng khi quản lý yêu cầu tài liệu hóa đơn trong thành phần Sales và Distribution."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "sales and distribution"
+  - "sddocumentcategory"
+  - "billingdocumentrequesttype"
+  - "incrementitemnumber"
+  - "billingdocumentcategory"
+semantic_en: "Exposes billing document request types and related details, used when managing billing document requests in the Sales and Distribution component."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

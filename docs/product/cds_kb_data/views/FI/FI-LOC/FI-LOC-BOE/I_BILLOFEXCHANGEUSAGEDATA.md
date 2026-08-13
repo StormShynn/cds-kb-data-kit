@@ -1,6 +1,20 @@
 ---
 name: I_BILLOFEXCHANGEUSAGEDATA
 description: "Billofexchangeusagedata"
+semantic_vi: "View Billofexchangeusagedata cung cấp thông tin về dữ liệu sử dụng hóa đơn thanh toán, bao gồm mã công ty, tài khoản kế toán, và ngày dự kiến sử dụng."
+keywords:
+  - "bill of exchange"
+  - "dữ liệu sử dụng hóa đơn thanh toán"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-boe"
+  - "accounting document"
+  - "tài khoản kế toán"
+  - "company code"
+  - "mã công ty"
+  - "planned usage date"
+  - "ngày dự kiến sử dụng"
+semantic_en: "The Billofexchangeusagedata view provides information about bill of exchange usage data, including the company code, accounting document, and planned usage date. It is used to analyze and report on bill of exchange usage."
 app_component: FI-LOC-BOE
 software_component: SAPSCORE
 release_state: released

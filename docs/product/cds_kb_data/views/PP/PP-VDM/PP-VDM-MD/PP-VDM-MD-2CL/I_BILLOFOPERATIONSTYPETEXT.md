@@ -1,6 +1,20 @@
 ---
 name: I_BILLOFOPERATIONSTYPETEXT
 description: "Billofoperationstypetext"
+semantic_vi: "View Billofoperationstypetext cung cấp mô tả văn bản của loại hoạt động hóa đơn trong các ngôn ngữ khác nhau, có thể được sử dụng để hiển thị hoặc lọc các loại hoạt động này trong các ứng dụng sản xuất."
+keywords:
+  - "bill of operations"
+  - "loại hoạt động hóa đơn"
+  - "text view"
+  - "view"
+  - "manufacturing"
+  - "sản xuất"
+  - "language"
+  - "ngôn ngữ"
+  - "pp-vdm"
+  - "pp-vdm-md"
+  - "interface view"
+semantic_en: "The Billofoperationstypetext view provides text descriptions of bill of operations types in different languages, which can be used to display or filter these types in manufacturing applications."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

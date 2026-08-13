@@ -1,6 +1,20 @@
 ---
 name: I_BONDCLASSIFICATIONTEXT
 description: "Bondclassificationtext"
+semantic_vi: "View I_BONDCLASSIFICATIONTEXT cung cấp mô tả văn bản cho các loại cổ phiếu, có thể được sử dụng khi hiển thị hoặc báo cáo thông tin về tên loại cổ phiếu. Nó có thể được sử dụng trong các ứng dụng tài chính để cung cấp một bản thể hiện có thể đọc được của tên loại cổ phiếu."
+keywords:
+  - "bond classification"
+  - "cổ phiếu loại"
+  - "financial application"
+  - "tài chính"
+  - "text description"
+  - "mô tả văn bản"
+  - "sap cds view"
+  - "view i_bondclassificationtext"
+  - "fin-fscm-trm-2cl"
+  - "classification text"
+  - "text classification"
+semantic_en: "The I_BONDCLASSIFICATIONTEXT view provides text descriptions for bond classifications, which can be used when displaying or reporting on bond classification information. It is likely used in financial applications to provide a human-readable representation of bond classification names."
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

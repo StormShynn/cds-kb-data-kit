@@ -1,6 +1,20 @@
 ---
 name: I_BOMGROUPDEX
 description: "Bomgroupdex"
+semantic_vi: "View I_BOMGROUPDEX cung cấp thông tin chi tiết về các nhóm vật liệu (BOM) bao gồm cấu trúc và lịch sử của chúng. Nó được sử dụng để phân tích và quản lý các nhóm vật liệu trong lĩnh vực logistics."
+keywords:
+  - "bom"
+  - "bom group"
+  - "logistics"
+  - "sap"
+  - "cds view"
+  - "bill of materials"
+  - "ngành logistics"
+  - "cds"
+  - "bom nhóm"
+  - "vật liệu"
+  - "sự kiện lịch sử"
+semantic_en: "The I_BOMGROUPDEX view provides a detailed breakdown of bill of materials (BOM) groups, including their structure and history. It is used to analyze and manage BOM groups in the logistics domain."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: I_BPADDINDEPENDENTWEBSITETP_2
 description: "Bpaddindependentwebsitetp 2"
+semantic_vi: "Chứa dữ liệu trang web độc lập đối tác kinh doanh, được sử dụng cho xử lý giao dịch trong thành phần AP-MD-BP-RAP."
+keywords:
+  - "business partner"
+  - "trang web"
+  - "đối tác kinh doanh"
+  - "transactional processing"
+  - "ap-md-bp-rap"
+  - "interface view"
+  - "website data"
+  - "data controller"
+  - "independent website"
+semantic_en: "Exposes business partner independent website data, used for transactional processing in the AP-MD-BP-RAP component."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

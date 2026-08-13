@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCUMENTTEXTTP
 description: "Billing DocumentUMENTTEXTTP"
+semantic_vi: "View Billing Document Text hiển thị dữ liệu văn bản hóa đơn, được sử dụng để hiển thị thông tin chi tiết về hóa đơn bán hàng trong một ngôn ngữ cụ thể."
+keywords:
+  - "billing document"
+  - "hóa đơn bán hàng"
+  - "text"
+  - "language"
+  - "billing document text"
+  - "sđd"
+  - "sd-bil"
+  - "sales & distribution"
+  - "lob: sales & distribution"
+  - "bo: billing document"
+semantic_en: "The Billing Document Text view exposes billing document text data, which is used to display detailed information about a billing document in a specific language."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

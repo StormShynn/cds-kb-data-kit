@@ -1,6 +1,20 @@
 ---
 name: I_BKPOABANKACCOUNTTP_2
 description: "Bkpoabankaccounttp 2"
+semantic_vi: "Chứa thông tin về việc gán và xóa tài khoản ngân hàng cho quản lý yêu cầu, được sử dụng để theo dõi các thay đổi trong việc gán tài khoản ngân hàng cho quá trình xử lý yêu cầu."
+keywords:
+  - "bank account"
+  - "tài khoản ngân hàng"
+  - "claims management"
+  - "quản lý yêu cầu"
+  - "bank account assignment"
+  - "gán tài khoản ngân hàng"
+  - "bank account removal"
+  - "xóa tài khoản ngân hàng"
+  - "sap cds view"
+  - "view i_bkpoabankaccounttp_2"
+  - "fin-fscm-clm-bam-2cl"
+semantic_en: "Exposes bank account assignments and removals for claims management, used to track changes to bank account assignments for claims processing."
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

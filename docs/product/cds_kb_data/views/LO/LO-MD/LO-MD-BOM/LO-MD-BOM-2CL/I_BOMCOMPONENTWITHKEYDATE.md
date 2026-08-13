@@ -1,6 +1,20 @@
 ---
 name: I_BOMCOMPONENTWITHKEYDATE
 description: "Bomcomponentwithkeydate"
+semantic_vi: "View I_BOMCOMPONENTWITHKEYDATE cung cấp danh sách chi tiết vật liệu trong BOM cùng với các ngày khóa quan trọng, hữu ích cho việc phân tích và quản lý vật liệu trong logistics."
+keywords:
+  - "bom"
+  - "bill of materials"
+  - "logistics"
+  - "key dates"
+  - "bom component"
+  - "sap"
+  - "cds view"
+  - "i_bomcomponentwithkeydate"
+  - "lo-md-bom-2cl"
+  - "validity start date"
+  - "validity end date"
+semantic_en: "The I_BOMCOMPONENTWITHKEYDATE view provides a comprehensive list of BOM components with their associated key dates, useful for analyzing and managing bill of materials in logistics."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

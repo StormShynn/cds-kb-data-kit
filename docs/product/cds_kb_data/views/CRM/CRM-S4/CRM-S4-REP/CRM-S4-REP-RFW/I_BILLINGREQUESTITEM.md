@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGREQUESTITEM
 description: "Billingrequestitem"
+semantic_vi: "View I_BILLINGREQUESTITEM hiển thị dữ liệu yêu cầu hóa đơn chi tiết, có liên quan khi làm việc với yêu cầu hóa đơn trong CRM."
+keywords:
+  - "billing request"
+  - "yêu cầu hóa đơn"
+  - "crm"
+  - "service document"
+  - "đơn dịch vụ"
+  - "item level"
+  - "chi tiết"
+  - "sap cds"
+  - "cds view"
+semantic_en: "The I_BILLINGREQUESTITEM view exposes billing request item data, which is relevant when working with billing requests in CRM."
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

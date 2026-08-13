@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGRELEVANCECODETEXT
 description: "Billingrelevancecodetext"
+semantic_vi: "View I_BILLINGRELEVANCECODETEXT cung cấp mô tả văn bản cho mã liên quan đến hóa đơn, có thể được sử dụng để hiển thị ý nghĩa của các mã này trong các ngôn ngữ khác nhau."
+keywords:
+  - "billing relevance code"
+  - "mã liên quan đến hóa đơn"
+  - "text view"
+  - "view"
+  - "billing"
+  - "relevance code"
+  - "language"
+  - "description"
+  - "sdlf"
+  - "sd-bf-md-2cl"
+  - "sales & distribution"
+semantic_en: "The I_BILLINGRELEVANCECODETEXT view provides text descriptions for billing relevance codes, which can be used to display the meaning of these codes in different languages."
 app_component: SD-BF-MD-2CL
 software_component: SAPSCORE
 release_state: released

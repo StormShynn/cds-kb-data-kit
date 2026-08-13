@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCUMENTTAXCODETEXT
 description: "Billing DocumentUMENTTAXCODETEXT"
+semantic_vi: "View I_BILLINGDOCUMENTTAXCODETEXT cung cấp mô tả văn bản cho mã thuế được sử dụng trong các tài liệu hóa đơn, cho phép các nhà phát triển truy cập và sử dụng thông tin này trong các ứng dụng của họ. Nó đặc biệt hữu ích khi làm việc với tài liệu hóa đơn và dữ liệu liên quan đến thuế trong thành phần FI-LOC-LO."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "tax code"
+  - "mã thuế"
+  - "text description"
+  - "mô tả văn bản"
+  - "fi-loc-lo"
+  - "component"
+  - "lob:finance"
+  - "bo:billingdocument"
+semantic_en: "The I_BILLINGDOCUMENTTAXCODETEXT view provides text descriptions for tax codes used in billing documents, allowing developers to access and utilize this information in their applications. It is particularly useful when working with billing documents and tax-related data in the FI-LOC-LO component."
 app_component: FI-LOC-LO
 software_component: SAPSCORE
 release_state: released

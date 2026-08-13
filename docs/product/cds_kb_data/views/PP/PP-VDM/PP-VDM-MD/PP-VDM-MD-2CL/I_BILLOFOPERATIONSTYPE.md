@@ -1,6 +1,17 @@
 ---
 name: I_BILLOFOPERATIONSTYPE
 description: "Billofoperationstype"
+semantic_vi: "View Billofoperationstype cung cấp thông tin về các loại hoạt động của hóa đơn và ứng dụng của chúng trong quy trình sản xuất. Nó được sử dụng để truy cập và quản lý các loại hoạt động của hóa đơn cho kế hoạch và thực hiện sản xuất."
+keywords:
+  - "bill of operations"
+  - "billofoperationstype"
+  - "manufacturing"
+  - "production planning"
+  - "sản xuất"
+  - "kế hoạch sản xuất"
+  - "loại hoạt động của hóa đơn"
+  - "ứng dụng của hóa đơn"
+semantic_en: "The Billofoperationstype view provides information about bill of operations types and their applications in manufacturing processes. It is used to access and manage bill of operations types for production planning and execution."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

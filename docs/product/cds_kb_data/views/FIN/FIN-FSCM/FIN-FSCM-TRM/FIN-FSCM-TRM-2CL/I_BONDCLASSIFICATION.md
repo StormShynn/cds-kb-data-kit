@@ -1,6 +1,18 @@
 ---
 name: I_BONDCLASSIFICATION
 description: "Bondclassification"
+semantic_vi: "View Bondclassification cung cấp dữ liệu phân loại cho các trái phiếu, có thể được sử dụng để phân loại và phân tích các quỹ trái phiếu."
+keywords:
+  - "bond classification"
+  - "trái phiếu phân loại"
+  - "bond portfolio"
+  - "quỹ trái phiếu"
+  - "financial instrument"
+  - "công cụ tài chính"
+  - "sap cds view"
+  - "view i_bondclassification"
+  - "fin-fscm-trm-2cl"
+semantic_en: "The Bondclassification view provides classification data for bonds, which can be used to categorize and analyze bond portfolios."
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGISSUETYPE
 description: "Billingissuetype"
+semantic_vi: "View I_BILLINGISSUETYPE cung cấp truy cập vào các loại vấn đề hóa đơn, được sử dụng để phân loại các vấn đề hóa đơn trong thành phần Sales và Distribution. Nó được sử dụng để truy xuất và quản lý các loại vấn đề hóa đơn cho các kịch bản kinh doanh khác nhau."
+keywords:
+  - "billing issue type"
+  - "loại vấn đề hóa đơn"
+  - "sales and distribution"
+  - "thành phần sales và distribution"
+  - "categorize billing issues"
+  - "phân loại các vấn đề hóa đơn"
+  - "sap cds view"
+  - "view i_billingissuetype"
+  - "billing"
+  - "hóa đơn"
+  - "sd-bil-gf-2cl"
+semantic_en: "The I_BILLINGISSUETYPE CDS view provides access to billing issue types, which are used to categorize billing issues in the Sales and Distribution component. It is used to retrieve and manage billing issue types for various business scenarios."
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

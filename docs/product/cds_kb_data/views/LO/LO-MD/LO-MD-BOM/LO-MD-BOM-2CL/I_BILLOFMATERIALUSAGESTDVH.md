@@ -1,6 +1,18 @@
 ---
 name: I_BILLOFMATERIALUSAGESTDVH
 description: "Bill of MaterialUSAGESTDVH"
+semantic_vi: "Cung cấp hỗ trợ giá trị tiêu chuẩn cho sử dụng bảng thành phần vật liệu, bao gồm việc sử dụng biến thể và mô tả, cho việc sử dụng trong logistics và quản lý vật liệu."
+keywords:
+  - "bill of material"
+  - "bảng thành phần vật liệu"
+  - "logistics"
+  - "quản lý vật liệu"
+  - "standard value help"
+  - "hỗ trợ giá trị tiêu chuẩn"
+  - "material management"
+  - "variant usage"
+  - "sử dụng biến thể"
+semantic_en: "Provides standard value help for bill of material usage, including variant usage and descriptions, for use in logistics and material management."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGDOCUMENTREQUESTTP
 description: "Billing DocumentUMENTREQUESTTP"
+semantic_vi: "View I_BILLINGDOCUMENTREQUESTTP hiển thị các yêu cầu tài liệu hóa đơn, được sử dụng để tạo các tài liệu hóa đơn mới trong thành phần Sales và Distribution của SAP. Nó cung cấp thông tin quan trọng về yêu cầu, chẳng hạn như loại và loại tài liệu, và người dùng đã tạo nó."
+keywords:
+  - "billing document"
+  - "tài liệu hóa đơn"
+  - "sales and distribution"
+  - "sdsd"
+  - "sddocumentcategory"
+  - "billingdocumentrequest"
+  - "billingdocumentrequesttype"
+  - "proposedbillingdocumenttype"
+  - "createdbyuser"
+  - "creationdate"
+  - "creationtime"
+  - "lastchangedate"
+semantic_en: "The I_BILLINGDOCUMENTREQUESTTP view exposes billing document requests, which are used to create new billing documents in the Sales and Distribution component of SAP. It provides key information about the request, such as the document category and type, and the user who created it."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

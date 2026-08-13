@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGPLANUSAGECATEGORY
 description: "Billingplanusagecategory"
+semantic_vi: "View I_BILLINGPLANUSAGECATEGORY cung cấp thông tin về các loại hình sử dụng kế hoạch hóa tiền bạc, được sử dụng để phân loại kế hoạch hóa tiền bạc trong thành phần Sales và Distribution của SAP. View này có thể được sử dụng để truy xuất và phân tích các loại hình sử dụng kế hoạch hóa tiền bạc cho mục đích kinh doanh."
+keywords:
+  - "billing plan"
+  - "sử dụng kế hoạch hóa tiền bạc"
+  - "thanh toán"
+  - "tiền bạc"
+  - "sử dụng"
+  - "kế hoạch hóa"
+  - "sản phẩm"
+  - "bán hàng"
+  - "sự phân loại"
+  - "sử dụng kế hoạch hóa"
+  - "sử dụng kế hoạch"
+semantic_en: "The I_BILLINGPLANUSAGECATEGORY view provides information about billing plan usage categories, which are used to categorize billing plans in the Sales and Distribution component of SAP. This view can be used to retrieve and analyze billing plan usage categories for business purposes."
 app_component: SD-BIL-IV-BP-2CL
 software_component: SAPSCORE
 release_state: released

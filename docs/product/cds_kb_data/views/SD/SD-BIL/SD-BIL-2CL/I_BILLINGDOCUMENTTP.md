@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGDOCUMENTTP
 description: "Billing DocumentUMENTTP"
+semantic_vi: "Chứa thông tin về các loại hóa đơn và các loại danh mục liên quan, được sử dụng để lọc và phân tích hóa đơn trong mô-đun Bán hàng và Phân phối."
+keywords:
+  - "billing document"
+  - "hóa đơn"
+  - "sales and distribution"
+  - "sàn phân phối"
+  - "billing document type"
+  - "loại hóa đơn"
+  - "category"
+  - "danh mục"
+  - "sap"
+  - "sd-bil"
+  - "transactional processing"
+semantic_en: "Exposes billing document types and their associated categories, used to filter and analyze billing documents in the Sales and Distribution module."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

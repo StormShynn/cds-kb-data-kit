@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGPLANRULE
 description: "Billingplanrule"
+semantic_vi: "CDS view I_BILLINGPLANRULE hiển thị các quy tắc kế hoạch hóa hóa đơn, được sử dụng để xác định kế hoạch hóa hóa đơn cho khách hàng hoặc vật liệu. Nó được sử dụng khi tạo hoặc cập nhật kế hoạch hóa hóa đơn trong hệ thống SAP."
+keywords:
+  - "billing plan"
+  - "quy tắc kế hoạch hóa hóa đơn"
+  - "customer"
+  - "khách hàng"
+  - "material"
+  - "vật liệu"
+  - "sap"
+  - "sd-bil"
+  - "sd-bil-iv"
+  - "billing plan rule"
+semantic_en: "The I_BILLINGPLANRULE CDS view exposes billing plan rules, which are used to determine the billing plan for a customer or material. It is used when creating or updating billing plans in the SAP system."
 app_component: SD-BIL-IV-BP-2CL
 software_component: SAPSCORE
 release_state: released

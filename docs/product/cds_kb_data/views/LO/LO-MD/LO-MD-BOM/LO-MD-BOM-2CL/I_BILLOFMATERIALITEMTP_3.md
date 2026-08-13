@@ -1,6 +1,21 @@
 ---
 name: I_BILLOFMATERIALITEMTP_3
 description: "Bill of MaterialITEMTP 3"
+semantic_vi: "View Bill of Material ITEMTP 3 hiển thị dữ liệu chi tiết cho danh mục vật liệu, bao gồm vật liệu, nhà máy và nút vật liệu. Nó được sử dụng trong xử lý giao dịch cho logistics tổng thể, cụ thể trong quản lý vật liệu."
+keywords:
+  - "bill of material"
+  - "danh mục vật liệu"
+  - "material"
+  - "vật liệu"
+  - "plant"
+  - "nhà máy"
+  - "item node"
+  - "nút vật liệu"
+  - "transactional processing"
+  - "xử lý giao dịch"
+  - "logistics general"
+  - "quản lý vật liệu"
+semantic_en: "The Bill of Material ITEMTP 3 view exposes item-level data for bill of materials, including materials, plants, and item nodes. It is used in transactional processing for logistics general, specifically in material management."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

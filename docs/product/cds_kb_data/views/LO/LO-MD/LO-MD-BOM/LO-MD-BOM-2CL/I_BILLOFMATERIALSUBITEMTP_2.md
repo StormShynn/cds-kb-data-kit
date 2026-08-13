@@ -1,6 +1,20 @@
 ---
 name: I_BILLOFMATERIALSUBITEMTP_2
 description: "Bill of MaterialSUBITEMTP 2"
+semantic_vi: "View Bill of Material SUBITEMTP 2 hiển thị dữ liệu thành phần vật liệu cho một bản vẽ vật liệu cụ thể, bao gồm chi tiết tại mức vật liệu và lịch sử thay đổi. Nó được sử dụng trong xử lý giao dịch cho logistics và quản lý vật liệu."
+keywords:
+  - "bill of material"
+  - "bản vẽ vật liệu"
+  - "lo"
+  - "lo-md"
+  - "lo-md-bom"
+  - "transactional processing"
+  - "logistics"
+  - "material management"
+  - "ekko"
+  - "đơn đặt hàng"
+  - "đơn mua hàng"
+semantic_en: "The Bill of Material SUBITEMTP 2 view exposes material component data for a specific bill of material, including item-level details and change history. It is used in transactional processing for logistics and material management."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

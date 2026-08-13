@@ -1,6 +1,19 @@
 ---
 name: I_BOMEXPLOSIONDATE
 description: "Bomexplosiondate"
+semantic_vi: "View I_BOMEXPLOSIONDATE hiển thị các ngày nổ mìn lịch sử của bảng vật liệu (BOM) cho vật liệu và nhà máy, có thể được sử dụng để phân tích và báo cáo về các thay đổi của BOM theo thời gian."
+keywords:
+  - "bom"
+  - "bom explosion date"
+  - "historical data"
+  - "material"
+  - "plant"
+  - "manufacturing"
+  - "pp-vdm"
+  - "interface view"
+  - "lob manufacturing"
+  - "effectivity parameter variant"
+semantic_en: "The I_BOMEXPLOSIONDATE view exposes historical bill of materials (BOM) explosion dates for materials and plants, which can be used to analyze and report on BOM changes over time."
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

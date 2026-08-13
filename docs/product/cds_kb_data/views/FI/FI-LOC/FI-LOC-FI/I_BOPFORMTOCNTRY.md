@@ -1,6 +1,21 @@
 ---
 name: I_BOPFORMTOCNTRY
 description: "Bopformtocntry"
+semantic_vi: "View Bopformtocntry cung cấp một bản đồ các hình thức kinh doanh đến các quốc gia cho các giao dịch tài chính, hữu ích khi xử lý các khoản thanh toán quốc tế hoặc hóa đơn."
+keywords:
+  - "bopformtocntry"
+  - "bopform"
+  - "country"
+  - "boprptgcntry"
+  - "fi-loc-fi"
+  - "interface-view"
+  - "finance"
+  - "financial transactions"
+  - "international payments"
+  - "hình thức kinh doanh"
+  - "quốc gia"
+  - "giao dịch tài chính"
+semantic_en: "The Bopformtocntry view provides a mapping of business forms to countries for financial transactions, useful when processing international payments or invoices."
 app_component: FI-LOC-FI
 software_component: SAPSCORE
 release_state: released

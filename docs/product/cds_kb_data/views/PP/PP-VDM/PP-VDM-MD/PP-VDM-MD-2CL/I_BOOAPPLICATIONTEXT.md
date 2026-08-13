@@ -1,6 +1,20 @@
 ---
 name: I_BOOAPPLICATIONTEXT
 description: "Booapplicationtext"
+semantic_vi: "View I_BOOAPPLICATIONTEXT hiển thị dữ liệu văn bản ứng dụng cho các đơn vị hoạt động, cung cấp tên ứng dụng trong các ngôn ngữ khác nhau. Nó được sử dụng khi hiển thị hoặc xử lý tên ứng dụng trong môi trường đa ngôn ngữ."
+keywords:
+  - "application text"
+  - "bills of operations"
+  - "đơn vị hoạt động"
+  - "văn bản ứng dụng"
+  - "tên ứng dụng"
+  - "ngôn ngữ"
+  - "multilingual"
+  - "sap"
+  - "pp"
+  - "pp-vdm"
+  - "manufacturing"
+semantic_en: "The I_BOOAPPLICATIONTEXT view exposes application text data for bills of operations, providing the name of the application in different languages. It is used when displaying or processing application names in a multilingual environment."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

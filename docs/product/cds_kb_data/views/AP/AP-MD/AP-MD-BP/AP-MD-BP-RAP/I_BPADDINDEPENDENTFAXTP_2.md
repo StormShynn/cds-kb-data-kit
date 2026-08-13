@@ -1,6 +1,18 @@
 ---
 name: I_BPADDINDEPENDENTFAXTP_2
 description: "Bpaddindependentfaxtp 2"
+semantic_vi: "Thông tin fax đối tác kinh doanh, độc lập với địa chỉ, cho việc xử lý giao dịch."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "fax"
+  - "transactional processing"
+  - "xử lý giao dịch"
+  - "sap"
+  - "ap-md-bp-rap"
+  - "interface view"
+  - "address independent"
+semantic_en: "Business partner fax information, independent of address, for use in transactional processing."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

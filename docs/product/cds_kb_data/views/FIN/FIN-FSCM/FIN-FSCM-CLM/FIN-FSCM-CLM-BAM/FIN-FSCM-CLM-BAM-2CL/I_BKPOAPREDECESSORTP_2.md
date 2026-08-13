@@ -1,6 +1,21 @@
 ---
 name: I_BKPOAPREDECESSORTP_2
 description: "Bkpoapredecessortp 2"
+semantic_vi: "View Bkpoapredecessortp 2 hiển thị thông tin về tiền thân của mối quan hệ quyền đại diện ngân hàng, có liên quan khi quản lý thay đổi trong mối quan hệ này."
+keywords:
+  - "bank power of attorney"
+  - "quyền đại diện ngân hàng"
+  - "predecessor"
+  - "tiền thân"
+  - "relationship"
+  - "quan hệ"
+  - "sap cds"
+  - "cds view"
+  - "financial services"
+  - "dịch vụ tài chính"
+  - "clm"
+  - "bpm"
+semantic_en: "The Bkpoapredecessortp 2 view exposes information about predecessors of bank power of attorney relationships, which is relevant when managing changes to these relationships."
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

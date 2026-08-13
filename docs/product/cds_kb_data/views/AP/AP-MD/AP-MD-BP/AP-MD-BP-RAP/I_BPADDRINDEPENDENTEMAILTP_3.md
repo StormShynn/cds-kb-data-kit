@@ -1,6 +1,21 @@
 ---
 name: I_BPADDRINDEPENDENTEMAILTP_3
 description: "Bpaddrindependentemailtp 3"
+semantic_vi: "View Bpaddrindependentemailtp 3 cung cấp truy cập vào địa chỉ email đối tác kinh doanh, cho phép bạn quản lý và lấy địa chỉ email độc lập cho đối tác kinh doanh, điều này rất quan trọng cho giao tiếp qua email trong quản lý đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "email address"
+  - "địa chỉ email"
+  - "independent email"
+  - "địa chỉ email độc lập"
+  - "business partner management"
+  - "quản lý đối tác kinh doanh"
+  - "email communication"
+  - "giao tiếp qua email"
+  - "sap"
+  - "ap-md-bp-rap"
+semantic_en: "The Bpaddrindependentemailtp 3 view provides access to business partner email addresses, allowing you to manage and retrieve independent email addresses for business partners, which is essential for email communication in business partner management."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

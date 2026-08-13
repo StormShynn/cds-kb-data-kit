@@ -1,6 +1,15 @@
 ---
 name: I_BILLINGPLANRELATEDBILLGSTS
 description: "Billingplanrelatedbillgsts"
+semantic_vi: "Chứa thông tin trạng thái GST liên quan đến kế hoạch hóa đơn, được sử dụng để lấy trạng thái GST cho kế hoạch hóa đơn trong bán hàng và phân phối."
+keywords:
+  - "billing plan"
+  - "gst status"
+  - "sales and distribution"
+  - "trạng thái gst"
+  - "kế hoạch hóa đơn"
+  - "bán hàng và phân phối"
+semantic_en: "Exposes billing plan related bill GST statuses, used to retrieve GST status for billing plans in sales and distribution."
 app_component: SD-BIL-IV-BP-2CL
 software_component: SAPSCORE
 release_state: released

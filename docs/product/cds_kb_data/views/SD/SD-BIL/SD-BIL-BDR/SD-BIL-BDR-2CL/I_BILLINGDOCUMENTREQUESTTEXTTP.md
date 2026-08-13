@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGDOCUMENTREQUESTTEXTTP
 description: "Billing DocumentUMENTREQUESTTEXTTP"
+semantic_vi: "View I_BILLINGDOCUMENTREQUESTTEXTTP CDS hiển thị dữ liệu văn bản yêu cầu hóa đơn, được sử dụng khi hiển thị hoặc xử lý yêu cầu hóa đơn trong hệ thống SAP."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "ekko"
+  - "billing document request"
+  - "yêu cầu hóa đơn"
+  - "text"
+  - "văn bản"
+  - "sap"
+  - "sales & distribution"
+  - "lob:sales & distribution"
+  - "bo:billingdocument"
+semantic_en: "The I_BILLINGDOCUMENTREQUESTTEXTTP CDS view exposes billing document request text data, which is used when displaying or processing billing document requests in the SAP system."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BILLINGPROFITCTRTOSLSORDITEM
 description: "Billingprofitctrtoslsorditem"
+semantic_vi: "View I_BILLINGPROFITCTRTOSLSORDITEM hiển thị dữ liệu lợi nhuận trung tâm hóa hóa đơn tại mức độ chi tiết của hàng hóa, cho phép phân tích lợi nhuận theo đơn đặt hàng và chi tiết. Nó được sử dụng để theo dõi và phân tích lợi nhuận trung tâm hóa hóa đơn cho đơn đặt hàng."
+keywords:
+  - "billing"
+  - "profit center"
+  - "sales order"
+  - "đơn đặt hàng"
+  - "trung tâm hóa hóa đơn"
+  - "lợi nhuận"
+  - "fi-gl-oc"
+  - "fi"
+  - "fi-gl"
+  - "interface-view"
+  - "item-level"
+semantic_en: "The I_BILLINGPROFITCTRTOSLSORDITEM view exposes billing profit center data at the item level, allowing for analysis of profitability by sales document and item. It is used to track and analyze billing profit centers for sales orders."
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

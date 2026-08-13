@@ -1,6 +1,18 @@
 ---
 name: I_BOPFORMITEMTEXT
 description: "Bopformitemtext"
+semantic_vi: "View Bopformitemtext cung cấp dữ liệu văn bản chi tiết cho các đối tượng kinh doanh, chẳng hạn như các mục trong biểu mẫu, trong lĩnh vực tài chính và kế toán. Nó được sử dụng để lấy dữ liệu văn bản mô tả cho các mục cụ thể trong một ngôn ngữ nhất định."
+keywords:
+  - "bopformitemtext"
+  - "finance"
+  - "accounting"
+  - "form item"
+  - "text data"
+  - "language"
+  - "item-level"
+  - "fi-loc-fi"
+  - "lob:finance"
+semantic_en: "The Bopformitemtext view provides item-level text data for business objects, such as form items, in the finance and accounting domain. It is used to retrieve text descriptions for specific form items in a particular language."
 app_component: FI-LOC-FI
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGDOCUMENTREQUESTSTDVH
 description: "Billing DocumentUMENTREQUESTSTDVH"
+semantic_vi: "Cung cấp giá trị tiêu chuẩn cho yêu cầu tài liệu hóa đơn, được sử dụng khi tạo hoặc cập nhật tài liệu hóa đơn trong thành phần bán hàng và phân phối."
+keywords:
+  - "billing document"
+  - "tài liệu hóa đơn"
+  - "sales and distribution"
+  - "thành phần bán hàng và phân phối"
+  - "standard values"
+  - "giá trị tiêu chuẩn"
+  - "request"
+  - "yêu cầu"
+  - "sap"
+  - "sd-bil-bdr-2cl"
+semantic_en: "Provides standard values for billing document requests, used when creating or updating billing documents in the Sales and Distribution component."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

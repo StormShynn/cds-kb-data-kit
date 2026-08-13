@@ -1,6 +1,19 @@
 ---
 name: D_PERSSETTLMTDOCCREATED
 description: "D Perssettlmtdoccreated"
+semantic_vi: "View này hiển thị dữ liệu tạo tài liệu thanh toán cho logistics tổng thể, cung cấp thông tin về loại và loại tài liệu thanh toán. Nó có thể được sử dụng để phân tích và báo cáo về việc tạo tài liệu thanh toán trong logistics tổng thể."
+keywords:
+  - "settlement document"
+  - "dữ liệu tạo tài liệu thanh toán"
+  - "logistics general"
+  - "lo"
+  - "lo-ab"
+  - "settlement process"
+  - "tài liệu thanh toán"
+  - "lo-ekko"
+  - "settlement document creation"
+  - "tạo tài liệu thanh toán"
+semantic_en: "This view exposes settlement document creation data for logistics general, providing information on settlement process types, document types, and categories. It can be used to analyze and report on settlement document creation in logistics general."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

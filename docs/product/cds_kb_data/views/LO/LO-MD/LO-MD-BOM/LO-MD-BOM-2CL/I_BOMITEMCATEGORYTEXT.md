@@ -1,6 +1,20 @@
 ---
 name: I_BOMITEMCATEGORYTEXT
 description: "Bomitemcategorytext"
+semantic_vi: "View I_BOMITEMCATEGORYTEXT cung cấp mô tả văn bản cho các loại vật tư trong danh mục vật tư, có thể được sử dụng để hiển thị tên và mô tả loại vật tư trong các ứng dụng."
+keywords:
+  - "bom"
+  - "bill of material"
+  - "item category"
+  - "text view"
+  - "category description"
+  - "sap cds view"
+  - "logistics"
+  - "lo"
+  - "lo-md-bom"
+  - "language"
+  - "description"
+semantic_en: "The I_BOMITEMCATEGORYTEXT view provides text descriptions for bill of material item categories, which can be used to display category names and descriptions in applications."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

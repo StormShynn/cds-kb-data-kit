@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGDOCUMENTREQUESTITEMTP
 description: "Billing DocumentUMENTREQUESTITEMTP"
+semantic_vi: "CDS view Billing Document Request Item Type hiển thị dữ liệu chi tiết cho các đơn đặt hàng hóa đơn, bao gồm các mục yêu cầu và các loại và loại liên quan."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "sales and distribution"
+  - "cds view"
+  - "sales document item category"
+  - "sales document item type"
+  - "return item processing type"
+  - "billing document request"
+  - "billing document request item"
+semantic_en: "The Billing Document Request Item Type CDS view exposes item-level data for billing documents, including request items and their associated categories and types. It is used to access and process billing document request items in the Sales and Distribution component."
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

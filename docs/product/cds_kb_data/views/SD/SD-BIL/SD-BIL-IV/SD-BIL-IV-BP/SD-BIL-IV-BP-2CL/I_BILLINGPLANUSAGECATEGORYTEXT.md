@@ -1,6 +1,18 @@
 ---
 name: I_BILLINGPLANUSAGECATEGORYTEXT
 description: "Billingplanusagecategorytext"
+semantic_vi: "View I_BILLINGPLANUSAGECATEGORYTEXT cung cấp mô tả văn bản cho các loại sử dụng kế hoạch hóa tiền trong ngôn ngữ cụ thể. Nó được sử dụng để lấy tên của các loại sử dụng kế hoạch hóa tiền để hiển thị hoặc mục đích báo cáo."
+keywords:
+  - "billing plan"
+  - "usage category"
+  - "text description"
+  - "language"
+  - "billing plan usage category"
+  - "sap sd"
+  - "sales and distribution"
+  - "lob sales & distribution"
+  - "sd-bil-iv-bp-2cl"
+semantic_en: "The I_BILLINGPLANUSAGECATEGORYTEXT view provides text descriptions for billing plan usage categories in a specific language. It is used to retrieve the names of billing plan usage categories for display or reporting purposes."
 app_component: SD-BIL-IV-BP-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,17 @@
 ---
 name: I_BILLINGDOCUMENTTYPE
 description: "Billing DocumentUMENTTYPE"
+semantic_vi: "View I_BILLINGDOCUMENTTYPE hiển thị các loại hóa đơn và các loại liên quan, được sử dụng để phân loại và quản lý hóa đơn trong mô-đun Bán hàng và Phân phối."
+keywords:
+  - "billing document"
+  - "hóa đơn"
+  - "sales and distribution"
+  - "sản phẩm bán hàng"
+  - "sddocumentcategory"
+  - "billingdocumenttype"
+  - "incrementitemnumber"
+  - "billingdocumentcategory"
+semantic_en: "The I_BILLINGDOCUMENTTYPE view exposes billing document types and related categories, used to categorize and manage billing documents in the Sales and Distribution module."
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

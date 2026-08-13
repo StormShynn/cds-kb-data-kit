@@ -1,6 +1,20 @@
 ---
 name: I_BILLOFOPERATIONSSTATUS
 description: "Billofoperationsstatus"
+semantic_vi: "View Billofoperationsstatus cung cấp thông tin trạng thái thời gian thực của hóa đơn hoạt động sản xuất trong sản xuất, cho phép các nhà phát triển theo dõi trạng thái hoạt động sản xuất."
+keywords:
+  - "billofoperationsstatus"
+  - "status"
+  - "manufacturing"
+  - "production"
+  - "operations"
+  - "sap"
+  - "pp-vdm"
+  - "pp-vdm-md-2cl"
+  - "lob:manufacturing"
+  - "interface-view"
+  - "released"
+semantic_en: "The Billofoperationsstatus view provides real-time status information of bills of operations in manufacturing, allowing developers to track the status of production operations."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

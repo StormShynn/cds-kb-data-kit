@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGPLANRULETEXT
 description: "Billingplanruletext"
+semantic_vi: "View Billingplanruletext cung cấp mô tả văn bản cho các quy tắc kế toán hóa đơn trong các ngôn ngữ khác nhau, cho phép các nhà phát triển truy cập và sử dụng các mô tả này trong các ứng dụng của họ. Nó được sử dụng khi hiển thị hoặc xử lý các quy tắc kế toán hóa đơn với văn bản địa hóa."
+keywords:
+  - "billing plan"
+  - "quy tắc kế toán hóa đơn"
+  - "text view"
+  - "view"
+  - "billing plan rule"
+  - "quy tắc kế toán"
+  - "language"
+  - "ngôn ngữ"
+  - "sap"
+  - "sd-bil"
+  - "sd-bil-iv"
+  - "sales & distribution"
+semantic_en: "The Billingplanruletext view provides text descriptions for billing plan rules in different languages, enabling developers to access and utilize these descriptions in their applications. It is used when displaying or processing billing plan rules with localized text."
 app_component: SD-BIL-IV-BP-2CL
 software_component: SAPSCORE
 release_state: released

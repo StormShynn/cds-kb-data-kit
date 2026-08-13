@@ -1,6 +1,19 @@
 ---
 name: I_BILLOFEXCHANGE
 description: "Billofexchange"
+semantic_vi: "View Billofexchange hiển thị dữ liệu hóa đơn trao đổi, bao gồm ngày phát hành và sử dụng, người ký, và kế hoạch sử dụng, cho các tài liệu kế toán trong công ty."
+keywords:
+  - "billofexchange"
+  - "exchange bill"
+  - "đơn trao đổi"
+  - "hóa đơn trao đổi"
+  - "accounting document"
+  - "tài liệu kế toán"
+  - "company code"
+  - "code công ty"
+  - "sap fi"
+  - "fi sap"
+semantic_en: "The Billofexchange view exposes exchange bill data, including issue and usage dates, drawers, and planned usage, for accounting documents in a company."
 app_component: FI-LOC-BOE
 software_component: SAPSCORE
 release_state: released

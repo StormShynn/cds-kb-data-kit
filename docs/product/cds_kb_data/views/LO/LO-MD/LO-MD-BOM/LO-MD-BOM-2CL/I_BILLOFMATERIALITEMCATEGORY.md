@@ -1,6 +1,19 @@
 ---
 name: I_BILLOFMATERIALITEMCATEGORY
 description: "Bill of MaterialITEMCATEGORY"
+semantic_vi: "View ITEM CATEGORY của BILL OF MATERIAL cung cấp thông tin về các loại vật tư trong một BILL OF MATERIAL, được sử dụng để mô tả cấu thành của một sản phẩm. Nó được sử dụng khi làm việc với cấu trúc vật liệu và dữ liệu vật tư ở mức chi tiết trong logistics."
+keywords:
+  - "bill of material"
+  - "item category"
+  - "material structure"
+  - "logistics"
+  - "item-level data"
+  - "bán hàng"
+  - "đơn hàng"
+  - "cấu trúc vật liệu"
+  - "dữ liệu vật tư"
+  - "lo-md-bom"
+semantic_en: "The Bill of Material ITEM CATEGORY view provides information about categories of items in a bill of material, which is used to describe the composition of a product. It is used when working with material structures and item-level data in logistics."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

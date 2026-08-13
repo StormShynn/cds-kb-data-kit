@@ -1,6 +1,17 @@
 ---
 name: I_BLLBLECTRLBILLGCTRLCATASSGMT
 description: "Bllblectrlbillgctrlcatassgmt"
+semantic_vi: "View Bllblectrlbillgctrlcatassgmt cung cấp truy cập vào các loại kiểm soát hóa đơn và các kiểm soát có thể tính hóa đơn được liên kết, được sử dụng để quản lý và kiểm soát quá trình hóa đơn trong quản lý dự án."
+keywords:
+  - "billing control"
+  - "billable control"
+  - "project management"
+  - "quản lý dự án"
+  - "kiểm soát hóa đơn"
+  - "kiểm soát có thể tính hóa đơn"
+  - "ppm"
+  - "ppm-scl-bil"
+semantic_en: "The Bllblectrlbillgctrlcatassgmt view provides access to billing control categories and their associated billable controls, which are used to manage and control billing processes in project management."
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

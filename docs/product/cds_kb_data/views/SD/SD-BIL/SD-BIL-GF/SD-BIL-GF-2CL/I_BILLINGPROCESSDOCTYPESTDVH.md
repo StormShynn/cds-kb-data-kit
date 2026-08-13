@@ -1,6 +1,19 @@
 ---
 name: I_BILLINGPROCESSDOCTYPESTDVH
 description: "Billingprocessdoctypestdvh"
+semantic_vi: "Cung cấp giá trị tiêu chuẩn cho loại tài liệu quy trình hóa đơn, được sử dụng trong bán hàng và phân phối để phân loại tài liệu hóa đơn."
+keywords:
+  - "billing process"
+  - "document type"
+  - "sales and distribution"
+  - "standard value"
+  - "value help"
+  - "billing document"
+  - "tài liệu hóa đơn"
+  - "loại tài liệu"
+  - "quy trình hóa đơn"
+  - "giá trị tiêu chuẩn"
+semantic_en: "Provides standard values for billing process document types, used in sales and distribution to categorize billing documents."
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

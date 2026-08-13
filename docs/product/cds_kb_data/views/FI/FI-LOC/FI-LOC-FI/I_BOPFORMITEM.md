@@ -1,6 +1,18 @@
 ---
 name: I_BOPFORMITEM
 description: "Bopformitem"
+semantic_vi: "View Bopformitem hiển thị dữ liệu kinh doanh liên quan đến các mục trong biểu mẫu của đối tượng kinh doanh, cung cấp truy cập vào các mục biểu mẫu cụ thể cho một quốc gia báo cáo đối tượng kinh doanh và biểu mẫu. Nó được sử dụng khi làm việc với đối tượng kinh doanh trong thành phần FI-LOC-FI."
+keywords:
+  - "business object"
+  - "đối tượng kinh doanh"
+  - "biểu mẫu"
+  - "form item"
+  - "fi-loc-fi"
+  - "financial accounting"
+  - "tài chính kế toán"
+  - "bopform"
+  - "bopformitem"
+semantic_en: "The Bopformitem view exposes business data related to form items in a business object, providing access to specific form items for a given business object report country and form. It is used when working with business objects in the FI-LOC-FI component."
 app_component: FI-LOC-FI
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BILLOFMATERIALITEMDEX_3
 description: "Bill of MaterialITEMDEX 3"
+semantic_vi: "View ITEMDEX 3 của bảng vật liệu cung cấp dữ liệu chi tiết cho bảng vật liệu, bao gồm các loại, vật liệu và phiên bản. Nó được sử dụng để trích xuất và phân tích các thành phần vật liệu."
+keywords:
+  - "bill of material"
+  - "bảng vật liệu"
+  - "item-level"
+  - "data extraction"
+  - "material component"
+  - "ekko"
+  - "logistics general"
+  - "material management"
+  - "bom"
+  - "bill of material item"
+semantic_en: "The Bill of Material ITEMDEX 3 view provides item-level data for bill of materials, including categories, items, and versions. It is used to extract and analyze material components."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

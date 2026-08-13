@@ -1,6 +1,17 @@
 ---
 name: I_BILLINGDOCUMENTTYPE_2
 description: "Billing DocumentUMENTTYPE 2"
+semantic_vi: "Chứa thông tin về loại và loại liên quan của hóa đơn để sử dụng trong quá trình xử lý và báo cáo hóa đơn."
+keywords:
+  - "billing document"
+  - "đơn hóa đơn"
+  - "billing document type"
+  - "loại hóa đơn"
+  - "sap sd-bil"
+  - "sap sd"
+  - "sap sales & distribution"
+  - "sap billingdocument"
+semantic_en: "Exposes billing document types and related categories for use in billing document processing and reporting."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

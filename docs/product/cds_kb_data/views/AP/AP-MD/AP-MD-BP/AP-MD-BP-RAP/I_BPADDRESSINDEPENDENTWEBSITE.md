@@ -1,6 +1,19 @@
 ---
 name: I_BPADDRESSINDEPENDENTWEBSITE
 description: "Bpaddressindependentwebsite"
+semantic_vi: "View BpAddressIndependentWebsite cung cấp thông tin địa chỉ đối tác kinh doanh độc lập với trang web, bao gồm địa chỉ URL mặc định và địa chỉ tìm kiếm URL. Nó được sử dụng để quản lý địa chỉ đối tác kinh doanh cho các trang web khác nhau."
+keywords:
+  - "business partner"
+  - "address"
+  - "website"
+  - "default url"
+  - "search url"
+  - "sap cds view"
+  - "address independent"
+  - "business partner address"
+  - "ap-md-bp-rap"
+  - "address management"
+semantic_en: "The BpAddressIndependentWebsite view provides business partner address information independent of the website, including the default URL address and search URL address. It is used to manage business partner addresses for various websites."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

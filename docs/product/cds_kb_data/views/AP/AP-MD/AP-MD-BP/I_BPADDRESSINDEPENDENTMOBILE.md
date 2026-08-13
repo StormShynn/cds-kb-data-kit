@@ -1,6 +1,19 @@
 ---
 name: I_BPADDRESSINDEPENDENTMOBILE
 description: "Bpaddressindependentmobile"
+semantic_vi: "View BpAddressIndependentMobile hiển thị địa chỉ đối tác kinh doanh độc lập với số điện thoại di động, hữu ích cho các ứng dụng yêu cầu thông tin số điện thoại di động."
+keywords:
+  - "business partner"
+  - "address"
+  - "mobile phone"
+  - "di động"
+  - "address independent"
+  - "partner kinh doanh"
+  - "địa chỉ"
+  - "số điện thoại di động"
+  - "sap"
+  - "ap-md-bp"
+semantic_en: "The BpAddressIndependentMobile view exposes business partner addresses independent of mobile phone numbers, useful for applications requiring mobile phone information."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

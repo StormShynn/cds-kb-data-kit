@@ -1,6 +1,18 @@
 ---
 name: I_BKPOAACTIVITYASSIGNMENTTP_2
 description: "Bkpoaactivityassignmenttp 2"
+semantic_vi: "View I_BKPOAACTIVITYASSIGNMENTTP_2 hiển thị các chỉ định hoạt động của quyền đại diện ngân hàng, được sử dụng để quản lý các hoạt động liên quan đến quyền đại diện trong thành phần FIN-FSCM-CLM-BAM-2CL."
+keywords:
+  - "bank power of attorney"
+  - "quyền đại diện ngân hàng"
+  - "activity assignment"
+  - "chỉ định hoạt động"
+  - "fin-fscm-clm-bam-2cl"
+  - "transactional processing"
+  - "interface view"
+  - "financial services"
+  - "dịch vụ tài chính"
+semantic_en: "The I_BKPOAACTIVITYASSIGNMENTTP_2 view exposes bank power of attorney activity assignments, which are used to manage activities associated with a power of attorney in the FIN-FSCM-CLM-BAM-2CL component."
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

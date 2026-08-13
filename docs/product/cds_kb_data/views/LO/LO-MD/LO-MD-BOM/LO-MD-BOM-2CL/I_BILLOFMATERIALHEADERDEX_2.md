@@ -1,6 +1,17 @@
 ---
 name: I_BILLOFMATERIALHEADERDEX_2
 description: "Bill of MaterialHEADERDEX 2"
+semantic_vi: "Chứa dữ liệu đầu mục vật liệu cho quản lý vật liệu trong SAP, được sử dụng cho việc trích xuất và phân tích dữ liệu."
+keywords:
+  - "bill of material"
+  - "đầu mục vật liệu"
+  - "sap material management"
+  - "data extraction"
+  - "bom header"
+  - "lo-md-bom-2cl"
+  - "logistics general"
+  - "material management"
+semantic_en: "Exposes bill of material header data for material management in SAP, used for data extraction and analysis."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

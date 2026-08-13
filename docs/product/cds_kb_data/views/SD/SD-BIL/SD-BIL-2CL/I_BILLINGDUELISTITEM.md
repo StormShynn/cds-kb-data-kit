@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGDUELISTITEM
 description: "Billingduelistitem"
+semantic_vi: "View I_BILLINGDUELISTITEM hiển thị dữ liệu danh sách thanh toán quá hạn, có thể sử dụng để phân tích và quản lý danh sách thanh toán quá hạn trong quy trình bán hàng và phân phối."
+keywords:
+  - "billing"
+  - "due"
+  - "list"
+  - "item"
+  - "sales"
+  - "distribution"
+  - "sap"
+  - "sd"
+  - "billingduelistitem"
+  - "thanhtoan"
+  - "duelistitem"
+  - "bansach"
+semantic_en: "The I_BILLINGDUELISTITEM view exposes billing due list item data, which can be used to analyze and manage billing due items in sales and distribution processes."
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

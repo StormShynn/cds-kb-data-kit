@@ -1,6 +1,20 @@
 ---
 name: I_BPADDRESSINDEPENDENTEMAIL
 description: "Bpaddressindependentemail"
+semantic_vi: "Cung cấp địa chỉ email đối tác kinh doanh độc lập với địa chỉ của họ, hữu ích cho các luồng làm việc và giao diện xem."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "email address"
+  - "địa chỉ email"
+  - "workflow"
+  - "luồng làm việc"
+  - "interface view"
+  - "giao diện xem"
+  - "address"
+  - "địa chỉ"
+  - "sap"
+semantic_en: "Provides business partner email addresses independent of their addresses, useful for workflows and interface views."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

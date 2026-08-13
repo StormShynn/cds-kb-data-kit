@@ -1,6 +1,19 @@
 ---
 name: I_BKPOAAUTHZDRPRSTVTP_2
 description: "Bkpoaauthzdrprstvtp 2"
+semantic_vi: "View Bkpoaauthzdrprstvtp 2 hiển thị dữ liệu ủy quyền tài khoản ngân hàng, bao gồm đại diện và người phê duyệt thanh toán, có thể được sử dụng để quản lý và theo dõi quá trình ủy quyền trong thành phần FIN-FSCM-CLM-BAM-2CL."
+keywords:
+  - "bank power of attorney"
+  - "ủy quyền tài khoản ngân hàng"
+  - "authorization data"
+  - "quá trình ủy quyền"
+  - "fin-fscm-clm-bam-2cl"
+  - "transactional processing"
+  - "interface view"
+  - "bank representative"
+  - "payment approver"
+  - "financial component"
+semantic_en: "The Bkpoaauthzdrprstvtp 2 view exposes bank power of attorney authorization data, including representatives and payment approvers, which can be used to manage and track authorization processes in the FIN-FSCM-CLM-BAM-2CL component."
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

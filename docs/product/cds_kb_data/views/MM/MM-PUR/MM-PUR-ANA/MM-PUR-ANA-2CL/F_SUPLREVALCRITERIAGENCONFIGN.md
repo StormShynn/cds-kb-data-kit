@@ -1,6 +1,19 @@
 ---
 name: F_SUPLREVALCRITERIAGENCONFIGN
 description: "Suplrevalcriteriagenconfign"
+semantic_vi: "View Suplrevalcriteriagenconfign cung cấp các tiêu chí đánh giá hiệu suất nhà cung cấp, đặc biệt là trạng thái hoàn thành giao hàng. Nó được sử dụng để phân tích và đánh giá hiệu suất nhà cung cấp dựa trên trạng thái hoàn thành giao hàng."
+keywords:
+  - "supplier performance"
+  - "evaluation criteria"
+  - "delivery completion"
+  - "nhà cung cấp"
+  - "tiêu chí đánh giá"
+  - "trạng thái hoàn thành giao hàng"
+  - "sourcing"
+  - "procurement"
+  - "mm-pur-ana"
+  - "ekko"
+semantic_en: "The Suplrevalcriteriagenconfign view provides evaluation criteria for supplier performance, specifically delivery completion status. It is used to analyze and evaluate supplier performance based on delivery completion."
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

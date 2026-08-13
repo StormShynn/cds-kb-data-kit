@@ -1,6 +1,20 @@
 ---
 name: I_BILLOFMATERIALITEMBASIC
 description: "Bill of MaterialITEMBASIC"
+semantic_vi: "View Bill of Material ITEM BASIC cung cấp thông tin cơ bản về các vật liệu trong một danh mục vật liệu, bao gồm loại vật liệu, số vật liệu và ngày hiệu lực. Nó được sử dụng để truy cập và thao tác dữ liệu vật liệu trong logistics tổng thể."
+keywords:
+  - "bill of material"
+  - "danh mục vật liệu"
+  - "logistics general"
+  - "ekko"
+  - "material item"
+  - "lo"
+  - "lo-md"
+  - "lo-md-bom"
+  - "bom item"
+  - "validity date"
+  - "lo-md-bom-2cl"
+semantic_en: "The Bill of Material ITEM BASIC view provides basic information about material items in a bill of material, including category, item number, and validity dates. It is used to access and manipulate material item data in logistics general."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

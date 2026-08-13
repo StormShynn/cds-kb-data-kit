@@ -1,6 +1,21 @@
 ---
 name: I_BILLINGPROCESSDOCTYPETEXT
 description: "Billingprocessdoctypetext"
+semantic_vi: "View I_BILLINGPROCESSDOCTYPETEXT cung cấp mô tả văn bản cho loại tài liệu quy trình hóa đơn, có thể được sử dụng để hiển thị thông tin chi tiết về quy trình hóa đơn trong thành phần Sales và Distribution."
+keywords:
+  - "billing process"
+  - "document type"
+  - "text description"
+  - "sales and distribution"
+  - "sabill"
+  - "sabillgf"
+  - "sabillgf2cl"
+  - "lobservation"
+  - "lob sales & distribution"
+  - "document type text"
+  - "billing process document type"
+  - "document type name"
+semantic_en: "The I_BILLINGPROCESSDOCTYPETEXT view provides text descriptions for billing process document types, which can be used to display detailed information about billing processes in the Sales and Distribution component."
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

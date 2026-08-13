@@ -1,6 +1,20 @@
 ---
 name: I_BILLOFMATERIALTP_2
 description: "Bill of MaterialTP 2"
+semantic_vi: "View Bill of Material TP 2 hiển thị dữ liệu thành phần vật liệu cho bảng vật liệu, bao gồm các bản sửa đổi kỹ thuật và các biến thể vật liệu. Nó được sử dụng trong quá trình xử lý giao dịch cho quản lý logistics."
+keywords:
+  - "bill of material"
+  - "bảng vật liệu"
+  - "material component"
+  - "thành phần vật liệu"
+  - "engineering change document"
+  - "bản sửa đổi kỹ thuật"
+  - "material variant"
+  - "biến thể vật liệu"
+  - "logistics management"
+  - "quản lý logistics"
+  - "sap lo-md-bom-2cl"
+semantic_en: "The Bill of Material TP 2 view exposes material component data for bill of materials, including engineering change documents and material variants. It is used in transactional processing for logistics management."
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released
