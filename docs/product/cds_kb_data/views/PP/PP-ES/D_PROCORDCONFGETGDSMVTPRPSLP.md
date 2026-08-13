@@ -1,6 +1,19 @@
 ---
 name: D_PROCORDCONFGETGDSMVTPRPSLP
 description: "D Procordconfgetgdsmvtprpslp"
+semantic_vi: "CDS view D_Procordconfgetgdsmvtprpslp hiển thị dữ liệu xác nhận sản xuất cho các hoạt động sản xuất, bao gồm các nhóm xác nhận, đơn đặt hàng và lượng vật liệu."
+keywords:
+  - "production confirmation"
+  - "xác nhận sản xuất"
+  - "manufacturing operations"
+  - "đơn đặt hàng"
+  - "confirmation group"
+  - "confirmation quantity"
+  - "ekko"
+  - "pp-es"
+  - "manufacturing"
+  - "sap"
+semantic_en: "The D_Procordconfgetgdsmvtprpslp CDS view exposes production confirmation data for manufacturing operations, including confirmation groups, orders, and quantities. It is used to retrieve detailed production confirmation records."
 app_component: PP-ES
 software_component: SAPSCORE
 release_state: released

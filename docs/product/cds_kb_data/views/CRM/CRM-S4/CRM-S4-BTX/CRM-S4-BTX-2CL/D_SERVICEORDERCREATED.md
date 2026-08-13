@@ -1,6 +1,17 @@
 ---
 name: D_SERVICEORDERCREATED
 description: "D Service OrderCREATED"
+semantic_vi: "View D_SERVICEORDERCREATED hiển thị dữ liệu đơn dịch vụ được tạo trong CRM, cho phép các nhà phát triển truy cập và sử dụng thông tin này cho các mục đích kinh doanh khác nhau."
+keywords:
+  - "service order"
+  - "đơn dịch vụ"
+  - "crm"
+  - "service order created"
+  - "d_serviceordercreated"
+  - "service order data"
+  - "dịch vụ"
+  - "s4-btx-2cl"
+semantic_en: "The D_SERVICEORDERCREATED view exposes service order data created in CRM, allowing developers to access and utilize this information for various business purposes."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

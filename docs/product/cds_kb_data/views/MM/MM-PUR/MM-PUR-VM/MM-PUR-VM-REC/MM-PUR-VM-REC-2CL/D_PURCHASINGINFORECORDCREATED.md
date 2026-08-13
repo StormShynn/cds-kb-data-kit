@@ -1,6 +1,21 @@
 ---
 name: D_PURCHASINGINFORECORDCREATED
 description: "D Purchasinginforecordcreated"
+semantic_vi: "View D_PURCHASINGINFORECORDCREATED hiển thị các bản ghi thông tin mua hàng được tạo trong hệ thống SAP, có thể được sử dụng để theo dõi và phân tích dữ liệu mua hàng."
+keywords:
+  - "purchasing information"
+  - "purchasing data"
+  - "sourcing and procurement"
+  - "sourcing"
+  - "procurement"
+  - "purchasing record"
+  - "purchasing data analysis"
+  - "sourcing and procurement data"
+  - "mm-pur-vm-rec-2cl"
+  - "mm-pur-vm"
+  - "mm-pur"
+  - "mm"
+semantic_en: "The D_PURCHASINGINFORECORDCREATED view exposes purchasing information records created in the SAP system, which can be used to track and analyze purchasing data."
 app_component: MM-PUR-VM-REC-2CL
 software_component: SAPSCORE
 release_state: released

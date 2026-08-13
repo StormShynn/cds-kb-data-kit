@@ -1,6 +1,18 @@
 ---
 name: D_PURCHASEORDERCHANGED
 description: "D Purchase OrderCHANGED"
+semantic_vi: "View D_PURCHASEORDERCHANGED hiển thị dữ liệu thay đổi đơn đặt hàng mua, có thể được sử dụng để theo dõi các thay đổi được thực hiện trên đơn đặt hàng mua trong hệ thống SAP."
+keywords:
+  - "purchase order"
+  - "đơn mua hàng"
+  - "ekko"
+  - "purchase order change"
+  - "đơn đặt hàng mua thay đổi"
+  - "sap mm"
+  - "mm-pur-po"
+  - "sourcing and procurement"
+  - "purchase order tracking"
+semantic_en: "The D_PURCHASEORDERCHANGED CDS view exposes purchase order change data, which can be used to track changes made to purchase orders in the SAP system."
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

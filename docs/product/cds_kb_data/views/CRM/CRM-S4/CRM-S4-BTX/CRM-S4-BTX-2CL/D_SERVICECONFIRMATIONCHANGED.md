@@ -1,6 +1,18 @@
 ---
 name: D_SERVICECONFIRMATIONCHANGED
 description: "D Serviceconfirmationchanged"
+semantic_vi: "View này hiển thị dữ liệu xác nhận dịch vụ đã thay đổi, cho phép các nhà phát triển theo dõi các bản cập nhật của xác nhận dịch vụ trong CRM."
+keywords:
+  - "service confirmation"
+  - "dịch vụ xác nhận"
+  - "crm"
+  - "service confirmation changed"
+  - "xác nhận dịch vụ đã thay đổi"
+  - "sap cds"
+  - "cds view"
+  - "crm service"
+  - "dịch vụ crm"
+semantic_en: "This view exposes service confirmation data that has changed, allowing developers to track updates to service confirmations in CRM."
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

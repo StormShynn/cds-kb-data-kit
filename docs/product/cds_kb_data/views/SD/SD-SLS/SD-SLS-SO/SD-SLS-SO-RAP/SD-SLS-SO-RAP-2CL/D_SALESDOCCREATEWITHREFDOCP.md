@@ -1,6 +1,19 @@
 ---
 name: D_SALESDOCCREATEWITHREFDOCP
 description: "D Salesdoccreatewithrefdocp"
+semantic_vi: "Chứa dữ liệu tạo tài liệu bán hàng dựa trên tài liệu tham chiếu, được sử dụng khi tạo tài liệu bán hàng dựa trên tài liệu đã tồn tại."
+keywords:
+  - "sales document"
+  - "tài liệu bán hàng"
+  - "document creation"
+  - "tạo tài liệu"
+  - "reference document"
+  - "tài liệu tham chiếu"
+  - "sap sales"
+  - "bán hàng sap"
+  - "sd sales"
+  - "sd bán hàng"
+semantic_en: "Exposes sales document creation data with reference to a document, used when creating a sales document based on an existing document."
 app_component: SD-SLS-SO-RAP-2CL
 software_component: SAPSCORE
 release_state: released

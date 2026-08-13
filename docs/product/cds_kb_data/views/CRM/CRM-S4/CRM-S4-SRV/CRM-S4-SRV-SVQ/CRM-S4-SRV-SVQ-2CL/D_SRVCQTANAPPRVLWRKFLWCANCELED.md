@@ -1,6 +1,19 @@
 ---
 name: D_SRVCQTANAPPRVLWRKFLWCANCELED
 description: "D Srvcqtanapprvlwrkflwcanceled"
+semantic_vi: "Dữ liệu hủy bỏ phê duyệt quy trình dịch vụ trích dẫn, được sử dụng để theo dõi và quản lý phê duyệt quy trình dịch vụ trích dẫn trong CRM."
+keywords:
+  - "service quotation"
+  - "phê duyệt quy trình dịch vụ trích dẫn"
+  - "workflow cancellation"
+  - "cancellation data"
+  - "crm"
+  - "dịch vụ trích dẫn"
+  - "phê duyệt"
+  - "quy trình dịch vụ trích dẫn"
+  - "approval workflow"
+  - "hủy bỏ"
+semantic_en: "Service quotation approval workflow cancellation data, used to track and manage service quotation approvals in CRM."
 app_component: CRM-S4-SRV-SVQ-2CL
 software_component: SAPSCORE
 release_state: released

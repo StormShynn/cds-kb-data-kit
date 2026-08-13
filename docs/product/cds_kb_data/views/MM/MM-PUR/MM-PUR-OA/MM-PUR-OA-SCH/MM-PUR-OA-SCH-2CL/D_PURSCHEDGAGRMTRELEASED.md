@@ -1,6 +1,21 @@
 ---
 name: D_PURSCHEDGAGRMTRELEASED
 description: "D Purschedgagrmtreleased"
+semantic_vi: "View D_PURSCHEDGAGRMTRELEASED hiển thị các bản phát hành thỏa thuận đặt hàng theo lịch đã được phát hành cho vật liệu và nhà cung cấp, được sử dụng để quản lý quy trình mua hàng."
+keywords:
+  - "scheduling agreement"
+  - "thỏa thuận đặt hàng theo lịch"
+  - "released"
+  - "procurement"
+  - "quy trình mua hàng"
+  - "material"
+  - "vật liệu"
+  - "supplier"
+  - "nhà cung cấp"
+  - "sap mm"
+  - "mm pur oa"
+  - "lease"
+semantic_en: "The D_PURSCHEDGAGRMTRELEASED view exposes released scheduling agreement releases for materials and suppliers, used to manage procurement processes."
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

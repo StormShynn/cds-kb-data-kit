@@ -1,6 +1,18 @@
 ---
 name: D_PRODNORDOPDISPATCHORDEROPP
 description: "D Prodnordopdispatchorderopp"
+semantic_vi: "View D_PRODNORDOPDISPATCHORDEROPP hiển thị dữ liệu hoạt động phân phối sản xuất, có thể được sử dụng để phân tích và quản lý lịch trình sản xuất và phân phối."
+keywords:
+  - "production dispatch order"
+  - "đơn phân phối sản xuất"
+  - "scheduling"
+  - "dispatching"
+  - "production planning"
+  - "lịch trình sản xuất"
+  - "phân phối"
+  - "pp-sfc"
+  - "sap manufacturing"
+semantic_en: "The D_PRODNORDOPDISPATCHORDEROPP view exposes production dispatch order operations data, which can be used to analyze and manage production scheduling and dispatching."
 app_component: PP-SFC-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: D_SUPLRINVCCREATEGLITEMP
 description: "D Suplrinvccreateglitemp"
+semantic_vi: "View D_SUPLRINVCCREATEGLITEMP hiển thị dữ liệu đơn hàng nhà cung cấp được sử dụng để tạo mục ghi sổ kế toán chung, thường trong quá trình cung cấp và quản lý nguồn cung."
+keywords:
+  - "supplier invoice"
+  - "đơn hàng nhà cung cấp"
+  - "general ledger"
+  - "ghi sổ kế toán chung"
+  - "sourcing"
+  - "procurement"
+  - "mm-iv"
+  - "mm-iv-liv"
+  - "item-level"
+  - "gl account"
+  - "ekko"
+semantic_en: "The D_SUPLRINVCCREATEGLITEMP view exposes supplier invoice item data used to create general ledger items, typically during the sourcing and procurement process."
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released
