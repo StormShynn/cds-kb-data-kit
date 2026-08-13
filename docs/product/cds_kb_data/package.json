@@ -21,6 +21,7 @@
     "pull-usage-stats": "node scripts/pull-usage-stats.mjs",
     "pull-query-shapes": "node scripts/pull-query-shapes.mjs",
     "seed-query-proposals": "node scripts/seed-query-proposals-from-usage.mjs",
+    "build-query-library-index": "node scripts/build-query-library-index.mjs",
     "sync-query-library-embed": "node scripts/sync-query-library-embed.mjs",
     "rebuild-index": "node enrich_index.mjs .",
     "resync-folders": "node scripts/migrate-to-module-folders.mjs . && node enrich_index.mjs .",

@@ -348,7 +348,9 @@ no GitHub token required in the browser.
 
 Offline seeding: in `cds_kb_data`, run `npm run seed-query-proposals` to write
 `index/query-proposals.json` from usage-stats + a starter catalog; optional `--promote N`
-appends into `query-library.json`, then `npm run sync-query-library-embed` refreshes `DATA.L`.
+appends into `query-library.json`, then `npm run sync-query-library-embed` rebuilds
+`query-library-index.json` and refreshes the featured `DATA.L` bootstrap (Query Builder
+fetches the full library at runtime).
 
 Anonymous query-**shape** telemetry (opt-in): set `CDS_KB_SHAPE_TELEMETRY=1` on MCP (and keep
 `CDS_KB_USAGE_ENDPOINT` pointing at `/ping`); the collector also accepts browser opt-in pings on
@@ -367,14 +369,14 @@ List recently added/updated CDS views from the data repo's `changelog.json` (eve
 
 ### 14. `search_query_library`
 
-Search the shared saved-query list (`index/query-library.json`) by title, description, target CDS view name, or generated view name — the curated, PR-reviewed entries the Query Builder also embeds. **Library-first:** call this before inventing a shape with `search_cds` / `suggest_base_views`; on a hit, take `views[]`/`select`/`where` into `compose_query` / `generate_cds_view`. On a miss, fall back to open search.
+Search the shared saved-query list (`index/query-library.json`) by title, id, description, target CDS view name, or generated view name — curated **recipes** (full shapes, including joins) and thin **variants** (`recipeId` + clause overrides). Variants are resolved onto their recipe before return. The Query Builder embeds only `featured` entries and fetches the full file at runtime. **Library-first:** call this before inventing a shape with `search_cds` / `suggest_base_views`; on a hit, take `views[]`/`select`/`where` into `compose_query` / `generate_cds_view`. On a miss, fall back to open search.
 
 | Parameter | Type | Required | Description |
 |---|---|---|---|
 | `query` | string | ✓ | Search text — title words, CDS view name, or business intent |
 | `limit` | int 1-50 | optional | Default 10 |
 
-To add an entry: Query Builder **Propose** / MCP `propose_query_library_entry` → review Issue or draft PR → merge → `npm run sync-query-library-embed` (do not run the stale generator). Offline: `npm run seed-query-proposals` writes `index/query-proposals.json` for curation.
+To add an entry: Query Builder **Propose** / MCP `propose_query_library_entry` → review Issue or draft PR → merge → `npm run sync-query-library-embed` (do not run the stale generator). Prefer a new **recipe** for join patterns; prefer a **variant** when only `where`/`orderBy`/select tweaks an existing recipe. Offline: `npm run seed-query-proposals` writes `index/query-proposals.json` for curation.
 
 ### Optional: SAP ADT read-only slice (`sap_*`)
 

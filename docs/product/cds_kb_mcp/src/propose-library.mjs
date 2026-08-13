@@ -2,16 +2,13 @@
 // Never merges. On GitHub API failure, still returns the local snippet.
 
 import { composeQuery } from './query-compose.mjs';
+import { entryKind, slugifyLibraryId } from './query-library.mjs';
 
 /**
  * @param {string} title
  */
 function slugify(title) {
-  return String(title || 'query')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-    .slice(0, 48) || 'query';
+  return slugifyLibraryId(title).slice(0, 48);
 }
 
 /**
@@ -19,11 +16,16 @@ function slugify(title) {
  * @returns {Promise<{ jsonSnippet: string, markdown: string, prUrl?: string, error?: string }>}
  */
 export async function proposeQueryLibraryEntry(input = {}) {
+  const kind = entryKind(input);
   const entry = {
+    id: (input.id && String(input.id).trim()) || slugifyLibraryId(input.title),
+    kind,
+    recipeId: kind === 'variant' ? (input.recipeId && String(input.recipeId).trim()) || undefined : undefined,
+    featured: input.featured === true ? true : undefined,
     title: (input.title && String(input.title).trim()) || '',
     description: (input.description && String(input.description).trim()) || undefined,
     contributor: (input.contributor && String(input.contributor).trim()) || undefined,
-    views: Array.isArray(input.views) ? input.views : [],
+    views: Array.isArray(input.views) ? input.views : undefined,
     select: input.select,
     where: input.where,
     groupBy: input.groupBy,
@@ -31,12 +33,20 @@ export async function proposeQueryLibraryEntry(input = {}) {
     orderBy: input.orderBy,
     viewName: input.viewName,
   };
+  if (kind === 'variant') {
+    // Variants inherit views from the recipe — omit empty views[] noise.
+    if (!entry.views?.length) delete entry.views;
+  } else if (!entry.views) {
+    entry.views = [];
+  }
   // Drop undefined keys for a clean PR snippet
   for (const k of Object.keys(entry)) {
     if (entry[k] === undefined || entry[k] === '') delete entry[k];
   }
 
-  const composed = composeQuery(entry);
+  const composed = kind === 'variant' && !entry.views?.length
+    ? { warnings: [], openSql: '' }
+    : composeQuery(entry);
   const libraryPath =
     (process.env.CDS_KB_PROPOSE_PATH || '').trim() ||
     'docs/product/cds_kb_data/index/query-library.json';
@@ -44,8 +54,9 @@ export async function proposeQueryLibraryEntry(input = {}) {
 
   let markdown =
     `## Propose query library entry\n\n` +
-    `Add the following object to \`${libraryPath}\` (array of saved queries), then hand-sync \`DATA.L\` in \`query-builder.html\` ` +
-    `(do **not** run the stale \`generate-query-builder\` script without \`--force\`).\n\n` +
+    `Add the following object to \`${libraryPath}\` (array of saved queries), then run \`npm run sync-query-library-embed\` ` +
+    `(rebuilds \`query-library-index.json\` + featured \`DATA.L\` bootstrap; do **not** run the stale \`generate-query-builder\` script without \`--force\`).\n\n` +
+    `Use \`kind: "recipe"\` for a full shape (including joins). Use \`kind: "variant"\` + \`recipeId\` for thin filter/order overrides of an existing recipe — avoids duplicating the same multi-view body.\n\n` +
     `\`\`\`json\n${jsonSnippet}\n\`\`\`\n`;
   if (composed.warnings?.length) {
     markdown += `\n### Compose warnings\n${composed.warnings.map((w) => `- ${w}`).join('\n')}\n`;

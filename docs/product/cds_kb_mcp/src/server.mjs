@@ -24,6 +24,7 @@ import { reciprocalRankFusion, rankByCosine } from './rrf.mjs';
 import { generateCdsView, validateCdsDdl } from './ddl-tools.mjs';
 import { createAuthMiddleware, describeAuthMode } from './auth.mjs';
 import { proposeQueryLibraryEntry } from './propose-library.mjs';
+import { entryKind, indexLibraryById, resolveLibraryEntry } from './query-library.mjs';
 import { oauthEnabled, describeOAuth, buildOAuthMetadata, authorizeHandler, tokenHandler, registerHandler } from './oauth.mjs';
 import { inc, histogram, healthHandler, metricsHandler, rateLimitMiddleware } from './metrics.mjs';
 import { logInfo, logWarn, logError } from './log.mjs';
@@ -146,30 +147,35 @@ function parseViewDependencies(md) {
 }
 
 // ── Query library search ────────────────────────────────────────────────────
-// index/query-library.json is a small, human-curated list of saved queries
-// (the Query Builder embeds the same file), so a dependency-free token
-// overlap ranking is plenty — no MiniSearch instance needed. normalizeTerm
-// keeps it Vietnamese accent-insensitive like the main index.
+// index/query-library.json is a human-curated list of recipes + thin variants.
+// Query Builder embeds only featured entries and fetches the full file at
+// runtime. Dependency-free token overlap ranking is plenty — no MiniSearch.
+// normalizeTerm keeps it Vietnamese accent-insensitive like the main index.
 function searchQueryLibrary(query, limit) {
   if (!query || !Array.isArray(queryLibraryData) || queryLibraryData.length === 0) return [];
   const tokens = String(query).split(/\s+/).map(normalizeTerm).filter(Boolean);
   if (tokens.length === 0) return [];
+  const byId = indexLibraryById(queryLibraryData);
   return queryLibraryData
     .map((q) => {
-      const title = normalizeTerm(q.title || '');
-      const description = normalizeTerm(q.description || '');
-      const viewName = normalizeTerm(q.viewName || '');
-      const viewText = (q.views || []).map((v) => normalizeTerm(v.name || '')).join(' ');
+      const resolved = resolveLibraryEntry(q, byId);
+      const title = normalizeTerm(q.title || resolved.title || '');
+      const description = normalizeTerm(q.description || resolved.description || '');
+      const viewName = normalizeTerm(q.viewName || resolved.viewName || '');
+      const idText = normalizeTerm(q.id || '');
+      const viewText = (resolved.views || []).map((v) => normalizeTerm(v.name || '')).join(' ');
       let score = 0;
       for (const t of tokens) {
         if (title === t) score += 5;
         else if (title.includes(t)) score += 4;
+        if (idText === t) score += 4;
+        else if (idText.includes(t)) score += 2;
         if (viewName === t) score += 3;
         else if (viewName.includes(t)) score += 2;
         if (viewText.includes(t)) score += 2;
         if (description.includes(t)) score += 1;
       }
-      return { q, score };
+      return { q: resolved, score };
     })
     .filter((s) => s.score > 0)
     .sort((a, b) => b.score - a.score)
@@ -420,7 +426,7 @@ function refreshIndexPeriodically(intervalMs) {
   }, intervalMs);
 }
 
-const SERVER_VERSION = '2.4.0';
+const SERVER_VERSION = '2.5.0';
 const SERVER_INSTRUCTIONS =
   `This is cds-kb-mcp v${SERVER_VERSION}, built by StormShyn. ` +
   'The first time you use a tool from this server in a conversation, briefly mention to the user ' +
@@ -1278,12 +1284,17 @@ function createServer() {
       title: 'Propose a query-library.json entry',
       description:
         'Build a JSON snippet + markdown PR body for adding a saved query to docs/product/cds_kb_data/index/query-library.json. ' +
+        'Prefer kind=recipe for a full shape (including joins); kind=variant + recipeId for thin where/order overrides of an existing recipe. ' +
         'If GITHUB_TOKEN and CDS_KB_PROPOSE_REPO (owner/name) are set, opens a draft PR on a propose/query-* branch ' +
         '(file path override: CDS_KB_PROPOSE_PATH). Never merges.',
       inputSchema: {
         title: z.string().describe('Short title for the saved query'),
         description: z.string().optional(),
         contributor: z.string().optional(),
+        id: z.string().optional().describe('Stable id (kebab-case); defaults from title'),
+        kind: z.enum(['recipe', 'variant']).optional().describe('recipe = full shape; variant = thin override of recipeId'),
+        recipeId: z.string().optional().describe('Required when kind=variant — id of the parent recipe'),
+        featured: z.boolean().optional().describe('If true, included in Query Builder DATA.L bootstrap embed'),
         views: z.array(z.object({
           alias: z.string().optional(),
           name: z.string().nullable().optional(),
@@ -1291,7 +1302,7 @@ function createServer() {
           on: z.string().nullable().optional(),
           mode: z.enum(['join', 'assoc']).nullable().optional(),
           raw: z.string().nullable().optional(),
-        })).describe('FROM/JOIN/assoc rows; views[0].name is required'),
+        })).optional().describe('FROM/JOIN/assoc rows; required for recipes (views[0].name); omit on thin variants'),
         select: z.string().optional(),
         where: z.string().optional(),
         groupBy: z.string().optional(),
@@ -1334,8 +1345,8 @@ function createServer() {
     {
       title: 'Search the shared query library',
       description:
-        'Find a saved/reusable query in index/query-library.json by title, description, target CDS view name, or generated view name. ' +
-        'Entries are curated, PR-reviewed saved queries (propose_query_library_entry produces the snippet + draft PR to add one). ' +
+        'Find a saved/reusable query in index/query-library.json by title, id, description, target CDS view name, or generated view name. ' +
+        'Entries are curated recipes or thin variants (variants are resolved onto their recipe before return). ' +
         'Library-first: call this BEFORE search_cds / suggest_base_views when composing from a business intent; ' +
         'on a hit, take views[]/select/where into compose_query or generate_cds_view. On a miss, fall back to open search.',
       inputSchema: {
@@ -1346,6 +1357,9 @@ function createServer() {
         query: z.string(),
         count: z.number(),
         results: z.array(z.object({
+          id: z.string().nullable(),
+          kind: z.enum(['recipe', 'variant']),
+          recipeId: z.string().nullable(),
           title: z.string(),
           description: z.string().nullable(),
           contributor: z.string().nullable(),
@@ -1360,6 +1374,9 @@ function createServer() {
         query,
         count: hits.length,
         results: hits.map((q) => ({
+          id: q.id ?? null,
+          kind: entryKind(q),
+          recipeId: q.recipeId ?? null,
           title: q.title || '(untitled)',
           description: q.description ?? null,
           contributor: q.contributor ?? null,
@@ -1377,12 +1394,17 @@ function createServer() {
         const views = (q.views || []).map((v) => v.name).filter(Boolean).join(', ');
         const contrib = q.contributor ? `  (by ${q.contributor})` : '';
         const desc = q.description ? `\n   ${q.description}` : '';
-        return `${i + 1}. **${q.title || '(untitled)'}**${contrib}\n   views: ${views}${q.viewName ? `  -> ${q.viewName}` : ''}${desc}`;
+        const meta = [
+          q.id ? `id=${q.id}` : null,
+          `kind=${entryKind(q)}`,
+          q.recipeId ? `recipe=${q.recipeId}` : null,
+        ].filter(Boolean).join(' · ');
+        return `${i + 1}. **${q.title || '(untitled)'}**${contrib}\n   ${meta}\n   views: ${views}${q.viewName ? `  -> ${q.viewName}` : ''}${desc}`;
       });
       return {
         content: [{
           type: 'text',
-          text: `${hits.length} saved quer${hits.length === 1 ? 'y' : 'ies'} for "${query}":\n\n${lines.join('\n')}\n\nLoad it into compose_query / generate_cds_view (views[] + select/where) to reuse the shape.`,
+          text: `${hits.length} saved quer${hits.length === 1 ? 'y' : 'ies'} for "${query}":\n\n${lines.join('\n')}\n\nLoad the resolved shape into compose_query / generate_cds_view (views[] + select/where).`,
         }],
         structuredContent: structured,
       };
@@ -1514,6 +1536,7 @@ function createServer() {
   );
 
   // cds://query-library — the shared saved-query list (index/query-library.json) as JSON.
+  // Recipes + variants (raw file; clients may resolve variants via recipeId).
   server.registerResource(
     'query-library',
     'cds://query-library',
