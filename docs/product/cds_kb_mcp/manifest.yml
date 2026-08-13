@@ -19,6 +19,10 @@ applications:
                  # refresh (CDS_KB_INDEX_REFRESH_MINUTES); 256M OOM-crashed just loading the
                  # ~10.6k-view MiniSearch index (both verified on BTP trial)
     instances: 1
+    # v2.4.0 needs 2G disk: @huggingface/transformers (+ onnxruntime) and sharp
+    # in node_modules plus the index/embeddings cache exceed the 1G default
+    # (the app crashed with ENOSPC at startup on 1G).
+    disk_quota: 2G
     buildpacks:
       - nodejs_buildpack
     # Runs the pre-built bundle, NOT `npm start` (= node src/server.mjs) — the
