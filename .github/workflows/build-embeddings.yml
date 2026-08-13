@@ -1,17 +1,17 @@
 # .github/workflows/build-embeddings.yml
-# Optional: build index/embeddings.json (view semantic_en/description vectors)
-# so cds-kb-mcp's search_mode=hybrid can re-rank BM25 with cosine similarity
+# Build index/embeddings.json (view semantic_en/description vectors) so
+# cds-kb-mcp's search_mode=hybrid can re-rank BM25 with cosine similarity
 # (see scripts/build-embeddings.mjs and the server's rankedSearch).
 #
-# Strictly opt-in: build-embeddings.mjs exits 0 and writes nothing when
-# CDS_KB_EMBED_API_KEY is unset, so this workflow is safe to merge before the
-# secret exists — it just prints "skipping". With the secret set, it embeds
-# the current views, commits index/embeddings.json, and the next hosted
-# cds-kb-mcp index refresh picks it up (kb_info reports `embeddings: yes`).
+# No API key needed anymore: build-embeddings.mjs now falls back to a LOCAL
+# ONNX model via transformers.js (all-MiniLM-L6-v2) when CDS_KB_EMBED_API_KEY
+# is unset — hybrid search is free and keyless. A remote OpenAI-compatible
+# key (when set) still overrides with a stronger model.
 #
 # The vector file is derived from the tracked view frontmatter and stored in
 # git (like search_index.json), not regenerated on the fly, so a fresh clone
-# or BTP restart never needs the API key — only refresh runs do.
+# or BTP restart never needs the API key or a model download — only refresh
+# runs do (the transformers.js model is cached between runs below).
 
 name: Build Embeddings
 
@@ -55,6 +55,16 @@ jobs:
       - name: Install dependencies
         run: npm ci --ignore-scripts
 
+      # transformers.js downloads the ONNX model (~90 MB) on first run; cache
+      # it across weekly runs so embedding doesn't re-fetch every time.
+      - name: Cache local embedding model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: transformersjs-embeddings-${{ runner.os }}
+          restore-keys: |
+            transformersjs-embeddings-${{ runner.os }}
+
       - name: Build embeddings
         env:
           CDS_KB_EMBED_API_KEY: ${{ secrets.CDS_KB_EMBED_API_KEY }}
@@ -72,5 +82,5 @@ jobs:
         with:
           paths: docs/product/cds_kb_data/index/embeddings.json
           commit-message: "Build embeddings [skip ci]"
-          empty-message: Embeddings unchanged or not configured
+          empty-message: Embeddings unchanged
           success-message: Embeddings updated

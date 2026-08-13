@@ -13,7 +13,7 @@ import MiniSearch from 'minisearch';
 import { z } from 'zod';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
-import { McpServer, ResourceTemplate, createMcpHandler } from '@modelcontextprotocol/server';
+import { McpServer, ResourceTemplate, createMcpHandler, completable } from '@modelcontextprotocol/server';
 import { serveStdio } from '@modelcontextprotocol/server/stdio';
 import { toNodeHandler } from '@modelcontextprotocol/node';
 import express from 'express';
@@ -23,8 +23,9 @@ import { composeQuery } from './query-compose.mjs';
 import { generateCdsView, validateCdsDdl } from './ddl-tools.mjs';
 import { createAuthMiddleware, describeAuthMode } from './auth.mjs';
 import { proposeQueryLibraryEntry } from './propose-library.mjs';
-import { oauthEnabled, describeOAuth, buildOAuthMetadata, authorizeHandler, tokenHandler } from './oauth.mjs';
+import { oauthEnabled, describeOAuth, buildOAuthMetadata, authorizeHandler, tokenHandler, registerHandler } from './oauth.mjs';
 import { inc, histogram, healthHandler, metricsHandler, rateLimitMiddleware } from './metrics.mjs';
+import { logInfo, logWarn, logError } from './log.mjs';
 
 // ── Vietnamese accent-insensitive normalization ─────────────────────────────
 // The data repo's enrich_index.mjs builds search_index.json with
@@ -186,6 +187,7 @@ let tableIndexData = null; // table-index.json: { tables: { TABLE_NAME: [{view, 
 let rawFieldIndexData = null; // raw-field-index.json: { fields: { RAW_DDIC_NAME: [{view, field, isKey, appComponent, lob, bo}] } }
 let embeddingsData = null; // index/embeddings.json or null
 let queryLibraryData = null; // index/query-library.json (array of saved queries) or null
+let changelogData = null; // changelog.json (array of {viewName, action, timestamp, source, ...}) or null
 let usageStatsConfigured = false;
 
 function cosineSimilarity(a, b) {
@@ -200,9 +202,49 @@ function cosineSimilarity(a, b) {
   return dot / (Math.sqrt(na) * Math.sqrt(nb));
 }
 
+// Local query-embedding via transformers.js (ONNX, in-process) — the free,
+// keyless counterpart of the data repo's LOCAL build mode. Only loaded lazily
+// (dynamic import) so the dist bundle never contains onnxruntime, and only
+// when CDS_KB_EMBED_API_KEY is unset AND the local model is available. Any
+// failure (missing dependency, model download error) returns null and the
+// caller falls back to plain BM25 — hybrid is a bonus, never a hard dep.
+const LOCAL_EMBED_MODEL = 'Xenova/all-MiniLM-L6-v2';
+let localExtractorPromise = null;
+function localEmbedExtractor() {
+  if (!localExtractorPromise) {
+    localExtractorPromise = (async () => {
+      const { pipeline } = await import('@huggingface/transformers');
+      // Same dtype/settings as the data repo's build-embeddings.mjs local
+      // branch so query vectors are comparable to index vectors.
+      return pipeline('feature-extraction', LOCAL_EMBED_MODEL, { dtype: 'q8' });
+    })();
+  }
+  return localExtractorPromise;
+}
+
+async function embedQueryTextLocal(text) {
+  try {
+    const extractor = await localEmbedExtractor();
+    const out = await extractor(String(text).slice(0, 8000), { pooling: 'mean', normalize: true });
+    return Array.from(out.data || []);
+  } catch (e) {
+    logWarn('local query embedding failed, falling back to BM25-only', { err: e });
+    return null;
+  }
+}
+
 async function embedQueryText(text) {
+  if (!text) return null;
   const apiKey = (process.env.CDS_KB_EMBED_API_KEY || '').trim();
-  if (!apiKey || !text) return null;
+  // No API key → use the same local model that produced the committed vectors
+  // (the data repo builds them locally by default now). If this server's
+  // environment can't load transformers.js, we degrade to BM25-only.
+  if (!apiKey) {
+    if (embeddingsData?.mode === 'local' || String(embeddingsData?.model || '').includes('MiniLM')) {
+      return embedQueryTextLocal(text);
+    }
+    return null;
+  }
   const url = (process.env.CDS_KB_EMBED_URL || 'https://api.openai.com/v1/embeddings').trim();
   const model = (process.env.CDS_KB_EMBED_MODEL || embeddingsData?.model || 'text-embedding-3-small').trim();
   try {
@@ -316,6 +358,11 @@ async function loadIndex() {
   } catch {
     queryLibraryData = null;
   }
+  try {
+    changelogData = await ds.getChangelog?.() ?? null;
+  } catch {
+    changelogData = null;
+  }
   usageStatsConfigured = [...docsByName.values()].some((d) => (d?.usageCount || 0) > 0);
   if (!usageStatsConfigured && ds.root) {
     usageStatsConfigured = existsSync(path.join(ds.root, 'index', 'usage-stats.json'));
@@ -332,15 +379,15 @@ function refreshIndexPeriodically(intervalMs) {
     try {
       await loadIndex();
       if (meta.commit && meta.commit !== prevCommit) {
-        console.error(`[cds-kb-mcp] index refreshed: ${prevCommit || '(none)'} -> ${meta.commit} (${meta.viewCount} views)`);
+        logInfo('index refreshed', { from: prevCommit || '(none)', to: meta.commit, views: meta.viewCount });
       }
     } catch (e) {
-      console.error(`[cds-kb-mcp] periodic index refresh failed, keeping previous data: ${e.message}`);
+      logWarn('periodic index refresh failed, keeping previous data', { err: e });
     }
   }, intervalMs);
 }
 
-const SERVER_VERSION = '2.3.0';
+const SERVER_VERSION = '2.4.0';
 const SERVER_INSTRUCTIONS =
   `This is cds-kb-mcp v${SERVER_VERSION}, built by StormShyn. ` +
   'The first time you use a tool from this server in a conversation, briefly mention to the user ' +
@@ -1295,11 +1342,98 @@ function createServer() {
     },
   );
 
+  // ── Tool 14: view_changelog ──────────────────────────────────────────────
+  server.registerTool(
+    'view_changelog',
+    {
+      title: 'Recent CDS view changes',
+      description:
+        'List recently added/updated CDS views from changelog.json (the daily fetch + hub metadata refresh records every change here). ' +
+        'Use this to answer \"what\'s new in the KB\" without re-searching everything — then get_cds_view(name) on any hit.',
+      inputSchema: {
+        action: z.enum(['added', 'updated']).optional().describe('Only entries with this action (added / updated)'),
+        source: z.string().optional().describe('Only entries from this source, e.g. "hub-catalog" or "vsp" (partial match)'),
+        since: z.string().optional().describe('Only entries newer than this ISO timestamp (e.g. 2026-08-01 or 2026-08-01T00:00:00Z)'),
+        limit: z.number().int().min(1).max(200).optional().describe('Max results (default 20)'),
+      },
+      outputSchema: z.object({
+        count: z.number(),
+        results: z.array(z.object({
+          viewName: z.string(),
+          action: z.string(),
+          timestamp: z.string(),
+          source: z.string().nullable(),
+          fields: z.number().nullable(),
+          associations: z.number().nullable(),
+        })),
+      }),
+    },
+    async ({ action, source, since, limit = 20 }) => {
+      if (!Array.isArray(changelogData) || changelogData.length === 0) {
+        return {
+          content: [{ type: 'text', text: 'No changelog available (this data source has no changelog.json).' }],
+          structuredContent: { count: 0, results: [] },
+        };
+      }
+      const sinceTs = since ? Date.parse(since) : NaN;
+      const sourceLower = (source || '').toLowerCase();
+      const entries = changelogData
+        .filter((e) => {
+          if (action && e.action !== action) return false;
+          if (sourceLower && !String(e.source || '').toLowerCase().includes(sourceLower)) return false;
+          if (sinceTs && !(Date.parse(e.timestamp) >= sinceTs)) return false;
+          return true;
+        })
+        .sort((a, b) => String(b.timestamp).localeCompare(String(a.timestamp)))
+        .slice(0, limit);
+      const structured = {
+        count: entries.length,
+        results: entries.map((e) => ({
+          viewName: e.viewName,
+          action: e.action,
+          timestamp: e.timestamp,
+          source: e.source ?? null,
+          fields: e.fields ?? null,
+          associations: e.associations ?? null,
+        })),
+      };
+      if (entries.length === 0) {
+        const hint = [action, source, since].filter(Boolean).join(' / ');
+        return {
+          content: [{ type: 'text', text: `No changelog entries matched ${hint || '(no filters)'}. Try a broader filter or view_changelog with no arguments.` }],
+          structuredContent: structured,
+        };
+      }
+      const lines = entries.map((e) => `- **${e.viewName}** (${e.action} ${String(e.timestamp).slice(0, 10)})${e.source ? `  [${e.source}]` : ''}${e.fields != null ? `  ${e.fields} fields` : ''}`);
+      return {
+        content: [{ type: 'text', text: `${entries.length} recent change${entries.length === 1 ? '' : 's'}:\n\n${lines.join('\n')}\n\nUse get_cds_view(name) to read any of these.` }],
+        structuredContent: structured,
+      };
+    },
+  );
+
   // ── Resources ────────────────────────────────────────────────────────────
   // cds://view/<NAME> — full markdown of one view (dynamic template).
+  // View-name autocomplete for the cds://view/{name} template variable.
+  // Returns up to 25 views whose name contains the typed prefix (case-
+  // insensitive), so clients that surface completion/complete on resource
+  // templates can offer real names instead of guessing.
+  const completeViewName = (value) => {
+    const q = String(value || '').trim().toUpperCase();
+    if (!q) return [];
+    const hits = [];
+    for (const name of docsByName.keys()) {
+      if (name.includes(q)) {
+        hits.push(name);
+        if (hits.length >= 25) break;
+      }
+    }
+    return hits;
+  };
+
   server.registerResource(
     'view',
-    new ResourceTemplate('cds://view/{name}', { list: undefined }),
+    new ResourceTemplate('cds://view/{name}', { list: undefined, complete: { name: completeViewName } }),
     { title: 'CDS view definition', description: 'Full markdown definition of a single CDS view by name', mimeType: 'text/markdown' },
     async (uri, variables) => {
       const name = variables?.name || '';
@@ -1348,7 +1482,9 @@ function createServer() {
     {
       title: 'Explain a CDS view',
       description: 'Ask the model to fetch a CDS view and explain its purpose, key fields, associations, and usage.',
-      argsSchema: { name: z.string().describe('CDS view name to explain, e.g. I_SalesDocument') },
+      argsSchema: {
+        name: completable(z.string().describe('CDS view name to explain, e.g. I_SalesDocument'), completeViewName),
+      },
     },
     ({ name }) => ({
       messages: [{
@@ -1434,10 +1570,12 @@ async function main() {
       app.get('/.well-known/oauth-authorization-server', (req, res) => {
         res.json(buildOAuthMetadata(req));
       });
-      // authorize/token are rate-limited too — minting codes and exchanging them
-      // are both abuse surfaces on a public server, even though codes are random.
+      // authorize/token/register are rate-limited too — minting codes,
+      // exchanging them, and minting dynamic clients are all abuse surfaces on
+      // a public server, even though codes are random.
       app.get('/oauth/authorize', limiter, authorizeHandler);
       app.post('/oauth/token', limiter, express.urlencoded({ extended: false }), tokenHandler);
+      app.post('/oauth/register', limiter, express.json(), registerHandler);
     }
 
     // ── MCP endpoint — modern stateless Streamable HTTP (2026-07-28 era) with
@@ -1447,10 +1585,10 @@ async function main() {
     // any request. toNodeHandler adapts the web-standard handler to Express.
     const mcpHttp = createMcpHandler(
       () => createServer(),
-      { legacy: 'stateless', onerror: (e) => console.error(`[cds-kb-mcp] MCP handler error: ${e.message}`) },
+      { legacy: 'stateless', onerror: (e) => logError('MCP handler error', { err: e }) },
     );
     const nodeMcpHandler = toNodeHandler(mcpHttp, {
-      onerror: (e) => console.error(`[cds-kb-mcp] MCP node handler error: ${e.message}`),
+      onerror: (e) => logError('MCP node handler error', { err: e }),
     });
 
     // Request metrics (counter + latency histogram) for the MCP surface — feeds
@@ -1472,25 +1610,25 @@ async function main() {
 
     const serverPort = port || 8080;
     app.listen(serverPort, () => {
-      console.error(`[cds-kb-mcp] HTTP server ready on port ${serverPort} (Streamable HTTP at /mcp). ${ds.describe()} | views=${meta.viewCount} modules=${Object.keys(moduleStats).length}`);
+      logInfo('HTTP server ready', { port: serverPort, transport: 'streamable-http', source: ds.describe(), views: meta.viewCount, modules: Object.keys(moduleStats).length });
       if (authMode === 'none') {
-        console.error(`[cds-kb-mcp] WARNING: No API_KEY / CDS_KB_JWKS_URL / CDS_KB_OAUTH_SECRET. Server is public!`);
+        logWarn('No API_KEY / CDS_KB_JWKS_URL / CDS_KB_OAUTH_SECRET — server is public', {});
       } else {
-        console.error(`[cds-kb-mcp] Authentication ENABLED (${authMode})`);
+        logInfo('authentication enabled', { auth: authMode });
       }
       if (oauthEnabled()) {
-        console.error(`[cds-kb-mcp] OAuth 2.1: ${describeOAuth()}`);
+        logInfo('oauth 2.1', { config: describeOAuth() });
       }
     });
   } else {
     // Default local behavior — stdio. serveStdio pins one fresh server instance
     // per connection and serves both the modern and the 2025-era protocol.
     await serveStdio(() => createServer(), { legacy: 'serve' });
-    console.error(`[cds-kb-mcp] Stdio server ready. ${ds.describe()} | views=${meta.viewCount} enriched=${meta.enrichedCount} modules=${Object.keys(moduleStats).length}`);
+    logInfo('stdio server ready', { source: ds.describe(), views: meta.viewCount, enriched: meta.enrichedCount, modules: Object.keys(moduleStats).length });
   }
 }
 
 main().catch((e) => {
-  console.error('[cds-kb-mcp] fatal:', e.message);
+  logError('fatal', { err: e });
   process.exit(1);
 });

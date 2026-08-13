@@ -16,6 +16,8 @@
 // set. Telemetry failures never surface to the caller — get_cds_view always
 // returns its result regardless of whether the ping succeeded.
 
+import { logWarn } from './log.mjs';
+
 const ENDPOINT = process.env.CDS_KB_USAGE_ENDPOINT || '';
 const FLUSH_INTERVAL_MS = (parseFloat(process.env.CDS_KB_USAGE_FLUSH_MINUTES) || 5) * 60 * 1000;
 const FLUSH_TIMEOUT_MS = 5000;
@@ -58,7 +60,7 @@ async function flush() {
     for (const [view, count] of pending) {
       deltas.set(view, (deltas.get(view) || 0) + count);
     }
-    console.error(`[cds-kb-mcp] usage ping failed, will retry next flush: ${e.message}`);
+    logWarn('usage ping failed, will retry next flush', { err: e });
   }
 }
 

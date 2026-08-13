@@ -16,9 +16,18 @@ variable.
 
 `worker.js` forwards every request (method, headers, body) to whatever URL
 is set in the `BACKEND_URL` environment variable, and streams the response
-straight back — no caching (MCP responses are dynamic/session-bound; a
-plain GET was observed getting served from Cloudflare's edge cache without
-`cache: "no-store"`), no transformation.
+straight back — no transformation.
+
+Caching is selective:
+
+- **Cached at the edge (Cache API):** `GET/HEAD /health` (10s), `/metrics`
+  (10s), and `/.well-known/*` (1h — OAuth discovery, hit on every client
+  connect). These are stable JSON documents that change slowly; caching them
+  cuts BTP trial load and latency.
+- **Never cached (`Cache-Control: no-store`):** everything else, notably
+  `/mcp` (POST, and the GET/DELETE session surface) — MCP responses are
+  dynamic/session-bound, and a plain GET was observed getting served from
+  Cloudflare's edge cache without this.
 
 ```
 client -> https://mcp.tringhia.io.vn/mcp -> Worker -> BACKEND_URL/mcp (the live BTP route)

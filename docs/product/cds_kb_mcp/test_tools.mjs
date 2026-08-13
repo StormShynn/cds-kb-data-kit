@@ -252,6 +252,26 @@ define view entity Z_GoodView
   }
   console.log('✅ kb_info visibility fields');
 
+  console.log('\n=== TEST 15.5: view_changelog ===');
+  const rch = await call('tools/call', {
+    name: 'view_changelog',
+    arguments: { action: 'added', limit: 5 },
+  });
+  const tch = rch.result?.content?.[0]?.text || '';
+  console.log(tch.slice(0, 500));
+  if (tch && !/No changelog available/i.test(tch)) {
+    const s = rch.result?.structuredContent;
+    if (!s || !Array.isArray(s.results) || s.results.length === 0 || !s.results.every((r) => r.action === 'added' && r.viewName)) {
+      console.error('❌ view_changelog failed — expected added entries with viewName');
+      proc.kill();
+      process.exit(1);
+    }
+    console.log('✅ view_changelog');
+  } else {
+    // changelog.json may be absent in a minimal data tree — accept a graceful message.
+    console.log('ℹ️  view_changelog returned a no-data message (changelog.json absent)');
+  }
+
   console.log('\n=== TEST 15: search_query_library ===');
   const rlib = await call('tools/call', {
     name: 'search_query_library',

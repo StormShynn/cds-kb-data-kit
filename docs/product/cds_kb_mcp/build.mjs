@@ -31,6 +31,13 @@ await build({
   // output, which this server has no use for — stubbing it out removes the
   // dependency entirely rather than just working around how it's required.
   alias: { debug: path.join(__dirname, 'build', 'debug-stub.cjs') },
+  // @huggingface/transformers ships native ONNX runtime binaries esbuild can't
+  // bundle (and shouldn't — they'd bloat the single-file dist to tens of MB).
+  // It's loaded lazily via dynamic import in embedQueryText only for local
+  // hybrid search, so leaving it external keeps the dist small; a deployment
+  // without the package installed simply never enables local hybrid (BM25
+  // fallback), which is the documented degradation.
+  external: ['@huggingface/transformers'],
   // esbuild preserves the shebang already present in src/server.mjs — don't add another.
 });
 

@@ -42,13 +42,13 @@ the data index changes).
 | **Coverage**        | ~10,600 CDS views (see `version.json` `viewCount`)                                                         |
 | **Enrichment**      | Semantic description + synonyms where present (`enrichedCount` in `version.json`)                          |
 | **Taxonomy**        | Lines of Business → Business Objects → keyword map (EN + VI)                                               |
-| **Search ranking**  | Field-boosted MiniSearch (`name×3`, `semanticDescription×2.5`, `synonyms×2`) + optional **vector hybrid** (`index/embeddings.json` — not yet built for this KB, see below) + **usageCount** popularity boost (also not yet populated — see below) |
+| **Search ranking**  | Field-boosted MiniSearch (`name×3`, `semanticDescription×2.5`, `synonyms×2`) + **vector hybrid** (`index/embeddings.json` — built with a free local ONNX model by default, see below) + **usageCount** popularity boost (populated when the usage pipeline is wired up, see below) |
 | **Module aliasing** | Filter by `"Finance"` / `"Procurement"` / `"Sales"` instead of `FI` / `MM` / `SD`                          |
-| **Tools**           | 13 MCP tools — every one declares an `outputSchema` and returns JSON `structuredContent`                   |
+| **Tools**           | 14 MCP tools — every one declares an `outputSchema` and returns JSON `structuredContent`                   |
 | **Resources**       | `cds://view/{name}`, `cds://taxonomy`, `cds://stats` — attachable straight into agent context              |
 | **Prompts**         | `explain_view`, `compose_query`, `validate_ddl` — one-call packaged workflows                              |
-| **Auth**            | API key, remote JWKS, and full **OAuth 2.1 + PKCE** authorization server                                   |
-| **Bundle**          | Single ~2 MB `.cjs` file (unminified), Node ≥ 20                                                           |
+| **Auth**            | API key, remote JWKS, and full **OAuth 2.1 + PKCE** authorization server (+ **RFC 7591 dynamic client registration**) |
+| **Bundle**          | Single `.cjs` file (unminified), Node ≥ 20 — local hybrid search stays optional (`@huggingface/transformers` is an external, lazily-imported dependency) |
 | **Data isolation**  | Server ships **no view data**. Harness sibling `cds_kb_data`, or GitHub remote / local `--data`.           |
 
 ---
@@ -200,7 +200,7 @@ Once configured, restart your IDE. The tools will immediately be available for y
 
 ## Tools Reference
 
-The server exposes **thirteen tools**. Every tool declares an **`outputSchema`** (JSON Schema) and returns both human-readable `content` **and** machine-parseable **`structuredContent`** — so programmatic/agentic integrations can parse results without regex. The flow: search → pick a view → **compose → generate → validate** CDS DDL without leaving MCP.
+The server exposes **fourteen tools**. Every tool declares an **`outputSchema`** (JSON Schema) and returns both human-readable `content` **and** machine-parseable **`structuredContent`** — so programmatic/agentic integrations can parse results without regex. The flow: search → pick a view → **compose → generate → validate** CDS DDL without leaving MCP.
 
 ### 1. `search_cds`
 
@@ -216,7 +216,7 @@ Find CDS views by business meaning, name, tag, or classic SAP keyword (`VBAK`, `
 | `bo`      | string   | optional | Business object filter (partial match, e.g. `"salesorder"`)                            |
 | `limit`   | int 1-50 | optional | Max results (default 10)                                                               |
 
-Returns: ranked list with `name`, `score`, `module`, short description, `devExtStatus`, `atcState`, `atcSuccessor`, and path. Ranking blends BM25 (MiniSearch) + cosine similarity when `index/embeddings.json` is present + `usageCount` popularity boost when `index/usage-stats.json` is present — as of this writing, **neither file exists in this KB** (no CI workflow has ever run `build-embeddings`/`pull-usage-stats` with real credentials), so `search_mode=hybrid` silently falls back to plain BM25 and popularity never nudges results. See [Hybrid (vector) search](#hybrid-vector-search) below for what it takes to actually turn these on.
+Returns: ranked list with `name`, `score`, `module`, short description, `devExtStatus`, `atcState`, `atcSuccessor`, and path. Ranking blends BM25 (MiniSearch) + cosine similarity when `index/embeddings.json` is present + `usageCount` popularity boost when `index/usage-stats.json` is present. Embeddings are now built **for free** by the weekly `build-embeddings` workflow using a local ONNX model (transformers.js) — see [Hybrid (vector) search](#hybrid-vector-search). The `usageCount` popularity boost still needs the usage pipeline wired up (see [Usage ranking](#usage-ranking)).
 
 > **Three independent release signals — do not conflate them.** A view
 > showing up here at all just means it's in the general SAP Hub catalog
@@ -300,7 +300,7 @@ Report the active data source, server version, view count, enrichment %, private
 
 ```text
 source: local:D:\...\docs\product\cds_kb_data
-server: cds-kb-mcp 2.3.0
+server: cds-kb-mcp 2.4.0
 views: 10619
 enriched: 3267 (30.8%)
 privateOverlay: 1
@@ -337,7 +337,18 @@ Parse DDL with `@abaplint/core` CDSParser. Returns soft diagnostics (`ok` / `par
 
 Build a JSON snippet + markdown PR body for `index/query-library.json`. With `GITHUB_TOKEN` + `CDS_KB_PROPOSE_REPO=owner/name`, opens a **draft** PR on `propose/query-*` (never merges). On API failure, still returns the local snippet.
 
-### 13. `search_query_library`
+### 13. `view_changelog`
+
+List recently added/updated CDS views from the data repo's `changelog.json` (every daily fetch / hub metadata refresh records its changes there). Use it to answer "what's new in the KB" without re-searching everything.
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `action` | enum | optional | `added` or `updated` — only entries with that action |
+| `source` | string | optional | Only entries from a source, e.g. `hub-catalog` or `vsp` (partial match) |
+| `since` | string | optional | ISO timestamp cutoff, e.g. `2026-08-01` |
+| `limit` | int 1-200 | optional | Default 20 |
+
+### 14. `search_query_library`
 
 Search the shared saved-query list (`index/query-library.json`) by title, description, target CDS view name, or generated view name — the curated, PR-reviewed entries the Query Builder also embeds. Returns a ranked shortlist; take a result's `views[]`/`select`/`where` into `compose_query` / `generate_cds_view` to reuse a known-good shape.
 
@@ -414,6 +425,27 @@ OAuth notes:
   to delegate to an external provider instead? Put an API Management / Approuter +
   XSUAA gateway in front of the app on SAP BTP — see `mcp_btp_deployment_guide.md`.
 
+### Dynamic client registration (RFC 7591)
+
+When OAuth is enabled, `POST /oauth/register` accepts RFC 7591 client
+metadata (`client_name`, `redirect_uris`, ...) and returns a dynamic
+`client_id` (public client — PKCE, no secret), which `authorize`/`token`
+then accept alongside the static `CDS_KB_OAUTH_CLIENT_ID`. The AS metadata
+(`/.well-known/oauth-authorization-server`) advertises
+`registration_endpoint`, so compliant MCP clients can self-register on
+connect. The registry is **in-memory** (same lifetime as auth codes): a
+server restart invalidates dynamic clients, which simply re-register; the
+static default client always works.
+
+### Completions (`completion/complete`)
+
+Clients that implement the MCP completions capability get view-name
+suggestions as you type: `explain_view`'s `name` prompt argument and the
+`cds://view/{name}` resource-template variable both complete against the
+loaded index (up to 25 matches, case-insensitive substring). The server
+advertises `completions` in its capabilities only because these completable
+schemas are registered.
+
 ### S3 / MinIO data source
 
 When `CDS_KB_S3_BUCKET`, `CDS_KB_S3_ACCESS_KEY_ID`, and `CDS_KB_S3_SECRET_ACCESS_KEY` are set (and `--data` / `CDS_KB_DATA` are not), the server loads the index and views from S3-compatible storage. Optional: `CDS_KB_S3_PREFIX`, `CDS_KB_S3_REGION` (default `us-east-1`), `CDS_KB_S3_ENDPOINT`, `CDS_KB_S3_FORCE_PATH_STYLE=true` (MinIO). Cache lives under `~/.cache/cds-kb/s3-<hash>/`.
@@ -430,21 +462,29 @@ Precedence: `--data` / `CDS_KB_DATA` → S3 (when configured) → `--remote` / `
 2. The data repo’s `pull-usage-stats` workflow writes `index/usage-stats.json`, and
 3. `enrich_index.mjs` rebuilds the search index.
 
-Missing Worker secrets → ranking still works; popularity just does not nudge results yet. To go live, deploy the collector Worker (`.github/workflows/deploy-usage-worker.yml`, manual trigger) and add the `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` secrets — see [`worker/README.md`](./worker/README.md) for the full walkthrough (KV namespace, `PULL_TOKEN`, and the two data-repo secrets the `pull-usage-stats.yml` workflow consumes).
+Missing Worker secrets → ranking still works; popularity just does not nudge results yet. To go live, deploy the collector Worker (`.github/workflows/deploy-usage-worker.yml`, manual trigger) and add the `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` secrets — see [`worker/README.md`](./worker/README.md) for the full walkthrough (Durable Object, `PULL_TOKEN`, and the two data-repo secrets the `pull-usage-stats.yml` workflow consumes). Counts live in a Durable Object (SQLite-backed, atomic, no KV free-plan write limit).
 
 ### Hybrid (vector) search
 
-Activated by the `.github/workflows/build-embeddings.yml` workflow (weekly +
-manual trigger), which runs `scripts/build-embeddings.mjs` and commits
-`index/embeddings.json` when the `CDS_KB_EMBED_API_KEY` repo secret is set. The
-script no-ops (exit 0) without that secret, so the workflow is safe to merge
-before the key exists. To turn hybrid on: set `CDS_KB_EMBED_API_KEY` (optionally
-`CDS_KB_EMBED_URL` / `CDS_KB_EMBED_MODEL`) as repository secrets and run the
-workflow once — the committed vectors are picked up by the next hosted index
-refresh (`kb_info` then reports `embeddings: yes`). Until then,
-`search_mode=hybrid` falls back to plain BM25 every time — which is already
-strong on its own, so this isn't blocking anything, just worth knowing before
-assuming hybrid mode is doing something.
+Runs for free, no API key needed. The `.github/workflows/build-embeddings.yml`
+workflow (weekly + manual trigger) runs `scripts/build-embeddings.mjs`, which
+embeds every view with a **local ONNX model via transformers.js**
+(`all-MiniLM-L6-v2`, 384-dim) when `CDS_KB_EMBED_API_KEY` is unset — the
+default. Setting `CDS_KB_EMBED_API_KEY` (optionally `CDS_KB_EMBED_URL` /
+`CDS_KB_EMBED_MODEL`) switches to a remote OpenAI-compatible model instead.
+
+The committed vectors are picked up by the next hosted index refresh
+(`kb_info` then reports `embeddings: yes`). At query time the server embeds
+the search text with the same local model **in-process** when
+`CDS_KB_EMBED_API_KEY` is unset (`@huggingface/transformers`, lazily
+imported) — so hybrid re-ranking is fully keyless. Two caveats:
+
+- The local model is downloaded (~90 MB, cached under `~/.cache/huggingface`)
+  on first embed; until then (or if the package/model can't load) hybrid
+  degrades to plain BM25 — which is already strong on its own.
+- `@huggingface/transformers` is an **external** dependency of the esbuild
+  bundle, so the single-file `dist/cds-kb-mcp.cjs` never contains it; a
+  deployment without `node_modules` simply never enables local hybrid.
 
 ---
 
@@ -455,7 +495,7 @@ assuming hybrid mode is doing something.
 | `GET /health` | Liveness: `{"status":"ok","views":...,"uptimeSeconds":...}` — no auth required |
 | `GET /metrics` | Prometheus-text counters + latency histogram: `cds_kb_http_requests_total`, `cds_kb_mcp_request_duration_ms`, process gauges |
 | `POST /mcp` (+ `GET`/`DELETE` for stateless sessions) | Streamable HTTP MCP endpoint |
-| `GET /oauth/authorize`, `POST /oauth/token` | OAuth 2.1 authorization server (enabled via `CDS_KB_OAUTH_SECRET`) |
+| `GET /oauth/authorize`, `POST /oauth/token`, `POST /oauth/register` | OAuth 2.1 authorization server + RFC 7591 dynamic client registration (enabled via `CDS_KB_OAUTH_SECRET`) |
 | `GET /.well-known/oauth-protected-resource`, `/.well-known/oauth-authorization-server` | OAuth discovery metadata |
 
 Rate limiting: a fixed-window limiter (default 120 req/min per IP; tune with
@@ -481,8 +521,8 @@ npx @modelcontextprotocol/inspector node src/server.mjs --data ../cds_kb_data
 └──────────────────────────┬───────────────────────────────────────┘
                            │  MCP / JSON-RPC — stdio, or Streamable HTTP at /mcp
 ┌──────────────────────────▼───────────────────────────────────────┐
-│              cds-kb-mcp 2.3.0 (MCP SDK v2, spec 2026-07-28)      │
-│  tools (12, outputSchema+structuredContent) · resources · prompts│
+│              cds-kb-mcp 2.4.0 (MCP SDK v2, spec 2026-07-28)      │
+│  tools (14, outputSchema+structuredContent) · resources · prompts│
 │  rate limit → auth (API key | JWKS | OAuth 2.1+PKCE) → handlers   │
 │                       │                                          │
 │  ┌────────────────────▼───────────────────┐                      │

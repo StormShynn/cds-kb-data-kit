@@ -7,9 +7,9 @@
 # Required secrets (see worker/README.md):
 #   CLOUDFLARE_API_TOKEN   — a token scoped to "Workers Scripts: Edit" for the account
 #   CLOUDFLARE_ACCOUNT_ID  — the Cloudflare account id
-# Also edit docs/product/cds_kb_mcp/worker/wrangler.toml to set the real KV
-# namespace id (created via `wrangler kv:namespace create USAGE_KV`) before the
-# first deploy.
+# No KV namespace setup needed anymore — counts live in a Durable Object
+# (binding + migration are already in wrangler.toml; the class is created on
+# first deploy). PULL_TOKEN is a wrangler secret you set once before deploy.
 
 name: Deploy Usage Collector Worker
 

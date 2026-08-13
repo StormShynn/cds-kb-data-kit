@@ -28,6 +28,77 @@ const TOKEN_TTL = parseInt(process.env.CDS_KB_OAUTH_TOKEN_TTL || '3600', 10) || 
 const AUTH_CODE_TTL_MS = 600000; // 10 min
 const SCOPES = ['cds_kb:read'];
 
+// ── Dynamic client registry (RFC 7591) ─────────────────────────────────────
+// client_id -> { clientName, redirectUris, grantTypes, responseTypes,
+//                tokenEndpointAuthMethod, registeredAt }. In-memory, same
+// lifetime as the auth-code store: a restart invalidates dynamically
+// registered clients and they must re-register (documented; the static
+// CDS_KB_OAUTH_CLIENT_ID always works).
+const registeredClients = new Map();
+
+function registerClient(body) {
+  const redirectUris = Array.isArray(body.redirect_uris)
+    ? body.redirect_uris.filter((u) => typeof u === 'string' && /^https?:\/\//.test(u))
+    : [];
+  if (redirectUris.length === 0) {
+    const err = new Error('redirect_uris is required and must contain at least one http(s) URI');
+    err.status = 400;
+    throw err;
+  }
+  const clientId = `dyn_${randomBytes(12).toString('hex')}`;
+  const entry = {
+    clientName: String(body.client_name || 'dynamic-client'),
+    redirectUris,
+    grantTypes: Array.isArray(body.grant_types) ? body.grant_types : ['authorization_code'],
+    responseTypes: Array.isArray(body.response_types) ? body.response_types : ['code'],
+    tokenEndpointAuthMethod: String(body.token_endpoint_auth_method || 'none'),
+    registeredAt: new Date().toISOString(),
+  };
+  registeredClients.set(clientId, entry);
+  return {
+    client_id: clientId,
+    client_id_issued_at: Math.floor(Date.now() / 1000),
+    client_name: entry.clientName,
+    redirect_uris: entry.redirectUris,
+    grant_types: entry.grantTypes,
+    response_types: entry.responseTypes,
+    token_endpoint_auth_method: entry.tokenEndpointAuthMethod,
+    // Public client (PKCE) — no client_secret issued, matching the token
+    // endpoint's token_endpoint_auth_methods_supported: ['none'].
+    token_endpoint_auth_signing_alg: undefined,
+  };
+}
+
+function isKnownClient(clientId) {
+  return clientId === CLIENT_ID || registeredClients.has(clientId);
+}
+
+/**
+ * POST /oauth/register — RFC 7591 dynamic client registration.
+ * Accepts { client_name, redirect_uris, grant_types, response_types,
+ * token_endpoint_auth_method } and returns OAuthClientInformation.
+ */
+export async function registerHandler(req, res) {
+  if (!oauthEnabled()) return res.status(404).json({ error: 'oauth_not_enabled' });
+  let body = req.body;
+  if (typeof body === 'string') {
+    try {
+      body = JSON.parse(body);
+    } catch {
+      return res.status(400).json({ error: 'invalid_client_metadata' });
+    }
+  }
+  if (!body || typeof body !== 'object') {
+    return res.status(400).json({ error: 'invalid_client_metadata', error_description: 'JSON body required' });
+  }
+  try {
+    const info = registerClient(body);
+    return res.status(201).json(info);
+  } catch (e) {
+    return res.status(e.status || 400).json({ error: 'invalid_client_metadata', error_description: e.message });
+  }
+}
+
 export function oauthEnabled() {
   return SECRET.length >= 32;
 }
@@ -86,6 +157,7 @@ export function buildOAuthMetadata(req) {
     grant_types_supported: ['authorization_code'],
     token_endpoint_auth_methods_supported: ['none'],
     code_challenge_methods_supported: ['S256'],
+    registration_endpoint: `${iss}/oauth/register`,
     scopes_supported: SCOPES,
   };
 }
@@ -98,8 +170,8 @@ export async function authorizeHandler(req, res) {
   if (response_type !== 'code') {
     return res.status(400).json({ error: 'unsupported_response_type' });
   }
-  if (client_id !== CLIENT_ID) {
-    return res.status(400).json({ error: 'unauthorized_client', error_description: `unknown client_id (expected ${CLIENT_ID})` });
+  if (!isKnownClient(client_id)) {
+    return res.status(400).json({ error: 'unauthorized_client', error_description: `unknown client_id (expected ${CLIENT_ID} or a client_id from /oauth/register)` });
   }
   if (!redirect_uri) {
     return res.status(400).json({ error: 'invalid_request', error_description: 'redirect_uri is required' });
@@ -130,6 +202,12 @@ export async function tokenHandler(req, res) {
   const { grant_type, code, code_verifier, redirect_uri, client_id } = req.body || {};
   if (grant_type !== 'authorization_code') {
     return res.status(400).json({ error: 'unsupported_grant_type' });
+  }
+
+  // A registered dynamic client must match the client_id minted at
+  // registration; the static default client is always valid.
+  if (client_id && !isKnownClient(client_id)) {
+    return res.status(400).json({ error: 'unauthorized_client', error_description: 'unknown client_id' });
   }
 
   const entry = authCodes.get(code);

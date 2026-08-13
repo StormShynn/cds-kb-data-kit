@@ -20,6 +20,7 @@
 //   async getTableIndex()    -> returns parsed table-index.json (or null if not available)
 //   async getRawFieldIndex() -> returns parsed raw-field-index.json (or null if not available)
 //   async getQueryLibrary()  -> returns parsed index/query-library.json (array of saved queries, or null if not available)
+//   async getChangelog()     -> returns parsed changelog.json (array of {viewName, action, timestamp, ...}, or null if not available)
 //   describe()               -> short human string for logs
 
 import { existsSync } from 'node:fs';
@@ -27,6 +28,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import os from 'node:os';
 import crypto from 'node:crypto';
+import { logError, logWarn } from './log.mjs';
 
 // Harness monorepo layout: docs/product/cds_kb_mcp next to docs/product/cds_kb_data.
 // Prefer process.argv[1] / cwd — not import.meta.url — so the CJS dist bundle works
@@ -223,6 +225,14 @@ export class LocalDataSource {
       return null;
     }
   }
+  async getChangelog() {
+    const file = path.join(this.root, 'changelog.json');
+    try {
+      return JSON.parse(await fs.readFile(file, 'utf-8'));
+    } catch {
+      return null;
+    }
+  }
 }
 
 // ── Remote backend ──────────────────────────────────────────────────────────
@@ -344,7 +354,7 @@ export class RemoteDataSource {
         if (json) await this.#persistJsonCache(cacheFile, text);
         else await atomicWriteFile(cacheFile, text);
       } catch (e) {
-        console.error(`[cds-kb-mcp] background revalidate failed for ${url}: ${e.message}`);
+        logWarn('background revalidate failed', { url, err: e });
       } finally {
         this._inflightRevalidate.delete(url);
       }
@@ -399,7 +409,7 @@ export class RemoteDataSource {
         try {
           return JSON.parse(await fs.readFile(cacheFile, 'utf-8'));
         } catch {
-          console.error('[cds-kb-mcp] index cache corrupt despite version match, re-downloading...');
+          logWarn('index cache corrupt despite version match, re-downloading', {});
         }
       } else if (!upstreamVersion) {
         // Upstream has no version.json or probe failed → legacy TTL behaviour
@@ -407,15 +417,15 @@ export class RemoteDataSource {
         try {
           const parsed = JSON.parse(await fs.readFile(cacheFile, 'utf-8'));
           if (!fresh) {
-            console.error('[cds-kb-mcp] index cache stale, serving from cache + revalidating in background');
+            logWarn('index cache stale, serving from cache + revalidating in background', {});
             this.#revalidateInBackground(url, cacheFile, { json: true });
           }
           return parsed;
         } catch {
-          console.error('[cds-kb-mcp] index cache corrupt, re-downloading...');
+          logWarn('index cache corrupt, re-downloading', {});
         }
       } else {
-        console.error(`[cds-kb-mcp] upstream commit ${upstreamVersion.commit.slice(0,8)} ≠ cached ${(cachedVersion?.commit || 'none').slice(0,8)} — refreshing index`);
+        logWarn('upstream commit differs from cached — refreshing index', { upstream: upstreamVersion.commit.slice(0, 8), cached: (cachedVersion?.commit || 'none').slice(0, 8) });
       }
     }
 
@@ -552,6 +562,32 @@ export class RemoteDataSource {
   async getQueryLibrary() {
     return this.#loadCachedIndexFile('query-library.json');
   }
+
+  // changelog.json lives at the data repo root (not under index/) and can be
+  // large (one entry per view per refresh), so the same disk-cache-with-
+  // background-revalidate shape applies — just the path differs.
+  async getChangelog() {
+    const cacheFile = path.join(this.cacheDir, 'changelog.json');
+    const url = this.#resolveUrl('changelog.json');
+    const forceRefresh = process.env.CDS_KB_REFRESH === '1';
+
+    if (!forceRefresh && await cacheExists(cacheFile)) {
+      const fresh = await isCacheFresh(cacheFile);
+      try {
+        const parsed = JSON.parse(await fs.readFile(cacheFile, 'utf-8'));
+        if (!fresh) this.#revalidateInBackground(url, cacheFile, { json: true });
+        return parsed;
+      } catch { /* corrupt — re-download */ }
+    }
+
+    try {
+      const { text } = await this.#fetchText(url, { conditional: true });
+      await this.#persistJsonCache(cacheFile, text);
+      return JSON.parse(text);
+    } catch {
+      return null;
+    }
+  }
 }
 
 // ── S3 / MinIO backend ──────────────────────────────────────────────────────
@@ -640,7 +676,7 @@ export class S3DataSource {
         if (json) await this.#persistJsonCache(cacheFile, text);
         else await atomicWriteFile(cacheFile, text);
       } catch (e) {
-        console.error(`[cds-kb-mcp] S3 background revalidate failed for ${relPath}: ${e.message}`);
+        logWarn('S3 background revalidate failed', { relPath, err: e });
       } finally {
         this._inflightRevalidate.delete(relPath);
       }
@@ -702,22 +738,22 @@ export class S3DataSource {
         try {
           return JSON.parse(await fs.readFile(cacheFile, 'utf-8'));
         } catch {
-          console.error('[cds-kb-mcp] S3 index cache corrupt despite version match, re-downloading...');
+          logWarn('S3 index cache corrupt despite version match, re-downloading', {});
         }
       } else if (!upstreamVersion) {
         const fresh = await isCacheFresh(cacheFile);
         try {
           const parsed = JSON.parse(await fs.readFile(cacheFile, 'utf-8'));
           if (!fresh) {
-            console.error('[cds-kb-mcp] S3 index cache stale, serving from cache + revalidating in background');
+            logWarn('S3 index cache stale, serving from cache + revalidating in background', {});
             this.#revalidateInBackground(relPath, cacheFile, { json: true });
           }
           return parsed;
         } catch {
-          console.error('[cds-kb-mcp] S3 index cache corrupt, re-downloading...');
+          logWarn('S3 index cache corrupt, re-downloading', {});
         }
       } else {
-        console.error(`[cds-kb-mcp] S3 upstream commit ${String(upstreamVersion.commit || '').slice(0, 8)} ≠ cached — refreshing index`);
+        logWarn('S3 upstream commit differs from cached — refreshing index', { upstream: String(upstreamVersion.commit || '').slice(0, 8) });
       }
     }
 
@@ -785,6 +821,10 @@ export class S3DataSource {
 
   async getQueryLibrary() {
     return this.#loadCachedJson('index/query-library.json', 'query-library.json');
+  }
+
+  async getChangelog() {
+    return this.#loadCachedJson('changelog.json', 'changelog.json');
   }
 }
 

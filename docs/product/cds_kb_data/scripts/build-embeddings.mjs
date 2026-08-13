@@ -1,15 +1,29 @@
 #!/usr/bin/env node
 // scripts/build-embeddings.mjs
-// Optional: embed view semantic_en/description via an OpenAI-compatible API
-// into index/embeddings.json. No-op (exit 0) when CDS_KB_EMBED_API_KEY is unset.
+// Embed view semantic_en/description into index/embeddings.json so
+// cds-kb-mcp's search_mode=hybrid can re-rank BM25 with cosine similarity.
+//
+// Two modes:
+//   - Remote (default when CDS_KB_EMBED_API_KEY is set): OpenAI-compatible
+//     embeddings API. CDS_KB_EMBED_URL / CDS_KB_EMBED_MODEL override defaults.
+//   - Local (default when NO API key is set): transformers.js (ONNX) running
+//     all-MiniLM-L6-v2 in-process — free, keyless, offline-friendly. Uses
+//     `@huggingface/transformers` (devDependency). Set CDS_KB_EMBED_LOCAL_MODEL
+//     to override the model id.
+//
+// The output always records which model produced the vectors
+// (embeddings.json.model), and the MCP server's embedQueryText() picks the
+// same local model when no CDS_KB_EMBED_API_KEY is configured — so build and
+// query stay in agreement.
 //
 // Usage:
 //   node scripts/build-embeddings.mjs [dataDir] [--limit N]
 //
 // Env:
-//   CDS_KB_EMBED_API_KEY  (required to run)
-//   CDS_KB_EMBED_URL      default https://api.openai.com/v1/embeddings
-//   CDS_KB_EMBED_MODEL    default text-embedding-3-small
+//   CDS_KB_EMBED_API_KEY   (optional — remote mode when set)
+//   CDS_KB_EMBED_URL       default https://api.openai.com/v1/embeddings
+//   CDS_KB_EMBED_MODEL     default text-embedding-3-small (remote)
+//   CDS_KB_EMBED_LOCAL_MODEL default Xenova/all-MiniLM-L6-v2 (local)
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -18,9 +32,13 @@ import { extractFrontmatter, scalar } from './lib/frontmatter.mjs';
 import { writeJson } from './lib/json-file.mjs';
 
 const apiKey = (process.env.CDS_KB_EMBED_API_KEY || '').trim();
-if (!apiKey) {
-  console.log('CDS_KB_EMBED_API_KEY unset — skipping embeddings build (exit 0).');
-  process.exit(0);
+const LOCAL_MODEL = (process.env.CDS_KB_EMBED_LOCAL_MODEL || 'Xenova/all-MiniLM-L6-v2').trim();
+const LOCAL_MODE = !apiKey;
+
+if (LOCAL_MODE) {
+  console.log(`No CDS_KB_EMBED_API_KEY — using LOCAL embeddings via transformers.js (${LOCAL_MODEL}).`);
+} else {
+  console.log('CDS_KB_EMBED_API_KEY set — using remote embeddings API.');
 }
 
 const args = process.argv.slice(2);
@@ -35,10 +53,10 @@ for (let i = 0; i < args.length; i++) {
 }
 
 const embedUrl = (process.env.CDS_KB_EMBED_URL || 'https://api.openai.com/v1/embeddings').trim();
-const model = (process.env.CDS_KB_EMBED_MODEL || 'text-embedding-3-small').trim();
+const model = LOCAL_MODE ? LOCAL_MODEL : (process.env.CDS_KB_EMBED_MODEL || 'text-embedding-3-small').trim();
 const BATCH = 64;
 
-async function embedBatch(texts) {
+async function embedBatchRemote(texts) {
   const res = await fetch(embedUrl, {
     method: 'POST',
     headers: {
@@ -54,6 +72,31 @@ async function embedBatch(texts) {
   const json = await res.json();
   const data = Array.isArray(json.data) ? json.data : [];
   return data.sort((a, b) => a.index - b.index).map((d) => d.embedding);
+}
+
+// Lazy pipeline singleton so repeated calls reuse the loaded ONNX model.
+let localExtractorPromise = null;
+function localExtractor() {
+  if (!localExtractorPromise) {
+    localExtractorPromise = (async () => {
+      const { pipeline } = await import('@huggingface/transformers');
+      // mean pooling + L2 normalize matches how the MCP server embeds queries
+      // (server.mjs embedQueryText local branch) — same model, same settings.
+      return pipeline('feature-extraction', model, { dtype: 'q8' });
+    })();
+  }
+  return localExtractorPromise;
+}
+
+async function embedBatchLocal(texts) {
+  const extractor = await localExtractor();
+  const out = await extractor(texts, { pooling: 'mean', normalize: true });
+  // output is a Tensor; .tolist() gives nested arrays of numbers
+  return out.tolist();
+}
+
+async function embedBatch(texts) {
+  return LOCAL_MODE ? embedBatchLocal(texts) : embedBatchRemote(texts);
 }
 
 async function main() {
@@ -85,12 +128,13 @@ async function main() {
   const out = {
     model,
     dim,
+    mode: LOCAL_MODE ? 'local' : 'remote',
     builtAt: new Date().toISOString(),
     vectors,
   };
   const outFile = path.join(dataDir, 'index', 'embeddings.json');
   await writeJson(outFile, out);
-  console.log(`✅ Wrote ${outFile} (${Object.keys(vectors).length} vectors, dim=${dim})`);
+  console.log(`✅ Wrote ${outFile} (${Object.keys(vectors).length} vectors, dim=${dim}, mode=${out.mode})`);
 }
 
 main().catch((e) => {

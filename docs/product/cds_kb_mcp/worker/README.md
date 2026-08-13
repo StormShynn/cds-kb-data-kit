@@ -10,6 +10,16 @@ totals and fold them into search ranking (see
 
 No account/identity data ever reaches this Worker — only `{view, count}`.
 
+## Storage: Durable Object (not KV)
+
+Per-view counts live in a single `UsageCounter` **Durable Object** with
+SQLite-backed storage (`wrangler.toml`'s `USAGE_DO` binding + migration).
+KV was replaced because its free-plan 1,000 writes/day account-wide limit
+was the bottleneck once real usage arrived: the DO has no such per-day
+write cap, writes are atomic, and a single instance means `/totals` reads
+are trivially consistent. The `/ping` → `/totals` wire contract is
+unchanged, so the data repo's `pull-usage-stats.mjs` needs no edits.
+
 ## Deploy
 
 Requires a free Cloudflare account.
@@ -18,9 +28,8 @@ Requires a free Cloudflare account.
 npm install -g wrangler        # or use `npx wrangler ...` below instead
 wrangler login
 
-# 1. Create the KV namespace that stores per-view counts
-wrangler kv:namespace create USAGE_KV
-# -> copy the printed id into wrangler.toml's kv_namespaces[0].id
+# 1. (Durable Objects need no namespace creation — the binding + migration
+#    in wrangler.toml create the class on first deploy. Nothing to paste.)
 
 # 2. Set the secret that gates the /totals read endpoint
 wrangler secret put PULL_TOKEN
@@ -56,14 +65,16 @@ the `pull-usage-stats.yml` workflow:
 
 ## Known limits (v1)
 
-- Cloudflare's free plan caps KV at 1,000 writes/day account-wide. Each
-  distinct view read in a ~5-minute client flush window costs one write —
-  fine for a small/medium user base, but worth watching as usage grows.
-  If it becomes a bottleneck, batch further client-side (raise
-  `CDS_KB_USAGE_FLUSH_MINUTES`) or move to Durable Objects / a real DB.
+- Durable Objects still bill on requests (free tier includes a generous
+  monthly allowance) and per-key storage — nothing near KV's 1,000
+  writes/day ceiling, but a genuinely huge user base should consider
+  batching further client-side (raise `CDS_KB_USAGE_FLUSH_MINUTES`) and/or
+  sharding the DO by a hash of the view name.
 - `/ping` has no rate limiting in code — add a Cloudflare dashboard rate
   limiting rule on this route if it's ever abused (it's a public,
   unauthenticated endpoint by design, since counting doesn't need identity).
 - This is a directional popularity signal, not an exact count: any instance
   running with telemetry disabled, offline, or killed before a flush
   contributes nothing for that period.
+- Migrating existing counts from the old KV namespace is not automated — a
+  fresh deploy starts from zero (acceptable: the signal is directional).
