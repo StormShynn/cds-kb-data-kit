@@ -223,7 +223,14 @@ async function loadIndex() {
   if (!w || !w.minisearch || !w.options) {
     throw new Error('Index file is not in the expected self-describing format. Rebuild it in the data repo.');
   }
-  mini = MiniSearch.loadJSON(w.minisearch, { ...w.options, processTerm: normalizeTerm });
+  // Parsed once and reused for both MiniSearch.loadJS and the stats pass below —
+  // MiniSearch.loadJSON(json, opts) is just loadJS(JSON.parse(json), opts) internally,
+  // so calling it directly here avoids parsing the same multi-MB index string twice
+  // (each periodic refresh was holding old+new mini plus two parses of the index
+  // live at once, which is what pushed the process over its heap limit on BTP).
+  mini = null;
+  const ms = JSON.parse(w.minisearch);
+  mini = MiniSearch.loadJS(ms, { ...w.options, processTerm: normalizeTerm });
   meta = { viewCount: w.viewCount, enrichedCount: w.enrichedCount, builtAt: w.builtAt };
 
   // Version manifest is best-effort — older data repos don't ship one.
@@ -233,7 +240,6 @@ async function loadIndex() {
   } catch { /* ignore */ }
 
   // Build module stats + docsByName by iterating stored fields directly (MiniSearch has no public allDocs API).
-  const ms = JSON.parse(w.minisearch);
   const stored = ms.storedFields || {};
   const stats = {};
   const byName = new Map();

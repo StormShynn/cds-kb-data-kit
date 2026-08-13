@@ -191526,14 +191526,15 @@ async function loadIndex() {
   if (!w || !w.minisearch || !w.options) {
     throw new Error("Index file is not in the expected self-describing format. Rebuild it in the data repo.");
   }
-  mini = MiniSearch.loadJSON(w.minisearch, { ...w.options, processTerm: normalizeTerm });
+  mini = null;
+  const ms = JSON.parse(w.minisearch);
+  mini = MiniSearch.loadJS(ms, { ...w.options, processTerm: normalizeTerm });
   meta3 = { viewCount: w.viewCount, enrichedCount: w.enrichedCount, builtAt: w.builtAt };
   try {
     const v = await ds.getVersion?.();
     if (v) meta3.commit = v.commit;
   } catch {
   }
-  const ms = JSON.parse(w.minisearch);
   const stored = ms.storedFields || {};
   const stats = {};
   const byName = /* @__PURE__ */ new Map();

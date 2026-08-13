@@ -1,0 +1,63 @@
+# .github/workflows/push-mcp-metrics.yml
+# Push cds-kb-mcp's /metrics (Prometheus text format, see
+# docs/product/cds_kb_mcp/src/metrics.mjs) to Grafana Cloud Hosted Prometheus.
+#
+# No persistent collector needed: the BTP trial org's memory quota is already
+# maxed out at 4G by cds-kb-mcp itself (see manifest.yml), so there's no
+# headroom left to run Grafana Alloy as its own always-on app there. Instead,
+# this runs Alloy just long enough (one scrape_interval or two) inside the
+# GitHub Actions runner every 10 minutes, then stops it — a "poor man's"
+# periodic push instead of a continuously running agent. Metrics will lag by
+# up to ~10-15 minutes (GitHub's cron schedule isn't guaranteed to the
+# minute), which is fine for a dashboard, not for tight alerting.
+
+name: Push MCP Metrics to Grafana Cloud
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch: {}
+
+jobs:
+  push-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Write Alloy config
+        run: |
+          cat > config.alloy <<'EOF'
+          prometheus.scrape "cds_kb_mcp" {
+            targets = [{"__address__" = "cds-kb-mcp.cfapps.us10-001.hana.ondemand.com"}]
+            job_name        = "cds_kb_mcp"
+            scheme          = "https"
+            metrics_path    = "/metrics"
+            scrape_interval = "30s"
+            scrape_timeout  = "10s"
+            forward_to      = [prometheus.remote_write.hosted_prometheus.receiver]
+          }
+
+          prometheus.remote_write "hosted_prometheus" {
+            endpoint {
+              url = env("GRAFANA_METRICS_URL")
+              basic_auth {
+                username = env("GRAFANA_METRICS_USER")
+                password = env("GRAFANA_METRICS_TOKEN")
+              }
+            }
+          }
+          EOF
+
+      - name: Run Alloy for one scrape+push cycle
+        env:
+          GRAFANA_METRICS_URL: ${{ secrets.GRAFANA_METRICS_URL }}
+          GRAFANA_METRICS_USER: ${{ secrets.GRAFANA_METRICS_USER }}
+          GRAFANA_METRICS_TOKEN: ${{ secrets.GRAFANA_METRICS_TOKEN }}
+        run: |
+          docker run --rm -d --name alloy \
+            -e GRAFANA_METRICS_URL \
+            -e GRAFANA_METRICS_USER \
+            -e GRAFANA_METRICS_TOKEN \
+            -v "$PWD/config.alloy:/etc/alloy/config.alloy" \
+            grafana/alloy:latest run /etc/alloy/config.alloy --server.http.listen-addr=0.0.0.0:12345 --stability.level=public-preview
+          sleep 75
+          docker logs alloy || true
+          docker stop alloy || true

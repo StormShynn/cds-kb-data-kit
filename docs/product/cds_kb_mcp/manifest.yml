@@ -28,6 +28,12 @@ applications:
     # bundle (npm run build) inlines it via esbuild, so it's self-contained.
     command: node dist/cds-kb-mcp.cjs
     timeout: 180
+    services:
+      # BTP-native log drain — CF's own log buffer is short-lived and has no
+      # persistence, so a crash's stdout/stderr is gone once it rotates out
+      # (lost exactly this way once already). Create once with:
+      #   cf create-service application-logs lite cds-kb-mcp-logs
+      - cds-kb-mcp-logs
     env:
       # Belt-and-braces: forces HTTP mode. In v2 the only HTTP transport is
       # Streamable HTTP at /mcp — SSE was removed with the MCP SDK v2 upgrade.
