@@ -1,6 +1,7 @@
 // worker/src/index.mjs — cds-kb-usage-collector (Cloudflare Worker)
 //
-// Anonymous usage-ping collector for cds-kb-mcp (+ optional Query Builder shapes).
+// Anonymous usage-ping collector for cds-kb-mcp (+ optional Query Builder shapes)
+// plus public Propose Issue bot (POST /propose-issue).
 //
 // Endpoints:
 //   POST /ping          body: { events: [{ view, count }, ...] }
@@ -8,12 +9,19 @@
 //   POST /ping-shapes   body: { events: [{ shapeId, views, selectFieldCount, selectFieldHash, flags, count }, ...] }
 //                       CORS open for browser opt-in from GitHub Pages Query Builder
 //   GET  /shape-totals?token=...
-//   OPTIONS /ping-shapes — CORS preflight
+//   OPTIONS /ping-shapes | /propose-issue — CORS preflight
+//   POST /propose-issue body: { title, body|markdown, kind?: 'query'|'cds', website?: honeypot }
+//                       Creates a GitHub Issue via GITHUB_ISSUE_TOKEN (never logs full body)
 //
 // Shape events must NEVER include WHERE/HAVING literals, titles, contributors,
 // or raw notes — only structural metadata.
 //
 // Deploy: see ../README.md
+
+import {
+  sanitizeProposeIssueBody,
+  proposeLogHint,
+} from './propose-sanitize.mjs';
 
 const MAX_EVENTS_PER_REQUEST = 500;
 const MAX_VIEW_NAME_LENGTH = 100;
@@ -28,6 +36,14 @@ const MAX_VIEWS_PER_SHAPE = 12;
 const RATE_LIMIT_MAX = 120;
 const RATE_LIMIT_WINDOW_MS = 60_000;
 const RATE_LIMIT_MAX_BUCKETS = 10_000;
+
+// Stricter window for Issue creation (abuse / GitHub quota).
+const PROPOSE_RATE_LIMIT_MAX = 8;
+const PROPOSE_RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 8 Issues / IP / hour
+
+const DEFAULT_PROPOSE_REPO = 'StormShynn/cds-kb-mcp-data-kit';
+const PROPOSE_LABEL = 'query-library';
+const CDS_LABEL = 'cds-snippet';
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -51,12 +67,16 @@ function corsJson(body, status = 200) {
   });
 }
 
+function isCorsPath(pathname) {
+  return pathname === '/ping-shapes' || pathname === '/propose-issue';
+}
+
 export default {
   async fetch(request, env) {
     try {
       const url = new URL(request.url);
 
-      if (request.method === 'OPTIONS' && url.pathname === '/ping-shapes') {
+      if (request.method === 'OPTIONS' && isCorsPath(url.pathname)) {
         return new Response(null, { status: 204, headers: CORS_HEADERS });
       }
 
@@ -72,6 +92,9 @@ export default {
       if (request.method === 'GET' && url.pathname === '/shape-totals') {
         return await handleShapeTotals(request, env);
       }
+      if (request.method === 'POST' && url.pathname === '/propose-issue') {
+        return await handleProposeIssue(request, env);
+      }
       return new Response('Not found', { status: 404 });
     } catch (e) {
       console.error('worker error:', e?.message || e);
@@ -84,7 +107,7 @@ function usageCounter(env) {
   // global-v4: fresh instance so the DO-side rate limiter code actually loads
   // (existing DO instances keep running their deployed version until evicted)
   // and the rate-limit test pollution from bring-up is dropped.
-  const id = env.USAGE_DO.idFromName('global-v4');
+  const id = env.USAGE_DO.idFromName('global-v5');
   return env.USAGE_DO.get(id);
 }
 
@@ -212,8 +235,122 @@ async function handleShapeTotals(request, env) {
   return new Response(resp.body, { status: resp.status, headers: { 'content-type': 'application/json' } });
 }
 
+async function gateProposeRate(env, ip) {
+  const resp = await usageCounter(env).fetch(new Request('https://usage-do/propose-rate', {
+    method: 'POST',
+    headers: { 'x-client-ip': ip },
+  }));
+  return resp;
+}
+
 /**
- * UsageCounter — view totals (v:) + shape aggregates (s:).
+ * Create a curated-library GitHub Issue for Query Builder Propose (no visitor login).
+ * Secrets: GITHUB_ISSUE_TOKEN. Vars: PROPOSE_REPO (default StormShynn/cds-kb-mcp-data-kit).
+ */
+async function handleProposeIssue(request, env) {
+  let raw;
+  try {
+    raw = await request.json();
+  } catch {
+    return corsJson({ error: 'Invalid JSON' }, 400);
+  }
+
+  const sanitized = sanitizeProposeIssueBody(raw);
+  if (!sanitized.ok) {
+    return corsJson({ error: sanitized.error }, sanitized.status || 400);
+  }
+
+  const ip = clientIp(request);
+  // Soft-success for honeypot — do not burn rate limit or call GitHub.
+  if (sanitized.value.honeypotHit) {
+    console.log('propose-issue honeypot', ip);
+    return corsJson({ issueUrl: null, ok: true });
+  }
+
+  const rateResp = await gateProposeRate(env, ip);
+  if (rateResp.status === 429) {
+    return corsJson({ error: 'Too many proposals from this IP — try again later' }, 429);
+  }
+
+  const token = (env.GITHUB_ISSUE_TOKEN || '').trim();
+  if (!token) {
+    console.error('propose-issue: GITHUB_ISSUE_TOKEN not configured');
+    return corsJson({ error: 'Propose bot not configured' }, 503);
+  }
+
+  const repo = String(env.PROPOSE_REPO || DEFAULT_PROPOSE_REPO).trim() || DEFAULT_PROPOSE_REPO;
+  if (!/^[^/\s]+\/[^/\s]+$/.test(repo)) {
+    return corsJson({ error: 'Invalid PROPOSE_REPO' }, 500);
+  }
+
+  const { title, body, kind } = sanitized.value;
+  const labels = [PROPOSE_LABEL];
+  if (kind === 'cds') labels.push(CDS_LABEL);
+
+  const issueBody =
+    `<!-- kind: ${kind} -->\n` +
+    `**Proposal kind:** \`${kind}\` (` +
+    (kind === 'cds'
+      ? 'curated custom CDS snippet'
+      : 'curated query library shape') +
+    `)\n\n` +
+    body;
+
+  console.log('propose-issue', proposeLogHint(sanitized.value), 'repo=' + repo);
+
+  let ghResp;
+  try {
+    ghResp = await fetch(`https://api.github.com/repos/${repo}/issues`, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/vnd.github+json',
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+        'User-Agent': 'cds-kb-usage-collector-propose',
+        'X-GitHub-Api-Version': '2022-11-28',
+      },
+      body: JSON.stringify({ title, body: issueBody, labels }),
+    });
+  } catch (e) {
+    console.error('propose-issue github fetch failed:', e?.message || e);
+    return corsJson({ error: 'GitHub request failed' }, 502);
+  }
+
+  if (!ghResp.ok) {
+    // Retry once without labels if the label does not exist on the repo.
+    if (ghResp.status === 422 && labels.length) {
+      const retry = await fetch(`https://api.github.com/repos/${repo}/issues`, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/vnd.github+json',
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
+          'User-Agent': 'cds-kb-usage-collector-propose',
+          'X-GitHub-Api-Version': '2022-11-28',
+        },
+        body: JSON.stringify({ title, body: issueBody }),
+      });
+      if (retry.ok) {
+        const created = await retry.json();
+        const issueUrl = created.html_url || null;
+        if (!issueUrl) return corsJson({ error: 'GitHub response missing html_url' }, 502);
+        return corsJson({ issueUrl });
+      }
+      console.error('propose-issue github retry status', retry.status);
+    } else {
+      console.error('propose-issue github status', ghResp.status);
+    }
+    return corsJson({ error: 'Could not create GitHub Issue' }, 502);
+  }
+
+  const created = await ghResp.json();
+  const issueUrl = created.html_url || null;
+  if (!issueUrl) return corsJson({ error: 'GitHub response missing html_url' }, 502);
+  return corsJson({ issueUrl });
+}
+
+/**
+ * UsageCounter — view totals (v:) + shape aggregates (s:) + propose rate buckets.
  */
 export class UsageCounter {
   constructor(state) {
@@ -222,12 +359,14 @@ export class UsageCounter {
     this.shapes = new Map(); // shapeId -> { count, views, selectFieldCount, selectFieldHash, flags }
     this.hydrated = false;
     this.rateBuckets = new Map(); // ip -> { count, windowStart } — global across worker isolates
+    this.proposeRateBuckets = new Map(); // ip -> { count, windowStart }
   }
 
   // Per-IP fixed-window limiter. Single instance => the window is shared by
   // every caller; in-memory (best-effort abuse protection, resets on eviction).
   #rateLimited(ip) {
     const now = Date.now();
+    console.error('RL-DEBUG bucket-start', { ip, size: this.rateBuckets.size, first: this.rateBuckets.get(ip) });
     if (this.rateBuckets.size > RATE_LIMIT_MAX_BUCKETS) {
       for (const [k, v] of this.rateBuckets) {
         if (now - v.windowStart >= RATE_LIMIT_WINDOW_MS) this.rateBuckets.delete(k);
@@ -239,7 +378,24 @@ export class UsageCounter {
       return false;
     }
     b.count++;
+    console.error('RL-DEBUG', { ip, count: b.count });
     return b.count > RATE_LIMIT_MAX;
+  }
+
+  #proposeRateLimited(ip) {
+    const now = Date.now();
+    if (this.proposeRateBuckets.size > RATE_LIMIT_MAX_BUCKETS) {
+      for (const [k, v] of this.proposeRateBuckets) {
+        if (now - v.windowStart >= PROPOSE_RATE_LIMIT_WINDOW_MS) this.proposeRateBuckets.delete(k);
+      }
+    }
+    const b = this.proposeRateBuckets.get(ip);
+    if (!b || now - b.windowStart >= PROPOSE_RATE_LIMIT_WINDOW_MS) {
+      this.proposeRateBuckets.set(ip, { count: 1, windowStart: now });
+      return false;
+    }
+    b.count++;
+    return b.count > PROPOSE_RATE_LIMIT_MAX;
   }
 
   #rateLimitedResponse() {
@@ -278,10 +434,21 @@ export class UsageCounter {
       if (request.method === 'GET' && url.pathname === '/shape-totals') {
         return await this.#onShapeTotals(request);
       }
+      if (request.method === 'POST' && url.pathname === '/propose-rate') {
+        return await this.#onProposeRate(request);
+      }
       return new Response('Not found', { status: 404 });
     } catch (e) {
       return new Response(`DO error: ${e.message}`, { status: 500 });
     }
+  }
+
+  async #onProposeRate(request) {
+    if (this.#proposeRateLimited(this.#requestIp(request))) return this.#rateLimitedResponse();
+    return new Response(JSON.stringify({ ok: true }), {
+      status: 200,
+      headers: { 'content-type': 'application/json' },
+    });
   }
 
   async #onPing(request) {
