@@ -77,9 +77,12 @@ the `pull-usage-stats.yml` workflow:
   writes/day ceiling, but a genuinely huge user base should consider
   batching further client-side (raise `CDS_KB_USAGE_FLUSH_MINUTES`) and/or
   sharding the DO by a hash of the view name.
-- `/ping` has no rate limiting in code — add a Cloudflare dashboard rate
-  limiting rule on this route if it's ever abused (it's a public,
-  unauthenticated endpoint by design, since counting doesn't need identity).
+- `/ping` is rate-limited in code: fixed window of **120 requests/min per IP**
+  (returns 429 + `Retry-After`). A real cds-kb-mcp instance flushes once per
+  ~5 min, so this is ~600x headroom while still stopping abuse loops. `/totals`
+  gets the same limiter as defense-in-depth behind `PULL_TOKEN`. Limits are
+  in-memory per isolate (`RATE_LIMIT_MAX` / `RATE_LIMIT_WINDOW_MS` at the top
+  of `worker/src/index.mjs`); raise them if you ever see legitimate 429s.
 - This is a directional popularity signal, not an exact count: any instance
   running with telemetry disabled, offline, or killed before a flush
   contributes nothing for that period.

@@ -12,7 +12,7 @@
 // in-memory Map and persists it to its SQLite-backed storage on every write;
 // /totals reads the Map directly (single instance, so no consistency issue).
 //
-// Two endpoints:
+// Endpoints:
 //   POST /ping    body: { events: [{ view, count }, ...] }   — anyone can call this
 //   GET  /totals?token=...                                    — requires PULL_TOKEN
 //
@@ -20,6 +20,11 @@
 // data (not identity — there is none here) is readable in bulk; only the
 // data repo's scheduled pull job (scripts/pull-usage-stats.mjs) should read
 // it, not the public internet.
+//
+// Abuse protection (added 2026-08): per-IP rate limiting (fixed window) on
+// both endpoints — /ping so a spammer can't inflate totals, /totals as
+// defense-in-depth behind the token. Errors are logged with the real message
+// but returned to clients as a generic 500 (no internal detail leakage).
 //
 // Deploy (see ../README.md for the full walkthrough):
 //   wrangler secret put PULL_TOKEN
@@ -29,22 +34,62 @@ const MAX_EVENTS_PER_REQUEST = 500;
 const MAX_VIEW_NAME_LENGTH = 100;
 const MAX_COUNT_PER_EVENT = 1000; // clamps one bad/buggy client from skewing a single view's total in one request
 
+// ── Per-IP fixed-window rate limiter (in-memory, zero deps) ─────────────────
+// Generous limits: a real cds-kb-mcp instance flushes once per ~5 min, so
+// 120 req/min per IP is ~600x headroom while still stopping abuse loops.
+const RATE_LIMIT_MAX = 120;
+const RATE_LIMIT_WINDOW_MS = 60_000;
+const RATE_LIMIT_MAX_BUCKETS = 10_000;
+const ipBuckets = new Map(); // ip -> { count, windowStart }
+
+function clientIp(request) {
+  return (
+    request.headers.get('CF-Connecting-IP') ||
+    request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
+    'unknown'
+  );
+}
+
+function rateLimited(request) {
+  const ip = clientIp(request);
+  const now = Date.now();
+  if (ipBuckets.size > RATE_LIMIT_MAX_BUCKETS) {
+    for (const [k, v] of ipBuckets) {
+      if (now - v.windowStart >= RATE_LIMIT_WINDOW_MS) ipBuckets.delete(k);
+    }
+  }
+  const b = ipBuckets.get(ip);
+  if (!b || now - b.windowStart >= RATE_LIMIT_WINDOW_MS) {
+    ipBuckets.set(ip, { count: 1, windowStart: now });
+    return null;
+  }
+  b.count++;
+  if (b.count > RATE_LIMIT_MAX) {
+    return new Response('Too Many Requests', { status: 429, headers: { 'retry-after': '60' } });
+  }
+  return null;
+}
+
 export default {
   async fetch(request, env) {
     try {
       const url = new URL(request.url);
 
       if (request.method === 'POST' && url.pathname === '/ping') {
+        const limited = rateLimited(request);
+        if (limited) return limited;
         return await handlePing(request, env);
       }
       if (request.method === 'GET' && url.pathname === '/totals') {
+        const limited = rateLimited(request);
+        if (limited) return limited;
         return await handleTotals(request, env);
       }
       return new Response('Not found', { status: 404 });
     } catch (e) {
-      // Surface the real error message during bring-up (curl-able instead of
-      // Cloudflare's opaque 1101); will be tightened once stable.
-      return new Response(`worker error: ${e.message}`, { status: 500 });
+      // Log the real error for debugging; never leak internals to callers.
+      console.error('worker error:', e?.message || e);
+      return new Response('Internal Server Error', { status: 500 });
     }
   },
 };
