@@ -20,6 +20,13 @@ write cap, writes are atomic, and a single instance means `/totals` reads
 are trivially consistent. The `/ping` → `/totals` wire contract is
 unchanged, so the data repo's `pull-usage-stats.mjs` needs no edits.
 
+**Resetting counts:** there is no delete endpoint by design (and no CLI to
+wipe DO storage). To zero the totals — e.g. after test data pollutes them —
+bump the `idFromName('global-v2')` instance name in `worker/src/index.mjs`
+to a fresh value and redeploy; `idFromName` creates a new Durable Object
+with empty storage and `/totals` starts at zero. The old instance's storage
+is abandoned (nothing reads it anymore), not deleted.
+
 ## Deploy
 
 Requires a free Cloudflare account.

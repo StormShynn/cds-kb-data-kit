@@ -49,9 +49,15 @@ export default {
   },
 };
 
-// Route a request into the single global UsageCounter DO instance.
+// Route a request into the single UsageCounter DO instance.
+//
+// Reset procedure (e.g. after test data pollutes the totals): bump this
+// instance name to something new and redeploy — idFromName creates a fresh
+// Durable Object with empty storage, so /totals starts at zero. The old
+// instance's storage is abandoned (nothing reads it anymore); there is no
+// CLI way to delete DO storage, so keep this for intentional resets only.
 function usageCounter(env) {
-  const id = env.USAGE_DO.idFromName('global');
+  const id = env.USAGE_DO.idFromName('global-v2');
   return env.USAGE_DO.get(id);
 }
 
