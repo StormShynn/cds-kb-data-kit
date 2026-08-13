@@ -1,6 +1,19 @@
 ---
 name: I_BPCOMPANYRELATIONSHIP
 description: "Bpcompanyrelationship"
+semantic_vi: "View Bpcompanyrelationship hiển thị dữ liệu kinh doanh liên quan đến mối quan hệ công ty trong quy trình kinh doanh dịch vụ tài chính (FS). Nó được sử dụng để truy cập và quản lý mối quan hệ công ty trong ứng dụng thành phần FS-BP."
+keywords:
+  - "company relationship"
+  - "mối quan hệ công ty"
+  - "fs-bp"
+  - "financial services"
+  - "dịch vụ tài chính"
+  - "business process"
+  - "quy trình kinh doanh"
+  - "sap"
+  - "abap"
+  - "cloud"
+semantic_en: "The Bpcompanyrelationship view exposes business data related to company relationships in the Financial Services (FS) business process. It is used to access and manage company relationships in the FS-BP application component."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

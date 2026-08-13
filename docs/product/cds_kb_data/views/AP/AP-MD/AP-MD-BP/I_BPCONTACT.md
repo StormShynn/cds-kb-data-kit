@@ -1,6 +1,19 @@
 ---
 name: I_BPCONTACT
 description: "Bpcontact"
+semantic_vi: "View Bpcontact CDS hiển thị thông tin liên hệ đối tác kinh doanh, được sử dụng để quản lý mối quan hệ giữa các công ty và cá nhân."
+keywords:
+  - "business partner"
+  - "contact information"
+  - "relationship management"
+  - "business partner company"
+  - "business partner person"
+  - "validity date"
+  - "relationship category"
+  - "ap-md-bp"
+  - "interface view"
+  - "lob other"
+semantic_en: "The Bpcontact CDS view exposes business partner contact information, which is used to manage relationships between companies and individuals."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

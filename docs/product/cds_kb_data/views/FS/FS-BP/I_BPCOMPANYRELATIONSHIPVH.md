@@ -1,6 +1,16 @@
 ---
 name: I_BPCOMPANYRELATIONSHIPVH
 description: "Bpcompanyrelationshipvh"
+semantic_vi: "Chứa thông tin mối quan hệ công ty đối tác kinh doanh, được sử dụng để lấy và hiển thị thông tin công ty liên quan trong ứng dụng chuỗi cung ứng tài chính (FS)."
+keywords:
+  - "financial supply chain"
+  - "fs"
+  - "business partner"
+  - "company relationship"
+  - "đối tác kinh doanh"
+  - "mối quan hệ công ty"
+  - "chuỗi cung ứng tài chính"
+semantic_en: "Exposes business partner company relationships, used to retrieve and display related company information in the Financial Supply Chain (FS) application."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

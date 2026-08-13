@@ -1,6 +1,18 @@
 ---
 name: I_BPBUSINESSPURPOSETEXT
 description: "Bpbusinesspurposetext"
+semantic_vi: "Chứa mô tả mục đích kinh doanh cho đối tác kinh doanh, được sử dụng để hiển thị thông tin mục đích trong các ngữ cảnh kinh doanh khác nhau."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "business purpose"
+  - "mục đích kinh doanh"
+  - "description"
+  - "mô tả"
+  - "fs-bp"
+  - "sap"
+  - "cds view"
+semantic_en: "Exposes business purpose descriptions for business partners, used to display purpose information in various business contexts."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

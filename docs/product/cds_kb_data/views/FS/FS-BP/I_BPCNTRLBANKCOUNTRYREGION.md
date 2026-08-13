@@ -1,6 +1,18 @@
 ---
 name: I_BPCNTRLBANKCOUNTRYREGION
 description: "Bpcntrlbankcountryregion"
+semantic_vi: "View Bpcntrlbankcountryregion cung cấp truy cập dữ liệu về quốc gia và vùng ngân hàng, rất cần thiết cho các tổ chức tài chính để quản lý hoạt động ngân hàng quốc tế. Nó có thể được sử dụng để truy xuất và phân tích thông tin về ngân hàng trung ương, quốc gia và vùng."
+keywords:
+  - "bank"
+  - "country"
+  - "region"
+  - "central bank"
+  - "financial institution"
+  - "international banking"
+  - "fs-bp"
+  - "sap cds view"
+  - "bpcentralbankcountryregion"
+semantic_en: "The Bpcntrlbankcountryregion view provides access to bank country region data, which is essential for financial institutions to manage their international banking operations. It can be used to retrieve and analyze information about central banks, countries, and regions."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

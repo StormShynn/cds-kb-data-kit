@@ -1,6 +1,19 @@
 ---
 name: I_BPCOMPANYRELATIONSHIPTEXT
 description: "Bpcompanyrelationshiptext"
+semantic_vi: "Chứa dữ liệu văn bản mối quan hệ công ty cho mối quan hệ đối tác kinh doanh, cung cấp mô tả bằng nhiều ngôn ngữ."
+keywords:
+  - "company relationship"
+  - "mối quan hệ công ty"
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "text data"
+  - "dữ liệu văn bản"
+  - "language"
+  - "ngôn ngữ"
+  - "fs-bp"
+  - "ekko"
+semantic_en: "Exposes company relationship text data for business partner relationships, providing descriptions in different languages."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

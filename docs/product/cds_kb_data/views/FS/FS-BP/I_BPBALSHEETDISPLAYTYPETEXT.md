@@ -1,6 +1,19 @@
 ---
 name: I_BPBALSHEETDISPLAYTYPETEXT
 description: "Bpbalsheetdisplaytypetext"
+semantic_vi: "View I_BPBALSHEETDISPLAYTYPETEXT cung cấp mô tả loại hiển thị cho bảng cân đối kế toán trong dữ liệu chủ doanh nghiệp. Nó được sử dụng để lấy mô tả văn bản cho loại hiển thị bảng cân đối kế toán."
+keywords:
+  - "balance sheet"
+  - "bảng cân đối kế toán"
+  - "business partner"
+  - "chủ doanh nghiệp"
+  - "display type"
+  - "loại hiển thị"
+  - "text description"
+  - "mô tả văn bản"
+  - "sap cds view"
+  - "view i_bpbalsheetdisplaytypetext"
+semantic_en: "The Bpbalsheetdisplaytypetext CDS view provides display type descriptions for balance sheets in business partner master data. It is used to retrieve text descriptions for balance sheet display types."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

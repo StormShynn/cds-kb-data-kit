@@ -1,6 +1,20 @@
 ---
 name: I_BPCNTRLBANKCOUNTRYREGIONTEXT
 description: "Bpcntrlbankcountryregiontext"
+semantic_vi: "Cung cấp mô tả văn bản cho các khu vực ngân hàng trung ương của ngân hàng, được sử dụng để hiển thị thông tin về các khu vực cụ thể của ngân hàng trung ương."
+keywords:
+  - "bank"
+  - "central bank"
+  - "country region"
+  - "text description"
+  - "fs-bp"
+  - "interface view"
+  - "text view"
+  - "banking"
+  - "ngân hàng"
+  - "ngân hàng trung ương"
+  - "khu vực quốc gia"
+semantic_en: "Provides text descriptions for bank central bank country regions, used to display information about specific regions in a bank's central bank."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

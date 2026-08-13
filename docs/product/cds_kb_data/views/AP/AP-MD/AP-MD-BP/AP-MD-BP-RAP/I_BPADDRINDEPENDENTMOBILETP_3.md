@@ -1,6 +1,18 @@
 ---
 name: I_BPADDRINDEPENDENTMOBILETP_3
 description: "Bpaddrindependentmobiletp 3"
+semantic_vi: "Cung cấp dữ liệu địa chỉ đối tác kinh doanh độc lập với số điện thoại di động, được sử dụng cho xử lý giao dịch di động."
+keywords:
+  - "business partner"
+  - "address"
+  - "mobile phone"
+  - "transaction processing"
+  - "di động"
+  - "đối tác kinh doanh"
+  - "xử lý giao dịch"
+  - "address data"
+  - "mobile transaction"
+semantic_en: "Provides business partner address data that is independent of mobile phone numbers, used for mobile transaction processing."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

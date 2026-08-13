@@ -1,6 +1,18 @@
 ---
 name: I_BPBUSINESSPURPOSE
 description: "Bpbusinesspurpose"
+semantic_vi: "View I_BPBUSINESSPURPOSE hiển thị mục đích kinh doanh của đối tác kinh doanh, có thể được sử dụng để phân loại và quản lý mối quan hệ kinh doanh."
+keywords:
+  - "business partner"
+  - "business purpose"
+  - "đối tác kinh doanh"
+  - "mục đích kinh doanh"
+  - "fs-bp"
+  - "interface-view"
+  - "component:fs-bp"
+  - "lob:other"
+  - "business relationship"
+semantic_en: "The I_BPBUSINESSPURPOSE view exposes business purposes of business partners, which can be used to categorize and manage business relationships."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BPCOLLECTIONSSEGMENTASSGMT
 description: "Bpcollectionssegmentassgmt"
+semantic_vi: "View BPCollectionsSegmentAssgmt hiển thị các phân đoạn thu thập được gán cho đối tác kinh doanh, cung cấp thông tin về thời gian các gán này có hiệu lực. Nó được sử dụng để quản lý và phân tích các gán phân đoạn thu thập."
+keywords:
+  - "collection"
+  - "segment"
+  - "assignment"
+  - "business partner"
+  - "valid from"
+  - "valid to"
+  - "collection group"
+  - "collection specialist"
+  - "collection main contact person"
+  - "financial services"
+  - "fin-fscm-col-2cl"
+semantic_en: "The BPCollectionsSegmentAssgmt view exposes collection segment assignments for business partners, providing information on when these assignments are valid. It is used to manage and analyze collection segment assignments."
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released

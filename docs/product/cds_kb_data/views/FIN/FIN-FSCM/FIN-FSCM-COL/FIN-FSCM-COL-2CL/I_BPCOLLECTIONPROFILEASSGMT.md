@@ -1,6 +1,17 @@
 ---
 name: I_BPCOLLECTIONPROFILEASSGMT
 description: "Bpcollectionprofileassgmt"
+semantic_vi: "View BPCollectionProfileAssignment hiển thị các bản gán hồ sơ thu thập cho đối tác kinh doanh, cung cấp một hồ sơ lịch sử về các bản gán thời gian."
+keywords:
+  - "collection profile"
+  - "assignment"
+  - "business partner"
+  - "historical record"
+  - "collection profile assignment"
+  - "bản gán hồ sơ thu thập"
+  - "đối tác kinh doanh"
+  - "hồ sơ lịch sử"
+semantic_en: "The BPCollectionProfileAssignment view exposes collection profile assignments for business partners, providing a historical record of assignments over time. It can be used to analyze and report on collection profile assignments."
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released

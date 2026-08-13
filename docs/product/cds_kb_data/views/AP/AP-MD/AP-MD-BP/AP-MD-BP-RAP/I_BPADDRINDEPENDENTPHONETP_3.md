@@ -1,6 +1,19 @@
 ---
 name: I_BPADDRINDEPENDENTPHONETP_3
 description: "Bpaddrindependentphonetp 3"
+semantic_vi: "View này hiển thị số điện thoại độc lập của đối tác kinh doanh và được sử dụng khi truy xuất hoặc cập nhật số điện thoại cho đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "phone number"
+  - "số điện thoại"
+  - "address-independent"
+  - "tự do địa chỉ"
+  - "sap"
+  - "cds view"
+  - "view dữ liệu"
+  - "data view"
+semantic_en: "This view exposes business partner address-independent phone numbers and is used when retrieving or updating phone numbers for business partners."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released
