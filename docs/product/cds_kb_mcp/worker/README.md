@@ -24,8 +24,10 @@ limits (see plan `docs/plans/active/ai-sap-learn-share-loop.md`, decision C1).
 |---|---|---|---|
 | POST | `/ping` | public (rate-limited) | View-read deltas `{events:[{view,count}]}` |
 | GET | `/totals` | `?token=PULL_TOKEN` | Cumulative view counts |
+| DELETE | `/totals` | `?token=PULL_TOKEN&view=NAME[,NAME2,...]` and/or `&prefix=PFX` | Surgical delete of specific view(s) — see "Resetting counts" below |
 | POST | `/ping-shapes` | public + CORS (rate-limited) | Anonymous query shapes from MCP (`CDS_KB_SHAPE_TELEMETRY=1`) or Query Builder opt-in |
 | GET | `/shape-totals` | `?token=PULL_TOKEN` | Cumulative shape aggregates |
+| DELETE | `/shape-totals` | `?token=PULL_TOKEN&shapeId=HASH[,HASH2,...]` | Surgical delete of specific shape(s) |
 | OPTIONS | `/ping-shapes`, `/propose-issue` | public | CORS preflight for the browser builder |
 | POST | `/propose-issue` | public + CORS (stricter rate limit) | Create curated-library GitHub Issue (`title`, `body`\|`markdown`, `kind`: `query`\|`cds`) |
 
@@ -60,12 +62,27 @@ write cap, writes are atomic, and a single instance means `/totals` reads
 are trivially consistent. The `/ping` → `/totals` wire contract is
 unchanged, so the data repo's `pull-usage-stats.mjs` needs no edits.
 
-**Resetting counts:** there is no delete endpoint by design (and no CLI to
-wipe DO storage). To zero the totals — e.g. after test data pollutes them —
-bump the `idFromName('global-v2')` instance name in `worker/src/index.mjs`
-to a fresh value and redeploy; `idFromName` creates a new Durable Object
-with empty storage and `/totals` starts at zero. The old instance's storage
-is abandoned (nothing reads it anymore), not deleted.
+**Avoiding test pollution in the first place:** never smoke-test against the
+deployed URL. Run `wrangler dev` locally (Miniflare simulates the Durable
+Object) and point your test pings at `http://127.0.0.1:<port>` instead. If
+you must hit prod for some reason, name fake views with one of the
+`TEST_VIEW_PATTERN` prefixes in `worker/src/index.mjs` — `ZZTEST_`,
+`RATETEST`, `SMOKETEST` — and `/ping`/`/ping-shapes` silently drop them
+before they ever reach storage.
+
+**Resetting counts:**
+
+- **Specific entries** (e.g. a real smoke-test that slipped past the prefix
+  guard, or wasn't tagged): `DELETE /totals?token=PULL_TOKEN&view=NAME` (comma-
+  separate multiple names) or `&prefix=PFX` to match every view starting with
+  that prefix. Same shape for shapes: `DELETE /shape-totals?token=PULL_TOKEN&shapeId=HASH`.
+  Requires at least one of `view`/`prefix` (or `shapeId`) — this route can
+  never wipe everything, by design.
+- **Everything** (full reset): bump the `idFromName('global-vN')` instance
+  name in `worker/src/index.mjs` to a fresh value and redeploy; `idFromName`
+  creates a new Durable Object with empty storage and `/totals` starts at
+  zero. The old instance's storage is abandoned (nothing reads it anymore),
+  not deleted.
 
 ## Deploy
 
