@@ -1,6 +1,19 @@
 ---
 name: I_ADDITIONALCUSTOMERGROUP4TEXT
 description: "Additionalcustomergroup 4TEXT"
+semantic_vi: "Chỉ ra dữ liệu văn bản nhóm khách hàng bổ sung 4, được sử dụng để hiển thị tên nhóm khách hàng trong một ngôn ngữ cụ thể."
+keywords:
+  - "additional customer group"
+  - "customer group"
+  - "text data"
+  - "language"
+  - "customer"
+  - "sales and distribution"
+  - "sap"
+  - "sd-md-mm-2cl"
+  - "customer group name"
+  - "language code"
+semantic_en: "Exposes additional customer group 4 text data, which is used to display customer group names in a specific language."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

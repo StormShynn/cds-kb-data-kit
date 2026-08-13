@@ -1,6 +1,16 @@
 ---
 name: I_ACCRENGINEACCRUALSUBOBJECTVH
 description: "Accrengineaccrualsubobjectvh"
+semantic_vi: "View Accrengineaccrualsubobjectvh hiển thị dữ liệu đối tượng phụ thu nhập cho kế toán, cung cấp hỗ trợ giá trị cho việc chọn đối tượng phụ thu nhập trong các ứng dụng tài chính."
+keywords:
+  - "accrual subobject"
+  - "đối tượng phụ thu nhập"
+  - "fi-gl-gl-ace-2cl"
+  - "finance"
+  - "accounting"
+  - "value help"
+  - "sap cds view"
+semantic_en: "The Accrengineaccrualsubobjectvh CDS view exposes accrual subobject data for accounting purposes, providing a value help for selecting accrual subobjects in financial applications."
 app_component: FI-GL-GL-ACE-2CL
 software_component: SAPSCORE
 release_state: released

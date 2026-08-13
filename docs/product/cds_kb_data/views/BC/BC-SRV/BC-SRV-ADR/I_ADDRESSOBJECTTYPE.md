@@ -1,6 +1,21 @@
 ---
 name: I_ADDRESSOBJECTTYPE
 description: "Addressobjecttype"
+semantic_vi: "View I_ADDRESSOBJECTTYPE hiển thị các loại đối tượng địa chỉ, được sử dụng để phân loại các loại địa chỉ khác nhau trong hệ thống. Nó có thể được sử dụng để lấy hoặc thao tác các loại đối tượng địa chỉ trong các kịch bản kinh doanh khác nhau."
+keywords:
+  - "address"
+  - "object"
+  - "type"
+  - "categorize"
+  - "retrieve"
+  - "manipulate"
+  - "addressobjecttype"
+  - "sap"
+  - "cds"
+  - "view"
+  - "business"
+  - "scenario"
+semantic_en: "The I_ADDRESSOBJECTTYPE CDS view exposes address object types, which are used to categorize different types of addresses in the system. It can be used to retrieve or manipulate address object types in various business scenarios."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

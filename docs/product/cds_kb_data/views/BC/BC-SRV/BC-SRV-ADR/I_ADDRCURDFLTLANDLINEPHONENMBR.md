@@ -1,6 +1,19 @@
 ---
 name: I_ADDRCURDFLTLANDLINEPHONENMBR
 description: "Addrcurdfltlandlinephonenmbr"
+semantic_vi: "Chứa thông tin số điện thoại cố định mặc định cho một người tại một địa chỉ, có hiệu lực trong khoảng thời gian cụ thể. Sử dụng để truy xuất hoặc cập nhật số điện thoại cho các quy trình kinh doanh liên quan đến địa chỉ."
+keywords:
+  - "address"
+  - "phone number"
+  - "landline"
+  - "default"
+  - "person"
+  - "date range"
+  - "sap cds"
+  - "bc-srv-adr"
+  - "address id"
+  - "phone number country"
+semantic_en: "Exposes default landline phone numbers for a person at an address, valid within a specific date range. Used to retrieve or update phone numbers for address-related business processes."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

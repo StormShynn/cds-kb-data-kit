@@ -1,6 +1,18 @@
 ---
 name: I_ADDRESSDEFAULTREPRESENTATION
 description: "Addressdefaultrepresentation"
+semantic_vi: "View I_ADDRESSDEFAULTREPRESENTATION cung cấp các đại diện địa chỉ mặc định cho một người hoặc tổ chức, bao gồm phương tiện giao tiếp được ưa thích và ngôn ngữ. Nó được sử dụng để lấy đại diện địa chỉ mặc định cho một ID địa chỉ và ID người cụ thể."
+keywords:
+  - "address"
+  - "default representation"
+  - "address id"
+  - "person id"
+  - "correspondence language"
+  - "communication medium"
+  - "sap cds view"
+  - "bc-srv-adr"
+  - "basis components"
+semantic_en: "The I_ADDRESSDEFAULTREPRESENTATION view provides default address representations for a person or organization, including the preferred communication medium and language. It is used to retrieve the default address representation for a specific address ID and person ID."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

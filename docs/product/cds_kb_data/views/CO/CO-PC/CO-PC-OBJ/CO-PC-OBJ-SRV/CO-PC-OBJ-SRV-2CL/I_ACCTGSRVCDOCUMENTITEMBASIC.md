@@ -1,6 +1,20 @@
 ---
 name: I_ACCTGSRVCDOCUMENTITEMBASIC
 description: "Acctgsrvcdocumentitembasic"
+semantic_vi: "Chỉ ra dữ liệu cơ bản của các mục trong tài liệu dịch vụ, bao gồm loại tài liệu dịch vụ, tài liệu và chi tiết mục, thường được sử dụng cho mục đích quản lý và quản lý dịch vụ."
+keywords:
+  - "service document item"
+  - "tài liệu dịch vụ"
+  - "đối tượng dịch vụ"
+  - "đơn dịch vụ"
+  - "đối tượng tài liệu"
+  - "đối tượng mục"
+  - "quản lý dịch vụ"
+  - "quản lý tài liệu"
+  - "co-pc"
+  - "co-pc-obj"
+  - "lob: controlling"
+semantic_en: "Exposes basic data of service document items, including service document type, document, and item details, typically used for controlling and service management purposes."
 app_component: CO-PC-OBJ-SRV-2CL
 software_component: SAPSCORE
 release_state: released

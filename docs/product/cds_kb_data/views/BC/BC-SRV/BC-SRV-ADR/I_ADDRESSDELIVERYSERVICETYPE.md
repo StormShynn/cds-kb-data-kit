@@ -1,6 +1,20 @@
 ---
 name: I_ADDRESSDELIVERYSERVICETYPE
 description: "Addressdeliveryservicetype"
+semantic_vi: "View này hiển thị các loại dịch vụ giao hàng địa chỉ, được sử dụng để phân loại các dịch vụ giao hàng khác nhau cho địa chỉ. Nó có thể được sử dụng để lấy hoặc cập nhật các loại dịch vụ giao hàng cho mục đích giao hàng địa chỉ."
+keywords:
+  - "address delivery service type"
+  - "loại dịch vụ giao hàng địa chỉ"
+  - "delivery service type"
+  - "loại dịch vụ giao hàng"
+  - "sap cds view"
+  - "view dữ liệu"
+  - "data view"
+  - "address delivery"
+  - "giao hàng địa chỉ"
+  - "delivery service"
+  - "dịch vụ giao hàng"
+semantic_en: "This view exposes address delivery service types, which are used to categorize different delivery services for addresses. It can be used to retrieve or update delivery service types for address delivery purposes."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

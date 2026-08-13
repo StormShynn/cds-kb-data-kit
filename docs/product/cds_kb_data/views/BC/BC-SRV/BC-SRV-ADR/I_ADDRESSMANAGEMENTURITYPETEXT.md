@@ -1,6 +1,17 @@
 ---
 name: I_ADDRESSMANAGEMENTURITYPETEXT
 description: "Addressmanagementuritypetext"
+semantic_vi: "Chứa dữ liệu văn bản mô tả loại URI quản lý địa chỉ, hữu ích cho việc hiển thị mô tả loại URI trong ứng dụng quản lý địa chỉ."
+keywords:
+  - "address management"
+  - "uri type"
+  - "text data"
+  - "address management application"
+  - "địa chỉ quản lý"
+  - "loại uri"
+  - "dữ liệu văn bản"
+  - "ứng dụng quản lý địa chỉ"
+semantic_en: "Exposes address management URI type text data, useful for displaying URI type descriptions in address management applications."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

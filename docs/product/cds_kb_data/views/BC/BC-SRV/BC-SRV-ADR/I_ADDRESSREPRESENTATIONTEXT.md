@@ -1,6 +1,21 @@
 ---
 name: I_ADDRESSREPRESENTATIONTEXT
 description: "Addressrepresentationtext"
+semantic_vi: "View I_ADDRESSREPRESENTATIONTEXT cung cấp các bản thể hiện văn bản của các định dạng địa chỉ trong các ngôn ngữ khác nhau, có thể được sử dụng để hiển thị thông tin địa chỉ trong các định dạng khác nhau."
+keywords:
+  - "address representation"
+  - "text view"
+  - "address format"
+  - "language"
+  - "bc-srv-adr"
+  - "basis components"
+  - "address representation code"
+  - "address representation desc"
+  - "sap cds view"
+  - "địa chỉ thể hiện"
+  - "bản thể hiện văn bản"
+  - "định dạng địa chỉ"
+semantic_en: "The I_ADDRESSREPRESENTATIONTEXT view provides text representations of address formats in different languages, which can be used to display address information in various formats."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_ACTUALPLANJOURNALENTRYITEM
 description: "ACTUALPLANJournal EntryITEM"
+semantic_vi: "View ACTUALPLANJournal Entry ITEM hiển thị các mục nhập chi tiết của journal entry thực tế, được sử dụng để theo dõi dữ liệu kế toán trong journal entry. Nó được sử dụng khi phân tích hoặc báo cáo về mục nhập chi tiết journal entry ở mức độ chi tiết."
+keywords:
+  - "actual plan journal entry"
+  - "journal entry item"
+  - "financial planning"
+  - "fi-gl-is-2cl"
+  - "fi"
+  - "fi-gl"
+  - "fi-gl-is"
+  - "interface-view"
+  - "journal-entry"
+  - "item-level"
+  - "component:fi-gl-is-2cl"
+  - "lob:finance"
+semantic_en: "The ACTUALPLANJournal Entry ITEM view exposes actual plan journal entry items, which are used to track financial planning data in a journal entry. It is used when analyzing or reporting on journal entry items at the item level."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

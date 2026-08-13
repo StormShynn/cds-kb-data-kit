@@ -1,6 +1,19 @@
 ---
 name: I_ADDLLEDGEROPLACCTGDOCITEM
 description: "Addlledgeroplacctgdocitem"
+semantic_vi: "View Addlledgeroplacctgdocitem CDS hiển thị thêm chi tiết đăng ký sổ cái cho các tài liệu kế toán, cho phép phân tích chi tiết về các giao dịch tài chính. Nó được sử dụng để lấy và xử lý thông tin chi tiết về các mục tài liệu kế toán."
+keywords:
+  - "accounting document"
+  - "đơn kế toán"
+  - "ledger posting"
+  - "đăng ký sổ cái"
+  - "financial transaction"
+  - "giao dịch tài chính"
+  - "accounting document item"
+  - "mục tài liệu kế toán"
+  - "sap fi-gl"
+  - "fi-gl-is-2cl"
+semantic_en: "The Addlledgeroplacctgdocitem CDS view exposes additional ledger posting details for accounting documents, allowing for item-level analysis of financial transactions. It is used to retrieve and process detailed information about accounting document items."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: I_ADDRESSPERSONNAME
 description: "Addresspersonname"
+semantic_vi: "View I_ADDRESSPERSONNAME CDS hiển thị dữ liệu tên người liên hệ địa chỉ, có thể sử dụng khi truy xuất hoặc hiển thị tên cá nhân liên quan đến địa chỉ."
+keywords:
+  - "address"
+  - "person"
+  - "name"
+  - "addresspersonid"
+  - "sap cds"
+  - "bc-srv-adr"
+  - "basis components"
+  - "address representation code"
+  - "form of address"
+semantic_en: "The I_ADDRESSPERSONNAME CDS view exposes address person name data, which can be used when retrieving or displaying individual names associated with addresses."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

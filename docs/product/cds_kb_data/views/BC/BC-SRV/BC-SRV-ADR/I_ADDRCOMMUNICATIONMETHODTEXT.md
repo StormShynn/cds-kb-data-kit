@@ -1,6 +1,21 @@
 ---
 name: I_ADDRCOMMUNICATIONMETHODTEXT
 description: "Addrcommunicationmethodtext"
+semantic_vi: "View Addrcommunicationmethodtext cung cấp mô tả văn bản cho phương thức liên lạc, chẳng hạn như số điện thoại hoặc địa chỉ email, trong các ngôn ngữ khác nhau. Nó được sử dụng để hiển thị mô tả này trong các ứng dụng."
+keywords:
+  - "communication method"
+  - "đường liên lạc"
+  - "text view"
+  - "view"
+  - "language"
+  - "ngôn ngữ"
+  - "sap cds"
+  - "cds view"
+  - "address"
+  - "địa chỉ"
+  - "basis components"
+  - "bc-srv-adr"
+semantic_en: "The Addrcommunicationmethodtext view provides text descriptions for communication methods, such as phone numbers or email addresses, in different languages. It is used to display these descriptions in applications."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

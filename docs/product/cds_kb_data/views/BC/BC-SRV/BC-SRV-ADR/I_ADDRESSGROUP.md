@@ -1,6 +1,18 @@
 ---
 name: I_ADDRESSGROUP
 description: "Addressgroup"
+semantic_vi: "View I_ADDRESSGROUP CDS hiển thị dữ liệu nhóm địa chỉ, được sử dụng để phân loại và quản lý địa chỉ trong bối cảnh kinh doanh."
+keywords:
+  - "address group"
+  - "nhóm địa chỉ"
+  - "address management"
+  - "quản lý địa chỉ"
+  - "sap cds view"
+  - "view i_addressgroup"
+  - "addressgroup"
+  - "bc-srv-adr"
+  - "basis components"
+semantic_en: "The I_ADDRESSGROUP CDS view exposes address group data, which is used to categorize and manage addresses in a business context."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

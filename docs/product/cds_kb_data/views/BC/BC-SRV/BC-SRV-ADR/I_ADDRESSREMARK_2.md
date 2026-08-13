@@ -1,6 +1,19 @@
 ---
 name: I_ADDRESSREMARK_2
 description: "Addressremark 2"
+semantic_vi: "Chứa dữ liệu ghi chú địa chỉ, có thể được sử dụng để lưu trữ thông tin bổ sung về địa chỉ. Dữ liệu này thường được sử dụng trong các kịch bản quản lý địa chỉ."
+keywords:
+  - "address"
+  - "remark"
+  - "management"
+  - "data"
+  - "sap"
+  - "cds"
+  - "view"
+  - "addressmanagement"
+  - "addressremark"
+  - "bc-srv-adr"
+semantic_en: "Exposes address remark data, which can be used to store additional information about an address. This data is typically used in address management scenarios."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

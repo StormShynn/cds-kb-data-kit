@@ -1,6 +1,19 @@
 ---
 name: I_ADDRESSCOMMUNICATIONUSAGE
 description: "Addresscommunicationusage"
+semantic_vi: "Chứa dữ liệu sử dụng thông tin liên lạc địa chỉ, bao gồm các loại thông tin liên lạc được sử dụng và khoảng thời gian có hiệu lực."
+keywords:
+  - "address"
+  - "communication"
+  - "usage"
+  - "data"
+  - "sap"
+  - "cds"
+  - "view"
+  - "addressid"
+  - "communicationmediumtype"
+  - "validitystartdate"
+semantic_en: "Exposes address communication usage data, including the types of communication used and their validity periods. This view is useful for understanding how addresses are used for communication purposes."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

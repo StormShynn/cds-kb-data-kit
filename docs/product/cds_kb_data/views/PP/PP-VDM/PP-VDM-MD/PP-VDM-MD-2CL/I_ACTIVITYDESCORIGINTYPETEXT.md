@@ -1,6 +1,19 @@
 ---
 name: I_ACTIVITYDESCORIGINTYPETEXT
 description: "Activitydescorigintypetext"
+semantic_vi: "Cung cấp mô tả văn bản cho loại nguồn hoạt động trong nhiều ngôn ngữ, được sử dụng để hiển thị mô tả hoạt động trong quy trình sản xuất."
+keywords:
+  - "activity origin type"
+  - "activity description"
+  - "manufacturing process"
+  - "nguồn hoạt động"
+  - "mô tả hoạt động"
+  - "quy trình sản xuất"
+  - "pp-vdm"
+  - "pp-vdm-md"
+  - "interface view"
+  - "text view"
+semantic_en: "Provides text descriptions for activity origin types in multiple languages, used to display activity descriptions in manufacturing processes."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

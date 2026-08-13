@@ -1,6 +1,16 @@
 ---
 name: I_ADDRNONDELIVERABLEREASONVH
 description: "Addrnondeliverablereasonvh"
+semantic_vi: "CDS view I_ADDRNONDELIVERABLEREASONVH cung cấp danh sách lý do không thể giao địa chỉ, có thể được sử dụng để lọc hoặc xác minh dữ liệu địa chỉ trong các ứng dụng kinh doanh khác nhau."
+keywords:
+  - "address"
+  - "non-deliverable"
+  - "reason"
+  - "address validation"
+  - "địa chỉ"
+  - "lý do không thể giao"
+  - "xác minh địa chỉ"
+semantic_en: "The I_ADDRNONDELIVERABLEREASONVH CDS view provides a list of non-deliverable address reasons, which can be used to filter or validate address data in various business applications."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

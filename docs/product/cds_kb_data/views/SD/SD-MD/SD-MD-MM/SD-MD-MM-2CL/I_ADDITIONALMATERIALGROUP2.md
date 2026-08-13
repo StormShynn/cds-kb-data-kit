@@ -1,6 +1,21 @@
 ---
 name: I_ADDITIONALMATERIALGROUP2
 description: "ADDITIONALMaterial Group 2"
+semantic_vi: "View I_ADDITIONALMATERIALGROUP2 CDS cung cấp truy cập dữ liệu nhóm vật liệu bổ sung 2, có liên quan khi quản lý vật liệu trong mô-đun Bán hàng và Phân phối."
+keywords:
+  - "additional material group"
+  - "material group"
+  - "sales and distribution"
+  - "sales distribution"
+  - "material management"
+  - "vật liệu"
+  - "nhóm vật liệu"
+  - "bán hàng"
+  - "phân phối"
+  - "sap material"
+  - "sap sales"
+  - "sap distribution"
+semantic_en: "The I_ADDITIONALMATERIALGROUP2 CDS view provides access to additional material group 2 data, which is relevant when managing materials in the Sales and Distribution module."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

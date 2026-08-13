@@ -1,6 +1,19 @@
 ---
 name: I_ADDRESSEMAILADDRESS_2
 description: "Addressemailaddress 2"
+semantic_vi: "Chứa địa chỉ email liên quan đến một người tại một địa chỉ cụ thể, bao gồm trạng thái mặc định hiện tại và ngày hiệu lực."
+keywords:
+  - "address"
+  - "email"
+  - "person"
+  - "addressid"
+  - "emailaddress"
+  - "validity"
+  - "sap"
+  - "cds"
+  - "bc-srv-adr"
+  - "basis components"
+semantic_en: "Exposes email addresses associated with a person at a specific address, including current default status and validity dates. Used to manage address-related data in business applications."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

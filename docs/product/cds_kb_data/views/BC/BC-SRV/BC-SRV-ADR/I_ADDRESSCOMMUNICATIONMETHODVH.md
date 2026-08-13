@@ -1,6 +1,21 @@
 ---
 name: I_ADDRESSCOMMUNICATIONMETHODVH
 description: "Addresscommunicationmethodvh"
+semantic_vi: "Cung cấp danh sách phương thức liên lạc địa chỉ để sử dụng trong các ứng dụng kinh doanh khác nhau, chẳng hạn như chọn phương thức liên lạc để gửi thông báo hoặc tin nhắn."
+keywords:
+  - "address"
+  - "communication"
+  - "method"
+  - "notification"
+  - "message"
+  - "business application"
+  - "sap"
+  - "cds"
+  - "view"
+  - "address communication method"
+  - "liên lạc địa chỉ"
+  - "phương thức liên lạc"
+semantic_en: "Provides a list of address communication methods for use in various business applications, such as selecting a communication medium for sending notifications or messages."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

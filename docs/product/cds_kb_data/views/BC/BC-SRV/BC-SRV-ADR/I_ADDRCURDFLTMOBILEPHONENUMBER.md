@@ -1,6 +1,19 @@
 ---
 name: I_ADDRCURDFLTMOBILEPHONENUMBER
 description: "Addrcurdfltmobilephonenumber"
+semantic_vi: "View I_ADDRCURDFLTMOBILEPHONENUMBER hiển thị số điện thoại di động cho hồ sơ địa chỉ, thường được sử dụng khi quản lý dữ liệu địa chỉ trong hệ thống SAP."
+keywords:
+  - "address"
+  - "phone number"
+  - "mobile phone"
+  - "address record"
+  - "sap"
+  - "basis components"
+  - "bc-srv-adr"
+  - "interface view"
+  - "phone"
+  - "di động"
+semantic_en: "The I_ADDRCURDFLTMOBILEPHONENUMBER view exposes mobile phone numbers for address records, typically used when managing address data in SAP systems."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_ADDRESSFAXNUMBER_2
 description: "Addressfaxnumber 2"
+semantic_vi: "View I_ADDRESSFAXNUMBER_2 hiển thị dữ liệu số fax cho địa chỉ, có thể sử dụng khi quản lý thông tin địa chỉ."
+keywords:
+  - "address"
+  - "fax"
+  - "number"
+  - "data"
+  - "management"
+  - "sap"
+  - "cds"
+  - "view"
+  - "addressid"
+  - "addresspersonid"
+semantic_en: "The I_ADDRESSFAXNUMBER_2 CDS view exposes fax number data for addresses, which can be used when managing address-related information."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

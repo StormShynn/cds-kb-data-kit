@@ -1,6 +1,19 @@
 ---
 name: I_ADDRCURDEFAULTEMAILADDRESS
 description: "Addrcurdefaultemailaddress"
+semantic_vi: "Cung cấp địa chỉ email mặc định cho địa chỉ trong hệ thống, được sử dụng để xác định phương thức liên hệ chính cho địa chỉ."
+keywords:
+  - "address"
+  - "email"
+  - "default"
+  - "contact"
+  - "method"
+  - "sap"
+  - "basis"
+  - "components"
+  - "bc-srv-adr"
+  - "interface-view"
+semantic_en: "Provides default email addresses for addresses in a system, used to identify the primary contact method for an address."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

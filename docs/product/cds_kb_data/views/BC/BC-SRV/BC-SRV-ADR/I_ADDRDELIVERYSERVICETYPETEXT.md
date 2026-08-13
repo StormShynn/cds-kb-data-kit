@@ -1,6 +1,21 @@
 ---
 name: I_ADDRDELIVERYSERVICETYPETEXT
 description: "Addrdeliveryservicetypetext"
+semantic_vi: "View I_ADDRDELIVERYSERVICETYPETEXT cung cấp mô tả văn bản cho các loại dịch vụ giao hàng, có thể được sử dụng để hiển thị thông tin chi tiết về dịch vụ giao hàng trong các ứng dụng."
+keywords:
+  - "delivery service"
+  - "dịch vụ giao hàng"
+  - "service type"
+  - "loại dịch vụ"
+  - "text description"
+  - "mô tả văn bản"
+  - "sap cds view"
+  - "view"
+  - "basis components"
+  - "components"
+  - "delivery"
+  - "service"
+semantic_en: "The I_ADDRDELIVERYSERVICETYPETEXT view provides text descriptions for delivery service types, which can be used to display detailed information about delivery services in applications."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

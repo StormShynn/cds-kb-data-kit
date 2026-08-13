@@ -1,6 +1,21 @@
 ---
 name: I_ADDRDELIVERYSERVICETYPEVH
 description: "Addrdeliveryservicetypevh"
+semantic_vi: "Cung cấp danh sách các loại dịch vụ giao hàng để sử dụng trong việc địa chỉ và logistics, chẳng hạn như dịch vụ bưu chính hoặc vận chuyển."
+keywords:
+  - "delivery"
+  - "service"
+  - "type"
+  - "address"
+  - "logistics"
+  - "courier"
+  - "freight"
+  - "sap"
+  - "basis components"
+  - "bc-srv-adr"
+  - "interface-view"
+  - "value-help"
+semantic_en: "Provides a list of delivery service types for use in addressing and logistics, such as courier or freight services."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,17 @@
 ---
 name: I_ADDITIONALCUSTOMERGROUP2TEXT
 description: "Additionalcustomergroup 2TEXT"
+semantic_vi: "Chỉ ra tên nhóm khách hàng bổ sung 2 trong nhiều ngôn ngữ, được sử dụng để lấy mô tả văn bản cho nhóm khách hàng 2 trong bán hàng và phân phối."
+keywords:
+  - "additional customer group"
+  - "customer group 2"
+  - "sales and distribution"
+  - "text view"
+  - "customer"
+  - "language"
+  - "sap"
+  - "sd-md-mm-2cl"
+semantic_en: "Exposes additional customer group 2 names in multiple languages, used to retrieve text descriptions for customer group 2 in sales and distribution."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

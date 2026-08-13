@@ -1,6 +1,21 @@
 ---
 name: I_ACCTGSERVICEDOCUMENTITEMVH
 description: "ACCTGService DocumentUMENTITEMVH"
+semantic_vi: "View ACCTGService Document Item cung cấp truy cập dữ liệu chi tiết về các mục của tài liệu dịch vụ, bao gồm loại tài liệu dịch vụ, mục và thông tin mã công ty."
+keywords:
+  - "service document"
+  - "tài liệu dịch vụ"
+  - "service document item"
+  - "mục tài liệu dịch vụ"
+  - "company code"
+  - "mã công ty"
+  - "sap cds view"
+  - "view"
+  - "service document type"
+  - "loại tài liệu dịch vụ"
+  - "service document item data"
+  - "dữ liệu mục tài liệu dịch vụ"
+semantic_en: "The ACCTGService Document Item View provides access to service document item data, including service document type, item, and company code information. It is used to retrieve detailed information about service document items."
 app_component: CO-PC-OBJ-SRV-2CL
 software_component: SAPSCORE
 release_state: released

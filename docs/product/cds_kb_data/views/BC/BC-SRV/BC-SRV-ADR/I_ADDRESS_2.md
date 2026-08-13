@@ -1,6 +1,19 @@
 ---
 name: I_ADDRESS_2
 description: "Address 2"
+semantic_vi: "View I_ADDRESS_2 hiển thị dữ liệu địa chỉ cho nhiều người hoặc tổ chức, bao gồm phương tiện truyền thông ưa thích và ngôn ngữ liên lạc. Nó được sử dụng khi cần quản lý nhiều địa chỉ cho một thực thể duy nhất."
+keywords:
+  - "address"
+  - "address data"
+  - "address management"
+  - "address entity"
+  - "correspondence language"
+  - "preferred communication medium"
+  - "sap cds view"
+  - "i_address_2"
+  - "bc-srv-adr"
+  - "basis components"
+semantic_en: "The I_ADDRESS_2 view exposes address data for multiple persons or organizations, including their preferred communication medium and correspondence language. It is used when multiple addresses need to be managed for a single entity."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

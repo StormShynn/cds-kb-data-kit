@@ -1,6 +1,19 @@
 ---
 name: I_ADDRESSREPRESENTATION
 description: "Addressrepresentation"
+semantic_vi: "View I_ADDRESSREPRESENTATION cung cấp một đại diện tiêu chuẩn của địa chỉ, có thể được sử dụng để lưu trữ và truy xuất dữ liệu địa chỉ trong một định dạng nhất quán. Nó hữu ích khi làm việc với dữ liệu địa chỉ trong ứng dụng SAP."
+keywords:
+  - "address"
+  - "address representation"
+  - "sap"
+  - "cds view"
+  - "bc-srv-adr"
+  - "basis components"
+  - "address data"
+  - "data standardization"
+  - "địa chỉ"
+  - "đại diện địa chỉ"
+semantic_en: "The I_ADDRESSREPRESENTATION view provides a standardized representation of addresses, which can be used to store and retrieve address data in a consistent format. It is useful when working with address-related data in SAP applications."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

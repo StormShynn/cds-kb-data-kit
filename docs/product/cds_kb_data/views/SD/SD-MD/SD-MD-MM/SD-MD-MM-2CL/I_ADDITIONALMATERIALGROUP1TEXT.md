@@ -1,6 +1,19 @@
 ---
 name: I_ADDITIONALMATERIALGROUP1TEXT
 description: "ADDITIONALMaterial Group 1TEXT"
+semantic_vi: "View I_ADDITIONALMATERIALGROUP1TEXT cung cấp tên nhóm vật liệu bổ sung 1 trong các ngôn ngữ khác nhau, có thể được sử dụng để hiển thị thông tin nhóm vật liệu trong các ứng dụng đa ngôn ngữ."
+keywords:
+  - "additional material group"
+  - "material group name"
+  - "language"
+  - "multilingual application"
+  - "sap"
+  - "sd-md-mm-2cl"
+  - "sales and distribution"
+  - "material"
+  - "text view"
+  - "interface view"
+semantic_en: "The I_ADDITIONALMATERIALGROUP1TEXT view provides additional material group 1 names in different languages, which can be used to display material group information in multilingual applications."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

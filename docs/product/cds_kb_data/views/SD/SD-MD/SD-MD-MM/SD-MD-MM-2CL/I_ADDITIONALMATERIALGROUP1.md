@@ -1,6 +1,19 @@
 ---
 name: I_ADDITIONALMATERIALGROUP1
 description: "ADDITIONALMaterial Group 1"
+semantic_vi: "View Additional Material Group 1 hiển thị dữ liệu nhóm vật liệu phụ trong ứng dụng Sales và Distribution. Nó được sử dụng để truy cập và thao tác dữ liệu này trong phát triển ABAP và đám mây."
+keywords:
+  - "additional material"
+  - "material group"
+  - "sales and distribution"
+  - "abap"
+  - "cloud development"
+  - "sap"
+  - "material"
+  - "sales"
+  - "distribution"
+  - "additionalmaterialgroup1"
+semantic_en: "The Additional Material Group 1 view exposes material group data for additional materials in the Sales and Distribution application. It is used to access and manipulate this data in ABAP and cloud development."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

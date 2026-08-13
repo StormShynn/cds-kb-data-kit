@@ -1,6 +1,21 @@
 ---
 name: I_ADDITIONALMATERIALGROUP3
 description: "ADDITIONALMaterial Group 3"
+semantic_vi: "CDS view I_ADDITIONALMATERIALGROUP3 hiển thị dữ liệu nhóm vật liệu bổ sung 3 liên quan đến quản lý vật liệu trong SAP Sales và Distribution. Nó được sử dụng để truy cập và chỉnh sửa dữ liệu nhóm vật liệu này."
+keywords:
+  - "material"
+  - "management"
+  - "sap"
+  - "sales"
+  - "distribution"
+  - "additionalmaterialgroup3"
+  - "materialgroup"
+  - "ekko"
+  - "salesd"
+  - "sdmd"
+  - "sdmdmm"
+  - "interfaceview"
+semantic_en: "The I_ADDITIONALMATERIALGROUP3 CDS view exposes additional material group 3 data relevant to material management in SAP Sales and Distribution. It is used to access and manipulate this specific material group data."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

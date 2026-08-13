@@ -1,6 +1,16 @@
 ---
 name: I_ACCTGSERVICECONTRACTVH
 description: "Acctgservicecontractvh"
+semantic_vi: "View Acctgservicecontractvh cung cấp truy cập dữ liệu hợp đồng dịch vụ, cho phép các nhà phát triển truy xuất và thao tác thông tin hợp đồng dịch vụ."
+keywords:
+  - "service contract"
+  - "hợp đồng dịch vụ"
+  - "sap cds view"
+  - "co-pc-obj-srv-2cl"
+  - "controlling"
+  - "service document type"
+  - "object type"
+semantic_en: "The Acctgservicecontractvh view provides access to service contract data, allowing developers to retrieve and manipulate service contract information."
 app_component: CO-PC-OBJ-SRV-2CL
 software_component: SAPSCORE
 release_state: released

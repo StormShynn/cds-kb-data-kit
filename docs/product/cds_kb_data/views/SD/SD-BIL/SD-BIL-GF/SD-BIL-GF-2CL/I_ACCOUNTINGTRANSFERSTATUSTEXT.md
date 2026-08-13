@@ -1,6 +1,19 @@
 ---
 name: I_ACCOUNTINGTRANSFERSTATUSTEXT
 description: "Accountingtransferstatustext"
+semantic_vi: "View Accountingtransferstatustext cung cấp mô tả văn bản cho trạng thái chuyển đổi kế toán trong các ngôn ngữ khác nhau. Nó được sử dụng để hiển thị thông tin trạng thái trong ứng dụng Sales và Distribution."
+keywords:
+  - "accounting transfer status"
+  - "trạng thái chuyển đổi kế toán"
+  - "sales and distribution"
+  - "bán hàng và phân phối"
+  - "sap"
+  - "sd-bil-gf-2cl"
+  - "language"
+  - "ngôn ngữ"
+  - "status"
+  - "trạng thái"
+semantic_en: "The Accountingtransferstatustext view provides text descriptions for accounting transfer statuses in different languages. It is used to display status information in the Sales and Distribution application."
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

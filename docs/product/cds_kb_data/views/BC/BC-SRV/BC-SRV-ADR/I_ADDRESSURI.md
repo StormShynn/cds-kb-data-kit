@@ -1,6 +1,21 @@
 ---
 name: I_ADDRESSURI
 description: "Addressuri"
+semantic_vi: "View I_ADDRESSURI hiển thị thông tin URI địa chỉ, có thể được sử dụng để lấy hoặc cập nhật dữ liệu địa chỉ trong hệ thống."
+keywords:
+  - "address"
+  - "uri"
+  - "sap"
+  - "cds"
+  - "view"
+  - "addressuri"
+  - "addressmanagementuri"
+  - "uniformresourceidentifier"
+  - "addressid"
+  - "addresspersonid"
+  - "commmediumsequencenumber"
+  - "addressmanagementuritype"
+semantic_en: "The I_ADDRESSURI view exposes address URI information, which can be used to retrieve or update address-related data in the system."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

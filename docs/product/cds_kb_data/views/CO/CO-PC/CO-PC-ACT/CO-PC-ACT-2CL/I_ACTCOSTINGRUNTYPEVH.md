@@ -1,6 +1,19 @@
 ---
 name: I_ACTCOSTINGRUNTYPEVH
 description: "Actcostingruntypevh"
+semantic_vi: "View Actcostingruntypevh cung cấp truy cập vào loại chạy chi phí và các năm và kỳ tài chính liên quan, cho phép các nhà phát triển truy cập và sử dụng dữ liệu này trong các ứng dụng của họ."
+keywords:
+  - "costing run"
+  - "fiscal year"
+  - "fiscal period"
+  - "actcostingruntypevh"
+  - "co-pc-act-2cl"
+  - "controlling"
+  - "costing run type"
+  - "đơn vị chạy chi phí"
+  - "năm tài chính"
+  - "kỳ tài chính"
+semantic_en: "The Actcostingruntypevh view provides access to costing run types and their associated fiscal years and periods, enabling developers to retrieve and utilize this data in their applications."
 app_component: CO-PC-ACT-2CL
 software_component: SAPSCORE
 release_state: released

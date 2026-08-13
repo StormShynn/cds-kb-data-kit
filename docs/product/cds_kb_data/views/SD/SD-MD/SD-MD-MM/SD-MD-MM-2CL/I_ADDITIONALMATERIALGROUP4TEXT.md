@@ -1,6 +1,19 @@
 ---
 name: I_ADDITIONALMATERIALGROUP4TEXT
 description: "ADDITIONALMaterial Group 4TEXT"
+semantic_vi: "Cung cấp tên nhóm vật liệu bổ sung 4 trong các ngôn ngữ khác nhau cho việc sử dụng trong các quy trình kinh doanh liên quan đến vật liệu."
+keywords:
+  - "material"
+  - "additional material group"
+  - "language"
+  - "material group name"
+  - "sap"
+  - "sd-md-mm"
+  - "sales and distribution"
+  - "lob sales & distribution"
+  - "bo material"
+  - "ekko"
+semantic_en: "Provides additional material group 4 names in different languages for use in material-related business processes."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

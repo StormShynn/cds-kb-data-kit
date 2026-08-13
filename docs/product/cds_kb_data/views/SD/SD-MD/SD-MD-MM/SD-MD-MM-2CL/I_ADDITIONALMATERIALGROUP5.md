@@ -1,6 +1,21 @@
 ---
 name: I_ADDITIONALMATERIALGROUP5
 description: "ADDITIONALMaterial Group 5"
+semantic_vi: "View này hiển thị dữ liệu nhóm vật liệu phụ thêm 5, được sử dụng trong quản lý vật liệu để phân loại vật liệu."
+keywords:
+  - "material"
+  - "management"
+  - "additional material group"
+  - "group 5"
+  - "material management"
+  - "categorize materials"
+  - "vật liệu"
+  - "quản lý vật liệu"
+  - "phân loại vật liệu"
+  - "sd-md-mm-2cl"
+  - "sales & distribution"
+  - "sales"
+semantic_en: "This view exposes additional material group 5 data, which is used in material management to categorize materials."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

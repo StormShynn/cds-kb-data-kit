@@ -1,6 +1,20 @@
 ---
 name: I_ACCTGSERVICEDOCUMENTVH
 description: "ACCTGService DocumentUMENTVH"
+semantic_vi: "View ACCTGService DocumentUMENTVH cung cấp truy cập dữ liệu về tài liệu dịch vụ, bao gồm loại tài liệu dịch vụ, mô tả và mã công ty và trung tâm lợi nhuận liên quan. Nó được sử dụng để lấy thông tin về tài liệu dịch vụ trong thành phần Controlling."
+keywords:
+  - "service document"
+  - "tài liệu dịch vụ"
+  - "controlling"
+  - "service document type"
+  - "loại tài liệu dịch vụ"
+  - "company code"
+  - "mã công ty"
+  - "profit center"
+  - "trung tâm lợi nhuận"
+  - "sap controlling"
+  - "cds view"
+semantic_en: "The ACCTGService DocumentUMENTVH view provides access to service document data, including service document types, descriptions, and associated company codes and profit centers. It is used to retrieve information about service documents in the Controlling component."
 app_component: CO-PC-OBJ-SRV-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_ACTIVEPLNDINDEPRQMTITEM
 description: "Activeplndindeprqmtitem"
+semantic_vi: "View Activeplndindeprqmtitem hiển thị dữ liệu yêu cầu độc lập cho từng mục từ quy trình lập kế hoạch sản xuất, cho phép các nhà phát triển truy cập và chỉnh sửa chi tiết từng mục."
+keywords:
+  - "production planning"
+  - "lập kế hoạch sản xuất"
+  - "independent requirement"
+  - "yêu cầu độc lập"
+  - "item-level"
+  - "mục từ"
+  - "planned quantity"
+  - "số lượng kế hoạch"
+  - "withdrawal quantity"
+  - "số lượng rút"
+semantic_en: "The Activeplndindeprqmtitem view exposes independent requirement item data from the production planning process, allowing developers to access and manipulate item-level details."
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

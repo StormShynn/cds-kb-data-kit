@@ -1,6 +1,19 @@
 ---
 name: I_ACTLCOSTGMATLVALUECHAINITEM
 description: "Actlcostgmatlvaluechainitem"
+semantic_vi: "View Actlcostgmatlvaluechainitem hiển thị chi phí vật liệu chuỗi giá trị cho các tài liệu tính giá có liên quan, cung cấp ước tính chi phí và dữ liệu sổ cái vật liệu cho mục đích lập kế hoạch và kiểm soát."
+keywords:
+  - "material value chain"
+  - "costing relevant document"
+  - "cost estimate"
+  - "material ledger"
+  - "planning and controlling"
+  - "costing"
+  - "đơn tính giá"
+  - "chuỗi giá trị vật liệu"
+  - "sổ cái vật liệu"
+  - "lập kế hoạch kiểm soát"
+semantic_en: "The Actlcostgmatlvaluechainitem view exposes material value chain item costs for costing relevant documents, providing cost estimates and material ledger data for planning and controlling purposes."
 app_component: CO-PC-ACT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_ADDITIONALCUSTOMERGROUP2
 description: "Additionalcustomergroup 2"
+semantic_vi: "Chứa thông tin nhóm khách hàng bổ sung cho khách hàng, hữu ích khi quản lý mối quan hệ khách hàng và phân loại khách hàng cho mục đích bán hàng và tiếp thị."
+keywords:
+  - "customer"
+  - "customer group"
+  - "additional customer group"
+  - "sales"
+  - "marketing"
+  - "customer relationship"
+  - "khách hàng"
+  - "nhóm khách hàng"
+  - "thông tin khách hàng"
+  - "quản lý khách hàng"
+  - "bán hàng"
+  - "tiếp thị"
+semantic_en: "Exposes additional customer groups for customers, useful when managing customer relationships and categorizing customers for sales and marketing purposes."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

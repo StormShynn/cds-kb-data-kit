@@ -1,6 +1,18 @@
 ---
 name: I_ADDITIONALCUSTOMERGROUP5
 description: "Additionalcustomergroup 5"
+semantic_vi: "Chứa dữ liệu nhóm khách hàng bổ sung 5, có liên quan khi quản lý mối quan hệ khách hàng trong bán hàng và phân phối."
+keywords:
+  - "customer"
+  - "customer group"
+  - "sales"
+  - "distribution"
+  - "additional customer group 5"
+  - "khách hàng"
+  - "nhóm khách hàng"
+  - "bán hàng"
+  - "phân phối"
+semantic_en: "Exposes additional customer group 5 data, which is relevant when managing customer relationships in sales and distribution."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_ADDITIONALMATERIALGROUP4
 description: "ADDITIONALMaterial Group 4"
+semantic_vi: "Cung cấp truy cập vào các nhóm vật liệu bổ sung, cụ thể là nhóm 4, được sử dụng trong quản lý vật liệu để phân loại vật liệu."
+keywords:
+  - "material management"
+  - "additional material group"
+  - "group 4"
+  - "material"
+  - "categorize materials"
+  - "quản lý vật liệu"
+  - "nhóm vật liệu bổ sung"
+  - "nhóm 4"
+  - "vật liệu"
+  - "phân loại vật liệu"
+semantic_en: "Provides access to additional material groups, specifically group 4, which is used in material management to categorize materials."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

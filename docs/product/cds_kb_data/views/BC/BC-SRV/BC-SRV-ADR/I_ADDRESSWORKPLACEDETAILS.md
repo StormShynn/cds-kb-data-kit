@@ -1,6 +1,18 @@
 ---
 name: I_ADDRESSWORKPLACEDETAILS
 description: "Addressworkplacedetails"
+semantic_vi: "View I_ADDRESSWORKPLACEDETAILS CDS cung cấp thông tin chi tiết địa chỉ nơi làm việc, bao gồm tòa nhà, tầng và số phòng, cho các ứng dụng yêu cầu dữ liệu địa chỉ chính xác."
+keywords:
+  - "address"
+  - "workplace"
+  - "sap cds"
+  - "cds view"
+  - "address details"
+  - "địa chỉ"
+  - "nơi làm việc"
+  - "sap bc-srv-adr"
+  - "basis components"
+semantic_en: "The I_ADDRESSWORKPLACEDETAILS CDS view provides detailed workplace address information, including building, floor, and room number, for use in applications requiring precise address data."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

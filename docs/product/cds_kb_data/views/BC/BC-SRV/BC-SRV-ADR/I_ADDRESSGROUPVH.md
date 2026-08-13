@@ -1,6 +1,16 @@
 ---
 name: I_ADDRESSGROUPVH
 description: "Addressgroupvh"
+semantic_vi: "Cung cấp danh sách các nhóm địa chỉ, được sử dụng để phân loại và quản lý địa chỉ trong bối cảnh kinh doanh. View này có thể được sử dụng để lấy nhóm địa chỉ cho các ứng dụng kinh doanh khác nhau."
+keywords:
+  - "address group"
+  - "nhóm địa chỉ"
+  - "address management"
+  - "quản lý địa chỉ"
+  - "sap cds view"
+  - "view i_addressgroupvh"
+  - "bc-srv-adr"
+semantic_en: "Provides a list of address groups, which are used to categorize and manage addresses in a business context. This view can be used to retrieve address groups for various business applications."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

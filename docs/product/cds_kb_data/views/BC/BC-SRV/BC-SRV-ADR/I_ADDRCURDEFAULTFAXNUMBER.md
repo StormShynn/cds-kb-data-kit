@@ -1,6 +1,19 @@
 ---
 name: I_ADDRCURDEFAULTFAXNUMBER
 description: "Addrcurdefaultfaxnumber"
+semantic_vi: "View Addrcurdefaultfaxnumber CDS hiển thị số fax mặc định hiện tại cho địa chỉ và người liên hệ, cung cấp cách để truy xuất và quản lý thông tin số fax."
+keywords:
+  - "address"
+  - "fax number"
+  - "default fax"
+  - "address person"
+  - "comm medium sequence number"
+  - "sap cds view"
+  - "basis components"
+  - "bc-srv-adr"
+  - "interface view"
+  - "released"
+semantic_en: "The Addrcurdefaultfaxnumber CDS view exposes current default fax numbers for addresses and their associated persons, providing a way to retrieve and manage fax number information."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

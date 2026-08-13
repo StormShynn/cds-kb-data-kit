@@ -1,6 +1,21 @@
 ---
 name: I_ADDRESSCOMMUNICATIONREMARK_2
 description: "Addresscommunicationremark 2"
+semantic_vi: "View I_ADDRESSCOMMUNICATIONREMARK_2 cung cấp truy cập vào các ghi chú liên lạc địa chỉ, đó là các ghi chú hoặc bình luận bổ sung liên quan đến một địa chỉ. Nó được sử dụng để truy xuất hoặc cập nhật các ghi chú này trong hệ thống quản lý địa chỉ."
+keywords:
+  - "address"
+  - "communication"
+  - "remark"
+  - "address management"
+  - "address id"
+  - "address person id"
+  - "communication medium type"
+  - "communication medium sequence number"
+  - "language"
+  - "communication remark text"
+  - "sap"
+  - "bc-srv-adr"
+semantic_en: "The I_ADDRESSCOMMUNICATIONREMARK_2 view provides access to address communication remarks, which are additional notes or comments associated with an address. It is used to retrieve or update these remarks in the address management system."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_ACTUALCOSTINGRUNRESULT
 description: "Actualcostingrunresult"
+semantic_vi: "View Actual Costing Run Result cung cấp truy cập vào kết quả của các lần chạy thực tế tính toán, được sử dụng để xác định chi phí thực tế của vật liệu và hàng hóa. Nó được sử dụng để phân tích và báo cáo về chi phí thực tế của sản xuất và đánh giá tồn kho."
+keywords:
+  - "actual costing"
+  - "costing run"
+  - "material cost"
+  - "inventory valuation"
+  - "production cost"
+  - "actual cost"
+  - "chi phí thực tế"
+  - "đánh giá tồn kho"
+  - "tính toán thực tế"
+  - "sản xuất chi phí"
+  - "costing run result"
+  - "kết quả tính toán thực tế"
+semantic_en: "The Actual Costing Run Result view provides access to the results of actual costing runs, which are used to determine the actual costs of materials and goods. It is used to analyze and report on the actual costs of production and inventory valuation."
 app_component: CO-PC-ACT-2CL
 software_component: SAPSCORE
 release_state: released

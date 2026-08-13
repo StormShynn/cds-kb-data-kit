@@ -1,6 +1,21 @@
 ---
 name: I_ACTIVEADDRESSREPRESENTATION
 description: "Activeaddressrepresentation"
+semantic_vi: "Đại diện cho các đại diện địa chỉ hoạt động, được sử dụng để lưu trữ và quản lý dữ liệu địa chỉ. View này hữu ích khi làm việc với logic kinh doanh liên quan đến địa chỉ."
+keywords:
+  - "address"
+  - "representation"
+  - "active"
+  - "address data"
+  - "business logic"
+  - "sap cds"
+  - "cds view"
+  - "address management"
+  - "đại diện địa chỉ"
+  - "dữ liệu địa chỉ"
+  - "logic kinh doanh"
+  - "sap bc-srv-adr"
+semantic_en: "Represents active address representations, which are used to store and manage address data. This view is useful when working with address-related business logic."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

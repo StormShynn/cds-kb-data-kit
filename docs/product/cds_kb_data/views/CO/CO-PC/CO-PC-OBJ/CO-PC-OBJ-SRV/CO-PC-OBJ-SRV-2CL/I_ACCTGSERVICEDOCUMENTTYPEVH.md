@@ -1,6 +1,21 @@
 ---
 name: I_ACCTGSERVICEDOCUMENTTYPEVH
 description: "ACCTGService DocumentUMENTTYPEVH"
+semantic_vi: "Chứa các loại tài liệu kế toán dịch vụ, được sử dụng để lọc hoặc truy xuất các tài liệu dịch vụ theo loại."
+keywords:
+  - "accounting"
+  - "service document"
+  - "document type"
+  - "service document type"
+  - "dịch vụ"
+  - "tài liệu kế toán"
+  - "loại tài liệu kế toán"
+  - "co-pc"
+  - "co-pc-obj"
+  - "interface-view"
+  - "value-help"
+  - "service"
+semantic_en: "Exposes accounting service document types, used to filter or retrieve service documents by their type."
 app_component: CO-PC-OBJ-SRV-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_ADDRESSNONDELIVERABLEREASONT
 description: "Addressnondeliverablereasont"
+semantic_vi: "View I_ADDRESSNONDELIVERABLEREASONT hiển thị lý do không thể giao địa chỉ và mô tả của chúng, có thể được sử dụng để xử lý thư hoặc gói hàng không thể giao."
+keywords:
+  - "address"
+  - "non-deliverable"
+  - "reason"
+  - "description"
+  - "address non-deliverable reason"
+  - "address non-deliverable reason text"
+  - "address non-deliverable reason description"
+  - "sap cds view"
+  - "bc-srv-adr"
+  - "basis components"
+semantic_en: "The I_ADDRESSNONDELIVERABLEREASONT view exposes address non-deliverable reasons and their descriptions, which can be used to handle undeliverable mail or packages."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

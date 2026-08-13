@@ -4,17 +4,30 @@
 // plus public Propose Issue bot (POST /propose-issue).
 //
 // Endpoints:
-//   POST /ping          body: { events: [{ view, count }, ...] }
-//   GET  /totals?token=...
-//   POST /ping-shapes   body: { events: [{ shapeId, views, selectFieldCount, selectFieldHash, flags, count }, ...] }
+//   POST   /ping          body: { events: [{ view, count }, ...] }
+//   GET    /totals?token=...
+//   DELETE /totals?token=...&view=NAME[,NAME2,...]  and/or  &prefix=PFX
+//                       Surgical cleanup for test/junk entries (e.g. a smoke
+//                       test that accidentally hit prod instead of `wrangler
+//                       dev`) without wiping real counts. At least one of
+//                       view/prefix is required — this never does a full wipe.
+//   POST   /ping-shapes   body: { events: [{ shapeId, views, selectFieldCount, selectFieldHash, flags, count }, ...] }
 //                       CORS open for browser opt-in from GitHub Pages Query Builder
-//   GET  /shape-totals?token=...
+//   GET    /shape-totals?token=...
+//   DELETE /shape-totals?token=...&shapeId=HASH[,HASH2,...]
 //   OPTIONS /ping-shapes | /propose-issue — CORS preflight
-//   POST /propose-issue body: { title, body|markdown, kind?: 'query'|'cds', website?: honeypot }
+//   POST   /propose-issue body: { title, body|markdown, kind?: 'query'|'cds', website?: honeypot }
 //                       Creates a GitHub Issue via GITHUB_ISSUE_TOKEN (never logs full body)
 //
 // Shape events must NEVER include WHERE/HAVING literals, titles, contributors,
 // or raw notes — only structural metadata.
+//
+// Test-pollution guard: real SAP CDS view names never start with `ZZTEST_`,
+// `RATETEST`, or `SMOKETEST` — any /ping event using one of those prefixes is
+// silently dropped before it reaches the Durable Object. When manually
+// smoke-testing this worker, either run `wrangler dev` locally instead of
+// pinging the deployed URL, or (if you must hit prod) name your fake views
+// with the `ZZTEST_` prefix so they never persist and never need cleanup.
 //
 // Deploy: see ../README.md
 
@@ -28,6 +41,11 @@ const MAX_VIEW_NAME_LENGTH = 100;
 const MAX_COUNT_PER_EVENT = 1000;
 const MAX_SHAPE_ID_LENGTH = 64;
 const MAX_VIEWS_PER_SHAPE = 12;
+const MAX_DELETE_KEYS_PER_REQUEST = 100;
+
+// No real SAP CDS view is named with any of these prefixes — a /ping event
+// for one of them is test/smoke-test traffic and is dropped, never counted.
+const TEST_VIEW_PATTERN = /^(ZZTEST_|RATETEST|SMOKETEST)/i;
 
 // Per-IP rate limiting lives INSIDE the Durable Object (see #rateLimited in
 // UsageCounter): the DO is the one global single-instance, so buckets are
@@ -86,11 +104,17 @@ export default {
       if (request.method === 'GET' && url.pathname === '/totals') {
         return await handleTotals(request, env);
       }
+      if (request.method === 'DELETE' && url.pathname === '/totals') {
+        return await handleDeleteTotals(request, env);
+      }
       if (request.method === 'POST' && url.pathname === '/ping-shapes') {
         return await handleShapePing(request, env);
       }
       if (request.method === 'GET' && url.pathname === '/shape-totals') {
         return await handleShapeTotals(request, env);
+      }
+      if (request.method === 'DELETE' && url.pathname === '/shape-totals') {
+        return await handleDeleteShapeTotals(request, env);
       }
       if (request.method === 'POST' && url.pathname === '/propose-issue') {
         return await handleProposeIssue(request, env);
@@ -129,7 +153,7 @@ async function handlePing(request, env) {
     const view = String(ev?.view || '').trim().toUpperCase().slice(0, MAX_VIEW_NAME_LENGTH);
     const rawCount = Number(ev?.count);
     const count = Number.isFinite(rawCount) ? Math.max(1, Math.min(MAX_COUNT_PER_EVENT, Math.floor(rawCount))) : 0;
-    if (view && count) clean.push({ view, count });
+    if (view && count && !TEST_VIEW_PATTERN.test(view)) clean.push({ view, count });
   }
   if (clean.length === 0) {
     return new Response('No valid events', { status: 400 });
@@ -155,6 +179,37 @@ async function handleTotals(request, env) {
   return new Response(resp.body, { status: resp.status, headers: { 'content-type': 'application/json' } });
 }
 
+/**
+ * Surgical cleanup: DELETE /totals?token=...&view=NAME[,NAME2,...]&prefix=PFX
+ * Requires at least one of view/prefix — this route can never wipe everything
+ * (use the global-vN Durable Object bump in usageCounter() for that instead).
+ */
+async function handleDeleteTotals(request, env) {
+  const params = new URL(request.url).searchParams;
+  const token = params.get('token');
+  if (!env.PULL_TOKEN || token !== env.PULL_TOKEN) {
+    return new Response('Unauthorized', { status: 401 });
+  }
+
+  const views = (params.get('view') || '')
+    .split(',')
+    .map((v) => v.trim().toUpperCase().slice(0, MAX_VIEW_NAME_LENGTH))
+    .filter(Boolean)
+    .slice(0, MAX_DELETE_KEYS_PER_REQUEST);
+  const prefix = (params.get('prefix') || '').trim().toUpperCase().slice(0, MAX_VIEW_NAME_LENGTH);
+
+  if (views.length === 0 && !prefix) {
+    return corsJson({ error: 'Specify at least one of ?view=NAME or ?prefix=PFX' }, 400);
+  }
+
+  const resp = await usageCounter(env).fetch(new Request('https://usage-do/totals', {
+    method: 'DELETE',
+    headers: { 'content-type': 'application/json', 'x-client-ip': clientIp(request) },
+    body: JSON.stringify({ views, prefix }),
+  }));
+  return new Response(resp.body, { status: resp.status, headers: { 'content-type': 'application/json' } });
+}
+
 function sanitizeShapeEvent(ev) {
   const shapeId = String(ev?.shapeId || '')
     .trim()
@@ -168,7 +223,7 @@ function sanitizeShapeEvent(ev) {
   const views = Array.isArray(ev?.views)
     ? ev.views
         .map((v) => String(v || '').trim().toUpperCase().slice(0, MAX_VIEW_NAME_LENGTH))
-        .filter(Boolean)
+        .filter((v) => v && !TEST_VIEW_PATTERN.test(v))
         .slice(0, MAX_VIEWS_PER_SHAPE)
     : [];
 
@@ -231,6 +286,36 @@ async function handleShapeTotals(request, env) {
 
   const resp = await usageCounter(env).fetch(new Request('https://usage-do/shape-totals', {
     headers: { 'x-client-ip': clientIp(request) },
+  }));
+  return new Response(resp.body, { status: resp.status, headers: { 'content-type': 'application/json' } });
+}
+
+/**
+ * Surgical cleanup: DELETE /shape-totals?token=...&shapeId=HASH[,HASH2,...]
+ * shapeId is required — this route can never wipe everything (use the
+ * global-vN Durable Object bump in usageCounter() for that instead).
+ */
+async function handleDeleteShapeTotals(request, env) {
+  const params = new URL(request.url).searchParams;
+  const token = params.get('token');
+  if (!env.PULL_TOKEN || token !== env.PULL_TOKEN) {
+    return new Response('Unauthorized', { status: 401 });
+  }
+
+  const shapeIds = (params.get('shapeId') || '')
+    .split(',')
+    .map((s) => s.trim().toLowerCase().replace(/[^a-f0-9]/g, '').slice(0, MAX_SHAPE_ID_LENGTH))
+    .filter(Boolean)
+    .slice(0, MAX_DELETE_KEYS_PER_REQUEST);
+
+  if (shapeIds.length === 0) {
+    return corsJson({ error: 'Specify at least one ?shapeId=HASH' }, 400);
+  }
+
+  const resp = await usageCounter(env).fetch(new Request('https://usage-do/shape-totals', {
+    method: 'DELETE',
+    headers: { 'content-type': 'application/json', 'x-client-ip': clientIp(request) },
+    body: JSON.stringify({ shapeIds }),
   }));
   return new Response(resp.body, { status: resp.status, headers: { 'content-type': 'application/json' } });
 }
@@ -426,11 +511,17 @@ export class UsageCounter {
       if (request.method === 'GET' && url.pathname === '/totals') {
         return await this.#onTotals(request);
       }
+      if (request.method === 'DELETE' && url.pathname === '/totals') {
+        return await this.#onDeleteTotals(request);
+      }
       if (request.method === 'POST' && url.pathname === '/ping-shapes') {
         return await this.#onShapePing(request);
       }
       if (request.method === 'GET' && url.pathname === '/shape-totals') {
         return await this.#onShapeTotals(request);
+      }
+      if (request.method === 'DELETE' && url.pathname === '/shape-totals') {
+        return await this.#onDeleteShapeTotals(request);
       }
       if (request.method === 'POST' && url.pathname === '/propose-rate') {
         return await this.#onProposeRate(request);

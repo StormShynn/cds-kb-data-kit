@@ -1,6 +1,20 @@
 ---
 name: I_ACTUALCOSTRATEDEX
 description: "Actualcostratedex"
+semantic_vi: "View Actualcostratedex hiển thị các tỷ lệ chi phí thực tế cho mục đích kiểm soát, cung cấp dữ liệu cho phân tích và báo cáo. Nó được sử dụng để lấy thông tin tỷ lệ chi phí cho các kỳ kế toán cụ thể và trung tâm chi phí."
+keywords:
+  - "actual cost rate"
+  - "tỷ lệ chi phí thực tế"
+  - "controlling"
+  - "cost center"
+  - "trung tâm chi phí"
+  - "accounting period"
+  - "kỳ kế toán"
+  - "cost rate"
+  - "tỷ lệ chi phí"
+  - "sap controlling"
+  - "kiểm soát sap"
+semantic_en: "The Actualcostratedex view exposes actual cost rates for controlling purposes, providing data for analysis and reporting. It is used to retrieve cost rate information for specific accounting periods and cost centers."
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

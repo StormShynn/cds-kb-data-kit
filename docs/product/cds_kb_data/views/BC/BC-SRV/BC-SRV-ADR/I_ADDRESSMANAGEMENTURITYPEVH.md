@@ -1,6 +1,18 @@
 ---
 name: I_ADDRESSMANAGEMENTURITYPEVH
 description: "Addressmanagementuritypevh"
+semantic_vi: "Cung cấp hỗ trợ giá trị cho loại URI quản lý địa chỉ, được sử dụng để chọn một loại URI quản lý địa chỉ cụ thể trong ứng dụng quản lý địa chỉ."
+keywords:
+  - "address management"
+  - "uri type"
+  - "value help"
+  - "address management application"
+  - "address"
+  - "địa chỉ"
+  - "uri quản lý địa chỉ"
+  - "hỗ trợ giá trị"
+  - "ứng dụng quản lý địa chỉ"
+semantic_en: "Provides a value help for address management URI types, used to select a specific type of address management URI in the address management application."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

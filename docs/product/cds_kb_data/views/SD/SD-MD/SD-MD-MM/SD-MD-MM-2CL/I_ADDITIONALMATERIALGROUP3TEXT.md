@@ -1,6 +1,19 @@
 ---
 name: I_ADDITIONALMATERIALGROUP3TEXT
 description: "ADDITIONALMaterial Group 3TEXT"
+semantic_vi: "View I_ADDITIONALMATERIALGROUP3TEXT cung cấp dữ liệu văn bản nhóm vật liệu bổ sung 3, có thể sử dụng khi hiển thị hoặc xử lý thông tin vật liệu trong mô-đun Bán hàng và Phân phối SAP."
+keywords:
+  - "additional material group"
+  - "material text"
+  - "sales and distribution"
+  - "sap sd"
+  - "material information"
+  - "group 3 text"
+  - "additionalmaterialgroup3"
+  - "additionalmaterialgroup3name"
+  - "language"
+  - "material group"
+semantic_en: "The I_ADDITIONALMATERIALGROUP3TEXT view provides additional material group 3 text data, which can be used when displaying or processing material information in the SAP Sales and Distribution module."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

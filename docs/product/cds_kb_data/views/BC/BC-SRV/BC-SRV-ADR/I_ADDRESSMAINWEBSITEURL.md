@@ -1,6 +1,19 @@
 ---
 name: I_ADDRESSMAINWEBSITEURL
 description: "Addressmainwebsiteurl"
+semantic_vi: "View I_ADDRESSMAINWEBSITEURL hiển thị địa chỉ URL chính thức của địa chỉ, có thể hữu ích khi truy xuất hoặc cập nhật thông tin địa chỉ."
+keywords:
+  - "address"
+  - "website url"
+  - "address main website url"
+  - "sap cds view"
+  - "i_addressmainwebsiteurl"
+  - "bc-srv-adr"
+  - "address id"
+  - "address person id"
+  - "comm medium sequence number"
+  - "uniform resource identifier"
+semantic_en: "The I_ADDRESSMAINWEBSITEURL view exposes the main website URL for an address, which is useful when retrieving or updating address information."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

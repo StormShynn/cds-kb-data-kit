@@ -1,6 +1,19 @@
 ---
 name: I_ACTIVITYALTERNATIVETEXT
 description: "Activityalternativetext"
+semantic_vi: "View I_ACTIVITYALTERNATIVETEXT hiển thị các mô tả khác nhau cho hoạt động sản xuất, có thể được sử dụng để hiển thị tên hoạt động trong các ngôn ngữ khác nhau."
+keywords:
+  - "activity"
+  - "alternative text"
+  - "manufacturing"
+  - "language"
+  - "description"
+  - "cost center"
+  - "activity description"
+  - "pp-vdm"
+  - "pp-vdm-md-2cl"
+  - "lob manufacturing"
+semantic_en: "The I_ACTIVITYALTERNATIVETEXT view exposes alternative text descriptions for manufacturing activities, which can be used to display activity names in different languages."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

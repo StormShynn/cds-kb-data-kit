@@ -1,6 +1,16 @@
 ---
 name: I_ADDRESSREPRESENTATIONCODEVH
 description: "Addressrepresentationcodevh"
+semantic_vi: "Cung cấp danh sách mã biểu diễn địa chỉ được sử dụng trong quản lý địa chỉ, hữu ích khi làm việc với dữ liệu địa chỉ trong hệ thống SAP."
+keywords:
+  - "address representation code"
+  - "mã biểu diễn địa chỉ"
+  - "address management"
+  - "quản lý địa chỉ"
+  - "sap"
+  - "basis components"
+  - "bc-srv-adr"
+semantic_en: "Provides a list of address representation codes used in address management, useful when working with address data in SAP systems."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

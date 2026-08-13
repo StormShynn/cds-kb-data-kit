@@ -1,6 +1,18 @@
 ---
 name: I_ADDITIONALCUSTOMERGROUP3TEXT
 description: "Additionalcustomergroup 3TEXT"
+semantic_vi: "Cung cấp dữ liệu văn bản nhóm khách hàng bổ sung 3 cho khách hàng, cho phép hiển thị tên nhóm khách hàng trong các ngôn ngữ cụ thể."
+keywords:
+  - "customer"
+  - "customer group"
+  - "text view"
+  - "additional customer group 3"
+  - "language"
+  - "sap"
+  - "sd-md-mm-2cl"
+  - "sales & distribution"
+  - "customer data"
+semantic_en: "Provides additional customer group 3 text data for customers, enabling the display of customer group names in specific languages."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_ACTUALCOSTRATETP
 description: "Actualcostratetp"
+semantic_vi: "Dữ liệu loại tỷ lệ chi phí thực tế cho mục đích kiểm soát, được sử dụng trong kế hoạch tài chính và phân tích."
+keywords:
+  - "actual cost rate type"
+  - "dữ liệu loại tỷ lệ chi phí thực tế"
+  - "financial planning"
+  - "phân tích tài chính"
+  - "controlling"
+  - "kiểm soát"
+  - "cost accounting"
+  - "hạch toán chi phí"
+  - "co-om-2cl"
+  - "lob:controlling"
+semantic_en: "Actual cost rate type data for controlling purposes, used in financial planning and analysis."
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

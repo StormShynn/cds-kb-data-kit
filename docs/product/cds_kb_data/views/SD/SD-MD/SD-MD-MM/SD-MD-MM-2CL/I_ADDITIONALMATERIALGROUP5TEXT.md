@@ -1,6 +1,20 @@
 ---
 name: I_ADDITIONALMATERIALGROUP5TEXT
 description: "ADDITIONALMaterial Group 5TEXT"
+semantic_vi: "Chỉ ra tên nhóm vật liệu bổ sung 5 trong các ngôn ngữ khác nhau, được sử dụng để hiển thị thông tin nhóm vật liệu trong quy trình bán hàng và phân phối."
+keywords:
+  - "additional material group"
+  - "material group"
+  - "sales and distribution"
+  - "language"
+  - "material"
+  - "sd-md-mm"
+  - "interface view"
+  - "text view"
+  - "sap cds"
+  - "lob sales & distribution"
+  - "bo material"
+semantic_en: "Exposes additional material group 5 names in different languages, used to display material group information in sales and distribution processes."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

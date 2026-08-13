@@ -1,6 +1,21 @@
 ---
 name: I_ADDITIONALCUSTOMERGROUP4
 description: "Additionalcustomergroup 4"
+semantic_vi: "Chứa dữ liệu nhóm khách hàng bổ sung 4 cho mục đích bán hàng và phân phối, thường được sử dụng khi quản lý mối quan hệ khách hàng và phân loại khách hàng cho nhu cầu kinh doanh cụ thể."
+keywords:
+  - "customer"
+  - "group"
+  - "sales"
+  - "distribution"
+  - "additional"
+  - "customer group"
+  - "sales and distribution"
+  - "customer relationship"
+  - "categorization"
+  - "sap"
+  - "sd"
+  - "md"
+semantic_en: "Exposes additional customer group 4 data for sales and distribution purposes, typically used when managing customer relationships and categorizing customers for specific business needs."
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

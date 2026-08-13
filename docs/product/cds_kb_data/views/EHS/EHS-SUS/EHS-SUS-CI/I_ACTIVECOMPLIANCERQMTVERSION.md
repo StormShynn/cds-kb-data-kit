@@ -1,6 +1,21 @@
 ---
 name: I_ACTIVECOMPLIANCERQMTVERSION
 description: "Activecompliancerqmtversion"
+semantic_vi: "View Activecompliancerqmtversion hiển thị các phiên bản yêu cầu tuân thủ và dữ liệu liên quan, hữu ích cho việc theo dõi các thay đổi của yêu cầu tuân thủ theo thời gian."
+keywords:
+  - "compliance requirement"
+  - "yêu cầu tuân thủ"
+  - "version"
+  - "phiên bản"
+  - "metadata"
+  - "thông tin liên quan"
+  - "activecompliancerqmtversion"
+  - "ehs"
+  - "ehs-sus"
+  - "ehs-sus-ci"
+  - "interface-view"
+  - "component:ehs-sus-ci"
+semantic_en: "The Activecompliancerqmtversion view exposes compliance requirement versions and their associated metadata, useful for tracking changes to compliance requirements over time."
 app_component: EHS-SUS-CI
 software_component: SAPSCORE
 release_state: released

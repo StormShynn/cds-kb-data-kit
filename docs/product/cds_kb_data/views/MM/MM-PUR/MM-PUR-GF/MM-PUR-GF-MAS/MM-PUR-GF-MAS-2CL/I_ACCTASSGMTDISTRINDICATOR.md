@@ -1,6 +1,20 @@
 ---
 name: I_ACCTASSGMTDISTRINDICATOR
 description: "Acctassgmtdistrindicator"
+semantic_vi: "View I_ACCTASSGMTDISTRINDICATOR hiển thị các chỉ số phân phối gán tài khoản cho nhiều gán tài khoản, thường được sử dụng trong quy trình mua sắm và cung cấp."
+keywords:
+  - "account assignment"
+  - "distribution indicator"
+  - "multiple account assignments"
+  - "sourcing"
+  - "procurement"
+  - "mm-pur-gf-mas-2cl"
+  - "ekko"
+  - "purchase order"
+  - "đơn mua hàng"
+  - "gán tài khoản"
+  - "phân phối chỉ số"
+semantic_en: "The Acctassgmtdistrindicator view exposes account assignment distribution indicators for multiple account assignments, typically used in sourcing and procurement processes."
 app_component: MM-PUR-GF-MAS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_ACTUALCOSTINGACTIVITYRESULT
 description: "Actualcostingactivityresult"
+semantic_vi: "View Actual Costing Activity Result cung cấp dữ liệu tính toán thực tế cho các quy trình sản xuất, vật liệu và đơn đặt hàng bán hàng. Nó được sử dụng để lấy thông tin chi tiết về chi phí thực tế đã bị mắc phải trong quá trình sản xuất."
+keywords:
+  - "actual costing"
+  - "production process"
+  - "material"
+  - "sales order"
+  - "costing data"
+  - "tính toán thực tế"
+  - "quy trình sản xuất"
+  - "vật liệu"
+  - "đơn đặt hàng bán hàng"
+  - "sap controlling"
+  - "co-pc-act-2cl"
+semantic_en: "The Actual Costing Activity Result view provides actual costing data for production processes, materials, and sales orders. It is used to retrieve detailed information about actual costs incurred during production."
 app_component: CO-PC-ACT-2CL
 software_component: SAPSCORE
 release_state: released

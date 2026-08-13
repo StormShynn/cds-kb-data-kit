@@ -1,6 +1,20 @@
 ---
 name: I_ACCTGSERVICEDOCUMENTTYPE
 description: "ACCTGService DocumentUMENTTYPE"
+semantic_vi: "View I_ACCTGSERVICEDOCUMENTTYPE cung cấp thông tin về loại tài liệu dịch vụ được sử dụng trong quản lý, giúp quản lý và theo dõi tài liệu dịch vụ trong hệ thống SAP."
+keywords:
+  - "service document type"
+  - "tài liệu dịch vụ"
+  - "loại tài liệu dịch vụ"
+  - "controlling"
+  - "quản lý tài liệu dịch vụ"
+  - "sap"
+  - "co-pc-obj-srv-2cl"
+  - "interface view"
+  - "service document"
+  - "component co-pc-obj-srv-2cl"
+  - "lob controlling"
+semantic_en: "The ACCTGService DocumentUMENTTYPE view provides information about service document types used in controlling, which is essential for managing and tracking service documents in SAP systems."
 app_component: CO-PC-OBJ-SRV-2CL
 software_component: SAPSCORE
 release_state: released

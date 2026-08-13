@@ -1,6 +1,21 @@
 ---
 name: I_ACTIVITYDESCORIGINTYPE
 description: "Activitydescorigintype"
+semantic_vi: "Activitydescorigintype là một view hiển thị loại nguồn gốc của mô tả hoạt động trong lĩnh vực sản xuất, có thể được sử dụng để lọc hoặc phân tích mô tả hoạt động dựa trên nguồn gốc."
+keywords:
+  - "activity description"
+  - "origin type"
+  - "manufacturing domain"
+  - "activitydescorigintype"
+  - "sap"
+  - "pp-vdm-md-2cl"
+  - "pp-vdm"
+  - "pp"
+  - "manufacturing"
+  - "sản xuất"
+  - "mô tả hoạt động"
+  - "loại nguồn gốc"
+semantic_en: "Activitydescorigintype is a view that exposes the origin type of activity descriptions in the manufacturing domain, which can be used to filter or analyze activity descriptions based on their origin."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

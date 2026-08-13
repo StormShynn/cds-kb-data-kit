@@ -1,6 +1,18 @@
 ---
 name: I_ADDRESSMANAGEMENTURITYPE
 description: "Addressmanagementuritype"
+semantic_vi: "Chỉ ra các loại URI quản lý địa chỉ, được sử dụng để xác định và phân loại địa chỉ trong hệ thống. View này hữu ích cho các nhà phát triển cần làm việc với dữ liệu địa chỉ trong ứng dụng SAP."
+keywords:
+  - "address management"
+  - "uri type"
+  - "address data"
+  - "sap application"
+  - "bc-srv-adr"
+  - "address management uri type"
+  - "domain value"
+  - "address management uri"
+  - "sap cds view"
+semantic_en: "Exposes address management URI types, which are used to identify and categorize addresses in a system. This view is useful for developers who need to work with address data in SAP applications."
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

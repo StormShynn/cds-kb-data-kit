@@ -1,6 +1,21 @@
 ---
 name: I_ACTPLNCOSTCENTERRPTGCUBE
 description: "ACTPLNCost CenterRPTGCUBE"
+semantic_vi: "View I_ACTPLNCOSTCENTERRPTGCUBE hiển thị dữ liệu trung tâm chi phí thực tế và kế hoạch cho báo cáo và phân tích, thường được sử dụng trong quy trình lập kế hoạch tài chính và kiểm soát."
+keywords:
+  - "cost center"
+  - "trung tâm chi phí"
+  - "financial planning"
+  - "lập kế hoạch tài chính"
+  - "controlling"
+  - "kiểm soát"
+  - "actual plan"
+  - "dữ liệu thực tế"
+  - "dữ liệu kế hoạch"
+  - "reporting"
+  - "báo cáo"
+  - "analysis"
+semantic_en: "The ACTPLNCost CenterRPTGCUBE view exposes actual and planned cost center data for reporting and analysis, typically used in financial planning and controlling processes."
 app_component: CO-OM-CCA-2CL
 software_component: SAPSCORE
 release_state: released
