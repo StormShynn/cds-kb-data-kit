@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CashFlowCalculationCategory` | ✓ | |  | `cast( CashFlowCalcCategory.sberfima as tfm_calculation_category preserving type )` |  |  |
+| `CashFlowCalculationCategory` | ✓ | |  | `cast( CashFlowCalcCategory.sberfima as tfm_calculation_category preserving type )` | `CHAR(4)` | Calculation Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

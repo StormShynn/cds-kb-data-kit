@@ -17568,5 +17568,240 @@
     "attemptedAt": "2026-08-13T09:13:19.543Z",
     "found": false,
     "reason": "Hub catalog fetch failed for \"VDMDEMOCDS_VIEWMIGRATION\" (404)"
+  },
+  "VDMDEMODM_D_SALESORDERCREATED": {
+    "attemptedAt": "2026-08-14T09:07:57.341Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VDMDEMODM_D_SALESORDERCREATED\" (404)"
+  },
+  "VDMDEMODM_I_SALESORDERTP": {
+    "attemptedAt": "2026-08-14T09:07:57.766Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VDMDEMODM_I_SALESORDERTP\" (404)"
+  },
+  "VTST_INSTCECONFIGNWITHCHARCVAL": {
+    "attemptedAt": "2026-08-14T09:07:58.169Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"VTST_INSTCECONFIGNWITHCHARCVAL\" (404)"
+  },
+  "I_CASHFLOWCALCCATEGORYTEXT": {
+    "attemptedAt": "2026-08-14T09:07:59.008Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASHFLOWCALCCATEGORYVH": {
+    "attemptedAt": "2026-08-14T09:07:59.507Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_FLDLOGSPROCESSSHIPMENTITEMTP": {
+    "attemptedAt": "2026-08-14T09:07:59.694Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSPROCESSSHIPMENTITEMTP\" (404)"
+  },
+  "I_FLDLOGSRCVDCONTAINERITEMTP": {
+    "attemptedAt": "2026-08-14T09:08:00.113Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSRCVDCONTAINERITEMTP\" (404)"
+  },
+  "I_FLDLOGSRCVDCONTAINERLISTTP": {
+    "attemptedAt": "2026-08-14T09:08:00.538Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSRCVDCONTAINERLISTTP\" (404)"
+  },
+  "I_FLDLOGSRCVDHNDLGUNITITEMTP": {
+    "attemptedAt": "2026-08-14T09:08:00.950Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSRCVDHNDLGUNITITEMTP\" (404)"
+  },
+  "I_FLDLOGSRCVDPACKAGINGITEMTP": {
+    "attemptedAt": "2026-08-14T09:08:01.355Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSRCVDPACKAGINGITEMTP\" (404)"
+  },
+  "I_FLDLOGSRCVDPACKAGINGTP": {
+    "attemptedAt": "2026-08-14T09:08:01.757Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSRCVDPACKAGINGTP\" (404)"
+  },
+  "I_FLDLOGSRCVDPACKGGINCTNTP": {
+    "attemptedAt": "2026-08-14T09:08:02.152Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSRCVDPACKGGINCTNTP\" (404)"
+  },
+  "I_FLDLOGSRETURNSPRODUCTTP": {
+    "attemptedAt": "2026-08-14T09:08:02.632Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSRETURNSPRODUCTTP\" (404)"
+  },
+  "I_FLDLOGSDELIVCONTAINERUNITTP": {
+    "attemptedAt": "2026-08-14T09:08:03.048Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSDELIVCONTAINERUNITTP\" (404)"
+  },
+  "I_FLDLOGSDELIVERYITEMTP": {
+    "attemptedAt": "2026-08-14T09:08:03.442Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSDELIVERYITEMTP\" (404)"
+  },
+  "I_FLDLOGSDELIVITEMCTNTP": {
+    "attemptedAt": "2026-08-14T09:08:03.837Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSDELIVITEMCTNTP\" (404)"
+  },
+  "I_FLDLOGSDELIVSTGEASSGMTTP": {
+    "attemptedAt": "2026-08-14T09:08:04.244Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSDELIVSTGEASSGMTTP\" (404)"
+  },
+  "I_FLDLOGSITMSTAGGEDTOCTNTP": {
+    "attemptedAt": "2026-08-14T09:08:04.746Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSITMSTAGGEDTOCTNTP\" (404)"
+  },
+  "I_FLDLOGSITMSTAGGEDTOPACKGGTP": {
+    "attemptedAt": "2026-08-14T09:08:05.142Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSITMSTAGGEDTOPACKGGTP\" (404)"
+  },
+  "I_FLDLOGSSHIPMENTCONTAINERTP": {
+    "attemptedAt": "2026-08-14T09:08:05.565Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHIPMENTCONTAINERTP\" (404)"
+  },
+  "I_FLDLOGSSHIPMENTPACKAGINGTP": {
+    "attemptedAt": "2026-08-14T09:08:06.020Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHIPMENTPACKAGINGTP\" (404)"
+  },
+  "I_FLDLOGSSHIPMENTVOYAGESTAGETP": {
+    "attemptedAt": "2026-08-14T09:08:06.420Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHIPMENTVOYAGESTAGETP\" (404)"
+  },
+  "I_FLDLOGSSHIPMENTVOYAGETP": {
+    "attemptedAt": "2026-08-14T09:08:06.830Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHIPMENTVOYAGETP\" (404)"
+  },
+  "I_FLDLOGSSHPTCTNCERTIFICATETP": {
+    "attemptedAt": "2026-08-14T09:08:07.239Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHPTCTNCERTIFICATETP\" (404)"
+  },
+  "I_FLDLOGSSHPTPACKGGASSGMTCTNTP": {
+    "attemptedAt": "2026-08-14T09:08:07.643Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHPTPACKGGASSGMTCTNTP\" (404)"
+  },
+  "I_FLDLOGSSHPTPACKGGITEMTP": {
+    "attemptedAt": "2026-08-14T09:08:08.038Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHPTPACKGGITEMTP\" (404)"
+  },
+  "I_FLDLOGSSHPTPACKGGUNITTP": {
+    "attemptedAt": "2026-08-14T09:08:08.478Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHPTPACKGGUNITTP\" (404)"
+  },
+  "I_FLDLOGSSHPTSTGEASSGMTCTNTP": {
+    "attemptedAt": "2026-08-14T09:08:08.871Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHPTSTGEASSGMTCTNTP\" (404)"
+  },
+  "I_FLDLOGSSHPTSTGEASSGPACKGGTP": {
+    "attemptedAt": "2026-08-14T09:08:09.290Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHPTSTGEASSGPACKGGTP\" (404)"
+  },
+  "I_FLDLOGSSHPTVOYCTNASSGMTTP": {
+    "attemptedAt": "2026-08-14T09:08:09.678Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHPTVOYCTNASSGMTTP\" (404)"
+  },
+  "I_FLDLOGSSHPTVOYITMASSGMTTP": {
+    "attemptedAt": "2026-08-14T09:08:10.092Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHPTVOYITMASSGMTTP\" (404)"
+  },
+  "I_FLDLOGSSHPTVOYOUTPUTREQUEST": {
+    "attemptedAt": "2026-08-14T09:08:10.495Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHPTVOYOUTPUTREQUEST\" (404)"
+  },
+  "I_FLDLOGSSHPTVOYPACKGGASSGMTTP": {
+    "attemptedAt": "2026-08-14T09:08:10.891Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSHPTVOYPACKGGASSGMTTP\" (404)"
+  },
+  "I_FLDLOGSVOYHNDLGUNITASSGMTTP": {
+    "attemptedAt": "2026-08-14T09:08:11.290Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSVOYHNDLGUNITASSGMTTP\" (404)"
+  },
+  "I_FLDLOGSSUPPLIERITEM": {
+    "attemptedAt": "2026-08-14T09:08:12.073Z",
+    "found": true,
+    "matched": 43
+  },
+  "I_FLDLOGSSUPPLIERITEMTP": {
+    "attemptedAt": "2026-08-14T09:08:12.258Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSSUPPLIERITEMTP\" (404)"
+  },
+  "I_FLDLOGSTRANSFSUPPLIERITEMTP": {
+    "attemptedAt": "2026-08-14T09:08:12.664Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_FLDLOGSTRANSFSUPPLIERITEMTP\" (404)"
+  },
+  "HOME_PURCHASING_QUERY": {
+    "attemptedAt": "2026-08-14T09:08:13.096Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"HOME_PURCHASING_QUERY\" (404)"
+  },
+  "HOME_TEST_V3_NO_SERVICE": {
+    "attemptedAt": "2026-08-14T09:08:13.498Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"HOME_TEST_V3_NO_SERVICE\" (404)"
+  },
+  "HOME_TEST_V3_QUERY": {
+    "attemptedAt": "2026-08-14T09:08:13.898Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"HOME_TEST_V3_QUERY\" (404)"
+  },
+  "SSB_CDS2_TEST_VIEW": {
+    "attemptedAt": "2026-08-14T09:08:14.363Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SSB_CDS2_TEST_VIEW\" (404)"
+  },
+  "TEST_CDSV3_T": {
+    "attemptedAt": "2026-08-14T09:08:14.768Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"TEST_CDSV3_T\" (404)"
+  },
+  "TEST_CDSV3_TEST": {
+    "attemptedAt": "2026-08-14T09:08:15.208Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"TEST_CDSV3_TEST\" (404)"
+  },
+  "TEST_CDSV3_TEST1": {
+    "attemptedAt": "2026-08-14T09:08:15.605Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"TEST_CDSV3_TEST1\" (404)"
+  },
+  "TEST_CDSV3_TEST2": {
+    "attemptedAt": "2026-08-14T09:08:16.023Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"TEST_CDSV3_TEST2\" (404)"
+  },
+  "I_BUEVLGBUSEVTFULLPYLDJSON": {
+    "attemptedAt": "2026-08-14T09:08:16.833Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_BUSEVTLOGBUSEVENTPAYLOAD": {
+    "attemptedAt": "2026-08-14T09:08:17.357Z",
+    "found": true,
+    "matched": 16
   }
 }
