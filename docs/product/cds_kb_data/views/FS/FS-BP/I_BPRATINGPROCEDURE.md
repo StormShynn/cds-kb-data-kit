@@ -1,6 +1,17 @@
 ---
 name: I_BPRATINGPROCEDURE
 description: "Bpratingprocedure"
+semantic_vi: "View Bpratingprocedure hiển thị các thủ tục đánh giá đối tác kinh doanh, bao gồm các yêu cầu và mặc định, có liên quan đến quá trình đánh giá đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "rating procedure"
+  - "bpratingprocedure"
+  - "fs-bp"
+  - "sap cds view"
+  - "đối tác kinh doanh"
+  - "thủ tục đánh giá"
+  - "quá trình đánh giá"
+semantic_en: "The Bpratingprocedure view exposes business partner rating procedures, including requirements and defaults, which are relevant for business partner rating processes."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

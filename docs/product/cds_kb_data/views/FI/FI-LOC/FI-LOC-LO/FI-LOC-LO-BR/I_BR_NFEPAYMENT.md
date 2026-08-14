@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFEPAYMENT
 description: "BR Nfepayment"
+semantic_vi: "CDS view I_BR_NFEPAYMENT hiển thị dữ liệu thanh toán NF-e Brazil, có thể sử dụng để lấy thông tin thanh toán cho một hóa đơn cụ thể."
+keywords:
+  - "nf-e"
+  - "payment"
+  - "invoice"
+  - "brazil"
+  - "finance"
+  - "sap"
+  - "cds"
+  - "view"
+  - "brasil"
+  - "thanh toán"
+  - "hóa đơn"
+semantic_en: "The I_BR_NFEPAYMENT CDS view exposes Brazilian NF-e payment data, which can be used to retrieve payment information for a specific invoice."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

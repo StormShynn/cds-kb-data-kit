@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFIMPORTDOCUMENT
 description: "BR Nfimportdocument"
+semantic_vi: "View BR Nfimportdocument hiển thị thông tin về các tài liệu nhập khẩu ở Brazil, bao gồm thông tin về hải quan và khai báo. Nó được sử dụng để lấy dữ liệu cho các mục đích tài chính và logistics."
+keywords:
+  - "imported document"
+  - "tài liệu nhập khẩu"
+  - "brazil"
+  - "brazilian customs"
+  - "hải quan brazil"
+  - "financial data"
+  - "dữ liệu tài chính"
+  - "logistics"
+  - "loại hình vận tải"
+  - "ekko"
+  - "fi-loc-lo-br"
+semantic_en: "The BR Nfimportdocument view exposes information about imported documents in Brazil, such as customs clearance and declaration details. It is used to retrieve data for financial and logistics purposes."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

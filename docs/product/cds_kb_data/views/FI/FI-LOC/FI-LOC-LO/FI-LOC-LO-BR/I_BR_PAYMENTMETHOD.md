@@ -1,6 +1,19 @@
 ---
 name: I_BR_PAYMENTMETHOD
 description: "BR Paymentmethod"
+semantic_vi: "CDS view I_BR_PAYMENTMETHOD hiển thị dữ liệu phương thức thanh toán được sử dụng trong địa phương hóa Brazil cho các giao dịch tài chính. Nó có thể được sử dụng để lấy và hiển thị thông tin phương thức thanh toán."
+keywords:
+  - "payment method"
+  - "phương thức thanh toán"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "finance"
+  - "sap cds view"
+  - "cds view"
+  - "payment"
+  - "thanh toán"
+  - "br paymentmethod"
+semantic_en: "The I_BR_PAYMENTMETHOD CDS view exposes payment method data used in Brazilian localization for financial transactions. It can be used to retrieve and display payment method information."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

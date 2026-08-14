@@ -1,6 +1,20 @@
 ---
 name: I_BPLOANTOMANAGERTEXT
 description: "Bploantomanagertext"
+semantic_vi: "Chứa dữ liệu văn bản cho khoản vay đối tác kinh doanh đến người quản lý, hữu ích khi hiển thị mô tả khoản vay hoặc bản dịch."
+keywords:
+  - "business partner"
+  - "loan to manager"
+  - "text data"
+  - "description"
+  - "translation"
+  - "fs-bp"
+  - "interface view"
+  - "text view"
+  - "sap cds"
+  - "abap"
+  - "cloud"
+semantic_en: "Exposes business partner loan to manager text data, useful when displaying loan descriptions or translations."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

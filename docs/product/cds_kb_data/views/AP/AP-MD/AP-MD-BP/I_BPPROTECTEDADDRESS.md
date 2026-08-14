@@ -1,6 +1,18 @@
 ---
 name: I_BPPROTECTEDADDRESS
 description: "Bpprotectedaddress"
+semantic_vi: "Chứa địa chỉ đối tác kinh doanh được bảo vệ, được sử dụng để lưu trữ thông tin nhạy cảm về địa chỉ đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "protected address"
+  - "address"
+  - "sensitive information"
+  - "business partner address"
+  - "đối tác kinh doanh"
+  - "địa chỉ bảo vệ"
+  - "địa chỉ"
+  - "thông tin nhạy cảm"
+semantic_en: "Exposes protected business partner addresses, which are used to store sensitive information about a business partner's address."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

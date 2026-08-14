@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFMODELTEXT
 description: "BR Nfmodeltext"
+semantic_vi: "View BR NFModelText hiển thị dữ liệu kinh doanh liên quan đến mô hình mô tả trong một ngôn ngữ cụ thể, thường được sử dụng khi truy cập hoặc hiển thị thông tin mô hình trong bối cảnh tài chính."
+keywords:
+  - "br nfmodeltext"
+  - "model description"
+  - "language"
+  - "financial context"
+  - "fi-loc-lo-br"
+  - "sap cds view"
+  - "interface view"
+  - "text view"
+  - "finance"
+  - "tài chính"
+semantic_en: "The BR NFModelText view exposes business data related to model descriptions in a specific language, typically used when accessing or displaying model information in a financial context."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

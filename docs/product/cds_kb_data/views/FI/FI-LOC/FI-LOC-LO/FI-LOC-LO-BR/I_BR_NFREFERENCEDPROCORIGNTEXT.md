@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFREFERENCEDPROCORIGNTEXT
 description: "BR Nfreferencedprocorigntext"
+semantic_vi: "View BR Nfreferencedprocorigntext hiển thị dữ liệu kinh doanh liên quan đến nguồn gốc quy trình tham chiếu trong một ngôn ngữ cụ thể, cung cấp mô tả về nguồn gốc quy trình. Nó được sử dụng khi truy cập dữ liệu văn bản cho quy trình tham chiếu kinh doanh trong tài chính."
+keywords:
+  - "finance"
+  - "business reference process"
+  - "nguồn gốc quy trình tham chiếu"
+  - "dữ liệu văn bản"
+  - "tài chính"
+  - "tham chiếu kinh doanh"
+  - "quy trình tham chiếu"
+  - "finance text"
+  - "ngôn ngữ"
+  - "description"
+  - "finance data"
+semantic_en: "The BR Nfreferencedprocorigntext view exposes business data related to referenced process origins in a specific language, providing a description of the process origin. It is used when accessing text data for business reference processes in finance."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

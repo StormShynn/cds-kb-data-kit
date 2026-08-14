@@ -1,6 +1,18 @@
 ---
 name: I_BPDATACONTROLLER
 description: "Bpdatacontroller"
+semantic_vi: "View I_BPDATACONTROLLER hiển thị thông tin quản lý dữ liệu đối tác kinh doanh, được sử dụng để quản lý và theo dõi các controller dữ liệu cho đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "data controller"
+  - "bpd"
+  - "ap-md-bp"
+  - "sap"
+  - "lob other"
+  - "data management"
+  - "đối tác kinh doanh"
+  - "quản lý dữ liệu"
+semantic_en: "The BPDATACONTROLLER view exposes business partner data controller information, which is used to manage and track data controllers for business partners."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

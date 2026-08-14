@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFISSUERTEXT
 description: "BR Nfissuertext"
+semantic_vi: "View BR Nfissuertext cung cấp dữ liệu văn bản về người phát hành và mô tả người phát hành cho giao dịch tài chính BRL (Brazilian Real), được sử dụng khi hiển thị hoặc xử lý thông tin tài chính BRL."
+keywords:
+  - "brasil"
+  - "brazilian real"
+  - "brl"
+  - "financial transactions"
+  - "issued-by"
+  - "issuer description"
+  - "text data"
+  - "fi-loc-lo-br"
+  - "sap fi-loc-lo-br"
+  - "nfi"
+  - "nfi-issuer-text"
+semantic_en: "The BR Nfissuertext view provides issued-by and issuer description text data for Brazilian Real (BRL) financial transactions, used when displaying or processing BRL financial information."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BPLEGALPROCEEDINGSTSTEXT
 description: "Bplegalproceedingststext"
+semantic_vi: "View Bplegalproceedingststext cung cấp dữ liệu văn bản trạng thái vụ án pháp lý cho việc sử dụng kinh doanh trong thành phần FS-BP. Nó được sử dụng để truy cập và hiển thị mô tả trạng thái vụ án pháp lý."
+keywords:
+  - "legal proceeding"
+  - "trạng thái vụ án pháp lý"
+  - "fs-bp"
+  - "component"
+  - "status text"
+  - "mô tả trạng thái"
+  - "business use"
+  - "sử dụng kinh doanh"
+  - "cds view"
+  - "view"
+semantic_en: "The Bplegalproceedingststext view provides legal proceeding status text data for business use in the FS-BP component. It is used to access and display legal proceeding status descriptions."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

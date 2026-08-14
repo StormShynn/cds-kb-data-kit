@@ -1,6 +1,19 @@
 ---
 name: I_BPDEBTORGROUP
 description: "Bpdebtorgroup"
+semantic_vi: "View Bpdebtorgroup hiển thị thông tin nhóm nợ cho đối tác kinh doanh, có thể được sử dụng để quản lý và phân tích mối quan hệ đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "debtor group"
+  - "nhóm nợ"
+  - "fs-bp"
+  - "interface-view"
+  - "component:fs-bp"
+  - "lob:other"
+  - "sap"
+  - "cds view"
+semantic_en: "The Bpdebtorgroup view exposes debtor group information for business partners, which can be used to manage and analyze business partner relationships."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

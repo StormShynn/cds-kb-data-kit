@@ -1,6 +1,21 @@
 ---
 name: I_BR_ICMSTAXSITUATIONTEXT
 description: "BR Icmstaxsituationtext"
+semantic_vi: "View I_BR_ICMSTAXSITUATIONTEXT cung cấp mô tả tình huống thuế cho các giao dịch kinh doanh trong một ngôn ngữ cụ thể. Nó được sử dụng để lấy nhãn văn bản cho tình huống thuế trong các ứng dụng tài chính."
+keywords:
+  - "tax situation"
+  - "tình huống thuế"
+  - "business transaction"
+  - "giao dịch kinh doanh"
+  - "financial application"
+  - "ứng dụng tài chính"
+  - "language"
+  - "ngôn ngữ"
+  - "description"
+  - "mô tả"
+  - "fi"
+  - "fi-loc"
+semantic_en: "The I_BR_ICMSTAXSITUATIONTEXT view provides tax situation descriptions for business transactions in a specific language. It is used to retrieve text labels for tax situations in financial applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

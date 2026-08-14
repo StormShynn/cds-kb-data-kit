@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFTRANSPORTEDVOLUME
 description: "BR Nftransportedvolume"
+semantic_vi: "View I_BR_NFTRANSPORTEDVOLUME hiển thị dữ liệu thể tích vận chuyển cho hóa đơn NF Brazil, có thể được sử dụng để phân tích và báo cáo về số lượng và trọng lượng hàng hóa vận chuyển."
+keywords:
+  - "transported volume"
+  - "dữ liệu thể tích vận chuyển"
+  - "brazilian nf invoice"
+  - "hóa đơn nf brazil"
+  - "sap fi"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "finance logistics"
+  - "finance inventory"
+  - "finance transportation"
+semantic_en: "The I_BR_NFTRANSPORTEDVOLUME view exposes transported volume data for Brazilian NF invoices, which can be used to analyze and report on the quantities and weights of transported goods."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

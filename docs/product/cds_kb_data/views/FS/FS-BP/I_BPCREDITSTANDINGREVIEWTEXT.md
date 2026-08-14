@@ -1,6 +1,17 @@
 ---
 name: I_BPCREDITSTANDINGREVIEWTEXT
 description: "Bpcreditstandingreviewtext"
+semantic_vi: "View này cung cấp dữ liệu văn bản liên quan đến đánh giá tình trạng tín dụng đối tác kinh doanh, bao gồm mô tả bằng các ngôn ngữ khác nhau. Nó được sử dụng để truy cập và hiển thị văn bản đánh giá tình trạng tín dụng đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "credit standing review"
+  - "text data"
+  - "tình trạng tín dụng đối tác kinh doanh"
+  - "đánh giá tình trạng tín dụng"
+  - "dữ liệu văn bản"
+  - "sap fs-bp"
+  - "lob other"
+semantic_en: "This view provides text data related to business partner credit standing reviews, including descriptions in different languages. It is used to access and display credit standing review text for business partners."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

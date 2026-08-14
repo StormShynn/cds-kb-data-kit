@@ -1,6 +1,19 @@
 ---
 name: I_BR_CTESERVICETYPE
 description: "BR Cteservicetype"
+semantic_vi: "View BR Cteservicetype hiển thị dữ liệu kinh doanh liên quan đến các loại dịch vụ được sử dụng trong thành phần FI-LOC-LO-BR, cung cấp thông tin có thể được sử dụng để xác định và quản lý các loại dịch vụ."
+keywords:
+  - "service type"
+  - "loại dịch vụ"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "dịch vụ"
+  - "loại"
+  - "finance component"
+  - "thành phần tài chính"
+  - "service management"
+  - "quản lý dịch vụ"
+semantic_en: "The BR Cteservicetype view exposes business data related to service types used in the FI-LOC-LO-BR component, providing information that can be used to identify and manage service types."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

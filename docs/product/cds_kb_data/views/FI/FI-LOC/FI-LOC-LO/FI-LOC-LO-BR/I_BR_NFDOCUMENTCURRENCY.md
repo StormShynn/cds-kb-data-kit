@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFDOCUMENTCURRENCY
 description: "BR Nfdocumentcurrency"
+semantic_vi: "Chứa thông tin về loại tiền tệ của từng tài liệu ghi chú fiscals Brazil, được sử dụng khi truy cập hoặc xử lý dữ liệu tài chính liên quan đến các tài liệu này."
+keywords:
+  - "document currency"
+  - "brazilian notes fiscal"
+  - "fi document"
+  - "fi-loc-lo-br"
+  - "fi-loc"
+  - "fi"
+  - "fi-loc-lo"
+  - "currency"
+  - "document"
+  - "sap fi"
+  - "sap fi-loc-lo-br"
+semantic_en: "Exposes document currencies for Brazilian notes fiscal, used when accessing or processing financial data related to these documents."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

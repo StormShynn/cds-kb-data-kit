@@ -1,6 +1,21 @@
 ---
 name: I_BPTXCMPLNCAGREEMENTSTATUS
 description: "Bptxcmplncagreementstatus"
+semantic_vi: "Chứa trạng thái của các thỏa thuận tuân thủ thuế, được sử dụng để theo dõi tiến trình của các thỏa thuận trong Financial Services - Banking Platform."
+keywords:
+  - "tax compliance agreement"
+  - "thỏa thuận tuân thủ thuế"
+  - "financial services"
+  - "dịch vụ tài chính"
+  - "banking platform"
+  - "mặt bằng ngân hàng"
+  - "status"
+  - "trạng thái"
+  - "agreement"
+  - "thỏa thuận"
+  - "compliance"
+  - "tuân thủ"
+semantic_en: "Exposes the status of tax compliance agreements, used to track the progress of agreements in the Financial Services - Banking Platform."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

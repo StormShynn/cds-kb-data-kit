@@ -1,6 +1,21 @@
 ---
 name: I_BR_ICMSBASEDETNTEXT
 description: "BR Icmsbasedetntext"
+semantic_vi: "View I_BR_ICMSBASEDETNTEXT hiển thị dữ liệu văn bản chi tiết ICMS cơ bản Brazil, có liên quan khi làm việc với thông tin thuế trong thành phần FI-LOC-LO-BR."
+keywords:
+  - "icms"
+  - "tax"
+  - "brasil"
+  - "fi-loc-lo-br"
+  - "component"
+  - "finance"
+  - "language"
+  - "description"
+  - "detail"
+  - "text"
+  - "base"
+  - "detn"
+semantic_en: "The I_BR_ICMSBASEDETNTEXT view exposes Brazilian ICMS base detail text data, which is relevant when working with tax-related information in the FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

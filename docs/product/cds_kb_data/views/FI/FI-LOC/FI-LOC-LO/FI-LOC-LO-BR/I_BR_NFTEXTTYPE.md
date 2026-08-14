@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFTEXTTYPE
 description: "BR Nftexttype"
+semantic_vi: "View I_BR_NFTEXTTYPE hiển thị các loại văn bản kinh doanh cho Brazil, có thể được sử dụng khi làm việc với các giao dịch tài chính và tài liệu trong thành phần FI-LOC-LO-BR."
+keywords:
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "fi-loc-lo-br"
+  - "br_nf_text_type"
+  - "text"
+  - "finance"
+  - "financial"
+  - "transaction"
+  - "document"
+  - "sap"
+  - "cds"
+semantic_en: "The I_BR_NFTEXTTYPE view exposes business text types for Brazil, which can be used when working with financial transactions and documents in the FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

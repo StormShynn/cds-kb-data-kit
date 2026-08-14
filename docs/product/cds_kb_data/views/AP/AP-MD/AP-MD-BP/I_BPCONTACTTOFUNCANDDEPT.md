@@ -1,6 +1,21 @@
 ---
 name: I_BPCONTACTTOFUNCANDDEPT
 description: "Bpcontacttofuncanddept"
+semantic_vi: "View Bpcontacttofuncanddept cung cấp một bản đồ các đối tác kinh doanh đến các người liên hệ, chức năng và bộ phận của họ, có ích khi quản lý mối quan hệ đối tác kinh doanh và thông tin liên hệ."
+keywords:
+  - "business partner"
+  - "contact person"
+  - "function"
+  - "department"
+  - "relationship"
+  - "management"
+  - "sap"
+  - "ap-md-bp"
+  - "interface view"
+  - "lob other"
+  - "contact information"
+  - "đối tác kinh doanh"
+semantic_en: "The Bpcontacttofuncanddept view provides a mapping of business partners to their contact persons, functions, and departments, which is useful when managing business partner relationships and contact information."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

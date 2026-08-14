@@ -1,6 +1,20 @@
 ---
 name: I_BR_CTEFISCALDOCPARTNERTEXT
 description: "BR Ctefiscaldocpartnertext"
+semantic_vi: "Chứa dữ liệu văn bản đối tác tài liệu kế toán cho Brazil, được sử dụng khi hiển thị hoặc xử lý thông tin đối tác tài liệu kế toán."
+keywords:
+  - "fiscal document"
+  - "partner text"
+  - "brazil"
+  - "finance"
+  - "sap"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+  - "text view"
+  - "interface view"
+  - "lob finance"
+semantic_en: "Exposes fiscal document partner text data for Brazil, used when displaying or processing fiscal document partner information."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

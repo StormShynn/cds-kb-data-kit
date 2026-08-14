@@ -1,6 +1,19 @@
 ---
 name: I_BPRATINGTREND
 description: "Bpratingtrend"
+semantic_vi: "View Bpratingtrend hiển thị xu hướng đánh giá đối tác kinh doanh, cung cấp thông tin về sự thay đổi của đánh giá theo thời gian. Nó được sử dụng để phân tích và theo dõi sự thay đổi của đánh giá đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "rating trend"
+  - "đối tác kinh doanh"
+  - "xu hướng đánh giá"
+  - "sự thay đổi"
+  - "đánh giá"
+  - "cds view"
+  - "view"
+  - "sap"
+  - "fs-bp"
+semantic_en: "The Bpratingtrend view exposes business partner rating trends, providing insights into the evolution of ratings over time. It is used to analyze and monitor changes in business partner ratings."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

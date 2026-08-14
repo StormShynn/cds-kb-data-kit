@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFTAX
 description: "BR Nftax"
+semantic_vi: "View I_BR_NFTAX CDS hiển thị thông tin thuế cho các mục hàng hóa trên hóa đơn fiscals Brazil, được sử dụng khi tính toán số thuế cho hóa đơn hoặc hóa đơn fiscals."
+keywords:
+  - "tax"
+  - "invoice"
+  - "note fiscal"
+  - "brazil"
+  - "fiscal item"
+  - "tax amount"
+  - "invoice calculation"
+  - "fiscal calculation"
+  - "brazilian tax"
+  - "đơn fiscals brazil"
+  - "thông tin thuế"
+  - "số thuế"
+semantic_en: "The I_BR_NFTAX CDS view exposes tax information for Brazilian notes fiscal items, which is useful when calculating tax amounts for invoices or notes fiscal."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

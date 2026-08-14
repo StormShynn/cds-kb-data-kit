@@ -1,6 +1,19 @@
 ---
 name: I_BPTXCMPLNCAGRMTSTATUSTEXT
 description: "Bptxcmplncagrmtstatustext"
+semantic_vi: "Chỉ ra mô tả văn bản của thỏa thuận tuân thủ thuế, được sử dụng khi hiển thị hoặc báo cáo trạng thái của thỏa thuận tuân thủ thuế."
+keywords:
+  - "tax compliance agreement"
+  - "thỏa thuận tuân thủ thuế"
+  - "status text"
+  - "mô tả trạng thái"
+  - "sap fs-bp"
+  - "fs-bp"
+  - "interface view"
+  - "view"
+  - "text view"
+  - "cds view"
+semantic_en: "Exposes the text description of a tax compliance agreement status, used when displaying or reporting on the status of tax compliance agreements."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFITEMVINCONDITION
 description: "BR Nfitemvincondition"
+semantic_vi: "View BR Nfitemvincondition hiển thị các điều kiện giá bán hàng theo từng mặt hàng cho các số nhận dạng xe (VIN) trong ngữ cảnh Brazil. Nó được sử dụng để lấy hoặc cập nhật các điều kiện này trong ứng dụng FI-LOC-LO-BR."
+keywords:
+  - "pricing condition"
+  - "item-level"
+  - "vin condition"
+  - "brazilian context"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "sap"
+  - "cds view"
+  - "br nfitemvincondition"
+  - "điều kiện giá bán hàng"
+  - "số nhận dạng xe"
+  - "ngữ cảnh brazil"
+semantic_en: "The BR Nfitemvincondition view exposes item-level pricing conditions for vehicle identification number (VIN) conditions in a Brazilian context. It is used to retrieve or update these conditions in the FI-LOC-LO-BR application component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

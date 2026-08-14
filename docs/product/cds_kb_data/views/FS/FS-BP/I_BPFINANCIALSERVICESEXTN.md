@@ -1,6 +1,21 @@
 ---
 name: I_BPFINANCIALSERVICESEXTN
 description: "Bpfinancialservicesextn"
+semantic_vi: "Chứa dữ liệu dịch vụ tài chính mở rộng cho đối tác kinh doanh, bao gồm thông tin đối tác thương mại và dữ liệu lịch trình nhà máy. View này có thể được sử dụng để lấy thông tin tài chính chi tiết cho đối tác kinh doanh trong ứng dụng FS-BP."
+keywords:
+  - "business partner"
+  - "financial services"
+  - "trading partner"
+  - "factory calendar"
+  - "fs-bp"
+  - "lob other"
+  - "service"
+  - "interface view"
+  - "component fs-bp"
+  - "đối tác kinh doanh"
+  - "dịch vụ tài chính"
+  - "đối tác thương mại"
+semantic_en: "Exposes extended financial services data for business partners, including trading partner information and factory calendar data. This view can be used to retrieve detailed financial information for business partners in the FS-BP application."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

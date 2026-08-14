@@ -1,6 +1,20 @@
 ---
 name: I_BPUNDESIRABILITYREASON
 description: "Bpundesirabilityreason"
+semantic_vi: "View Bpundesirabilityreason CDS hiển thị dữ liệu kinh doanh liên quan đến lý do không mong muốn trong ứng dụng FS-BP. Nó có thể được sử dụng để lấy hoặc chỉnh sửa dữ liệu này trong phát triển ABAP hoặc đám mây."
+keywords:
+  - "fs-bp"
+  - "undesirability reason"
+  - "reason"
+  - "fs"
+  - "bp"
+  - "business data"
+  - "application"
+  - "abap"
+  - "cloud development"
+  - "lob other"
+  - "interface view"
+semantic_en: "The Bpundesirabilityreason CDS view exposes business data related to undesirability reasons in the FS-BP application. It can be used to retrieve or manipulate this data in ABAP or cloud development."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,17 @@
 ---
 name: I_BPRATINGTRENDTEXT
 description: "Bpratingtrendtext"
+semantic_vi: "View Bpratingtrendtext hiển thị dữ liệu văn bản xu hướng đánh giá đối tác kinh doanh, có thể được sử dụng để hiển thị hoặc phân tích xu hướng đánh giá đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "rating trend"
+  - "text data"
+  - "business partner rating"
+  - "trend text"
+  - "đối tác kinh doanh"
+  - "xu hướng đánh giá"
+  - "dữ liệu văn bản"
+semantic_en: "The Bpratingtrendtext view exposes business partner rating trend text data, which can be used to display or analyze rating trends for business partners."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BPCRDTSTANDINGSTATUSTEXT
 description: "Bpcrdtstandingstatustext"
+semantic_vi: "Chỉ ra dữ liệu văn bản trạng thái tín dụng trong Business Planning và Consolidation (BPC) của SAP. View này được sử dụng để lấy thông tin mô tả trạng thái tín dụng."
+keywords:
+  - "bpc"
+  - "credit standing"
+  - "status text"
+  - "sap"
+  - "business planning"
+  - "consolidation"
+  - "fs-bp"
+  - "lob other"
+  - "interface view"
+  - "text view"
+semantic_en: "Exposes credit standing status text data for Business Planning and Consolidation (BPC) in SAP. This view is used to retrieve the description of a credit standing status."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

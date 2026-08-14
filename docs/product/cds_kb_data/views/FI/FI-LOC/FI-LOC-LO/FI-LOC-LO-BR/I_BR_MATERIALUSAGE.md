@@ -1,6 +1,18 @@
 ---
 name: I_BR_MATERIALUSAGE
 description: "BR Materialusage"
+semantic_vi: "View I_BR_MATERIALUSAGE cung cấp dữ liệu sử dụng vật liệu, có thể sử dụng để phân tích và báo cáo về mức tiêu thụ vật liệu trên các lĩnh vực kinh doanh khác nhau."
+keywords:
+  - "material usage"
+  - "dữ liệu sử dụng vật liệu"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "material"
+  - "sap cds view"
+  - "view i_br_materialusage"
+  - "br materialusage"
+  - "domainvalue"
+semantic_en: "The I_BR_MATERIALUSAGE view provides material usage data, which is useful for analyzing and reporting on material consumption across different business areas."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

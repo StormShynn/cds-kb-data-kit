@@ -1,6 +1,19 @@
 ---
 name: I_BPTXCMPLNCTYPECNTRYRGNASSGMT
 description: "Bptxcmplnctypecntryrgnassgmt"
+semantic_vi: "Chỉ ra các loại tuân thủ thuế và khu vực cho một quốc gia, được sử dụng để xác định nghĩa vụ thuế và yêu cầu tuân thủ cho các giao dịch quốc tế."
+keywords:
+  - "tax compliance"
+  - "tuân thủ thuế"
+  - "country region"
+  - "khu vực quốc gia"
+  - "international transactions"
+  - "giao dịch quốc tế"
+  - "sap fs bp"
+  - "fs bp"
+  - "interface view"
+  - "view"
+semantic_en: "Exposes tax compliance types and regions for a country, used to determine tax obligations and compliance requirements for international transactions."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

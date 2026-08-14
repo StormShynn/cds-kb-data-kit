@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFDOCUMENTTYPE
 description: "BR Nfdocumenttype"
+semantic_vi: "View BR Nfdocumenttype hiển thị dữ liệu kinh doanh liên quan đến loại tài liệu được sử dụng trong mô-đun tài chính BR (Brazil), chẳng hạn như loại tài liệu cho hóa đơn và phiếu giảm giá. Nó có thể được sử dụng để lấy và thao tác thông tin loại tài liệu trong các giao dịch tài chính."
+keywords:
+  - "br nfdocumenttype"
+  - "document type"
+  - "lobr"
+  - "finance"
+  - "invoice"
+  - "credit note"
+  - "tài liệu"
+  - "tài chính"
+  - "hóa đơn"
+  - "phiếu giảm giá"
+semantic_en: "The BR Nfdocumenttype view exposes business data related to document types used in the BR (Brazil) financial module, such as document types for invoices and credit notes. It can be used to retrieve and manipulate document type information in financial transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BPDATACONTROLLERUSAGE
 description: "Bpdatacontrollerusage"
+semantic_vi: "View BPDATACONTROLLERUSAGE cung cấp thông tin về việc sử dụng bộ điều khiển dữ liệu cho đối tác kinh doanh, bao gồm việc gán bộ điều khiển dữ liệu và trạng thái. Nó được sử dụng để quản lý và theo dõi việc gán bộ điều khiển dữ liệu cho đối tác kinh doanh trong hệ thống SAP."
+keywords:
+  - "business partner"
+  - "data controller"
+  - "assignment"
+  - "status"
+  - "sap system"
+  - "bộ điều khiển dữ liệu"
+  - "đối tác kinh doanh"
+  - "gán bộ điều khiển dữ liệu"
+  - "trạng thái"
+  - "sap"
+semantic_en: "The BPDATACONTROLLERUSAGE view provides information about data controller usage for business partners, including data controller assignments and statuses. It is used to manage and track data controller assignments for business partners in the SAP system."
 app_component: BC-SRV-BP
 software_component: SAP_BASIS
 release_state: released

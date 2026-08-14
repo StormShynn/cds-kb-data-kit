@@ -1,6 +1,21 @@
 ---
 name: I_BR_MATERIALUSAGETEXT
 description: "BR Materialusagetext"
+semantic_vi: "View I_BR_MATERIALUSAGETEXT CDS cung cấp dữ liệu văn bản sử dụng vật liệu cho báo cáo và phân tích kinh doanh trong ứng dụng FI-LOC-LO-BR. Nó được sử dụng để hiển thị thông tin mô tả về việc sử dụng vật liệu trong một ngôn ngữ cụ thể."
+keywords:
+  - "material usage"
+  - "text data"
+  - "business reporting"
+  - "fi-loc-lo-br"
+  - "app component"
+  - "language"
+  - "descriptive information"
+  - "material usage description"
+  - "finance"
+  - "material"
+  - "text view"
+  - "interface view"
+semantic_en: "The I_BR_MATERIALUSAGETEXT CDS view provides material usage text data for business reporting and analysis in the FI-LOC-LO-BR app component. It is used to display descriptive information about material usage in a specific language."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

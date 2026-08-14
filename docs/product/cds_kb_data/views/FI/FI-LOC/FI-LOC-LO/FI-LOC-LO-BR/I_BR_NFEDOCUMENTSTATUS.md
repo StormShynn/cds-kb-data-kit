@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFEDOCUMENTSTATUS
 description: "BR Nfedocumentstatus"
+semantic_vi: "View I_BR_NFEDOCUMENTSTATUS hiển thị trạng thái của tài liệu NFe Brazil, có thể được sử dụng để theo dõi trạng thái xử lý của tài liệu này trong thành phần FI-LOC-LO-BR."
+keywords:
+  - "nfe document"
+  - "tài liệu nfe"
+  - "document status"
+  - "trạng thái tài liệu"
+  - "fi-loc-lo-br"
+  - "component"
+  - "finance"
+  - "lob"
+  - "brazil"
+  - "brasil"
+semantic_en: "The I_BR_NFEDOCUMENTSTATUS view exposes the status of Brazilian NFe documents, which can be used to track the processing status of these documents in the FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
