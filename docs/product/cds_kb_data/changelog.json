@@ -72884,5 +72884,16 @@
     "tags": 11,
     "error": null,
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RAOPENREVENUEPERPERIODCUBE_4')/$value"
+  },
+  {
+    "viewName": "ZC_APG_POINT.DDLS",
+    "action": "added",
+    "timestamp": "2026-08-15T06:40:48.885Z",
+    "source": "github",
+    "fields": 15,
+    "associations": 1,
+    "tags": 4,
+    "error": null,
+    "sourceUrl": "https://github.com/greltel/abap-point-gate/blob/8fa3df25f0ef828ea1fac629bb9de4017628bdb4/src/zc_apg_point.ddls.asddls"
   }
 ]
