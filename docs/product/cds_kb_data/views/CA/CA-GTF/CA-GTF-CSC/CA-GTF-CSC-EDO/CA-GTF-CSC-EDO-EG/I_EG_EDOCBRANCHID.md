@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `EG_EDocBranchID` |  | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `EG_EDocBranchID` |  | |  |  | `CHAR(30)` | eDocument Egypt : Branch ID |
 
 ## Source Code
 

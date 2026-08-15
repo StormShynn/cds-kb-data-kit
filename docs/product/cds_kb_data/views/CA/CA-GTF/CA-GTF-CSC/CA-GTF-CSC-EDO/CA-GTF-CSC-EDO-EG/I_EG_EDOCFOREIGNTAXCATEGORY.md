@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EG_EDocCountryCode` | ✓ | |  |  |  |  |
-| `EG_EDocBPPerson` | ✓ | |  |  |  |  |
-| `EG_EDocTaxNumberCategory` |  | |  |  |  |  |
-| `EG_EDocPrefixCountryCode` |  | |  |  |  |  |
+| `EG_EDocCountryCode` | ✓ | |  |  | `CHAR(3)` | Country/Region Key |
+| `EG_EDocBPPerson` | ✓ | |  |  | `CHAR(1)` | Business Partner Is a Natural Person Under the Tax Laws |
+| `EG_EDocTaxNumberCategory` |  | |  |  | `CHAR(4)` | Tax Number Category |
+| `EG_EDocPrefixCountryCode` |  | |  |  | `CHAR(1)` | eDocument Egypt: Prefix Country Code |
 
 ## Source Code
 

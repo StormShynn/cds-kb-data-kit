@@ -39,11 +39,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EG_EDocTaxCode` | ✓ | |  |  |  |  |
-| `EG_EDocAcctKey` | ✓ | |  |  |  |  |
-| `EG_EDocTaxType` |  | |  |  |  |  |
-| `EG_EDocTaxSubtype` |  | |  |  |  |  |
-| `EG_EDocTaxCategory` |  | |  |  |  |  |
+| `EG_EDocTaxCode` | ✓ | |  |  | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `EG_EDocAcctKey` | ✓ | |  |  | `CHAR(3)` | eDocument Egypt: Accounting Key |
+| `EG_EDocTaxType` |  | |  |  | `CHAR(10)` | eDocument Egypt: Tax Type |
+| `EG_EDocTaxSubtype` |  | |  |  | `CHAR(10)` | eDocument Egypt: Tax Subtype |
+| `EG_EDocTaxCategory` |  | |  |  | `CHAR(2)` | eDocument Egypt: ETA Tax Category |
 
 ## Source Code
 

@@ -39,24 +39,24 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |  |  |
-| `KR_EDocSelfBillPurrApprovalNo` |  | |  | `apprvl_no` |  |  |
-| `KR_EDocSelfBillPurrHeadQtrs` |  | |  | `busplc_hq` |  |  |
-| `KR_EDocSelfBillPurrReceipt` |  | |  | `rcpt_billg` |  |  |
-| `KR_EDocSelfBillPurrSupplier` |  | |  | `supplier` |  |  |
-| `KR_EDocSelfBillPurrBizPlace` |  | |  | `bupla` |  |  |
-| `KR_EDocSelfBillPurrTaxCode` |  | |  | `tax_code` |  |  |
-| `KR_EDocSelfBillPurrSubmsnID` |  | |  | `ref_submit_id` |  |  |
-| `KR_EDocSelfBillPurrTaxInvcType` |  | |  | `tax_invoice_type` |  |  |
-| `KR_EDocSelfBillPurrSuplrName` |  | |  | `vend_name` |  |  |
-| `KR_EDocSelfBillPurrTaxBaseVal` |  | |  | `tax_base_amt` |  |  |
-| `KR_EDocSelfBillPurrTaxValue` |  | |  | `tax_amount` |  |  |
-| `KR_EDocSelfBillPurrAmountValue` |  | |  | `amount` |  |  |
-| `KR_EDocSelfBillPurrCurrency` |  | |  | `waers` |  |  |
-| `KR_EDocSelfBillPurrTrnstnDate` |  | |  | `transition_date` |  |  |
-| `KR_EDocSelfBillPurrStsRsnText` |  | |  | `status_reason` |  |  |
-| `KR_EDocSelfBillPurrAmendReason` |  | |  | `amendmt_reason` |  |  |
-| `KR_EDocSelfBillPurrOriglApprvl` |  | |  | `origl_apprvl_no` |  |  |
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` | `CHAR(32)` | eDocument: GUID |
+| `KR_EDocSelfBillPurrApprovalNo` |  | |  | `apprvl_no` | `CHAR(27)` | Approval ID for Tax Invoice of South Korea |
+| `KR_EDocSelfBillPurrHeadQtrs` |  | |  | `busplc_hq` | `CHAR(1)` | Business Place of Headquarters |
+| `KR_EDocSelfBillPurrReceipt` |  | |  | `rcpt_billg` | `CHAR(2)` | Billing or Receipt |
+| `KR_EDocSelfBillPurrSupplier` |  | |  | `supplier` | `CHAR(10)` | Account Number of Supplier |
+| `KR_EDocSelfBillPurrBizPlace` |  | |  | `bupla` | `CHAR(4)` | Business Place |
+| `KR_EDocSelfBillPurrTaxCode` |  | |  | `tax_code` | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `KR_EDocSelfBillPurrSubmsnID` |  | |  | `ref_submit_id` | `CHAR(50)` | Submission ID for Tax Invoice of South Korea |
+| `KR_EDocSelfBillPurrTaxInvcType` |  | |  | `tax_invoice_type` | `CHAR(1)` | Tax Invoice Type |
+| `KR_EDocSelfBillPurrSuplrName` |  | |  | `vend_name` | `CHAR(30)` | Vendor Name |
+| `KR_EDocSelfBillPurrTaxBaseVal` |  | |  | `tax_base_amt` | `DEC(18)` | Tax Base |
+| `KR_EDocSelfBillPurrTaxValue` |  | |  | `tax_amount` | `DEC(18)` | Tax Amount |
+| `KR_EDocSelfBillPurrAmountValue` |  | |  | `amount` | `DEC(18)` | Amount |
+| `KR_EDocSelfBillPurrCurrency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `KR_EDocSelfBillPurrTrnstnDate` |  | |  | `transition_date` | `DATS(8)` | Transfer Date of Tax Invoice |
+| `KR_EDocSelfBillPurrStsRsnText` |  | |  | `status_reason` | `CHAR(100)` | Reason for Canceling Tax Invoice |
+| `KR_EDocSelfBillPurrAmendReason` |  | |  | `amendmt_reason` | `CHAR(2)` | Reason for Amending Tax Invoice of South Korea |
+| `KR_EDocSelfBillPurrOriglApprvl` |  | |  | `origl_apprvl_no` | `CHAR(27)` | Approval ID for Original Tax Invoice |
 
 ## Source Code
 

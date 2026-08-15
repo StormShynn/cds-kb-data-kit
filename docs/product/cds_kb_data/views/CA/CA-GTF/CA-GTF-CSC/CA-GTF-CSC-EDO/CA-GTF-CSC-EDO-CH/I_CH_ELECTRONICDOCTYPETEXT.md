@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CH_ElectronicDocAcctgDocType` | ✓ | |  | `blart` |  |  |
-| `CH_ElectronicDocTypeText` |  | |  | `ltext` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CH_ElectronicDocAcctgDocType` | ✓ | |  | `blart` | `CHAR(2)` | Document Type |
+| `CH_ElectronicDocTypeText` |  | |  | `ltext` | `CHAR(20)` | Document Type Description |
 | `_DocumentType` | | ✓ | | | | |
 
 ## Associations

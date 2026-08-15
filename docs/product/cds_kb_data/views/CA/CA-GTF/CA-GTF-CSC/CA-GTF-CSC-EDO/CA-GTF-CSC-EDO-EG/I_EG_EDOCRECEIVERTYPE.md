@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EG_EDocSalesOrg` | ✓ | |  |  |  |  |
-| `EG_EDocPartnerFunction` |  | |  |  |  |  |
+| `EG_EDocSalesOrg` | ✓ | |  |  | `CHAR(4)` | Sales Organization |
+| `EG_EDocPartnerFunction` |  | |  |  | `CHAR(2)` | Component of the Version Number |
 
 ## Source Code
 

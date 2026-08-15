@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EG_EDocRejectionCode` | ✓ | |  |  |  |  |
-| `EG_EDocLanguage` |  | |  |  |  |  |
-| `EG_EDocRjcnReasonDesc` |  | |  |  |  |  |
+| `EG_EDocRejectionCode` | ✓ | |  |  | `CHAR(2)` | eDocument Egypt: Rejection Code |
+| `EG_EDocLanguage` |  | |  |  | `LANG(1)` | Language Key |
+| `EG_EDocRjcnReasonDesc` |  | |  |  | `CHAR(255)` | eDocument Egypt: Rejection Reason Description |
 
 ## Source Code
 

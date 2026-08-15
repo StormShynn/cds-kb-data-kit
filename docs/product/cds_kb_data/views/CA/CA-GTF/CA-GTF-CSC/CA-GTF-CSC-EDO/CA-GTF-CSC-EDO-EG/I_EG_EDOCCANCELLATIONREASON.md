@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EG_EDocCancellationCode` | ✓ | |  |  |  |  |
-| `EG_EDocLanguage` | ✓ | |  |  |  |  |
-| `EG_EDocCanclnReasonText` |  | |  |  |  |  |
+| `EG_EDocCancellationCode` | ✓ | |  |  | `CHAR(2)` | eDocument Egypt: Cancellation Code |
+| `EG_EDocLanguage` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `EG_EDocCanclnReasonText` |  | |  |  | `CHAR(255)` | eDocument Egypt: Cancellation Reason Description |
 
 ## Source Code
 

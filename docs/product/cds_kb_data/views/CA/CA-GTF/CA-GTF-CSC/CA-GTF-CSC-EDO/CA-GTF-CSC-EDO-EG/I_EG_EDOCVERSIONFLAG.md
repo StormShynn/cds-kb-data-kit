@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `EG_EDocVersion` | ✓ | |  |  |  |  |
-| `EG_EDocVersionActive` |  | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `EG_EDocVersion` | ✓ | |  |  | `CHAR(10)` | eDocument Egypt: Document Version |
+| `EG_EDocVersionActive` |  | |  |  | `CHAR(1)` | eDocument Verison: Active Version Flag |
 
 ## Source Code
 

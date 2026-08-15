@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `IT_ElectronicDocRejectionCode` | ✓ | |  | `cast(domvalue_l as edoc_it_reject_code)` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `IT_ElectronicDocRejectCodeText` |  | |  | `ddtext` |  |  |
+| `IT_ElectronicDocRejectionCode` | ✓ | |  | `cast(domvalue_l as edoc_it_reject_code)` | `CHAR(4)` | Rejection Code |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `IT_ElectronicDocRejectCodeText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 
 ## Source Code
 
