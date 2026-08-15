@@ -1,6 +1,19 @@
 ---
 name: I_BR_FREIGHTPAYER
 description: "BR Freightpayer"
+semantic_vi: "View I_BR_FREIGHTPAYER hiển thị thông tin người trả tiền vận tải, có liên quan khi quản lý các giao dịch vận tải liên quan đến Brazil."
+keywords:
+  - "freight payer"
+  - "người trả tiền vận tải"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "freight"
+  - "vận tải"
+  - "brazil"
+  - "brazilian freight payer"
+  - "thông tin người trả tiền vận tải"
+  - "giá trị vận tải"
+semantic_en: "The I_BR_FREIGHTPAYER view exposes freight payer information, which is relevant when managing freight-related transactions in Brazil."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

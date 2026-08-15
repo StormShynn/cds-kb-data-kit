@@ -1,6 +1,18 @@
 ---
 name: I_BPCREDITWORTHINESS
 description: "Bpcreditworthiness"
+semantic_vi: "View Bpcreditworthiness cung cấp dữ liệu về đáng tin cậy tài chính đối tác kinh doanh, bao gồm tình trạng tín dụng, đánh giá và ghi chú."
+keywords:
+  - "business partner"
+  - "creditworthiness"
+  - "tài chính"
+  - "đáng tin cậy"
+  - "tín dụng"
+  - "đánh giá"
+  - "credit standing"
+  - "bpcds"
+  - "fs-bp"
+semantic_en: "The Bpcreditworthiness view provides business partner creditworthiness data, including credit standing status, rating, and comments. It is used to assess a business partner's creditworthiness for financial transactions."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

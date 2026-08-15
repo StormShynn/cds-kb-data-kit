@@ -1,6 +1,20 @@
 ---
 name: I_BPGOODSRECEIVINGHOURSVH
 description: "Bpgoodsreceivinghoursvh"
+semantic_vi: "View Bpgoodsreceivinghoursvh cung cấp danh sách mã giờ nhận hàng cho hàng hóa, có thể được sử dụng để xác định các khoảng thời gian có sẵn để nhận hàng trong kho."
+keywords:
+  - "receiving hours"
+  - "goods receiving"
+  - "warehouse"
+  - "logistics"
+  - "goods"
+  - "receiving hours code"
+  - "bpgoodsreceivinghourscode"
+  - "lo-md-bp-2cl"
+  - "interface-view"
+  - "value-help"
+  - "logistics general"
+semantic_en: "The Bpgoodsreceivinghoursvh view provides a list of receiving hours codes for goods, which can be used to determine the available time slots for receiving goods in a warehouse."
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

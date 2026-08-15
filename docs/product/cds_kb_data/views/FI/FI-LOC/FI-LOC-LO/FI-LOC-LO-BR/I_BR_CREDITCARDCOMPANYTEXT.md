@@ -1,6 +1,20 @@
 ---
 name: I_BR_CREDITCARDCOMPANYTEXT
 description: "BR Creditcardcompanytext"
+semantic_vi: "View I_BR_CREDITCARDCOMPANYTEXT cung cấp mô tả văn bản của các thương hiệu thẻ tín dụng trong các ngôn ngữ khác nhau, hữu ích cho việc hiển thị thông tin thẻ tín dụng trong các ứng dụng đa ngôn ngữ."
+keywords:
+  - "credit card"
+  - "thương hiệu thẻ tín dụng"
+  - "mô tả văn bản"
+  - "ngôn ngữ"
+  - "thẻ tín dụng"
+  - "tài chính"
+  - "finance"
+  - "sap"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+semantic_en: "The I_BR_CREDITCARDCOMPANYTEXT view provides text descriptions of credit card brands in various languages, useful for displaying credit card information in multilingual applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

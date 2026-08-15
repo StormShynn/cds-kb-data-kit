@@ -1,6 +1,21 @@
 ---
 name: I_BR_DUETYPETEXT
 description: "BR Duetypetext"
+semantic_vi: "View I_BR_DUETYPETEXT cung cấp mô tả loại thanh toán chậm cho các giao dịch kinh doanh trong một ngôn ngữ cụ thể. Nó được sử dụng để lấy nhãn văn bản cho loại thanh toán chậm trong giao dịch tài chính."
+keywords:
+  - "due type"
+  - "due type description"
+  - "language"
+  - "financial transaction"
+  - "business transaction"
+  - "text label"
+  - "i_br_duetypetext"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "interface-view"
+semantic_en: "The I_BR_DUETYPETEXT view provides due type descriptions for business transactions in a specific language. It is used to retrieve text labels for due types in financial transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

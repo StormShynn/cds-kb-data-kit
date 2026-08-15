@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFREFERENCEDPROCORIGNTEXT
 description: "BR Nfreferencedprocorigntext"
+semantic_vi: "View I_BR_NFREFERENCEDPROCORIGNTEXT hiển thị dữ liệu kinh doanh liên quan đến nguồn gốc quá trình tham chiếu cho tài liệu thuế Brazil, có thể được sử dụng khi phân tích hoặc báo cáo về các tài liệu này."
+keywords:
+  - "brazilian tax document"
+  - "tài liệu thuế brazil"
+  - "referenced process origin"
+  - "nguồn gốc quá trình tham chiếu"
+  - "sap fi"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "finance interface"
+  - "interface view"
+  - "text view"
+  - "text"
+semantic_en: "The BR Nfreferencedprocorigntext view exposes business data related to referenced process origins for Brazilian tax documents, which can be used when analyzing or reporting on these documents."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

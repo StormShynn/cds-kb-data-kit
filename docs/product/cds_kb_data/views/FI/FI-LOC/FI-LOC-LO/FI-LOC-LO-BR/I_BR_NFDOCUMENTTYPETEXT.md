@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFDOCUMENTTYPETEXT
 description: "BR Nfdocumenttypetext"
+semantic_vi: "View BR Nfdocumenttypetext cung cấp truy cập vào mô tả văn bản của các loại tài liệu kinh doanh trong một ngôn ngữ cụ thể. Nó được sử dụng để truy xuất và hiển thị mô tả loại tài liệu cho các giao dịch kinh doanh quốc tế."
+keywords:
+  - "business document"
+  - "document type"
+  - "text description"
+  - "language"
+  - "international business"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "interface-view"
+  - "text-view"
+  - "document"
+semantic_en: "The BR Nfdocumenttypetext view provides access to text descriptions of business document types in a specific language. It is used to retrieve and display document type descriptions for international business transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

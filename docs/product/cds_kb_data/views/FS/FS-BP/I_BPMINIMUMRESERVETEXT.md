@@ -1,6 +1,19 @@
 ---
 name: I_BPMINIMUMRESERVETEXT
 description: "Bpminimumreservetext"
+semantic_vi: "View Bpminimumreservetext hiển thị thông tin giữ chỗ tối thiểu cho đối tác kinh doanh, có liên quan khi cấu hình cài đặt đối tác kinh doanh trong thành phần chuỗi cung ứng tài chính. Nó cung cấp mô tả văn bản cho số tiền giữ chỗ tối thiểu trong các ngôn ngữ khác nhau."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "financial supply chain"
+  - "chuỗi cung ứng tài chính"
+  - "minimum reserve"
+  - "giữ chỗ tối thiểu"
+  - "text view"
+  - "view văn bản"
+  - "sap cds"
+  - "cds view"
+semantic_en: "The Bpminimumreservetext view exposes minimum reserve information for business partners, which is relevant when configuring business partner settings in the Financial Supply Chain component. It provides text descriptions for minimum reserve amounts in different languages."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

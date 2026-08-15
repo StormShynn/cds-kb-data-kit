@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFFREIGHTNATURETEXT
 description: "BR Nffreightnaturetext"
+semantic_vi: "View I_BR_NFFREIGHTNATURETEXT cung cấp dữ liệu văn bản về tính chất hàng hóa vận chuyển trong nhiều ngôn ngữ, có thể sử dụng khi hiển thị thông tin tính chất hàng hóa vận chuyển trong ứng dụng đa ngôn ngữ."
+keywords:
+  - "freight"
+  - "nature"
+  - "text"
+  - "language"
+  - "multilingual"
+  - "application"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "lob"
+  - "text-view"
+  - "interface-view"
+semantic_en: "The I_BR_NFFREIGHTNATURETEXT view provides freight nature text data in multiple languages, which can be used when displaying freight nature information in a multilingual application."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

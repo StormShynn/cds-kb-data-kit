@@ -1,6 +1,17 @@
 ---
 name: I_BR_NFPARTNER
 description: "BR Nfpartner"
+semantic_vi: "View BR Nfpartner hiển thị dữ liệu kinh doanh về đối tác tham gia vào tài liệu thuế Brazil, chẳng hạn như chức năng, tiêu đề, tên và địa chỉ của đối tác. Nó được sử dụng để truy xuất và thao tác dữ liệu này trong ứng dụng FI-LOC-LO-BR."
+keywords:
+  - "br_nfpartner"
+  - "partner"
+  - "brazilian tax document"
+  - "đối tác"
+  - "tài liệu thuế brazil"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "sap"
+semantic_en: "The BR Nfpartner view exposes business data about partners involved in Brazilian tax documents, such as the partner's function, title, name, and address. It is used to retrieve and manipulate this data in FI-LOC-LO-BR applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

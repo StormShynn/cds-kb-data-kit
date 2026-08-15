@@ -1,6 +1,19 @@
 ---
 name: I_BPEMPLOYMENTINDUSTRY
 description: "Bpemploymentindustry"
+semantic_vi: "CDS view Bpemploymentindustry hiển thị dữ liệu ngành nghề lao động của đối tác kinh doanh, cung cấp cách truy cập và quản lý thông tin này."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "employment industry"
+  - "ngành nghề lao động"
+  - "cds view"
+  - "view"
+  - "sap"
+  - "fs-bp"
+  - "interface-view"
+  - "lob:other"
+semantic_en: "The Bpemploymentindustry CDS view exposes employment industry data for business partners, providing a way to access and manage this information."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

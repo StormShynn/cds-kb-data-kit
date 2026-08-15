@@ -1,6 +1,20 @@
 ---
 name: I_BR_ICMSSTBASEDETN
 description: "BR Icmsstbasedetn"
+semantic_vi: "View I_BR_ICMSSTBASEDETN hiển thị dữ liệu xác định ICMSST, có liên quan đến các tính toán thuế Brazil. Nó được sử dụng để lấy dữ liệu xác định ICMSST cho một khoảng thời gian thuế cụ thể."
+keywords:
+  - "icmsst"
+  - "tax"
+  - "determination"
+  - "brazil"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "sap"
+  - "cds"
+  - "view"
+  - "icmsstbasedetn"
+  - "taxperiod"
+semantic_en: "The I_BR_ICMSSTBASEDETN view exposes ICMSST-based determination data, which is relevant for Brazilian tax calculations. It is used to retrieve the ICMSST base determination for a specific tax period."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

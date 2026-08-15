@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFISCREATEDMANUALLY
 description: "BR Nfiscreatedmanually"
+semantic_vi: "View BR NFIsCreatedManually hiển thị dữ liệu kinh doanh liên quan đến việc tạo tài liệu tài chính thủ công, thường được sử dụng trong kế toán và báo cáo tài chính."
+keywords:
+  - "financial documents"
+  - "tài liệu tài chính"
+  - "manual creation"
+  - "tạo thủ công"
+  - "financial accounting"
+  - "kế toán tài chính"
+  - "reporting"
+  - "báo cáo"
+  - "sap fi"
+  - "fi sap"
+  - "br nfiscreatedmanually"
+semantic_en: "The BR NFIsCreatedManually view exposes business data related to the creation of manual financial documents, typically used in financial accounting and reporting."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

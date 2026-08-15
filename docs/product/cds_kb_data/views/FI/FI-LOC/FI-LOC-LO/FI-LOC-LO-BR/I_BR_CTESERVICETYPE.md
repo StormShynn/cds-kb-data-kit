@@ -1,6 +1,21 @@
 ---
 name: I_BR_CTESERVICETYPE
 description: "BR Cteservicetype"
+semantic_vi: "View I_BR_CTESERVICETYPE hiển thị dữ liệu kinh doanh liên quan đến loại dịch vụ được sử dụng trong hệ thống BR C/4HANA, đặc biệt cho mục đích tài chính và logistics. Nó được sử dụng để lấy và thao tác thông tin loại dịch vụ."
+keywords:
+  - "service type"
+  - "loại dịch vụ"
+  - "br c4hana"
+  - "financial"
+  - "logistics"
+  - "fi-loc-lo-br"
+  - "interface view"
+  - "service"
+  - "component"
+  - "finance"
+  - "dịch vụ"
+  - "loại"
+semantic_en: "The I_BR_CTESERVICETYPE view exposes business data related to service types used in the BR C/4HANA system, specifically for financial and logistics purposes. It is used to retrieve and manipulate service type information."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

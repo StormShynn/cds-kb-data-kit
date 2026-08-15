@@ -1,6 +1,19 @@
 ---
 name: I_BPTARGETGROUPTEXT
 description: "Bptargetgrouptext"
+semantic_vi: "Chỉ ra các mô tả nhóm đối tác kinh doanh để sử dụng trong các ứng dụng kinh doanh dựa trên văn bản. Sử dụng để lấy nhãn văn bản cho nhóm đối tác kinh doanh."
+keywords:
+  - "business partner target group"
+  - "description"
+  - "text label"
+  - "business application"
+  - "đối tác kinh doanh"
+  - "nhóm đối tác kinh doanh"
+  - "mô tả"
+  - "nhãn văn bản"
+  - "ứng dụng kinh doanh"
+  - "fs-bp"
+semantic_en: "Exposes business partner target group descriptions for use in text-based business applications. Used to retrieve text labels for business partner target groups."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

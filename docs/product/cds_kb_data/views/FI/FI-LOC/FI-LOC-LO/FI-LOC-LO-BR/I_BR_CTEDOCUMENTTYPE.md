@@ -1,6 +1,19 @@
 ---
 name: I_BR_CTEDOCUMENTTYPE
 description: "BR Ctedocumenttype"
+semantic_vi: "View I_BR_CTEDOCUMENTTYPE hiển thị dữ liệu kinh doanh liên quan đến loại tài liệu được sử dụng trong phiên bản Brazil (BR) của SAP Financials. Nó được sử dụng để lấy và quản lý loại tài liệu cho các giao dịch tài chính."
+keywords:
+  - "document type"
+  - "tài liệu"
+  - "loại tài liệu"
+  - "financials"
+  - "sap financials"
+  - "br cte document type"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+semantic_en: "The I_BR_CTEDOCUMENTTYPE view exposes business data related to document types used in the BR (Brazil) country version of SAP Financials. It is used to retrieve and manage document types for financial transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

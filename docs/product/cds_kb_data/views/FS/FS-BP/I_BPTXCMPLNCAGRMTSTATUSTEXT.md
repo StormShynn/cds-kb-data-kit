@@ -1,6 +1,19 @@
 ---
 name: I_BPTXCMPLNCAGRMTSTATUSTEXT
 description: "Bptxcmplncagrmtstatustext"
+semantic_vi: "Chứa dữ liệu văn bản trạng thái thỏa thuận tuân thủ thuế cho quản lý quy trình kinh doanh trong SAP Financial Services. Sử dụng view này để lấy trạng thái mô tả thỏa thuận tuân thủ thuế."
+keywords:
+  - "tax compliance agreement"
+  - "thỏa thuận tuân thủ thuế"
+  - "business process management"
+  - "quản lý quy trình kinh doanh"
+  - "sap financial services"
+  - "dịch vụ tài chính sap"
+  - "status text"
+  - "trạng thái văn bản"
+  - "bptaxcomplianceagreementstatus"
+  - "bptxcmplncagrmtstatusdesc"
+semantic_en: "Exposes tax compliance agreement status text data for business process management in SAP Financial Services. Use this view to retrieve status descriptions for tax compliance agreements."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BPSUPPLIERCONTACTLINK
 description: "Bpsuppliercontactlink"
+semantic_vi: "View I_BPSUPPLIERCONTACTLINK CDS hiển thị thông tin đối tác kinh doanh và liên hệ nhà cung cấp, hữu ích khi quản lý mối quan hệ và giao tiếp với nhà cung cấp."
+keywords:
+  - "supplier"
+  - "business partner"
+  - "contact"
+  - "relationship"
+  - "communication"
+  - "sap"
+  - "cds"
+  - "logistics"
+  - "erp"
+  - "lo-md-bp-2cl"
+semantic_en: "The I_BPSUPPLIERCONTACTLINK CDS view exposes business partner and supplier contact information, useful when managing supplier relationships and communication."
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

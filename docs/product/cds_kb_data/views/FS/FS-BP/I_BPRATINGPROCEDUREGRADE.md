@@ -1,6 +1,19 @@
 ---
 name: I_BPRATINGPROCEDUREGRADE
 description: "Bpratingproceduregrade"
+semantic_vi: "Các cấp độ thủ tục đánh giá đối tác kinh doanh được sử dụng để đánh giá hiệu suất đối tác kinh doanh. View này cung cấp cách tiếp cận và quản lý các cấp độ này trong thành phần FS-BP."
+keywords:
+  - "business partner rating procedure"
+  - "thủ tục đánh giá đối tác kinh doanh"
+  - "fs-bp"
+  - "business partner performance"
+  - "hiệu suất đối tác kinh doanh"
+  - "cấp độ"
+  - "rating procedure"
+  - "thủ tục đánh giá"
+  - "sap"
+  - "fs"
+semantic_en: "Business partner rating procedure grades are used to evaluate business partner performance. This view provides a way to access and manage these grades in the FS-BP component."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

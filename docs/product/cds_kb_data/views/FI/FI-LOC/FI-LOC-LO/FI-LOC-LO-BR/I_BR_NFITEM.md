@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFITEM
 description: "BR Nfitem"
+semantic_vi: "View BR Nfitem CDS hiển thị dữ liệu vật tư hóa đơn cho mục đích thuế Brazil, được sử dụng khi xử lý và phân tích thông tin thuế liên quan đến hóa đơn."
+keywords:
+  - "invoice"
+  - "đơn hóa đơn"
+  - "tax"
+  - "thuế"
+  - "brazil"
+  - "brasil"
+  - "sap"
+  - "cds"
+  - "view"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "lob"
+semantic_en: "The BR Nfitem CDS view exposes invoice item data for Brazilian tax purposes, used when processing and analyzing tax-related information for invoices."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

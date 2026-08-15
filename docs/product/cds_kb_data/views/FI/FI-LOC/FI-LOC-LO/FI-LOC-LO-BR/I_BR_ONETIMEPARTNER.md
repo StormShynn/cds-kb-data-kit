@@ -1,6 +1,21 @@
 ---
 name: I_BR_ONETIMEPARTNER
 description: "BR Onetimepartner"
+semantic_vi: "View BR Onetimepartner hiển thị dữ liệu đối tác Brazil một lần, thường được sử dụng khi tương tác với đối tác kinh doanh cho một ghi chú tài chính cụ thể."
+keywords:
+  - "br onetimepartner"
+  - "brazilian onetime partner"
+  - "fiscal note"
+  - "ghi chú tài chính"
+  - "đối tác brazil"
+  - "partner"
+  - "business partner"
+  - "onetime"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+semantic_en: "The BR Onetimepartner view exposes Brazilian onetime partner data, typically used when interacting with a business partner for a specific fiscal note."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

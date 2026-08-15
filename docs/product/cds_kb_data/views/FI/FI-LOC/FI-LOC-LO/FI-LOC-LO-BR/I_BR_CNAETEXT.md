@@ -1,6 +1,18 @@
 ---
 name: I_BR_CNAETEXT
 description: "BR Cnaetext"
+semantic_vi: "View I_BR_CNAETEXT cung cấp truy cập dữ liệu văn bản NACE Brazil, được sử dụng để phân loại hoạt động kinh tế. Nó được sử dụng để lấy mô tả văn bản cho mã NACE cụ thể trong một ngôn ngữ nhất định."
+keywords:
+  - "nace"
+  - "brazil"
+  - "economic activity"
+  - "text view"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "language"
+  - "br_cnae"
+  - "br_cnaedesc"
+semantic_en: "The I_BR_CNAETEXT view provides access to Brazilian NACE text data, which is used to classify economic activities. It is used to retrieve text descriptions for specific NACE codes in a given language."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BPPROTECTEDADDRESS
 description: "Bpprotectedaddress"
+semantic_vi: "Địa chỉ bảo vệ đối tác kinh doanh được sử dụng để lưu trữ thông tin nhạy cảm về địa chỉ đối tác kinh doanh, chẳng hạn như hộp thư tín hoặc địa điểm giao hàng an toàn. View này được sử dụng để truy cập và quản lý địa chỉ bảo vệ này trong thành phần AP-MD-BP."
+keywords:
+  - "business partner"
+  - "protected address"
+  - "address"
+  - "ap-md-bp"
+  - "component"
+  - "lob other"
+  - "sap"
+  - "cds view"
+  - "address id"
+  - "business partner id"
+  - "bpaddressisprotected"
+semantic_en: "Business partner protected addresses are used to store sensitive information about a business partner's address, such as a PO box or a secure delivery location. This view is used to access and manage these protected addresses in the AP-MD-BP component."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

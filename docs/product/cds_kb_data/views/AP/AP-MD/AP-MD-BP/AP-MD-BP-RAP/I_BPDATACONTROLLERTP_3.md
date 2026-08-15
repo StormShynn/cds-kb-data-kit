@@ -1,6 +1,18 @@
 ---
 name: I_BPDATACONTROLLERTP_3
 description: "Bpdatacontrollertp 3"
+semantic_vi: "View này hiển thị thông tin người kiểm soát dữ liệu đối tác kinh doanh, bao gồm quyền và trạng thái gán nhiệm vụ, cho xử lý giao dịch trong thành phần AP-MD-BP-RAP."
+keywords:
+  - "business partner"
+  - "data controller"
+  - "authorization"
+  - "assignment status"
+  - "transactional processing"
+  - "ap-md-bp-rap"
+  - "lob other"
+  - "data control assignment status"
+  - "purpose derived"
+semantic_en: "This view exposes business partner data controller information, including authorization and assignment status, for transactional processing in the AP-MD-BP-RAP component."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

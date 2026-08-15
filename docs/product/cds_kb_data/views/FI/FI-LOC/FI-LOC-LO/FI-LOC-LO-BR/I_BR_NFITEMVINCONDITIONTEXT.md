@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFITEMVINCONDITIONTEXT
 description: "BR Nfitemvinconditiontext"
+semantic_vi: "View BR Nfitemvinconditiontext cung cấp mô tả văn bản cho điều kiện số nhận dạng xe (VIN) trong bối cảnh kinh doanh, thường được sử dụng khi hiển thị hoặc xử lý điều kiện giá bán cho các mặt hàng."
+keywords:
+  - "pricing condition"
+  - "text view"
+  - "item level"
+  - "vehicle identification number"
+  - "vin condition"
+  - "business context"
+  - "finance"
+  - "fi-loc-lo-br"
+  - "lob finance"
+  - "sap cds view"
+semantic_en: "The BR Nfitemvinconditiontext view provides text descriptions for vehicle identification number (VIN) conditions in a business context, typically used when displaying or processing pricing conditions for items."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: I_BPRATINGPROCEDURE
 description: "Bpratingprocedure"
+semantic_vi: "View Bpratingprocedure cung cấp dữ liệu về thủ tục đánh giá đối tác kinh doanh, được sử dụng để xác định yêu cầu đánh giá và ngày truy cập đối với đối tác kinh doanh. Nó thường được sử dụng trong thành phần FS-BP để quản lý đánh giá đối tác kinh doanh."
+keywords:
+  - "business partner rating"
+  - "thủ tục đánh giá đối tác kinh doanh"
+  - "fs-bp"
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "rating procedure"
+  - "thủ tục đánh giá"
+  - "sap"
+  - "cds view"
+semantic_en: "The Bpratingprocedure view provides business partner rating procedure data, which is used to determine the rating requirements and access days for business partners. It is typically used in the FS-BP component to manage business partner ratings."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

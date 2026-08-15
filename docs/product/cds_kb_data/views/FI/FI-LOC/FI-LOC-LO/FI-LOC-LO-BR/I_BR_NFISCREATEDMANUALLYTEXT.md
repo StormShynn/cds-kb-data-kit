@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFISCREATEDMANUALLYTEXT
 description: "BR Nfiscreatedmanuallytext"
+semantic_vi: "View BR Nfiscreatedmanuallytext cung cấp mô tả văn bản cho cờ 'Được tạo thủ công' trong các thiết lập Brazilian Real-Time Document (NF-e). Nó được sử dụng để hiển thị văn bản cho cờ này trong các ngôn ngữ khác nhau."
+keywords:
+  - "nf-e"
+  - "brazilian real-time document"
+  - "is created manually"
+  - "được tạo thủ công"
+  - "cờ"
+  - "thiết lập"
+  - "mô tả văn bản"
+  - "ngôn ngữ"
+  - "fi-loc-lo-br"
+  - "finance"
+semantic_en: "The BR Nfiscreatedmanuallytext view provides text descriptions for the 'Is Created Manually' flag in Brazilian Real-Time Document (NF-e) settings. It is used to display the text for this flag in different languages."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

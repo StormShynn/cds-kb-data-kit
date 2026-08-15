@@ -1,6 +1,18 @@
 ---
 name: I_BR_PAYMENTFORM
 description: "BR Paymentform"
+semantic_vi: "View BR Paymentform hiển thị dữ liệu kinh doanh liên quan đến hình thức thanh toán, được sử dụng trong các giao dịch tài chính. Nó được sử dụng để truy cập và chỉnh sửa thông tin hình thức thanh toán."
+keywords:
+  - "payment form"
+  - "hình thức thanh toán"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "financial transaction"
+  - "thanh toán"
+  - "tài chính"
+semantic_en: "The BR Paymentform view exposes business data related to payment forms, which are used in financial transactions. It is used to access and manipulate payment form information."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

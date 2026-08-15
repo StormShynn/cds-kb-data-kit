@@ -1,6 +1,18 @@
 ---
 name: I_BPTXCMPLNCAGREEMENTSTATUS
 description: "Bptxcmplncagreementstatus"
+semantic_vi: "View này hiển thị trạng thái của thỏa thuận tuân thủ thuế, có liên quan khi kiểm tra trạng thái hiện tại của một thỏa thuận hoặc khi báo cáo về thay đổi trạng thái thỏa thuận."
+keywords:
+  - "tax compliance agreement"
+  - "thỏa thuận tuân thủ thuế"
+  - "agreement status"
+  - "trạng thái thỏa thuận"
+  - "fs-bp"
+  - "interface-view"
+  - "status"
+  - "component:fs-bp"
+  - "lob:other"
+semantic_en: "This view exposes the status of tax compliance agreements, which is relevant when checking the current state of an agreement or when reporting on agreement status changes."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

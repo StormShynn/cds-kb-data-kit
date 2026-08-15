@@ -1,6 +1,20 @@
 ---
 name: I_BPMARITALPROPERTYREGIMETEXT
 description: "Bpmaritalpropertyregimetext"
+semantic_vi: "View I_BPMARITALPROPERTYREGIMETEXT cung cấp mô tả văn bản của chế độ tài sản hôn nhân, có liên quan đến việc phân chia tài sản gia đình và kế hoạch thừa kế. Nó được sử dụng để hiển thị tên và mô tả chế độ trong một ngôn ngữ cụ thể."
+keywords:
+  - "marital property regime"
+  - "chế độ tài sản hôn nhân"
+  - "family settlement"
+  - "kế hoạch thừa kế"
+  - "text description"
+  - "mô tả văn bản"
+  - "language"
+  - "ngôn ngữ"
+  - "sap cds view"
+  - "view i_bpmaritalpropertyregimetext"
+  - "fs-bp"
+semantic_en: "The I_BPMARITALPROPERTYREGIMETEXT view provides text descriptions of marital property regimes, which are relevant for family settlement and inheritance planning. It is used to display the regime's name and description in a specific language."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

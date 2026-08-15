@@ -1,6 +1,19 @@
 ---
 name: I_BPEMPLOYMENTINDUSTRYTEXT
 description: "Bpemploymentindustrytext"
+semantic_vi: "View I_BPEMPLOYMENTINDUSTRYTEXT cung cấp mô tả và mô tả ngắn gọn về các ngành nghề lao động trong nhiều ngôn ngữ, hữu ích cho việc hiển thị thông tin ngành nghề trong các ứng dụng kinh doanh."
+keywords:
+  - "employment industry"
+  - "mô tả ngành nghề lao động"
+  - "business application"
+  - "description"
+  - "short description"
+  - "language"
+  - "fs-bp"
+  - "interface view"
+  - "text view"
+  - "sap"
+semantic_en: "The I_BPEMPLOYMENTINDUSTRYTEXT view provides employment industry descriptions and short descriptions in various languages, useful for displaying industry information in business applications."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

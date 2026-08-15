@@ -1,6 +1,18 @@
 ---
 name: I_BR_ICMSTAXSITUATION
 description: "BR Icmstaxsituation"
+semantic_vi: "View I_BR_ICMSTAXSITUATION hiển thị dữ liệu kinh doanh liên quan đến tình huống thuế cho các giao dịch kinh doanh quốc tế, cung cấp thông tin khi xác định nghĩa vụ thuế cho các giao dịch biên giới."
+keywords:
+  - "tax situation"
+  - "tình huống thuế"
+  - "international business"
+  - "giao dịch kinh doanh quốc tế"
+  - "cross-border transaction"
+  - "giao dịch biên giới"
+  - "sap fi"
+  - "fi-loc-lo-br"
+  - "lob finance"
+semantic_en: "The I_BR_ICMSTAXSITUATION view exposes business data related to tax situations for international business transactions, providing information when determining tax obligations for cross-border transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

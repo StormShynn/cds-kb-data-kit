@@ -1,6 +1,19 @@
 ---
 name: I_BR_CTETRANSPORTATIONMODE
 description: "BR Ctetransportationmode"
+semantic_vi: "View I_BR_CTETRANSPORTATIONMODE hiển thị dữ liệu kinh doanh liên quan đến phương thức vận chuyển được sử dụng trong thành phần FI-LOC-LO-BR, có thể được sử dụng để truy xuất và quản lý phương thức vận chuyển cho các giao dịch kinh doanh."
+keywords:
+  - "transportation mode"
+  - "phương thức vận chuyển"
+  - "fi-loc-lo-br"
+  - "business transaction"
+  - "giao dịch kinh doanh"
+  - "sap cds view"
+  - "view"
+  - "transport"
+  - "finance"
+  - "kinh doanh"
+semantic_en: "The I_BR_CTETRANSPORTATIONMODE CDS view exposes business data related to transportation modes used in the FI-LOC-LO-BR component, which can be used to retrieve and manage transportation modes for business transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

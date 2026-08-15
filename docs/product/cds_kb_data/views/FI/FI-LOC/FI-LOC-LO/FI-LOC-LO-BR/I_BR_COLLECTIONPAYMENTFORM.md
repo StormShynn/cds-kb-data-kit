@@ -1,6 +1,21 @@
 ---
 name: I_BR_COLLECTIONPAYMENTFORM
 description: "BR Collectionpaymentform"
+semantic_vi: "View I_BR_COLLECTIONPAYMENTFORM cung cấp thông tin về các hình thức thanh toán thu hồi được sử dụng trong các giao dịch tài chính. Nó được sử dụng để truy cập và thao tác dữ liệu liên quan đến các hình thức thanh toán cho thu hồi."
+keywords:
+  - "collection payment form"
+  - "hình thức thanh toán thu hồi"
+  - "payment form"
+  - "thanh toán thu hồi"
+  - "financial transaction"
+  - "giao dịch tài chính"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+  - "interface-view"
+  - "payment"
+  - "collection"
+semantic_en: "The I_BR_COLLECTIONPAYMENTFORM view provides information about collection payment forms used in financial transactions. It is used to access and manipulate data related to payment forms for collections."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

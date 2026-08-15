@@ -1,6 +1,16 @@
 ---
 name: I_BPCREDITRATINGAGENCY
 description: "Bpcreditratingagency"
+semantic_vi: "View Bpcreditratingagency cung cấp thông tin về các cơ quan đánh giá tín nhiệm tín dụng, được sử dụng để đánh giá khả năng tín nhiệm của các doanh nghiệp hoặc cá nhân."
+keywords:
+  - "credit rating agency"
+  - "đánh giá tín nhiệm tín dụng"
+  - "fs-bp"
+  - "creditworthiness"
+  - "khả năng tín nhiệm"
+  - "sap cds view"
+  - "view i_bpcreditratingagency"
+semantic_en: "The Bpcreditratingagency view provides information about credit rating agencies, which are used to evaluate the creditworthiness of businesses or individuals."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

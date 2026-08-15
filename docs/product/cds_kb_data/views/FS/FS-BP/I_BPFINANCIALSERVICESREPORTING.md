@@ -1,6 +1,20 @@
 ---
 name: I_BPFINANCIALSERVICESREPORTING
 description: "Bpfinancialservicesreporting"
+semantic_vi: "View Bpfinancialservicesreporting cung cấp dữ liệu báo cáo dịch vụ tài chính cho đối tác kinh doanh, bao gồm thông tin về khoản vay và đánh giá tình trạng tín dụng."
+keywords:
+  - "financial services"
+  - "business partner"
+  - "loan"
+  - "credit standing"
+  - "reporting"
+  - "tài chính"
+  - "đối tác kinh doanh"
+  - "khoản vay"
+  - "đánh giá tín dụng"
+  - "báo cáo"
+  - "fs-bp"
+semantic_en: "The Bpfinancialservicesreporting view provides financial services reporting data for business partners, including loan information and credit standing reviews."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

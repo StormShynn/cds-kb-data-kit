@@ -1,6 +1,21 @@
 ---
 name: I_BPRATINGTRENDVH
 description: "Bpratingtrendvh"
+semantic_vi: "View hiển thị xu hướng đánh giá đối tác kinh doanh, được sử dụng để lấy xu hướng đánh giá đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "rating trend"
+  - "view"
+  - "fs-bp"
+  - "interface view"
+  - "value help"
+  - "lob other"
+  - "sap cds"
+  - "cds view"
+  - "business partner rating trend"
+  - "đối tác kinh doanh"
+  - "xu hướng đánh giá"
+semantic_en: "Business partner rating trend view, used to retrieve rating trends for business partners."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

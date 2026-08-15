@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFTEXTTYPE
 description: "BR Nftexttype"
+semantic_vi: "View I_BR_NFTEXTTYPE cung cấp thông tin về các loại văn bản khác nhau được sử dụng trong khu vực văn bản tài chính BR (Brazil). Nó được sử dụng để xác định và quản lý các loại văn bản khác nhau trong thành phần FI-LOC-LO-BR."
+keywords:
+  - "br"
+  - "nftexttype"
+  - "fi-loc-lo-br"
+  - "text"
+  - "type"
+  - "financial"
+  - "brazil"
+  - "fi"
+  - "loc"
+  - "lob"
+  - "finance"
+semantic_en: "The I_BR_NFTEXTTYPE view provides information about the different types of text used in the BR (Brazil) financial text area. It is used to identify and manage the various text types in the FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFEXPORTDECLARATION
 description: "BR Nfexportdeclaration"
+semantic_vi: "View I_BR_NFEXPORTDECLARATION hiển thị thông tin về khai báo xuất khẩu cho mục đích thuế Brazil, thường được sử dụng khi xử lý hàng xuất khẩu."
+keywords:
+  - "export declaration"
+  - "khai báo xuất khẩu"
+  - "brazilian tax"
+  - "tax purposes"
+  - "export shipment"
+  - "hàng xuất khẩu"
+  - "brazil"
+  - "brazilian"
+  - "tax"
+  - "export"
+  - "declaration"
+semantic_en: "The I_BR_NFEXPORTDECLARATION view exposes information about export declarations for Brazilian tax purposes, typically used when processing export shipments."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: I_BPRATGPROCEDUREGRADETEXT
 description: "Bpratgproceduregradetext"
+semantic_vi: "Chứa thông tin về các mức độ đánh giá đối tác kinh doanh và mô tả tương ứng trong các ngôn ngữ khác nhau. View này hữu ích cho các nhà phát triển cần hiển thị hoặc xử lý các mức độ đánh giá trong ứng dụng của họ."
+keywords:
+  - "business partner rating"
+  - "procedure grade"
+  - "description"
+  - "language"
+  - "fs-bp"
+  - "interface view"
+  - "text view"
+  - "sap cds"
+  - "lob other"
+semantic_en: "Exposes business partner rating procedure grades and their corresponding descriptions in different languages. This view is useful for developers who need to display or process rating grades in their applications."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

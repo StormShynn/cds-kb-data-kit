@@ -1,6 +1,19 @@
 ---
 name: I_BR_MATERIALORIGIN
 description: "BR Materialorigin"
+semantic_vi: "View I_BR_MATERIALORIGIN hiển thị nguồn gốc vật liệu cho báo cáo kinh doanh, hữu ích khi phân tích nguồn gốc vật liệu trong một công ty."
+keywords:
+  - "material origin"
+  - "nguồn gốc vật liệu"
+  - "business reporting"
+  - "báo cáo kinh doanh"
+  - "material"
+  - "vật liệu"
+  - "sap"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "finance integration"
+semantic_en: "The I_BR_MATERIALORIGIN view exposes material origins for business reporting, useful when analyzing the source of materials in a company."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

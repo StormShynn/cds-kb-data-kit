@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFISSUERTEXT
 description: "BR Nfissuertext"
+semantic_vi: "View BR Nfissuertext cung cấp thông tin người phát hành và mô tả người phát hành cho một mối quan hệ kinh doanh cụ thể trong một ngôn ngữ cụ thể. Nó được sử dụng để lấy dữ liệu văn bản liên quan đến mối quan hệ kinh doanh."
+keywords:
+  - "business relationship"
+  - "issued-by"
+  - "issuer description"
+  - "language"
+  - "text data"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "sap cds view"
+  - "nghiệp vụ"
+  - "người phát hành"
+  - "mô tả người phát hành"
+  - "ngôn ngữ"
+semantic_en: "The BR Nfissuertext view provides issued-by and issuer description information for a specific business relationship in a specific language. It is used to retrieve text data related to a business relationship."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

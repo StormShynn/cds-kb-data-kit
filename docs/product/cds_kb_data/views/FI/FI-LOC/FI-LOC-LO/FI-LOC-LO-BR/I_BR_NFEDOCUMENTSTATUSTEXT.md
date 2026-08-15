@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFEDOCUMENTSTATUSTEXT
 description: "BR Nfedocumentstatustext"
+semantic_vi: "View BR Nfedocumentstatustext cung cấp mô tả văn bản của trạng thái tài liệu NFe trong nhiều ngôn ngữ, hữu ích khi hiển thị thông tin trạng thái tài liệu cho người dùng."
+keywords:
+  - "nfe"
+  - "document status"
+  - "trạng thái tài liệu"
+  - "ngôn ngữ"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "sap"
+  - "cds view"
+  - "view"
+  - "br nfedocumentstatustext"
+  - "language"
+  - "description"
+semantic_en: "The BR Nfedocumentstatustext view provides text descriptions of NFe document statuses in multiple languages, useful when displaying document status information to users."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

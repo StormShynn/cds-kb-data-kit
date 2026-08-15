@@ -1,6 +1,19 @@
 ---
 name: I_BR_CTETRANSPORTATIONMODETEXT
 description: "BR Ctetransportationmodetext"
+semantic_vi: "Cung cấp dữ liệu văn bản phương thức vận chuyển cho Brazil, hữu ích khi hiển thị hoặc xử lý thông tin vận chuyển trong thành phần FI-LOC-LO-BR."
+keywords:
+  - "transportation mode"
+  - "phương thức vận chuyển"
+  - "fi-loc-lo-br"
+  - "text data"
+  - "dữ liệu văn bản"
+  - "sap cds view"
+  - "view i_br_ctetransportationmodetext"
+  - "fi"
+  - "fi-loc"
+  - "finance"
+semantic_en: "Provides transportation mode text data for Brazil, useful when displaying or processing transportation information in FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

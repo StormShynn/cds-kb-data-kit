@@ -1,6 +1,18 @@
 ---
 name: I_BR_NFEPAYMENT
 description: "BR Nfepayment"
+semantic_vi: "View I_BR_NFEPAYMENT hiển thị dữ liệu thanh toán NF-e Brazil, có thể được sử dụng để lấy thông tin thanh toán cho một hóa đơn cụ thể."
+keywords:
+  - "nf-e"
+  - "payment"
+  - "invoice"
+  - "thanh toán"
+  - "hóa đơn"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "lob:finance"
+  - "component:fi-loc-lo-br"
+semantic_en: "The I_BR_NFEPAYMENT view exposes Brazilian NF-e payment data, which can be used to retrieve payment information for a specific invoice."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

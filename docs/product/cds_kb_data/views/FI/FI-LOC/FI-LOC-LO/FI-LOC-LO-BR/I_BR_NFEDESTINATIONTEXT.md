@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFEDESTINATIONTEXT
 description: "BR Nfedestinationtext"
+semantic_vi: "View I_BR_NFEDESTINATIONTEXT cung cấp dữ liệu văn bản mục tiêu NFe Brazil, có thể được sử dụng khi hiển thị hoặc xử lý mục tiêu NFe Brazil trong các ứng dụng tài chính Brazil."
+keywords:
+  - "nfe"
+  - "destination"
+  - "text"
+  - "brazil"
+  - "finance"
+  - "sap"
+  - "fi-loc-lo-br"
+  - "brazilian"
+  - "financial"
+  - "application"
+semantic_en: "The I_BR_NFEDESTINATIONTEXT view provides Brazilian NFe destination text data, which can be used when displaying or processing NFe destinations in Brazilian financial applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

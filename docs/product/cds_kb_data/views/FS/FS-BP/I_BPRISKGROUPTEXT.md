@@ -1,6 +1,20 @@
 ---
 name: I_BPRISKGROUPTEXT
 description: "Bpriskgrouptext"
+semantic_vi: "Chứa mô tả nhóm rủi ro đối tác kinh doanh trong nhiều ngôn ngữ, hữu ích để hiển thị thông tin nhóm rủi ro cho người dùng theo ngôn ngữ yêu thích của họ."
+keywords:
+  - "business partner"
+  - "risk group"
+  - "description"
+  - "language"
+  - "sap"
+  - "fs-bp"
+  - "interface view"
+  - "text view"
+  - "text"
+  - "component fs-bp"
+  - "lob other"
+semantic_en: "Exposes business partner risk group descriptions in multiple languages, useful for displaying risk group information to users in their preferred language."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

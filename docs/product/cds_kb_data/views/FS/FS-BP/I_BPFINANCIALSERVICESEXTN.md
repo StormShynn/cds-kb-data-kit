@@ -1,6 +1,20 @@
 ---
 name: I_BPFINANCIALSERVICESEXTN
 description: "Bpfinancialservicesextn"
+semantic_vi: "View I_BPFINANCIALSERVICESEXTN cung cấp thông tin tài chính về đối tác kinh doanh, bao gồm tiền tệ bảng cân đối kế toán, số tiền tăng vốn cuối cùng và tên văn phòng đăng ký của đối tác kinh doanh. Nó được sử dụng để truy cập dữ liệu dịch vụ tài chính mở rộng cho đối tác kinh doanh trong thành phần ứng dụng FS-BP."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "financial information"
+  - "thông tin tài chính"
+  - "balance sheet currency"
+  - "tiền tệ bảng cân đối kế toán"
+  - "fs-bp"
+  - "financial services"
+  - "dịch vụ tài chính"
+  - "extended data"
+  - "dữ liệu mở rộng"
+semantic_en: "The I_BPFINANCIALSERVICESEXTN view provides financial information about business partners, including their balance sheet currency, last capital increase amount, and registered office name. It is used to access extended financial services data for business partners in the FS-BP application component."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

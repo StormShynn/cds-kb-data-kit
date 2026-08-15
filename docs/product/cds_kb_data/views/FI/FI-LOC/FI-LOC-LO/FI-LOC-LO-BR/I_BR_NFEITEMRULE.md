@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFEITEMRULE
 description: "BR Nfeitemrule"
+semantic_vi: "View I_BR_NFEITEMRULE hiển thị các quy tắc kinh doanh cho việc xử lý các mục trong các tài liệu NF-e Brazil (eNDF), được sử dụng để xác định các quy tắc xử lý mục cấp độ."
+keywords:
+  - "nf-e"
+  - "endf"
+  - "brazil"
+  - "item-level"
+  - "processing rules"
+  - "kinh doanh"
+  - "quy tắc"
+  - "xử lý mục"
+  - "tài liệu"
+  - "brazilian"
+  - "finance"
+semantic_en: "The BR Nfeitemrule view exposes business rules for handling items in Brazilian NF-e (eNDF) documents, used to determine item-level processing rules."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

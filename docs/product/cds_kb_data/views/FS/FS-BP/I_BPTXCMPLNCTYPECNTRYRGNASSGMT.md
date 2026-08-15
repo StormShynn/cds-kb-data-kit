@@ -1,6 +1,21 @@
 ---
 name: I_BPTXCMPLNCTYPECNTRYRGNASSGMT
 description: "Bptxcmplnctypecntryrgnassgmt"
+semantic_vi: "Cung cấp thông tin về loại tuân thủ thuế và khu vực cho các giao dịch kinh doanh, hữu ích cho mục đích báo cáo tài chính và thuế."
+keywords:
+  - "tax compliance"
+  - "tuân thủ thuế"
+  - "business transaction"
+  - "giao dịch kinh doanh"
+  - "financial reporting"
+  - "báo cáo tài chính"
+  - "tax reporting"
+  - "báo cáo thuế"
+  - "sap fs-bp"
+  - "fs-bp"
+  - "interface view"
+  - "view"
+semantic_en: "Provides tax compliance type and region information for business transactions, useful for financial and tax reporting purposes."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

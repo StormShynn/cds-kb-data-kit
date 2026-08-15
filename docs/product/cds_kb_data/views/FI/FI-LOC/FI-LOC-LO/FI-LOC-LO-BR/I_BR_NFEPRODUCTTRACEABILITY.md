@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFEPRODUCTTRACEABILITY
 description: "BR Nfeproducttraceability"
+semantic_vi: "View I_BR_NFEPRODUCTTRACEABILITY hiển thị dữ liệu theo dõi sản phẩm cho hóa đơn NF-e Brazil, bao gồm các lô sản phẩm, ngày sản xuất và hết hạn, và ID nhóm hóa. Nó được sử dụng để theo dõi nguồn gốc và chuyển động của sản phẩm trong chuỗi cung ứng."
+keywords:
+  - "product traceability"
+  - "nf-e invoice"
+  - "dữ liệu theo dõi sản phẩm"
+  - "hóa đơn nf-e brazil"
+  - "sản phẩm"
+  - "lô sản phẩm"
+  - "ngày sản xuất"
+  - "ngày hết hạn"
+  - "id nhóm hóa"
+  - "chuỗi cung ứng"
+  - "sap"
+  - "fi-loc-lo-br"
+semantic_en: "The I_BR_NFEPRODUCTTRACEABILITY view exposes product traceability data for Brazilian NF-e invoices, including product batches, manufacturing and expiration dates, and aggregation IDs. It is used to track the origin and movement of products within the supply chain."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFDOCUMENT
 description: "BR Nfdocument"
+semantic_vi: "View BR Nfdocument hiển thị dữ liệu hóa đơn thuế Brazil, bao gồm thông tin hóa đơn và đối tác, có ích cho các ứng dụng tài chính và logistics."
+keywords:
+  - "brasil"
+  - "tax document"
+  - "invoice"
+  - "partner"
+  - "financial"
+  - "logistics"
+  - "sap fi"
+  - "fi-loc-lo-br"
+  - "lob finance"
+  - "document"
+  - "brazilian"
+  - "tax"
+semantic_en: "The BR Nfdocument view exposes Brazilian tax document data, including invoice and partner information, which is useful for financial and logistics applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

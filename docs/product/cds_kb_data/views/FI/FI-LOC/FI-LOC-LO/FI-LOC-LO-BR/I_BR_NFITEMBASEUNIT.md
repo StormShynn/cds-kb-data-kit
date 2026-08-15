@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFITEMBASEUNIT
 description: "BR Nfitembaseunit"
+semantic_vi: "View BR Nfitembaseunit hiển thị thông tin đơn vị cơ bản cho các mục trên hóa đơn thuế Brazil, có thể được sử dụng để phân tích hoặc báo cáo chi tiết mục."
+keywords:
+  - "br nota fiscal"
+  - "base unit"
+  - "item-level"
+  - "tax invoice"
+  - "đơn vị cơ bản"
+  - "hóa đơn thuế brazil"
+  - "chi tiết mục"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "sap"
+semantic_en: "The BR Nfitembaseunit view exposes base unit information for items on Brazilian tax invoices, which can be used to analyze or report on item-level details."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

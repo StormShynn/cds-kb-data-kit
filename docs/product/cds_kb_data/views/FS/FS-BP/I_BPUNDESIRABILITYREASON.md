@@ -1,6 +1,18 @@
 ---
 name: I_BPUNDESIRABILITYREASON
 description: "Bpundesirabilityreason"
+semantic_vi: "CDS view Bpundesirabilityreason cung cấp truy cập dữ liệu kinh doanh liên quan đến lý do không mong muốn, được sử dụng để xác định tính phù hợp của đối tác kinh doanh. Nó được sử dụng bởi các nhà phát triển để truy xuất và thao tác dữ liệu này trong các ứng dụng SAP."
+keywords:
+  - "bpundesirabilityreason"
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "cds view"
+  - "sap"
+  - "fs-bp"
+  - "interface view"
+  - "undesirability reason"
+  - "lý do không mong muốn"
+semantic_en: "The Bpundesirabilityreason CDS view provides access to business data related to undesirability reasons, which are used to determine the suitability of business partners. It is used by developers to retrieve and manipulate this data in SAP applications."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

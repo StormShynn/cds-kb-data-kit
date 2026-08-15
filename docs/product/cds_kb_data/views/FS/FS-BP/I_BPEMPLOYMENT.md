@@ -1,6 +1,17 @@
 ---
 name: I_BPEMPLOYMENT
 description: "Bpemployment"
+semantic_vi: "View Bpemployment hiển thị dữ liệu về việc làm đối tác kinh doanh, bao gồm ngày bắt đầu và kết thúc, trạng thái và mã ngành công nghiệp. Nó được sử dụng để lấy thông tin về lịch sử việc làm của đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "employment data"
+  - "bán hàng"
+  - "đối tác kinh doanh"
+  - "việc làm"
+  - "sap cds view"
+  - "fs-bp"
+  - "lob other"
+semantic_en: "The Bpemployment view exposes business partner employment data, including start and end dates, status, and industry code. It is used to retrieve information about a business partner's employment history."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFEMODTEXT
 description: "BR Nfemodtext"
+semantic_vi: "View I_BR_NFEMODTEXT cung cấp truy cập vào dữ liệu văn bản NFe Brazil, bao gồm các mô tả sắp xếp và số văn bản NFe, có thể được sử dụng để truy xuất và hiển thị thông tin văn bản NFe."
+keywords:
+  - "brasil"
+  - "nfe"
+  - "text"
+  - "sort"
+  - "description"
+  - "number"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "sap"
+  - "cds"
+  - "view"
+  - "brazilian"
+semantic_en: "The I_BR_NFEMODTEXT view provides access to Brazilian NFe text data, including sort descriptions and text numbers, which can be used to retrieve and display NFe text information."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BPMARITALPROPERTYREGIME
 description: "Bpmaritalpropertyregime"
+semantic_vi: "View Bpmaritalpropertyregime hiển thị các chế độ tài sản hôn nhân cho mục đích kinh doanh, đặc biệt là trong việc phân chia tài sản gia đình và kế hoạch kế thừa doanh nghiệp."
+keywords:
+  - "marital property regime"
+  - "chế độ tài sản hôn nhân"
+  - "family settlement"
+  - "phân chia tài sản gia đình"
+  - "business succession planning"
+  - "kế hoạch kế thừa doanh nghiệp"
+  - "fs-bp"
+  - "interface-view"
+  - "component:fs-bp"
+  - "lob:other"
+  - "sap cds view"
+semantic_en: "The Bpmaritalpropertyregime view exposes marital property regimes for business use, particularly in family settlement and business succession planning."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

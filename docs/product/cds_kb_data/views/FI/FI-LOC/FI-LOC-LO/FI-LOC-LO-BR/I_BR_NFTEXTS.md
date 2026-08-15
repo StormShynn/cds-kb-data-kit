@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFTEXTS
 description: "BR Nftexts"
+semantic_vi: "View BR Nftexts hiển thị dữ liệu văn bản hóa đơn, bao gồm ID văn bản đối tác thuế, cho việc sử dụng trong ứng dụng tài chính và địa phương hóa."
+keywords:
+  - "invoice"
+  - "đơn hóa đơn"
+  - "tax partner"
+  - "đối tác thuế"
+  - "financial"
+  - "tài chính"
+  - "localization"
+  - "địa phương hóa"
+  - "sap"
+  - "cds view"
+  - "view br nftexts"
+semantic_en: "The BR Nftexts view exposes invoice text data, including tax partner text IDs, for use in financial and localization applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

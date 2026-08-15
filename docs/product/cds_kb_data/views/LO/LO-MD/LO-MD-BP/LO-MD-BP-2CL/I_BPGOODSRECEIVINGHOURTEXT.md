@@ -1,6 +1,18 @@
 ---
 name: I_BPGOODSRECEIVINGHOURTEXT
 description: "Bpgoodsreceivinghourtext"
+semantic_vi: "View I_BPGOODSRECEIVINGHOURTEXT hiển thị dữ liệu kinh doanh liên quan đến mã giờ nhận hàng và mô tả văn bản tương ứng trong các ngôn ngữ khác nhau. Nó được sử dụng khi hiển thị hoặc xử lý thông tin này trong các ứng dụng logistics."
+keywords:
+  - "receiving hours"
+  - "logistics"
+  - "language"
+  - "text description"
+  - "business data"
+  - "sap cds view"
+  - "i_bpgoodsreceivinghourtext"
+  - "bpgoodsreceivinghourscode"
+  - "bpgoodsreceivinghourstext"
+semantic_en: "The Bpgoodsreceivinghourtext CDS view exposes business data related to receiving hours codes and their corresponding text descriptions in different languages. It is used when displaying or processing this information in logistics applications."
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

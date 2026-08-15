@@ -1,6 +1,21 @@
 ---
 name: I_BR_CTEPARTNERSERVICETAKERT
 description: "BR Ctepartnerservicetakert"
+semantic_vi: "Cung cấp thông tin đối tác dịch vụ nhận hàng cho Brazil, được sử dụng trong các thành phần tài chính vị trí và logistics."
+keywords:
+  - "sap cds view"
+  - "fi-loc-lo-br"
+  - "partner service taker"
+  - "brazil"
+  - "financial location"
+  - "logistics"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "interface view"
+  - "service"
+  - "partner"
+semantic_en: "Provides business partner service taker information for Brazil, used in financial location and logistics components."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

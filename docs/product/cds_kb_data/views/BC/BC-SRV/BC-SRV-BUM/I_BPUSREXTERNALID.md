@@ -1,6 +1,17 @@
 ---
 name: I_BPUSREXTERNALID
 description: "Bpusrexternalid"
+semantic_vi: "View Bpusrexternalid cung cấp thông tin xác định bên ngoài đối tác kinh doanh, có thể được sử dụng để xác thực hoặc lấy dữ liệu đối tác kinh doanh dựa trên các định danh bên ngoài."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "external id"
+  - "định danh bên ngoài"
+  - "sap cds"
+  - "cds view"
+  - "basis components"
+  - "bc-srv-bum"
+semantic_en: "The Bpusrexternalid view provides external identification information for business partners, which can be used to validate or retrieve business partner data based on external identifiers."
 app_component: BC-SRV-BUM
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFVEHICLETYPETEXT_2
 description: "BR Nfvehicletypetext 2"
+semantic_vi: "View BR Nfvehicletypetext 2 cung cấp mô tả loại xe trong các ngôn ngữ khác nhau, được sử dụng để hiển thị thông tin xe trong các khu vực địa lý khác nhau."
+keywords:
+  - "vehicle type"
+  - "description"
+  - "language"
+  - "locale"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "interface-view"
+  - "text"
+  - "component:fi-loc-lo-br"
+  - "lob:finance"
+semantic_en: "The BR Nfvehicletypetext 2 view provides vehicle type descriptions in different languages, used to display vehicle information in various locales."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

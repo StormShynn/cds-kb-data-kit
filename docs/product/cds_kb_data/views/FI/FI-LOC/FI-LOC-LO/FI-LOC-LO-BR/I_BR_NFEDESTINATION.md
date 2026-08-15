@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFEDESTINATION
 description: "BR Nfedestination"
+semantic_vi: "View I_BR_NFEDESTINATION hiển thị dữ liệu NFe đích Brazil, được sử dụng để xác định đích của một tài liệu thuế Brazil. Nó được sử dụng trong thành phần FI-LOC-LO-BR cho mục đích tài chính và logistics địa điểm."
+keywords:
+  - "brazilian tax document"
+  - "nfe destination"
+  - "fi-loc-lo-br"
+  - "financial location"
+  - "logistics"
+  - "destination"
+  - "brazil"
+  - "địa điểm"
+  - "tài liệu thuế brazil"
+  - "nfe đích"
+  - "thành phần fi-loc-lo-br"
+semantic_en: "The I_BR_NFEDESTINATION view exposes Brazilian NFe destination data, which is used to determine the destination of a Brazilian tax document. It is used in the FI-LOC-LO-BR component for financial location and logistics purposes."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

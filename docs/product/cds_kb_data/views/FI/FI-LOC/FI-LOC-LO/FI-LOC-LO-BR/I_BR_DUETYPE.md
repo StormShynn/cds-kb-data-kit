@@ -1,6 +1,21 @@
 ---
 name: I_BR_DUETYPE
 description: "BR Duetype"
+semantic_vi: "View I_BR_DUETYPE hiển thị thông tin loại thanh toán cho thuế Brazil, có liên quan đến các giao dịch tài chính ở Brazil."
+keywords:
+  - "due type"
+  - "locais de operação"
+  - "fi-loc-lo-br"
+  - "brazilian tax"
+  - "due type information"
+  - "brazil"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "interface-view"
+  - "component:fi-loc-lo-br"
+  - "lob:finance"
+semantic_en: "The I_BR_DUETYPE view exposes due type information for Brazilian tax purposes, which is relevant for financial transactions in Brazil."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

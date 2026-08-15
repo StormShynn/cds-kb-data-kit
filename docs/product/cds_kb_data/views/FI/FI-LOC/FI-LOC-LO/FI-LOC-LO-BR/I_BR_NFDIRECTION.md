@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFDIRECTION
 description: "BR Nfdirection"
+semantic_vi: "View I_BR_NFDIRECTION hiển thị dữ liệu kinh doanh liên quan đến các hướng không phải ngoại hối trong thành phần FI-LOC-LO-BR. Nó được sử dụng để truy cập và thao tác dữ liệu này."
+keywords:
+  - "fi-loc-lo-br"
+  - "non-foreign exchange direction"
+  - "hướng không phải ngoại hối"
+  - "fi"
+  - "finance"
+  - "sap"
+  - "cds view"
+  - "view"
+  - "direction"
+  - "nfdirection"
+  - "br_nfdirection"
+semantic_en: "The I_BR_NFDIRECTION view exposes business data related to non-foreign exchange directions in the FI-LOC-LO-BR component. It is used to access and manipulate this data."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

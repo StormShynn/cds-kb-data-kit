@@ -1,6 +1,17 @@
 ---
 name: I_BR_NFDOCUMENTTYPE
 description: "BR Nfdocumenttype"
+semantic_vi: "View I_BR_NFDOCUMENTTYPE hiển thị danh sách các loại tài liệu được sử dụng trong hệ thống tài liệu tài chính BR (Brazil), có thể được sử dụng để lọc hoặc truy vấn tài liệu dựa trên loại tài liệu."
+keywords:
+  - "br nfdocumenttype"
+  - "document type"
+  - "tài liệu"
+  - "loại tài liệu"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "sap"
+  - "cds view"
+semantic_en: "The I_BR_NFDOCUMENTTYPE view exposes a list of document types used in the BR (Brazil) financial document system, which can be used to filter or retrieve documents based on their type."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

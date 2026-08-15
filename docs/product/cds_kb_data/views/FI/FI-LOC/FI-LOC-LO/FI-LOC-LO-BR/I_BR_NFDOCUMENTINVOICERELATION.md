@@ -1,6 +1,17 @@
 ---
 name: I_BR_NFDOCUMENTINVOICERELATION
 description: "BR Nfdocumentinvoicerelation"
+semantic_vi: "Chỉ ra mối quan hệ giữa các tài liệu NF Brazil và hóa đơn, hữu ích cho các ứng dụng tài chính và logistics."
+keywords:
+  - "nf document"
+  - "invoice relation"
+  - "finance"
+  - "logistics"
+  - "sap fi"
+  - "fi-loc-lo-br"
+  - "br nota fiscal"
+  - "invoice relationship"
+semantic_en: "Exposes relationships between Brazilian NF documents and invoices, useful for financial and logistics applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

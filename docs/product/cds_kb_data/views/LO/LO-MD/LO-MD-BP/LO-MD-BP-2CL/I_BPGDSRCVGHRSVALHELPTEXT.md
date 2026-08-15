@@ -1,6 +1,20 @@
 ---
 name: I_BPGDSRCVGHRSVALHELPTEXT
 description: "Bpgdsrcvghrsvalhelptext"
+semantic_vi: "View này hiển thị mã giờ nhận hàng và giá trị văn bản tương ứng, có thể được sử dụng để hiển thị văn bản giúp cho một mã giờ nhận hàng cụ thể và kết hợp ngôn ngữ."
+keywords:
+  - "goods receiving hours"
+  - "bpgoodsreceivinghourstext"
+  - "help text"
+  - "language"
+  - "logistics general"
+  - "lo"
+  - "lo-md"
+  - "lo-md-bp"
+  - "interface-view"
+  - "text-view"
+  - "text"
+semantic_en: "This view exposes goods receiving hours codes and corresponding text values, which can be used to display help text for a specific goods receiving hours code and language combination. It is useful when displaying or searching for goods receiving hours codes with their associated text values."
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

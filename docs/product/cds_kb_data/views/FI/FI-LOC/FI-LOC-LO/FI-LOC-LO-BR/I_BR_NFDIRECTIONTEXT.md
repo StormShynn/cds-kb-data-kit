@@ -1,6 +1,17 @@
 ---
 name: I_BR_NFDIRECTIONTEXT
 description: "BR Nfdirectiontext"
+semantic_vi: "View BR Nfdirectiontext cung cấp mô tả văn bản cho các hướng tài liệu kinh doanh trong một ngôn ngữ cụ thể. Nó được sử dụng để lấy mô tả văn bản của hướng tài liệu kinh doanh."
+keywords:
+  - "business document direction"
+  - "mô tả văn bản"
+  - "hướng tài liệu kinh doanh"
+  - "language"
+  - "text description"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "sap"
+semantic_en: "The BR Nfdirectiontext view provides text descriptions for business document directions in a specific language. It is used to retrieve the text representation of a business document direction."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

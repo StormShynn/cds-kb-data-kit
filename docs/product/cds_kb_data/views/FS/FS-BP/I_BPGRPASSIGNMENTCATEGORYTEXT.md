@@ -1,6 +1,21 @@
 ---
 name: I_BPGRPASSIGNMENTCATEGORYTEXT
 description: "Bpgrpassignmentcategorytext"
+semantic_vi: "Chỉ ra các mô tả nhóm giao việc kinh doanh cho ứng dụng FS-BP."
+keywords:
+  - "fs-bp"
+  - "business group"
+  - "assignment category"
+  - "description"
+  - "sap"
+  - "cds view"
+  - "fs"
+  - "bp"
+  - "category text"
+  - "group assignment"
+  - "kinh doanh"
+  - "giao việc"
+semantic_en: "Exposes business group assignment category descriptions for use in FS-BP application components."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

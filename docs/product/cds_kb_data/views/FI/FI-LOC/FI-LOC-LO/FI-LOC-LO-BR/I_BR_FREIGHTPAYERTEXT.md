@@ -1,6 +1,20 @@
 ---
 name: I_BR_FREIGHTPAYERTEXT
 description: "BR Freightpayertext"
+semantic_vi: "View I_BR_FREIGHTPAYERTEXT hiển thị dữ liệu văn bản người trả tiền vận chuyển, có liên quan khi hiển thị hoặc xử lý thông tin thanh toán vận chuyển trong thành phần FI-LOC-LO-BR."
+keywords:
+  - "freight payer"
+  - "vận chuyển"
+  - "thanh toán"
+  - "dữ liệu văn bản"
+  - "fi-loc-lo-br"
+  - "thanh toán vận chuyển"
+  - "người trả tiền"
+  - "đối tượng trả tiền"
+  - "text data"
+  - "finance"
+  - "finance integration"
+semantic_en: "The I_BR_FREIGHTPAYERTEXT view exposes freight payer text data, which is relevant when displaying or processing freight payment information in the FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
