@@ -41,8 +41,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TR_ElectronicDocumentCustomer` | ✓ | |  |  |  |  |
-| `TR_EDocMarkFreeZoneCustomer` |  | |  |  |  |  |
+| `TR_ElectronicDocumentCustomer` | ✓ | |  |  | `CHAR(10)` | Customer Number |
+| `TR_EDocMarkFreeZoneCustomer` |  | |  |  | `CHAR(1)` | Activate Free Zone Customer |
 
 ## Source Code
 

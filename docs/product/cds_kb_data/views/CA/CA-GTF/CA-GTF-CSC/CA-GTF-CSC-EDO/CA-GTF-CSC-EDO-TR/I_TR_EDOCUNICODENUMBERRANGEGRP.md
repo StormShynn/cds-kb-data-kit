@@ -39,12 +39,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `TR_EDocBusinessPartnerAlias` | ✓ | |  |  |  |  |
-| `TR_ElectronicDocumentUnivCode` | ✓ | |  |  |  |  |
-| `TR_EDocNumberRange` | ✓ | |  |  |  |  |
-| `TR_EDocUnivCodeText` |  | |  |  |  |  |
-| `TR_ElectronicDocCompanyCode` |  | | `_CompanyCode` | `CompanyCode` |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `TR_EDocBusinessPartnerAlias` | ✓ | |  |  | `CHAR(255)` | Sender Alias |
+| `TR_ElectronicDocumentUnivCode` | ✓ | |  |  | `CHAR(3)` | UniCode |
+| `TR_EDocNumberRange` | ✓ | |  |  | `CHAR(6)` | Number Range |
+| `TR_EDocUnivCodeText` |  | |  |  | `CHAR(50)` | Description |
+| `TR_ElectronicDocCompanyCode` |  | | `_CompanyCode` | `CompanyCode` | `CHAR(4)` | Company Code |
 
 ## Associations
 

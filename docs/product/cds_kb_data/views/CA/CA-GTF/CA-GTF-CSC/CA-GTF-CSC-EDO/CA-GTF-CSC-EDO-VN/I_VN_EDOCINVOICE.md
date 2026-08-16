@@ -39,19 +39,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `VN_EDocInvoiceUUID` | ✓ | |  |  |  |  |
-| `VN_EDocTemplateID` |  | |  |  |  |  |
-| `VN_EDocSeriesID` |  | |  |  |  |  |
-| `VN_EDocInvoiceNumber` |  | |  |  |  |  |
-| `VN_EDocBusinessPlace` |  | |  |  |  |  |
-| `VN_EDocBuyerIdnNmbr` |  | |  |  |  |  |
-| `VN_EDocReferenceTemplateID` |  | |  |  |  |  |
-| `VN_EDocReferenceSeriesID` |  | |  |  |  |  |
-| `VN_EDocReferenceInvoiceNumber` |  | |  |  |  |  |
-| `VN_EDocScenario` |  | |  |  |  |  |
-| `VN_EDocCQTCode` |  | |  |  |  |  |
-| `VN_EDocAgreementInformation` |  | |  |  |  |  |
-| `ElectronicDocCompanyCode` |  | |  |  |  |  |
+| `VN_EDocInvoiceUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `VN_EDocTemplateID` |  | |  |  | `CHAR(11)` | eDocument Vietnam: Template ID |
+| `VN_EDocSeriesID` |  | |  |  | `CHAR(8)` | eDocument Vietnam: Series ID |
+| `VN_EDocInvoiceNumber` |  | |  |  | `CHAR(8)` | eDocument Vietnam: Invoice Number |
+| `VN_EDocBusinessPlace` |  | |  |  | `CHAR(4)` | Business Place |
+| `VN_EDocBuyerIdnNmbr` |  | |  |  | `CHAR(20)` | eDocument Vietnam: Buyer Identification Number |
+| `VN_EDocReferenceTemplateID` |  | |  |  | `CHAR(11)` | eDocument Vietnam: Reference Template ID |
+| `VN_EDocReferenceSeriesID` |  | |  |  | `CHAR(8)` | eDocument Vietnam: Reference Series ID |
+| `VN_EDocReferenceInvoiceNumber` |  | |  |  | `CHAR(27)` | eDocument Vietnam: Reference Invoice Number |
+| `VN_EDocScenario` |  | |  |  | `CHAR(1)` | eDocument Vietnam: Scenario |
+| `VN_EDocCQTCode` |  | |  |  | `CHAR(150)` | eDocument Vietnam: CQT Code |
+| `VN_EDocAgreementInformation` |  | |  |  | `CHAR(30)` | eDocument Vietnam: Agreement Information |
+| `ElectronicDocCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
 
 ## Source Code
 

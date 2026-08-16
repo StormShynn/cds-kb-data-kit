@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TR_EDocPurchaseCode` | ✓ | |  |  |  |  |
-| `TR_EDocAccountKey` | ✓ | |  |  |  |  |
-| `TR_ElectronicDocumentTaxType` |  | |  |  |  |  |
-| `TR_EDocVatTaxTypeCode` |  | |  |  |  |  |
+| `TR_EDocPurchaseCode` | ✓ | |  |  | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `TR_EDocAccountKey` | ✓ | |  |  | `CHAR(3)` | Account Key |
+| `TR_ElectronicDocumentTaxType` |  | |  |  | `CHAR(1)` | eDocument Turkey: Tax Type |
+| `TR_EDocVatTaxTypeCode` |  | |  |  | `CHAR(4)` | Code of VAT Tax Type |
 
 ## Source Code
 

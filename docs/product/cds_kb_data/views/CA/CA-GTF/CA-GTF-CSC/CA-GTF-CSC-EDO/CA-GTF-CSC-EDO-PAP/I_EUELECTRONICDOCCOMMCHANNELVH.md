@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EU_EDocCommChannel` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_comm_channel)` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `EU_EDocCommChannelText` |  | |  | `ddtext` |  |  |
+| `EU_EDocCommChannel` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_comm_channel)` | `CHAR(1)` | Exchange Channel |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `EU_EDocCommChannelText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

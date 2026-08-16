@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EU_EDocDoctypeId` | ✓ | |  | `doc_type_id` |  |  |
-| `EU_EDocDoctype` |  | |  | `doc_type` |  |  |
-| `EU_EDocProcessId` |  | |  | `process_id` |  |  |
-| `EU_EDocIsEmailDocType` |  | |  | `is_email_doc_type` |  |  |
+| `EU_EDocDoctypeId` | ✓ | |  | `doc_type_id` | `CHAR(15)` | eDocument EU: Document Type ID |
+| `EU_EDocDoctype` |  | |  | `doc_type` | `CHAR(255)` | Document Type |
+| `EU_EDocProcessId` |  | |  | `process_id` | `CHAR(100)` | Process Identifier |
+| `EU_EDocIsEmailDocType` |  | |  | `is_email_doc_type` | `CHAR(1)` | Document Type Used by E-Mail Option |
 
 ## Source Code
 

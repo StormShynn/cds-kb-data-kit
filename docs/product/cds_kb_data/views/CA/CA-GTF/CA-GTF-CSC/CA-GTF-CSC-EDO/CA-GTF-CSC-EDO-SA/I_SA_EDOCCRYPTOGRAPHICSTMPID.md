@@ -39,15 +39,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SA_EDocLgclSolnUUID` | ✓ | |  | `egs_id` |  |  |
-| `SA_EDocCryptographicSqncNmbr` | ✓ | |  | `csid_seq_no` |  |  |
-| `SA_EDocValidityStartDate` | ✓ | |  | `from_date` |  |  |
-| `SA_EDocValidityEndDate` |  | |  | `to_date` |  |  |
-| `SA_EDocInvoiceSequenceNumber` |  | |  | `icv` |  |  |
+| `SA_EDocLgclSolnUUID` | ✓ | |  | `egs_id` | `RAW(16)` | Globally Unique Identifier |
+| `SA_EDocCryptographicSqncNmbr` | ✓ | |  | `csid_seq_no` | `NUMC(6)` | eDocument KSA: CSID Sequence Number |
+| `SA_EDocValidityStartDate` | ✓ | |  | `from_date` | `DATS(8)` | Field of type DATS |
+| `SA_EDocValidityEndDate` |  | |  | `to_date` | `DATS(8)` | Field of type DATS |
+| `SA_EDocInvoiceSequenceNumber` |  | |  | `icv` | `CHAR(100)` |  |
 | `SA_EDocPrevInvoiceHashBinary` |  | |  | `prev_inv_hash` |  |  |
-| `SA_EDocComplianceRequestId` |  | |  | `c_csid_req_id` |  |  |
-| `SA_EDocProductionRequestId` |  | |  | `p_csid_req_id` |  |  |
-| `SA_EDocElectronicGnrtdSolnSts` |  | |  | `status` |  |  |
+| `SA_EDocComplianceRequestId` |  | |  | `c_csid_req_id` | `CHAR(50)` |  |
+| `SA_EDocProductionRequestId` |  | |  | `p_csid_req_id` | `CHAR(50)` |  |
+| `SA_EDocElectronicGnrtdSolnSts` |  | |  | `status` | `CHAR(10)` | eDocument KSA: Status of EGS |
 | `SA_EDocCertSigningReqDtaBinary` |  | |  | `csr` |  |  |
 | `SA_EDocComplianceStampIdBinary` |  | |  | `c_csid` |  |  |
 | `SA_EDocProdnStmpIdBinary` |  | |  | `p_csid` |  |  |

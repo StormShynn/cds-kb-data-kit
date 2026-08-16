@@ -39,16 +39,16 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TR_ElectronicDocTaxID` | ✓ | |  |  |  |  |
-| `TR_EDocBusinessPartnerAlias` | ✓ | |  |  |  |  |
-| `TR_EDocMasterID` | ✓ | |  |  |  |  |
-| `TR_EDocBusinessPartnerType` | ✓ | |  |  |  |  |
-| `TR_EDocTaxpayerName` |  | |  |  |  |  |
-| `TR_EDocTaxPayerIdnType` |  | |  |  |  |  |
-| `TR_ElectronicDocumentScenario` |  | |  |  |  |  |
-| `TR_EDocFirstAliasRegnDateData` |  | |  |  |  |  |
-| `TR_EDocFirstAliasRegnTimeData` |  | |  |  |  |  |
-| `TR_EDocIsDefaultAlias` |  | |  |  |  |  |
+| `TR_ElectronicDocTaxID` | ✓ | |  |  | `CHAR(11)` | eDocument Turkey: VKN/TCKN |
+| `TR_EDocBusinessPartnerAlias` | ✓ | |  |  | `CHAR(255)` | Alias |
+| `TR_EDocMasterID` | ✓ | |  |  | `CHAR(10)` | Business Partner Number |
+| `TR_EDocBusinessPartnerType` | ✓ | |  |  | `CHAR(10)` | Business Partner Type |
+| `TR_EDocTaxpayerName` |  | |  |  | `CHAR(80)` | Taxpayer Name |
+| `TR_EDocTaxPayerIdnType` |  | |  |  | `CHAR(4)` | Taxpayer Type |
+| `TR_ElectronicDocumentScenario` |  | |  |  | `CHAR(10)` | Scenario (Turkey) |
+| `TR_EDocFirstAliasRegnDateData` |  | |  |  | `CHAR(28)` | Registration Date of First Alias Registered for VKN/TCKN |
+| `TR_EDocFirstAliasRegnTimeData` |  | |  |  | `CHAR(28)` | Registration Date |
+| `TR_EDocIsDefaultAlias` |  | |  |  | `CHAR(1)` | Default Alias |
 
 ## Source Code
 

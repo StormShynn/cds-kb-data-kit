@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CalendarYear` | ✓ | |  | `calendaryear` |  |  |
-| `IsLeapYear` |  | |  | `isleapyear` |  |  |
-| `NumberOfDays` |  | |  | `numberofdays` |  |  |
+| `CalendarYear` | ✓ | |  | `calendaryear` | `NUMC(4)` | Calendar Year |
+| `IsLeapYear` |  | |  | `isleapyear` | `CHAR(1)` | Is Leap Year |
+| `NumberOfDays` |  | |  | `numberofdays` | `INT4(10)` | Number of Days in Year or Month |
 
 ## Source Code
 

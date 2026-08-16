@@ -53,9 +53,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DateFunction` | ✓ | |  |  |  |  |
-| `DateFunctionStartDate` |  | |  |  |  |  |
-| `DateFunctionEndDate` |  | |  |  |  |  |
+| `DateFunction` | ✓ | |  |  | `CHAR(32)` | Relative Date Function ID |
+| `DateFunctionStartDate` |  | |  |  | `DATS(8)` | Date Function Start Date |
+| `DateFunctionEndDate` |  | |  |  | `DATS(8)` | Date Function End Date |
 
 ## Source Code
 

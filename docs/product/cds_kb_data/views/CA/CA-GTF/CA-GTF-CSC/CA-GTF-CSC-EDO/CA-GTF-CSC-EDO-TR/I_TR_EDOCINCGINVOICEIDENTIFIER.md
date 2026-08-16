@@ -39,24 +39,24 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `TR_ElectronicDocUniqueID` |  | |  |  |  |  |
-| `TR_ElectronicDocInvoiceID` |  | |  |  |  |  |
-| `TR_EDocBusinessPartnerAlias` |  | |  |  |  |  |
-| `TR_ElectronicDocTaxID` |  | |  |  |  |  |
-| `TR_EDocAcceptStatus` |  | |  |  |  |  |
-| `TR_ElectronicDocEnvelopeID` |  | |  |  |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `TR_ElectronicDocUniqueID` |  | |  |  | `CHAR(36)` | eDocument Turkey: FIT Invoice UUID |
+| `TR_ElectronicDocInvoiceID` |  | |  |  | `CHAR(16)` | eDocument Turkey: Invoice ID |
+| `TR_EDocBusinessPartnerAlias` |  | |  |  | `CHAR(255)` | Alias |
+| `TR_ElectronicDocTaxID` |  | |  |  | `CHAR(11)` | eDocument Turkey: VKN/TCKN |
+| `TR_EDocAcceptStatus` |  | |  |  | `CHAR(5)` | eDocument Turkey: Accept Status for Incoming--Do NOT USE |
+| `TR_ElectronicDocEnvelopeID` |  | |  |  | `CHAR(36)` | eDocument Turkey: FIT Envelope ID |
 | `TR_EDocRejectionReasonText` |  | |  |  |  |  |
-| `TR_ElectronicDocRcvdDateTime` |  | |  |  |  |  |
-| `TR_ElectronicDocSupplierID` |  | |  |  |  |  |
-| `TR_EDocTaxExclusiveAmount` |  | |  |  |  |  |
-| `TR_ElectronicDocTaxAmount` |  | |  |  |  |  |
-| `TR_EDocTaxInclusiveAmount` |  | |  |  |  |  |
-| `TR_EDocCurrencyKey` |  | |  |  |  |  |
-| `TR_ElectronicDocSupplierName` |  | |  |  |  |  |
-| `TR_EDocCancelReason` |  | |  |  |  |  |
-| `TR_EDocCancelReasonCode` |  | |  |  |  |  |
-| `TR_ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |  |  |
+| `TR_ElectronicDocRcvdDateTime` |  | |  |  | `DEC(21)` | Time Received |
+| `TR_ElectronicDocSupplierID` |  | |  |  | `CHAR(10)` | Supplier |
+| `TR_EDocTaxExclusiveAmount` |  | |  |  | `DEC(23)` |  |
+| `TR_ElectronicDocTaxAmount` |  | |  |  | `DEC(23)` |  |
+| `TR_EDocTaxInclusiveAmount` |  | |  |  | `DEC(23)` |  |
+| `TR_EDocCurrencyKey` |  | |  |  | `CUKY(5)` | Currency Key |
+| `TR_ElectronicDocSupplierName` |  | |  |  | `CHAR(50)` | Supplier Name |
+| `TR_EDocCancelReason` |  | |  |  | `CHAR(255)` | eDocument Turkey: Cancellation Reason |
+| `TR_EDocCancelReasonCode` |  | |  |  | `CHAR(2)` | eDocument Turkey: Cancellation Reason Code |
+| `TR_ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` | `CHAR(4)` | Company Code |
 
 ## Associations
 
