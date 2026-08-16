@@ -1,6 +1,18 @@
 ---
 name: I_BPCREDITSTANDING
 description: "Bpcreditstanding"
+semantic_vi: "View I_BPCREDITSTANDING cung cấp thông tin về tình trạng tín dụng của đối tác kinh doanh, giúp đánh giá được khả năng tín dụng và đưa ra quyết định chính xác."
+keywords:
+  - "business partner"
+  - "tình trạng tín dụng"
+  - "credit standing"
+  - "đối tác kinh doanh"
+  - "creditworthiness"
+  - "business credit"
+  - "tín dụng kinh doanh"
+  - "credit evaluation"
+  - "đánh giá tín dụng"
+semantic_en: "The I_BPCREDITSTANDING view provides business credit standing information for business partners, which can be used to evaluate their creditworthiness and make informed decisions."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

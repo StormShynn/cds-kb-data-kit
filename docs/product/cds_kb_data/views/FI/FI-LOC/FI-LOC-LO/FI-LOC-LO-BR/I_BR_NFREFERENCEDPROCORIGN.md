@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFREFERENCEDPROCORIGN
 description: "BR Nfreferencedprocorign"
+semantic_vi: "View I_BR_NFREFERENCEDPROCORIGN hiển thị dữ liệu kinh doanh liên quan đến nguồn gốc của các quá trình tham chiếu trong hệ thống BR, được sử dụng trong thành phần FI-LOC-LO-BR. Nó cung cấp thông tin về nguồn gốc của các quá trình này."
+keywords:
+  - "br system"
+  - "fi-loc-lo-br"
+  - "referenced process"
+  - "nghĩa nguồn gốc"
+  - "thông tin kinh doanh"
+  - "hệ thống tài chính"
+  - "finance"
+  - "tài chính"
+  - "sap fi"
+  - "sap fi-loc"
+  - "sap fi-loc-lo-br"
+semantic_en: "The I_BR_NFREFERENCEDPROCORIGN view exposes business data related to the origin of referenced processes in the BR system, which is used in the FI-LOC-LO-BR component. It provides information about the source of these processes."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

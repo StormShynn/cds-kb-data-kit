@@ -1,6 +1,20 @@
 ---
 name: I_BPCURRENTDEFAULTADDRESS
 description: "Bpcurrentdefaultaddress"
+semantic_vi: "View BpCurrentDefaultAddress hiển thị địa chỉ mặc định hiện tại của đối tác kinh doanh, bao gồm ID địa chỉ, ngày bắt đầu và kết thúc có hiệu lực, và trạng thái bảo vệ. Nó được sử dụng để lấy địa chỉ mặc định của đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "default address"
+  - "address id"
+  - "validity start date"
+  - "validity end date"
+  - "bpaddressisprotected"
+  - "sap cds view"
+  - "ap-md-bp"
+  - "address"
+  - "component ap-md-bp"
+  - "lob other"
+semantic_en: "The BpCurrentDefaultAddress view exposes the current default address for a business partner, including the address ID, validity start and end dates, and protection status. It is used to retrieve the default address for a business partner."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

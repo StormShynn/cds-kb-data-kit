@@ -1,6 +1,21 @@
 ---
 name: I_BPCREDITWORTHINESS
 description: "Bpcreditworthiness"
+semantic_vi: "Chứa dữ liệu về độ đáng tin cậy của đối tác kinh doanh, bao gồm trạng thái đánh giá tín dụng, xếp hạng và bình luận."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "creditworthiness"
+  - "độ đáng tin cậy"
+  - "credit standing"
+  - "đánh giá tín dụng"
+  - "credit rating"
+  - "xếp hạng tín dụng"
+  - "credit risk"
+  - "risks"
+  - "sap"
+  - "fs-bp"
+semantic_en: "Exposes business partner creditworthiness data, including credit standing status, rating, and comments. Use this view to assess a business partner's credit risk."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

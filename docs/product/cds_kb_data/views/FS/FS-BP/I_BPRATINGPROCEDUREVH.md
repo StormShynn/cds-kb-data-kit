@@ -1,6 +1,18 @@
 ---
 name: I_BPRATINGPROCEDUREVH
 description: "Bpratingprocedurevh"
+semantic_vi: "View BPRatingProcedureVH cung cấp danh sách các thủ tục đánh giá đối tác kinh doanh và các cài đặt liên quan, có thể được sử dụng để xác định yêu cầu đánh giá và ngày truy cập đối với đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "rating procedure"
+  - "business partner rating"
+  - "access days"
+  - "fs-bp"
+  - "sap"
+  - "cds view"
+  - "interface view"
+  - "value help"
+semantic_en: "The BPRatingProcedureVH view provides a list of business partner rating procedures and their associated settings, which can be used to determine the rating requirements and access days for business partners."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

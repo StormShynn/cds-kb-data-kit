@@ -1,6 +1,20 @@
 ---
 name: I_BPEMPLOYMENTSTATUS
 description: "Bpemploymentstatus"
+semantic_vi: "View Bpemploymentstatus CDS hiển thị thông tin trạng thái làm việc của đối tác kinh doanh, có thể được sử dụng để xác định trạng thái làm việc hiện tại của đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "trạng thái làm việc"
+  - "cds view"
+  - "fs-bp"
+  - "interface view"
+  - "status"
+  - "employment status"
+  - "đối tác kinh doanh"
+  - "trạng thái"
+  - "cds"
+  - "fsbp"
+semantic_en: "The Bpemploymentstatus CDS view exposes employment status information for business partners, which can be used to determine the current employment status of a business partner."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

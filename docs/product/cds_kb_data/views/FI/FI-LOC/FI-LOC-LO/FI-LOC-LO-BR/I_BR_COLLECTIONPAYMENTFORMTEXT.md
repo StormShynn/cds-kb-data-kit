@@ -1,6 +1,21 @@
 ---
 name: I_BR_COLLECTIONPAYMENTFORMTEXT
 description: "BR Collectionpaymentformtext"
+semantic_vi: "View I_BR_COLLECTIONPAYMENTFORMTEXT cung cấp mô tả văn bản cho các hình thức thanh toán được sử dụng trong quá trình thu thập, có thể được sử dụng để hiển thị các tùy chọn thanh toán cho khách hàng hoặc để lưu trữ thông tin hình thức thanh toán trong hệ thống."
+keywords:
+  - "collection"
+  - "payment"
+  - "text"
+  - "description"
+  - "form"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "sap"
+  - "cds"
+  - "view"
+  - "language"
+  - "paymentform"
+semantic_en: "The I_BR_COLLECTIONPAYMENTFORMTEXT view provides text descriptions for payment forms used in collections, which can be used to display payment options to customers or to store payment form information in the system."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: I_BPDEBTORGROUPTEXT
 description: "Bpdebtorgrouptext"
+semantic_vi: "Chứa thông tin mô tả nhóm nợ cho đối tác kinh doanh, hữu ích khi hiển thị hoặc báo cáo thông tin nhóm nợ."
+keywords:
+  - "debtor group"
+  - "business partner"
+  - "description"
+  - "debtor group description"
+  - "đối tác kinh doanh"
+  - "thông tin nhóm nợ"
+  - "mô tả"
+  - "sap"
+  - "fs-bp"
+semantic_en: "Exposes debtor group descriptions for business partners, useful when displaying or reporting on debtor group information."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

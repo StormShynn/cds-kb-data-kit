@@ -1,6 +1,18 @@
 ---
 name: I_BPFINANCIALSERVICESEXTN
 description: "Bpfinancialservicesextn"
+semantic_vi: "Chứa thông tin dịch vụ tài chính mở rộng cho đối tác kinh doanh, bao gồm chi tiết đối tác thương mại và chỉ số tài chính."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "financial services"
+  - "dịch vụ tài chính"
+  - "trading partner"
+  - "đối tác thương mại"
+  - "financial metrics"
+  - "chỉ số tài chính"
+  - "sap fs-bp"
+semantic_en: "Exposes extended financial services information for business partners, including trading partner details and financial metrics."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

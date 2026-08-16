@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFTRANSPORTEDVOLUME
 description: "BR Nftransportedvolume"
+semantic_vi: "View I_BR_NFTRANSPORTEDVOLUME CDS hiển thị dữ liệu thể tích vận chuyển cho các tài liệu NF Brazil, có thể được sử dụng để phân tích và báo cáo về thể tích hàng hóa vận chuyển."
+keywords:
+  - "transported volume"
+  - "thể tích vận chuyển"
+  - "nf document"
+  - "tài liệu nf"
+  - "brazilian nf"
+  - "tài liệu nf brazil"
+  - "sap cds view"
+  - "view cds sap"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "finance component"
+  - "component finance"
+semantic_en: "The I_BR_NFTRANSPORTEDVOLUME CDS view exposes transported volume data for Brazilian NF documents, which can be used to analyze and report on the volumes of goods transported."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

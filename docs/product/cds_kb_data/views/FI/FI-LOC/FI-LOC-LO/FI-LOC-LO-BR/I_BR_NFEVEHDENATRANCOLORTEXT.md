@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFEVEHDENATRANCOLORTEXT
 description: "BR Nfevehdenatrancolortext"
+semantic_vi: "Chứa thông tin mô tả màu xe Brazil theo định dạng DENATRAN để sử dụng trong việc địa phương hóa và hiển thị văn bản."
+keywords:
+  - "denatran"
+  - "vehicle color"
+  - "màu xe"
+  - "localization"
+  - "địa phương hóa"
+  - "text view"
+  - "view"
+  - "sap cds"
+  - "fi-loc-lo-br"
+  - "finance"
+semantic_en: "Exposes Brazilian vehicle color descriptions in DENATRAN format for use in localization and text display."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

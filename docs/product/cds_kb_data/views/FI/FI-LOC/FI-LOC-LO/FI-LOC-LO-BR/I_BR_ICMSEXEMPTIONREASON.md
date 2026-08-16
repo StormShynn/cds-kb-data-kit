@@ -1,6 +1,17 @@
 ---
 name: I_BR_ICMSEXEMPTIONREASON
 description: "BR Icmsexemptionreason"
+semantic_vi: "View I_BR_ICMSEXEMPTIONREASON hiển thị lý do miễn thuế ICMS cho mục đích thuế Brazil, thường được sử dụng khi xử lý các giao dịch liên quan đến thuế."
+keywords:
+  - "icms exemption reason"
+  - "reason code"
+  - "tax exemption"
+  - "brazilian tax"
+  - "tax purpose"
+  - "brazil"
+  - "exemption reason"
+  - "tax reason"
+semantic_en: "The I_BR_ICMSEXEMPTIONREASON view exposes ICMS exemption reasons for Brazilian tax purposes, typically used when processing tax-related transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

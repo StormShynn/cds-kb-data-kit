@@ -1,6 +1,18 @@
 ---
 name: I_BR_ICMSEXEMPTIONREASONTEXT
 description: "BR Icmsexemptionreasontext"
+semantic_vi: "Cung cấp văn bản lý do miễn trừ ICMS, được sử dụng để hiển thị mô tả trong các ngôn ngữ khác nhau."
+keywords:
+  - "icms"
+  - "exemption reason"
+  - "text view"
+  - "language"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "lob"
+  - "component"
+  - "sap cds view"
+semantic_en: "Provides exemption reason text for ICMS, used to display descriptions in various languages."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: I_BPLETTERSALUTATION
 description: "Bplettersalutation"
+semantic_vi: "View Bplettersalutation hiển thị các lời chào trong thư của đối tác kinh doanh, được sử dụng để chào hỏi đối tác kinh doanh trong thư và các tài liệu khác. Nó được sử dụng khi tạo hoặc cập nhật dữ liệu đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "letter salutation"
+  - "đối tác kinh doanh"
+  - "lời chào trong thư"
+  - "business partner master data"
+  - "cập nhật dữ liệu đối tác kinh doanh"
+  - "sap"
+  - "fs-bp"
+  - "interface-view"
+semantic_en: "The Bplettersalutation view exposes business partner letter salutations, which are used to address business partners in letters and other correspondence. It is used when creating or updating business partner master data."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

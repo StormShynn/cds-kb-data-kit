@@ -1,6 +1,19 @@
 ---
 name: I_BPGRPASSIGNMENTCATEGORY
 description: "Bpgrpassignmentcategory"
+semantic_vi: "CDS view Bpgrpassignmentcategory hiển thị dữ liệu kinh doanh liên quan đến các loại phân loại nhóm đối tác kinh doanh. Nó được sử dụng khi quản lý nhóm đối tác kinh doanh và các loại phân loại liên quan."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "group assignment"
+  - "phân loại nhóm"
+  - "business partner group"
+  - "nhóm đối tác kinh doanh"
+  - "category"
+  - "loại phân loại"
+  - "sap"
+  - "fs-bp"
+semantic_en: "The Bpgrpassignmentcategory CDS view exposes business data related to group assignment categories for business partners. It is used when managing business partner groups and their associated categories."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

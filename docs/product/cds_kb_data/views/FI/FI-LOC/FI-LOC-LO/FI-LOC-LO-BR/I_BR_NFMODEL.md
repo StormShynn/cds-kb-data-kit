@@ -1,6 +1,18 @@
 ---
 name: I_BR_NFMODEL
 description: "BR Nfmodel"
+semantic_vi: "View BR Nfmodel hiển thị dữ liệu kinh doanh liên quan đến mô hình NF Brazil, được sử dụng cho mục đích thuế ở Brazil. Nó có thể được sử dụng khi làm việc với tuân thủ thuế Brazil và giao dịch tài chính."
+keywords:
+  - "brazilian nf model"
+  - "tax compliance"
+  - "financial transactions"
+  - "br nfmodel"
+  - "tax purposes"
+  - "tuân thủ thuế"
+  - "giao dịch tài chính"
+  - "mô hình nf brazil"
+  - "fi-loc-lo-br"
+semantic_en: "The BR Nfmodel view exposes business data related to Brazilian NF model, which is used for tax purposes in Brazil. It can be used when working with Brazilian tax compliance and financial transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFDIRECTION
 description: "BR Nfdirection"
+semantic_vi: "View I_BR_NFDIRECTION hiển thị dữ liệu kinh doanh liên quan đến hướng vận chuyển hàng hóa trong bối cảnh logistics, hữu ích cho các nhà phát triển làm việc với vận chuyển và hoạt động giao hàng."
+keywords:
+  - "freight direction"
+  - "hướng vận chuyển hàng hóa"
+  - "logistics"
+  - "loại hàng hóa"
+  - "finance"
+  - "fi"
+  - "fi-loc-lo-br"
+  - "interface-view"
+  - "component:fi-loc-lo-br"
+  - "lob:finance"
+semantic_en: "The BR Nfdirection view exposes business data related to freight directions in a logistics context, useful for developers working with freight and shipping operations."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

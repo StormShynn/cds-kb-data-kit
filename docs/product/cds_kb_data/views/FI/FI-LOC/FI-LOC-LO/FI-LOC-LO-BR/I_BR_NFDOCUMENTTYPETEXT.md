@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFDOCUMENTTYPETEXT
 description: "BR Nfdocumenttypetext"
+semantic_vi: "View BR Nfdocumenttypetext hiển thị dữ liệu kinh doanh liên quan đến loại tài liệu trong ngữ cảnh tài chính, cung cấp mô tả văn bản cho các loại tài liệu này trong các ngôn ngữ khác nhau. Nó có thể được sử dụng khi hiển thị hoặc xử lý các loại tài liệu với văn bản địa phương."
+keywords:
+  - "financial document"
+  - "tài liệu tài chính"
+  - "document type"
+  - "loại tài liệu"
+  - "text description"
+  - "mô tả văn bản"
+  - "language"
+  - "ngôn ngữ"
+  - "sap fi"
+  - "fi sap"
+  - "cds view"
+  - "view cds"
+semantic_en: "The BR Nfdocumenttypetext view exposes business data related to document types in a financial context, providing text descriptions for these types in different languages. It can be used when displaying or processing document types with localized text."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

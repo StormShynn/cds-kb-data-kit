@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFTEXTS
 description: "BR Nftexts"
+semantic_vi: "View BR Nftexts hiển thị dữ liệu văn bản hóa đơn cho một ghi chú tài chính, bao gồm cả văn bản và thông tin liên quan. Nó được sử dụng khi truy cập và xử lý các bản ghi văn bản hóa đơn."
+keywords:
+  - "invoice text"
+  - "văn bản hóa đơn"
+  - "fiscal note"
+  - "ghi chú tài chính"
+  - "invoice data"
+  - "dữ liệu hóa đơn"
+  - "sap fi"
+  - "fi-loc-lo-br"
+  - "text data"
+  - "dữ liệu văn bản"
+semantic_en: "The BR Nftexts view exposes invoice text data for a fiscal note, including the text itself and related information. It is used when accessing and processing invoice text records."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

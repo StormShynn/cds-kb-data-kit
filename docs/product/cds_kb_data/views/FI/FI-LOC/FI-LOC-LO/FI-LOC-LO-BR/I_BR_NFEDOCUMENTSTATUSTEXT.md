@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFEDOCUMENTSTATUSTEXT
 description: "BR Nfedocumentstatustext"
+semantic_vi: "View BR Nfedocumentstatustext cung cấp mô tả văn bản cho trạng thái tài liệu NFe Brazil trong các ngôn ngữ khác nhau. Nó được sử dụng để hiển thị trạng thái của một tài liệu trong một ngôn ngữ cụ thể."
+keywords:
+  - "br"
+  - "nfe"
+  - "document"
+  - "status"
+  - "text"
+  - "description"
+  - "language"
+  - "fi-loc-lo-br"
+  - "sap"
+  - "cds"
+  - "view"
+  - "finance"
+semantic_en: "The BR Nfedocumentstatustext view provides text descriptions for Brazilian NFe document statuses in different languages. It is used to display the status of a document in a specific language."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

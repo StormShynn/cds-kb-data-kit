@@ -1,6 +1,18 @@
 ---
 name: I_BR_CREDITCARDCOMPANY
 description: "BR Creditcardcompany"
+semantic_vi: "View I_BR_CREDITCARDCOMPANY hiển thị thông tin công ty thẻ tín dụng, hữu ích khi xử lý các giao dịch liên quan đến thẻ tín dụng."
+keywords:
+  - "credit card company"
+  - "thông tin công ty thẻ tín dụng"
+  - "credit card transaction"
+  - "giao dịch thẻ tín dụng"
+  - "sap fi"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "finance industry"
+  - "thị trường tài chính"
+semantic_en: "The I_BR_CREDITCARDCOMPANY CDS view exposes credit card company information, useful when processing transactions involving credit cards."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_BR_BUSINESSPLACE
 description: "BR Businessplace"
+semantic_vi: "View I_BR_BUSINESSPLACE hiển thị dữ liệu địa điểm kinh doanh, bao gồm thông tin địa chỉ và thuế, cho việc sử dụng trong ứng dụng tài chính và kế toán."
+keywords:
+  - "business place"
+  - "địa điểm kinh doanh"
+  - "address"
+  - "địa chỉ"
+  - "tax"
+  - "thuế"
+  - "financial"
+  - "tài chính"
+  - "accounting"
+  - "kế toán"
+  - "sap"
+  - "fi"
+semantic_en: "The I_BR_BUSINESSPLACE view exposes business place data, including address and tax information, for use in financial and accounting applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

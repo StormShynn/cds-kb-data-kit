@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFTAX
 description: "BR Nftax"
+semantic_vi: "View I_BR_NFTAX hiển thị thông tin thuế Brazil cho hóa đơn, bao gồm loại thuế, tỷ lệ và số tiền. Nó được sử dụng để lấy thông tin thuế cho một mục hóa đơn cụ thể."
+keywords:
+  - "invoice"
+  - "đơn hàng"
+  - "tax"
+  - "thuế"
+  - "brazil"
+  - "brazilian tax"
+  - "invoice item"
+  - "mục hóa đơn"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+  - "finance"
+semantic_en: "The I_BR_NFTAX view exposes Brazilian tax information for invoices, including tax types, rates, and amounts. It is used to retrieve tax details for a specific invoice item."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

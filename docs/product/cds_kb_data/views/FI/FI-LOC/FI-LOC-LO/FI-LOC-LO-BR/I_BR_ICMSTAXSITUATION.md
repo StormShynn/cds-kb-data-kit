@@ -1,6 +1,21 @@
 ---
 name: I_BR_ICMSTAXSITUATION
 description: "BR Icmstaxsituation"
+semantic_vi: "View I_BR_ICMSTAXSITUATION cung cấp thông tin về tình huống thuế cho các hoạt động kinh doanh, có thể hữu ích khi phân tích tác động thuế của các hoạt động kinh doanh."
+keywords:
+  - "tax situation"
+  - "tình huống thuế"
+  - "business transaction"
+  - "hoạt động kinh doanh"
+  - "tax implication"
+  - "tác động thuế"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "interface-view"
+  - "tax"
+semantic_en: "The I_BR_ICMSTAXSITUATION view provides information about tax situations for business transactions, which is useful when analyzing tax implications of business activities."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

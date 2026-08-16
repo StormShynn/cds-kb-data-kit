@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFTEXTTYPEDESCRIPTION
 description: "BR Nftexttypedescription"
+semantic_vi: "View BR Nftexttypedescription cung cấp mô tả loại văn bản tham khảo kinh doanh trong một ngôn ngữ cụ thể, có thể được sử dụng để hiển thị hoặc dịch văn bản trong các ứng dụng tài chính."
+keywords:
+  - "business reference text"
+  - "financial application"
+  - "language"
+  - "description"
+  - "text type"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "sap"
+  - "cds view"
+  - "text view"
+  - "interface view"
+  - "lob finance"
+semantic_en: "The BR Nftexttypedescription view provides a description of business reference text types in a specific language, which can be used to display or translate text in financial applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

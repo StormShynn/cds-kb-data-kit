@@ -1,6 +1,20 @@
 ---
 name: I_BPOCCUPATIONGROUPTEXT
 description: "Bpoccupationgrouptext"
+semantic_vi: "View Bpoccupationgrouptext cung cấp mô tả văn bản của nhóm nghề nghiệp đối tác kinh doanh trong các ngôn ngữ khác nhau. Nó được sử dụng để lấy mô tả nhóm nghề nghiệp đối tác kinh doanh trong các ngôn ngữ khác nhau."
+keywords:
+  - "business partner"
+  - "occupation group"
+  - "description"
+  - "language"
+  - "text view"
+  - "interface view"
+  - "fs-bp"
+  - "sap cds"
+  - "business data"
+  - "lob other"
+  - "fs"
+semantic_en: "The Bpoccupationgrouptext view provides text descriptions of business partner occupation groups in different languages. It is used to retrieve occupation group descriptions for business partners in various languages."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,17 @@
 ---
 name: I_BR_NFEDESTINATION
 description: "BR Nfedestination"
+semantic_vi: "View BR NFe Destination hiển thị thông tin về số định danh người nộp thuế Brazil, được sử dụng trong thành phần FI-LOC-LO-BR cho các giao dịch tài chính."
+keywords:
+  - "br nfe destination"
+  - "brazilian national taxpayer identification number"
+  - "fi-loc-lo-br"
+  - "financial transactions"
+  - "số định danh người nộp thuế"
+  - "định danh người nộp thuế brazil"
+  - "giao dịch tài chính"
+  - "thành phần fi-loc-lo-br"
+semantic_en: "The BR NFe Destination view exposes information about Brazilian National Taxpayer Identification Number destinations, which are used in the FI-LOC-LO-BR component for financial transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

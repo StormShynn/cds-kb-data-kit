@@ -1,6 +1,18 @@
 ---
 name: I_BPCUSTOMERCONTACTLINK
 description: "Bpcustomercontactlink"
+semantic_vi: "Chỉ ra liên kết liên hệ khách hàng giữa đối tác kinh doanh và người, thường được sử dụng để quản lý mối quan hệ khách hàng."
+keywords:
+  - "customer contact"
+  - "business partner"
+  - "person"
+  - "relationship management"
+  - "lob logistics general"
+  - "bo customer"
+  - "sap cds view"
+  - "interface view"
+  - "customer contact link"
+semantic_en: "Exposes customer contact links between business partners and persons, typically used to manage customer relationships."
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

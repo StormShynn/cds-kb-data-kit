@@ -1,6 +1,19 @@
 ---
 name: I_BPLEGALENTITYTEXT
 description: "Bplegalentitytext"
+semantic_vi: "View I_BPLEGALENTITYTEXT cung cấp mô tả văn bản cho các thực thể pháp lý đối tác kinh doanh trong một ngôn ngữ cụ thể. Nó được sử dụng để lấy và hiển thị mô tả của các thực thể pháp lý cho đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "legal entity"
+  - "description"
+  - "language"
+  - "text view"
+  - "interface view"
+  - "fs-bp"
+  - "sap cds"
+  - "business partner legal entity"
+  - "bplegalentitydescription"
+semantic_en: "The I_BPLEGALENTITYTEXT view provides text descriptions for business partner legal entities in a specific language. It is used to retrieve and display the descriptions of legal entities for business partners."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

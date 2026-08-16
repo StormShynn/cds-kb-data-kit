@@ -1,6 +1,20 @@
 ---
 name: I_BPCRDTSTANDINGSTATUSTEXT
 description: "Bpcrdtstandingstatustext"
+semantic_vi: "View BPCreditStandingStatusText cung cấp các mô tả văn bản cho trạng thái tín dụng trong SAP Financial Supply Chain Management, hữu ích khi hiển thị hoặc báo cáo thông tin trạng thái tín dụng."
+keywords:
+  - "credit standing"
+  - "tín dụng"
+  - "financial supply chain management"
+  - "sap fs-bp"
+  - "bpcrdtstandingstatustext"
+  - "trạng thái tín dụng"
+  - "sap financial supply chain management"
+  - "fs-bp"
+  - "interface view"
+  - "text view"
+  - "sap"
+semantic_en: "The BPCreditStandingStatusText view provides text descriptions for credit standing statuses in SAP Financial Supply Chain Management, useful when displaying or reporting on credit standing status information."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

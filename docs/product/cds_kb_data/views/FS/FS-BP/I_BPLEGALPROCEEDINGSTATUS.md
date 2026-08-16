@@ -1,6 +1,18 @@
 ---
 name: I_BPLEGALPROCEEDINGSTATUS
 description: "Bplegalproceedingstatus"
+semantic_vi: "View I_BPLEGALPROCEEDINGSTATUS hiển thị trạng thái vụ án pháp lý để người dùng quản lý và theo dõi các vụ án."
+keywords:
+  - "legal proceeding"
+  - "trạng thái vụ án pháp lý"
+  - "fs-bp"
+  - "interface-view"
+  - "status"
+  - "component:fs-bp"
+  - "lob:other"
+  - "business process"
+  - "quy trình kinh doanh"
+semantic_en: "The Bplegalproceedingstatus CDS view exposes legal proceeding status data for business users to track and manage proceedings."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

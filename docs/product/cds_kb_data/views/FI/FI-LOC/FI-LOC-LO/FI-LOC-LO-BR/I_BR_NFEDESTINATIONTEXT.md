@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFEDESTINATIONTEXT
 description: "BR Nfedestinationtext"
+semantic_vi: "View BR NFe Destination Text cung cấp thông tin về địa điểm NFe Brazil với mô tả bằng nhiều ngôn ngữ. Nó được sử dụng để lấy dữ liệu văn bản cho địa điểm NFe."
+keywords:
+  - "br nfe destination"
+  - "nfe destination text"
+  - "sap fi-loc-lo-br"
+  - "brazilian nfe"
+  - "destination information"
+  - "text data"
+  - "nfe destinations"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "finance"
+  - "language"
+  - "description"
+semantic_en: "The BR NFe Destination Text view provides Brazilian NFe destination information with descriptions in different languages. It is used to retrieve text data for NFe destinations."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

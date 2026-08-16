@@ -1,6 +1,17 @@
 ---
 name: I_BR_NFIMPORTDOCUMENT
 description: "BR Nfimportdocument"
+semantic_vi: "View BR Nfimportdocument hiển thị thông tin về các tài liệu nhập khẩu, bao gồm chi tiết hải quan và thông tin xuất khẩu, có thể hữu ích khi phân tích hoặc xử lý các khai báo nhập khẩu."
+keywords:
+  - "import declaration"
+  - "đơn khai báo nhập khẩu"
+  - "customs clearance"
+  - "hải quan"
+  - "import document"
+  - "tài liệu nhập khẩu"
+  - "sap fi"
+  - "fi-loc-lo-br"
+semantic_en: "The BR Nfimportdocument view exposes information about imported documents, including customs clearance details and export information, which is useful when analyzing or processing import declarations."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

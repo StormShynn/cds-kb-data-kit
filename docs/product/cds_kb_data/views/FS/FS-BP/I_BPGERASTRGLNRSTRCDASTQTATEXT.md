@@ -1,6 +1,21 @@
 ---
 name: I_BPGERASTRGLNRSTRCDASTQTATEXT
 description: "Bpgerastrglnrstrcdastqtatext"
+semantic_vi: "Chỉ ra các mô tả hạn chế cho hạn mức AST cho một ngôn ngữ và hạn mức AST. Sử dụng để lấy mô tả văn bản cho hạn chế hạn mức AST trong một ngôn ngữ cụ thể."
+keywords:
+  - "sap"
+  - "cds"
+  - "view"
+  - "fs-bp"
+  - "ast"
+  - "quota"
+  - "description"
+  - "language"
+  - "text"
+  - "restricted"
+  - "fs"
+  - "lob-other"
+semantic_en: "Exposes restricted AST quota descriptions for a given language and AST quota. Used to retrieve text descriptions for AST quota restrictions in a specific language."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

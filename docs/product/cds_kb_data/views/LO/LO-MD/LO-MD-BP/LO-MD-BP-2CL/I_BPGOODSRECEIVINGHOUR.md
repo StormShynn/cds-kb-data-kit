@@ -1,6 +1,21 @@
 ---
 name: I_BPGOODSRECEIVINGHOUR
 description: "Bpgoodsreceivinghour"
+semantic_vi: "View Bpgoodsreceivinghour cung cấp thông tin về giờ nhận hàng hóa, có liên quan khi quản lý logistics và kho hàng."
+keywords:
+  - "goods receiving"
+  - "receiving hours"
+  - "logistics"
+  - "inventory"
+  - "warehouse"
+  - "bpgoodsreceivinghourscode"
+  - "lo-md-bp-2cl"
+  - "ekko"
+  - "sap logistics general"
+  - "lo"
+  - "lo-md"
+  - "lo-md-bp"
+semantic_en: "The Bpgoodsreceivinghour view provides information about receiving hours for goods, which is relevant when managing logistics and inventory in a warehouse."
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

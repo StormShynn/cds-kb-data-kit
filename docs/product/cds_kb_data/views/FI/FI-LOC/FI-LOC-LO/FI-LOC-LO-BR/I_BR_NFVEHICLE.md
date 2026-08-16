@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFVEHICLE
 description: "BR Nfvehicle"
+semantic_vi: "View I_BR_NFVEHICLE hiển thị thông tin xe liên quan đến hóa đơn thuế Brazil, bao gồm mô hình xe, năm và loại xe. Nó được sử dụng để truy cập chi tiết xe trong thành phần FI-LOC-LO-BR."
+keywords:
+  - "vehicle"
+  - "tax invoice"
+  - "brazil"
+  - "fi-loc-lo-br"
+  - "component"
+  - "sap"
+  - "cds view"
+  - "brazilian tax invoice"
+  - "xe"
+  - "hóa đơn thuế brazil"
+semantic_en: "The I_BR_NFVEHICLE view exposes vehicle information related to a Brazilian tax invoice, including vehicle model, year, and type. It is used to access vehicle details in the FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

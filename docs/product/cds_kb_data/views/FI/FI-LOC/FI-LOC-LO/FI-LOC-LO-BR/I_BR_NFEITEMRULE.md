@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFEITEMRULE
 description: "BR Nfeitemrule"
+semantic_vi: "View BR Nfeitemrule hiển thị các quy tắc xử lý các mục trong các tài liệu NF-e Brazil, được sử dụng để khai báo hàng hóa và dịch vụ cho mục đích thuế. Nó cung cấp thông tin về loại mục, mục mặc định và mã thống kê cho ICMS và IPI."
+keywords:
+  - "nf-e"
+  - "brazil"
+  - "tax"
+  - "icms"
+  - "ipi"
+  - "item"
+  - "rule"
+  - "finance"
+  - "sap"
+  - "cds"
+  - "view"
+  - "br"
+semantic_en: "The BR Nfeitemrule view exposes rules for handling items in Brazilian NF-e documents, which are used to declare goods and services for tax purposes. It provides information on item types, default items, and statistical codes for ICMS and IPI."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

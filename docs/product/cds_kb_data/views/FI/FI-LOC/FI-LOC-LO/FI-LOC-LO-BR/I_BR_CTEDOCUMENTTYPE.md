@@ -1,6 +1,19 @@
 ---
 name: I_BR_CTEDOCUMENTTYPE
 description: "BR Ctedocumenttype"
+semantic_vi: "View I_BR_CTEDOCUMENTTYPE hiển thị các loại tài liệu kinh doanh được sử dụng trong hệ thống BR C/4 Financials, cho phép các nhà phát triển truy cập và sử dụng các loại tài liệu này trong các ứng dụng của họ."
+keywords:
+  - "br c4 financials"
+  - "document type"
+  - "tài liệu kinh doanh"
+  - "lobr"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "document"
+  - "tài liệu"
+  - "c/4 financials"
+  - "br ctedocumenttype"
+semantic_en: "The I_BR_CTEDOCUMENTTYPE view exposes business document types used in the BR C/4 Financials system, allowing developers to access and utilize these document types in their applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BPRATINGTRENDTEXT
 description: "Bpratingtrendtext"
+semantic_vi: "Chứa dữ liệu mô tả xu hướng đánh giá đối tác kinh doanh, hữu ích cho việc hiển thị mô tả đánh giá trong các ngôn ngữ khác nhau."
+keywords:
+  - "business partner rating"
+  - "trend text"
+  - "language"
+  - "fs-bp"
+  - "lob other"
+  - "sap cds view"
+  - "cds view"
+  - "rating trend"
+  - "đối tác kinh doanh"
+  - "xu hướng đánh giá"
+  - "mô tả văn bản"
+semantic_en: "Exposes business partner rating trend text data, useful for displaying rating descriptions in various languages."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

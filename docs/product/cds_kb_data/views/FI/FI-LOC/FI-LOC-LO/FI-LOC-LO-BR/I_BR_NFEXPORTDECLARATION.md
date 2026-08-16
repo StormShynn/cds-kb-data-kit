@@ -1,6 +1,18 @@
 ---
 name: I_BR_NFEXPORTDECLARATION
 description: "BR Nfexportdeclaration"
+semantic_vi: "View BR Nfexportdeclaration hiển thị thông tin về các thông báo xuất khẩu liên quan đến các đơn hàng vận chuyển, bao gồm các ngày hạn thanh toán và ngày xác nhận xuất khẩu. Nó được sử dụng để truy cập dữ liệu cho các thông báo xuất khẩu trong thành phần FI-LOC-LO-BR."
+keywords:
+  - "export declaration"
+  - "đơn hàng vận chuyển"
+  - "thông báo xuất khẩu"
+  - "bills of lading"
+  - "due dates"
+  - "đơn hàng xuất khẩu"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "export confirmation dates"
+semantic_en: "The BR Nfexportdeclaration view exposes information about export declarations related to bills of lading, including due dates and export confirmation dates. It is used to access data for export declarations in the FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

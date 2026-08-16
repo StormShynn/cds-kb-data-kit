@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFITEMVINCONDITIONTEXT
 description: "BR Nfitemvinconditiontext"
+semantic_vi: "View BR Nfitemvinconditiontext hiển thị dữ liệu văn bản điều kiện giá cho các mục tại mức mục, có thể sử dụng khi hiển thị hoặc xử lý điều kiện giá trong thành phần FI-LOC-LO-BR."
+keywords:
+  - "pricing condition"
+  - "text view"
+  - "item level"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "lob:finance"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "interface view"
+  - "điều kiện giá"
+semantic_en: "The BR Nfitemvinconditiontext view exposes pricing condition text data for items at the item level, which can be used when displaying or processing pricing conditions in the FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

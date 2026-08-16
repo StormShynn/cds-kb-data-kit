@@ -1,6 +1,19 @@
 ---
 name: I_BR_PAYMENTMETHOD
 description: "BR Paymentmethod"
+semantic_vi: "View I_BR_PAYMENTMETHOD cung cấp thông tin về phương thức thanh toán được sử dụng trong ứng dụng component FI-LOC-LO-BR, có liên quan đến các giao dịch tài chính và xử lý thanh toán."
+keywords:
+  - "payment method"
+  - "phương thức thanh toán"
+  - "fi-loc-lo-br"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "payment processing"
+  - "xử lý thanh toán"
+  - "sap fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+semantic_en: "The I_BR_PAYMENTMETHOD view provides information about payment methods used in the FI-LOC-LO-BR application component, which is relevant for financial transactions and payment processing."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

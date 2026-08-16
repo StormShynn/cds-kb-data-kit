@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFISCREATEDMANUALLY
 description: "BR Nfiscreatedmanually"
+semantic_vi: "View BR Nfiscreatedmanually hiển thị thông tin về các tài liệu kinh doanh được tạo thủ công trong thành phần FI-LOC-LO-BR. Nó được sử dụng để lấy dữ liệu về các tài liệu này."
+keywords:
+  - "business document"
+  - "tài liệu kinh doanh"
+  - "fi-loc-lo-br"
+  - "manual creation"
+  - "tạo thủ công"
+  - "sap cds view"
+  - "view"
+  - "br nfiscreatedmanually"
+  - "finance"
+  - "finance interface"
+  - "interface view"
+  - "component"
+semantic_en: "The BR Nfiscreatedmanually view exposes information about business documents that are created manually in the FI-LOC-LO-BR component. It is used to retrieve data about these documents."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

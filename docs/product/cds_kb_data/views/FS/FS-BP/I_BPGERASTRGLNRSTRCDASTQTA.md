@@ -1,6 +1,17 @@
 ---
 name: I_BPGERASTRGLNRSTRCDASTQTA
 description: "Bpgerastrglnrstrcdastqta"
+semantic_vi: "CDS view Bpgerastrglnrstrcdastqta hiển thị dữ liệu kinh doanh liên quan đến hạn chế AST cho phiếu nhập hàng trong SAP FS-BP. Nó được sử dụng để truy cập và quản lý dữ liệu này."
+keywords:
+  - "sap"
+  - "fs-bp"
+  - "goods receipt"
+  - "restricted ast quota"
+  - "phiếu nhập hàng"
+  - "hạn chế ast"
+  - "cds view"
+  - "sap fs-bp"
+semantic_en: "The Bpgerastrglnrstrcdastqta CDS view exposes business data related to restricted AST quota for goods receipts in SAP FS-BP. It is used to access and manage this data."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

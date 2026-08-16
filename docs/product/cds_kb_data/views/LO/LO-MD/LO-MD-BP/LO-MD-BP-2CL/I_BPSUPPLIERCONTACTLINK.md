@@ -1,6 +1,21 @@
 ---
 name: I_BPSUPPLIERCONTACTLINK
 description: "Bpsuppliercontactlink"
+semantic_vi: "Chứa liên kết liên hệ nhà cung cấp đối tác kinh doanh, cung cấp mối quan hệ giữa nhà cung cấp và người liên hệ. View này có thể được sử dụng để lấy hoặc cập nhật thông tin liên hệ nhà cung cấp."
+keywords:
+  - "supplier"
+  - "contact"
+  - "business partner"
+  - "link"
+  - "connection"
+  - "logistics"
+  - "erp"
+  - "sap"
+  - "cds view"
+  - "interface view"
+  - "lob logistics general"
+  - "bo supplier"
+semantic_en: "Exposes business partner supplier contact links, providing a connection between a supplier and their contact person. This view can be used to retrieve or update supplier contact information."
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

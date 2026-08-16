@@ -1,6 +1,18 @@
 ---
 name: I_BPRATINGPROCEDUREGRADE
 description: "Bpratingproceduregrade"
+semantic_vi: "View BPRatingProcedureGrade cung cấp các mức độ và thứ hạng thủ tục đánh giá đối tác kinh doanh, có thể được sử dụng để phân tích và quản lý đánh giá đối tác kinh doanh trong thành phần Tài chính (FS)."
+keywords:
+  - "business partner rating"
+  - "financial services"
+  - "fs-bp"
+  - "lob other"
+  - "rating procedure grade"
+  - "thủ tục đánh giá đối tác kinh doanh"
+  - "đánh giá đối tác kinh doanh"
+  - "tài chính"
+  - "fs"
+semantic_en: "The BPRatingProcedureGrade view provides business partner rating procedure grades and rankings, which can be used to analyze and manage business partner ratings in the Financial Services (FS) component."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

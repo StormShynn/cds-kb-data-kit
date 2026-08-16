@@ -1,6 +1,19 @@
 ---
 name: I_BPGRPASSIGNMENTCATEGORYTEXT
 description: "Bpgrpassignmentcategorytext"
+semantic_vi: "Chứa mô tả các nhóm phân bổ nhóm kinh doanh trong nhiều ngôn ngữ, hữu ích cho việc hiển thị tên nhóm trong giao diện người dùng."
+keywords:
+  - "business group assignment"
+  - "category description"
+  - "language"
+  - "fs-bp"
+  - "interface view"
+  - "text view"
+  - "sap cds"
+  - "bpgrpassignmentcategorytext"
+  - "lob other"
+  - "fs bp"
+semantic_en: "Exposes business group assignment category descriptions in multiple languages, useful for displaying category names in user interfaces."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

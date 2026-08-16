@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFEACTIVE
 description: "BR Nfeactive"
+semantic_vi: "View I_BR_NFEACTIVE hiển thị các tài liệu NF-e Brazil hoạt động, được sử dụng để theo dõi và quản lý hóa đơn điện tử ở Brazil. Nó được sử dụng để lấy thông tin về tài liệu NF-e hoạt động, bao gồm trạng thái và chi tiết."
+keywords:
+  - "nf-e"
+  - "electronic invoice"
+  - "tài liệu nf-e"
+  - "hóa đơn điện tử"
+  - "brazil"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "invoice"
+  - "đơn hàng"
+  - "đơn mua hàng"
+semantic_en: "The I_BR_NFEACTIVE view exposes active Brazilian NF-e documents, which are used to track and manage electronic invoices in Brazil. It is used to retrieve information about active NF-e documents, including their status and details."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

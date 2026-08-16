@@ -1,6 +1,20 @@
 ---
 name: I_BPMINIMUMRESERVETEXT
 description: "Bpminimumreservetext"
+semantic_vi: "View Bpminimumreservetext hiển thị dữ liệu văn bản tối thiểu dự trữ cho đối tác kinh doanh, được sử dụng khi cấu hình cài đặt đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "minimum reserve"
+  - "tối thiểu dự trữ"
+  - "text data"
+  - "dữ liệu văn bản"
+  - "business partner settings"
+  - "cài đặt đối tác kinh doanh"
+  - "fs-bp"
+  - "interface-view"
+  - "text-view"
+semantic_en: "The Bpminimumreservetext view exposes minimum reserve text data for business partners, which is used when configuring business partner settings."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

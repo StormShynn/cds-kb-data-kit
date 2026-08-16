@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFISCREATEDMANUALLYTEXT
 description: "BR Nfiscreatedmanuallytext"
+semantic_vi: "View BR Nfiscreatedmanuallytext hiển thị mô tả văn bản cho các dấu hiệu 'Được tạo thủ công' trong tài liệu tài chính Brazil, hữu ích cho việc hiển thị thông tin này trong các ứng dụng."
+keywords:
+  - "br"
+  - "nfiscreatedmanuallytext"
+  - "financial documents"
+  - "brazil"
+  - "created manually"
+  - "được tạo thủ công"
+  - "tài liệu tài chính"
+  - "brazilian"
+  - "fi"
+  - "fi-loc-lo-br"
+semantic_en: "The BR Nfiscreatedmanuallytext view exposes text descriptions for 'Is Created Manually' flags in Brazilian financial documents, useful for displaying this information in applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

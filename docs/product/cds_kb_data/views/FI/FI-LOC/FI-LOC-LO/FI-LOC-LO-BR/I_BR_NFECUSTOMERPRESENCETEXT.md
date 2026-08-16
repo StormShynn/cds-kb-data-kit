@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFECUSTOMERPRESENCETEXT
 description: "BR Nfecustomerpresencetext"
+semantic_vi: "View BR Nfecustomerpresencetext cung cấp thông tin hiện diện của khách hàng cho NFe Brazil, bao gồm mô tả văn bản trong các ngôn ngữ khác nhau. Nó được sử dụng để lấy và hiển thị chi tiết hiện diện của khách hàng."
+keywords:
+  - "customer presence"
+  - "nfe brazil"
+  - "text description"
+  - "language"
+  - "customer"
+  - "brazil"
+  - "nfe"
+  - "fi-loc-lo-br"
+  - "sap cds view"
+  - "finance"
+  - "customer information"
+semantic_en: "The BR Nfecustomerpresencetext view provides customer presence information for Brazilian NFe, including text descriptions in different languages. It is used to retrieve and display customer presence details."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

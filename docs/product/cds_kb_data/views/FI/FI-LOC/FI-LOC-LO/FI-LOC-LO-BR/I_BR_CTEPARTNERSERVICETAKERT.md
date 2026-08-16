@@ -1,6 +1,18 @@
 ---
 name: I_BR_CTEPARTNERSERVICETAKERT
 description: "BR Ctepartnerservicetakert"
+semantic_vi: "Cung cấp thông tin về đối tác kinh doanh nhận dịch vụ từ đối tác kinh doanh khác, thường được sử dụng trong ứng dụng tài chính và logistics."
+keywords:
+  - "business partner"
+  - "partner service"
+  - "finance"
+  - "logistics"
+  - "sap fi"
+  - "sap fi-loc"
+  - "sap fi-loc-lo-br"
+  - "service taker"
+  - "lob finance"
+semantic_en: "Provides information about business partners who take services from other business partners, typically used in finance and logistics applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

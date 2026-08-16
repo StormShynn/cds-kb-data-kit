@@ -1,6 +1,19 @@
 ---
 name: I_BR_BILLOFLADINGTYPETEXT
 description: "BR Billofladingtypetext"
+semantic_vi: "View I_BR_BILLOFLADINGTYPETEXT cung cấp mô tả văn bản cho loại vận đơn theo ngôn ngữ cụ thể, được sử dụng để hiển thị thông tin chi tiết trong ứng dụng FI-LOC-LO-BR."
+keywords:
+  - "bill of lading"
+  - "loại vận đơn"
+  - "text view"
+  - "view"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "finance"
+  - "language"
+  - "description"
+  - "vận đơn"
+semantic_en: "The I_BR_BILLOFLADINGTYPETEXT view provides text descriptions for bill of lading types in a specific language, used for displaying detailed information in FI-LOC-LO-BR applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

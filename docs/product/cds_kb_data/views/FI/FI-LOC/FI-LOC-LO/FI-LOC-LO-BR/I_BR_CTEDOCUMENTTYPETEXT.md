@@ -1,6 +1,21 @@
 ---
 name: I_BR_CTEDOCUMENTTYPETEXT
 description: "BR Ctedocumenttypetext"
+semantic_vi: "View I_BR_CTEDOCUMENTTYPETEXT cung cấp mô tả văn bản của các loại tài liệu kinh doanh được sử dụng trong thành phần FI-LOC-LO-BR. Nó được sử dụng để lấy mô tả của các loại tài liệu này trong các ngôn ngữ khác nhau."
+keywords:
+  - "fi-loc-lo-br"
+  - "document type"
+  - "text description"
+  - "language"
+  - "fi"
+  - "finance"
+  - "document"
+  - "description"
+  - "business document"
+  - "tài liệu kinh doanh"
+  - "loại tài liệu"
+  - "mô tả văn bản"
+semantic_en: "The I_BR_CTEDOCUMENTTYPETEXT view provides text descriptions of business document types used in the FI-LOC-LO-BR component. It is used to retrieve the descriptions of these document types in different languages."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

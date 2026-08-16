@@ -1,6 +1,20 @@
 ---
 name: I_BR_CNAETEXT
 description: "BR Cnaetext"
+semantic_vi: "View I_BR_CNAETEXT cung cấp một tập hợp mô tả văn bản cho các hoạt động kinh tế Brazil (mã CNAE) trong nhiều ngôn ngữ. Nó được sử dụng để lấy nhãn văn bản cho mã CNAE trong một ngôn ngữ cụ thể."
+keywords:
+  - "cnae"
+  - "brazilian economic activities"
+  - "text description"
+  - "language"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "sap"
+  - "cnae code"
+  - "mã cnae"
+  - "mô tả văn bản"
+  - "ngôn ngữ"
+semantic_en: "The I_BR_CNAETEXT view provides a collection of text descriptions for Brazilian economic activities (CNAE codes) in multiple languages. It is used to retrieve text labels for CNAE codes in a specific language."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

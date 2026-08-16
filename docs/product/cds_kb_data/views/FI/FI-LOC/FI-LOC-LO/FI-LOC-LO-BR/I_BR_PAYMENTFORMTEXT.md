@@ -1,6 +1,21 @@
 ---
 name: I_BR_PAYMENTFORMTEXT
 description: "BR Paymentformtext"
+semantic_vi: "View I_BR_PAYMENTFORMTEXT cung cấp dữ liệu văn bản hình thức thanh toán, được sử dụng để hiển thị thông tin thanh toán cho khách hàng. Nó thường được sử dụng trong các giao dịch tài chính."
+keywords:
+  - "payment"
+  - "form"
+  - "text"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "financial"
+  - "transaction"
+  - "thanh toán"
+  - "hình thức thanh toán"
+  - "văn bản"
+semantic_en: "The I_BR_PAYMENTFORMTEXT view provides payment form text data, which is used to display payment information to customers. It is typically used in financial transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

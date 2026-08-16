@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFVEHICLETYPE_2
 description: "BR Nfvehicletype 2"
+semantic_vi: "Chỉ ra các loại xe cho mục đích thuế Brazil, được sử dụng cho các giao dịch tài chính và báo cáo."
+keywords:
+  - "vehicle type"
+  - "loại xe"
+  - "brazilian tax"
+  - "thuế brazil"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "cds view"
+  - "view dữ liệu"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "tài chính"
+semantic_en: "Exposes vehicle types for Brazilian tax purposes, used for financial transactions and reporting."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

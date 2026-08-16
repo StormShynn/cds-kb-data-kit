@@ -1,6 +1,20 @@
 ---
 name: I_BPGDSRCVGHRSVALHELPTEXT
 description: "Bpgdsrcvghrsvalhelptext"
+semantic_vi: "View BPGoodsReceivingHoursCode và BPGoodsReceivingHoursText cung cấp mã giờ phục vụ và văn bản tương ứng cho việc nhận hàng trong logistics. Nó được sử dụng để hiển thị hoặc truy xuất thông tin này."
+keywords:
+  - "goods receiving"
+  - "hours of service"
+  - "logistics"
+  - "bpgoodsreceivinghourscode"
+  - "bpgoodsreceivinghourstext"
+  - "lo"
+  - "lo-md"
+  - "lo-md-bp"
+  - "interface-view"
+  - "text-view"
+  - "text"
+semantic_en: "The BPGoodsReceivingHoursCode and BPGoodsReceivingHoursText view provides hours of service codes and corresponding text for goods receiving in logistics. It is used to display or retrieve this information."
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BPCONTACTTOFUNCANDDEPT
 description: "Bpcontacttofuncanddept"
+semantic_vi: "Chứa thông tin liên hệ đối tác kinh doanh liên quan đến chức năng và bộ phận, hữu ích cho việc tích hợp với hệ thống bên ngoài hoặc báo cáo dữ liệu liên hệ."
+keywords:
+  - "business partner"
+  - "contact information"
+  - "function"
+  - "department"
+  - "integration"
+  - "reporting"
+  - "external system"
+  - "sap"
+  - "ap-md-bp"
+  - "interface view"
+  - "lob other"
+semantic_en: "Exposes business partner contact information related to functions and departments, useful for integrating with external systems or reporting on contact data."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

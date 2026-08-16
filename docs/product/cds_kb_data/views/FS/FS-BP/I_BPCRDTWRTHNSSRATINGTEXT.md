@@ -1,6 +1,20 @@
 ---
 name: I_BPCRDTWRTHNSSRATINGTEXT
 description: "Bpcrdtwrthnssratingtext"
+semantic_vi: "View này cung cấp mô tả xếp hạng tín dụng cho một ngôn ngữ và xếp hạng cụ thể, thường được sử dụng trong dịch vụ tài chính để hiển thị thông tin xếp hạng tín dụng."
+keywords:
+  - "credit standing"
+  - "rating description"
+  - "financial services"
+  - "tín dụng"
+  - "xếp hạng"
+  - "mô tả"
+  - "dịch vụ tài chính"
+  - "fs-bp"
+  - "interface-view"
+  - "text-view"
+  - "text"
+semantic_en: "This view provides credit standing rating descriptions for a given language and rating, typically used in financial services to display credit standing information."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

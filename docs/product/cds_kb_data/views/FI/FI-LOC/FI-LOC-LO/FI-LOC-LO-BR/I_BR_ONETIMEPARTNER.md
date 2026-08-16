@@ -1,6 +1,21 @@
 ---
 name: I_BR_ONETIMEPARTNER
 description: "BR Onetimepartner"
+semantic_vi: "View BR Onetimepartner hiển thị dữ liệu đối tác kinh doanh Brazil, bao gồm số chứng minh thuế và địa chỉ, cho việc sử dụng trong các ứng dụng tài chính và logistics."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "tax identification number"
+  - "số chứng minh thuế"
+  - "address"
+  - "địa chỉ"
+  - "financial application"
+  - "ứng dụng tài chính"
+  - "logistics"
+  - "ứng dụng logistics"
+  - "sap fi"
+  - "sap fi-loc"
+semantic_en: "The BR Onetimepartner view exposes Brazilian business partner data, including tax identification numbers and addresses, for use in financial and logistics applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,17 @@
 ---
 name: I_BPLOANTOMANAGER
 description: "Bploantomanager"
+semantic_vi: "View Bploantomanager hiển thị dữ liệu quản lý cho vay đối tác kinh doanh, có liên quan đến các ứng dụng dịch vụ tài chính."
+keywords:
+  - "business partner"
+  - "loan manager"
+  - "financial services"
+  - "fs-bp"
+  - "interface view"
+  - "component fs-bp"
+  - "lob other"
+  - "business partner loan to manager"
+semantic_en: "The Bploantomanager view exposes business partner loan manager data, which is relevant for financial services applications."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

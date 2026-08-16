@@ -1,6 +1,17 @@
 ---
 name: I_BR_NFDOCUMENTTYPE
 description: "BR Nfdocumenttype"
+semantic_vi: "View I_BR_NFDOCUMENTTYPE hiển thị các loại tài liệu kinh doanh cho Brazil, có thể được sử dụng khi làm việc với tài liệu tài chính trong thành phần FI-LOC-LO-BR."
+keywords:
+  - "brasil"
+  - "document"
+  - "finance"
+  - "fi-loc-lo-br"
+  - "document type"
+  - "tài liệu kinh doanh"
+  - "tài chính"
+  - "lo-br"
+semantic_en: "The I_BR_NFDOCUMENTTYPE view exposes business document types for Brazil, which can be used when working with financial documents in the FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

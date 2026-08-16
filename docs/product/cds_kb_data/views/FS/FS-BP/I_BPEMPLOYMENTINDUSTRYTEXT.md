@@ -1,6 +1,18 @@
 ---
 name: I_BPEMPLOYMENTINDUSTRYTEXT
 description: "Bpemploymentindustrytext"
+semantic_vi: "View này cung cấp dữ liệu văn bản ngành nghề lao động cho đối tác kinh doanh, bao gồm mô tả và mô tả ngắn gọn trong các ngôn ngữ khác nhau. Nó được sử dụng để hiển thị và quản lý thông tin ngành nghề lao động cho đối tác kinh doanh trong ứng dụng FS-BP."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "fs-bp"
+  - "employment industry"
+  - "ngành nghề lao động"
+  - "text view"
+  - "view dữ liệu văn bản"
+  - "sap cds"
+  - "cds view"
+semantic_en: "This view provides employment industry text data for business partners, including descriptions and short descriptions in various languages. It is used to display and manage employment industry information for business partners in the FS-BP application."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

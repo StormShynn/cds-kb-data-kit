@@ -1,6 +1,19 @@
 ---
 name: I_BPUNDESIRABILITYREASON
 description: "Bpundesirabilityreason"
+semantic_vi: "View Bpundesirabilityreason hiển thị dữ liệu kinh doanh liên quan đến lý do không mong muốn trong ứng dụng FS-BP. Nó được sử dụng để truy cập và quản lý lý do không mong muốn."
+keywords:
+  - "fs-bp"
+  - "undesirability reason"
+  - "lý do không mong muốn"
+  - "fs"
+  - "business data"
+  - "dữ liệu kinh doanh"
+  - "application"
+  - "ứng dụng"
+  - "management"
+  - "quản lý"
+semantic_en: "The Bpundesirabilityreason view exposes business data related to undesirability reasons in the FS-BP application. It is used to access and manage undesirability reasons."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

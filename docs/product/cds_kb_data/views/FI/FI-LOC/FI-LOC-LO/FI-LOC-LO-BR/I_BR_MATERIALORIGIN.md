@@ -1,6 +1,21 @@
 ---
 name: I_BR_MATERIALORIGIN
 description: "BR Materialorigin"
+semantic_vi: "View I_BR_MATERIALORIGIN CDS hiển thị dữ liệu nguồn gốc vật liệu, có liên quan khi phân tích nguồn gốc vật liệu trong bối cảnh kinh doanh."
+keywords:
+  - "material"
+  - "origin"
+  - "source"
+  - "material origin"
+  - "dữ liệu nguồn gốc vật liệu"
+  - "sourcing"
+  - "tìm nguồn"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "finance industry"
+semantic_en: "The I_BR_MATERIALORIGIN CDS view exposes material origin data, which is relevant when analyzing the source of materials in a business context."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BPUSRROLE
 description: "Bpusrrole"
+semantic_vi: "View I_BPUSRROLE hiển thị các vai trò đối tác kinh doanh và các danh mục liên quan, cung cấp một bản đồ thời gian của các vai trò đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "role"
+  - "category"
+  - "valid from"
+  - "valid to"
+  - "sap cds"
+  - "abap"
+  - "cloud"
+  - "bc-srv-bum"
+  - "basis components"
+semantic_en: "The I_BPUSRROLE view exposes business partner roles and their associated categories, providing a snapshot of a business partner's roles over time."
 app_component: BC-SRV-BUM
 software_component: SAP_BASIS
 release_state: released

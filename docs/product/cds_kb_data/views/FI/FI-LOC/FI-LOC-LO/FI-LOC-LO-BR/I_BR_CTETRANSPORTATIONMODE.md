@@ -1,6 +1,19 @@
 ---
 name: I_BR_CTETRANSPORTATIONMODE
 description: "BR Ctetransportationmode"
+semantic_vi: "View I_BR_CTETRANSPORTATIONMODE hiển thị dữ liệu kinh doanh liên quan đến các phương thức vận chuyển được sử dụng trong các giao dịch tài chính của công ty, chẳng hạn như hóa đơn và thanh toán. Nó cung cấp thông tin về các phương thức vận chuyển được sử dụng cho mỗi giao dịch, có thể hữu ích cho phân tích và báo cáo tài chính."
+keywords:
+  - "transportation mode"
+  - "phương thức vận chuyển"
+  - "financial transaction"
+  - "giao dịch tài chính"
+  - "invoice"
+  - "hóa đơn"
+  - "payment"
+  - "thanh toán"
+  - "sap fi"
+  - "fi-loc-lo-br"
+semantic_en: "The I_BR_CTETRANSPORTATIONMODE view exposes business data related to transportation modes used in a company's financial transactions, such as invoices and payments. It provides information on the transportation modes used for each transaction, which can be useful for financial analysis and reporting."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

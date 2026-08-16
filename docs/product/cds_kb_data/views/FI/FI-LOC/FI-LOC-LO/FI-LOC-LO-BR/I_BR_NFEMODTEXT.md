@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFEMODTEXT
 description: "BR Nfemodtext"
+semantic_vi: "View I_BR_NFEMODTEXT cung cấp truy cập dữ liệu văn bản NFe cho các tài liệu thuế Brazil, cho phép các nhà phát triển truy cập và quản lý nội dung văn bản liên quan đến số NFe và mô tả sắp xếp."
+keywords:
+  - "nfe"
+  - "tax document"
+  - "brazil"
+  - "fi-loc-lo-br"
+  - "financial"
+  - "localization"
+  - "text data"
+  - "văn bản nfe"
+  - "tài liệu thuế"
+  - "đối tượng thuế brazil"
+  - "dữ liệu văn bản"
+  - "số nfe"
+semantic_en: "The I_BR_NFEMODTEXT view provides access to NFe text data for Brazilian tax documents, allowing developers to retrieve and manage text content associated with NFe numbers and sort descriptions. It is used in the FI-LOC-LO-BR component for financial and localization purposes."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

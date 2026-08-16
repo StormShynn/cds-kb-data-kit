@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFPARTNERTYPE
 description: "BR Nfpartnertype"
+semantic_vi: "View BR Nfpartnertype hiển thị dữ liệu kinh doanh liên quan đến loại đối tác trong thành phần FI-LOC-LO-BR, có thể được sử dụng khi làm việc với giao dịch tài chính và thông tin đối tác."
+keywords:
+  - "partner"
+  - "type"
+  - "fi-loc-lo-br"
+  - "financial"
+  - "transaction"
+  - "partner information"
+  - "lo"
+  - "br"
+  - "nfp"
+  - "sap"
+  - "cds"
+  - "view"
+semantic_en: "The BR Nfpartnertype view exposes business data related to partner types in the FI-LOC-LO-BR component, which can be used when working with financial transactions and partner information."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

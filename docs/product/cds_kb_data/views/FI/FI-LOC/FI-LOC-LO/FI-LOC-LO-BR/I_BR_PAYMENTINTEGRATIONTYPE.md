@@ -1,6 +1,18 @@
 ---
 name: I_BR_PAYMENTINTEGRATIONTYPE
 description: "BR Paymentintegrationtype"
+semantic_vi: "View I_BR_PAYMENTINTEGRATIONTYPE hiển thị các loại tích hợp thanh toán được sử dụng trong các giao dịch tài chính, thường được truy cập khi thiết lập hoặc khắc phục sự cố hệ thống thanh toán."
+keywords:
+  - "payment integration"
+  - "thanh toán tích hợp"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "payment systems"
+  - "hệ thống thanh toán"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+semantic_en: "The I_BR_PAYMENTINTEGRATIONTYPE view exposes payment integration types used in financial transactions, typically accessed when setting up or troubleshooting payment systems."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

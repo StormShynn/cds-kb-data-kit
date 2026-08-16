@@ -1,6 +1,20 @@
 ---
 name: I_BPRISKGROUP
 description: "Bpriskgroup"
+semantic_vi: "View I_BPRISKGROUP CDS hiển thị dữ liệu nhóm rủi ro đối tác kinh doanh, được sử dụng để phân loại đối tác kinh doanh dựa trên mức độ rủi ro. Nó được sử dụng trong ứng dụng thành phần dịch vụ tài chính (FS) để quản lý rủi ro đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "risk group"
+  - "financial services"
+  - "fs-bp"
+  - "lob:other"
+  - "sap cds view"
+  - "interface view"
+  - "component fs-bp"
+  - "đối tác kinh doanh"
+  - "nhóm rủi ro"
+  - "dịch vụ tài chính"
+semantic_en: "The I_BPRISKGROUP CDS view exposes business partner risk group data, which is used to categorize business partners based on their risk level. It is used in the Financial Services (FS) application component to manage business partner risk."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFREFERENCEDPROCORIGNTEXT
 description: "BR Nfreferencedprocorigntext"
+semantic_vi: "Chứa thông tin văn bản tham khảo cho các quá trình bắt nguồn từ các hệ thống bên ngoài, được sử dụng để cung cấp ngữ cảnh cho các giao dịch tài chính."
+keywords:
+  - "financial transactions"
+  - "thông tin tài chính"
+  - "quá trình kinh doanh"
+  - "văn bản tham khảo"
+  - "thông tin hệ thống"
+  - "fi-loc-lo-br"
+  - "interface-view"
+  - "text-view"
+  - "text"
+  - "finance"
+  - "finance interface"
+semantic_en: "Exposes business reference text for processes originating from external systems, used to provide context for financial transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

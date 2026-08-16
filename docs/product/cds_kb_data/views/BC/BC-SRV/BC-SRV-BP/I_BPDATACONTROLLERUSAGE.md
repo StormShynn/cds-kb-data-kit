@@ -1,6 +1,19 @@
 ---
 name: I_BPDATACONTROLLERUSAGE
 description: "Bpdatacontrollerusage"
+semantic_vi: "View I_BPDATACONTROLLERUSAGE hiển thị thông tin sử dụng bộ điều khiển dữ liệu đối tác kinh doanh, có liên quan khi phân tích việc gán bộ điều khiển dữ liệu và mục đích cho đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "data controller"
+  - "data purpose"
+  - "assignment status"
+  - "derived purpose"
+  - "purpose type"
+  - "business purpose flag"
+  - "bpd"
+  - "bp data controller"
+  - "lob basis components"
+semantic_en: "The BPDATACONTROLLERUSAGE view exposes business partner data controller usage information, which is relevant when analyzing data controller assignments and purposes for business partners."
 app_component: BC-SRV-BP
 software_component: SAP_BASIS
 release_state: released

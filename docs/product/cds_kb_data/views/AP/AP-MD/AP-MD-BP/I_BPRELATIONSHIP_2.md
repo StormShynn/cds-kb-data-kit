@@ -1,6 +1,18 @@
 ---
 name: I_BPRELATIONSHIP_2
 description: "Bprelationship 2"
+semantic_vi: "View Bprelationship 2 hiển thị dữ liệu mối quan hệ đối tác kinh doanh, bao gồm mối quan hệ tiêu chuẩn và tùy chỉnh, và được sử dụng để quản lý mối quan hệ giữa các đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "relationship"
+  - "mối quan hệ"
+  - "business partner relationship"
+  - "mối quan hệ đối tác kinh doanh"
+  - "sap"
+  - "ap-md-bp"
+  - "bprelationship"
+semantic_en: "The Bprelationship 2 view exposes business partner relationship data, including standard and custom relationships, and is used to manage relationships between business partners."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

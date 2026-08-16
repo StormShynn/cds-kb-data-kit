@@ -1,6 +1,20 @@
 ---
 name: I_BR_FREIGHTPAYERTEXT
 description: "BR Freightpayertext"
+semantic_vi: "View I_BR_FREIGHTPAYERTEXT cung cấp mô tả văn bản cho người trả tiền vận chuyển trong một ngôn ngữ cụ thể, cho phép hiển thị tên người trả tiền vận chuyển trong các ngôn ngữ khác nhau. View này được sử dụng để hỗ trợ các hoạt động trả tiền vận chuyển quốc tế."
+keywords:
+  - "freight payer"
+  - "người trả tiền vận chuyển"
+  - "text view"
+  - "view text"
+  - "cds view"
+  - "view cds"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "finance component"
+  - "international freight payment"
+  - "trả tiền vận chuyển quốc tế"
+semantic_en: "The I_BR_FREIGHTPAYERTEXT view provides text descriptions for freight payers in a specific language, enabling the display of freight payer names in different languages. This view is used to support international freight payment operations."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

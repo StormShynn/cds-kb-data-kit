@@ -1,6 +1,19 @@
 ---
 name: I_BR_MATERIALUSAGETEXT
 description: "BR Materialusagetext"
+semantic_vi: "View I_BR_MATERIALUSAGETEXT cung cấp dữ liệu văn bản sử dụng vật liệu cho báo cáo kinh doanh, thường được sử dụng khi hiển thị mô tả sử dụng vật liệu trong ứng dụng tài chính."
+keywords:
+  - "material usage"
+  - "dữ liệu sử dụng vật liệu"
+  - "financial reporting"
+  - "báo cáo tài chính"
+  - "material usage text"
+  - "văn bản sử dụng vật liệu"
+  - "sap fi"
+  - "fi-loc-lo-br"
+  - "lob:finance"
+  - "bo:material"
+semantic_en: "The I_BR_MATERIALUSAGETEXT view provides material usage text data for business reporting, typically used when displaying material usage descriptions in financial applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
