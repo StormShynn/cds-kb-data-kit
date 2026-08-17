@@ -26,7 +26,7 @@ import { generateCdsView, validateCdsDdl } from './ddl-tools.mjs';
 import { createAuthMiddleware, describeAuthMode } from './auth.mjs';
 import { proposeQueryLibraryEntry } from './propose-library.mjs';
 import { entryKind, indexLibraryById, resolveLibraryEntry } from './query-library.mjs';
-import { oauthEnabled, describeOAuth, buildOAuthMetadata, authorizeHandler, tokenHandler, registerHandler } from './oauth.mjs';
+import { oauthEnabled, describeOAuth, buildOAuthMetadata, authorizeHandler, tokenHandler, registerHandler, issuerOf } from './oauth.mjs';
 import { inc, histogram, healthHandler, metricsHandler, rateLimitMiddleware } from './metrics.mjs';
 import { logInfo, logWarn, logError } from './log.mjs';
 import { registerSapTools } from './sap/tools.mjs';
@@ -1761,7 +1761,12 @@ async function main() {
     createServer();
 
     app.get('/openapi.json', limiter, (req, res) => {
-      res.json(buildOpenApiSpec(`${req.protocol}://${req.get('host')}`));
+      // issuerOf prefers CDS_KB_PUBLIC_URL, then x-forwarded-proto, defaulting to
+      // https — req.protocol alone is wrong here: the domain-proxy Worker fetches
+      // this app over plain http, so an unguarded req.protocol/host leaks the raw
+      // BTP route into "servers[].url", and Swagger UI's Execute then gets blocked
+      // as mixed content (https page calling out to that http URL).
+      res.json(buildOpenApiSpec(issuerOf(req)));
     });
     app.use('/api-docs', limiter, swaggerUi.serve, swaggerUi.setup(null, { swaggerOptions: { url: '/openapi.json' } }));
 

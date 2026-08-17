@@ -194332,7 +194332,7 @@ async function main() {
     app.delete("/mcp", limiter, requireAuth, mcpMetrics, (req, res) => nodeMcpHandler(req, res));
     createServer();
     app.get("/openapi.json", limiter, (req, res) => {
-      res.json(buildOpenApiSpec(`${req.protocol}://${req.get("host")}`));
+      res.json(buildOpenApiSpec(issuerOf(req)));
     });
     app.use("/api-docs", limiter, import_swagger_ui_express.default.serve, import_swagger_ui_express.default.setup(null, { swaggerOptions: { url: "/openapi.json" } }));
     app.post("/api/tools/:name", limiter, requireAuth, import_express.default.json(), async (req, res) => {
