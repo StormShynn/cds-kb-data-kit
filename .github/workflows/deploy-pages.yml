@@ -59,6 +59,7 @@ on:
       - 'docs/product/cds_kb_data/dashboard.html'
       - 'docs/product/cds_kb_data/coverage-report.html'
       - 'docs/product/cds_kb_data/query-builder.html'
+      - 'docs/product/cds_kb_data/tools.html'
       - 'docs/product/cds_kb_data/index/**'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch: {}
@@ -109,7 +110,7 @@ jobs:
         run: |
           SITE=$(mktemp -d)
           cp overview.html "$SITE/index.html"
-          cp dashboard.html coverage-report.html search.html field-search.html query-builder.html "$SITE/"
+          cp dashboard.html coverage-report.html search.html field-search.html query-builder.html tools.html "$SITE/"
           mkdir -p "$SITE/index"
           cp index/view-fields.js "$SITE/index/"
           # query-builder.html embeds only the featured entries and fetches the

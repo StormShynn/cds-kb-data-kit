@@ -108,6 +108,7 @@
     <button id="tab-btn-search" role="tab" aria-selected="false">🔍 Search</button>
     <button id="tab-btn-fieldsearch" role="tab" aria-selected="false">🔎 Field/Table Search</button>
     <button id="tab-btn-querybuilder" role="tab" aria-selected="false">🛠️ Query Builder</button>
+    <button id="tab-btn-tools" role="tab" aria-selected="false">🧰 Tools Reference</button>
   </div>
 </header>
 <div class="frame-wrap">
@@ -116,6 +117,7 @@
   <iframe id="frame-search" src="search.html" title="Search"></iframe>
   <iframe id="frame-fieldsearch" src="field-search.html" title="Field/Table Search"></iframe>
   <iframe id="frame-querybuilder" src="query-builder.html" title="Query Builder"></iframe>
+  <iframe id="frame-tools" src="tools.html" title="Tools Reference"></iframe>
 </div>
 
 <div class="modal-overlay" id="mcpModalOverlay">
@@ -178,8 +180,8 @@
 </div>
 
 <script>
-  const buttons = { dashboard: document.getElementById('tab-btn-dashboard'), coverage: document.getElementById('tab-btn-coverage'), search: document.getElementById('tab-btn-search'), fieldsearch: document.getElementById('tab-btn-fieldsearch'), querybuilder: document.getElementById('tab-btn-querybuilder') };
-  const frames = { dashboard: document.getElementById('frame-dashboard'), coverage: document.getElementById('frame-coverage'), search: document.getElementById('frame-search'), fieldsearch: document.getElementById('frame-fieldsearch'), querybuilder: document.getElementById('frame-querybuilder') };
+  const buttons = { dashboard: document.getElementById('tab-btn-dashboard'), coverage: document.getElementById('tab-btn-coverage'), search: document.getElementById('tab-btn-search'), fieldsearch: document.getElementById('tab-btn-fieldsearch'), querybuilder: document.getElementById('tab-btn-querybuilder'), tools: document.getElementById('tab-btn-tools') };
+  const frames = { dashboard: document.getElementById('frame-dashboard'), coverage: document.getElementById('frame-coverage'), search: document.getElementById('frame-search'), fieldsearch: document.getElementById('frame-fieldsearch'), querybuilder: document.getElementById('frame-querybuilder'), tools: document.getElementById('frame-tools') };
   function show(name) {
     for (const k of Object.keys(frames)) {
       frames[k].classList.toggle('active', k === name);
@@ -191,6 +193,7 @@
   buttons.search.addEventListener('click', () => show('search'));
   buttons.fieldsearch.addEventListener('click', () => show('fieldsearch'));
   buttons.querybuilder.addEventListener('click', () => show('querybuilder'));
+  buttons.tools.addEventListener('click', () => show('tools'));
 
   // ── MCP connect modal ──────────────────────────────────────────────────
   const mcpOverlay = document.getElementById('mcpModalOverlay');

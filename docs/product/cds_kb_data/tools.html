@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CDS Knowledge Base · Tools Reference</title>
+<style>
+  :root {
+    --bg: #0f0f1a;
+    --panel: #1a1a2e;
+    --panel-2: #16213e;
+    --border: #2a2a4a;
+    --border-soft: #1f1f38;
+    --text: #e0e0e0;
+    --text-bright: #ffffff;
+    --text-dim: #888888;
+    --accent: #6366f1;
+    --accent-2: #4c9eff;
+    --mono: ui-monospace, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+    --ok: #22c55e;
+    --warn: #f59e0b;
+    --danger: #ef4444;
+    --unknown: #6b7280;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 24px;
+  }
+  a { color: var(--accent-2); }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+  .container { max-width: 1100px; margin: 0 auto; }
+
+  h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+  h1 span { color: var(--accent); }
+  .subtitle { color: var(--text-dim); font-size: 14px; margin-bottom: 24px; max-width: 70ch; }
+
+  .top-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; justify-content: space-between; margin-bottom: 28px; }
+  .top-row .lede { flex: 1 1 420px; }
+  .note {
+    font-size: 13px; color: var(--text-dim); border-left: 2px solid var(--accent-2);
+    padding-left: 10px; margin-top: 10px; max-width: 60ch;
+  }
+  .note b { color: var(--text-bright); font-weight: 600; }
+
+  .connect { flex: 0 0 340px; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 16px 16px 18px; }
+  .connect .cap { display: flex; justify-content: space-between; align-items: center; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--text-dim); margin-bottom: 8px; }
+  .connect .cap button {
+    background: var(--panel-2); border: 1px solid var(--border); color: var(--text);
+    border-radius: 6px; padding: 4px 10px; font-size: 11px; cursor: pointer;
+  }
+  .connect .cap button:hover { border-color: var(--accent-2); }
+  .connect .cap .copied { color: var(--ok); display: none; margin-left: 6px; }
+  pre.code {
+    background: #050505; border: 1px solid var(--border); color: #d6f5c3;
+    border-radius: 8px; padding: 12px 14px; font-family: var(--mono); font-size: 12.5px;
+    line-height: 1.55; overflow-x: auto;
+  }
+  .connect .hint { margin-top: 8px; font-size: 12px; color: var(--text-dim); }
+  .connect .hint code { font-family: var(--mono); background: var(--panel-2); padding: 1px 5px; border-radius: 4px; color: var(--text); }
+
+  nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  nav.jump a {
+    font-size: 12.5px; text-decoration: none; color: var(--text);
+    background: var(--panel); border: 1px solid var(--border); padding: 6px 12px; border-radius: 999px;
+  }
+  nav.jump a:hover { border-color: var(--accent-2); color: var(--accent-2); }
+  nav.jump a b { color: var(--text-dim); font-weight: 500; margin-right: 5px; }
+
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 16px; font-size: 12.5px; color: var(--text-dim);
+    background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+    padding: 10px 14px; margin-bottom: 24px; align-items: center;
+  }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+  .dot.ok { background: var(--ok); } .dot.warn { background: var(--warn); }
+  .dot.danger { background: var(--danger); } .dot.unknown { background: var(--unknown); }
+
+  .section {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+    padding: 22px 24px; margin-bottom: 22px; scroll-margin-top: 16px;
+  }
+  .section-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+  .section h2 { font-size: 18px; font-weight: 600; }
+  .section h2 span { color: var(--accent); }
+  .section-desc { font-size: 13px; color: var(--text-dim); margin-left: auto; max-width: 38ch; }
+  @media (max-width: 640px) { .section-desc { margin-left: 0; } }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 14px; }
+  .card { background: var(--panel-2); border: 1px solid var(--border-soft); border-radius: 10px; padding: 16px 16px 17px; display: flex; flex-direction: column; gap: 8px; }
+  .card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  .tool-name { font-family: var(--mono); font-weight: 700; font-size: 14.5px; color: var(--text-bright); }
+  .tool-id { font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
+  .role { font-size: 13px; color: var(--text); }
+  .role .k { color: var(--accent-2); font-family: var(--mono); font-weight: 600; }
+
+  .params { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+  .param {
+    font-family: var(--mono); font-size: 11px; padding: 3px 8px 3px 6px; border-radius: 6px;
+    background: var(--border-soft); color: var(--text); display: inline-flex; align-items: center; gap: 5px;
+    border: 1px solid var(--border);
+  }
+  .param .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--unknown); flex: none; }
+  .param.req .dot { background: var(--accent-2); }
+  .param .ty { color: var(--text-dim); }
+  .param.none { color: var(--text-dim); border-style: dashed; }
+
+  .ask { font-size: 12.5px; font-style: italic; color: var(--text-dim); border-left: 2px solid var(--border); padding-left: 8px; }
+  .ask b { font-style: normal; font-family: var(--mono); color: var(--accent-2); font-weight: 600; }
+
+  .signals { display: flex; gap: 6px; align-items: center; }
+  .signals .lab { font-family: var(--mono); font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .05em; }
+  .signals .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+
+  details.optional summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  details.optional summary::-webkit-details-marker { display: none; }
+  details.optional summary::before { content: "▸"; color: var(--accent-2); font-family: var(--mono); transition: transform .15s ease; }
+  details.optional[open] summary::before { transform: rotate(90deg); }
+  details.optional .badge-tag {
+    font-family: var(--mono); font-size: 11px; padding: 3px 9px; border-radius: 999px;
+    border: 1px solid var(--border); color: var(--text-dim);
+  }
+  .optional-body { margin-top: 16px; }
+  .optional-body p { font-size: 13px; color: var(--text-dim); max-width: 72ch; margin-bottom: 14px; }
+  .table-scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { text-align: left; padding: 8px 10px; color: var(--text-dim); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid var(--border); }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--border-soft); vertical-align: top; }
+  td:first-child, th:first-child { font-family: var(--mono); white-space: nowrap; }
+  tr:hover td { background: rgba(99,102,241,0.05); }
+  code.inline { font-family: var(--mono); font-size: 12.5px; color: var(--accent-2); background: rgba(76,158,255,0.12); padding: 1px 6px; border-radius: 4px; }
+  .env-note { font-size: 13px; color: var(--text-dim); margin-top: 14px; }
+
+  .rp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 700px) { .rp-grid { grid-template-columns: 1fr; } }
+
+  footer { margin-top: 28px; font-size: 12px; color: var(--text-dim); font-family: var(--mono); text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Tools Reference <span>· cds-kb MCP</span></h1>
+  <p class="subtitle">Fourteen tools to find, inspect, and compose against the CDS-view knowledge base, plus an optional read-only slice for a live SAP DEV system. Every tool returns readable text and structured JSON, so an agent can chain them without regex-parsing anything.</p>
+
+  <div class="top-row">
+    <div class="lede">
+      <p class="note">Looking up a raw field like <b>MATNR</b>? Skip fuzzy search — jump straight to <b>get_views_by_field</b> in Find &amp; Explore below.</p>
+    </div>
+    <div class="connect">
+      <div class="cap">
+        <span>Connect — direct HTTP</span>
+        <span>
+          <button id="copyConnect">📋 Copy</button>
+          <span class="copied" id="copiedFlag">Copied!</span>
+        </span>
+      </div>
+      <pre class="code" id="connect-snippet">{
+  "mcpServers": {
+    "cds-kb": {
+      "type": "http",
+      "url": "https://mcp.tringhia.io.vn/mcp"
+    }
+  }
+}</pre>
+      <div class="hint">stdio-only client? bridge with <code>supergateway --streamableHttp</code></div>
+    </div>
+  </div>
+
+  <nav class="jump">
+    <a href="#find"><b>01</b>Find &amp; Explore</a>
+    <a href="#build"><b>02</b>Build a Query</a>
+    <a href="#track"><b>03</b>Contribute &amp; Track</a>
+    <a href="#sap"><b>04</b>Live SAP (optional)</a>
+    <a href="#rp"><b>05</b>Resources &amp; Prompts</a>
+  </nav>
+
+  <div class="legend">
+    <span><span class="dot ok"></span> devExtStatus released</span>
+    <span><span class="dot warn"></span> unknown / not_released</span>
+    <span><span class="dot danger"></span> atcState deprecated</span>
+    <span><span class="dot unknown"></span> no signal recorded</span>
+    <span style="margin-left:auto; font-style:italic;">shown on tools that surface release-safety signals</span>
+  </div>
+
+  <!-- ================= FIND & EXPLORE ================= -->
+  <section class="section" id="find">
+    <div class="section-head">
+      <h2><span>01</span> Find &amp; Explore</h2>
+      <p class="section-desc">Start here — locate a view by meaning, by exact field, or by tag.</p>
+    </div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">search_cds</span><span class="tool-id">#1</span></div>
+        <p class="role">Business-meaning or keyword search across views — accepts classic SAP names (<span class="k">VBAK</span>, <span class="k">BSEG</span>) or plain language. Vietnamese, accent-insensitive.</p>
+        <div class="params">
+          <span class="param req"><span class="dot"></span>query <span class="ty">string</span></span>
+          <span class="param"><span class="dot"></span>module <span class="ty">string</span></span>
+          <span class="param"><span class="dot"></span>lob <span class="ty">string</span></span>
+          <span class="param"><span class="dot"></span>bo <span class="ty">string</span></span>
+          <span class="param"><span class="dot"></span>limit <span class="ty">1–50</span></span>
+        </div>
+        <div class="signals"><span class="lab">signals</span><span class="dot ok"></span><span class="dot warn"></span><span class="dot danger"></span></div>
+        <p class="ask">"Tìm view liên quan tới vật tư" → <b>search_cds(query:"material")</b></p>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">get_views_by_field</span><span class="tool-id">#5</span></div>
+        <p class="role">Exact lookup by field name, raw DDIC column, or table/view name — not fuzzy. Use this the moment you already have a concrete name like <span class="k">MATNR</span> or <span class="k">VWERK</span>.</p>
+        <div class="params">
+          <span class="param req"><span class="dot"></span>name <span class="ty">string</span></span>
+          <span class="param"><span class="dot"></span>limit <span class="ty">1–100</span></span>
+        </div>
+        <div class="signals"><span class="lab">signals</span><span class="dot ok"></span><span class="dot warn"></span><span class="dot danger"></span></div>
+        <p class="ask">"MATNR nằm ở view nào?" → <b>get_views_by_field(name:"MATNR")</b></p>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">get_cds_view</span><span class="tool-id">#2</span></div>
+        <p class="role">Fetch one view's full definition by exact name — metadata, fields, associations, DDL source. Trim the response with <span class="k">sections</span>.</p>
+        <div class="params">
+          <span class="param req"><span class="dot"></span>name <span class="ty">string</span></span>
+          <span class="param"><span class="dot"></span>sections <span class="ty">string[]</span></span>
+        </div>
+        <p class="ask">Pattern: search_cds → pick a hit → <b>get_cds_view(name, sections:["metadata","fields"])</b></p>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">get_views_by_tag</span><span class="tool-id">#3</span></div>
+        <p class="role">Deterministic listing by exact tag — use when search_cds feels too fuzzy. Discover valid tags via get_taxonomy first.</p>
+        <div class="params">
+          <span class="param req"><span class="dot"></span>tag <span class="ty">string</span></span>
+          <span class="param"><span class="dot"></span>limit <span class="ty">1–200</span></span>
+        </div>
+        <p class="ask">e.g. <b>get_views_by_tag(tag:"bo:salesorder")</b></p>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">get_taxonomy</span><span class="tool-id">#4</span></div>
+        <p class="role">The full semantic map — 12 Lines of Business → 829 Business Objects, with English + Vietnamese keywords. Orient before searching, or discover valid tags.</p>
+        <div class="params"><span class="param none"><span class="dot"></span>no parameters</span></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">get_view_dependencies</span><span class="tool-id">#6</span></div>
+        <p class="role">Views built FROM or associating to a given view or table. Handy for spotting a released alternative even when your starting view isn't.</p>
+        <div class="params">
+          <span class="param req"><span class="dot"></span>name <span class="ty">string</span></span>
+          <span class="param"><span class="dot"></span>limit <span class="ty">int</span></span>
+        </div>
+        <div class="signals"><span class="lab">signals</span><span class="dot ok"></span><span class="dot warn"></span><span class="dot danger"></span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= BUILD A QUERY ================= -->
+  <section class="section" id="build">
+    <div class="section-head">
+      <h2><span>02</span> Build a Query</h2>
+      <p class="section-desc">Once you've picked a view: check the shared library first, then compose → generate → validate.</p>
+    </div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">search_query_library</span><span class="tool-id">#14</span></div>
+        <p class="role">Search shared saved-query recipes and variants by title, view name, or intent. <b style="font-family:var(--mono); font-weight:600; color:var(--accent-2);">Call this before inventing a shape</b> — on a hit, feed its <span class="k">views[]/select/where</span> straight into compose_query.</p>
+        <div class="params">
+          <span class="param req"><span class="dot"></span>query <span class="ty">string</span></span>
+          <span class="param"><span class="dot"></span>limit <span class="ty">1–50</span></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">suggest_base_views</span><span class="tool-id">#8</span></div>
+        <p class="role">Recommend concrete FROM-base views for a new query — hard-filters out abstract and unverified views.</p>
+        <div class="params">
+          <span class="param req"><span class="dot"></span>query <span class="ty">string</span></span>
+          <span class="param"><span class="dot"></span>module/lob/bo <span class="ty">string</span></span>
+          <span class="param"><span class="dot"></span>limit <span class="ty">1–20</span></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">compose_query</span><span class="tool-id">#9</span></div>
+        <p class="role">Build OpenSQL + a CDS <span class="k">define view entity</span> skeleton from a Query Builder JSON shape. Warns when a referenced view is not_released, unknown, or deprecated for Developer Extensibility.</p>
+        <div class="params"><span class="param req"><span class="dot"></span>views / select / where / groupBy / having / orderBy <span class="ty">json</span></span></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">generate_cds_view</span><span class="tool-id">#10</span></div>
+        <p class="role">Generate annotated DDL — <span class="k">@AccessControl</span>, <span class="k">@EndUserText.label</span> — from a base view. You supply select/where; it won't invent a field list from Hub metadata alone.</p>
+        <div class="params">
+          <span class="param req"><span class="dot"></span>baseView <span class="ty">string</span></span>
+          <span class="param"><span class="dot"></span>views[] <span class="ty">json</span></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">validate_cds_ddl</span><span class="tool-id">#11</span></div>
+        <p class="role">Parse DDL with @abaplint/core's CDS parser. Returns soft diagnostics — never crashes the process, no live SAP connection involved.</p>
+        <div class="params"><span class="param req"><span class="dot"></span>ddl <span class="ty">string</span></span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTRIBUTE & TRACK ================= -->
+  <section class="section" id="track">
+    <div class="section-head">
+      <h2><span>03</span> Contribute &amp; Track</h2>
+      <p class="section-desc">Feed a good query back to the shared library, or check what's new in the KB.</p>
+    </div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">propose_query_library_entry</span><span class="tool-id">#12</span></div>
+        <p class="role">Build a JSON snippet + PR body for the shared query library. With a configured GitHub token, opens a draft PR — never auto-merges.</p>
+        <div class="params"><span class="param none"><span class="dot"></span>takes a composed query shape</span></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">view_changelog</span><span class="tool-id">#13</span></div>
+        <p class="role">Recently added/updated views straight from the data repo's changelog — "what's new" without re-searching everything.</p>
+        <div class="params">
+          <span class="param"><span class="dot"></span>action <span class="ty">added|updated</span></span>
+          <span class="param"><span class="dot"></span>source <span class="ty">string</span></span>
+          <span class="param"><span class="dot"></span>since <span class="ty">ISO date</span></span>
+          <span class="param"><span class="dot"></span>limit <span class="ty">1–200</span></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><span class="tool-name">kb_info</span><span class="tool-id">#7</span></div>
+        <p class="role">Server health snapshot — active data source, version, view count, enrichment %, private-overlay count, index build time.</p>
+        <div class="params"><span class="param none"><span class="dot"></span>no parameters</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= OPTIONAL: SAP ADT ================= -->
+  <section class="section" id="sap">
+    <details class="optional">
+      <summary>
+        <h2 style="font-size:16px;"><span>04</span> Live SAP dev system <span style="color:var(--text-dim); font-weight:500; font-size:13px;">— 8 tools, optional</span></h2>
+        <span class="badge-tag">gated by env — dataless until configured</span>
+      </summary>
+      <div class="optional-body">
+        <p>Read-only ADT access for learning your own <code class="inline">Z*</code>/<code class="inline">Y*</code> repository objects. System alias locked to <b style="color:var(--text-bright)">DEV</b>, never PRD; no table/business-row reads; nothing is ever auto-merged into the public KB. When the <code class="inline">SAP_ADT_*</code> variables are unset, every call below still appears but returns <code class="inline">configured: false</code>.</p>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Tool</th><th>Role</th></tr></thead>
+            <tbody>
+              <tr><td>sap_connection_test</td><td>Probe ADT discovery endpoint</td></tr>
+              <tr><td>sap_list_packages</td><td>List Z*/Y* packages</td></tr>
+              <tr><td>sap_list_objects</td><td>List DDLS objects in a package</td></tr>
+              <tr><td>sap_get_object</td><td>Fetch one custom object's source</td></tr>
+              <tr><td>sap_get_dependencies</td><td>Best-effort static DDL names (standard → external)</td></tr>
+              <tr><td>sap_plan_export</td><td>Dry-run export plan only</td></tr>
+              <tr><td>sap_export_snapshot</td><td>Local write — source + metadata + manifest, skip-if-exists</td></tr>
+              <tr><td>sap_diff_snapshot</td><td>Compare two local snapshot manifests/hashes</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="env-note">Required to enable: <code class="inline">SAP_ADT_BASE_URL</code>, <code class="inline">SAP_ADT_USERNAME</code>, <code class="inline">SAP_ADT_PASSWORD</code>, <code class="inline">SAP_ADT_CLIENT</code> — secrets live in env/secret manager only, never in files or logs.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ================= RESOURCES & PROMPTS ================= -->
+  <section class="section" id="rp">
+    <div class="section-head">
+      <h2><span>05</span> Resources &amp; Prompts</h2>
+      <p class="section-desc">The other two MCP primitives — attach context directly, or load a canned prompt in one call.</p>
+    </div>
+    <div class="rp-grid">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Resource URI</th><th>Gives you</th></tr></thead>
+          <tbody>
+            <tr><td>cds://view/{name}</td><td>Full markdown of one view by name</td></tr>
+            <tr><td>cds://taxonomy</td><td>LOB → BO → keyword map (EN + VI)</td></tr>
+            <tr><td>cds://stats</td><td>Live KB stats + auth mode</td></tr>
+            <tr><td>cds://query-library</td><td>The shared saved-query list as JSON</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Prompt</th><th>Argument</th><th>Does</th></tr></thead>
+          <tbody>
+            <tr><td>explain_view</td><td>name</td><td>Fetch + explain in plain language</td></tr>
+            <tr><td>compose_query</td><td>intent</td><td>Library-first compose → generate → validate</td></tr>
+            <tr><td>validate_ddl</td><td>ddl</td><td>Validate a pasted DDL snippet</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>source: docs/product/cds_kb_mcp/README.md · cds-kb-mcp · Streamable HTTP · public, no auth</footer>
+
+</div>
+
+<script>
+  document.getElementById('copyConnect').addEventListener('click', async () => {
+    const text = document.getElementById('connect-snippet').textContent;
+    const copied = document.getElementById('copiedFlag');
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      window.prompt('Copy this manually (clipboard access blocked):', text);
+      return;
+    }
+    copied.style.display = 'inline';
+    setTimeout(() => { copied.style.display = 'none'; }, 1500);
+  });
+</script>
+</body>
+</html>
