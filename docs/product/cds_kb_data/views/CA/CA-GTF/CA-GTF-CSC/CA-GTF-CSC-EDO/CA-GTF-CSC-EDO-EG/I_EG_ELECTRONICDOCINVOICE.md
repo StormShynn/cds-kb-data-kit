@@ -39,24 +39,24 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `EG_ElectronicDocOutgDocUnqID` |  | |  |  |  |  |
-| `EG_ElectronicDocOutgRcvdDteTme` |  | |  |  |  |  |
-| `EG_EDocOutgSubmsnUnqID` |  | |  |  |  |  |
-| `EG_EDocOutgCanclnAllwdDateTime` |  | |  |  |  |  |
-| `EG_EDocOutgRjcnAllwdDateTime` |  | |  |  |  |  |
-| `EG_EDocOutgCanclnRequestDteTme` |  | |  |  |  |  |
-| `EG_EDocOutgRejectionReqDateTme` |  | |  |  |  |  |
-| `EG_EDocOutgCanclnReqDlydDteTme` |  | |  |  |  |  |
-| `EG_EDocOutgRjcnReqDlydDateTime` |  | |  |  |  |  |
-| `EG_EDocOutgDclnCanclnReqDteTme` |  | |  |  |  |  |
-| `EG_EDocOutgDclnRjcnReqDateTime` |  | |  |  |  |  |
-| `EG_ElectronicDocOutgDocumentID` |  | |  |  |  |  |
-| `EG_ElectronicDocOutgDocVersion` |  | |  |  |  |  |
-| `EG_EDocOutgIsCanclnAllwd` |  | |  |  |  |  |
-| `EG_ElectronicDocOutgCanclnCode` |  | |  |  |  |  |
-| `EG_ElectronicDocCanclnRsnDesc` |  | |  |  |  |  |
-| `EG_ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `EG_ElectronicDocOutgDocUnqID` |  | |  |  | `CHAR(32)` |  |
+| `EG_ElectronicDocOutgRcvdDteTme` |  | |  |  | `DEC(15)` | eDocument Egypt: Document Received Date by ETA |
+| `EG_EDocOutgSubmsnUnqID` |  | |  |  | `CHAR(32)` |  |
+| `EG_EDocOutgCanclnAllwdDateTime` |  | |  |  | `DEC(15)` | eDocument Egypt: Cancellation Allowed till Date |
+| `EG_EDocOutgRjcnAllwdDateTime` |  | |  |  | `DEC(15)` | eDocument Egypt: Rejection Allowed till Date |
+| `EG_EDocOutgCanclnRequestDteTme` |  | |  |  | `DEC(15)` | eDocument Egypt: Cancellation Request Date |
+| `EG_EDocOutgRejectionReqDateTme` |  | |  |  | `DEC(15)` | eDocument Egypt: Rejection Request Date |
+| `EG_EDocOutgCanclnReqDlydDteTme` |  | |  |  | `DEC(15)` | eDocument Egypt: Decline Cancellation Allowed till Date |
+| `EG_EDocOutgRjcnReqDlydDateTime` |  | |  |  | `DEC(15)` | eDocument Egypt: Decline Rejection Allowed till Date |
+| `EG_EDocOutgDclnCanclnReqDteTme` |  | |  |  | `DEC(15)` | eDocument Egypt: Declined Cancel Request Date |
+| `EG_EDocOutgDclnRjcnReqDateTime` |  | |  |  | `DEC(15)` | eDocument Egypt: Declined Reject Request Date |
+| `EG_ElectronicDocOutgDocumentID` |  | |  |  | `CHAR(10)` | eDocument Egypt: Document ID for the Document Type |
+| `EG_ElectronicDocOutgDocVersion` |  | |  |  | `CHAR(10)` | eDocument Egypt: Document Version |
+| `EG_EDocOutgIsCanclnAllwd` |  | |  |  | `CHAR(1)` | eDocument Egypt: Is Cancelled |
+| `EG_ElectronicDocOutgCanclnCode` |  | |  |  | `CHAR(2)` | eDocument Egypt: Cancellation Code |
+| `EG_ElectronicDocCanclnRsnDesc` |  | |  |  | `CHAR(255)` | eDocument Egypt: Cancellation Reason Description |
+| `EG_ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` | `CHAR(4)` | Company Code |
 
 ## Associations
 

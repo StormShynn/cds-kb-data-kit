@@ -39,11 +39,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `KZ_EDocRegistrationNumber` |  | |  |  |  |  |
-| `KZ_ElectronicDocumentInvoiceID` |  | |  |  |  |  |
-| `KZ_ElectronicDocumentVATDate` |  | |  |  |  |  |
-| `KZ_ElectronicDocTurnoverDate` |  | |  |  |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `KZ_EDocRegistrationNumber` |  | |  |  | `CHAR(70)` | eDocument Kazakhstan: Registration Number |
+| `KZ_ElectronicDocumentInvoiceID` |  | |  |  | `INT8(19)` | eDocument Kazakhstan: Invoice ID |
+| `KZ_ElectronicDocumentVATDate` |  | |  |  | `DATS(8)` | eDocument Kazakhstan: VAT Reporting date |
+| `KZ_ElectronicDocTurnoverDate` |  | |  |  | `DATS(8)` | eDocument Kazakhstan: Turnover date |
 | `KZ_EDocCancellationReasonText` |  | |  |  |  |  |
 
 ## Source Code

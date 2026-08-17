@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EG_EDocWhgdTxCode` | ✓ | |  |  |  |  |
-| `EG_EDocTaxType` |  | |  |  |  |  |
-| `EG_EDocTaxSubtype` |  | |  |  |  |  |
+| `EG_EDocWhgdTxCode` | ✓ | |  |  | `CHAR(2)` | Withholding Tax Code |
+| `EG_EDocTaxType` |  | |  |  | `CHAR(10)` | eDocument Egypt: Tax Type |
+| `EG_EDocTaxSubtype` |  | |  |  | `CHAR(10)` | eDocument Egypt: Tax Subtype |
 
 ## Source Code
 

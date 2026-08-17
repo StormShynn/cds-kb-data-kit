@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EU_EDocPaymentMeans` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_paym_means)` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `EU_EDocPaymentMeansText` |  | |  | `ddtext` |  |  |
+| `EU_EDocPaymentMeans` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_paym_means)` | `CHAR(1)` | Payment Means |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `EU_EDocPaymentMeansText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `EG_EDocMaterial` | ✓ | |  |  |  |  |
-| `EG_EDocItmType` |  | |  |  |  |  |
-| `EG_EDocItmCode` |  | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `EG_EDocMaterial` | ✓ | |  |  | `CHAR(40)` | Material Number |
+| `EG_EDocItmType` |  | |  |  | `CHAR(3)` | eDocument Egypt: Coding Schema used to Encode the Item Type |
+| `EG_EDocItmCode` |  | |  |  | `CHAR(50)` | eDocument Egypt: ETA Item Code for Material |
 
 ## Source Code
 

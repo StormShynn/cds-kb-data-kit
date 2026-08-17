@@ -41,34 +41,34 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EDCType` | ✓ | | `_EDCRelation` | `EDCType` |  |  |
-| `CompanyCode` | ✓ | | `_EDCRelation` | `CompanyCode` |  |  |
-| `EDCCommonKey` | ✓ | | `_EDCRelation` | `EDCCommonKey` |  |  |
-| `AccountingDocument` |  | | `_EDCRelation` | `AccountingDocument` |  |  |
-| `FiscalYear` |  | | `_EDCRelation` | `FiscalYear` |  |  |
-| `EDCRecordUUID` |  | | `_EDCRelation` | `EDCRecordUUID` |  |  |
-| `EDCCreatedOnDateTime` |  | | `_EDCRelation` | `EDCCreatedOnDateTime` |  |  |
-| `EDCRepresentationType` |  | | `_EDCRelation` | `EDCRepresentationType` |  |  |
-| `EDCRepresentationKey` |  | | `_EDCRelation` | `EDCRepresentationKey` |  |  |
-| `AccountingDocumentType` |  | | `_JournalEntry` | `AccountingDocumentType` |  |  |
-| `DocumentDate` |  | | `_JournalEntry` | `DocumentDate` |  |  |
-| `PostingDate` |  | | `_JournalEntry` | `PostingDate` |  |  |
-| `AccountingDocumentCreationDate` |  | | `_JournalEntry` | `AccountingDocumentCreationDate` |  |  |
-| `TransactionCode` |  | | `_JournalEntry` | `TransactionCode` |  |  |
-| `IntercompanyTransaction` |  | | `_JournalEntry` | `IntercompanyTransaction` |  |  |
-| `DocumentReferenceID` |  | | `_JournalEntry` | `DocumentReferenceID` |  |  |
-| `TransactionCurrency` |  | | `_JournalEntry` | `TransactionCurrency` |  |  |
-| `AccountingDocumentCategory` |  | | `_JournalEntry` | `AccountingDocumentCategory` |  |  |
-| `BusinessTransactionType` |  | | `_JournalEntry` | `BusinessTransactionType` |  |  |
-| `Branch` |  | | `_JournalEntry` | `Branch` |  |  |
-| `IsDiscountDocument` |  | | `_JournalEntry` | `IsDiscountDocument` |  |  |
-| `TaxReportingDate` |  | | `_JournalEntry` | `TaxReportingDate` |  |  |
-| `TaxFulfillmentDate` |  | | `_JournalEntry` | `TaxFulfillmentDate` |  |  |
-| `AccountingDocumentClass` |  | | `_JournalEntry` | `AccountingDocumentClass` |  |  |
-| `IsReversal` |  | | `_JournalEntry` | `IsReversal` |  |  |
-| `IsReversed` |  | | `_JournalEntry` | `IsReversed` |  |  |
-| `TaxCountry` |  | | `_JournalEntry` | `TaxCountry` |  |  |
-| `WithholdingTaxReportingDate` |  | | `_JournalEntry` | `WithholdingTaxReportingDate` |  |  |
+| `EDCType` | ✓ | | `_EDCRelation` | `EDCType` | `CHAR(15)` | Consistency Scenario ID |
+| `CompanyCode` | ✓ | | `_EDCRelation` | `CompanyCode` | `CHAR(4)` | Company Code |
+| `EDCCommonKey` | ✓ | | `_EDCRelation` | `EDCCommonKey` | `CHAR(120)` | Consistency Common Key |
+| `AccountingDocument` |  | | `_EDCRelation` | `AccountingDocument` | `CHAR(10)` | Document Number of an Accounting Document |
+| `FiscalYear` |  | | `_EDCRelation` | `FiscalYear` | `NUMC(4)` | Fiscal Year |
+| `EDCRecordUUID` |  | | `_EDCRelation` | `EDCRecordUUID` | `CHAR(32)` | Consistency GUID |
+| `EDCCreatedOnDateTime` |  | | `_EDCRelation` | `EDCCreatedOnDateTime` | `DEC(15)` | Record Created On |
+| `EDCRepresentationType` |  | | `_EDCRelation` | `EDCRepresentationType` | `CHAR(30)` | Representation Type ID |
+| `EDCRepresentationKey` |  | | `_EDCRelation` | `EDCRepresentationKey` | `CHAR(32)` | Representation Key |
+| `AccountingDocumentType` |  | | `_JournalEntry` | `AccountingDocumentType` | `CHAR(2)` | Journal Entry Type |
+| `DocumentDate` |  | | `_JournalEntry` | `DocumentDate` | `DATS(8)` | Journal Entry Date |
+| `PostingDate` |  | | `_JournalEntry` | `PostingDate` | `DATS(8)` | Posting Date |
+| `AccountingDocumentCreationDate` |  | | `_JournalEntry` | `AccountingDocumentCreationDate` | `DATS(8)` | Accounting Document Entry Date |
+| `TransactionCode` |  | | `_JournalEntry` | `TransactionCode` | `CHAR(20)` | Transaction Code |
+| `IntercompanyTransaction` |  | | `_JournalEntry` | `IntercompanyTransaction` | `CHAR(16)` | Intercompany Transaction Number |
+| `DocumentReferenceID` |  | | `_JournalEntry` | `DocumentReferenceID` | `CHAR(16)` | Document Reference ID |
+| `TransactionCurrency` |  | | `_JournalEntry` | `TransactionCurrency` | `CUKY(5)` | Currency Key |
+| `AccountingDocumentCategory` |  | | `_JournalEntry` | `AccountingDocumentCategory` | `CHAR(1)` | Journal Entry Category |
+| `BusinessTransactionType` |  | | `_JournalEntry` | `BusinessTransactionType` | `CHAR(4)` | Business Transaction Category |
+| `Branch` |  | | `_JournalEntry` | `Branch` | `CHAR(4)` | Branch |
+| `IsDiscountDocument` |  | | `_JournalEntry` | `IsDiscountDocument` | `CHAR(1)` | Indicator: entry represents a discount document |
+| `TaxReportingDate` |  | | `_JournalEntry` | `TaxReportingDate` | `DATS(8)` | Tax Reporting Date |
+| `TaxFulfillmentDate` |  | | `_JournalEntry` | `TaxFulfillmentDate` | `DATS(8)` | Tax Fulfillment Date |
+| `AccountingDocumentClass` |  | | `_JournalEntry` | `AccountingDocumentClass` | `CHAR(6)` | Accounting Document Class |
+| `IsReversal` |  | | `_JournalEntry` | `IsReversal` | `CHAR(1)` | Indicator: Item is Reversing Another Item |
+| `IsReversed` |  | | `_JournalEntry` | `IsReversed` | `CHAR(1)` | Indicator: Item is Reversed |
+| `TaxCountry` |  | | `_JournalEntry` | `TaxCountry` | `CHAR(3)` | Tax Country/Region |
+| `WithholdingTaxReportingDate` |  | | `_JournalEntry` | `WithholdingTaxReportingDate` | `DATS(8)` | Withholding Tax Reporting Date |
 
 ## Source Code
 

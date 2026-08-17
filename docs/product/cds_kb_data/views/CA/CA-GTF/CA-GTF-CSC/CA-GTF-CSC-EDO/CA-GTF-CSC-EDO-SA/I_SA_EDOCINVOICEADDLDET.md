@@ -39,15 +39,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |  |  |
-| `SA_ElectronicDocUniqueID` |  | |  | `uuid` |  |  |
-| `SA_ElectronicDocSequenceNumber` |  | |  | `counter_num` |  |  |
-| `SA_ElectronicDocInvcTransCode` |  | |  | `inv_trans_code` |  |  |
-| `SA_EDocLgclSolnUUID` |  | |  | `egs_id` |  |  |
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` | `CHAR(32)` | eDocument: GUID |
+| `SA_ElectronicDocUniqueID` |  | |  | `uuid` | `CHAR(36)` | eDocument KSA: UUID |
+| `SA_ElectronicDocSequenceNumber` |  | |  | `counter_num` | `CHAR(50)` | eDocument SA: Counter Value |
+| `SA_ElectronicDocInvcTransCode` |  | |  | `inv_trans_code` | `CHAR(7)` | eDocument SA: Invoice Transaction Code |
+| `SA_EDocLgclSolnUUID` |  | |  | `egs_id` | `RAW(16)` | Globally Unique Identifier |
 | `SA_EDocPrevInvoiceHashBinary` |  | |  | `previous_inv_hash` |  |  |
 | `SA_EDocQRCodeNmbrBinary` |  | |  | `qr_code` |  |  |
 | `SA_EDocCryptographicStmpIdBnry` |  | |  | `cryptographic_stamp` |  |  |
-| `SA_ElectronicDocHasWarning` |  | |  | `acpt_with_warning` |  |  |
+| `SA_ElectronicDocHasWarning` |  | |  | `acpt_with_warning` | `CHAR(1)` | eDocument SA: Accepted with Warning |
 
 ## Source Code
 

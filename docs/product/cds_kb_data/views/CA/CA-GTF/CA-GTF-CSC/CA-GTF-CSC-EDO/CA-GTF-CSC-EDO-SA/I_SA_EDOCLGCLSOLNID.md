@@ -35,6 +35,22 @@ tags:
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
 
+## Fields
+
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `SA_EDocVATRegisterNumber` | ✓ | |  | `vat_reg_num` | `CHAR(20)` | eDocument KSA: VAT Reg. Number (Organization Identifier) |
+| `SA_EDocInvoiceType` | ✓ | |  | `invoice_type` | `CHAR(5)` | eDocument KSA: Invoice Type (Simplified/Tax) |
+| `SA_EDocSourceType` | ✓ | |  | `source_type` | `CHAR(10)` | eDocument KSA: Source Type Supported |
+| `SA_EDocCryptographicSqncNmbr` | ✓ | |  | `seq_no` | `NUMC(6)` | eDocument KSA: EGS_ID Sequence Number |
+| `SA_EDocLgclSolnUUID` |  | |  | `egs_id` | `RAW(16)` | Globally Unique Identifier |
+| `SA_EDocLdngCompanyCode` |  | |  | `leading_company` | `CHAR(4)` | Company Code |
+| `SA_EDocOrganisationUnitId` |  | |  | `org_unit` | `CHAR(20)` | eDocument KSA: Org Unit Name (TIN Number or Free Text) |
+| `SA_EDocOrganizationName` |  | |  | `org_name` | `CHAR(100)` | eDocument KSA: Organization Name |
+| `SA_EDocLocationName` |  | |  | `location` | `CHAR(100)` | eDocument KSA: Location |
+| `SA_EDocIndustryName` |  | |  | `industry` | `CHAR(20)` | eDocument KSA: Industry for Company Code |
+
 ## Source Code
 
 ```abap

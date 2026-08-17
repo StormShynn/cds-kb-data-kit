@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EU_EDocDocCategory` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_doc_category)` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `EU_EDocDocCategoryText` |  | |  | `ddtext` |  |  |
+| `EU_EDocDocCategory` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_doc_category)` | `CHAR(3)` | eDocument EU: Document Category |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `EU_EDocDocCategoryText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

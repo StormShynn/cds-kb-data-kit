@@ -39,12 +39,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocPartnerId` | ✓ | |  | `partner_id` |  |  |
-| `ElectronicDocBPType` | ✓ | |  | `partner_type` |  |  |
-| `EU_EDocDocCategory` | ✓ | |  | `doc_categ` |  |  |
-| `EU_EDocDocTypeId` |  | |  | `doc_type_id` |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
-| `IsBusinessPurposeCompleted` |  | | `_BusinessPartner` | `IsBusinessPurposeCompleted` |  |  |
+| `ElectronicDocPartnerId` | ✓ | |  | `partner_id` | `CHAR(10)` | eDocument: Business Partner ID / Customer ID / Vendor ID |
+| `ElectronicDocBPType` | ✓ | |  | `partner_type` | `CHAR(1)` | eDocument Business Partner Type |
+| `EU_EDocDocCategory` | ✓ | |  | `doc_categ` | `CHAR(3)` | eDocument EU: Document Category |
+| `EU_EDocDocTypeId` |  | |  | `doc_type_id` | `CHAR(15)` | eDocument EU: Document Type ID |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
+| `IsBusinessPurposeCompleted` |  | | `_BusinessPartner` | `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
 
 ## Associations
 

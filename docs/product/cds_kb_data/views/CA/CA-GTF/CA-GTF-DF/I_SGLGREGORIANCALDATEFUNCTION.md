@@ -39,11 +39,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DateFunction` | ✓ | |  |  |  |  |
-| `DateFunctionStartDate` |  | |  |  |  |  |
-| `DateFunctionEndDate` |  | |  |  |  |  |
-| `DateFunctionStartDateTime` |  | |  | `dats_tims_to_tstmp(DateFunctionStartDate, cast( '000000' as abap.tims), abap_user_timezone($session.user, $session.client, 'FAIL'), $session.client, 'FAIL' )` |  |  |
-| `DateFunctionEndDateTime` |  | |  | `dats_tims_to_tstmp(DateFunctionEndDate, cast( '235959' as abap.tims), abap_user_timezone($session.user, $session.client, 'FAIL'), $session.client, 'FAIL' )` |  |  |
+| `DateFunction` | ✓ | |  |  | `CHAR(32)` | Relative Date Function ID |
+| `DateFunctionStartDate` |  | |  |  | `DATS(8)` | Date Function Start Date |
+| `DateFunctionEndDate` |  | |  |  | `DATS(8)` | Date Function End Date |
+| `DateFunctionStartDateTime` |  | |  | `dats_tims_to_tstmp(DateFunctionStartDate, cast( '000000' as abap.tims), abap_user_timezone($session.user, $session.client, 'FAIL'), $session.client, 'FAIL' )` | `DEC(15)` |  |
+| `DateFunctionEndDateTime` |  | |  | `dats_tims_to_tstmp(DateFunctionEndDate, cast( '235959' as abap.tims), abap_user_timezone($session.user, $session.client, 'FAIL'), $session.client, 'FAIL' )` | `DEC(15)` |  |
 
 ## Associations
 

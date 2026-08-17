@@ -41,12 +41,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |  |  |
-| `BusinessPartnerAddressID` | ✓ | |  | `adrnr` |  |  |
-| `BPTaxType` | ✓ | |  | `taxtype` |  |  |
-| `BPTaxNumber` |  | |  | `taxnum` |  |  |
-| `BPTaxLongNumber` |  | |  | `taxnumxl` |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerAddressID` | ✓ | |  | `adrnr` | `CHAR(10)` | Address Number |
+| `BPTaxType` | ✓ | |  | `taxtype` | `CHAR(4)` | Tax Number Category |
+| `BPTaxNumber` |  | |  | `taxnum` | `CHAR(20)` | Business Partner Tax Number |
+| `BPTaxLongNumber` |  | |  | `taxnumxl` | `CHAR(60)` | Business Partner Tax Number |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_TaxCategoryText` | | ✓ | | | | |
 

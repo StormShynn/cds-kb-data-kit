@@ -39,11 +39,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |  |  |
-| `MY_EDocInvcOriginalRefNo` |  | |  | `edoc_my_orgref_no` |  |  |
-| `MY_EDocInvcConsolidate` |  | |  | `edoc_my_consolidate_invoice` |  |  |
-| `MY_EDocInlandRevnBrdMYNmbr` |  | |  | `edoc_my_irbm_no` |  |  |
-| `MY_EDocInvcCancelReason` |  | |  | `edoc_my_canc_reason` |  |  |
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` | `CHAR(32)` | eDocument: GUID |
+| `MY_EDocInvcOriginalRefNo` |  | |  | `edoc_my_orgref_no` | `CHAR(26)` | Malaysia: IRBM Unique ID of Original E-Invoice |
+| `MY_EDocInvcConsolidate` |  | |  | `edoc_my_consolidate_invoice` | `CHAR(1)` | Malaysia: Consolidated Invoicing |
+| `MY_EDocInlandRevnBrdMYNmbr` |  | |  | `edoc_my_irbm_no` | `CHAR(26)` | Malaysia: IRBM Unique ID |
+| `MY_EDocInvcCancelReason` |  | |  | `edoc_my_canc_reason` | `CHAR(300)` | Malaysia: Reason for Cancelling an Electronic Invoice |
 
 ## Source Code
 

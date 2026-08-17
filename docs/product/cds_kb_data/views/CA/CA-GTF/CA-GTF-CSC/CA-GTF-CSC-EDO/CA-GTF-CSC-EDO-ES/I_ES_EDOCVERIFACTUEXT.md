@@ -39,33 +39,33 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `ElectronicDocSequenceNmbr` |  | |  |  |  |  |
-| `ES_EDocVeriFactuPreIssuerTaxId` |  | |  |  |  |  |
-| `ES_EDocVeriFactuPreIssuerNmbr` |  | |  |  |  |  |
-| `ES_EDocVeriFactuPreIssueInDate` |  | |  |  |  |  |
-| `ES_EDocVeriFactuIssuerTaxId` |  | |  |  |  |  |
-| `ES_EDocVeriFactuIssuerInvcNmbr` |  | |  |  |  |  |
-| `ES_EDocVeriFactuIssueInDate` |  | |  |  |  |  |
-| `ES_EDocVeriFactuTotalAmount` |  | |  |  |  |  |
-| `ES_EDocVeriFactuTaxAmount` |  | |  |  |  |  |
-| `ES_EDocVeriFactuInvcType` |  | |  |  |  |  |
-| `ES_EDocVeriFactuSrceDocType` |  | |  |  |  |  |
-| `ES_EDocVeriFactuReversal` |  | |  |  |  |  |
-| `ES_EDocVeriFactuNmbrRange` |  | |  |  |  |  |
-| `ES_EDocVeriFactuInvcRecdNmbr` |  | |  |  |  |  |
-| `ES_EDocVeriFactuPreInvcRecd` |  | |  |  |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `ElectronicDocSequenceNmbr` |  | |  |  | `NUMC(3)` | eDocument Sequence Number |
+| `ES_EDocVeriFactuPreIssuerTaxId` |  | |  |  | `CHAR(20)` | Veri*Factu Previous Issuer Identification Number |
+| `ES_EDocVeriFactuPreIssuerNmbr` |  | |  |  | `CHAR(60)` | Veri*Factu Previous Issuer Invoice Number |
+| `ES_EDocVeriFactuPreIssueInDate` |  | |  |  | `DATS(8)` | Veri*Factu Previous Issuer Invoice Date |
+| `ES_EDocVeriFactuIssuerTaxId` |  | |  |  | `CHAR(20)` | Veri*Factu Issuer Identification Number |
+| `ES_EDocVeriFactuIssuerInvcNmbr` |  | |  |  | `CHAR(60)` | Veri*Factu Issuer Invoice Number |
+| `ES_EDocVeriFactuIssueInDate` |  | |  |  | `DATS(8)` | Veri*Factu Issuer Invoice Date |
+| `ES_EDocVeriFactuTotalAmount` |  | |  |  | `CURR(23)` | Tax Base Amount |
+| `ES_EDocVeriFactuTaxAmount` |  | |  |  | `CURR(23)` | Tax Amount |
+| `ES_EDocVeriFactuInvcType` |  | |  |  | `CHAR(3)` | Veri*Factu Invoice Type |
+| `ES_EDocVeriFactuSrceDocType` |  | |  |  | `CHAR(2)` | Veri*Factu Source Document Type |
+| `ES_EDocVeriFactuReversal` |  | |  |  | `CHAR(1)` | Veri*Factu Document is a reversal document |
+| `ES_EDocVeriFactuNmbrRange` |  | |  |  | `CHAR(2)` | Number Range Number |
+| `ES_EDocVeriFactuInvcRecdNmbr` |  | |  |  | `CHAR(13)` | Veri*Factu Document Invoice Record Number |
+| `ES_EDocVeriFactuPreInvcRecd` |  | |  |  | `CHAR(13)` | Veri*Factu Document Previous Invoice Record Number |
 | `ES_EDocVeriFactuHashTxt` |  | |  |  |  |  |
 | `ES_EDocVeriFactuPrevHashTxt` |  | |  |  |  |  |
-| `ES_EDocVeriFactuDocDteTme` |  | |  |  |  |  |
-| `ES_EDocVeriFactuErrorCode` |  | |  |  |  |  |
+| `ES_EDocVeriFactuDocDteTme` |  | |  |  | `DEC(15)` | Veri*Factu Record Generation Time Stamp |
+| `ES_EDocVeriFactuErrorCode` |  | |  |  | `CHAR(10)` | Error Code Received from Tax Authorities |
 | `ES_EDocVeriFactuErrorDesc` |  | |  |  |  |  |
-| `ElectronicDocCreationDate` |  | |  |  |  |  |
-| `ElectronicDocCreationTime` |  | |  |  |  |  |
-| `ElectronicDocCompanyCode` |  | |  |  |  |  |
-| `ElectronicDocSourceType` |  | |  |  |  |  |
-| `ElectronicDocSourceKey` |  | |  |  |  |  |
-| `Currency` |  | |  |  |  |  |
+| `ElectronicDocCreationDate` |  | |  |  | `DATS(8)` | Creation Date |
+| `ElectronicDocCreationTime` |  | |  |  | `TIMS(6)` | Created on (Time) |
+| `ElectronicDocCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ElectronicDocSourceType` |  | |  |  | `CHAR(10)` | eDocument Source Type |
+| `ElectronicDocSourceKey` |  | |  |  | `CHAR(32)` | eDocument Source Key |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
 
 ## Source Code
 

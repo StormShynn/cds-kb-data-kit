@@ -39,28 +39,28 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |  |  |
-| `KR_EDocSelfBillApprovalNo` |  | |  | `apprvl_no` |  |  |
-| `KR_EDocSelfBillBizPlaceHead` |  | |  | `busplc_hq` |  |  |
-| `KR_EDocSelfBillReceiptBilling` |  | |  | `rcpt_billg` |  |  |
-| `KR_EDocSelfBillCustomer` |  | |  | `customer` |  |  |
-| `KR_EDocSelfBillBusinessPlace` |  | |  | `bupla` |  |  |
-| `KR_EDocSelfBillTaxCode` |  | |  | `tax_code` |  |  |
-| `KR_EDocSelfBillSubmissionID` |  | |  | `ref_submit_id` |  |  |
-| `KR_EDocSelfBillTaxInvoiceType` |  | |  | `tax_invoice_type` |  |  |
-| `KR_EDocSelfBillSalesOrg` |  | |  | `vkorg` |  |  |
-| `KR_EDocSelfBillDistrChannel` |  | |  | `vtweg` |  |  |
-| `KR_EDocSelfBillCustClassfctn` |  | |  | `klabc` |  |  |
-| `KR_EDocSelfBillCustomerName` |  | |  | `cust_name` |  |  |
-| `KR_EDocSelfBillTaxBaseValue` |  | |  | `tax_base_amt` |  |  |
-| `KR_EDocSelfBillTaxValue` |  | |  | `tax_amount` |  |  |
-| `KR_EDocSelfBillAmountValue` |  | |  | `amount` |  |  |
-| `KR_EDocSelfBillCurrency` |  | |  | `waers` |  |  |
-| `KR_EDocSelfBillTransitionDate` |  | |  | `transition_date` |  |  |
-| `KR_EDocSelfBillSourceKey` |  | |  | `source_key` |  |  |
-| `KR_EDocSelfBillStatusReasonTxt` |  | |  | `status_reason` |  |  |
-| `KR_EDocSelfBillAmendReason` |  | |  | `amendmt_reason` |  |  |
-| `KR_EDocSelfBillOriglApprvlNo` |  | |  | `origl_apprvl_no` |  |  |
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` | `CHAR(32)` | eDocument: GUID |
+| `KR_EDocSelfBillApprovalNo` |  | |  | `apprvl_no` | `CHAR(27)` | Approval ID for Tax Invoice of South Korea |
+| `KR_EDocSelfBillBizPlaceHead` |  | |  | `busplc_hq` | `CHAR(1)` | Business Place of Headquarters |
+| `KR_EDocSelfBillReceiptBilling` |  | |  | `rcpt_billg` | `CHAR(2)` | Billing or Receipt |
+| `KR_EDocSelfBillCustomer` |  | |  | `customer` | `CHAR(10)` | Customer Number |
+| `KR_EDocSelfBillBusinessPlace` |  | |  | `bupla` | `CHAR(4)` | Business Place |
+| `KR_EDocSelfBillTaxCode` |  | |  | `tax_code` | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `KR_EDocSelfBillSubmissionID` |  | |  | `ref_submit_id` | `CHAR(50)` | Submission ID for Tax Invoice of South Korea |
+| `KR_EDocSelfBillTaxInvoiceType` |  | |  | `tax_invoice_type` | `CHAR(1)` | Tax Invoice Type |
+| `KR_EDocSelfBillSalesOrg` |  | |  | `vkorg` | `CHAR(4)` | Sales Organization |
+| `KR_EDocSelfBillDistrChannel` |  | |  | `vtweg` | `CHAR(2)` | Distribution Channel |
+| `KR_EDocSelfBillCustClassfctn` |  | |  | `klabc` | `CHAR(2)` | Customer classification (ABC analysis) |
+| `KR_EDocSelfBillCustomerName` |  | |  | `cust_name` | `CHAR(30)` | Customer Name |
+| `KR_EDocSelfBillTaxBaseValue` |  | |  | `tax_base_amt` | `DEC(18)` | Tax Base |
+| `KR_EDocSelfBillTaxValue` |  | |  | `tax_amount` | `DEC(18)` | Tax Amount |
+| `KR_EDocSelfBillAmountValue` |  | |  | `amount` | `DEC(18)` | Amount |
+| `KR_EDocSelfBillCurrency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `KR_EDocSelfBillTransitionDate` |  | |  | `transition_date` | `DATS(8)` | Transfer Date of Tax Invoice |
+| `KR_EDocSelfBillSourceKey` |  | |  | `source_key` | `CHAR(32)` | eDocument South Korea: Source Key |
+| `KR_EDocSelfBillStatusReasonTxt` |  | |  | `status_reason` | `CHAR(100)` | Reason for Canceling Tax Invoice |
+| `KR_EDocSelfBillAmendReason` |  | |  | `amendmt_reason` | `CHAR(2)` | Reason for Amending Tax Invoice of South Korea |
+| `KR_EDocSelfBillOriglApprvlNo` |  | |  | `origl_apprvl_no` | `CHAR(27)` | Approval ID for Original Tax Invoice |
 
 ## Source Code
 

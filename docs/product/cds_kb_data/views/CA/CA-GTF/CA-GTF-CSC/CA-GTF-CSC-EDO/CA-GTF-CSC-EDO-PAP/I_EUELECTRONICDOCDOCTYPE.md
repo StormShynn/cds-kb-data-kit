@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocType` | ✓ | |  | `edoc_type` |  |  |
-| `ElectronicDocIntVersionActDate` | ✓ | |  | `active_from` |  |  |
-| `EU_EDocDoctype` |  | |  | `doc_type` |  |  |
-| `EU_EDocDoctypeId` |  | |  | `doc_type_id` |  |  |
+| `ElectronicDocType` | ✓ | |  | `edoc_type` | `CHAR(10)` | eDocument Type |
+| `ElectronicDocIntVersionActDate` | ✓ | |  | `active_from` | `DATS(8)` | eDocument Interface Version Active From |
+| `EU_EDocDoctype` |  | |  | `doc_type` | `CHAR(255)` | Document Type |
+| `EU_EDocDoctypeId` |  | |  | `doc_type_id` | `CHAR(15)` | eDocument EU: Document Type ID |
 
 ## Source Code
 

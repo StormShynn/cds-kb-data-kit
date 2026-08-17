@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocPartnerId` | ✓ | |  | `partner_id` |  |  |
-| `ElectronicDocBPType` | ✓ | |  | `partner_type` |  |  |
-| `PT_ElectronicDocIsRelevant` |  | |  | `is_relevant` |  |  |
+| `ElectronicDocPartnerId` | ✓ | |  | `partner_id` | `CHAR(10)` | eDocument: Business Partner ID / Customer ID / Vendor ID |
+| `ElectronicDocBPType` | ✓ | |  | `partner_type` | `CHAR(1)` | eDocument Business Partner Type |
+| `PT_ElectronicDocIsRelevant` |  | |  | `is_relevant` | `CHAR(1)` | Business Partner is Relevant |
 
 ## Source Code
 

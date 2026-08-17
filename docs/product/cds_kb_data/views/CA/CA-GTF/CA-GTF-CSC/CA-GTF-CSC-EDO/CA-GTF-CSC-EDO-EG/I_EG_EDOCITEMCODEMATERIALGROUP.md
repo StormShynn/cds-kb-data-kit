@@ -42,11 +42,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `EG_EDocMaterialGroup` | ✓ | |  |  |  |  |
-| `EG_EDocItmType` |  | |  |  |  |  |
-| `EG_EDocItmCode` |  | |  |  |  |  |
-| `EG_EDocInternationalArtclNmbr` |  | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `EG_EDocMaterialGroup` | ✓ | |  |  | `CHAR(9)` | Material Group |
+| `EG_EDocItmType` |  | |  |  | `CHAR(3)` | eDocument Egypt: Coding Schema used to Encode the Item Type |
+| `EG_EDocItmCode` |  | |  |  | `CHAR(50)` | eDocument Egypt: ETA Item Code for Material |
+| `EG_EDocInternationalArtclNmbr` |  | |  |  | `NUMC(1)` | eDocument Egypt: EAN Priority flag |
 
 ## Source Code
 

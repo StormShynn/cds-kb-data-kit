@@ -39,23 +39,23 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `CH_ElectronicDocInvcIssuerID` |  | |  |  |  |  |
-| `CH_ElectronicDocRecipientID` |  | |  |  |  |  |
-| `CH_ElectronicDocTransactionID` |  | |  |  |  |  |
-| `CH_ElectronicDocumentID` |  | |  |  |  |  |
-| `CH_EDocRcpntBusinessPartnerID` |  | |  |  |  |  |
-| `CH_EDocInvcIssuerCompanyName` |  | |  |  |  |  |
-| `CH_EDocRcpntBusPartnerName` |  | |  |  |  |  |
-| `CH_ElectronicDocInvcIssuerTxID` |  | |  |  |  |  |
-| `CH_ElectronicDocAcctgDocNmbr` |  | |  |  |  |  |
-| `CH_ElectronicDocIBAN` |  | |  |  |  |  |
-| `CH_ElectronicDocQRCodeRefNmbr` |  | |  |  |  |  |
-| `CH_ElectronicDocTotalAmount` |  | |  |  |  |  |
-| `CH_ElectronicDocTotalTaxAmount` |  | |  |  |  |  |
-| `CH_ElectronicDocCurrency` |  | |  |  |  |  |
-| `CH_ElectronicDocType` |  | |  |  |  |  |
-| `CH_ElectronicDocPaymentType` |  | |  |  |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `CH_ElectronicDocInvcIssuerID` |  | |  |  | `CHAR(17)` | Unique identification number by PostFinance |
+| `CH_ElectronicDocRecipientID` |  | |  |  | `CHAR(17)` | Recipient ID |
+| `CH_ElectronicDocTransactionID` |  | |  |  | `CHAR(32)` | Transaction ID |
+| `CH_ElectronicDocumentID` |  | |  |  | `CHAR(70)` | Document ID |
+| `CH_EDocRcpntBusinessPartnerID` |  | |  |  | `CHAR(10)` | Recipient Customer ID |
+| `CH_EDocInvcIssuerCompanyName` |  | |  |  | `CHAR(40)` | Biller Company Name |
+| `CH_EDocRcpntBusPartnerName` |  | |  |  | `CHAR(40)` | Recipient Customer Name |
+| `CH_ElectronicDocInvcIssuerTxID` |  | |  |  | `CHAR(20)` | Biller Tax ID |
+| `CH_ElectronicDocAcctgDocNmbr` |  | |  |  | `CHAR(35)` | Document Reference |
+| `CH_ElectronicDocIBAN` |  | |  |  | `CHAR(34)` | Biller IBAN |
+| `CH_ElectronicDocQRCodeRefNmbr` |  | |  |  | `CHAR(140)` | QR/SCOR Reference |
+| `CH_ElectronicDocTotalAmount` |  | |  |  | `DEC(23)` | Total Amount Inclusive Tax |
+| `CH_ElectronicDocTotalTaxAmount` |  | |  |  | `DEC(23)` | Total Tax |
+| `CH_ElectronicDocCurrency` |  | |  |  | `CHAR(3)` | Currency |
+| `CH_ElectronicDocType` |  | |  |  | `CHAR(20)` | Document Type defined by Service Provider |
+| `CH_ElectronicDocPaymentType` |  | |  |  | `CHAR(20)` | Payment Type |
 | `_ElectronicCurrencyText` | | ✓ | | | | |
 | `_CustomerID` | | ✓ | | | | |
 

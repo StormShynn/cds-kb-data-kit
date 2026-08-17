@@ -41,11 +41,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `HouseBank` | ✓ | |  | `hbkid` |  |  |
-| `HouseBankAccount` | ✓ | |  | `hktid` |  |  |
-| `EU_EDocPaymentMeans` |  | |  | `paym_means` |  |  |
-| `IBAN` |  | |  | `iban` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `HouseBank` | ✓ | |  | `hbkid` | `CHAR(5)` | Short Key for a House Bank |
+| `HouseBankAccount` | ✓ | |  | `hktid` | `CHAR(5)` | ID for Account Details |
+| `EU_EDocPaymentMeans` |  | |  | `paym_means` | `CHAR(1)` | Payment Means |
+| `IBAN` |  | |  | `iban` | `CHAR(34)` | IBAN (International Bank Account Number) |
 | `_CompanyCode` | | ✓ | | | | |
 | `_HouseBank` | | ✓ | | | | |
 | `_HouseBankAccount` | | ✓ | | | | |

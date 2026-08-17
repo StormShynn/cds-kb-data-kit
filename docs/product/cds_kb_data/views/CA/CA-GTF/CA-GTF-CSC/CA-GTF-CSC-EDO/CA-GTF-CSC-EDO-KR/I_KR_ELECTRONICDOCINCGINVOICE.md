@@ -39,43 +39,43 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |  |  |
-| `KR_EDocIncgInvcApprovalNo` |  | |  | `apprvl_no` |  |  |
-| `KR_EDocIncgInvcSupplier` |  | |  | `vendor` |  |  |
-| `KR_EDocIncgInvcSupplierName` |  | |  | `vendor_name` |  |  |
-| `KR_EDocIncgInvcTaxBaseValue` |  | |  | `tax_base_amt` |  |  |
-| `KR_EDocIncgInvcTaxValue` |  | |  | `tax_amount` |  |  |
-| `KR_EDocIncgInvcAmountValue` |  | |  | `amount` |  |  |
-| `KR_EDocIncgInvcTransferDate` |  | |  | `transfer_date` |  |  |
-| `KR_EDocIncgInvcDocumentNo` |  | |  | `belnr` |  |  |
-| `KR_EDocIncgInvcInvoiceDate` |  | |  | `invoice_date` |  |  |
-| `KR_EDocIncgInvcIssueDate` |  | |  | `issue_date` |  |  |
-| `KR_EDocIncgInvcSuplrBizRegnNo` |  | |  | `s_supplier_stcd2` |  |  |
-| `KR_EDocIncgInvcSuplrBizPlace` |  | |  | `s_business_place` |  |  |
-| `KR_EDocIncgInvcSuplrCoName` |  | |  | `s_company_name` |  |  |
-| `KR_EDocIncgInvcSuplrRprstvName` |  | |  | `s_repres` |  |  |
-| `KR_EDocIncgInvcSuplrAddressTxt` |  | |  | `s_address` |  |  |
-| `KR_EDocIncgInvcBuyerBizRegnNo` |  | |  | `b_supplier_stcd2` |  |  |
-| `KR_EDocIncgInvcBuyerBizPlace` |  | |  | `b_business_place` |  |  |
-| `KR_EDocIncgInvcBuyerCoName` |  | |  | `b_company_name` |  |  |
-| `KR_EDocIncgInvcBuyerRprstvName` |  | |  | `b_repres` |  |  |
-| `KR_EDocIncgInvcBuyerAddressTxt` |  | |  | `b_address` |  |  |
-| `KR_EDocIncgInvcClassification` |  | |  | `invc_clfn` |  |  |
-| `KR_EDocIncgInvcType` |  | |  | `invoice_type` |  |  |
-| `KR_EDocIncgInvcIssuanceType` |  | |  | `issuance_type` |  |  |
-| `KR_EDocIncgInvcRemarkText` |  | |  | `remark` |  |  |
-| `KR_EDocIncgInvcReceiptBilling` |  | |  | `rcpt_billg` |  |  |
-| `KR_EDocIncgInvcSuplrEmail` |  | |  | `buyer_email` |  |  |
-| `KR_EDocIncgInvcBuyerEmail1` |  | |  | `buyer_email1` |  |  |
-| `KR_EDocIncgInvcBuyerEmail2` |  | |  | `buyer_email2` |  |  |
-| `KR_EDocIncgInvcItemDate` |  | |  | `item_date` |  |  |
-| `KR_EDocIncgInvcItemName` |  | |  | `item_name` |  |  |
-| `KR_EDocIncgInvcItemUnit` |  | |  | `item_unit` |  |  |
-| `KR_EDocIncgInvcItemQuantityVal` |  | |  | `item_quantity` |  |  |
-| `KR_EDocIncgInvcItemUnitPrcVal` |  | |  | `item_unit_price` |  |  |
-| `KR_EDocIncgInvcItemBaseValue` |  | |  | `item_base_amt` |  |  |
-| `KR_EDocIncgInvcItemTaxValue` |  | |  | `item_tax_amount` |  |  |
-| `KR_EDocIncgInvcItemRemarkText` |  | |  | `item_remarks` |  |  |
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` | `CHAR(32)` | eDocument: GUID |
+| `KR_EDocIncgInvcApprovalNo` |  | |  | `apprvl_no` | `CHAR(27)` | Approval ID for Tax Invoice of South Korea |
+| `KR_EDocIncgInvcSupplier` |  | |  | `vendor` | `CHAR(10)` | Account Number of Supplier |
+| `KR_EDocIncgInvcSupplierName` |  | |  | `vendor_name` | `CHAR(30)` | Supplier Name |
+| `KR_EDocIncgInvcTaxBaseValue` |  | |  | `tax_base_amt` | `DEC(18)` | Tax Base |
+| `KR_EDocIncgInvcTaxValue` |  | |  | `tax_amount` | `DEC(18)` | Tax Amount |
+| `KR_EDocIncgInvcAmountValue` |  | |  | `amount` | `DEC(18)` | Amount |
+| `KR_EDocIncgInvcTransferDate` |  | |  | `transfer_date` | `DATS(8)` | Transfer Date of Tax Invoice |
+| `KR_EDocIncgInvcDocumentNo` |  | |  | `belnr` | `CHAR(10)` | Document Number of an Invoice Document |
+| `KR_EDocIncgInvcInvoiceDate` |  | |  | `invoice_date` | `DATS(8)` | Invoice Date in Document |
+| `KR_EDocIncgInvcIssueDate` |  | |  | `issue_date` | `DATS(8)` | Issue Date |
+| `KR_EDocIncgInvcSuplrBizRegnNo` |  | |  | `s_supplier_stcd2` | `CHAR(11)` | Supplier: Business Registration Number |
+| `KR_EDocIncgInvcSuplrBizPlace` |  | |  | `s_business_place` | `CHAR(4)` | Supplier: Business Place |
+| `KR_EDocIncgInvcSuplrCoName` |  | |  | `s_company_name` | `CHAR(30)` | Supplier: Company Name |
+| `KR_EDocIncgInvcSuplrRprstvName` |  | |  | `s_repres` | `CHAR(100)` | Supplier: Representative Name |
+| `KR_EDocIncgInvcSuplrAddressTxt` |  | |  | `s_address` | `CHAR(100)` | Supplier: Address |
+| `KR_EDocIncgInvcBuyerBizRegnNo` |  | |  | `b_supplier_stcd2` | `CHAR(11)` | Buyer: Business Registration Number |
+| `KR_EDocIncgInvcBuyerBizPlace` |  | |  | `b_business_place` | `CHAR(4)` | Buyer: Business Place |
+| `KR_EDocIncgInvcBuyerCoName` |  | |  | `b_company_name` | `CHAR(30)` | Buyer: Company Name |
+| `KR_EDocIncgInvcBuyerRprstvName` |  | |  | `b_repres` | `CHAR(100)` | Buyer: Representative Name |
+| `KR_EDocIncgInvcBuyerAddressTxt` |  | |  | `b_address` | `CHAR(100)` | Buyer: Address |
+| `KR_EDocIncgInvcClassification` |  | |  | `invc_clfn` | `CHAR(20)` | Classification for Electronic Tax Invoice |
+| `KR_EDocIncgInvcType` |  | |  | `invoice_type` | `CHAR(20)` | Type of Electronic Tax Invoice |
+| `KR_EDocIncgInvcIssuanceType` |  | |  | `issuance_type` | `CHAR(30)` | Issue Type |
+| `KR_EDocIncgInvcRemarkText` |  | |  | `remark` | `CHAR(100)` | Remark |
+| `KR_EDocIncgInvcReceiptBilling` |  | |  | `rcpt_billg` | `CHAR(20)` | Billing or Receipt |
+| `KR_EDocIncgInvcSuplrEmail` |  | |  | `buyer_email` | `CHAR(100)` | Supplier: Email Address of Person Responsible |
+| `KR_EDocIncgInvcBuyerEmail1` |  | |  | `buyer_email1` | `CHAR(100)` | Buyer: Email Address 1 of Person Responsible |
+| `KR_EDocIncgInvcBuyerEmail2` |  | |  | `buyer_email2` | `CHAR(100)` | Buyer: Email Address 2 of Person Responsible |
+| `KR_EDocIncgInvcItemDate` |  | |  | `item_date` | `DATS(8)` | Item Date |
+| `KR_EDocIncgInvcItemName` |  | |  | `item_name` | `CHAR(100)` | Item Name |
+| `KR_EDocIncgInvcItemUnit` |  | |  | `item_unit` | `CHAR(10)` | Item Unit |
+| `KR_EDocIncgInvcItemQuantityVal` |  | |  | `item_quantity` | `CHAR(20)` | Item Quantity |
+| `KR_EDocIncgInvcItemUnitPrcVal` |  | |  | `item_unit_price` | `DEC(18)` | Unit Price of Item |
+| `KR_EDocIncgInvcItemBaseValue` |  | |  | `item_base_amt` | `DEC(18)` | Tax Base Amount of Items |
+| `KR_EDocIncgInvcItemTaxValue` |  | |  | `item_tax_amount` | `DEC(18)` | Tax Amount of Items |
+| `KR_EDocIncgInvcItemRemarkText` |  | |  | `item_remarks` | `CHAR(100)` | Item Remarks |
 
 ## Source Code
 

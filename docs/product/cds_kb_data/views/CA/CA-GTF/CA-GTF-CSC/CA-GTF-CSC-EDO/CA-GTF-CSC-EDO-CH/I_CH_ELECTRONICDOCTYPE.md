@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CH_ElectronicDocAcctgDocType` | ✓ | |  | `blart` |  |  |
+| `CH_ElectronicDocAcctgDocType` | ✓ | |  | `blart` | `CHAR(2)` | Document Type |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

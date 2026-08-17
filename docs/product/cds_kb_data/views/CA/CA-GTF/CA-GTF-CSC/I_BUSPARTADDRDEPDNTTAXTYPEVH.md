@@ -42,8 +42,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BPTaxType` | ✓ | |  | `taxtype` |  |  |
-| `BPTaxTypeName` |  | |  | `text` |  |  |
+| `BPTaxType` | ✓ | |  | `taxtype` | `CHAR(4)` | Tax Number Category |
+| `BPTaxTypeName` |  | |  | `text` | `CHAR(40)` | Name: Business Partner Tax Number Categories |
 
 ## Source Code
 

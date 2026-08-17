@@ -40,13 +40,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocPartnerId` | ✓ | |  | `partner_id` |  |  |
-| `ElectronicDocBPType` | ✓ | |  | `partner_type` |  |  |
-| `ElectronicDocPartyIdType` |  | |  | `party_id_type` |  |  |
-| `EU_EDocEmail` |  | |  | `email` |  |  |
-| `EU_EDocCommChannel` |  | |  | `comm_channel` |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
-| `IsBusinessPurposeCompleted` |  | | `_BusinessPartner` | `IsBusinessPurposeCompleted` |  |  |
+| `ElectronicDocPartnerId` | ✓ | |  | `partner_id` | `CHAR(10)` | eDocument: Business Partner ID / Customer ID / Vendor ID |
+| `ElectronicDocBPType` | ✓ | |  | `partner_type` | `CHAR(1)` | eDocument Business Partner Type |
+| `ElectronicDocPartyIdType` |  | |  | `party_id_type` | `CHAR(15)` | Party Identification Type |
+| `EU_EDocEmail` |  | |  | `email` | `CHAR(1)` | eDocument EU: Receive Document per e-Mail |
+| `EU_EDocCommChannel` |  | |  | `comm_channel` | `CHAR(1)` | Exchange Channel |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
+| `IsBusinessPurposeCompleted` |  | | `_BusinessPartner` | `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
 
 ## Associations
 

@@ -39,15 +39,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |  |  |
-| `ElectronicDocSourceType` | ✓ | |  | `source_type` |  |  |
-| `ElectronicDocSourceKey` | ✓ | |  | `source_key` |  |  |
-| `KR_EDocSelfBillMapIsDelete` |  | |  | `delete_indicator` |  |  |
-| `AccountingDocument` |  | |  | `belnr` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `FiscalYear` |  | |  | `cast(gjahr as fis_gjahr_no_conv preserving type)` |  |  |
-| `BillingDocument` |  | |  | `vbeln` |  |  |
-| `KR_EDocSelfBillMapInvcgDocNo` |  | |  | `invdocno` |  |  |
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` | `CHAR(32)` | eDocument: GUID |
+| `ElectronicDocSourceType` | ✓ | |  | `source_type` | `CHAR(10)` | eDocument Source Type |
+| `ElectronicDocSourceKey` | ✓ | |  | `source_key` | `CHAR(32)` | eDocument Source Key |
+| `KR_EDocSelfBillMapIsDelete` |  | |  | `delete_indicator` | `CHAR(1)` | South Korea eDocument Delete Indicator |
+| `AccountingDocument` |  | |  | `belnr` | `CHAR(10)` | Document Number of an Accounting Document |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  | `cast(gjahr as fis_gjahr_no_conv preserving type)` | `NUMC(4)` | Fiscal Year |
+| `BillingDocument` |  | |  | `vbeln` | `CHAR(10)` | Billing Document |
+| `KR_EDocSelfBillMapInvcgDocNo` |  | |  | `invdocno` | `CHAR(12)` | Number of Invoicing Document |
 
 ## Source Code
 

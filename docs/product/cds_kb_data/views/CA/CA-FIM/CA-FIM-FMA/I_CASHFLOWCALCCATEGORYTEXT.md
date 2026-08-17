@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CashFlowCalculationCategory` | ✓ | |  | `cast( CashFlowCalcCategoryText.sberfima as tfm_calculation_category preserving type )` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CashFlowCalcCategoryName` |  | |  | `cast( CashFlowCalcCategoryText.xberfima as tfm_calculation_category_name preserving type )` |  |  |
+| `CashFlowCalculationCategory` | ✓ | |  | `cast( CashFlowCalcCategoryText.sberfima as tfm_calculation_category preserving type )` | `CHAR(4)` | Calculation Category |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CashFlowCalcCategoryName` |  | |  | `cast( CashFlowCalcCategoryText.xberfima as tfm_calculation_category_name preserving type )` | `CHAR(30)` | Calculation Category Name |
 | `_ValueHelp` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

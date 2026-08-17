@@ -55,9 +55,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `IT_ElectronicDocRejectionCode` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `IT_ElectronicDocRejectCodeText` |  | |  |  |  |  |
+| `IT_ElectronicDocRejectionCode` | ✓ | |  |  | `CHAR(4)` | Rejection Code |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `IT_ElectronicDocRejectCodeText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
 
 ## Source Code
 

@@ -39,14 +39,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `CO_ElectronicDocOfficialNumber` |  | |  |  |  |  |
-| `CO_ElectronicDocUniqueID` |  | |  |  |  |  |
-| `CO_ElectronicDocIsSentToCust` |  | |  |  |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `CO_ElectronicDocOfficialNumber` |  | |  |  | `CHAR(20)` | Official Number |
+| `CO_ElectronicDocUniqueID` |  | |  |  | `CHAR(190)` | CUFE Identificator |
+| `CO_ElectronicDocIsSentToCust` |  | |  |  | `CHAR(1)` | Sent to Customer |
 | `CO_EDocSignatureBinary` |  | |  |  |  |  |
-| `CO_ElectronicDocDateTime` |  | |  |  |  |  |
-| `CO_ElectronicDocVarblKey` |  | |  |  |  |  |
-| `CO_ElectronicDocTrackID` |  | |  |  |  |  |
+| `CO_ElectronicDocDateTime` |  | |  |  | `DEC(15)` | XSD Time (UTC): yyyy-mm-ddThh:mm:ssZ [ext.] |
+| `CO_ElectronicDocVarblKey` |  | |  |  | `CHAR(10)` | eDocument: Variable Key |
+| `CO_ElectronicDocTrackID` |  | |  |  | `CHAR(190)` | CUFE Identificator |
 
 ## Source Code
 

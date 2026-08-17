@@ -56,8 +56,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CH_ElectronicDocAcctgDocType` | ✓ | |  |  |  |  |
-| `CH_ElectronicDocTypeText` |  | |  | `_Text[1:Language = $session.system_language].CH_ElectronicDocTypeText` |  |  |
+| `CH_ElectronicDocAcctgDocType` | ✓ | |  |  | `CHAR(2)` | Document Type |
+| `CH_ElectronicDocTypeText` |  | |  | `_Text[1:Language = $session.system_language].CH_ElectronicDocTypeText` | `CHAR(20)` | Document Type Description |
 
 ## Source Code
 

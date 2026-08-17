@@ -42,49 +42,49 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FldLogsSuplrItemUUID` | ✓ | |  | `fldlogssuplritemuuid` |  |  |
-| `FldLogsSuplrItemType` |  | |  | `fldlogssuplritemtype` |  |  |
-| `FldLogsSuplrParentItemUUID` |  | |  | `fldlogssuplrparentitemuuid` |  |  |
-| `FldLogsSuplrItemSerialNumber` |  | |  | `fldlogssuplritemserialnumber` |  |  |
-| `FldLogsSuplrItemName` |  | |  | `fldlogssuplritemname` |  |  |
-| `PreferredSupplier` |  | |  | `preferredsupplier` |  |  |
-| `FldLogsSuplrBasePlant` |  | |  | `fldlogssuplrbaseplant` |  |  |
-| `FldLogsRemotePlant` |  | |  | `fldlogsremoteplant` |  |  |
-| `FldLogsSuplrItmPOItmUniqueID` |  | |  | `fldlogssuplritmpoitmuniqueid` |  |  |
-| `FldLogsSupplyProcess` |  | |  | `fldlogssupplyprocess` |  |  |
-| `FldLogsSuplrItemVislInspCode` |  | |  | `fldlogssuplritemvislinspcode` |  |  |
-| `PurgDocNetPriceAmount` |  | |  | `purgdocnetpriceamount` |  |  |
-| `FldLogsSuplrItemRateUnit` |  | |  | `fldlogssuplritemrateunit` |  |  |
-| `FldLogsSuplrItemQuantity` |  | |  | `fldlogssuplritemquantity` |  |  |
-| `FldLogsSuplrItemQuantityUnit` |  | |  | `fldlogssuplritemquantityunit` |  |  |
-| `FldLogsSuplrItemGrossVolume` |  | |  | `fldlogssuplritemgrossvolume` |  |  |
-| `FldLogsSuplrItmGrossVolumeUnit` |  | |  | `fldlogssuplritmgrossvolumeunit` |  |  |
-| `ProductGrossWeight` |  | |  | `productgrossweight` |  |  |
-| `ProductWeightUnit` |  | |  | `productweightunit` |  |  |
-| `FldLogsSuplrItemLength` |  | |  | `fldlogssuplritemlength` |  |  |
-| `FldLogsSuplrItemWidth` |  | |  | `fldlogssuplritemwidth` |  |  |
-| `FldLogsSuplrItemHeight` |  | |  | `fldlogssuplritemheight` |  |  |
-| `FldLogsSuplrItemMeasureUnit` |  | |  | `fldlogssuplritemmeasureunit` |  |  |
-| `FldLogsSuplrItemStatusID` |  | |  | `fldlogssuplritemstatusid` |  |  |
-| `ItemIsDangerousGood` |  | |  | `itemisdangerousgood` |  |  |
-| `FldLogsSuplrItemDngrsGdsCat` |  | |  | `dangerousgoodsidnnumbercnctntd` |  |  |
-| `DangerousGoodsIdnNumberCnctntd` |  | |  | `cast(dangerousgoodsidnnumbercnctntd as abap.char( 51 ))` |  |  |
-| `FldLogsIsWorkOrderOnHold` |  | |  | `fldlogsisworkorderonhold` |  |  |
-| `FldLogsSuplrItemPlndDelivDate` |  | |  | `fldlogssuplritemplnddelivdate` |  |  |
-| `FldLogsSuplrItmChangeDateTime` |  | |  | `fldlogssuplritmchangedatetime` |  |  |
-| `FldLogsSuplrItmPackggTypeCode` |  | |  | `fldlogssuplritmpackggtypecode` |  |  |
-| `PackagingMaterial` |  | |  | `packagingmaterial` |  |  |
-| `FldLogsContainerOwner` |  | |  | `fldlogscontainerowner` |  |  |
-| `FldLogsSupplierItemSource` |  | |  | `fldlogssupplieritemsource` |  |  |
-| `FldLogsSealNumber1` |  | |  | `fldlogssealnumber1` |  |  |
-| `FldLogsSealNumber2` |  | |  | `fldlogssealnumber2` |  |  |
-| `FldLogsSealNumber3` |  | |  | `fldlogssealnumber3` |  |  |
-| `FldLogsSealNumber4` |  | |  | `fldlogssealnumber4` |  |  |
-| `FldLogsSealNumber5` |  | |  | `fldlogssealnumber5` |  |  |
-| `IsBusinessPurposeCompleted` |  | | `_Owner` | `IsBusinessPurposeCompleted` |  |  |
-| `SuplrCoIsBusPrpsCmpltd` |  | | `_PreferredSupplier` | `IsBusinessPurposeCompleted` |  |  |
-| `FldLogsTransferType` |  | |  | `fldlogstransfertype` |  |  |
-| `FieldLogisticsTransferPlant` |  | |  | `fieldlogisticstransferplant` |  |  |
+| `FldLogsSuplrItemUUID` | ✓ | |  | `fldlogssuplritemuuid` | `RAW(16)` | Supplier Item UUID |
+| `FldLogsSuplrItemType` |  | |  | `fldlogssuplritemtype` | `CHAR(2)` | Supplier Item Type |
+| `FldLogsSuplrParentItemUUID` |  | |  | `fldlogssuplrparentitemuuid` | `RAW(16)` | Supplier Item UUID |
+| `FldLogsSuplrItemSerialNumber` |  | |  | `fldlogssuplritemserialnumber` | `CHAR(30)` | Supplier Item Manufacturer's Serial Number |
+| `FldLogsSuplrItemName` |  | |  | `fldlogssuplritemname` | `CHAR(40)` | Supplier Item Name |
+| `PreferredSupplier` |  | |  | `preferredsupplier` | `CHAR(10)` | Account Number of Supplier |
+| `FldLogsSuplrBasePlant` |  | |  | `fldlogssuplrbaseplant` | `CHAR(4)` | Plant |
+| `FldLogsRemotePlant` |  | |  | `fldlogsremoteplant` | `CHAR(4)` | Plant |
+| `FldLogsSuplrItmPOItmUniqueID` |  | |  | `fldlogssuplritmpoitmuniqueid` | `CHAR(16)` | Purchase Order Item Unique ID |
+| `FldLogsSupplyProcess` |  | |  | `fldlogssupplyprocess` | `CHAR(4)` | Supply Process |
+| `FldLogsSuplrItemVislInspCode` |  | |  | `fldlogssuplritemvislinspcode` | `CHAR(2)` | Supplier Item Visual Inspection Code |
+| `PurgDocNetPriceAmount` |  | |  | `purgdocnetpriceamount` | `CURR(11)` | Net Price in Purchasing Document (in Document Currency) |
+| `FldLogsSuplrItemRateUnit` |  | |  | `fldlogssuplritemrateunit` | `CUKY(5)` | Currency Key |
+| `FldLogsSuplrItemQuantity` |  | |  | `fldlogssuplritemquantity` | `QUAN(13)` | Quantity |
+| `FldLogsSuplrItemQuantityUnit` |  | |  | `fldlogssuplritemquantityunit` | `UNIT(3)` | Base Unit of Measure |
+| `FldLogsSuplrItemGrossVolume` |  | |  | `fldlogssuplritemgrossvolume` | `QUAN(13)` | Volume |
+| `FldLogsSuplrItmGrossVolumeUnit` |  | |  | `fldlogssuplritmgrossvolumeunit` | `UNIT(3)` | Volume Unit |
+| `ProductGrossWeight` |  | |  | `productgrossweight` | `QUAN(13)` | Gross Weight |
+| `ProductWeightUnit` |  | |  | `productweightunit` | `UNIT(3)` | Unit of Weight |
+| `FldLogsSuplrItemLength` |  | |  | `fldlogssuplritemlength` | `QUAN(13)` | Length |
+| `FldLogsSuplrItemWidth` |  | |  | `fldlogssuplritemwidth` | `QUAN(13)` | Width |
+| `FldLogsSuplrItemHeight` |  | |  | `fldlogssuplritemheight` | `QUAN(13)` | Height |
+| `FldLogsSuplrItemMeasureUnit` |  | |  | `fldlogssuplritemmeasureunit` | `UNIT(3)` | Unit of Dimension for Length/Width/Height |
+| `FldLogsSuplrItemStatusID` |  | |  | `fldlogssuplritemstatusid` | `CHAR(3)` | Supplier Item Status ID |
+| `ItemIsDangerousGood` |  | |  | `itemisdangerousgood` | `CHAR(1)` | Boolean Variable (X = True, - = False, Space = Unknown) |
+| `FldLogsSuplrItemDngrsGdsCat` |  | |  | `dangerousgoodsidnnumbercnctntd` | `CHAR(52)` | Supplier Item DG ID Number Concatenated |
+| `DangerousGoodsIdnNumberCnctntd` |  | |  | `cast(dangerousgoodsidnnumbercnctntd as abap.char( 51 ))` | `CHAR(51)` |  |
+| `FldLogsIsWorkOrderOnHold` |  | |  | `fldlogsisworkorderonhold` | `CHAR(1)` | Work Order On Hold Indicator |
+| `FldLogsSuplrItemPlndDelivDate` |  | |  | `fldlogssuplritemplnddelivdate` | `DATS(8)` | Item Delivery Date |
+| `FldLogsSuplrItmChangeDateTime` |  | |  | `fldlogssuplritmchangedatetime` | `DEC(15)` | Changed On |
+| `FldLogsSuplrItmPackggTypeCode` |  | |  | `fldlogssuplritmpackggtypecode` | `CHAR(2)` | Supplier Item Packaging Type |
+| `PackagingMaterial` |  | |  | `packagingmaterial` | `CHAR(40)` | Packaging Material |
+| `FldLogsContainerOwner` |  | |  | `fldlogscontainerowner` | `CHAR(10)` | Business Partner Number |
+| `FldLogsSupplierItemSource` |  | |  | `fldlogssupplieritemsource` | `CHAR(2)` | Source Indicator |
+| `FldLogsSealNumber1` |  | |  | `fldlogssealnumber1` | `CHAR(15)` | Seal Number |
+| `FldLogsSealNumber2` |  | |  | `fldlogssealnumber2` | `CHAR(15)` | Seal Number |
+| `FldLogsSealNumber3` |  | |  | `fldlogssealnumber3` | `CHAR(15)` | Seal Number |
+| `FldLogsSealNumber4` |  | |  | `fldlogssealnumber4` | `CHAR(15)` | Seal Number |
+| `FldLogsSealNumber5` |  | |  | `fldlogssealnumber5` | `CHAR(15)` | Seal Number |
+| `IsBusinessPurposeCompleted` |  | | `_Owner` | `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
+| `SuplrCoIsBusPrpsCmpltd` |  | | `_PreferredSupplier` | `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
+| `FldLogsTransferType` |  | |  | `fldlogstransfertype` | `CHAR(1)` | FL: Transfer Type |
+| `FieldLogisticsTransferPlant` |  | |  | `fieldlogisticstransferplant` | `CHAR(4)` | Plant |
 | `_Supplier` |  | |  | `_PreferredSupplier` |  |  |
 
 ## Associations

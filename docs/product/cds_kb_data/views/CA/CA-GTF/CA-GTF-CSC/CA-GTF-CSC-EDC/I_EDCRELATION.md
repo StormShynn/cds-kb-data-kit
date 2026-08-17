@@ -39,13 +39,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EDCType` | ✓ | |  | `contype` |  |  |
-| `EDCRepresentationType` | ✓ | |  | `representation_type` |  |  |
-| `EDCRepresentationKey` | ✓ | |  | `representation_key` |  |  |
-| `EDCRecordUUID` |  | |  | `consistency_guid` |  |  |
-| `EDCCommonKey` |  | |  | `common_key` |  |  |
-| `EDCCompany` |  | |  | `bukrs` |  |  |
-| `EDCCreatedOnDateTime` |  | |  | `created_on` |  |  |
+| `EDCType` | ✓ | |  | `contype` | `CHAR(15)` | Consistency Scenario ID |
+| `EDCRepresentationType` | ✓ | |  | `representation_type` | `CHAR(30)` | Representation Type ID |
+| `EDCRepresentationKey` | ✓ | |  | `representation_key` | `CHAR(32)` | Representation Key |
+| `EDCRecordUUID` |  | |  | `consistency_guid` | `CHAR(32)` | Consistency GUID |
+| `EDCCommonKey` |  | |  | `common_key` | `CHAR(120)` | Consistency Common Key |
+| `EDCCompany` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `EDCCreatedOnDateTime` |  | |  | `created_on` | `DEC(15)` | Record Created On |
 
 ## Source Code
 

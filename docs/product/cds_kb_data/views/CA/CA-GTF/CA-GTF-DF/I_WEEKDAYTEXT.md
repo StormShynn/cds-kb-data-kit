@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WeekDay` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as vdm_weekday )` |  |  |
-| `Language` | ✓ | |  | `cast(ddlanguage as spras)` |  |  |
-| `WeekDayName` |  | |  | `ddtext` |  |  |
+| `WeekDay` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as vdm_weekday )` | `NUMC(1)` | Week Day |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras)` | `LANG(1)` | Language Key |
+| `WeekDayName` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_WeekDay` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

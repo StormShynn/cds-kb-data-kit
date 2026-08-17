@@ -41,8 +41,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TR_ElectronicDocumentCustomer` | ✓ | |  |  |  |  |
-| `TR_ElectronicDocumentScenario` |  | |  |  |  |  |
+| `TR_ElectronicDocumentCustomer` | ✓ | |  |  | `CHAR(10)` | Customer Number |
+| `TR_ElectronicDocumentScenario` |  | |  |  | `CHAR(10)` | Scenario (Turkey) |
 
 ## Source Code
 

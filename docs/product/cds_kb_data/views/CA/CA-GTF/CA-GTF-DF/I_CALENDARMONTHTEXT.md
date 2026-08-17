@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CalendarMonth` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as calendarmonth )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `CalendarMonthName` |  | |  | `ddtext` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CalendarMonth` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as calendarmonth )` | `NUMC(2)` | Calendar Month |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `CalendarMonthName` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_CalendarMonth` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

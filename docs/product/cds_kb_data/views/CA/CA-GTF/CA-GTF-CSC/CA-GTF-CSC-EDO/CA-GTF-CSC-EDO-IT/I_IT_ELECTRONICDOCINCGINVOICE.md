@@ -39,22 +39,22 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `IT_ElectronicDocDeliveredDate` |  | |  |  |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |  |  |
-| `IT_ElectronicDocInvoiceNumber` |  | |  |  |  |  |
-| `PurchasingDocumentAmount` |  | |  |  |  |  |
-| `PurchaseOrderCurrency` |  | |  |  |  |  |
-| `IT_ElectronicDocExchSystemID` |  | |  |  |  |  |
-| `IT_ElectronicDocRecipientTaxID` |  | |  |  |  |  |
-| `IT_ElectronicDocRcpntEmailAddr` |  | |  |  |  |  |
-| `IT_ElectronicDocExtDocType` |  | |  |  |  |  |
-| `IT_ElectronicDocRejectionCode` |  | |  |  |  |  |
-| `IT_ElectronicDocRejectionText` |  | |  |  |  |  |
-| `IT_ElectronicDocRjcnEmailAddr` |  | |  |  |  |  |
-| `IT_ElectronicDocSuplrCtryCode` |  | |  |  |  |  |
-| `IT_ElectronicDocSuplrTaxID` |  | |  |  |  |  |
-| `IT_ElectronicDocSupplierName` |  | |  |  |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `IT_ElectronicDocDeliveredDate` |  | |  |  | `DATS(8)` | Date Delivered |
+| `PurchaseOrderByCustomer` |  | |  |  | `CHAR(35)` | Customer Reference |
+| `IT_ElectronicDocInvoiceNumber` |  | |  |  | `CHAR(20)` | Invoice Number of the Incoming eDocument |
+| `PurchasingDocumentAmount` |  | |  |  | `CURR(23)` | Amount in document currency |
+| `PurchaseOrderCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `IT_ElectronicDocExchSystemID` |  | |  |  | `NUMC(12)` | Identification of Invoice at Exchange System (SdI) |
+| `IT_ElectronicDocRecipientTaxID` |  | |  |  | `CHAR(7)` | Code of Invoice Recipient |
+| `IT_ElectronicDocRcpntEmailAddr` |  | |  |  | `CHAR(256)` | PEC e-Mail Address of Invoice Recipient |
+| `IT_ElectronicDocExtDocType` |  | |  |  | `CHAR(4)` | External Document Type |
+| `IT_ElectronicDocRejectionCode` |  | |  |  | `CHAR(4)` | Rejection Code |
+| `IT_ElectronicDocRejectionText` |  | |  |  | `CHAR(255)` | Rejection Text |
+| `IT_ElectronicDocRjcnEmailAddr` |  | |  |  | `CHAR(256)` | e-Mail Address for Invoice Rejection |
+| `IT_ElectronicDocSuplrCtryCode` |  | |  |  | `CHAR(2)` | Country/Region ISO Code for Supplier |
+| `IT_ElectronicDocSuplrTaxID` |  | |  |  | `CHAR(28)` | Tax Identification Code of Supplier |
+| `IT_ElectronicDocSupplierName` |  | |  |  | `CHAR(121)` | Supplier Name of Incoming eDocument |
 | `_ElectronicRejectCode` | | ✓ | | | | |
 | `_CountryText` | | ✓ | | | | |
 | `_CurrencyText` | | ✓ | | | | |
