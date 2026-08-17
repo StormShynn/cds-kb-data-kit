@@ -126,6 +126,14 @@ jobs:
           git config user.name "cds-kb-bot"
           git config user.email "bot@cds-kb.local"
 
+          # Skip while a PR from a previous run is still open — otherwise this
+          # runs daily against the same unmerged main, rediscovers the same
+          # backlog, and piles up duplicate/conflicting PRs (see #28, #30).
+          if gh pr list --state open --base main --json headRefName --jq '.[].headRefName' | grep -q '^daily-cds-fetch/'; then
+            echo "⏭️  An open daily-cds-fetch PR already exists — skipping until it's merged or closed."
+            exit 0
+          fi
+
           # Check if there are any changes to commit
           if git diff --quiet HEAD -- views/ changelog.json; then
             echo "ℹ️  No new views to commit"
