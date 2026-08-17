@@ -39,16 +39,16 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `ElectronicDocCompanyCode` |  | | `_ElectronicDocument` | `ElectronicDocCompanyCode` |  |  |
-| `ElectronicDocCountry` |  | | `_ElectronicDocument` | `ElectronicDocCountry` |  |  |
-| `ElectronicDocSourceType` |  | | `_ElectronicDocument` | `ElectronicDocSourceType` |  |  |
-| `ElectronicDocSourceKey` |  | | `_ElectronicDocument` | `ElectronicDocSourceKey` |  |  |
-| `ElectronicDocType` |  | | `_ElectronicDocument` | `ElectronicDocType` |  |  |
-| `ElectronicDocProcessStatus` |  | | `_ElectronicDocument` | `ElectronicDocProcessStatus` |  |  |
-| `ElectronicDocProcess` |  | | `_ElectronicDocument` | `ElectronicDocProcess` |  |  |
-| `HU_ElectronicDocTransactionID` |  | |  |  |  |  |
-| `HU_ElectronicDocIsSentToCust` |  | |  |  |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `ElectronicDocCompanyCode` |  | | `_ElectronicDocument` | `ElectronicDocCompanyCode` | `CHAR(4)` | Company Code |
+| `ElectronicDocCountry` |  | | `_ElectronicDocument` | `ElectronicDocCountry` | `CHAR(3)` | Company Country/Region |
+| `ElectronicDocSourceType` |  | | `_ElectronicDocument` | `ElectronicDocSourceType` | `CHAR(10)` | eDocument Source Type |
+| `ElectronicDocSourceKey` |  | | `_ElectronicDocument` | `ElectronicDocSourceKey` | `CHAR(32)` | eDocument Source Key |
+| `ElectronicDocType` |  | | `_ElectronicDocument` | `ElectronicDocType` | `CHAR(10)` | eDocument Type |
+| `ElectronicDocProcessStatus` |  | | `_ElectronicDocument` | `ElectronicDocProcessStatus` | `CHAR(10)` | eDocument Process Status |
+| `ElectronicDocProcess` |  | | `_ElectronicDocument` | `ElectronicDocProcess` | `CHAR(10)` | eDocument Process |
+| `HU_ElectronicDocTransactionID` |  | |  |  | `CHAR(30)` | Transaction ID |
+| `HU_ElectronicDocIsSentToCust` |  | |  |  | `CHAR(1)` | Sent to Customer |
 
 ## Source Code
 

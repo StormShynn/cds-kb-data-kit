@@ -41,22 +41,22 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EDCTaxAuthRecordUUID` | ✓ | |  | `record_guid` |  |  |
-| `EDCTaxAuthSqncNmbr` | ✓ | |  | `seq_nr` |  |  |
-| `EDCCompany` |  | |  | `bukrs` |  |  |
-| `EDCCountry` |  | |  | `country` |  |  |
-| `EDCCommonKey` |  | |  | `common_key` |  |  |
-| `EDCTaxAuthDocumentKey` |  | |  | `document_key` |  |  |
-| `EDCDocumentPeriod` |  | |  | `document_period` |  |  |
-| `EDCTaxAuthDocumentType` |  | |  | `document_type` |  |  |
-| `EDCBusinessPartnerID` |  | |  | `bptaxid` |  |  |
-| `EDCTaxAuthStatus` |  | |  | `status` |  |  |
-| `EDCStatusChangeDate` |  | |  | `status_change_date` |  |  |
-| `EDCApplicationLogID` |  | |  | `appl_log_id` |  |  |
-| `EDCCreatedByUser` |  | |  | `created_by` |  |  |
-| `EDCCreatedOnDateTime` |  | |  | `created_on` |  |  |
-| `EDCChangedByUser` |  | |  | `changed_by` |  |  |
-| `EDCChangedOnDateTime` |  | |  | `changed_on` |  |  |
+| `EDCTaxAuthRecordUUID` | ✓ | |  | `record_guid` | `CHAR(32)` | Record GUID |
+| `EDCTaxAuthSqncNmbr` | ✓ | |  | `seq_nr` | `NUMC(3)` | Tax authority Record Sequence Number |
+| `EDCCompany` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `EDCCountry` |  | |  | `country` | `CHAR(2)` | ISO Code of the Country/Region |
+| `EDCCommonKey` |  | |  | `common_key` | `CHAR(120)` | Consistency Common Key |
+| `EDCTaxAuthDocumentKey` |  | |  | `document_key` | `CHAR(40)` | Document Key |
+| `EDCDocumentPeriod` |  | |  | `document_period` | `NUMC(6)` | eDocument Consistency: Document Period/Year |
+| `EDCTaxAuthDocumentType` |  | |  | `document_type` | `CHAR(20)` | Document Type |
+| `EDCBusinessPartnerID` |  | |  | `bptaxid` | `CHAR(60)` | Identification Number |
+| `EDCTaxAuthStatus` |  | |  | `status` | `CHAR(20)` | Document Status |
+| `EDCStatusChangeDate` |  | |  | `status_change_date` | `DATS(8)` | Status Change on(Date) |
+| `EDCApplicationLogID` |  | |  | `appl_log_id` | `CHAR(100)` | Application Log: External Identification |
+| `EDCCreatedByUser` |  | |  | `created_by` | `CHAR(12)` | Record Created by |
+| `EDCCreatedOnDateTime` |  | |  | `created_on` | `DEC(15)` | Record Created On |
+| `EDCChangedByUser` |  | |  | `changed_by` | `CHAR(12)` | Record Changed by |
+| `EDCChangedOnDateTime` |  | |  | `changed_on` | `DEC(15)` | Record Changed On |
 | `_TaxAuthDoc` | | ✓ | | | | |
 
 ## Associations

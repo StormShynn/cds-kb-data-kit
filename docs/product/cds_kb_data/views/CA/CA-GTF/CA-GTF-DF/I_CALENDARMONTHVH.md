@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CalendarMonth` | ✓ | |  |  |  |  |
+| `CalendarMonth` | ✓ | |  |  | `NUMC(2)` | Calendar Month |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

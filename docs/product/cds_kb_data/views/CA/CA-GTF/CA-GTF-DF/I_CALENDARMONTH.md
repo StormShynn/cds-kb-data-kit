@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CalendarMonth` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as calendarmonth )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CalendarMonth` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as calendarmonth )` | `NUMC(2)` | Calendar Month |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

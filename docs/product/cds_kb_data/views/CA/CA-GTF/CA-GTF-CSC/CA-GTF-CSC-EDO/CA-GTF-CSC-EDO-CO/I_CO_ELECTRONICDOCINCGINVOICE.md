@@ -39,13 +39,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `CO_ElectronicDocOfclInvcNmbr` |  | |  |  |  |  |
-| `CO_ElectronicDocSupplierName` |  | |  |  |  |  |
-| `CO_ElectronicDocPurOrdByCust` |  | |  |  |  |  |
-| `CO_ElectronicDocInvcTotAmount` |  | |  |  |  |  |
-| `Currency` |  | |  |  |  |  |
-| `CO_ElectronicDocIsAccepted` |  | |  |  |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `CO_ElectronicDocOfclInvcNmbr` |  | |  |  | `CHAR(20)` | Official Number |
+| `CO_ElectronicDocSupplierName` |  | |  |  | `CHAR(35)` | Supplier Name |
+| `CO_ElectronicDocPurOrdByCust` |  | |  |  | `CHAR(35)` | Customer Reference |
+| `CO_ElectronicDocInvcTotAmount` |  | |  |  | `CURR(23)` | Invoice Total Amount |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `CO_ElectronicDocIsAccepted` |  | |  |  | `CHAR(1)` | Acceptance Flag for Incoming eDocument |
 | `CO_EDocSignatureBinary` |  | |  |  |  |  |
 
 ## Source Code

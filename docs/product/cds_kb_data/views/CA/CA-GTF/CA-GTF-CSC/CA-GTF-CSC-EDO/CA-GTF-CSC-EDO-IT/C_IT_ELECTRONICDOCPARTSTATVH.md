@@ -54,8 +54,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `IT_ElectronicDocPartStat` | ✓ | |  |  |  |  |
-| `IT_ElectronicDocPartStatText` |  | |  | `_Text[1:Language = $session.system_language].IT_ElectronicDocPartStatText` |  |  |
+| `IT_ElectronicDocPartStat` | ✓ | |  |  | `CHAR(50)` | eDocument Status from Partner (Italy) |
+| `IT_ElectronicDocPartStatText` |  | |  | `_Text[1:Language = $session.system_language].IT_ElectronicDocPartStatText` | `CHAR(100)` | Description of eDocument Status from Partner (Italy) |
 
 ## Source Code
 

@@ -40,16 +40,16 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `BusinessPlace` | ✓ | |  | `bupla` |  |  |
-| `KR_EDocHomeTaxDtaApprovalNo` | ✓ | |  | `apprvl_no` |  |  |
-| `KR_EDocHomeTaxDtaTaxBaseValue` |  | |  | `tax_base_amt` |  |  |
-| `KR_EDocHomeTaxDtaTaxValue` |  | |  | `tax_amount` |  |  |
-| `KR_EDocHomeTaxDtaValue` |  | |  | `amount` |  |  |
-| `Currency` |  | |  | `waers` |  |  |
-| `KR_EDocHomeTaxDtaInvcDate` |  | |  | `invoice_date` |  |  |
-| `Customer` |  | |  | `customer` |  |  |
-| `Supplier` |  | |  | `supplier` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `BusinessPlace` | ✓ | |  | `bupla` | `CHAR(4)` | Business Place |
+| `KR_EDocHomeTaxDtaApprovalNo` | ✓ | |  | `apprvl_no` | `CHAR(27)` | Approval ID for Tax Invoice of South Korea |
+| `KR_EDocHomeTaxDtaTaxBaseValue` |  | |  | `tax_base_amt` | `DEC(18)` | Tax Base |
+| `KR_EDocHomeTaxDtaTaxValue` |  | |  | `tax_amount` | `DEC(18)` | Tax Amount |
+| `KR_EDocHomeTaxDtaValue` |  | |  | `amount` | `DEC(18)` | Amount |
+| `Currency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `KR_EDocHomeTaxDtaInvcDate` |  | |  | `invoice_date` | `DATS(8)` | Tax Invoice Date |
+| `Customer` |  | |  | `customer` | `CHAR(10)` | Customer Number |
+| `Supplier` |  | |  | `supplier` | `CHAR(10)` | Account Number of Supplier |
 
 ## Source Code
 

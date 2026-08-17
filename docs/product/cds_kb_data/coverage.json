@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-14T01:08:39.414Z",
+  "generatedAt": "2026-08-17T02:50:44.948Z",
   "hubContainer": "SAPS4HANACloud",
   "hubTotal": 8864,
-  "localTotal": 10659,
+  "localTotal": 10660,
   "matchedTotal": 8864,
   "missingTotal": 0,
   "metadataOnlyTotal": 221,
   "fullTotal": 8643,
-  "extraTotal": 1795,
+  "extraTotal": 1796,
   "rows": [
     {
       "name": "_DCO_I_ACCOUNT",
@@ -182273,6 +182273,14 @@
       "appComponent": "",
       "releaseState": "unverified",
       "path": "views/_UNVERIFIED/ZC_AK_BOOK.DDLS.md",
+      "sourceAvailable": true
+    },
+    {
+      "name": "ZC_APG_POINT.DDLS",
+      "description": "\"Maintain Point - Projection\"",
+      "appComponent": "",
+      "releaseState": "unverified",
+      "path": "views/_UNVERIFIED/ZC_APG_POINT.DDLS.md",
       "sourceAvailable": true
     },
     {

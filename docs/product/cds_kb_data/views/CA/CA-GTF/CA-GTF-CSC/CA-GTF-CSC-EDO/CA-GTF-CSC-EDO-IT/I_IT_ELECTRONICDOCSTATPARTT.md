@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `IT_ElectronicDocPartStat` | ✓ | |  | `status_at_partner` |  |  |
-| `IT_ElectronicDocPartStatText` |  | |  | `description` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `IT_ElectronicDocPartStat` | ✓ | |  | `status_at_partner` | `CHAR(50)` | eDocument Status from Partner (Italy) |
+| `IT_ElectronicDocPartStatText` |  | |  | `description` | `CHAR(100)` | Description of eDocument Status from Partner (Italy) |
 | `_StatusPartner` | | ✓ | | | | |
 
 ## Associations

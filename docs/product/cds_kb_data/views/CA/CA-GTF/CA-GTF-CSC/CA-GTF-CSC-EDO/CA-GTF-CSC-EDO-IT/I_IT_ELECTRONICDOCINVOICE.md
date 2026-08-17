@@ -39,19 +39,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `IT_EDocProgressiveNumber` |  | |  |  |  |  |
-| `IT_ElectronicDocRequestID` |  | |  |  |  |  |
-| `IT_ElectronicDocPartnerStatus` |  | |  |  |  |  |
-| `IT_ElectronicDocSenderCtryCode` |  | |  |  |  |  |
-| `IT_ElectronicDocSenderTaxID` |  | |  |  |  |  |
-| `ElectronicDocBPType` |  | |  |  |  |  |
-| `ElectronicDocBPTypeText` |  | |  |  |  |  |
-| `IT_ElectronicDocCustEmailAddr` |  | |  |  |  |  |
-| `IT_ElectronicDocODN` |  | |  |  |  |  |
-| `CAOfficialDocumentNumber` |  | |  |  |  |  |
-| `ElectronicDocProcess` |  | |  |  |  |  |
-| `ElectronicDocCompanyCode` |  | |  |  |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `IT_EDocProgressiveNumber` |  | |  |  | `CHAR(5)` | Progressive Number in Character Format (Italy) |
+| `IT_ElectronicDocRequestID` |  | |  |  | `CHAR(50)` | Request ID from Partner (Italy) |
+| `IT_ElectronicDocPartnerStatus` |  | |  |  | `CHAR(50)` | eDocument Status from Partner (Italy) |
+| `IT_ElectronicDocSenderCtryCode` |  | |  |  | `CHAR(2)` | Country/Region ISO Code for Sender Identification |
+| `IT_ElectronicDocSenderTaxID` |  | |  |  | `CHAR(28)` | Tax Identification Code of Sender |
+| `ElectronicDocBPType` |  | |  |  | `CHAR(1)` | eDocument Business Partner Type |
+| `ElectronicDocBPTypeText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `IT_ElectronicDocCustEmailAddr` |  | |  |  | `CHAR(241)` | Customer e-Mail Address (Italy) |
+| `IT_ElectronicDocODN` |  | |  |  | `CHAR(20)` | Invoice Number of the Outgoing eDocument |
+| `CAOfficialDocumentNumber` |  | |  |  | `CHAR(16)` |  |
+| `ElectronicDocProcess` |  | |  |  | `CHAR(10)` | eDocument Process |
+| `ElectronicDocCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
 | `_EDCDocPartnerStatText` | | ✓ | | | | |
 | `_ElectronicDocProcessText` | | ✓ | | | | |
 | `_CountryText` | | ✓ | | | | |

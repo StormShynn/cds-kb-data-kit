@@ -39,56 +39,56 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |  |  |
-| `ElectronicDocCountry` |  | | `_ElectronicDoc` | `ElectronicDocCountry` |  |  |
-| `ElectronicDocSourceType` |  | | `_ElectronicDoc` | `ElectronicDocSourceType` |  |  |
-| `ElectronicDocSourceKey` |  | | `_ElectronicDoc` | `ElectronicDocSourceKey` |  |  |
-| `ElectronicDocType` |  | | `_ElectronicDoc` | `ElectronicDocType` |  |  |
-| `ElectronicDocProcessStatus` |  | | `_ElectronicDoc` | `ElectronicDocProcessStatus` |  |  |
-| `ElectronicDocProcess` |  | | `_ElectronicDoc` | `ElectronicDocProcess` |  |  |
-| `ElectronicDocSequenceNmbr` |  | |  |  |  |  |
-| `IN_ElectronicDocEWbillNmbr` |  | |  |  |  |  |
-| `IN_EDocEWbillCreateDate` |  | |  |  |  |  |
-| `IN_EDocEWbillCreateTime` |  | |  |  |  |  |
-| `IN_EDocEWbillValidityDate` |  | |  |  |  |  |
-| `IN_EDocEWbillValidityTime` |  | |  |  |  |  |
-| `IN_EDocTransptDocNmbr` |  | |  |  |  |  |
-| `IN_EDocTransptDocDate` |  | |  |  |  |  |
-| `IN_EDocTransptDistanceVal` |  | |  |  |  |  |
-| `IN_EDocRmngTransptDstncVal` |  | |  |  |  |  |
-| `IN_EDocVehicleNumber` |  | |  |  |  |  |
-| `IN_ElectronicDocVehicleType` |  | |  |  |  |  |
-| `IN_ElectronicDocFromPlaceTxt` |  | |  |  |  |  |
-| `IN_ElectronicDocFromState` |  | |  |  |  |  |
-| `IN_ElectronicDocTransptMode` |  | |  |  |  |  |
-| `IN_EDocEWbillModifReasonCode` |  | |  |  |  |  |
-| `IN_EDocEWbillModifRemarksTxt` |  | |  |  |  |  |
-| `IN_EDocTransptrUpdtDate` |  | |  |  |  |  |
-| `IN_EDocEWbillUpdtDate` |  | |  |  |  |  |
-| `IN_EDocEWbillUpdtTime` |  | |  |  |  |  |
-| `IN_EDocEWbillValdtyExtnRsnCode` |  | |  |  |  |  |
-| `IN_EWbillValdtyExtnRemarksTxt` |  | |  |  |  |  |
-| `IN_EDocEWbillCancRsnCode` |  | |  |  |  |  |
-| `IN_EDocEWbillCancelDate` |  | |  |  |  |  |
-| `IN_EDocEWbillCancelTime` |  | |  |  |  |  |
-| `IN_EDocEWbillCancRemarksTxt` |  | |  |  |  |  |
-| `IN_ElectronicDocIsCancFlag` |  | |  |  |  |  |
-| `IN_ElectronicDocEditActionFlag` |  | |  |  |  |  |
-| `IN_ElectronicDocInvcNmbr` |  | |  |  |  |  |
-| `IN_ElectronicDocBusinessPlace` |  | |  |  |  |  |
-| `IN_EDocEWbillIsContingencyFlag` |  | |  |  |  |  |
-| `IN_ElectronicDocTransptrName` |  | |  |  |  |  |
-| `IN_ElectronicDocTransptrGSTIN` |  | |  |  |  |  |
-| `IN_EDocEWbillCtptyRejectStatus` |  | |  |  |  |  |
-| `IN_ElectronicDocCsgnmtStatus` |  | |  |  |  |  |
-| `IN_EDocEWbillTransitType` |  | |  |  |  |  |
-| `IN_EDocEWbillFromPinCode` |  | |  |  |  |  |
-| `IN_EDocEWbillExtnAddrLine1Txt` |  | |  |  |  |  |
-| `IN_EDocEWbillExtnAddrLine2Txt` |  | |  |  |  |  |
-| `IN_EDocEWbillExtnAddrLine3Txt` |  | |  |  |  |  |
-| `IN_EDocEWbillIsMultiVehFlag` |  | |  |  |  |  |
-| `IN_ElectronicDocSubSupplyDesc` |  | |  |  |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` | `CHAR(4)` | Company Code |
+| `ElectronicDocCountry` |  | | `_ElectronicDoc` | `ElectronicDocCountry` | `CHAR(3)` | Company Country/Region |
+| `ElectronicDocSourceType` |  | | `_ElectronicDoc` | `ElectronicDocSourceType` | `CHAR(10)` | eDocument Source Type |
+| `ElectronicDocSourceKey` |  | | `_ElectronicDoc` | `ElectronicDocSourceKey` | `CHAR(32)` | eDocument Source Key |
+| `ElectronicDocType` |  | | `_ElectronicDoc` | `ElectronicDocType` | `CHAR(10)` | eDocument Type |
+| `ElectronicDocProcessStatus` |  | | `_ElectronicDoc` | `ElectronicDocProcessStatus` | `CHAR(10)` | eDocument Process Status |
+| `ElectronicDocProcess` |  | | `_ElectronicDoc` | `ElectronicDocProcess` | `CHAR(10)` | eDocument Process |
+| `ElectronicDocSequenceNmbr` |  | |  |  | `NUMC(3)` | eDocument Sequence Number |
+| `IN_ElectronicDocEWbillNmbr` |  | |  |  | `NUMC(12)` | eWay Bill Number |
+| `IN_EDocEWbillCreateDate` |  | |  |  | `DATS(8)` | eWay Bill Creation Date |
+| `IN_EDocEWbillCreateTime` |  | |  |  | `TIMS(6)` | eWay Bill Creation Time |
+| `IN_EDocEWbillValidityDate` |  | |  |  | `DATS(8)` | eWay Bill - Valid To |
+| `IN_EDocEWbillValidityTime` |  | |  |  | `TIMS(6)` | eWay Bill Validity Ends at |
+| `IN_EDocTransptDocNmbr` |  | |  |  | `CHAR(15)` | eWay Bill Transport Document Number |
+| `IN_EDocTransptDocDate` |  | |  |  | `DATS(8)` | eWay Bill Transport Document Date |
+| `IN_EDocTransptDistanceVal` |  | |  |  | `NUMC(5)` | eWay Bill Transport Distance in KM |
+| `IN_EDocRmngTransptDstncVal` |  | |  |  | `NUMC(5)` | eWay Bill Remaining Transport Distance in KM |
+| `IN_EDocVehicleNumber` |  | |  |  | `CHAR(15)` | eWay Bill Vehicle Number |
+| `IN_ElectronicDocVehicleType` |  | |  |  | `CHAR(1)` | eWay Bill Vehicle Type |
+| `IN_ElectronicDocFromPlaceTxt` |  | |  |  | `CHAR(50)` | eWay Bill From Place |
+| `IN_ElectronicDocFromState` |  | |  |  | `CHAR(3)` | eWay Bill From State |
+| `IN_ElectronicDocTransptMode` |  | |  |  | `NUMC(3)` | eWay Bill Transport Mode |
+| `IN_EDocEWbillModifReasonCode` |  | |  |  | `NUMC(2)` | eWay Bill Reason Code for Vehicle Change |
+| `IN_EDocEWbillModifRemarksTxt` |  | |  |  | `CHAR(50)` | eWay Bill Reason Remarks |
+| `IN_EDocTransptrUpdtDate` |  | |  |  | `DATS(8)` | eWay Bill Transporter ID Updated Date |
+| `IN_EDocEWbillUpdtDate` |  | |  |  | `DATS(8)` | eWay Bill Last Updated Date |
+| `IN_EDocEWbillUpdtTime` |  | |  |  | `TIMS(6)` | eWay Bill Last Updated Time |
+| `IN_EDocEWbillValdtyExtnRsnCode` |  | |  |  | `NUMC(1)` | eWay Bill Validity Extend Reason Code |
+| `IN_EWbillValdtyExtnRemarksTxt` |  | |  |  | `CHAR(50)` | eWay Bill Validity Extension Remarks |
+| `IN_EDocEWbillCancRsnCode` |  | |  |  | `NUMC(1)` | eWay Bill Cancellation Reason Code |
+| `IN_EDocEWbillCancelDate` |  | |  |  | `DATS(8)` | eWay Bill Cancellation Date |
+| `IN_EDocEWbillCancelTime` |  | |  |  | `TIMS(6)` | eWay Bill Cancellation Time |
+| `IN_EDocEWbillCancRemarksTxt` |  | |  |  | `CHAR(50)` | eWay Bill Cancellation Remarks |
+| `IN_ElectronicDocIsCancFlag` |  | |  |  | `CHAR(1)` | eWay Bill Cancel eDocument Flag |
+| `IN_ElectronicDocEditActionFlag` |  | |  |  | `NUMC(1)` | eWay Bill Edit Action |
+| `IN_ElectronicDocInvcNmbr` |  | |  |  | `CHAR(16)` | eWay Bill Source Document Number (ODN) |
+| `IN_ElectronicDocBusinessPlace` |  | |  |  | `CHAR(4)` | Business Place |
+| `IN_EDocEWbillIsContingencyFlag` |  | |  |  | `CHAR(1)` | eWay Bill Contingency Flag |
+| `IN_ElectronicDocTransptrName` |  | |  |  | `CHAR(100)` | eWay Bill Transporter Name |
+| `IN_ElectronicDocTransptrGSTIN` |  | |  |  | `CHAR(15)` | eWay Bill Transporter GSTIN |
+| `IN_EDocEWbillCtptyRejectStatus` |  | |  |  | `CHAR(10)` | eWay Bill Counter Party Reject Status |
+| `IN_ElectronicDocCsgnmtStatus` |  | |  |  | `CHAR(1)` | eWay Bill Consignment Status |
+| `IN_EDocEWbillTransitType` |  | |  |  | `CHAR(1)` | eWay Bill Transit Type |
+| `IN_EDocEWbillFromPinCode` |  | |  |  | `INT4(10)` | eWay Bill From Pincode |
+| `IN_EDocEWbillExtnAddrLine1Txt` |  | |  |  | `CHAR(120)` | eWay Bill Address Line 1 |
+| `IN_EDocEWbillExtnAddrLine2Txt` |  | |  |  | `CHAR(120)` | eWay Bill Address Line 2 |
+| `IN_EDocEWbillExtnAddrLine3Txt` |  | |  |  | `CHAR(120)` | eWay Bill Address Line 3 |
+| `IN_EDocEWbillIsMultiVehFlag` |  | |  |  | `CHAR(1)` | eWay Bill Multi Vehicle Flag |
+| `IN_ElectronicDocSubSupplyDesc` |  | |  |  | `CHAR(20)` | eWay Bill Other Sub Supply Description |
 
 ## Source Code
 

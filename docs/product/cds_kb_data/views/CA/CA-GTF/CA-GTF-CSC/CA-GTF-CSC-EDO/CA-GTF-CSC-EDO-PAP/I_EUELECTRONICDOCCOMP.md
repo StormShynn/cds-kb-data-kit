@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `EU_EDocCommChannel` | ✓ | |  | `comm_channel` |  |  |
-| `ElectronicDocPartyIdType` |  | |  | `party_id_type` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `EU_EDocCommChannel` | ✓ | |  | `comm_channel` | `CHAR(1)` | Exchange Channel |
+| `ElectronicDocPartyIdType` |  | |  | `party_id_type` | `CHAR(15)` | Party Identification Type |
 | `_CompanyCode` | | ✓ | | | | |
 
 ## Associations

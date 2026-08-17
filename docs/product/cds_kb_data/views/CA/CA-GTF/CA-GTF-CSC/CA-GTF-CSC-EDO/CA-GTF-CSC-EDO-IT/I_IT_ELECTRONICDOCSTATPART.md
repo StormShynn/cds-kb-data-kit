@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `IT_ElectronicDocPartStat` | ✓ | |  | `status_at_partner` |  |  |
+| `IT_ElectronicDocPartStat` | ✓ | |  | `status_at_partner` | `CHAR(50)` | eDocument Status from Partner (Italy) |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

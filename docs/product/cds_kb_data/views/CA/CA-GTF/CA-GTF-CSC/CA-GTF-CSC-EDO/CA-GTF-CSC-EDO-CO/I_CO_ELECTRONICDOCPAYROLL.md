@@ -39,16 +39,16 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `CO_ElectronicDocPyrlUniqueID` |  | |  |  |  |  |
-| `CO_ElectronicDocPayrollNumber` |  | |  |  |  |  |
-| `CO_ElectronicDocEmployeeCode` |  | |  |  |  |  |
-| `CO_ElectronicDocPayrollDateTxt` |  | |  |  |  |  |
-| `CO_ElectronicDocXMLType` |  | |  |  |  |  |
-| `CO_ElectronicDocGnrtnDateText` |  | |  |  |  |  |
-| `CO_ElectronicDocGnrtnTimeText` |  | |  |  |  |  |
-| `CO_ElectronicDocumentNoteType` |  | |  |  |  |  |
-| `CO_ElectronicDocNoveltyFlag` |  | |  |  |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `CO_ElectronicDocPyrlUniqueID` |  | |  |  | `CHAR(190)` | CUNE Identificator |
+| `CO_ElectronicDocPayrollNumber` |  | |  |  | `CHAR(80)` | Payroll Number |
+| `CO_ElectronicDocEmployeeCode` |  | |  |  | `CHAR(20)` | Employee Code |
+| `CO_ElectronicDocPayrollDateTxt` |  | |  |  | `CHAR(10)` | Payroll Date |
+| `CO_ElectronicDocXMLType` |  | |  |  | `CHAR(15)` | Type of XML |
+| `CO_ElectronicDocGnrtnDateText` |  | |  |  | `CHAR(10)` | Date of Generation |
+| `CO_ElectronicDocGnrtnTimeText` |  | |  |  | `CHAR(20)` | Time of Generation |
+| `CO_ElectronicDocumentNoteType` |  | |  |  | `CHAR(1)` | Type of Note |
+| `CO_ElectronicDocNoveltyFlag` |  | |  |  | `CHAR(5)` | Novelty Flag |
 | `CO_ElectronicDocumentZipKeyVal` |  | |  |  |  |  |
 
 ## Source Code

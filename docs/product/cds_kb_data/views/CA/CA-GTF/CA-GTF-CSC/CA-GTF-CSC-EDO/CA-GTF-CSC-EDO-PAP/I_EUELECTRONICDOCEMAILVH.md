@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EU_EDocEmail` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_email)` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `EU_EDocEmailText` |  | |  | `ddtext` |  |  |
+| `EU_EDocEmail` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_email)` | `CHAR(1)` | eDocument EU: Receive Document per e-Mail |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `EU_EDocEmailText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

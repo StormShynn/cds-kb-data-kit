@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessEventUUID` | ✓ | |  |  |  |  |
-| `SAPObjectType` | ✓ | |  |  |  |  |
+| `BusinessEventUUID` | ✓ | |  |  | `CHAR(32)` | Event GUID |
+| `SAPObjectType` | ✓ | |  |  | `CHAR(30)` | RAP SOT: SAP Object Type |
 | `BusEvtLogPayloadJSONString` |  | |  |  |  |  |
-| `BusEvtLogLastChangedDateTime` |  | |  |  |  |  |
+| `BusEvtLogLastChangedDateTime` |  | |  |  | `DEC(15)` | Timestamp of Last Change |
 
 ## Source Code
 

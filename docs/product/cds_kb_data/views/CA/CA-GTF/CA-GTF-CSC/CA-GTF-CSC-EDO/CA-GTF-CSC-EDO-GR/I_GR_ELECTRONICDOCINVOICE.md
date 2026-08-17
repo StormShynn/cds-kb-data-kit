@@ -39,61 +39,61 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `GR_ElectronicDocRefDocNumber` |  | |  |  |  |  |
-| `GR_ElectronicDocPrintTaskCode` |  | |  |  |  |  |
-| `GR_ElectronicDocSeriesPrefix` |  | |  |  |  |  |
-| `GR_ElectronicDocumentSeries` |  | |  |  |  |  |
-| `GR_ElectronicDocLegalNumber` |  | |  |  |  |  |
-| `GR_ElectronicDocUniqueID` |  | |  |  |  |  |
-| `GR_ElectronicDocMarkID` |  | |  |  |  |  |
-| `GR_ElectronicDocClfnMarkID` |  | |  |  |  |  |
-| `GR_ElectronicDocCancelMarkID` |  | |  |  |  |  |
-| `GR_ElectronicDocCustVATID` |  | |  |  |  |  |
-| `GR_ElectronicDocIssueDate` |  | |  |  |  |  |
-| `GR_ElectronicDocInvoiceType` |  | |  |  |  |  |
-| `GR_ElectronicDocSupplierVATID` |  | |  |  |  |  |
-| `GR_ElectronicDocBranchID` |  | |  |  |  |  |
-| `GR_ElectronicDocGrossAmount` |  | |  |  |  |  |
-| `GR_ElectronicDocPayableAmount` |  | |  |  |  |  |
-| `GR_ElectronicDocNetAmount` |  | |  |  |  |  |
-| `GR_ElectronicDocFuelInvoice` |  | |  |  |  |  |
-| `ElectronicDocCompanyCode` |  | |  |  |  |  |
-| `ElectronicDocCountry` |  | |  |  |  |  |
-| `ElectronicDocSourceType` |  | |  |  |  |  |
-| `ElectronicDocSourceKey` |  | |  |  |  |  |
-| `ElectronicDocType` |  | |  |  |  |  |
-| `ElectronicDocProcessStatus` |  | |  |  |  |  |
-| `ElectronicDocLogicalSystem` |  | |  |  |  |  |
-| `ElectronicDocLastChangedByUser` |  | |  |  |  |  |
-| `ElectronicDocLastChangeDate` |  | |  |  |  |  |
-| `ElectronicDocLastChangeTime` |  | |  |  |  |  |
-| `ElectronicDocCreatedByUser` |  | |  |  |  |  |
-| `ElectronicDocCreationDate` |  | |  |  |  |  |
-| `ElectronicDocCreationTime` |  | |  |  |  |  |
-| `ElectronicDocSrceCreatedByUser` |  | |  |  |  |  |
-| `ElectronicDocProcess` |  | |  |  |  |  |
-| `ElectronicDocLastProcStep` |  | |  |  |  |  |
-| `ElectronicDocLastProcStepVar` |  | |  |  |  |  |
-| `ElectronicDocHasError` |  | |  |  |  |  |
-| `ElectronicDocProcessVersion` |  | |  |  |  |  |
-| `ElectronicDocRefSqncNmbr` |  | |  |  |  |  |
-| `ElectronicDocStatus` |  | |  |  |  |  |
-| `ElectronicDocPostingDate` |  | |  |  |  |  |
-| `ElectronicDocIsContingency` |  | |  |  |  |  |
-| `ElectronicDocReferenceProcess` |  | |  |  |  |  |
-| `ElectronicDocClassName` |  | |  |  |  |  |
-| `ElectronicDocIsArchPrprocgDone` |  | |  |  |  |  |
-| `ElectronicDocInterfaceType` |  | |  |  |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `GR_ElectronicDocRefDocNumber` |  | |  |  | `CHAR(16)` | Reference Document Number |
+| `GR_ElectronicDocPrintTaskCode` |  | |  |  | `CHAR(5)` | Print Task Code |
+| `GR_ElectronicDocSeriesPrefix` |  | |  |  | `CHAR(6)` | eDocument Greece: Series Prefix |
+| `GR_ElectronicDocumentSeries` |  | |  |  | `CHAR(50)` | eDocument Greece: Series |
+| `GR_ElectronicDocLegalNumber` |  | |  |  | `CHAR(50)` | eDocument Greece: Document Counter |
+| `GR_ElectronicDocUniqueID` |  | |  |  | `CHAR(40)` | eDocument Greece: UID Unique Identification |
+| `GR_ElectronicDocMarkID` |  | |  |  | `CHAR(20)` | eDocument Greece: MARK Identification |
+| `GR_ElectronicDocClfnMarkID` |  | |  |  | `CHAR(20)` | eDocument Greece: Classifcation MARK Identification |
+| `GR_ElectronicDocCancelMarkID` |  | |  |  | `CHAR(20)` | eDocument Greece: Cancel MARK Identification |
+| `GR_ElectronicDocCustVATID` |  | |  |  | `CHAR(20)` | eDocument Greece: Customer VAT Id |
+| `GR_ElectronicDocIssueDate` |  | |  |  | `DATS(8)` | eDocument Greece: Issue Date |
+| `GR_ElectronicDocInvoiceType` |  | |  |  | `CHAR(5)` | eDocument Greece: Invoice Type |
+| `GR_ElectronicDocSupplierVATID` |  | |  |  | `CHAR(20)` | eDocument Greece: Vendor VAT Id |
+| `GR_ElectronicDocBranchID` |  | |  |  | `CHAR(10)` | eDocument Greece: Branch Id |
+| `GR_ElectronicDocGrossAmount` |  | |  |  | `DEC(23)` | eDocument Greece: Amount |
+| `GR_ElectronicDocPayableAmount` |  | |  |  | `DEC(23)` | eDocument Greece: Amount |
+| `GR_ElectronicDocNetAmount` |  | |  |  | `DEC(23)` | eDocument Greece: Amount |
+| `GR_ElectronicDocFuelInvoice` |  | |  |  | `CHAR(1)` | eDocument Greece: Fuel Invoice |
+| `ElectronicDocCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ElectronicDocCountry` |  | |  |  | `CHAR(3)` | Company Country/Region |
+| `ElectronicDocSourceType` |  | |  |  | `CHAR(10)` | eDocument Source Type |
+| `ElectronicDocSourceKey` |  | |  |  | `CHAR(32)` | eDocument Source Key |
+| `ElectronicDocType` |  | |  |  | `CHAR(10)` | eDocument Type |
+| `ElectronicDocProcessStatus` |  | |  |  | `CHAR(10)` | eDocument Process Status |
+| `ElectronicDocLogicalSystem` |  | |  |  | `CHAR(10)` | Logical System |
+| `ElectronicDocLastChangedByUser` |  | |  |  | `CHAR(12)` | Changed by (User) |
+| `ElectronicDocLastChangeDate` |  | |  |  | `DATS(8)` | Changed on (Date) |
+| `ElectronicDocLastChangeTime` |  | |  |  | `TIMS(6)` | Changed On (Time) |
+| `ElectronicDocCreatedByUser` |  | |  |  | `CHAR(12)` | Created By (User) |
+| `ElectronicDocCreationDate` |  | |  |  | `DATS(8)` | Creation Date |
+| `ElectronicDocCreationTime` |  | |  |  | `TIMS(6)` | Created on (Time) |
+| `ElectronicDocSrceCreatedByUser` |  | |  |  | `CHAR(12)` | Source Document Created By (User) |
+| `ElectronicDocProcess` |  | |  |  | `CHAR(10)` | eDocument Process |
+| `ElectronicDocLastProcStep` |  | |  |  | `CHAR(10)` | eDocument Last Process Step |
+| `ElectronicDocLastProcStepVar` |  | |  |  | `CHAR(10)` | eDocument: Variant of the Last Process Step |
+| `ElectronicDocHasError` |  | |  |  | `CHAR(1)` | Error Flag |
+| `ElectronicDocProcessVersion` |  | |  |  | `NUMC(4)` | eDocument Process Version |
+| `ElectronicDocRefSqncNmbr` |  | |  |  | `NUMC(5)` | eDocument document reference sequence number |
+| `ElectronicDocStatus` |  | |  |  | `CHAR(40)` | eDocument Status Overview |
+| `ElectronicDocPostingDate` |  | |  |  | `DATS(8)` | Posting Date of the Source Document |
+| `ElectronicDocIsContingency` |  | |  |  | `CHAR(1)` | eDocument is Created in Contingency |
+| `ElectronicDocReferenceProcess` |  | |  |  | `CHAR(10)` | eDocument Reference Process |
+| `ElectronicDocClassName` |  | |  |  | `CHAR(30)` | eDocument Class Name |
+| `ElectronicDocIsArchPrprocgDone` |  | |  |  | `CHAR(1)` | Preprocessing for Archiving Completed |
+| `ElectronicDocInterfaceType` |  | |  |  | `CHAR(10)` | Interface Type |
 | `ElectronicDocApprovalIDValue` |  | |  |  |  |  |
-| `ElectronicDocInterfaceUUID` |  | |  |  |  |  |
-| `ElectronicDocFileUUID` |  | |  |  |  |  |
+| `ElectronicDocInterfaceUUID` |  | |  |  | `CHAR(32)` | Interface Message ID |
+| `ElectronicDocFileUUID` |  | |  |  | `CHAR(32)` | File GUID |
 | `ElectronicDocResponseCodeValue` |  | |  |  |  |  |
-| `ElectronicDocInterfaceID` |  | |  |  |  |  |
-| `ElectronicDocInterfaceVersion` |  | |  |  |  |  |
-| `ElectronicDocIsCntdInArchive` |  | |  |  |  |  |
-| `ElectronicDocMetaStatus` |  | |  |  |  |  |
-| `ElectronicDocProcessForStatus` |  | |  |  |  |  |
+| `ElectronicDocInterfaceID` |  | |  |  | `CHAR(30)` | Interface |
+| `ElectronicDocInterfaceVersion` |  | |  |  | `NUMC(4)` | eDocument Interface Version |
+| `ElectronicDocIsCntdInArchive` |  | |  |  | `CHAR(1)` | Included in Archive Counter |
+| `ElectronicDocMetaStatus` |  | |  |  | `CHAR(4)` | eDocument Status |
+| `ElectronicDocProcessForStatus` |  | |  |  | `CHAR(10)` | eDocument Reference Process |
 
 ## Source Code
 

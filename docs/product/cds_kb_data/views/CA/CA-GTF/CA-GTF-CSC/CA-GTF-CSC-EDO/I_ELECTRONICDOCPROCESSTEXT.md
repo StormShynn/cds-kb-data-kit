@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ElectronicDocProcess` | ✓ | |  | `process` |  |  |
-| `ElectronicDocProcessText` |  | |  | `procdesc` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ElectronicDocProcess` | ✓ | |  | `process` | `CHAR(10)` | eDocument Process |
+| `ElectronicDocProcessText` |  | |  | `procdesc` | `CHAR(60)` | eDocument Process Description |
 
 ## Source Code
 

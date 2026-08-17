@@ -39,13 +39,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |  |  |
-| `PortugueseInvoiceNumber` |  | |  | `invoice_no` |  |  |
-| `PT_ElectronicDocIsSigned` |  | |  | `sign_exists` |  |  |
-| `PT_ElectronicDocRequestID` |  | |  | `request_id` |  |  |
-| `PT_ElectronicDocStatusDate` |  | |  | `status_issue_date` |  |  |
-| `PT_ElectronicDocStatusTime` |  | |  | `status_issue_time` |  |  |
-| `PT_ElectronicDocInvoiceID` |  | |  | `uuid` |  |  |
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` | `CHAR(32)` | eDocument: GUID |
+| `PortugueseInvoiceNumber` |  | |  | `invoice_no` | `CHAR(20)` | Signature PT: Invoice Number |
+| `PT_ElectronicDocIsSigned` |  | |  | `sign_exists` | `CHAR(1)` | Digital Signature Exists |
+| `PT_ElectronicDocRequestID` |  | |  | `request_id` | `CHAR(36)` | Send Request ID |
+| `PT_ElectronicDocStatusDate` |  | |  | `status_issue_date` | `DATS(8)` | Issue Date of a Status |
+| `PT_ElectronicDocStatusTime` |  | |  | `status_issue_time` | `TIMS(6)` | Issue Time of a Status |
+| `PT_ElectronicDocInvoiceID` |  | |  | `uuid` | `CHAR(50)` | Universally Unique Identifier |
 
 ## Source Code
 

@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `EG_EDocActiveDate` |  | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `EG_EDocActiveDate` |  | |  |  | `DATS(8)` | eDocument Egypt: Effective Date |
 
 ## Source Code
 

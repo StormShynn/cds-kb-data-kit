@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WeekDay` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_weekday )` |  |  |
+| `WeekDay` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_weekday )` | `NUMC(1)` | Week Day |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

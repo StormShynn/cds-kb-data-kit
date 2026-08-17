@@ -39,15 +39,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `TR_EDocBusinessPartnerAlias` | ✓ | |  |  |  |  |
-| `TR_ElectronicDocTaxID` | ✓ | |  |  |  |  |
-| `TR_ElectronicDocumentRole` | ✓ | |  |  |  |  |
-| `TR_EDocTaxpayerName` |  | |  |  |  |  |
-| `TR_EDocTaxpayerType` |  | |  |  |  |  |
-| `TR_EDocFirstAliasRegnDateData` |  | |  |  |  |  |
-| `TR_EDocFirstAliasRegnTimeData` |  | |  |  |  |  |
-| `TR_EDocIsDefaultAlias` |  | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `TR_EDocBusinessPartnerAlias` | ✓ | |  |  | `CHAR(255)` | Alias |
+| `TR_ElectronicDocTaxID` | ✓ | |  |  | `CHAR(11)` | eDocument Turkey: VKN/TCKN |
+| `TR_ElectronicDocumentRole` | ✓ | |  |  | `CHAR(2)` | Role |
+| `TR_EDocTaxpayerName` |  | |  |  | `CHAR(80)` | Taxpayer Name |
+| `TR_EDocTaxpayerType` |  | |  |  | `CHAR(8)` | Taxpayer Type |
+| `TR_EDocFirstAliasRegnDateData` |  | |  |  | `CHAR(28)` | Registration Date of First Alias Registered for VKN/TCKN |
+| `TR_EDocFirstAliasRegnTimeData` |  | |  |  | `CHAR(28)` | Registration Date |
+| `TR_EDocIsDefaultAlias` |  | |  |  | `CHAR(1)` | Default Alias |
 
 ## Source Code
 

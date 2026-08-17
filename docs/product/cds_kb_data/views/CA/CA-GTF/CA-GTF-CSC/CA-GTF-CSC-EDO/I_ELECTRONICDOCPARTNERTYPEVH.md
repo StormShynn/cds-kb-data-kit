@@ -41,8 +41,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocBPType` | ✓ | |  | `cast(domvalue_l as edoc_partner_type)` |  |  |
-| `ElectronicDocBPTypeDesc` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |  |  |
+| `ElectronicDocBPType` | ✓ | |  | `cast(domvalue_l as edoc_partner_type)` | `CHAR(1)` | eDocument Business Partner Type |
+| `ElectronicDocBPTypeDesc` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` | `CHAR(60)` | Short Text for Fixed Values |
 
 ## Source Code
 

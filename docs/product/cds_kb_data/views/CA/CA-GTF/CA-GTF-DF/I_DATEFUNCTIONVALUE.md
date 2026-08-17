@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DateFunction` | ✓ | |  | `datefunction` |  |  |
-| `DateFunctionValidityDate` | ✓ | |  | `valid_for_date` |  |  |
-| `DateFunctionStartDate` |  | |  | `datefunctionstartdate` |  |  |
-| `DateFunctionEndDate` |  | |  | `datefunctionenddate` |  |  |
+| `DateFunction` | ✓ | |  | `datefunction` | `CHAR(32)` | Relative Date Function ID |
+| `DateFunctionValidityDate` | ✓ | |  | `valid_for_date` | `DATS(8)` | Validity date for date function |
+| `DateFunctionStartDate` |  | |  | `datefunctionstartdate` | `DATS(8)` | Date Function Start Date |
+| `DateFunctionEndDate` |  | |  | `datefunctionenddate` | `DATS(8)` | Date Function End Date |
 | `_Datefunction` | | ✓ | | | | |
 
 ## Associations

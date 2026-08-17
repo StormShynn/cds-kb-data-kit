@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocPartyIdType` | ✓ | |  | `party_id_type` |  |  |
-| `BPIdentificationType` |  | |  | `bu_id_type` |  |  |
+| `ElectronicDocPartyIdType` | ✓ | |  | `party_id_type` | `CHAR(15)` | Party Identification Type |
+| `BPIdentificationType` |  | |  | `bu_id_type` | `CHAR(6)` | Identification Type |
 
 ## Source Code
 

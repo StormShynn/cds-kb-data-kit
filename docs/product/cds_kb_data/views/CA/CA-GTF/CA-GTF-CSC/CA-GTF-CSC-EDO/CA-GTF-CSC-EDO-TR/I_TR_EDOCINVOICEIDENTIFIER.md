@@ -39,21 +39,21 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |  |  |
-| `TR_ElectronicDocEnvelopeID` |  | |  |  |  |  |
-| `TR_ElectronicDocInvoiceID` |  | |  |  |  |  |
-| `TR_ElectronicDocUniqueID` |  | |  |  |  |  |
-| `TR_EDocBusinessPartnerAlias` |  | |  |  |  |  |
-| `TR_ElectronicDocTaxID` |  | |  |  |  |  |
-| `TR_ElectronicDocBusPartner` |  | |  |  |  |  |
-| `TR_EDocTaxExclusiveAmount` |  | |  |  |  |  |
-| `TR_ElectronicDocTaxAmount` |  | |  |  |  |  |
-| `TR_EDocTaxInclusiveAmount` |  | |  |  |  |  |
-| `TR_EDocCurrencyKey` |  | |  |  |  |  |
-| `TR_EDocBusPartnerName` |  | |  |  |  |  |
-| `TR_EDocCancelReason` |  | |  |  |  |  |
-| `TR_EDocCancelReasonCode` |  | |  |  |  |  |
-| `TR_ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |  |  |
+| `ElectronicDocUUID` | ✓ | |  |  | `CHAR(32)` | eDocument: GUID |
+| `TR_ElectronicDocEnvelopeID` |  | |  |  | `CHAR(36)` | eDocument Turkey: FIT Envelope ID |
+| `TR_ElectronicDocInvoiceID` |  | |  |  | `CHAR(16)` | eDocument Turkey: Invoice ID |
+| `TR_ElectronicDocUniqueID` |  | |  |  | `CHAR(36)` | eDocument Turkey: FIT Invoice UUID |
+| `TR_EDocBusinessPartnerAlias` |  | |  |  | `CHAR(255)` | Alias |
+| `TR_ElectronicDocTaxID` |  | |  |  | `CHAR(11)` | eDocument Turkey: VKN/TCKN |
+| `TR_ElectronicDocBusPartner` |  | |  |  | `CHAR(10)` | Business Partner |
+| `TR_EDocTaxExclusiveAmount` |  | |  |  | `DEC(23)` |  |
+| `TR_ElectronicDocTaxAmount` |  | |  |  | `DEC(23)` |  |
+| `TR_EDocTaxInclusiveAmount` |  | |  |  | `DEC(23)` |  |
+| `TR_EDocCurrencyKey` |  | |  |  | `CUKY(5)` | Currency Key |
+| `TR_EDocBusPartnerName` |  | |  |  | `CHAR(50)` | Business Partner Name |
+| `TR_EDocCancelReason` |  | |  |  | `CHAR(255)` | eDocument Turkey: Cancellation Reason |
+| `TR_EDocCancelReasonCode` |  | |  |  | `CHAR(2)` | eDocument Turkey: Cancellation Reason Code |
+| `TR_ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` | `CHAR(4)` | Company Code |
 
 ## Associations
 

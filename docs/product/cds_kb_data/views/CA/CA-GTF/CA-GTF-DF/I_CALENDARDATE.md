@@ -39,21 +39,21 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CalendarDate` | ✓ | |  | `calendardate` |  |  |
-| `CalendarYear` |  | |  | `calendaryear` |  |  |
-| `CalendarQuarter` |  | |  | `calendarquarter` |  |  |
-| `CalendarMonth` |  | |  | `calendarmonth` |  |  |
-| `CalendarWeek` |  | |  | `calendarweek` |  |  |
-| `CalendarDay` |  | |  | `calendarday` |  |  |
-| `YearMonth` |  | |  | `yearmonth` |  |  |
-| `YearQuarter` |  | |  | `yearquarter` |  |  |
-| `YearWeek` |  | |  | `yearweek` |  |  |
-| `WeekDay` |  | |  | `weekday` |  |  |
-| `FirstDayOfWeekDate` |  | |  | `firstdayofweekdate` |  |  |
-| `FirstDayOfMonthDate` |  | |  | `firstdayofmonthdate` |  |  |
-| `LastDayOfMonthDate` |  | |  | `lastdayofmonthdate` |  |  |
-| `CalendarDayOfYear` |  | |  | `calendardayofyear` |  |  |
-| `YearDay` |  | |  | `yearday` |  |  |
+| `CalendarDate` | ✓ | |  | `calendardate` | `DATS(8)` | Calendar Date |
+| `CalendarYear` |  | |  | `calendaryear` | `NUMC(4)` | Calendar Year |
+| `CalendarQuarter` |  | |  | `calendarquarter` | `NUMC(1)` | Calendar Quarter |
+| `CalendarMonth` |  | |  | `calendarmonth` | `NUMC(2)` | Calendar Month |
+| `CalendarWeek` |  | |  | `calendarweek` | `NUMC(2)` | Calendar Week |
+| `CalendarDay` |  | |  | `calendarday` | `NUMC(2)` | Calendar Day |
+| `YearMonth` |  | |  | `yearmonth` | `NUMC(6)` | Year Month |
+| `YearQuarter` |  | |  | `yearquarter` | `NUMC(5)` | Year Quarter |
+| `YearWeek` |  | |  | `yearweek` | `NUMC(6)` | Year Week |
+| `WeekDay` |  | |  | `weekday` | `NUMC(1)` | Week Day |
+| `FirstDayOfWeekDate` |  | |  | `firstdayofweekdate` | `DATS(8)` | First day of week date |
+| `FirstDayOfMonthDate` |  | |  | `firstdayofmonthdate` | `DATS(8)` | First Day of Month Date |
+| `LastDayOfMonthDate` |  | |  | `lastdayofmonthdate` | `DATS(8)` | Last Day of Month Date |
+| `CalendarDayOfYear` |  | |  | `calendardayofyear` | `NUMC(3)` | Calendar day of year |
+| `YearDay` |  | |  | `yearday` | `NUMC(7)` | Year Day |
 | `_CalendarMonth` | | ✓ | | | | |
 | `_CalendarQuarter` | | ✓ | | | | |
 | `_CalendarYear` | | ✓ | | | | |

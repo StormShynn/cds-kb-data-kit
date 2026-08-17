@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TR_EDocAccountNumberOfSupplier` | ✓ | |  |  |  |  |
-| `TR_ElectronicDocumentScenario` |  | |  |  |  |  |
+| `TR_EDocAccountNumberOfSupplier` | ✓ | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `TR_ElectronicDocumentScenario` |  | |  |  | `CHAR(10)` | Scenario (Turkey) |
 
 ## Source Code
 
