@@ -1,6 +1,20 @@
 ---
 name: I_BPRISKGROUP
 description: "Bpriskgroup"
+semantic_vi: "View Bpriskgroup hiển thị dữ liệu nhóm rủi ro đối tác kinh doanh, được sử dụng để phân loại đối tác kinh doanh dựa trên mức độ rủi ro. Nó được sử dụng để phân tích và quản lý rủi ro đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "risk group"
+  - "bpriskgroup"
+  - "fs-bp"
+  - "interface view"
+  - "lob other"
+  - "business partner risk group"
+  - "risk management"
+  - "đối tác kinh doanh"
+  - "nhóm rủi ro"
+  - "quản lý rủi ro"
+semantic_en: "The Bpriskgroup view exposes business partner risk group data, which is used to categorize business partners based on their risk level. It is used to analyze and manage business partner risk."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

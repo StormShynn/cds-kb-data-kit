@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFITEM
 description: "BR Nfitem"
+semantic_vi: "View BR Nfitem CDS hiển thị dữ liệu hàng hóa hóa đơn, bao gồm tình trạng thuế và xác định cơ sở, cho sử dụng trong các ứng dụng tài chính và logistics."
+keywords:
+  - "invoice item"
+  - "hàng hóa hóa đơn"
+  - "tax situation"
+  - "tình trạng thuế"
+  - "base determination"
+  - "xác định cơ sở"
+  - "financial"
+  - "tài chính"
+  - "logistics"
+  - "fi"
+  - "fi-loc"
+semantic_en: "The BR Nfitem CDS view exposes invoice item data, including tax situations and base determinations, for use in financial and logistics applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

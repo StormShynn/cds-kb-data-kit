@@ -1,6 +1,18 @@
 ---
 name: I_BPGRPASSIGNMENTCATEGORY
 description: "Bpgrpassignmentcategory"
+semantic_vi: "View Bpgrpassignmentcategory hiển thị dữ liệu kinh doanh liên quan đến các loại phân loại nhóm trong ứng dụng FS-BP, có thể được sử dụng để phân loại và quản lý các nhóm phân loại."
+keywords:
+  - "fs-bp"
+  - "group assignment"
+  - "categorization"
+  - "business data"
+  - "sap"
+  - "fs"
+  - "bpgrpassignmentcategory"
+  - "nghị quyết"
+  - "phân loại nhóm"
+semantic_en: "The Bpgrpassignmentcategory view exposes business data related to group assignment categories in the FS-BP application, which can be used to categorize and manage group assignments."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

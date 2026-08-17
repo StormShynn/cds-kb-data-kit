@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFDIRECTION
 description: "BR Nfdirection"
+semantic_vi: "View BR Nfdirection hiển thị dữ liệu kinh doanh liên quan đến hướng kim loại phi sắt, có liên quan khi làm việc với dữ liệu tài chính và logistics trong thành phần FI-LOC-LO-BR của SAP."
+keywords:
+  - "non-ferrous metal direction"
+  - "kim loại phi sắt"
+  - "finance"
+  - "logistics"
+  - "fi-loc-lo-br"
+  - "sap"
+  - "direction"
+  - "kim loại"
+  - "tài chính"
+  - "loại"
+semantic_en: "The BR Nfdirection view exposes business data related to non-ferrous metal direction, which is relevant when working with finance and logistics data in SAP FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

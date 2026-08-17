@@ -1,6 +1,18 @@
 ---
 name: I_BPRATINGPROCEDUREGRADEVH
 description: "Bpratingproceduregradevh"
+semantic_vi: "Cung cấp hỗ trợ giá trị cho các thủ tục xếp hạng đối tác kinh doanh và các mức độ, được sử dụng để xác định thứ hạng của đối tác kinh doanh dựa trên xếp hạng của họ."
+keywords:
+  - "business partner"
+  - "rating procedure"
+  - "grade"
+  - "ranking"
+  - "value help"
+  - "fs-bp"
+  - "interface view"
+  - "sap cds"
+  - "lob other"
+semantic_en: "Provides a value help for business partner rating procedures and grades, used to determine the ranking of business partners based on their ratings."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

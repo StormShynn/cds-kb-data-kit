@@ -1,6 +1,18 @@
 ---
 name: I_BPOCCUPATIONGROUP
 description: "Bpoccupationgroup"
+semantic_vi: "View Bpoccupationgroup hiển thị dữ liệu nhóm nghề nghiệp đối tác kinh doanh, có thể sử dụng khi quản lý thông tin đối tác kinh doanh trong ứng dụng thành phần FS-BP."
+keywords:
+  - "business partner"
+  - "occupation group"
+  - "fs-bp"
+  - "financial services"
+  - "banking"
+  - "capital markets"
+  - "lob other"
+  - "interface view"
+  - "component fs-bp"
+semantic_en: "The Bpoccupationgroup view exposes business partner occupation group data, which is useful when managing business partner information in the Financial Services - Banking and Capital Markets (FS-BP) application component."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

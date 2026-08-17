@@ -1,6 +1,18 @@
 ---
 name: I_BPEMPLOYMENTSTATUSTEXT
 description: "Bpemploymentstatustext"
+semantic_vi: "View Bpemploymentstatustext cung cấp mô tả trạng thái việc làm trong nhiều ngôn ngữ, có thể được sử dụng để hiển thị thông tin trạng thái trong các ứng dụng kinh doanh."
+keywords:
+  - "employment status"
+  - "trạng thái việc làm"
+  - "status text"
+  - "text view"
+  - "interface view"
+  - "fs-bp"
+  - "sap cds"
+  - "business application"
+  - "ứng dụng kinh doanh"
+semantic_en: "The Bpemploymentstatustext view provides employment status descriptions in multiple languages, which can be used to display status information in business applications."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

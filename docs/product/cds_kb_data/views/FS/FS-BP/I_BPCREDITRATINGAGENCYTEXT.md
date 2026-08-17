@@ -1,6 +1,20 @@
 ---
 name: I_BPCREDITRATINGAGENCYTEXT
 description: "Bpcreditratingagencytext"
+semantic_vi: "Chứa dữ liệu văn bản về cơ quan xếp hạng tín dụng, hữu ích cho việc hiển thị xếp hạng tín dụng và tên cơ quan trong các ứng dụng tài chính."
+keywords:
+  - "credit rating"
+  - "agency text"
+  - "financial applications"
+  - "tín dụng"
+  - "cơ quan xếp hạng"
+  - "dữ liệu văn bản"
+  - "ứng dụng tài chính"
+  - "fs-bp"
+  - "interface-view"
+  - "text-view"
+  - "text"
+semantic_en: "Exposes credit rating agency text data, useful for displaying credit ratings and agency names in financial applications."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

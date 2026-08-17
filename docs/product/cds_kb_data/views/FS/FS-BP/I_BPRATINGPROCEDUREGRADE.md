@@ -1,6 +1,18 @@
 ---
 name: I_BPRATINGPROCEDUREGRADE
 description: "Bpratingproceduregrade"
+semantic_vi: "CDS view Bpratingproceduregrade hiển thị các cấp độ đánh giá thủ tục đối tác kinh doanh và thứ hạng tương ứng. Nó được sử dụng để lấy và phân tích các cấp độ đánh giá thủ tục đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "rating procedure"
+  - "grade"
+  - "ranking"
+  - "fs-bp"
+  - "interface view"
+  - "component fs-bp"
+  - "lob other"
+  - "sap cds view"
+semantic_en: "The Bpratingproceduregrade CDS view exposes business partner rating procedure grades and their corresponding rankings. It is used to retrieve and analyze rating procedure grades for business partners."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

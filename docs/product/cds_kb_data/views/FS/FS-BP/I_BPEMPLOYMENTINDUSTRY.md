@@ -1,6 +1,17 @@
 ---
 name: I_BPEMPLOYMENTINDUSTRY
 description: "Bpemploymentindustry"
+semantic_vi: "View Bpemploymentindustry cung cấp mã ngành nghề lao động cho đối tác kinh doanh, có thể được sử dụng để phân loại và lọc dữ liệu đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "employment industry"
+  - "ngành nghề lao động"
+  - "categorization"
+  - "filtering"
+  - "fs-bp"
+  - "sap cds view"
+semantic_en: "The Bpemploymentindustry view provides employment industry codes for business partners, which can be used to categorize and filter business partner data."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

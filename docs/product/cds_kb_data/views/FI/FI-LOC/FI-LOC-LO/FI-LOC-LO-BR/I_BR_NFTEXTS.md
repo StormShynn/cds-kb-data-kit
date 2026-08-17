@@ -1,6 +1,18 @@
 ---
 name: I_BR_NFTEXTS
 description: "BR Nftexts"
+semantic_vi: "View BR Nftexts hiển thị dữ liệu văn bản hóa đơn Brazil, có ích khi làm việc với các giao dịch tài chính và hóa đơn trong thành phần FI-LOC-LO-BR."
+keywords:
+  - "brazilian invoice"
+  - "đơn hóa đơn brazil"
+  - "fi-loc-lo-br"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "invoice text"
+  - "văn bản hóa đơn"
+  - "sap fi"
+  - "tài chính"
+semantic_en: "The BR Nftexts view exposes Brazilian invoice text data, which is useful when working with financial transactions and invoices in the FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

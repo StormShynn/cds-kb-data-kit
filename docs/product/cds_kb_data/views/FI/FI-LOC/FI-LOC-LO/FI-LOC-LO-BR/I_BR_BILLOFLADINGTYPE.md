@@ -1,6 +1,18 @@
 ---
 name: I_BR_BILLOFLADINGTYPE
 description: "BR Billofladingtype"
+semantic_vi: "View I_BR_BILLOFLADINGTYPE hiển thị các loại hóa đơn vận chuyển được sử dụng trong logistics và tài chính, thường được sử dụng khi quản lý vận chuyển và thủ tục hải quan."
+keywords:
+  - "bill of lading"
+  - "loại hóa đơn vận chuyển"
+  - "logistics"
+  - "finance"
+  - "shipping"
+  - "customs clearance"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+semantic_en: "The I_BR_BILLOFLADINGTYPE view exposes bill of lading types used in logistics and finance, typically used when managing shipping and customs clearance."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFISCREATEDMANUALLYTEXT
 description: "BR Nfiscreatedmanuallytext"
+semantic_vi: "View BR Nfiscreatedmanuallytext cung cấp mô tả văn bản cho trường 'Is Created Manually' trong tài liệu thuế Brazil, được sử dụng để chỉ ra liệu tài liệu thuế có được tạo thủ công hay tự động hay không. View này hữu ích cho việc hiển thị thông tin này trong ứng dụng."
+keywords:
+  - "brazilian tax document"
+  - "tài liệu thuế brazil"
+  - "is created manually"
+  - "tạo thủ công"
+  - "finance"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+  - "text view"
+  - "view"
+  - "description"
+  - "mô tả"
+semantic_en: "The BR Nfiscreatedmanuallytext view provides text descriptions for the 'Is Created Manually' field in Brazilian tax documents, which is used to indicate whether a tax document was created manually or automatically. This view is useful for displaying this information in applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

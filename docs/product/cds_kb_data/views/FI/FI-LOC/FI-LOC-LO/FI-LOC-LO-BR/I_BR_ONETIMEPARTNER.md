@@ -1,6 +1,21 @@
 ---
 name: I_BR_ONETIMEPARTNER
 description: "BR Onetimepartner"
+semantic_vi: "CDS view BR Onetimepartner hiển thị dữ liệu đối tác kinh doanh Brazil, bao gồm số nhận dạng thuế và địa chỉ, cho việc sử dụng trong giao dịch và báo cáo tài chính."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "brazil"
+  - "brazilian"
+  - "tax identification"
+  - "số nhận dạng thuế"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "cds view"
+  - "view"
+  - "fi"
+  - "fi-loc"
+semantic_en: "The BR Onetimepartner CDS view exposes Brazilian business partner data, including tax identification numbers and addresses, for use in financial transactions and reporting."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

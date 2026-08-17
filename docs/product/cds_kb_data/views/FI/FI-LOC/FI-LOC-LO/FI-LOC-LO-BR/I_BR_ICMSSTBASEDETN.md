@@ -1,6 +1,20 @@
 ---
 name: I_BR_ICMSSTBASEDETN
 description: "BR Icmsstbasedetn"
+semantic_vi: "View I_BR_ICMSSTBASEDETN hiển thị dữ liệu xác định cơ sở thuế ICMS Brazil, được sử dụng trong thành phần FI-LOC-LO-BR cho các giao dịch tài chính."
+keywords:
+  - "icms"
+  - "tax base"
+  - "determination"
+  - "fi-loc-lo-br"
+  - "financial transactions"
+  - "brazil"
+  - "cfdi"
+  - "fiscal"
+  - "tax"
+  - "base"
+  - "icmsstbasedetn"
+semantic_en: "The I_BR_ICMSSTBASEDETN CDS view exposes Brazilian ICMS tax base determination data, which is used in the FI-LOC-LO-BR component for financial transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

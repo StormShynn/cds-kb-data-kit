@@ -1,6 +1,19 @@
 ---
 name: I_BR_CTEPARTNERSERVICETAKERT
 description: "BR Ctepartnerservicetakert"
+semantic_vi: "View này hiển thị dữ liệu kinh doanh về người nhận dịch vụ cho đối tác kinh doanh trong một ngôn ngữ cụ thể, hữu ích cho việc lấy thông tin về mô tả người nhận dịch vụ."
+keywords:
+  - "service taker"
+  - "business partner"
+  - "language"
+  - "description"
+  - "fi-loc-lo-br"
+  - "partner service"
+  - "sap cds view"
+  - "finance"
+  - "lob finance"
+  - "interface view"
+semantic_en: "This view exposes business data about service takers for business partners in a specific language, useful for retrieving information about service taker descriptions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

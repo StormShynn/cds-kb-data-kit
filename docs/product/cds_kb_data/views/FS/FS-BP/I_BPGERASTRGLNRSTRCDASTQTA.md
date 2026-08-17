@@ -1,6 +1,21 @@
 ---
 name: I_BPGERASTRGLNRSTRCDASTQTA
 description: "Bpgerastrglnrstrcdastqta"
+semantic_vi: "View Bpgerastrglnrstrcdastqta hiển thị dữ liệu kinh doanh liên quan đến hạn ngạch AST bị giới hạn cho các mặt hàng gerast, có liên quan khi quản lý và phân tích hạn chế tồn kho hoặc chuỗi cung ứng."
+keywords:
+  - "gerast"
+  - "restricted ast quota"
+  - "inventory management"
+  - "supply chain"
+  - "fs-bp"
+  - "sap"
+  - "cds view"
+  - "ast quota"
+  - "gerast item"
+  - "inventory constraint"
+  - "đơn vị kinh doanh"
+  - "hạn ngạch ast"
+semantic_en: "The Bpgerastrglnrstrcdastqta view exposes business data related to restricted AST quotas for gerast items, which is relevant when managing and analyzing inventory or supply chain constraints."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

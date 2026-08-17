@@ -1,6 +1,17 @@
 ---
 name: I_BPEMPLOYEEGROUPTEXT
 description: "Bpemployeegrouptext"
+semantic_vi: "View BpEmployeeGroupText cung cấp mô tả văn bản cho nhóm nhân viên đối tác kinh doanh trong một ngôn ngữ cụ thể. Nó được sử dụng để lấy mô tả văn bản của nhóm nhân viên để hiển thị hoặc xử lý."
+keywords:
+  - "business partner"
+  - "employee group"
+  - "text view"
+  - "language"
+  - "description"
+  - "sap cds"
+  - "fs-bp"
+  - "bpemployeegrouptext"
+semantic_en: "The BpEmployeeGroupText view provides text descriptions for business partner employee groups in a specific language. It is used to retrieve the text representation of employee groups for display or processing purposes."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

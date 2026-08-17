@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFEXPORTDOCUMENT
 description: "BR Nfexportdocument"
+semantic_vi: "View BR Nfexportdocument hiển thị dữ liệu tài liệu xuất khẩu cho các tài liệu NF-e tài chính của Brazil, được sử dụng khi truy xuất hoặc xử lý tài liệu xuất khẩu."
+keywords:
+  - "export document"
+  - "tài liệu xuất khẩu"
+  - "nf-e"
+  - "fiscal document"
+  - "tài liệu tài chính"
+  - "brasil"
+  - "sap"
+  - "cds view"
+  - "view"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "lob:finance"
+semantic_en: "The BR Nfexportdocument view exposes export document data for Brazil's NF-e fiscal documents, used when retrieving or processing export documents."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

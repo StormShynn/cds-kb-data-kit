@@ -1,6 +1,20 @@
 ---
 name: I_BR_FREIGHTPAYERTEXT
 description: "BR Freightpayertext"
+semantic_vi: "View I_BR_FREIGHTPAYERTEXT CDS cung cấp mô tả văn bản cho người trả tiền vận chuyển, cho phép các nhà phát triển truy cập và hiển thị thông tin này trong ứng dụng của họ. Nó được sử dụng khi hiển thị chi tiết người trả tiền vận chuyển."
+keywords:
+  - "freight payer"
+  - "người trả tiền vận chuyển"
+  - "text view"
+  - "view"
+  - "cds view"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "finance component"
+  - "freight"
+  - "pay"
+  - "lob:finance"
+semantic_en: "The I_BR_FREIGHTPAYERTEXT CDS view provides text descriptions for freight payers, allowing developers to access and display this information in their applications. It is used when displaying freight payer details."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

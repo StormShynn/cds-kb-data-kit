@@ -1,6 +1,21 @@
 ---
 name: I_BPFISCALYEARINFORMATION
 description: "Bpfiscalyearinformation"
+semantic_vi: "View Bpfiscalyearinformation hiển thị thông tin năm tài chính cho đối tác kinh doanh, bao gồm ngày bắt đầu và kết thúc, đồng tiền bảng cân đối kế toán và ngày họp cổ đông hàng năm. Nó được sử dụng để truy cập và quản lý dữ liệu năm tài chính cho đối tác kinh doanh trong thành phần Financial Supply Chain (FS)."
+keywords:
+  - "fiscal year"
+  - "năm tài chính"
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "financial supply chain"
+  - "fs"
+  - "sap"
+  - "cds view"
+  - "view"
+  - "bảng cân đối kế toán"
+  - "đồng tiền"
+  - "kế toán"
+semantic_en: "The Bpfiscalyearinformation view exposes fiscal year information for business partners, including start and end dates, balance sheet currency, and annual stockholder meeting dates. It is used to access and manage fiscal year data for business partners in the Financial Supply Chain (FS) component."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

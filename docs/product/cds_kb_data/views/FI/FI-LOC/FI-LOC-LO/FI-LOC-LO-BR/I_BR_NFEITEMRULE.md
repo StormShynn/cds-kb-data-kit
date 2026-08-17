@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFEITEMRULE
 description: "BR Nfeitemrule"
+semantic_vi: "View I_BR_NFEITEMRULE hiển thị các quy tắc kinh doanh cho loại mặt hàng NFe, được sử dụng để xác định hành vi mặt hàng tại mức độ chi tiết trong tuân thủ thuế Brazil."
+keywords:
+  - "brasil"
+  - "nfe"
+  - "tax compliance"
+  - "item type"
+  - "brazilian tax"
+  - "đối tượng thuế brazil"
+  - "quy tắc kinh doanh"
+  - "mặt hàng nfe"
+  - "hành vi mặt hàng"
+  - "tuân thủ thuế"
+semantic_en: "The BR Nfeitemrule view exposes business rules for NFe item types, used to determine item-level behavior in Brazilian tax compliance."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

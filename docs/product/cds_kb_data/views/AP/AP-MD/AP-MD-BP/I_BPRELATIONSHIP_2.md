@@ -1,6 +1,18 @@
 ---
 name: I_BPRELATIONSHIP_2
 description: "Bprelationship 2"
+semantic_vi: "Chỉ ra mối quan hệ đối tác kinh doanh, bao gồm mối quan hệ tiêu chuẩn và tùy chỉnh, với chi tiết về ngày hiệu lực và người tạo."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "relationship"
+  - "mối quan hệ"
+  - "validity date"
+  - "ngày hiệu lực"
+  - "sap"
+  - "ap-md-bp"
+  - "interface view"
+semantic_en: "Exposes business partner relationships, including standard and custom relationships, with details on validity dates and creators."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

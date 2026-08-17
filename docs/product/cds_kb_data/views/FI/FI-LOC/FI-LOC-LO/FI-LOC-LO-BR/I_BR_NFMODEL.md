@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFMODEL
 description: "BR Nfmodel"
+semantic_vi: "View BR Nfmodel cung cấp thông tin về mô hình tài chính quốc gia Brazil, được sử dụng cho các giao dịch và báo cáo tài chính. Nó được sử dụng bởi các nhà phát triển để truy cập và thao tác dữ liệu liên quan đến mô hình này."
+keywords:
+  - "brazil"
+  - "national financial model"
+  - "br nfmodel"
+  - "financial transactions"
+  - "reporting"
+  - "fi-loc-lo-br"
+  - "sap fi"
+  - "tài chính quốc gia"
+  - "mô hình tài chính"
+  - "giao dịch tài chính"
+  - "báo cáo tài chính"
+semantic_en: "The BR Nfmodel view provides information about Brazil's National Financial Model, which is used for financial transactions and reporting. It is used by developers to access and manipulate data related to this model."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_BR_CTESERVICETYPETEXT
 description: "BR Cteservicetypetext"
+semantic_vi: "View I_BR_CTESERVICETYPETEXT cung cấp mô tả văn bản của loại dịch vụ được sử dụng trong quan hệ kinh doanh, thường được sử dụng khi hiển thị hoặc báo cáo thông tin loại dịch vụ."
+keywords:
+  - "service type"
+  - "loại dịch vụ"
+  - "business relationship"
+  - "quan hệ kinh doanh"
+  - "text description"
+  - "mô tả văn bản"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "interface-view"
+  - "text-view"
+semantic_en: "The I_BR_CTESERVICETYPETEXT view provides text descriptions of service types used in business relationships, typically used when displaying or reporting on service type information."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

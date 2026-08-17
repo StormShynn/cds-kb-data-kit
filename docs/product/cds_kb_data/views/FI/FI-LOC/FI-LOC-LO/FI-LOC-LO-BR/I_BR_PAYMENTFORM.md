@@ -1,6 +1,20 @@
 ---
 name: I_BR_PAYMENTFORM
 description: "BR Paymentform"
+semantic_vi: "View I_BR_PAYMENTFORM CDS hiển thị dữ liệu hình thức thanh toán, có liên quan khi làm việc với các giao dịch liên quan đến thanh toán trong ứng dụng thành phần FI-LOC-LO-BR."
+keywords:
+  - "payment form"
+  - "hình thức thanh toán"
+  - "fi-loc-lo-br"
+  - "sap cds view"
+  - "view i_br_paymentform"
+  - "payment data"
+  - "thanh toán"
+  - "finance"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+semantic_en: "The I_BR_PAYMENTFORM CDS view exposes payment form data, which is relevant when working with payment-related transactions in the FI-LOC-LO-BR application component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

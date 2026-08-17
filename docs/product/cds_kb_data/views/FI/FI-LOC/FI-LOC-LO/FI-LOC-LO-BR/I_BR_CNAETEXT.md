@@ -1,6 +1,21 @@
 ---
 name: I_BR_CNAETEXT
 description: "BR Cnaetext"
+semantic_vi: "View I_BR_CNAETEXT hiển thị dữ liệu kinh doanh cho phân loại kinh tế Brazil, bao gồm mô tả bằng nhiều ngôn ngữ. Nó được sử dụng để lấy dữ liệu văn bản cho một phân loại cụ thể."
+keywords:
+  - "brazilian industrial classification"
+  - "economic activities"
+  - "text view"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "finance"
+  - "language"
+  - "br_cnae"
+  - "br_cnaedesc"
+  - "cnae"
+  - "đối tượng kinh tế"
+  - "phân loại kinh tế brazil"
+semantic_en: "The I_BR_CNAETEXT view exposes business data for Brazilian industrial classification of economic activities, including descriptions in different languages. It is used to retrieve text data for a specific classification."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

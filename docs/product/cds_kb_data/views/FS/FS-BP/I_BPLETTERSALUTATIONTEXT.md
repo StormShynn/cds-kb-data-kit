@@ -1,6 +1,21 @@
 ---
 name: I_BPLETTERSALUTATIONTEXT
 description: "Bplettersalutationtext"
+semantic_vi: "View I_BPLETTERSALUTATIONTEXT cung cấp các văn bản chào trong thư kinh doanh bằng nhiều ngôn ngữ, có thể được sử dụng để cá nhân hóa thư và tài liệu kinh doanh trong ứng dụng FS-BP."
+keywords:
+  - "business letter"
+  - "salutation"
+  - "text"
+  - "language"
+  - "personalization"
+  - "fs-bp"
+  - "application"
+  - "document"
+  - "đơn thư"
+  - "chào"
+  - "ngôn ngữ"
+  - "tài liệu kinh doanh"
+semantic_en: "The I_BPLETTERSALUTATIONTEXT view provides business letter salutation texts in different languages, which can be used to personalize business letters and documents in the FS-BP application."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

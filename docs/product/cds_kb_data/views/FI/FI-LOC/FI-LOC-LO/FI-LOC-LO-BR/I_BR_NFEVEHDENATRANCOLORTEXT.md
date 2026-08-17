@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFEVEHDENATRANCOLORTEXT
 description: "BR Nfevehdenatrancolortext"
+semantic_vi: "Chứa thông tin mô tả màu xe Brazil trong nhiều ngôn ngữ, được sử dụng để hiển thị tên màu trong ứng dụng."
+keywords:
+  - "vehicle color"
+  - "màu xe"
+  - "brazil"
+  - "brazilian"
+  - "language"
+  - "ngôn ngữ"
+  - "description"
+  - "mô tả"
+  - "sap"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+semantic_en: "Exposes Brazilian vehicle color descriptions in multiple languages, used to display color names in applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

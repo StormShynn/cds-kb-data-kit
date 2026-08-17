@@ -1,6 +1,21 @@
 ---
 name: I_BR_ICMSEXEMPTIONREASONTEXT
 description: "BR Icmsexemptionreasontext"
+semantic_vi: "Cung cấp văn bản lý do miễn trừ cho thuế ICMS Brazil, được sử dụng để hiển thị mô tả lý do miễn trừ trong các quy trình kinh doanh liên quan đến thuế."
+keywords:
+  - "icms"
+  - "exemption reason"
+  - "tax"
+  - "brasil"
+  - "brazil"
+  - "miễn trừ"
+  - "lý do miễn trừ"
+  - "văn bản"
+  - "description"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+semantic_en: "Provides exemption reason text for Brazilian ICMS tax, used to display descriptions of exemption reasons in tax-related business processes."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

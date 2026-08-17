@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFITEMBASEUNIT
 description: "BR Nfitembaseunit"
+semantic_vi: "View I_BR_NFITEMBASEUNIT hiển thị thông tin đơn vị cơ bản cho các mục trên một tài liệu NF (Nota Fiscal) Brazil, có ích khi phân tích hoặc xử lý các mục NF."
+keywords:
+  - "nf"
+  - "nota fiscal"
+  - "base unit"
+  - "item"
+  - "brazil"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "sap"
+  - "cds view"
+  - "đơn vị cơ bản"
+  - "tài liệu nf"
+  - "mục trên tài liệu nf"
+semantic_en: "The I_BR_NFITEMBASEUNIT CDS view exposes base unit information for items on a Brazilian NF (Nota Fiscal) document, which is useful when analyzing or processing NF items."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BPUNDESIRABILITYREASONTEXT
 description: "Bpundesirabilityreasontext"
+semantic_vi: "View I_BPUNDESIRABILITYREASONTEXT cung cấp mô tả văn bản cho lý do không mong muốn trong ứng dụng FS-BP. Nó có thể được sử dụng để lấy văn bản địa hóa cho lý do không mong muốn."
+keywords:
+  - "fs-bp"
+  - "undesirability reason"
+  - "text view"
+  - "interface view"
+  - "language"
+  - "description"
+  - "fs"
+  - "business partner"
+  - "reason"
+  - "text"
+semantic_en: "The I_BPUNDESIRABILITYREASONTEXT view provides text descriptions for undesirability reasons in the FS-BP application. It can be used to retrieve the localized text for undesirability reasons."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

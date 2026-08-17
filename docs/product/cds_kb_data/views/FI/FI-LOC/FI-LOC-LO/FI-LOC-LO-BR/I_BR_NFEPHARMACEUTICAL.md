@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFEPHARMACEUTICAL
 description: "BR Nfepharmaceutical"
+semantic_vi: "View I_BR_NFEPHARMACEUTICAL hiển thị thông tin về dược phẩm liên quan đến hóa đơn thuế Brazil, có thể được sử dụng khi phân tích giao dịch bán hàng hoặc quản lý tuân thủ thuế ở Brazil."
+keywords:
+  - "pharmaceutical"
+  - "tax invoice"
+  - "brazil"
+  - "sales transaction"
+  - "tax compliance"
+  - "brazilian tax invoice"
+  - "dược phẩm"
+  - "hóa đơn thuế"
+  - "giao dịch bán hàng"
+  - "tuân thủ thuế"
+  - "fi"
+  - "fi-loc"
+semantic_en: "The I_BR_NFEPHARMACEUTICAL view exposes pharmaceutical information related to Brazilian tax invoices, which can be used when analyzing sales transactions or managing tax compliance in Brazil."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

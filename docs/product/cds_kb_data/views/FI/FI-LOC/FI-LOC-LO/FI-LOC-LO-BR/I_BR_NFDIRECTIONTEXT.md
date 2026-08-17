@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFDIRECTIONTEXT
 description: "BR Nfdirectiontext"
+semantic_vi: "View BR Nfdirectiontext cung cấp mô tả văn bản cho các hướng tham chiếu kinh doanh trong bối cảnh tài chính, hữu ích khi hiển thị hoặc báo cáo về các hướng này."
+keywords:
+  - "business reference direction"
+  - "direction text"
+  - "financial context"
+  - "language"
+  - "description"
+  - "fi-loc-lo-br"
+  - "nfdirection"
+  - "nfdirectiondesc"
+  - "sap fi-loc-lo-br"
+  - "finance"
+  - "tài chính"
+  - "hướng tham chiếu kinh doanh"
+semantic_en: "The BR Nfdirectiontext view provides text descriptions for business reference directions in a financial context, useful when displaying or reporting on these directions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

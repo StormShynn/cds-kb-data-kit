@@ -1,6 +1,16 @@
 ---
 name: I_BPRATINGPROCEDUREVH
 description: "Bpratingprocedurevh"
+semantic_vi: "Chứa các thủ tục xếp hạng đối tác kinh doanh và các thiết lập liên quan, hữu ích khi cấu hình hoặc truy vấn các yêu cầu xếp hạng đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "rating procedure"
+  - "business partner rating"
+  - "fs-bp"
+  - "sap cds"
+  - "value help"
+  - "interface view"
+semantic_en: "Exposes business partner rating procedures and their associated settings, useful when configuring or querying business partner rating requirements."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

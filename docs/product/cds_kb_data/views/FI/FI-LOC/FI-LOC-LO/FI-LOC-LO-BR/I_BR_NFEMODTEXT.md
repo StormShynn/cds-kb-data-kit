@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFEMODTEXT
 description: "BR Nfemodtext"
+semantic_vi: "View BR Nfemodtext cung cấp truy cập dữ liệu mô tả tài liệu thuế Brazil, có thể được sử dụng để lấy và hiển thị mô tả tài liệu thuế theo ngôn ngữ và thứ tự cụ thể."
+keywords:
+  - "brazilian tax document"
+  - "tài liệu thuế brazil"
+  - "text data"
+  - "mô tả tài liệu"
+  - "language"
+  - "ngôn ngữ"
+  - "order"
+  - "thứ tự"
+  - "sap fi-loc-lo-br"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "finance data"
+semantic_en: "The BR Nfemodtext view provides access to Brazilian tax document text data, which can be used to retrieve and display tax document descriptions in a specific language and order."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

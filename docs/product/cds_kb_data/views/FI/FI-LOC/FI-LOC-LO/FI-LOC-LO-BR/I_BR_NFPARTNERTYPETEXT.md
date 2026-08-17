@@ -1,6 +1,19 @@
 ---
 name: I_BR_NFPARTNERTYPETEXT
 description: "BR Nfpartnertypetext"
+semantic_vi: "View BR Nfpartnertypetext cung cấp mô tả văn bản của loại đối tác kinh doanh trong một cách độc lập ngôn ngữ, có ích cho việc hiển thị thông tin loại đối tác trong nhiều ngôn ngữ."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "partner type"
+  - "loại đối tác"
+  - "text view"
+  - "view text"
+  - "language independent"
+  - "tự do ngôn ngữ"
+  - "sap fi-loc-lo-br"
+  - "finance"
+semantic_en: "The BR Nfpartnertypetext view provides text descriptions of business partner types in a language-independent manner, useful for displaying partner type information in various languages."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

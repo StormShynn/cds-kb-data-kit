@@ -1,6 +1,20 @@
 ---
 name: I_BPCREDITWORTHINESSRATING
 description: "Bpcreditworthinessrating"
+semantic_vi: "View BpCreditworthinessRating cung cấp xếp hạng uy tín tín dụng cho đối tác kinh doanh, có thể được sử dụng để đánh giá khả năng tín dụng và đưa ra quyết định kinh doanh thông minh."
+keywords:
+  - "credit standing"
+  - "business partner"
+  - "creditworthiness"
+  - "rating"
+  - "assessment"
+  - "business decision"
+  - "tín dụng"
+  - "đối tác kinh doanh"
+  - "xếp hạng uy tín"
+  - "đánh giá"
+  - "quyết định kinh doanh"
+semantic_en: "The BpCreditworthinessRating view provides credit standing ratings for business partners, which can be used to assess their creditworthiness and make informed business decisions."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

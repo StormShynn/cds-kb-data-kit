@@ -1,6 +1,20 @@
 ---
 name: I_BPDATACONTROLLERTP_3
 description: "Bpdatacontrollertp 3"
+semantic_vi: "Chứa thông tin thiết lập người kiểm soát dữ liệu đối tác kinh doanh cho một mục đích cụ thể, được sử dụng để quản lý truy cập và ủy quyền dữ liệu."
+keywords:
+  - "business partner"
+  - "data controller"
+  - "authorization"
+  - "data access"
+  - "data controller settings"
+  - "business data"
+  - "data management"
+  - "data access control"
+  - "data security"
+  - "data protection"
+  - "data controller role"
+semantic_en: "Exposes business partner data controller settings for a specific purpose, used to manage data access and authorization."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

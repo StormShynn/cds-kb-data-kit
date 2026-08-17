@@ -1,6 +1,20 @@
 ---
 name: I_BR_NFVEHICLETYPETEXT_2
 description: "BR Nfvehicletypetext 2"
+semantic_vi: "View BR Nfvehicletypetext 2 cung cấp mô tả loại xe trong các ngôn ngữ khác nhau, cho phép các nhà phát triển truy cập và sử dụng thông tin này trong các ứng dụng của họ. Nó đặc biệt hữu ích khi làm việc với dữ liệu xe trong thành phần FI-LOC-LO-BR."
+keywords:
+  - "vehicle type"
+  - "mô tả loại xe"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "language"
+  - "nfvehicletype"
+  - "vehicletypedesc"
+  - "sap cds view"
+  - "view"
+  - "cds"
+  - "finance industry"
+semantic_en: "The BR Nfvehicletypetext 2 view provides vehicle type descriptions in different languages, enabling developers to access and utilize this information in their applications. It is particularly useful when working with vehicle-related data in the FI-LOC-LO-BR component."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

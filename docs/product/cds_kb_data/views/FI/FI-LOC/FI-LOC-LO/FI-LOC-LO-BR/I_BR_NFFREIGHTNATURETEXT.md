@@ -1,6 +1,21 @@
 ---
 name: I_BR_NFFREIGHTNATURETEXT
 description: "BR Nffreightnaturetext"
+semantic_vi: "View I_BR_NFFREIGHTNATURETEXT cung cấp dữ liệu văn bản về tính chất vận tải cho quản lý vận tải Brazil, thường được sử dụng khi hiển thị chi tiết tính chất vận tải."
+keywords:
+  - "freight"
+  - "nature"
+  - "text"
+  - "brazil"
+  - "freight management"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "lob:finance"
+  - "interface view"
+  - "text view"
+semantic_en: "The I_BR_NFFREIGHTNATURETEXT view provides freight nature text data for Brazilian freight management, typically used when displaying freight nature details."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
