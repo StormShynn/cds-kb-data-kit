@@ -18508,5 +18508,240 @@
     "attemptedAt": "2026-08-17T08:44:51.939Z",
     "found": true,
     "matched": 2
+  },
+  "I_STATUSPROFILETEXT": {
+    "attemptedAt": "2026-08-18T08:37:52.738Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SYSTEMSTATUS": {
+    "attemptedAt": "2026-08-18T08:37:53.277Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SYSTEMSTATUSTEXT": {
+    "attemptedAt": "2026-08-18T08:37:53.818Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TEXTOBJECTCATEGORY": {
+    "attemptedAt": "2026-08-18T08:37:54.325Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_TEXTOBJECTCATEGORYTEXT": {
+    "attemptedAt": "2026-08-18T08:37:54.842Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_TEXTOBJECTTYPE": {
+    "attemptedAt": "2026-08-18T08:37:55.320Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_TEXTOBJECTTYPETEXT": {
+    "attemptedAt": "2026-08-18T08:37:55.845Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_USERSTATUS": {
+    "attemptedAt": "2026-08-18T08:37:56.334Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_USERSTATUSTEXT": {
+    "attemptedAt": "2026-08-18T08:37:56.898Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_JNTOPGAGRMTDRILLINGRATIOTP": {
+    "attemptedAt": "2026-08-18T08:37:57.041Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTDRILLINGRATIOTP\" (404)"
+  },
+  "I_JNTOPGAGRMTEQUITYTYPEGRPTP": {
+    "attemptedAt": "2026-08-18T08:37:57.441Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTEQUITYTYPEGRPTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPARENTCOOVHDTP": {
+    "attemptedAt": "2026-08-18T08:37:57.838Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPARENTCOOVHDTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPARTSHRTP": {
+    "attemptedAt": "2026-08-18T08:37:58.281Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPARTSHRTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPAYROLLBURDENTP": {
+    "attemptedAt": "2026-08-18T08:37:58.689Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPAYROLLBURDENTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPNLTYCATRCVRYTP": {
+    "attemptedAt": "2026-08-18T08:37:59.093Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPNLTYCATRCVRYTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPRODGSTATASSGMTTP": {
+    "attemptedAt": "2026-08-18T08:37:59.488Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPRODGSTATASSGMTTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPRODGSTATTHLDTP": {
+    "attemptedAt": "2026-08-18T08:37:59.889Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPRODGSTATTHLDTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPROJSTEPPEDRATETP": {
+    "attemptedAt": "2026-08-18T08:38:00.312Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPROJSTEPPEDRATETP\" (404)"
+  },
+  "I_JNTOPGAGRMTTEXTTP": {
+    "attemptedAt": "2026-08-18T08:38:00.731Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTTEXTTP\" (404)"
+  },
+  "I_JNTOPGAGRMTTP": {
+    "attemptedAt": "2026-08-18T08:38:01.176Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTTP\" (404)"
+  },
+  "I_JNTVNTRBUSINESSPARTNERTP": {
+    "attemptedAt": "2026-08-18T08:38:01.612Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTVNTRBUSINESSPARTNERTP\" (404)"
+  },
+  "I_JNTVNTRFUNDCRCYBYEQUITYGRPTP": {
+    "attemptedAt": "2026-08-18T08:38:02.038Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTVNTRFUNDCRCYBYEQUITYGRPTP\" (404)"
+  },
+  "I_JNTVNTROVHDBURDENRATEPCTTP": {
+    "attemptedAt": "2026-08-18T08:38:02.462Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTVNTROVHDBURDENRATEPCTTP\" (404)"
+  },
+  "I_JNTVNTRPARCOMPANYOVERHEADTP": {
+    "attemptedAt": "2026-08-18T08:38:02.874Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTVNTRPARCOMPANYOVERHEADTP\" (404)"
+  },
+  "I_JNTVNTRPARTEQUITYSHRTP": {
+    "attemptedAt": "2026-08-18T08:38:03.299Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTVNTRPARTEQUITYSHRTP\" (404)"
+  },
+  "I_JNTVNTRSUBSTITCOSTOBJECTTP": {
+    "attemptedAt": "2026-08-18T08:38:03.698Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTVNTRSUBSTITCOSTOBJECTTP\" (404)"
+  },
+  "I_JOINTVENTUREDESCRIPTIONTP": {
+    "attemptedAt": "2026-08-18T08:38:04.132Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JOINTVENTUREDESCRIPTIONTP\" (404)"
+  },
+  "I_JOINTVENTUREEQUITYGROUPTP": {
+    "attemptedAt": "2026-08-18T08:38:04.544Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JOINTVENTUREEQUITYGROUPTP\" (404)"
+  },
+  "I_JOINTVENTUREEQUITYTYPETP": {
+    "attemptedAt": "2026-08-18T08:38:04.992Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JOINTVENTUREEQUITYTYPETP\" (404)"
+  },
+  "I_JOINTVENTUREINTCOVENTURETP": {
+    "attemptedAt": "2026-08-18T08:38:05.409Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JOINTVENTUREINTCOVENTURETP\" (404)"
+  },
+  "I_JOINTVENTURETP": {
+    "attemptedAt": "2026-08-18T08:38:05.815Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JOINTVENTURETP\" (404)"
+  },
+  "I_JVACARRIEDINTERESTTP": {
+    "attemptedAt": "2026-08-18T08:38:06.239Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JVACARRIEDINTERESTTP\" (404)"
+  },
+  "I_JVAINFORECORDATTACHLINK": {
+    "attemptedAt": "2026-08-18T08:38:07.021Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_JNTOPGAGRMT": {
+    "attemptedAt": "2026-08-18T08:38:07.512Z",
+    "found": true,
+    "matched": 32
+  },
+  "I_JNTOPGAGRMTCLASS": {
+    "attemptedAt": "2026-08-18T08:38:08.039Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_JNTOPGAGRMTCLASSTEXT": {
+    "attemptedAt": "2026-08-18T08:38:08.609Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_JNTOPGAGRMTPNLTYCATRCVRYPCT": {
+    "attemptedAt": "2026-08-18T08:38:09.174Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_JNTOPGAGRMTTEXT": {
+    "attemptedAt": "2026-08-18T08:38:09.705Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_JNTOPGAGRMTVH": {
+    "attemptedAt": "2026-08-18T08:38:10.222Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_JNTVNTRBUSINESSPARTNER": {
+    "attemptedAt": "2026-08-18T08:38:10.741Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_JNTVNTREQUITYGROUPVALUEHELP": {
+    "attemptedAt": "2026-08-18T08:38:11.253Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_JNTVNTREQUITYGRP": {
+    "attemptedAt": "2026-08-18T08:38:11.809Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_JNTVNTREQUITYGRPTEXT": {
+    "attemptedAt": "2026-08-18T08:38:12.330Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_JNTVNTREQUITYTYPEDESC": {
+    "attemptedAt": "2026-08-18T08:38:12.832Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_JNTVNTREQUITYTYPEMASTER": {
+    "attemptedAt": "2026-08-18T08:38:13.363Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_JNTVNTREQUITYTYPEVH": {
+    "attemptedAt": "2026-08-18T08:38:13.913Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_JNTVNTRPARTOWNREQUITYSHR": {
+    "attemptedAt": "2026-08-18T08:38:14.439Z",
+    "found": true,
+    "matched": 24
   }
 }
