@@ -19213,5 +19213,240 @@
     "attemptedAt": "2026-08-20T08:38:51.480Z",
     "found": false,
     "reason": "Hub catalog fetch failed for \"I_LEGALDOCTMPLINFOTP\" (404)"
+  },
+  "I_LEGALDOCUMENTAPI01": {
+    "attemptedAt": "2026-08-21T08:40:01.138Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_LEGALDOCUMENTTP": {
+    "attemptedAt": "2026-08-21T08:40:01.301Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALDOCUMENTTP\" (404)"
+  },
+  "I_LGLCNTNTMCNTNTTYPEAPI01": {
+    "attemptedAt": "2026-08-21T08:40:02.039Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_LGLCNTNTMCNTNTTYPETXTAPI01": {
+    "attemptedAt": "2026-08-21T08:40:02.578Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMDOCSTAMPAPI01": {
+    "attemptedAt": "2026-08-21T08:40:03.089Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_LGLCNTNTMDOCSTAMPTEXTAPI01": {
+    "attemptedAt": "2026-08-21T08:40:03.638Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMDOCSTATUSAPI01": {
+    "attemptedAt": "2026-08-21T08:40:04.155Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_LGLCNTNTMDOCSTATUSTEXTAPI01": {
+    "attemptedAt": "2026-08-21T08:40:04.678Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMDOCTYPETEXTAPI01": {
+    "attemptedAt": "2026-08-21T08:40:05.240Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMLGLDOCSRCETXTAPI01": {
+    "attemptedAt": "2026-08-21T08:40:05.737Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMACCESSLVLAPI01": {
+    "attemptedAt": "2026-08-21T08:40:06.245Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_LGLCNTNTMACCESSLVLTEXTAPI01": {
+    "attemptedAt": "2026-08-21T08:40:06.718Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMCNTXTSTATUSTXTAPI01": {
+    "attemptedAt": "2026-08-21T08:40:07.228Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMGOVLAWAPI01": {
+    "attemptedAt": "2026-08-21T08:40:07.730Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_LGLCNTNTMGOVLAWTEXTAPI01": {
+    "attemptedAt": "2026-08-21T08:40:08.271Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMMAINORGTYPETXTAPI01": {
+    "attemptedAt": "2026-08-21T08:40:08.892Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMPROFILEAPI01": {
+    "attemptedAt": "2026-08-21T08:40:09.385Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_LGLCNTNTMPROFILETEXTAPI01": {
+    "attemptedAt": "2026-08-21T08:40:09.942Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMRNWLTERMNCLAUSET": {
+    "attemptedAt": "2026-08-21T08:40:10.456Z",
+    "found": true,
+    "matched": 3
+  },
+  "D_LGLCNTNTMDOCLINKOBJKEYCRTEP": {
+    "attemptedAt": "2026-08-21T08:40:10.645Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_LGLCNTNTMDOCLINKOBJKEYCRTEP\" (404)"
+  },
+  "D_LGLCNTNTMDOCLINKOBJKEYCRTER": {
+    "attemptedAt": "2026-08-21T08:40:11.075Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_LGLCNTNTMDOCLINKOBJKEYCRTER\" (404)"
+  },
+  "D_LGLTRANSCANCELTSKGRPP": {
+    "attemptedAt": "2026-08-21T08:40:11.528Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_LGLTRANSCANCELTSKGRPP\" (404)"
+  },
+  "D_LGLTRANSRESTARTLGLTRANSPHSEP": {
+    "attemptedAt": "2026-08-21T08:40:11.963Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_LGLTRANSRESTARTLGLTRANSPHSEP\" (404)"
+  },
+  "D_LGLTRANSSTRTLGLTRANSPHSEP": {
+    "attemptedAt": "2026-08-21T08:40:12.395Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_LGLTRANSSTRTLGLTRANSPHSEP\" (404)"
+  },
+  "D_LGLTRANSTRGGRLGLTRANSTSKGRPP": {
+    "attemptedAt": "2026-08-21T08:40:12.850Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_LGLTRANSTRGGRLGLTRANSTSKGRPP\" (404)"
+  },
+  "I_LEGALTRANSACTIONAPI01": {
+    "attemptedAt": "2026-08-21T08:40:13.719Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_LEGALTRANSACTIONBASE": {
+    "attemptedAt": "2026-08-21T08:40:14.223Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_LEGALTRANSACTIONHLTHTXTAPI01": {
+    "attemptedAt": "2026-08-21T08:40:14.839Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LEGALTRANSACTIONREMINDERTP_2": {
+    "attemptedAt": "2026-08-21T08:40:15.002Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALTRANSACTIONREMINDERTP_2\" (404)"
+  },
+  "I_LEGALTRANSACTIONTP_2": {
+    "attemptedAt": "2026-08-21T08:40:15.412Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALTRANSACTIONTP_2\" (404)"
+  },
+  "I_LEGALTRANSCATEGORYGROUPTP_2": {
+    "attemptedAt": "2026-08-21T08:40:15.806Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALTRANSCATEGORYGROUPTP_2\" (404)"
+  },
+  "I_LEGALTRANSCATEGORYTP_2": {
+    "attemptedAt": "2026-08-21T08:40:16.209Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALTRANSCATEGORYTP_2\" (404)"
+  },
+  "I_LEGALTRANSDATETP_2": {
+    "attemptedAt": "2026-08-21T08:40:16.619Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALTRANSDATETP_2\" (404)"
+  },
+  "I_LEGALTRANSDOCLINKTP_2": {
+    "attemptedAt": "2026-08-21T08:40:17.022Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALTRANSDOCLINKTP_2\" (404)"
+  },
+  "I_LEGALTRANSENTITYTP_2": {
+    "attemptedAt": "2026-08-21T08:40:17.425Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALTRANSENTITYTP_2\" (404)"
+  },
+  "I_LEGALTRANSEXTCONTACTTP_2": {
+    "attemptedAt": "2026-08-21T08:40:17.855Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALTRANSEXTCONTACTTP_2\" (404)"
+  },
+  "I_LEGALTRANSINTCONTACTTP_2": {
+    "attemptedAt": "2026-08-21T08:40:18.276Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALTRANSINTCONTACTTP_2\" (404)"
+  },
+  "I_LEGALTRANSLINKEDOBJECTSTP_2": {
+    "attemptedAt": "2026-08-21T08:40:18.755Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALTRANSLINKEDOBJECTSTP_2\" (404)"
+  },
+  "I_LEGALTRANSPARENTCATTP_2": {
+    "attemptedAt": "2026-08-21T08:40:19.173Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALTRANSPARENTCATTP_2\" (404)"
+  },
+  "I_LEGALTRANSRELATIONSHIPTP_2": {
+    "attemptedAt": "2026-08-21T08:40:19.567Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALTRANSRELATIONSHIPTP_2\" (404)"
+  },
+  "I_LEGALTRANSRNWLANDTERMNTP_2": {
+    "attemptedAt": "2026-08-21T08:40:19.959Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_LEGALTRANSRNWLANDTERMNTP_2\" (404)"
+  },
+  "I_LGLCNTNTMDATETYPE": {
+    "attemptedAt": "2026-08-21T08:40:20.700Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_LGLCNTNTMDATETYPETEXT": {
+    "attemptedAt": "2026-08-21T08:40:21.218Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMENTITYTYPE": {
+    "attemptedAt": "2026-08-21T08:40:21.733Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_LGLCNTNTMENTITYTYPETEXT": {
+    "attemptedAt": "2026-08-21T08:40:22.248Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMEXTCNTCTTYPE": {
+    "attemptedAt": "2026-08-21T08:40:22.801Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_LGLCNTNTMEXTCNTCTTYPETEXT": {
+    "attemptedAt": "2026-08-21T08:40:23.397Z",
+    "found": true,
+    "matched": 3
   }
 }
